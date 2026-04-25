@@ -94,13 +94,51 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 // VERSES
-app.get('/api/verses/shloka/:id', (req, res) => {
-  const shloka = data.shlokas[req.params.id];
-  if (!shloka) return res.status(404).json({ error: 'Shloka not found' });
-  res.json(shloka);
+app.get('/api/verses/chapters', (req, res) => {
+  res.json({
+    chapters: data.chapters,
+    levels: data.levels,
+  });
 });
 
-app.get('/api/verses/chapters', (req, res) => res.json(data.chapters));
+app.get('/api/verses', (req, res) => {
+  try {
+    const { scripture, chapter, verse } = req.query;
+    if (scripture === 'hanuman') {
+      if (verse) {
+        const d = data.hanumanChalisa[verse];
+        if (!d) return res.status(404).json({ error: 'Verse not found' });
+        return res.json(d);
+      }
+      return res.json(data.hanumanChalisa);
+    }
+    // Gita
+    if (chapter && verse) {
+      const key = `${chapter}.${verse}`;
+      const d = data.shlokas[key];
+      if (!d) return res.status(404).json({ error: 'Shloka not found' });
+      return res.json(d);
+    }
+    if (chapter) {
+      const chapterShlokas = {};
+      for (const [key, val] of Object.entries(data.shlokas)) {
+        if (key.startsWith(`${chapter}.`)) chapterShlokas[key] = val;
+      }
+      return res.json(chapterShlokas);
+    }
+    res.json({ gita: Object.keys(data.shlokas).length, hanuman: Object.keys(data.hanumanChalisa).length });
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
+  const { scripture, chapter, level } = req.params;
+  if (scripture !== 'gita') return res.status(404).send('No evaluations for this scripture');
+  const chData = data.evaluations[chapter];
+  if (!chData || !chData[level]) return res.status(404).send('Not found');
+  res.json(chData[level]);
+});
 
 // JOURNALS
 app.post('/api/journal', async (req, res) => {
