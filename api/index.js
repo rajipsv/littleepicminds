@@ -161,6 +161,21 @@ app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
 });
 
 // JOURNALS & PROGRESS
+app.get('/api/journal/:username', async (req, res) => {
+  try {
+    const { username } = req.params;
+    const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
+    if (userResult.rows.length === 0) return res.status(404).send('User not found');
+    const result = await db.query(
+      'SELECT * FROM journal_entries WHERE user_id = $1 ORDER BY completed_at DESC',
+      [userResult.rows[0].id]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 app.post('/api/journal', async (req, res) => {
   try {
     const { username, scripture, chapter_number, verse_id, question, response } = req.body;
@@ -172,19 +187,21 @@ app.post('/api/journal', async (req, res) => {
     await db.query(
       'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
       [userId, scripture, chapter_number, verse_id, question, response]
-    );
+    ).catch(e => console.error('Journal entry failed:', e.message));
 
     // Save to Progress (for mastery counts)
     // verse_id is often "1.1", "1.2". We extract the shloka number.
     let shlokaNum = parseInt(verse_id);
     if (typeof verse_id === 'string' && verse_id.includes('.')) {
-      shlokaNum = parseInt(verse_id.split('.')[1]);
+      const parts = verse_id.split('.');
+      shlokaNum = parseInt(parts[parts.length - 1]);
     }
     
+    // Check if progress exists to avoid duplicates or updates
     await db.query(
       'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
       [userId, chapter_number, shlokaNum, question, response]
-    ).catch(e => console.warn('Progress insert failed (might already exist):', e.message));
+    ).catch(e => console.warn('Progress insert failed:', e.message));
 
     res.status(201).send('Saved');
   } catch (err) {
