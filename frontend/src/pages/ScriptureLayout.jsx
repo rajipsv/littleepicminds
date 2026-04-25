@@ -6,7 +6,7 @@ import VerseViewer from '../components/VerseViewer';
 import KrishnaChat from '../components/KrishnaChat';
 import EvaluationQuiz from '../components/EvaluationQuiz';
 import LanguageToggle from '../components/LanguageToggle';
-import { Lock, ChevronLeft, BookOpen, GraduationCap } from 'lucide-react';
+import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target } from 'lucide-react';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
@@ -104,8 +104,20 @@ const ScriptureLayout = () => {
           })}
         </div>
         
-        <div className="hidden md:flex p-4 border-t border-lem-glass-border justify-center">
-           <LanguageToggle />
+        <div className="p-4 border-t border-lem-glass-border space-y-3">
+           <div className="grid grid-cols-2 gap-2">
+              <Link to="/progress" className="bg-lem-dark border border-lem-glass-border text-lem-accent text-[10px] font-black uppercase tracking-widest p-2 rounded-lg flex flex-col items-center gap-1 hover:bg-lem-accent hover:text-lem-dark transition-all">
+                <Target size={14} />
+                Progress
+              </Link>
+              <Link to="/journal" className="bg-lem-dark border border-lem-glass-border text-gray-400 text-[10px] font-black uppercase tracking-widest p-2 rounded-lg flex flex-col items-center gap-1 hover:bg-white/10 hover:text-white transition-all">
+                <Star size={14} />
+                Journal
+              </Link>
+           </div>
+           <div className="flex justify-center">
+             <LanguageToggle />
+           </div>
         </div>
       </div>
 

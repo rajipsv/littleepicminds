@@ -43,6 +43,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4 border-l pl-4 border-lem-glass-border">
+                  <Link to="/progress" className="text-lem-accent hover:text-white transition-colors font-bold text-sm">Progress</Link>
                   <Link to="/journal" className="text-gray-400 hover:text-lem-accent transition-colors font-bold text-sm">Journal</Link>
                   <Link to="/settings" className="text-gray-400 hover:text-lem-accent transition-colors font-bold text-sm">Settings</Link>
                   <button onClick={logout} className="text-gray-500 hover:text-red-400 transition-colors">
