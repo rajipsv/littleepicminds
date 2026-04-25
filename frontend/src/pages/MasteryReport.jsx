@@ -26,7 +26,8 @@ const MasteryReport = () => {
 
   if (!user) return <div className="text-center p-20 text-white font-bold text-2xl">Please login to see your mastery report.</div>;
 
-  const totalMastered = progress.filter(p => p.best_score >= 70).length;
+  const totalMastered = progress.reduce((acc, curr) => acc + curr.verses_completed, 0);
+  const totalShlokas = progress.reduce((acc, curr) => acc + curr.total_verses, 0);
   const avgScore = progress.length > 0 
     ? Math.round(progress.reduce((acc, curr) => acc + curr.best_score, 0) / progress.length)
     : 0;
@@ -53,11 +54,11 @@ const MasteryReport = () => {
               <div className="w-12 h-12 bg-lem-accent/20 rounded-2xl flex items-center justify-center text-lem-accent">
                 <Target size={24} />
               </div>
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{isTe ? "పూర్తయిన అధ్యాయాలు" : "Chapters Mastered"}</span>
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{isTe ? "పూర్తయిన శ్లోకాలు" : "Shlokas Mastered"}</span>
             </div>
             <div className="flex items-baseline gap-2">
               <span className="text-5xl font-black text-white">{totalMastered}</span>
-              <span className="text-xl text-gray-600 font-bold">/ 18</span>
+              <span className="text-xl text-gray-600 font-bold">/ {totalShlokas}</span>
             </div>
           </div>
 
@@ -122,11 +123,17 @@ const MasteryReport = () => {
                         </div>
                       </td>
                       <td className="px-6 py-4">
-                        <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
-                          <div 
-                            className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
-                            style={{ width: `${chProg ? Math.min(100, chProg.best_score) : 0}%` }}
-                          />
+                        <div className="flex flex-col gap-1">
+                          <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter">
+                            <span>{chProg?.verses_completed || 0} / {chProg?.total_verses || 47}</span>
+                            <span>{Math.round(((chProg?.verses_completed || 0) / (chProg?.total_verses || 1)) * 100)}%</span>
+                          </div>
+                          <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
+                            <div 
+                              className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
+                              style={{ width: `${Math.round(((chProg?.verses_completed || 0) / (chProg?.total_verses || 1)) * 100)}%` }}
+                            />
+                          </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 font-black text-white">

@@ -180,17 +180,32 @@ app.post('/api/journal', async (req, res) => {
 app.get('/api/evaluations/progress/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
-    const result = await db.query(
-      'SELECT chapter_id, score, best_score, attempts, completed_at FROM evaluations WHERE user_id = $1',
+    
+    // Get Quiz Results
+    const quizResult = await db.query(
+      'SELECT chapter_id, score, best_score, attempts FROM evaluations WHERE user_id = $1',
       [userId]
     );
-    // Convert to the format the frontend expects
-    const progress = result.rows.map(r => ({
-      scripture: 'gita',
-      chapter_number: r.chapter_id,
-      best_score: r.best_score,
-      attempts: r.attempts
-    }));
+
+    // Get Verse Completion (from journal entries)
+    const verseResult = await db.query(
+      'SELECT chapter_number, COUNT(DISTINCT verse_id) as completed_count FROM journal_entries WHERE user_id = $1 GROUP BY chapter_number',
+      [userId]
+    );
+
+    // Merge data
+    const progress = (data.chapters || []).map(ch => {
+      const q = quizResult.rows.find(r => r.chapter_id == ch.id);
+      const v = verseResult.rows.find(r => r.chapter_number == ch.id);
+      return {
+        chapter_number: ch.id,
+        total_verses: ch.count,
+        verses_completed: v ? parseInt(v.completed_count) : 0,
+        best_score: q ? q.best_score : 0,
+        attempts: q ? q.attempts : 0
+      };
+    });
+
     res.json({ progress });
   } catch (err) {
     res.status(500).send(err.message);
