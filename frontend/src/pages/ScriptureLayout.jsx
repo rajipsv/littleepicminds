@@ -4,9 +4,9 @@ import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import VerseViewer from '../components/VerseViewer';
 import KrishnaChat from '../components/KrishnaChat';
-import EvaluationQuiz from '../components/EvaluationQuiz';
+import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
-import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target } from 'lucide-react';
+import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle } from 'lucide-react';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
@@ -20,6 +20,7 @@ const ScriptureLayout = () => {
   const [showQuiz, setShowQuiz] = useState(false);
   const [activeVerseIndex, setActiveVerseIndex] = useState(0);
   const [chapterMetadata, setChapterMetadata] = useState([]);
+  const [masteredShlokas, setMasteredShlokas] = useState(new Set());
 
   // Generate chapters based on scripture
   const activeChapterData = chapterMetadata.find(c => c.id === activeChapter);
@@ -36,6 +37,7 @@ const ScriptureLayout = () => {
 
   useEffect(() => {
     setShowQuiz(false);
+    setMasteredShlokas(new Set());
     fetchVerses(activeChapter);
   }, [activeChapter, scripture]);
 
@@ -166,7 +168,7 @@ const ScriptureLayout = () => {
                     </span>
                     <select
                       value={activeVerseIndex}
-                      onChange={(e) => setActiveVerseIndex(Number(e.target.value))}
+                      onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
                       className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
                     >
                       {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => (
@@ -183,6 +185,8 @@ const ScriptureLayout = () => {
                       const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
                       return parseInt(vNum) === (activeVerseIndex + 1);
                     });
+                    const verseNum = activeVerseIndex + 1;
+                    const isMastered = masteredShlokas.has(verseNum);
 
                     if (activeVerse) {
                       return (
@@ -192,6 +196,38 @@ const ScriptureLayout = () => {
                             verse={{ ...activeVerse, chapter_number: activeChapter, scripture: scripture }} 
                             scripture={scripture} 
                           />
+                          {/* Per-Shloka Quiz */}
+                          {showQuiz ? (
+                            <div className="mt-6">
+                              <SlokaQuiz
+                                scripture={scripture}
+                                chapter={activeChapter}
+                                verse={verseNum}
+                                onPass={(score) => {
+                                  setMasteredShlokas(prev => new Set([...prev, verseNum]));
+                                  setShowQuiz(false);
+                                }}
+                                onClose={() => setShowQuiz(false)}
+                              />
+                            </div>
+                          ) : (
+                            <div className="flex justify-center mt-8 mb-4">
+                              {isMastered ? (
+                                <div className="flex items-center gap-2 text-green-400 font-bold text-sm">
+                                  <CheckCircle size={20} />
+                                  {scripture === 'hanuman' ? 'Verse Mastered!' : `Shloka ${activeChapter}.${verseNum} Mastered!`}
+                                </div>
+                              ) : (
+                                <button
+                                  onClick={() => setShowQuiz(true)}
+                                  className="flex items-center gap-2 bg-lem-sidebar border border-lem-accent text-lem-accent hover:bg-lem-accent hover:text-lem-dark font-black px-6 py-3 rounded-full shadow-lg transition-all hover:scale-105"
+                                >
+                                  <GraduationCap size={20} />
+                                  {scripture === 'hanuman' ? 'Test This Verse' : `Test Shloka ${activeChapter}.${verseNum}`}
+                                </button>
+                              )}
+                            </div>
+                          )}
                         </div>
                       );
                     } else {
@@ -204,31 +240,8 @@ const ScriptureLayout = () => {
                       );
                     }
                   })()}
-                  
-                  <div className="flex justify-center mt-12 mb-8 border-t border-lem-glass-border pt-8">
-                    <button 
-                      onClick={() => setShowQuiz(true)}
-                      className="flex items-center gap-2 bg-lem-sidebar border border-lem-accent text-lem-accent hover:bg-lem-accent hover:text-lem-dark font-black px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105"
-                    >
-                      <GraduationCap size={24} />
-                      Take Chapter Evaluation
-                    </button>
-                  </div>
+
                 </>
-              ) : (
-                <div className="animate-fade-in">
-                  <div className="mb-6 flex justify-between items-center">
-                    <h2 className="text-2xl font-bold text-white">
-                      {scripture === 'hanuman' ? 'Hanuman Chalisa Mastery' : `Chapter ${activeChapter} Mastery`}
-                    </h2>
-                    <button onClick={() => setShowQuiz(false)} className="text-lem-accent hover:underline text-sm font-bold">
-                      Back to Verses
-                    </button>
-                  </div>
-                  <EvaluationQuiz scripture={scripture} chapter={activeChapter} onComplete={(score) => {
-                    console.log("Quiz completed with score:", score);
-                  }} />
-                </div>
               )}
             </div>
           ) : (

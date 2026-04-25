@@ -162,6 +162,73 @@ router.get('/verses/evaluations/:id', (req, res) => {
   }
 });
 
+// GET /api/verses/quiz/:scripture/:chapter/:verse — Generate quiz from shloka content
+router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
+  try {
+    const { scripture, chapter, verse } = req.params;
+    const level = req.query.level || 'seeds';
+
+    let shloka = null;
+    if (scripture === 'gita') {
+      const key = `${chapter}.${verse}`;
+      shloka = data.shlokas[key];
+    } else if (scripture === 'hanuman') {
+      shloka = data.hanumanChalisa[verse];
+    }
+
+    if (!shloka) return res.status(404).json({ error: 'Shloka not found' });
+
+    // Use existing exercises if available
+    if (shloka.exercises && shloka.exercises[level]) {
+      const ex = shloka.exercises[level];
+      return res.json([{ question: ex.question, options: ex.options, correct: ex.correct }]);
+    }
+
+    // Auto-generate 3 MCQ questions from shloka meaning
+    const meaning = shloka.en?.meaning || '';
+    const childMeaning = shloka.en?.childMeaning || '';
+    const activity = shloka.en?.activity || '';
+
+    const questions = [
+      {
+        question: `What is the main teaching of Shloka ${chapter}.${verse}?`,
+        options: [
+          childMeaning.substring(0, 60) + (childMeaning.length > 60 ? '...' : ''),
+          'Only the strong should fight',
+          'Wealth brings happiness'
+        ],
+        correct: 0
+      },
+      {
+        question: `In Shloka ${chapter}.${verse}, what does Krishna want us to focus on?`,
+        options: [
+          'Getting rewards and prizes',
+          'Doing our duty with full effort',
+          'Avoiding all responsibilities'
+        ],
+        correct: 1
+      },
+      {
+        question: activity ? `The activity for this shloka suggests:` : `What lesson does this shloka teach?`,
+        options: activity ? [
+          activity.substring(0, 60) + (activity.length > 60 ? '...' : ''),
+          'Always expect something in return',
+          'Only do things for praise'
+        ] : [
+          meaning.substring(0, 60) + (meaning.length > 60 ? '...' : ''),
+          'Avoid doing good deeds',
+          'Compete to defeat others'
+        ],
+        correct: 0
+      }
+    ];
+
+    res.json(questions);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 // JOURNALS & PROGRESS
 router.get('/journal/:username', async (req, res) => {
   try {
