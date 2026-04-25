@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const db = require('../db');
 
@@ -19,6 +19,7 @@ function getLevelFromAge(age) {
 router.post('/register', async (req, res) => {
   try {
     const { username, email, password, name, age, grade, role } = req.body;
+    console.log('Registering user:', { username, email, age, grade });
     const level = getLevelFromAge(age);
 
     if (!process.env.DATABASE_URL) {
@@ -34,6 +35,7 @@ router.post('/register', async (req, res) => {
     // Check if user exists
     const userExists = await db.query('SELECT * FROM users WHERE username = $1 OR email = $2', [username, email]);
     if (userExists.rows.length > 0) {
+      console.warn('Registration failed: User exists', username);
       return res.status(400).json({ error: 'Username or email already exists' });
     }
 
@@ -42,12 +44,14 @@ router.post('/register', async (req, res) => {
     const passwordHash = await bcrypt.hash(password, salt);
 
     // Insert user
+    console.log('Inserting into DB with level:', level);
     const newUser = await db.query(
       'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING id, username, email, name, role, is_premium, level, age, grade',
       [username, email, passwordHash, name || username, age ? parseInt(age) : null, grade || null, level, role || 'student']
     );
 
     const user = newUser.rows[0];
+    console.log('User created successfully:', user.id);
     const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
     const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
 

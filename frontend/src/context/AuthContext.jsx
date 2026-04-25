@@ -55,9 +55,12 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (username, email, password, age, grade) => {
     try {
-      await api.post('/api/auth/register', { username, email, password, age, grade });
-      // Auto login after register
-      return await login(username, password);
+      const res = await api.post('/api/auth/register', { username, email, password, age, grade });
+      // Set user and token from register response directly
+      setToken(res.data.token);
+      setUser(res.data.user);
+      localStorage.setItem('user', JSON.stringify(res.data.user));
+      return true;
     } catch (error) {
       console.error('Register error', error);
       throw error;
