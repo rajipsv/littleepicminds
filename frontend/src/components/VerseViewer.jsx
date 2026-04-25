@@ -112,17 +112,15 @@ const VerseViewer = ({ verse, scripture }) => {
         <StepMarker step={4} icon={Edit3} title={isTe ? "రాయి" : "Journal"} isActive={currentStep === 4} isCompleted={currentStep > 4} />
       </div>
 
-      {/* Step 1 & 2: Listen and Repeat (Main Verse Area) */}
+      {/* Step 1: Listen (Main Verse Area) */}
       <div className={`transition-all duration-500 ${currentStep >= 1 ? 'opacity-100' : 'opacity-50 pointer-events-none'}`}>
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 glass-panel p-6 md:p-8 rounded-3xl shadow-xl border-l-4 border-l-lem-accent relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
           <div className="flex-1 z-10">
             <p className={`text-3xl md:text-4xl text-white leading-relaxed flex flex-wrap gap-x-2 drop-shadow-sm font-quicksand font-bold tracking-wide ${isTe ? 'telugu-text' : ''}`}>
               {isTe && verse.telugu_script ? (
-                // Show the full Telugu script if available
                 <span className="w-full whitespace-pre-wrap">{verse.telugu_script}</span>
               ) : (
-                // Fallback to English transliteration with word highlighting
                 sanskritWords.map((word, index) => (
                   <span 
                     key={index} 
@@ -146,23 +144,8 @@ const VerseViewer = ({ verse, scripture }) => {
           </div>
         </div>
 
-        {/* Full Meaning block */}
-        <div className="mt-6 mb-10 bg-lem-sidebar border border-lem-glass-border text-white p-6 rounded-2xl shadow-md relative overflow-hidden">
-          <h3 className="text-xs font-bold text-lem-accent uppercase tracking-widest mb-3 opacity-80">{isTe ? "తాత్పర్యం" : "Meaning"}</h3>
-          <p className="text-lg font-medium leading-relaxed">
-            {isTe && verse.te ? verse.te.meaning : (verse.en?.meaning || verse.full_meaning)}
-          </p>
-          {/* Child Meaning (if available) */}
-          {((isTe && verse.te?.childMeaning) || (!isTe && verse.en?.childMeaning)) && (
-            <div className="mt-4 p-4 bg-lem-accent/10 rounded-xl border border-lem-accent/20">
-              <span className="text-lem-accent font-bold mr-2">👦 {isTe ? "పిల్లలకు:" : "For Kids:"}</span>
-              <span className="text-sm">{isTe ? verse.te.childMeaning : verse.en.childMeaning}</span>
-            </div>
-          )}
-        </div>
-
-        {/* Step 2: Meaning Table (Line Breakdown) - Revealed when step 2 active */}
-        <div className={`transition-all duration-700 ${currentStep >= 2 ? 'opacity-100 translate-y-0 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
+        {/* Step 2: Word by Word — shown immediately after sloka */}
+        <div className={`transition-all duration-700 mt-6 ${currentStep >= 2 ? 'opacity-100 translate-y-0 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
           <div className="mb-4 flex justify-between items-center">
             <h3 className="text-lg font-bold text-white">{isTe ? "పదాల అర్థాలు" : "Word by Word"}</h3>
             {currentStep === 2 && (
@@ -174,16 +157,29 @@ const VerseViewer = ({ verse, scripture }) => {
           <MeaningTable wordByWord={verse.lineBreakdown || verse.word_by_word} />
         </div>
 
-        {/* Step 3: Matching Game - Revealed when step 3 active */}
-        <div className={`transition-all duration-700 ${currentStep >= 3 ? 'opacity-100 translate-y-0 mt-10 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
-          <div className="border-t border-lem-glass-border pt-8">
+        {/* Step 3: Meaning + Child Meaning — shown after Word by Word */}
+        <div className={`transition-all duration-700 ${currentStep >= 3 ? 'opacity-100 translate-y-0 mt-6 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
+          <div className="bg-lem-sidebar border border-lem-glass-border text-white p-6 rounded-2xl shadow-md relative overflow-hidden">
+            <h3 className="text-xs font-bold text-lem-accent uppercase tracking-widest mb-3 opacity-80">{isTe ? "తాత్పర్యం" : "Meaning"}</h3>
+            <p className="text-lg font-medium leading-relaxed">
+              {isTe && verse.te ? verse.te.meaning : (verse.en?.meaning || verse.full_meaning)}
+            </p>
+            {((isTe && verse.te?.childMeaning) || (!isTe && verse.en?.childMeaning)) && (
+              <div className="mt-4 p-4 bg-lem-accent/10 rounded-xl border border-lem-accent/20">
+                <span className="text-lem-accent font-bold mr-2">👦 {isTe ? "పిల్లలకు:" : "For Kids:"}</span>
+                <span className="text-sm">{isTe ? verse.te.childMeaning : verse.en.childMeaning}</span>
+              </div>
+            )}
+          </div>
+          {/* Matching Game */}
+          <div className="border-t border-lem-glass-border pt-8 mt-8">
             <h3 className="text-xl font-bold text-white mb-2">{isTe ? "ఆట సమయం: జతపరుచు" : "Activity Time: Match Meaning"}</h3>
             <p className="text-gray-400 text-sm mb-6">{isTe ? "సంస్కృత పదాన్ని దానికి సరైన అర్థంతో జత చేయండి." : "Select a Sanskrit word, then select its matching meaning."}</p>
             <MatchingGame breakdown={verse.lineBreakdown || verse.word_by_word} onComplete={handleMatchComplete} scripture={scripture} />
           </div>
         </div>
 
-        {/* Step 4: Wisdom Journal - Revealed when step 4 active */}
+        {/* Step 4: Wisdom Journal */}
         <div className={`transition-all duration-700 ${currentStep >= 4 ? 'opacity-100 translate-y-0 mt-10 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
           <WisdomJournal verse={verse} onComplete={handleJournalComplete} />
         </div>
