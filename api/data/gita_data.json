@@ -1,0 +1,193 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Arjuna Visada Yoga",
+      "count": 47,
+      "theme": "Observing the Armies"
+    },
+    {
+      "id": 2,
+      "title": "Sankhya Yoga",
+      "count": 72,
+      "theme": "Transcendental Knowledge"
+    },
+    {
+      "id": 3,
+      "title": "Karma Yoga",
+      "count": 43,
+      "theme": "Path of Action"
+    },
+    {
+      "id": 4,
+      "title": "Jnana Karma Sanyasa Yoga",
+      "count": 42,
+      "theme": "Path of Knowledge"
+    },
+    {
+      "id": 5,
+      "title": "Karma Sanyasa Yoga",
+      "count": 29,
+      "theme": "Action in Krishna Consciousness"
+    },
+    {
+      "id": 6,
+      "title": "Dhyana Yoga",
+      "count": 47,
+      "theme": "Path of Meditation"
+    },
+    {
+      "id": 7,
+      "title": "Jnana Vijnana Yoga",
+      "count": 30,
+      "theme": "Knowledge of the Ultimate"
+    },
+    {
+      "id": 8,
+      "title": "Akshara Brahma Yoga",
+      "count": 28,
+      "theme": "Path to the Eternal"
+    },
+    {
+      "id": 9,
+      "title": "Raja Vidya Raja Guhya Yoga",
+      "count": 34,
+      "theme": "The Most Confidential Knowledge"
+    },
+    {
+      "id": 10,
+      "title": "Vibhuti Yoga",
+      "count": 42,
+      "theme": "The Infinite Glories of the Divine"
+    },
+    {
+      "id": 11,
+      "title": "Viswarupa Darshana Yoga",
+      "count": 55,
+      "theme": "The Universal Form"
+    },
+    {
+      "id": 12,
+      "title": "Bhakti Yoga",
+      "count": 20,
+      "theme": "The Path of Devotion"
+    },
+    {
+      "id": 13,
+      "title": "Kshetra Kshetrajna Vibhaga Yoga",
+      "count": 34,
+      "theme": "The Field and the Knower"
+    },
+    {
+      "id": 14,
+      "title": "Gunatraya Vibhaga Yoga",
+      "count": 27,
+      "theme": "The Three Modes of Nature"
+    },
+    {
+      "id": 15,
+      "title": "Purushottama Yoga",
+      "count": 20,
+      "theme": "The Supreme Person"
+    },
+    {
+      "id": 16,
+      "title": "Daivasura Sampad Vibhaga Yoga",
+      "count": 24,
+      "theme": "Divine and Demoniac Natures"
+    },
+    {
+      "id": 17,
+      "title": "Shraddhatraya Vibhaga Yoga",
+      "count": 28,
+      "theme": "The Three Divisions of Faith"
+    },
+    {
+      "id": 18,
+      "title": "Moksha Sanyasa Yoga",
+      "count": 78,
+      "theme": "Final Liberation"
+    }
+  ],
+  "levels": {
+    "seeds": {
+      "title": "Seeds of Wisdom",
+      "ageRange": "5-7 Years",
+      "theme": "playful",
+      "color": "var(--color-seeds)"
+    },
+    "seekers": {
+      "title": "Path Seekers",
+      "ageRange": "8-10 Years",
+      "theme": "energetic",
+      "color": "var(--color-seekers)"
+    },
+    "warriors": {
+      "title": "Young Warriors",
+      "ageRange": "11-14 Years",
+      "theme": "sophisticated",
+      "color": "var(--color-warriors)"
+    }
+  },
+  "shlokas": {
+    "2.47": {
+      "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन।\nमा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि॥",
+      "telugu_script": "కర్మణ్యేవాధికారస్తే మా ఫలేషు కదాచన|\nమా కర్మఫలహేతుర్భూర్మా తే సఙ్గోఽస్త్వకర్మణి||",
+      "transliteration": "karmaṇy-evādhikāras te mā phaleṣu kadācana\nmā karma-phala-hetur bhūr mā te saṅgo ’stv akarmaṇi",
+      "en": {
+        "meaning": "You have a right to perform your prescribed duties, but you are not entitled to the fruits of your actions.",
+        "childMeaning": "Focus on your effort and enjoy the activity! Don't worry about the prize; the fun is in the doing.",
+        "activity": "Practice a hobby (like drawing or a sport) for 20 minutes today just for the joy of it, without thinking about winning."
+      },
+      "te": {
+        "meaning": "నీ కర్తవ్యాన్ని నిర్వహించే అధికారం మాత్రమే నీకు ఉంది, దాని ఫలితాలపై కాదు.",
+        "childMeaning": "నీవు చేసే పని మీద దృష్టి పెట్టు, ఫలితం గురించి ఆందోళన చెందకు. పనిని ఆనందంగా చెయ్యి!",
+        "activity": "ఈరోజు నీకు ఇష్టమైన పనిని (చిత్రలేఖనం లేదా ఆట) 20 నిమిషాల పాటు కేవలం ఆనందం కోసమే చెయ్యి."
+      }
+    },
+    "9.26": {
+      "sanskrit": "पत्रं पुष्पं फलं तोयं यो मे भक्त्या प्रयच्छति।\nतदहं भक्त्युपहृतमश्नामि प्रयतात्मनः॥",
+      "telugu_script": "పత్రం పుష్పం ఫలం తోయం యో మే భక్త్యా ప్రయచ్ఛతి|\nతదహం భక్త్యుపహృతమశ్నామి ప్రయతాత్మనః||",
+      "transliteration": "patraṁ puṣpaṁ phalaṁ toyaṁ yo me bhaktyā prayacchati\ntad ahaṁ bhakty-upahṛtam aśnāmi prayatātmanaḥ",
+      "en": {
+        "meaning": "If one offers Me with love and devotion a leaf, a flower, a fruit or water, I will accept it.",
+        "childMeaning": "Whatever you give with love—even a tiny leaf—is very special. Love is the most important ingredient!",
+        "activity": "Draw a 'Thank You' card for someone you love and give it to them today."
+      },
+      "te": {
+        "meaning": "ఎవరైతే భక్తితో నాకు ఒక ఆకును, ఒక పువ్వును, ఒక పండును లేదా కొంచెం నీటిని సమర్పిస్తారో, ఆ స్వచ్ఛమైన మనస్సు కలవారి భక్తిని నేను స్వీకరిస్తాను.",
+        "childMeaning": "కృష్ణుడు అంటున్నాడు: 'నువ్వు నాకు పెద్ద బహుమతులు ఇవ్వనక్కర్లేదు. ఒక చిన్న పువ్వు లేదా ఆకును ప్రేమతో ఇస్తే చాలు, నేను చాలా సంతోషిస్తాను!'",
+        "activity": "బయటకు వెళ్లి ఒక అందమైన ఆకును లేదా పువ్వును వెతికి కృష్ణుడికి ప్రేమతో సమర్పించండి."
+      },
+      "exercises": {
+        "seeds": {
+          "question": "What makes Krishna the happiest when you give a gift?",
+          "options": [
+            "Big Toys (🧸)",
+            "Love/Bhakti (❤️)",
+            "Money (💰)"
+          ],
+          "correct": 1
+        },
+        "seekers": {
+          "question": "According to Shloka 9.26, does God require expensive gifts?",
+          "options": [
+            "Yes, only gold and silver",
+            "No, He accepts even a leaf or water if given with love",
+            "He doesn't want anything"
+          ],
+          "correct": 1
+        },
+        "warriors": {
+          "question": "What is the key requirement for an offering to be accepted by Krishna in 9.26?",
+          "options": [
+            "The purity of the object offered",
+            "The devotion (Bhakti) of the person offering it",
+            "The quantity of the offering"
+          ],
+          "correct": 1
+        }
+      }
+    }
+  }
+}
