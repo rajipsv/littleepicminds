@@ -52,11 +52,29 @@ router.post('/register', async (req, res) => {
     );
 
     const user = newUser.rows[0];
+    if (!user) {
+      throw new Error('User creation failed: No data returned from database');
+    }
+    
     console.log('User created successfully:', user.id);
     const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
     const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
 
-    res.status(201).json({ token, user: { ...user, completed: [] } });
+    return res.status(201).json({ 
+      token, 
+      user: { 
+        id: user.id,
+        username: user.username,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        is_premium: user.is_premium,
+        level: user.level,
+        age: user.age,
+        grade: user.grade,
+        completed: [] 
+      } 
+    });
   } catch (error) {
     console.error('Registration error detail:', error);
     res.status(500).json({ 

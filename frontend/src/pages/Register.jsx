@@ -19,8 +19,8 @@ const Register = () => {
       await register(username, email, password, age, grade);
       navigate('/');
     } catch (err) {
-      const errMsg = err.response?.data?.error;
-      setError(typeof errMsg === 'string' ? errMsg : (errMsg?.message || 'Failed to register'));
+      const errMsg = err.response?.data?.error || err.response?.data?.message || err.message;
+      setError(errMsg);
     }
   };
 
