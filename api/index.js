@@ -21,7 +21,7 @@ const db = {
 const JWT_SECRET = process.env.JWT_SECRET || 'littleEpicMinds_prod_secret_2026';
 
 // --- DATA LOADING ---
-let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: [] };
+let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: {} };
 try {
   data = require('./data');
 } catch (e) {
@@ -32,69 +32,47 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// --- HELPERS ---
-function getLevelFromAge(age) {
-  if (!age) return 'seeds';
-  const a = parseInt(age);
-  if (isNaN(a) || a <= 7) return 'seeds';
-  if (a <= 10) return 'seekers';
-  return 'warriors';
-}
-
 // --- ROUTES ---
 
-// Health & Test
-app.get('/api/health', (req, res) => res.send('API_OK_UNIFIED_V2'));
-app.get('/api/test', (req, res) => {
-  res.json({ 
-    has_db: !!pool, 
-    shloka_count: Object.keys(data.shlokas || {}).length,
-    shloka_keys: Object.keys(data.shlokas || {}).slice(0, 5),
-    hanuman_count: Object.keys(data.hanumanChalisa || {}).length,
-    chapters_count: (data.chapters || []).length
-  });
-});
-
-// AUTH: Register
+// AUTH
 app.post('/api/auth/register', async (req, res) => {
   try {
-    const { username, email, password, name, age, grade, role } = req.body;
-    const level = getLevelFromAge(age);
-    const userExists = await db.query('SELECT * FROM users WHERE username = $1 OR email = $2', [username, email]);
-    if (userExists.rows.length > 0) return res.status(400).json({ error: 'User already exists' });
-    const salt = await bcrypt.genSalt(10);
-    const passwordHash = await bcrypt.hash(password, salt);
-    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
-    const newUser = await db.query(
-      'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING *',
-      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student']
+    const { username, email, password, age, grade } = req.body;
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const result = await db.query(
+      'INSERT INTO users (username, email, password, age, grade) VALUES ($1, $2, $3, $4, $5) RETURNING id, username, email, is_premium, level',
+      [username, email, hashedPassword, age, grade]
     );
-    const user = newUser.rows[0];
-    const token = jwt.sign({ user: { id: user.id, role: user.role, level: user.level } }, JWT_SECRET, { expiresIn: '24h' });
-    res.status(201).json({ token, user: { ...user, completed: [] } });
+    const user = result.rows[0];
+    const token = jwt.sign({ user: { id: user.id, username: user.username } }, JWT_SECRET);
+    res.status(201).json({ token, user });
   } catch (err) {
     res.status(500).send(err.message);
   }
 });
 
-// AUTH: Login
 app.post('/api/auth/login', async (req, res) => {
   try {
-    const { username, email, password } = req.body;
-    const loginId = username || email;
-    if ((loginId === 'admin' || loginId === 'gen.rajeswari@gmail.com') && password === 'admin123') {
-       const user = { id: 0, username: 'admin', role: 'admin', is_premium: true, level: 'warriors', completed: [] };
-       const token = jwt.sign({ user: { id: 0, role: 'admin' } }, JWT_SECRET, { expiresIn: '24h' });
-       return res.json({ token, user });
-    }
-    const userRes = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [loginId]);
-    if (userRes.rows.length === 0) return res.status(400).json({ error: 'Invalid credentials' });
-    const user = userRes.rows[0];
-    const isMatch = await bcrypt.compare(password, user.password_hash);
-    if (!isMatch) return res.status(400).json({ error: 'Invalid credentials' });
-    const progress = await db.query('SELECT * FROM journal_entries WHERE user_id = $1', [user.id]);
-    const token = jwt.sign({ user: { id: user.id, role: user.role, level: user.level } }, JWT_SECRET, { expiresIn: '24h' });
-    res.json({ token, user: { ...user, completed: progress.rows } });
+    const { username, password } = req.body;
+    const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [username]);
+    if (result.rows.length === 0) return res.status(400).send('Invalid credentials');
+    const user = result.rows[0];
+    const isMatch = await bcrypt.compare(password, user.password);
+    if (!isMatch) return res.status(400).send('Invalid credentials');
+    const token = jwt.sign({ user: { id: user.id, username: user.username } }, JWT_SECRET);
+    const { password: _, ...userWithoutPassword } = user;
+    res.json({ token, user: userWithoutPassword });
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+app.post('/api/auth/upgrade', async (req, res) => {
+  try {
+    const { username } = req.body;
+    const result = await db.query('UPDATE users SET is_premium = true WHERE username = $1 RETURNING *', [username]);
+    if (result.rows.length === 0) return res.status(404).send('User not found');
+    res.json(result.rows[0]);
   } catch (err) {
     res.status(500).send(err.message);
   }
@@ -104,7 +82,7 @@ app.post('/api/auth/login', async (req, res) => {
 app.get('/api/verses/chapters', (req, res) => {
   res.json({
     chapters: data.chapters || [],
-    levels: data.levels || [],
+    levels: data.levels || {},
   });
 });
 
@@ -143,15 +121,19 @@ app.get('/api/verses', (req, res) => {
 app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
   try {
     const { scripture, chapter, level } = req.params;
-    if (scripture !== 'gita') return res.status(404).send('No evaluations for this scripture');
+    let evals = data.evaluations || {};
     
-    const evals = data.evaluations || {};
-    // Try both string and number lookup
+    if (scripture === 'hanuman') {
+      const hData = evals['hanuman'] || evals['1'];
+      const levelData = hData ? (hData[level] || hData['seeds']) : null;
+      if (!levelData) return res.status(404).send('Hanuman evaluation not found');
+      return res.json(levelData);
+    }
+
     const chData = evals[chapter] || evals[parseInt(chapter)];
-    
     if (!chData) return res.status(404).send(`No quiz found for Chapter ${chapter}`);
     
-    const levelData = chData[level] || chData['seeds']; // Fallback to seeds if level not found
+    const levelData = chData[level] || chData['seeds'];
     if (!levelData) return res.status(404).send(`No quiz found for level ${level}`);
     
     res.json(levelData);
@@ -183,25 +165,21 @@ app.post('/api/journal', async (req, res) => {
     if (userResult.rows.length === 0) return res.status(404).send('User not found');
     const userId = userResult.rows[0].id;
     
-    // Save to Journal (for detailed thoughts)
     await db.query(
       'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
       [userId, scripture, chapter_number, verse_id, question, response]
-    ).catch(e => console.error('Journal entry failed:', e.message));
+    ).catch(e => console.error('Journal fail:', e.message));
 
-    // Save to Progress (for mastery counts)
-    // verse_id is often "1.1", "1.2". We extract the shloka number.
     let shlokaNum = parseInt(verse_id);
     if (typeof verse_id === 'string' && verse_id.includes('.')) {
       const parts = verse_id.split('.');
       shlokaNum = parseInt(parts[parts.length - 1]);
     }
     
-    // Check if progress exists to avoid duplicates or updates
     await db.query(
       'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
       [userId, chapter_number, shlokaNum, question, response]
-    ).catch(e => console.warn('Progress insert failed:', e.message));
+    ).catch(e => console.warn('Progress fail:', e.message));
 
     res.status(201).send('Saved');
   } catch (err) {
@@ -209,24 +187,12 @@ app.post('/api/journal', async (req, res) => {
   }
 });
 
-// EVALUATIONS: Progress & Submission
 app.get('/api/evaluations/progress/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
-    
-    // Get Quiz Results
-    const quizResult = await db.query(
-      'SELECT chapter_id, score, best_score, attempts FROM evaluations WHERE user_id = $1',
-      [userId]
-    );
+    const quizResult = await db.query('SELECT chapter_id, best_score, attempts FROM evaluations WHERE user_id = $1', [userId]);
+    const verseResult = await db.query('SELECT chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY chapter', [userId]);
 
-    // Get Verse Completion (from progress table)
-    const verseResult = await db.query(
-      'SELECT chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY chapter',
-      [userId]
-    );
-
-    // Merge data
     const progress = (data.chapters || []).map(ch => {
       const q = quizResult.rows.find(r => r.chapter_id == ch.id);
       const v = verseResult.rows.find(r => r.chapter == ch.id);
@@ -238,7 +204,6 @@ app.get('/api/evaluations/progress/:userId', async (req, res) => {
         attempts: q ? q.attempts : 0
       };
     });
-
     res.json({ progress });
   } catch (err) {
     res.status(500).send(err.message);
@@ -247,22 +212,14 @@ app.get('/api/evaluations/progress/:userId', async (req, res) => {
 
 app.post('/api/evaluations', async (req, res) => {
   try {
-    const { scripture, chapter_number, score } = req.body;
-    // Extract userId from token (if middleware exists) or just assume auth handled it
-    // For now, let's keep it simple as the frontend might not be sending userId in body
-    // Actually, EvaluationQuiz.jsx sends { scripture, chapter_number, score }
-    // We need the userId. I'll check the token.
+    const { chapter_number, score } = req.body;
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).send('Unauthorized');
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
-    const existing = await db.query(
-      'SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2',
-      [userId, chapter_number]
-    );
-
+    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2', [userId, chapter_number]);
     if (existing.rows.length > 0) {
       const current = existing.rows[0];
       const newBest = Math.max(parseFloat(current.best_score), score);
@@ -279,6 +236,27 @@ app.post('/api/evaluations', async (req, res) => {
     res.status(200).send('Score saved');
   } catch (err) {
     res.status(500).send(err.message);
+  }
+});
+
+app.get('/api/test', async (req, res) => {
+  try {
+    let dbStatus = false;
+    try {
+      const result = await db.query('SELECT 1');
+      dbStatus = !!result;
+    } catch (e) {}
+
+    res.json({
+      has_db: dbStatus,
+      shloka_count: Object.keys(data.shlokas || {}).length,
+      hanuman_count: Object.keys(data.hanumanChalisa || {}).length,
+      chapters_count: (data.chapters || []).length,
+      evaluations_count: Object.keys(data.evaluations || {}).length,
+      has_jwt: !!jwt
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
   }
 });
 
