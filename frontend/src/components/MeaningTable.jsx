@@ -23,10 +23,11 @@ const MeaningTable = ({ wordByWord }) => {
 
   if (!wordByWord || wordByWord.length === 0) return null;
 
-  const handlePlay = (word, index) => {
+  const handlePlay = (word, meaning, index) => {
     setPlayingIndex(index);
     window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(word);
+    // Speak: "word ... meaning" as one sentence
+    const utterance = new SpeechSynthesisUtterance(`${word}. ${meaning}`);
     const voices = window.speechSynthesis.getVoices();
     const preferred = voices.find(v =>
       v.lang.includes('hi') || v.lang.includes('sa') || v.lang.includes('IN')
@@ -61,8 +62,8 @@ const MeaningTable = ({ wordByWord }) => {
               <tr key={index} className="hover:bg-white/10 transition-colors">
                 <td className="px-3 py-3">
                   <button
-                    onClick={() => handlePlay(word, index)}
-                    title={`Hear "${word}"`}
+                    onClick={() => handlePlay(word, meaning, index)}
+                    title="Hear word and meaning"
                     className={`w-8 h-8 rounded-full flex items-center justify-center transition-all border ${
                       isPlaying
                         ? 'bg-lem-accent border-lem-accent text-lem-dark scale-110 shadow-[0_0_10px_rgba(253,160,133,0.4)]'
