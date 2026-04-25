@@ -178,28 +178,53 @@ router.get('/journal/:username', async (req, res) => {
 router.post('/journal', async (req, res) => {
   try {
     const { username, scripture, chapter_number, verse_id, question, response } = req.body;
+    console.log(`Saving journal for ${username}: Ch ${chapter_number}, Verse ${verse_id}`);
+
     const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
     if (userResult.rows.length === 0) return res.status(404).send('User not found');
     const userId = userResult.rows[0].id;
     
-    await db.query(
-      'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-      [userId, scripture, chapter_number, verse_id, question, response]
-    ).catch(e => console.error('Journal fail:', e.message));
-
+    const chNum = parseInt(chapter_number);
     let shlokaNum = parseInt(verse_id);
     if (typeof verse_id === 'string' && verse_id.includes('.')) {
       const parts = verse_id.split('.');
       shlokaNum = parseInt(parts[parts.length - 1]);
     }
-    
+
+    // 1. Save to Journal Table
     await db.query(
-      'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
-      [userId, chapter_number, shlokaNum, question, response]
-    ).catch(e => console.warn('Progress fail:', e.message));
+      'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
+      [userId, scripture, chNum, verse_id, question, response]
+    ).catch(e => console.error('Journal table fail:', e.message));
+
+    // 2. Save to Progress Table (Self-healing upsert)
+    // We use a manual check then insert to be safe if ON CONFLICT is missing
+    try {
+      const existing = await db.query(
+        'SELECT id FROM progress WHERE user_id = $1 AND chapter = $2 AND shloka = $3',
+        [userId, chNum, shlokaNum]
+      );
+      
+      if (existing.rows.length === 0) {
+        await db.query(
+          'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5)',
+          [userId, chNum, shlokaNum, question, response]
+        );
+      } else {
+        await db.query(
+          'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
+          [question, response, existing.rows[0].id]
+        );
+      }
+    } catch (e) {
+      console.error('Progress table fail:', e.message);
+      // Fallback: try create table if it failed
+      await db.query(`CREATE TABLE IF NOT EXISTS progress (id SERIAL PRIMARY KEY, user_id INTEGER, chapter INTEGER, shloka INTEGER, activity_question TEXT, activity_response TEXT, completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`).catch(() => {});
+    }
 
     res.status(201).send('Saved');
   } catch (err) {
+    console.error('Final Journal error:', err.message);
     res.status(500).send(err.message);
   }
 });
