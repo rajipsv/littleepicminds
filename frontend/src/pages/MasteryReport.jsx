@@ -28,10 +28,7 @@ const MasteryReport = () => {
 
   const totalMastered = progress.reduce((acc, curr) => acc + curr.verses_completed, 0);
   const totalShlokas = progress.reduce((acc, curr) => acc + curr.total_verses, 0);
-  const chaptersWithQuiz = progress.filter(p => p.best_score !== null && p.best_score > 0);
-  const avgScore = chaptersWithQuiz.length > 0 
-    ? Math.round(chaptersWithQuiz.reduce((acc, curr) => acc + curr.best_score, 0) / chaptersWithQuiz.length)
-    : 0;
+
 
   return (
     <div className="min-h-screen bg-lem-dark text-white p-6 md:p-12">
@@ -49,7 +46,7 @@ const MasteryReport = () => {
         </header>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           <div className="glass-card p-8 border-l-4 border-l-lem-accent">
             <div className="flex items-center gap-4 mb-4">
               <div className="w-12 h-12 bg-lem-accent/20 rounded-2xl flex items-center justify-center text-lem-accent">
@@ -63,17 +60,7 @@ const MasteryReport = () => {
             </div>
           </div>
 
-          <div className="glass-card p-8 border-l-4 border-l-green-400">
-            <div className="flex items-center gap-4 mb-4">
-              <div className="w-12 h-12 bg-green-400/20 rounded-2xl flex items-center justify-center text-green-400">
-                <TrendingUp size={24} />
-              </div>
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{isTe ? "సగటు స్కోరు" : "Average Accuracy"}</span>
-            </div>
-            <div className="flex items-baseline gap-2">
-              <span className="text-5xl font-black text-white">{chaptersWithQuiz.length > 0 ? `${avgScore}%` : '—'}</span>
-            </div>
-          </div>
+
 
           <div className="glass-card p-8 border-l-4 border-l-blue-400">
             <div className="flex items-center gap-4 mb-4">
@@ -103,7 +90,7 @@ const MasteryReport = () => {
                 <tr>
                   <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "అధ్యాయం" : "Chapter"}</th>
                   <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "పురోగతి" : "Progress"}</th>
-                  <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "ఉత్తమ స్కోరు" : "Best Score"}</th>
+
 
                   <th className="px-6 py-4 text-right"></th>
                 </tr>
@@ -111,7 +98,7 @@ const MasteryReport = () => {
               <tbody className="divide-y divide-lem-glass-border">
                 {Array.from({ length: 18 }, (_, i) => i + 1).map(num => {
                   const chProg = progress.find(p => p.chapter_number == num);
-                  const isCompleted = chProg && chProg.best_score >= 70;
+                  const isCompleted = chProg && chProg.verses_completed >= (chProg.total_verses || 47);
                   
                   return (
                     <tr key={num} className="hover:bg-white/5 transition-colors">
@@ -137,9 +124,7 @@ const MasteryReport = () => {
                           </div>
                         </div>
                       </td>
-                      <td className="px-6 py-4 font-black text-white">
-                        {chProg && chProg.best_score > 0 ? `${parseFloat(chProg.best_score).toFixed(0)}%` : '—'}
-                      </td>
+
 
                       <td className="px-6 py-4 text-right">
                         <Link 
