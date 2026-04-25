@@ -7,8 +7,12 @@ const versesRoutes = require('./routes/verses');
 const journalRoutes = require('./routes/journal');
 const evaluationsRoutes = require('./routes/evaluations');
 const ttsRoutes = require('./routes/tts');
+const db = require('./db');
 
 const app = express();
+
+// Auto-run migrations on startup
+db.ensureTables();
 
 // Middleware
 app.use(cors());

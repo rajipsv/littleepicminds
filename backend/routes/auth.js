@@ -44,10 +44,11 @@ router.post('/register', async (req, res) => {
     const passwordHash = await bcrypt.hash(password, salt);
 
     // Insert user
-    console.log('Inserting into DB with level:', level);
+    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+    console.log('Inserting into DB with level:', level, 'age:', finalAge);
     const newUser = await db.query(
       'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING id, username, email, name, role, is_premium, level, age, grade',
-      [username, email, passwordHash, name || username, age ? parseInt(age) : null, grade || null, level, role || 'student']
+      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student']
     );
 
     const user = newUser.rows[0];
@@ -56,9 +57,13 @@ router.post('/register', async (req, res) => {
     const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
 
     res.status(201).json({ token, user: { ...user, completed: [] } });
-  } catch (err) {
-    console.error('Register error:', err.message);
-    res.status(500).json({ error: 'Server error' });
+  } catch (error) {
+    console.error('Registration error detail:', error);
+    res.status(500).json({ 
+      error: 'Server error', 
+      message: error.message,
+      stack: process.env.NODE_ENV === 'production' ? null : error.stack 
+    });
   }
 });
 
