@@ -26,7 +26,9 @@ const MasteryReport = () => {
 
   if (!user) return <div className="text-center p-20 text-white font-bold text-2xl">Please login to see your mastery report.</div>;
 
-  const totalMastered = progress.reduce((acc, curr) => acc + curr.verses_completed, 0);
+  const totalMastered = progress.reduce((acc, curr) => {
+    return acc + (curr.best_score >= 70 ? curr.total_verses : curr.verses_completed);
+  }, 0);
   const totalShlokas = progress.reduce((acc, curr) => acc + curr.total_verses, 0);
   const chaptersWithQuiz = progress.filter(p => p.best_score !== null && p.best_score > 0);
   const avgScore = chaptersWithQuiz.length > 0 
@@ -113,6 +115,9 @@ const MasteryReport = () => {
                   const chProg = progress.find(p => p.chapter_number == num);
                   const isCompleted = chProg && chProg.best_score >= 70;
                   
+                  const displayVersesCompleted = isCompleted ? (chProg?.total_verses || 47) : (chProg?.verses_completed || 0);
+                  const displayProgressPercent = isCompleted ? 100 : Math.round((displayVersesCompleted / (chProg?.total_verses || 1)) * 100);
+                  
                   return (
                     <tr key={num} className="hover:bg-white/5 transition-colors">
                       <td className="px-6 py-4">
@@ -126,19 +131,19 @@ const MasteryReport = () => {
                       <td className="px-6 py-4">
                         <div className="flex flex-col gap-1">
                           <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter">
-                            <span>{chProg?.verses_completed || 0} / {chProg?.total_verses || 47}</span>
-                            <span>{Math.round(((chProg?.verses_completed || 0) / (chProg?.total_verses || 1)) * 100)}%</span>
+                            <span>{displayVersesCompleted} / {chProg?.total_verses || 47}</span>
+                            <span>{displayProgressPercent}%</span>
                           </div>
                           <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
                             <div 
                               className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
-                              style={{ width: `${Math.round(((chProg?.verses_completed || 0) / (chProg?.total_verses || 1)) * 100)}%` }}
+                              style={{ width: `${displayProgressPercent}%` }}
                             />
                           </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 font-black text-white">
-                        {chProg && chProg.best_score > 0 ? `${chProg.best_score}%` : '—'}
+                        {chProg && chProg.best_score > 0 ? `${parseFloat(chProg.best_score).toFixed(0)}%` : '—'}
                       </td>
 
                       <td className="px-6 py-4 text-right">
