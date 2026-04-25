@@ -23,13 +23,7 @@ router.post('/register', async (req, res) => {
     const level = getLevelFromAge(age);
 
     if (!process.env.DATABASE_URL) {
-      // Dev mode: return mock user
-      const payload = { user: { id: 1, role: role || 'student', is_premium: false, level } };
-      const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
-      return res.status(201).json({
-        token,
-        user: { id: 1, username, email, name: name || username, role: role || 'student', is_premium: false, level, age, grade, completed: [] }
-      });
+      throw new Error('DATABASE_URL environment variable is missing in Vercel settings!');
     }
 
     // Check if user exists
@@ -100,9 +94,7 @@ router.post('/login', async (req, res) => {
     }
 
     if (!process.env.DATABASE_URL) {
-      const payload = { user: { id: 1, role: 'student', is_premium: false, level: 'seeds' } };
-      const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
-      return res.json({ token, user: { id: 1, username: loginId, role: 'student', is_premium: false, level: 'seeds', completed: [] } });
+      throw new Error('DATABASE_URL environment variable is missing in Vercel settings!');
     }
 
     // Find user by username or email
