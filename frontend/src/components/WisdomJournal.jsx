@@ -54,7 +54,7 @@ const WisdomJournal = ({ verse, onComplete }) => {
   };
 
   return (
-    <div className="bg-white/5 border border-lem-accent border-dashed p-6 rounded-2xl mt-4">
+    <div className="bg-black/20 border border-lem-accent/40 border-dashed p-6 rounded-2xl mt-4">
       <div className="flex items-center gap-3 mb-4">
         <div className="w-10 h-10 rounded-full bg-lem-accent/20 flex items-center justify-center text-lem-accent">
           <BookOpen size={20} />
@@ -65,7 +65,7 @@ const WisdomJournal = ({ verse, onComplete }) => {
       <p className="text-white font-medium mb-4 text-lg">{prompt}</p>
       
       <textarea
-        className="w-full bg-lem-dark/50 border border-lem-glass-border rounded-xl p-4 text-white placeholder-gray-500 focus:outline-none focus:border-lem-accent transition-colors resize-none"
+        className="w-full bg-[#0a0f1d] border border-lem-accent/30 rounded-xl p-4 text-[#f8fafc] placeholder-gray-500 focus:outline-none focus:border-lem-accent transition-colors resize-none shadow-inner"
         rows="4"
         placeholder={isTe ? "మీ ఆలోచనలను ఇక్కడ రాయండి..." : "Write your thoughts here..."}
         value={response}
