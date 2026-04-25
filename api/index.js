@@ -160,16 +160,32 @@ app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
   }
 });
 
-// JOURNALS
+// JOURNALS & PROGRESS
 app.post('/api/journal', async (req, res) => {
   try {
     const { username, scripture, chapter_number, verse_id, question, response } = req.body;
     const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
     if (userResult.rows.length === 0) return res.status(404).send('User not found');
+    const userId = userResult.rows[0].id;
+    
+    // Save to Journal (for detailed thoughts)
     await db.query(
       'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-      [userResult.rows[0].id, scripture, chapter_number, verse_id, question, response]
+      [userId, scripture, chapter_number, verse_id, question, response]
     );
+
+    // Save to Progress (for mastery counts)
+    // verse_id is often "1.1", "1.2". We extract the shloka number.
+    let shlokaNum = parseInt(verse_id);
+    if (typeof verse_id === 'string' && verse_id.includes('.')) {
+      shlokaNum = parseInt(verse_id.split('.')[1]);
+    }
+    
+    await db.query(
+      'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING',
+      [userId, chapter_number, shlokaNum, question, response]
+    ).catch(e => console.warn('Progress insert failed (might already exist):', e.message));
+
     res.status(201).send('Saved');
   } catch (err) {
     res.status(500).send(err.message);
@@ -187,16 +203,16 @@ app.get('/api/evaluations/progress/:userId', async (req, res) => {
       [userId]
     );
 
-    // Get Verse Completion (from journal entries)
+    // Get Verse Completion (from progress table)
     const verseResult = await db.query(
-      'SELECT chapter_number, COUNT(DISTINCT verse_id) as completed_count FROM journal_entries WHERE user_id = $1 GROUP BY chapter_number',
+      'SELECT chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY chapter',
       [userId]
     );
 
     // Merge data
     const progress = (data.chapters || []).map(ch => {
       const q = quizResult.rows.find(r => r.chapter_id == ch.id);
-      const v = verseResult.rows.find(r => r.chapter_number == ch.id);
+      const v = verseResult.rows.find(r => r.chapter == ch.id);
       return {
         chapter_number: ch.id,
         total_verses: ch.count,
