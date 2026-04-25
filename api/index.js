@@ -93,22 +93,29 @@ app.get('/api/verses', (req, res) => {
       if (verse) {
         const d = data.hanumanChalisa[verse];
         if (!d) return res.status(404).json({ error: 'Verse not found' });
-        return res.json(d);
+        return res.json({ ...d, id: verse });
       }
-      return res.json(data.hanumanChalisa);
+      // Return all Hanuman verses with IDs
+      const hanumanWithIds = {};
+      for (const [key, val] of Object.entries(data.hanumanChalisa || {})) {
+        hanumanWithIds[key] = { ...val, id: key };
+      }
+      return res.json(hanumanWithIds);
     }
     // Gita
     if (chapter && verse) {
       const key = `${chapter}.${verse}`;
       const d = data.shlokas[key];
       if (!d) return res.status(404).json({ error: 'Shloka not found' });
-      return res.json(d);
+      return res.json({ ...d, id: key });
     }
     if (chapter) {
       const chapterShlokas = {};
       const prefix = `${chapter}.`;
       for (const [key, val] of Object.entries(data.shlokas || {})) {
-        if (key.startsWith(prefix)) chapterShlokas[key] = val;
+        if (key.startsWith(prefix)) {
+          chapterShlokas[key] = { ...val, id: key };
+        }
       }
       return res.json(chapterShlokas);
     }
