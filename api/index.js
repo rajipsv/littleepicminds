@@ -177,13 +177,17 @@ router.get('/journal/:username', async (req, res) => {
 
 router.post('/journal', async (req, res) => {
   try {
-    const { username, scripture, chapter_number, verse_id, question, response } = req.body;
-    console.log(`Saving journal for ${username}: Ch ${chapter_number}, Verse ${verse_id}`);
-
-    const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
-    if (userResult.rows.length === 0) return res.status(404).send('User not found');
-    const userId = userResult.rows[0].id;
+    const { scripture, chapter_number, verse_id, question, response } = req.body;
     
+    // Extract userId from token
+    const authHeader = req.headers.authorization;
+    if (!authHeader) return res.status(401).send('Unauthorized');
+    const token = authHeader.split(' ')[1];
+    const decoded = jwt.verify(token, JWT_SECRET);
+    const userId = decoded.user.id;
+    
+    console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
+
     const chNum = parseInt(chapter_number);
     let shlokaNum = parseInt(verse_id);
     if (typeof verse_id === 'string' && verse_id.includes('.')) {
@@ -198,7 +202,6 @@ router.post('/journal', async (req, res) => {
     ).catch(e => console.error('Journal table fail:', e.message));
 
     // 2. Save to Progress Table (Self-healing upsert)
-    // We use a manual check then insert to be safe if ON CONFLICT is missing
     try {
       const existing = await db.query(
         'SELECT id FROM progress WHERE user_id = $1 AND chapter = $2 AND shloka = $3',
@@ -218,8 +221,6 @@ router.post('/journal', async (req, res) => {
       }
     } catch (e) {
       console.error('Progress table fail:', e.message);
-      // Fallback: try create table if it failed
-      await db.query(`CREATE TABLE IF NOT EXISTS progress (id SERIAL PRIMARY KEY, user_id INTEGER, chapter INTEGER, shloka INTEGER, activity_question TEXT, activity_response TEXT, completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP)`).catch(() => {});
     }
 
     res.status(201).send('Saved');
