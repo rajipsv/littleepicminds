@@ -141,11 +141,23 @@ app.get('/api/verses', (req, res) => {
 });
 
 app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
-  const { scripture, chapter, level } = req.params;
-  if (scripture !== 'gita') return res.status(404).send('No evaluations for this scripture');
-  const chData = (data.evaluations || {})[chapter];
-  if (!chData || !chData[level]) return res.status(404).send('Not found');
-  res.json(chData[level]);
+  try {
+    const { scripture, chapter, level } = req.params;
+    if (scripture !== 'gita') return res.status(404).send('No evaluations for this scripture');
+    
+    const evals = data.evaluations || {};
+    // Try both string and number lookup
+    const chData = evals[chapter] || evals[parseInt(chapter)];
+    
+    if (!chData) return res.status(404).send(`No quiz found for Chapter ${chapter}`);
+    
+    const levelData = chData[level] || chData['seeds']; // Fallback to seeds if level not found
+    if (!levelData) return res.status(404).send(`No quiz found for level ${level}`);
+    
+    res.json(levelData);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
 });
 
 // JOURNALS
