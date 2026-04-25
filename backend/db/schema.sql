@@ -1,0 +1,44 @@
+-- littleEpicMinds Database Schema (Neon PostgreSQL)
+
+CREATE TABLE IF NOT EXISTS users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(255) UNIQUE NOT NULL,
+  email VARCHAR(255) UNIQUE NOT NULL,
+  password_hash VARCHAR(255) NOT NULL,
+  name VARCHAR(255),
+  age INT,
+  grade VARCHAR(50),
+  level VARCHAR(50) DEFAULT 'seeds', -- 'seeds', 'seekers', 'warriors'
+  role VARCHAR(50) DEFAULT 'student', -- 'student', 'parent', 'admin'
+  is_premium BOOLEAN DEFAULT FALSE,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS journal_entries (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id),
+  scripture TEXT DEFAULT 'gita',
+  chapter_number INT,
+  verse_id VARCHAR(50),
+  question TEXT,
+  response TEXT,
+  notes TEXT,
+  completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS evaluations (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id),
+  chapter_id INT NOT NULL,
+  score NUMERIC(5,2) DEFAULT 0,
+  best_score NUMERIC(5,2) DEFAULT 0,
+  attempts INT DEFAULT 1,
+  time_taken INT DEFAULT 0,
+  completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  UNIQUE(user_id, chapter_id)
+);
+
+-- Default admin user (password: admin123, bcrypt hash)
+-- You can generate a fresh hash with: node -e "require('bcrypt').hash('admin123',10).then(h=>console.log(h))"
+-- INSERT INTO users (username, email, password_hash, name, role, is_premium, level)
+-- VALUES ('admin', 'gen.rajeswari@gmail.com', '$2b$10$...hash...', 'Hub Admin', 'admin', true, 'warriors');
