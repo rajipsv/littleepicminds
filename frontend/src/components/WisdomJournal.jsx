@@ -10,7 +10,16 @@ const WisdomJournal = ({ verse, onComplete }) => {
   const isTe = currentLang === 'te';
   
   // Extract activity from verse data based on language
-  const activity = isTe ? verse.te?.activity : verse.en?.activity;
+  let activity = isTe ? verse.te?.activity : verse.en?.activity;
+  
+  // Safety check: Replace any 'Draw' or 'Geyandi' (draw in Telugu) with 'Write' for text area
+  if (activity) {
+    activity = activity.replace(/Draw a picture of /gi, "Describe ")
+                       .replace(/Draw a /gi, "Write about a ")
+                       .replace(/Draw /gi, "Write about ")
+                       .replace(/గీయండి/g, "రాయండి");
+  }
+
   const prompt = activity || (isTe ? "ఈ శ్లోకం నుండి మీరు ఏమి నేర్చుకున్నారు?" : "What did you learn from this shloka?");
 
   const handleSubmit = async () => {
