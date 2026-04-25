@@ -8,6 +8,8 @@ const MasteryReport = () => {
   const { user, currentLang } = useAuth();
   const [progress, setProgress] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [userRank, setUserRank] = useState(null);
+  const [totalUsers, setTotalUsers] = useState(null);
   const isTe = currentLang === 'te';
 
   useEffect(() => {
@@ -21,6 +23,15 @@ const MasteryReport = () => {
           console.error(err);
           setLoading(false);
         });
+
+      api.get('/api/leaderboard')
+        .then(res => {
+          const lb = res.data.leaderboard || [];
+          const me = lb.find(r => r.id == user.id);
+          if (me) setUserRank(me.rank);
+          setTotalUsers(res.data.total_users);
+        })
+        .catch(err => console.error('Leaderboard fetch error:', err));
     }
   }, [user]);
 
@@ -67,10 +78,17 @@ const MasteryReport = () => {
               <div className="w-12 h-12 bg-blue-400/20 rounded-2xl flex items-center justify-center text-blue-400">
                 <Award size={24} />
               </div>
-              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{isTe ? "ప్రస్తుత స్థాయి" : "Current Rank"}</span>
+              <span className="text-xs font-black uppercase tracking-widest text-gray-500">{isTe ? "ప్రస్తుత ర్యాంకు" : "Your Rank"}</span>
             </div>
             <div className="flex items-baseline gap-2">
-              <span className="text-3xl font-black text-white capitalize">{user.level || 'Seeds'}</span>
+              {userRank ? (
+                <>
+                  <span className="text-5xl font-black text-white">{userRank}</span>
+                  <span className="text-xl text-gray-600 font-bold">/ {totalUsers}</span>
+                </>
+              ) : (
+                <span className="text-3xl font-black text-gray-500">—</span>
+              )}
             </div>
           </div>
         </div>

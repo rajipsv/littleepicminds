@@ -256,6 +256,32 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
   }
 });
 
+// GET /api/leaderboard — Rank all users by total shlokas completed
+router.get('/leaderboard', async (req, res) => {
+  try {
+    const result = await db.query(`
+      SELECT u.id, u.username, u.name, u.level,
+        COUNT(DISTINCT CONCAT(p.chapter, '-', p.shloka)) as total_completed
+      FROM users u
+      LEFT JOIN progress p ON p.user_id = u.id
+      WHERE u.role = 'student'
+      GROUP BY u.id, u.username, u.name, u.level
+      ORDER BY total_completed DESC
+    `);
+    const leaderboard = result.rows.map((row, idx) => ({
+      rank: idx + 1,
+      id: row.id,
+      username: row.username,
+      name: row.name,
+      level: row.level,
+      total_completed: parseInt(row.total_completed)
+    }));
+    res.json({ leaderboard, total_users: leaderboard.length });
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 router.post('/evaluations', async (req, res) => {
   try {
     const { chapter_number, score } = req.body;
