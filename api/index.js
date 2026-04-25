@@ -293,6 +293,16 @@ router.get('/test', async (req, res) => {
 
       // BOOTSTRAP TABLES (Self-healing)
       await db.query(`
+        CREATE TABLE IF NOT EXISTS journal_entries (
+          id SERIAL PRIMARY KEY,
+          user_id INTEGER REFERENCES users(id),
+          scripture VARCHAR,
+          chapter_number INTEGER,
+          verse_id VARCHAR,
+          question TEXT,
+          response TEXT,
+          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
         CREATE TABLE IF NOT EXISTS progress (
           id SERIAL PRIMARY KEY,
           user_id INTEGER REFERENCES users(id),
