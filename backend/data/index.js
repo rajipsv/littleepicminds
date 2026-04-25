@@ -4,7 +4,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const os = require('os');
+const vm = require('vm');
 
 const DATA_DIR = __dirname;
 
@@ -22,27 +22,17 @@ function loadJsDataFile(filename, globalVarName) {
   let code = fs.readFileSync(filePath, 'utf-8');
   code = code.replace(/[\u200B\u200C\u200D\uFEFF]/g, '');
   
-  // Create a temp wrapper file that:
-  // 1. Sets up a fake `window` global
-  // 2. Evaluates the original code
-  // 3. Exports the result
-  const tmpDir = os.tmpdir();
-  const tmpFile = path.join(tmpDir, `_lem_loader_${Date.now()}_${Math.random().toString(36).slice(2)}.js`);
-  
-  const wrapper = `
-    const window = {};
-    ${code}
-    module.exports = window["${globalVarName}"];
-  `;
-  
-  fs.writeFileSync(tmpFile, wrapper, 'utf-8');
+  // Create a sandbox with a fake window object
+  const sandbox = { window: {} };
+  vm.createContext(sandbox);
   
   try {
-    const result = require(tmpFile);
-    return result;
-  } finally {
-    // Cleanup temp file
-    try { fs.unlinkSync(tmpFile); } catch(e) {}
+    // Run the code in the sandbox
+    vm.runInContext(code, sandbox);
+    return sandbox.window[globalVarName];
+  } catch (err) {
+    console.error(`Error executing JS data file ${filename}:`, err.message);
+    throw err;
   }
 }
 
