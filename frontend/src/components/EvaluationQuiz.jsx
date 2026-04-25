@@ -41,7 +41,9 @@ const EvaluationQuiz = ({ scripture, chapter, onComplete }) => {
         }
       }
     } catch (err) {
-      setError(isTe ? "క్విజ్ లోడ్ చేయడంలో విఫలమైంది." : "Failed to load quiz.");
+      const errMsg = err.response?.data?.error;
+      const strError = typeof errMsg === 'string' ? errMsg : (errMsg?.message || (isTe ? "క్విజ్ లోడ్ చేయడంలో విఫలమైంది." : "Failed to load quiz."));
+      setError(strError);
     } finally {
       setLoading(false);
     }
