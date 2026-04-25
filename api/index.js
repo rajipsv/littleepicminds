@@ -259,7 +259,7 @@ router.post('/evaluations', async (req, res) => {
 router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;
-    let tablesCreated = false;
+    let tablesReady = false;
     
     try {
       const result = await db.query('SELECT 1');
@@ -276,6 +276,11 @@ router.get('/test', async (req, res) => {
           activity_response TEXT,
           completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
+      `);
+      // Add constraint if missing
+      await db.query(`ALTER TABLE progress ADD CONSTRAINT unique_user_shloka UNIQUE (user_id, chapter, shloka)`).catch(e => {});
+      
+      await db.query(`
         CREATE TABLE IF NOT EXISTS evaluations (
           id SERIAL PRIMARY KEY,
           user_id INTEGER REFERENCES users(id),
@@ -286,17 +291,23 @@ router.get('/test', async (req, res) => {
           completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
       `);
-      tablesCreated = true;
+      tablesReady = true;
     } catch (e) { console.error('DB Bootstrap Error:', e.message); }
+
+    // Check progress counts for a sample user (id 4)
+    let sampleProgress = [];
+    try {
+      const pRes = await db.query('SELECT * FROM progress LIMIT 5');
+      sampleProgress = pRes.rows;
+    } catch(e) {}
 
     res.json({
       has_db: dbStatus,
-      tables_ready: tablesCreated,
+      tables_ready: tablesReady,
       shloka_count: Object.keys(data.shlokas || {}).length,
-      hanuman_count: Object.keys(data.hanumanChalisa || {}).length,
       chapters_count: (data.chapters || []).length,
-      evaluations_count: Object.keys(data.evaluations || {}).length,
-      has_jwt: !!jwt
+      sample_progress: sampleProgress,
+      evaluations_count: Object.keys(data.evaluations || {}).length
     });
   } catch (err) {
     res.status(500).json({ error: err.message });
