@@ -142,7 +142,7 @@ const EvaluationQuiz = ({ scripture, chapter, onComplete }) => {
         </div>
         
         <h3 className="text-2xl font-bold text-white mb-6 leading-relaxed">
-          {question.question}
+          {isTe ? (question.question_te || question.question) : question.question}
         </h3>
 
         <div className="space-y-3">

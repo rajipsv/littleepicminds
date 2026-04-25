@@ -117,17 +117,23 @@ const VerseViewer = ({ verse, scripture }) => {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 glass-panel p-6 md:p-8 rounded-3xl shadow-xl border-l-4 border-l-lem-accent relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
           <div className="flex-1 z-10">
-            <p className="text-3xl md:text-4xl text-white leading-relaxed flex flex-wrap gap-x-2 drop-shadow-sm font-quicksand font-bold tracking-wide">
-              {sanskritWords.map((word, index) => (
-                <span 
-                  key={index} 
-                  className={`transition-colors duration-200 rounded px-1 ${
-                    index === activeWordIndex ? 'bg-lem-accent text-lem-dark font-black' : ''
-                  }`}
-                >
-                  {word}
-                </span>
-              ))}
+            <p className={`text-3xl md:text-4xl text-white leading-relaxed flex flex-wrap gap-x-2 drop-shadow-sm font-quicksand font-bold tracking-wide ${isTe ? 'telugu-text' : ''}`}>
+              {isTe && verse.telugu_script ? (
+                // Show the full Telugu script if available
+                <span className="w-full whitespace-pre-wrap">{verse.telugu_script}</span>
+              ) : (
+                // Fallback to English transliteration with word highlighting
+                sanskritWords.map((word, index) => (
+                  <span 
+                    key={index} 
+                    className={`transition-colors duration-200 rounded px-1 ${
+                      index === activeWordIndex ? 'bg-lem-accent text-lem-dark font-black' : ''
+                    }`}
+                  >
+                    {word}
+                  </span>
+                ))
+              )}
             </p>
           </div>
           
