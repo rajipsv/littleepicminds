@@ -19,13 +19,20 @@ const ScriptureLayout = () => {
   const [error, setError] = useState('');
   const [showQuiz, setShowQuiz] = useState(false);
   const [activeVerseIndex, setActiveVerseIndex] = useState(0);
+  const [chapterMetadata, setChapterMetadata] = useState([]);
 
   // Generate chapters based on scripture
-  const chapterMetadata = data.chapters || [];
   const activeChapterData = chapterMetadata.find(c => c.id === activeChapter);
   const totalVersesInChapter = activeChapterData ? activeChapterData.count : (scripture === 'gita' ? 47 : 1);
   const chapterCount = scripture === 'gita' ? 18 : 1;
   const chapters = Array.from({ length: chapterCount }, (_, i) => i + 1);
+
+  useEffect(() => {
+    // Fetch chapter metadata once
+    api.get('/api/verses/chapters').then(res => {
+      setChapterMetadata(res.data.chapters || []);
+    }).catch(err => console.error('Failed to load metadata:', err));
+  }, []);
 
   useEffect(() => {
     setShowQuiz(false);
