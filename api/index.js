@@ -238,13 +238,39 @@ router.post('/evaluations', async (req, res) => {
 router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;
+    let tablesCreated = false;
+    
     try {
       const result = await db.query('SELECT 1');
       dbStatus = !!result;
-    } catch (e) {}
+
+      // BOOTSTRAP TABLES (Self-healing)
+      await db.query(`
+        CREATE TABLE IF NOT EXISTS progress (
+          id SERIAL PRIMARY KEY,
+          user_id INTEGER REFERENCES users(id),
+          chapter INTEGER,
+          shloka INTEGER,
+          activity_question TEXT,
+          activity_response TEXT,
+          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE TABLE IF NOT EXISTS evaluations (
+          id SERIAL PRIMARY KEY,
+          user_id INTEGER REFERENCES users(id),
+          chapter_id INTEGER,
+          score DECIMAL,
+          best_score DECIMAL,
+          attempts INTEGER DEFAULT 1,
+          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+      `);
+      tablesCreated = true;
+    } catch (e) { console.error('DB Bootstrap Error:', e.message); }
 
     res.json({
       has_db: dbStatus,
+      tables_ready: tablesCreated,
       shloka_count: Object.keys(data.shlokas || {}).length,
       hanuman_count: Object.keys(data.hanumanChalisa || {}).length,
       chapters_count: (data.chapters || []).length,
