@@ -21,6 +21,9 @@ const ScriptureLayout = () => {
   const [activeVerseIndex, setActiveVerseIndex] = useState(0);
 
   // Generate chapters based on scripture
+  const chapterMetadata = data.chapters || [];
+  const activeChapterData = chapterMetadata.find(c => c.id === activeChapter);
+  const totalVersesInChapter = activeChapterData ? activeChapterData.count : (scripture === 'gita' ? 47 : 1);
   const chapterCount = scripture === 'gita' ? 18 : 1;
   const chapters = Array.from({ length: chapterCount }, (_, i) => i + 1);
 
@@ -170,23 +173,37 @@ const ScriptureLayout = () => {
                       onChange={(e) => setActiveVerseIndex(Number(e.target.value))}
                       className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
                     >
-                      {verses.map((verse, index) => {
-                        const verseNum = verse.verse || verse.id || index + 1;
-                        return (
-                          <option key={verse.id || index} value={index}>
-                            {scripture === 'hanuman' ? 'Verse' : 'Shloka'} {verseNum}
-                          </option>
-                        );
-                      })}
+                      {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => (
+                        <option key={num} value={num - 1}>
+                          {scripture === 'hanuman' ? 'Verse' : 'Shloka'} {num}
+                        </option>
+                      ))}
                     </select>
                   </div>
 
-                  {/* Render ONLY the active verse */}
-                  {verses[activeVerseIndex] && (
-                    <div className="animate-fade-in">
-                      <VerseViewer key={verses[activeVerseIndex].id || activeVerseIndex} verse={verses[activeVerseIndex]} scripture={scripture} />
-                    </div>
-                  )}
+                  {/* Render the active verse or a placeholder */}
+                  {(() => {
+                    const activeVerse = verses.find(v => {
+                      const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
+                      return parseInt(vNum) === (activeVerseIndex + 1);
+                    });
+
+                    if (activeVerse) {
+                      return (
+                        <div className="animate-fade-in">
+                          <VerseViewer key={activeVerse.id || activeVerseIndex} verse={activeVerse} scripture={scripture} />
+                        </div>
+                      );
+                    } else {
+                      return (
+                        <div className="glass-card p-12 text-center border-dashed border-2 border-lem-glass-border opacity-60">
+                           <BookOpen size={48} className="mx-auto text-gray-500 mb-4" />
+                           <h3 className="text-2xl font-bold text-white mb-2">Wisdom Coming Soon</h3>
+                           <p className="text-gray-400">Our AI engine is currently preparing the child-friendly explanation for Shloka {activeVerseIndex + 1}. Check back shortly!</p>
+                        </div>
+                      );
+                    }
+                  })()}
                   
                   <div className="flex justify-center mt-12 mb-8 border-t border-lem-glass-border pt-8">
                     <button 
