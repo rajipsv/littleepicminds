@@ -32,10 +32,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// --- ROUTES ---
+// --- ROUTER SETUP ---
+// We use a router to handle both /api/* and /* paths for Vercel compatibility
+const router = express.Router();
 
 // AUTH
-app.post('/api/auth/register', async (req, res) => {
+router.post('/auth/register', async (req, res) => {
   try {
     const { username, email, password, age, grade } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -51,7 +53,7 @@ app.post('/api/auth/register', async (req, res) => {
   }
 });
 
-app.post('/api/auth/login', async (req, res) => {
+router.post('/auth/login', async (req, res) => {
   try {
     const { username, password } = req.body;
     const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [username]);
@@ -67,26 +69,15 @@ app.post('/api/auth/login', async (req, res) => {
   }
 });
 
-app.post('/api/auth/upgrade', async (req, res) => {
-  try {
-    const { username } = req.body;
-    const result = await db.query('UPDATE users SET is_premium = true WHERE username = $1 RETURNING *', [username]);
-    if (result.rows.length === 0) return res.status(404).send('User not found');
-    res.json(result.rows[0]);
-  } catch (err) {
-    res.status(500).send(err.message);
-  }
-});
-
-// VERSES
-app.get('/api/verses/chapters', (req, res) => {
+// VERSES & CHAPTERS
+router.get('/verses/chapters', (req, res) => {
   res.json({
     chapters: data.chapters || [],
     levels: data.levels || {},
   });
 });
 
-app.get('/api/verses', (req, res) => {
+router.get('/verses', (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;
     if (scripture === 'hanuman') {
@@ -95,14 +86,12 @@ app.get('/api/verses', (req, res) => {
         if (!d) return res.status(404).json({ error: 'Verse not found' });
         return res.json({ ...d, id: verse });
       }
-      // Return all Hanuman verses with IDs
       const hanumanWithIds = {};
       for (const [key, val] of Object.entries(data.hanumanChalisa || {})) {
         hanumanWithIds[key] = { ...val, id: key };
       }
       return res.json(hanumanWithIds);
     }
-    // Gita
     if (chapter && verse) {
       const key = `${chapter}.${verse}`;
       const d = data.shlokas[key];
@@ -125,7 +114,7 @@ app.get('/api/verses', (req, res) => {
   }
 });
 
-app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
+router.get('/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
   try {
     const { scripture, chapter, level } = req.params;
     let evals = data.evaluations || {};
@@ -150,7 +139,7 @@ app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
 });
 
 // JOURNALS & PROGRESS
-app.get('/api/journal/:username', async (req, res) => {
+router.get('/journal/:username', async (req, res) => {
   try {
     const { username } = req.params;
     const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
@@ -165,7 +154,7 @@ app.get('/api/journal/:username', async (req, res) => {
   }
 });
 
-app.post('/api/journal', async (req, res) => {
+router.post('/journal', async (req, res) => {
   try {
     const { username, scripture, chapter_number, verse_id, question, response } = req.body;
     const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
@@ -194,7 +183,7 @@ app.post('/api/journal', async (req, res) => {
   }
 });
 
-app.get('/api/evaluations/progress/:userId', async (req, res) => {
+router.get('/evaluations/progress/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
     const quizResult = await db.query('SELECT chapter_id, best_score, attempts FROM evaluations WHERE user_id = $1', [userId]);
@@ -217,7 +206,7 @@ app.get('/api/evaluations/progress/:userId', async (req, res) => {
   }
 });
 
-app.post('/api/evaluations', async (req, res) => {
+router.post('/evaluations', async (req, res) => {
   try {
     const { chapter_number, score } = req.body;
     const authHeader = req.headers.authorization;
@@ -246,7 +235,7 @@ app.post('/api/evaluations', async (req, res) => {
   }
 });
 
-app.get('/api/test', async (req, res) => {
+router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;
     try {
@@ -266,6 +255,10 @@ app.get('/api/test', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+// MOUNT ROUTER
+app.use('/api', router);
+app.use('/', router); // Also handle root for direct function calls
 
 // Global error handler
 app.use((err, req, res, next) => {
