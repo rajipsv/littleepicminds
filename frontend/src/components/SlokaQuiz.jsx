@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
+import { getLevelFromUser } from '../utils/gradeLevel';
 import { Award, CheckCircle, XCircle, HelpCircle } from 'lucide-react';
 
 const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
@@ -15,7 +16,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   const isTe = currentLang === 'te';
 
   useEffect(() => {
-    const level = user?.level || 'seeds';
+    const level = getLevelFromUser(user);
     api.get(`/api/verses/quiz/${scripture}/${chapter}/${verse}?level=${level}`)
       .then(res => {
         setQuestions(res.data || []);

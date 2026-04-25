@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
+import { getLevelFromUser } from '../utils/gradeLevel';
 import { Award, Target, HelpCircle, CheckCircle, XCircle } from 'lucide-react';
 
 const EvaluationQuiz = ({ scripture, chapter, onComplete }) => {
@@ -23,7 +24,7 @@ const EvaluationQuiz = ({ scripture, chapter, onComplete }) => {
   const fetchQuiz = async () => {
     try {
       // 1. Get Quiz Questions
-      const level = user?.level || 'seeds'; // default to seeds if not logged in
+      const level = getLevelFromUser(user);
       const res = await api.get(`/api/verses/evaluations/${scripture}/${chapter}/${level}`);
       setQuizData(res.data);
 
