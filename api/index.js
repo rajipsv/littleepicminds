@@ -138,6 +138,27 @@ router.get('/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
   }
 });
 
+// Fallback for direct shloka or chapter evaluations
+router.get('/verses/evaluations/:id', (req, res) => {
+  try {
+    const { id } = req.params;
+    let chapter = id;
+    if (id.includes('.')) {
+      chapter = id.split('.')[0];
+    }
+    
+    let evals = data.evaluations || {};
+    const chData = evals[chapter] || evals[parseInt(chapter)];
+    if (!chData) return res.status(404).send(`No quiz found for ${id}`);
+    
+    // Default to seeds if level not specified
+    const levelData = chData['seeds'] || Object.values(chData)[0];
+    res.json(levelData);
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 // JOURNALS & PROGRESS
 router.get('/journal/:username', async (req, res) => {
   try {
