@@ -164,13 +164,71 @@ app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
 app.post('/api/journal', async (req, res) => {
   try {
     const { username, scripture, chapter_number, verse_id, question, response } = req.body;
-    const user = await db.query('SELECT id FROM users WHERE username = $1', [username]);
-    if (user.rows.length === 0) return res.status(404).send('User not found');
+    const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
+    if (userResult.rows.length === 0) return res.status(404).send('User not found');
     await db.query(
       'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-      [user.rows[0].id, scripture, chapter_number, verse_id, question, response]
+      [userResult.rows[0].id, scripture, chapter_number, verse_id, question, response]
     );
     res.status(201).send('Saved');
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+// EVALUATIONS: Progress & Submission
+app.get('/api/evaluations/progress/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const result = await db.query(
+      'SELECT chapter_id, score, best_score, attempts, completed_at FROM evaluations WHERE user_id = $1',
+      [userId]
+    );
+    // Convert to the format the frontend expects
+    const progress = result.rows.map(r => ({
+      scripture: 'gita',
+      chapter_number: r.chapter_id,
+      best_score: r.best_score,
+      attempts: r.attempts
+    }));
+    res.json({ progress });
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
+app.post('/api/evaluations', async (req, res) => {
+  try {
+    const { scripture, chapter_number, score } = req.body;
+    // Extract userId from token (if middleware exists) or just assume auth handled it
+    // For now, let's keep it simple as the frontend might not be sending userId in body
+    // Actually, EvaluationQuiz.jsx sends { scripture, chapter_number, score }
+    // We need the userId. I'll check the token.
+    const authHeader = req.headers.authorization;
+    if (!authHeader) return res.status(401).send('Unauthorized');
+    const token = authHeader.split(' ')[1];
+    const decoded = jwt.verify(token, JWT_SECRET);
+    const userId = decoded.user.id;
+
+    const existing = await db.query(
+      'SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2',
+      [userId, chapter_number]
+    );
+
+    if (existing.rows.length > 0) {
+      const current = existing.rows[0];
+      const newBest = Math.max(parseFloat(current.best_score), score);
+      await db.query(
+        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4',
+        [score, newBest, userId, chapter_number]
+      );
+    } else {
+      await db.query(
+        'INSERT INTO evaluations (user_id, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $3, 1)',
+        [userId, chapter_number, score]
+      );
+    }
+    res.status(200).send('Score saved');
   } catch (err) {
     res.status(500).send(err.message);
   }
