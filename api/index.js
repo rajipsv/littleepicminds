@@ -46,7 +46,7 @@ router.post('/auth/register', async (req, res) => {
       [username, email, hashedPassword, age, grade, 'seeds', 'student']
     );
     const user = result.rows[0];
-    const token = jwt.sign({ user: { id: user.id, username: user.username } }, JWT_SECRET);
+    const token = jwt.sign({ user: { id: user.id, username: user.username, role: user.role, is_premium: user.is_premium, level: user.level } }, JWT_SECRET);
     res.status(201).json({ token, user });
   } catch (err) {
     res.status(500).send(err.message);
