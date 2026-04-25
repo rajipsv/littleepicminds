@@ -42,8 +42,8 @@ router.post('/auth/register', async (req, res) => {
     const { username, email, password, age, grade } = req.body;
     const hashedPassword = await bcrypt.hash(password, 10);
     const result = await db.query(
-      'INSERT INTO users (username, email, password, age, grade) VALUES ($1, $2, $3, $4, $5) RETURNING id, username, email, is_premium, level',
-      [username, email, hashedPassword, age, grade]
+      'INSERT INTO users (username, email, password_hash, age, grade, name, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $1, $6, $7, false) RETURNING id, username, email, name, role, is_premium, level, age, grade',
+      [username, email, hashedPassword, age, grade, 'seeds', 'student']
     );
     const user = result.rows[0];
     const token = jwt.sign({ user: { id: user.id, username: user.username } }, JWT_SECRET);
@@ -59,10 +59,10 @@ router.post('/auth/login', async (req, res) => {
     const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [username]);
     if (result.rows.length === 0) return res.status(400).send('Invalid credentials');
     const user = result.rows[0];
-    const isMatch = await bcrypt.compare(password, user.password);
+    const isMatch = await bcrypt.compare(password, user.password_hash);
     if (!isMatch) return res.status(400).send('Invalid credentials');
-    const token = jwt.sign({ user: { id: user.id, username: user.username } }, JWT_SECRET);
-    const { password: _, ...userWithoutPassword } = user;
+    const token = jwt.sign({ user: { id: user.id, username: user.username, role: user.role, is_premium: user.is_premium, level: user.level } }, JWT_SECRET);
+    const { password_hash: _, ...userWithoutPassword } = user;
     res.json({ token, user: userWithoutPassword });
   } catch (err) {
     res.status(500).send(err.message);
