@@ -21,7 +21,6 @@ const db = {
 const JWT_SECRET = process.env.JWT_SECRET || 'littleEpicMinds_prod_secret_2026';
 
 // --- DATA LOADING ---
-// We keep data in its own folder but require it safely
 let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: [] };
 try {
   data = require('./data');
@@ -46,7 +45,15 @@ function getLevelFromAge(age) {
 
 // Health & Test
 app.get('/api/health', (req, res) => res.send('API_OK_UNIFIED_V2'));
-app.get('/api/test', (req, res) => res.json({ has_db: !!pool, has_data: !!data.shlokas }));
+app.get('/api/test', (req, res) => {
+  res.json({ 
+    has_db: !!pool, 
+    shloka_count: Object.keys(data.shlokas || {}).length,
+    shloka_keys: Object.keys(data.shlokas || {}).slice(0, 5),
+    hanuman_count: Object.keys(data.hanumanChalisa || {}).length,
+    chapters_count: (data.chapters || []).length
+  });
+});
 
 // AUTH: Register
 app.post('/api/auth/register', async (req, res) => {
@@ -96,8 +103,8 @@ app.post('/api/auth/login', async (req, res) => {
 // VERSES
 app.get('/api/verses/chapters', (req, res) => {
   res.json({
-    chapters: data.chapters,
-    levels: data.levels,
+    chapters: data.chapters || [],
+    levels: data.levels || [],
   });
 });
 
@@ -121,12 +128,13 @@ app.get('/api/verses', (req, res) => {
     }
     if (chapter) {
       const chapterShlokas = {};
-      for (const [key, val] of Object.entries(data.shlokas)) {
-        if (key.startsWith(`${chapter}.`)) chapterShlokas[key] = val;
+      const prefix = `${chapter}.`;
+      for (const [key, val] of Object.entries(data.shlokas || {})) {
+        if (key.startsWith(prefix)) chapterShlokas[key] = val;
       }
       return res.json(chapterShlokas);
     }
-    res.json({ gita: Object.keys(data.shlokas).length, hanuman: Object.keys(data.hanumanChalisa).length });
+    res.json({ gita: Object.keys(data.shlokas || {}).length, hanuman: Object.keys(data.hanumanChalisa || {}).length });
   } catch (err) {
     res.status(500).send(err.message);
   }
@@ -135,7 +143,7 @@ app.get('/api/verses', (req, res) => {
 app.get('/api/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
   const { scripture, chapter, level } = req.params;
   if (scripture !== 'gita') return res.status(404).send('No evaluations for this scripture');
-  const chData = data.evaluations[chapter];
+  const chData = (data.evaluations || {})[chapter];
   if (!chData || !chData[level]) return res.status(404).send('Not found');
   res.json(chData[level]);
 });
