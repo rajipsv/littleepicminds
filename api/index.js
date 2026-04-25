@@ -226,7 +226,7 @@ router.post('/journal', async (req, res) => {
     res.status(201).send('Saved');
   } catch (err) {
     console.error('Final Journal error:', err.message);
-    res.status(500).send(err.message);
+    res.status(500).json({ error: err.message, stack: err.stack });
   }
 });
 
@@ -320,11 +320,14 @@ router.get('/test', async (req, res) => {
       tablesReady = true;
     } catch (e) { console.error('DB Bootstrap Error:', e.message); }
 
-    // Check progress counts for a sample user (id 4)
+    // Diagnostics
     let sampleProgress = [];
+    let sampleJournals = [];
     try {
-      const pRes = await db.query('SELECT * FROM progress LIMIT 5');
+      const pRes = await db.query('SELECT * FROM progress LIMIT 3');
       sampleProgress = pRes.rows;
+      const jRes = await db.query('SELECT * FROM journal_entries LIMIT 3');
+      sampleJournals = jRes.rows;
     } catch(e) {}
 
     res.json({
@@ -332,8 +335,11 @@ router.get('/test', async (req, res) => {
       tables_ready: tablesReady,
       shloka_count: Object.keys(data.shlokas || {}).length,
       chapters_count: (data.chapters || []).length,
-      sample_progress: sampleProgress,
-      evaluations_count: Object.keys(data.evaluations || {}).length
+      evaluations_count: Object.keys(data.evaluations || {}).length,
+      db_diagnostics: {
+        progress_entries: sampleProgress,
+        journal_entries: sampleJournals
+      }
     });
   } catch (err) {
     res.status(500).json({ error: err.message });

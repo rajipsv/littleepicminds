@@ -187,7 +187,11 @@ const ScriptureLayout = () => {
                     if (activeVerse) {
                       return (
                         <div className="animate-fade-in">
-                          <VerseViewer key={activeVerse.id || activeVerseIndex} verse={activeVerse} scripture={scripture} />
+                          <VerseViewer 
+                            key={activeVerse.id || activeVerseIndex} 
+                            verse={{ ...activeVerse, chapter_number: activeChapter, scripture: scripture }} 
+                            scripture={scripture} 
+                          />
                         </div>
                       );
                     } else {
