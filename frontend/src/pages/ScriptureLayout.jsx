@@ -159,8 +159,7 @@ const ScriptureLayout = () => {
             </div>
           ) : verses.length > 0 ? (
             <div className="space-y-8">
-              {!showQuiz ? (
-                <>
+              <>
                   {/* Verse Navigation Dropdown */}
                   <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
                     <span className="font-bold text-gray-300">
@@ -240,9 +239,7 @@ const ScriptureLayout = () => {
                       );
                     }
                   })()}
-
-                </>
-              )}
+              </>
             </div>
           ) : (
             <div className="text-center text-gray-500 p-8 glass-card">No verses found for this chapter yet.</div>
