@@ -1,13 +1,19 @@
 const express = require('express');
 const cors = require('cors');
-require('dotenv').config();
 
-// Fix paths to point to the backend directory
-const authRoutes = require('../backend/routes/auth');
-const versesRoutes = require('../backend/routes/verses');
-const journalRoutes = require('../backend/routes/journal');
-const evaluationsRoutes = require('../backend/routes/evaluations');
-const ttsRoutes = require('../backend/routes/tts');
+// Try to load dotenv, but don't crash if it fails
+try {
+  require('dotenv').config();
+} catch (e) {
+  console.warn('Dotenv not loaded');
+}
+
+// USE LOCAL COPIES (Inside api/ folder) to avoid pathing issues on Vercel
+const authRoutes = require('./routes/auth');
+const versesRoutes = require('./routes/verses');
+const journalRoutes = require('./routes/journal');
+const evaluationsRoutes = require('./routes/evaluations');
+const ttsRoutes = require('./routes/tts');
 
 const app = express();
 
@@ -15,7 +21,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Root route for Vercel testing
+// Root route
 app.get('/', (req, res) => {
   res.json({ message: 'littleEpicMinds API is alive! 🕉️' });
 });
@@ -27,9 +33,9 @@ app.use('/api/journal', journalRoutes);
 app.use('/api/evaluations', evaluationsRoutes);
 app.use('/api/tts', ttsRoutes);
 
-// Health check
+// Health check - Simplified to the max
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'ok', message: 'littleEpicMinds API is running 🕉️' });
+  res.send('API_OK');
 });
 
 // Global error handler

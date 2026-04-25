@@ -32,7 +32,12 @@ const Register = () => {
         <h2 className="text-3xl font-extrabold text-center text-kid-blue mb-2">Join Us!</h2>
         <p className="text-center text-gray-500 font-medium mb-8">Create an account to track your progress.</p>
         
-        {error && <div className="bg-red-50 text-red-500 p-3 rounded-lg text-sm font-medium mb-4 text-center">{error}</div>}
+        {error && (
+        <div className="mb-6 p-4 bg-red-500/20 border border-red-500/50 rounded-xl text-red-200 text-sm font-bold flex items-center gap-3">
+          <span className="text-xl">⚠️</span>
+          <span>{typeof error === 'string' ? error : 'A server error occurred. Please check the logs.'}</span>
+        </div>
+      )}
 
         <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
           <div>
