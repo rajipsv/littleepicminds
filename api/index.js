@@ -49,6 +49,9 @@ router.post('/auth/register', async (req, res) => {
     const token = jwt.sign({ user: { id: user.id, username: user.username, role: user.role, is_premium: user.is_premium, level: user.level } }, JWT_SECRET);
     res.status(201).json({ token, user });
   } catch (err) {
+    if (err.code === '23505') { // Postgres unique violation error code
+      return res.status(400).send('Username or email already exists. Please choose another or log in.');
+    }
     res.status(500).send(err.message);
   }
 });
