@@ -77,11 +77,7 @@ router.post('/register', async (req, res) => {
     });
   } catch (error) {
     console.error('Registration error detail:', error);
-    res.status(500).json({ 
-      error: 'Server error', 
-      message: error.message,
-      stack: process.env.NODE_ENV === 'production' ? null : error.stack 
-    });
+    res.status(500).send(error.message || 'Server error');
   }
 });
 

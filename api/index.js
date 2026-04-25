@@ -35,7 +35,7 @@ app.get('/api/health', (req, res) => {
 // Global error handler
 app.use((err, req, res, next) => {
   console.error('SERVER ERROR:', err.stack);
-  res.status(500).json({ error: 'Internal Server Error', message: err.message });
+  res.status(500).send(err.message || 'Internal Server Error');
 });
 
 module.exports = app;
