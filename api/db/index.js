@@ -32,6 +32,7 @@ module.exports = {
           level VARCHAR(50),
           role VARCHAR(50) DEFAULT 'student',
           is_premium BOOLEAN DEFAULT false,
+          mobile VARCHAR(20),
           created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
         );
       `);

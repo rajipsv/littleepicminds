@@ -36,6 +36,10 @@ const adminAuth = (req, res, next) => {
 router.post('/register', async (req, res) => {
   try {
     const { username, email, password, name, age, grade, role, mobile } = req.body;
+    if (!username || !email || !password) {
+      console.error('Registration failed: Missing required fields', { username, email });
+      return res.status(400).json({ error: 'Username, email, and password are required' });
+    }
     console.log('Registering user:', { username, email, age, grade, mobile });
     const level = getLevelFromAge(age);
 
