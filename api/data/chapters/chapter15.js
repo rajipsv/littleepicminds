@@ -1,6 +1,6 @@
 const CHAPTER_15_SHLOKAS = {
     "15.1": {
-        sanskrit: "श्रीभगवानुवाच।\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्॥",
+        sanskrit: "श्रीभगवानुवाच।\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।\nछन्दांसि यस्य पर्णानि యస్తం వేద స వేదవిత్॥",
         transliteration: "śrī-bhagavān uvāca\nūrdhva-mūlam adhaḥ-śākham aśvatthaṁ prāhur avyayam\nchandāṁsi yasya parṇāni yas taṁ veda sa veda-vit",
         en: {
             meaning: "The Supreme Lord said: There is a banyan tree with roots above and branches below. Its leaves are the Vedic hymns. One who understands this tree knows the Vedas.",
@@ -45,7 +45,7 @@ const CHAPTER_15_SHLOKAS = {
         },
         telugu_script: "అధశ్చోర్ధ్వం ప్రసృతాస్తస్య శాఖా గుణప్రవృద్ధా విషయప్రవాలాః |\nఅధశ్చ మూలాన్యనుసంతతాని కర్మానుబంధీనిమనుష్యలోకే ||",
         lineBreakdown: [
-            { sanskrit: "अधश्चोर्ध्वं प्रसृताः", word: "adhaś cordhvaṁ prasṛtāḥ", sanskrit_te: "అధశ్చోర్ధ్వం ప్రసృతాః", en: "spread above and below", te: "పైకి క్రిందికి వ్యాపించిన" },
+            { sanskrit: "अधश्चोर्ध्वं प्रसृताః", word: "adhaś cordhvaṁ prasṛtāḥ", sanskrit_te: "అధశ్చోర్ధ్వం ప్రసృతాః", en: "spread above and below", te: "పైకి క్రిందికి వ్యాపించిన" },
             { sanskrit: "गुणप्रवृद्धा", word: "guṇa-pravṛddhā", sanskrit_te: "గుణప్రవృద్ధా", en: "grown by qualities", te: "గుణాలతో పెరిగిన" }
         ]
     },
