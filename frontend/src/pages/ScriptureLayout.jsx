@@ -61,7 +61,7 @@ const ScriptureLayout = () => {
   };
 
   const handleChapterClick = (chapterNum) => {
-    if (chapterNum >= 3 && (!user || !user.is_premium)) {
+    if (chapterNum >= 3 && (!user || (!user.is_premium && user.role !== 'admin'))) {
       navigate('/subscribe');
       return;
     }
@@ -90,7 +90,7 @@ const ScriptureLayout = () => {
         
         <div className="flex-1 overflow-y-auto p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-hidden whitespace-nowrap md:whitespace-normal scrollbar-hide">
           {chapters.map(num => {
-            const isLocked = num >= 3 && (!user || !user.is_premium);
+            const isLocked = num >= 3 && (!user || (!user.is_premium && user.role !== 'admin'));
             const isActive = activeChapter === num;
             const isFree = num < 3;
             
