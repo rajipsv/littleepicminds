@@ -41,28 +41,44 @@ const SettingsPage = () => {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-sm font-bold text-kid-blue mb-1">Update Age</label>
-            <input 
-              type="number" 
-              value={age}
-              onChange={(e) => setAge(e.target.value)}
-              className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary transition-all"
-              placeholder="e.g. 8"
-              min="3" max="18"
-            />
-          </div>
+          {user.role === 'admin' ? (
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
+              <p className="text-xs font-black uppercase text-slate-400 mb-2">Account Type</p>
+              <p className="text-kid-blue font-bold flex items-center gap-2">
+                <span className="w-2 h-2 bg-lem-accent rounded-full animate-pulse"></span>
+                System Administrator
+              </p>
+              <div className="mt-4 pt-4 border-t border-slate-200">
+                <p className="text-xs font-black uppercase text-slate-400 mb-1">Registered Email</p>
+                <p className="text-kid-blue font-medium">{user.email}</p>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div>
+                <label className="block text-sm font-bold text-kid-blue mb-1">Update Age</label>
+                <input 
+                  type="number" 
+                  value={age}
+                  onChange={(e) => setAge(e.target.value)}
+                  className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary transition-all"
+                  placeholder="e.g. 8"
+                  min="3" max="100"
+                />
+              </div>
 
-          <div>
-            <label className="block text-sm font-bold text-kid-blue mb-1">Update Grade</label>
-            <input 
-              type="text" 
-              value={grade}
-              onChange={(e) => setGrade(e.target.value)}
-              className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary transition-all"
-              placeholder="e.g. 3rd Grade"
-            />
-          </div>
+              <div>
+                <label className="block text-sm font-bold text-kid-blue mb-1">Update Grade</label>
+                <input 
+                  type="text" 
+                  value={grade}
+                  onChange={(e) => setGrade(e.target.value)}
+                  className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary transition-all"
+                  placeholder="e.g. 3rd Grade"
+                />
+              </div>
+            </>
+          )}
 
           <button 
             type="submit" 
