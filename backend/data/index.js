@@ -67,18 +67,52 @@ try {
 
 console.log(`🚀 Total Gita shlokas loaded: ${Object.keys(shlokas).length}`);
 
-try {
-  hanumanChalisa = loadJsDataFile('hanuman_chalisa.js', 'HANUMAN_CHALISA');
-  console.log(`✅ Loaded ${Object.keys(hanumanChalisa).length} Hanuman Chalisa verses`);
-} catch (err) {
-  console.warn('⚠️ Could not load hanuman_chalisa.js:', err.message);
+// 3. Load prayers from prayers/ directory
+const prayersPath = path.join(DATA_DIR, 'prayers');
+if (fs.existsSync(prayersPath)) {
+  const prayerFiles = fs.readdirSync(prayersPath).filter(f => f.endsWith('.js'));
+  prayerFiles.forEach(file => {
+    try {
+      const prayerData = require(path.join(prayersPath, file));
+      if (file === 'hanuman_chalisa.js') {
+        hanumanChalisa = prayerData;
+      }
+      console.log(`✅ Loaded prayer ${file}`);
+    } catch (err) {
+      console.warn(`⚠️ Could not load prayer file ${file}:`, err.message);
+    }
+  });
 }
 
+// Load legacy hanuman_chalisa.js if it exists (fallback)
 try {
-  evaluations = loadJsDataFile('evaluations.js', 'GITA_EVALUATIONS');
-  console.log(`✅ Loaded evaluations for ${Object.keys(evaluations).length} chapters`);
+  const legacyChalisa = loadJsDataFile('hanuman_chalisa.js', 'HANUMAN_CHALISA');
+  hanumanChalisa = { ...hanumanChalisa, ...legacyChalisa };
+} catch (err) { }
+
+// 4. Load split evaluations from evaluations/ directory
+const evalsPath = path.join(DATA_DIR, 'evaluations');
+if (fs.existsSync(evalsPath)) {
+  const evalFiles = fs.readdirSync(evalsPath).filter(f => f.endsWith('.js'));
+  evalFiles.forEach(file => {
+    try {
+      const chapterNum = file.replace('chapter', '').replace('.js', '');
+      const evalData = require(path.join(evalsPath, file));
+      evaluations[chapterNum] = evalData;
+      console.log(`✅ Loaded evaluation for chapter ${chapterNum}`);
+    } catch (err) {
+      console.warn(`⚠️ Could not load evaluation file ${file}:`, err.message);
+    }
+  });
+}
+
+// 5. Load legacy evaluations.js if it exists
+try {
+  const legacyEvals = loadJsDataFile('evaluations.js', 'GITA_EVALUATIONS');
+  evaluations = { ...evaluations, ...legacyEvals };
+  console.log(`✅ Loaded legacy evaluations.js (${Object.keys(legacyEvals).length} items)`);
 } catch (err) {
-  console.warn('⚠️ Could not load evaluations.js:', err.message);
+  // Silent if missing
 }
 
 // Also load the GITA_DATA from gita_data.js (has inline shlokas like 2.47, 9.26)

@@ -97,4 +97,4 @@ const HANUMAN_CHALISA = {
     ...Object.fromEntries(Array.from({ length: 37 }, (_, i) => [`Verse ${i + 4}`, {}]))
 };
 
-window.HANUMAN_CHALISA = HANUMAN_CHALISA;
+module.exports = HANUMAN_CHALISA;
