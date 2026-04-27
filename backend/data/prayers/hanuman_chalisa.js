@@ -306,7 +306,7 @@ const HANUMAN_CHALISA = {
     "Verse 38": {},
     "Verse 39": {},
     "Verse 40": {},
-    "Ending Doha 1": {
+    "Doha 3": {
         "sanskrit": "पवनतनय संकट हरन मंगल मूरति रूप।\nराम लखन सीता सहित हृदय बसहु सुर भूप॥",
         "transliteration": "pavana-tanaya saṅkaṭa harana maṅgala mūrati rūpa\nrāma lakhana sītā sahita hṛdaya basahu sura bhūpa",
         "en": {
@@ -315,7 +315,7 @@ const HANUMAN_CHALISA = {
             "activity": "Put your hand on your heart and imagine Hanuman sitting there, protecting you."
         }
     },
-    "Ending Doha 2": {
+    "Doha 4": {
         "sanskrit": "सियावर रामचंद्र की जय।\nपवनसुत हनुमान की जय॥",
         "transliteration": "siyāvara rāmacandra kī jaya\npavanasuta hanumāna kī jaya",
         "en": {
