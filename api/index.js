@@ -3,6 +3,9 @@ const cors = require('cors');
 const { Pool } = require('pg');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const axios = require('axios');
+const crypto = require('crypto');
+const fs = require('fs');
 const path = require('path');
 
 // --- DATABASE CONFIG ---
@@ -414,6 +417,70 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
     res.json({ progress });
   } catch (err) {
     res.status(500).send(err.message);
+  }
+});
+
+// --- TTS (Voice Generation) ---
+const CACHE_DIR = '/tmp/audio_cache';
+if (!fs.existsSync(CACHE_DIR)) {
+  try { fs.mkdirSync(CACHE_DIR, { recursive: true }); } catch (e) {}
+}
+
+const SARVAM_LANG_MAP = {
+  'hi': 'hi-IN', 'te': 'te-IN', 'ta': 'ta-IN', 'en': 'en-IN', 'sa': 'hi-IN'
+};
+
+router.post('/tts', async (req, res) => {
+  try {
+    const { text, target_language_code, speaker = 'meera' } = req.body;
+    if (!text) return res.status(400).json({ error: 'Text is required' });
+
+    let rhythmicText = text;
+    if (text.includes('\n')) {
+      rhythmicText = text.split('\n').map(l => l.trim()).filter(l => l.length > 0).join(', ') + '.'; 
+    } else if (text.includes('. ')) {
+      rhythmicText = text.replace('. ', ', ');
+    }
+
+    const langCode = SARVAM_LANG_MAP[target_language_code] || 'hi-IN';
+    const hash = crypto.createHash('md5').update(`${rhythmicText}_${langCode}_roopa`).digest('hex');
+    const cacheFile = path.join(CACHE_DIR, `${hash}.wav`);
+
+    if (fs.existsSync(cacheFile)) {
+      const audioBuffer = fs.readFileSync(cacheFile);
+      return res.json({ audios: [audioBuffer.toString('base64')] });
+    }
+
+    if (!process.env.SARVAM_API_KEY) {
+      return res.status(501).json({ error: 'Sarvam API key not configured on server' });
+    }
+
+    const response = await axios.post(
+      'https://api.sarvam.ai/text-to-speech',
+      {
+        text: rhythmicText,
+        target_language_code: langCode,
+        speaker: 'roopa',
+        model: 'bulbul:v3' 
+      },
+      {
+        headers: {
+          'api-subscription-key': process.env.SARVAM_API_KEY,
+          'Content-Type': 'application/json'
+        }
+      }
+    );
+
+    if (response.data && response.data.audios && response.data.audios.length > 0) {
+      const audioBuffer = Buffer.from(response.data.audios[0], 'base64');
+      try { fs.writeFileSync(cacheFile, audioBuffer); } catch (e) {}
+      return res.json(response.data);
+    } else {
+      throw new Error('Invalid response from Sarvam AI');
+    }
+  } catch (err) {
+    console.error('[TTS Error]:', err.message);
+    res.status(500).json({ error: 'Failed to generate speech' });
   }
 });
 
