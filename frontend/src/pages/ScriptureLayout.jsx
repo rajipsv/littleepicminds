@@ -170,11 +170,21 @@ const ScriptureLayout = () => {
                       onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
                       className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
                     >
-                      {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => (
-                        <option key={num} value={num - 1}>
-                          {scripture === 'hanuman' ? 'Verse' : 'Shloka'} {num}
-                        </option>
-                      ))}
+                      {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
+                        let label;
+                        if (scripture === 'hanuman') {
+                          if (num <= 2) label = `Doha ${num}`;
+                          else if (num <= 42) label = `Verse ${num - 2}`;
+                          else label = `Doha ${num - 40}`; // Doha 3 and 4
+                        } else {
+                          label = `Shloka ${num}`;
+                        }
+                        return (
+                          <option key={num} value={num - 1}>
+                            {label}
+                          </option>
+                        );
+                      })}
                     </select>
                   </div>
 
