@@ -15,11 +15,28 @@ function getLevelFromAge(age) {
   return 'warriors';
 }
 
+// Admin Middleware
+const adminAuth = (req, res, next) => {
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+  if (!token) return res.status(401).json({ error: 'No token, authorization denied' });
+
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    if (decoded.user.role !== 'admin') {
+      return res.status(403).json({ error: 'Access denied: Admins only' });
+    }
+    req.user = decoded.user;
+    next();
+  } catch (err) {
+    res.status(401).json({ error: 'Token is not valid' });
+  }
+};
+
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
   try {
-    const { username, email, password, name, age, grade, role } = req.body;
-    console.log('Registering user:', { username, email, age, grade });
+    const { username, email, password, name, age, grade, role, mobile } = req.body;
+    console.log('Registering user:', { username, email, age, grade, mobile });
     const level = getLevelFromAge(age);
 
     if (!process.env.DATABASE_URL) {
@@ -41,8 +58,8 @@ router.post('/register', async (req, res) => {
     const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
     console.log('Inserting into DB with level:', level, 'age:', finalAge);
     const newUser = await db.query(
-      'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false) RETURNING id, username, email, name, role, is_premium, level, age, grade',
-      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student']
+      'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false, $9) RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile',
+      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student', mobile || null]
     );
 
     const user = newUser.rows[0];
@@ -66,6 +83,7 @@ router.post('/register', async (req, res) => {
         level: user.level,
         age: user.age,
         grade: user.grade,
+        mobile: user.mobile,
         completed: [] 
       } 
     });
@@ -133,6 +151,7 @@ router.post('/login', async (req, res) => {
         level: user.level,
         role: user.role,
         is_premium: user.is_premium,
+        mobile: user.mobile,
         completed: progressResult.rows
       }
     });
@@ -201,14 +220,14 @@ router.post('/upgrade', async (req, res) => {
 // ===== ADMIN ENDPOINTS =====
 
 // GET /api/auth/admin/users — List all users (admin only)
-router.get('/admin/users', async (req, res) => {
+router.get('/admin/users', adminAuth, async (req, res) => {
   try {
     if (!process.env.DATABASE_URL) {
       return res.json([]);
     }
 
     const users = await db.query(
-      'SELECT id, username, email, name, is_premium, role, level, age, grade FROM users ORDER BY id'
+      'SELECT id, username, email, name, is_premium, role, level, age, grade, mobile FROM users ORDER BY id'
     );
     res.json(users.rows);
   } catch (err) {
@@ -218,7 +237,7 @@ router.get('/admin/users', async (req, res) => {
 });
 
 // POST /api/auth/admin/toggle-subscription — Toggle premium status
-router.post('/admin/toggle-subscription', async (req, res) => {
+router.post('/admin/toggle-subscription', adminAuth, async (req, res) => {
   try {
     const { user_id } = req.body;
 

@@ -13,6 +13,7 @@ import Journal from './pages/Journal';
 import MasteryReport from './pages/MasteryReport';
 import About from './pages/About';
 import VentureDashboard from './pages/VentureDashboard';
+import AdminDashboard from './pages/AdminDashboard';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
             <Route path="/journal" element={<Journal />} />
             <Route path="/progress" element={<MasteryReport />} />
             <Route path="/about" element={<About />} />
-            <Route path="/readiness" element={<VentureDashboard />} />
+             <Route path="/readiness" element={<VentureDashboard />} />
+            <Route path="/admin" element={<AdminDashboard />} />
             <Route path="/read/:scripture" element={<ScriptureLayout />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

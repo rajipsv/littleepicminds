@@ -9,6 +9,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [age, setAge] = useState('');
   const [grade, setGrade] = useState('');
+  const [mobile, setMobile] = useState('');
   const [error, setError] = useState('');
   const { register } = useAuth();
   const navigate = useNavigate();
@@ -16,7 +17,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await register(username, email, password, age, grade);
+      await register(username, email, password, age, grade, mobile);
       navigate('/');
     } catch (err) {
       const errMsg = err.response?.data?.error || err.response?.data?.message || err.message;
@@ -66,6 +67,20 @@ const Register = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all"
                 placeholder="parent@gmail.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-bold text-kid-blue mb-1">Mobile Number (For Premium Access)</label>
+            <div className="relative">
+              <input 
+                type="tel" 
+                value={mobile}
+                onChange={(e) => setMobile(e.target.value)}
+                className="w-full px-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all"
+                placeholder="+91 0000000000"
                 required
               />
             </div>

@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS users (
   level VARCHAR(50) DEFAULT 'seeds', -- 'seeds', 'seekers', 'warriors'
   role VARCHAR(50) DEFAULT 'student', -- 'student', 'parent', 'admin'
   is_premium BOOLEAN DEFAULT FALSE,
+  mobile VARCHAR(20),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
