@@ -29,9 +29,9 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
   const playAiVoice = async () => {
     setIsAiLoading(true);
     try {
-      console.log("Attempting to fetch AI voice from: http://localhost:5000/api/tts");
-      // 1. Request audio from our backend proxy - Hardcoded for local reliability
-      const res = await api.post('http://localhost:5000/api/tts', {
+      console.log("Attempting to fetch AI voice from our central API...");
+      // Use relative path - api instance already has baseURL configured correctly
+      const res = await api.post('/api/tts', {
         text: text,
         target_language_code: targetLang || currentLang || 'hi', 
         speaker: 'roopa' 

@@ -6,70 +6,62 @@ const path = require('path');
 
 const router = express.Router();
 
-// Simple file-based caching for audio to prevent hitting the API too often
-const CACHE_DIR = path.join(__dirname, '../data/audio_cache');
+// NOTE: Vercel /api routes run in a serverless environment. 
+// Filesystem caching in /api/data might not persist between requests,
+// but we'll try to use /tmp or just rely on the API for now.
+const CACHE_DIR = '/tmp/audio_cache';
 if (!fs.existsSync(CACHE_DIR)) {
   fs.mkdirSync(CACHE_DIR, { recursive: true });
 }
 
-// Map frontend languages to Sarvam AI supported languages
 const SARVAM_LANG_MAP = {
   'hi': 'hi-IN',
   'te': 'te-IN',
   'ta': 'ta-IN',
   'en': 'en-IN',
-  'sa': 'hi-IN' // Fallback for Sanskrit (Sarvam handles Sanskrit well under Hindi)
+  'sa': 'hi-IN'
 };
 
 router.post('/', async (req, res) => {
   try {
-    const { text, target_language_code, speaker = 'meera' } = req.body;
+    let { text, target_language_code, speaker = 'roopa' } = req.body;
 
     if (!text) {
       return res.status(400).json({ error: 'Text is required' });
     }
 
+    // --- RHYTHM ENGINE (Local Sync) ---
+    // Replace newlines and full stops with commas to force Sarvam to pause
+    const rhythmicText = text
+      .replace(/\n/g, ', ') 
+      .replace(/\. /g, ', ')
+      .replace(/॥/g, ', ')
+      .replace(/।/g, ', ');
+
     const langCode = SARVAM_LANG_MAP[target_language_code] || 'hi-IN';
     
-    // Create a cache key based on text, language, and speaker
-    const hash = crypto.createHash('md5').update(`${text}_${langCode}_${speaker}`).digest('hex');
-    const cacheFile = path.join(CACHE_DIR, `${hash}.wav`);
+    // Check if API key exists in env or use hardcoded fallback provided by user
+    const apiKey = process.env.SARVAM_API_KEY || 'sk_f4cnob0d_214NOB5ybuCkeyorusK51ljv';
 
-    // Check cache
-    if (fs.existsSync(cacheFile)) {
-      const audioBuffer = fs.readFileSync(cacheFile);
-      const base64Audio = audioBuffer.toString('base64');
-      return res.json({ audios: [base64Audio] });
-    }
+    console.log(`[TTS] Processing: "${rhythmicText.substring(0, 30)}..." Lang: ${langCode} Voice: ${speaker}`);
 
-    // Check if API key is configured
-    if (!process.env.SARVAM_API_KEY) {
-      // Return a 501 Not Implemented so frontend can fallback to browser TTS gracefully
-      return res.status(501).json({ error: 'Sarvam API key not configured on server' });
-    }
-
-    // Call Sarvam API
     const response = await axios.post(
       'https://api.sarvam.ai/text-to-speech',
       {
-        text: text,
+        text: rhythmicText,
         target_language_code: langCode,
-        speaker: 'kavya',
+        speaker: speaker,
         model: 'bulbul:v3' 
       },
       {
         headers: {
-          'api-subscription-key': process.env.SARVAM_API_KEY,
+          'api-subscription-key': apiKey,
           'Content-Type': 'application/json'
         }
       }
     );
 
     if (response.data && response.data.audios && response.data.audios.length > 0) {
-      // Save to cache
-      const audioBuffer = Buffer.from(response.data.audios[0], 'base64');
-      fs.writeFileSync(cacheFile, audioBuffer);
-      
       return res.json(response.data);
     } else {
       throw new Error('Invalid response from Sarvam AI');

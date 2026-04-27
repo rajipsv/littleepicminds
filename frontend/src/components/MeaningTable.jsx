@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
+import { API_URL } from '../api';
 
 const speakWord = (text) => {
   if (!('speechSynthesis' in window)) return;
@@ -26,8 +27,8 @@ const MeaningTable = ({ wordByWord }) => {
   const handlePlay = async (word, meaning, index) => {
     setPlayingIndex(index);
     try {
-      // Hardcoded full URL for local reliability
-      const response = await fetch('http://localhost:5000/api/tts', {
+      // Use the smart API_URL from our central config
+      const response = await fetch(`${API_URL || ''}/api/tts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -36,6 +37,8 @@ const MeaningTable = ({ wordByWord }) => {
           speaker: 'roopa'
         })
       });
+      
+      if (!response.ok) throw new Error('TTS request failed');
       
       const data = await response.json();
       if (data.audios && data.audios[0]) {
