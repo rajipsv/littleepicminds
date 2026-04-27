@@ -115,6 +115,188 @@ const CHAPTER_1_SHLOKAS = {
             { sanskrit: "पुरुजित्कुन्तिभोजश्च", word: "purujit kuntibhojaś ca", sanskrit_te: "పురుజిత్కుంతిభోజశ్చ", en: "Purujit and Kuntibhoja", te: "పురుజిత్తు మరియు కుంతిభోజుడు" },
             { sanskrit: "शैब्यश्च नरपुङ्गवः", word: "śaibyaś ca nara-puṅgavaḥ", sanskrit_te: "శైబ్యశ్చ నరపుంగవః", en: "and Saibya, the best of men", te: "మరియు శైబ్యుడు, నరశ్రేష్టుడు" }
         ]
+    },
+    "1.6": {
+        sanskrit: "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।\nसौभद्रो द्रौपदेयाश्च सर्व एव महारथाः॥",
+            transliteration: "yudhāmanyuś ca vikrānta uttamaujāś ca vīryavān |\saubhadro draupadeyāś ca sarva eva mahārathāḥ ||",
+                en: {
+            meaning: "Yudhāmanyu, the fierce, and Uttamaujā, the mighty; Saubhadra (Abhimanyu), and the sons of Draupadī — all of them are great chariot-warriors.",
+                childMeaning: "Many brave warriors like Abhimanyu and Draupadi's sons are on the Pandava side.",
+                    activity: "Name one hero from this list and recall his story."
+        },
+        te: {
+            meaning: "యుధామన్యుడు, ఉత్తమౌజుడు, సౌభద్రుడు (అభిమన్యుడు), మరియు ద్రౌపది కుమారులు — వీరంతా మహారథులు.",
+                childMeaning: "అభిమన్యుడు మరియు ద్రౌపది కొడుకులు వంటి ఎంతో మంది వీరులు పాండవుల పక్షాన ఉన్నారు.",
+                    activity: "ఈ జాబితా నుండి ఒక వీరుని పేరు చెప్పండి, అతని కథ గుర్తుకు తెచ్చుకోండి."
+        },
+        exercises: {
+            seeds: { question: "Who is Saubhadra?", question_te: "సౌభద్రుడు ఎవరు?", options: ["Bhima", "Abhimanyu", "Duryodhana"], correct: 1 },
+            seekers: { question: "What are these warriors called?", question_te: "ఈ వీరులను ఏమంటారు?", options: ["Rathas", "Maharathas", "Infantry"], correct: 1 },
+            warriors: { question: "Who are Draupadeyas?", question_te: "ద్రౌపదేయులు ఎవరు?", options: ["Draupadi's sons", "Krishna's brothers", "Pandavas' cousins"], correct: 0 }
+        },
+        telugu_script: "యుధామన్యుశ్చ విక్రాన్త ఉత్తమౌజాశ్చ వీర్యవాన్ |\nసౌభద్రో ద్రౌపదేయాశ్చ సర్వ ఏవ మహారథాః ||",
+            lineBreakdown: [
+                { sanskrit: "युधामन्युश्च विक्रान्तः", word: "yudhāmanyuś ca vikrāntaḥ", sanskrit_te: "యుధామన్యుశ్చ విక్రాన్తః", en: "Yudhāmanyu and fierce", te: "యుధామన్యుడు మరియు శూరుడు" },
+                { sanskrit: "उत्तमौजाश्च वीर्यवान्", word: "uttamaujāś ca vīryavān", sanskrit_te: "ఉత్తమౌజాశ్చ వీర్యవాన్", en: "Uttamaujā and mighty", te: "ఉత్తమౌజుడు మరియు బలవంతుడు" },
+                { sanskrit: "सौभद्रः द्रौपदेयाश्च", word: "saubhadraḥ draupadeyāś ca", sanskrit_te: "సౌభద్రో ద్రౌపదేయాశ్చ", en: "Saubhadra and Draupadī's sons", te: "సౌభద్రుడు మరియు ద్రౌపది కుమారులు" },
+                { sanskrit: "सर्व एव महारथाः", word: "sarva eva mahārathāḥ", sanskrit_te: "సర్వ ఏవ మహారథాః", en: "all indeed are great chariot-warriors", te: "అందరూ మహారథులే" }
+            ]
+    },
+    "1.7": {
+        sanskrit: "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।\nनायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते॥",
+            transliteration: "asmākaṁ tu viśiṣṭā ye tān nibodha dvijottama |\nnāyakā mama sainyasya saṁjñārthaṁ tān bravīmi te ||",
+                en: {
+            meaning: "But know those who are distinguished among us, O best of the twice-born. For the sake of naming the leaders of my army, I tell them to you.",
+                childMeaning: "Duryodhana tells Drona: Let me name the special leaders on our side.",
+                    activity: "Think of a leader you respect and why."
+        },
+        te: {
+            meaning: "ఓ ద్విజోత్తమా (ద్రోణుడా), మాలో ఎవరు విశిష్టులో వారిని తెలుసుకో. నా సైన్యం యొక్క నాయకుల పేర్లు చెప్పడం కోసం వారిని నీకు చెబుతున్నాను.",
+                childMeaning: "దుర్యోధనుడు ద్రోణునితో అంటున్నాడు: మా వైపు ప్రత్యేక నాయకులు ఎవరో చెబుతాను.",
+                    activity: "మీరు గౌరవించే ఒక నాయకుడి గురించి ఆలోచించండి, ఎందుకు గౌరవిస్తారు."
+        },
+        exercises: {
+            seeds: { question: "To whom is Duryodhana speaking?", question_te: "దుర్యోధనుడు ఎవరితో మాట్లాడుతున్నాడు?", options: ["Bhishma", "Drona", "Karna"], correct: 1 },
+            seekers: { question: "Why is he naming the leaders?", question_te: "నాయకుల పేర్లు ఎందుకు చెబుతున్నాడు?", options: ["For fun", "For identification", "For prayer"], correct: 1 },
+            warriors: { question: "What does 'dvijottama' mean?", question_te: "'ద్విజోత్తమ' అంటే?", options: ["Best of warriors", "Best of twice-born (brahmin)", "Best of kings"], correct: 1 }
+        },
+        telugu_script: "అస్మాకం తు విశిష్టా యే తాన్నిబోధ ద్విజోత్తమ |\nనాయకా మమ సైన్యస్య సంజ్ఞార్థం తాన్బ్రవీమి తే ||",
+            lineBreakdown: [
+                { sanskrit: "अस्माकं तु विशिष्टा ये", word: "asmākaṁ tu viśiṣṭā ye", sanskrit_te: "అస్మాకం తు విశిష్టా యే", en: "Among us, those who are distinguished", te: "మాలో ఎవరు విశిష్టులో" },
+                { sanskrit: "तान्निबोध द्विजोत्तम", word: "tān nibodha dvijottama", sanskrit_te: "తాన్నిబోధ ద్విజోత్తమ", en: "know them, O best of twice-born", te: "వారిని తెలుసుకో, ఓ ద్విజోత్తమా" },
+                { sanskrit: "नायकाः मम सैन्यस्य", word: "nāyakāḥ mama sainyasya", sanskrit_te: "నాయకా మమ సైన్యస్య", en: "leaders of my army", te: "నా సైన్యం యొక్క నాయకులు" },
+                { sanskrit: "संज्ञार्थं तान्ब्रवीमि ते", word: "saṁjñārthaṁ tān bravīmi te", sanskrit_te: "సంజ్ఞార్థం తాన్బ్రవీమి తే", en: "for the sake of naming, I tell them to you", te: "గుర్తించడం కోసం వారిని నీకు చెబుతున్నాను" }
+            ]
+    },
+    "1.8": {
+        sanskrit: "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।\nअश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च॥",
+            transliteration: "bhavān bhīṣmaś ca karṇaś ca kṛpaś ca samitiñjayaḥ |\naśvatthāmā vikarṇaś ca saumadattis tathaiva ca ||",
+                en: {
+            meaning: "Yourself (Drona), Bhīṣma, Karṇa, and Kṛpa, the victorious in battle; Aśvatthāmā, Vikarṇa, and also the son of Somadatta (Bhūriśravā).",
+                childMeaning: "Great leaders on Kaurava side: Drona, Bhishma, Karna, Kripa, Aswatthama, Vikarna, and Bhurishrava.",
+                    activity: "Count how many names are in this verse."
+        },
+        te: {
+            meaning: "మీరు (ద్రోణుడు), భీష్ముడు, కర్ణుడు, మరియు యుద్ధంలో గెలుపొందే కృపుడు; అశ్వత్థామ, వికర్ణుడు, మరియు సోమదత్తుని కుమారుడు (భూరిశ్రవుడు).",
+                childMeaning: "కౌరవుల వైపు గొప్ప నాయకులు: ద్రోణుడు, భీష్ముడు, కర్ణుడు, కృపుడు, అశ్వత్థామ, వికర్ణుడు, భూరిశ్రవుడు.",
+                    activity: "ఈ శ్లోకంలో ఎన్ని పేర్లున్నాయి లెక్కించండి."
+        },
+        exercises: {
+            seeds: { question: "Who is the son of Somadatta?", question_te: "సోమదత్తుని కుమారుడు ఎవరు?", options: ["Aśvatthāmā", "Vikarṇa", "Bhūriśravā"], correct: 2 },
+            seekers: { question: "Which of these is called 'samitiñjaya'?", question_te: "వీరిలో ఎవరిని 'సమితిఞ్జయ' అంటారు?", options: ["Kṛpa", "Bhīṣma", "Karṇa"], correct: 0 },
+            warriors: { question: "Who is 'bhavān' in this verse?", question_te: "ఈ శ్లోకంలో 'భవాన్' ఎవరు?", options: ["Duryodhana", "Drona", "Krishna"], correct: 1 }
+        },
+        telugu_script: "భవాన్భీష్మశ్చ కర్ణశ్చ కృపశ్చ సమితిఞ్జయః |\nఅశ్వత్థామా వికర్ణశ్చ సౌమదత్తిస్తథైవ చ ||",
+            lineBreakdown: [
+                { sanskrit: "भवान् भीष्मश्च कर्णश्च", word: "bhavān bhīṣmaś ca karṇaś ca", sanskrit_te: "భవాన్భీష్మశ్చ కర్ణశ్చ", en: "Yourself, Bhīṣma, and Karṇa", te: "మీరు, భీష్ముడు, మరియు కర్ణుడు" },
+                { sanskrit: "कृपश्च समितिञ्जयः", word: "kṛpaś ca samitiñjayaḥ", sanskrit_te: "కృపశ్చ సమితిఞ్జయః", en: "Kṛpa, the victorious in battle", te: "కృపుడు, యుద్ధంలో గెలిచేవాడు" },
+                { sanskrit: "अश्वत्थामा विकर्णश्च", word: "aśvatthāmā vikarṇaś ca", sanskrit_te: "అశ్వత్థామా వికర్ణశ్చ", en: "Aśvatthāmā and Vikarṇa", te: "అశ్వత్థామ మరియు వికర్ణుడు" },
+                { sanskrit: "सौमदत्तिः तथैव च", word: "saumadattiḥ tathaiva ca", sanskrit_te: "సౌమదత్తిస్తథైవ చ", en: "and the son of Somadatta as well", te: "మరియు సోమదత్తుని కుమారుడు" }
+            ]
+    },
+    "1.9": {
+        sanskrit: "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।\nनानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः॥",
+            transliteration: "anye ca bahavaḥ śūrā mad-arthe tyakta-jīvitāḥ |\nnānā-śastra-praharaṇāḥ sarve yuddha-viśāradāḥ ||",
+                en: {
+            meaning: "And many other heroes, prepared to give up their lives for my sake, armed with various weapons, all skilled in warfare.",
+                childMeaning: "Many brave warriors are ready to die for Duryodhana. They have different weapons and are experts in war.",
+                    activity: "Name one quality of a good warrior."
+        },
+        te: {
+            meaning: "మరియు నా కోసం ప్రాణాలు త్యాగం చేయడానికి సిద్ధంగా ఉన్న అనేక మంది ఇతర శూరులు, వివిధ ఆయుధాలు కలిగినవారు, అందరూ యుద్ధంలో నేర్పరులు.",
+                childMeaning: "దుర్యోధనుని కోసం చావడానికి సిద్ధంగా ఉన్న వీరులు చాలామంది ఉన్నారు. వారి దగ్గర రకరకాల ఆయుధాలు ఉన్నాయి, యుద్ధంలో నేర్పరులు.",
+                    activity: "ఒక మంచి యోధుని లక్షణం చెప్పండి."
+        },
+        exercises: {
+            seeds: { question: "Why are these heroes ready to die?", question_te: "ఈ వీరులు ఎందుకు చావడానికి సిద్ధంగా ఉన్నారు?", options: ["For their country", "For Duryodhana", "For fame"], correct: 1 },
+            seekers: { question: "What are they skilled in?", question_te: "వారు దేనిలో నేర్పరులు?", options: ["Singing", "Warfare", "Farming"], correct: 1 },
+            warriors: { question: "What does 'nānāśastrapraharaṇāḥ' mean?", question_te: "'నానాశస్త్రప్రహరణాః' అంటే?", options: ["Without weapons", "With various weapons", "Only with swords"], correct: 1 }
+        },
+        telugu_script: "అన్యే చ బహవః శూరా మదర్థే త్యక్తజీవితాః |\nనానాశస్త్రప్రహరణాః సర్వే యుద్ధవిశారదాః ||",
+            lineBreakdown: [
+                { sanskrit: "अन्ये च बहवः शूराः", word: "anye ca bahavaḥ śūrāḥ", sanskrit_te: "అన్యే చ బహవః శూరాః", en: "And many other heroes", te: "మరియు అనేక మంది శూరులు" },
+                { sanskrit: "मदर्थे त्यक्तजीविताः", word: "mad-arthe tyakta-jīvitāḥ", sanskrit_te: "మదర్థే త్యక్తజీవితాః", en: "for my sake, given up their lives", te: "నా కోసం ప్రాణాలు త్యాగం చేసినవారు" },
+                { sanskrit: "नानाशस्त्रप्रहरणाः", word: "nānā-śastra-praharaṇāḥ", sanskrit_te: "నానాశస్త్రప్రహరణాః", en: "with various weapons as missiles", te: "వివిధ ఆయుధాలను ప్రయోగించేవారు" },
+                { sanskrit: "सर्वे युद्धविशारदाः", word: "sarve yuddha-viśāradāḥ", sanskrit_te: "సర్వే యుద్ధవిశారదాః", en: "all experts in battle", te: "అందరూ యుద్ధంలో నేర్పరులు" }
+            ]
+    },
+    "1.10": {
+        sanskrit: "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।\nपर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्॥",
+            transliteration: "aparyāptaṁ tad asmākaṁ balaṁ bhīṣmābhirakṣitam |\nparyāptaṁ tv idam eteṣāṁ balaṁ bhīmābhirakṣitam ||",
+                en: {
+            meaning: "Our army, protected by Bhīṣma, is unlimited; whereas their army, protected by Bhīma, is limited.",
+                childMeaning: "Duryodhana says: Our army is huge and Bhishma protects it. Their army is smaller and Bhima protects it.",
+                    activity: "Think about strength: Is bigger always better?"
+        },
+        te: {
+            meaning: "భీష్మునిచే రక్షించబడుతున్న మా సైన్యం అపరిమితమైనది; అయితే భీమునిచే రక్షించబడుతున్న వారి సైన్యం పరిమితమైనది.",
+                childMeaning: "దుర్యోధనుడు చెప్పాడు: మా సైన్యం చాలా పెద్దది, భీష్ముడు కాపాడుతున్నాడు. వారి సైన్యం చిన్నది, భీముడు కాపాడుతున్నాడు.",
+                    activity: "బలం గురించి ఆలోచించండి: పెద్దది ఎప్పుడూ మంచిదా?"
+        },
+        exercises: {
+            seeds: { question: "Who protects the Kaurava army?", question_te: "కౌరవ సైన్యాన్ని ఎవరు కాపాడుతున్నారు?", options: ["Drona", "Bhīṣma", "Karṇa"], correct: 1 },
+            seekers: { question: "Who protects the Pandava army?", question_te: "పాండవ సైన్యాన్ని ఎవరు కాపాడుతున్నారు?", options: ["Arjuna", "Bhīma", "Kṛṣṇa"], correct: 1 },
+            warriors: { question: "What is the meaning of 'aparyāptam'?", question_te: "'అపర్యాప్తం' అర్థం?", options: ["Limited", "Unlimited", "Weak"], correct: 1 }
+        },
+        telugu_script: "అపర్యాప్తం తదస్మాకం బలం భీష్మాభిరక్షితమ్ |\nపర్యాప్తం త్విదమేతేషాం బలం భీమాభిరక్షితమ్ ||",
+            lineBreakdown: [
+                { sanskrit: "अपर्याप्तं तत् अस्माकं बलं", word: "aparyāptaṁ tad asmākaṁ balaṁ", sanskrit_te: "అపర్యాప్తం తదస్మాకం బలం", en: "Unlimited is that our army", te: "అపరిమితమైనది మా సైన్యం" },
+                { sanskrit: "भीष्माभिरक्षितम्", word: "bhīṣmābhirakṣitam", sanskrit_te: "భీష్మాభిరక్షితమ్", en: "protected by Bhīṣma", te: "భీష్మునిచే రక్షించబడుతున్నది" },
+                { sanskrit: "पर्याप्तं तु इदम् एतेषां बलं", word: "paryāptaṁ tu idam eteṣāṁ balaṁ", sanskrit_te: "పర్యాప్తం త్విదమేతేషాం బలం", en: "Limited indeed is this their army", te: "పరిమితమైనది వారి సైన్యం" },
+                { sanskrit: "भीमाभिरक्षितम्", word: "bhīmābhirakṣitam", sanskrit_te: "భీమాభిరక్షితమ్", en: "protected by Bhīma", te: "భీమునిచే రక్షించబడుతున్నది" }
+            ]
+    },
+    "1.11": {
+        sanskrit: "अयनेषु च सर्वेषु यथाभागमवस्थिताः।\nभीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि॥",
+            transliteration: "ayaneṣu ca sarveṣu yathā-bhāgam avasthitāḥ |\nbhīṣmam evābhirakṣantu bhavantaḥ sarva eva hi ||",
+                en: {
+            meaning: "And stationed in all the strategic points according to your respective positions, all of you should indeed protect Bhīṣma alone.",
+                childMeaning: "Duryodhana tells his generals: Stand in your positions and protect Bhishma.",
+                    activity: "Think about teamwork: protecting the leader."
+        },
+        te: {
+            meaning: "మరియు అన్ని వ్యూహ బిందువులలో మీ మీ భాగాల ప్రకారం ఉండి, మీరు అందరూ భీష్ముని మాత్రమే రక్షించండి.",
+                childMeaning: "దుర్యోధనుడు తన సేనాధిపతులతో: మీ మీ స్థానాల్లో నిలబడి, భీష్ముణ్ణి కాపాడండి.",
+                    activity: "టీమ్వర్క్ గురించి ఆలోచించండి: నాయకుణ్ణి కాపాడటం."
+        },
+        exercises: {
+            seeds: { question: "Whom should the Kauravas protect?", question_te: "కౌరవులు ఎవరిని రక్షించాలి?", options: ["Duryodhana", "Bhīṣma", "Karṇa"], correct: 1 },
+            seekers: { question: "Where should they stand?", question_te: "వారు ఎక్కడ నిలబడాలి?", options: ["Anywhere", "At strategic points", "At home"], correct: 1 },
+            warriors: { question: "What does 'yathābhāgam' mean?", question_te: "'యథాభాగం' అంటే?", options: ["Without division", "According to respective positions", "Randomly"], correct: 1 }
+        },
+        telugu_script: "అయనేషు చ సర్వేషు యథాభాగమవస్థితాః |\nభీష్మమేవాభిరక్షన్తు భవన్తః సర్వ ఏవ హి ||",
+            lineBreakdown: [
+                { sanskrit: "अयनेषु च सर्वेषु", word: "ayaneṣu ca sarveṣu", sanskrit_te: "అయనేషు చ సర్వేషు", en: "In all strategic points", te: "అన్ని వ్యూహ బిందువులలో" },
+                { sanskrit: "यथाभागम् अवस्थिताः", word: "yathā-bhāgam avasthitāḥ", sanskrit_te: "యథాభాగమవస్థితాః", en: "stationed according to division", te: "మీ మీ భాగాల ప్రకారం నిలబడి" },
+                { sanskrit: "भीष्मम् एव अभिरक्षन्तु", word: "bhīṣmam evābhirakṣantu", sanskrit_te: "భీష్మమేవాభిరక్షన్తు", en: "Bhīṣma alone protect", te: "భీష్ముని మాత్రమే రక్షించండి" },
+                { sanskrit: "भवन्तः सर्व एव हि", word: "bhavantaḥ sarva eva hi", sanskrit_te: "భవన్తః సర్వ ఏవ హి", en: "you all indeed", te: "మీరు అందరూ" }
+            ]
+    },
+    "1.12": {
+        sanskrit: "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः।\nसिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्॥",
+            transliteration: "tasya sañjanayan harṣaṁ kuru-vṛddhaḥ pitāmahaḥ |\siṁha-nādaṁ vinadyoccaiḥ śaṅkhaṁ dadhmau pratāpavān ||",
+                en: {
+            meaning: "Then the grand old man of the Kuru dynasty, the glorious grandsire (Bhīṣma), blowing his conch loudly like a lion's roar, generated joy in Duryodhana.",
+                childMeaning: "Bhishma, the oldest Kaurava, blew his conch loudly to cheer up Duryodhana.",
+                    activity: "Make a loud sound like a lion's roar (just for fun)."
+        },
+        te: {
+            meaning: "అప్పుడు కురు వంశపు వృద్ధుడు, పితామహుడు (భీష్ముడు), సింహనాదం వలె గట్టిగా శంఖం పూరించి, దుర్యోధనునికి హర్షాన్ని కలిగించాడు.",
+                childMeaning: "భీష్ముడు, పెద్ద కౌరవుడు, దుర్యోధనుణ్ణి ఉత్సాహపరచడానికి గట్టిగా శంఖం పూరించాడు.",
+                    activity: "సింహం గర్జనలా గట్టిగా శబ్దం చేయండి (వినోదం కోసం)."
+        },
+        exercises: {
+            seeds: { question: "Who blew the conch first?", question_te: "ముందు శంఖం ఎవరు పూరించారు?", options: ["Duryodhana", "Bhīṣma", "Arjuna"], correct: 1 },
+            seekers: { question: "Why did Bhishma blow the conch?", question_te: "భీష్ముడు శంఖం ఎందుకు పూరించాడు?", options: ["To start war", "To generate joy in Duryodhana", "To scare Pandavas"], correct: 1 },
+            warriors: { question: "What is 'siṁha-nāda'?", question_te: "'సింహనాదం' అంటే?", options: ["Bird sound", "Lion's roar", "Thunder"], correct: 1 }
+        },
+        telugu_script: "తస్య సఞ్జనయన్హర్షం కురువృద్ధః పితామహః |\nసింహనాదం వినద్యోచ్చైః శఙ్ఖం దధ్మౌ ప్రతాపవాన్ ||",
+            lineBreakdown: [
+                { sanskrit: "तस्य सञ्जनयन् हर्षम्", word: "tasya sañjanayan harṣam", sanskrit_te: "తస్య సఞ్జనయన్హర్షం", en: "Generating joy in him", te: "అతనికి (దుర్యోధనునికి) హర్షం కలిగిస్తూ" },
+                { sanskrit: "कुरुवृद्धः पितामहः", word: "kuru-vṛddhaḥ pitāmahaḥ", sanskrit_te: "కురువృద్ధః పితామహః", en: "the Kuru elder, the grandsire", te: "కురు వంశపు వృద్ధుడు, పితామహుడు" },
+                { sanskrit: "सिंहनादं विनद्य उच्चैः", word: "siṁha-nādaṁ vinadya uccaiḥ", sanskrit_te: "సింహనాదం వినద్యోచ్చైః", en: "roaring a lion's roar loudly", te: "సింహనాదంలా గట్టిగా గర్జించి" },
+                { sanskrit: "शङ्खं दध्मौ प्रतापवान्", word: "śaṅkhaṁ dadhmau pratāpavān", sanskrit_te: "శఙ్ఖం దధ్మౌ ప్రతాపవాన్", en: "the glorious one blew the conch", te: "ప్రతాపవంతుడు శంఖం పూరించాడు" }
+            ]
     }
 };
 
