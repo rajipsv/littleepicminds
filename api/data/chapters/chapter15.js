@@ -178,69 +178,141 @@ const CHAPTER_15_SHLOKAS = {
     },
 
     "15.8": {
-        sanskrit: "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः...",
-        transliteration: "śarīraṁ yad avāpnoti...",
+        sanskrit: "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः।\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्॥",
+        transliteration: "śarīraṁ yad avāpnoti yac cāpy utkrāmatīśvaraḥ\ngṛhītvaitāni saṁyāti vāyur gandhān ivāśayāt",
         en: {
-            meaning: "The soul moves from one body to another carrying mind and senses.",
-            childMeaning: "Like changing clothes, the soul changes bodies.",
-            activity: "Draw yourself wearing different clothes."
+            meaning: "When the soul accepts a body and when it leaves it, it takes the mind and senses along, just as the wind carries fragrances from their source.",
+            childMeaning: "The soul moves from one body to another carrying thoughts and senses, like air carries smells from one place to another.",
+            activity: "Smell a flower or food item. Think how air carries that smell to you."
         },
         te: {
-            meaning: "జీవాత్మ ఒక శరీరం నుంచి మరొకదానికి మారుతుంది.",
-            childMeaning: "బట్టలు మార్చినట్టు శరీరాన్ని మార్చుతుంది.",
-            activity: "వేర్వేరు బట్టలతో మీ చిత్రాన్ని గీయండి."
+            meaning: "జీవాత్మ ఒక శరీరాన్ని స్వీకరించినప్పుడు మరియు దాన్ని విడిచినప్పుడు, అది మనస్సు మరియు ఇంద్రియాలను వెంట తీసుకెళ్తుంది, గాలి వాసనను తీసుకెళ్లినట్లు.",
+            childMeaning: "గాలి వాసన తీసుకెళ్లినట్లు, ఆత్మ మన ఆలోచనలు మరియు ఇంద్రియాలను తీసుకెళ్తుంది.",
+            activity: "ఒక పువ్వు లేదా వాసనను గమనించండి. గాలి దాన్ని ఎలా తీసుకువస్తుందో ఆలోచించండి."
         },
         exercises: {
-            seeds: { question: "Do bodies change?", question_te: "శరీరం మారుతుందా?", options: ["Yes", "No", "Maybe"], correct: 0 },
-            seekers: { question: "What carries over?", question_te: "ఏవి వెంట తీసుకెళ్తుంది?", options: ["Mind & senses", "Money", "Food"], correct: 0 },
-            warriors: { question: "Concept shown?", question_te: "ఇది ఏ భావనను చూపుతుంది?", options: ["Rebirth", "Sleep", "Dream"], correct: 0 }
+            seeds: {
+                question: "What carries smell from one place to another?",
+                question_te: "వాసనను ఒక చోటు నుండి మరొక చోటుకు ఏమి తీసుకెళ్తుంది?",
+                options: ["Air (🌬️)", "Water (💧)", "Stone (🪨)"],
+                correct: 0
+            },
+            seekers: {
+                question: "When the soul moves to a new body, what does it carry?",
+                question_te: "జీవాత్మ కొత్త శరీరానికి వెళ్తప్పుడు ఏమి తీసుకెళ్తుంది?",
+                options: ["Mind and senses", "Body parts", "Clothes"],
+                correct: 0
+            },
+            warriors: {
+                question: "Why is the soul compared to wind carrying fragrance?",
+                question_te: "ఆత్మను గాలి వాసనతో ఎందుకు పోల్చారు?",
+                options: [
+                    "To show subtle and invisible transfer of impressions (samskaras)",
+                    "Because both move fast",
+                    "Because both are powerful"
+                ],
+                correct: 0
+            }
         },
-        telugu_script: "శరీరం యదవాప్నోతి...",
-        lineBreakdown: []
+        telugu_script: "శరీరం యదవాప్నోతి యచ్చాప్యుత్క్రమతీశ్వరః |\nగృహీత్వైతాని సంయాతి వాయుర్గంధానివాశయాత్ ||",
+        lineBreakdown: [
+            { sanskrit: "शरीरं यदवाप्नोति", word: "śarīraṁ yad avāpnoti", sanskrit_te: "శరీరం యదవాప్నోతి", en: "when it takes a body", te: "శరీరాన్ని పొందినప్పుడు" },
+            { sanskrit: "यच्चाप्युत्क्रामतीश्वरः", word: "yac cāpy utkrāmatīśvaraḥ", sanskrit_te: "యచ్చాప్యుత్క్రమతీశ్వరః", en: "and when it leaves the body", te: "శరీరాన్ని విడిచినప్పుడు" },
+            { sanskrit: "गृहीत्वैतानि संयाति", word: "gṛhītvaitāni saṁyāti", sanskrit_te: "గృహీత్వైతాని సంయాతి", en: "it carries these along", te: "వాటిని వెంట తీసుకెళ్తుంది" },
+            { sanskrit: "वायुर्गन्धानिवाशयात्", word: "vāyur gandhān ivāśayāt", sanskrit_te: "వాయుర్గంధానివాశయాత్", en: "like air carries fragrance", te: "గాలి వాసన తీసుకెళ్లినట్లు" }
+        ]
     },
 
     "15.9": {
-        sanskrit: "श्रोत्रं चक्षुः स्पर्शनं च...",
-        transliteration: "śrotraṁ cakṣuḥ...",
+        sanskrit: "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च।\nअधिष्ठाय मनश्चायं विषयानुपसेवते॥",
+        transliteration: "śrotraṁ cakṣuḥ sparśanaṁ ca rasanaṁ ghrāṇam eva ca\nadhiṣṭhāya manaś cāyaṁ viṣayān upasevate",
         en: {
-            meaning: "The soul uses senses to experience the world.",
-            childMeaning: "We use eyes, ears, nose to understand things.",
-            activity: "Name your 5 senses."
+            meaning: "The soul uses the ears, eyes, skin, tongue, and nose, along with the mind, to experience the objects of the world.",
+            childMeaning: "We use our eyes, ears, nose, tongue, and skin to see, hear, smell, taste, and feel things.",
+            activity: "List your five senses and one thing each sense helps you do."
         },
         te: {
-            meaning: "జీవాత్మ ఇంద్రియాలను ఉపయోగిస్తుంది.",
-            childMeaning: "మనము కళ్ళు, చెవులు వాడుతాము.",
-            activity: "మీ 5 ఇంద్రియాలను చెప్పండి."
+            meaning: "జీవాత్మ మనస్సుతో కలిసి చెవులు, కళ్ళు, చర్మం, నాలుక, ముక్కు ద్వారా ప్రపంచాన్ని అనుభవిస్తుంది.",
+            childMeaning: "మనము కళ్ళు, చెవులు, ముక్కు, నాలుక, చర్మంతో ప్రపంచాన్ని తెలుసుకుంటాము.",
+            activity: "మీ ఐదు ఇంద్రియాలు మరియు వాటి పనులను రాయండి."
         },
         exercises: {
-            seeds: { question: "How many senses?", options: ["5", "2", "10"], correct: 0 },
-            seekers: { question: "Who uses senses?", options: ["Soul", "Table", "Tree"], correct: 0 },
-            warriors: { question: "Mind role?", options: ["Controller", "None", "Weak"], correct: 0 }
+            seeds: {
+                question: "Which of these is a sense organ?",
+                question_te: "ఇందులో ఏది ఇంద్రియం?",
+                options: ["Eyes 👀", "Chair 🪑", "Stone 🪨"],
+                correct: 0
+            },
+            seekers: {
+                question: "What helps control and coordinate all senses?",
+                question_te: "ఇంద్రియాలను ఏది నియంత్రిస్తుంది?",
+                options: ["Mind", "Hand", "Food"],
+                correct: 0
+            },
+            warriors: {
+                question: "What is the role of the mind in perception?",
+                question_te: "మనస్సు గ్రహణంలో ఏమి చేస్తుంది?",
+                options: [
+                    "Integrates inputs from senses to create experience",
+                    "Works separately from senses",
+                    "Only stores memories"
+                ],
+                correct: 0
+            }
         },
-        telugu_script: "",
-        lineBreakdown: []
+        telugu_script: "శ్రోత్రం చక్షుః స్పర్శనం చ రసనం ఘ్రాణమేవ చ |\nఅధిష్ఠాయ మనశ్చాయం విషయానుపసేవతే ||",
+        lineBreakdown: [
+            { sanskrit: "श्रोत्रं चक्षुः", word: "śrotraṁ cakṣuḥ", sanskrit_te: "శ్రోత్రం చక్షుః", en: "ears and eyes", te: "చెవులు మరియు కళ్ళు" },
+            { sanskrit: "स्पर्शनं च रसनं", word: "sparśanaṁ ca rasanaṁ", sanskrit_te: "స్పర్శనం చ రసనం", en: "touch and taste", te: "స్పర్శ మరియు రుచి" },
+            { sanskrit: "घ्राणमेव च", word: "ghrāṇam eva ca", sanskrit_te: "ఘ్రాణమేవ చ", en: "and smell", te: "మరియు వాసన" },
+            { sanskrit: "अधिष्ठाय मनः", word: "adhiṣṭhāya manaḥ", sanskrit_te: "అధిష్ఠాయ మనః", en: "with the mind", te: "మనస్సుతో కలిసి" }
+        ]
     },
 
     "15.10": {
-        sanskrit: "उत्क्रामन्तं स्थितं वापि...",
-        transliteration: "utkrāmantaṁ sthitaṁ vāpi...",
+        sanskrit: "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः॥",
+        transliteration: "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam\nvimūḍhā nānupaśyanti paśyanti jñāna-cakṣuṣaḥ",
         en: {
-            meaning: "Only the wise can see the soul's journey.",
-            childMeaning: "Smart people understand what is inside us.",
-            activity: "Close eyes and think for 1 minute."
+            meaning: "The ignorant cannot perceive the soul as it leaves or stays in the body or enjoys through the senses, but those with knowledge can see it.",
+            childMeaning: "Not everyone understands the soul, but wise people who learn deeply can understand it.",
+            activity: "Close your eyes and sit quietly for one minute. Notice your thoughts."
         },
         te: {
-            meaning: "జ్ఞానులు మాత్రమే ఆత్మను గ్రహిస్తారు.",
-            childMeaning: "తెలివైన వారు మాత్రమే అర్థం చేసుకుంటారు.",
-            activity: "ఒక నిమిషం కళ్ళు మూసుకుని ఆలోచించండి."
+            meaning: "ఆత్మ శరీరాన్ని విడిచినా, ఉండినా, అనుభవించినా అజ్ఞానులు గ్రహించలేరు, కానీ జ్ఞానులు దాన్ని తెలుసుకుంటారు.",
+            childMeaning: "అందరూ అర్థం చేసుకోలేరు, కానీ జ్ఞానులు అర్థం చేసుకుంటారు.",
+            activity: "ఒక నిమిషం నిశ్శబ్దంగా కూర్చొని మీ ఆలోచనలను గమనించండి."
         },
         exercises: {
-            seeds: { question: "Can all see soul?", options: ["No", "Yes", "Maybe"], correct: 0 },
-            seekers: { question: "Who sees truth?", options: ["Wise", "All", "None"], correct: 0 },
-            warriors: { question: "Why not others?", options: ["Ignorance", "Fear", "Dark"], correct: 0 }
+            seeds: {
+                question: "Who understands better?",
+                question_te: "ఎవరు బాగా అర్థం చేసుకుంటారు?",
+                options: ["Wise people 🧠", "Everyone", "No one"],
+                correct: 0
+            },
+            seekers: {
+                question: "Why can't everyone understand the soul?",
+                question_te: "ఎందుకు అందరూ ఆత్మను అర్థం చేసుకోలేరు?",
+                options: ["Lack of knowledge", "No eyes", "Too small"],
+                correct: 0
+            },
+            warriors: {
+                question: "What does 'jnana chakshu' (eye of knowledge) mean?",
+                question_te: "'జ్ఞాన చక్షు' అంటే ఏమిటి?",
+                options: [
+                    "Inner awareness beyond physical perception",
+                    "A special physical eye",
+                    "Imagination only"
+                ],
+                correct: 0
+            }
         },
-        telugu_script: "",
-        lineBreakdown: []
+        telugu_script: "ఉత్క్రామంతం స్థితం వాపి భుఞ్జానం వా గుణాన్వితం |\nవిమూఢా నానుపశ్యంతి పశ్యంతి జ్ఞానచక్షుషః ||",
+        lineBreakdown: [
+            { sanskrit: "उत्क्रामन्तं", word: "utkrāmantam", sanskrit_te: "ఉత్క్రామంతం", en: "leaving the body", te: "శరీరం విడిచినప్పుడు" },
+            { sanskrit: "भुञ्जानं वा", word: "bhuñjānam vā", sanskrit_te: "భుఞ్జానం వా", en: "experiencing", te: "అనుభవిస్తున్నప్పుడు" },
+            { sanskrit: "विमूढा नानुपश्यन्ति", word: "vimūḍhā nānupaśyanti", sanskrit_te: "విమూఢా నానుపశ్యంతి", en: "the ignorant do not see", te: "అజ్ఞానులు చూడలేరు" },
+            { sanskrit: "पश्यन्ति ज्ञानचक्षुषः", word: "paśyanti jñāna-cakṣuṣaḥ", sanskrit_te: "పశ్యంతి జ్ఞానచక్షుషః", en: "the wise see with knowledge", te: "జ్ఞానంతో చూసేవారు" }
+        ]
     }
 };
 
