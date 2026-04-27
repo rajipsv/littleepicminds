@@ -9,7 +9,8 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [age, setAge] = useState('');
   const [grade, setGrade] = useState('');
-  const [mobile, setMobile] = useState('');
+  const [countryCode, setCountryCode] = useState('+91');
+  const [mobileNum, setMobileNum] = useState('');
   const [error, setError] = useState('');
   const { register } = useAuth();
   const navigate = useNavigate();
@@ -17,7 +18,8 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await register(username, email, password, age, grade, mobile);
+      const fullMobile = `${countryCode} ${mobileNum}`;
+      await register(username, email, password, age, grade, fullMobile);
       navigate('/');
     } catch (err) {
       const errMsg = err.response?.data?.error || err.response?.data?.message || err.message;
@@ -74,13 +76,21 @@ const Register = () => {
 
           <div>
             <label className="block text-sm font-bold text-kid-blue mb-1">Mobile Number (For Premium Access)</label>
-            <div className="relative">
+            <div className="flex gap-2">
+              <input 
+                type="text" 
+                value={countryCode}
+                onChange={(e) => setCountryCode(e.target.value)}
+                className="w-24 px-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all font-mono"
+                placeholder="+91"
+                required
+              />
               <input 
                 type="tel" 
-                value={mobile}
-                onChange={(e) => setMobile(e.target.value)}
-                className="w-full px-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all"
-                placeholder="+91 0000000000"
+                value={mobileNum}
+                onChange={(e) => setMobileNum(e.target.value)}
+                className="flex-1 px-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all"
+                placeholder="0000000000"
                 required
               />
             </div>
