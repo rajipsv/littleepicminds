@@ -54,8 +54,8 @@ router.post('/', async (req, res) => {
       {
         text: text,
         target_language_code: langCode,
-        speaker: speaker === 'meera' ? 'shubh' : speaker, // Map old 'meera' default to 'shubh'
-        model_id: 'bulbul:v2' 
+        speaker: speaker === 'meera' ? 'shubh' : speaker,
+        model: 'bulbul:v3' 
       },
       {
         headers: {
