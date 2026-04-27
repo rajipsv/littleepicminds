@@ -23,8 +23,8 @@ const ScriptureLayout = () => {
   const [masteredShlokas, setMasteredShlokas] = useState(new Set());
 
   // Generate chapters based on scripture
-  const activeChapterData = chapterMetadata.find(c => c.id === activeChapter);
-  const totalVersesInChapter = activeChapterData ? activeChapterData.count : (scripture === 'gita' ? 47 : 1);
+  const activeChapterData = scripture === 'gita' ? chapterMetadata.find(c => c.id === activeChapter) : null;
+  const totalVersesInChapter = scripture === 'hanuman' ? 44 : (activeChapterData ? activeChapterData.count : 1);
   const chapterCount = scripture === 'gita' ? 18 : 1;
   const chapters = Array.from({ length: chapterCount }, (_, i) => i + 1);
 

@@ -14,17 +14,33 @@ let finalShlokas = gitaDataInline && gitaDataInline.shlokas
   : shlokasData;
 
 // Load modular chapter data
+const loadChapter = (num) => {
+  try {
+    return require(`./chapters/chapter${num}.js`);
+  } catch (e) {
+    return {};
+  }
+};
+
+finalShlokas = {
+  ...finalShlokas,
+  ...loadChapter(1),
+  ...loadChapter(2),
+  ...loadChapter(15)
+};
+
+// Load modular prayer data
+let finalHanuman = hanumanData;
 try {
-  const chapter15Data = require('./chapters/chapter15.js');
-  finalShlokas = { ...finalShlokas, ...chapter15Data };
+  finalHanuman = require('./prayers/hanuman_chalisa.js');
 } catch (e) {
-  console.warn('Could not load chapter15 data:', e.message);
+  console.warn('Could not load hanuman_chalisa.js:', e.message);
 }
 
 module.exports = {
   chapters: chaptersConfig.chapters,
   levels: chaptersConfig.levels,
   shlokas: finalShlokas,
-  hanumanChalisa: hanumanData,
+  hanumanChalisa: finalHanuman,
   evaluations: evaluationsData,
 };
