@@ -74,7 +74,7 @@ const Subscription = () => {
             <p className="text-sm mb-4 leading-relaxed">
               Make a payment of <strong>₹1999</strong> to the number below using <strong>GPay, PhonePe, or Paytm</strong>:
             </p>
-            <div className="bg-white text-kid-primary rounded-xl p-3 text-center font-bold text-xl mb-4 shadow-inner">
+            <div className="bg-white text-slate-900 rounded-xl p-3 text-center font-bold text-xl mb-4 shadow-inner border border-white/20">
               +91 7306885376
             </div>
             <p className="text-xs opacity-80 mb-4 italic text-center">
