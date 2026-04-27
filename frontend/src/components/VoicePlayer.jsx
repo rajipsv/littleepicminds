@@ -30,12 +30,10 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
     setIsAiLoading(true);
     try {
       // 1. Request audio from our backend proxy
-      const langCode = isTe ? 'te' : 'en'; // Simple map, backend handles specific Sarvam codes
-      
       const res = await api.post('/api/tts', {
         text: text,
-        target_language_code: langCode,
-        speaker: 'meera' // Default speaker
+        target_language_code: currentLang, // Use the actual current language
+        speaker: 'meera' // Default speaker (mapped to 'shubh' in backend)
       });
 
       if (res.data.audios && res.data.audios.length > 0) {

@@ -52,15 +52,10 @@ router.post('/', async (req, res) => {
     const response = await axios.post(
       'https://api.sarvam.ai/text-to-speech',
       {
-        inputs: [text],
+        text: text,
         target_language_code: langCode,
-        speaker: speaker,
-        pitch: 0,
-        pace: 0.9,
-        loudness: 1.5,
-        speech_sample_rate: 8000,
-        enable_preprocessing: true,
-        model: 'bulbul:v1'
+        speaker: speaker === 'meera' ? 'shubh' : speaker, // Map old 'meera' default to 'shubh'
+        model_id: 'bulbul:v2' 
       },
       {
         headers: {

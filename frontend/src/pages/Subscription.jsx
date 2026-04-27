@@ -42,7 +42,7 @@ const Subscription = () => {
         {/* Free Plan */}
         <div className="bg-white rounded-3xl p-8 border-2 border-gray-100 shadow-sm opacity-80">
           <h2 className="text-2xl font-bold text-kid-blue mb-2">Explorer (Free)</h2>
-          <div className="text-4xl font-extrabold mb-6">$0<span className="text-lg text-gray-400 font-medium">/mo</span></div>
+          <div className="text-4xl font-extrabold mb-6">₹0<span className="text-lg text-gray-400 font-medium">/yr</span></div>
           
           <ul className="space-y-4 mb-8">
             <li className="flex items-center text-gray-600"><CheckCircle className="text-green-500 mr-2" size={20} /> Chapters 1 & 2</li>
@@ -61,7 +61,7 @@ const Subscription = () => {
             Most Popular
           </div>
           <h2 className="text-2xl font-bold mb-2">Scholar (Premium)</h2>
-          <div className="text-4xl font-extrabold mb-6">$5<span className="text-lg font-medium opacity-80">/mo</span></div>
+          <div className="text-4xl font-extrabold mb-6">₹1999<span className="text-lg font-medium opacity-80">/yr</span></div>
           
           <ul className="space-y-4 mb-8">
             <li className="flex items-center"><Star className="text-kid-yellow mr-2" size={20} fill="currentColor" /> All 18 Chapters Unlocked</li>
