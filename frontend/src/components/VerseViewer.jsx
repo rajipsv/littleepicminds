@@ -138,6 +138,7 @@ const VerseViewer = ({ verse, scripture }) => {
           <div className="flex-shrink-0 z-10">
             <VoicePlayer 
               text={isTe && verse.telugu_script ? verse.telugu_script : verse.sanskrit} 
+              targetLang={isTe ? 'te' : 'hi'} // Force hi-IN accent for Sanskrit shlokas
               onWordBoundary={handleWordBoundary}
               onEnd={handleAudioEnd}
             />

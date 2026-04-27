@@ -22,6 +22,7 @@ const SARVAM_LANG_MAP = {
 };
 
 router.post('/', async (req, res) => {
+  console.log('[TTS] Handler Triggered!');
   try {
     const { text, target_language_code, speaker = 'meera' } = req.body;
 
@@ -29,10 +30,23 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ error: 'Text is required' });
     }
 
+    // 1. Rhythm Engine: Add punctuation to force natural pauses
+    // This makes the AI "breathe" between lines or between a word and its meaning
+    let rhythmicText = text;
+    if (text.includes('\n')) {
+      rhythmicText = text.split('\n')
+        .map(line => line.trim())
+        .filter(line => line.length > 0)
+        .join(', ') + '.'; 
+    } else if (text.includes('. ')) {
+      // For word-by-word: "Sanskrit. Meaning" -> add a comma for a more natural pause
+      rhythmicText = text.replace('. ', ', ');
+    }
+
     const langCode = SARVAM_LANG_MAP[target_language_code] || 'hi-IN';
     
-    // Create a cache key based on text, language, and speaker
-    const hash = crypto.createHash('md5').update(`${text}_${langCode}_${speaker}`).digest('hex');
+    // Create a cache key based on rhythmic text, language, and speaker
+    const hash = crypto.createHash('md5').update(`${rhythmicText}_${langCode}_roopa`).digest('hex');
     const cacheFile = path.join(CACHE_DIR, `${hash}.wav`);
 
     // Check cache
@@ -44,17 +58,18 @@ router.post('/', async (req, res) => {
 
     // Check if API key is configured
     if (!process.env.SARVAM_API_KEY) {
-      // Return a 501 Not Implemented so frontend can fallback to browser TTS gracefully
       return res.status(501).json({ error: 'Sarvam API key not configured on server' });
     }
 
-    // Call Sarvam API
+    // Call Sarvam AI
+    console.log(`[TTS DEBUG] Requesting Rhythmic Sarvam for: "${rhythmicText.substring(0, 30)}..."`);
+    
     const response = await axios.post(
       'https://api.sarvam.ai/text-to-speech',
       {
-        text: text,
+        text: rhythmicText,
         target_language_code: langCode,
-        speaker: speaker === 'meera' ? 'shubh' : speaker,
+        speaker: 'roopa',
         model: 'bulbul:v3' 
       },
       {
@@ -65,9 +80,13 @@ router.post('/', async (req, res) => {
       }
     );
 
+    console.log(`[TTS DEBUG] Sarvam Response Status: ${response.status}`);
+
     if (response.data && response.data.audios && response.data.audios.length > 0) {
       // Save to cache
       const audioBuffer = Buffer.from(response.data.audios[0], 'base64');
+      console.log(`[TTS DEBUG] Success! Audio size: ${audioBuffer.length} bytes`);
+      console.log(`🔊 [SOUND WAVE] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`);
       fs.writeFileSync(cacheFile, audioBuffer);
       
       return res.json(response.data);
@@ -76,7 +95,10 @@ router.post('/', async (req, res) => {
     }
 
   } catch (err) {
-    console.error('TTS API Error:', err.response?.data || err.message);
+    console.error(`[TTS DEBUG] API Error: ${err.message}`);
+    if (err.response) {
+      console.error(`[TTS DEBUG] Response Data:`, JSON.stringify(err.response.data));
+    }
     res.status(500).json({ error: 'Failed to generate speech' });
   }
 });

@@ -19,10 +19,10 @@ const CHAPTER_1_SHLOKAS = {
         },
         telugu_script: "ధృతరాష్ట్ర ఉవాచ |\nధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః |\nమామకాః పాండవాశ్చైవ కిమకుర్వత సంజయ ||",
         lineBreakdown: [
-            { sanskrit: "dharmakṣetre kurukṣetre", sanskrit_te: "ధర్మక్షేత్రే కురుక్షేత్రే", en: "In the holy field of Kurukshetra", te: "ధర్మక్షేత్రమైన కురుక్షేత్రంలో" },
-            { sanskrit: "samavetā yuyutsavaḥ", sanskrit_te: "సమవేతా యుయుత్సవః", en: "gathered together, desiring to fight", te: "యుద్ధం చేయడానికి సిద్ధపడి చేరిన" },
-            { sanskrit: "māmakāḥ pāṇḍavāścaiva", sanskrit_te: "మామకాః పాండవాశ్చైవ", en: "my sons and the sons of Pandu", te: "నా కుమారులు మరియు పాండు కుమారులు" },
-            { sanskrit: "kim akurvata sañjaya", sanskrit_te: "కిమకుర్వత సంజయ", en: "what did they do, O Sanjaya?", te: "ఏమి చేశారు, ఓ సంజయా?" }
+            { sanskrit: "धर्मक्षेत्रे कुरुक्षेत्रे", word: "dharmakṣetre kurukṣetre", sanskrit_te: "ధర్మక్షేత్రే కురుక్షేత్రే", en: "In the holy field of Kurukshetra", te: "ధర్మక్షేత్రమైన కురుక్షేత్రంలో" },
+            { sanskrit: "समवेता युयुत्सवः", word: "samavetā yuyutsavaḥ", sanskrit_te: "సమవేతా యుయుత్सवః", en: "gathered together, desiring to fight", te: "యుద్ధం చేయడానికి సిద్ధపడి చేరిన" },
+            { sanskrit: "मामकाः पाण्डवाश्चैव", word: "māmakāḥ pāṇḍavāścaiva", sanskrit_te: "మామకాః పాండవాశ్చైవ", en: "my sons and the sons of Pandu", te: "నా కుమారులు మరియు పాండు కుమారులు" },
+            { sanskrit: "किमकुर्वत सञ्जय", word: "kim akurvata sañjaya", sanskrit_te: "కిమకుర్వత సంజయ", en: "what did they do, O Sanjaya?", te: "ఏమి చేశారు, ఓ సంజయా?" }
         ]
     },
     "1.2": {
@@ -45,10 +45,10 @@ const CHAPTER_1_SHLOKAS = {
         },
         telugu_script: "సంజయ ఉవాచ |\nదృష్ట్వా తు పాండవానీకం వ్యూఢం దుర్యోధనస్తదా |\nఆచార్యముపసంగమ్య రాజా వచనమబ్రవీత్ ||",
         lineBreakdown: [
-            { sanskrit: "dṛṣṭvā tu pāṇḍavānīkaṁ", sanskrit_te: "దృష్ట్వా తు పాండవానీకం", en: "after seeing the army of the Pandavas", te: "పాండవుల సైన్యాన్ని చూసిన తరువాత" },
-            { sanskrit: "vyūḍhaṁ duryodhanas tadā", sanskrit_te: "వ్యూఢం దుర్యోధనస్తదా", en: "arrayed in battle formation, Duryodhana", te: "యుద్ధ శ్రేణిలో ఉన్న దుర్యోధనుడు" },
-            { sanskrit: "ācāryam upasaṅgamya", sanskrit_te: "ఆచార్యముపసంగమ్య", en: "approached his teacher", te: "తన గురువు దగ్గరకు వెళ్ళి" },
-            { sanskrit: "rājā vacanam abravīt", sanskrit_te: "రాజా వచనమబ్రవీత్", en: "the king spoke these words", te: "రాజు ఈ మాటలు పలికాడు" }
+            { sanskrit: "दृष्ट्वा तु पाण्डवानीकं", word: "dṛṣṭvā tu pāṇḍavānīkaṁ", sanskrit_te: "దృష్ట్వా తు పాండవానీకం", en: "after seeing the army of the Pandavas", te: "పాండవుల సైన్యాన్ని చూసిన తరువాత" },
+            { sanskrit: "व्यूटं दुर्योधनस्तदा", word: "vyūḍhaṁ duryodhanas tadā", sanskrit_te: "వ్యూఢం దుర్యోధనస్తదా", en: "arrayed in battle formation, Duryodhana", te: "యుద్ధ శ్రేణిలో ఉన్న దుర్యోధనుడు" },
+            { sanskrit: "आचार्यमुपसङ्गम्य", word: "ācāryam upasaṅgamya", sanskrit_te: "ఆచార్యముపసంగమ్య", en: "approached his teacher", te: "తన గురువు దగ్గరకు వెళ్ళి" },
+            { sanskrit: "राजा वचनमब्रवीत्", word: "rājā vacanam abravīt", sanskrit_te: "రాజా వచనమబ్రవీత్", en: "the king spoke these words", te: "రాజు ఈ మాటలు పలికాడు" }
         ]
     },
     "1.3": {
@@ -71,10 +71,10 @@ const CHAPTER_1_SHLOKAS = {
         },
         telugu_script: "పశ్యైతాం పాండుపుత్రాణామాచార్య మహతీం చమూమ్ |\nవ్యూఢాం దృపదపుత్రేణ తవ శిష్యేణ ధీమతా ||",
         lineBreakdown: [
-            { sanskrit: "paśyaitāṁ pāṇḍu-putrāṇām", sanskrit_te: "పశ్యైతాం పాండుపుత్రాణాం", en: "behold this army of the sons of Pandu", te: "ఈ పాండవుల సైన్యాన్ని చూడండి" },
-            { sanskrit: "ācārya mahatīṁ camūm", sanskrit_te: "ఆచార్య మహతీం చమూమ్", en: "O teacher, this great army", te: "ఓ ఆచార్యా! ఈ గొప్ప సైన్యం" },
-            { sanskrit: "vyūḍhāṁ drupada-putreṇa", sanskrit_te: "వ్యూఢాం దృపదపుత్రేణ", en: "arranged by the son of Drupada", te: "దృపద పుత్రుడిచే వ్యూహరచన చేయబడింది" },
-            { sanskrit: "tava śiṣyeṇa dhīmatā", sanskrit_te: "తవ శిష్యేణ ధీమతా", en: "by your intelligent disciple", te: "మీ బుద్ధిమంతుడైన శిష్యుడిచే" }
+            { sanskrit: "पश्यैतां पाण्डुपुत्राणां", word: "paśyaitāṁ pāṇḍu-putrāṇām", sanskrit_te: "పశ్యైతాం పాండుపుత్రాణాం", en: "behold this army of the sons of Pandu", te: "ఈ పాండవుల సైన్యాన్ని చూడండి" },
+            { sanskrit: "आचार्य महतीं चमूम्", word: "ācārya mahatīṁ camūm", sanskrit_te: "ఆచార్య మహతీం చమూమ్", en: "O teacher, this great army", te: "ఓ ఆచార్యా! ఈ గొప్ప సైన్యం" },
+            { sanskrit: "व्यूटं द्रुपदपुत्रेण", word: "vyūḍhāṁ drupada-putreṇa", sanskrit_te: "వ్యూఢాం దృపదపుత్రేణ", en: "arranged by the son of Drupada", te: "దృపద పుత్రుడిచే వ్యూహరచన చేయబడింది" },
+            { sanskrit: "తవ శిష్యేణ ధీమతా", word: "tava śiṣyeṇa dhīmatā", sanskrit_te: "తవ శిష్యేణ ధీమతా", en: "by your intelligent disciple", te: "మీ బుద్ధిమంతుడైన శిష్యుడిచే" }
         ]
     },
     "1.4": {

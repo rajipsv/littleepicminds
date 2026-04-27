@@ -3,7 +3,7 @@ import { Play, Pause, Volume2, Settings2, Sparkles, AlertCircle } from 'lucide-r
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 
-const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
+const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [useFallback, setUseFallback] = useState(false);
@@ -29,20 +29,24 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
   const playAiVoice = async () => {
     setIsAiLoading(true);
     try {
-      // 1. Request audio from our backend proxy
-      const res = await api.post('/api/tts', {
+      console.log("Attempting to fetch AI voice from: http://localhost:5000/api/tts");
+      // 1. Request audio from our backend proxy - Hardcoded for local reliability
+      const res = await api.post('http://localhost:5000/api/tts', {
         text: text,
-        target_language_code: currentLang, // Use the actual current language
-        speaker: 'meera' // Default speaker (mapped to 'shubh' in backend)
+        target_language_code: targetLang || currentLang || 'hi', 
+        speaker: 'roopa' 
       });
 
-      if (res.data.audios && res.data.audios.length > 0) {
+      if (res.data.audios && res.data.audios.length > 0 && res.data.audios[0]) {
+        const audioLen = res.data.audios[0].length;
+        console.log("Audio received from Sarvam! Length:", audioLen);
+        // alert("Audio received! Length: " + audioLen);
+        
         // 2. Play the base64 audio
         const audioSrc = `data:audio/wav;base64,${res.data.audios[0]}`;
         const audio = new Audio(audioSrc);
         audioRef.current = audio;
         
-        // Setup playback rate for "Divine Slow"
         audio.playbackRate = voiceMode === 'divine' ? 0.85 : rate;
 
         audio.onended = () => {
@@ -50,26 +54,20 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
           if (onEnd) onEnd();
         };
 
-        // Note: Sarvam API doesn't provide word boundaries, so we simulate them or ignore
-        // Simulating a rough boundary event every 500ms
-        const duration = text.split(/\s+/).length * 500;
-        let wordsMatched = 0;
-        
-        audio.ontimeupdate = () => {
-           if (!onWordBoundary) return;
-           const percent = audio.currentTime / audio.duration;
-           const targetWordIndex = Math.floor(percent * text.split(/\s+/).length);
-           if (targetWordIndex > wordsMatched) {
-             wordsMatched = targetWordIndex;
-             onWordBoundary(wordsMatched);
-           }
+        audio.onerror = (e) => {
+          console.error("Audio Playback Error:", e);
+          alert("Audio playback error: " + (audio.error ? audio.error.message : "Unknown error"));
+          setIsPlaying(false);
         };
 
         await audio.play();
         setIsPlaying(true);
+      } else {
+        throw new Error("No audio content received from server.");
       }
     } catch (err) {
-      console.warn("AI TTS failed, falling back to browser.", err.message);
+      console.error("AI TTS failed:", err);
+      alert("AI Voice Error: " + err.message);
       setUseFallback(true);
       playBrowserVoice();
     } finally {
@@ -173,17 +171,17 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
             )}
 
             <div className="flex flex-col space-y-2">
-              <label className="text-xs font-bold text-gray-400 uppercase tracking-widest">Pace: {voiceMode}</label>
-              <div className="flex bg-lem-dark rounded-lg p-1 border border-lem-glass-border">
+              <label className="text-xs font-bold text-lem-accent uppercase tracking-widest">Voice Style</label>
+              <div className="flex bg-lem-dark/80 rounded-lg p-1 border border-lem-glass-border">
                 <button 
                   onClick={() => setVoiceMode('divine')}
-                  className={`flex-1 text-sm py-1.5 rounded-md font-bold transition-all ${voiceMode === 'divine' ? 'bg-lem-accent text-lem-dark shadow-sm' : 'text-gray-400 hover:text-white'}`}
+                  className={`flex-1 text-xs py-2 rounded-md font-bold transition-all ${voiceMode === 'divine' ? 'bg-lem-accent text-lem-dark shadow-sm' : 'text-gray-300 hover:text-white'}`}
                 >
                   Divine (Slow)
                 </button>
                 <button 
                   onClick={() => setVoiceMode('normal')}
-                  className={`flex-1 text-sm py-1.5 rounded-md font-bold transition-all ${voiceMode === 'normal' ? 'bg-lem-accent text-lem-dark shadow-sm' : 'text-gray-400 hover:text-white'}`}
+                  className={`flex-1 text-xs py-2 rounded-md font-bold transition-all ${voiceMode === 'normal' ? 'bg-lem-accent text-lem-dark shadow-sm' : 'text-gray-300 hover:text-white'}`}
                 >
                   Normal
                 </button>
@@ -192,8 +190,8 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd }) => {
 
             {voiceMode === 'normal' && (
               <div className="flex flex-col space-y-2">
-                <label className="text-xs font-bold text-gray-400 uppercase tracking-widest flex justify-between">
-                  <span>Speed</span>
+                <label className="text-xs font-bold text-white uppercase tracking-widest flex justify-between">
+                  <span>Reading Speed</span>
                   <span className="text-lem-accent">{rate}x</span>
                 </label>
                 <input 

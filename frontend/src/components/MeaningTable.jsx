@@ -23,19 +23,33 @@ const MeaningTable = ({ wordByWord }) => {
 
   if (!wordByWord || wordByWord.length === 0) return null;
 
-  const handlePlay = (word, meaning, index) => {
+  const handlePlay = async (word, meaning, index) => {
     setPlayingIndex(index);
-    window.speechSynthesis.cancel();
-    // Speak: "word ... meaning" as one sentence
-    const utterance = new SpeechSynthesisUtterance(`${word}. ${meaning}`);
-    const voices = window.speechSynthesis.getVoices();
-    const preferred = voices.find(v =>
-      v.lang.includes('hi') || v.lang.includes('sa') || v.lang.includes('IN')
-    );
-    if (preferred) utterance.voice = preferred;
-    utterance.rate = 0.8;
-    utterance.onend = () => setPlayingIndex(-1);
-    window.speechSynthesis.speak(utterance);
+    try {
+      // Hardcoded full URL for local reliability
+      const response = await fetch('http://localhost:5000/api/tts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          text: `${word}. ${meaning}`,
+          target_language_code: isTe ? 'te' : 'hi',
+          speaker: 'roopa'
+        })
+      });
+      
+      const data = await response.json();
+      if (data.audios && data.audios[0]) {
+        const audio = new Audio(`data:audio/wav;base64,${data.audios[0]}`);
+        audio.onended = () => setPlayingIndex(-1);
+        audio.onerror = () => setPlayingIndex(-1);
+        await audio.play();
+      } else {
+        setPlayingIndex(-1);
+      }
+    } catch (err) {
+      console.error("Word TTS failed:", err);
+      setPlayingIndex(-1);
+    }
   };
 
   return (
@@ -54,7 +68,8 @@ const MeaningTable = ({ wordByWord }) => {
         </thead>
         <tbody className="bg-white/5 divide-y divide-white/5">
           {wordByWord.map((item, index) => {
-            const word = isTe && item.sanskrit_te ? item.sanskrit_te : item.sanskrit || item.word;
+            const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
+            const audioWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.sanskrit_devanagari || item.sanskrit);
             const meaning = isTe && item.te ? item.te : item.en || item.meaning;
             const isPlaying = playingIndex === index;
 
@@ -62,7 +77,7 @@ const MeaningTable = ({ wordByWord }) => {
               <tr key={index} className="hover:bg-white/10 transition-colors">
                 <td className="px-3 py-3">
                   <button
-                    onClick={() => handlePlay(word, meaning, index)}
+                    onClick={() => handlePlay(audioWord, meaning, index)}
                     title="Hear word and meaning"
                     className={`w-8 h-8 rounded-full flex items-center justify-center transition-all border ${
                       isPlaying
@@ -74,7 +89,7 @@ const MeaningTable = ({ wordByWord }) => {
                   </button>
                 </td>
                 <td className="px-4 py-3 text-sm font-medium text-white whitespace-nowrap">
-                  {word}
+                  {displayWord}
                 </td>
                 <td className="px-4 py-3 text-sm text-gray-300">
                   {meaning}

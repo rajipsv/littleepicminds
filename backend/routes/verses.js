@@ -17,12 +17,13 @@ router.get('/chapters', (req, res) => {
 router.get('/', (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;
+    console.log(`Verses Request: scripture=${scripture}, chapter=${chapter}, verse=${verse}`);
 
     if (scripture === 'hanuman') {
       if (verse) {
         const data = contentData.hanumanChalisa[verse];
         if (!data) return res.status(404).json({ error: 'Verse not found' });
-        return res.json(data);
+        return res.json({ ...data, id: verse });
       }
       // Return all Hanuman Chalisa verses
       return res.json(contentData.hanumanChalisa);
@@ -33,7 +34,7 @@ router.get('/', (req, res) => {
       const key = `${chapter}.${verse}`;
       const data = contentData.shlokas[key];
       if (!data) return res.status(404).json({ error: 'Shloka not found', key });
-      return res.json(data);
+      return res.json({ ...data, id: key });
     }
 
     if (chapter) {
@@ -41,9 +42,10 @@ router.get('/', (req, res) => {
       const chapterShlokas = {};
       for (const [key, val] of Object.entries(contentData.shlokas)) {
         if (key.startsWith(`${chapter}.`)) {
-          chapterShlokas[key] = val;
+          chapterShlokas[key] = { ...val, id: key };
         }
       }
+      console.log(`Found ${Object.keys(chapterShlokas).length} shlokas for chapter ${chapter}`);
       return res.json(chapterShlokas);
     }
 
