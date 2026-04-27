@@ -41,12 +41,31 @@ let shlokas = {};
 let hanumanChalisa = {};
 let evaluations = {};
 
-try {
-  shlokas = loadJsDataFile('shlokas.js', 'GITA_SHLOKAS');
-  console.log(`✅ Loaded ${Object.keys(shlokas).length} Gita shlokas`);
-} catch (err) {
-  console.warn('⚠️ Could not load shlokas.js:', err.message);
+// 1. Load split chapters from chapters/ directory
+const chaptersPath = path.join(DATA_DIR, 'chapters');
+if (fs.existsSync(chaptersPath)) {
+  const chapterFiles = fs.readdirSync(chaptersPath).filter(f => f.endsWith('.js'));
+  chapterFiles.forEach(file => {
+    try {
+      const chapterData = require(path.join(chaptersPath, file));
+      shlokas = { ...shlokas, ...chapterData };
+      console.log(`✅ Loaded ${file}`);
+    } catch (err) {
+      console.warn(`⚠️ Could not load chapter file ${file}:`, err.message);
+    }
+  });
 }
+
+// 2. Load legacy shlokas.js if it exists (and merge/overwrite)
+try {
+  const legacyShlokas = loadJsDataFile('shlokas.js', 'GITA_SHLOKAS');
+  shlokas = { ...shlokas, ...legacyShlokas };
+  console.log(`✅ Loaded legacy shlokas.js (${Object.keys(legacyShlokas).length} items)`);
+} catch (err) {
+  // Silent if missing, we prefer the split chapters now
+}
+
+console.log(`🚀 Total Gita shlokas loaded: ${Object.keys(shlokas).length}`);
 
 try {
   hanumanChalisa = loadJsDataFile('hanuman_chalisa.js', 'HANUMAN_CHALISA');
