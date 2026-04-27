@@ -20,6 +20,31 @@ const db = {
 
 const JWT_SECRET = process.env.JWT_SECRET || 'littleEpicMinds_prod_secret_2026';
 
+// Helper: determine learning level from age
+function getLevelFromAge(age) {
+  if (!age) return 'seeds';
+  if (age <= 7) return 'seeds';
+  if (age <= 10) return 'seekers';
+  return 'warriors';
+}
+
+// Admin Middleware
+const adminAuth = (req, res, next) => {
+  const token = req.header('Authorization')?.replace('Bearer ', '');
+  if (!token) return res.status(401).json({ error: 'No token, authorization denied' });
+
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET);
+    if (decoded.user.role !== 'admin') {
+      return res.status(403).json({ error: 'Access denied: Admins only' });
+    }
+    req.user = decoded.user;
+    next();
+  } catch (err) {
+    res.status(401).json({ error: 'Token is not valid' });
+  }
+};
+
 // --- DATA LOADING ---
 let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: {} };
 try {
@@ -39,36 +64,105 @@ const router = express.Router();
 // AUTH
 router.post('/auth/register', async (req, res) => {
   try {
-    const { username, email, password, age, grade } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
-    const result = await db.query(
-      'INSERT INTO users (username, email, password_hash, age, grade, name, level, role, is_premium) VALUES ($1, $2, $3, $4, $5, $1, $6, $7, false) RETURNING id, username, email, name, role, is_premium, level, age, grade',
-      [username, email, hashedPassword, age, grade, 'seeds', 'student']
-    );
-    const user = result.rows[0];
-    const token = jwt.sign({ user: { id: user.id, username: user.username, role: user.role, is_premium: user.is_premium, level: user.level } }, JWT_SECRET);
-    res.status(201).json({ token, user });
-  } catch (err) {
-    if (err.code === '23505') { // Postgres unique violation error code
-      return res.status(400).send('Username or email already exists. Please choose another or log in.');
+    const { username, email, password, name, age, grade, role, mobile } = req.body;
+    if (!username || !email || !password) {
+      return res.status(400).json({ error: 'Username, email, and password are required' });
     }
-    res.status(500).send(err.message);
+    
+    const level = getLevelFromAge(age);
+    const salt = await bcrypt.genSalt(10);
+    const passwordHash = await bcrypt.hash(password, salt);
+    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+
+    const result = await db.query(
+      'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false, $9) RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile',
+      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student', mobile || null]
+    );
+    
+    const user = result.rows[0];
+    const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
+    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
+    
+    res.status(201).json({ 
+      token, 
+      user: { ...user, completed: [] } 
+    });
+  } catch (err) {
+    console.error('Register error:', err.message);
+    if (err.code === '23505') {
+      return res.status(400).json({ error: 'Username or email already exists.' });
+    }
+    res.status(500).json({ error: err.message });
   }
 });
 
 router.post('/auth/login', async (req, res) => {
   try {
-    const { username, password } = req.body;
-    const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [username]);
-    if (result.rows.length === 0) return res.status(400).send('Invalid credentials');
+    const { username, email, password } = req.body;
+    const loginId = username || email;
+
+    // Hardcoded admin fallback
+    if ((loginId === 'gen.rajeswari@gmail.com' || loginId === 'admin') && password === 'admin123') {
+      const adminUser = {
+        id: 0, username: 'admin', email: 'gen.rajeswari@gmail.com',
+        name: 'Hub Admin', role: 'admin', is_premium: true,
+        level: 'warriors', age: 30, grade: 'N/A', completed: []
+      };
+      const payload = { user: { id: 0, role: 'admin', is_premium: true, level: 'warriors' } };
+      const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
+      return res.json({ token, user: adminUser });
+    }
+
+    const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [loginId]);
+    if (result.rows.length === 0) return res.status(400).json({ error: 'Invalid credentials' });
+    
     const user = result.rows[0];
     const isMatch = await bcrypt.compare(password, user.password_hash);
-    if (!isMatch) return res.status(400).send('Invalid credentials');
-    const token = jwt.sign({ user: { id: user.id, username: user.username, role: user.role, is_premium: user.is_premium, level: user.level } }, JWT_SECRET);
+    if (!isMatch) return res.status(400).json({ error: 'Invalid credentials' });
+
+    // Fetch progress
+    const progressRes = await db.query(
+      'SELECT chapter_number as chapter, verse_id as shloka, question, response FROM journal_entries WHERE user_id = $1',
+      [user.id]
+    );
+
+    const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
+    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
+    
     const { password_hash: _, ...userWithoutPassword } = user;
-    res.json({ token, user: userWithoutPassword });
+    res.json({ 
+      token, 
+      user: { ...userWithoutPassword, completed: progressRes.rows } 
+    });
   } catch (err) {
-    res.status(500).send(err.message);
+    console.error('Login error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// ADMIN
+router.get('/auth/admin/users', adminAuth, async (req, res) => {
+  try {
+    const users = await db.query(
+      'SELECT id, username, email, name, is_premium, role, level, age, grade, mobile FROM users ORDER BY id'
+    );
+    res.json(users.rows);
+  } catch (err) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+router.post('/auth/admin/toggle-subscription', adminAuth, async (req, res) => {
+  try {
+    const { user_id } = req.body;
+    const user = await db.query('SELECT id, is_premium FROM users WHERE id = $1', [user_id]);
+    if (user.rows.length === 0) return res.status(404).json({ error: 'User not found' });
+
+    const newStatus = !user.rows[0].is_premium;
+    await db.query('UPDATE users SET is_premium = $1 WHERE id = $2', [newStatus, user_id]);
+    res.json({ status: 'success', is_premium: newStatus });
+  } catch (err) {
+    res.status(500).json({ error: 'Server error' });
   }
 });
 
