@@ -2429,7 +2429,7 @@ const HANUMAN_CHALISA = {
       },
     ],
   },
-  Doha_Concluding_1: {
+  "Doha 3": {
     sanskrit:
       "पवन तनय संकट हरण मंगल मूरति रूप।\nराम लखन सीता सहित हृदय बसहु सुर भूप॥",
     transliteration:
@@ -2491,7 +2491,7 @@ const HANUMAN_CHALISA = {
       },
     ],
   },
-  Doha_Concluding_2: {
+  "Doha 4": {
     sanskrit: "तुलसीदास सदा हरि चेरा।\nकीजै नाथ हृदय महँ डेरा॥",
     transliteration:
       "tulasīdāsa sadā hari cerā |\nkījai nātha hṛdaya maha~ ḍerā ||",
