@@ -69,17 +69,27 @@ const Subscription = () => {
             <li className="flex items-center"><Star className="text-kid-yellow mr-2" size={20} fill="currentColor" /> Progress Tracking (Coming Soon)</li>
           </ul>
           
-          <button 
-            onClick={handleUpgrade}
-            disabled={loading || user?.is_premium}
-            className={`w-full py-3 rounded-xl font-bold shadow-md transition-all ${
-              user?.is_premium 
-                ? 'bg-white/20 text-white cursor-not-allowed' 
-                : 'bg-white text-kid-primary hover:scale-105 hover:shadow-lg'
-            }`}
-          >
-            {loading ? 'Upgrading...' : user?.is_premium ? 'Already Premium!' : 'Simulate Purchase'}
-          </button>
+          <div className="bg-white/10 rounded-2xl p-6 mt-6 border border-white/20">
+            <h3 className="text-sm font-bold uppercase tracking-widest mb-3 opacity-90">How to Subscribe</h3>
+            <p className="text-sm mb-4 leading-relaxed">
+              Make a payment of <strong>₹1999</strong> to the number below using <strong>GPay, PhonePe, or Paytm</strong>:
+            </p>
+            <div className="bg-white text-kid-primary rounded-xl p-3 text-center font-bold text-xl mb-4 shadow-inner">
+              +91 7306885376
+            </div>
+            <p className="text-xs opacity-80 mb-4 italic text-center">
+              *After payment, please send a screenshot of the transaction along with your registered email to our admin.
+            </p>
+            
+            <a 
+              href={`https://wa.me/917306885376?text=Hi! I've made the payment for the Scholar Premium Plan for my account: ${user?.email || 'my account'}. Please enable access.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold flex items-center justify-center transition-all shadow-lg"
+            >
+              Contact Admin on WhatsApp
+            </a>
+          </div>
         </div>
 
       </div>
