@@ -78,7 +78,7 @@ const VerseViewer = ({ verse, scripture }) => {
   );
 
   return (
-    <div className="glass-card p-6 md:p-8 relative overflow-hidden group">
+    <div className="glass-card p-6 md:p-8 relative group">
       {/* Decorative background blob */}
       <div className="absolute -top-20 -right-20 w-40 h-40 bg-lem-accent/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-1000"></div>
 
@@ -114,7 +114,7 @@ const VerseViewer = ({ verse, scripture }) => {
 
       {/* Step 1: Listen (Main Verse Area) */}
       <div className={`transition-all duration-500 ${currentStep >= 1 ? 'opacity-100' : 'opacity-50 pointer-events-none'}`}>
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 glass-panel p-6 md:p-8 rounded-3xl shadow-xl border-l-4 border-l-lem-accent relative overflow-hidden">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 glass-panel p-6 md:p-8 rounded-3xl shadow-xl border-l-4 border-l-lem-accent relative">
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
           <div className="flex-1 z-10">
             <p className={`text-3xl md:text-4xl text-white leading-relaxed flex flex-wrap gap-x-2 drop-shadow-sm font-quicksand font-bold tracking-wide ${isTe ? 'telugu-text' : ''}`}>
