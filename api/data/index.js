@@ -9,9 +9,17 @@ const evaluationsData = require('./evaluations.json');
 const gitaDataInline = require('./gita_data.json');
 
 // Merge inline shlokas if they exist
-const finalShlokas = gitaDataInline && gitaDataInline.shlokas 
+let finalShlokas = gitaDataInline && gitaDataInline.shlokas 
   ? { ...gitaDataInline.shlokas, ...shlokasData }
   : shlokasData;
+
+// Load modular chapter data
+try {
+  const chapter15Data = require('./chapters/chapter15.js');
+  finalShlokas = { ...finalShlokas, ...chapter15Data };
+} catch (e) {
+  console.warn('Could not load chapter15 data:', e.message);
+}
 
 module.exports = {
   chapters: chaptersConfig.chapters,
