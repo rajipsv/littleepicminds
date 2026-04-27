@@ -180,10 +180,12 @@ const ScriptureLayout = () => {
 
                   {/* Render the active verse or a placeholder */}
                   {(() => {
-                    const activeVerse = verses.find(v => {
-                      const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
-                      return parseInt(vNum) === (activeVerseIndex + 1);
-                    });
+                    const activeVerse = scripture === 'hanuman' 
+                      ? verses[activeVerseIndex]
+                      : verses.find(v => {
+                          const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
+                          return parseInt(vNum) === (activeVerseIndex + 1);
+                        });
                     const verseNum = activeVerseIndex + 1;
                     const isMastered = masteredShlokas.has(verseNum);
 
