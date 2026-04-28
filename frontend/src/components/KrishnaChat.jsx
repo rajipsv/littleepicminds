@@ -17,10 +17,21 @@ const KrishnaChat = ({ scripture }) => {
   const [isTyping, setIsTyping] = useState(false);
 
   useEffect(() => {
-    // Initial greeting
-    const greeting = isTe 
-      ? `నమస్తే ${user?.username || 'మిత్రమా'}! నేడు మనం ఏ అద్భుతమైన జ్ఞానాన్ని నేర్చుకుందాం? మీరు ఏమైనా అడగవచ్చు!`
-      : `Namaste ${user?.username || 'friend'}! I'm here to answer any questions you have about the wisdom we're learning today. What would you like to know?`;
+    // Initial greeting based on scripture
+    let greeting = '';
+    if (isTe) {
+      if (isHanuman) {
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి హనుమంతుని గురించి లేదా ఈ చాలీసా గురించి అడగండి!`;
+      } else {
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని అద్భుతమైన జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి గీత గురించి అడగండి!`;
+      }
+    } else {
+      if (isHanuman) {
+        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa. Please ask me anything about Lord Hanuman or this prayer!`;
+      } else {
+        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Please ask your questions about the Gita or Sri Krishna!`;
+      }
+    }
       
     setMessages([{ id: Date.now(), text: greeting, sender: 'guru' }]);
 
@@ -42,13 +53,12 @@ const KrishnaChat = ({ scripture }) => {
       
       if (msg) {
         setMessages(prev => [...prev, { id: Date.now(), text: msg, sender: 'guru' }]);
-        // DO NOT setIsOpen(true) anymore to prevent disturbing the user
       }
     };
 
     window.addEventListener('stepCompleted', handleStepComplete);
     return () => window.removeEventListener('stepCompleted', handleStepComplete);
-  }, [isTe, user]);
+  }, [isTe, user, isHanuman]);
 
   const handleSend = () => {
     if (!input.trim()) return;
@@ -64,30 +74,36 @@ const KrishnaChat = ({ scripture }) => {
       const text = input.toLowerCase();
 
       if (isTe) {
-        if (text.includes('హనుమంతుడు') || text.includes('హనుమాన్')) {
-          response = "హనుమంతుడు గొప్ప శక్తిశాలి మరియు రాముని పరమ భక్తుడు. ఆయన ధైర్యానికి, వినయానికి నిలువుటద్దం. ఆయన గురించి చదవడం వల్ల మనకు కూడా ధైర్యం కలుగుతుంది!";
-        } else if (text.includes('ఎవరు') || text.includes('ఎవరున్నారు')) {
-          response = "నేను నీ వెంటే ఉన్నాను, నీ ప్రతి అడుగులో నీకు తోడుగా ఉంటాను.";
-        } else if (text.includes('ధైర్యం') || text.includes('భయం')) {
-          response = "భయపడకు! నీలో అపారమైన శక్తి ఉంది. దానిని గుర్తించు.";
-        } else if (text.includes('కృష్ణుడు')) {
-          response = "శ్రీకృష్ణుడు మనకు ధర్మాన్ని బోధించే గురువు. ఆయన మాటలు మన జీవితానికి వెలుగునిస్తాయి.";
+        if (isHanuman) {
+          if (text.includes('హనుమంతుడు') || text.includes('హనుమాన్')) {
+            response = "హనుమంతుడు గొప్ప శక్తిశాలి మరియు రాముని పరమ భక్తుడు. ఆయన గురించి మరిన్ని ప్రశ్నలు అడగండి!";
+          } else if (text.includes('రాముడు') || text.includes('రామ')) {
+            response = "హనుమంతుని ప్రతి శ్వాస రాముడి కోసమే. ఆయన భక్తి అసమానమైనది.";
+          } else {
+            response = "దయచేసి హనుమాన్ చాలీసా లేదా హనుమంతుని గురించి అడగండి. ఇతర విషయాల కంటే మన ప్రస్తుత పాఠం మీద దృష్టి పెడదాం.";
+          }
         } else {
-          response = "చాలా మంచి ప్రశ్న! ఈ విషయాన్ని ధ్యానం ద్వారా ఇంకా లోతుగా అర్థం చేసుకోవచ్చు. ఎప్పుడూ నేర్చుకుంటూనే ఉండు.";
+          if (text.includes('కృష్ణుడు') || text.includes('గీత') || text.includes('అర్జునుడు')) {
+            response = "భగవద్గీత మనకు సరైన మార్గాన్ని చూపిస్తుంది. కృష్ణుడు చెప్పిన మాటలు మనకు ధైర్యాన్నిస్తాయి.";
+          } else {
+            response = "దయచేసి భగవద్గీత లేదా శ్రీకృష్ణుని బోధనల గురించి అడగండి. ప్రస్తుతానికి గీత జ్ఞానాన్ని పంచుకుందాం.";
+          }
         }
       } else {
-        if (text.includes('hanuman') || text.includes('monkey god') || text.includes('bajrangbali')) {
-          response = "Hanuman is the embodiment of strength, courage, and selfless devotion to Lord Rama. He shows us that with faith, even a small monkey can do great things, like leaping across the ocean!";
-        } else if (text.includes('who') || text.includes('are you')) {
-          response = "I am the wisdom within you, and I am always with you as your friend and guide.";
-        } else if (text.includes('scared') || text.includes('fear') || text.includes('courage')) {
-          response = "Do not be afraid! You have infinite strength inside you. Just believe in yourself.";
-        } else if (text.includes('krishna')) {
-          response = "Sri Krishna is the master of wisdom who taught us how to live a life of joy and purpose. His teachings in the Gita are like a map for our heart.";
-        } else if (text.includes('rama') || text.includes('ram')) {
-          response = "Lord Rama is the example of a perfect person who always followed truth and duty. Hanuman's greatest joy is serving him.";
+        if (isHanuman) {
+          if (text.includes('hanuman') || text.includes('monkey') || text.includes('bajrangbali')) {
+            response = "Hanuman is the embodiment of courage and devotion. Do you have more questions about his adventures or the Chalisa?";
+          } else if (text.includes('rama') || text.includes('ram')) {
+            response = "Lord Rama is everything to Hanuman. Their bond is the perfect example of love and service.";
+          } else {
+            response = "Please focus your questions on the Hanuman Chalisa or Lord Hanuman for now. Let's learn this wisdom first!";
+          }
         } else {
-          response = "What a wonderful thing to ask! Remember, every small step you take in learning makes you wiser. I'm so glad you're curious!";
+          if (text.includes('krishna') || text.includes('gita') || text.includes('arjuna')) {
+            response = "The Gita teaches us how to live with joy and fulfill our duty. Sri Krishna's words are a guide for all of us.";
+          } else {
+            response = "Please keep your questions related to the Bhagavad Gita or Sri Krishna. Let's dive deeper into this sacred wisdom!";
+          }
         }
       }
 
