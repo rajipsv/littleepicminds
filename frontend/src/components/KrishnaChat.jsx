@@ -18,31 +18,9 @@ const KrishnaChat = ({ scripture }) => {
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [dynamicLib, setDynamicLib] = useState([]);
-  const [isTransliterating, setIsTransliterating] = useState(isTe);
-
-  // Transliteration logic: Type in English, press Space, get Telugu
-  useEffect(() => {
-    if (isTransliterating && input.endsWith(' ')) {
-      const words = input.trim().split(' ');
-      const lastWord = words[words.length - 1];
-      
-      // Only transliterate if it looks like an English word
-      if (lastWord && /^[a-zA-Z]+$/.test(lastWord)) {
-        fetch(`https://inputtools.google.com/request?text=${lastWord}&itc=te-t-i0-und&num=1&cp=0&cs=1&ie=utf-8&oe=utf-8&app=test`)
-          .then(res => res.json())
-          .then(data => {
-            if (data[0] === 'SUCCESS') {
-              const transliterated = data[1][0][1][0];
-              const newText = input.replace(new RegExp(lastWord + ' $'), transliterated + ' ');
-              setInput(newText);
-            }
-          })
-          .catch(err => console.warn("Transliteration failed:", err));
-      }
-    }
-  }, [input, isTransliterating]);
 
   useEffect(() => {
+    // 1. Fetch dynamic wisdom from DB
     const fetchWisdom = async () => {
       try {
         const res = await api.get('/api/chat/wisdom');
@@ -53,20 +31,19 @@ const KrishnaChat = ({ scripture }) => {
     };
     fetchWisdom();
     
-    setIsTransliterating(isTe);
-
+    // 2. Initial greeting based on scripture (Always instructing to use English)
     let greeting = '';
     if (isTe) {
       if (isHanuman) {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా మరియు రామాయణం గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి అడగండి!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Tell me about Hanuman')!`;
       } else {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని అద్భుతమైన జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి అడగండి!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Krishna?')!`;
       }
     } else {
       if (isHanuman) {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa and Ramayana. What would you like to know?`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa. Please ask your questions in English!`;
       } else {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Ask me anything!`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Please ask your questions in English!`;
       }
     }
       
@@ -102,8 +79,10 @@ const KrishnaChat = ({ scripture }) => {
     setInput('');
     setIsTyping(true);
 
+    // Simulate Guru response using external library
     setTimeout(() => {
-      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, isTe, dynamicLib);
+      // Use isTe=false for getWisdom to ensure English responses
+      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, false, dynamicLib);
 
       if (response) {
         setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
@@ -113,13 +92,9 @@ const KrishnaChat = ({ scripture }) => {
 
         let fallback = '';
         if (isTe) {
-          fallback = isHanuman 
-            ? "క్షమించండి, దీని గురించి నాకు ఇంకా తెలియదు. నేను త్వరలోనే నేర్చుకుంటాను! దయచేసి హనుమంతుడు లేదా రాముని గురించి అడగండి." 
-            : "క్షమించండి, దీని గురించి నాకు ఇంకా తెలియదు. నేను త్వరలోనే నేర్చుకుంటాను! దయచేసి శ్రీకృష్ణుడు లేదా గీత గురించి అడగండి.";
+          fallback = "క్షమించండి, దీనికి నా దగ్గర ఇంకా సమాధానం లేదు. దయచేసి మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Hanuman?').";
         } else {
-          fallback = isHanuman
-            ? "I'm sorry, I haven't learned about that yet, but I will soon! Please ask me about Lord Hanuman or Rama."
-            : "I'm sorry, I haven't learned about that yet, but I will soon! Please ask me about Sri Krishna or the Bhagavad Gita.";
+          fallback = "I'm sorry, I don't have an answer for that yet. Please try asking a question about the scripture in English (e.g., 'What is the Gita?').";
         }
         setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
       }
@@ -190,30 +165,13 @@ const KrishnaChat = ({ scripture }) => {
       {/* Input Area */}
       <div className="p-4 border-t border-orange-100 bg-white shrink-0">
         <div className="flex flex-col gap-2">
-          {/* Transliteration Toggle */}
-          <div className="flex justify-between items-center px-1">
-            <span className="text-[10px] font-bold text-orange-400 uppercase tracking-wider">
-              {isTransliterating ? (isTe ? 'తెలుగు టైపింగ్' : 'Telugu Typing') : (isTe ? 'ఇంగ్లీష్ టైపింగ్' : 'English Typing')}
-            </span>
-            <button 
-              onClick={() => setIsTransliterating(!isTransliterating)}
-              className={`text-[10px] px-2 py-0.5 rounded-full border transition-all ${
-                isTransliterating 
-                  ? 'bg-orange-100 border-orange-200 text-orange-600 font-bold' 
-                  : 'bg-gray-50 border-gray-200 text-gray-400'
-              }`}
-            >
-              {isTe ? 'మార్చు' : 'SWITCH'}
-            </button>
-          </div>
-
           <div className="flex gap-2">
             <input 
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSend()}
-              placeholder={isTe ? "మీ ప్రశ్నను ఇక్కడ టైప్ చేయండి..." : "Type your question here..."}
+              placeholder={isTe ? "మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి..." : "Ask your question in English..."}
               className="flex-1 p-3 bg-gray-50 border border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500/20 text-sm text-gray-900"
             />
             <button 
@@ -223,11 +181,6 @@ const KrishnaChat = ({ scripture }) => {
               <Sparkles className="w-5 h-5" />
             </button>
           </div>
-          {isTransliterating && (
-            <p className="text-[10px] text-gray-400 italic px-1">
-              {isTe ? "* ఇంగ్లీష్‌లో టైప్ చేసి స్పేస్ నొక్కండి (ఉదా: 'amma')" : "* Type in English and press Space (e.g., 'amma')"}
-            </p>
-          )}
         </div>
       </div>
     </div>
