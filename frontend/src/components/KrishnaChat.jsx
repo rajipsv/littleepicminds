@@ -64,14 +64,31 @@ const KrishnaChat = ({ scripture }) => {
       const text = input.toLowerCase();
 
       if (isTe) {
-        if (text.includes('ఎవరు') || text.includes('ఎవరున్నారు')) response = "నేను నీ వెంటే ఉన్నాను, నీ ప్రతి అడుగులో నీకు తోడుగా ఉంటాను.";
-        else if (text.includes('ధైర్యం') || text.includes('భయం')) response = "భయపడకు! నీలో అపారమైన శక్తి ఉంది. దానిని గుర్తించు.";
-        else response = "చాలా మంచి ప్రశ్న! ఈ విషయాన్ని ధ్యానం ద్వారా ఇంకా లోతుగా అర్థం చేసుకోవచ్చు. ఎప్పుడూ నేర్చుకుంటూనే ఉండు.";
+        if (text.includes('హనుమంతుడు') || text.includes('హనుమాన్')) {
+          response = "హనుమంతుడు గొప్ప శక్తిశాలి మరియు రాముని పరమ భక్తుడు. ఆయన ధైర్యానికి, వినయానికి నిలువుటద్దం. ఆయన గురించి చదవడం వల్ల మనకు కూడా ధైర్యం కలుగుతుంది!";
+        } else if (text.includes('ఎవరు') || text.includes('ఎవరున్నారు')) {
+          response = "నేను నీ వెంటే ఉన్నాను, నీ ప్రతి అడుగులో నీకు తోడుగా ఉంటాను.";
+        } else if (text.includes('ధైర్యం') || text.includes('భయం')) {
+          response = "భయపడకు! నీలో అపారమైన శక్తి ఉంది. దానిని గుర్తించు.";
+        } else if (text.includes('కృష్ణుడు')) {
+          response = "శ్రీకృష్ణుడు మనకు ధర్మాన్ని బోధించే గురువు. ఆయన మాటలు మన జీవితానికి వెలుగునిస్తాయి.";
+        } else {
+          response = "చాలా మంచి ప్రశ్న! ఈ విషయాన్ని ధ్యానం ద్వారా ఇంకా లోతుగా అర్థం చేసుకోవచ్చు. ఎప్పుడూ నేర్చుకుంటూనే ఉండు.";
+        }
       } else {
-        if (text.includes('who') || text.includes('are you')) response = "I am the wisdom within you, and I am always with you as your friend and guide.";
-        else if (text.includes('scared') || text.includes('fear') || text.includes('courage')) response = "Do not be afraid! You have infinite strength inside you. Just believe in yourself.";
-        else if (text.includes('how') || text.includes('why')) response = "That is a deep question! The answer lies in doing your duty with love and without worry. Keep exploring!";
-        else response = "What a wonderful thing to ask! Remember, every small step you take in learning makes you wiser.";
+        if (text.includes('hanuman') || text.includes('monkey god') || text.includes('bajrangbali')) {
+          response = "Hanuman is the embodiment of strength, courage, and selfless devotion to Lord Rama. He shows us that with faith, even a small monkey can do great things, like leaping across the ocean!";
+        } else if (text.includes('who') || text.includes('are you')) {
+          response = "I am the wisdom within you, and I am always with you as your friend and guide.";
+        } else if (text.includes('scared') || text.includes('fear') || text.includes('courage')) {
+          response = "Do not be afraid! You have infinite strength inside you. Just believe in yourself.";
+        } else if (text.includes('krishna')) {
+          response = "Sri Krishna is the master of wisdom who taught us how to live a life of joy and purpose. His teachings in the Gita are like a map for our heart.";
+        } else if (text.includes('rama') || text.includes('ram')) {
+          response = "Lord Rama is the example of a perfect person who always followed truth and duty. Hanuman's greatest joy is serving him.";
+        } else {
+          response = "What a wonderful thing to ask! Remember, every small step you take in learning makes you wiser. I'm so glad you're curious!";
+        }
       }
 
       setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
