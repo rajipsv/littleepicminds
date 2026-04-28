@@ -609,69 +609,73 @@ router.post('/chat/wisdom', adminAuth, async (req, res) => {
   }
 });
 
+// --- Database Bootstrap (Self-Healing) ---
+async function bootstrapDB() {
+  try {
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS journal_entries (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER REFERENCES users(id),
+        scripture VARCHAR,
+        chapter_number INTEGER,
+        verse_id VARCHAR,
+        question TEXT,
+        response TEXT,
+        completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+      CREATE TABLE IF NOT EXISTS progress (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER REFERENCES users(id),
+        chapter INTEGER,
+        shloka INTEGER,
+        activity_question TEXT,
+        activity_response TEXT,
+        completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+      CREATE TABLE IF NOT EXISTS evaluations (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER REFERENCES users(id),
+        chapter_id INTEGER,
+        score DECIMAL,
+        best_score DECIMAL,
+        attempts INTEGER DEFAULT 1,
+        completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+      CREATE TABLE IF NOT EXISTS missed_questions (
+        id SERIAL PRIMARY KEY,
+        question TEXT UNIQUE,
+        scripture VARCHAR,
+        ask_count INTEGER DEFAULT 1,
+        is_resolved BOOLEAN DEFAULT FALSE,
+        first_asked TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+      CREATE TABLE IF NOT EXISTS dynamic_wisdom (
+        id SERIAL PRIMARY KEY,
+        keywords TEXT[],
+        answer_en TEXT,
+        answer_te TEXT,
+        scripture VARCHAR,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    `);
+    // Add constraint if missing
+    await db.query(`ALTER TABLE progress ADD CONSTRAINT unique_user_shloka UNIQUE (user_id, chapter, shloka)`).catch(e => {});
+    console.log('--- DB Tables Verified ---');
+  } catch (e) {
+    console.error('--- DB Bootstrap Error ---', e.message);
+  }
+}
+
+// Run bootstrap immediately
+bootstrapDB();
+
 router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;
-    let tablesReady = false;
-    
     try {
-      const result = await db.query('SELECT 1');
-      dbStatus = !!result;
-
-      // BOOTSTRAP TABLES (Self-healing)
-      await db.query(`
-        CREATE TABLE IF NOT EXISTS journal_entries (
-          id SERIAL PRIMARY KEY,
-          user_id INTEGER REFERENCES users(id),
-          scripture VARCHAR,
-          chapter_number INTEGER,
-          verse_id VARCHAR,
-          question TEXT,
-          response TEXT,
-          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE TABLE IF NOT EXISTS progress (
-          id SERIAL PRIMARY KEY,
-          user_id INTEGER REFERENCES users(id),
-          chapter INTEGER,
-          shloka INTEGER,
-          activity_question TEXT,
-          activity_response TEXT,
-          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-      `);
-      // Add constraint if missing
-      await db.query(`ALTER TABLE progress ADD CONSTRAINT unique_user_shloka UNIQUE (user_id, chapter, shloka)`).catch(e => {});
-      
-      await db.query(`
-        CREATE TABLE IF NOT EXISTS evaluations (
-          id SERIAL PRIMARY KEY,
-          user_id INTEGER REFERENCES users(id),
-          chapter_id INTEGER,
-          score DECIMAL,
-          best_score DECIMAL,
-          attempts INTEGER DEFAULT 1,
-          completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE TABLE IF NOT EXISTS missed_questions (
-          id SERIAL PRIMARY KEY,
-          question TEXT UNIQUE,
-          scripture VARCHAR,
-          ask_count INTEGER DEFAULT 1,
-          is_resolved BOOLEAN DEFAULT FALSE,
-          first_asked TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE TABLE IF NOT EXISTS dynamic_wisdom (
-          id SERIAL PRIMARY KEY,
-          keywords TEXT[],
-          answer_en TEXT,
-          answer_te TEXT,
-          scripture VARCHAR,
-          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        );
-      `);
-      tablesReady = true;
-    } catch (e) { console.error('DB Bootstrap Error:', e.message); }
+      const result = await db.query('SELECT NOW()');
+      dbStatus = !!result.rows;
+    } catch (e) { console.error('Test DB Error:', e.message); }
 
     // Diagnostics
     let sampleProgress = [];
@@ -684,12 +688,9 @@ router.get('/test', async (req, res) => {
     } catch(e) {}
 
     res.json({
-      has_db: dbStatus,
-      tables_ready: tablesReady,
-      shloka_count: Object.keys(data.shlokas || {}).length,
-      chapters_count: (data.chapters || []).length,
-      evaluations_count: Object.keys(data.evaluations || {}).length,
-      db_diagnostics: {
+      status: 'API is running',
+      database_connected: dbStatus,
+      diagnostics: {
         progress_entries: sampleProgress,
         journal_entries: sampleJournals
       }
