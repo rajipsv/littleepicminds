@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Sparkles, X } from 'lucide-react';
 import { getWisdom } from '../data/wisdom';
-import api from '../utils/api';
+import api from '../api';
 
 const KrishnaChat = ({ scripture }) => {
   const [messages, setMessages] = useState([]);
