@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import { Award, Target, BookOpen, Star, TrendingUp, ChevronRight } from 'lucide-react';
