@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation, Link } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import { BookOpen, Star, Award } from 'lucide-react';
 
 const Journal = () => {
   const { user } = useAuth();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const scriptureFilter = queryParams.get('scripture');
+  
   const [entries, setEntries] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,7 +17,11 @@ const Journal = () => {
     if (user) {
       api.get(`/api/journal/${user.username}`)
         .then(res => {
-          setEntries(res.data);
+          let data = res.data;
+          if (scriptureFilter) {
+            data = data.filter(entry => entry.scripture === scriptureFilter);
+          }
+          setEntries(data);
           setLoading(false);
         })
         .catch(err => {
@@ -20,16 +29,26 @@ const Journal = () => {
           setLoading(false);
         });
     }
-  }, [user]);
+  }, [user, scriptureFilter]);
 
   if (!user) return <div className="text-center p-10 text-white">Please login to view your journal.</div>;
 
   return (
     <div className="min-h-screen py-12 px-4 max-w-4xl mx-auto text-white">
-      <header className="flex items-center justify-center mb-10 space-x-3">
-        <Award size={40} className="text-lem-accent" />
-        <h1 className="text-4xl font-extrabold text-white">My Wisdom Journal</h1>
-      </header>
+      <div className="flex justify-between items-center mb-10">
+        <div className="flex items-center space-x-3">
+          <Award size={40} className="text-lem-accent" />
+          <h1 className="text-4xl font-extrabold text-white">
+            {scriptureFilter ? (scriptureFilter === 'gita' ? 'Gita Journal' : 'Hanuman Journal') : 'My Wisdom Journal'}
+          </h1>
+        </div>
+        <Link 
+          to={scriptureFilter ? `/read/${scriptureFilter}` : "/"} 
+          className="text-sm font-bold text-gray-500 hover:text-lem-accent transition-colors"
+        >
+          ← Back to {scriptureFilter ? (scriptureFilter === 'gita' ? 'Gita' : 'Hanuman') : 'Home'}
+        </Link>
+      </div>
 
       {loading ? (
         <div className="text-center text-gray-400">Loading your wisdom...</div>

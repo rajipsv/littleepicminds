@@ -151,11 +151,11 @@ const ScriptureLayout = () => {
           {/* Top Navigation for User Progress */}
           {user && (
             <div className="flex justify-end items-center mb-8 gap-4">
-              <Link to="/progress" className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/30 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all">
+              <Link to={`/progress?scripture=${scripture}`} className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/30 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all">
                 <Target size={16} />
                 My Progress
               </Link>
-              <Link to="/journal" className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
+              <Link to={`/journal?scripture=${scripture}`} className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
                 <Star size={16} />
                 My Journal
               </Link>
