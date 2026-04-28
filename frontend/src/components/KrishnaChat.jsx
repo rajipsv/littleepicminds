@@ -13,11 +13,14 @@ const KrishnaChat = ({ scripture }) => {
   const guruNameTe = isHanuman ? "శ్రీ హనుమాన్" : "శ్రీ కృష్ణుడు";
   const guruNameEn = isHanuman ? "Lord Hanuman" : "Sri Krishna";
 
+  const [input, setInput] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
+
   useEffect(() => {
     // Initial greeting
     const greeting = isTe 
-      ? `నమస్తే ${user?.username || 'మిత్రమా'}! నేడు మనం ఏ అద్భుతమైన జ్ఞానాన్ని నేర్చుకుందాం?`
-      : `Namaste ${user?.username || 'friend'}! Ready to discover some epic wisdom today?`;
+      ? `నమస్తే ${user?.username || 'మిత్రమా'}! నేడు మనం ఏ అద్భుతమైన జ్ఞానాన్ని నేర్చుకుందాం? మీరు ఏమైనా అడగవచ్చు!`
+      : `Namaste ${user?.username || 'friend'}! I'm here to answer any questions you have about the wisdom we're learning today. What would you like to know?`;
       
     setMessages([{ id: Date.now(), text: greeting, sender: 'guru' }]);
 
@@ -38,16 +41,43 @@ const KrishnaChat = ({ scripture }) => {
       }
       
       if (msg) {
-        setTimeout(() => {
-          setMessages(prev => [...prev, { id: Date.now(), text: msg, sender: 'guru' }]);
-          setIsOpen(true);
-        }, 500);
+        setMessages(prev => [...prev, { id: Date.now(), text: msg, sender: 'guru' }]);
+        // DO NOT setIsOpen(true) anymore to prevent disturbing the user
       }
     };
 
     window.addEventListener('stepCompleted', handleStepComplete);
     return () => window.removeEventListener('stepCompleted', handleStepComplete);
   }, [isTe, user]);
+
+  const handleSend = () => {
+    if (!input.trim()) return;
+
+    const userMsg = { id: Date.now(), text: input, sender: 'user' };
+    setMessages(prev => [...prev, userMsg]);
+    setInput('');
+    setIsTyping(true);
+
+    // Simulate Guru response
+    setTimeout(() => {
+      let response = '';
+      const text = input.toLowerCase();
+
+      if (isTe) {
+        if (text.includes('ఎవరు') || text.includes('ఎవరున్నారు')) response = "నేను నీ వెంటే ఉన్నాను, నీ ప్రతి అడుగులో నీకు తోడుగా ఉంటాను.";
+        else if (text.includes('ధైర్యం') || text.includes('భయం')) response = "భయపడకు! నీలో అపారమైన శక్తి ఉంది. దానిని గుర్తించు.";
+        else response = "చాలా మంచి ప్రశ్న! ఈ విషయాన్ని ధ్యానం ద్వారా ఇంకా లోతుగా అర్థం చేసుకోవచ్చు. ఎప్పుడూ నేర్చుకుంటూనే ఉండు.";
+      } else {
+        if (text.includes('who') || text.includes('are you')) response = "I am the wisdom within you, and I am always with you as your friend and guide.";
+        else if (text.includes('scared') || text.includes('fear') || text.includes('courage')) response = "Do not be afraid! You have infinite strength inside you. Just believe in yourself.";
+        else if (text.includes('how') || text.includes('why')) response = "That is a deep question! The answer lies in doing your duty with love and without worry. Keep exploring!";
+        else response = "What a wonderful thing to ask! Remember, every small step you take in learning makes you wiser.";
+      }
+
+      setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
+      setIsTyping(false);
+    }, 1000);
+  };
 
   if (!isOpen) {
     return (
@@ -66,7 +96,7 @@ const KrishnaChat = ({ scripture }) => {
   return (
     <div className="fixed bottom-6 right-6 w-80 bg-lem-dark/95 backdrop-blur-xl border border-lem-glass-border rounded-2xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] overflow-hidden z-50 animate-slide-up flex flex-col max-h-[80vh]">
       {/* Header */}
-      <div className="bg-gradient-accent p-4 flex justify-between items-center text-lem-dark shadow-md">
+      <div className="bg-gradient-accent p-4 flex justify-between items-center text-lem-dark shadow-md shrink-0">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
             <span className="text-lg">{avatarIcon}</span>
@@ -79,17 +109,51 @@ const KrishnaChat = ({ scripture }) => {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 p-4 overflow-y-auto space-y-4 max-h-96 custom-scrollbar">
+      <div className="flex-1 p-4 overflow-y-auto space-y-4 max-h-96 min-h-[200px] custom-scrollbar">
         {messages.map((msg) => (
-          <div key={msg.id} className="flex gap-3 items-end animate-fade-in">
-            <div className="w-8 h-8 rounded-full bg-lem-accent/20 flex items-center justify-center text-sm flex-shrink-0">
-              {avatarIcon}
+          <div key={msg.id} className={`flex gap-3 items-end animate-fade-in ${msg.sender === 'user' ? 'flex-row-reverse' : ''}`}>
+            <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm flex-shrink-0 ${msg.sender === 'user' ? 'bg-lem-accent/40' : 'bg-lem-accent/20'}`}>
+              {msg.sender === 'user' ? '🧒' : avatarIcon}
             </div>
-            <div className="bg-lem-sidebar border border-lem-glass-border text-white p-3 rounded-2xl rounded-bl-none text-sm leading-relaxed shadow-sm">
+            <div className={`p-3 rounded-2xl text-sm leading-relaxed shadow-sm ${
+              msg.sender === 'user' 
+                ? 'bg-lem-accent text-lem-dark rounded-br-none' 
+                : 'bg-lem-sidebar border border-lem-glass-border text-white rounded-bl-none'
+            }`}>
               {msg.text}
             </div>
           </div>
         ))}
+        {isTyping && (
+          <div className="flex gap-3 items-end animate-pulse">
+            <div className="w-8 h-8 rounded-full bg-lem-accent/20 flex items-center justify-center text-sm">
+              {avatarIcon}
+            </div>
+            <div className="bg-lem-sidebar border border-lem-glass-border text-white p-3 rounded-2xl rounded-bl-none text-xs">
+              Thinking...
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Input */}
+      <div className="p-4 border-t border-lem-glass-border bg-lem-dark/50">
+        <div className="flex gap-2">
+          <input 
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+            placeholder={isTe ? "ప్రశ్న అడగండి..." : "Ask a question..."}
+            className="flex-1 bg-lem-sidebar border border-lem-glass-border rounded-xl px-4 py-2 text-sm text-white focus:outline-none focus:border-lem-accent"
+          />
+          <button 
+            onClick={handleSend}
+            className="bg-lem-accent text-lem-dark px-3 py-2 rounded-xl font-bold text-sm hover:scale-105 transition-transform"
+          >
+            Send
+          </button>
+        </div>
       </div>
     </div>
   );
