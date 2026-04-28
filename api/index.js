@@ -369,16 +369,17 @@ router.post('/journal', async (req, res) => {
     ).catch(e => console.error('Journal table fail:', e.message));
 
     // 2. Save to Progress Table (Self-healing upsert)
+    // 2. Save to Progress Table (Self-healing upsert)
     try {
       const existing = await db.query(
-        'SELECT id FROM progress WHERE user_id = $1 AND chapter = $2 AND shloka = $3',
-        [userId, chNum, shlokaNum]
+        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+        [userId, scripture || 'gita', chNum, shlokaNum]
       );
       
       if (existing.rows.length === 0) {
         await db.query(
-          'INSERT INTO progress (user_id, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5)',
-          [userId, chNum, shlokaNum, question, response]
+          'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
+          [userId, scripture || 'gita', chNum, shlokaNum, question, response]
         );
       } else {
         await db.query(
@@ -400,21 +401,30 @@ router.post('/journal', async (req, res) => {
 router.get('/evaluations/progress/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
-    const quizResult = await db.query('SELECT chapter_id, best_score, attempts FROM evaluations WHERE user_id = $1', [userId]);
-    const verseResult = await db.query('SELECT chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY chapter', [userId]);
+    const quizResult = await db.query('SELECT scripture, chapter_id, best_score, attempts FROM evaluations WHERE user_id = $1', [userId]);
+    const verseResult = await db.query('SELECT scripture, chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY scripture, chapter', [userId]);
 
-    const progress = (data.chapters || []).map(ch => {
-      const q = quizResult.rows.find(r => r.chapter_id == ch.id);
-      const v = verseResult.rows.find(r => r.chapter == ch.id);
+    // Gita Progress
+    const gitaProgress = (data.chapters || []).map(ch => {
+      const q = quizResult.rows.find(r => r.scripture === 'gita' && r.chapter_id == ch.id);
+      const v = verseResult.rows.find(r => r.scripture === 'gita' && r.chapter == ch.id);
       return {
         chapter_number: ch.id,
         total_verses: ch.count,
         verses_completed: v ? parseInt(v.completed_count) : 0,
-        best_score: q ? q.best_score : 0,
-        attempts: q ? q.attempts : 0
+        best_score: q ? q.best_score : 0
       };
     });
-    res.json({ progress });
+
+    // Hanuman Progress
+    const hResult = verseResult.rows.find(r => r.scripture === 'hanuman');
+    const hanumanProgress = {
+      verses_completed: hResult ? parseInt(hResult.completed_count) : 0,
+      total_verses: 44,
+      is_mastered: hResult && parseInt(hResult.completed_count) >= 44
+    };
+
+    res.json({ gita: gitaProgress, hanuman: hanumanProgress });
   } catch (err) {
     res.status(500).send(err.message);
   }
@@ -512,25 +522,25 @@ router.get('/leaderboard', async (req, res) => {
 
 router.post('/evaluations', async (req, res) => {
   try {
-    const { chapter_number, score } = req.body;
+    const { scripture, chapter_number, score } = req.body;
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).send('Unauthorized');
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
-    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2', [userId, chapter_number]);
+    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, chapter_number, scripture || 'gita']);
     if (existing.rows.length > 0) {
       const current = existing.rows[0];
       const newBest = Math.max(parseFloat(current.best_score), score);
       await db.query(
-        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4',
-        [score, newBest, userId, chapter_number]
+        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
+        [score, newBest, userId, chapter_number, scripture || 'gita']
       );
     } else {
       await db.query(
-        'INSERT INTO evaluations (user_id, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $3, 1)',
-        [userId, chapter_number, score]
+        'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
+        [userId, scripture || 'gita', chapter_number, score, score]
       );
     }
     res.status(200).send('Score saved');
@@ -626,6 +636,7 @@ async function bootstrapDB() {
       CREATE TABLE IF NOT EXISTS progress (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id),
+        scripture VARCHAR DEFAULT 'gita',
         chapter INTEGER,
         shloka INTEGER,
         activity_question TEXT,
@@ -635,6 +646,7 @@ async function bootstrapDB() {
       CREATE TABLE IF NOT EXISTS evaluations (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id),
+        scripture VARCHAR DEFAULT 'gita',
         chapter_id INTEGER,
         score DECIMAL,
         best_score DECIMAL,
@@ -658,8 +670,13 @@ async function bootstrapDB() {
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
+    // Migration: Add scripture column if missing
+    await db.query(`ALTER TABLE progress ADD COLUMN IF NOT EXISTS scripture VARCHAR DEFAULT 'gita'`).catch(() => {});
+    await db.query(`ALTER TABLE evaluations ADD COLUMN IF NOT EXISTS scripture VARCHAR DEFAULT 'gita'`).catch(() => {});
+    
     // Add constraint if missing
-    await db.query(`ALTER TABLE progress ADD CONSTRAINT unique_user_shloka UNIQUE (user_id, chapter, shloka)`).catch(e => {});
+    await db.query(`ALTER TABLE progress DROP CONSTRAINT IF EXISTS unique_user_shloka`).catch(() => {});
+    await db.query(`ALTER TABLE progress ADD CONSTRAINT unique_user_scripture_shloka UNIQUE (user_id, scripture, chapter, shloka)`).catch(e => {});
     console.log('--- DB Tables Verified ---');
   } catch (e) {
     console.error('--- DB Bootstrap Error ---', e.message);
