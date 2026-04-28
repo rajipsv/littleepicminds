@@ -539,6 +539,40 @@ router.post('/evaluations', async (req, res) => {
   }
 });
 
+// --- AI Chat (Gemini) ---
+router.post('/chat', async (req, res) => {
+  try {
+    const { message, scripture } = req.body;
+    const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+
+    if (!GEMINI_API_KEY) {
+      return res.status(501).json({ error: 'AI Guru is currently resting. Please add GEMINI_API_KEY to enable real AI responses!' });
+    }
+
+    const systemPrompt = scripture === 'hanuman' 
+      ? "You are a wise and friendly Guru named Sri Hanuman Guru. You are teaching a child about the Hanuman Chalisa. Your goal is to explain the wisdom, courage, and devotion of Lord Hanuman in a simple, inspiring, and child-friendly way. If the question is NOT related to Hanuman, Rama, or the Hanuman Chalisa, gently remind the child to focus on the current lesson. Answer in the language of the question (English or Telugu)."
+      : "You are a wise and friendly Guru named Sri Krishna. You are teaching a child about the Bhagavad Gita. Your goal is to explain the wisdom of Krishna in a simple, inspiring, and child-friendly way. If the question is NOT related to Krishna, Arjuna, or the Bhagavad Gita, gently remind the child to focus on the current lesson. Answer in the language of the question (English or Telugu).";
+
+    const response = await axios.post(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        contents: [
+          {
+            role: "user",
+            parts: [{ text: `${systemPrompt}\n\nChild: ${message}` }]
+          }
+        ]
+      }
+    );
+
+    const aiText = response.data.candidates[0].content.parts[0].text;
+    res.json({ response: aiText });
+  } catch (err) {
+    console.error('[AI Chat Error]:', err.message);
+    res.status(500).json({ error: 'Failed to reach the AI Guru' });
+  }
+});
+
 router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;

@@ -60,56 +60,35 @@ const KrishnaChat = ({ scripture }) => {
     return () => window.removeEventListener('stepCompleted', handleStepComplete);
   }, [isTe, user, isHanuman]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMsg = { id: Date.now(), text: input, sender: 'user' };
     setMessages(prev => [...prev, userMsg]);
+    const userText = input;
     setInput('');
     setIsTyping(true);
 
-    // Simulate Guru response
-    setTimeout(() => {
-      let response = '';
-      const text = input.toLowerCase();
-
-      if (isTe) {
-        if (isHanuman) {
-          if (text.includes('హనుమంతుడు') || text.includes('హనుమాన్') || text.includes('శ్లోకం') || text.includes('పద్యం') || text.includes('అర్థం')) {
-            response = "హనుమంతుడు గొప్ప శక్తిశాలి మరియు రాముని పరమ భక్తుడు. ఆయన ప్రతి శ్లోకం మనకు ధైర్యాన్ని ఇస్తుంది. మీకు ఏ పద్యం గురించి వివరణ కావాలి?";
-          } else if (text.includes('రాముడు') || text.includes('రామ')) {
-            response = "హనుమంతుని ప్రతి శ్వాస రాముడి కోసమే. ఆయన భక్తి అసమానమైనది.";
-          } else {
-            response = "దయచేసి హనుమాన్ చాలీసా లేదా హనుమంతుని గురించి అడగండి. ఇతర విషయాల కంటే మన ప్రస్తుత పాఠం మీద దృష్టి పెడదాం.";
-          }
-        } else {
-          if (text.includes('కృష్ణుడు') || text.includes('గీత') || text.includes('అర్జునుడు') || text.includes('శ్లోకం') || text.includes('అర్థం')) {
-            response = "భగవద్గీత మనకు సరైన మార్గాన్ని చూపిస్తుంది. కృష్ణుడు చెప్పిన ప్రతి మాట మనకు ధైర్యాన్నిస్తుంది. మీకు ఏ శ్లోకం గురించి వివరణ కావాలి?";
-          } else {
-            response = "దయచేసి భగవద్గీత లేదా శ్రీకృష్ణుని బోధనల గురించి అడగండి. ప్రస్తుతానికి గీత జ్ఞానాన్ని పంచుకుందాం.";
-          }
-        }
-      } else {
-        if (isHanuman) {
-          if (text.includes('hanuman') || text.includes('monkey') || text.includes('bajrangbali') || text.includes('verse') || text.includes('meaning') || text.includes('explain')) {
-            response = "Hanuman is the embodiment of courage and devotion. Every verse in the Chalisa tells a story of his greatness. Which verse would you like me to explain?";
-          } else if (text.includes('rama') || text.includes('ram')) {
-            response = "Lord Rama is everything to Hanuman. Their bond is the perfect example of love and service.";
-          } else {
-            response = "Please focus your questions on the Hanuman Chalisa or Lord Hanuman for now. Let's learn this wisdom first!";
-          }
-        } else {
-          if (text.includes('krishna') || text.includes('gita') || text.includes('arjuna') || text.includes('shloka') || text.includes('verse') || text.includes('meaning') || text.includes('explain')) {
-            response = "The Gita teaches us how to live with joy and fulfill our duty. Every shloka is a treasure. Which one should we talk about?";
-          } else {
-            response = "Please keep your questions related to the Bhagavad Gita or Sri Krishna. Let's dive deeper into this sacred wisdom!";
-          }
-        }
-      }
-
-      setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
+    try {
+      const res = await api.post('/api/chat', { 
+        message: userText, 
+        scripture: isHanuman ? 'hanuman' : 'gita' 
+      });
+      
+      setMessages(prev => [...prev, { 
+        id: Date.now(), 
+        text: res.data.response, 
+        sender: 'guru' 
+      }]);
+    } catch (err) {
+      console.error("AI Chat failed:", err);
+      const errorMsg = isTe 
+        ? "క్షమించండి, గురువు గారు ప్రస్తుతం ధ్యానంలో ఉన్నారు. కాసేపటి తర్వాత మళ్ళీ ప్రయత్నించండి."
+        : "I'm sorry, the Guru is currently in deep meditation. Please try asking again in a moment.";
+      setMessages(prev => [...prev, { id: Date.now(), text: errorMsg, sender: 'guru' }]);
+    } finally {
       setIsTyping(false);
-    }, 1000);
+    }
   };
 
   if (!isOpen) {
