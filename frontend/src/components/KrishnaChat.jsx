@@ -16,9 +16,21 @@ const KrishnaChat = ({ scripture }) => {
 
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [dynamicLib, setDynamicLib] = useState([]);
 
   useEffect(() => {
-    // Initial greeting based on scripture
+    // 1. Fetch dynamic wisdom from DB
+    const fetchWisdom = async () => {
+      try {
+        const res = await api.get('/api/chat/wisdom');
+        setDynamicLib(res.data);
+      } catch (err) {
+        console.warn("Could not fetch dynamic wisdom:", err.message);
+      }
+    };
+    fetchWisdom();
+
+    // 2. Initial greeting based on scripture
     let greeting = '';
     if (isTe) {
       if (isHanuman) {
@@ -70,22 +82,26 @@ const KrishnaChat = ({ scripture }) => {
     setInput('');
     setIsTyping(true);
 
-    // Simulate Guru response using external library
+    // Simulate Guru response using external library + dynamic DB wisdom
     setTimeout(() => {
-      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, isTe);
+      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, isTe, dynamicLib);
 
       if (response) {
         setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
       } else {
+        // LOG MISSED QUESTION TO DB FOR SELF-LEARNING
+        api.post('/api/chat/missed', { question: text, scripture: isHanuman ? 'hanuman' : 'gita' })
+          .catch(e => console.warn("Failed to log missed question"));
+
         let fallback = '';
         if (isTe) {
           fallback = isHanuman 
-            ? "దయచేసి హనుమంతుడు, రాముడు లేదా చాలీసా శ్లోకాల గురించి అడగండి. మన పాఠం మీద దృష్టి పెడదాం!" 
-            : "దయచేసి శ్రీకృష్ణుడు, అర్జునుడు లేదా గీత శ్లోకాల గురించి అడగండి. ప్రస్తుతానికి ఈ జ్ఞానాన్ని నేర్చుకుందాం!";
+            ? "క్షమించండి, దీని గురించి నాకు ఇంకా తెలియదు. నేను త్వరలోనే నేర్చుకుంటాను! దయచేసి హనుమంతుడు లేదా రాముని గురించి అడగండి." 
+            : "క్షమించండి, దీని గురించి నాకు ఇంకా తెలియదు. నేను త్వరలోనే నేర్చుకుంటాను! దయచేసి శ్రీకృష్ణుడు లేదా గీత గురించి అడగండి.";
         } else {
           fallback = isHanuman
-            ? "Please focus your questions on Lord Hanuman, Rama, or the Chalisa verses. Let's learn this wisdom first!"
-            : "Please keep your questions related to Sri Krishna or the Bhagavad Gita. Let's dive deeper into this sacred wisdom!";
+            ? "I'm sorry, I haven't learned about that yet, but I will soon! Please ask me about Lord Hanuman or Rama."
+            : "I'm sorry, I haven't learned about that yet, but I will soon! Please ask me about Sri Krishna or the Bhagavad Gita.";
         }
         setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
       }

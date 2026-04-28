@@ -573,6 +573,42 @@ router.post('/chat', async (req, res) => {
   }
 });
 
+// --- Self-Learning Chat Logic ---
+router.post('/chat/missed', async (req, res) => {
+  try {
+    const { question, scripture } = req.body;
+    await db.query(
+      'INSERT INTO missed_questions (question, scripture) VALUES ($1, $2) ON CONFLICT (question) DO UPDATE SET ask_count = missed_questions.ask_count + 1',
+      [question, scripture]
+    );
+    res.json({ status: 'logged' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/chat/wisdom', async (req, res) => {
+  try {
+    const result = await db.query('SELECT * FROM dynamic_wisdom');
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.post('/chat/wisdom', adminAuth, async (req, res) => {
+  try {
+    const { keywords, answer_en, answer_te, scripture } = req.body;
+    await db.query(
+      'INSERT INTO dynamic_wisdom (keywords, answer_en, answer_te, scripture) VALUES ($1, $2, $3, $4)',
+      [keywords, answer_en, answer_te, scripture]
+    );
+    res.json({ status: 'success' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 router.get('/test', async (req, res) => {
   try {
     let dbStatus = false;
@@ -616,6 +652,22 @@ router.get('/test', async (req, res) => {
           best_score DECIMAL,
           attempts INTEGER DEFAULT 1,
           completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE TABLE IF NOT EXISTS missed_questions (
+          id SERIAL PRIMARY KEY,
+          question TEXT UNIQUE,
+          scripture VARCHAR,
+          ask_count INTEGER DEFAULT 1,
+          is_resolved BOOLEAN DEFAULT FALSE,
+          first_asked TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE TABLE IF NOT EXISTS dynamic_wisdom (
+          id SERIAL PRIMARY KEY,
+          keywords TEXT[],
+          answer_en TEXT,
+          answer_te TEXT,
+          scripture VARCHAR,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         );
       `);
       tablesReady = true;
