@@ -214,7 +214,7 @@ const KrishnaChat = ({ scripture }) => {
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSend()}
               placeholder={isTe ? "మీ ప్రశ్నను ఇక్కడ టైప్ చేయండి..." : "Type your question here..."}
-              className="flex-1 p-3 bg-gray-50 border border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500/20 text-sm"
+              className="flex-1 p-3 bg-gray-50 border border-orange-100 rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500/20 text-sm text-gray-900"
             />
             <button 
               onClick={handleSend}
