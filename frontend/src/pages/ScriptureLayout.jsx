@@ -68,6 +68,28 @@ const ScriptureLayout = () => {
     setActiveChapter(chapterNum);
   };
 
+  // Guard: show Coming Soon for unavailable scriptures
+  if (scripture === 'ramayana') {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-lem-dark text-white">
+        <Link to="/" className="absolute top-6 left-6 text-gray-400 hover:text-lem-accent transition-colors flex items-center gap-2 text-sm font-bold">
+          <ChevronLeft size={18} /> Back Home
+        </Link>
+        <div className="text-center glass-card p-16 max-w-md mx-auto border border-lem-glass-border">
+          <div className="text-6xl mb-6">📖</div>
+          <h2 className="text-3xl font-black text-white mb-4">Ramayana</h2>
+          <p className="text-gray-400 font-medium leading-relaxed mb-6">
+            The Epic of Rama is coming soon to littleEpicMinds.<br />
+            We're crafting a beautiful, child-friendly experience just for you!
+          </p>
+          <span className="bg-gray-700 text-gray-300 text-xs font-black uppercase tracking-widest px-4 py-2 rounded-full border border-gray-600">
+            🔒 Coming Soon
+          </span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen flex flex-col md:flex-row bg-lem-dark text-white">
       

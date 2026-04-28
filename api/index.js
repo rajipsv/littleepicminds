@@ -16,7 +16,7 @@ const pool = process.env.DATABASE_URL ? new Pool({
 
 const db = {
   query: (text, params) => {
-    if (!pool) throw new Error('DATABASE_URL is not set!');
+    if (!pool) return Promise.reject(new Error('DATABASE_URL is not set!'));
     return pool.query(text, params);
   }
 };
@@ -192,6 +192,12 @@ router.get('/verses', (req, res) => {
       }
       return res.json(hanumanWithIds);
     }
+
+    if (scripture === 'ramayana') {
+      return res.status(404).json({ error: 'Ramayana content coming soon' });
+    }
+
+    // Default to gita if no scripture or scripture is gita
     if (chapter && verse) {
       const key = `${chapter}.${verse}`;
       const d = data.shlokas[key];
@@ -261,25 +267,32 @@ router.get('/verses/evaluations/:id', (req, res) => {
 
 // GET /api/verses/quiz/:scripture/:chapter/:verse — Generate quiz from shloka content
 router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
+  console.log(`[DEBUG] Quiz Request: ${req.params.scripture}/${req.params.chapter}/${req.params.verse}`);
   try {
     const { scripture, chapter, verse } = req.params;
     const level = req.query.level || 'seeds';
+    console.log(`[DEBUG] Level: ${level}`);
 
     let shloka = null;
     if (scripture === 'gita') {
       const key = `${chapter}.${verse}`;
+      console.log(`[DEBUG] Looking up Gita key: ${key}`);
       shloka = data.shlokas[key];
     } else if (scripture === 'hanuman') {
       shloka = data.hanumanChalisa[verse];
     }
 
+    console.log(`[DEBUG] Shloka found: ${!!shloka}`);
     if (!shloka) return res.status(404).json({ error: 'Shloka not found' });
 
     // Use existing exercises if available
+    console.log(`[DEBUG] Checking for exercises at level: ${level}`);
     if (shloka.exercises && shloka.exercises[level]) {
       const ex = shloka.exercises[level];
+      console.log(`[DEBUG] Found manual exercises`);
       return res.json([{ question: ex.question, options: ex.options, correct: ex.correct }]);
     }
+    console.log(`[DEBUG] No manual exercises, auto-generating...`);
 
     // Auto-generate 3 MCQ questions from shloka meaning
     const meaning = shloka.en?.meaning || '';
@@ -338,9 +351,12 @@ router.get('/journal/:username', async (req, res) => {
     );
     res.json(result.rows);
   } catch (err) {
+    // No DB configured — return empty list gracefully
+    if (err.message.includes('DATABASE_URL')) return res.json([]);
     res.status(500).send(err.message);
   }
 });
+
 
 router.post('/journal', async (req, res) => {
   try {

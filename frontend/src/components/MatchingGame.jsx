@@ -4,18 +4,18 @@ import { useAuth } from '../context/AuthContext';
 const MatchingGame = ({ breakdown, onComplete, scripture }) => {
   const [selectedWord, setSelectedWord] = useState(null);
   const [matches, setMatches] = useState({});
-  const { currentLang } = useAuth(); // Assume we have this in auth context or pass as prop
-  
-  // Scramble meanings on mount
+  const [wrongFlash, setWrongFlash] = useState(null);
+  const { currentLang } = useAuth();
+
   const [scrambledMeanings, setScrambledMeanings] = useState([]);
-  
+
   useEffect(() => {
     if (!breakdown) return;
     const meanings = breakdown.map(item => ({
       id: item.sanskrit,
-      text: currentLang === 'te' ? item.te : item.en
+      text: item.en  // Always use English meaning
     }));
-    
+
     // Fisher-Yates shuffle
     for (let i = meanings.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -28,98 +28,106 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
 
   if (!breakdown || breakdown.length === 0) return null;
 
-  const isTe = currentLang === 'te';
-
   const handleWordSelect = (wordSanskrit) => {
-    if (matches[wordSanskrit]) return; // Already matched
+    if (matches[wordSanskrit]) return;
     setSelectedWord(wordSanskrit);
   };
 
   const handleMeaningSelect = (meaningId) => {
-    if (!selectedWord) {
-      alert(isTe ? "ముందుగా సంస్కృత పదాన్ని ఎంచుకోండి!" : "Select a Sanskrit word first!");
-      return;
-    }
+    if (!selectedWord) return; // Do nothing, just wait for word selection
 
     if (selectedWord === meaningId) {
-      // Match found!
+      // Correct match!
       const newMatches = { ...matches, [selectedWord]: true };
       setMatches(newMatches);
       setSelectedWord(null);
-      
-      // Check if all matched
       if (Object.keys(newMatches).length === breakdown.length) {
-        setTimeout(() => {
-          onComplete();
-        }, 800);
+        setTimeout(() => onComplete(), 800);
       }
     } else {
-      // Wrong match
-      const isHanuman = scripture === 'hanuman';
-      const tryAgainTe = isHanuman 
-        ? "మళ్ళీ ప్రయత్నించండి! హనుమంతుడు చెబుతున్నాడు: పదాలను నిశితంగా గమనించండి." 
-        : "మళ్ళీ ప్రయత్నించండి! కృష్ణుడు చెబుతున్నాడు: పదాలను నిశితంగా గమనించండి.";
-      const tryAgainEn = isHanuman 
-        ? "Try again! Hanuman says: Look closely at the words." 
-        : "Try again! Krishna says: Look closely at the words.";
-      
-      alert(isTe ? tryAgainTe : tryAgainEn);
+      // Wrong match — flash red briefly
+      setWrongFlash(meaningId);
+      setTimeout(() => setWrongFlash(null), 700);
     }
   };
 
   return (
-    <div className="grid grid-cols-2 gap-8 mt-6">
-      {/* Sanskrit Words */}
-      <div>
-        <h4 className="text-lem-accent text-sm font-bold mb-4 uppercase tracking-wider">
-          {isTe ? "సంస్కృత పదాలు" : "Sanskrit Words"}
-        </h4>
-        <div className="space-y-3">
-          {breakdown.map((item, i) => {
-            const wordStr = item.sanskrit;
-            const displayStr = isTe ? item.sanskrit_te : item.sanskrit;
-            const isMatched = matches[wordStr];
-            const isSelected = selectedWord === wordStr;
-            
-            return (
-              <button
-                key={`word-${i}`}
-                onClick={() => handleWordSelect(wordStr)}
-                disabled={isMatched}
-                className={`w-full text-left match-item transition-all ${
-                  isMatched ? 'correct' : isSelected ? 'selected' : ''
-                }`}
-              >
-                <span className="devanagari-text text-lg">{displayStr}</span>
-                {isMatched && <span>✅</span>}
-              </button>
-            );
-          })}
-        </div>
-      </div>
+    <div className="space-y-3 mt-4">
+      {!selectedWord && (
+        <p className="text-xs text-gray-400 text-center italic">
+          👆 Select a word on the left, then tap its meaning on the right
+        </p>
+      )}
+      {selectedWord && (
+        <p className="text-xs text-lem-accent text-center font-bold animate-pulse">
+          Now pick the matching meaning →
+        </p>
+      )}
 
-      {/* Meanings */}
-      <div>
-        <h4 className="text-lem-accent text-sm font-bold mb-4 uppercase tracking-wider">
-          {isTe ? "అర్థాలు" : "Meanings"}
-        </h4>
-        <div className="space-y-3">
-          {scrambledMeanings.map((meaning, i) => {
-            const isMatched = matches[meaning.id];
-            
-            return (
-              <button
-                key={`meaning-${i}`}
-                onClick={() => handleMeaningSelect(meaning.id)}
-                disabled={isMatched}
-                className={`w-full text-left match-item transition-all ${
-                  isMatched ? 'correct' : ''
-                }`}
-              >
-                <span className="text-sm font-medium">{isMatched ? `✅ ${meaning.text}` : meaning.text}</span>
-              </button>
-            );
-          })}
+      <div className="grid grid-cols-2 gap-6">
+        {/* Transliteration column */}
+        <div>
+          <h4 className="text-lem-accent text-xs font-bold mb-3 uppercase tracking-wider">
+            Transliteration
+          </h4>
+          <div className="space-y-2">
+            {breakdown.map((item, i) => {
+              const wordStr = item.sanskrit;
+              // Show English transliteration (romanised), not Devanagari
+              const displayStr = item.word || item.transliteration || item.sanskrit;
+              const isMatched = matches[wordStr];
+              const isSelected = selectedWord === wordStr;
+
+              return (
+                <button
+                  key={`word-${i}`}
+                  onClick={() => handleWordSelect(wordStr)}
+                  disabled={isMatched}
+                  className={`w-full text-left px-3 py-2 rounded-lg border text-sm font-semibold transition-all ${
+                    isMatched
+                      ? 'bg-green-500/20 border-green-500/40 text-green-400 cursor-default'
+                      : isSelected
+                        ? 'bg-lem-accent/20 border-lem-accent text-lem-accent scale-105 shadow-md'
+                        : 'bg-lem-dark/60 border-lem-glass-border text-gray-200 hover:border-lem-accent hover:text-white'
+                  }`}
+                >
+                  {displayStr} {isMatched && '✅'}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Meanings column */}
+        <div>
+          <h4 className="text-lem-accent text-xs font-bold mb-3 uppercase tracking-wider">
+            Meanings
+          </h4>
+          <div className="space-y-2">
+            {scrambledMeanings.map((meaning, i) => {
+              const isMatched = matches[meaning.id];
+              const isWrong = wrongFlash === meaning.id;
+
+              return (
+                <button
+                  key={`meaning-${i}`}
+                  onClick={() => handleMeaningSelect(meaning.id)}
+                  disabled={isMatched}
+                  className={`w-full text-left px-3 py-2 rounded-lg border text-sm transition-all ${
+                    isMatched
+                      ? 'bg-green-500/20 border-green-500/40 text-green-400 cursor-default'
+                      : isWrong
+                        ? 'bg-red-500/20 border-red-500/60 text-red-400 scale-95'
+                        : selectedWord
+                          ? 'bg-lem-dark/60 border-lem-glass-border text-gray-200 hover:border-blue-400 hover:text-white cursor-pointer'
+                          : 'bg-lem-dark/60 border-lem-glass-border text-gray-400'
+                  }`}
+                >
+                  {isMatched ? `✅ ${meaning.text}` : meaning.text}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

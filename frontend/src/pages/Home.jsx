@@ -4,9 +4,9 @@ import { useAuth } from '../context/AuthContext';
 import { BookOpen, LogOut, User } from 'lucide-react';
 
 const scriptures = [
-  { id: 'gita', title: 'Bhagavad Gita', color: 'bg-kid-primary', desc: 'The Song of God' },
-  { id: 'hanuman', title: 'Hanuman Chalisa', color: 'bg-kid-accent', desc: 'Hymn to Hanuman' },
-  { id: 'ramayana', title: 'Ramayana', color: 'bg-kid-secondary', desc: 'The Epic of Rama', isLocked: true }
+  { id: 'gita', title: 'Bhagavad Gita', color: 'bg-kid-primary', desc: 'The Song of God', isAvailable: true },
+  { id: 'hanuman', title: 'Hanuman Chalisa', color: 'bg-kid-accent', desc: 'Hymn to Hanuman', isAvailable: true },
+  { id: 'ramayana', title: 'Ramayana', color: 'bg-kid-secondary', desc: 'The Epic of Rama', isAvailable: false }
 ];
 
 const Home = () => {
@@ -70,28 +70,32 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {scriptures.map(s => (
-              s.isLocked ? (
-                <div 
-                  key={s.id} 
-                  className="glass-card p-10 flex flex-col items-center text-center opacity-70 grayscale relative overflow-hidden"
-                >
-                  <div className="absolute top-4 right-4 bg-orange-600 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-tighter shadow-lg rotate-12">
-                    Coming Soon
+            {scriptures.map(s => {
+              if (!s.isAvailable) {
+                return (
+                  <div
+                    key={s.id}
+                    className="glass-card p-10 flex flex-col items-center text-center opacity-60 cursor-not-allowed relative"
+                  >
+                    <div className="absolute top-4 right-4 bg-gray-700 text-gray-300 text-xs font-black uppercase tracking-widest px-3 py-1 rounded-full border border-gray-600 flex items-center gap-1">
+                      🔒 Coming Soon
+                    </div>
+                    <div className="w-20 h-20 bg-lem-sidebar rounded-3xl mb-8 flex items-center justify-center text-gray-500 shadow-inner border border-lem-glass-border">
+                      <BookOpen size={40} />
+                    </div>
+                    <h3 className="text-2xl font-black text-gray-400 mb-3 tracking-wide">{s.title}</h3>
+                    <p className="text-gray-500 font-medium leading-relaxed">{s.desc}</p>
+                    <p className="mt-6 text-xs text-gray-600 font-bold uppercase tracking-widest">Available Soon</p>
                   </div>
-                  <div className={`w-20 h-20 bg-lem-sidebar rounded-3xl mb-8 flex items-center justify-center text-gray-500 shadow-inner border border-lem-glass-border`}>
-                    <BookOpen size={40} />
-                  </div>
-                  <h3 className="text-2xl font-black text-white mb-3 tracking-wide">{s.title}</h3>
-                  <p className="text-gray-400 font-medium leading-relaxed">{s.desc}</p>
-                </div>
-              ) : (
-                <Link 
-                  key={s.id} 
+                );
+              }
+              return (
+                <Link
+                  key={s.id}
                   to={`/read/${s.id}`}
                   className="glass-card p-10 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center group"
                 >
-                  <div className={`w-20 h-20 bg-lem-sidebar rounded-3xl mb-8 flex items-center justify-center text-lem-accent shadow-inner border border-lem-glass-border group-hover:rotate-6 transition-transform duration-500`}>
+                  <div className="w-20 h-20 bg-lem-sidebar rounded-3xl mb-8 flex items-center justify-center text-lem-accent shadow-inner border border-lem-glass-border group-hover:rotate-6 transition-transform duration-500">
                     <BookOpen size={40} />
                   </div>
                   <h3 className="text-2xl font-black text-white mb-3 tracking-wide">{s.title}</h3>
@@ -100,8 +104,8 @@ const Home = () => {
                     Start Reading <span className="ml-2">→</span>
                   </div>
                 </Link>
-              )
-            ))}
+              );
+            })}
           </div>
 
           <div className="text-center">
@@ -136,7 +140,7 @@ const Home = () => {
                   <div className="w-6 h-6 bg-lem-accent/20 rounded-full flex items-center justify-center text-lem-accent">
                     <span className="text-[10px] font-black">✓</span>
                   </div>
-                  <span className="font-bold text-gray-200">Resilience & Values Tracking</span>
+                  <span className="font-bold text-gray-200">Resilience &amp; Values Tracking</span>
                 </li>
               </ul>
             </div>

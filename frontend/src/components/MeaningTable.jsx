@@ -7,12 +7,13 @@ const speakWord = (text) => {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  // Prefer a Sanskrit/Hindi/Indian voice
   const voices = window.speechSynthesis.getVoices();
-  const preferred = voices.find(v =>
-    v.lang.includes('hi') || v.lang.includes('sa') || v.lang.includes('IN')
-  );
+  const preferred =
+    voices.find(v => v.lang === 'en-US') ||
+    voices.find(v => v.lang.startsWith('en')) ||
+    voices[0];
   if (preferred) utterance.voice = preferred;
+  utterance.lang = 'en-US';
   utterance.rate = 0.8;
   window.speechSynthesis.speak(utterance);
 };
@@ -27,31 +28,32 @@ const MeaningTable = ({ wordByWord }) => {
   const handlePlay = async (word, meaning, index) => {
     setPlayingIndex(index);
     try {
-      // Use the smart API_URL from our central config
       const response = await fetch(`${API_URL || ''}/api/tts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           text: `${word}. ${meaning}`,
-          target_language_code: isTe ? 'te' : 'hi',
+          target_language_code: 'en',
           speaker: 'roopa'
         })
       });
-      
-      if (!response.ok) throw new Error('TTS request failed');
-      
+
+      if (!response.ok) throw new Error('TTS unavailable');
+
       const data = await response.json();
       if (data.audios && data.audios[0]) {
         const audio = new Audio(`data:audio/wav;base64,${data.audios[0]}`);
         audio.onended = () => setPlayingIndex(-1);
-        audio.onerror = () => setPlayingIndex(-1);
+        audio.onerror = () => { setPlayingIndex(-1); speakWord(`${word}. ${meaning}`); };
         await audio.play();
       } else {
-        setPlayingIndex(-1);
+        speakWord(`${word}. ${meaning}`);
+        setTimeout(() => setPlayingIndex(-1), 2000);
       }
     } catch (err) {
-      console.error("Word TTS failed:", err);
-      setPlayingIndex(-1);
+      // Silently fall back to browser TTS
+      speakWord(`${word}. ${meaning}`);
+      setTimeout(() => setPlayingIndex(-1), 2000);
     }
   };
 

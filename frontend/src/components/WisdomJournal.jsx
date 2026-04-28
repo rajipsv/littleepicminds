@@ -1,41 +1,40 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { BookOpen } from 'lucide-react';
+import { BookOpen, CheckCircle, AlertCircle } from 'lucide-react';
 
 const WisdomJournal = ({ verse, onComplete }) => {
   const [response, setResponse] = useState('');
   const [saving, setSaving] = useState(false);
-  const { user, saveProgress, currentLang } = useAuth();
+  const [saved, setSaved] = useState(false);
+  const [error, setError] = useState('');
+  const { user, saveProgress } = useAuth();
 
-  const isTe = currentLang === 'te';
-  
-  // Extract activity from verse data based on language
-  let activity = isTe ? verse.te?.activity : verse.en?.activity;
-  
-  // Safety check: Replace any 'Draw' or 'Geyandi' (draw in Telugu) with 'Write' for text area
+  // Always use English activity prompt
+  let activity = verse.en?.activity || verse.activity || '';
+
+  // Replace drawing prompts with writing prompts for text input
   if (activity) {
-    activity = activity.replace(/Draw a picture of /gi, "Describe ")
-                       .replace(/Draw a /gi, "Write about a ")
-                       .replace(/Draw /gi, "Write about ")
-                       .replace(/గీయండి/g, "రాయండి");
+    activity = activity
+      .replace(/Draw a picture of /gi, 'Describe ')
+      .replace(/Draw a /gi, 'Write about a ')
+      .replace(/Draw /gi, 'Write about ');
   }
 
-  const prompt = activity || (isTe ? "ఈ శ్లోకం నుండి మీరు ఏమి నేర్చుకున్నారు?" : "What did you learn from this shloka?");
+  const prompt = activity || 'What did you learn from this shloka?';
 
   const handleSubmit = async () => {
     if (!response.trim()) {
-      alert(isTe ? "దయచేసి మీ ఆలోచనలను రాయండి!" : "Please share your thoughts!");
+      setError('Please share your thoughts before saving!');
       return;
     }
-
     if (!user) {
-      alert("Please login to save your journal entry.");
+      setError('Please login to save your journal entry.');
       return;
     }
 
     setSaving(true);
+    setError('');
     try {
-      // Assuming saveProgress can take extra params like question/response
       await saveProgress(
         verse.scripture || 'gita',
         verse.chapter_number || 1,
@@ -43,15 +42,25 @@ const WisdomJournal = ({ verse, onComplete }) => {
         prompt,
         response
       );
-      
-      alert(isTe ? "మీ ఆలోచనలు జర్నల్‌లో సేవ్ చేయబడ్డాయి! 🏅 +20 XP" : "Wisdom saved to your journal! 🏅 +20 XP");
-      onComplete();
+      setSaved(true);
+      setTimeout(() => onComplete(), 1200);
     } catch (err) {
-      alert("Failed to save. Please try again.");
+      console.error('Journal save error:', err);
+      setError('Failed to save. Please check your connection and try again.');
     } finally {
       setSaving(false);
     }
   };
+
+  if (saved) {
+    return (
+      <div className="bg-green-500/10 border border-green-500/30 p-6 rounded-2xl mt-4 flex flex-col items-center gap-3 text-center animate-fade-in">
+        <CheckCircle size={40} className="text-green-400" />
+        <h4 className="text-green-400 font-bold text-lg">Wisdom Saved! 🏅</h4>
+        <p className="text-gray-300 text-sm">+20 XP added to your journal</p>
+      </div>
+    );
+  }
 
   return (
     <div className="bg-black/20 border border-lem-accent/40 border-dashed p-6 rounded-2xl mt-4">
@@ -59,26 +68,33 @@ const WisdomJournal = ({ verse, onComplete }) => {
         <div className="w-10 h-10 rounded-full bg-lem-accent/20 flex items-center justify-center text-lem-accent">
           <BookOpen size={20} />
         </div>
-        <h4 className="text-lem-accent font-bold text-lg">{isTe ? "జ్ఞాన దినచర్య (జర్నల్)" : "Wisdom Journal"}</h4>
+        <h4 className="text-lem-accent font-bold text-lg">Wisdom Journal</h4>
       </div>
-      
+
       <p className="text-white font-medium mb-4 text-lg">{prompt}</p>
-      
+
       <textarea
         className="w-full bg-[#0a0f1d] border border-lem-accent/30 rounded-xl p-4 text-[#f8fafc] placeholder-gray-500 focus:outline-none focus:border-lem-accent transition-colors resize-none shadow-inner"
         rows="4"
-        placeholder={isTe ? "మీ ఆలోచనలను ఇక్కడ రాయండి..." : "Write your thoughts here..."}
+        placeholder="Write your thoughts here..."
         value={response}
-        onChange={(e) => setResponse(e.target.value)}
+        onChange={(e) => { setResponse(e.target.value); setError(''); }}
       />
-      
+
+      {error && (
+        <div className="flex items-center gap-2 mt-2 text-red-400 text-sm">
+          <AlertCircle size={14} />
+          <span>{error}</span>
+        </div>
+      )}
+
       <div className="flex justify-end mt-4">
         <button
           onClick={handleSubmit}
           disabled={saving}
-          className="bg-gradient-to-r from-[#f6d365] to-[#fda085] text-lem-dark font-bold py-2 px-6 rounded-xl hover:scale-105 transition-transform shadow-lg"
+          className="bg-gradient-to-r from-[#f6d365] to-[#fda085] text-lem-dark font-bold py-2 px-6 rounded-xl hover:scale-105 transition-transform shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
         >
-          {saving ? (isTe ? "సేవ్ అవుతోంది..." : "Saving...") : (isTe ? "జర్నల్‌లో సేవ్ చేయి" : "Save to Journal")}
+          {saving ? 'Saving...' : 'Save to Journal'}
         </button>
       </div>
     </div>
