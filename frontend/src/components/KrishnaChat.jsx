@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Sparkles, X } from 'lucide-react';
+import { getWisdom } from '../data/wisdom';
 
 const KrishnaChat = ({ scripture }) => {
   const [messages, setMessages] = useState([]);
@@ -21,15 +22,15 @@ const KrishnaChat = ({ scripture }) => {
     let greeting = '';
     if (isTe) {
       if (isHanuman) {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి హనుమంతుని గురించి లేదా ఈ చాలీసా గురించి అడగండి!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా మరియు రామాయణం గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి అడగండి!`;
       } else {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని అద్భుతమైన జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి గీత గురించి అడగండి!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని అద్భుతమైన జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి అడగండి!`;
       }
     } else {
       if (isHanuman) {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa. Please ask me anything about Lord Hanuman or this prayer!`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa and Ramayana. What would you like to know?`;
       } else {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Please ask your questions about the Gita or Sri Krishna!`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Ask me anything!`;
       }
     }
       
@@ -65,61 +66,29 @@ const KrishnaChat = ({ scripture }) => {
 
     const userMsg = { id: Date.now(), text: input, sender: 'user' };
     setMessages(prev => [...prev, userMsg]);
-    const text = input.toLowerCase();
+    const text = input;
     setInput('');
     setIsTyping(true);
 
-    // Simulate Guru response with a very robust keyword library
+    // Simulate Guru response using external library
     setTimeout(() => {
-      let response = '';
+      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, isTe);
 
-      const lib = {
-        hanuman: {
-          keywords: ['hanuman', 'monkey', 'bajrangbali', 'power', 'strength', 'who is'],
-          details: "Hanuman is the son of the Wind God (Vayu) and a devoted follower of Lord Rama. He has infinite strength and can change his size at will! He is the symbol of selfless service and courage.",
-          te: "హనుమంతుడు వాయు పుత్రుడు మరియు శ్రీరాముని పరమ భక్తుడు. ఆయనకు అపారమైన శక్తి ఉంది మరియు ఆయన తన రూపాన్ని మార్చుకోగలరు! ఆయన నిస్వార్థ సేవకు మరియు ధైర్యానికి చిహ్నం."
-        },
-        rama: {
-          keywords: ['rama', 'ram', 'sita', 'serving'],
-          details: "Lord Rama is the king of Ayodhya and the embodiment of truth. Hanuman's greatest joy is to serve Rama and Sita. Their bond shows that true love is the greatest power.",
-          te: "శ్రీరాముడు అయోధ్య రాజు మరియు సత్యానికి నిలువుటద్దం. రాముడు మరియు సీతకు సేవ చేయడమే హనుమంతునికి అత్యంత ఆనందం."
-        },
-        verse: {
-          keywords: ['verse', 'shloka', 'explain', 'detail', 'meaning', 'tell me about'],
-          details: "Every verse in the Hanuman Chalisa is like a magic spell that brings courage! If you look at the translation below the verse, you can see the deep meaning. Which specific part would you like me to talk about?",
-          te: "హనుమాన్ చాలీసాలోని ప్రతి పద్యం మనకు ధైర్యాన్ని ఇచ్చే మంత్రం వంటిది! పద్యం కింద ఉన్న అనువాదాన్ని చూస్తే దాని లోతైన అర్థం మీకు తెలుస్తుంది."
-        },
-        gita: {
-          keywords: ['gita', 'krishna', 'arjuna', 'wisdom', 'lesson'],
-          details: "The Bhagavad Gita is a conversation between Sri Krishna and Arjuna on a battlefield. Krishna teaches us that we should do our duty with full heart but not worry about the results. It is the ultimate guide for a happy life!",
-          te: "భగవద్గీత అనేది కురుక్షేత్ర యుద్ధభూమిలో శ్రీకృష్ణుడు మరియు అర్జునుడి మధ్య జరిగిన సంభాషణ. ఫలితం గురించి ఆలోచించకుండా మన పనిని మనం చేయాలని కృష్ణుడు బోధించాడు."
-        }
-      };
-
-      // Search for match
-      let matchFound = false;
-      if (isHanuman) {
-        if (lib.hanuman.keywords.some(k => text.includes(k))) { response = isTe ? lib.hanuman.te : lib.hanuman.details; matchFound = true; }
-        else if (lib.rama.keywords.some(k => text.includes(k))) { response = isTe ? lib.rama.te : lib.rama.details; matchFound = true; }
-        else if (lib.verse.keywords.some(k => text.includes(k))) { response = isTe ? lib.verse.te : lib.verse.details; matchFound = true; }
+      if (response) {
+        setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
       } else {
-        if (lib.gita.keywords.some(k => text.includes(k))) { response = isTe ? lib.gita.te : lib.gita.details; matchFound = true; }
-        else if (lib.verse.keywords.some(k => text.includes(k))) { response = isTe ? lib.verse.te : lib.verse.details; matchFound = true; }
-      }
-
-      if (!matchFound) {
+        let fallback = '';
         if (isTe) {
-          response = isHanuman 
+          fallback = isHanuman 
             ? "దయచేసి హనుమంతుడు, రాముడు లేదా చాలీసా శ్లోకాల గురించి అడగండి. మన పాఠం మీద దృష్టి పెడదాం!" 
             : "దయచేసి శ్రీకృష్ణుడు, అర్జునుడు లేదా గీత శ్లోకాల గురించి అడగండి. ప్రస్తుతానికి ఈ జ్ఞానాన్ని నేర్చుకుందాం!";
         } else {
-          response = isHanuman
+          fallback = isHanuman
             ? "Please focus your questions on Lord Hanuman, Rama, or the Chalisa verses. Let's learn this wisdom first!"
             : "Please keep your questions related to Sri Krishna or the Bhagavad Gita. Let's dive deeper into this sacred wisdom!";
         }
+        setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
       }
-
-      setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
       setIsTyping(false);
     }, 800);
   };
