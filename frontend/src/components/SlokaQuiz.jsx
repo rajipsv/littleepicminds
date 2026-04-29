@@ -14,6 +14,15 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(null);
   const isTe = currentLang === 'te';
+  const isHanuman = scripture === 'hanuman';
+
+  const verseLabel = isHanuman ? (() => {
+    if (verse <= 2) return `Doha ${verse}`;
+    if (verse <= 42) return `Verse ${verse - 2}`;
+    return `Doha ${verse - 40}`;
+  })() : `Shloka ${chapter}.${verse}`;
+
+  const verseId = isHanuman ? String(verse) : `${chapter}.${verse}`;
 
   useEffect(() => {
     const level = getLevelFromUser(user);
@@ -42,19 +51,17 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     setScore(pct);
     setSubmitted(true);
 
-    // Save progress if logged in
+    // Save quiz score to evaluations if passed
     if (user && token && pct >= 70) {
       try {
-        await api.post('/api/journal', {
+        await api.post('/api/evaluations', {
           scripture,
           chapter_number: chapter,
-          verse_id: `${chapter}.${verse}`,
-          question: `Shloka ${chapter}.${verse} Quiz`,
-          response: `Score: ${pct}%`
+          score: pct
         }, { headers: { Authorization: `Bearer ${token}` } });
         if (onPass) onPass(pct);
       } catch (e) {
-        console.error('Failed to save sloka progress', e);
+        console.error('Failed to save quiz score', e);
       }
     }
   };
@@ -78,8 +85,8 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
         </h3>
         <p className={`text-lg font-bold mb-6 ${isPass ? 'text-green-400' : 'text-yellow-400'}`}>
           {isPass
-            ? (isTe ? '🎉 అద్భుతం! ఈ శ్లోకం మాస్టర్ చేశారు!' : '🎉 Excellent! Shloka Mastered!')
-            : (isTe ? 'మళ్ళీ ప్రయత్నించండి!' : 'Keep practicing! You need 70% to master this shloka.')}
+            ? (isTe ? '🎉 అద్భుతం! ఈ శ్లోకం మాస్టర్ చేశారు!' : `🎉 ${verseLabel} Mastered!`)
+            : (isTe ? 'మళ్ళీ ప్రయత్నించండి!' : `Keep practicing! You need 70% to master this ${isHanuman ? 'verse' : 'shloka'}.`)}
         </p>
         {/* Show answer review */}
         <div className="space-y-3 text-left mb-6">
@@ -126,7 +133,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-2 text-lem-accent font-bold">
           <HelpCircle size={20} />
-          <span>{isTe ? `శ్లోకం ${chapter}.${verse} పరీక్ష` : `Shloka ${chapter}.${verse} Quiz`}</span>
+          <span>{isTe ? `${verseLabel} పరీక్ష` : `${verseLabel} Quiz`}</span>
         </div>
         <div className="flex items-center gap-4">
           <span className="text-sm font-bold text-gray-400">{currentQ + 1} / {questions.length}</span>
