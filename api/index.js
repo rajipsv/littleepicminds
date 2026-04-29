@@ -364,9 +364,16 @@ router.post('/journal', async (req, res) => {
     
     // Extract userId from token
     const authHeader = req.headers.authorization;
-    if (!authHeader) return res.status(401).send('Unauthorized');
-    const token = authHeader.split(' ')[1];
-    const decoded = jwt.verify(token, JWT_SECRET);
+    if (!authHeader) return res.status(401).json({ error: 'Unauthorized: No token provided' });
+    
+    let decoded;
+    try {
+      const token = authHeader.split(' ')[1];
+      decoded = jwt.verify(token, JWT_SECRET);
+    } catch (e) {
+      return res.status(401).json({ error: 'Unauthorized: Token expired or invalid' });
+    }
+    
     const userId = decoded.user.id;
     
     console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
@@ -379,12 +386,21 @@ router.post('/journal', async (req, res) => {
     }
 
     // 1. Save to Journal Table
-    await db.query(
-      'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-      [userId, scripture, chNum, verse_id, question, response]
-    ).catch(e => console.error('Journal table fail:', e.message));
+    try {
+      await db.query(
+        'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
+        [userId, scripture, chNum, verse_id, question, response]
+      );
+    } catch (e) {
+      console.error('Journal table fail:', e.message);
+      // If DB is not available, still return success to avoid breaking UX
+      if (e.message.includes('DATABASE_URL')) {
+        console.warn('DB not configured, skipping journal save');
+        return res.status(201).json({ status: 'saved_offline', warning: 'DB not configured' });
+      }
+      throw e;
+    }
 
-    // 2. Save to Progress Table (Self-healing upsert)
     // 2. Save to Progress Table (Self-healing upsert)
     try {
       const existing = await db.query(
@@ -405,12 +421,13 @@ router.post('/journal', async (req, res) => {
       }
     } catch (e) {
       console.error('Progress table fail:', e.message);
+      // Non-critical, don't fail the whole request
     }
 
-    res.status(201).send('Saved');
+    res.status(201).json({ status: 'saved' });
   } catch (err) {
     console.error('Final Journal error:', err.message);
-    res.status(500).json({ error: err.message, stack: err.stack });
+    res.status(500).json({ error: err.message });
   }
 });
 

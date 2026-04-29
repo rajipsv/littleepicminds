@@ -46,7 +46,12 @@ const WisdomJournal = ({ verse, onComplete }) => {
       setTimeout(() => onComplete(), 1200);
     } catch (err) {
       console.error('Journal save error:', err);
-      setError('Failed to save. Please check your connection and try again.');
+      const errorMsg = err.response?.data?.error || err.message;
+      if (errorMsg?.includes('Unauthorized') || errorMsg?.includes('expired')) {
+        setError('Your session expired. Please login again.');
+      } else {
+        setError('Failed to save. Please check your connection and try again.');
+      }
     } finally {
       setSaving(false);
     }
