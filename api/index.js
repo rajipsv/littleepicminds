@@ -177,12 +177,29 @@ router.get('/verses/chapters', (req, res) => {
   });
 });
 
+// Helper: map Hanuman numeric verse index to data key
+function getHanumanKey(index) {
+  const v = parseInt(index);
+  if (v <= 2) return `Doha ${v}`;
+  if (v <= 42) return `Verse ${v - 2}`;
+  return `Doha ${v - 40}`;
+}
+
+// GET /api/verses — Hanuman verse lookup
+function getHanumanVerse(verseParam) {
+  // Try direct key first (e.g., "Verse 1", "Doha 1")
+  if (data.hanumanChalisa[verseParam]) return data.hanumanChalisa[verseParam];
+  // Fall back to numeric mapping
+  const key = getHanumanKey(verseParam);
+  return data.hanumanChalisa[key] || null;
+}
+
 router.get('/verses', (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;
     if (scripture === 'hanuman') {
       if (verse) {
-        const d = data.hanumanChalisa[verse];
+        const d = getHanumanVerse(verse);
         if (!d) return res.status(404).json({ error: 'Verse not found' });
         return res.json({ ...d, id: verse });
       }
@@ -279,7 +296,7 @@ router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
       console.log(`[DEBUG] Looking up Gita key: ${key}`);
       shloka = data.shlokas[key];
     } else if (scripture === 'hanuman') {
-      shloka = data.hanumanChalisa[verse];
+      shloka = getHanumanVerse(verse);
     }
 
     console.log(`[DEBUG] Shloka found: ${!!shloka}`);

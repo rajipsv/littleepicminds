@@ -4,6 +4,20 @@ const contentData = require('../data');
 
 const router = express.Router();
 
+// Helper: map Hanuman numeric verse index to data key
+function getHanumanKey(index) {
+  const v = parseInt(index);
+  if (v <= 2) return `Doha ${v}`;
+  if (v <= 42) return `Verse ${v - 2}`;
+  return `Doha ${v - 40}`;
+}
+
+function getHanumanVerse(verseParam) {
+  if (contentData.hanumanChalisa[verseParam]) return contentData.hanumanChalisa[verseParam];
+  const key = getHanumanKey(verseParam);
+  return contentData.hanumanChalisa[key] || null;
+}
+
 // GET /api/verses/chapters - Get chapter list + levels config
 router.get('/chapters', (req, res) => {
   res.json({
@@ -14,6 +28,7 @@ router.get('/chapters', (req, res) => {
 
 // GET /api/verses?scripture=gita&chapter=1&verse=1
 // GET /api/verses?scripture=hanuman&verse=Verse 1
+// GET /api/verses?scripture=hanuman&verse=5  (numeric fallback)
 router.get('/', (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;
@@ -21,7 +36,7 @@ router.get('/', (req, res) => {
 
     if (scripture === 'hanuman') {
       if (verse) {
-        const data = contentData.hanumanChalisa[verse];
+        const data = getHanumanVerse(verse);
         if (!data) return res.status(404).json({ error: 'Verse not found' });
         return res.json({ ...data, id: verse });
       }
