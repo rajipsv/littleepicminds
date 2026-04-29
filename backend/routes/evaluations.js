@@ -6,7 +6,63 @@ const router = express.Router();
 // In-memory fallback when no DB configured
 let mockEvaluations = [];
 
-// POST /api/evaluations/submit — Save quiz score
+// POST /api/evaluations — Save quiz score + progress (main endpoint)
+router.post('/', async (req, res) => {
+  try {
+    const { scripture, chapter_number, score, verse } = req.body;
+
+    if (!process.env.DATABASE_URL) {
+      const entry = { id: Date.now(), scripture, chapter_id: chapter_number, score, best_score: score, attempts: 1 };
+      mockEvaluations.push(entry);
+      if (verse) {
+        console.log(`[MOCK] Progress saved: scripture=${scripture}, chapter=${chapter_number}, verse=${verse}`);
+      }
+      return res.status(201).json({ status: 'saved' });
+    }
+
+    // 1. Save quiz score to evaluations table
+    const existing = await db.query(
+      'SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3',
+      [req.user?.id || 0, chapter_number, scripture || 'gita']
+    );
+    if (existing.rows.length > 0) {
+      const current = existing.rows[0];
+      const newBest = Math.max(parseFloat(current.best_score), score);
+      await db.query(
+        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
+        [score, newBest, req.user?.id || 0, chapter_number, scripture || 'gita']
+      );
+    } else {
+      await db.query(
+        'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
+        [req.user?.id || 0, scripture || 'gita', chapter_number, score, score]
+      );
+    }
+
+    // 2. Save to progress table (so verses count toward mastery + leaderboard)
+    if (verse) {
+      const shlokaNum = parseInt(verse);
+      const chNum = parseInt(chapter_number);
+      const existingProgress = await db.query(
+        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+        [req.user?.id || 0, scripture || 'gita', chNum, shlokaNum]
+      );
+      if (existingProgress.rows.length === 0) {
+        await db.query(
+          'INSERT INTO progress (user_id, scripture, chapter, shloka, completed_at) VALUES ($1, $2, $3, $4, CURRENT_TIMESTAMP)',
+          [req.user?.id || 0, scripture || 'gita', chNum, shlokaNum]
+        );
+      }
+    }
+
+    res.status(200).json({ status: 'saved' });
+  } catch (err) {
+    console.error('Evaluation save error:', err.message);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/evaluations/submit — Save quiz score (legacy endpoint)
 router.post('/submit', async (req, res) => {
   try {
     const { user_id, chapter_id, score, time_taken } = req.body;

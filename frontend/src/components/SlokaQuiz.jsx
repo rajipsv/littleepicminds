@@ -51,12 +51,13 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     setScore(pct);
     setSubmitted(true);
 
-    // Save quiz score to evaluations if passed
+    // Save quiz score to evaluations + progress if passed
     if (user && token && pct >= 70) {
       try {
         await api.post('/api/evaluations', {
           scripture,
           chapter_number: chapter,
+          verse,
           score: pct
         }, { headers: { Authorization: `Bearer ${token}` } });
         if (onPass) onPass(pct);

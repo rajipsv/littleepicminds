@@ -572,13 +572,14 @@ router.get('/leaderboard', async (req, res) => {
 
 router.post('/evaluations', async (req, res) => {
   try {
-    const { scripture, chapter_number, score } = req.body;
+    const { scripture, chapter_number, score, verse } = req.body;
     const authHeader = req.headers.authorization;
-    if (!authHeader) return res.status(401).send('Unauthorized');
+    if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
+    // 1. Save quiz score to evaluations table
     const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, chapter_number, scripture || 'gita']);
     if (existing.rows.length > 0) {
       const current = existing.rows[0];
@@ -593,9 +594,26 @@ router.post('/evaluations', async (req, res) => {
         [userId, scripture || 'gita', chapter_number, score, score]
       );
     }
-    res.status(200).send('Score saved');
+
+    // 2. Save to progress table (so verses count toward mastery + leaderboard)
+    if (verse) {
+      const shlokaNum = parseInt(verse);
+      const chNum = parseInt(chapter_number);
+      const existingProgress = await db.query(
+        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+        [userId, scripture || 'gita', chNum, shlokaNum]
+      );
+      if (existingProgress.rows.length === 0) {
+        await db.query(
+          'INSERT INTO progress (user_id, scripture, chapter, shloka, completed_at) VALUES ($1, $2, $3, $4, CURRENT_TIMESTAMP)',
+          [userId, scripture || 'gita', chNum, shlokaNum]
+        );
+      }
+    }
+
+    res.status(200).json({ status: 'saved' });
   } catch (err) {
-    res.status(500).send(err.message);
+    res.status(500).json({ error: err.message });
   }
 });
 
