@@ -6,16 +6,19 @@ const router = express.Router();
 // In-memory fallback when no DB configured
 let mockEvaluations = [];
 
-// POST /api/evaluations — Save quiz score + progress (main endpoint)
+// POST /api/evaluations — Save quiz score + progress + Q&A details (main endpoint)
 router.post('/', async (req, res) => {
   try {
-    const { scripture, chapter_number, score, verse } = req.body;
+    const { scripture, chapter_number, score, verse, quiz_details } = req.body;
 
     if (!process.env.DATABASE_URL) {
       const entry = { id: Date.now(), scripture, chapter_id: chapter_number, score, best_score: score, attempts: 1 };
       mockEvaluations.push(entry);
       if (verse) {
         console.log(`[MOCK] Progress saved: scripture=${scripture}, chapter=${chapter_number}, verse=${verse}`);
+      }
+      if (quiz_details) {
+        console.log(`[MOCK] Quiz details saved: ${quiz_details.length} questions`);
       }
       return res.status(201).json({ status: 'saved' });
     }
@@ -53,6 +56,14 @@ router.post('/', async (req, res) => {
           [req.user?.id || 0, scripture || 'gita', chNum, shlokaNum]
         );
       }
+    }
+
+    // 3. Save individual Q&A to quiz_results table
+    if (quiz_details && Array.isArray(quiz_details)) {
+      await db.query(
+        'INSERT INTO quiz_results (user_id, scripture, chapter, verse, score, questions, completed_at) VALUES ($1, $2, $3, $4, $5, $6, CURRENT_TIMESTAMP)',
+        [req.user?.id || 0, scripture || 'gita', chapter_number, verse, score, JSON.stringify(quiz_details)]
+      );
     }
 
     res.status(200).json({ status: 'saved' });
@@ -129,6 +140,68 @@ router.get('/:userId', async (req, res) => {
     res.json({ evaluations: result.rows });
   } catch (err) {
     console.error('Fetch evaluations error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// GET /api/evaluations/quiz-history/:userId — Get all quiz attempts for a user
+router.get('/quiz-history/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    if (!process.env.DATABASE_URL) {
+      return res.json([]);
+    }
+
+    const result = await db.query(
+      'SELECT * FROM quiz_results WHERE user_id = $1 ORDER BY completed_at DESC',
+      [userId]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error('Fetch quiz history error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+// GET /api/evaluations/hanuman-overall/:userId — Calculate overall Hanuman Chalisa score
+router.get('/hanuman-overall/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    if (!process.env.DATABASE_URL) {
+      return res.json({ total_verses_attempted: 0, total_verses_available: 44, average_score: 0, best_score: 0, worst_score: 0, verse_scores: {} });
+    }
+
+    const quizResult = await db.query(
+      'SELECT scripture, chapter, verse, score FROM quiz_results WHERE user_id = $1 AND scripture = $2 ORDER BY verse',
+      [userId, 'hanuman']
+    );
+
+    const verseScores = {};
+    quizResult.rows.forEach(r => {
+      const key = r.verse;
+      if (!verseScores[key] || r.score > verseScores[key]) {
+        verseScores[key] = r.score;
+      }
+    });
+
+    const totalVerses = Object.keys(verseScores).length;
+    const totalScore = Object.values(verseScores).reduce((sum, s) => sum + parseFloat(s), 0);
+    const averageScore = totalVerses > 0 ? Math.round(totalScore / totalVerses) : 0;
+    const bestScore = totalVerses > 0 ? Math.max(...Object.values(verseScores)) : 0;
+    const worstScore = totalVerses > 0 ? Math.min(...Object.values(verseScores)) : 0;
+
+    res.json({
+      total_verses_attempted: totalVerses,
+      total_verses_available: 44,
+      average_score: averageScore,
+      best_score: bestScore,
+      worst_score: worstScore,
+      verse_scores: verseScores
+    });
+  } catch (err) {
+    console.error('Hanuman overall error:', err.message);
     res.status(500).json({ error: 'Server error' });
   }
 });

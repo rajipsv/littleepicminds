@@ -572,7 +572,7 @@ router.get('/leaderboard', async (req, res) => {
 
 router.post('/evaluations', async (req, res) => {
   try {
-    const { scripture, chapter_number, score, verse } = req.body;
+    const { scripture, chapter_number, score, verse, quiz_details } = req.body;
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
@@ -611,7 +611,67 @@ router.post('/evaluations', async (req, res) => {
       }
     }
 
+    // 3. Save individual Q&A to quiz_results table
+    if (quiz_details && Array.isArray(quiz_details)) {
+      await db.query(
+        'INSERT INTO quiz_results (user_id, scripture, chapter, verse, score, questions, completed_at) VALUES ($1, $2, $3, $4, $5, $6, CURRENT_TIMESTAMP)',
+        [userId, scripture || 'gita', chapter_number, verse, score, JSON.stringify(quiz_details)]
+      );
+    }
+
     res.status(200).json({ status: 'saved' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/quiz-history/:userId — Get all quiz attempts for a user
+router.get('/quiz-history/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const result = await db.query(
+      'SELECT * FROM quiz_results WHERE user_id = $1 ORDER BY completed_at DESC',
+      [userId]
+    );
+    res.json(result.rows);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/evaluations/hanuman-overall/:userId — Calculate overall Hanuman Chalisa score
+router.get('/evaluations/hanuman-overall/:userId', async (req, res) => {
+  try {
+    const { userId } = req.params;
+    // Get all quiz attempts for Hanuman Chalisa
+    const quizResult = await db.query(
+      'SELECT scripture, chapter, verse, score FROM quiz_results WHERE user_id = $1 AND scripture = $2 ORDER BY verse',
+      [userId, 'hanuman']
+    );
+
+    // Group by verse and keep only the highest score per verse
+    const verseScores = {};
+    quizResult.rows.forEach(r => {
+      const key = r.verse;
+      if (!verseScores[key] || r.score > verseScores[key]) {
+        verseScores[key] = r.score;
+      }
+    });
+
+    const totalVerses = Object.keys(verseScores).length;
+    const totalScore = Object.values(verseScores).reduce((sum, s) => sum + parseFloat(s), 0);
+    const averageScore = totalVerses > 0 ? Math.round(totalScore / totalVerses) : 0;
+    const bestScore = totalVerses > 0 ? Math.max(...Object.values(verseScores)) : 0;
+    const worstScore = totalVerses > 0 ? Math.min(...Object.values(verseScores)) : 0;
+
+    res.json({
+      total_verses_attempted: totalVerses,
+      total_verses_available: 44,
+      average_score: averageScore,
+      best_score: bestScore,
+      worst_score: worstScore,
+      verse_scores: verseScores
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
@@ -736,6 +796,16 @@ async function bootstrapDB() {
         answer_te TEXT,
         scripture VARCHAR,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+      CREATE TABLE IF NOT EXISTS quiz_results (
+        id SERIAL PRIMARY KEY,
+        user_id INTEGER REFERENCES users(id),
+        scripture VARCHAR DEFAULT 'gita',
+        chapter INTEGER,
+        verse VARCHAR,
+        score DECIMAL,
+        questions JSONB,
+        completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
     // Migration: Add scripture column if missing

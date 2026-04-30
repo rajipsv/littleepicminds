@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
-import { Award, Target, BookOpen, Star, TrendingUp, ChevronRight } from 'lucide-react';
+import { Award, Target, BookOpen, Star, TrendingUp, ChevronRight, ClipboardList } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const MasteryReport = () => {
@@ -11,6 +11,7 @@ const MasteryReport = () => {
   const scriptureFilter = queryParams.get('scripture');
   
   const [progress, setProgress] = useState({ gita: [], hanuman: { verses_completed: 0, total_verses: 44 } });
+  const [hanumanStats, setHanumanStats] = useState(null);
   const [loading, setLoading] = useState(true);
   const [userRank, setUserRank] = useState(null);
   const [totalUsers, setTotalUsers] = useState(null);
@@ -18,15 +19,17 @@ const MasteryReport = () => {
 
   useEffect(() => {
     if (user) {
-      api.get(`/api/evaluations/progress/${user.id}`)
-        .then(res => {
-          setProgress(res.data || { gita: [], hanuman: { verses_completed: 0, total_verses: 44 } });
-          setLoading(false);
-        })
-        .catch(err => {
-          console.error(err);
-          setLoading(false);
-        });
+      Promise.all([
+        api.get(`/api/evaluations/progress/${user.id}`),
+        api.get(`/api/evaluations/hanuman-overall/${user.id}`)
+      ]).then(([progressRes, statsRes]) => {
+        setProgress(progressRes.data || { gita: [], hanuman: { verses_completed: 0, total_verses: 44 } });
+        setHanumanStats(statsRes.data || null);
+        setLoading(false);
+      }).catch(err => {
+        console.error(err);
+        setLoading(false);
+      });
 
       api.get('/api/leaderboard')
         .then(res => {
@@ -117,9 +120,14 @@ const MasteryReport = () => {
                 <Star size={20} className="text-orange-500" />
                 Hanuman Chalisa
               </h3>
-              <Link to="/read/hanuman" className="text-xs font-black bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-all">
-                Continue
-              </Link>
+              <div className="flex gap-2">
+                <Link to="/quiz-history" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
+                  <ClipboardList size={14} /> Quiz History
+                </Link>
+                <Link to="/read/hanuman" className="text-xs font-black bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-all">
+                  Continue
+                </Link>
+              </div>
             </div>
             <div className="p-8 flex flex-col md:flex-row items-center gap-8">
                <div className="relative w-32 h-32 flex-shrink-0">
@@ -146,6 +154,31 @@ const MasteryReport = () => {
                   </div>
                </div>
             </div>
+
+            {/* Overall Quiz Score */}
+            {hanumanStats && hanumanStats.total_verses_attempted > 0 && (
+              <div className="p-8 pt-0">
+                <h4 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">Overall Quiz Performance</h4>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="bg-white/5 p-4 rounded-xl text-center border border-lem-glass-border">
+                    <div className="text-xs font-bold text-gray-500 uppercase mb-1">Attempted</div>
+                    <div className="text-xl font-black text-orange-500">{hanumanStats.total_verses_attempted}/44</div>
+                  </div>
+                  <div className="bg-white/5 p-4 rounded-xl text-center border border-lem-glass-border">
+                    <div className="text-xs font-bold text-gray-500 uppercase mb-1">Average</div>
+                    <div className={`text-xl font-black ${hanumanStats.average_score >= 90 ? 'text-green-400' : hanumanStats.average_score >= 70 ? 'text-yellow-400' : 'text-red-400'}`}>{hanumanStats.average_score}%</div>
+                  </div>
+                  <div className="bg-white/5 p-4 rounded-xl text-center border border-lem-glass-border">
+                    <div className="text-xs font-bold text-gray-500 uppercase mb-1">Best</div>
+                    <div className="text-xl font-black text-green-400">{hanumanStats.best_score}%</div>
+                  </div>
+                  <div className="bg-white/5 p-4 rounded-xl text-center border border-lem-glass-border">
+                    <div className="text-xs font-bold text-gray-500 uppercase mb-1">Need Practice</div>
+                    <div className="text-xl font-black text-red-400">{hanumanStats.worst_score}%</div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
 

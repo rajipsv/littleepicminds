@@ -30,13 +30,36 @@ CREATE TABLE IF NOT EXISTS journal_entries (
 CREATE TABLE IF NOT EXISTS evaluations (
   id SERIAL PRIMARY KEY,
   user_id INT REFERENCES users(id),
+  scripture VARCHAR DEFAULT 'gita',
   chapter_id INT NOT NULL,
   score NUMERIC(5,2) DEFAULT 0,
   best_score NUMERIC(5,2) DEFAULT 0,
   attempts INT DEFAULT 1,
   time_taken INT DEFAULT 0,
+  completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS progress (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id),
+  scripture VARCHAR DEFAULT 'gita',
+  chapter INT,
+  shloka INT,
+  activity_question TEXT,
+  activity_response TEXT,
   completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  UNIQUE(user_id, chapter_id)
+  UNIQUE(user_id, scripture, chapter, shloka)
+);
+
+CREATE TABLE IF NOT EXISTS quiz_results (
+  id SERIAL PRIMARY KEY,
+  user_id INT REFERENCES users(id),
+  scripture VARCHAR DEFAULT 'gita',
+  chapter INT,
+  verse VARCHAR,
+  score NUMERIC(5,2),
+  questions JSONB,
+  completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 -- Default admin user (password: admin123, bcrypt hash)

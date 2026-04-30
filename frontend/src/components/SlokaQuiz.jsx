@@ -44,6 +44,12 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
 
   const handleSubmit = async () => {
     let correct = 0;
+    const quizDetails = questions.map((q, i) => ({
+      question: q.question,
+      options: q.options,
+      correct: q.correct,
+      chosen: answers[i]
+    }));
     questions.forEach((q, i) => {
       if (answers[i] === q.correct) correct++;
     });
@@ -51,14 +57,15 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     setScore(pct);
     setSubmitted(true);
 
-    // Save quiz score to evaluations + progress if passed
+    // Save quiz score to evaluations + progress + quiz_results if passed
     if (user && token && pct >= 70) {
       try {
         await api.post('/api/evaluations', {
           scripture,
           chapter_number: chapter,
           verse,
-          score: pct
+          score: pct,
+          quiz_details: quizDetails
         }, { headers: { Authorization: `Bearer ${token}` } });
         if (onPass) onPass(pct);
       } catch (e) {
