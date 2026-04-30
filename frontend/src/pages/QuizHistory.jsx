@@ -130,13 +130,22 @@ const QuizHistory = () => {
                       const isRight = qa.chosen === qa.correct;
                       return (
                         <div key={i} className={`p-3 rounded-xl border text-sm ${isRight ? 'border-green-500/40 bg-green-500/10' : 'border-red-500/40 bg-red-500/10'}`}>
-                          <div className="flex items-center gap-2 font-bold mb-1">
+                          <div className="flex items-center gap-2 font-bold mb-2">
                             {isRight ? <CheckCircle size={14} className="text-green-400 flex-shrink-0" /> : <XCircle size={14} className="text-red-400 flex-shrink-0" />}
                             <span className="text-gray-300">{qa.question}</span>
                           </div>
-                          {!isRight && (
-                            <p className="text-green-300 text-xs ml-6">✓ Correct: {qa.options[qa.correct]}</p>
-                          )}
+                          <div className="ml-6 space-y-1 text-xs">
+                            <div className={`flex items-center gap-1 ${isRight ? 'text-green-400' : 'text-red-400'}`}>
+                              <span className="font-bold">Your answer:</span>
+                              <span>{qa.options[qa.chosen]}</span>
+                            </div>
+                            {!isRight && (
+                              <div className="flex items-center gap-1 text-green-400">
+                                <span className="font-bold">Correct:</span>
+                                <span>{qa.options[qa.correct]}</span>
+                              </div>
+                            )}
+                          </div>
                         </div>
                       );
                     })}
