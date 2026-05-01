@@ -7,7 +7,7 @@ import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
 import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
-import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle } from 'lucide-react';
+import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X } from 'lucide-react';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
@@ -24,6 +24,7 @@ const ScriptureLayout = () => {
   const [activeThemeIndex, setActiveThemeIndex] = useState(0); // New state for active theme
   const [chapterMetadata, setChapterMetadata] = useState([]);
   const [masteredShlokas, setMasteredShlokas] = useState(new Set());
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Generate chapters based on scripture
   const activeChapterData = scripture === 'gita' ? chapterMetadata.find(c => c.id === activeChapter) : null;
@@ -109,11 +110,37 @@ const ScriptureLayout = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-lem-dark text-white">
+  return (
+    <div className="min-h-screen flex flex-col md:flex-row bg-lem-dark text-white overflow-hidden">
       
-      {/* Mobile Header / Desktop Sidebar */}
-      <div className="md:w-64 bg-lem-sidebar border-r border-lem-glass-border flex-shrink-0 flex flex-col h-auto md:h-screen sticky top-0 z-10 shadow-lg">
-        <div className="p-4 border-b border-lem-glass-border flex justify-between items-center">
+      {/* Mobile Header - Only on small screens */}
+      <div className="md:hidden flex items-center justify-between p-4 bg-lem-sidebar border-b border-lem-glass-border z-30">
+        <div className="flex items-center gap-2">
+          <Link to="/" className="text-lem-accent">
+            <BookOpen size={24} />
+          </Link>
+          <span className="font-black text-white tracking-tight uppercase">LittleEpicMinds</span>
+        </div>
+        <div className="flex items-center gap-4">
+          <LanguageToggle />
+          <button 
+            onClick={() => setIsMobileMenuOpen(true)}
+            className="p-2 text-white bg-white/5 rounded-xl border border-white/10"
+          >
+            <Menu size={24} />
+          </button>
+        </div>
+      </div>
+
+      {/* SIDEBAR - Desktop: Sidebar, Mobile: Slide-out Drawer */}
+      <div className={`
+        fixed inset-0 z-50 md:relative md:inset-auto md:z-auto
+        transition-transform duration-300 ease-in-out
+        ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
+        md:w-64 bg-lem-sidebar border-r border-lem-glass-border flex-shrink-0 flex flex-col h-full md:h-screen shadow-2xl md:shadow-none
+      `}>
+        {/* Mobile Sidebar Header */}
+        <div className="p-4 border-b border-lem-glass-border flex justify-between items-center bg-lem-dark/20">
           <div className="flex items-center">
             <Link to="/" className="text-gray-400 hover:text-lem-accent transition-colors p-2">
               <ChevronLeft size={24} />
@@ -123,13 +150,16 @@ const ScriptureLayout = () => {
                {scripture}
             </h2>
           </div>
-          <div className="md:hidden">
-            <LanguageToggle />
-          </div>
+          <button 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="md:hidden p-2 text-gray-400 hover:text-white"
+          >
+            <X size={24} />
+          </button>
         </div>
         
-        {/* Render Chapters sidebar */}
-        <div className="flex-1 overflow-y-auto p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-hidden whitespace-nowrap md:whitespace-normal scrollbar-hide">
+        {/* Render Chapters list */}
+        <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-2 custom-scrollbar">
           {chapters.map(num => {
             const isLocked = num >= 3 && (!user || (!user.is_premium && user.role !== 'admin'));
             const isActive = activeChapter === num;
@@ -138,8 +168,8 @@ const ScriptureLayout = () => {
             return (
               <button
                 key={num}
-                onClick={() => handleChapterClick(num)}
-                className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all flex-shrink-0 md:flex-shrink-none ${
+                onClick={() => { handleChapterClick(num); setIsMobileMenuOpen(false); }}
+                className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${
                   isActive 
                     ? 'bg-lem-accent text-lem-dark shadow-[0_0_15px_rgba(253,160,133,0.3)]' 
                     : 'bg-white/5 text-gray-300 hover:bg-white/10 hover:text-lem-accent'
@@ -156,16 +186,25 @@ const ScriptureLayout = () => {
             );
           })}
         </div>
-        <div className="p-4 border-t border-lem-glass-border">
+
+        <div className="hidden md:block p-4 border-t border-lem-glass-border">
           <div className="flex justify-center">
             <LanguageToggle />
           </div>
         </div>
       </div>
 
+      {/* Mobile Drawer Overlay */}
+      {isMobileMenuOpen && (
+        <div 
+          className="md:hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-40"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Main Content Area */}
-      <div className="flex-1 overflow-y-auto p-4 md:p-8 relative">
-        <div className="max-w-4xl mx-auto">
+      <div className="flex-1 overflow-y-auto p-4 md:p-8 relative custom-scrollbar h-screen">
+        <div className="max-w-4xl mx-auto pb-12">
           
           {/* Top Navigation for User Progress */}
           {user && (

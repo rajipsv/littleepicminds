@@ -26,23 +26,23 @@ const ThemeViewer = ({ theme, scripture }) => {
         </div>
       </div>
 
-      {/* Tabs */}
-      <div className="flex gap-2 mb-8 bg-black/20 p-1 rounded-2xl w-fit">
+      {/* Tabs - Scrollable on mobile */}
+      <div className="flex gap-2 mb-8 bg-black/20 p-1 rounded-2xl w-full md:w-fit overflow-x-auto no-scrollbar scrollbar-hide">
         <button 
           onClick={() => setActiveTab('story')}
-          className={`px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 ${activeTab === 'story' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
+          className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'story' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
           <BookOpen size={18} /> The Story
         </button>
         <button 
           onClick={() => setActiveTab('shlokas')}
-          className={`px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 ${activeTab === 'shlokas' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
+          className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'shlokas' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
-          <Volume2 size={18} /> The Source (Shlokas)
+          <Volume2 size={18} /> The Source
         </button>
         <button 
           onClick={() => setActiveTab('activity')}
-          className={`px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 ${activeTab === 'activity' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
+          className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'activity' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
           <Star size={18} /> Activity
         </button>
