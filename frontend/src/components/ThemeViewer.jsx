@@ -73,7 +73,6 @@ const ThemeViewer = ({ theme, scripture }) => {
         {/* SHLOKAS TAB */}
         {activeTab === 'shlokas' && (
           <div className="animate-fade-in space-y-12">
-            <p className="text-gray-400 italic text-center mb-4">This wisdom comes from the following verses:</p>
             {theme.shlokaData.map((shloka, index) => {
               // Ensure the shloka object has the necessary fields for VerseViewer
               const verseProp = {
