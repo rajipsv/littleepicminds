@@ -7,12 +7,12 @@ import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
 import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
-import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X } from 'lucide-react';
+import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X, User, LogOut, Settings } from 'lucide-react';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
   const navigate = useNavigate();
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
   
   const [activeChapter, setActiveChapter] = useState(1);
   const [verses, setVerses] = useState([]);
@@ -122,6 +122,15 @@ const ScriptureLayout = () => {
         </div>
         <div className="flex items-center gap-4">
           <LanguageToggle />
+          {user ? (
+            <Link to="/settings" className="p-2 text-white bg-white/5 rounded-xl border border-white/10">
+              <User size={20} />
+            </Link>
+          ) : (
+            <Link to="/login" className="p-2 text-white bg-white/5 rounded-xl border border-white/10">
+              <User size={20} />
+            </Link>
+          )}
           <button 
             onClick={() => setIsMobileMenuOpen(true)}
             className="p-2 text-white bg-white/5 rounded-xl border border-white/10"
@@ -186,8 +195,49 @@ const ScriptureLayout = () => {
           })}
         </div>
 
-        <div className="hidden md:block p-4 border-t border-lem-glass-border">
-          <div className="flex justify-center">
+        <div className="p-4 border-t border-lem-glass-border bg-lem-dark/40">
+          {user ? (
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-3 px-2">
+                <div className="w-10 h-10 rounded-full bg-lem-accent/20 flex items-center justify-center border border-lem-accent/30">
+                  <User size={20} className="text-lem-accent" />
+                </div>
+                <div className="flex-1 overflow-hidden">
+                  <span className="font-bold text-white block truncate text-sm">{user.username}</span>
+                  {user.is_premium && <span className="text-[10px] text-lem-accent font-black uppercase">Premium Member</span>}
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <Link to="/settings" className="flex items-center justify-center gap-2 py-2 rounded-lg bg-white/5 border border-white/10 text-xs font-bold text-gray-300 hover:text-white transition-colors">
+                  <Settings size={14} /> Settings
+                </Link>
+                <button 
+                  onClick={() => { logout(); setIsMobileMenuOpen(false); }}
+                  className="flex items-center justify-center gap-2 py-2 rounded-lg bg-red-500/10 border border-red-500/20 text-xs font-bold text-red-400 hover:bg-red-500/20 transition-all"
+                >
+                  <LogOut size={14} /> Logout
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-2">
+              <Link 
+                to="/login" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full py-3 rounded-xl bg-gradient-accent text-lem-dark font-black text-center shadow-lg"
+              >
+                Login
+              </Link>
+              <Link 
+                to="/register" 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="w-full py-3 rounded-xl bg-white/5 text-white font-bold text-center border border-white/10"
+              >
+                Join Now
+              </Link>
+            </div>
+          )}
+          <div className="hidden md:flex justify-center mt-6">
             <LanguageToggle />
           </div>
         </div>
