@@ -80,10 +80,7 @@ const ScriptureLayout = () => {
   };
 
   const handleChapterClick = (chapterNum) => {
-    if (chapterNum >= 3 && (!user || (!user.is_premium && user.role !== 'admin'))) {
-      navigate('/subscribe');
-      return;
-    }
+    // TEMPORARILY UNLOCKED: Everyone can access all chapters for now
     setActiveChapter(chapterNum);
   };
 
@@ -169,9 +166,9 @@ const ScriptureLayout = () => {
         {/* Render Chapters list */}
         <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-2 custom-scrollbar">
           {chapters.map(num => {
-            const isLocked = num >= 3 && (!user || (!user.is_premium && user.role !== 'admin'));
+            const isLocked = false; // TEMPORARILY UNLOCKED
             const isActive = activeChapter === num;
-            const isFree = num < 3;
+            const isFree = true; // TEMPORARILY UNLOCKED
             
             return (
               <button
@@ -187,7 +184,7 @@ const ScriptureLayout = () => {
                 {isLocked && <Lock size={16} className={isActive ? 'text-lem-dark' : 'text-gray-500'} />}
                 {!isLocked && isFree && (
                   <span className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ${isActive ? 'bg-lem-dark/20 text-lem-dark' : 'bg-green-500/20 text-green-400'}`}>
-                    Free
+                    Open
                   </span>
                 )}
               </button>
