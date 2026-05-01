@@ -10,7 +10,7 @@
           "1.2"
         ],
         "story": {
-          "title": "Before the Game Begins",
+          "title": "Watching Before Joining",
           "content": "A child was observing a playground before joining. It's always smart to see who is playing and what the rules are before jumping into the game.",
           "moral": "Look carefully before acting to make smart choices."
         },
@@ -18,231 +18,151 @@
         "id": "theme_1_1"
       },
       {
-        "title": "Strategic Thinking",
+        "title": "Planning & Strategy",
         "emoji": "🧠",
-        "micro_theme": "Think before you act",
-        "shlokas": [
-          "1.2",
-          "1.3"
-        ],
-        "story": {
-          "title": "The Master Plan",
-          "content": "A child was planning before a big game. Instead of just running wildly, they thought of a plan to help their team win.",
-          "moral": "Thinking before you act gives you a big advantage."
-        },
-        "activity": "What is one 'strategy' you use when playing your favorite game?",
-        "id": "theme_1_2"
-      },
-      {
-        "title": "Recognizing Strengths",
-        "emoji": "👥",
-        "micro_theme": "Know who is strong and capable",
+        "micro_theme": "Think and plan before action",
         "shlokas": [
           "1.3",
           "1.4"
         ],
         "story": {
-          "title": "The Dream Team",
-          "content": "A child was identifying team strengths. They knew one friend was fast, another was strong, and another was smart. Together, they were an unbeatable team.",
+          "title": "The Strategic Plan",
+          "content": "A child was planning team strategy. Instead of just running wildly, they thought of a plan to help their team win.",
+          "moral": "Thinking and planning before action gives you a big advantage."
+        },
+        "activity": "What is one 'strategy' you use when playing your favorite game?",
+        "id": "theme_1_2"
+      },
+      {
+        "title": "Knowing Your Team",
+        "emoji": "👥",
+        "micro_theme": "Understand your strengths",
+        "shlokas": [
+          "1.5",
+          "1.6"
+        ],
+        "story": {
+          "title": "Identifying Team Players",
+          "content": "A child was identifying team players. They knew one friend was fast, another was strong, and another was smart. Together, they were an unbeatable team.",
           "moral": "Knowing what you and your friends are good at makes teamwork much easier."
         },
         "activity": "Name one thing you are really good at, and one thing your best friend is really good at.",
         "id": "theme_1_3"
       },
       {
-        "title": "Team Awareness",
-        "emoji": "🛡️",
-        "micro_theme": "Everyone has a role",
-        "shlokas": [
-          "1.4",
-          "1.5"
-        ],
-        "story": {
-          "title": "Playing Your Part",
-          "content": "Each child in the team has a role. Some attack, some defend, and some pass the ball. If everyone tries to do the same thing, the team fails. But when everyone plays their role, the team wins.",
-          "moral": "Every single person on a team is important and has a special job to do."
-        },
-        "activity": "If your family was a superhero team, what would your 'superpower' role be?",
-        "id": "theme_1_4"
-      },
-      {
-        "title": "Comparing Teams",
-        "emoji": "⚖️",
-        "micro_theme": "Understanding both sides",
-        "shlokas": [
-          "1.5",
-          "1.6"
-        ],
-        "story": {
-          "title": "Sizing Up the Challenge",
-          "content": "A child was comparing two teams before the match. It's important to understand not just how strong your team is, but also what the other team is good at.",
-          "moral": "Understanding both sides of a challenge helps you prepare better."
-        },
-        "activity": "Think of a challenge you have. What makes it hard, and what makes you strong enough to beat it?",
-        "id": "theme_1_5"
-      },
-      {
-        "title": "Leadership & Pride",
+        "title": "Leadership & Guidance",
         "emoji": "📣",
-        "micro_theme": "Leaders guide and motivate",
+        "micro_theme": "Leaders guide the team",
         "shlokas": [
           "1.7",
           "1.8"
         ],
         "story": {
-          "title": "The Team Captain",
-          "content": "The team captain was encouraging all the players. Even when they felt tired, the leader's words made them feel proud and strong again.",
+          "title": "Motivating the Team",
+          "content": "The team captain was motivating players. Even when they felt tired, the leader's words made them feel proud and strong again.",
           "moral": "A good leader doesn't just give orders; they motivate and inspire others."
         },
         "activity": "What is one nice thing you can say to encourage a friend today?",
-        "id": "theme_1_6"
+        "id": "theme_1_4"
       },
       {
-        "title": "Listing Strengths",
+        "title": "Confidence in Strength",
         "emoji": "🧾",
-        "micro_theme": "Focus on strengths, not fear",
-        "shlokas": [
-          "1.8",
-          "1.9"
-        ],
-        "story": {
-          "title": "The Strength List",
-          "content": "Instead of worrying about what could go wrong, a child started listing out loud what they were good at. 'I am fast, I practiced hard, and I have a great team!' Their fear disappeared.",
-          "moral": "Focusing on your strengths pushes away your fears."
-        },
-        "activity": "Count on your fingers 3 things that make you a strong person.",
-        "id": "theme_1_7"
-      },
-      {
-        "title": "Getting Ready",
-        "emoji": "🔔",
-        "micro_theme": "Prepare before action",
+        "micro_theme": "Trust your preparation",
         "shlokas": [
           "1.9",
           "1.10"
         ],
         "story": {
-          "title": "Lacing Up the Shoes",
-          "content": "A child was getting ready for a big competition. They tied their shoes tight, drank water, and took deep breaths. Preparing well is half the victory.",
+          "title": "Feeling Ready",
+          "content": "Instead of worrying, a child was feeling ready before the match. They knew they had practiced hard and prepared well.",
+          "moral": "Trusting your preparation pushes away your fears."
+        },
+        "activity": "Count on your fingers 3 things that make you a strong person.",
+        "id": "theme_1_5"
+      },
+      {
+        "title": "Preparing for Action",
+        "emoji": "🔔",
+        "micro_theme": "Get ready before starting",
+        "shlokas": [
+          "1.11",
+          "1.12"
+        ],
+        "story": {
+          "title": "Final Preparation Moment",
+          "content": "A child was in the final preparation moment before starting. They tied their shoes tight, drank water, and took deep breaths.",
           "moral": "Taking time to prepare makes the actual task much easier."
         },
         "activity": "What is your routine to 'get ready' before you go to school or sleep?",
-        "id": "theme_1_8"
-      },
-      {
-        "title": "Signal to Start",
-        "emoji": "🎺",
-        "micro_theme": "Everything begins with a signal",
-        "shlokas": [
-          "1.10",
-          "1.11"
-        ],
-        "story": {
-          "title": "The Starting Bell",
-          "content": "Everyone was waiting nervously. Then, the school bell rang to start the race! A clear signal helps everyone focus and start moving together.",
-          "moral": "A clear starting signal turns nervous waiting into focused action."
-        },
-        "activity": "When you count '1, 2, 3, Go!', what do you usually do on 'Go'?",
-        "id": "theme_1_9"
+        "id": "theme_1_6"
       },
       {
         "title": "Energy & Excitement",
         "emoji": "🥁",
-        "micro_theme": "High energy before action",
-        "shlokas": [
-          "1.12",
-          "1.13"
-        ],
-        "story": {
-          "title": "The Roaring Crowd",
-          "content": "There was huge excitement before the sports match. The drums were beating and the crowd was cheering. High energy helps wake up your body and mind for action.",
-          "moral": "Excitement and high energy can give you the push you need to start."
-        },
-        "activity": "Do 5 jumping jacks right now to build some high energy!",
-        "id": "theme_1_10"
-      },
-      {
-        "title": "Unity in Action",
-        "emoji": "🎶",
-        "micro_theme": "Doing things together creates strength",
+        "micro_theme": "Build energy together",
         "shlokas": [
           "1.13",
           "1.14"
         ],
         "story": {
-          "title": "The Loud Cheer",
-          "content": "The whole team cheered together at the exact same time. It sounded like thunder! When people do things together, they create a strength much bigger than any one person.",
-          "moral": "Working together in unity creates incredible strength."
+          "title": "The Team Cheer",
+          "content": "There was huge excitement in the team cheer moment. High energy helps wake up your body and mind for action.",
+          "moral": "Excitement and high energy can give you the push you need to start."
         },
-        "activity": "Can you clap your hands in a steady rhythm for 10 seconds?",
-        "id": "theme_1_11"
+        "activity": "Do 5 jumping jacks right now to build some high energy!",
+        "id": "theme_1_7"
       },
       {
-        "title": "Confidence & Presence",
-        "emoji": "🌟",
-        "micro_theme": "Strong presence builds confidence",
-        "shlokas": [
-          "1.14",
-          "1.15"
-        ],
-        "story": {
-          "title": "Stepping on Stage",
-          "content": "A child walked confidently onto the stage. They stood tall and smiled. Even before they spoke a word, everyone believed in them because of their strong presence.",
-          "moral": "Standing tall and confident helps you believe in yourself, and helps others believe in you too."
-        },
-        "activity": "Stand up straight, push your chest out slightly, and hold your head high!",
-        "id": "theme_1_12"
-      },
-      {
-        "title": "Making Your Presence Known",
+        "title": "Showing Presence",
         "emoji": "🔊",
-        "micro_theme": "Show up with confidence",
+        "micro_theme": "Step forward with confidence",
         "shlokas": [
           "1.15",
           "1.16"
         ],
         "story": {
-          "title": "The Bold Introduction",
-          "content": "A new student walked into class and introduced themselves boldly with a clear, happy voice. Making your presence known with confidence makes people respect and welcome you.",
-          "moral": "Don't hide your light! Show up confidently and let people know you are there."
+          "title": "Entering the Stage Boldly",
+          "content": "A child was entering the stage boldly. They stood tall and smiled. Even before they spoke a word, everyone believed in them.",
+          "moral": "Standing tall and confident helps you believe in yourself, and helps others believe in you too."
         },
-        "activity": "Introduce yourself to a wall in a loud, confident, and happy voice.",
-        "id": "theme_1_13"
+        "activity": "Stand up straight, push your chest out slightly, and hold your head high!",
+        "id": "theme_1_8"
       },
       {
-        "title": "Readiness for Action",
+        "title": "Readiness & Focus",
         "emoji": "🎯",
-        "micro_theme": "Be ready when it’s your turn",
-        "shlokas": [
-          "1.16",
-          "1.17"
-        ],
-        "story": {
-          "title": "Waiting for the Pitch",
-          "content": "A child was waiting for their turn in a game. They held their bat ready, eyes on the ball, completely focused. Being ready means you don't waste time when your moment comes.",
-          "moral": "Stay alert and focused so you are ready when it's your time to act."
-        },
-        "activity": "What do you do to stay patient and ready when you have to wait for your turn?",
-        "id": "theme_1_14"
-      },
-      {
-        "title": "Facing the Situation",
-        "emoji": "⚔️",
-        "micro_theme": "Face challenges bravely",
+        "micro_theme": "Be ready when action begins",
         "shlokas": [
           "1.17",
           "1.18"
         ],
         "story": {
-          "title": "Stepping Forward",
-          "content": "Instead of hiding in the back, the child stepped forward to play the hardest opponent. Facing a challenge bravely is the first step to overcoming it.",
-          "moral": "Don't run away. Step forward and face your challenges with a brave heart."
+          "title": "Waiting for Your Turn",
+          "content": "A child was waiting for their turn in a game. They held their bat ready, eyes on the ball, completely focused.",
+          "moral": "Stay alert and focused so you are ready when it's your time to act."
         },
-        "activity": "Name one thing you thought was too hard, but you tried it anyway.",
-        "id": "theme_1_15"
+        "activity": "What do you do to stay patient and ready when you have to wait for your turn?",
+        "id": "theme_1_9"
       },
       {
-        "id": "theme_1_16",
+        "title": "Final Observation",
+        "emoji": "👁️",
+        "micro_theme": "Observe before taking action",
+        "shlokas": [
+          "1.19",
+          "1.20"
+        ],
+        "story": {
+          "title": "Looking Before Making a Move",
+          "content": "The child was looking before making a move. Instead of just running blindly, they checked the whole field one last time.",
+          "moral": "Final observation ensures you have the full picture before you act."
+        },
+        "activity": "Before starting your next task, take one last look to make sure you have everything you need.",
+        "id": "theme_1_10"
+      },
+      {
+        "id": "theme_1_11",
         "title": "Overwhelmed by Emotions",
         "emoji": "😟",
         "micro_theme": "Fear and confusion can take over",
@@ -258,7 +178,7 @@
         "activity": "Draw a face showing what 'overwhelmed' looks like, and another showing 'calm'."
       },
       {
-        "id": "theme_1_17",
+        "id": "theme_1_12",
         "title": "Physical Signs of Fear",
         "emoji": "😰",
         "micro_theme": "Fear affects body and mind",
@@ -274,7 +194,7 @@
         "activity": "When you feel nervous, where do you feel it in your body? (Tummy? Hands?)"
       },
       {
-        "id": "theme_1_18",
+        "id": "theme_1_13",
         "title": "Losing Clarity",
         "emoji": "❓",
         "micro_theme": "Confusion makes decisions hard",
@@ -290,7 +210,7 @@
         "activity": "What do you do when you can't decide between two fun things?"
       },
       {
-        "id": "theme_1_19",
+        "id": "theme_1_14",
         "title": "Avoiding Responsibility",
         "emoji": "⚖️",
         "micro_theme": "Running away from duty",
@@ -306,7 +226,7 @@
         "activity": "Name one chore you don't like doing, but you know you have to."
       },
       {
-        "id": "theme_1_20",
+        "id": "theme_1_15",
         "title": "Emotional Attachment",
         "emoji": "💔",
         "micro_theme": "Attachment affects decisions",
@@ -322,7 +242,7 @@
         "activity": "Is it better to let your friend win, or for both of you to do your absolute best?"
       },
       {
-        "id": "theme_1_21",
+        "id": "theme_1_16",
         "title": "Conflict of Relationships",
         "emoji": "🤝",
         "micro_theme": "Hard choices with loved ones",
@@ -338,7 +258,7 @@
         "activity": "What would you do if your friend asked you to keep a secret that wasn't safe?"
       },
       {
-        "id": "theme_1_22",
+        "id": "theme_1_17",
         "title": "Refusing to Act",
         "emoji": "🚫",
         "micro_theme": "Saying no to responsibility",
@@ -354,7 +274,7 @@
         "activity": "Think of a time you wanted to give up before trying. How did you push through?"
       },
       {
-        "id": "theme_1_23",
+        "id": "theme_1_18",
         "title": "Fear of Consequences",
         "emoji": "⚠️",
         "micro_theme": "Overthinking outcomes",
@@ -370,7 +290,7 @@
         "activity": "Say out loud: 'I am not afraid of making mistakes, I learn from them!'"
       },
       {
-        "id": "theme_1_24",
+        "id": "theme_1_19",
         "title": "Thinking Too Much",
         "emoji": "🌪️",
         "micro_theme": "Overthinking leads to stress",
@@ -386,7 +306,7 @@
         "activity": "When you start overthinking, name 3 things you can see in the room to ground yourself."
       },
       {
-        "id": "theme_1_25",
+        "id": "theme_1_20",
         "title": "Confused Judgment",
         "emoji": "🧠",
         "micro_theme": "Confusion clouds right thinking",
@@ -402,7 +322,7 @@
         "activity": "Take a deep breath and count to 5. Notice how your mind slows down."
       },
       {
-        "id": "theme_1_26",
+        "id": "theme_1_21",
         "title": "Negative Thinking Spiral",
         "emoji": "📉",
         "micro_theme": "One negative thought leads to another",
@@ -418,7 +338,7 @@
         "activity": "If you have a bad thought, how can you change it into a good thought immediately?"
       },
       {
-        "id": "theme_1_27",
+        "id": "theme_1_22",
         "title": "Fear of Loss",
         "emoji": "🌀",
         "micro_theme": "Fear of losing everything",
@@ -434,7 +354,7 @@
         "activity": "Think of a time you lost a game but still had fun playing."
       },
       {
-        "id": "theme_1_28",
+        "id": "theme_1_23",
         "title": "Losing Confidence",
         "emoji": "😔",
         "micro_theme": "Giving up mentally",
@@ -450,7 +370,7 @@
         "activity": "Stand up tall like a superhero and say, 'I can do hard things!'"
       },
       {
-        "id": "theme_1_29",
+        "id": "theme_1_24",
         "title": "Complete Withdrawal",
         "emoji": "🪑",
         "micro_theme": "Shutting down and quitting",
