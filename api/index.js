@@ -194,6 +194,31 @@ function getHanumanVerse(verseParam) {
   return data.hanumanChalisa[key] || null;
 }
 
+router.get('/themes/:scripture/:chapter', (req, res) => {
+  try {
+    const { scripture, chapter } = req.params;
+    
+    if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
+      return res.status(404).json({ error: 'Themes not found for this chapter' });
+    }
+    
+    const chapterThemes = data.themes[scripture][chapter];
+    
+    // Inject actual shloka data (Sanskrit, transliteration, audio, meanings) into each theme
+    const themesWithShlokas = chapterThemes.map(theme => {
+      const populatedShlokas = (theme.shlokas || []).map(shlokaId => {
+        const shlokaObj = data.shlokas[shlokaId];
+        return shlokaObj ? { ...shlokaObj, id: shlokaId } : { error: 'Shloka data missing', id: shlokaId };
+      });
+      return { ...theme, shlokaData: populatedShlokas };
+    });
+    
+    res.json(themesWithShlokas);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 router.get('/verses', (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;

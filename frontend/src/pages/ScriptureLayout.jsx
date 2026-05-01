@@ -3,6 +3,7 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import VerseViewer from '../components/VerseViewer';
+import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
 import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
@@ -15,10 +16,12 @@ const ScriptureLayout = () => {
   
   const [activeChapter, setActiveChapter] = useState(1);
   const [verses, setVerses] = useState([]);
+  const [themes, setThemes] = useState([]); // New state for themes
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showQuiz, setShowQuiz] = useState(false);
   const [activeVerseIndex, setActiveVerseIndex] = useState(0);
+  const [activeThemeIndex, setActiveThemeIndex] = useState(0); // New state for active theme
   const [chapterMetadata, setChapterMetadata] = useState([]);
   const [masteredShlokas, setMasteredShlokas] = useState(new Set());
 
@@ -44,7 +47,22 @@ const ScriptureLayout = () => {
   const fetchVerses = async (chapterNum) => {
     setLoading(true);
     setError('');
+    setThemes([]);
     try {
+      // First try to fetch themes (Thematic Curriculum)
+      try {
+        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}`);
+        if (themeRes.data && themeRes.data.length > 0) {
+          setThemes(themeRes.data);
+          setActiveThemeIndex(0);
+          setLoading(false);
+          return; // Skip raw verses if themes exist
+        }
+      } catch (themeErr) {
+        // If 404 or error, fallback to raw verses
+        console.log("No themes found, falling back to verses.");
+      }
+
       const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
       setVerses(Object.values(res.data)); // Since backend returns an object of shlokas
       setActiveVerseIndex(0); // Reset to first verse on chapter change
@@ -53,7 +71,7 @@ const ScriptureLayout = () => {
         setError(err.response.data.error);
         setVerses([]);
       } else {
-        setError('Failed to load verses.');
+        setError('Failed to load content.');
       }
     } finally {
       setLoading(false);
@@ -110,6 +128,7 @@ const ScriptureLayout = () => {
           </div>
         </div>
         
+        {/* Render Chapters sidebar */}
         <div className="flex-1 overflow-y-auto p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-hidden whitespace-nowrap md:whitespace-normal scrollbar-hide">
           {chapters.map(num => {
             const isLocked = num >= 3 && (!user || (!user.is_premium && user.role !== 'admin'));
@@ -178,6 +197,31 @@ const ScriptureLayout = () => {
           ) : loading ? (
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-lem-accent border-white/10 border-solid"></div>
+            </div>
+          ) : themes.length > 0 ? (
+            <div className="space-y-8">
+              {/* Theme Navigation Dropdown */}
+              <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
+                <span className="font-bold text-gray-300">
+                  Select Theme:
+                </span>
+                <select
+                  value={activeThemeIndex}
+                  onChange={(e) => setActiveThemeIndex(Number(e.target.value))}
+                  className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner max-w-[200px] md:max-w-md"
+                >
+                  {themes.map((theme, idx) => (
+                    <option key={theme.id} value={idx}>
+                      {idx + 1}. {theme.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <ThemeViewer 
+                theme={themes[activeThemeIndex]} 
+                scripture={scripture} 
+              />
             </div>
           ) : verses.length > 0 ? (
             <div className="space-y-8">

@@ -8,6 +8,7 @@ const shlokasData = require('./shlokas.json');
 const hanumanData = require('./hanuman_chalisa.json');
 const evaluationsData = require('./evaluations.json');
 const gitaDataInline = require('./gita_data.json');
+const themesData = require('./themes.json');
 console.log('[DEBUG] Static files loaded.');
 
 // Merge inline shlokas if they exist
@@ -51,4 +52,5 @@ module.exports = {
   shlokas: finalShlokas,
   hanumanChalisa: finalHanuman,
   evaluations: evaluationsData,
+  themes: themesData,
 };

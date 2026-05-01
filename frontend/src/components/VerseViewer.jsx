@@ -6,9 +6,9 @@ import WisdomJournal from './WisdomJournal';
 import { useAuth } from '../context/AuthContext';
 import { CheckCircle, PlayCircle, Repeat, Puzzle, Edit3 } from 'lucide-react';
 
-const VerseViewer = ({ verse, scripture }) => {
+const VerseViewer = ({ verse, scripture, isThemeMode }) => {
   const [activeWordIndex, setActiveWordIndex] = useState(-1);
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep, setCurrentStep] = useState(isThemeMode ? 5 : 1);
   const { user, currentLang } = useAuth();
 
   const isTe = currentLang === 'te';
@@ -98,22 +98,26 @@ const VerseViewer = ({ verse, scripture }) => {
         </div>
       </div>
 
-      {/* 4-Step Progress Bar */}
-      <div className="relative flex justify-between items-start mb-12 px-4 md:px-8">
-        <div className="absolute top-6 left-10 right-10 h-0.5 bg-lem-glass-border -z-0">
-          <div 
-            className="h-full bg-lem-accent transition-all duration-500" 
-            style={{ width: `${(Math.min(currentStep, 4) - 1) * 33.33}%` }}
-          />
+      {/* Step Indicators - Hide in theme mode */}
+      {!isThemeMode && (
+        <div className="flex justify-between relative max-w-lg mx-auto mb-12">
+          {/* Connecting lines */}
+          <div className="absolute top-6 left-6 right-6 h-1 bg-lem-glass-border rounded-full -z-10">
+            <div 
+              className="h-full bg-lem-accent rounded-full transition-all duration-700 ease-in-out shadow-[0_0_10px_rgba(253,160,133,0.5)]"
+              style={{ width: `${((currentStep - 1) / 3) * 100}%` }}
+            ></div>
+          </div>
+
+          <StepMarker step={1} icon={PlayCircle} title={isTe ? "వినండి" : "Listen"} isCompleted={currentStep > 1} isActive={currentStep === 1} />
+          <StepMarker step={2} icon={Repeat} title={isTe ? "అర్థం" : "Learn"} isCompleted={currentStep > 2} isActive={currentStep === 2} />
+          <StepMarker step={3} icon={Puzzle} title={isTe ? "ఆట" : "Match"} isCompleted={currentStep > 3} isActive={currentStep === 3} />
+          <StepMarker step={4} icon={Edit3} title={isTe ? "జర్నల్" : "Reflect"} isCompleted={currentStep > 4} isActive={currentStep === 4} />
         </div>
-        <StepMarker step={1} icon={PlayCircle} title={isTe ? "విను" : "Listen"} isActive={currentStep === 1} isCompleted={currentStep > 1} />
-        <StepMarker step={2} icon={Repeat} title={isTe ? "పలుకు" : "Repeat"} isActive={currentStep === 2} isCompleted={currentStep > 2} />
-        <StepMarker step={3} icon={Puzzle} title={isTe ? "జతపరుచు" : "Match"} isActive={currentStep === 3} isCompleted={currentStep > 3} />
-        <StepMarker step={4} icon={Edit3} title={isTe ? "రాయి" : "Journal"} isActive={currentStep === 4} isCompleted={currentStep > 4} />
-      </div>
+      )}
 
       {/* Step 1: Listen (Main Verse Area) */}
-      <div className={`transition-all duration-500 ${currentStep >= 1 ? 'opacity-100' : 'opacity-50 pointer-events-none'}`}>
+      <div className="transition-all duration-500">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 glass-panel p-6 md:p-8 rounded-3xl shadow-xl border-l-4 border-l-lem-accent relative">
           <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
           <div className="flex-1 z-10">
@@ -172,21 +176,25 @@ const VerseViewer = ({ verse, scripture }) => {
               </div>
             )}
           </div>
-          {/* Matching Game */}
-          <div className="border-t border-lem-glass-border pt-8 mt-8">
-            <h3 className="text-xl font-bold text-white mb-2">{isTe ? "ఆట సమయం: జతపరుచు" : "Activity Time: Match Meaning"}</h3>
-            <p className="text-gray-400 text-sm mb-6">{isTe ? "సంస్కృత పదాన్ని దానికి సరైన అర్థంతో జత చేయండి." : "Select a Sanskrit word, then select its matching meaning."}</p>
-            <MatchingGame breakdown={verse.lineBreakdown || verse.word_by_word} onComplete={handleMatchComplete} scripture={scripture} />
-          </div>
+          {/* Matching Game - Hide in theme mode */}
+          {!isThemeMode && (
+            <div className="border-t border-lem-glass-border pt-8 mt-8">
+              <h3 className="text-xl font-bold text-white mb-2">{isTe ? "ఆట సమయం: జతపరుచు" : "Activity Time: Match Meaning"}</h3>
+              <p className="text-gray-400 text-sm mb-6">{isTe ? "సంస్కృత పదాన్ని దానికి సరైన అర్థంతో జత చేయండి." : "Select a Sanskrit word, then select its matching meaning."}</p>
+              <MatchingGame breakdown={verse.lineBreakdown || verse.word_by_word} onComplete={handleMatchComplete} scripture={scripture} />
+            </div>
+          )}
         </div>
 
-        {/* Step 4: Wisdom Journal */}
-        <div className={`transition-all duration-700 ${currentStep >= 4 ? 'opacity-100 translate-y-0 mt-10 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
-          <WisdomJournal verse={verse} onComplete={handleJournalComplete} />
-        </div>
+        {/* Step 4: Wisdom Journal - Hide in theme mode */}
+        {!isThemeMode && (
+          <div className={`transition-all duration-700 ${currentStep >= 4 ? 'opacity-100 translate-y-0 mt-10 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
+            <WisdomJournal verse={verse} onComplete={handleJournalComplete} />
+          </div>
+        )}
         
-        {/* Step 5: All Done */}
-        {currentStep >= 5 && (
+        {/* Step 5: All Done - Hide in theme mode */}
+        {!isThemeMode && currentStep >= 5 && (
           <div className="mt-8 text-center animate-bounce-in">
              <div className="inline-block bg-gradient-to-r from-green-400 to-emerald-500 text-white font-black text-xl px-8 py-4 rounded-full shadow-[0_0_30px_rgba(74,222,128,0.4)]">
                🎉 {isTe ? "అద్భుతం! శ్లోకం పూర్తయింది!" : "Mastery Achieved!"} 🎉

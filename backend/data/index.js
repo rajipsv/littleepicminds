@@ -10,6 +10,12 @@ const DATA_DIR = __dirname;
 
 // Load chapters & levels config (pure JSON)
 const chaptersConfig = require('./chapters.json');
+let themes = {};
+try {
+  themes = require('./themes.json');
+} catch (err) {
+  console.warn('⚠️ Could not load themes.json:', err.message);
+}
 
 /**
  * Load a JS data file that uses `window.X = ...` pattern.
@@ -132,5 +138,6 @@ module.exports = {
   shlokas,
   hanumanChalisa,
   evaluations,
+  themes,
 };
 
