@@ -110,7 +110,6 @@ const ScriptureLayout = () => {
   }
 
   return (
-  return (
     <div className="min-h-screen flex flex-col md:flex-row bg-lem-dark text-white overflow-hidden">
       
       {/* Mobile Header - Only on small screens */}
