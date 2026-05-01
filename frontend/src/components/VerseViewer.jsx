@@ -21,9 +21,9 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
 
   // Reset steps when verse changes
   useEffect(() => {
-    setCurrentStep(1);
+    setCurrentStep(isThemeMode ? 5 : 1);
     setActiveWordIndex(-1);
-  }, [verse?.id]);
+  }, [verse?.id, isThemeMode]);
 
   if (!verse) return null;
 
