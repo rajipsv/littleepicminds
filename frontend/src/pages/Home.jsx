@@ -179,7 +179,7 @@ const Home = () => {
           <div className="space-x-8">
             <Link to="/about" className="hover:text-lem-accent">About</Link>
             <Link to="/readiness" className="hover:text-lem-dark bg-lem-accent px-3 py-1 rounded-md text-xs font-black uppercase tracking-widest transition-colors">Project Readiness</Link>
-            <Link to="/settings" className="hover:text-lem-accent">Contact</Link>
+            <a href="mailto:admin@littleepicminds.com" className="hover:text-lem-accent transition-colors">Contact admin</a>
           </div>
         </footer>
       </div>
