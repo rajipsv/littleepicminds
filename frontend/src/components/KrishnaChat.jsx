@@ -79,42 +79,26 @@ const KrishnaChat = ({ scripture }) => {
     setInput('');
     setIsTyping(true);
 
-    // Simulate Guru response using external library or local LLM
-    setTimeout(async () => {
-      // 1. First try local rule-based wisdom (fast & offline)
-      const localResponse = getWisdom(isHanuman ? 'hanuman' : 'gita', text, false, dynamicLib);
+    // Simulate Guru response using external library
+    setTimeout(() => {
+      // Use isTe=false for getWisdom to ensure English responses
+      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, false, dynamicLib);
 
-      if (localResponse) {
-        setMessages(prev => [...prev, { id: Date.now(), text: localResponse, sender: 'guru' }]);
-        setIsTyping(false);
+      if (response) {
+        setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
       } else {
-        // 2. If no local match, call the local Qwen model via backend
-        try {
-          const chatHistory = messages.slice(-4).map(m => ({
-            role: m.sender === 'user' ? 'user' : 'assistant',
-            content: m.text
-          }));
+        api.post('/api/chat/missed', { question: text, scripture: isHanuman ? 'hanuman' : 'gita' })
+          .catch(e => console.warn("Failed to log missed question"));
 
-          const response = await api.post('/api/chat/guru', {
-            message: text,
-            scripture: isHanuman ? 'hanuman' : 'gita',
-            history: chatHistory
-          });
-
-          setMessages(prev => [...prev, { id: Date.now(), text: response.data.reply, sender: 'guru' }]);
-        } catch (err) {
-          console.error("LLM Error:", err);
-          
-          let fallback = '';
-          if (isTe) {
-            fallback = "క్షమించండి, నా దగ్గర ఇంకా సమాధానం లేదు. దయచేసి మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Krishna?').";
-          } else {
-            fallback = "I'm sorry, I don't have an answer for that yet. My connection to the local wisdom model is currently down. Please ensure Ollama is running!";
-          }
-          setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
+        let fallback = '';
+        if (isTe) {
+          fallback = "క్షమించండి, దీనికి నా దగ్గర ఇంకా సమాధానం లేదు. దయచేసి మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Hanuman?').";
+        } else {
+          fallback = "I'm sorry, I don't have an answer for that yet. Please try asking a question about the scripture in English (e.g., 'What is the Gita?').";
         }
-        setIsTyping(false);
+        setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
       }
+      setIsTyping(false);
     }, 800);
   };
 
