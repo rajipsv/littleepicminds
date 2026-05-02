@@ -171,14 +171,6 @@ const ThemeViewer = ({ theme, scripture }) => {
 
       </div>
     </div>
-  );e={() => {}} 
-              />
-            </div>
-          </div>
-        )}
-
-      </div>
-    </div>
   );
 };
 

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
-import { useLanguage } from '../context/LanguageContext';
 import VerseViewer from '../components/VerseViewer';
 import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
@@ -13,9 +12,12 @@ import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
   const navigate = useNavigate();
-  const { user, logout } = useAuth();
-  const { currentLang, toggleLanguage } = useLanguage();
+  const { user, logout, currentLang, setCurrentLang } = useAuth();
   const isTe = currentLang === 'te';
+  
+  const toggleLanguage = () => {
+    setCurrentLang(isTe ? 'en' : 'te');
+  };
   
   const [activeChapter, setActiveChapter] = useState(1);
   const [verses, setVerses] = useState([]);
