@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { Sparkles, X } from 'lucide-react';
 import { getWisdom } from '../data/wisdom';
 import api from '../api';
+import { initGuru, getGuruResponse, isGuruReady } from '../utils/aiGuru';
 
 const KrishnaChat = ({ scripture }) => {
   const [messages, setMessages] = useState([]);
@@ -18,6 +19,8 @@ const KrishnaChat = ({ scripture }) => {
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [dynamicLib, setDynamicLib] = useState([]);
+  const [loadProgress, setLoadProgress] = useState(0);
+  const [loadText, setLoadText] = useState('');
 
   useEffect(() => {
     // 1. Fetch dynamic wisdom from DB
@@ -31,19 +34,19 @@ const KrishnaChat = ({ scripture }) => {
     };
     fetchWisdom();
     
-    // 2. Initial greeting based on scripture (Always instructing to use English)
+    // 2. Initial greeting
     let greeting = '';
     if (isTe) {
       if (isHanuman) {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Tell me about Hanuman')!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! నేను హనుమాన్ చాలీసా గురించి మీ ప్రశ్నలకు సమాధానం చెప్పడానికి సిద్ధంగా ఉన్నాను. దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి!`;
       } else {
-        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Krishna?')!`;
+        greeting = `నమస్తే ${user?.username || 'మిత్రమా'}! భగవద్గీతలోని జ్ఞానం గురించి మీరేమి తెలుసుకోవాలనుకుంటున్నారు? దయచేసి మీ ప్రశ్నలను ఇంగ్లీష్‌లో అడగండి!`;
       }
     } else {
       if (isHanuman) {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa. Please ask your questions in English!`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm here to answer your questions about the Hanuman Chalisa. Ask me anything!`;
       } else {
-        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Please ask your questions in English!`;
+        greeting = `Namaste ${user?.username || 'friend'}! I'm ready to discuss the wisdom of the Bhagavad Gita with you. Ask me anything!`;
       }
     }
       
@@ -70,7 +73,7 @@ const KrishnaChat = ({ scripture }) => {
     return () => window.removeEventListener('stepCompleted', handleStepComplete);
   }, [isTe, user, isHanuman]);
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMsg = { id: Date.now(), text: input, sender: 'user' };
@@ -79,27 +82,42 @@ const KrishnaChat = ({ scripture }) => {
     setInput('');
     setIsTyping(true);
 
-    // Simulate Guru response using external library
-    setTimeout(() => {
-      // Use isTe=false for getWisdom to ensure English responses
-      const response = getWisdom(isHanuman ? 'hanuman' : 'gita', text, false, dynamicLib);
+    // 1. Fast path: Check local rule-based wisdom
+    const localResponse = getWisdom(isHanuman ? 'hanuman' : 'gita', text, false, dynamicLib);
+    if (localResponse) {
+      setTimeout(() => {
+        setMessages(prev => [...prev, { id: Date.now(), text: localResponse, sender: 'guru' }]);
+        setIsTyping(false);
+      }, 600);
+      return;
+    }
 
-      if (response) {
-        setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
-      } else {
-        api.post('/api/chat/missed', { question: text, scripture: isHanuman ? 'hanuman' : 'gita' })
-          .catch(e => console.warn("Failed to log missed question"));
-
-        let fallback = '';
-        if (isTe) {
-          fallback = "క్షమించండి, దీనికి నా దగ్గర ఇంకా సమాధానం లేదు. దయచేసి మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి (ఉదా: 'Who is Hanuman?').";
-        } else {
-          fallback = "I'm sorry, I don't have an answer for that yet. Please try asking a question about the scripture in English (e.g., 'What is the Gita?').";
-        }
-        setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
+    // 2. Slow path: Use Browser-based LLM (Qwen)
+    try {
+      if (!isGuruReady()) {
+        await initGuru((progress, text) => {
+          setLoadProgress(Math.floor(progress * 100));
+          setLoadText(text);
+        });
+        setLoadProgress(0); // Reset after done
       }
+
+      const chatHistory = messages.slice(-4).map(m => ({
+        role: m.sender === 'user' ? 'user' : 'assistant',
+        content: m.text
+      }));
+
+      const response = await getGuruResponse(text, isHanuman ? 'hanuman' : 'gita', chatHistory);
+      setMessages(prev => [...prev, { id: Date.now(), text: response, sender: 'guru' }]);
+    } catch (err) {
+      console.error("Browser LLM Error:", err);
+      const fallback = isTe 
+        ? "క్షమించండి, నా దగ్గర ఇంకా సమాధానం లేదు. దయచేసి మీ ప్రశ్నను ఇంగ్లీష్‌లో అడగండి."
+        : "I'm sorry, I'm having trouble thinking right now. Please try again in a moment.";
+      setMessages(prev => [...prev, { id: Date.now(), text: fallback, sender: 'guru' }]);
+    } finally {
       setIsTyping(false);
-    }, 800);
+    }
   };
 
   if (!isOpen) {
@@ -151,7 +169,25 @@ const KrishnaChat = ({ scripture }) => {
             </div>
           </div>
         ))}
-        {isTyping && (
+
+        {/* Loading Progress for LLM */}
+        {loadProgress > 0 && (
+          <div className="flex flex-col gap-2 p-4 bg-white rounded-2xl border border-orange-200 shadow-sm animate-pulse">
+            <div className="flex justify-between items-center text-[10px] font-bold text-orange-600 uppercase tracking-widest">
+              <span>{isTe ? "జ్ఞానాన్ని పొందుతున్నాము..." : "Gathering Wisdom..."}</span>
+              <span>{loadProgress}%</span>
+            </div>
+            <div className="w-full h-2 bg-orange-100 rounded-full overflow-hidden">
+              <div 
+                className="h-full bg-gradient-to-r from-orange-500 to-amber-500 transition-all duration-300" 
+                style={{ width: `${loadProgress}%` }}
+              ></div>
+            </div>
+            <p className="text-[10px] text-gray-400 italic truncate">{loadText}</p>
+          </div>
+        )}
+
+        {isTyping && !loadProgress && (
           <div className="flex justify-start">
             <div className="bg-white border border-orange-100 p-3 rounded-2xl rounded-bl-none shadow-sm flex gap-1">
               <div className="w-1.5 h-1.5 bg-orange-300 rounded-full animate-bounce"></div>
