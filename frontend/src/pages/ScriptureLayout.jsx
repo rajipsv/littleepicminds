@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
+import { useLanguage } from '../context/LanguageContext';
 import VerseViewer from '../components/VerseViewer';
 import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
@@ -13,6 +14,8 @@ const ScriptureLayout = () => {
   const { scripture } = useParams();
   const navigate = useNavigate();
   const { user, logout } = useAuth();
+  const { currentLang, toggleLanguage } = useLanguage();
+  const isTe = currentLang === 'te';
   
   const [activeChapter, setActiveChapter] = useState(1);
   const [verses, setVerses] = useState([]);
@@ -152,7 +155,7 @@ const ScriptureLayout = () => {
             </Link>
             <h2 className="text-xl font-extrabold text-white ml-2 capitalize flex items-center tracking-wide">
                <BookOpen size={18} className="mr-2 text-lem-accent" />
-               {scripture}
+               {isTe ? (scripture === 'gita' ? 'గీత' : (scripture === 'hanuman' ? 'హనుమాన్' : scripture)) : scripture}
             </h2>
           </div>
           <button 
@@ -180,11 +183,11 @@ const ScriptureLayout = () => {
                     : 'bg-white/5 text-gray-300 hover:bg-white/10 hover:text-lem-accent'
                 }`}
               >
-                <span>{scripture === 'hanuman' ? 'Complete Chalisa' : `Chapter ${num}`}</span>
+                <span>{scripture === 'hanuman' ? (isTe ? 'హనుమాన్ చాలీసా' : 'Complete Chalisa') : (isTe ? `అధ్యాయం ${num}` : `Chapter ${num}`)}</span>
                 {isLocked && <Lock size={16} className={isActive ? 'text-lem-dark' : 'text-gray-500'} />}
                 {!isLocked && isFree && (
                   <span className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ${isActive ? 'bg-lem-dark/20 text-lem-dark' : 'bg-green-500/20 text-green-400'}`}>
-                    Open
+                    {isTe ? "ఓపెన్" : "Open"}
                   </span>
                 )}
               </button>
@@ -257,11 +260,11 @@ const ScriptureLayout = () => {
             <div className="flex justify-end items-center mb-8 gap-4">
               <Link to={`/progress?scripture=${scripture}`} className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/30 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all">
                 <Target size={16} />
-                My Progress
+                {isTe ? "నా పురోగతి" : "My Progress"}
               </Link>
               <Link to={`/journal?scripture=${scripture}`} className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
                 <Star size={16} />
-                My Journal
+                {isTe ? "నా జర్నల్" : "My Journal"}
               </Link>
             </div>
           )}
@@ -270,12 +273,12 @@ const ScriptureLayout = () => {
             <div className={`glass-card p-8 text-center border-l-4 ${error.includes('Premium') ? 'border-red-500' : 'border-lem-accent'}`}>
               <Lock size={48} className={`mx-auto mb-4 ${error.includes('Premium') ? 'text-red-400' : 'text-lem-accent'}`} />
               <h3 className="text-2xl font-bold text-white mb-2">
-                {error.includes('Premium') ? 'Premium Content' : 'Oops!'}
+                {error.includes('Premium') ? (isTe ? 'ప్రీమియం కంటెంట్' : 'Premium Content') : (isTe ? 'ఓప్స్!' : 'Oops!')}
               </h3>
               <p className="text-gray-300 mb-6">{error}</p>
               {error.includes('Premium') && (
                 <button onClick={() => navigate('/subscribe')} className="bg-gradient-accent text-lem-dark font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">
-                  Unlock Now
+                  {isTe ? "ఇప్పుడే అన్‌లాక్ చేయండి" : "Unlock Now"}
                 </button>
               )}
             </div>
@@ -288,7 +291,7 @@ const ScriptureLayout = () => {
               {/* Theme Navigation Dropdown */}
               <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
                 <span className="font-bold text-gray-300">
-                  Select Theme:
+                  {isTe ? "ఇతివృత్తాన్ని ఎంచుకోండి:" : "Select Theme:"}
                 </span>
                 <select
                   value={activeThemeIndex}
@@ -297,7 +300,7 @@ const ScriptureLayout = () => {
                 >
                   {themes.map((theme, idx) => (
                     <option key={theme.id} value={idx}>
-                      {idx + 1}. {theme.title}
+                      {idx + 1}. {isTe && theme.title_te ? theme.title_te : theme.title}
                     </option>
                   ))}
                 </select>
@@ -314,7 +317,7 @@ const ScriptureLayout = () => {
                   {/* Verse Navigation Dropdown */}
                   <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
                     <span className="font-bold text-gray-300">
-                      {scripture === 'hanuman' ? 'Select Verse:' : 'Select Shloka:'}
+                      {scripture === 'hanuman' ? (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Verse:') : (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Shloka:')}
                     </span>
                     <select
                       value={activeVerseIndex}
@@ -324,11 +327,11 @@ const ScriptureLayout = () => {
                       {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
                         let label;
                         if (scripture === 'hanuman') {
-                          if (num <= 2) label = `Doha ${num}`;
-                          else if (num <= 42) label = `Verse ${num - 2}`;
-                          else label = `Doha ${num - 40}`; // Doha 3 and 4
+                          if (num <= 2) label = isTe ? `దోహా ${num}` : `Doha ${num}`;
+                          else if (num <= 42) label = isTe ? `శ్లోకం ${num - 2}` : `Verse ${num - 2}`;
+                          else label = isTe ? `దోహా ${num - 40}` : `Doha ${num - 40}`; // Doha 3 and 4
                         } else {
-                          label = `Shloka ${num}`;
+                          label = isTe ? `శ్లోకం ${num}` : `Shloka ${num}`;
                         }
                         return (
                           <option key={num} value={num - 1}>

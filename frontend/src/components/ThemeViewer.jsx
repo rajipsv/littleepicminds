@@ -18,10 +18,10 @@ const ThemeViewer = ({ theme, scripture }) => {
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 border-b border-lem-glass-border pb-4">
         <div>
           <span className="bg-lem-accent/20 text-lem-accent text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wide mb-3 inline-block">
-            {theme.micro_theme}
+            {isTe && theme.micro_theme_te ? theme.micro_theme_te : theme.micro_theme}
           </span>
-          <h2 className="text-4xl font-black text-white flex items-center gap-3">
-            <span>{theme.emoji}</span> {theme.title}
+          <h2 className="text-2xl md:text-4xl font-black text-white flex items-center gap-3">
+            <span>{theme.emoji}</span> {isTe && theme.title_te ? theme.title_te : theme.title}
           </h2>
         </div>
       </div>
@@ -32,19 +32,19 @@ const ThemeViewer = ({ theme, scripture }) => {
           onClick={() => setActiveTab('story')}
           className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'story' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
-          <BookOpen size={18} /> The Story
+          <BookOpen size={18} /> {isTe ? "కథ" : "The Story"}
         </button>
         <button 
           onClick={() => setActiveTab('shlokas')}
           className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'shlokas' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
-          <Volume2 size={18} /> The Source
+          <Volume2 size={18} /> {isTe ? "మూలం" : "The Source"}
         </button>
         <button 
           onClick={() => setActiveTab('activity')}
           className={`px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap ${activeTab === 'activity' ? 'bg-lem-accent text-lem-dark shadow-md' : 'text-gray-400 hover:text-white'}`}
         >
-          <Star size={18} /> Activity
+          <Star size={18} /> {isTe ? "కార్యకలాపం" : "Activity"}
         </button>
       </div>
 
@@ -58,15 +58,14 @@ const ThemeViewer = ({ theme, scripture }) => {
               <div className="w-12 h-12 rounded-full bg-lem-accent/20 flex items-center justify-center text-lem-accent text-2xl shadow-[0_0_15px_rgba(253,160,133,0.3)]">
                 📖
               </div>
-              <h3 className="text-2xl font-bold text-white">{theme.story.title}</h3>
+              <h3 className="text-2xl font-bold text-white">{isTe && theme.story.title_te ? theme.story.title_te : theme.story.title}</h3>
             </div>
-
             <p className="text-lg text-gray-300 leading-relaxed font-medium">
-              {theme.story.content}
+              {isTe && theme.story.content_te ? theme.story.content_te : theme.story.content}
             </p>
             <div className="mt-8 bg-lem-dark p-6 rounded-xl border-l-4 border-lem-accent">
-              <h4 className="text-lem-accent font-black uppercase tracking-widest text-sm mb-2">The Moral</h4>
-              <p className="text-white font-bold text-lg">{theme.story.moral}</p>
+              <h4 className="text-lem-accent font-black uppercase tracking-widest text-sm mb-2">{isTe ? "నీతి" : "The Moral"}</h4>
+              <p className="text-white font-bold text-lg">{isTe && theme.story.moral_te ? theme.story.moral_te : theme.story.moral}</p>
             </div>
 
             {/* YouTube Video Integration - After Moral */}
@@ -106,9 +105,11 @@ const ThemeViewer = ({ theme, scripture }) => {
                   </div>
                   {shloka.error ? (
                     <div className="glass-card p-8 border border-white/10 text-center rounded-2xl bg-white/5">
-                      <p className="text-gray-400 font-bold mb-2">Shloka text and audio are currently being recorded!</p>
+                      <p className="text-gray-400 font-bold mb-2">
+                        {isTe ? "శ్లోకం మరియు ఆడియో త్వరలో అందుబాటులోకి వస్తాయి!" : "Shloka text and audio are currently being recorded!"}
+                      </p>
                       <span className="bg-lem-dark text-lem-accent text-[10px] uppercase tracking-widest px-3 py-1 rounded-full border border-lem-glass-border">
-                        Coming Soon
+                        {isTe ? "త్వరలో" : "Coming Soon"}
                       </span>
                     </div>
                   ) : (
@@ -130,9 +131,9 @@ const ThemeViewer = ({ theme, scripture }) => {
             <div className="bg-lem-sidebar p-6 rounded-2xl border border-lem-accent/30 shadow-[0_0_20px_rgba(253,160,133,0.1)] mb-8">
               <h3 className="text-xl font-bold text-lem-accent mb-4 flex items-center gap-2">
                 <Star className="text-lem-accent" /> 
-                Your Mission
+                {isTe ? "మీ లక్ష్యం" : "Your Mission"}
               </h3>
-              <p className="text-white text-lg">{theme.activity}</p>
+              <p className="text-white text-lg">{isTe && theme.activity_te ? theme.activity_te : theme.activity}</p>
             </div>
             
             {/* Matching Games for the Theme's Shlokas */}
@@ -160,9 +161,17 @@ const ThemeViewer = ({ theme, scripture }) => {
                   scripture: scripture,
                   chapter_number: theme.id.split('_')[1] || 1,
                   id: theme.id,
-                  activity: theme.activity
+                  activity: isTe && theme.activity_te ? theme.activity_te : theme.activity
                 }}
                 onComplete={() => {}} 
+              />
+            </div>
+          </div>
+        )}
+
+      </div>
+    </div>
+  );e={() => {}} 
               />
             </div>
           </div>
