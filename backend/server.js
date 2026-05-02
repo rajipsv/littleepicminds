@@ -23,6 +23,7 @@ const verseRoutes = require('./routes/verses');
 const ttsRoutes = require('./routes/tts');
 const journalRoutes = require('./routes/journal');
 const evaluationRoutes = require('./routes/evaluations');
+const chatRoutes = require('./routes/chat');
 
 // Mount Routes
 app.use('/api/auth', authRoutes);
@@ -30,6 +31,7 @@ app.use('/api/verses', verseRoutes);
 app.use('/api/tts', ttsRoutes);
 app.use('/api/journal', journalRoutes);
 app.use('/api/evaluations', evaluationRoutes);
+app.use('/api/chat', chatRoutes);
 
 // Health check
 app.get('/api/test', (req, res) => {
