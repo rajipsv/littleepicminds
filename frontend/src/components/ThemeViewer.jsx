@@ -61,9 +61,17 @@ const ThemeViewer = ({ theme, scripture }) => {
               <h3 className="text-2xl font-bold text-white">{theme.story.title}</h3>
             </div>
 
-            {/* YouTube Video Integration */}
+            <p className="text-lg text-gray-300 leading-relaxed font-medium">
+              {theme.story.content}
+            </p>
+            <div className="mt-8 bg-lem-dark p-6 rounded-xl border-l-4 border-lem-accent">
+              <h4 className="text-lem-accent font-black uppercase tracking-widest text-sm mb-2">The Moral</h4>
+              <p className="text-white font-bold text-lg">{theme.story.moral}</p>
+            </div>
+
+            {/* YouTube Video Integration - After Moral */}
             {theme.videoUrl && (
-              <div className="mb-8 rounded-2xl overflow-hidden border border-lem-glass-border shadow-2xl aspect-video">
+              <div className="mt-12 rounded-2xl overflow-hidden border border-lem-glass-border shadow-2xl aspect-video">
                 <iframe
                   className="w-full h-full"
                   src={theme.videoUrl.includes('youtube.com/embed') 
@@ -76,14 +84,6 @@ const ThemeViewer = ({ theme, scripture }) => {
                 ></iframe>
               </div>
             )}
-
-            <p className="text-lg text-gray-300 leading-relaxed font-medium">
-              {theme.story.content}
-            </p>
-            <div className="mt-8 bg-lem-dark p-6 rounded-xl border-l-4 border-lem-accent">
-              <h4 className="text-lem-accent font-black uppercase tracking-widest text-sm mb-2">The Moral</h4>
-              <p className="text-white font-bold text-lg">{theme.story.moral}</p>
-            </div>
           </div>
         )}
 
