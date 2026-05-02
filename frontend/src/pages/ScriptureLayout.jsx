@@ -21,9 +21,10 @@ const ScriptureLayout = () => {
   const [error, setError] = useState('');
   const [showQuiz, setShowQuiz] = useState(false);
   const [activeVerseIndex, setActiveVerseIndex] = useState(0);
+  const [activeThemeIndex, setActiveThemeIndex] = useState(0); // New state for active theme
+  const [chapterMetadata, setChapterMetadata] = useState([]);
   const [masteredShlokas, setMasteredShlokas] = useState(new Set());
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [learningMode, setLearningMode] = useState('theme'); // 'theme' or 'shloka'
 
   // Generate chapters based on scripture
   const activeChapterData = scripture === 'gita' ? chapterMetadata.find(c => c.id === activeChapter) : null;
@@ -55,14 +56,12 @@ const ScriptureLayout = () => {
         if (themeRes.data && themeRes.data.length > 0) {
           setThemes(themeRes.data);
           setActiveThemeIndex(0);
-          setLearningMode('theme');
-        } else {
-          setThemes([]);
-          setLearningMode('shloka');
+          setLoading(false);
+          return; // Skip raw verses if themes exist
         }
       } catch (themeErr) {
-        setThemes([]);
-        setLearningMode('shloka');
+        // If 404 or error, fallback to raw verses
+        console.log("No themes found, falling back to verses.");
       }
 
       const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
@@ -253,44 +252,19 @@ const ScriptureLayout = () => {
       <div className="flex-1 overflow-y-auto p-4 md:p-8 relative custom-scrollbar h-screen">
         <div className="max-w-4xl mx-auto pb-12">
           
-          {/* Top Navigation & Mode Toggle */}
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-6">
-            {/* Mode Switcher - Only if themes exist */}
-            {themes.length > 0 ? (
-              <div className="bg-white/5 p-1 rounded-2xl border border-lem-glass-border flex w-full md:w-fit self-start">
-                <button
-                  onClick={() => setLearningMode('theme')}
-                  className={`flex-1 md:px-6 py-2 rounded-xl text-sm font-black transition-all flex items-center justify-center gap-2 ${learningMode === 'theme' ? 'bg-lem-accent text-lem-dark shadow-lg' : 'text-gray-400 hover:text-white'}`}
-                >
-                  <Sparkles size={16} /> Theme Journey
-                </button>
-                <button
-                  onClick={() => setLearningMode('shloka')}
-                  className={`flex-1 md:px-6 py-2 rounded-xl text-sm font-black transition-all flex items-center justify-center gap-2 ${learningMode === 'shloka' ? 'bg-lem-accent text-lem-dark shadow-lg' : 'text-gray-400 hover:text-white'}`}
-                >
-                  <BookOpen size={16} /> Sloka Study
-                </button>
-              </div>
-            ) : (
-              <div className="flex items-center gap-2 text-lem-accent/60 bg-lem-accent/5 px-4 py-2 rounded-xl border border-lem-accent/10 w-fit">
-                <BookOpen size={16} />
-                <span className="text-xs font-bold uppercase tracking-widest">Traditional Sloka Study</span>
-              </div>
-            )}
-
-            {user && (
-              <div className="flex items-center gap-4">
-                <Link to={`/progress?scripture=${scripture}`} className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-lem-accent/10 border border-lem-accent/30 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all">
-                  <Target size={16} />
-                  My Progress
-                </Link>
-                <Link to={`/journal?scripture=${scripture}`} className="flex-1 md:flex-none flex items-center justify-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
-                  <Star size={16} />
-                  My Journal
-                </Link>
-              </div>
-            )}
-          </div>
+          {/* Top Navigation for User Progress */}
+          {user && (
+            <div className="flex justify-end items-center mb-8 gap-4">
+              <Link to={`/progress?scripture=${scripture}`} className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/30 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all">
+                <Target size={16} />
+                My Progress
+              </Link>
+              <Link to={`/journal?scripture=${scripture}`} className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
+                <Star size={16} />
+                My Journal
+              </Link>
+            </div>
+          )}
 
           {error ? (
             <div className={`glass-card p-8 text-center border-l-4 ${error.includes('Premium') ? 'border-red-500' : 'border-lem-accent'}`}>
@@ -309,7 +283,7 @@ const ScriptureLayout = () => {
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-lem-accent border-white/10 border-solid"></div>
             </div>
-          ) : learningMode === 'theme' && themes.length > 0 ? (
+          ) : themes.length > 0 ? (
             <div className="space-y-8">
               {/* Theme Navigation Dropdown */}
               <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
