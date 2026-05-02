@@ -60,6 +60,23 @@ const ThemeViewer = ({ theme, scripture }) => {
               </div>
               <h3 className="text-2xl font-bold text-white">{theme.story.title}</h3>
             </div>
+
+            {/* YouTube Video Integration */}
+            {theme.videoUrl && (
+              <div className="mb-8 rounded-2xl overflow-hidden border border-lem-glass-border shadow-2xl aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src={theme.videoUrl.includes('youtube.com/embed') 
+                    ? theme.videoUrl 
+                    : `https://www.youtube.com/embed/${theme.videoUrl.split('v=')[1] || theme.videoUrl.split('/').pop()}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            )}
+
             <p className="text-lg text-gray-300 leading-relaxed font-medium">
               {theme.story.content}
             </p>
