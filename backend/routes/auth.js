@@ -164,18 +164,24 @@ router.post('/login', async (req, res) => {
 // PUT /api/auth/profile — Update profile
 router.put('/profile', async (req, res) => {
   try {
-    const { username, name, age, grade } = req.body;
+    const { user_id, username, name, age, grade } = req.body;
     const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
     const level = getLevelFromAge(finalAge);
 
     if (!process.env.DATABASE_URL) {
-      return res.json({ id: 1, username, name, role: 'student', is_premium: false, age: finalAge, grade, level });
+      return res.json({ id: user_id || 1, username, name, role: 'student', is_premium: false, age: finalAge, grade, level });
     }
 
-    const updatedUser = await db.query(
-      'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE username = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level',
-      [name || null, finalAge, grade || null, level, username]
-    );
+    let query, params;
+    if (user_id) {
+      query = 'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE id = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level';
+      params = [name || null, finalAge, grade || null, level, user_id];
+    } else {
+      query = 'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE username = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level';
+      params = [name || null, finalAge, grade || null, level, username];
+    }
+
+    const updatedUser = await db.query(query, params);
 
     if (updatedUser.rows.length === 0) {
       return res.status(404).json({ error: 'User not found' });

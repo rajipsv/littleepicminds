@@ -94,11 +94,13 @@ export const AuthProvider = ({ children }) => {
     if (!user) return;
     try {
       const payload = { 
-        username: user.username, 
-        name: user.name, // Keep existing name
-        age: age ? parseInt(age) : null, 
-        grade 
+        user_id: user.id, // Use ID for safer identification
+        username: user.username,
+        name: user.name || null, 
+        age: (age !== '' && age !== undefined) ? parseInt(age) : null, 
+        grade: grade || null
       };
+      console.log('Updating profile with payload:', payload);
       const res = await api.put('/api/auth/profile', payload);
       const updatedUser = res.data;
       setUser(updatedUser);
