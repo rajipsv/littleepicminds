@@ -93,7 +93,13 @@ export const AuthProvider = ({ children }) => {
   const updateProfile = async (age, grade) => {
     if (!user) return;
     try {
-      const res = await api.put('/api/auth/profile', { username: user.username, age, grade });
+      const payload = { 
+        username: user.username, 
+        name: user.name, // Keep existing name
+        age: age ? parseInt(age) : null, 
+        grade 
+      };
+      const res = await api.put('/api/auth/profile', payload);
       const updatedUser = res.data;
       setUser(updatedUser);
       localStorage.setItem('user', JSON.stringify(updatedUser));

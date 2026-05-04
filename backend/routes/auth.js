@@ -165,15 +165,16 @@ router.post('/login', async (req, res) => {
 router.put('/profile', async (req, res) => {
   try {
     const { username, name, age, grade } = req.body;
-    const level = getLevelFromAge(age);
+    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+    const level = getLevelFromAge(finalAge);
 
     if (!process.env.DATABASE_URL) {
-      return res.json({ id: 1, username, name, role: 'student', is_premium: false, age, grade, level });
+      return res.json({ id: 1, username, name, role: 'student', is_premium: false, age: finalAge, grade, level });
     }
 
     const updatedUser = await db.query(
       'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE username = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level',
-      [name, age, grade, level, username]
+      [name || null, finalAge, grade || null, level, username]
     );
 
     if (updatedUser.rows.length === 0) {
