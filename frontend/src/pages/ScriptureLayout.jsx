@@ -56,12 +56,16 @@ const ScriptureLayout = () => {
     setThemes([]);
     setVerses([]);
     
+    let fetchedThemes = [];
+    let fetchedVerses = [];
+    
     try {
       // 1. Fetch themes (Thematic Curriculum)
       try {
         const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}`);
         if (themeRes.data && themeRes.data.length > 0) {
-          setThemes(themeRes.data);
+          fetchedThemes = themeRes.data;
+          setThemes(fetchedThemes);
           setActiveThemeIndex(0);
         }
       } catch (themeErr) {
@@ -71,14 +75,14 @@ const ScriptureLayout = () => {
       // 2. Fetch raw verses (Sloka based)
       try {
         const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
-        const verseData = Object.values(res.data);
-        setVerses(verseData);
+        fetchedVerses = Object.values(res.data);
+        setVerses(fetchedVerses);
         setActiveVerseIndex(0);
       } catch (verseErr) {
         console.log("No verses found for this chapter.");
       }
 
-      if (themes.length === 0 && verses.length === 0) {
+      if (fetchedThemes.length === 0 && fetchedVerses.length === 0) {
         setError('No content available for this chapter yet.');
       }
     } catch (err) {
