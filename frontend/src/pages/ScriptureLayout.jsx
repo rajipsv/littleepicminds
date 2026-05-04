@@ -54,28 +54,36 @@ const ScriptureLayout = () => {
     setLoading(true);
     setError('');
     setThemes([]);
+    setVerses([]);
+    
     try {
-      // First try to fetch themes (Thematic Curriculum)
+      // 1. Fetch themes (Thematic Curriculum)
       try {
         const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}`);
         if (themeRes.data && themeRes.data.length > 0) {
           setThemes(themeRes.data);
           setActiveThemeIndex(0);
-          setLoading(false);
-          return; // Skip raw verses if themes exist
         }
       } catch (themeErr) {
-        // If 404 or error, fallback to raw verses
-        console.log("No themes found, falling back to verses.");
+        console.log("No themes found for this chapter.");
       }
 
-      const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
-      setVerses(Object.values(res.data)); // Since backend returns an object of shlokas
-      setActiveVerseIndex(0); // Reset to first verse on chapter change
+      // 2. Fetch raw verses (Sloka based)
+      try {
+        const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
+        const verseData = Object.values(res.data);
+        setVerses(verseData);
+        setActiveVerseIndex(0);
+      } catch (verseErr) {
+        console.log("No verses found for this chapter.");
+      }
+
+      if (themes.length === 0 && verses.length === 0) {
+        setError('No content available for this chapter yet.');
+      }
     } catch (err) {
       if (err.response?.status === 403) {
         setError(err.response.data.error);
-        setVerses([]);
       } else {
         setError('Failed to load content.');
       }
@@ -288,8 +296,92 @@ const ScriptureLayout = () => {
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-lem-accent border-white/10 border-solid"></div>
             </div>
+          ) : (user?.level === 'warriors' && verses.length > 0) || (themes.length === 0 && verses.length > 0) ? (
+            <div className="space-y-8">
+              <div className="mb-12">
+                <div className="flex items-center gap-3 mb-2">
+                  <Sparkles className="text-lem-accent animate-pulse" size={24} />
+                  <h1 className="text-3xl md:text-5xl font-black tracking-tight bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+                    {isTe ? "శ్లోక సాధన" : "Scripture Mastery"}
+                  </h1>
+                </div>
+                <p className="text-gray-400 text-lg font-medium flex items-center gap-2">
+                  <span className="w-12 h-[2px] bg-lem-accent/30"></span>
+                  {isTe ? "మూల శ్లోకాలు" : "Divine Verses"}
+                </p>
+              </div>
+
+              {/* Verse Navigation Dropdown */}
+              <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
+                <span className="font-bold text-gray-300">
+                  {scripture === 'hanuman' ? (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Verse:') : (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Shloka:')}
+                </span>
+                <select
+                  value={activeVerseIndex}
+                  onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
+                  className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
+                >
+                  {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
+                    let label;
+                    if (scripture === 'hanuman') {
+                      if (num <= 2) label = isTe ? `దోహా ${num}` : `Doha ${num}`;
+                      else if (num <= 42) label = isTe ? `శ్లోకం ${num - 2}` : `Verse ${num - 2}`;
+                      else label = isTe ? `దోహా ${num - 40}` : `Doha ${num - 40}`; // Doha 3 and 4
+                    } else {
+                      label = isTe ? `శ్లోకం ${num}` : `Shloka ${num}`;
+                    }
+                    return (
+                      <option key={num} value={num - 1}>
+                        {label}
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+
+              {/* Render the active verse */}
+              {(() => {
+                const activeVerse = scripture === 'hanuman' 
+                  ? verses[activeVerseIndex]
+                  : verses.find(v => {
+                      const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
+                      return parseInt(vNum) === activeVerseIndex + 1;
+                    });
+
+                if (!activeVerse) {
+                  return (
+                    <div className="glass-card p-12 text-center border border-white/5">
+                      <p className="text-gray-400 font-bold">
+                        {isTe ? "ఈ శ్లోకం త్వరలో అందుబాటులోకి వస్తుంది!" : "This verse is coming soon!"}
+                      </p>
+                    </div>
+                  );
+                }
+
+                return (
+                  <VerseViewer 
+                    verse={activeVerse} 
+                    scripture={scripture} 
+                    isThemeMode={false} 
+                  />
+                );
+              })()}
+            </div>
           ) : themes.length > 0 ? (
             <div className="space-y-8">
+              <div className="mb-12">
+                <div className="flex items-center gap-3 mb-2">
+                  <Sparkles className="text-lem-accent animate-pulse" size={24} />
+                  <h1 className="text-3xl md:text-5xl font-black tracking-tight bg-gradient-to-r from-white to-gray-500 bg-clip-text text-transparent">
+                    {isTe ? "మీ ఇతివృత్తాన్ని ఎంచుకోండి" : "Choose Your Theme"}
+                  </h1>
+                </div>
+                <p className="text-gray-400 text-lg font-medium flex items-center gap-2">
+                  <span className="w-12 h-[2px] bg-lem-accent/30"></span>
+                  {isTe ? "ప్రయాణ మార్గం" : "Journey Path"}
+                </p>
+              </div>
+
               {/* Theme Navigation Dropdown */}
               <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
                 <span className="font-bold text-gray-300">
@@ -313,111 +405,18 @@ const ScriptureLayout = () => {
                 scripture={scripture} 
               />
             </div>
-          ) : verses.length > 0 ? (
-            <div className="space-y-8">
-              <>
-                  {/* Verse Navigation Dropdown */}
-                  <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
-                    <span className="font-bold text-gray-300">
-                      {scripture === 'hanuman' ? (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Verse:') : (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Shloka:')}
-                    </span>
-                    <select
-                      value={activeVerseIndex}
-                      onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
-                      className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
-                    >
-                      {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
-                        let label;
-                        if (scripture === 'hanuman') {
-                          if (num <= 2) label = isTe ? `దోహా ${num}` : `Doha ${num}`;
-                          else if (num <= 42) label = isTe ? `శ్లోకం ${num - 2}` : `Verse ${num - 2}`;
-                          else label = isTe ? `దోహా ${num - 40}` : `Doha ${num - 40}`; // Doha 3 and 4
-                        } else {
-                          label = isTe ? `శ్లోకం ${num}` : `Shloka ${num}`;
-                        }
-                        return (
-                          <option key={num} value={num - 1}>
-                            {label}
-                          </option>
-                        );
-                      })}
-                    </select>
-                  </div>
-
-                  {/* Render the active verse or a placeholder */}
-                  {(() => {
-                    const activeVerse = scripture === 'hanuman' 
-                      ? verses[activeVerseIndex]
-                      : verses.find(v => {
-                          const vNum = v.verse || (typeof v.id === 'string' && v.id.includes('.') ? v.id.split('.')[1] : v.id);
-                          return parseInt(vNum) === (activeVerseIndex + 1);
-                        });
-                    const verseNum = activeVerseIndex + 1;
-                    const isMastered = masteredShlokas.has(verseNum);
-
-                    if (activeVerse) {
-                      return (
-                        <div className="animate-fade-in">
-                          <VerseViewer 
-                            key={activeVerse.id || activeVerseIndex} 
-                            verse={{ ...activeVerse, chapter_number: activeChapter, scripture: scripture }} 
-                            scripture={scripture} 
-                          />
-                          {/* Per-Shloka Quiz */}
-                          {showQuiz ? (
-                            <div className="mt-6">
-                              <SlokaQuiz
-                                scripture={scripture}
-                                chapter={activeChapter}
-                                verse={verseNum}
-                                onPass={(score) => {
-                                  setMasteredShlokas(prev => new Set([...prev, verseNum]));
-                                  setShowQuiz(false);
-                                }}
-                                onClose={() => setShowQuiz(false)}
-                              />
-                            </div>
-                          ) : (
-                            <div className="flex justify-center mt-8 mb-4">
-                              {isMastered ? (
-                                <div className="flex items-center gap-2 text-green-400 font-bold text-sm">
-                                  <CheckCircle size={20} />
-                                  {scripture === 'hanuman' ? 'Verse Mastered!' : `Shloka ${activeChapter}.${verseNum} Mastered!`}
-                                </div>
-                              ) : (
-                                <button
-                                  onClick={() => setShowQuiz(true)}
-                                  className="flex items-center gap-2 bg-lem-sidebar border border-lem-accent text-lem-accent hover:bg-lem-accent hover:text-lem-dark font-black px-6 py-3 rounded-full shadow-lg transition-all hover:scale-105"
-                                >
-                                  <GraduationCap size={20} />
-                                  {scripture === 'hanuman' ? 'Test This Verse' : `Test Shloka ${activeChapter}.${verseNum}`}
-                                </button>
-                              )}
-                            </div>
-                          )}
-                        </div>
-                      );
-                    } else {
-                      return (
-                        <div className="glass-card p-12 text-center border-dashed border-2 border-lem-glass-border opacity-60">
-                           <BookOpen size={48} className="mx-auto text-gray-500 mb-4" />
-                           <h3 className="text-2xl font-bold text-white mb-2">Wisdom Coming Soon</h3>
-                           <p className="text-gray-400">Our AI engine is currently preparing the child-friendly explanation for Shloka {activeVerseIndex + 1}. Check back shortly!</p>
-                        </div>
-                      );
-                    }
-                  })()}
-              </>
-            </div>
           ) : (
-            <div className="text-center text-gray-500 p-8 glass-card">No verses found for this chapter yet.</div>
+            <div className="glass-card p-12 text-center border border-white/5">
+              <p className="text-gray-400 font-bold">
+                {isTe ? "సమాచారం త్వరలో అందుబాటులోకి వస్తుంది!" : "Content coming soon!"}
+              </p>
+            </div>
           )}
         </div>
         
         {/* Guru Chat Assistant */}
         <KrishnaChat scripture={scripture} />
       </div>
-      
     </div>
   );
 };
