@@ -7,7 +7,7 @@ import ThemeViewer from '../components/ThemeViewer';
 import KrishnaChat from '../components/KrishnaChat';
 import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
-import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X, User, LogOut, Settings } from 'lucide-react';
+import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X, User, LogOut, Settings, Sparkles } from 'lucide-react';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
