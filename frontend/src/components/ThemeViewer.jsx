@@ -68,19 +68,37 @@ const ThemeViewer = ({ theme, scripture }) => {
               <p className="text-white font-bold text-lg">{isTe && theme.story.moral_te ? theme.story.moral_te : theme.story.moral}</p>
             </div>
 
-            {/* YouTube Video Integration - After Moral */}
+            {/* Watch Video Hyperlink - Premium Button Style */}
             {theme.videoUrl && (
-              <div className="mt-12 rounded-2xl overflow-hidden border border-lem-glass-border shadow-2xl aspect-video">
-                <iframe
-                  className="w-full h-full"
-                  src={theme.videoUrl.includes('youtube.com/embed') 
-                    ? theme.videoUrl 
-                    : `https://www.youtube.com/embed/${theme.videoUrl.split('v=')[1] || theme.videoUrl.split('/').pop()}`}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+              <div className="mt-8 pt-8 border-t border-lem-glass-border">
+                <a 
+                  href={theme.videoUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between bg-gradient-to-r from-red-600/20 to-red-600/5 hover:from-red-600/30 hover:to-red-600/10 border border-red-500/30 p-6 rounded-2xl transition-all hover:scale-[1.02] active:scale-[0.98] group"
+                >
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center text-white shadow-[0_0_20px_rgba(220,38,38,0.4)] group-hover:shadow-[0_0_25px_rgba(220,38,38,0.6)] transition-all">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5.14v14l11-7-11-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-white mb-1">
+                        {isTe ? "పాఠం వీడియో చూడండి" : "Watch Lesson Video"}
+                      </h4>
+                      <p className="text-gray-400 text-sm font-medium">
+                        {isTe ? "యూట్యూబ్‌లో మా యానిమేటెడ్ పాఠాన్ని చూడండి" : "Watch our animated lesson on YouTube"}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:flex items-center gap-2 text-red-400 font-bold uppercase tracking-widest text-xs">
+                    {isTe ? "ఇప్పుడే ప్లే చేయండి" : "Play Now"}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
+                </a>
               </div>
             )}
           </div>
