@@ -204,11 +204,13 @@ const ThemeViewer = ({ theme, scripture }) => {
                   scripture: scripture,
                   chapter_number: theme.id.split('_')[1] || 1,
                   id: theme.id,
-                  activity: isTe && theme.activity_te ? theme.activity_te : theme.activity
+                  en: { activity: theme.activity || 'What did you learn from this theme?' },
+                  te: { activity: theme.activity_te || 'ఈ ఇతివృత్తం నుండి మీరు ఏమి నేర్చుకున్నారు? మీ ఆలోచనలు మరియు అనుభవాలను రాయండి.' }
                 }}
                 onComplete={() => {}} 
               />
             </div>
+
           </div>
         )}
 
