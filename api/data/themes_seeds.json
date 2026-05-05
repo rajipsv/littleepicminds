@@ -3,174 +3,235 @@
     "1": [
       {
         "title": "Eyes are for Watching!",
+        "title_te": "కళ్ళు చూడడానికి!",
         "emoji": "👀",
         "micro_theme": "Look carefully before acting",
+        "micro_theme_te": "చేయడానికి ముందు జాగ్రత్తగా చూడండి",
         "shlokas": [
           "1.1",
           "1.2"
         ],
         "story": {
           "title": "The Careful Squirrel",
+          "title_te": "జాగ్రత్తగా ఉండే ఉడత",
           "content": "Squeaky the Squirrel always looks both ways before crossing the branch. By watching carefully, Squeaky stays safe and finds the best nuts!",
-          "moral": "Always look carefully before you start something new."
+          "content_te": "స్క్వీకీ అనే ఉడత ఎప్పుడూ కొమ్మ దాటే ముందు రెండు వైపులా చూస్తుంది. జాగ్రత్తగా చూడడం వల్ల స్క్వీకీ సురక్షితంగా ఉంటుంది మరియు మంచి గింజలు కనుగొంటుంది!",
+          "moral": "Always look carefully before you start something new.",
+          "moral_te": "కొత్తది ప్రారంభించే ముందు ఎల్లప్పుడూ జాగ్రత్తగా చూడండి."
         },
         "activity": "Can you count to 5 while looking around the room and finding one blue thing?",
+        "activity_te": "గదిలో చుట్టూ చూస్తూ ఒక నీలి రంగు వస్తువు కనుగొంటూ 5 వరకు లెక్కపెట్టగలవా?",
         "videoUrl": "",
         "id": "theme_1_1_seeds"
       },
       {
         "title": "Planning & Strategy",
+        "title_te": "ప్రణాళిక & వ్యూహం",
         "emoji": "🧠",
         "micro_theme": "Think and plan before action",
+        "micro_theme_te": "చర్య తీసుకునే ముందు ఆలోచించి ప్రణాళిక వేయండి",
         "shlokas": [
           "1.3",
           "1.4"
         ],
         "story": {
           "title": "The Strategic Plan",
+          "title_te": "వ్యూహాత్మక ప్రణాళిక",
           "content": "A child was planning team strategy. Instead of just running wildly, they thought of a plan to help their team win.",
-          "moral": "Thinking and planning before action gives you a big advantage."
+          "content_te": "ఒక పిల్లవాడు జట్టు వ్యూహాన్ని ప్రణాళిక వేస్తున్నాడు. అవసరం లేకుండా పరిగెత్తడం వలన కాదు, వారి జట్టు గెలవడానికి సహాయపడే ప్రణాళికను ఆలోచించారు.",
+          "moral": "Thinking and planning before action gives you a big advantage.",
+          "moral_te": "చర్య తీసుకునే ముందు ఆలోచించడం మరియు ప్రణాళిక వేయడం మీకు పెద్ద ప్రయోజనాన్ని ఇస్తుంది."
         },
         "activity": "What is one 'strategy' you use when playing your favorite game?",
+        "activity_te": "మీకు ఇష్టమైన ఆటలో మీరు ఉపయోగించే ఒక 'వ్యూహం' ఏమిటి?",
         "id": "theme_1_2",
         "videoUrl": ""
       },
       {
         "title": "Knowing Your Team",
+        "title_te": "మీ జట్టును అర్థం చేసుకోవడం",
         "emoji": "👥",
         "micro_theme": "Understand your strengths",
+        "micro_theme_te": "మీ బలాలను అర్థం చేసుకోండి",
         "shlokas": [
           "1.5",
           "1.6"
         ],
         "story": {
           "title": "Identifying Team Players",
+          "title_te": "జట్టు సభ్యులను గుర్తించడం",
           "content": "A child was identifying team players. They knew one friend was fast, another was strong, and another was smart. Together, they were an unbeatable team.",
-          "moral": "Knowing what you and your friends are good at makes teamwork much easier."
+          "content_te": "ఒక పిల్లవాడు జట్టు సభ్యులను గుర్తిస్తున్నాడు. ఒక స్నేహితుడు వేగంగా ఉంటాడని, మరొకరు బలంగా ఉంటారని, మరొకరు తెలివిగా ఉంటారని వారికి తెలుసు. కలిసి వారు అజేయమైన జట్టు.",
+          "moral": "Knowing what you and your friends are good at makes teamwork much easier.",
+          "moral_te": "మీరు మరియు మీ స్నేహితులు దేనిలో మంచివారో తెలుసుకోవడం జట్టుకృషిని చాలా సులభం చేస్తుంది."
         },
         "activity": "Name one thing you are really good at, and one thing your best friend is really good at.",
+        "activity_te": "మీరు నిజంగా బాగా చేసే ఒక విషయం మరియు మీ親 స్నేహితుడు నిజంగా బాగా చేసే ఒక విషయం చెప్పండి.",
         "id": "theme_1_3",
         "videoUrl": ""
       },
       {
         "title": "Leadership & Guidance",
+        "title_te": "నాయకత్వం & మార్గదర్శకత్వం",
         "emoji": "📣",
         "micro_theme": "Leaders guide the team",
+        "micro_theme_te": "నాయకులు జట్టుకు మార్గం చూపిస్తారు",
         "shlokas": [
           "1.7",
           "1.8"
         ],
         "story": {
           "title": "Motivating the Team",
+          "title_te": "జట్టుకు ప్రేరణ ఇవ్వడం",
           "content": "The team captain was motivating players. Even when they felt tired, the leader's words made them feel proud and strong again.",
-          "moral": "A good leader doesn't just give orders; they motivate and inspire others."
+          "content_te": "జట్టు కెప్టెన్ ఆటగాళ్ళకు ప్రేరణ ఇస్తున్నాడు. వారు అలసిపోయినప్పుడు కూడా నాయకుడి మాటలు వారిని మళ్ళీ గర్వంగా మరియు బలంగా అనుభవించేలా చేశాయి.",
+          "moral": "A good leader doesn't just give orders; they motivate and inspire others.",
+          "moral_te": "మంచి నాయకుడు ఆదేశాలు మాత్రమే ఇవ్వడు; వారు ఇతరులను ప్రేరేపించి స్ఫూర్తినిస్తారు."
         },
         "activity": "What is one nice thing you can say to encourage a friend today?",
+        "activity_te": "ఈరోజు స్నేహితుడిని ప్రోత్సహించడానికి మీరు ఒక మంచి విషయం ఏమి చెప్పగలరు?",
         "id": "theme_1_4",
         "videoUrl": ""
       },
       {
         "title": "Confidence in Strength",
+        "title_te": "బలంలో విశ్వాసం",
         "emoji": "🧾",
         "micro_theme": "Trust your preparation",
+        "micro_theme_te": "మీ సన్నద్ధతను నమ్మండి",
         "shlokas": [
           "1.9",
           "1.10"
         ],
         "story": {
           "title": "Feeling Ready",
+          "title_te": "సిద్ధంగా అనిపించడం",
           "content": "Instead of worrying, a child was feeling ready before the match. They knew they had practiced hard and prepared well.",
-          "moral": "Trusting your preparation pushes away your fears."
+          "content_te": "ఆందోళన చెందడం బదులు, ఒక పిల్లవాడు పోటీకి ముందు సిద్ధంగా అనిపించాడు. వారు కష్టపడి సాధన చేశారని మరియు బాగా సిద్ధపడ్డారని వారికి తెలుసు.",
+          "moral": "Trusting your preparation pushes away your fears.",
+          "moral_te": "మీ సన్నద్ధతను నమ్మడం మీ భయాలను దూరం చేస్తుంది."
         },
         "activity": "Count on your fingers 3 things that make you a strong person.",
+        "activity_te": "మిమ్మల్ని బలమైన వ్యక్తిగా చేసే 3 విషయాలను మీ వేళ్ళపై లెక్కించండి.",
         "id": "theme_1_5",
         "videoUrl": ""
       },
       {
         "title": "Preparing for Action",
+        "title_te": "చర్యకు సిద్ధపడడం",
         "emoji": "🔔",
         "micro_theme": "Get ready before starting",
+        "micro_theme_te": "ప్రారంభించే ముందు సిద్ధంగా ఉండండి",
         "shlokas": [
           "1.11",
           "1.12"
         ],
         "story": {
           "title": "Final Preparation Moment",
+          "title_te": "చివరి సన్నద్ధత క్షణం",
           "content": "A child was in the final preparation moment before starting. They tied their shoes tight, drank water, and took deep breaths.",
-          "moral": "Taking time to prepare makes the actual task much easier."
+          "content_te": "ఒక పిల్లవాడు ప్రారంభించే ముందు చివరి సన్నద్ధత క్షణంలో ఉన్నాడు. వారు బూట్లు బిగించి కట్టుకున్నారు, నీళ్ళు తాగారు, మరియు లోతైన శ్వాసలు తీసుకున్నారు.",
+          "moral": "Taking time to prepare makes the actual task much easier.",
+          "moral_te": "సన్నద్ధతకు సమయం కేటాయించడం వాస్తవ పనిని చాలా సులభం చేస్తుంది."
         },
         "activity": "What is your routine to 'get ready' before you go to school or sleep?",
+        "activity_te": "పాఠశాలకు వెళ్ళే ముందు లేదా నిద్రించే ముందు 'సిద్ధమవడానికి' మీ దినచర్య ఏమిటి?",
         "id": "theme_1_6",
         "videoUrl": ""
       },
       {
         "title": "Energy & Excitement",
+        "title_te": "శక్తి & ఉత్సాహం",
         "emoji": "🥁",
         "micro_theme": "Build energy together",
+        "micro_theme_te": "కలిసి శక్తిని నిర్మించండి",
         "shlokas": [
           "1.13",
           "1.14"
         ],
         "story": {
           "title": "The Team Cheer",
+          "title_te": "జట్టు ఉత్సాహం",
           "content": "There was huge excitement in the team cheer moment. High energy helps wake up your body and mind for action.",
-          "moral": "Excitement and high energy can give you the push you need to start."
+          "content_te": "జట్టు ఉత్సాహ క్షణంలో అపారమైన సంతోషం ఉంది. అధిక శక్తి మీ శరీరాన్ని మరియు మనస్సును చర్యకు మేల్కొల్పడంలో సహాయపడుతుంది.",
+          "moral": "Excitement and high energy can give you the push you need to start.",
+          "moral_te": "ఉత్సాహం మరియు అధిక శక్తి మీకు ప్రారంభించడానికి అవసరమైన ప్రోత్సాహాన్ని ఇవ్వగలవు."
         },
         "activity": "Do 5 jumping jacks right now to build some high energy!",
+        "activity_te": "ఇప్పుడే 5 జంపింగ్ జాక్స్ చేయండి మరియు కొంత అధిక శక్తిని నిర్మించండి!",
         "id": "theme_1_7",
         "videoUrl": ""
       },
       {
         "title": "Showing Presence",
+        "title_te": "ఉనికి చాటుకోవడం",
         "emoji": "🔊",
         "micro_theme": "Step forward with confidence",
+        "micro_theme_te": "విశ్వాసంతో ముందడుగు వేయండి",
         "shlokas": [
           "1.15",
           "1.16"
         ],
         "story": {
           "title": "Entering the Stage Boldly",
+          "title_te": "ధైర్యంగా వేదికపై అడుగు పెట్టడం",
           "content": "A child was entering the stage boldly. They stood tall and smiled. Even before they spoke a word, everyone believed in them.",
-          "moral": "Standing tall and confident helps you believe in yourself, and helps others believe in you too."
+          "content_te": "ఒక పిల్లవాడు ధైర్యంగా వేదికపై అడుగు పెట్టాడు. వారు నిటారుగా నిలబడి చిరునవ్వు నవ్వారు. వారు ఒక్క మాట కూడా మాట్లాడడానికి ముందే, అందరూ వారిని నమ్మారు.",
+          "moral": "Standing tall and confident helps you believe in yourself, and helps others believe in you too.",
+          "moral_te": "నిటారుగా మరియు విశ్వాసంతో నిలబడడం మీరు మిమ్మల్ని నమ్మడంలో సహాయపడుతుంది మరియు ఇతరులు కూడా మిమ్మల్ని నమ్మేలా చేస్తుంది."
         },
         "activity": "Stand up straight, push your chest out slightly, and hold your head high!",
+        "activity_te": "నిటారుగా నిలబడండి, మీ ఛాతీని కొద్దిగా ముందుకు నెట్టండి, మరియు తలను ఎత్తుగా పట్టుకోండి!",
         "id": "theme_1_8",
         "videoUrl": ""
       },
       {
         "title": "Readiness & Focus",
+        "title_te": "సన్నద్ధత & ఏకాగ్రత",
         "emoji": "🎯",
         "micro_theme": "Be ready when action begins",
+        "micro_theme_te": "చర్య ప్రారంభమైనప్పుడు సిద్ధంగా ఉండండి",
         "shlokas": [
           "1.17",
           "1.18"
         ],
         "story": {
           "title": "Waiting for Your Turn",
+          "title_te": "మీ వంతు కోసం వేచి ఉండడం",
           "content": "A child was waiting for their turn in a game. They held their bat ready, eyes on the ball, completely focused.",
-          "moral": "Stay alert and focused so you are ready when it's your time to act."
+          "content_te": "ఒక పిల్లవాడు ఆటలో తమ వంతు కోసం వేచి ఉన్నాడు. వారు బ్యాట్‌ను సిద్ధంగా పట్టుకుని, బంతిపై కళ్ళు నిలిపి, పూర్తిగా ఏకాగ్రంగా ఉన్నారు.",
+          "moral": "Stay alert and focused so you are ready when it's your time to act.",
+          "moral_te": "అప్రమత్తంగా మరియు ఏకాగ్రంగా ఉండండి, తద్వారా చర్య తీసుకోవలసిన సమయం వచ్చినప్పుడు మీరు సిద్ధంగా ఉంటారు."
         },
         "activity": "What do you do to stay patient and ready when you have to wait for your turn?",
+        "activity_te": "మీ వంతు కోసం వేచి ఉన్నప్పుడు ఓపికగా మరియు సిద్ధంగా ఉండటానికి మీరు ఏమి చేస్తారు?",
         "id": "theme_1_9",
         "videoUrl": ""
       },
       {
         "title": "Final Observation",
+        "title_te": "చివరి పరిశీలన",
         "emoji": "👁️",
         "micro_theme": "Observe before taking action",
+        "micro_theme_te": "చర్య తీసుకునే ముందు గమనించండి",
         "shlokas": [
           "1.19",
           "1.20"
         ],
         "story": {
           "title": "Looking Before Making a Move",
+          "title_te": "కదలిక తీసుకునే ముందు చూడడం",
           "content": "The child was looking before making a move. Instead of just running blindly, they checked the whole field one last time.",
-          "moral": "Final observation ensures you have the full picture before you act."
+          "content_te": "పిల్లవాడు కదలిక తీసుకునే ముందు చూస్తున్నాడు. గుడ్డిగా పరిగెత్తడం బదులు, వారు మొత్తం మైదానాన్ని చివరిసారి తనిఖీ చేశారు.",
+          "moral": "Final observation ensures you have the full picture before you act.",
+          "moral_te": "చివరి పరిశీలన మీరు చర్య తీసుకునే ముందు పూర్తి చిత్రాన్ని కలిగి ఉన్నారని నిర్ధారిస్తుంది."
         },
         "activity": "Before starting your next task, take one last look to make sure you have everything you need.",
+        "activity_te": "మీ తదుపరి పని ప్రారంభించే ముందు, మీకు కావలసిన అన్నీ ఉన్నాయని నిర్ధారించుకోవడానికి చివరిసారి చూడండి.",
         "id": "theme_1_10",
         "videoUrl": ""
       },
+
       {
         "id": "theme_1_11",
         "title": "Overwhelmed by Emotions",
