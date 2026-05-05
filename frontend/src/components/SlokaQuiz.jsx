@@ -22,6 +22,8 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     return `Doha ${verse - 40}`;
   })() : `Shloka ${chapter}.${verse}`;
 
+  const scriptureName = isHanuman ? (isTe ? 'హనుమాన్ చాలీసా' : 'Hanuman Chalisa') : (isTe ? 'భగవద్గీత' : 'Bhagavad Gita');
+
   const verseId = isHanuman ? String(verse) : `${chapter}.${verse}`;
 
   useEffect(() => {
@@ -139,13 +141,18 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   return (
     <div className="glass-card p-6 md:p-8 animate-fade-in">
       <div className="flex justify-between items-center mb-6">
-        <div className="flex items-center gap-2 text-lem-accent font-bold">
-          <HelpCircle size={20} />
-          <span>{isTe ? `${verseLabel} పరీక్ష` : `${verseLabel} Quiz`}</span>
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-lem-accent/20 flex items-center justify-center text-lem-accent">
+            <Award size={20} />
+          </div>
+          <div>
+            <h2 className="text-sm font-black text-white leading-none mb-1">{scriptureName}</h2>
+            <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">{verseLabel}</p>
+          </div>
         </div>
         <div className="flex items-center gap-4">
-          <span className="text-sm font-bold text-gray-400">{currentQ + 1} / {questions.length}</span>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-300 font-bold text-xs uppercase tracking-wider">
+          <span className="text-xs font-bold text-gray-400">{currentQ + 1} / {questions.length}</span>
+          <button onClick={onClose} className="text-gray-500 hover:text-gray-300 font-bold text-[10px] uppercase tracking-wider">
             {isTe ? 'దాటవేయి' : 'Skip'}
           </button>
         </div>
