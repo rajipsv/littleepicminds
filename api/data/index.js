@@ -39,31 +39,31 @@ let finalShlokas = gitaDataInline && gitaDataInline.shlokas
   ? { ...gitaDataInline.shlokas, ...shlokasData }
   : shlokasData;
 
-// Load modular chapter data
-const loadChapter = (num) => {
-  console.log(`[DEBUG] Loading Chapter ${num}...`);
-  try {
-    const ch = require(`./chapters/chapter${num}.js`);
-    console.log(`[DEBUG] Chapter ${num} loaded.`);
-    return ch;
-  } catch (e) {
-    console.warn(`[DEBUG] Could not load chapter${num}.js:`, e.message);
-    return {};
-  }
+// Static Chapter Imports (Vercel doesn't support dynamic require)
+const chapter1 = require('./chapters/chapter1.js');
+const chapter2 = require('./chapters/chapter2.js');
+const chapter15 = require('./chapters/chapter15.js');
+
+const chapterMap = {
+  1: chapter1,
+  2: chapter2,
+  15: chapter15
 };
 
+// Merge shlokas from modular files
 finalShlokas = {
   ...finalShlokas,
-  ...loadChapter(1),
-  ...loadChapter(2),
-  ...loadChapter(15)
+  ...chapter1,
+  ...chapter2,
+  ...chapter15
 };
 
 // Load modular prayer data
 console.log('[DEBUG] Loading modular prayers...');
 let finalHanuman = hanumanData;
 try {
-  finalHanuman = require('./prayers/hanuman_chalisa.js');
+  const hanumanModule = require('./prayers/hanuman_chalisa.js');
+  finalHanuman = hanumanModule;
   console.log('[DEBUG] hanuman_chalisa.js loaded.');
 } catch (e) {
   console.warn('Could not load hanuman_chalisa.js:', e.message);
