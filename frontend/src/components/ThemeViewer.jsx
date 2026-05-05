@@ -112,9 +112,6 @@ const ThemeViewer = ({ theme, scripture }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="hidden md:flex items-center gap-2 text-gray-600 font-bold uppercase tracking-widest text-xs">
-                    {isTe ? "అందుబాటులో లేదు" : "Unavailable"}
-                  </div>
                 </div>
               )}
             </div>
