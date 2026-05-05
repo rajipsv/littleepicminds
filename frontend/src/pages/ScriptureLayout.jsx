@@ -301,7 +301,7 @@ const ScriptureLayout = () => {
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-lem-accent border-white/10 border-solid"></div>
             </div>
-          ) : (user?.level === 'warriors' && verses.length > 0) || (themes.length === 0 && verses.length > 0) ? (
+          ) : (themes.length === 0 && verses.length > 0) ? (
             <div className="space-y-8">
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-2">
