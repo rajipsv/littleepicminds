@@ -7,7 +7,12 @@ import { ChevronLeft, CheckCircle, XCircle, Award, BarChart3 } from 'lucide-reac
 const QuizHistory = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const initialScripture = queryParams.get('scripture') || 'all';
+
   const [quizzes, setQuizzes] = useState([]);
+  const [filter, setFilter] = useState(initialScripture);
   const [hanumanStats, setHanumanStats] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -25,6 +30,11 @@ const QuizHistory = () => {
       setLoading(false);
     });
   }, [user]);
+
+  const filteredQuizzes = quizzes.filter(q => {
+    if (filter === 'all') return true;
+    return q.scripture === filter;
+  });
 
   if (!user) return <div className="text-center p-20 text-white font-bold text-2xl">Please login to see quiz history.</div>;
 
@@ -57,12 +67,28 @@ const QuizHistory = () => {
           <Link to="/progress" className="text-gray-400 hover:text-lem-accent transition-colors">
             <ChevronLeft size={24} />
           </Link>
-          <div>
-            <h1 className="text-3xl md:text-4xl font-black text-white">
-              Quiz <span className="text-lem-accent">History</span>
-            </h1>
-            <p className="text-gray-400 font-medium">Review your past quiz attempts</p>
-          </div>
+        </div>
+        
+        {/* Scripture Filter Tabs */}
+        <div className="flex gap-2 mb-8 bg-white/5 p-1 rounded-xl border border-lem-glass-border w-fit">
+          <button 
+            onClick={() => setFilter('all')}
+            className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${filter === 'all' ? 'bg-lem-accent text-lem-dark shadow-lg' : 'text-gray-400 hover:text-white'}`}
+          >
+            All
+          </button>
+          <button 
+            onClick={() => setFilter('gita')}
+            className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${filter === 'gita' ? 'bg-lem-accent text-lem-dark shadow-lg' : 'text-gray-400 hover:text-white'}`}
+          >
+            Gita
+          </button>
+          <button 
+            onClick={() => setFilter('hanuman')}
+            className={`px-6 py-2 rounded-lg text-sm font-bold transition-all ${filter === 'hanuman' ? 'bg-lem-accent text-lem-dark shadow-lg' : 'text-gray-400 hover:text-white'}`}
+          >
+            Hanuman
+          </button>
         </div>
 
         {/* Hanuman Overall Stats */}
@@ -94,18 +120,18 @@ const QuizHistory = () => {
         )}
 
         {/* Quiz List */}
-        {quizzes.length === 0 ? (
+        {filteredQuizzes.length === 0 ? (
           <div className="glass-card p-12 text-center">
             <Award size={48} className="mx-auto text-gray-500 mb-4" />
-            <h3 className="text-xl font-bold text-white mb-2">No Quizzes Yet</h3>
+            <h3 className="text-xl font-bold text-white mb-2">No {filter !== 'all' ? (filter === 'gita' ? 'Gita' : 'Hanuman') : ''} Quizzes Yet</h3>
             <p className="text-gray-400 mb-6">Take your first quiz to see your history here!</p>
-            <button onClick={() => navigate('/read/gita')} className="bg-lem-accent text-lem-dark font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">
+            <button onClick={() => navigate(filter === 'hanuman' ? '/read/hanuman' : '/read/gita')} className="bg-lem-accent text-lem-dark font-bold px-6 py-3 rounded-xl hover:scale-105 transition-transform">
               Start Reading
             </button>
           </div>
         ) : (
           <div className="space-y-4">
-            {quizzes.map((q) => {
+            {filteredQuizzes.map((q) => {
               const questions = typeof q.questions === 'string' ? JSON.parse(q.questions) : q.questions;
               const correct = questions.filter(a => a.chosen === a.correct).length;
               const total = questions.length;

@@ -121,7 +121,7 @@ const MasteryReport = () => {
                 Hanuman Chalisa
               </h3>
               <div className="flex gap-2">
-                <Link to="/quiz-history" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
+                <Link to="/quiz-history?scripture=hanuman" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
                   <ClipboardList size={14} /> Quiz History
                 </Link>
                 <Link to="/read/hanuman" className="text-xs font-black bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-all">
@@ -190,7 +190,7 @@ const MasteryReport = () => {
                 <BookOpen size={20} className="text-lem-accent" />
                 Bhagavad Gita Breakdown
               </h3>
-              <Link to="/quiz-history" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
+              <Link to="/quiz-history?scripture=gita" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
                 <ClipboardList size={14} /> Quiz History
               </Link>
             </div>
