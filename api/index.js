@@ -197,15 +197,25 @@ function getHanumanVerse(verseParam) {
 router.get('/themes/:scripture/:chapter', (req, res) => {
   try {
     const { scripture, chapter } = req.params;
+    const { level } = req.query; // seeds, seekers
     
     if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
       return res.status(404).json({ error: 'Themes not found for this chapter' });
     }
     
-    const chapterThemes = data.themes[scripture][chapter];
+    const chapterData = data.themes[scripture][chapter];
+    let themesToReturn = [];
+
+    // Check if it's level-based structure { seeds: [], seekers: [] }
+    if (!Array.isArray(chapterData)) {
+      themesToReturn = chapterData[level] || chapterData['seekers'] || chapterData['seeds'] || [];
+    } else {
+      // Fallback for old array structure
+      themesToReturn = chapterData;
+    }
     
     // Inject actual shloka data (Sanskrit, transliteration, audio, meanings) into each theme
-    const themesWithShlokas = chapterThemes.map(theme => {
+    const themesWithShlokas = themesToReturn.map(theme => {
       const populatedShlokas = (theme.shlokas || []).map(shlokaId => {
         const shlokaObj = data.shlokas[shlokaId];
         return shlokaObj ? { ...shlokaObj, id: shlokaId } : { error: 'Shloka data missing', id: shlokaId };
@@ -215,6 +225,7 @@ router.get('/themes/:scripture/:chapter', (req, res) => {
     
     res.json(themesWithShlokas);
   } catch (err) {
+    console.error('Themes API error:', err.message);
     res.status(500).json({ error: err.message });
   }
 });
