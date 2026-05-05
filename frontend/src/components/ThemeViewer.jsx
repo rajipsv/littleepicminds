@@ -68,7 +68,7 @@ const ThemeViewer = ({ theme, scripture }) => {
               <p className="text-white font-bold text-lg">{isTe && theme.story.moral_te ? theme.story.moral_te : theme.story.moral}</p>
             </div>
 
-            {/* Watch Video Section - Always visible, grayed out if no link */}
+            {/* Watch Video Section - Always Red-Styled, but disabled if no link */}
             <div className="mt-8 pt-8 border-t border-lem-glass-border">
               {theme.videoUrl ? (
                 <a 
@@ -92,10 +92,16 @@ const ThemeViewer = ({ theme, scripture }) => {
                       </p>
                     </div>
                   </div>
+                  <div className="hidden md:flex items-center gap-2 text-red-400 font-bold uppercase tracking-widest text-xs">
+                    {isTe ? "ఇప్పుడే ప్లే చేయండి" : "Play Now"}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                      <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                  </div>
                 </a>
               ) : (
                 <div 
-                  className="flex items-center justify-between bg-white/5 border border-white/10 p-6 rounded-2xl opacity-60 cursor-not-allowed"
+                  className="flex items-center justify-between bg-white/5 border border-white/10 p-6 rounded-2xl opacity-60 cursor-not-allowed group"
                 >
                   <div className="flex items-center gap-5">
                     <div className="w-14 h-14 bg-gray-600 rounded-full flex items-center justify-center text-gray-300">
@@ -111,6 +117,9 @@ const ThemeViewer = ({ theme, scripture }) => {
                         {isTe ? "ఈ పాఠం కోసం మేము వీడియోని సిద్ధం చేస్తున్నాము" : "We are preparing the video for this lesson"}
                       </p>
                     </div>
+                  </div>
+                  <div className="hidden md:flex items-center gap-2 text-gray-600 font-bold uppercase tracking-widest text-xs">
+                    {isTe ? "త్వరలో వస్తుంది" : "Coming Soon"}
                   </div>
                 </div>
               )}
