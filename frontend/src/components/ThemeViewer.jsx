@@ -92,12 +92,6 @@ const ThemeViewer = ({ theme, scripture }) => {
                       </p>
                     </div>
                   </div>
-                  <div className="hidden md:flex items-center gap-2 text-red-400 font-bold uppercase tracking-widest text-xs">
-                    {isTe ? "ఇప్పుడే ప్లే చేయండి" : "Play Now"}
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                      <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                  </div>
                 </a>
               ) : (
                 <div 
