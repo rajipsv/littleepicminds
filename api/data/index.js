@@ -8,7 +8,30 @@ const shlokasData = require('./shlokas.json');
 const hanumanData = require('./hanuman_chalisa.json');
 const evaluationsData = require('./evaluations.json');
 const gitaDataInline = require('./gita_data.json');
-const themesData = require('./themes.json');
+
+let themesData = { gita: {} };
+try {
+  const seedsThemes = require('./themes_seeds.json');
+  const seekersThemes = require('./themes_seekers.json');
+  
+  // Merge Seeds
+  if (seedsThemes.gita) {
+    Object.keys(seedsThemes.gita).forEach(ch => {
+      if (!themesData.gita[ch]) themesData.gita[ch] = {};
+      themesData.gita[ch].seeds = seedsThemes.gita[ch];
+    });
+  }
+  
+  // Merge Seekers
+  if (seekersThemes.gita) {
+    Object.keys(seekersThemes.gita).forEach(ch => {
+      if (!themesData.gita[ch]) themesData.gita[ch] = {};
+      themesData.gita[ch].seekers = seekersThemes.gita[ch];
+    });
+  }
+} catch (e) {
+  console.warn('Could not load themes_seeds or themes_seekers:', e.message);
+}
 console.log('[DEBUG] Static files loaded.');
 
 // Merge inline shlokas if they exist
