@@ -1,0 +1,126 @@
+{
+  "gita": {
+    "1": [
+      {
+        "id": "theme_w1_1",
+        "title": "The Gathering Storm",
+        "title_te": "ముంచుకొస్తున్న తుపాను",
+        "emoji": "🚩",
+        "micro_theme": "Analyzing the situation and the opposition",
+        "micro_theme_te": "పరిస్థితిని మరియు ప్రత్యర్థులను విశ్లేషించడం",
+        "shlokas": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11"],
+        "story": {
+          "title": "Duryodhana's Anxiety",
+          "title_te": "దుర్యోధనుడి ఆందోళన",
+          "content": "As the great war was about to begin, King Dhritarashtra asked what was happening. On the field, Duryodhana was nervous. He looked at the massive army of the Pandavas and started pointing out all their great warriors to his teacher, Drona. He was trying to sound confident, but inside he was worried about the strength of his opponents. This theme explores how we often focus on external threats when we feel insecure inside.",
+          "content_te": "మహా యుద్ధం ప్రారంభం కావస్తుండగా, ధృతరాష్ట్ర మహారాజు ఏమి జరుగుతోందని అడిగాడు. మైదానంలో దుర్యోధనుడు ఆందోళనగా ఉన్నాడు. అతను పాండవుల భారీ సైన్యాన్ని చూసి, వారి గొప్ప యోధులందరినీ తన గురువు ద్రోణాచార్యుడికి చూపిస్తూ వివరించసాగాడు. అతను ధైర్యంగా ఉన్నట్లు నటించాడు, కానీ లోపల ప్రత్యర్థుల బలాన్ని చూసి భయపడుతున్నాడు. మనలో అభద్రత ఉన్నప్పుడు మనం ఎలా బయట భయాల మీద దృష్టి పెడతామో ఈ ఇతివృత్తం వివరిస్తుంది.",
+          "moral": "True strength comes from inner peace, not from comparing your army to others.",
+          "moral_te": "నిజమైన బలం అంతర్గత శాంతి నుండి వస్తుంది, మీ సైన్యాన్ని ఇతరులతో పోల్చుకోవడం వల్ల కాదు."
+        },
+        "activity": "In your journal, list a 'challenge' you are facing. Instead of listing why it is hard, list 3 strengths YOU have to face it.",
+        "activity_te": "మీ జర్నల్‌లో, మీరు ఎదుర్కొంటున్న ఒక 'సవాలు'ను రాయండి. అది ఎందుకు కష్టమో రాయడానికి బదులుగా, దాన్ని ఎదుర్కోవడానికి మీ వద్ద ఉన్న 3 బలాలను రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w1_2",
+        "title": "The Call to Action",
+        "title_te": "కర్తవ్య పిలుపు",
+        "emoji": "🐚",
+        "micro_theme": "The energy and vibration of readiness",
+        "micro_theme_te": "సిద్ధత యొక్క శక్తి మరియు కంపనం",
+        "shlokas": ["1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20"],
+        "story": {
+          "title": "The Sound of the Conches",
+          "title_te": "శంఖాల ధ్వని",
+          "content": "To encourage Duryodhana, the great grandsire Bhishma blew his conch shell like a lion's roar! Immediately, the whole field erupted in sound — drums, bugles, and trumpets. Then, Krishna and Arjuna blew their divine conches, Panchajanya and Devadatta. The vibration was so powerful it shook the hearts of those who were on the side of injustice. This represents the moment when we must commit fully to the task ahead.",
+          "content_te": "దుర్యోధనుడిని ఉత్సాహపరచడానికి, భీష్మ పితామహుడు సింహగర్జనలా తన శంఖాన్ని ఊదాడు! వెంటనే మైదానం అంతా డప్పులు, బాకాలు మరియు తంబురాల ధ్వనితో నిండిపోయింది. అప్పుడు కృష్ణుడు మరియు అర్జునుడు తమ దివ్య శంఖాలైన పాంచజన్యం మరియు దేవదత్తాలను ఊదారు. ఆ కంపనం ఎంత శక్తివంతంగా ఉందంటే, అన్యాయం వైపు ఉన్నవారి హృదయాలను వణికించింది. మనం చేసే పనికి పూర్తి అంకితభావంతో సిద్ధం కావాల్సిన క్షణాన్ని ఇది సూచిస్తుంది.",
+          "moral": "When you act for the right cause, your voice and actions carry a power that shakes injustice.",
+          "moral_te": "మీరు సరైన కారణం కోసం పనిచేసినప్పుడు, మీ గొంతు మరియు చర్యలు అన్యాయాన్ని వణికించే శక్తిని కలిగి ఉంటాయి."
+        },
+        "activity": "What is your 'Conch Shell'? What is the one thing you do or say that makes you feel energized and ready for a big task?",
+        "activity_te": "మీ 'శంఖం' ఏమిటి? మీరు ఒక పెద్ద పనికి సిద్ధంగా ఉన్నప్పుడు మీకు శక్తినిచ్చే ఒక విషయం లేదా మాట ఏమిటి?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w1_3",
+        "title": "The Turning Point",
+        "title_te": "మలుపు తిరిగే క్షణం",
+        "emoji": "🏹",
+        "micro_theme": "Observation before the final decision",
+        "micro_theme_te": "చివరి నిర్ణయానికి ముందు పరిశీలన",
+        "shlokas": ["1.21", "1.22", "1.23", "1.24", "1.25", "1.26", "1.27"],
+        "story": {
+          "title": "Between the Two Armies",
+          "title_te": "రెండు సైన్యాల మధ్య",
+          "content": "Arjuna, full of confidence, asked Krishna to move his chariot between the two armies. He wanted to see who he was about to fight. But as he looked, he didn't see 'enemies' — he saw his uncles, grandfathers, teachers, brothers, and friends. This is the 'Turning Point' where reality hits. Often, we are brave until we see the personal cost of our decisions.",
+          "content_te": "అర్జునుడు పూర్తి విశ్వాసంతో, తన రథాన్ని రెండు సైన్యాల మధ్యకు తీసుకెళ్లమని కృష్ణుడిని అడిగాడు. తాను ఎవరితో పోరాడబోతున్నాడో చూడాలనుకున్నాడు. కానీ అతను చూసినప్పుడు అతనికి 'శత్రువులు' కనిపించలేదు — తన పెదనాన్నలు, తాతయ్యలు, గురువులు, సోదరులు మరియు స్నేహితులు కనిపించారు. ఇదే వాస్తవం తెలిసే 'మలుపు తిరిగే క్షణం'. తరచుగా, మన నిర్ణయాల వల్ల మనకు కలిగే వ్యక్తిగత నష్టాన్ని చూసే వరకు మనం ధైర్యంగా ఉంటాము.",
+          "moral": "Wisdom requires looking at the situation from all sides, even the painful ones.",
+          "moral_te": "జ్ఞానం అంటే పరిస్థితిని అన్ని వైపుల నుండి చూడటం, బాధాకరమైన వైపుల నుండి కూడా."
+        },
+        "activity": "Debate: Was Arjuna's request to see everyone a sign of strength or a sign of doubt? Write 3 lines for each side.",
+        "activity_te": "చర్చ: అందరినీ చూడాలన్న అర్జునుడి అభ్యర్థన బలానికి సంకేతమా లేక సందేహానికా? ప్రతి పక్షానికి 3 వరుసలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w1_4",
+        "title": "The Emotional Crisis",
+        "title_te": "భావోద్వేగ సంక్షోభం",
+        "emoji": "💔",
+        "micro_theme": "Understanding physical and mental breakdown",
+        "micro_theme_te": "శారీరక మరియు మానసిక విచ్ఛిన్నతను అర్థం చేసుకోవడం",
+        "shlokas": ["1.28", "1.29", "1.30", "1.31", "1.32", "1.33", "1.34", "1.35"],
+        "story": {
+          "title": "Arjuna's Grief",
+          "title_te": "అర్జునుడి దుఃఖం",
+          "content": "Overwhelmed by what he saw, Arjuna's mind began to spin. His limbs grew weak, his mouth became dry, and his whole body trembled. His famous bow, Gandiva, slipped from his hand. He felt a deep sense of despair. He told Krishna that even the kingdom of the three worlds wouldn't make him happy if it meant killing those he loved. This is the deepest point of his crisis.",
+          "content_te": "తను చూసిన దానికి తట్టుకోలేక, అర్జునుడి మనసు తిరగడం మొదలైంది. అతని కాళ్లు చేతులు బలహీనపడ్డాయి, నోరు ఎండిపోయింది మరియు శరీరం మొత్తం వణికింది. అతని ప్రసిద్ధ విల్లు గాండీవం చేతి నుండి జారిపోయింది. అతను తీవ్రమైన నిరాశకు గురయ్యాడు. తాను ప్రేమించే వారిని చంపడం ద్వారా వచ్చే ముల్లోకాల రాజ్యాధిపత్యం కూడా తనకు సంతోషాన్ని ఇవ్వదని కృష్ణుడితో చెప్పాడు. ఇది అతని సంక్షోభంలో అత్యంత లోతైన క్షణం.",
+          "moral": "Compassion is a virtue, but when it is mixed with confusion, it can paralyze even a hero.",
+          "moral_te": "కరుణ అనేది ఒక గుణం, కానీ అది గందరగోళంతో కలిసినప్పుడు, అది ఒక వీరుడిని కూడా స్తంభింపజేయగలదు."
+        },
+        "activity": "What are the physical signs your body shows when you are very stressed? Knowing these signs helps you catch stress early.",
+        "activity_te": "మీరు చాలా ఒత్తిడిలో ఉన్నప్పుడు మీ శరీరం చూపే శారీరక సంకేతాలు ఏమిటి? ఈ సంకేతాలను తెలుసుకోవడం వల్ల మీరు ఒత్తిడిని ముందే గుర్తించవచ్చు.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w1_5",
+        "title": "Arguments of Logic",
+        "title_te": "తర్కబద్ధమైన వాదనలు",
+        "emoji": "⚖️",
+        "micro_theme": "How the mind justifies running away from duty",
+        "micro_theme_te": "కర్తవ్యం నుండి తప్పించుకోవడాన్ని మనసు ఎలా సమర్థించుకుంటుంది",
+        "shlokas": ["1.36", "1.37", "1.38", "1.39", "1.40", "1.41", "1.42", "1.43", "1.44", "1.45"],
+        "story": {
+          "title": "The Reason of the Heart",
+          "title_te": "హృదయ కారణం",
+          "content": "Arjuna started giving very logical reasons why they should not fight. He talked about family traditions, the chaos that follows war, and the sin of killing relatives. He sounded like a wise philosopher! But in reality, he was using logic to hide his fear of loss. We often find 'good' reasons to avoid doing 'hard' things.",
+          "content_te": "యుద్ధం ఎందుకు చేయకూడదో అర్జునుడు చాలా తర్కబద్ధమైన కారణాలు చెప్పడం మొదలుపెట్టాడు. అతను కుటుంబ సంప్రదాయాలు, యుద్ధం తర్వాత వచ్చే అల్లకల్లోలం మరియు బంధువులను చంపడం వల్ల కలిగే పాపం గురించి మాట్లాడాడు. అతను ఒక గొప్ప తత్వవేత్తలా మాట్లాడాడు! కానీ వాస్తవానికి, అతను తన నష్ట భయాన్ని దాచడానికి తర్కాన్ని వాడుతున్నాడు. మనం తరచుగా 'కష్టమైన' పనులను నివారించడానికి 'మంచి' కారణాలను వెతుకుతుంటాము.",
+          "moral": "Be careful when your logic is used to justify giving up on your responsibilities.",
+          "moral_te": "మీ బాధ్యతల నుండి తప్పుకోవడాన్ని సమర్థించుకోవడానికి మీ తర్కాన్ని వాడుతున్నప్పుడు జాగ్రత్తగా ఉండండి."
+        },
+        "activity": "Think of a time you made an excuse not to do something. Was it a 'real' reason or a 'logic' shield for your fear?",
+        "activity_te": "మీరు ఏదైనా చేయకపోవడానికి ఒక సాకు చెప్పిన సమయాన్ని గుర్తు తెచ్చుకోండి. అది 'నిజమైన' కారణమా లేక మీ భయానికి ఒక 'తర్క' కవచమా?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w1_6",
+        "title": "The Total Surrender",
+        "title_te": "పూర్తి లొంగుబాటు",
+        "emoji": "🧘",
+        "micro_theme": "Admitting you don't have the answer",
+        "micro_theme_te": "మీ దగ్గర సమాధానం లేదని అంగీకరించడం",
+        "shlokas": ["1.46", "1.47"],
+        "story": {
+          "title": "The Bow is Dropped",
+          "title_te": "విల్లు వదిలివేయబడింది",
+          "content": "Finally, having said everything he could, Arjuna fell silent. He cast aside his bow and arrows and sat down in the chariot, his mind overcome with grief. He had reached the end of his own strength. This is actually a very important state — because only when we admit we are lost can we truly be found. Arjuna is now ready to listen to the highest wisdom.",
+          "content_te": "చివరగా, చెప్పగలిగినవన్నీ చెప్పిన తర్వాత, అర్జునుడు మౌనంగా ఉండిపోయాడు. తన విల్లు మరియు బాణాలను పక్కన పడేసి, దుఃఖంతో నిండిన మనసుతో రథంలో కూర్చుండిపోయాడు. అతను తన సొంత బలం యొక్క అంతానికి చేరుకున్నాడు. ఇది నిజానికి చాలా ముఖ్యమైన స్థితి — ఎందుకంటే మనం తప్పిపోయామని అంగీకరించినప్పుడే మనం నిజంగా దొరుకుతాము. అర్జునుడు ఇప్పుడు అత్యున్నత జ్ఞానాన్ని వినడానికి సిద్ధంగా ఉన్నాడు.",
+          "moral": "Admitting your confusion is the first step toward true enlightenment.",
+          "moral_te": "మీ గందరగోళాన్ని అంగీకరించడం నిజమైన జ్ఞానోదయానికి మొదటి అడుగు."
+        },
+        "activity": "Write a short letter to your future self about what to do when you feel like giving up. What advice would you give?",
+        "activity_te": "మీరు వదులుకోవాలని అనిపించినప్పుడు ఏమి చేయాలో వివరిస్తూ మీ భవిష్యత్ స్వయానికి ఒక చిన్న లేఖ రాయండి. మీరు ఏ సలహా ఇస్తారు?",
+        "videoUrl": ""
+      }
+    ]
+  }
+}
