@@ -702,26 +702,36 @@ router.get('/quiz-history/:userId', async (req, res) => {
 router.get('/evaluations/hanuman-overall/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
-    // Get all quiz attempts for Hanuman Chalisa
-    const quizResult = await db.query(
-      'SELECT scripture, chapter, verse, score FROM quiz_results WHERE user_id = $1 AND scripture = $2 ORDER BY verse',
-      [userId, 'hanuman']
-    );
+    
+    let quizResultRows = [];
+    try {
+      const quizResult = await db.query(
+        'SELECT * FROM quiz_results WHERE user_id = $1 ORDER BY verse',
+        [userId]
+      );
+      quizResultRows = quizResult.rows;
+    } catch (e) {
+      console.warn('DB Query failed for hanuman-overall (fallback to empty):', e.message);
+    }
 
     // Group by verse and keep only the highest score per verse
+    // Only count if scripture is 'hanuman' (if column exists)
     const verseScores = {};
-    quizResult.rows.forEach(r => {
+    quizResultRows.forEach(r => {
+      if (r.scripture && r.scripture !== 'hanuman') return; 
+      
       const key = r.verse;
       if (!verseScores[key] || r.score > verseScores[key]) {
         verseScores[key] = r.score;
       }
     });
 
-    const totalVerses = Object.keys(verseScores).length;
-    const totalScore = Object.values(verseScores).reduce((sum, s) => sum + parseFloat(s), 0);
+    const scores = Object.values(verseScores);
+    const totalVerses = scores.length;
+    const totalScore = scores.reduce((sum, s) => sum + parseFloat(s), 0);
     const averageScore = totalVerses > 0 ? Math.round(totalScore / totalVerses) : 0;
-    const bestScore = totalVerses > 0 ? Math.max(...Object.values(verseScores)) : 0;
-    const worstScore = totalVerses > 0 ? Math.min(...Object.values(verseScores)) : 0;
+    const bestScore = totalVerses > 0 ? Math.max(...scores) : 0;
+    const worstScore = totalVerses > 0 ? Math.min(...scores) : 0;
 
     res.json({
       total_verses_attempted: totalVerses,

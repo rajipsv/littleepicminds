@@ -18,17 +18,26 @@ const QuizHistory = () => {
 
   useEffect(() => {
     if (!user) return;
-    Promise.all([
-      api.get(`/api/quiz-history/${user.id}`),
-      api.get(`/api/evaluations/hanuman-overall/${user.id}`)
-    ]).then(([quizRes, statsRes]) => {
-      setQuizzes(quizRes.data || []);
-      setHanumanStats(statsRes.data || null);
-      setLoading(false);
-    }).catch(err => {
-      console.error(err);
-      setLoading(false);
-    });
+    
+    // Fetch main quiz history
+    api.get(`/api/quiz-history/${user.id}`)
+      .then(res => {
+        setQuizzes(res.data || []);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Quiz history fetch error:", err);
+        setLoading(false);
+      });
+
+    // Fetch hanuman stats separately (optional)
+    api.get(`/api/evaluations/hanuman-overall/${user.id}`)
+      .then(res => {
+        setHanumanStats(res.data || null);
+      })
+      .catch(err => {
+        console.warn("Hanuman stats fetch error (non-critical):", err.message);
+      });
   }, [user]);
 
   const filteredQuizzes = quizzes.filter(q => {
