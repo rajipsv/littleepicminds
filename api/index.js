@@ -616,7 +616,8 @@ router.get('/leaderboard', async (req, res) => {
 
 router.post('/evaluations', async (req, res) => {
   try {
-    const { scripture, chapter_number, score, verse, quiz_details } = req.body;
+    let { scripture, chapter_number, score, verse, quiz_details } = req.body;
+    if (!scripture || scripture !== 'hanuman') scripture = 'gita'; // Safety default
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
