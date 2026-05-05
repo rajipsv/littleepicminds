@@ -320,31 +320,53 @@ const ScriptureLayout = () => {
                 <span className="font-bold text-gray-300">
                   {scripture === 'hanuman' ? (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Verse:') : (isTe ? 'శ్లోకాన్ని ఎంచుకోండి:' : 'Select Shloka:')}
                 </span>
-                <select
-                  value={activeVerseIndex}
-                  onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
-                  className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
-                >
-                  {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
-                    let label;
-                    if (scripture === 'hanuman') {
-                      if (num <= 2) label = isTe ? `దోహా ${num}` : `Doha ${num}`;
-                      else if (num <= 42) label = isTe ? `శ్లోకం ${num - 2}` : `Verse ${num - 2}`;
-                      else label = isTe ? `దోహా ${num - 40}` : `Doha ${num - 40}`; // Doha 3 and 4
-                    } else {
-                      label = isTe ? `శ్లోకం ${num}` : `Shloka ${num}`;
-                    }
-                    return (
-                      <option key={num} value={num - 1}>
-                        {label}
-                      </option>
-                    );
-                  })}
-                </select>
+                <div className="flex items-center gap-3">
+                  <select
+                    value={activeVerseIndex}
+                    onChange={(e) => { setActiveVerseIndex(Number(e.target.value)); setShowQuiz(false); }}
+                    className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner"
+                  >
+                    {Array.from({ length: totalVersesInChapter }, (_, i) => i + 1).map((num) => {
+                      let label;
+                      if (scripture === 'hanuman') {
+                        if (num <= 2) label = isTe ? `దోహా ${num}` : `Doha ${num}`;
+                        else if (num <= 42) label = isTe ? `శ్లోకం ${num - 2}` : `Verse ${num - 2}`;
+                        else label = isTe ? `దోహా ${num - 40}` : `Doha ${num - 40}`; // Doha 3 and 4
+                      } else {
+                        label = isTe ? `శ్లోకం ${num}` : `Shloka ${num}`;
+                      }
+                      return (
+                        <option key={num} value={num - 1}>
+                          {label}
+                        </option>
+                      );
+                    })}
+                  </select>
+                  <button 
+                    onClick={() => setShowQuiz(true)}
+                    className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/40 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all"
+                  >
+                    <Star size={16} />
+                    {isTe ? "పరీక్ష" : "Test Sloka"}
+                  </button>
+                </div>
               </div>
 
-              {/* Render the active verse */}
-              {(() => {
+              {/* Render the active verse or Quiz */}
+              {showQuiz ? (
+                <div className="animate-fade-in">
+                  <SlokaQuiz 
+                    scripture={scripture}
+                    chapter={activeChapter}
+                    verse={activeVerseIndex + 1}
+                    onClose={() => setShowQuiz(false)}
+                    onPass={() => {
+                      // Optional: handle pass
+                      setShowQuiz(false);
+                    }}
+                  />
+                </div>
+              ) : (() => {
                 const activeVerse = scripture === 'hanuman' 
                   ? verses[activeVerseIndex]
                   : verses.find(v => {
@@ -391,23 +413,55 @@ const ScriptureLayout = () => {
                 <span className="font-bold text-gray-300">
                   {isTe ? "ఇతివృత్తాన్ని ఎంచుకోండి:" : "Select Theme:"}
                 </span>
-                <select
-                  value={activeThemeIndex}
-                  onChange={(e) => setActiveThemeIndex(Number(e.target.value))}
-                  className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner max-w-[200px] md:max-w-md"
-                >
-                  {themes.map((theme, idx) => (
-                    <option key={theme.id} value={idx}>
-                      {idx + 1}. {isTe && theme.title_te ? theme.title_te : theme.title}
-                    </option>
-                  ))}
-                </select>
+                <div className="flex items-center gap-3">
+                  <select
+                    value={activeThemeIndex}
+                    onChange={(e) => { setActiveThemeIndex(Number(e.target.value)); setShowQuiz(false); }}
+                    className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner max-w-[200px] md:max-w-md"
+                  >
+                    {themes.map((theme, idx) => (
+                      <option key={theme.id} value={idx}>
+                        {idx + 1}. {isTe && theme.title_te ? theme.title_te : theme.title}
+                      </option>
+                    ))}
+                  </select>
+                  <button 
+                    onClick={() => setShowQuiz(true)}
+                    className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/40 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all"
+                  >
+                    <Star size={16} />
+                    {isTe ? "పరీక్ష" : "Test Theme"}
+                  </button>
+                </div>
               </div>
 
-              <ThemeViewer 
-                theme={themes[activeThemeIndex]} 
-                scripture={scripture} 
-              />
+              {showQuiz ? (
+                <div className="animate-fade-in">
+                  <SlokaQuiz 
+                    scripture={scripture}
+                    chapter={activeChapter}
+                    // For themes, we pass a representative verse number (e.g., from the theme's shlokas list)
+                    verse={(() => {
+                      const currentTheme = themes[activeThemeIndex];
+                      if (currentTheme && currentTheme.shlokas && currentTheme.shlokas.length > 0) {
+                        const firstShloka = currentTheme.shlokas[0];
+                        const parts = firstShloka.split('.');
+                        return parseInt(parts[parts.length - 1]) || 1;
+                      }
+                      return activeThemeIndex + 1; // Fallback
+                    })()}
+                    onClose={() => setShowQuiz(false)}
+                    onPass={() => {
+                      setShowQuiz(false);
+                    }}
+                  />
+                </div>
+              ) : (
+                <ThemeViewer 
+                  theme={themes[activeThemeIndex]} 
+                  scripture={scripture} 
+                />
+              )}
             </div>
           ) : (
             <div className="glass-card p-12 text-center border border-white/5">
