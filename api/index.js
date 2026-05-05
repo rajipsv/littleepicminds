@@ -326,66 +326,80 @@ router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
     const level = req.query.level || 'seeds';
     console.log(`[DEBUG] Level: ${level}`);
 
+    // Helper to generate questions for a single shloka
+    const generateShlokaQuestions = (shloka, ch, v) => {
+      if (!shloka) return [];
+      
+      // Use existing exercises if available
+      if (shloka.exercises && shloka.exercises[level]) {
+        const ex = shloka.exercises[level];
+        return [{ question: ex.question, options: ex.options, correct: ex.correct }];
+      }
+
+      const meaning = shloka.en?.meaning || '';
+      const childMeaning = shloka.en?.childMeaning || '';
+      const activity = shloka.en?.activity || '';
+
+      return [
+        {
+          question: `What is the main teaching of Shloka ${ch}.${v}?`,
+          options: [
+            childMeaning.substring(0, 80) + (childMeaning.length > 80 ? '...' : ''),
+            'Only the strong should fight',
+            'Wealth brings happiness'
+          ],
+          correct: 0
+        },
+        {
+          question: activity ? `The activity for this shloka (${ch}.${v}) suggests:` : `What lesson does Shloka ${ch}.${v} teach?`,
+          options: activity ? [
+            activity.substring(0, 80) + (activity.length > 80 ? '...' : ''),
+            'Always expect something in return',
+            'Only do things for praise'
+          ] : [
+            meaning.substring(0, 80) + (meaning.length > 80 ? '...' : ''),
+            'Avoid doing good deeds',
+            'Compete to defeat others'
+          ],
+          correct: 0
+        }
+      ];
+    };
+
+    // Case 1: Theme-based Quiz (Aggregated)
+    if (typeof verse === 'string' && verse.startsWith('theme_')) {
+      console.log(`[DEBUG] Processing Theme Quiz: ${verse}`);
+      const chThemes = data.themes?.gita?.[chapter]?.[level] || [];
+      const theme = chThemes.find(t => t.id === verse);
+      
+      if (!theme) return res.status(404).json({ error: 'Theme not found' });
+      
+      let themeQuestions = [];
+      if (theme.shlokas && Array.isArray(theme.shlokas)) {
+        theme.shlokas.forEach(shlokaId => {
+          const shloka = data.shlokas[shlokaId];
+          const parts = shlokaId.split('.');
+          const vNum = parts[parts.length - 1];
+          const qList = generateShlokaQuestions(shloka, chapter, vNum);
+          themeQuestions = [...themeQuestions, ...qList];
+        });
+      }
+      
+      if (themeQuestions.length === 0) return res.status(404).json({ error: 'No questions found for this theme' });
+      return res.json(themeQuestions);
+    }
+
+    // Case 2: Single Shloka Quiz
     let shloka = null;
     if (scripture === 'gita') {
       const key = `${chapter}.${verse}`;
-      console.log(`[DEBUG] Looking up Gita key: ${key}`);
       shloka = data.shlokas[key];
     } else if (scripture === 'hanuman') {
       shloka = getHanumanVerse(verse);
     }
 
-    console.log(`[DEBUG] Shloka found: ${!!shloka}`);
     if (!shloka) return res.status(404).json({ error: 'Shloka not found' });
-
-    // Use existing exercises if available
-    console.log(`[DEBUG] Checking for exercises at level: ${level}`);
-    if (shloka.exercises && shloka.exercises[level]) {
-      const ex = shloka.exercises[level];
-      console.log(`[DEBUG] Found manual exercises`);
-      return res.json([{ question: ex.question, options: ex.options, correct: ex.correct }]);
-    }
-    console.log(`[DEBUG] No manual exercises, auto-generating...`);
-
-    // Auto-generate 3 MCQ questions from shloka meaning
-    const meaning = shloka.en?.meaning || '';
-    const childMeaning = shloka.en?.childMeaning || '';
-    const activity = shloka.en?.activity || '';
-
-    const questions = [
-      {
-        question: `What is the main teaching of Shloka ${chapter}.${verse}?`,
-        options: [
-          childMeaning.substring(0, 60) + (childMeaning.length > 60 ? '...' : ''),
-          'Only the strong should fight',
-          'Wealth brings happiness'
-        ],
-        correct: 0
-      },
-      {
-        question: `In Shloka ${chapter}.${verse}, what does Krishna want us to focus on?`,
-        options: [
-          'Getting rewards and prizes',
-          'Doing our duty with full effort',
-          'Avoiding all responsibilities'
-        ],
-        correct: 1
-      },
-      {
-        question: activity ? `The activity for this shloka suggests:` : `What lesson does this shloka teach?`,
-        options: activity ? [
-          activity.substring(0, 60) + (activity.length > 60 ? '...' : ''),
-          'Always expect something in return',
-          'Only do things for praise'
-        ] : [
-          meaning.substring(0, 60) + (meaning.length > 60 ? '...' : ''),
-          'Avoid doing good deeds',
-          'Compete to defeat others'
-        ],
-        correct: 0
-      }
-    ];
-
+    const questions = generateShlokaQuestions(shloka, chapter, verse);
     res.json(questions);
   } catch (err) {
     res.status(500).send(err.message);

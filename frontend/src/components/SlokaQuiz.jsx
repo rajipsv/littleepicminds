@@ -16,11 +16,14 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   const isTe = currentLang === 'te';
   const isHanuman = scripture === 'hanuman';
 
+  const isTheme = typeof verse === 'string' && verse.includes('theme');
+  const themeNum = isTheme ? verse.split('_')[2] : null;
+
   const verseLabel = isHanuman ? (() => {
     if (verse <= 2) return `Doha ${verse}`;
     if (verse <= 42) return `Verse ${verse - 2}`;
     return `Doha ${verse - 40}`;
-  })() : `Shloka ${chapter}.${verse}`;
+  })() : isTheme ? (isTe ? `ఇతివృత్తం ${themeNum} పరీక్ష` : `Theme ${themeNum} Quiz`) : `Shloka ${chapter}.${verse}`;
 
   const scriptureName = isHanuman ? (isTe ? 'హనుమాన్ చాలీసా' : 'Hanuman Chalisa') : (isTe ? 'భగవద్గీత' : 'Bhagavad Gita');
 

@@ -440,16 +440,7 @@ const ScriptureLayout = () => {
                   <SlokaQuiz 
                     scripture={scripture}
                     chapter={activeChapter}
-                    // For themes, we pass a representative verse number (e.g., from the theme's shlokas list)
-                    verse={(() => {
-                      const currentTheme = themes[activeThemeIndex];
-                      if (currentTheme && currentTheme.shlokas && currentTheme.shlokas.length > 0) {
-                        const firstShloka = currentTheme.shlokas[0];
-                        const parts = firstShloka.split('.');
-                        return parseInt(parts[parts.length - 1]) || 1;
-                      }
-                      return activeThemeIndex + 1; // Fallback
-                    })()}
+                    verse={themes[activeThemeIndex].id}
                     onClose={() => setShowQuiz(false)}
                     onPass={() => {
                       setShowQuiz(false);
