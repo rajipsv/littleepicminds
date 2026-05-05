@@ -197,24 +197,40 @@ function getHanumanVerse(verseParam) {
 router.get('/themes/:scripture/:chapter', (req, res) => {
   try {
     const { scripture, chapter } = req.params;
-    const { level } = req.query; // seeds, seekers
+    const { level } = req.query; // seeds, seekers, warriors
+
+    // Robust chapter lookup: try direct, string, and "chapter" prefix
+    const chapterId = chapter.toString();
+    const chapterKey = chapterId.startsWith('chapter') ? chapterId.replace('chapter', '') : chapterId;
     
-    if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
-      return res.status(404).json({ error: 'Themes not found for this chapter' });
+    const scriptureData = data.themes[scripture] || data.themes[scripture.toLowerCase()];
+    if (!scriptureData) {
+      console.log(`[DEBUG] Scripture ${scripture} not found in themes. Available:`, Object.keys(data.themes));
+      return res.status(404).json({ error: `Scripture ${scripture} not found in themes` });
+    }
+
+    const chapterData = scriptureData[chapterKey] || scriptureData[`chapter${chapterKey}`] || scriptureData[chapterId];
+    
+    if (!chapterData) {
+      console.log(`[DEBUG] No chapter data found for Ch ${chapterKey}. Available:`, Object.keys(scriptureData));
+      return res.status(404).json({ error: `No themes found for chapter ${chapterKey}` });
     }
     
-    const chapterData = data.themes[scripture][chapter];
     let themesToReturn = [];
 
-    // Check if it's level-based structure { seeds: [], seekers: [] }
+    // Flexible level matching
     if (!Array.isArray(chapterData)) {
-      themesToReturn = chapterData[level] || chapterData['seekers'] || chapterData['seeds'] || [];
+      const requestedLevel = (level || 'seekers').toLowerCase();
+      themesToReturn = chapterData[requestedLevel] || 
+                       chapterData['seekers'] || 
+                       chapterData['seeds'] || 
+                       chapterData['warriors'] || 
+                       [];
     } else {
-      // Fallback for old array structure
       themesToReturn = chapterData;
     }
     
-    // Inject actual shloka data (Sanskrit, transliteration, audio, meanings) into each theme
+    // Inject actual shloka data
     const themesWithShlokas = themesToReturn.map(theme => {
       const populatedShlokas = (theme.shlokas || []).map(shlokaId => {
         const shlokaObj = data.shlokas[shlokaId];

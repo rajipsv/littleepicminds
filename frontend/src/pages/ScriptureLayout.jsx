@@ -62,31 +62,37 @@ const ScriptureLayout = () => {
     
     try {
       // 1. Fetch themes (Thematic Curriculum)
+      const themeUrl = `/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`;
+      console.log(`[DEBUG] Requesting themes from: ${themeUrl}`);
       try {
-        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`);
+        const themeRes = await api.get(themeUrl);
+        console.log(`[DEBUG] Themes received:`, themeRes.data?.length || 0);
         if (themeRes.data && themeRes.data.length > 0) {
           fetchedThemes = themeRes.data;
           setThemes(fetchedThemes);
           setActiveThemeIndex(0);
         }
       } catch (themeErr) {
-        console.log("No themes found for this chapter.");
+        console.log("[DEBUG] No themes found or error fetching themes:", themeErr.message);
       }
 
       // 2. Fetch raw verses (Sloka based)
       try {
-        const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
-        fetchedVerses = Object.values(res.data);
-        setVerses(fetchedVerses);
-        setActiveVerseIndex(0);
+        const verseRes = await api.get(`/api/verses?scripture=${scripture}&chapter=${chapterNum}`);
+        if (verseRes.data) {
+          fetchedVerses = Object.values(verseRes.data);
+          setVerses(fetchedVerses);
+          setActiveVerseIndex(0);
+        }
       } catch (verseErr) {
-        console.log("No verses found for this chapter.");
+        console.log("[DEBUG] No verses found for this chapter:", verseErr.message);
       }
 
       if (fetchedThemes.length === 0 && fetchedVerses.length === 0) {
         setError('No content available for this chapter yet.');
       }
     } catch (err) {
+      console.error("[DEBUG] fetchVerses global error:", err);
       if (err.response?.status === 403) {
         setError(err.response.data.error);
       } else {
