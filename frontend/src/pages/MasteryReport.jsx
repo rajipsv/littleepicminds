@@ -190,6 +190,9 @@ const MasteryReport = () => {
                 <BookOpen size={20} className="text-lem-accent" />
                 Bhagavad Gita Breakdown
               </h3>
+              <Link to="/quiz-history" className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1">
+                <ClipboardList size={14} /> Quiz History
+              </Link>
             </div>
             
             <div className="overflow-x-auto">
