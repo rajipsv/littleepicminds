@@ -68,9 +68,9 @@ const ThemeViewer = ({ theme, scripture }) => {
               <p className="text-white font-bold text-lg">{isTe && theme.story.moral_te ? theme.story.moral_te : theme.story.moral}</p>
             </div>
 
-            {/* Watch Video Hyperlink - Premium Button Style */}
-            {theme.videoUrl && (
-              <div className="mt-8 pt-8 border-t border-lem-glass-border">
+            {/* Watch Video Section - Always visible, grayed out if no link */}
+            <div className="mt-8 pt-8 border-t border-lem-glass-border">
+              {theme.videoUrl ? (
                 <a 
                   href={theme.videoUrl} 
                   target="_blank" 
@@ -99,8 +99,31 @@ const ThemeViewer = ({ theme, scripture }) => {
                     </svg>
                   </div>
                 </a>
-              </div>
-            )}
+              ) : (
+                <div 
+                  className="flex items-center justify-between bg-white/5 border border-white/10 p-6 rounded-2xl opacity-60 cursor-not-allowed"
+                >
+                  <div className="flex items-center gap-5">
+                    <div className="w-14 h-14 bg-gray-600 rounded-full flex items-center justify-center text-gray-300">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5.14v14l11-7-11-7z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-bold text-gray-500 mb-1">
+                        {isTe ? "వీడియో త్వరలో వస్తుంది" : "Video Coming Soon"}
+                      </h4>
+                      <p className="text-gray-500 text-sm font-medium italic">
+                        {isTe ? "ఈ పాఠం కోసం మేము వీడియోని సిద్ధం చేస్తున్నాము" : "We are preparing the video for this lesson"}
+                      </p>
+                    </div>
+                  </div>
+                  <div className="hidden md:flex items-center gap-2 text-gray-600 font-bold uppercase tracking-widest text-xs">
+                    {isTe ? "అందుబాటులో లేదు" : "Unavailable"}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         )}
 
