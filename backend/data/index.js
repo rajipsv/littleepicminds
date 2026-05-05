@@ -12,9 +12,29 @@ const DATA_DIR = __dirname;
 const chaptersConfig = require('./chapters.json');
 let themes = {};
 try {
-  themes = require('./themes.json');
+  const seedsThemes = require('./themes_seeds.json');
+  const seekersThemes = require('./themes_seekers.json');
+  
+  // Merge into structured format: { scripture: { chapter: { seeds: [], seekers: [] } } }
+  themes = { gita: {} };
+  
+  // Merge Seeds
+  if (seedsThemes.gita) {
+    Object.keys(seedsThemes.gita).forEach(ch => {
+      if (!themes.gita[ch]) themes.gita[ch] = {};
+      themes.gita[ch].seeds = seedsThemes.gita[ch];
+    });
+  }
+  
+  // Merge Seekers
+  if (seekersThemes.gita) {
+    Object.keys(seekersThemes.gita).forEach(ch => {
+      if (!themes.gita[ch]) themes.gita[ch] = {};
+      themes.gita[ch].seekers = seekersThemes.gita[ch];
+    });
+  }
 } catch (err) {
-  console.warn('⚠️ Could not load themes.json:', err.message);
+  console.warn('⚠️ Could not load level-based themes:', err.message);
 }
 
 /**
