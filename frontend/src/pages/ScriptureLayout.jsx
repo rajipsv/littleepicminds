@@ -62,7 +62,7 @@ const ScriptureLayout = () => {
     try {
       // 1. Fetch themes (Thematic Curriculum)
       try {
-        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}`);
+        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`);
         if (themeRes.data && themeRes.data.length > 0) {
           fetchedThemes = themeRes.data;
           setThemes(fetchedThemes);

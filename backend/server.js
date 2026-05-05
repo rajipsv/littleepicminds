@@ -41,15 +41,25 @@ const data = require('./data');
 app.get('/api/themes/:scripture/:chapter', (req, res) => {
   try {
     const { scripture, chapter } = req.params;
+    const { level } = req.query; // seeds, seekers
     
     if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
       return res.status(404).json({ error: 'Themes not found for this chapter' });
     }
     
-    const chapterThemes = data.themes[scripture][chapter];
+    let chapterData = data.themes[scripture][chapter];
+    let themesToReturn = [];
+
+    // Check if it's level-based structure { seeds: [], seekers: [] }
+    if (!Array.isArray(chapterData)) {
+      themesToReturn = chapterData[level] || chapterData['seekers'] || chapterData['seeds'] || [];
+    } else {
+      // Fallback for old array structure
+      themesToReturn = chapterData;
+    }
     
     // Inject actual shloka data
-    const themesWithShlokas = chapterThemes.map(theme => {
+    const themesWithShlokas = themesToReturn.map(theme => {
       const populatedShlokas = (theme.shlokas || []).map(shlokaId => {
         const shlokaObj = data.shlokas[shlokaId];
         return shlokaObj ? { ...shlokaObj, id: shlokaId } : { error: 'Shloka data missing', id: shlokaId };
