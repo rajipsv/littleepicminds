@@ -132,8 +132,17 @@ const QuizHistory = () => {
         ) : (
           <div className="space-y-4">
             {filteredQuizzes.map((q) => {
-              const questions = typeof q.questions === 'string' ? JSON.parse(q.questions) : q.questions;
-              const correct = questions.filter(a => a.chosen === a.correct).length;
+              let questions = [];
+              try {
+                questions = typeof q.questions === 'string' ? JSON.parse(q.questions) : (q.questions || []);
+              } catch (e) {
+                console.error("Error parsing quiz questions:", e);
+                questions = [];
+              }
+              
+              if (!Array.isArray(questions)) questions = [];
+              
+              const correct = questions.filter(a => a && a.chosen === a.correct).length;
               const total = questions.length;
 
               return (
