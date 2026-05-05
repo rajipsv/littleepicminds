@@ -418,7 +418,7 @@ const CHAPTER_15_SHLOKAS = {
         lineBreakdown: [
             { sanskrit: "यतन्तो योगिनश्चैनं", word: "yatanto yoginaś cainaṁ", sanskrit_te: "యతన్తో యోగినశ్చైనం", en: "The striving yogis indeed this", te: "ప్రయత్నించే యోగులు ఈ పరమాత్మను" },
             { sanskrit: "पश्यन्त्यात्मन्यवस्थितम्", word: "paśyanty ātmany avasthitam", sanskrit_te: "పశ్యన్త్యాత్మన్యవస్థితమ్", en: "see (Him) established in the self", te: "తమలో నిలిచి ఉండడం చూస్తారు" },
-            { sanskrit: "यतन्तोऽप्यकृतात्मानो", word: "yatanto ’py akṛtātmāno", sanskrit_te: "యతన్తోऽప్యకృతాత్మానో", en: "striving also, those with unrefined self", te: "ప్రయత్నించినా అపరిపక్వ మనస్సు గలవారు" },
+            { sanskrit: "यतन्तोऽप्यकृतात्मानो", word: "yatanto ’py akṛtātmāno", sanskrit_te: "యతన్తోఽప్యకృతాత్మానో", en: "striving also, those with unrefined self", te: "ప్రయత్నించినా అపరిపక్వ మనస్సు గలవారు" },
             { sanskrit: "नैनं पश्यन्त्यचेतसः", word: "nainaṁ paśyanty acetasaḥ", sanskrit_te: "నైనం పశ్యన్త్యచేతసః", en: "do not see Him, lacking discrimination", te: "ఆయనను చూడలేరు, వివేకం లేనివారు" }
         ]
     },
@@ -443,7 +443,7 @@ const CHAPTER_15_SHLOKAS = {
         telugu_script: "యదాదిత్యగతం తేజో జగద్భాసయతేऽఖిలమ్ |\nయచ్చన్ద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్ ||",
         lineBreakdown: [
             { sanskrit: "यदादित्यगतं तेजो", word: "yad āditya-gataṁ tejaḥ", sanskrit_te: "యదాదిత్యగతం తేజో", en: "That which is radiance in the sun", te: "సూర్యునిలో ఉన్న తేజస్సు ఏదో" },
-            { sanskrit: "जगद्भासयतेऽखिलम्", word: "jagad bhāsayate ’khilam", sanskrit_te: "జగద్భాసయతేऽఖిలమ్", en: "illuminates the entire world", te: "సమస్త లోకాన్ని ప్రకాశింపజేస్తుందో" },
+            { sanskrit: "जगद्भासयतेऽखिलम्", word: "jagad bhāsayate ’khilam", sanskrit_te: "జగద్భాసయతేఽఖిలమ్", en: "illuminates the entire world", te: "సమస్త లోకాన్ని ప్రకాశింపజేస్తుందో" },
             { sanskrit: "यच्चन्द्रमसि यच्चाग्नौ", word: "yac candramasi yac cāgnau", sanskrit_te: "యచ్చన్ద్రమసి యచ్చాగ్నౌ", en: "and that in the moon and that in fire", te: "మరియు చంద్రునిలో, అగ్నిలో ఏది" },
             { sanskrit: "तत्तेजो विद्धि मामकम्", word: "tat tejo viddhi māmakam", sanskrit_te: "తత్తేజో విద్ధి మామకమ్", en: "that radiance know as Mine", te: "ఆ తేజస్సును నాది అని తెలుసుకో" }
         ]
@@ -549,7 +549,7 @@ const CHAPTER_15_SHLOKAS = {
             { sanskrit: "द्वाविमौ पुरुषौ लोके", word: "dvāv imau puruṣau loke", sanskrit_te: "ద్వావిమౌ పురుషౌ లోకే", en: "Two Puruṣas in the world", te: "లోకంలో ఇద్దరు పురుషులు" },
             { sanskrit: "क्षरश्चाक्षर एव च", word: "kṣaraś cākṣara eva ca", sanskrit_te: "క్షరశ్చాక్షర ఏవ చ", en: "Perishable and imperishable indeed", te: "నాశనమయ్యేవాడు, నాశనం లేనివాడు" },
             { sanskrit: "क्षरः सर्वाणि भूतानि", word: "kṣaraḥ sarvāṇi bhūtāni", sanskrit_te: "క్షరః సర్వాణి భూతాని", en: "Perishable are all beings", te: "నాశనమయ్యేవాడు = సమస్త ప్రాణులు" },
-            { sanskrit: "कूटस्थोऽक्षर उच्यते", word: "kūṭastho ’kṣara ucyate", sanskrit_te: "కూటస్థోऽక్షర ఉచ్యతే", en: "Unchanging is called imperishable", te: "మార్పులేనివాడు = అక్షరుడు అనబడతాడు" }
+            { sanskrit: "कूटस्थोऽक्षर उच्यते", word: "kūṭastho ’kṣara ucyate", sanskrit_te: "కూటస్థోఽక్షర ఉచ్యతే", en: "Unchanging is called imperishable", te: "మార్పులేనివాడు = అక్షరుడు అనబడతాడు" }
         ]
     },
     "15.17": {
@@ -598,9 +598,9 @@ const CHAPTER_15_SHLOKAS = {
         },
         telugu_script: "యస్మాత్క్షరమతీతోऽహమక్షరాదపి చోత్తమః |\nఅతోऽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః ||",
         lineBreakdown: [
-            { sanskrit: "यस्मात्क्षरमतीतोऽहम्", word: "yasmāt kṣaram atīto ’ham", sanskrit_te: "యస్మాత్క్షరమతీతోऽహమ్", en: "Because I transcend the perishable", te: "ఎందుకంటే నేను క్షరునికి అతీతుడను" },
+            { sanskrit: "यस्मात्क्षरमतीतोऽहम्", word: "yasmāt kṣaram atīto ’ham", sanskrit_te: "యస్మాత్క్షరమతీతోఽహమ్", en: "Because I transcend the perishable", te: "ఎందుకంటే నేను క్షరునికి అతీతుడను" },
             { sanskrit: "अक्षरादपि चोत्तमः", word: "akṣarād api ca uttamaḥ", sanskrit_te: "అక్షరాదపి చోత్తమః", en: "and higher than imperishable too", te: "మరియు అక్షరునికంటే కూడా ఉత్తముడను" },
-            { sanskrit: "अतोऽस्मि लोके वेदे च", word: "ato ’smi loke vede ca", sanskrit_te: "అతోऽస్మి లోకే వేదే చ", en: "therefore in the world and Vedas", te: "అందుకే లోకంలో మరియు వేదంలో" },
+            { sanskrit: "अतोऽस्मि लोके वेदे च", word: "ato ’smi loke vede ca", sanskrit_te: "అతోఽస్మి లోకే వేదే చ", en: "therefore in the world and Vedas", te: "అందుకే లోకంలో మరియు వేదంలో" },
             { sanskrit: "प्रथितः पुरुषोत्तमः", word: "prathitaḥ puruṣottamaḥ", sanskrit_te: "ప్రథితః పురుషోత్తమః", en: "I am renowned as Puruṣottama", te: "నేను పురుషోత్తముడిగా ప్రసిద్ధుడను" }
         ]
     },

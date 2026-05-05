@@ -11,9 +11,10 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
 
   useEffect(() => {
     if (!breakdown) return;
+    const isTe = currentLang === 'te';
     const meanings = breakdown.map(item => ({
       id: item.sanskrit,
-      text: item.en  // Always use English meaning
+      text: isTe && item.te ? item.te : item.en
     }));
 
     // Fisher-Yates shuffle
@@ -27,6 +28,8 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
   }, [breakdown, currentLang]);
 
   if (!breakdown || breakdown.length === 0) return null;
+
+  const isTe = currentLang === 'te';
 
   const handleWordSelect = (wordSanskrit) => {
     if (matches[wordSanskrit]) return;
@@ -55,12 +58,14 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
     <div className="space-y-3 mt-4">
       {!selectedWord && (
         <p className="text-xs text-gray-400 text-center italic">
-          👆 Select a word on the left, then tap its meaning on the right
+          {isTe 
+            ? "👆 ఎడమవైపున ఉన్న పదాన్ని ఎంచుకుని, ఆపై కుడివైపున ఉన్న దాని అర్థాన్ని నొక్కండి" 
+            : "👆 Select a word on the left, then tap its meaning on the right"}
         </p>
       )}
       {selectedWord && (
         <p className="text-xs text-lem-accent text-center font-bold animate-pulse">
-          Now pick the matching meaning →
+          {isTe ? "ఇప్పుడు దానికి సరిపోయే అర్థాన్ని ఎంచుకోండి →" : "Now pick the matching meaning →"}
         </p>
       )}
 
@@ -68,13 +73,16 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
         {/* Transliteration column */}
         <div>
           <h4 className="text-lem-accent text-xs font-bold mb-3 uppercase tracking-wider">
-            Transliteration
+            {isTe ? "ఉచ్చారణ (Transliteration)" : "Transliteration"}
           </h4>
           <div className="space-y-2">
             {breakdown.map((item, i) => {
               const wordStr = item.sanskrit;
-              // Show English transliteration (romanised), not Devanagari
-              const displayStr = item.word || item.transliteration || item.sanskrit;
+              // If Telugu mode, prioritize sanskrit_te
+              const displayStr = isTe && item.sanskrit_te 
+                ? item.sanskrit_te 
+                : (item.word || item.transliteration || item.sanskrit);
+              
               const isMatched = matches[wordStr];
               const isSelected = selectedWord === wordStr;
 
@@ -101,7 +109,7 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
         {/* Meanings column */}
         <div>
           <h4 className="text-lem-accent text-xs font-bold mb-3 uppercase tracking-wider">
-            Meanings
+            {isTe ? "అర్థాలు (Meanings)" : "Meanings"}
           </h4>
           <div className="space-y-2">
             {scrambledMeanings.map((meaning, i) => {

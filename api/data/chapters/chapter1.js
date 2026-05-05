@@ -56,7 +56,7 @@ const CHAPTER_1_SHLOKAS = {
       {
         sanskrit: "समवेता युयुत्सवः",
         word: "samavetā yuyutsavaḥ",
-        sanskrit_te: "సమవేతా యుయుత్सवః",
+        sanskrit_te: "సమవేతా యుయుత్సవః",
         en: "gathered together, desiring to fight",
         te: "యుద్ధం చేయడానికి సిద్ధపడి చేరిన",
       },
