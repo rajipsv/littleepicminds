@@ -9,9 +9,7 @@ import Register from './pages/Register';
 import Subscription from './pages/Subscription';
 import ScriptureLayout from './pages/ScriptureLayout';
 import SettingsPage from './pages/Settings';
-import Journal from './pages/Journal';
 import MasteryReport from './pages/MasteryReport';
-import QuizHistory from './pages/QuizHistory';
 import About from './pages/About';
 import VentureDashboard from './pages/VentureDashboard';
 import AdminDashboard from './pages/AdminDashboard';
@@ -27,9 +25,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/subscribe" element={<Subscription />} />
             <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/journal" element={<Journal />} />
             <Route path="/progress" element={<MasteryReport />} />
-            <Route path="/quiz-history" element={<QuizHistory />} />
             <Route path="/about" element={<About />} />
              <Route path="/readiness" element={<VentureDashboard />} />
             <Route path="/admin" element={<AdminDashboard />} />

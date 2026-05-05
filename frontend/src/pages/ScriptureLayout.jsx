@@ -276,7 +276,7 @@ const ScriptureLayout = () => {
                 <Target size={16} />
                 {isTe ? "నా పురోగతి" : "My Progress"}
               </Link>
-              <Link to={`/journal?scripture=${scripture}`} className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
+              <Link to={`/progress?tab=journal&scripture=${scripture}`} className="flex items-center gap-2 bg-white/5 border border-lem-glass-border text-gray-300 px-4 py-2 rounded-xl text-sm font-bold hover:bg-white/10 hover:text-white transition-all">
                 <Star size={16} />
                 {isTe ? "నా జర్నల్" : "My Journal"}
               </Link>
