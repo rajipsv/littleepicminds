@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, useNavigate, Link, useLocation } from 'react-router-dom';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import { ChevronLeft, CheckCircle, XCircle, Award, BarChart3 } from 'lucide-react';
