@@ -17,6 +17,397 @@
         "activity": "Can you count to 5 while looking around the room and finding one blue thing?",
         "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4",
         "id": "theme_1_1_seeds"
+      },
+      {
+        "title": "Planning & Strategy",
+        "emoji": "🧠",
+        "micro_theme": "Think and plan before action",
+        "shlokas": [
+          "1.3",
+          "1.4"
+        ],
+        "story": {
+          "title": "The Strategic Plan",
+          "content": "A child was planning team strategy. Instead of just running wildly, they thought of a plan to help their team win.",
+          "moral": "Thinking and planning before action gives you a big advantage."
+        },
+        "activity": "What is one 'strategy' you use when playing your favorite game?",
+        "id": "theme_1_2",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Knowing Your Team",
+        "emoji": "👥",
+        "micro_theme": "Understand your strengths",
+        "shlokas": [
+          "1.5",
+          "1.6"
+        ],
+        "story": {
+          "title": "Identifying Team Players",
+          "content": "A child was identifying team players. They knew one friend was fast, another was strong, and another was smart. Together, they were an unbeatable team.",
+          "moral": "Knowing what you and your friends are good at makes teamwork much easier."
+        },
+        "activity": "Name one thing you are really good at, and one thing your best friend is really good at.",
+        "id": "theme_1_3",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Leadership & Guidance",
+        "emoji": "📣",
+        "micro_theme": "Leaders guide the team",
+        "shlokas": [
+          "1.7",
+          "1.8"
+        ],
+        "story": {
+          "title": "Motivating the Team",
+          "content": "The team captain was motivating players. Even when they felt tired, the leader's words made them feel proud and strong again.",
+          "moral": "A good leader doesn't just give orders; they motivate and inspire others."
+        },
+        "activity": "What is one nice thing you can say to encourage a friend today?",
+        "id": "theme_1_4",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Confidence in Strength",
+        "emoji": "🧾",
+        "micro_theme": "Trust your preparation",
+        "shlokas": [
+          "1.9",
+          "1.10"
+        ],
+        "story": {
+          "title": "Feeling Ready",
+          "content": "Instead of worrying, a child was feeling ready before the match. They knew they had practiced hard and prepared well.",
+          "moral": "Trusting your preparation pushes away your fears."
+        },
+        "activity": "Count on your fingers 3 things that make you a strong person.",
+        "id": "theme_1_5",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Preparing for Action",
+        "emoji": "🔔",
+        "micro_theme": "Get ready before starting",
+        "shlokas": [
+          "1.11",
+          "1.12"
+        ],
+        "story": {
+          "title": "Final Preparation Moment",
+          "content": "A child was in the final preparation moment before starting. They tied their shoes tight, drank water, and took deep breaths.",
+          "moral": "Taking time to prepare makes the actual task much easier."
+        },
+        "activity": "What is your routine to 'get ready' before you go to school or sleep?",
+        "id": "theme_1_6",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Energy & Excitement",
+        "emoji": "🥁",
+        "micro_theme": "Build energy together",
+        "shlokas": [
+          "1.13",
+          "1.14"
+        ],
+        "story": {
+          "title": "The Team Cheer",
+          "content": "There was huge excitement in the team cheer moment. High energy helps wake up your body and mind for action.",
+          "moral": "Excitement and high energy can give you the push you need to start."
+        },
+        "activity": "Do 5 jumping jacks right now to build some high energy!",
+        "id": "theme_1_7",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Showing Presence",
+        "emoji": "🔊",
+        "micro_theme": "Step forward with confidence",
+        "shlokas": [
+          "1.15",
+          "1.16"
+        ],
+        "story": {
+          "title": "Entering the Stage Boldly",
+          "content": "A child was entering the stage boldly. They stood tall and smiled. Even before they spoke a word, everyone believed in them.",
+          "moral": "Standing tall and confident helps you believe in yourself, and helps others believe in you too."
+        },
+        "activity": "Stand up straight, push your chest out slightly, and hold your head high!",
+        "id": "theme_1_8",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Readiness & Focus",
+        "emoji": "🎯",
+        "micro_theme": "Be ready when action begins",
+        "shlokas": [
+          "1.17",
+          "1.18"
+        ],
+        "story": {
+          "title": "Waiting for Your Turn",
+          "content": "A child was waiting for their turn in a game. They held their bat ready, eyes on the ball, completely focused.",
+          "moral": "Stay alert and focused so you are ready when it's your time to act."
+        },
+        "activity": "What do you do to stay patient and ready when you have to wait for your turn?",
+        "id": "theme_1_9",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "title": "Final Observation",
+        "emoji": "👁️",
+        "micro_theme": "Observe before taking action",
+        "shlokas": [
+          "1.19",
+          "1.20"
+        ],
+        "story": {
+          "title": "Looking Before Making a Move",
+          "content": "The child was looking before making a move. Instead of just running blindly, they checked the whole field one last time.",
+          "moral": "Final observation ensures you have the full picture before you act."
+        },
+        "activity": "Before starting your next task, take one last look to make sure you have everything you need.",
+        "id": "theme_1_10",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_11",
+        "title": "Overwhelmed by Emotions",
+        "emoji": "😟",
+        "micro_theme": "Fear and confusion can take over",
+        "shlokas": [
+          "1.28",
+          "1.29"
+        ],
+        "story": {
+          "title": "The Big Stage Fright",
+          "content": "A child named Rohan was so excited for the school talent show. But right before stepping on stage, he looked at the huge crowd and completely froze! Fear and confusion took over, just like how Arjuna felt when he saw everyone lined up to fight.",
+          "moral": "It is completely normal to feel overwhelmed by big emotions when facing something scary."
+        },
+        "activity": "Draw a face showing what 'overwhelmed' looks like, and another showing 'calm'.",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_12",
+        "title": "Physical Signs of Fear",
+        "emoji": "😰",
+        "micro_theme": "Fear affects body and mind",
+        "shlokas": [
+          "1.29",
+          "1.30"
+        ],
+        "story": {
+          "title": "The Shaking Knees",
+          "content": "Before his big math exam, Sam's hands got sweaty and his knees literally started shaking. He felt so weak he sat down. When we are extremely nervous, our body reacts! Arjuna's bow even slipped from his hands because he was so nervous.",
+          "moral": "Your body reacts to your thoughts. Calming your mind will calm your body."
+        },
+        "activity": "When you feel nervous, where do you feel it in your body? (Tummy? Hands?)",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_13",
+        "title": "Losing Clarity",
+        "emoji": "❓",
+        "micro_theme": "Confusion makes decisions hard",
+        "shlokas": [
+          "1.30",
+          "1.31"
+        ],
+        "story": {
+          "title": "The Ice Cream Dilemma",
+          "content": "Mia was at the ice cream shop. There were 50 flavors! Her mind got so confused she just couldn't pick. The longer she looked, the harder it got. When our mind is confused, even simple decisions seem impossible.",
+          "moral": "When you are confused, take a deep breath and keep things simple."
+        },
+        "activity": "What do you do when you can't decide between two fun things?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_14",
+        "title": "Avoiding Responsibility",
+        "emoji": "⚖️",
+        "micro_theme": "Running away from duty",
+        "shlokas": [
+          "1.31",
+          "1.32"
+        ],
+        "story": {
+          "title": "The Messy Room",
+          "content": "Leo's mom told him to clean his very messy room. Instead, Leo said, 'I don't even care about having a clean room anymore!' and tried to avoid doing it. Running away from duty doesn't fix the problem; it just leaves the room messy.",
+          "moral": "We must face our responsibilities, even when they seem hard or unpleasant."
+        },
+        "activity": "Name one chore you don't like doing, but you know you have to.",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_15",
+        "title": "Emotional Attachment",
+        "emoji": "💔",
+        "micro_theme": "Attachment affects decisions",
+        "shlokas": [
+          "1.33",
+          "1.34"
+        ],
+        "story": {
+          "title": "The Spelling Bee",
+          "content": "Tina had to compete against her best friend in the final round of the spelling bee. She didn't want to spell the word right because she didn't want her friend to lose. Her attachment to her friend clouded her judgment of simply doing her best.",
+          "moral": "Sometimes our love for others makes it hard to do what we are supposed to do."
+        },
+        "activity": "Is it better to let your friend win, or for both of you to do your absolute best?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_16",
+        "title": "Conflict of Relationships",
+        "emoji": "🤝",
+        "micro_theme": "Hard choices with loved ones",
+        "shlokas": [
+          "1.34",
+          "1.35"
+        ],
+        "story": {
+          "title": "The Broken Vase",
+          "content": "Jay saw his older brother accidentally break a vase. His mother asked who did it. Jay loved his brother, but he knew lying was wrong. Choosing between doing what is right and protecting someone you love is a very hard choice.",
+          "moral": "Always choose truth and duty, even when it involves people you care about."
+        },
+        "activity": "What would you do if your friend asked you to keep a secret that wasn't safe?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_17",
+        "title": "Refusing to Act",
+        "emoji": "🚫",
+        "micro_theme": "Saying no to responsibility",
+        "shlokas": [
+          "1.35",
+          "1.36"
+        ],
+        "story": {
+          "title": "Giving Up Early",
+          "content": "When Neha saw the huge puzzle with 1000 pieces, she just sat on the floor and said, 'I am not doing this!' She gave up before she even tried placing one piece. Refusing to act guarantees you will never finish.",
+          "moral": "You can't succeed if you refuse to even start."
+        },
+        "activity": "Think of a time you wanted to give up before trying. How did you push through?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_18",
+        "title": "Fear of Consequences",
+        "emoji": "⚠️",
+        "micro_theme": "Overthinking outcomes",
+        "shlokas": [
+          "1.36",
+          "1.37"
+        ],
+        "story": {
+          "title": "The Nervous Goalie",
+          "content": "Max was the goalie for his soccer team. He was terrified of missing the ball and making his team lose. Because he was so focused on the fear of making a mistake, he wasn't paying attention to the game!",
+          "moral": "Focusing too much on 'what if things go wrong' stops you from doing things right."
+        },
+        "activity": "Say out loud: 'I am not afraid of making mistakes, I learn from them!'",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_19",
+        "title": "Thinking Too Much",
+        "emoji": "🌪️",
+        "micro_theme": "Overthinking leads to stress",
+        "shlokas": [
+          "1.38",
+          "1.39"
+        ],
+        "story": {
+          "title": "The Scary Shadows",
+          "content": "At night, Lily saw a weird shadow on her wall. She started imagining it was a monster, then a dragon, then aliens! She overthought it so much she couldn't sleep. Her dad turned on the light—it was just a jacket. Overthinking creates stress that isn't real.",
+          "moral": "Don't let your imagination create problems that aren't there."
+        },
+        "activity": "When you start overthinking, name 3 things you can see in the room to ground yourself.",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_20",
+        "title": "Confused Judgment",
+        "emoji": "🧠",
+        "micro_theme": "Confusion clouds right thinking",
+        "shlokas": [
+          "1.40",
+          "1.41"
+        ],
+        "story": {
+          "title": "The Mixed-Up Map",
+          "content": "Aya tried to read a map while riding a bumpy, fast train. Everything looked blurry and she got totally confused about where to go. When our mind is bumpy with emotions, our judgment gets blurry and we can't tell right from wrong.",
+          "moral": "Calm your mind first, then decide what is right."
+        },
+        "activity": "Take a deep breath and count to 5. Notice how your mind slows down.",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_21",
+        "title": "Negative Thinking Spiral",
+        "emoji": "📉",
+        "micro_theme": "One negative thought leads to another",
+        "shlokas": [
+          "1.41",
+          "1.42"
+        ],
+        "story": {
+          "title": "The Bad Day Trap",
+          "content": "Sam spilled his juice. Then he thought, 'Today is terrible.' Because he was grumpy, he forgot his homework. Then he thought, 'I am the worst!' One bad thought led to another until he was stuck in a spiral of worry.",
+          "moral": "Stop the spiral! One bad thing doesn't mean everything is bad."
+        },
+        "activity": "If you have a bad thought, how can you change it into a good thought immediately?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_22",
+        "title": "Fear of Loss",
+        "emoji": "🌀",
+        "micro_theme": "Fear of losing everything",
+        "shlokas": [
+          "1.42",
+          "1.43"
+        ],
+        "story": {
+          "title": "The Block Tower",
+          "content": "Zara built a tall block tower. She was so afraid of it falling over that she wouldn't let anyone come near her, and she stopped having fun building it. Fear of losing something ruins the joy of having it.",
+          "moral": "Don't let the fear of losing stop you from enjoying what you have."
+        },
+        "activity": "Think of a time you lost a game but still had fun playing.",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_23",
+        "title": "Losing Confidence",
+        "emoji": "😔",
+        "micro_theme": "Giving up mentally",
+        "shlokas": [
+          "1.44",
+          "1.45"
+        ],
+        "story": {
+          "title": "The Steep Hill",
+          "content": "Ravi was riding his bike up a hill. It looked so steep! Before he even tried pedaling hard, his mind said 'I can't do this,' and he put his feet down. He gave up in his mind before his legs even got tired.",
+          "moral": "Your mind gives up way before your body does. Stay confident!"
+        },
+        "activity": "Stand up tall like a superhero and say, 'I can do hard things!'",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
+      },
+      {
+        "id": "theme_1_24",
+        "title": "Complete Withdrawal",
+        "emoji": "🪑",
+        "micro_theme": "Shutting down and quitting",
+        "shlokas": [
+          "1.46",
+          "1.47"
+        ],
+        "story": {
+          "title": "Sitting Out",
+          "content": "In gym class, the teacher announced a complicated new game. Instead of trying to learn it, Maya just went and sat on the bench. She completely shut down. Arjuna did the same thing when he sat down in his chariot and dropped his bow.",
+          "moral": "It is okay to ask for help when things are hard, but completely quitting helps no one."
+        },
+        "activity": "When you want to quit, who can you ask for help instead?",
+        "videoUrl": "https://www.youtube.com/watch?v=_4mXIna42S4"
       }
     ],
     "2": [
