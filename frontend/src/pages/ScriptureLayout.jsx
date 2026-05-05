@@ -48,7 +48,8 @@ const ScriptureLayout = () => {
     setShowQuiz(false);
     setMasteredShlokas(new Set());
     fetchVerses(activeChapter);
-  }, [activeChapter, scripture]);
+  }, [activeChapter, scripture, currentLang]);
+
 
   const fetchVerses = async (chapterNum) => {
     setLoading(true);
