@@ -121,6 +121,109 @@
         "activity_te": "మీరు వదులుకోవాలని అనిపించినప్పుడు ఏమి చేయాలో వివరిస్తూ మీ భవిష్యత్ స్వయానికి ఒక చిన్న లేఖ రాయండి. మీరు ఏ సలహా ఇస్తారు?",
         "videoUrl": ""
       }
+    ],
+    "2": [
+      {
+        "id": "theme_w2_1",
+        "title": "The Call to Transcendence",
+        "title_te": "అతీతమైన పిలుపు",
+        "emoji": "🏔️",
+        "micro_theme": "Moving from emotional confusion to intellectual clarity",
+        "micro_theme_te": "భావోద్వేగ గందరగోళం నుండి మేధోపరమైన స్పష్టతకు మారడం",
+        "shlokas": ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9", "2.10"],
+        "story": {
+          "title": "Surrendering the Ego",
+          "title_te": "అహంకారాన్ని విడనాడటం",
+          "content": "Arjuna was completely overwhelmed. He didn't want to fight his elders and teachers. He told Krishna that even a kingdom without rivals wouldn't remove his grief. But then, he did something incredibly brave: he admitted he was confused and surrendered to Krishna as a student. 'I am your disciple,' he said. This is the moment when the highest wisdom begins—when we admit that our own ego and logic aren't enough to solve life's deepest problems.",
+          "content_te": "అర్జునుడు పూర్తిగా కుంగిపోయాడు. అతను తన పెద్దలు మరియు గురువులతో పోరాడాలని అనుకోలేదు. ప్రత్యర్థులు లేని రాజ్యం కూడా తన దుఃఖాన్ని తొలగించదని కృష్ణుడితో చెప్పాడు. కానీ అప్పుడు, అతను ఒక అద్భుతమైన ధైర్యమైన పని చేశాడు: తాను గందరగోళంలో ఉన్నానని అంగీకరించి, కృష్ణుడికి శిష్యుడిగా లొంగిపోయాడు. 'నేను నీ శిష్యుడిని' అని అతను అన్నాడు. జీవితంలోని అత్యంత లోతైన సమస్యలను పరిష్కరించడానికి మన స్వంత అహంకారం మరియు తర్కం సరిపోవని మనం అంగీకరించినప్పుడు—అత్యున్నత జ్ఞానం ప్రారంభమయ్యే క్షణం ఇదే.",
+          "moral": "The path to wisdom starts with humility. Admitting 'I don't know' is the first step to knowing everything.",
+          "moral_te": "జ్ఞాన మార్గం వినయంతో ప్రారంభమవుతుంది. 'నాకు తెలియదు' అని అంగీకరించడం ప్రతిదీ తెలుసుకోవడానికి మొదటి అడుగు."
+        },
+        "activity": "Write about a situation where your own logic failed you. What did you learn by asking for help or looking at it from a higher perspective?",
+        "activity_te": "మీ సొంత తర్కం మీకు విఫలమైన పరిస్థితి గురించి రాయండి. సహాయం కోరడం ద్వారా లేదా ఉన్నత దృక్పథంతో చూడటం ద్వారా మీరు ఏమి నేర్చుకున్నారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w2_2",
+        "title": "The Science of the Eternal Soul",
+        "title_te": "శాశ్వతమైన ఆత్మ యొక్క విజ్ఞానం",
+        "emoji": "♾️",
+        "micro_theme": "Discriminating between the temporary body and the eternal self",
+        "micro_theme_te": "తాత్కాలిక శరీరం మరియు శాశ్వతమైన ఆత్మ మధ్య విచక్షణ",
+        "shlokas": ["2.11", "2.12", "2.13", "2.14", "2.15", "2.16", "2.17", "2.18", "2.19", "2.20", "2.21", "2.22", "2.23", "2.24", "2.25", "2.26", "2.27", "2.28", "2.29", "2.30"],
+        "story": {
+          "title": "That Which is Never Slain",
+          "title_te": "ఎన్నటికీ సంహరించబడనిది",
+          "content": "Krishna began his teaching with a shocking statement: 'You are grieving for those who don't deserve grief.' He explained that the soul is never born and never dies. It cannot be cut by weapons, burned by fire, or dried by the wind. Just as we change clothes, the soul changes bodies. By understanding this, we lose our fear of death and change, and we begin to see the eternal reality that connects all living beings.",
+          "content_te": "కృష్ణుడు తన బోధనను ఒక ఆశ్చర్యకరమైన మాటతో ప్రారంభించాడు: 'దుఃఖించకూడని వారి గురించి నీవు దుఃఖిస్తున్నావు.' ఆత్మ ఎప్పటికీ పుట్టదని మరియు ఎప్పటికీ మరణించదని ఆయన వివరించాడు. దానిని ఆయుధాలు ఛేదించలేవు, అగ్ని దహించలేదు, గాలి ఆరబెట్టలేదు. మనం బట్టలు మార్చుకున్నట్లే, ఆత్మ శరీరాలను మారుస్తుంది. దీనిని అర్థం చేసుకోవడం ద్వారా, మనం మరణం మరియు మార్పు పట్ల భయాన్ని కోల్పోతాము మరియు అన్ని జీవులను కలిపే శాశ్వతమైన వాస్తవాన్ని చూడటం ప్రారంభిస్తాము.",
+          "moral": "You are an eternal spiritual being having a temporary human experience. Realize the self and be free.",
+          "moral_te": "మీరు ఒక తాత్కాలిక మానవ అనుభవాన్ని పొందుతున్న శాశ్వతమైన ఆధ్యాత్మిక జీవి. ఆత్మను తెలుసుకోండి మరియు స్వేచ్ఛగా ఉండండి."
+        },
+        "activity": "Meditation Challenge: Sit quietly for 5 minutes. Try to notice the 'observer' inside you that doesn't change even as your thoughts and feelings pass by like clouds.",
+        "activity_te": "ధ్యాన సవాలు: 5 నిమిషాల పాటు నిశ్శబ్దంగా కూర్చోండి. మీ ఆలోచనలు మరియు భావాలు మేఘాల వలె వచ్చి పోతున్నప్పటికీ, మారని మీలోని 'పరిశీలకుడిని' గమనించడానికి ప్రయత్నించండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w2_3",
+        "title": "Dharma and the Warrior's Duty",
+        "title_te": "ధర్మం మరియు యోధుని కర్తవ్యం",
+        "emoji": "⚔️",
+        "micro_theme": "Aligning action with cosmic and personal righteousness",
+        "micro_theme_te": "విశ్వవ్యాప్త మరియు వ్యక్తిగత ధర్మంతో చర్యను అనుసంధానించడం",
+        "shlokas": ["2.31", "2.32", "2.33", "2.34", "2.35", "2.36", "2.37", "2.38"],
+        "story": {
+          "title": "The Price of Inaction",
+          "title_te": "స్తబ్దతకు మూల్యం",
+          "content": "Krishna reminded Arjuna of his social and professional duty. As a warrior, running away from a righteous battle would bring dishonor that is worse than death. He told Arjuna to treat victory and defeat, gain and loss, happiness and sadness as the same—and then fight. This is the bridge between pure philosophy and real-world action. We must do what is right, regardless of the personal consequences.",
+          "content_te": "అర్జునుడి సామాజిక మరియు వృత్తిపరమైన కర్తవ్యాన్ని కృష్ణుడు గుర్తుచేశాడు. ఒక యోధుడిగా, ధర్మబద్ధమైన యుద్ధం నుండి పారిపోవడం మరణం కంటే ఘోరమైన అప్రతిష్టను తెస్తుంది. విజయాపజయాలను, లాభనష్టాలను, సుఖదుఃఖాలను సమానంగా చూసి యుద్ధం చేయమని ఆయన అర్జునుడికి చెప్పాడు. ఇది కేవలం తత్వశాస్త్రం మరియు నిజ ప్రపంచ చర్యల మధ్య వంతెన. వ్యక్తిగత పర్యవసానాలతో సంబంధం లేకుండా మనం సరైన పని చేయాలి.",
+          "moral": "Duty is not a choice; it is an alignment with the truth of your situation. Do your duty without fear.",
+          "moral_te": "కర్తవ్యం అనేది ఒక ఎంపిక కాదు; అది మీ పరిస్థితి యొక్క వాస్తవికతతో కూడిన అనుసంధానం. భయం లేకుండా మీ కర్తవ్యాన్ని నిర్వహించండి."
+        },
+        "activity": "Analyze a difficult choice you made recently. Did you choose based on 'what was easy' or 'what was right'? What were the results?",
+        "activity_te": "ఇటీవల మీరు చేసిన ఒక కష్టమైన ఎంపికను విశ్లేషించండి. మీరు 'సులభమైనది' ఎంచుకున్నారా లేక 'సరైనది' ఎంచుకున్నారా? ఫలితాలు ఎలా ఉన్నాయి?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w2_4",
+        "title": "Karma Yoga: The Science of Work",
+        "title_te": "కర్మ యోగం: పని యొక్క విజ్ఞానం",
+        "emoji": "⚙️",
+        "micro_theme": "How to act without becoming bound by the results",
+        "micro_theme_te": "ఫలితాలకు బందీ కాకుండా ఎలా పనిచేయాలి",
+        "shlokas": ["2.39", "2.40", "2.41", "2.42", "2.43", "2.44", "2.45", "2.46", "2.47", "2.48", "2.49", "2.50", "2.51", "2.52", "2.53"],
+        "story": {
+          "title": "Excellence in Action",
+          "title_te": "చర్యలో నైపుణ్యం",
+          "content": "Krishna introduced the revolutionary concept of Karma Yoga. Most people work because they want something—money, fame, or power. But Krishna says: 'You have a right to your work, but never to the fruits of work.' By letting go of the anxiety about results, we can focus 100% on the action itself. This focus leads to 'Yoga', which Krishna defines as 'skill in action.' When work is done as an offering, it becomes a path to liberation.",
+          "content_te": "కృష్ణుడు విప్లవాత్మకమైన కర్మ యోగ భావనను పరిచయం చేశాడు. చాలామంది ఏదో ఒకటి—డబ్బు, కీర్తి లేదా అధికారం—కావాలని పనిచేస్తారు. కానీ కృష్ణుడు ఇలా అంటాడు: 'పని చేయడంలో మాత్రమే నీకు అధికారం ఉంది, కానీ ఎన్నటికీ ఫలితాల మీద కాదు.' ఫలితాల గురించి ఆందోళనను వదిలివేయడం ద్వారా, మనం ఆ పని మీద 100% దృష్టి పెట్టవచ్చు. ఈ ఏకాగ్రత 'యోగం'కి దారి తీస్తుంది, దీనిని కృష్ణుడు 'చర్యలో నైపుణ్యం' అని నిర్వచించాడు. పనిని ఒక సమర్పణగా చేసినప్పుడు, అది మోక్షానికి మార్గమవుతుంది.",
+          "moral": "Detach from the result to master the process. Excellence is the byproduct of a focused, unattached mind.",
+          "moral_te": "ప్రక్రియను సాధించడానికి ఫలితం నుండి విడిపోండి. ఏకాగ్రతతో కూడిన, అంటీఅంటని మనస్సు యొక్క ఉప ఉత్పత్తియే నైపుణ్యం."
+        },
+        "activity": "Practice 'Deep Work' today. Pick one task and dedicate 20 minutes of absolute focus to it, without checking your phone or thinking about finishing it. How did the quality of work change?",
+        "activity_te": "ఈరోజు 'డీప్ వర్క్' సాధన చేయండి. ఒక పనిని ఎంచుకుని, మీ ఫోన్ చూడకుండా లేదా పూర్తి చేయడం గురించి ఆలోచించకుండా, 20 నిమిషాల పాటు దానిపై పూర్తి ఏకాగ్రత పెట్టండి. పని నాణ్యత ఎలా మారింది?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w2_5",
+        "title": "Sthitaprajna: The State of Enlightenment",
+        "title_te": "స్థితప్రజ్ఞ: జ్ఞానోదయ స్థితి",
+        "emoji": "🧘‍♂️",
+        "micro_theme": "Description of the person with steady wisdom",
+        "micro_theme_te": "స్థిరమైన జ్ఞానం కలిగిన వ్యక్తి యొక్క వివరణ",
+        "shlokas": ["2.54", "2.55", "2.56", "2.57", "2.58", "2.59", "2.60", "2.61", "2.62", "2.63", "2.64", "2.65", "2.66", "2.67", "2.68", "2.69", "2.70", "2.71", "2.72"],
+        "story": {
+          "title": "Steady Amidst the Storm",
+          "title_te": "తుపానులోనూ స్థిరంగా",
+          "content": "Arjuna asked: 'How does the person of steady wisdom live?' Krishna described the Sthitaprajna—one who has mastered their desires and senses. This person is like the ocean, which remains full and calm even as many rivers flow into it. They are not disturbed by sorrow, nor do they crave happiness. They move through the world with self-control, finding a peace that others can only dream of. This is the ultimate goal of the Gita: to live in the world, yet remain untouched by its chaos.",
+          "content_te": "అర్జునుడు అడిగాడు: 'స్థిరమైన జ్ఞానం కలిగిన వ్యక్తి ఎలా జీవిస్తాడు?' కృష్ణుడు స్థితప్రజ్ఞుడిని—తన కోరికలను మరియు ఇంద్రియాలను జయించిన వ్యక్తిని—వివరించాడు. ఈ వ్యక్తి సముద్రం లాంటి వాడు, ఎన్ని నదులు వచ్చి కలిసినా సముద్రం ఎలా నిండుగా మరియు ప్రశాంతంగా ఉంటుందో అలాగే ఉంటాడు. వారు దుఃఖంతో కలత చెందరు, సుఖం కోసం పాకులాడరు. వారు ఆత్మనిగ్రహంతో ప్రపంచంలో సంచరిస్తారు, ఇతరులు కలగనే శాంతిని పొందుతారు. గీత యొక్క అంతిమ లక్ష్యం ఇదే: ప్రపంచంలో జీవిస్తూనే, దాని అల్లకల్లోలం తాకకుండా ఉండటం.",
+          "moral": "True peace is not the absence of noise; it is the presence of steady wisdom amidst the noise.",
+          "moral_te": "నిజమైన శాంతి అంటే శబ్దం లేకపోవడం కాదు; శబ్దం మధ్యలో కూడా స్థిరమైన జ్ఞానం కలిగి ఉండటం."
+        },
+        "activity": "The Ladder of Fall: Read verses 2.62-2.63. Map out how a single thought of desire can lead to complete ruin. How can you stop the fall at the very first step?",
+        "activity_te": "పతనపు నిచ్చెన: 2.62-2.63 శ్లోకాలను చదవండి. కోరిక యొక్క ఒకే ఒక ఆలోచన ఎలా పూర్తి నాశనానికి దారితీస్తుందో వివరించండి. మొదటి అడుగులోనే పతనాన్ని ఎలా ఆపవచ్చు?",
+        "videoUrl": ""
+      }
     ]
   }
 }
+

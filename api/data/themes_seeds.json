@@ -41,6 +41,68 @@
         "activity_te": "రెండు ముఖాలు గీయండి — ఒకటి 'ముప్పు అనిపించడం' చూపుతూ మరియు ఒకటి 'ధైర్యంగా' చూపుతూ. ఈరోజు మీరు ఏ ముఖాన్ని చూపాలనుకుంటున్నారు?",
         "videoUrl": ""
       }
+    ],
+    "2": [
+      {
+        "id": "theme_s2_1",
+        "title": "Be Strong and Brave",
+        "title_te": "బలంగా మరియు ధైర్యంగా ఉండండి",
+        "emoji": "🛡️",
+        "micro_theme": "Face your fears with a steady mind",
+        "micro_theme_te": "స్థిరమైన మనస్సుతో మీ భయాలను ఎదుర్కోండి",
+        "shlokas": ["2.2", "2.14"],
+        "story": {
+          "title": "The Cold Morning Practice",
+          "title_te": "చలికాలం ఉదయం సాధన",
+          "content": "On a very cold morning, Arjun didn't want to get out of bed to practice. He felt 'weak' and wanted to stay cozy. Krishna told him: 'Arjun, the cold and heat come and go, just like happiness and sadness. Be brave and do what you need to do anyway!' Arjun realized that being brave means doing the right thing even when it feels a little uncomfortable.",
+          "content_te": "ఒక చలికాలం ఉదయం, అర్జునుడు సాధన చేయడానికి పడక మీద నుండి లేవాలని అనుకోలేదు. అతను 'బలహీనంగా' అనిపించి వెచ్చగా అక్కడే ఉండాలనుకున్నాడు. కృష్ణుడు అతనితో ఇలా అన్నాడు: 'అర్జునా, చలి మరియు వేడి వచ్చి పోతుంటాయి, సుఖం మరియు దుఃఖం లాగే. ధైర్యంగా ఉండు మరియు నీవు చేయవలసింది చేయి!' ధైర్యంగా ఉండటం అంటే కొంచెం ఇబ్బందిగా ఉన్నా సరైన పని చేయడం అని అర్జునుడు గ్రహించాడు.",
+          "moral": "Happiness and sadness come and go like seasons. Stay strong and keep going!",
+          "moral_te": "సుఖం మరియు దుఃఖం ఋతువుల లాగా వచ్చి పోతుంటాయి. బలంగా ఉండి ముందుకు సాగండి!"
+        },
+        "activity": "Can you stand in one place and take 3 deep 'brave' breaths? Feel your strength growing with each breath.",
+        "activity_te": "మీరు ఒక చోట నిలబడి 3 సార్లు లోతైన 'ధైర్యమైన' శ్వాసలు తీసుకోగలరా? ప్రతి శ్వాసతో మీ బలం పెరుగుతున్నట్లు అనిపిస్తుందా?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_2",
+        "title": "Your Inner Light",
+        "title_te": "మీ అంతర్గత కాంతి",
+        "emoji": "♾️",
+        "micro_theme": "You are eternal and wonderful",
+        "micro_theme_te": "మీరు శాశ్వతమైన వారు మరియు అద్భుతమైన వారు",
+        "shlokas": ["2.20"],
+        "story": {
+          "title": "The Unbreakable Spark",
+          "title_te": "పగలకుండా ఉండే నిప్పుకణిక",
+          "content": "Imagine you have a beautiful golden flashlight. You can change the batteries, or even get a new case, but the light inside is the same. Krishna told Arjun that we are all like that light. Our bodies grow and change, but the 'real you' inside—your soul—is eternal, never breaks, and is always shining. You are a wonderful spark of the Divine!",
+          "content_te": "మీ దగ్గర ఒక అందమైన బంగారు రంగు ఫ్లాష్‌లైట్ ఉందని ఊహించుకోండి. మీరు బ్యాటరీలను మార్చవచ్చు, లేదా కొత్త కేసును కూడా తీసుకోవచ్చు, కానీ లోపల ఉన్న కాంతి మాత్రం అదే. కృష్ణుడు అర్జునుడితో మనం అందరం ఆ కాంతి లాంటి వాళ్ళమే అని చెప్పాడు. మన శరీరాలు పెరుగుతాయి మరియు మారుతాయి, కానీ లోపల ఉన్న 'నిజమైన మీరు'—అంటే మీ ఆత్మ—శాశ్వతమైనది, ఎప్పటికీ పాడవదు మరియు ఎల్లప్పుడూ ప్రకాశిస్తుంది.",
+          "moral": "You are much more than just your body. You are a beautiful, eternal soul.",
+          "moral_te": "మీరు కేవలం మీ శరీరం మాత్రమే కాదు. మీరు ఒక అందమైన, శాశ్వతమైన ఆత్మ.",
+        },
+        "activity": "Close your eyes and imagine a tiny, bright star in your heart. That star is the real you!",
+        "activity_te": "కళ్ళు మూసుకుని మీ హృదయంలో ఒక చిన్న, ప్రకాశవంతమైన నక్షత్రాన్ని ఊహించుకోండి. ఆ నక్షత్రమే నిజమైన మీరు!",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_3",
+        "title": "Do Your Best, Forget the Rest",
+        "title_te": "మీ ఉత్తమమైనది చేయండి, మిగిలినది మరచిపోండి",
+        "emoji": "🎯",
+        "micro_theme": "Focus on your effort, not just the prize",
+        "micro_theme_te": "కేవలం బహుమతి మీద కాకుండా మీ ప్రయత్నం మీద దృష్టి పెట్టండి",
+        "shlokas": ["2.47", "2.55"],
+        "story": {
+          "title": "Sia's Painting",
+          "title_te": "సియా పెయింటింగ్",
+          "content": "Sia was painting a picture for a contest. She kept worrying: 'Will I win first prize? What if mine is not the best?' Her hands started shaking. Then she remembered Krishna's advice: 'Just focus on the painting and enjoy it. Don't worry about the marks.' Sia relaxed and made her most beautiful painting ever because she was focused on the joy of doing it!",
+          "content_te": "సియా ఒక పోటీ కోసం పెయింటింగ్ వేస్తోంది. ఆమె ఆందోళన చెందుతోంది: 'నాకు మొదటి బహుమతి వస్తుందా? నాది ఉత్తమంగా లేకపోతే ఎలా?' ఆమె చేతులు వణకడం మొదలైంది. అప్పుడు ఆమె కృష్ణుడి సలహాను గుర్తు తెచ్చుకుంది: 'పెయింటింగ్ మీద దృష్టి పెట్టు మరియు దానిని ఆనందించు. మార్కుల గురించి చింతించకు.' సియా ప్రశాంతంగా ఉండి తన అత్యంత అందమైన పెయింటింగ్‌ను వేసింది ఎందుకంటే ఆమె ఆ పని చేసే ఆనందం మీద దృష్టి పెట్టింది!",
+          "moral": "You only have control over your hard work, not the result. Do your best and be happy!",
+          "moral_te": "మీరు చేసే కష్టపడి పని మీద మాత్రమే మీకు నియంత్రణ ఉంటుంది, ఫలితం మీద కాదు. మీ వంతు కృషి చేయండి మరియు సంతోషంగా ఉండండి!"
+        },
+        "activity": "What is one thing you will do today JUST for the fun of it, without worrying about winning?",
+        "activity_te": "ఈరోజు గెలవడం గురించి చింతించకుండా, కేవలం ఆనందం కోసం మీరు చేసే ఒక పని ఏమిటి?",
+        "videoUrl": ""
+      }
     ]
   }
 }
