@@ -104,9 +104,11 @@ const ThemeViewer = ({ theme, scripture }) => {
                   className="flex items-center justify-between bg-white/5 border border-white/10 p-6 rounded-2xl opacity-60 cursor-not-allowed group"
                 >
                   <div className="flex items-center gap-5">
-                    <div className="w-14 h-14 bg-gray-600 rounded-full flex items-center justify-center text-gray-300">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M8 5.14v14l11-7-11-7z" />
+                    <div className="w-14 h-14 bg-gray-600/30 rounded-full flex items-center justify-center text-gray-500">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
                       </svg>
                     </div>
                     <div>
