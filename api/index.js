@@ -433,7 +433,15 @@ router.post('/journal', async (req, res) => {
 
     const chNum = parseInt(chapter_number);
     let shlokaNum = parseInt(verse_id);
-    if (typeof verse_id === 'string' && verse_id.includes('.')) {
+    
+    // Improved parsing for theme IDs (e.g., "theme_1_5" -> 5, "theme_1_5_seeds" -> 5)
+    if (isNaN(shlokaNum) && typeof verse_id === 'string') {
+      const matches = verse_id.match(/\d+/g);
+      if (matches && matches.length > 0) {
+        shlokaNum = parseInt(matches[matches.length - 1]);
+      }
+    } else if (typeof verse_id === 'string' && verse_id.includes('.')) {
+      // Handle "1.1", "1.2" style
       const parts = verse_id.split('.');
       shlokaNum = parseInt(parts[parts.length - 1]);
     }
