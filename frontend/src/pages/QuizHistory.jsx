@@ -101,7 +101,7 @@ const QuizHistory = () => {
         </div>
 
         {/* Hanuman Overall Stats */}
-        {hanumanStats && hanumanStats.total_verses_attempted > 0 && (
+        {filter !== 'gita' && hanumanStats && hanumanStats.total_verses_attempted > 0 && (
           <div className="glass-card p-6 mb-8 border-l-4 border-orange-500">
             <div className="flex items-center gap-3 mb-4">
               <BarChart3 size={24} className="text-orange-500" />
