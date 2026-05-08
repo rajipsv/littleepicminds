@@ -163,26 +163,27 @@ const Home = () => {
                     <BookOpen size={40} />
                   </div>
                   <h3 className="text-2xl font-black text-white mb-1 tracking-wide">{s.title}</h3>
-                  <p className="text-gray-400 font-medium leading-relaxed mb-6">{s.desc}</p>
+                  <p className={"text-gray-400 font-medium leading-relaxed " + (s.id === 'gita' ? 'mb-6' : 'mb-0')}>{s.desc}</p>
 
-                  {/* Level buttons inside Gita card */}
-                  <div className="flex flex-wrap justify-center gap-3 mb-6" onClick={e => e.stopPropagation()}>
-                    {levels.map(l => (
-                      <button
-                        key={l.id}
-                        onClick={() => setSelectedLevel(l)}
-                        className="bg-white/5 px-4 py-2.5 rounded-xl border border-lem-glass-border hover:border-white/20 hover:bg-white/10 transition-all duration-200 text-left"
-                      >
-                        <div className="flex items-center gap-2">
-                          <span className="text-lg">{l.emoji}</span>
-                          <div>
-                            <div className="text-sm font-bold text-white">{l.title}</div>
-                            <div className="text-[11px] text-gray-400">{l.ageRange}</div>
+                  {s.id === 'gita' && (
+                    <div className="flex flex-wrap justify-center gap-3 mb-6" onClick={e => e.stopPropagation()}>
+                      {levels.map(l => (
+                        <button
+                          key={l.id}
+                          onClick={() => setSelectedLevel(l)}
+                          className="bg-white/5 px-4 py-2.5 rounded-xl border border-lem-glass-border hover:border-white/20 hover:bg-white/10 transition-all duration-200 text-left"
+                        >
+                          <div className="flex items-center gap-2">
+                            <span className="text-lg">{l.emoji}</span>
+                            <div>
+                              <div className="text-sm font-bold text-white">{l.title}</div>
+                              <div className="text-[11px] text-gray-400">{l.ageRange}</div>
+                            </div>
                           </div>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
+                        </button>
+                      ))}
+                    </div>
+                  )}
 
                   <div className="font-bold text-lem-accent flex items-center text-sm">
                     Start Reading <span className="ml-2">→</span>
