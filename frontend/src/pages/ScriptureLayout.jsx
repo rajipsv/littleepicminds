@@ -48,8 +48,7 @@ const ScriptureLayout = () => {
     setShowQuiz(false);
     setMasteredShlokas(new Set());
     fetchVerses(activeChapter);
-  }, [activeChapter, scripture, currentLang]);
-
+  }, [activeChapter, scripture]);
 
   const fetchVerses = async (chapterNum) => {
     setLoading(true);
@@ -62,37 +61,31 @@ const ScriptureLayout = () => {
     
     try {
       // 1. Fetch themes (Thematic Curriculum)
-      const themeUrl = `/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`;
-      console.log(`[DEBUG] Requesting themes from: ${themeUrl}`);
       try {
-        const themeRes = await api.get(themeUrl);
-        console.log(`[DEBUG] Themes received:`, themeRes.data?.length || 0);
+        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`);
         if (themeRes.data && themeRes.data.length > 0) {
           fetchedThemes = themeRes.data;
           setThemes(fetchedThemes);
           setActiveThemeIndex(0);
         }
       } catch (themeErr) {
-        console.log("[DEBUG] No themes found or error fetching themes:", themeErr.message);
+        console.log("No themes found for this chapter.");
       }
 
       // 2. Fetch raw verses (Sloka based)
       try {
-        const verseRes = await api.get(`/api/verses?scripture=${scripture}&chapter=${chapterNum}`);
-        if (verseRes.data) {
-          fetchedVerses = Object.values(verseRes.data);
-          setVerses(fetchedVerses);
-          setActiveVerseIndex(0);
-        }
+        const res = await api.get(`/api/verses?scripture=${scripture}&age_level=8-10&chapter=${chapterNum}`);
+        fetchedVerses = Object.values(res.data);
+        setVerses(fetchedVerses);
+        setActiveVerseIndex(0);
       } catch (verseErr) {
-        console.log("[DEBUG] No verses found for this chapter:", verseErr.message);
+        console.log("No verses found for this chapter.");
       }
 
       if (fetchedThemes.length === 0 && fetchedVerses.length === 0) {
         setError('No content available for this chapter yet.');
       }
     } catch (err) {
-      console.error("[DEBUG] fetchVerses global error:", err);
       if (err.response?.status === 403) {
         setError(err.response.data.error);
       } else {
@@ -225,6 +218,7 @@ const ScriptureLayout = () => {
                 </div>
                 <div className="flex-1 overflow-hidden">
                   <span className="font-bold text-white block truncate text-sm">{user.username}</span>
+                  {user.level && <span className="text-[10px] text-lem-accent font-black uppercase block">{user.level}</span>}
                   {user.is_premium && <span className="text-[10px] text-lem-accent font-black uppercase">Premium Member</span>}
                 </div>
               </div>
@@ -307,7 +301,7 @@ const ScriptureLayout = () => {
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-lem-accent border-white/10 border-solid"></div>
             </div>
-          ) : (themes.length === 0 && verses.length > 0) ? (
+          ) : (user?.level === 'warriors' && verses.length > 0) || (themes.length === 0 && verses.length > 0) ? (
             <div className="space-y-8">
               <div className="mb-12">
                 <div className="flex items-center gap-3 mb-2">
