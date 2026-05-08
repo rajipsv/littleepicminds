@@ -492,27 +492,28 @@ router.post('/journal', async (req, res) => {
       throw e;
     }
 
-    // 2. Save to Progress Table (Self-healing upsert)
-    try {
-      const existing = await db.query(
-        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
-        [userId, scripture || 'gita', chNum, shlokaNum]
-      );
-      
-      if (existing.rows.length === 0) {
-        await db.query(
-          'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
-          [userId, scripture || 'gita', chNum, shlokaNum, question, response]
+    // 2. Save to Progress Table (Self-healing upsert) - only for numeric verses
+    if (!isNaN(shlokaNum)) {
+      try {
+        const existing = await db.query(
+          'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+          [userId, scripture || 'gita', chNum, shlokaNum]
         );
-      } else {
-        await db.query(
-          'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
-          [question, response, existing.rows[0].id]
-        );
+        
+        if (existing.rows.length === 0) {
+          await db.query(
+            'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
+            [userId, scripture || 'gita', chNum, shlokaNum, question, response]
+          );
+        } else {
+          await db.query(
+            'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
+            [question, response, existing.rows[0].id]
+          );
+        }
+      } catch (e) {
+        console.error('Progress table fail:', e.message);
       }
-    } catch (e) {
-      console.error('Progress table fail:', e.message);
-      // Non-critical, don't fail the whole request
     }
 
     res.status(201).json({ status: 'saved' });
