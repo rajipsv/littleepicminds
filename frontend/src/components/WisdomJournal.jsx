@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { BookOpen, CheckCircle, AlertCircle } from 'lucide-react';
+import { BookOpen, CheckCircle, AlertCircle, Languages } from 'lucide-react';
+import sanscript from '@indic-transliteration/sanscript';
 
 const WisdomJournal = ({ verse, onComplete }) => {
   const [response, setResponse] = useState('');
@@ -8,6 +9,7 @@ const WisdomJournal = ({ verse, onComplete }) => {
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState('');
   const { user, saveProgress, currentLang } = useAuth();
+  const textareaRef = useRef(null);
   
   const isTe = currentLang === 'te';
 
@@ -39,6 +41,16 @@ const WisdomJournal = ({ verse, onComplete }) => {
   }
 
   const prompt = activity;
+
+  const convertToTelugu = () => {
+    if (!response.trim()) return;
+    try {
+      const converted = sanscript.t(response, 'itrans', 'telugu');
+      setResponse(converted);
+    } catch (err) {
+      console.error('Transliteration error:', err);
+    }
+  };
 
   const handleSubmit = async () => {
     if (!response.trim()) {
@@ -99,6 +111,7 @@ const WisdomJournal = ({ verse, onComplete }) => {
       <p className="text-white font-medium mb-4 text-lg">{prompt}</p>
 
       <textarea
+        ref={textareaRef}
         className="w-full bg-[#0a0f1d] border border-lem-accent/30 rounded-xl p-4 text-[#f8fafc] placeholder-gray-500 focus:outline-none focus:border-lem-accent transition-colors resize-none shadow-inner"
         rows="4"
         placeholder={isTe ? "మీ ఆలోచనలను ఇక్కడ రాయండి..." : "Write your thoughts here..."}
@@ -113,11 +126,21 @@ const WisdomJournal = ({ verse, onComplete }) => {
         </div>
       )}
 
-      <div className="flex justify-end mt-4">
+      <div className="flex justify-between items-center mt-4">
+        {isTe && (
+          <button
+            onClick={convertToTelugu}
+            disabled={!response.trim()}
+            className="flex items-center gap-2 bg-[#1a1a2e] border border-lem-accent/30 text-lem-accent py-2 px-4 rounded-xl hover:bg-[#2a2a3e] transition-colors disabled:opacity-40 disabled:cursor-not-allowed text-sm"
+          >
+            <Languages size={16} />
+            తెలుగులోకి మార్చండి
+          </button>
+        )}
         <button
           onClick={handleSubmit}
           disabled={saving}
-          className="bg-gradient-to-r from-[#f6d365] to-[#fda085] text-lem-dark font-bold py-2 px-6 rounded-xl hover:scale-105 transition-transform shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
+          className="bg-gradient-to-r from-[#f6d365] to-[#fda085] text-lem-dark font-bold py-2 px-6 rounded-xl hover:scale-105 transition-transform shadow-lg disabled:opacity-60 disabled:cursor-not-allowed ml-auto"
         >
           {saving ? (isTe ? 'సేవ్ అవుతోంది...' : 'Saving...') : (isTe ? 'జర్నల్‌లో సేవ్ చేయండి' : 'Save to Journal')}
         </button>
