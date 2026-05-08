@@ -176,7 +176,6 @@ const Home = () => {
                           <div className="flex flex-col items-center gap-0.5">
                             <span className="text-sm">{l.emoji}</span>
                             <div className="text-[11px] font-bold text-white leading-tight">{l.title}</div>
-                            <div className="text-[9px] text-gray-400 leading-tight">{l.ageRange}</div>
                           </div>
                         </button>
                       ))}
