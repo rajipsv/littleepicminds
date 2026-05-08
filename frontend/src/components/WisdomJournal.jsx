@@ -76,13 +76,13 @@ const WisdomJournal = ({ verse, onComplete }) => {
       if (onComplete) {
         setTimeout(() => onComplete(), 1200);
       }
-    } catch (err) {
+} catch (err) {
       console.error('Journal save error:', err);
       const errorMsg = err.response?.data?.error || err.message;
       if (errorMsg?.includes('Unauthorized') || errorMsg?.includes('expired')) {
-        setError(isTe ? 'మీ సెషన్ ముగిసింది. దయచేసి మళ్ళీ లాగిన్ అవ్వండి.' : 'Your session expired. Please login again.');
+        setError(isTe ? ' మీ సెషన్ ముగిసింది. దయచేసి మళ్ళీ లాగిన్ అవ్వండి.' : 'Your session expired. Please login again.');
       } else {
-        setError(isTe ? 'సేవ్ చేయడం విఫలమైంది. దయచేసి మీ కనెక్షన్‌ని తనిఖీ చేసి మళ్ళీ ప్రయత్నించండి.' : 'Failed to save. Please check your connection and try again.');
+        setError(err.response?.data?.error || errorMsg || (isTe ? 'సేవ్ చేయడం విఫలమైంది.' : 'Failed to save.'));
       }
     } finally {
       setSaving(false);
