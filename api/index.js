@@ -836,6 +836,20 @@ router.post('/chat/wisdom', adminAuth, async (req, res) => {
 async function bootstrapDB() {
   try {
     await db.query(`
+      CREATE TABLE IF NOT EXISTS users (
+        id SERIAL PRIMARY KEY,
+        username VARCHAR(255) UNIQUE NOT NULL,
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password_hash VARCHAR(255) NOT NULL,
+        name VARCHAR(255),
+        age INTEGER,
+        grade VARCHAR(50),
+        level VARCHAR(50),
+        role VARCHAR(50) DEFAULT 'student',
+        is_premium BOOLEAN DEFAULT false,
+        mobile VARCHAR(20),
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+      );
       CREATE TABLE IF NOT EXISTS journal_entries (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id),
