@@ -1,7 +1,67 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { BookOpen, LogOut, User } from 'lucide-react';
+import { BookOpen, LogOut, User, X } from 'lucide-react';
+
+const levels = [
+  {
+    id: 'seeds',
+    emoji: '🌱',
+    title: 'Seeds',
+    subtitle: 'The Beginning of Wisdom',
+    ageRange: 'Ages 3-7',
+    slokaCount: '30+ Shlokas',
+    color: 'emerald',
+    description: `Every great journey starts with a small seed.
+In this stage, children are gently introduced to values, stories, shlokas, mindfulness, and curiosity through joyful learning experiences.`,
+    bullets: [
+      'Simple spiritual stories',
+      'Fun activities and chants',
+      'Creativity and kindness',
+      'Foundational life values',
+    ],
+    footer: 'Planting wisdom early for a lifetime of growth.',
+    longDesc: `Seeds are nurtured with simple spiritual stories, fun activities and chants, creativity and kindness, and foundational life values.`,
+  },
+  {
+    id: 'seekers',
+    emoji: '🔍',
+    title: 'Seekers',
+    subtitle: 'Exploring Knowledge with Purpose',
+    ageRange: 'Ages 8-10',
+    slokaCount: '80+ Shlokas',
+    color: 'blue',
+    description: `Seekers begin asking deeper questions about life, purpose, courage, discipline, and self-awareness.
+This stage encourages exploration, reflection, and understanding through interactive learning and guided practice.`,
+    bullets: [
+      'Meaningful discussions',
+      'Ancient wisdom for modern life',
+      'Memory, focus, and confidence building',
+      'Practical lessons from epics and teachings',
+    ],
+    footer: 'Curiosity becomes the path to inner strength.',
+    longDesc: `Seekers grow through meaningful discussions, exploring ancient wisdom for modern life, memory and confidence building, and practical lessons from epics and teachings.`,
+  },
+  {
+    id: 'warriors',
+    emoji: '⚔️',
+    title: 'Warriors',
+    subtitle: 'Living with Courage and Character',
+    ageRange: 'Ages 11+',
+    slokaCount: '150+ Shlokas',
+    color: 'amber',
+    description: `Warriors are not defined by force, but by discipline, resilience, compassion, and fearless action.
+At this level, learners apply wisdom in daily life and grow into confident, value-driven individuals.`,
+    bullets: [
+      'Leadership and responsibility',
+      'Emotional strength and focus',
+      'Devotion, discipline, and service',
+      'The courage to stand for what is right',
+    ],
+    footer: 'True warriors conquer fear through wisdom and self-mastery.',
+    longDesc: `Warriors develop leadership and responsibility, emotional strength and focus, devotion and discipline, and the courage to stand for what is right.`,
+  },
+];
 
 const scriptures = [
   { id: 'gita', title: 'Bhagavad Gita', color: 'bg-kid-primary', desc: 'The Song of God', isAvailable: true },
@@ -11,6 +71,7 @@ const scriptures = [
 
 const Home = () => {
   const { user, logout } = useAuth();
+  const [selectedLevel, setSelectedLevel] = useState(null);
 
   return (
     <div className="min-h-screen py-10 px-4 bg-lem-dark text-white relative overflow-hidden">
@@ -110,7 +171,28 @@ const Home = () => {
             })}
           </div>
 
-          <div className="text-center">
+          {/* Learning Levels */}
+          <div className="mt-16 text-center">
+            <h3 className="text-2xl font-extrabold text-white mb-2">Learning Levels</h3>
+            <p className="text-gray-400 font-medium mb-8">Choose a level to learn more about each stage</p>
+            <div className="flex flex-wrap justify-center gap-4">
+              {levels.map(l => (
+                <button
+                  key={l.id}
+                  onClick={() => setSelectedLevel(l)}
+                  className="glass-card px-6 py-4 border border-lem-glass-border hover:border-white/20 transition-all duration-300 flex items-center gap-3 group"
+                >
+                  <span className="text-2xl">{l.emoji}</span>
+                  <div className="text-left">
+                    <div className="font-bold text-white group-hover:text-lem-accent transition-colors">{l.title}</div>
+                    <div className="text-xs text-gray-400">{l.ageRange}</div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-10">
             <Link to="/about" className="text-lem-accent font-bold hover:underline">Learn more about our mission and founder →</Link>
           </div>
         </section>
@@ -185,6 +267,59 @@ const Home = () => {
             <a href="mailto:admin@littleepicminds.com" className="hover:text-lem-accent transition-colors">Contact admin</a>
           </div>
         </footer>
+
+        {/* Level Detail Modal */}
+        {selectedLevel && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={() => setSelectedLevel(null)}>
+            <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+            <div
+              className="relative glass-card max-w-lg w-full p-8 border border-white/10 animate-fadeIn"
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                onClick={() => setSelectedLevel(null)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+              >
+                <X size={20} />
+              </button>
+
+              <div className="text-center mb-6">
+                <span className="text-5xl block mb-3">{selectedLevel.emoji}</span>
+                <h3 className="text-3xl font-black text-white">{selectedLevel.title}</h3>
+                <p className="text-lem-accent font-bold tracking-wide mt-1">{selectedLevel.subtitle}</p>
+              </div>
+
+              <div className="flex justify-center gap-6 mb-6 text-sm">
+                <div className="bg-white/5 px-4 py-2 rounded-xl border border-lem-glass-border text-center">
+                  <div className="text-gray-400 text-xs font-bold uppercase tracking-wider">Age Group</div>
+                  <div className="text-white font-black mt-0.5">{selectedLevel.ageRange}</div>
+                </div>
+                <div className="bg-white/5 px-4 py-2 rounded-xl border border-lem-glass-border text-center">
+                  <div className="text-gray-400 text-xs font-bold uppercase tracking-wider">Curriculum</div>
+                  <div className="text-white font-black mt-0.5">{selectedLevel.slokaCount}</div>
+                </div>
+              </div>
+
+              <p className="text-gray-300 text-sm leading-relaxed mb-6">{selectedLevel.description}</p>
+
+              <div className="bg-white/5 rounded-2xl p-5 border border-lem-glass-border mb-6">
+                <h4 className="text-xs font-black uppercase tracking-widest text-lem-accent mb-3">What they learn</h4>
+                <ul className="space-y-2">
+                  {selectedLevel.bullets.map((b, i) => (
+                    <li key={i} className="flex items-start gap-2 text-gray-300 text-sm">
+                      <span className="text-lem-accent mt-0.5 shrink-0">•</span>
+                      {b}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <p className="text-gray-400 italic text-sm text-center border-t border-lem-glass-border pt-5">
+                "{selectedLevel.footer}"
+              </p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
