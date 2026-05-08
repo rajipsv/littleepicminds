@@ -28,9 +28,9 @@ const Home = () => {
             <p className="text-xl text-gray-400 font-medium tracking-wide">Timeless Wisdom for Modern Minds</p>
           </div>
           
-          <div className="flex items-center space-x-6">
+          <div className="flex items-center space-x-4 md:space-x-6">
             {user ? (
-              <div className="flex items-center space-x-4 glass-card px-6 py-3 border border-lem-glass-border">
+              <div className="flex items-center space-x-4 glass-card px-3 md:px-6 py-3 border border-lem-glass-border">
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-lem-accent/20 rounded-full flex items-center justify-center">
                     <User size={20} className="text-lem-accent" />
@@ -54,9 +54,9 @@ const Home = () => {
                 </div>
               </div>
             ) : (
-              <div className="space-x-4">
-                <Link to="/login" className="px-6 py-3 font-bold text-gray-300 hover:text-white transition-colors">Login</Link>
-                <Link to="/register" className="px-8 py-3 bg-gradient-accent text-lem-dark font-black rounded-xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(253,160,133,0.3)] inline-block">Join littleEpicMinds</Link>
+              <div className="flex flex-wrap justify-end items-center gap-3 md:gap-4">
+                <Link to="/login" className="px-4 md:px-6 py-3 font-bold text-gray-300 hover:text-white transition-colors text-sm md:text-base">Login</Link>
+                <Link to="/register" className="px-6 md:px-8 py-3 bg-gradient-accent text-lem-dark font-black rounded-xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(253,160,133,0.3)] inline-block text-sm md:text-base">Join littleEpicMinds</Link>
               </div>
             )}
           </div>
@@ -174,9 +174,9 @@ const Home = () => {
           </div>
         </section>
 
-        <footer className="border-t border-lem-glass-border pt-12 pb-20 flex justify-between items-center text-gray-500 text-sm font-medium">
+        <footer className="border-t border-lem-glass-border pt-12 pb-20 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm font-medium gap-4">
           <p>© 2026 littleEpicMinds. All rights reserved.</p>
-          <div className="space-x-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <Link to="/about" className="hover:text-lem-accent">About</Link>
             <Link to="/readiness" className="hover:text-lem-dark bg-lem-accent px-3 py-1 rounded-md text-xs font-black uppercase tracking-widest transition-colors">Project Readiness</Link>
             <a href="mailto:admin@littleepicminds.com" className="hover:text-lem-accent transition-colors">Contact admin</a>
