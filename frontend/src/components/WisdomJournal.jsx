@@ -66,6 +66,7 @@ const WisdomJournal = ({ verse, onComplete, scripture }) => {
 
     setSaving(true);
     setError('');
+    console.log('[DEBUG] Saving journal:', { effectiveScripture, verseId: verse.id || verse.verse, chapter: verse.chapter_number });
     try {
       await saveProgress(
         effectiveScripture,
