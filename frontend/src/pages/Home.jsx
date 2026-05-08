@@ -10,7 +10,7 @@ const levels = [
     title: 'Seeds',
     subtitle: 'The Beginning of Wisdom',
     ageRange: 'Ages 3-7',
-    slokaCount: '100+ Shlokas',
+    slokaCount: '30+ Shlokas',
     color: 'emerald',
     description: `Every great journey starts with a small seed.
 In this stage, children are gently introduced to values, stories, shlokas, mindfulness, and curiosity through joyful learning experiences.`,
@@ -29,7 +29,7 @@ In this stage, children are gently introduced to values, stories, shlokas, mindf
     title: 'Seekers',
     subtitle: 'Exploring Knowledge with Purpose',
     ageRange: 'Ages 8-10',
-    slokaCount: '200+ Shlokas',
+    slokaCount: '80+ Shlokas',
     color: 'blue',
     description: `Seekers begin asking deeper questions about life, purpose, courage, discipline, and self-awareness.
 This stage encourages exploration, reflection, and understanding through interactive learning and guided practice.`,
@@ -48,7 +48,7 @@ This stage encourages exploration, reflection, and understanding through interac
     title: 'Warriors',
     subtitle: 'Living with Courage and Character',
     ageRange: 'Ages 11+',
-    slokaCount: '300+ Shlokas',
+    slokaCount: '150+ Shlokas',
     color: 'amber',
     description: `Warriors are not defined by force, but by discipline, resilience, compassion, and fearless action.
 At this level, learners apply wisdom in daily life and grow into confident, value-driven individuals.`,
