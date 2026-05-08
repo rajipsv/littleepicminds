@@ -697,8 +697,8 @@ router.post('/evaluations', async (req, res) => {
       await db.query(
         `INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts)
          VALUES ($1, $2, $3, $4, $5, 1)
-         ON CONFLICT (user_id, chapter_id, scripture)
-         DO UPDATE SET score = $4, best_score = GREATEST(evaluations.best_score, $5), attempts = evaluations.attempts + 1, completed_at = CURRENT_TIMESTAMP`,
+         ON CONFLICT (user_id, chapter_id)
+         DO UPDATE SET scripture = $2, score = $4, best_score = GREATEST(evaluations.best_score, $5), attempts = evaluations.attempts + 1, completed_at = CURRENT_TIMESTAMP`,
         [userId, scripture || 'gita', effectiveChNum, score, score]
       );
     }
@@ -728,11 +728,9 @@ router.post('/evaluations', async (req, res) => {
     // 3. Save individual Q&A to quiz_results table
     if (quiz_details && Array.isArray(quiz_details)) {
       await db.query(
-        `DELETE FROM quiz_results WHERE user_id = $1 AND chapter = $2 AND verse = $3;
-         INSERT INTO quiz_results (user_id, scripture, chapter, verse, score, questions, completed_at)
-         VALUES ($1, $4, $2, $3, $5, $6, CURRENT_TIMESTAMP)`,
-        [userId, chapter_number, verse, scripture || 'gita', score, JSON.stringify(quiz_details)]
-      );
+        'INSERT INTO quiz_results (user_id, scripture, chapter, verse, score, questions, completed_at) VALUES ($1, $2, $3, $4, $5, $6, CURRENT_TIMESTAMP)',
+        [userId, scripture || 'gita', chapter_number, verse, score, JSON.stringify(quiz_details)]
+      ).catch(e => console.error('quiz_results insert skipped:', e.message));
     }
 
     res.status(200).json({ status: 'saved' });
