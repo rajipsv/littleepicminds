@@ -3,7 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { BookOpen, CheckCircle, AlertCircle, Languages } from 'lucide-react';
 import sanscript from '@indic-transliteration/sanscript';
 
-const WisdomJournal = ({ verse, onComplete }) => {
+const WisdomJournal = ({ verse, onComplete, scripture }) => {
   const [response, setResponse] = useState('');
   const [saving, setSaving] = useState(false);
   const [saved, setSaved] = useState(false);
@@ -12,6 +12,8 @@ const WisdomJournal = ({ verse, onComplete }) => {
   const textareaRef = useRef(null);
   
   const isTe = currentLang === 'te';
+  // Use explicit scripture prop if provided, otherwise fall back to verse.scripture
+  const effectiveScripture = scripture || verse.scripture || 'gita';
 
   // Determine the activity prompt based on language
   let activity = '';
@@ -66,7 +68,7 @@ const WisdomJournal = ({ verse, onComplete }) => {
     setError('');
     try {
       await saveProgress(
-        verse.scripture || 'gita',
+        effectiveScripture,
         verse.chapter_number || 1,
         verse.id || verse.verse,
         prompt,

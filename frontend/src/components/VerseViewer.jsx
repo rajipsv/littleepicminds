@@ -189,7 +189,7 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
         {/* Step 4: Wisdom Journal - Hide in theme mode */}
         {!isThemeMode && (
           <div className={`transition-all duration-700 ${currentStep >= 4 ? 'opacity-100 translate-y-0 mt-10 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
-            <WisdomJournal verse={verse} onComplete={handleJournalComplete} />
+            <WisdomJournal verse={verse} scripture={scripture} onComplete={handleJournalComplete} />
           </div>
         )}
         
