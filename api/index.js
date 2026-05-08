@@ -671,7 +671,13 @@ router.post('/evaluations', async (req, res) => {
     }
 
     // 2. Save to progress table (so verses count toward mastery + leaderboard)
-    const shlokaNum = parseInt(verse);
+    let shlokaNum = parseInt(verse);
+    if (isNaN(shlokaNum) && typeof verse === 'string') {
+      const matches = verse.match(/\d+/g);
+      if (matches && matches.length > 0) {
+        shlokaNum = parseInt(matches[matches.length - 1]);
+      }
+    }
     if (verse && !isNaN(shlokaNum)) {
       const chNum = parseInt(chapter_number);
       const existingProgress = await db.query(
