@@ -46,13 +46,13 @@ const CHAPTER_2_SHLOKAS = {
         telugu_script: "శ్రీభగవానువాచ |\nకుతస్త్వా కశ్మలమిదం విషమే సముపస్థితమ్ |\nఅనార్యజుష్టమస్వర్గ్యమకీర్తికరమర్జున ||",
         lineBreakdown: [
             { sanskrit: "कुतस्त्वा कश्मलमिदं", word: "kutas tvā kaśmalam idaṁ", sanskrit_te: "కుతస్త్వా కశ్మలమిదం", en: "how have these impurities come upon you", te: "నీకు ఈ మోహం ఎక్కడ నుండి వచ్చింది" },
-            { sanskrit: "विषमे समुपस्थितम्", word: "viṣame samupasthitam", sanskrit_te: "విషమే సముపస్థితమ్", en: "in this hour of crisis", te: "ఈ క్లిష్ట సమయంలో" },
+            { sanskrit: "विषमे समुपस्थितम्", word: "viṣame samupasthitam", sanskrit_te: "विषమే సముపస్థితమ్", en: "in this hour of crisis", te: "ఈ క్లిష్ట సమయంలో" },
             { sanskrit: "अनार्यजुष्टमस्वर्ग्यम्", word: "anārya-juṣṭam asvargyam", sanskrit_te: "అనార్యజుష్టమస్వర్గ్యమ్", en: "unfitting for a noble person; leading not to heaven", te: "ఆర్యజనులకు తగనిది; స్వర్గాన్ని ఇచ్చేది కాదు" },
             { sanskrit: "अकीर्तिकरमर्जुन", word: "akīrti-karam arjuna", sanskrit_te: "అకీర్తికరమర్జున", en: "leading to infamy, O Arjuna", te: "అపకీర్తిని కలిగించేది, ఓ అర్జునా" }
         ]
     },
     "2.3": {
-        sanskrit: "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\nक्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
+        sanskrit: "क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते।\nक्षुद्रं हृदयदौర్बल्यं त्यक्त्वोत्तिष्ठ परन्तप॥",
         transliteration: "klaibyaṁ mā sma gamaḥ pārtha naitat tvayy upapadyate\nkṣudraṁ hṛdaya-daurbalyaṁ tyaktvottiṣṭha parantapa",
         en: {
             meaning: "Do not yield to this weakness. It does not befit you. Shake off this small worry and arise!",
@@ -126,7 +126,7 @@ const CHAPTER_2_SHLOKAS = {
             { sanskrit: "गुरूनहत्वा हि महानुभावान्", word: "gurūn ahatvā hi mahā-nubhāvān", sanskrit_te: "గురూనహత్వా హి మహానుభావాన్", en: "without killing the great teachers", te: "గొప్ప గురువులను చంపకుండా" },
             { sanskrit: "श्रेयो भोक्तुं भैक्ष्यमपीह లోకే", word: "śreyo bhoktuṁ bhaikṣyam apīha loke", sanskrit_te: "శ్రేయో భోక్తుం భైక్ష్యమపీహ లోకే", en: "better to live by begging in this world", te: "ఈ లోకంలో భిక్షాటన చేస్తూ బ్రతకడం మేలు" },
             { sanskrit: "हत्वार्थकामांस्तु गुरूनिहैव", word: "hatvārtha-kāmāṁs tu gurūn ihaiva", sanskrit_te: "హత్వార్థకామాంస్తు గురూన్", en: "but killing gurus who desire wealth", te: "కానీ లాభం కోసం గురువులను చంపడం" },
-            { sanskrit: "भुञ्जीय भोगान् रुधिरप्रदिग्धान्", word: "bhuñjīya bhogān rudhira-pradigdhān", sanskrit_te: "భుంజీయ భోగాన్ రుధిరప్రదిగ్ధాన్", en: "would be enjoying blood-stained pleasures", te: "రక్తంతో తడిసిన భోగాలను అనుభవించడమే" }
+            { sanskrit: "भुञ्जीय भोगान् रुधिरप्रदिग्धान्", word: "bhuñjīya bhogān rudhira-pradigdhān", sanskrit_te: "భుంజీय భోగాన్ రుధిరప్రదిగ్ధాన్", en: "would be enjoying blood-stained pleasures", te: "రక్తంతో తడిసిన భోగాలను అనుభవించడమే" }
         ]
     },
     "2.7": {
@@ -281,7 +281,7 @@ const CHAPTER_2_SHLOKAS = {
             { sanskrit: "Karmani eva adhikarah te", word: "Karmani eva adhikarah te", sanskrit_te: "కర్మణ్యేవాధికారస్తే", en: "You have the right only to perform your duties", te: "కర్మను చేయుటకే నీకు అధికారము కలదు" },
             { sanskrit: "Ma phaleshu kadachana", word: "Ma phaleshu kadachana", sanskrit_te: "మా ఫలేషు కదాచన", en: "Do not be attached to the results", te: "ఫలితములపై ఎన్నడూ ఆసక్తి చూపకు" },
             { sanskrit: "Ma karma-phala-hetuh bhur", word: "Ma karma-phala-hetuh bhur", sanskrit_te: "మా కర్మఫలహేతుర్భూర్", en: "Do not act just for reward", te: "కర్మఫలమునకు కారణము కావద్దు" },
-            { sanskrit: "Ma te sango’stvakarmani", word: "Ma te sango’stvakarmani", sanskrit_te: "మా తే సఙ్గోఽస్త్వకర్మణి", en: "Do not cling to inaction", te: "పని చేయకుండా ఉండటంపై ఆసక్తి పెంచుకోవద్దు" }
+            { sanskrit: "Ma te sango’stvakarmani", word: "Ma te sango’stvakarmani", sanskrit_te: "మా తే సఙ్గోऽస్త్వకర్మణి", en: "Do not cling to inaction", te: "పని చేయకుండా ఉండటంపై ఆసక్తి పెంచుకోవద్దు" }
         ]
     }
 };

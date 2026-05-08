@@ -77,13 +77,6 @@ const Login = () => {
         <p className="text-center mt-6 text-sm font-medium text-gray-600">
           Don't have an account? <Link to="/register" className="text-kid-primary hover:underline">Sign Up</Link>
         </p>
-
-        <Link 
-          to="/" 
-          className="block text-center mt-4 text-sm font-medium text-gray-400 hover:text-white transition-colors"
-        >
-          ← Back to Home
-        </Link>
       </div>
     </div>
   );

@@ -45,8 +45,9 @@ export const AuthProvider = ({ children }) => {
       const res = await api.post('/api/auth/login', { username, password });
       setToken(res.data.token);
       setUser(res.data.user);
-      // Preserve existing language preference — do NOT reset to 'en'
+      setCurrentLang('en'); // Default to English on login
       localStorage.setItem('user', JSON.stringify(res.data.user));
+      localStorage.setItem('lang', 'en');
       return true;
     } catch (error) {
       console.error('Login error', error);
@@ -60,8 +61,9 @@ export const AuthProvider = ({ children }) => {
       // Set user and token from register response directly
       setToken(res.data.token);
       setUser(res.data.user);
-      // Preserve existing language preference — do NOT reset to 'en'
+      setCurrentLang('en'); // Default to English on register
       localStorage.setItem('user', JSON.stringify(res.data.user));
+      localStorage.setItem('lang', 'en');
       return true;
     } catch (error) {
       console.error('Register error', error);
