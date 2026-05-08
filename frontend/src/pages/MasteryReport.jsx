@@ -75,13 +75,14 @@ const MasteryReport = () => {
   // Theme-based stats
   const gitaThemesCompleted = progress.gita?.reduce((acc, curr) => acc + (curr.themes_completed || 0), 0) || 0;
   const totalGitaThemes = progress.gita?.reduce((acc, curr) => acc + (curr.total_themes || 0), 0) || 0;
+  const totalGitaThemeVerses = progress.gita?.reduce((acc, curr) => acc + (curr.total_theme_verses || curr.total_verses || 0), 0) || 0;
 
   let totalMastered = gitaMastered + hanumanMastered;
   let totalWisdom = totalGitaShlokas + totalHanumanVerses;
   
   if (scriptureFilter === 'gita') {
     totalMastered = gitaMastered;
-    totalWisdom = totalGitaShlokas;
+    totalWisdom = totalGitaThemeVerses; // use level-aware verse count
   } else if (scriptureFilter === 'hanuman') {
     totalMastered = hanumanMastered;
     totalWisdom = totalHanumanVerses;
@@ -297,9 +298,11 @@ const MasteryReport = () => {
                           </thead>
                           <tbody className="divide-y divide-lem-glass-border">
                             {(progress.gita || []).map(ch => {
-                              const isCompleted = ch.verses_completed >= (ch.total_verses || 47);
+                              const totalShlokasLevel = ch.total_theme_verses || ch.total_verses || 1;
+                              const isCompleted = ch.verses_completed >= totalShlokasLevel;
                               const themesDone = ch.themes_completed || 0;
                               const totalThemesInCh = ch.total_themes || 0;
+                              const totalShlokasLevel = ch.total_theme_verses || ch.total_verses || 1;
                               const num = ch.chapter_number;
                               return (
                                 <tr key={num} className="hover:bg-white/5 transition-colors">
@@ -314,13 +317,13 @@ const MasteryReport = () => {
                                   <td className="px-6 py-4">
                                     <div className="flex flex-col gap-1">
                                       <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter">
-                                        <span>{ch.verses_completed || 0} / {ch.total_verses || 47} {isTe ? "శ్లోకాలు" : "shlokas"}</span>
-                                        <span>{Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%</span>
+                                        <span>{ch.verses_completed || 0} / {totalShlokasLevel} {isTe ? "శ్లోకాలు" : "shlokas"}</span>
+                                        <span>{Math.round(((ch.verses_completed || 0) / totalShlokasLevel) * 100)}%</span>
                                       </div>
                                       <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
                                         <div 
                                           className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
-                                          style={{ width: `${Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%` }}
+                                          style={{ width: `${Math.round(((ch.verses_completed || 0) / totalShlokasLevel) * 100)}%` }}
                                         />
                                       </div>
                                     </div>

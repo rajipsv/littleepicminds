@@ -568,15 +568,22 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
     // Build theme lookup set
     const completedThemes = new Set(themeResult.rows.map(r => r.verse));
 
-    // Compute total themes per chapter for the requested level
+    // Compute total themes and unique shlokas per chapter for the requested level
     const effectiveLevel = level || 'seekers';
     const themeCounts = {};
+    const themeVerseCounts = {};
     if (data.themes && data.themes.gita) {
       Object.keys(data.themes.gita).forEach(ch => {
         const chapterData = data.themes.gita[ch];
         const levelThemes = chapterData[effectiveLevel];
         if (Array.isArray(levelThemes)) {
           themeCounts[ch] = levelThemes.length;
+          // Count unique shlokas across all themes in this chapter
+          const uniqueShlokas = new Set();
+          levelThemes.forEach(theme => {
+            (theme.shlokas || []).forEach(s => uniqueShlokas.add(s));
+          });
+          themeVerseCounts[ch] = uniqueShlokas.size;
         }
       });
     }
@@ -589,6 +596,7 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
       return {
         chapter_number: ch.id,
         total_verses: ch.count,
+        total_theme_verses: themeVerseCounts[chKey] || ch.count,
         verses_completed: v ? parseInt(v.completed_count) : 0,
         best_score: q ? q.best_score : 0,
         total_themes: themeCounts[chKey] || 0,
