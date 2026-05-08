@@ -205,15 +205,17 @@ router.get('/themes/:scripture/:chapter', (req, res) => {
     
     const scriptureData = data.themes[scripture] || data.themes[scripture.toLowerCase()];
     if (!scriptureData) {
-      console.log(`[DEBUG] Scripture ${scripture} not found in themes. Available:`, Object.keys(data.themes));
-      return res.status(404).json({ error: `Scripture ${scripture} not found in themes` });
+      // No themes for this scripture (e.g., hanuman) - return empty array instead of error
+      console.log(`[DEBUG] No themes for ${scripture}. Available:`, Object.keys(data.themes));
+      return res.json([]);
     }
 
     const chapterData = scriptureData[chapterKey] || scriptureData[`chapter${chapterKey}`] || scriptureData[chapterId];
     
     if (!chapterData) {
-      console.log(`[DEBUG] No chapter data found for Ch ${chapterKey}. Available:`, Object.keys(scriptureData));
-      return res.status(404).json({ error: `No themes found for chapter ${chapterKey}` });
+      // No themes for this chapter - return empty array instead of error
+      console.log(`[DEBUG] No themes for Ch ${chapterKey} in ${scripture}. Available:`, Object.keys(scriptureData));
+      return res.json([]);
     }
     
     let themesToReturn = [];
