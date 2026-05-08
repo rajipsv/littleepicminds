@@ -7,7 +7,7 @@ import { initGuru, getGuruResponse, isGuruReady } from '../utils/aiGuru';
 
 const KrishnaChat = ({ scripture }) => {
   const [messages, setMessages] = useState([]);
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const { currentLang, user } = useAuth();
   
   const isTe = currentLang === 'te';

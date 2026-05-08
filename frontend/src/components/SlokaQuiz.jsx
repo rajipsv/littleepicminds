@@ -13,6 +13,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(null);
+  const [saveError, setSaveError] = useState(null);
   const isTe = currentLang === 'te';
   const isHanuman = scripture === 'hanuman';
 
@@ -72,9 +73,11 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
           score: pct,
           quiz_details: quizDetails
         }, { headers: { Authorization: `Bearer ${token}` } });
+        setSaveError(null);
         if (onPass) onPass(pct);
       } catch (e) {
         console.error('Failed to save quiz score', e);
+        setSaveError(e.response?.data?.error || e.message);
       }
     }
   };
@@ -96,11 +99,14 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
         <h3 className="text-3xl font-black text-white mb-2">
           {score}%
         </h3>
-        <p className={`text-lg font-bold mb-6 ${isPass ? 'text-green-400' : 'text-yellow-400'}`}>
+          <p className={`text-lg font-bold mb-2 ${isPass ? 'text-green-400' : 'text-yellow-400'}`}>
           {isPass
             ? (isTe ? '🎉 అద్భుతం! ఈ శ్లోకం మాస్టర్ చేశారు!' : `🎉 ${verseLabel} Mastered!`)
             : (isTe ? 'మళ్ళీ ప్రయత్నించండి!' : `Keep practicing! You need 70% to master this ${isHanuman ? 'verse' : 'shloka'}.`)}
-        </p>
+          </p>
+          {saveError && (
+            <p className="text-red-400 text-xs mb-4">{isTe ? `సేవ్ చేయడంలో లోపం: ${saveError}` : `Save error: ${saveError}`}</p>
+          )}
         {/* Show answer review */}
         <div className="space-y-3 text-left mb-6">
           {questions.map((q, i) => {

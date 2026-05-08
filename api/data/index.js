@@ -13,7 +13,7 @@ let themesData = { gita: {} };
 try {
   const seedsThemes = require('./themes_seeds.json');
   const seekersThemes = require('./themes_seekers.json');
-  
+
   // Merge Seeds
   if (seedsThemes.gita) {
     Object.keys(seedsThemes.gita).forEach(ch => {
@@ -21,7 +21,7 @@ try {
       themesData.gita[ch].seeds = seedsThemes.gita[ch];
     });
   }
-  
+
   // Merge Seekers
   if (seekersThemes.gita) {
     Object.keys(seekersThemes.gita).forEach(ch => {
@@ -31,6 +31,19 @@ try {
   }
 } catch (e) {
   console.warn('Could not load themes_seeds or themes_seekers:', e.message);
+}
+
+// Merge Warriors (separate file)
+try {
+  const warriorsThemes = require('./themes_warriors.json');
+  if (warriorsThemes.gita) {
+    Object.keys(warriorsThemes.gita).forEach(ch => {
+      if (!themesData.gita[ch]) themesData.gita[ch] = {};
+      themesData.gita[ch].warriors = warriorsThemes.gita[ch];
+    });
+  }
+} catch (e) {
+  console.warn('Could not load themes_warriors (file may not exist yet):', e.message);
 }
 console.log('[DEBUG] Static files loaded.');
 

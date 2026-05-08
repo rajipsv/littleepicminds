@@ -230,13 +230,13 @@ const MasteryReport = () => {
                     <div className="p-6 border-b border-lem-glass-border flex justify-between items-center bg-orange-500/5">
                       <h3 className="text-xl font-bold flex items-center gap-2 text-white">
                         <Star size={20} className="text-orange-500" />
-                        Hanuman Chalisa
+                        {isTe ? "హనుమాన్ చాలీసా" : "Hanuman Chalisa"}
                       </h3>
                       <button 
                         onClick={() => handleTabChange('history')}
                         className="text-xs font-black bg-white/10 text-gray-300 px-4 py-2 rounded-lg hover:bg-white/20 transition-all flex items-center gap-1"
                       >
-                        <ClipboardList size={14} /> View Quizzes
+                        <ClipboardList size={14} /> {isTe ? "క్విజ్‌లు చూడండి" : "View Quizzes"}
                       </button>
                     </div>
                     <div className="p-8 flex flex-col md:flex-row items-center gap-8">
@@ -250,15 +250,19 @@ const MasteryReport = () => {
                           </div>
                       </div>
                       <div className="flex-1">
-                          <h4 className="text-lg font-bold mb-2">Dedication to Hanuman</h4>
-                          <p className="text-gray-400 text-sm mb-4">You have mastered {hanumanMastered} out of 44 verses. Keep going to earn the "Bala Hanuman" badge!</p>
+                          <h4 className="text-lg font-bold mb-2">{isTe ? "హనుమంతుని పట్ల భక్తి" : "Dedication to Hanuman"}</h4>
+                          <p className="text-gray-400 text-sm mb-4">
+                            {isTe 
+                              ? `మీరు 44 శ్లోకాలలో ${hanumanMastered} మాస్టర్ చేశారు. "బాల హనుమాన్" బ్యాడ్జ్ సంపాదించడానికి కొనసాగండి!` 
+                              : `You have mastered ${hanumanMastered} out of 44 verses. Keep going to earn the "Bala Hanuman" badge!`}
+                          </p>
                           <div className="flex gap-4">
                             <div className="bg-white/5 p-4 rounded-xl flex-1 border border-lem-glass-border">
-                                <div className="text-xs font-bold text-gray-500 uppercase mb-1">Verses</div>
+                                <div className="text-xs font-bold text-gray-500 uppercase mb-1">{isTe ? "శ్లోకాలు" : "Verses"}</div>
                                 <div className="text-2xl font-black text-orange-500">{hanumanMastered}</div>
                             </div>
                             <div className="bg-white/5 p-4 rounded-xl flex-1 border border-lem-glass-border text-center">
-                                <div className="text-xs font-bold text-gray-500 uppercase mb-1">Badge</div>
+                                <div className="text-xs font-bold text-gray-500 uppercase mb-1">{isTe ? "బ్యాడ్జ్" : "Badge"}</div>
                                 <div className="text-2xl">🏆</div>
                             </div>
                           </div>
@@ -273,7 +277,7 @@ const MasteryReport = () => {
                     <div className="p-6 border-b border-lem-glass-border flex justify-between items-center bg-lem-accent/5">
                       <h3 className="text-xl font-bold flex items-center gap-2 text-white">
                         <BookOpen size={20} className="text-lem-accent" />
-                        Bhagavad Gita Breakdown
+                        {isTe ? "భగవద్గీత వివరాలు" : "Bhagavad Gita Breakdown"}
                       </h3>
                       <button 
                         onClick={() => handleTabChange('history')}

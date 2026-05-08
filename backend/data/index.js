@@ -14,8 +14,9 @@ let themes = {};
 try {
   const seedsThemes = require('./themes_seeds.json');
   const seekersThemes = require('./themes_seekers.json');
+  const warriorsThemes = require('./themes_warriors.json');
   
-  // Merge into structured format: { scripture: { chapter: { seeds: [], seekers: [] } } }
+  // Merge into structured format: { scripture: { chapter: { seeds: [], seekers: [], warriors: [] } } }
   themes = { gita: {} };
   
   // Merge Seeds
@@ -31,6 +32,14 @@ try {
     Object.keys(seekersThemes.gita).forEach(ch => {
       if (!themes.gita[ch]) themes.gita[ch] = {};
       themes.gita[ch].seekers = seekersThemes.gita[ch];
+    });
+  }
+  
+  // Merge Warriors
+  if (warriorsThemes.gita) {
+    Object.keys(warriorsThemes.gita).forEach(ch => {
+      if (!themes.gita[ch]) themes.gita[ch] = {};
+      themes.gita[ch].warriors = warriorsThemes.gita[ch];
     });
   }
 } catch (err) {
