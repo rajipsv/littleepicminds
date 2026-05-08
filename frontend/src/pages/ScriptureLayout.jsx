@@ -406,10 +406,11 @@ const ScriptureLayout = () => {
                     {isTe ? "మీ ఇతివృత్తాన్ని ఎంచుకోండి" : "Choose Your Theme"}
                   </h1>
                 </div>
-                <p className="text-gray-400 text-lg font-medium flex items-center gap-2">
-                  <span className="w-12 h-[2px] bg-lem-accent/30"></span>
-                  {isTe ? "ప్రయాణ మార్గం" : "Journey Path"}
-                </p>
+                  <p className="text-gray-400 text-lg font-medium flex items-center gap-2">
+                    <span className="w-12 h-[2px] bg-lem-accent/30"></span>
+                    <span className="capitalize text-lem-accent font-bold">{user?.level || 'seekers'}</span>
+                    {isTe ? " ప్రయాణ మార్గం" : " Journey Path"}
+                  </p>
               </div>
 
               {/* Theme Navigation Dropdown */}
