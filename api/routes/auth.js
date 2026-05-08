@@ -41,7 +41,8 @@ router.post('/register', async (req, res) => {
       return res.status(400).json({ error: 'Username, email, and password are required' });
     }
     console.log('Registering user:', { username, email, age, grade, mobile });
-    const level = getLevelFromAge(age);
+    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+    const level = getLevelFromAge(finalAge);
 
     if (!process.env.DATABASE_URL) {
       throw new Error('DATABASE_URL environment variable is missing in Vercel settings!');
@@ -57,9 +58,6 @@ router.post('/register', async (req, res) => {
     // Hash password
     const salt = await bcrypt.genSalt(10);
     const passwordHash = await bcrypt.hash(password, salt);
-
-    // Insert user
-    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
     console.log('Inserting into DB with level:', level, 'age:', finalAge);
     const newUser = await db.query(
       'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false, $9) RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile',

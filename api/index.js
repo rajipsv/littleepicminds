@@ -72,10 +72,10 @@ router.post('/auth/register', async (req, res) => {
       return res.status(400).json({ error: 'Username, email, and password are required' });
     }
     
-    const level = getLevelFromAge(age);
+    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+    const level = getLevelFromAge(finalAge);
     const salt = await bcrypt.genSalt(10);
     const passwordHash = await bcrypt.hash(password, salt);
-    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
 
     const result = await db.query(
       'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false, $9) RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile',
@@ -169,6 +169,32 @@ router.post('/auth/admin/toggle-subscription', adminAuth, async (req, res) => {
   }
 });
 
+// PUT /api/auth/profile — Update profile (age, grade) with level recalculation
+router.put('/auth/profile', async (req, res) => {
+  try {
+    const { username, name, age, grade } = req.body;
+    const level = getLevelFromAge(age);
+
+    if (!process.env.DATABASE_URL) {
+      return res.json({ id: 1, username, name, role: 'student', is_premium: false, age, grade, level });
+    }
+
+    const updatedUser = await db.query(
+      'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE username = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level, mobile',
+      [name, age, grade, level, username]
+    );
+
+    if (updatedUser.rows.length === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.json(updatedUser.rows[0]);
+  } catch (err) {
+    console.error('Profile update error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
 // VERSES & CHAPTERS
 router.get('/verses/chapters', (req, res) => {
   res.json({
@@ -197,42 +223,24 @@ function getHanumanVerse(verseParam) {
 router.get('/themes/:scripture/:chapter', (req, res) => {
   try {
     const { scripture, chapter } = req.params;
-    const { level } = req.query; // seeds, seekers, warriors
-
-    // Robust chapter lookup: try direct, string, and "chapter" prefix
-    const chapterId = chapter.toString();
-    const chapterKey = chapterId.startsWith('chapter') ? chapterId.replace('chapter', '') : chapterId;
+    const { level } = req.query; // seeds, seekers
     
-    const scriptureData = data.themes[scripture] || data.themes[scripture.toLowerCase()];
-    if (!scriptureData) {
-      // No themes for this scripture (e.g., hanuman) - return empty array instead of error
-      console.log(`[DEBUG] No themes for ${scripture}. Available:`, Object.keys(data.themes));
-      return res.json([]);
-    }
-
-    const chapterData = scriptureData[chapterKey] || scriptureData[`chapter${chapterKey}`] || scriptureData[chapterId];
-    
-    if (!chapterData) {
-      // No themes for this chapter - return empty array instead of error
-      console.log(`[DEBUG] No themes for Ch ${chapterKey} in ${scripture}. Available:`, Object.keys(scriptureData));
-      return res.json([]);
+    if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
+      return res.status(404).json({ error: 'Themes not found for this chapter' });
     }
     
+    const chapterData = data.themes[scripture][chapter];
     let themesToReturn = [];
 
-    // Flexible level matching
+    // Check if it's level-based structure { seeds: [], seekers: [] }
     if (!Array.isArray(chapterData)) {
-      const requestedLevel = (level || 'seekers').toLowerCase();
-      themesToReturn = chapterData[requestedLevel] || 
-                       chapterData['seekers'] || 
-                       chapterData['seeds'] || 
-                       chapterData['warriors'] || 
-                       [];
+      themesToReturn = chapterData[level] || chapterData['seekers'] || chapterData['seeds'] || [];
     } else {
+      // Fallback for old array structure
       themesToReturn = chapterData;
     }
     
-    // Inject actual shloka data
+    // Inject actual shloka data (Sanskrit, transliteration, audio, meanings) into each theme
     const themesWithShlokas = themesToReturn.map(theme => {
       const populatedShlokas = (theme.shlokas || []).map(shlokaId => {
         const shlokaObj = data.shlokas[shlokaId];
@@ -463,17 +471,9 @@ router.post('/journal', async (req, res) => {
     
     console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
 
-    const isHanuman = scripture === 'hanuman';
-    const chNum = parseInt(chapter_number) || (isHanuman ? 1 : 1);
+    const chNum = parseInt(chapter_number);
     let shlokaNum = parseInt(verse_id);
     
-    // Handle Hanuman verse IDs (Doha1, Verse1, etc.)
-    if (isHanuman && typeof verse_id === 'string') {
-      const matches = verse_id.match(/\d+/g);
-      if (matches && matches.length > 0) {
-        shlokaNum = parseInt(matches[matches.length - 1]);
-      }
-    } else
     // Improved parsing for theme IDs (e.g., "theme_1_5" -> 5, "theme_1_5_seeds" -> 5)
     if (isNaN(shlokaNum) && typeof verse_id === 'string') {
       const matches = verse_id.match(/\d+/g);
@@ -485,37 +485,44 @@ router.post('/journal', async (req, res) => {
       const parts = verse_id.split('.');
       shlokaNum = parseInt(parts[parts.length - 1]);
     }
-    
-    console.log(`Parsed: chNum=${chNum}, shlokaNum=${shlokaNum}, isNaN=${isNaN(shlokaNum)}`);
 
-    // 1. Save to Journal Table (always)
-    await db.query(
-      'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-      [userId, scripture, chNum, verse_id, question, response]
-    );
-
-    // 2. Save to Progress Table - only for valid numeric verses
-    if (verse_id && !isNaN(shlokaNum) && typeof shlokaNum === 'number') {
-      try {
-        const existing = await db.query(
-          'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
-          [userId, scripture || 'gita', chNum, shlokaNum]
-        );
-        
-        if (existing.rows.length === 0) {
-          await db.query(
-            'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
-            [userId, scripture || 'gita', chNum, shlokaNum, question, response]
-          );
-        } else {
-          await db.query(
-            'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
-            [question, response, existing.rows[0].id]
-          );
-        }
-      } catch (e) {
-        console.error('Progress table fail:', e.message);
+    // 1. Save to Journal Table
+    try {
+      await db.query(
+        'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
+        [userId, scripture, chNum, verse_id, question, response]
+      );
+    } catch (e) {
+      console.error('Journal table fail:', e.message);
+      // If DB is not available, still return success to avoid breaking UX
+      if (e.message.includes('DATABASE_URL')) {
+        console.warn('DB not configured, skipping journal save');
+        return res.status(201).json({ status: 'saved_offline', warning: 'DB not configured' });
       }
+      throw e;
+    }
+
+    // 2. Save to Progress Table (Self-healing upsert)
+    try {
+      const existing = await db.query(
+        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+        [userId, scripture || 'gita', chNum, shlokaNum]
+      );
+      
+      if (existing.rows.length === 0) {
+        await db.query(
+          'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
+          [userId, scripture || 'gita', chNum, shlokaNum, question, response]
+        );
+      } else {
+        await db.query(
+          'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
+          [question, response, existing.rows[0].id]
+        );
+      }
+    } catch (e) {
+      console.error('Progress table fail:', e.message);
+      // Non-critical, don't fail the whole request
     }
 
     res.status(201).json({ status: 'saved' });
@@ -650,55 +657,41 @@ router.get('/leaderboard', async (req, res) => {
 router.post('/evaluations', async (req, res) => {
   try {
     let { scripture, chapter_number, score, verse, quiz_details } = req.body;
-    
-    // Handle Hanuman - treat as unique scripture (no chapter-based scoring in evaluations)
-    const isHanuman = scripture === 'hanuman';
-    const effectiveChNum = isHanuman ? null : parseInt(chapter_number);
-    
+    if (!scripture || scripture !== 'hanuman') scripture = 'gita'; // Safety default
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
-    // 1. Save quiz score to evaluations table (only for Gita chapters)
-    if (!isHanuman && effectiveChNum) {
-      const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, effectiveChNum, scripture]);
-      if (existing.rows.length > 0) {
-        const current = existing.rows[0];
-        const newBest = Math.max(parseFloat(current.best_score), score);
-        await db.query(
-          'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
-          [score, newBest, userId, effectiveChNum, scripture]
-        );
-      } else {
-        await db.query(
-          'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
-          [userId, scripture, effectiveChNum, score, score]
-        );
-      }
+    // 1. Save quiz score to evaluations table
+    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, chapter_number, scripture || 'gita']);
+    if (existing.rows.length > 0) {
+      const current = existing.rows[0];
+      const newBest = Math.max(parseFloat(current.best_score), score);
+      await db.query(
+        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
+        [score, newBest, userId, chapter_number, scripture || 'gita']
+      );
+    } else {
+      await db.query(
+        'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
+        [userId, scripture || 'gita', chapter_number, score, score]
+      );
     }
 
     // 2. Save to progress table (so verses count toward mastery + leaderboard)
-    let shlokaNum = parseInt(verse);
-    if (isNaN(shlokaNum) && typeof verse === 'string') {
-      const matches = verse.match(/\d+/g);
-      if (matches && matches.length > 0) {
-        shlokaNum = parseInt(matches[matches.length - 1]);
-      }
-    }
-    if (verse && !isNaN(shlokaNum)) {
-      const chNum = isHanuman ? 1 : effectiveChNum;
-      // For Hanuman: chapter=1, shloka=verse number
-      // For Gita: chapter=chapter_number, shloka=verse number
+    if (verse) {
+      const shlokaNum = parseInt(verse);
+      const chNum = parseInt(chapter_number);
       const existingProgress = await db.query(
         'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
-        [userId, scripture, chNum, shlokaNum]
+        [userId, scripture || 'gita', chNum, shlokaNum]
       );
       if (existingProgress.rows.length === 0) {
         await db.query(
           'INSERT INTO progress (user_id, scripture, chapter, shloka, completed_at) VALUES ($1, $2, $3, $4, CURRENT_TIMESTAMP)',
-          [userId, scripture, chNum, shlokaNum]
+          [userId, scripture || 'gita', chNum, shlokaNum]
         );
       }
     }
@@ -853,20 +846,6 @@ router.post('/chat/wisdom', adminAuth, async (req, res) => {
 async function bootstrapDB() {
   try {
     await db.query(`
-      CREATE TABLE IF NOT EXISTS users (
-        id SERIAL PRIMARY KEY,
-        username VARCHAR(255) UNIQUE NOT NULL,
-        email VARCHAR(255) UNIQUE NOT NULL,
-        password_hash VARCHAR(255) NOT NULL,
-        name VARCHAR(255),
-        age INTEGER,
-        grade VARCHAR(50),
-        level VARCHAR(50),
-        role VARCHAR(50) DEFAULT 'student',
-        is_premium BOOLEAN DEFAULT false,
-        mobile VARCHAR(20),
-        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-      );
       CREATE TABLE IF NOT EXISTS journal_entries (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id),
