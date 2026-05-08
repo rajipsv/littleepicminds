@@ -671,8 +671,8 @@ router.post('/evaluations', async (req, res) => {
     }
 
     // 2. Save to progress table (so verses count toward mastery + leaderboard)
-    if (verse) {
-      const shlokaNum = parseInt(verse);
+    const shlokaNum = parseInt(verse);
+    if (verse && !isNaN(shlokaNum)) {
       const chNum = parseInt(chapter_number);
       const existingProgress = await db.query(
         'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
