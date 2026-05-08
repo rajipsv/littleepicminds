@@ -72,17 +72,18 @@ const MasteryReport = () => {
   const totalGitaShlokas = progress.gita?.reduce((acc, curr) => acc + curr.total_verses, 0) || 0;
   const totalHanumanVerses = progress.hanuman?.total_verses || 44;
 
-  // Theme-based stats
-  const gitaThemesCompleted = progress.gita?.reduce((acc, curr) => acc + (curr.themes_completed || 0), 0) || 0;
-  const totalGitaThemes = progress.gita?.reduce((acc, curr) => acc + (curr.total_themes || 0), 0) || 0;
-  const totalGitaThemeVerses = progress.gita?.reduce((acc, curr) => acc + (curr.total_theme_verses || curr.total_verses || 0), 0) || 0;
+  // Theme-based stats — only count chapters that have themes for this level
+  const chaptersWithThemes = progress.gita?.filter(ch => ch.total_themes > 0) || [];
+  const gitaThemesCompleted = chaptersWithThemes.reduce((acc, curr) => acc + (curr.themes_completed || 0), 0) || 0;
+  const totalGitaThemes = chaptersWithThemes.reduce((acc, curr) => acc + (curr.total_themes || 0), 0) || 0;
+  const totalGitaThemeVerses = chaptersWithThemes.reduce((acc, curr) => acc + (curr.total_theme_verses || 0), 0) || 0;
 
   let totalMastered = gitaMastered + hanumanMastered;
-  let totalWisdom = totalGitaShlokas + totalHanumanVerses;
+  let totalWisdom = totalGitaThemeVerses + totalHanumanVerses;
   
   if (scriptureFilter === 'gita') {
     totalMastered = gitaMastered;
-    totalWisdom = totalGitaThemeVerses; // use level-aware verse count
+    totalWisdom = totalGitaThemeVerses;
   } else if (scriptureFilter === 'hanuman') {
     totalMastered = hanumanMastered;
     totalWisdom = totalHanumanVerses;
@@ -297,8 +298,8 @@ const MasteryReport = () => {
                             </tr>
                           </thead>
                           <tbody className="divide-y divide-lem-glass-border">
-                            {(progress.gita || []).map(ch => {
-                              const totalShlokasLevel = ch.total_theme_verses || ch.total_verses || 1;
+                            {(chaptersWithThemes.length > 0 ? chaptersWithThemes : progress.gita || []).map(ch => {
+                              const totalShlokasLevel = ch.total_theme_verses || 1;
                               const isCompleted = ch.verses_completed >= totalShlokasLevel;
                               const themesDone = ch.themes_completed || 0;
                               const totalThemesInCh = ch.total_themes || 0;

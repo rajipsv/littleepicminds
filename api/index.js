@@ -596,7 +596,7 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
       return {
         chapter_number: ch.id,
         total_verses: ch.count,
-        total_theme_verses: themeVerseCounts[chKey] || ch.count,
+        total_theme_verses: themeVerseCounts[chKey] || 0,
         verses_completed: v ? parseInt(v.completed_count) : 0,
         best_score: q ? q.best_score : 0,
         total_themes: themeCounts[chKey] || 0,
