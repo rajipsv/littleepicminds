@@ -77,7 +77,7 @@
           "content": "Imagine you have a beautiful golden flashlight. You can change the batteries, or even get a new case, but the light inside is the same. Krishna told Arjun that we are all like that light. Our bodies grow and change, but the 'real you' inside—your soul—is eternal, never breaks, and is always shining. You are a wonderful spark of the Divine!",
           "content_te": "మీ దగ్గర ఒక అందమైన బంగారు రంగు ఫ్లాష్‌లైట్ ఉందని ఊహించుకోండి. మీరు బ్యాటరీలను మార్చవచ్చు, లేదా కొత్త కేసును కూడా తీసుకోవచ్చు, కానీ లోపల ఉన్న కాంతి మాత్రం అదే. కృష్ణుడు అర్జునుడితో మనం అందరం ఆ కాంతి లాంటి వాళ్ళమే అని చెప్పాడు. మన శరీరాలు పెరుగుతాయి మరియు మారుతాయి, కానీ లోపల ఉన్న 'నిజమైన మీరు'—అంటే మీ ఆత్మ—శాశ్వతమైనది, ఎప్పటికీ పాడవదు మరియు ఎల్లప్పుడూ ప్రకాశిస్తుంది.",
           "moral": "You are much more than just your body. You are a beautiful, eternal soul.",
-          "moral_te": "మీరు కేవలం మీ శరీరం మాత్రమే కాదు. మీరు ఒక అందమైన, శాశ్వతమైన ఆత్మ.",
+          "moral_te": "మీరు కేవలం మీ శరీరం మాత్రమే కాదు. మీరు ఒక అందమైన, శాశ్వతమైన ఆత్మ."
         },
         "activity": "Close your eyes and imagine a tiny, bright star in your heart. That star is the real you!",
         "activity_te": "కళ్ళు మూసుకుని మీ హృదయంలో ఒక చిన్న, ప్రకాశవంతమైన నక్షత్రాన్ని ఊహించుకోండి. ఆ నక్షత్రమే నిజమైన మీరు!",
@@ -101,6 +101,68 @@
         },
         "activity": "What is one thing you will do today JUST for the fun of it, without worrying about winning?",
         "activity_te": "ఈరోజు గెలవడం గురించి చింతించకుండా, కేవలం ఆనందం కోసం మీరు చేసే ఒక పని ఏమిటి?",
+        "videoUrl": ""
+      }
+    ],
+    "15": [
+      {
+        "id": "theme_s15_1",
+        "title": "The Tree of Life",
+        "title_te": "జీవ వృక్షం",
+        "emoji": "🌳",
+        "micro_theme": "We are all connected to something higher",
+        "micro_theme_te": "మనమందరం ఉన్నతమైన దానితో అనుసంధానించబడి ఉన్నాము",
+        "shlokas": ["15.1", "15.2"],
+        "story": {
+          "title": "The Upside-Down Magic Tree",
+          "title_te": "తలక్రిందులుగా ఉన్న మాయా వృక్షం",
+          "content": "Imagine a magical tree where the roots grow up into the sky and the branches spread out below! The roots in the sky remind us that we are connected to something very big and wonderful. We are like leaves on this giant tree, swaying and playing in the wind, but always connected to the same source. No matter how far the branches spread, every leaf is still part of the same tree.",
+          "content_te": "వేర్లు ఆకాశంలో పైకి పెరిగే మరియు కొమ్మలు కిందకు వ్యాపించే ఒక మాయా వృక్షాన్ని ఊహించండి! ఆకాశంలో ఉన్న వేర్లు మనం చాలా పెద్ద మరియు అద్భుతమైన దానితో అనుసంధానించబడి ఉన్నామని గుర్తు చేస్తాయి. మనం ఈ పెద్ద వృక్షంపై ఆకుల్లా ఉన్నాము, గాలిలో ఊగుతూ మరియు ఆడుతూ, కానీ ఎల్లప్పుడూ ఒకే మూలంతో అనుసంధానించబడి ఉంటాము. కొమ్మలు ఎంత దూరం వ్యాపించినా, ప్రతి ఆకు ఇంకా అదే వృక్షంలో భాగమే.",
+          "moral": "You are connected to something bigger and higher than what you can see.",
+          "moral_te": "మీరు మీరు చూడగలిగిన దానికంటే పెద్ద మరియు ఉన్నతమైన దానితో అనుసంధానించబడి ఉన్నారు."
+        },
+        "activity": "Draw an upside-down tree with roots in the sky and branches on the ground. Write your name on one leaf!",
+        "activity_te": "ఆకాశంలో వేర్లతో మరియు నేలపై కొమ్మలతో తలక్రిందులుగా ఉన్న చెట్టును గీయండి. ఒక ఆకుపై మీ పేరు రాయండి!",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s15_2",
+        "title": "The Soul's Journey",
+        "title_te": "ఆత్మ యొక్క ప్రయాణం",
+        "emoji": "🌱",
+        "micro_theme": "The soul continues its beautiful journey",
+        "micro_theme_te": "ఆత్మ తన అందమైన ప్రయాణాన్ని కొనసాగిస్తుంది",
+        "shlokas": ["15.7", "15.8"],
+        "story": {
+          "title": "The Traveler with a Suitcase",
+          "title_te": "సూట్‌కేసుతో ప్రయాణికుడు",
+          "content": "Imagine a happy traveler who visits one beautiful city, then packs their bag and moves to the next city for a new adventure. When the time comes, they pack up again and go to yet another wonderful place. Krishna tells us that our soul is just like that traveler. When one life's adventure is complete, the soul packs its experiences and moves to a new body for a brand new adventure. You are a traveler on an incredible journey!",
+          "content_te": "ఒక అందమైన నగరాన్ని సందర్శించి, ఆపై తన బ్యాగ్ సర్దుకుని కొత్త సాహసం కోసం తదుపరి నగరానికి వెళ్ళే ఒక సంతోషకరమైన ప్రయాణికుడిని ఊహించండి. సమయం వచ్చినప్పుడు, వారు మళ్ళీ సర్దుకుని మరొక అద్భుతమైన ప్రదేశానికి వెళ్తారు. మన ఆత్మ కూడా ఆ ప్రయాణికుడిలాంటిదేనని కృష్ణుడు మనకు చెప్పాడు. ఒక జీవిత సాహసం పూర్తయినప్పుడు, ఆత్మ తన అనుభవాలను సర్దుకుని కొత్త సాహసం కోసం కొత్త శరీరానికి వెళ్తుంది. మీరు ఒక అద్భుతమైన ప్రయాణంలో ఉన్న ప్రయాణికుడు!",
+          "moral": "Life is an amazing journey for your soul. Every adventure teaches you something new.",
+          "moral_te": "జీవితం మీ ఆత్మకు ఒక అద్భుతమైన ప్రయాణం. ప్రతి సాహసం మీకు కొత్తదాన్ని నేర్పిస్తుంది."
+        },
+        "activity": "If your soul is a traveler, what is one good quality you want to pack in your suitcase for the next adventure?",
+        "activity_te": "మీ ఆత్మ ఒక ప్రయాణికుడైతే, తదుపరి సాహసం కోసం మీరు మీ సూట్‌కేసులో ఏ ఒక మంచి లక్షణాన్ని ప్యాక్ చేయాలనుకుంటున్నారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s15_3",
+        "title": "Energy in Everything",
+        "title_te": "ప్రతిదానిలో శక్తి",
+        "emoji": "🔥",
+        "micro_theme": "The same divine energy powers everything",
+        "micro_theme_te": "అదే దివ్య శక్తి ప్రతిదాన్ని శక్తివంతం చేస్తుంది",
+        "shlokas": ["15.12", "15.13", "15.14"],
+        "story": {
+          "title": "The Sun's Magic",
+          "title_te": "సూర్యుని మాయా",
+          "content": "Have you ever wondered where the energy in your food comes from? The sun! The sun shines on plants and helps them grow. We eat the plants (or animals that ate the plants) and get energy to run and play. Krishna says the same divine energy that lights up the sun also nourishes the earth and even helps us digest our food! That amazing energy is inside you right now, giving you life and strength.",
+          "content_te": "మీ ఆహారంలోని శక్తి ఎక్కడ నుండి వస్తుందని మీరు ఎప్పుడైనా ఆలోచించారా? సూర్యుడి నుండి! సూర్యుడు మొక్కలపై ప్రకాశించి వాటిని పెరగడానికి సహాయం చేస్తాడు. మనం మొక్కలను (లేదా మొక్కలను తిన్న జంతువులను) తింటాము మరియు పరిగెత్తడానికి, ఆడటానికి శక్తిని పొందుతాము. సూర్యుడిని వెలిగించే అదే దివ్య శక్తి భూమిని పోషించడమే కాకుండా మన ఆహారాన్ని జీర్ణం చేయడానికి కూడా సహాయపడుతుందని కృష్ణుడు చెప్పాడు! ఆ అద్భుతమైన శక్తి ఇప్పుడు మీ లోపల ఉంది, మీకు జీవితాన్ని మరియు బలాన్ని ఇస్తుంది.",
+          "moral": "The same divine energy is in the sun, the plants, and in you! You are part of something amazing.",
+          "moral_te": "అదే దివ్య శక్తి సూర్యుడిలో, మొక్కలలో మరియు మీలో ఉంది! మీరు ఒక అద్భుతమైన దానిలో భాగం."
+        },
+        "activity": "Next time you eat a meal, take one second to think: 'The sun helped make this food possible!'",
+        "activity_te": "తదుపరి సారి మీరు భోజనం చేసినప్పుడు, ఒక్క సెకను ఆలోచించండి: 'ఈ ఆహారాన్ని సాధ్యం చేయడానికి సూర్యుడు సహాయపడ్డాడు!'",
         "videoUrl": ""
       }
     ]

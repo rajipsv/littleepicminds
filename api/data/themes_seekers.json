@@ -143,6 +143,88 @@
         "activity_te": "మిమ్మల్ని తరచుగా పరధ్యానం చేసే విషయం గురించి ఆలోచించండి (ఫోన్ లేదా బొమ్మ వంటివి). మెరుగైన దాని మీద దృష్టి పెట్టడానికి ఈరోజు 30 నిమిషాల పాటు తాబేలులా దాని నుండి 'మీ ఇంద్రియాలను వెనక్కి తీసుకోగలరా'?",
         "videoUrl": ""
       }
+    ],
+    "15": [
+      {
+        "id": "theme_sk15_1",
+        "title": "The Upside-Down Tree",
+        "title_te": "తలక్రిందులుగా ఉన్న వృక్షం",
+        "emoji": "🌳",
+        "micro_theme": "The world is like a tree — learn to see beyond it",
+        "micro_theme_te": "ప్రపంచం ఒక చెట్టు లాంటిది — దానికి అతీతంగా చూడటం నేర్చుకోండి",
+        "shlokas": ["15.1", "15.2", "15.3", "15.4"],
+        "story": {
+          "title": "The Tree That Traps Us",
+          "title_te": "మనలను బంధించే వృక్షం",
+          "content": "Krishna describes the world as a giant tree with roots in the sky and branches reaching down. Its leaves are the sacred scriptures, and its flowers are the pleasures we chase. Most of us spend our lives climbing these branches — chasing success, possessions, and happiness — without ever realizing we are on a tree at all. The wise person, however, looks up. They see the roots and understand that true freedom comes from cutting this tree down with the strong axe of knowledge and detachment. Only then can we reach the eternal place from which no one returns.",
+          "content_te": "కృష్ణుడు ప్రపంచాన్ని ఆకాశంలో వేర్లతో మరియు కిందికి చేరుకునే కొమ్మలతో ఒక పెద్ద చెట్టుగా వర్ణించాడు. దాని ఆకులు పవిత్ర గ్రంథాలు, మరియు దాని పూలు మనం వెంబడించే ఆనందాలు. మనలో చాలామంది ఈ కొమ్మలపై ఎక్కడంలో జీవితాన్ని గడుపుతాము — విజయం, సంపదలు మరియు సంతోషాన్ని వెంబడిస్తూ — మనం ఒక చెట్టుపై ఉన్నామని కూడా గ్రహించకుండా. అయితే, తెలివైన వ్యక్తి పైకి చూస్తాడు. వారు వేర్లను చూస్తారు మరియు నిజమైన స్వేచ్ఛ జ్ఞానం మరియు వైరాగ్యం అనే బలమైన గొడ్డలితో ఈ చెట్టును నరికివేయడం ద్వారా వస్తుందని అర్థం చేసుకుంటారు. అప్పుడే మనం ఎవరూ తిరిగి రాని శాశ్వత స్థానాన్ని చేరుకోగలము.",
+          "moral": "The world of desires is a tree that binds us. Cut it with knowledge and seek what is eternal.",
+          "moral_te": "కోరికల ప్రపంచం మనలను బంధించే ఒక చెట్టు. జ్ఞానంతో దానిని నరికి, శాశ్వతమైన దానిని వెతకండి."
+        },
+        "activity": "Draw the upside-down tree of the world on a paper. On each branch, write one desire or attachment you have. Then draw an axe labeled 'wisdom' at the roots. Reflect on what cutting each branch would mean.",
+        "activity_te": "ఒక కాగితంపై తలక్రిందులుగా ఉన్న ప్రపంచ వృక్షాన్ని గీయండి. ప్రతి కొమ్మపై, మీకు ఉన్న ఒక కోరిక లేదా వ్యామోహాన్ని రాయండి. ఆపై వేర్ల వద్ద 'జ్ఞానం' అనే లేబుల్ ఉన్న గొడ్డలిని గీయండి. ప్రతి కొమ్మను నరికివేయడం అంటే ఏమిటో ఆలోచించండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk15_2",
+        "title": "The Divine Light Within",
+        "title_te": "లోపలి దివ్య కాంతి",
+        "emoji": "✨",
+        "micro_theme": "The soul is a spark of the Divine that needs no external light",
+        "micro_theme_te": "ఆత్మ బాహ్య కాంతి అవసరం లేని దివ్య కణం",
+        "shlokas": ["15.6", "15.7", "15.8"],
+        "story": {
+          "title": "A Light That Needs No Sun",
+          "title_te": "సూర్యుడు అక్కర్లేని కాంతి",
+          "content": "Have you ever been in a completely dark room? You need a flashlight or a lamp to see. But Krishna speaks of a place, a state of being, that doesn't need the sun, the moon, or fire to be illuminated. That place shines by its own light! And here's the amazing part: a spark of that same light is inside you right now. It is your soul. When we understand that we are not just the body but a spark of the divine, we begin to see life differently. We stop fearing darkness and change because we carry the light within us.",
+          "content_te": "మీరు ఎప్పుడైనా పూర్తిగా చీకటి గదిలో ఉన్నారా? చూడడానికి మీకు ఫ్లాష్‌లైట్ లేదా దీపం అవసరం. కానీ కృష్ణుడు సూర్యుడు, చంద్రుడు లేదా అగ్ని అవసరం లేని ఒక స్థలం గురించి, ఒక ఉనికి స్థితి గురించి మాట్లాడతాడు. ఆ స్థలం తన స్వంత కాంతితో ప్రకాశిస్తుంది! మరియు ఇక్కడ అద్భుతమైన భాగం ఉంది: అదే కాంతి యొక్క ఒక కణం ఇప్పుడు మీ లోపల ఉంది. అది మీ ఆత్మ. మనం కేవలం శరీరం మాత్రమే కాదని, దివ్య కాంతి యొక్క ఒక కణమని అర్థం చేసుకున్నప్పుడు, మనం జీవితాన్ని భిన్నంగా చూడటం ప్రారంభిస్తాము. మనలో కాంతిని మోస్తున్నందున మనం చీకటి మరియు మార్పుకు భయపడటం మానేస్తాము.",
+          "moral": "Your soul is self-luminous. You don't need external validation or circumstances to shine.",
+          "moral_te": "మీ ఆత్మ స్వయం ప్రకాశమానమైనది. ప్రకాశించడానికి మీకు బాహ్య ఆమోదం లేదా పరిస్థితులు అవసరం లేదు."
+        },
+        "activity": "Sit in silence for 5 minutes. Close your eyes and try to feel the 'observer' inside you — the one who is aware of your thoughts. That is your eternal self.",
+        "activity_te": "5 నిమిషాలు నిశ్శబ్దంగా కూర్చోండి. కళ్ళు మూసుకుని మీ లోపలి 'పరిశీలకుడిని' అనుభవించడానికి ప్రయత్నించండి — మీ ఆలోచనల గురించి తెలిసిన వ్యక్తి. అది మీ శాశ్వతమైన ఆత్మ.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk15_3",
+        "title": "The Presence of the Divine",
+        "title_te": "దివ్య సాన్నిధ్యం",
+        "emoji": "☀️",
+        "micro_theme": "The Divine is present in every aspect of life",
+        "micro_theme_te": "జీవితంలోని ప్రతి అంశంలో దివ్యత్వం ఉంది",
+        "shlokas": ["15.12", "15.13", "15.14", "15.15"],
+        "story": {
+          "title": "Finding the Divine in Everything",
+          "title_te": "ప్రతిదానిలో దివ్యత్వాన్ని కనుగొనడం",
+          "content": "Krishna reveals something incredible: He is the light in the sun that brightens the whole world. He is the energy in the moon and the fire. He enters the earth and sustains all living beings with His energy. He becomes the digestive fire that helps us process food. And deepest of all, He sits in the heart of every being as the source of memory, knowledge, and even forgetfulness! The divine is not far away in some distant heaven — it is right here, in the warmth of the sun, the taste of your food, and the thoughts in your mind.",
+          "content_te": "కృష్ణుడు ఒక అద్భుతమైన విషయాన్ని వెల్లడిస్తాడు: ఆయనే మొత్తం ప్రపంచాన్ని వెలిగించే సూర్యుడిలోని కాంతి. ఆయనే చంద్రుడు మరియు అగ్నిలోని శక్తి. ఆయన భూమిలో ప్రవేశించి తన శక్తితో అన్ని జీవులను పోషిస్తాడు. ఆయన ఆహారాన్ని జీర్ణం చేయడానికి సహాయపడే జీర్ణాగ్ని అవుతాడు. మరియు అన్నింటికంటే లోతుగా, ఆయన జ్ఞాపకశక్తి, జ్ఞానం మరియు మరచిపోవడానికి కూడా మూలంగా ప్రతి జీవి యొక్క హృదయంలో కూర్చుని ఉన్నాడు! దైవం ఏదో దూరమైన స్వర్గంలో లేదు — అది ఇక్కడే ఉంది, సూర్యుని వెచ్చదనంలో, మీ ఆహారం యొక్క రుచిలో మరియు మీ మనస్సులోని ఆలోచనలలో.",
+          "moral": "The Divine is not distant. It is the very energy that sustains your life and consciousness.",
+          "moral_te": "దైవం దూరంగా లేదు. అది మీ జీవితాన్ని మరియు చైతన్యాన్ని నిలబెట్టే శక్తి."
+        },
+        "activity": "Pick one natural element today — the sun, the earth, or the food you eat. Spend 2 minutes truly appreciating how the divine is present in it.",
+        "activity_te": "ఈరోజు ఒక సహజ మూలకాన్ని ఎంచుకోండి — సూర్యుడు, భూమి లేదా మీరు తినే ఆహారం. అందులో దివ్యత్వం ఎలా ఉందో నిజంగా అభినందించడానికి 2 నిమిషాలు గడపండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk15_4",
+        "title": "The Supreme Reality",
+        "title_te": "పరమ సత్యం",
+        "emoji": "🌟",
+        "micro_theme": "Beyond the temporary and eternal is the Supreme Person",
+        "micro_theme_te": "తాత్కాలికం మరియు శాశ్వతానికి అతీతంగా పరమ పురుషుడు ఉన్నాడు",
+        "shlokas": ["15.16", "15.17", "15.18"],
+        "story": {
+          "title": "Three Levels of Reality",
+          "title_te": "వాస్తవికత యొక్క మూడు స్థాయిలు",
+          "content": "Krishna explains that there are three categories of existence. First is the 'perishable' — everything that changes and eventually passes away: our bodies, our possessions, even this world. Second is the 'imperishable' — the soul that never dies but continues its journey. But beyond both of these is the 'Supreme Person' — Purushottama — who is the highest of all. Krishna reveals that He is that Supreme Person. He supports the entire universe and is beyond both the changing matter and the unchanging soul. Understanding this hierarchy helps us know what to invest our lives in.",
+          "content_te": "కృష్ణుడు ఉనికి యొక్క మూడు వర్గాలు ఉన్నాయని వివరించాడు. మొదటిది 'నశ్వరమైనది' — మారే మరియు చివరకు నశించే ప్రతిదీ: మన శరీరాలు, మన సంపదలు, ఈ ప్రపంచం కూడా. రెండవది 'నాశనం లేనిది' — ఎప్పుడూ చనిపోని కానీ తన ప్రయాణాన్ని కొనసాగించే ఆత్మ. కానీ ఈ రెండింటికి అతీతంగా 'పరమ పురుషుడు' — పురుషోత్తముడు — అందరికంటే ఉన్నతమైనవాడు ఉన్నాడు. తానే ఆ పరమ పురుషుడని కృష్ణుడు వెల్లడిస్తాడు. ఆయన మొత్తం విశ్వాన్ని ధరించి ఉన్నాడు మరియు మారుతున్న పదార్థం మరియు మారని ఆత్మ రెండింటికి అతీతండు. ఈ శ్రేణిని అర్థం చేసుకోవడం మన జీవితాలను దేనిలో పెట్టుబడి పెట్టాలో తెలుసుకోవడానికి సహాయపడుతుంది.",
+          "moral": "Invest your life in the Supreme, who is beyond the temporary body and the eternal soul alike.",
+          "moral_te": "తాత్కాలిక శరీరం మరియు శాశ్వతమైన ఆత్మ రెండింటికి అతీతుడైన పరమ పురుషునిలో మీ జీవితాన్ని పెట్టుబడి పెట్టండి."
+        },
+        "activity": "Create a three-column list in your journal: 'Perishable' (things that change), 'Imperishable' (things that last), 'Supreme' (the divine). Fill each column with examples from your life.",
+        "activity_te": "మీ జర్నల్‌లో మూడు నిలువు వరుసల జాబితా రూపొందించండి: 'నశ్వరమైనది' (మారే వస్తువులు), 'నాశనం లేనిది' (శాశ్వతమైనవి), 'పరమ' (దైవం). ప్రతి నిలువు వరుసను మీ జీవితంలోని ఉదాహరణలతో నింపండి.",
+        "videoUrl": ""
+      }
     ]
   }
 }
