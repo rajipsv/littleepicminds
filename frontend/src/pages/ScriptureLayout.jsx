@@ -236,9 +236,6 @@ const ScriptureLayout = () => {
             </div>
           ) : (
             <div className="flex flex-col gap-2">
-              <div className="text-center mb-1">
-                <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Browsing: <span className="text-lem-accent">Seekers</span></span>
-              </div>
               <Link 
                 to="/login" 
                 onClick={() => setIsMobileMenuOpen(false)}
