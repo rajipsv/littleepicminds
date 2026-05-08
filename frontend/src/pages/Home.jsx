@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { BookOpen, LogOut, User, X } from 'lucide-react';
 
@@ -71,6 +71,7 @@ const scriptures = [
 
 const Home = () => {
   const { user, logout } = useAuth();
+  const navigate = useNavigate();
   const [selectedLevel, setSelectedLevel] = useState(null);
 
   return (
@@ -153,43 +154,42 @@ const Home = () => {
                 );
               }
               return (
-                <Link
+                <div
                   key={s.id}
-                  to={`/read/${s.id}`}
-                  className="glass-card p-10 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center group"
+                  onClick={() => navigate(`/read/${s.id}`)}
+                  className="glass-card p-10 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center group cursor-pointer"
                 >
-                  <div className="w-20 h-20 bg-lem-sidebar rounded-3xl mb-8 flex items-center justify-center text-lem-accent shadow-inner border border-lem-glass-border group-hover:rotate-6 transition-transform duration-500">
+                  <div className="w-20 h-20 bg-lem-sidebar rounded-3xl mb-6 flex items-center justify-center text-lem-accent shadow-inner border border-lem-glass-border group-hover:rotate-6 transition-transform duration-500">
                     <BookOpen size={40} />
                   </div>
-                  <h3 className="text-2xl font-black text-white mb-3 tracking-wide">{s.title}</h3>
-                  <p className="text-gray-400 font-medium leading-relaxed">{s.desc}</p>
-                  <div className="mt-8 opacity-0 group-hover:opacity-100 transition-opacity font-bold text-lem-accent flex items-center">
+                  <h3 className="text-2xl font-black text-white mb-1 tracking-wide">{s.title}</h3>
+                  <p className="text-gray-400 font-medium leading-relaxed mb-6">{s.desc}</p>
+
+                  {/* Level buttons inside Gita card */}
+                  <div className="flex flex-wrap justify-center gap-3 mb-6" onClick={e => e.stopPropagation()}>
+                    {levels.map(l => (
+                      <button
+                        key={l.id}
+                        onClick={() => setSelectedLevel(l)}
+                        className="bg-white/5 px-4 py-2.5 rounded-xl border border-lem-glass-border hover:border-white/20 hover:bg-white/10 transition-all duration-200 text-left"
+                      >
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">{l.emoji}</span>
+                          <div>
+                            <div className="text-sm font-bold text-white">{l.title}</div>
+                            <div className="text-[11px] text-gray-400">{l.ageRange}</div>
+                          </div>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+
+                  <div className="font-bold text-lem-accent flex items-center text-sm">
                     Start Reading <span className="ml-2">→</span>
                   </div>
-                </Link>
+                </div>
               );
             })}
-          </div>
-
-          {/* Learning Levels */}
-          <div className="mt-16 text-center">
-            <h3 className="text-2xl font-extrabold text-white mb-2">Learning Levels</h3>
-            <p className="text-gray-400 font-medium mb-8">Choose a level to learn more about each stage</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              {levels.map(l => (
-                <button
-                  key={l.id}
-                  onClick={() => setSelectedLevel(l)}
-                  className="glass-card px-6 py-4 border border-lem-glass-border hover:border-white/20 transition-all duration-300 flex items-center gap-3 group"
-                >
-                  <span className="text-2xl">{l.emoji}</span>
-                  <div className="text-left">
-                    <div className="font-bold text-white group-hover:text-lem-accent transition-colors">{l.title}</div>
-                    <div className="text-xs text-gray-400">{l.ageRange}</div>
-                  </div>
-                </button>
-              ))}
-            </div>
           </div>
 
           <div className="text-center mt-10">
