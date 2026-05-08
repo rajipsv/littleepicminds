@@ -86,40 +86,118 @@ const CHAPTER_2_SHLOKAS = {
             activity: "Ever had a difficult choice between two things you love?"
         },
         te: {
-            meaning: "అర్జునుడు ఇలా అన్నాడు: ఓ కృష్ణా, నేను పూజించదగిన భీష్ముడిని మరియు ద్రోణుడిని యుద్ధంలో బాణాలతో ఎలా ఎదిరించగలను?",
-            childMeaning: "అర్జునుడు అన్నాడు: 'నేను నా తాతయ్యను, నా గురువును ఎలా ఎదిరించగలను? నేను వారిని ఎంతో ప్రేమిస్తున్నాను!'",
-            activity: "నీకు నచ్చిన రెండు విషయాలలో ఒకదాన్ని ఎంచుకోవాల్సి వచ్చినప్పుడు ఎలా అనిపిస్తుంది?"
-        },
-        exercises: {
-            seeds: { question: "Who did Arjuna love and respect?", question_te: "అర్జునుడు ఎవరిని గౌరవించాడు?", options: ["Bhishma & Drona", "Strangers", "Monsters"], correct: 0 },
-            seekers: { question: "Why was he hesitant?", question_te: "అర్జునుడు ఎందుకు వెనుకడుగు వేశాడు?", options: ["Scared", "Respected them", "No arrows"], correct: 1 },
-            warriors: { question: "Primary conflict in 2.4?", question_te: "2.4 శ్లోకంలో ప్రధాన సంఘర్షణ ఏమిటి?", options: ["Fear of injury", "Duty vs respect for elders", "Waking up early"], correct: 1 }
-        },
-        telugu_script: "అర్జున ఉవాచ |\nకథం భీష్మమహం సంఖ్యే ద్రోణం చ మధుసూదన |\nఇషుభిః ప్రతియోత్స్యామి పూజార్హావరిసూదన ||",
-        lineBreakdown: [
-            { sanskrit: "कथं भीष्ममहं सङ्ख्ये", word: "kathaṁ bhīṣmam ahaṁ saṅkhye", sanskrit_te: "కథం భీష్మమహం సంఖ్యే", en: "how can I Bhishma in battle", te: "యుద్ధంలో భీష్ముడిని నేను ఎలా" },
-            { sanskrit: "द्रोणं च मधुसूदन", word: "droṇaṁ ca madhusūdana", sanskrit_te: "ద్రోణం చ మధుసూదన", en: "and Drona, O slayer of Madhu", te: "మరియు ద్రోణుడిని, ఓ మధుసూదనా" },
-            { sanskrit: "इषुभिः प्रतियोत्स्यामि", word: "iṣubhiḥ pratiyotsyāmi", sanskrit_te: "ఇషుభిః ప్రతియోత్స్యామి", en: "fight back with arrows", te: "బాణాలతో ఎలా ఎదిరించగలను" },
-            { sanskrit: "पूजार्हावरिसुदन", word: "pūjārhāv arisūdana", sanskrit_te: "పూజార్హావరిసూదన", en: "who are worthy of worship", te: "పూజ్యులైన వారిని" }
-        ]
-    },
-    "2.5": {
-        sanskrit: "गुरूनहत्वा हि महानुभाవాన్ श्रेయో భోక్తుం భైక్ష్యమపీహ లోకే।\nహత్వార్థకామాంస్తు గురూనిహైవ భుంజీయ భోగాన్ రుధిరప్రదిగ్ధాన్॥",
-        transliteration: "gurūn ahatvā hi mahā-nubhāvān śreyo bhoktuṁ bhaikṣyam apīha loke\nhatvārtha-kāmāṁs tu gurūn ihaiva bhuñjīya bhogān rudhira-pradigdhān",
+            meaning: "అర్జునుడు ఇలా అన్నాడు: ఓ కృష్ణా, నేను పూజించదగిన భీ�    "2.6": {
+        sanskrit: "न चैतद्विद्मः कतरन्नो गरीयो यद्वा जयेम यदि वा नो जयेयुः।\nयानेव हत्वा न जिजीविषामस्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः॥",
+        transliteration: "na caitad vidmaḥ kataran no garīyo yad vā jayema yadi vā no jayeyuḥ\nyān eva hatvā na jijīviṣāmas te ’vasthitāḥ pramukhe dhārtarāṣṭrāḥ",
         en: {
-            meaning: "It would be better to live in this world by begging than to enjoy life by killing such noble teachers.",
-            childMeaning: "Arjuna said: 'I would rather have nothing and be a beggar than win by hurting my great teachers.'",
-            activity: "What is more important: Winning a game, or being a kind friend?"
+            meaning: "Nor do we know which is better—conquering them or being conquered by them. If we killed the sons of Dhritarashtra, we should not care to live.",
+            childMeaning: "Arjuna said: 'I don't even know if it's better to win or lose. If I hurt my cousins, I won't even feel like living anymore.'",
+            activity: "Think of a time you were very confused. How did you decide what to do?"
         },
         te: {
-            meaning: "గొప్పవారైన గురువులను చంపడం కంటే, ఈ లోకంలో భిక్షాటన చేస్తూ బ్రతకడం మేలు. వారిని చంపి పొందే భోగాలు రక్తంతో తడిసినవే అవుతాయి.",
-            childMeaning: "అర్జునుడు అన్నాడు: 'నా గొప్ప గురువులను బాధపెట్టి గెలవడం కంటే, నేనేమీ లేకుండా భిక్షగాడిగా ఉండటమే మేలు.'",
-            activity: "ఆటలో గెలవడం ముఖ్యమా లేక మంచి స్నేహితుడిగా ఉండటం ముఖ్యమా?"
+            meaning: "మనకు ఏది మేలో తెలియడం లేదు - మనం గెలవడమా లేక వారు మనల్ని గెలవడమా? ఎవరిని చంపి మనం బ్రతకాలని అనుకోవడం లేదో, ఆ ధృతరాష్ట్రుని కుమారులే మన ముందు నిలబడి ఉన్నారు.",
+            childMeaning: "అర్జునుడు అన్నాడు: 'గెలవడం మంచిదో, ఓడిపోవడం మంచిదో నాకు తెలియడం లేదు. నా అన్నదమ్ములను బాధపెట్టి నేను ఎలా సంతోషంగా ఉండగలను?'",
+            activity: "నీకు ఎప్పుడైనా చాలా అయోమయంగా అనిపించిందా? అప్పుడు నువ్వు ఏం చేశావు?"
         },
         exercises: {
-            seeds: { question: "What did Arjuna say was better than hurting his teachers?", question_te: "గురువులను బాధపెట్టడం కంటే ఏది మేలని అర్జునుడు అన్నాడు?", options: ["Being a beggar", "Winning gold", "Watching TV"], correct: 0 },
-            seekers: { question: "Arjuna thought winning would feel bad because...", question_te: "గెలవడం ఎందుకు బాధాకరమని అర్జునుడు భావించాడు?", options: ["Trophy heavy", "Involve hurting noble people", "No like winning"], correct: 1 },
-            warriors: { question: "Arjuna's character?", question_te: "అర్జునుడి స్వభావం ఎలాంటిది?", options: ["Greedy", "High ethical standards", "Lazy"], correct: 1 }
+            seeds: { question: "Was Arjuna sure about what to do?", question_te: "అర్జునుడు ఏమి చేయాలో ఖచ్చితంగా తెలుసా?", options: ["Yes", "No, very confused (😵)", "Maybe"], correct: 1 },
+            seekers: { question: "Who was Arjuna worried about hurting?", question_te: "అర్జునుడు ఎవరిని బాధపెడతానని భయపడ్డాడు?", options: ["Strangers", "The sons of Dhritarashtra (His family)", "Monsters"], correct: 1 },
+            warriors: { question: "Arjuna's dilemma in 2.6?", question_te: "2.6 లో అర్జునుడి ప్రధాన సమస్య ఏమిటి?", options: ["Fear of losing", "Confusion over whether victory is worth the cost", "He was tired"], correct: 1 }
+        },
+        telugu_script: "న చైతద్విద్మః కతరన్నో గరీయో యద్వా జయేమ యది వా నో జయేయుః |\nయానేవ హత్వా న జిజీవిషామస్తేఽవస్థితాః ప్రముఖే ధార్తరాష్ట్రాః ||",
+        lineBreakdown: [
+            { sanskrit: "na caitad vidmaḥ kataran no garīyo", sanskrit_te: "న చైతద్విద్మః కతరన్నో గరీయో", en: "nor do we know which is better for us", te: "మనకు ఏది మేలో మనకు తెలియదు" },
+            { sanskrit: "yad vā jayema yadi vā no jayeyuḥ", sanskrit_te: "యద్వా జయేమ యది వా నో జయేయుః", en: "whether we conquer or they conquer us", te: "మనం గెలవడమా లేక వారు మనల్ని గెలవడమా" },
+            { sanskrit: "yān eva hatvā na jijīviṣāmas", sanskrit_te: "యానేవ హత్వా న జిజీవిషామః", en: "whom after killing we do not wish to live", te: "ఎవరిని చంపి మనం బ్రతకాలని కోరుకోవడం లేదో" },
+            { sanskrit: "te ’vasthitāḥ pramukhe dhārtarāṣṭrāḥ", sanskrit_te: "తేఽవస్థితాః ప్రముఖే ధార్తరాష్ట్రాః", en: "they stand before us, the sons of Dhritarashtra", te: "వారు మన ముందు నిలబడి ఉన్నారు, ధృతరాష్ట్ర పుత్రులు" }
+        ]
+    },
+    "2.7": {
+        sanskrit: "कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसम्मूढचेताः।\nयच्छ्रेयः स्यान्निश्चितं ब्रूहि तन्మే शिष्यస్తేऽహం శాధి మాం త్వాం ప్రపన్నమ్॥",
+        transliteration: "kārpaṇya-doṣopahata-svabhāvaḥ pṛcchāmi tvāṁ dharma-sammūḍha-cetāḥ\nyac chreyaḥ syān niścitaṁ brūhi tan me śiṣyas te ’haṁ śādhi māṁ tvāṁ prapannam",
+        en: {
+            meaning: "I am confused about my duty. Tell me for certain what is best. I am Your disciple. Please instruct me.",
+            childMeaning: "Arjuna said: 'I am so confused! Please be my teacher. I promise to listen. Tell me exactly what I should do.'",
+            activity: "Think of one big question you want to ask a wise person."
+        },
+        te: {
+            meaning: "కర్తవ్యం పట్ల నాకు సందేహం కలుగుతోంది. ఏది శ్రేయస్కరమో నాకు ఖచ్చితంగా చెప్పు. నేను నీ శిష్యుడిని, నన్ను శాసించు.",
+            childMeaning: "అర్జునుడు అన్నాడు: 'నాకు ఏమీ అర్థం కావడం లేదు! ప్లీజ్ నాకు గురువుగా ఉండి దారి చూపించు. నువ్వు ఏం చెబితే అది వింటాను.'",
+            activity: "మీకు ఏదైనా సందేహం ఉన్నప్పుడు ఎవరిని అడుగుతారు?"
+        },
+        exercises: {
+            seeds: { question: "What did Arjuna ask Krishna to be?", question_te: "అర్జునుడు కృష్ణుడిని ఏమని వేడుకున్నాడు?", options: ["Teacher", "Driver", "Cook"], correct: 0 },
+            seekers: { question: "Meaning of 'Shishyas te 'ham'?", question_te: "'శిష్యస్తేఽహం' అంటే ఏమిటి?", options: ["Friend", "Teacher", "Disciple"], correct: 2 },
+            warriors: { question: "Why surrender?", question_te: "అర్జునుడు ఎందుకు కృష్ణుడికి శరణు కోరాడు?", options: ["Lazy", "Clouded logic", "Krishna fight"], correct: 1 }
+        },
+        telugu_script: "కార్పణ్యదోషోపహతస్వభావః పృచ్ఛామి త్వాం ధర్మసమ్మూఢచేతాః |\nయచ్ఛ్రేయః స్యాన్నిశ్చితం బ్రూహి తన్మే శిష్యస్తేఽహం శాధి మాం త్వాం ప్రపన్నమ్ ||",
+        lineBreakdown: [
+            { sanskrit: "कार्पण्यदोषोपहतस्वभावः", word: "kārpaṇya-doṣopahata-svabhāvaḥ", sanskrit_te: "కార్పణ్యదోషోపహతస్వభావః", en: "stricken by the weakness of pity", te: "కరుణ అనే బలహీనతతో నిండి" },
+            { sanskrit: "पृच्छामि त्वां धर्मसम्मूढचेताः", word: "pṛcchāmi tvāṁ dharma-sammūḍha-cetāḥ", sanskrit_te: "పృచ్ఛామి త్వాం ధర్మసమ్మూఢచేతాః", en: "I ask you, confused about duty", te: "ధర్మం పట్ల అయోమయంలో నిన్ను అడుగుతున్నాను" },
+            { sanskrit: "यच्छ्रेयः स्यान्निश्चितं ब्रूहि", word: "yac chreyaḥ syān niścitaṁ brūhi", sanskrit_te: "యచ్ఛ్రేయః స్యాన్నిశ్చితం బ్రూహి", en: "tell me for certain what is best", te: "నాకు ఏది శ్రేయస్కరమో ఖచ్చితంగా చెప్పు" },
+            { sanskrit: "शिष्यस्तेऽहं शाधि मां", word: "śiṣyas te ’haṁ śādhi māṁ", sanskrit_te: "శిష్యస్తేఽహం శాధి మాం", en: "I am your disciple, please instruct me", te: "నేను నీ శిష్యుడిని, నాకు దారి చూపించు" }
+        ]
+    },
+    "2.8": {
+        sanskrit: "न हि प्रपश्यामि ममापनुद्याद्यच्छोकमुच्छोषणमिन्द्रियाणाम्।\nअवाप्य भूमावसपत्नमृद्धं राज्यं सुराणामपि चाधिपत्यम्॥",
+        transliteration: "na hi prapaśyāmi mamāpanudyād yac chokam ucchoṣaṇam indriyāṇām\navāpya bhūmāv asapatnam ṛddhaṃ rājyaṃ surāṇām api cādhipatyam",
+        en: {
+            meaning: "I do not see any means to drive away this grief which is drying up my senses. Even if I win a kingdom or power over the gods, I will still be sad.",
+            childMeaning: "Arjuna said: 'Even if I become the king of the whole world or the king of all superheroes, I would still feel very sad inside.'",
+            activity: "What makes you feel better when you are sad? (A hug? A song?)"
+        },
+        te: {
+            meaning: "నా ఇంద్రియాలను ఎండిపోయేలా చేస్తున్న ఈ శోకాన్ని పోగొట్టే మార్గం నాకు కనిపించడం లేదు. భూమి మీద ఎదురులేని రాజ్యాన్ని పొందినా, దేవతల మీద అధికారం లభించినా నా బాధ తగ్గదు.",
+            childMeaning: "అర్జునుడు అన్నాడు: 'నేను ప్రపంచం మొత్తానికి రాజునైనా, లేదా సూపర్ హీరోలందరికీ రాజునైనా సరే, నా మనస్సులోని ఈ బాధ పోదు.'",
+            activity: "మీరు బాధగా ఉన్నప్పుడు మీకు ఏది సంతోషాన్ని ఇస్తుంది? (అమ్మ కౌగిలింత? ఒక పాట?)"
+        },
+        exercises: {
+            seeds: { question: "Could a big kingdom fix Arjuna's sadness?", question_te: "పెద్ద రాజ్యం అర్జునుడి బాధను పోగొట్టగలదా?", options: ["Yes", "No (❌)", "Maybe"], correct: 1 },
+            seekers: { question: "What was the grief doing to Arjuna?", question_te: "ఆ బాధ అర్జునుడిని ఎలా ప్రభావితం చేసింది?", options: ["Drying up his senses", "Making him laugh", "Making him hungry"], correct: 0 },
+            warriors: { question: "Lesson of 2.8?", question_te: "2.8 శ్లోకం మనకు ఏం చెబుతోంది?", options: ["Material success alone cannot solve mental distress", "Gold is best", "Kings are happy"], correct: 0 }
+        },
+        telugu_script: "న హి ప్రపశ్యామి మమాపనుద్యాద్యచ్ఛోకముచ్ఛోషణమింద్రియాణామ్ |\nఅవాప్య భూమావసపత్నమృద్ధం రాజ్యం సురాణామపి చాధిపత్యమ్ ||"
+    },
+    "2.9": {
+        sanskrit: "सञ्जय उवाच।\nएवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप।\nन योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह॥",
+        transliteration: "sañjaya uvāca\nevam uktvā hṛṣīkeśaṁ guḍākeśaḥ parantapa\nna yotsya iti govindam uktvā tūṣṇīm babhūva ha",
+        en: {
+            meaning: "Sanjaya said: Having spoken thus, Arjuna, the chastiser of enemies, told Krishna, 'I shall not fight,' and fell silent.",
+            childMeaning: "Arjuna finally told Krishna, 'I will not fight!' and then he became very quiet.",
+            activity: "Try to sit perfectly still and silent for 30 seconds."
+        },
+        te: {
+            meaning: "సంజయుడు ఇలా అన్నాడు: శత్రు సంహారకుడైన అర్జునుడు కృష్ణుడితో 'నేను యుద్ధం చేయను' అని చెప్పి మౌనంగా ఉండిపోయాడు.",
+            childMeaning: "అర్జునుడు చివరకు కృష్ణుడితో, 'నేను యుద్ధం చేయను!' అని చెప్పి నిశ్శబ్దంగా కూర్చుండిపోయాడు.",
+            activity: "ఒక 30 సెకన్ల పాటు కదలకుండా, నిశ్శబ్దంగా కూర్చోవడానికి ప్రయత్నించండి."
+        },
+        exercises: {
+            seeds: { question: "What did Arjuna say to Krishna?", question_te: "అర్జునుడు కృష్ణుడితో ఏమన్నాడు?", options: ["I will not fight (🛑)", "Let's play", "I am hungry"], correct: 0 },
+            seekers: { question: "What did Arjuna do after speaking?", question_te: "మాట్లాడిన తర్వాత అర్జునుడు ఏమి చేశాడు?", options: ["He fell silent", "He ran away", "He started singing"], correct: 0 },
+            warriors: { question: "Arjuna's state in 2.9?", question_te: "2.9 లో అర్జునుడి స్థితి ఏమిటి?", options: ["Total resignation/withdrawal", "Ready to attack", "Confident"], correct: 0 }
+        },
+        telugu_script: "సంజయ ఉవాచ |\nఏవముక్త్వా హృషీకేశం గుడాకేశః పరంతప |\nన యోత్స్య ఇతి గోవిందముక్త్వా తూష్ణీం బభూవ హ ||"
+    },
+    "2.10": {
+        sanskrit: "तमुवाच हृषीकेशः प्रहसन्निव भारत।\nसेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः॥",
+        transliteration: "tam uvāca hṛṣīkeśaḥ prahasann iva bhārata\nsenayor ubhayor madhye viṣīdantam idaṁ vacaḥ",
+        en: {
+            meaning: "O King, Krishna, smilingly, spoke the following words to the despondent Arjuna between the two armies.",
+            childMeaning: "Krishna looked at Arjuna with a little smile and began to speak to him right there in the middle of the field.",
+            activity: "Give a big, warm smile to someone near you!"
+        },
+        te: {
+            meaning: "ఓ రాజా! రెండు సైన్యాల మధ్య విచారిస్తున్న అర్జునుడిని చూసి, శ్రీకృష్ణుడు చిరునవ్వుతో ఈ మాటలు పలికాడు.",
+            childMeaning: "మైదానం మధ్యలో విచారంగా ఉన్న అర్జునుడిని చూసి, కృష్ణుడు చిన్న చిరునవ్వుతో మాట్లాడటం మొదలుపెట్టాడు.",
+            activity: "నీ పక్కన ఉన్న వారికి ఒక మంచి చిరునవ్వు ఇవ్వండి!"
+        },
+        exercises: {
+            seeds: { question: "Was Krishna smiling or crying?", question_te: "కృష్ణుడు నవ్వుతున్నాడా లేక ఏడుస్తున్నాడా?", options: ["Smiling (😊)", "Crying (😢)"], correct: 0 },
+            seekers: { question: "Where were Krishna and Arjuna standing?", question_te: "కృష్ణుడు మరియు అర్జునుడు ఎక్కడ నిలబడి ఉన్నారు?", options: ["Between the two armies", "In a palace", "At home"], correct: 0 },
+            warriors: { question: "Significance of Krishna's smile ('Prahasann iva')?", question_te: "కృష్ణుడి చిరునవ్వు ('ప్రహసన్నివ') యొక్క ప్రాముఖ్యత ఏమిటి?", options: ["It shows his divine mastery and confidence to handle Arjuna's grief", "He was making fun", "He was happy about the war"], correct: 0 }
+        },
+        telugu_script: "తమువాచ హృషీకేశః ప్రహసన్నివ భారత |\nసేనయోరుభయోర్మధ్యే విషీదంతమిదం వచః ||"
+    },rds", "Lazy"], correct: 1 }
         },
         telugu_script: "గురూనహత్వా హి మహానుభావాన్ శ్రేయో భోక్తుం భైక్ష్యమపీహ లోకే |\nహత్వార్థకామాంస్తు గురూనిహైవ భుంజీయ భోగాన్ రుధిరప్రదిగ్ధాన్ ||",
         lineBreakdown: [
