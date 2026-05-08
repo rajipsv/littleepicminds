@@ -559,20 +559,54 @@ router.post('/journal', async (req, res) => {
 router.get('/evaluations/progress/:userId', async (req, res) => {
   try {
     const { userId } = req.params;
+    const { level } = req.query; // seeds, seekers, or warriors
+
     const quizResult = await db.query('SELECT scripture, chapter_id, best_score, attempts FROM evaluations WHERE user_id = $1', [userId]);
     const verseResult = await db.query('SELECT scripture, chapter, COUNT(DISTINCT shloka) as completed_count FROM progress WHERE user_id = $1 GROUP BY scripture, chapter', [userId]);
+    const themeResult = await db.query("SELECT DISTINCT verse FROM quiz_results WHERE user_id = $1 AND verse LIKE '%theme%'", [userId]);
+
+    // Build theme lookup set
+    const completedThemes = new Set(themeResult.rows.map(r => r.verse));
+
+    // Compute total themes per chapter for the requested level
+    const effectiveLevel = level || 'seekers';
+    const themeCounts = {};
+    if (data.themes && data.themes.gita) {
+      Object.keys(data.themes.gita).forEach(ch => {
+        const chapterData = data.themes.gita[ch];
+        const levelThemes = chapterData[effectiveLevel];
+        if (Array.isArray(levelThemes)) {
+          themeCounts[ch] = levelThemes.length;
+        }
+      });
+    }
 
     // Gita Progress
     const gitaProgress = (data.chapters || []).map(ch => {
+      const chKey = String(ch.id);
       const q = quizResult.rows.find(r => r.scripture === 'gita' && r.chapter_id == ch.id);
       const v = verseResult.rows.find(r => r.scripture === 'gita' && r.chapter == ch.id);
       return {
         chapter_number: ch.id,
         total_verses: ch.count,
         verses_completed: v ? parseInt(v.completed_count) : 0,
-        best_score: q ? q.best_score : 0
+        best_score: q ? q.best_score : 0,
+        total_themes: themeCounts[chKey] || 0,
+        themes_completed: 0
       };
     });
+
+    // Count themes completed per chapter by matching ID patterns
+    for (const ch of gitaProgress) {
+      const chStr = String(ch.chapter_number);
+      // Seeds: theme_s{chapter}_*, Seekers: theme_sk{chapter}_*, Warriors: theme_w{chapter}_*
+      const prefixes = [`theme_s${chStr}_`, `theme_sk${chStr}_`, `theme_w${chStr}_`];
+      for (const themeId of completedThemes) {
+        if (prefixes.some(p => themeId.startsWith(p))) {
+          ch.themes_completed = (ch.themes_completed || 0) + 1;
+        }
+      }
+    }
 
     // Hanuman Progress
     const hResult = verseResult.rows.find(r => r.scripture === 'hanuman');

@@ -30,7 +30,7 @@ const MasteryReport = () => {
     if (user) {
       setLoading(true);
       Promise.all([
-        api.get(`/api/evaluations/progress/${user.id}`),
+        api.get(`/api/evaluations/progress/${user.id}?level=${user?.level || 'seekers'}`),
         api.get(`/api/evaluations/hanuman-overall/${user.id}`),
         api.get(`/api/quiz-history/${user.id}`),
         api.get(`/api/journal/${user.username}`)
@@ -71,6 +71,10 @@ const MasteryReport = () => {
   
   const totalGitaShlokas = progress.gita?.reduce((acc, curr) => acc + curr.total_verses, 0) || 0;
   const totalHanumanVerses = progress.hanuman?.total_verses || 44;
+
+  // Theme-based stats
+  const gitaThemesCompleted = progress.gita?.reduce((acc, curr) => acc + (curr.themes_completed || 0), 0) || 0;
+  const totalGitaThemes = progress.gita?.reduce((acc, curr) => acc + (curr.total_themes || 0), 0) || 0;
 
   let totalMastered = gitaMastered + hanumanMastered;
   let totalWisdom = totalGitaShlokas + totalHanumanVerses;
@@ -188,6 +192,14 @@ const MasteryReport = () => {
                       <span className="text-5xl font-black text-white">{totalMastered}</span>
                       <span className="text-xl text-gray-600 font-bold">/ {totalWisdom}</span>
                     </div>
+                    {(!scriptureFilter || scriptureFilter === 'gita') && totalGitaThemes > 0 && (
+                      <div className="mt-3 flex items-center gap-2 text-sm">
+                        <span className="bg-lem-accent/10 text-lem-accent font-bold px-3 py-1 rounded-lg border border-lem-accent/20">
+                          {gitaThemesCompleted} / {totalGitaThemes} {isTe ? "థీమ్స్" : "Themes"}
+                        </span>
+                        <span className="text-gray-500 text-xs">{isTe ? "పూర్తయినవి" : "completed"}</span>
+                      </div>
+                    )}
                   </div>
 
                   <div className="glass-card p-8 border-l-4 border-l-blue-400 shadow-xl">
@@ -275,50 +287,70 @@ const MasteryReport = () => {
                     
                     <div className="overflow-x-auto">
                       <table className="w-full">
-                        <thead className="bg-white/5">
-                          <tr>
-                            <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "అధ్యాయం" : "Chapter"}</th>
-                            <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "పురోగతి" : "Progress"}</th>
-                            <th className="px-6 py-4 text-right"></th>
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-lem-glass-border">
-                          {(progress.gita || []).map(ch => {
-                            const isCompleted = ch.verses_completed >= (ch.total_verses || 47);
-                            const num = ch.chapter_number;
-                            return (
-                              <tr key={num} className="hover:bg-white/5 transition-colors">
-                                <td className="px-6 py-4">
-                                  <div className="flex items-center gap-3">
-                                    <span className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm ${isCompleted ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-gray-500'}`}>
-                                      {num}
-                                    </span>
-                                    <span className="font-bold text-white">{isTe ? "అధ్యాయం" : "Chapter"} {num}</span>
-                                  </div>
-                                </td>
-                                <td className="px-6 py-4">
-                                  <div className="flex flex-col gap-1">
-                                    <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter">
-                                      <span>{ch.verses_completed || 0} / {ch.total_verses || 47}</span>
-                                      <span>{Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%</span>
+                          <thead className="bg-white/5">
+                            <tr>
+                              <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "అధ్యాయం" : "Chapter"}</th>
+                              <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "శ్లోకాలు" : "Shlokas"}</th>
+                              {totalGitaThemes > 0 && <th className="px-6 py-4 text-left text-xs font-black text-gray-500 uppercase tracking-widest">{isTe ? "థీమ్స్" : "Themes"}</th>}
+                              <th className="px-6 py-4 text-right"></th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-lem-glass-border">
+                            {(progress.gita || []).map(ch => {
+                              const isCompleted = ch.verses_completed >= (ch.total_verses || 47);
+                              const themesDone = ch.themes_completed || 0;
+                              const totalThemesInCh = ch.total_themes || 0;
+                              const num = ch.chapter_number;
+                              return (
+                                <tr key={num} className="hover:bg-white/5 transition-colors">
+                                  <td className="px-6 py-4">
+                                    <div className="flex items-center gap-3">
+                                      <span className={`w-8 h-8 rounded-lg flex items-center justify-center font-bold text-sm ${isCompleted ? 'bg-green-500/20 text-green-400' : 'bg-white/5 text-gray-500'}`}>
+                                        {num}
+                                      </span>
+                                      <span className="font-bold text-white">{isTe ? "అధ్యాయం" : "Chapter"} {num}</span>
                                     </div>
-                                    <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
-                                      <div 
-                                        className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
-                                        style={{ width: `${Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%` }}
-                                      />
+                                  </td>
+                                  <td className="px-6 py-4">
+                                    <div className="flex flex-col gap-1">
+                                      <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter">
+                                        <span>{ch.verses_completed || 0} / {ch.total_verses || 47} {isTe ? "శ్లోకాలు" : "shlokas"}</span>
+                                        <span>{Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%</span>
+                                      </div>
+                                      <div className="w-32 h-2 bg-white/5 rounded-full overflow-hidden">
+                                        <div 
+                                          className={`h-full transition-all duration-500 ${isCompleted ? 'bg-green-500' : 'bg-lem-accent'}`}
+                                          style={{ width: `${Math.round(((ch.verses_completed || 0) / (ch.total_verses || 1)) * 100)}%` }}
+                                        />
+                                      </div>
                                     </div>
-                                  </div>
-                                </td>
-                                <td className="px-6 py-4 text-right">
-                                  <Link to={`/read/gita`} className="text-xs font-black uppercase tracking-widest text-lem-accent hover:underline">
-                                    {ch.verses_completed > 0 ? (isTe ? 'సమీక్ష' : 'Review') : (isTe ? 'ప్రారంభించు' : 'Start')}
-                                  </Link>
-                                </td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
+                                  </td>
+                                  {totalGitaThemes > 0 && (
+                                    <td className="px-6 py-4">
+                                      <div className="flex items-center gap-2">
+                                        <div className="flex-1 min-w-[60px]">
+                                          <div className="flex justify-between text-[10px] font-bold text-gray-500 uppercase tracking-tighter mb-1">
+                                            <span>{themesDone} / {totalThemesInCh}</span>
+                                          </div>
+                                          <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden">
+                                            <div 
+                                              className="h-full bg-purple-500 transition-all duration-500"
+                                              style={{ width: `${totalThemesInCh > 0 ? Math.round((themesDone / totalThemesInCh) * 100) : 0}%` }}
+                                            />
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </td>
+                                  )}
+                                  <td className="px-6 py-4 text-right">
+                                    <Link to={`/read/gita`} className="text-xs font-black uppercase tracking-widest text-lem-accent hover:underline">
+                                      {ch.verses_completed > 0 ? (isTe ? 'సమీక్ష' : 'Review') : (isTe ? 'ప్రారంభించు' : 'Start')}
+                                    </Link>
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
                       </table>
                     </div>
                   </div>
