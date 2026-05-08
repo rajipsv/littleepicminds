@@ -483,25 +483,17 @@ router.post('/journal', async (req, res) => {
       const parts = verse_id.split('.');
       shlokaNum = parseInt(parts[parts.length - 1]);
     }
+    
+    console.log(`Parsed: chNum=${chNum}, shlokaNum=${shlokaNum}, isNaN=${isNaN(shlokaNum)}`);
 
-    // 1. Save to Journal Table
-    try {
-      await db.query(
-        'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
-        [userId, scripture, chNum, verse_id, question, response]
-      );
-    } catch (e) {
-      console.error('Journal table fail:', e.message);
-      // If DB is not available, still return success to avoid breaking UX
-      if (e.message.includes('DATABASE_URL')) {
-        console.warn('DB not configured, skipping journal save');
-        return res.status(201).json({ status: 'saved_offline', warning: 'DB not configured' });
-      }
-      throw e;
-    }
+    // 1. Save to Journal Table (always)
+    await db.query(
+      'INSERT INTO journal_entries (user_id, scripture, chapter_number, verse_id, question, response) VALUES ($1, $2, $3, $4, $5, $6)',
+      [userId, scripture, chNum, verse_id, question, response]
+    );
 
-    // 2. Save to Progress Table (Self-healing upsert) - only for numeric verses
-    if (!isNaN(shlokaNum)) {
+    // 2. Save to Progress Table - only for valid numeric verses
+    if (verse_id && !isNaN(shlokaNum) && typeof shlokaNum === 'number') {
       try {
         const existing = await db.query(
           'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
