@@ -461,9 +461,17 @@ router.post('/journal', async (req, res) => {
     
     console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
 
-    const chNum = parseInt(chapter_number) || 1;
+    const isHanuman = scripture === 'hanuman';
+    const chNum = parseInt(chapter_number) || (isHanuman ? 1 : 1);
     let shlokaNum = parseInt(verse_id);
     
+    // Handle Hanuman verse IDs (Doha1, Verse1, etc.)
+    if (isHanuman && typeof verse_id === 'string') {
+      const matches = verse_id.match(/\d+/g);
+      if (matches && matches.length > 0) {
+        shlokaNum = parseInt(matches[matches.length - 1]);
+      }
+    } else
     // Improved parsing for theme IDs (e.g., "theme_1_5" -> 5, "theme_1_5_seeds" -> 5)
     if (isNaN(shlokaNum) && typeof verse_id === 'string') {
       const matches = verse_id.match(/\d+/g);
@@ -648,27 +656,33 @@ router.get('/leaderboard', async (req, res) => {
 router.post('/evaluations', async (req, res) => {
   try {
     let { scripture, chapter_number, score, verse, quiz_details } = req.body;
-    if (!scripture || scripture !== 'hanuman') scripture = 'gita'; // Safety default
+    
+    // Handle Hanuman - treat as unique scripture (no chapter-based scoring in evaluations)
+    const isHanuman = scripture === 'hanuman';
+    const effectiveChNum = isHanuman ? null : parseInt(chapter_number);
+    
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
-    // 1. Save quiz score to evaluations table
-    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, chapter_number, scripture || 'gita']);
-    if (existing.rows.length > 0) {
-      const current = existing.rows[0];
-      const newBest = Math.max(parseFloat(current.best_score), score);
-      await db.query(
-        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
-        [score, newBest, userId, chapter_number, scripture || 'gita']
-      );
-    } else {
-      await db.query(
-        'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
-        [userId, scripture || 'gita', chapter_number, score, score]
-      );
+    // 1. Save quiz score to evaluations table (only for Gita chapters)
+    if (!isHanuman && effectiveChNum) {
+      const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, effectiveChNum, scripture]);
+      if (existing.rows.length > 0) {
+        const current = existing.rows[0];
+        const newBest = Math.max(parseFloat(current.best_score), score);
+        await db.query(
+          'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
+          [score, newBest, userId, effectiveChNum, scripture]
+        );
+      } else {
+        await db.query(
+          'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
+          [userId, scripture, effectiveChNum, score, score]
+        );
+      }
     }
 
     // 2. Save to progress table (so verses count toward mastery + leaderboard)
@@ -680,15 +694,17 @@ router.post('/evaluations', async (req, res) => {
       }
     }
     if (verse && !isNaN(shlokaNum)) {
-      const chNum = parseInt(chapter_number);
+      const chNum = isHanuman ? 1 : effectiveChNum;
+      // For Hanuman: chapter=1, shloka=verse number
+      // For Gita: chapter=chapter_number, shloka=verse number
       const existingProgress = await db.query(
         'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
-        [userId, scripture || 'gita', chNum, shlokaNum]
+        [userId, scripture, chNum, shlokaNum]
       );
       if (existingProgress.rows.length === 0) {
         await db.query(
           'INSERT INTO progress (user_id, scripture, chapter, shloka, completed_at) VALUES ($1, $2, $3, $4, CURRENT_TIMESTAMP)',
-          [userId, scripture || 'gita', chNum, shlokaNum]
+          [userId, scripture, chNum, shlokaNum]
         );
       }
     }
