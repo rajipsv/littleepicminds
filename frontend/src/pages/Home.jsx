@@ -243,19 +243,16 @@ const Home = () => {
         <section className="mb-20">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-10 glass-card border border-lem-glass-border">
-               <div className="text-4xl mb-2">🌱</div>
                <div className="text-5xl font-black text-white mb-2">100+</div>
-               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Seeds Shlokas</p>
+               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Active Learners</p>
             </div>
             <div className="text-center p-10 glass-card border border-lem-glass-border">
-               <div className="text-4xl mb-2">🔍</div>
-               <div className="text-5xl font-black text-white mb-2">200+</div>
-               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Seekers Shlokas</p>
+               <div className="text-5xl font-black text-white mb-2">500+</div>
+               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Shlokas Mastered</p>
             </div>
             <div className="text-center p-10 glass-card border border-lem-glass-border">
-               <div className="text-4xl mb-2">⚔️</div>
-               <div className="text-5xl font-black text-white mb-2">300+</div>
-               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Warriors Shlokas</p>
+               <div className="text-5xl font-black text-white mb-2">4.9/5</div>
+               <p className="text-lem-accent font-bold uppercase tracking-widest text-xs">Parent Rating</p>
             </div>
           </div>
         </section>
