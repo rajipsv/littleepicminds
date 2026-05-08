@@ -84,7 +84,7 @@ const Home = () => {
         <header className="flex justify-between items-center mb-16">
           <div>
             <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-2 flex items-center gap-3">
-              <span className="text-3xl">🕉️</span> 
+              <img src="/logo.svg" alt="" className="h-9 w-auto" /> 
               <span>littleEpic<span className="text-gradient">Minds</span></span>
             </h1>
             <p className="text-xl text-gray-400 font-medium tracking-wide">Timeless Wisdom for Modern Minds</p>
