@@ -461,7 +461,7 @@ router.post('/journal', async (req, res) => {
     
     console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
 
-    const chNum = parseInt(chapter_number);
+    const chNum = parseInt(chapter_number) || 1;
     let shlokaNum = parseInt(verse_id);
     
     // Improved parsing for theme IDs (e.g., "theme_1_5" -> 5, "theme_1_5_seeds" -> 5)
