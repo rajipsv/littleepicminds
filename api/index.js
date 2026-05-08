@@ -223,20 +223,36 @@ function getHanumanVerse(verseParam) {
 router.get('/themes/:scripture/:chapter', (req, res) => {
   try {
     const { scripture, chapter } = req.params;
-    const { level } = req.query; // seeds, seekers
+    const { level } = req.query; // seeds, seekers, warriors
+
+    // Robust chapter lookup: try direct, string, and "chapter" prefix
+    const chapterId = chapter.toString();
+    const chapterKey = chapterId.startsWith('chapter') ? chapterId.replace('chapter', '') : chapterId;
     
-    if (!data.themes || !data.themes[scripture] || !data.themes[scripture][chapter]) {
-      return res.status(404).json({ error: 'Themes not found for this chapter' });
+    const scriptureData = data.themes[scripture] || data.themes[scripture.toLowerCase()];
+    if (!scriptureData) {
+      console.log(`[DEBUG] Scripture ${scripture} not found in themes. Available:`, Object.keys(data.themes));
+      return res.status(404).json({ error: `Scripture ${scripture} not found in themes` });
+    }
+
+    const chapterData = scriptureData[chapterKey] || scriptureData[`chapter${chapterKey}`] || scriptureData[chapterId];
+    
+    if (!chapterData) {
+      console.log(`[DEBUG] No chapter data found for Ch ${chapterKey}. Available:`, Object.keys(scriptureData));
+      return res.status(404).json({ error: `No themes found for chapter ${chapterKey}` });
     }
     
-    const chapterData = data.themes[scripture][chapter];
     let themesToReturn = [];
 
-    // Check if it's level-based structure { seeds: [], seekers: [] }
+    // Flexible level matching
     if (!Array.isArray(chapterData)) {
-      themesToReturn = chapterData[level] || chapterData['seekers'] || chapterData['seeds'] || [];
+      const requestedLevel = (level || 'seekers').toLowerCase();
+      themesToReturn = chapterData[requestedLevel] || 
+                       chapterData['seekers'] || 
+                       chapterData['seeds'] || 
+                       chapterData['warriors'] || 
+                       [];
     } else {
-      // Fallback for old array structure
       themesToReturn = chapterData;
     }
     
@@ -471,9 +487,17 @@ router.post('/journal', async (req, res) => {
     
     console.log(`Saving journal for User ${userId}: Ch ${chapter_number}, Verse ${verse_id}`);
 
-    const chNum = parseInt(chapter_number);
+    const isHanuman = scripture === 'hanuman';
+    const chNum = parseInt(chapter_number) || (isHanuman ? 1 : 1);
     let shlokaNum = parseInt(verse_id);
     
+    // Handle Hanuman verse IDs (Doha1, Verse1, etc.)
+    if (isHanuman && typeof verse_id === 'string') {
+      const matches = verse_id.match(/\d+/g);
+      if (matches && matches.length > 0) {
+        shlokaNum = parseInt(matches[matches.length - 1]);
+      }
+    } else
     // Improved parsing for theme IDs (e.g., "theme_1_5" -> 5, "theme_1_5_seeds" -> 5)
     if (isNaN(shlokaNum) && typeof verse_id === 'string') {
       const matches = verse_id.match(/\d+/g);
@@ -494,7 +518,6 @@ router.post('/journal', async (req, res) => {
       );
     } catch (e) {
       console.error('Journal table fail:', e.message);
-      // If DB is not available, still return success to avoid breaking UX
       if (e.message.includes('DATABASE_URL')) {
         console.warn('DB not configured, skipping journal save');
         return res.status(201).json({ status: 'saved_offline', warning: 'DB not configured' });
@@ -502,27 +525,28 @@ router.post('/journal', async (req, res) => {
       throw e;
     }
 
-    // 2. Save to Progress Table (Self-healing upsert)
-    try {
-      const existing = await db.query(
-        'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
-        [userId, scripture || 'gita', chNum, shlokaNum]
-      );
-      
-      if (existing.rows.length === 0) {
-        await db.query(
-          'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
-          [userId, scripture || 'gita', chNum, shlokaNum, question, response]
+    // 2. Save to Progress Table - only for valid numeric verses
+    if (verse_id && !isNaN(shlokaNum) && typeof shlokaNum === 'number') {
+      try {
+        const existing = await db.query(
+          'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
+          [userId, scripture || 'gita', chNum, shlokaNum]
         );
-      } else {
-        await db.query(
-          'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
-          [question, response, existing.rows[0].id]
-        );
+        
+        if (existing.rows.length === 0) {
+          await db.query(
+            'INSERT INTO progress (user_id, scripture, chapter, shloka, activity_question, activity_response) VALUES ($1, $2, $3, $4, $5, $6)',
+            [userId, scripture || 'gita', chNum, shlokaNum, question, response]
+          );
+        } else {
+          await db.query(
+            'UPDATE progress SET activity_question = $1, activity_response = $2, completed_at = CURRENT_TIMESTAMP WHERE id = $3',
+            [question, response, existing.rows[0].id]
+          );
+        }
+      } catch (e) {
+        console.error('Progress table fail:', e.message);
       }
-    } catch (e) {
-      console.error('Progress table fail:', e.message);
-      // Non-critical, don't fail the whole request
     }
 
     res.status(201).json({ status: 'saved' });
@@ -657,33 +681,45 @@ router.get('/leaderboard', async (req, res) => {
 router.post('/evaluations', async (req, res) => {
   try {
     let { scripture, chapter_number, score, verse, quiz_details } = req.body;
-    if (!scripture || scripture !== 'hanuman') scripture = 'gita'; // Safety default
+    
+    // Handle Hanuman - treat as unique scripture (no chapter-based scoring in evaluations)
+    const isHanuman = scripture === 'hanuman';
+    const effectiveChNum = isHanuman ? null : parseInt(chapter_number);
+    
     const authHeader = req.headers.authorization;
     if (!authHeader) return res.status(401).json({ error: 'Unauthorized' });
     const token = authHeader.split(' ')[1];
     const decoded = jwt.verify(token, JWT_SECRET);
     const userId = decoded.user.id;
 
-    // 1. Save quiz score to evaluations table
-    const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, chapter_number, scripture || 'gita']);
-    if (existing.rows.length > 0) {
-      const current = existing.rows[0];
-      const newBest = Math.max(parseFloat(current.best_score), score);
-      await db.query(
-        'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
-        [score, newBest, userId, chapter_number, scripture || 'gita']
-      );
-    } else {
-      await db.query(
-        'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
-        [userId, scripture || 'gita', chapter_number, score, score]
-      );
+    // 1. Save quiz score to evaluations table (only for Gita chapters)
+    if (!isHanuman && effectiveChNum) {
+      const existing = await db.query('SELECT * FROM evaluations WHERE user_id = $1 AND chapter_id = $2 AND scripture = $3', [userId, effectiveChNum, scripture || 'gita']);
+      if (existing.rows.length > 0) {
+        const current = existing.rows[0];
+        const newBest = Math.max(parseFloat(current.best_score), score);
+        await db.query(
+          'UPDATE evaluations SET score = $1, best_score = $2, attempts = attempts + 1, completed_at = CURRENT_TIMESTAMP WHERE user_id = $3 AND chapter_id = $4 AND scripture = $5',
+          [score, newBest, userId, effectiveChNum, scripture || 'gita']
+        );
+      } else {
+        await db.query(
+          'INSERT INTO evaluations (user_id, scripture, chapter_id, score, best_score, attempts) VALUES ($1, $2, $3, $4, $5, 1)',
+          [userId, scripture || 'gita', effectiveChNum, score, score]
+        );
+      }
     }
 
     // 2. Save to progress table (so verses count toward mastery + leaderboard)
-    if (verse) {
-      const shlokaNum = parseInt(verse);
-      const chNum = parseInt(chapter_number);
+    let shlokaNum = parseInt(verse);
+    if (isNaN(shlokaNum) && typeof verse === 'string' && verse.includes('theme')) {
+      const matches = verse.match(/\d+/g);
+      if (matches && matches.length > 1) {
+        shlokaNum = parseInt(matches[matches.length - 1]);
+      }
+    }
+    if (verse && !isNaN(shlokaNum)) {
+      const chNum = isHanuman ? 1 : (parseInt(chapter_number) || 1);
       const existingProgress = await db.query(
         'SELECT id FROM progress WHERE user_id = $1 AND scripture = $2 AND chapter = $3 AND shloka = $4',
         [userId, scripture || 'gita', chNum, shlokaNum]
@@ -846,6 +882,20 @@ router.post('/chat/wisdom', adminAuth, async (req, res) => {
 async function bootstrapDB() {
   try {
     await db.query(`
+      CREATE TABLE IF NOT EXISTS users (
+        id SERIAL PRIMARY KEY,
+        username VARCHAR(255) UNIQUE NOT NULL,
+        email VARCHAR(255) UNIQUE NOT NULL,
+        password_hash VARCHAR(255) NOT NULL,
+        name VARCHAR(255),
+        age INTEGER,
+        grade VARCHAR(50),
+        level VARCHAR(50),
+        role VARCHAR(50) DEFAULT 'student',
+        is_premium BOOLEAN DEFAULT false,
+        mobile VARCHAR(20),
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+      );
       CREATE TABLE IF NOT EXISTS journal_entries (
         id SERIAL PRIMARY KEY,
         user_id INTEGER REFERENCES users(id),
