@@ -302,7 +302,6 @@ const MasteryReport = () => {
                               const isCompleted = ch.verses_completed >= totalShlokasLevel;
                               const themesDone = ch.themes_completed || 0;
                               const totalThemesInCh = ch.total_themes || 0;
-                              const totalShlokasLevel = ch.total_theme_verses || ch.total_verses || 1;
                               const num = ch.chapter_number;
                               return (
                                 <tr key={num} className="hover:bg-white/5 transition-colors">
