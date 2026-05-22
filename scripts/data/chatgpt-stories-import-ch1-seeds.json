@@ -1,0 +1,204 @@
+{
+  "stories": {
+    "sd1_01": {
+      "id": "sd1_01",
+      "title": "The Big Match Day",
+      "title_te": "పెద్ద మ్యాచ్ రోజు",
+      "emoji": "🏟️",
+      "micro_theme": "Big situations can make people nervous",
+      "micro_theme_te": "పెద్ద పరిస్థితులు మనుషులను నర్వస్ చేయగలవు",
+      "storyTitle": "Kabir at the Stadium Gates",
+      "storyTitle_te": "స్టేడియం గేట్ల వద్ద కబీర్",
+      "content": "Kabir had practiced for the inter-school finals for weeks. At the stadium gate he heard drums, whistles, and thousands of voices. His tummy felt fluttery. In the Gita, King Dhritarashtra asks what is happening where two great armies stand ready — even leaders feel the weight of a huge moment. Kabir squeezed his dad's hand, took three slow breaths, and walked in. Being nervous before something big is normal.",
+      "content_te": "కబీర్ వీక్స్ పాఠశాల ఫైనల్స్ కోసం సాధన చేశాడు. స్టేడియం గేట్ వద్ద డ్రమ్స్, విజిల్స్, వేలాది గొంతులు వినిపించాయి. కడుపులో ఫ్లట్టర్. గీతలో ధృతరాష్ట్రుడు రెండు సైన్యాలు సిద్ధంగా ఉన్న చోట ఏమి జరుగుతుందో అడిగాడు — పెద్ద క్షణం బాధ్యత ఉన్నవారికి కూడా భారం. కబీర్ నాన్న చేతి పట్టుకుని మూడు నెమ్మది శ్వాసలు తీసుకుని లోపలికి వెళ్లాడు. పెద్ద పని ముందు నర్వస్ అవ్వడం సాధారణం.",
+      "moral": "Big moments can make you nervous. Breathe and take one small brave step.",
+      "moral_te": "పెద్ద క్షణాలు నర్వస్ చేయగలవు. శ్వాస తీసుకుని ఒక చిన్న ధైర్యమైన అడుగు వేయండి.",
+      "activity": "Before your next big event, take three slow breaths and name one thing you are ready for.",
+      "activity_te": "మీ తదుపరి పెద్ద సంఘటన ముందు మూడు నెమ్మది శ్వాసలు తీసుకుని మీరు సిద్ధమైన ఒక విషయం చెప్పండి.",
+      "_shlokas": [
+        "1.1",
+        "1.2"
+      ]
+    },
+    "sd1_02": {
+      "id": "sd1_02",
+      "title": "The Loud Captain",
+      "title_te": "బిగ్గర కెప్టెన్",
+      "emoji": "📣",
+      "micro_theme": "Leaders should stay calm during challenges",
+      "micro_theme_te": "సవాళ్లలో నాయకులు ప్రశాంతంగా ఉండాలి",
+      "storyTitle": "Maya Learns to Lead",
+      "storyTitle_te": "మాయ నాయకత్వం నేర్చుకుంది",
+      "content": "Maya was captain of her dodgeball team. When the other team scored, she shouted extra loud to sound brave. Her friends got more scared, not braver. Her coach said, 'Real leaders stay calm so others can think.' Duryodhana boasted about his team's power, but fear still lived inside. Maya lowered her voice, clapped for her team, and gave one clear plan. Calm leaders help everyone play better.",
+      "content_te": "మాయ డాజ్‌బాల్ జట్టు కెప్టెన్. అవతలి జట్టు స్కోర్ చేసినప్పుడు ధైర్యంగా అనిపించడానికి బిగ్గరగా అరిచింది. స్నేహితులు ఎక్కువ భయపడ్డారు, ధైర్యం రాలేదు. కోచ్ 'నిజమైన నాయకులు ప్రశాంతంగా ఉంటారు, అప్పుడు ఇతరులు ఆలోచించగలరు' అన్నారు. దుర్యోధనుడు తన జట్టు శక్తి గురించి గర్వపడ్డాడు, కానీ లోపల భయం ఉంది. మాయ స్వరం తగ్గించి జట్టును ప్రోత్సహించి ఒక స్పష్ట ప్లాన్ ఇచ్చింది.",
+      "moral": "A calm voice is stronger than a loud worried voice.",
+      "moral_te": "ప్రశాంతమైన స్వరం బిగ్గర ఆందోళన స్వరం కంటే బలంగా ఉంటుంది.",
+      "activity": "Practice saying one encouraging sentence in a calm voice today.",
+      "activity_te": "ఈరోజు ఒక ప్రోత్సాహ వాక్యాన్ని ప్రశాంతమైన స్వరంలో చెప్పి సాధన చేయండి.",
+      "_shlokas": [
+        "1.3",
+        "1.7"
+      ]
+    },
+    "sd1_03": {
+      "id": "sd1_03",
+      "title": "The Boast and the Butterflies",
+      "title_te": "గర్వం మరియు సీతాకోక చిలుకలు",
+      "emoji": "🦋",
+      "micro_theme": "Fear can hide behind loud confidence",
+      "micro_theme_te": "భయం బిగ్గర ఆత్మవిశ్వాసం వెనుక దాగవచ్చు",
+      "storyTitle": "Dev on the Stage",
+      "storyTitle_te": "వేదికపై దేవ్",
+      "content": "Dev told everyone, 'I am the best speaker in class!' On speech day his knees shook and he forgot his first line. His friend whispered, 'Even brave people feel scared sometimes.' Some warriors blew conch shells very loudly to show strength, but Arjuna's heart was still heavy. Dev laughed at himself kindly, drank water, and started again. Loud words do not always mean a calm heart.",
+      "content_te": "దేవ్ అందరితో 'నేనే తరగతిలో బెస్ట్ స్పీకర్!' అన్నాడు. స్పీచ్ రోజు మోకాళ్ళు వణికాయి, మొదటి పంక్తి మరచిపోయాడు. స్నేహితుడు 'ధైర్యవంతులకు కూడా ఎప్పుడో భయం వస్తుంది' అన్నాడు. కొందరు యోధులు శంఖం బిగ్గరగా ఊది బలం చూపించారు, కానీ అర్జునుడి హృదయం భారంగా ఉంది. దేవ్ తనంతాతును దయగా నవ్వి నీరు త్రాగి మళ్లీ మొదలుపెట్టాడు.",
+      "moral": "Do not be fooled by loud confidence — or your own. Check how you really feel.",
+      "moral_te": "బిగ్గర ఆత్మవిశ్వాసం మిమ్మల్ని మీరే మోసం చేయనివ్వండి. మీరు నిజంగా ఎలా అనిపిస్తుందో చూడండి.",
+      "activity": "Draw two faces: one showing 'loud brave' and one showing 'quiet nervous.'",
+      "activity_te": "రెండు ముఖాలు గీయండి: 'బిగ్గర ధైర్యం' మరియు 'నిశ్శబ్ద నర్వస్'.",
+      "_shlokas": [
+        "1.10",
+        "1.12"
+      ]
+    },
+    "sd1_04": {
+      "id": "sd1_04",
+      "title": "Asking Krishna",
+      "title_te": "కృష్ణుడిని అడగడం",
+      "emoji": "🙋",
+      "micro_theme": "Asking for guidance is a strength",
+      "micro_theme_te": "మార్గదర్శనం అడగడం బలం",
+      "storyTitle": "Priya and the Science Coach",
+      "storyTitle_te": "ప్రియ మరియు సైన్స్ కోచ్",
+      "content": "Priya's volcano model kept tipping over. She wanted to quit. Her grandfather said, 'Arjuna asked Krishna for help on the battlefield — asking is not weakness.' Priya raised her hand and asked the science coach one clear question. The coach smiled and showed her how to fix the base. Asking for guidance turned a mess into a small success.",
+      "content_te": "ప్రియా అగ్నిపర్వత మోడల్ పడిపోతూనే ఉంది. మానేయాలనిపించింది. తాత 'అర్జునుడు యుద్ధభూమిలో కృష్ణుడిని సహాయం అడిగాడు — అడగడం బలహీనత కాదు' అన్నారు. ప్రియా చేయి ఎత్తి కోచ్‌ను ఒక స్పష్ట ప్రశ్న అడిగింది. కోచ్ నవ్వి అడుగును ఎలా బాగా చేయాలో చూపించాడు. మార్గదర్శనం అడగడం గందరగోళాన్ని చిన్న విజయంగా మార్చింది.",
+      "moral": "Asking for help is brave. You do not have to solve everything alone.",
+      "moral_te": "సహాయం అడగడం ధైర్యం. అన్నీ ఒంటరిగా పరిష్కరించాల్సిన అవసరం లేదు.",
+      "activity": "Ask one grown-up one honest question about something you find hard.",
+      "activity_te": "మీకు కష్టమైన విషయంలో ఒక పెద్దవారిని ఒక నిజాయితీ ప్రశ్న అడగండి.",
+      "_shlokas": [
+        "1.14",
+        "1.21"
+      ]
+    },
+    "sd1_05": {
+      "id": "sd1_05",
+      "title": "Pause Before the Race",
+      "title_te": "పరుగు ముందు విరామం",
+      "emoji": "👀",
+      "micro_theme": "Think carefully before acting",
+      "micro_theme_te": "చర్యకు ముందు జాగ్రత్తగా ఆలోచించండి",
+      "storyTitle": "Arjun and the Starting Line",
+      "storyTitle_te": "అర్జున్ మరియు స్టార్టింగ్ లైన్",
+      "content": "At the sports day relay, Arjun was the last runner. He was so excited he almost started early. His teacher called, 'Wait — look at the baton, look at your teammate, then run.' Krishna asked to place the chariot where Arjuna could see clearly before the battle. Arjun waited, watched, and then ran his best. A small pause can save a big mistake.",
+      "content_te": "స్పోర్ట్స్ డే రిలేలో అర్జున్ చివరి రన్నర్. ఉత్సాహంతో ముందుగా పరుగెత్తబోయాడు. టీచర్ 'ఆగు — బాటన్ చూడు, టీమ్‌మేట్ చూడు, తర్వాత పరుగు' అన్నారు. కృష్ణుడిని రథాన్ని అర్జునుడు స్పష్టంగా చూడే చోట ఉంచమని అడిగాడు. అర్జున్ వేచి చూసి బాగా పరిగెత్తాడు. చిన్న విరామం పెద్ద తప్పు నివారిస్తుంది.",
+      "moral": "Look and think for a moment before you act.",
+      "moral_te": "చర్య చేయే ముందు ఒక్క క్షణం చూడండి, ఆలోచించండి.",
+      "activity": "Before your next game or test, stop for five seconds and look around.",
+      "activity_te": "మీ తదుపరి ఆట లేదా పరీక్ష ముందు ఐదు సెకన్లు ఆగి చుట్టూ చూడండి.",
+      "_shlokas": [
+        "1.22",
+        "1.23"
+      ]
+    },
+    "sd1_06": {
+      "id": "sd1_06",
+      "title": "The Wobbly Knees",
+      "title_te": "వణికే మోకాళ్ళు",
+      "emoji": "😟",
+      "micro_theme": "Fear affects both body and mind",
+      "micro_theme_te": "భయం శరీరం మరియు మనస్సును ప్రభావితం చేస్తుంది",
+      "storyTitle": "Rohan and the Talent Show",
+      "storyTitle_te": "రోహన్ మరియు టాలెంట్ షో",
+      "content": "Rohan practiced his song every day. Behind the curtain he saw the crowd and his stomach flipped, his knees wobbled, and his mind went blank. Arjuna told Krishna his body trembled and his mouth went dry. Rohan's music teacher counted breaths with him: in, out, in, out. He sang the first line softly, then grew stronger. Fear touched both body and mind — breath linked them back together.",
+      "content_te": "రోహన్ ప్రతి రోజు పాట సాధన చేశాడు. కరెన్ వెనుక గుంపు చూసి కడుపు ఫ్లిప్, మోకాళ్ళు వణికాయి, మనస్సు ఖాళీ. అర్జునుడు శరీరం వణికింది, నోరు ఎండిపోయింది అన్నాడు. టీచర్ శ్వాసలు లెక్కించారు: లోకి, బయట. మొదటి పంక్తి నెమ్మదిగా పాడాడు, తర్వాత బలంగా. భయం శరీరం, మనస్సు రెండింటినీ తాకింది — శ్వాస వాటిని కలిపింది.",
+      "moral": "When fear visits your body, slow your breath and take one small step.",
+      "moral_te": "భయం శరీరంలో వచ్చినప్పుడు శ్వాస నెమ్మదిగా, ఒక చిన్న అడుగు వేయండి.",
+      "activity": "Name where you feel nervous — tummy, hands, or chest — and breathe five times.",
+      "activity_te": "నర్వస్ ఎక్కడ అనిపిస్తుందో చెప్పి ఐదు సార్లు శ్వాస తీయండి.",
+      "_shlokas": [
+        "1.28",
+        "1.29"
+      ]
+    },
+    "sd1_07": {
+      "id": "sd1_07",
+      "title": "Too Many Choices",
+      "title_te": "ఎక్కువ ఎంపికలు",
+      "emoji": "❓",
+      "micro_theme": "Confusion makes decisions difficult",
+      "micro_theme_te": "గందరగోళం నిర్ణయాలను కష్టం చేస్తుంది",
+      "storyTitle": "Mia at the Project Table",
+      "storyTitle_te": "ప్రాజెక్ట్ టేబుల్ వద్ద మియా",
+      "content": "Mia had to pick one topic for her group poster: animals, space, or rivers. Every choice felt wrong. Her head spun like Arjuna's when he saw only problems everywhere. Mia's friend said, 'Pick one question you care about.' Mia chose rivers because she loved boats. One simple question ended the confusion.",
+      "content_te": "మియా గ్రూప్ పోస్టర్ టాపిక్ ఎంచుకోవాలి: జంతువులు, అంతరిక్షం, నదులు. ప్రతి ఎంపిక తప్పుగా అనిపించింది. అర్జునుడి తల తిరిగినట్లు. స్నేహితురాలు 'మీకు పట్టిన ఒక ప్రశ్న ఎంచుకోండి' అన్నది. మియా పడవలు ఇష్టమై నదులు ఎంచుకుంది. ఒక సాధారణ ప్రశ్న గందరగోళం ఆపింది.",
+      "moral": "When confused, choose one small question you care about.",
+      "moral_te": "గందరగోళంగా ఉంటే మీకు పట్టిన ఒక చిన్న ప్రశ్న ఎంచుకోండి.",
+      "activity": "If you cannot decide, write two options and circle the one you like more today.",
+      "activity_te": "నిర్ణయం రాకపోతే రెండు ఆప్షన్లు రాయి ఈరోజు ఇష్టమైనది వృత్తం చేయండి.",
+      "_shlokas": [
+        "1.30",
+        "1.31"
+      ]
+    },
+    "sd1_08": {
+      "id": "sd1_08",
+      "title": "People Before Prizes",
+      "title_te": "బహుమతుల కంటే ప్రజలు ముందు",
+      "emoji": "💝",
+      "micro_theme": "Rewards are not more important than people",
+      "micro_theme_te": "బహుమతులు ప్రజల కంటే ముఖ్యం కావు",
+      "storyTitle": "Tina and the Spelling Bee",
+      "storyTitle_te": "టీనా మరియు స్పెల్లింగ్ బీ",
+      "content": "Tina reached the spelling bee final with her best friend Leela. Tina knew the winning word. For a second she thought about missing it so Leela could win the trophy. Then she remembered Arjuna saying kingdoms and prizes were not worth hurting people you love. Tina spelled the word fairly and hugged Leela after. People matter more than shiny prizes.",
+      "content_te": "టీనా లీలాతో ఫైనల్‌కు చేరింది. గెలిచే పదం తెలుసు. ఒక్క క్షణం తప్పు చేసి లీలా ట్రోఫీ గెలవనివ్వాలా అనిపించింది. అర్జునుడు రాజ్యం, బహుమతుల కంటే ప్రేమించే వారిని బాధించడం విలువైనది కాదు అన్నాడు గుర్తు వచ్చింది. టీనా న్యాయంగా పదం చెప్పి లీలాను హగ్ చేసింది.",
+      "moral": "Love people more than trophies and prizes.",
+      "moral_te": "ట్రోఫీలు, బహుమతుల కంటే ప్రజలను ఎక్కువ ప్రేమించండి.",
+      "activity": "Tell someone you care about them more than winning.",
+      "activity_te": "గెలవడం కంటే మీరు వారిని ఎంత ప్రేమిస్తారో చెప్పండి.",
+      "_shlokas": [
+        "1.32",
+        "1.35"
+      ]
+    },
+    "sd1_09": {
+      "id": "sd1_09",
+      "title": "The Worry Cloud",
+      "title_te": "ఆందోళన మేఘం",
+      "emoji": "🌧️",
+      "micro_theme": "Overthinking creates more fear",
+      "micro_theme_te": "ఎక్కువ ఆలోచన మరింత భయం తెస్తుంది",
+      "storyTitle": "Lily and the School Rumor",
+      "storyTitle_te": "లిలీ మరియు స్కూల్ పుకార్",
+      "content": "Lily heard one whisper: 'The test might be cancelled.' By lunch she imagined no test, extra homework, angry teachers, and a terrible week. Her stomach hurt though nothing bad had happened yet. Arjuna imagined many future sorrows before they came. Lily told her counselor one fact and one feeling. The cloud shrank. Overthinking grows fear; facts and breath shrink it.",
+      "content_te": "లిలీ ఒక పుకార్ వినింది: 'పరీక్ష రద్దు అవ్వచ్చు.' లంచ్ వరకు పరీక్ష లేదు, ఎక్కువ హోంవర్క్, కోపంగా టీచర్లు ఊహించింది. ఇంకా చెడు జరగలేదు కానీ కడుపు నొప్పి. అర్జునుడు భవిష్యత్తు దుఃఖాలు ఊహించాడు. లిలీ కౌన్సిలర్‌కు ఒక వాస్తవం, ఒక భావం చెప్పింది. మేఘం చిన్నదైంది.",
+      "moral": "Do not build scary movies in your head. Check what is true today.",
+      "moral_te": "తలలో భయంకర సినిమాలు నిర్మించకండి. ఈరోజు నిజం ఏమిటో చూడండి.",
+      "activity": "Write one worry and one fact that you know for sure.",
+      "activity_te": "ఒక ఆందోళన, ఒక నిశ్చితమైన వాస్తవం రాయండి.",
+      "_shlokas": [
+        "1.36",
+        "1.38"
+      ]
+    },
+    "sd1_10": {
+      "id": "sd1_10",
+      "title": "Sitting Down Too Soon",
+      "title_te": "చాలా త్వరగా కూర్చోవడం",
+      "emoji": "🪑",
+      "micro_theme": "Giving up begins in the mind",
+      "micro_theme_te": "లొంగుదల మనస్సులో మొదలవుతుంది",
+      "storyTitle": "Neha and the Hard Puzzle",
+      "storyTitle_te": "నేహ మరియు కఠినమైన పజల్",
+      "content": "Neha opened the thousand-piece puzzle and slumped on the floor. 'My mind says I cannot do this,' she told her brother. Arjuna sat down and dropped his bow when despair felt bigger than hope. Her brother placed one corner piece and said, 'Just one piece today.' Neha placed two, then five. Giving up started in her mind — but small tries opened the way.",
+      "content_te": "నేహ వేల ముక్కల పజల్ తెరిచి నేలపై కూర్చుంది. 'నా మనస్సు చేయలేను అంటోంది' అన్నది. అర్జునుడు నిరాశ భరంగా ఉండి విలు వదిలి కూర్చున్నాడు. అన్న ఒక మూల ముక్క పెట్టి 'ఈరోజు ఒక్క ముక్క మాత్రమే' అన్నాడు. నేహ రెండు, తర్వాత ఐదు పెట్టింది. లొంగుదల మనస్సులో మొదలైంది — చిన్న ప్రయత్నాలు దారి తెరిచాయి.",
+      "moral": "Your mind may give up first. Try one small piece before you quit.",
+      "moral_te": "మనస్సు ముందు లొంగవచ్చు. మానే ముందు ఒక చిన్న ప్రయత్నం చేయండి.",
+      "activity": "Do one tiny part of a hard job before saying 'I cannot.'",
+      "activity_te": "'నేను చేయలేను' అనే ముందు కఠినమైన పనిలో చిన్న భాగం చేయండి.",
+      "_shlokas": [
+        "1.40",
+        "1.45"
+      ]
+    }
+  }
+}

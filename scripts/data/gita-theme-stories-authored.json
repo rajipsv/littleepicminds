@@ -5673,7 +5673,11 @@
       "moral": "Look and think for a moment before you act.",
       "moral_te": "చర్య చేయే ముందు ఒక్క క్షణం చూడండి, ఆలోచించండి.",
       "activity": "Before your next game or test, stop for five seconds and look around.",
-      "activity_te": "మీ తదుపరి ఆట లేదా పరీక్ష ముందు ఐదు సెకన్లు ఆగి చుట్టూ చూడండి."
+      "activity_te": "మీ తదుపరి ఆట లేదా పరీక్ష ముందు ఐదు సెకన్లు ఆగి చుట్టూ చూడండి.",
+      "_shlokas": [
+        "1.22",
+        "1.23"
+      ]
     },
     "sd1_06": {
       "id": "sd1_06",
@@ -5689,7 +5693,11 @@
       "moral": "When fear visits your body, slow your breath and take one small step.",
       "moral_te": "భయం శరీరంలో వచ్చినప్పుడు శ్వాస నెమ్మదిగా, ఒక చిన్న అడుగు వేయండి.",
       "activity": "Name where you feel nervous — tummy, hands, or chest — and breathe five times.",
-      "activity_te": "నర్వస్ ఎక్కడ అనిపిస్తుందో చెప్పి ఐదు సార్లు శ్వాస తీయండి."
+      "activity_te": "నర్వస్ ఎక్కడ అనిపిస్తుందో చెప్పి ఐదు సార్లు శ్వాస తీయండి.",
+      "_shlokas": [
+        "1.28",
+        "1.29"
+      ]
     },
     "sd1_07": {
       "id": "sd1_07",
@@ -5705,7 +5713,11 @@
       "moral": "When confused, choose one small question you care about.",
       "moral_te": "గందరగోళంగా ఉంటే మీకు పట్టిన ఒక చిన్న ప్రశ్న ఎంచుకోండి.",
       "activity": "If you cannot decide, write two options and circle the one you like more today.",
-      "activity_te": "నిర్ణయం రాకపోతే రెండు ఆప్షన్లు రాయి ఈరోజు ఇష్టమైనది వృత్తం చేయండి."
+      "activity_te": "నిర్ణయం రాకపోతే రెండు ఆప్షన్లు రాయి ఈరోజు ఇష్టమైనది వృత్తం చేయండి.",
+      "_shlokas": [
+        "1.30",
+        "1.31"
+      ]
     },
     "sd1_08": {
       "id": "sd1_08",
@@ -5721,7 +5733,11 @@
       "moral": "Love people more than trophies and prizes.",
       "moral_te": "ట్రోఫీలు, బహుమతుల కంటే ప్రజలను ఎక్కువ ప్రేమించండి.",
       "activity": "Tell someone you care about them more than winning.",
-      "activity_te": "గెలవడం కంటే మీరు వారిని ఎంత ప్రేమిస్తారో చెప్పండి."
+      "activity_te": "గెలవడం కంటే మీరు వారిని ఎంత ప్రేమిస్తారో చెప్పండి.",
+      "_shlokas": [
+        "1.32",
+        "1.35"
+      ]
     },
     "sd1_09": {
       "id": "sd1_09",
@@ -5737,7 +5753,11 @@
       "moral": "Do not build scary movies in your head. Check what is true today.",
       "moral_te": "తలలో భయంకర సినిమాలు నిర్మించకండి. ఈరోజు నిజం ఏమిటో చూడండి.",
       "activity": "Write one worry and one fact that you know for sure.",
-      "activity_te": "ఒక ఆందోళన, ఒక నిశ్చితమైన వాస్తవం రాయండి."
+      "activity_te": "ఒక ఆందోళన, ఒక నిశ్చితమైన వాస్తవం రాయండి.",
+      "_shlokas": [
+        "1.36",
+        "1.38"
+      ]
     },
     "sd1_10": {
       "id": "sd1_10",
@@ -5753,7 +5773,11 @@
       "moral": "Your mind may give up first. Try one small piece before you quit.",
       "moral_te": "మనస్సు ముందు లొంగవచ్చు. మానే ముందు ఒక చిన్న ప్రయత్నం చేయండి.",
       "activity": "Do one tiny part of a hard job before saying 'I cannot.'",
-      "activity_te": "'నేను చేయలేను' అనే ముందు కఠినమైన పనిలో చిన్న భాగం చేయండి."
+      "activity_te": "'నేను చేయలేను' అనే ముందు కఠినమైన పనిలో చిన్న భాగం చేయండి.",
+      "_shlokas": [
+        "1.40",
+        "1.45"
+      ]
     },
     "sd1_01": {
       "id": "sd1_01",
@@ -5769,7 +5793,11 @@
       "moral": "Big moments can make you nervous. Breathe and take one small brave step.",
       "moral_te": "పెద్ద క్షణాలు నర్వస్ చేయగలవు. శ్వాస తీసుకుని ఒక చిన్న ధైర్యమైన అడుగు వేయండి.",
       "activity": "Before your next big event, take three slow breaths and name one thing you are ready for.",
-      "activity_te": "మీ తదుపరి పెద్ద సంఘటన ముందు మూడు నెమ్మది శ్వాసలు తీసుకుని మీరు సిద్ధమైన ఒక విషయం చెప్పండి."
+      "activity_te": "మీ తదుపరి పెద్ద సంఘటన ముందు మూడు నెమ్మది శ్వాసలు తీసుకుని మీరు సిద్ధమైన ఒక విషయం చెప్పండి.",
+      "_shlokas": [
+        "1.1",
+        "1.2"
+      ]
     },
     "sd1_02": {
       "id": "sd1_02",
@@ -5785,7 +5813,11 @@
       "moral": "A calm voice is stronger than a loud worried voice.",
       "moral_te": "ప్రశాంతమైన స్వరం బిగ్గర ఆందోళన స్వరం కంటే బలంగా ఉంటుంది.",
       "activity": "Practice saying one encouraging sentence in a calm voice today.",
-      "activity_te": "ఈరోజు ఒక ప్రోత్సాహ వాక్యాన్ని ప్రశాంతమైన స్వరంలో చెప్పి సాధన చేయండి."
+      "activity_te": "ఈరోజు ఒక ప్రోత్సాహ వాక్యాన్ని ప్రశాంతమైన స్వరంలో చెప్పి సాధన చేయండి.",
+      "_shlokas": [
+        "1.3",
+        "1.7"
+      ]
     },
     "sd1_03": {
       "id": "sd1_03",
@@ -5801,7 +5833,11 @@
       "moral": "Do not be fooled by loud confidence — or your own. Check how you really feel.",
       "moral_te": "బిగ్గర ఆత్మవిశ్వాసం మిమ్మల్ని మీరే మోసం చేయనివ్వండి. మీరు నిజంగా ఎలా అనిపిస్తుందో చూడండి.",
       "activity": "Draw two faces: one showing 'loud brave' and one showing 'quiet nervous.'",
-      "activity_te": "రెండు ముఖాలు గీయండి: 'బిగ్గర ధైర్యం' మరియు 'నిశ్శబ్ద నర్వస్'."
+      "activity_te": "రెండు ముఖాలు గీయండి: 'బిగ్గర ధైర్యం' మరియు 'నిశ్శబ్ద నర్వస్'.",
+      "_shlokas": [
+        "1.10",
+        "1.12"
+      ]
     },
     "sd1_04": {
       "id": "sd1_04",
@@ -5817,7 +5853,11 @@
       "moral": "Asking for help is brave. You do not have to solve everything alone.",
       "moral_te": "సహాయం అడగడం ధైర్యం. అన్నీ ఒంటరిగా పరిష్కరించాల్సిన అవసరం లేదు.",
       "activity": "Ask one grown-up one honest question about something you find hard.",
-      "activity_te": "మీకు కష్టమైన విషయంలో ఒక పెద్దవారిని ఒక నిజాయితీ ప్రశ్న అడగండి."
+      "activity_te": "మీకు కష్టమైన విషయంలో ఒక పెద్దవారిని ఒక నిజాయితీ ప్రశ్న అడగండి.",
+      "_shlokas": [
+        "1.14",
+        "1.21"
+      ]
     },
     "sd2_01": {
       "id": "sd2_01",
