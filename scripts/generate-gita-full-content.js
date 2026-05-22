@@ -14,6 +14,7 @@ const ROOT = path.join(__dirname, '..');
 const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
 const LIB_DATA = path.join(ROOT, 'lib', 'data');
 const BLUEPRINTS = require('./gita-chapter-blueprints');
+const { getMoralStory } = require('./gita-theme-stories');
 const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
 
 const EMOJIS = ['🌱', '📖', '💡', '🌟', '🎯', '🛡️', '⚖️', '🔥', '🌳', '✨', '☀️', '🧘', '💪', '🦋', '🏆'];
@@ -137,49 +138,61 @@ function generateShloka(ch, v, meta, lessonIndex) {
 
 function buildStory(level, ch, meta, range, lesson, idx) {
   const prefix = level === 'seeds' ? 's' : level === 'seekers' ? 'sk' : 'w';
+  const moral = getMoralStory(lesson.idea, level, idx);
+
+  if (moral) {
+    return {
+      id: `theme_${prefix}${ch}_${idx + 1}`,
+      title: moral.title,
+      title_te: moral.title_te,
+      emoji: moral.emoji || EMOJIS[idx % EMOJIS.length],
+      micro_theme: lesson.idea,
+      micro_theme_te: lesson.ideaTe,
+      shlokas: verseRange(ch, range.start, range.end),
+      story: {
+        title: moral.storyTitle,
+        title_te: moral.storyTitle_te,
+        content: moral.content,
+        content_te: moral.content_te,
+        moral: lesson.moral,
+        moral_te: lesson.moralTe,
+      },
+      activity: moral.activity,
+      activity_te: moral.activity_te,
+      videoUrl: '',
+    };
+  }
+
+  const partTitles = [
+    { en: 'First Steps', te: 'మొదటి అడుగులు' },
+    { en: 'Growing Stronger', te: 'బలంగా ఎదగడం' },
+    { en: 'Deeper Wisdom', te: 'లోతైన జ్ఞానం' },
+    { en: 'Clearer Vision', te: 'స్పష్టమైన దృష్టి' },
+    { en: 'Steady Heart', te: 'స్థిరమైన హృదయం' },
+    { en: 'Final Light', te: 'చివరి కాంతి' },
+  ];
+  const pt = partTitles[idx % partTitles.length];
   const kidName = ['Riya', 'Arjun', 'Maya', 'Dev', 'Anika', 'Kiran'][idx % 6];
-  const seedsContent = `${kidName} faced a challenge at school that felt like a big battle. At first ${kidName} wanted to quit. Then ${kidName} remembered what Krishna teaches in Chapter ${ch} about ${lesson.idea}. ${kidName} took a deep breath and tried again with a kind heart.`;
-  const seekersContent = `${kidName} had to make a hard choice between what was easy and what was right. Friends gave different advice, and ${kidName} felt confused. Reading the Gita, ${kidName} saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on ${lesson.idea} helped ${kidName} choose courage over comfort.`;
-  const warriorsContent = `In Chapter ${ch} (${meta.title}), Krishna explains ${lesson.idea} through verses ${range.start} to ${range.end}. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: ${lesson.moral} The verses invite us to examine our own duties, motives, and faith with honest discrimination.`;
-
-  const content =
-    level === 'seeds' ? seedsContent : level === 'seekers' ? seekersContent : warriorsContent;
-
-  const content_te =
-    level === 'seeds'
-      ? `${kidName} పాఠశాలలో ఒక పెద్ద సవాలును ఎదుర్కొన్నాడు. మొదట వదులుకోవాలనుకున్నాడు. అప్పుడు అధ్యాయం ${ch}లో కృష్ణుడు ${lesson.ideaTe} గురించి బోధించినది గుర్తుకు వచ్చింది. లోతైన శ్వాస తీసుకుని మంచి హృదయంతో మళ్ళీ ప్రయత్నించాడు.`
-      : level === 'seekers'
-        ? `${kidName} సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ${lesson.ideaTe} పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.`
-        : `అధ్యాయం ${ch} (${meta.title})లో, కృష్ణుడు ${range.start}–${range.end} శ్లోకాల ద్వారా ${lesson.ideaTe}ను వివరిస్తాడు. ${lesson.moralTe}`;
+  const warriorsContent = `In Chapter ${ch} (${meta.title}), Krishna explains ${lesson.idea} through verses ${range.start} to ${range.end}. This section connects Arjuna's dilemma to timeless ethics: ${lesson.moral}`;
 
   return {
     id: `theme_${prefix}${ch}_${idx + 1}`,
-    title: `${meta.theme}: Part ${idx + 1}`,
-    title_te: `${meta.theme}: భాగం ${idx + 1}`,
+    title: level === 'warriors' ? `${meta.theme}: ${pt.en}` : `${meta.theme}: Part ${idx + 1}`,
+    title_te: level === 'warriors' ? `${meta.theme}: ${pt.te}` : `${meta.theme}: భాగం ${idx + 1}`,
     emoji: EMOJIS[idx % EMOJIS.length],
     micro_theme: lesson.idea,
     micro_theme_te: lesson.ideaTe,
     shlokas: verseRange(ch, range.start, range.end),
     story: {
-      title: level === 'seeds' ? `${kidName}'s Lesson` : `${meta.title} — Verses ${range.start}–${range.end}`,
-      title_te: level === 'seeds' ? `${kidName} పాఠం` : `${meta.title} — శ్లోకాలు ${range.start}–${range.end}`,
-      content,
-      content_te,
+      title: `${meta.title} — Verses ${range.start}–${range.end}`,
+      title_te: `${meta.title} — శ్లోకాలు ${range.start}–${range.end}`,
+      content: warriorsContent,
+      content_te: `అధ్యాయం ${ch} (${meta.title})లో ${range.start}–${range.end} శ్లోకాల ద్వారా ${lesson.ideaTe}. ${lesson.moralTe}`,
       moral: lesson.moral,
       moral_te: lesson.moralTe,
     },
-    activity:
-      level === 'seeds'
-        ? `Draw how "${lesson.idea}" looks in your life today.`
-        : level === 'seekers'
-          ? `Journal: When did you need courage for "${lesson.idea}"? What did you do?`
-          : `Reflect on verses ${range.start}–${range.end}: list three ways ${lesson.idea} applies to your week.`,
-    activity_te:
-      level === 'seeds'
-        ? `"${lesson.ideaTe}" మీ జీవితంలో ఎలా ఉందో గీయండి.`
-        : level === 'seekers'
-          ? `"${lesson.ideaTe}" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.`
-          : `శ్లోకాలు ${range.start}–${range.end}పై ఆలోచించి, ఈ వారం "${lesson.ideaTe}" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.`,
+    activity: `Reflect on verses ${range.start}–${range.end}: how does "${lesson.idea}" apply to your week?`,
+    activity_te: `శ్లోకాలు ${range.start}–${range.end}: "${lesson.ideaTe}" మీ వారంలో ఎలా వర్తిస్తుంది?`,
     videoUrl: '',
   };
 }

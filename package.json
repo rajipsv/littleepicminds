@@ -8,7 +8,8 @@
     "gita:import": "node scripts/import-gita-real-verses.js",
     "gita:line-breakdown": "node scripts/rebuild-line-breakdown.js",
     "gita:translate-lines": "node scripts/translate-line-breakdown-te.js",
-    "gita:apply-te-cache": "node scripts/apply-line-te-cache.js"
+    "gita:apply-te-cache": "node scripts/apply-line-te-cache.js",
+    "gita:regenerate-themes": "node scripts/regenerate-themes-only.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",
