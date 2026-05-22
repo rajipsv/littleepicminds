@@ -58,12 +58,53 @@ function wordMatchesLine(word, line) {
   return tokens.some((t) => tokenMatch(t, p));
 }
 
+const LINES_PER_SHLOKA = 4;
+
 function splitPoeticLines(text) {
   if (!text) return [];
   return text
     .split(/\n+/)
     .map((l) => l.replace(/\|/g, '').trim())
     .filter(Boolean);
+}
+
+/** Every Gita shloka is shown as exactly 4 poetic lines (4 padas). */
+function splitIntoFixedLines(text, n = LINES_PER_SHLOKA) {
+  if (!text?.trim()) return Array.from({ length: n }, () => '');
+
+  let lines = splitPoeticLines(text);
+  if (lines.length === 1 && /[।॥|]/.test(text)) {
+    lines = text
+      .split(/[।॥|]+/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+  }
+
+  if (lines.length === n) return lines;
+
+  if (lines.length > n) {
+    const merged = [];
+    const per = Math.ceil(lines.length / n);
+    for (let i = 0; i < n; i++) {
+      merged.push(lines.slice(i * per, (i + 1) * per).join(' ').trim());
+    }
+    return merged;
+  }
+
+  const tokens = lines.join(' ').split(/[\s-]+/).filter(Boolean);
+  if (!tokens.length) return Array.from({ length: n }, () => lines.join(' '));
+
+  const out = [];
+  const base = Math.floor(tokens.length / n);
+  let extra = tokens.length % n;
+  let idx = 0;
+  for (let i = 0; i < n; i++) {
+    const size = base + (extra > 0 ? 1 : 0);
+    if (extra > 0) extra -= 1;
+    out.push(tokens.slice(idx, idx + size).join(' '));
+    idx += size;
+  }
+  return out;
 }
 
 function parseWordMeanings(wordMeanings) {
@@ -112,6 +153,10 @@ function capitalize(s) {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
+function hasTeluguScript(text) {
+  return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
+}
+
 function splitVerseMeaning(text, n) {
   if (!text || !n) return null;
   const sentences = text
@@ -124,6 +169,24 @@ function splitVerseMeaning(text, n) {
     .map((s) => s.trim())
     .filter(Boolean);
   if (comma.length === n) return comma;
+  if (hasTeluguScript(text)) {
+    const clauses = text
+      .split(/(?<=[।:?,])\s+/)
+      .map((s) => s.trim())
+      .filter(Boolean);
+    if (clauses.length === n) return clauses;
+    if (clauses.length > n) {
+      const per = Math.ceil(clauses.length / n);
+      const merged = [];
+      for (let i = 0; i < n; i++) {
+        merged.push(clauses.slice(i * per, (i + 1) * per).join(' '));
+      }
+      return merged;
+    }
+  }
+  if (text?.trim() && n > 0) {
+    return splitIntoFixedLines(text, n);
+  }
   return null;
 }
 
@@ -183,18 +246,21 @@ function matchWordsInLineOrder(wordItems, line) {
  * @param {string} [opts.telugu_script]
  * @param {string} [opts.word_meanings] - gita-data word_meanings string
  * @param {Array} [opts.existingBreakdown] - prior lineBreakdown or word-level rows
- * @param {string} [opts.fallbackMeaning] - full verse meaning if no word glosses match
+ * @param {string} [opts.fallbackMeaning] - full verse English meaning
+ * @param {string} [opts.fallbackMeaningTe] - full verse Telugu meaning (split per line when possible)
+ * @param {Map<string,string>} [opts.teCache] - en line meaning → Telugu (from translate script)
  */
 function buildLineBreakdown(opts = {}) {
   const transliteration = (opts.transliteration || '').trim();
-  const transLines = splitPoeticLines(transliteration);
-  if (!transLines.length) return opts.existingBreakdown || [];
+  if (!transliteration) return opts.existingBreakdown || [];
+
+  const transLines = splitIntoFixedLines(transliteration, LINES_PER_SHLOKA);
 
   const sanskrit = cleanSanskrit(opts.sanskrit || '');
-  const skLines = splitPoeticLines(sanskrit);
+  const skLines = splitIntoFixedLines(sanskrit, LINES_PER_SHLOKA);
   const teluguFull =
     opts.telugu_script || (sanskrit ? toTeluguScript(sanskrit) : '');
-  const teLines = splitPoeticLines(teluguFull);
+  const teLines = splitIntoFixedLines(teluguFull, LINES_PER_SHLOKA);
 
   const fromSource = parseWordMeanings(opts.word_meanings);
   const fromExisting = (opts.existingBreakdown || []).map((item) => ({
@@ -204,20 +270,22 @@ function buildLineBreakdown(opts = {}) {
   }));
   const wordItems = fromSource.length ? fromSource : fromExisting;
 
-  const fallbackParts = splitVerseMeaning(opts.fallbackMeaning, transLines.length);
+  const fallbackParts = splitVerseMeaning(opts.fallbackMeaning, LINES_PER_SHLOKA);
+  const fallbackTeParts = splitVerseMeaning(opts.fallbackMeaningTe, LINES_PER_SHLOKA);
+  const teCache = opts.teCache;
 
   return transLines.map((line, i) => {
     const tokens = line.split(/[\s-]+/).filter(Boolean);
     let matched = matchWordsInLineOrder(wordItems, line);
-    if (!matched.length && wordItems.length === transLines.length) {
+    if (!matched.length && wordItems.length === LINES_PER_SHLOKA) {
       matched = [wordItems[i]];
     }
 
     let en = joinMeanings(matched);
     let te =
-      matched.length && matched.some((m) => m.te)
-        ? joinMeanings(matched.map((m) => ({ en: m.te || m.en })))
-        : en;
+      matched.length && matched.some((m) => m.te && hasTeluguScript(m.te))
+        ? joinMeanings(matched.map((m) => ({ en: m.te })))
+        : '';
 
     const glossWeak =
       !matched.length ||
@@ -225,15 +293,26 @@ function buildLineBreakdown(opts = {}) {
 
     if (glossWeak && fallbackParts && fallbackParts[i]) {
       en = capitalize(fallbackParts[i]);
-      te = en;
     } else if (!en && fallbackParts && fallbackParts[i]) {
       en = capitalize(fallbackParts[i]);
-      te = en;
     } else if (!en && opts.fallbackMeaning) {
       en = i === 0 ? capitalize(opts.fallbackMeaning) : line;
-      te = en;
     }
     if (!en) en = line;
+
+    if (fallbackTeParts && fallbackTeParts[i]) {
+      te = capitalize(fallbackTeParts[i]);
+    } else if (teCache && en && teCache.has(en)) {
+      te = teCache.get(en);
+    } else if (teCache && en && teCache.has(en.toLowerCase())) {
+      te = teCache.get(en.toLowerCase());
+    } else if (hasTeluguScript(te)) {
+      // keep gloss-based te
+    } else if (teCache && opts.fallbackMeaning && teCache.has(opts.fallbackMeaning)) {
+      te = teCache.get(opts.fallbackMeaning);
+    } else {
+      te = en;
+    }
 
     const skLine = skLines[i] || skLines[skLines.length - 1] || line;
     const teLine = teLines[i] || teLines[teLines.length - 1] || toTeluguFromIast(line);
@@ -254,5 +333,9 @@ module.exports = {
   cleanSanskrit,
   parseWordMeanings,
   splitPoeticLines,
+  splitIntoFixedLines,
+  LINES_PER_SHLOKA,
   wordMatchesLine,
+  hasTeluguScript,
+  splitVerseMeaning,
 };

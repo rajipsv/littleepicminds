@@ -47,28 +47,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "శ్రీ భగవానువాచ అనాశ్రితః కర్మఫలం కార్యం కర్మ కరోతి యః |\nస సంన్యాసీ చ యోగీ చ న నిరగ్నిర్న చాక్రియః",
         "lineBreakdown": [
             {
-                "sanskrit": "श्री भगवानुवाच अनाश्रितः कर्मफलं कार्यं कर्म करोति यः",
-                "word": "śhrī bhagavān uvācha",
-                "transliteration": "śhrī bhagavān uvācha",
-                "sanskrit_te": "శ్రీ భగవానువాచ అనాశ్రితః కర్మఫలం కార్యం కర్మ కరోతి యః",
-                "en": "The Lord said",
-                "te": "The Lord said"
+                "sanskrit": "श्री भगवानुवाच अनाश्रितः कर्मफलं",
+                "word": "śhrī bhagavān uvācha anāśhritaḥ karma",
+                "transliteration": "śhrī bhagavān uvācha anāśhritaḥ karma",
+                "sanskrit_te": "శ్రీ భగవానువాచ అనాశ్రితః కర్మఫలం",
+                "en": "The Supreme Lord said not desiring work",
+                "te": "The Lord said, \"He who performs works that ought"
             },
             {
-                "sanskrit": "स संन्यासी च योगी च न निरग्निर्न चाक्रियः",
-                "word": "anāśhritaḥ karma-phalaṁ kāryaṁ karma karoti yaḥ",
-                "transliteration": "anāśhritaḥ karma-phalaṁ kāryaṁ karma karoti yaḥ",
-                "sanskrit_te": "స సంన్యాసీ చ యోగీ చ న నిరగ్నిర్న చాక్రియః",
-                "en": "Not desiring results of actions obligatory work perform one who",
-                "te": "Not desiring results of actions obligatory work perform one who"
+                "sanskrit": "कार्यं कर्म करोति यः",
+                "word": "phalaṁ kāryaṁ karma karoti yaḥ",
+                "transliteration": "phalaṁ kāryaṁ karma karoti yaḥ",
+                "sanskrit_te": "కార్యం కర్మ కరోతి యః",
+                "en": "Obligatory work perform one who",
+                "te": "To be done without seeking their fruits—he is"
             },
             {
-                "sanskrit": "स संन्यासी च योगी च न निरग्निर्न चाक्रियः",
-                "word": "sa sannyāsī cha yogī cha na niragnir na chākriyaḥ",
-                "transliteration": "sa sannyāsī cha yogī cha na niragnir na chākriyaḥ",
-                "sanskrit_te": "స సంన్యాసీ చ యోగీ చ న నిరగ్నిర్న చాక్రియః",
-                "en": "That person and yogi and not not without activity",
-                "te": "That person and yogi and not not without activity"
+                "sanskrit": "स संन्यासी च योगी",
+                "word": "sa sannyāsī cha yogī cha",
+                "transliteration": "sa sannyāsī cha yogī cha",
+                "sanskrit_te": "స సంన్యాసీ చ యోగీ",
+                "en": "That person and yogi and",
+                "te": "A sannyasin and yogin, and not he who"
+            },
+            {
+                "sanskrit": "च न निरग्निर्न चाक्रियः",
+                "word": "na niragnir na chākriyaḥ",
+                "transliteration": "na niragnir na chākriyaḥ",
+                "sanskrit_te": "చ న నిరగ్నిర్న చాక్రియః",
+                "en": "Not not without activity",
+                "te": "Maintains no sacred fires and performs no actions.\""
             }
         ]
     },
@@ -120,20 +128,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యం సంన్యాసమితి ప్రాహుర్యోగం తం విద్ధి పాణ్డవ |\nన హ్యసంన్యస్తసఙ్కల్పో యోగీ భవతి కశ్చన",
         "lineBreakdown": [
             {
-                "sanskrit": "यं संन्यासमिति प्राहुर्योगं तं विद्धि पाण्डव",
-                "word": "yaṁ sannyāsam iti prāhur yogaṁ taṁ viddhi pāṇḍava",
-                "transliteration": "yaṁ sannyāsam iti prāhur yogaṁ taṁ viddhi pāṇḍava",
-                "sanskrit_te": "యం సంన్యాసమితి ప్రాహుర్యోగం తం విద్ధి పాణ్డవ",
-                "en": "What thus they say yog that know Arjun, the son of Pandu",
-                "te": "What thus they say yog that know Arjun, the son of Pandu"
+                "sanskrit": "यं संन्यासमिति प्राहुर्योगं",
+                "word": "yaṁ sannyāsam iti prāhur",
+                "transliteration": "yaṁ sannyāsam iti prāhur",
+                "sanskrit_te": "యం సంన్యాసమితి ప్రాహుర్యోగం",
+                "en": "What thus they say",
+                "te": "That which is called Sannyasa (Jnana Yoga), know that to"
             },
             {
-                "sanskrit": "न ह्यसंन्यस्तसङ्कल्पो योगी भवति कश्चन",
-                "word": "na hyasannyasta-saṅkalpo yogī bhavati kaśhchana",
-                "transliteration": "na hyasannyasta-saṅkalpo yogī bhavati kaśhchana",
-                "sanskrit_te": "న హ్యసంన్యస్తసఙ్కల్పో యోగీ భవతి కశ్చన",
-                "en": "Not without giving up desire a yogi becomes anyone",
-                "te": "Not without giving up desire a yogi becomes anyone"
+                "sanskrit": "तं विद्धि पाण्डव",
+                "word": "yogaṁ taṁ viddhi pāṇḍava",
+                "transliteration": "yogaṁ taṁ viddhi pāṇḍava",
+                "sanskrit_te": "తం విద్ధి పాణ్డవ",
+                "en": "Yog that know Arjun, the son of Pandu",
+                "te": "Be Yoga (Karma Yoga), O Arjuna. For no one, among"
+            },
+            {
+                "sanskrit": "न ह्यसंन्यस्तसङ्कल्पो योगी",
+                "word": "na hyasannyasta saṅkalpo",
+                "transliteration": "na hyasannyasta saṅkalpo",
+                "sanskrit_te": "న హ్యసంన్యస్తసఙ్కల్పో యోగీ",
+                "en": "Not without giving up desire",
+                "te": "Karma Yogins, whose delusive identification of the body with the"
+            },
+            {
+                "sanskrit": "भवति कश्चन",
+                "word": "yogī bhavati kaśhchana",
+                "transliteration": "yogī bhavati kaśhchana",
+                "sanskrit_te": "భవతి కశ్చన",
+                "en": "A yogi becomes anyone",
+                "te": "Self has not been abandoned, becomes a true Karma Yogin."
             }
         ]
     },
@@ -185,20 +209,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ఆరురుక్షోర్మునేర్యోగం కర్మ కారణముచ్యతే |\nయోగారూఢస్య తస్యైవ శమః కారణముచ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "आरुरुक्षोर्मुनेर्योगं कर्म कारणमुच्यते",
-                "word": "ārurukṣhor muner yogaṁ karma kāraṇam uchyate",
-                "transliteration": "ārurukṣhor muner yogaṁ karma kāraṇam uchyate",
-                "sanskrit_te": "ఆరురుక్షోర్మునేర్యోగం కర్మ కారణముచ్యతే",
-                "en": "A beginner Yog working without attachment the cause is said",
-                "te": "A beginner Yog working without attachment the cause is said"
+                "sanskrit": "आरुरुक्षोर्मुनेर्योगं कर्म",
+                "word": "ārurukṣhor muner yogaṁ",
+                "transliteration": "ārurukṣhor muner yogaṁ",
+                "sanskrit_te": "ఆరురుక్షోర్మునేర్యోగం కర్మ",
+                "en": "A beginner Yog",
+                "te": "Action is said to be the means for the"
             },
             {
-                "sanskrit": "योगारूढस्य तस्यैव शमः कारणमुच्यते",
-                "word": "yogārūḍhasya tasyaiva śhamaḥ kāraṇam uchyate",
-                "transliteration": "yogārūḍhasya tasyaiva śhamaḥ kāraṇam uchyate",
-                "sanskrit_te": "యోగారూఢస్య తస్యైవ శమః కారణముచ్యతే",
-                "en": "Of those who are elevated in Yog their meditation the cause is said",
-                "te": "Of those who are elevated in Yog their meditation the cause is said"
+                "sanskrit": "कारणमुच्यते योगारूढस्य",
+                "word": "karma kāraṇam uchyate",
+                "transliteration": "karma kāraṇam uchyate",
+                "sanskrit_te": "కారణముచ్యతే యోగారూఢస్య",
+                "en": "Working without attachment the cause is said",
+                "te": "Sage who seeks to climb the heights of Yoga;"
+            },
+            {
+                "sanskrit": "तस्यैव शमः",
+                "word": "yogārūḍhasya tasyaiva śhamaḥ",
+                "transliteration": "yogārūḍhasya tasyaiva śhamaḥ",
+                "sanskrit_te": "తస్యైవ శమః",
+                "en": "Of those who are elevated in Yog their meditation",
+                "te": "But when he has climbed the heights of"
+            },
+            {
+                "sanskrit": "कारणमुच्यते",
+                "word": "kāraṇam uchyate",
+                "transliteration": "kāraṇam uchyate",
+                "sanskrit_te": "కారణముచ్యతే",
+                "en": "The cause is said",
+                "te": "Yoga, tranquility is said to be the means."
             }
         ]
     },
@@ -250,20 +290,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యదా హి నేన్ద్రియార్థేషు న కర్మస్వనుషజ్జతే |\nసర్వసఙ్కల్పసంన్యాసీ యోగారూఢస్తదోచ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "यदा हि नेन्द्रियार्थेषु न कर्मस्वनुषज्जते",
-                "word": "yadā hi nendriyārtheṣhu na karmasv-anuṣhajjate",
-                "transliteration": "yadā hi nendriyārtheṣhu na karmasv-anuṣhajjate",
-                "sanskrit_te": "యదా హి నేన్ద్రియార్థేషు న కర్మస్వనుషజ్జతే",
-                "en": "When certainly not to actions is attachment",
-                "te": "When certainly not to actions is attachment"
+                "sanskrit": "यदा हि",
+                "word": "yadā hi nendriyārtheṣhu",
+                "transliteration": "yadā hi nendriyārtheṣhu",
+                "sanskrit_te": "యదా హి",
+                "en": "When certainly",
+                "te": "For, when one loses attachment to the things"
             },
             {
-                "sanskrit": "सर्वसङ्कल्पसंन्यासी योगारूढस्तदोच्यते",
-                "word": "sarva-saṅkalpa-sannyāsī yogārūḍhas tadochyate",
-                "transliteration": "sarva-saṅkalpa-sannyāsī yogārūḍhas tadochyate",
-                "sanskrit_te": "సర్వసఙ్కల్పసంన్యాసీ యోగారూఢస్తదోచ్యతే",
-                "en": "All desires for the fruits of actions elevated in the science of Yog",
-                "te": "All desires for the fruits of actions elevated in the science of Yog"
+                "sanskrit": "नेन्द्रियार्थेषु न",
+                "word": "na karmasv anuṣhajjate",
+                "transliteration": "na karmasv anuṣhajjate",
+                "sanskrit_te": "నేన్ద్రియార్థేషు న",
+                "en": "Not to actions is attachment",
+                "te": "Of the senses and to actions, then they"
+            },
+            {
+                "sanskrit": "कर्मस्वनुषज्जते सर्वसङ्कल्पसंन्यासी",
+                "word": "sarva saṅkalpa sannyāsī",
+                "transliteration": "sarva saṅkalpa sannyāsī",
+                "sanskrit_te": "కర్మస్వనుషజ్జతే సర్వసఙ్కల్పసంన్యాసీ",
+                "en": "Have abandoned all desires and are said",
+                "te": "Have abandoned all desires and are said"
+            },
+            {
+                "sanskrit": "योगारूढस्तदोच्यते",
+                "word": "yogārūḍhas tadochyate",
+                "transliteration": "yogārūḍhas tadochyate",
+                "sanskrit_te": "యోగారూఢస్తదోచ్యతే",
+                "en": "To have climbed the heights of Yoga.",
+                "te": "To have climbed the heights of Yoga."
             }
         ]
     },
@@ -316,19 +372,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "उद्धरेदात्मनाऽऽत्मानं नात्मानमवसादयेत्",
-                "word": "uddhared ātmanātmānaṁ nātmānam avasādayet",
-                "transliteration": "uddhared ātmanātmānaṁ nātmānam avasādayet",
+                "word": "uddhared ātmanātmānaṁ nātmānam",
+                "transliteration": "uddhared ātmanātmānaṁ nātmānam",
                 "sanskrit_te": "ఉద్ధరేదాత్మనాఽఽత్మానం నాత్మానమవసాదయేత్",
-                "en": "Elevate through the mind through the mind degrade",
-                "te": "Elevate through the mind through the mind degrade"
+                "en": "Elevate through the mind through the mind",
+                "te": "One should raise oneself by one's own mind and"
             },
             {
-                "sanskrit": "आत्मैव ह्यात्मनो बन्धुरात्मैव रिपुरात्मनः",
-                "word": "ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ",
-                "transliteration": "ātmaiva hyātmano bandhur ātmaiva ripur ātmanaḥ",
-                "sanskrit_te": "ఆత్మైవ హ్యాత్మనో బన్ధురాత్మైవ రిపురాత్మనః",
-                "en": "The mind the mind friend the mind through the mind",
-                "te": "The mind the mind friend the mind through the mind"
+                "sanskrit": "आत्मैव ह्यात्मनो",
+                "word": "avasādayet ātmaiva hyātmano",
+                "transliteration": "avasādayet ātmaiva hyātmano",
+                "sanskrit_te": "ఆత్మైవ హ్యాత్మనో",
+                "en": "Degrade the mind the mind",
+                "te": "Not allow oneself to sink; for the mind alone"
+            },
+            {
+                "sanskrit": "बन्धुरात्मैव",
+                "word": "bandhur ātmaiva",
+                "transliteration": "bandhur ātmaiva",
+                "sanskrit_te": "బన్ధురాత్మైవ",
+                "en": "Friend the mind",
+                "te": "Is the friend of the self, and the"
+            },
+            {
+                "sanskrit": "रिपुरात्मनः",
+                "word": "ripur ātmanaḥ",
+                "transliteration": "ripur ātmanaḥ",
+                "sanskrit_te": "రిపురాత్మనః",
+                "en": "Mind alone is the foe of the self.",
+                "te": "Mind alone is the foe of the self."
             }
         ]
     },
@@ -380,20 +452,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "బన్ధురాత్మాఽఽత్మనస్తస్య యేనాత్మైవాత్మనా జితః |\nఅనాత్మనస్తు శత్రుత్వే వర్తేతాత్మైవ శత్రువత్",
         "lineBreakdown": [
             {
-                "sanskrit": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना जितः",
-                "word": "bandhur ātmātmanas tasya yenātmaivātmanā jitaḥ",
-                "transliteration": "bandhur ātmātmanas tasya yenātmaivātmanā jitaḥ",
-                "sanskrit_te": "బన్ధురాత్మాఽఽత్మనస్తస్య యేనాత్మైవాత్మనా జితః",
-                "en": "Friend the mind of him by whom conquered",
-                "te": "Friend the mind of him by whom conquered"
+                "sanskrit": "बन्धुरात्माऽऽत्मनस्तस्य येनात्मैवात्मना",
+                "word": "bandhur ātmātmanas tasya",
+                "transliteration": "bandhur ātmātmanas tasya",
+                "sanskrit_te": "బన్ధురాత్మాఽఽత్మనస్తస్య యేనాత్మైవాత్మనా",
+                "en": "Friend the mind of him",
+                "te": "The mind is the friend of him by whom it has been conquered. But for him whose mind is not conquered"
             },
             {
-                "sanskrit": "अनात्मनस्तु शत्रुत्वे वर्तेतात्मैव शत्रुवत्",
-                "word": "anātmanas tu śhatrutve vartetātmaiva śhatru-vat",
-                "transliteration": "anātmanas tu śhatrutve vartetātmaiva śhatru-vat",
-                "sanskrit_te": "అనాత్మనస్తు శత్రుత్వే వర్తేతాత్మైవ శత్రువత్",
-                "en": "Of those with unconquered mind but for an enemy remains like an enemy",
-                "te": "Of those with unconquered mind but for an enemy remains like an enemy"
+                "sanskrit": "जितः अनात्मनस्तु",
+                "word": "yenātmaivātmanā jitaḥ anātmanas",
+                "transliteration": "yenātmaivātmanā jitaḥ anātmanas",
+                "sanskrit_te": "జితః అనాత్మనస్తు",
+                "en": "By whom conquered of those with unconquered mind",
+                "te": "The mind"
+            },
+            {
+                "sanskrit": "शत्रुत्वे वर्तेतात्मैव",
+                "word": "tu śhatrutve vartetātmaiva",
+                "transliteration": "tu śhatrutve vartetātmaiva",
+                "sanskrit_te": "శత్రుత్వే వర్తేతాత్మైవ",
+                "en": "But for an enemy remains",
+                "te": "Like an enemy"
+            },
+            {
+                "sanskrit": "शत्रुवत्",
+                "word": "śhatru vat",
+                "transliteration": "śhatru vat",
+                "sanskrit_te": "శత్రువత్",
+                "en": "Remains hostile.",
+                "te": "Remains hostile."
             }
         ]
     },
@@ -445,20 +533,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "జితాత్మనః ప్రశాన్తస్య పరమాత్మా సమాహితః |\nశీతోష్ణసుఖదుఃఖేషు తథా మానాపమానయోః",
         "lineBreakdown": [
             {
-                "sanskrit": "जितात्मनः प्रशान्तस्य परमात्मा समाहितः",
-                "word": "jitātmanaḥ praśhāntasya paramātmā samāhitaḥ",
-                "transliteration": "jitātmanaḥ praśhāntasya paramātmā samāhitaḥ",
-                "sanskrit_te": "జితాత్మనః ప్రశాన్తస్య పరమాత్మా సమాహితః",
-                "en": "One who has conquered one’s mind of the peaceful God steadfast",
-                "te": "One who has conquered one’s mind of the peaceful God steadfast"
+                "sanskrit": "जितात्मनः प्रशान्तस्य",
+                "word": "jitātmanaḥ praśhāntasya paramātmā",
+                "transliteration": "jitātmanaḥ praśhāntasya paramātmā",
+                "sanskrit_te": "జితాత్మనః ప్రశాన్తస్య",
+                "en": "One who has conquered one’s mind of the peaceful God",
+                "te": "Of him whose mind is conquered and who is serene"
             },
             {
-                "sanskrit": "शीतोष्णसुखदुःखेषु तथा मानापमानयोः",
-                "word": "śhītoṣhṇa-sukha-duḥkheṣhu tathā mānāpamānayoḥ",
-                "transliteration": "śhītoṣhṇa-sukha-duḥkheṣhu tathā mānāpamānayoḥ",
-                "sanskrit_te": "శీతోష్ణసుఖదుఃఖేషు తథా మానాపమానయోః",
-                "en": "Happiness and distress also in honor",
-                "te": "Happiness and distress also in honor"
+                "sanskrit": "परमात्मा समाहितः",
+                "word": "samāhitaḥ śhītoṣhṇa",
+                "transliteration": "samāhitaḥ śhītoṣhṇa",
+                "sanskrit_te": "పరమాత్మా సమాహితః",
+                "en": "The great self is well-secured in heat and cold",
+                "te": "The great self is well-secured in heat and cold"
+            },
+            {
+                "sanskrit": "शीतोष्णसुखदुःखेषु तथा",
+                "word": "sukha duḥkheṣhu",
+                "transliteration": "sukha duḥkheṣhu",
+                "sanskrit_te": "శీతోష్ణసుఖదుఃఖేషు తథా",
+                "en": "Happiness and distress",
+                "te": "In pleasure and pain"
+            },
+            {
+                "sanskrit": "मानापमानयोः",
+                "word": "tathā mānāpamānayoḥ",
+                "transliteration": "tathā mānāpamānayoḥ",
+                "sanskrit_te": "మానాపమానయోః",
+                "en": "Also in honor",
+                "te": "And in honor and dishonor."
             }
         ]
     },
@@ -510,20 +614,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "జ్ఞానవిజ్ఞానతృప్తాత్మా కూటస్థో విజితేన్ద్రియః |\nయుక్త ఇత్యుచ్యతే యోగీ సమలోష్టాశ్మకాఞ్చనః",
         "lineBreakdown": [
             {
-                "sanskrit": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो विजितेन्द्रियः",
-                "word": "jñāna-vijñāna-tṛiptātmā kūṭa-stho vijitendriyaḥ",
-                "transliteration": "jñāna-vijñāna-tṛiptātmā kūṭa-stho vijitendriyaḥ",
-                "sanskrit_te": "జ్ఞానవిజ్ఞానతృప్తాత్మా కూటస్థో విజితేన్ద్రియః",
-                "en": "Knowledge realized knowledge, wisdom from within one fully satisfied undisturbed one who has conquered the senses",
-                "te": "Knowledge realized knowledge, wisdom from within one fully satisfied undisturbed one who has conquered the senses"
+                "sanskrit": "ज्ञानविज्ञानतृप्तात्मा कूटस्थो",
+                "word": "jñāna vijñāna tṛiptātmā",
+                "transliteration": "jñāna vijñāna tṛiptātmā",
+                "sanskrit_te": "జ్ఞానవిజ్ఞానతృప్తాత్మా కూటస్థో",
+                "en": "Knowledge realized knowledge, wisdom from within one fully satisfied",
+                "te": "The yogin whose mind is content with knowledge of the self and"
             },
             {
-                "sanskrit": "युक्त इत्युच्यते योगी समलोष्टाश्मकाञ्चनः",
-                "word": "yukta ityuchyate yogī sama-loṣhṭāśhma-kāñchanaḥ",
-                "transliteration": "yukta ityuchyate yogī sama-loṣhṭāśhma-kāñchanaḥ",
-                "sanskrit_te": "యుక్త ఇత్యుచ్యతే యోగీ సమలోష్టాశ్మకాఞ్చనః",
-                "en": "One who is in constant communion with the Supreme is said a yogi looks equally pebbles gold",
-                "te": "One who is in constant communion with the Supreme is said a yogi looks equally pebbles gold"
+                "sanskrit": "विजितेन्द्रियः युक्त",
+                "word": "kūṭa stho vijitendriyaḥ",
+                "transliteration": "kūṭa stho vijitendriyaḥ",
+                "sanskrit_te": "విజితేన్ద్రియః యుక్త",
+                "en": "Undisturbed one who has conquered the senses",
+                "te": "Also with knowledge of the difference between the self and Prakrti, who"
+            },
+            {
+                "sanskrit": "इत्युच्यते योगी",
+                "word": "yukta ityuchyate yogī",
+                "transliteration": "yukta ityuchyate yogī",
+                "sanskrit_te": "ఇత్యుచ్యతే యోగీ",
+                "en": "One who is in constant communion with the Supreme is said a yogi",
+                "te": "Is established in the self, whose senses are subdued, and to"
+            },
+            {
+                "sanskrit": "समलोष्टाश्मकाञ्चनः",
+                "word": "sama loṣhṭāśhma kāñchanaḥ",
+                "transliteration": "sama loṣhṭāśhma kāñchanaḥ",
+                "sanskrit_te": "సమలోష్టాశ్మకాఞ్చనః",
+                "en": "Looks equally pebbles gold",
+                "te": "Whom earth, stone, and gold all seem alike, is called integrated."
             }
         ]
     },
@@ -575,20 +695,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "సుహృన్మిత్రార్యుదాసీనమధ్యస్థద్వేష్యబన్ధుషు |\nసాధుష్వపి చ పాపేషు సమబుద్ధిర్విశిష్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु",
-                "word": "suhṛin-mitrāryudāsīna-madhyastha-dveṣhya-bandhuṣhu",
-                "transliteration": "suhṛin-mitrāryudāsīna-madhyastha-dveṣhya-bandhuṣhu",
-                "sanskrit_te": "సుహృన్మిత్రార్యుదాసీనమధ్యస్థద్వేష్యబన్ధుషు",
-                "en": "Friends mediators the envious relatives",
-                "te": "Friends mediators the envious relatives"
+                "sanskrit": "सुहृन्मित्रार्युदासीनमध्यस्थद्वेष्यबन्धुषु साधुष्वपि",
+                "word": "suhṛin mitrāryudāsīna madhyastha",
+                "transliteration": "suhṛin mitrāryudāsīna madhyastha",
+                "sanskrit_te": "సుహృన్మిత్రార్యుదాసీనమధ్యస్థద్వేష్యబన్ధుషు సాధుష్వపి",
+                "en": "Friends mediators",
+                "te": "He who regards with an equal eye"
             },
             {
-                "sanskrit": "साधुष्वपि च पापेषु समबुद्धिर्विशिष्यते",
-                "word": "sādhuṣhvapi cha pāpeṣhu sama-buddhir viśhiṣhyate",
-                "transliteration": "sādhuṣhvapi cha pāpeṣhu sama-buddhir viśhiṣhyate",
-                "sanskrit_te": "సాధుష్వపి చ పాపేషు సమబుద్ధిర్విశిష్యతే",
-                "en": "Pious and the sinners of impartial intellect is distinguished",
-                "te": "Pious and the sinners of impartial intellect is distinguished"
+                "sanskrit": "च",
+                "word": "dveṣhya bandhuṣhu sādhuṣhvapi",
+                "transliteration": "dveṣhya bandhuṣhu sādhuṣhvapi",
+                "sanskrit_te": "చ",
+                "en": "The envious relatives pious",
+                "te": "Well wishers, friends, foes, the indifferent, neutrals,"
+            },
+            {
+                "sanskrit": "पापेषु",
+                "word": "cha pāpeṣhu sama",
+                "transliteration": "cha pāpeṣhu sama",
+                "sanskrit_te": "పాపేషు",
+                "en": "And the sinners of impartial intellect",
+                "te": "The hateful, the relations, and even"
+            },
+            {
+                "sanskrit": "समबुद्धिर्विशिष्यते",
+                "word": "buddhir viśhiṣhyate",
+                "transliteration": "buddhir viśhiṣhyate",
+                "sanskrit_te": "సమబుద్ధిర్విశిష్యతే",
+                "en": "The good and the sinful—he excels.",
+                "te": "The good and the sinful—he excels."
             }
         ]
     },
@@ -640,20 +776,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యోగీ యుఞ్జీత సతతమాత్మానం రహసి స్థితః |\nఏకాకీ యతచిత్తాత్మా నిరాశీరపరిగ్రహః",
         "lineBreakdown": [
             {
-                "sanskrit": "योगी युञ्जीत सततमात्मानं रहसि स्थितः",
-                "word": "yogī yuñjīta satatam ātmānaṁ rahasi sthitaḥ",
-                "transliteration": "yogī yuñjīta satatam ātmānaṁ rahasi sthitaḥ",
-                "sanskrit_te": "యోగీ యుఞ్జీత సతతమాత్మానం రహసి స్థితః",
-                "en": "A yogi should remain engaged in meditation constantly self in seclusion remaining",
-                "te": "A yogi should remain engaged in meditation constantly self in seclusion remaining"
+                "sanskrit": "योगी युञ्जीत",
+                "word": "yogī yuñjīta satatam",
+                "transliteration": "yogī yuñjīta satatam",
+                "sanskrit_te": "యోగీ యుఞ్జీత",
+                "en": "A yogi should remain engaged in meditation constantly",
+                "te": "The yogin should constantly fix his mind on yoga"
             },
             {
-                "sanskrit": "एकाकी यतचित्तात्मा निराशीरपरिग्रहः",
-                "word": "ekākī yata-chittātmā nirāśhīr aparigrahaḥ",
-                "transliteration": "ekākī yata-chittātmā nirāśhīr aparigrahaḥ",
-                "sanskrit_te": "ఏకాకీ యతచిత్తాత్మా నిరాశీరపరిగ్రహః",
-                "en": "Alone with a controlled mind and body free from desires free from desires for possessions for enjoyment",
-                "te": "Alone with a controlled mind and body free from desires free from desires for possessions for enjoyment"
+                "sanskrit": "सततमात्मानं रहसि",
+                "word": "ātmānaṁ rahasi sthitaḥ",
+                "transliteration": "ātmānaṁ rahasi sthitaḥ",
+                "sanskrit_te": "సతతమాత్మానం రహసి",
+                "en": "Self in seclusion remaining",
+                "te": "Remaining in a solitary place all alone"
+            },
+            {
+                "sanskrit": "स्थितः एकाकी",
+                "word": "ekākī yata chittātmā",
+                "transliteration": "ekākī yata chittātmā",
+                "sanskrit_te": "స్థితః ఏకాకీ",
+                "en": "Alone with a controlled mind and body",
+                "te": "Controlling his thoughts and mind"
+            },
+            {
+                "sanskrit": "यतचित्तात्मा निराशीरपरिग्रहः",
+                "word": "nirāśhīr aparigrahaḥ",
+                "transliteration": "nirāśhīr aparigrahaḥ",
+                "sanskrit_te": "యతచిత్తాత్మా నిరాశీరపరిగ్రహః",
+                "en": "Free from desires free from desires for possessions for enjoyment",
+                "te": "Free from desire and a sense of possession."
             }
         ]
     },
@@ -705,20 +857,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "శుచౌ దేశే ప్రతిష్ఠాప్య స్థిరమాసనమాత్మనః |\nనాత్యుచ్ఛ్రితం నాతినీచం చైలాజినకుశోత్తరమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "शुचौ देशे प्रतिष्ठाप्य स्थिरमासनमात्मनः",
-                "word": "śhuchau deśhe pratiṣhṭhāpya sthiram āsanam ātmanaḥ",
-                "transliteration": "śhuchau deśhe pratiṣhṭhāpya sthiram āsanam ātmanaḥ",
-                "sanskrit_te": "శుచౌ దేశే ప్రతిష్ఠాప్య స్థిరమాసనమాత్మనః",
-                "en": "In a clean place having established steadfast seat his own",
-                "te": "In a clean place having established steadfast seat his own"
+                "sanskrit": "शुचौ देशे",
+                "word": "śhuchau deśhe pratiṣhṭhāpya",
+                "transliteration": "śhuchau deśhe pratiṣhṭhāpya",
+                "sanskrit_te": "శుచౌ దేశే",
+                "en": "In a clean place having established",
+                "te": "Having established for himself, in a clean spot,"
             },
             {
-                "sanskrit": "नात्युच्छ्रितं नातिनीचं चैलाजिनकुशोत्तरम्",
-                "word": "nātyuchchhritaṁ nāti-nīchaṁ chailājina-kuśhottaram",
-                "transliteration": "nātyuchchhritaṁ nāti-nīchaṁ chailājina-kuśhottaram",
-                "sanskrit_te": "నాత్యుచ్ఛ్రితం నాతినీచం చైలాజినకుశోత్తరమ్",
-                "en": "High low cloth",
-                "te": "High low cloth"
+                "sanskrit": "प्रतिष्ठाप्य स्थिरमासनमात्मनः",
+                "word": "sthiram āsanam ātmanaḥ",
+                "transliteration": "sthiram āsanam ātmanaḥ",
+                "sanskrit_te": "ప్రతిష్ఠాప్య స్థిరమాసనమాత్మనః",
+                "en": "Steadfast seat his own",
+                "te": "A firm seat that is neither too high"
+            },
+            {
+                "sanskrit": "नात्युच्छ्रितं नातिनीचं",
+                "word": "nātyuchchhritaṁ nāti nīchaṁ",
+                "transliteration": "nātyuchchhritaṁ nāti nīchaṁ",
+                "sanskrit_te": "నాత్యుచ్ఛ్రితం నాతినీచం",
+                "en": "High low",
+                "te": "Nor too low, and covering it with cloth,"
+            },
+            {
+                "sanskrit": "चैलाजिनकुशोत्तरम्",
+                "word": "chailājina kuśhottaram",
+                "transliteration": "chailājina kuśhottaram",
+                "sanskrit_te": "చైలాజినకుశోత్తరమ్",
+                "en": "Deer skin, and Kusa grass in reverse order—",
+                "te": "Deer skin, and Kusa grass in reverse order—"
             }
         ]
     },
@@ -770,20 +938,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "తత్రైకాగ్రం మనః కృత్వా యతచిత్తేన్ద్రియక్రియః |\nఉపవిశ్యాసనే యుఞ్జ్యాద్యోగమాత్మవిశుద్ధయే",
         "lineBreakdown": [
             {
-                "sanskrit": "तत्रैकाग्रं मनः कृत्वा यतचित्तेन्द्रियक्रियः",
-                "word": "tatraikāgraṁ manaḥ kṛitvā yata-chittendriya-kriyaḥ",
-                "transliteration": "tatraikāgraṁ manaḥ kṛitvā yata-chittendriya-kriyaḥ",
-                "sanskrit_te": "తత్రైకాగ్రం మనః కృత్వా యతచిత్తేన్ద్రియక్రియః",
-                "en": "There mind having made controlling the mind activities",
-                "te": "There mind having made controlling the mind activities"
+                "sanskrit": "तत्रैकाग्रं मनः",
+                "word": "tatraikāgraṁ manaḥ kṛitvā",
+                "transliteration": "tatraikāgraṁ manaḥ kṛitvā",
+                "sanskrit_te": "తత్రైకాగ్రం మనః",
+                "en": "There mind having made",
+                "te": "Sitting on the seat"
             },
             {
-                "sanskrit": "उपविश्यासने युञ्ज्याद्योगमात्मविशुद्धये",
-                "word": "upaviśhyāsane yuñjyād yogam ātma-viśhuddhaye",
-                "transliteration": "upaviśhyāsane yuñjyād yogam ātma-viśhuddhaye",
-                "sanskrit_te": "ఉపవిశ్యాసనే యుఞ్జ్యాద్యోగమాత్మవిశుద్ధయే",
-                "en": "Being seated should strive to practice yog for purification of the mind",
-                "te": "Being seated should strive to practice yog for purification of the mind"
+                "sanskrit": "कृत्वा यतचित्तेन्द्रियक्रियः",
+                "word": "yata chittendriya kriyaḥ",
+                "transliteration": "yata chittendriya kriyaḥ",
+                "sanskrit_te": "కృత్వా యతచిత్తేన్ద్రియక్రియః",
+                "en": "Controlling the mind activities",
+                "te": "With a concentrated mind"
+            },
+            {
+                "sanskrit": "उपविश्यासने",
+                "word": "upaviśhyāsane yuñjyād yogam",
+                "transliteration": "upaviśhyāsane yuñjyād yogam",
+                "sanskrit_te": "ఉపవిశ్యాసనే",
+                "en": "Being seated should strive to practice yog",
+                "te": "Controlling the mind and senses"
+            },
+            {
+                "sanskrit": "युञ्ज्याद्योगमात्मविशुद्धये",
+                "word": "ātma viśhuddhaye",
+                "transliteration": "ātma viśhuddhaye",
+                "sanskrit_te": "యుఞ్జ్యాద్యోగమాత్మవిశుద్ధయే",
+                "en": "One should practice Yoga for the purification of the self.",
+                "te": "One should practice Yoga for the purification of the self."
             }
         ]
     },
@@ -835,20 +1019,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "సమం కాయశిరోగ్రీవం ధారయన్నచలం స్థిరః |\nసంప్రేక్ష్య నాసికాగ్రం స్వం దిశశ్చానవలోకయన్",
         "lineBreakdown": [
             {
-                "sanskrit": "समं कायशिरोग्रीवं धारयन्नचलं स्थिरः",
-                "word": "samaṁ kāya-śhiro-grīvaṁ dhārayann achalaṁ sthiraḥ",
-                "transliteration": "samaṁ kāya-śhiro-grīvaṁ dhārayann achalaṁ sthiraḥ",
-                "sanskrit_te": "సమం కాయశిరోగ్రీవం ధారయన్నచలం స్థిరః",
-                "en": "Straight body neck holding unmoving still",
-                "te": "Straight body neck holding unmoving still"
+                "sanskrit": "समं कायशिरोग्रीवं",
+                "word": "samaṁ kāya śhiro",
+                "transliteration": "samaṁ kāya śhiro",
+                "sanskrit_te": "సమం కాయశిరోగ్రీవం",
+                "en": "Straight body",
+                "te": "Holding the trunk, head, and neck"
             },
             {
-                "sanskrit": "संप्रेक्ष्य नासिकाग्रं स्वं दिशश्चानवलोकयन्",
-                "word": "samprekṣhya nāsikāgraṁ svaṁ diśhaśh chānavalokayan",
-                "transliteration": "samprekṣhya nāsikāgraṁ svaṁ diśhaśh chānavalokayan",
-                "sanskrit_te": "సంప్రేక్ష్య నాసికాగ్రం స్వం దిశశ్చానవలోకయన్",
-                "en": "Gazing at the tip of the nose own directions body",
-                "te": "Gazing at the tip of the nose own directions body"
+                "sanskrit": "धारयन्नचलं स्थिरः",
+                "word": "grīvaṁ dhārayann achalaṁ",
+                "transliteration": "grīvaṁ dhārayann achalaṁ",
+                "sanskrit_te": "ధారయన్నచలం స్థిరః",
+                "en": "Neck holding unmoving",
+                "te": "Erect, motionless and steady, gazing at"
+            },
+            {
+                "sanskrit": "संप्रेक्ष्य नासिकाग्रं",
+                "word": "sthiraḥ samprekṣhya nāsikāgraṁ",
+                "transliteration": "sthiraḥ samprekṣhya nāsikāgraṁ",
+                "sanskrit_te": "సంప్రేక్ష్య నాసికాగ్రం",
+                "en": "Still gazing at the tip of the nose",
+                "te": "The tip of the nose and"
+            },
+            {
+                "sanskrit": "स्वं दिशश्चानवलोकयन्",
+                "word": "svaṁ diśhaśh chānavalokayan",
+                "transliteration": "svaṁ diśhaśh chānavalokayan",
+                "sanskrit_te": "స్వం దిశశ్చానవలోకయన్",
+                "en": "Own directions body",
+                "te": "Not looking in any direction;"
             }
         ]
     },
@@ -901,19 +1101,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "प्रशान्तात्मा विगतभीर्ब्रह्मचारिव्रते स्थितः",
-                "word": "praśhāntātmā vigata-bhīr brahmachāri-vrate sthitaḥ",
-                "transliteration": "praśhāntātmā vigata-bhīr brahmachāri-vrate sthitaḥ",
+                "word": "praśhāntātmā vigata bhīr brahmachāri",
+                "transliteration": "praśhāntātmā vigata bhīr brahmachāri",
                 "sanskrit_te": "ప్రశాన్తాత్మా విగతభీర్బ్రహ్మచారివ్రతే స్థితః",
-                "en": "Serene fearless in the vow of celibacy situated",
-                "te": "Serene fearless in the vow of celibacy situated"
+                "en": "Serene fearless in the vow of celibacy",
+                "te": "Serene and fearless, firm in their vow"
             },
             {
-                "sanskrit": "मनः संयम्य मच्चित्तो युक्त आसीत मत्परः",
-                "word": "manaḥ sanyamya mach-chitto yukta āsīta mat-paraḥ",
-                "transliteration": "manaḥ sanyamya mach-chitto yukta āsīta mat-paraḥ",
-                "sanskrit_te": "మనః సంయమ్య మచ్చిత్తో యుక్త ఆసీత మత్పరః",
-                "en": "Mind having controlled engaged should sit having me as the supreme goal",
-                "te": "Mind having controlled engaged should sit having me as the supreme goal"
+                "sanskrit": "मनः संयम्य",
+                "word": "vrate sthitaḥ manaḥ sanyamya",
+                "transliteration": "vrate sthitaḥ manaḥ sanyamya",
+                "sanskrit_te": "మనః సంయమ్య",
+                "en": "Situated mind having controlled",
+                "te": "Of celibacy, controlling their minds and fixing"
+            },
+            {
+                "sanskrit": "मच्चित्तो युक्त",
+                "word": "mach chitto yukta",
+                "transliteration": "mach chitto yukta",
+                "sanskrit_te": "మచ్చిత్తో యుక్త",
+                "en": "Their thoughts on Me, they should",
+                "te": "Their thoughts on Me, they should"
+            },
+            {
+                "sanskrit": "आसीत मत्परः",
+                "word": "āsīta mat paraḥ",
+                "transliteration": "āsīta mat paraḥ",
+                "sanskrit_te": "ఆసీత మత్పరః",
+                "en": "Should sit having me as the supreme goal",
+                "te": "Sit in Yoga, intent on Me."
             }
         ]
     },
@@ -965,20 +1181,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యుఞ్జన్నేవం సదాఽఽత్మానం యోగీ నియతమానసః |\nశాన్తిం నిర్వాణపరమాం మత్సంస్థామధిగచ్ఛతి",
         "lineBreakdown": [
             {
-                "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी नियतमानसः",
-                "word": "yuñjann evaṁ sadātmānaṁ yogī niyata-mānasaḥ",
-                "transliteration": "yuñjann evaṁ sadātmānaṁ yogī niyata-mānasaḥ",
-                "sanskrit_te": "యుఞ్జన్నేవం సదాఽఽత్మానం యోగీ నియతమానసః",
-                "en": "Keeping the mind absorbed in God thus constantly a yogi one with a disciplined mind",
-                "te": "Keeping the mind absorbed in God thus constantly a yogi one with a disciplined mind"
+                "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं",
+                "word": "yuñjann evaṁ sadātmānaṁ",
+                "transliteration": "yuñjann evaṁ sadātmānaṁ",
+                "sanskrit_te": "యుఞ్జన్నేవం సదాఽఽత్మానం",
+                "en": "Keeping the mind absorbed in God thus constantly",
+                "te": "Applying his mind in this way, the"
             },
             {
-                "sanskrit": "शान्तिं निर्वाणपरमां मत्संस्थामधिगच्छति",
-                "word": "śhantiṁ nirvāṇa-paramāṁ mat-sansthām adhigachchhati",
-                "transliteration": "śhantiṁ nirvāṇa-paramāṁ mat-sansthām adhigachchhati",
-                "sanskrit_te": "శాన్తిం నిర్వాణపరమాం మత్సంస్థామధిగచ్ఛతి",
-                "en": "Peace liberation from the material bondage supreme abides in me attains",
-                "te": "Peace liberation from the material bondage supreme abides in me attains"
+                "sanskrit": "योगी नियतमानसः",
+                "word": "yogī niyata mānasaḥ",
+                "transliteration": "yogī niyata mānasaḥ",
+                "sanskrit_te": "యోగీ నియతమానసః",
+                "en": "A yogi one with a disciplined mind",
+                "te": "Yogin of controlled mind, ever attains the"
+            },
+            {
+                "sanskrit": "शान्तिं निर्वाणपरमां",
+                "word": "śhantiṁ nirvāṇa paramāṁ",
+                "transliteration": "śhantiṁ nirvāṇa paramāṁ",
+                "sanskrit_te": "శాన్తిం నిర్వాణపరమాం",
+                "en": "Peace liberation from the material bondage supreme",
+                "te": "Peace which is the summit of"
+            },
+            {
+                "sanskrit": "मत्संस्थामधिगच्छति",
+                "word": "mat sansthām adhigachchhati",
+                "transliteration": "mat sansthām adhigachchhati",
+                "sanskrit_te": "మత్సంస్థామధిగచ్ఛతి",
+                "en": "Abides in me attains",
+                "te": "Beatitude and which abides in Me."
             }
         ]
     },
@@ -1030,20 +1262,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "నాత్యశ్నతస్తు యోగోఽస్తి న చైకాన్తమనశ్నతః |\nన చాతిస్వప్నశీలస్య జాగ్రతో నైవ చార్జున",
         "lineBreakdown": [
             {
-                "sanskrit": "नात्यश्नतस्तु योगोऽस्ति न चैकान्तमनश्नतः",
-                "word": "nātyaśhnatastu yogo ’sti na chaikāntam anaśhnataḥ",
-                "transliteration": "nātyaśhnatastu yogo ’sti na chaikāntam anaśhnataḥ",
-                "sanskrit_te": "నాత్యశ్నతస్తు యోగోఽస్తి న చైకాన్తమనశ్నతః",
-                "en": "Not abstaining from eating",
-                "te": "Not abstaining from eating"
+                "sanskrit": "नात्यश्नतस्तु योगोऽस्ति न",
+                "word": "nātyaśhnatastu yogo ’sti na",
+                "transliteration": "nātyaśhnatastu yogo ’sti na",
+                "sanskrit_te": "నాత్యశ్నతస్తు యోగోఽస్తి న",
+                "en": "Yoga is not for him who overeats, nor",
+                "te": "Yoga is not for him who overeats, nor"
             },
             {
-                "sanskrit": "न चातिस्वप्नशीलस्य जाग्रतो नैव चार्जुन",
-                "word": "na chāti-svapna-śhīlasya jāgrato naiva chārjuna",
-                "transliteration": "na chāti-svapna-śhīlasya jāgrato naiva chārjuna",
-                "sanskrit_te": "న చాతిస్వప్నశీలస్య జాగ్రతో నైవ చార్జున",
-                "en": "Not of one who sleeps of one who does not sleep enough Arjun",
-                "te": "Not of one who sleeps of one who does not sleep enough Arjun"
+                "sanskrit": "चैकान्तमनश्नतः न",
+                "word": "chaikāntam anaśhnataḥ na",
+                "transliteration": "chaikāntam anaśhnataḥ na",
+                "sanskrit_te": "చైకాన్తమనశ్నతః న",
+                "en": "Abstaining from eating not",
+                "te": "For him who fasts excessively; not for him,"
+            },
+            {
+                "sanskrit": "चातिस्वप्नशीलस्य जाग्रतो",
+                "word": "chāti svapna śhīlasya",
+                "transliteration": "chāti svapna śhīlasya",
+                "sanskrit_te": "చాతిస్వప్నశీలస్య జాగ్రతో",
+                "en": "O Arjuna, who sleeps too much, nor",
+                "te": "O Arjuna, who sleeps too much, nor"
+            },
+            {
+                "sanskrit": "नैव चार्जुन",
+                "word": "jāgrato naiva chārjuna",
+                "transliteration": "jāgrato naiva chārjuna",
+                "sanskrit_te": "నైవ చార్జున",
+                "en": "Of one who does not sleep enough Arjun",
+                "te": "For him who stays awake too long."
             }
         ]
     },
@@ -1095,20 +1343,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యుక్తాహారవిహారస్య యుక్తచేష్టస్య కర్మసు |\nయుక్తస్వప్నావబోధస్య యోగో భవతి దుఃఖహా",
         "lineBreakdown": [
             {
-                "sanskrit": "युक्ताहारविहारस्य युक्तचेष्टस्य कर्मसु",
-                "word": "yuktāhāra-vihārasya yukta-cheṣhṭasya karmasu",
-                "transliteration": "yuktāhāra-vihārasya yukta-cheṣhṭasya karmasu",
-                "sanskrit_te": "యుక్తాహారవిహారస్య యుక్తచేష్టస్య కర్మసు",
-                "en": "Moderate recreation balanced in work",
-                "te": "Moderate recreation balanced in work"
+                "sanskrit": "युक्ताहारविहारस्य युक्तचेष्टस्य",
+                "word": "yuktāhāra vihārasya yukta",
+                "transliteration": "yuktāhāra vihārasya yukta",
+                "sanskrit_te": "యుక్తాహారవిహారస్య యుక్తచేష్టస్య",
+                "en": "Moderate recreation moderate",
+                "te": "Yoga becomes the destroyer of sorrows for"
             },
             {
-                "sanskrit": "युक्तस्वप्नावबोधस्य योगो भवति दुःखहा",
-                "word": "yukta-svapnāvabodhasya yogo bhavati duḥkha-hā",
-                "transliteration": "yukta-svapnāvabodhasya yogo bhavati duḥkha-hā",
-                "sanskrit_te": "యుక్తస్వప్నావబోధస్య యోగో భవతి దుఃఖహా",
-                "en": "Moderate sleep and wakefulness becomes the slayer of sorrows",
-                "te": "Moderate sleep and wakefulness becomes the slayer of sorrows"
+                "sanskrit": "कर्मसु युक्तस्वप्नावबोधस्य",
+                "word": "cheṣhṭasya karmasu yukta",
+                "transliteration": "cheṣhṭasya karmasu yukta",
+                "sanskrit_te": "కర్మసు యుక్తస్వప్నావబోధస్య",
+                "en": "Those who are temperate in food and",
+                "te": "Those who are temperate in food and"
+            },
+            {
+                "sanskrit": "योगो भवति",
+                "word": "svapnāvabodhasya yogo bhavati",
+                "transliteration": "svapnāvabodhasya yogo bhavati",
+                "sanskrit_te": "యోగో భవతి",
+                "en": "Sleep and wakefulness becomes",
+                "te": "Recreation, temperate in their actions, and"
+            },
+            {
+                "sanskrit": "दुःखहा",
+                "word": "duḥkha hā",
+                "transliteration": "duḥkha hā",
+                "sanskrit_te": "దుఃఖహా",
+                "en": "Temperate in their sleep and wakefulness.",
+                "te": "Temperate in their sleep and wakefulness."
             }
         ]
     },
@@ -1160,20 +1424,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యదా వినియతం చిత్తమాత్మన్యేవావతిష్ఠతే |\nనిఃస్పృహః సర్వకామేభ్యో యుక్త ఇత్యుచ్యతే తదా",
         "lineBreakdown": [
             {
-                "sanskrit": "यदा विनियतं चित्तमात्मन्येवावतिष्ठते",
-                "word": "yadā viniyataṁ chittam ātmanyevāvatiṣhṭhate",
-                "transliteration": "yadā viniyataṁ chittam ātmanyevāvatiṣhṭhate",
-                "sanskrit_te": "యదా వినియతం చిత్తమాత్మన్యేవావతిష్ఠతే",
-                "en": "When fully controlled the mind of the self",
-                "te": "When fully controlled the mind of the self"
+                "sanskrit": "यदा विनियतं",
+                "word": "yadā viniyataṁ chittam",
+                "transliteration": "yadā viniyataṁ chittam",
+                "sanskrit_te": "యదా వినియతం",
+                "en": "When fully controlled the mind",
+                "te": "When the subdued mind rests solely on the Self"
             },
             {
-                "sanskrit": "निःस्पृहः सर्वकामेभ्यो युक्त इत्युच्यते तदा",
-                "word": "niḥspṛihaḥ sarva-kāmebhyo yukta ityuchyate tadā",
-                "transliteration": "niḥspṛihaḥ sarva-kāmebhyo yukta ityuchyate tadā",
-                "sanskrit_te": "నిఃస్పృహః సర్వకామేభ్యో యుక్త ఇత్యుచ్యతే తదా",
-                "en": "For yearning of the senses situated in perfect Yog is said then",
-                "te": "For yearning of the senses situated in perfect Yog is said then"
+                "sanskrit": "चित्तमात्मन्येवावतिष्ठते निःस्पृहः",
+                "word": "ātmanyevāvatiṣhṭhate niḥspṛihaḥ sarva",
+                "transliteration": "ātmanyevāvatiṣhṭhate niḥspṛihaḥ sarva",
+                "sanskrit_te": "చిత్తమాత్మన్యేవావతిష్ఠతే నిఃస్పృహః",
+                "en": "Then",
+                "te": "Then"
+            },
+            {
+                "sanskrit": "सर्वकामेभ्यो युक्त",
+                "word": "kāmebhyo yukta",
+                "transliteration": "kāmebhyo yukta",
+                "sanskrit_te": "సర్వకామేభ్యో యుక్త",
+                "en": "For yearning of the senses situated in perfect Yog",
+                "te": "Free from all yearning for objects of desire"
+            },
+            {
+                "sanskrit": "इत्युच्यते तदा",
+                "word": "ityuchyate tadā",
+                "transliteration": "ityuchyate tadā",
+                "sanskrit_te": "ఇత్యుచ్యతే తదా",
+                "en": "Is said then",
+                "te": "One is said to be fit for Yoga."
             }
         ]
     },
@@ -1225,20 +1505,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యథా దీపో నివాతస్థో నేఙ్గతే సోపమా స్మృతా |\nయోగినో యతచిత్తస్య యుఞ్జతో యోగమాత్మనః",
         "lineBreakdown": [
             {
-                "sanskrit": "यथा दीपो निवातस्थो नेङ्गते सोपमा स्मृता",
-                "word": "yathā dīpo nivāta-stho neṅgate sopamā smṛitā",
-                "transliteration": "yathā dīpo nivāta-stho neṅgate sopamā smṛitā",
-                "sanskrit_te": "యథా దీపో నివాతస్థో నేఙ్గతే సోపమా స్మృతా",
-                "en": "As in a windless place is considered",
-                "te": "As in a windless place is considered"
+                "sanskrit": "यथा दीपो निवातस्थो",
+                "word": "yathā dīpo nivāta stho",
+                "transliteration": "yathā dīpo nivāta stho",
+                "sanskrit_te": "యథా దీపో నివాతస్థో",
+                "en": "As in a windless place",
+                "te": "A lamp does not flicker in"
             },
             {
-                "sanskrit": "योगिनो यतचित्तस्य युञ्जतो योगमात्मनः",
-                "word": "yogino yata-chittasya yuñjato yogam ātmanaḥ",
-                "transliteration": "yogino yata-chittasya yuñjato yogam ātmanaḥ",
-                "sanskrit_te": "యోగినో యతచిత్తస్య యుఞ్జతో యోగమాత్మనః",
-                "en": "Of a yogi whose mind is disciplined steadily practicing in meditation on the Supreme",
-                "te": "Of a yogi whose mind is disciplined steadily practicing in meditation on the Supreme"
+                "sanskrit": "नेङ्गते सोपमा स्मृता",
+                "word": "neṅgate sopamā smṛitā",
+                "transliteration": "neṅgate sopamā smṛitā",
+                "sanskrit_te": "నేఙ్గతే సోపమా స్మృతా",
+                "en": "A windless place\"—that is the simile",
+                "te": "A windless place\"—that is the simile"
+            },
+            {
+                "sanskrit": "योगिनो यतचित्तस्य",
+                "word": "yogino yata chittasya",
+                "transliteration": "yogino yata chittasya",
+                "sanskrit_te": "యోగినో యతచిత్తస్య",
+                "en": "Of a yogi whose mind is disciplined",
+                "te": "Used for the tranquil mind of"
+            },
+            {
+                "sanskrit": "युञ्जतो योगमात्मनः",
+                "word": "yuñjato yogam ātmanaḥ",
+                "transliteration": "yuñjato yogam ātmanaḥ",
+                "sanskrit_te": "యుఞ్జతో యోగమాత్మనః",
+                "en": "Steadily practicing in meditation on the Supreme",
+                "te": "A yogi who practices yoga."
             }
         ]
     },
@@ -1290,20 +1586,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యత్రోపరమతే చిత్తం నిరుద్ధం యోగసేవయా |\nయత్ర చైవాత్మనాఽఽత్మానం పశ్యన్నాత్మని తుష్యతి",
         "lineBreakdown": [
             {
-                "sanskrit": "यत्रोपरमते चित्तं निरुद्धं योगसेवया",
-                "word": "yatroparamate chittaṁ niruddhaṁ yoga-sevayā",
-                "transliteration": "yatroparamate chittaṁ niruddhaṁ yoga-sevayā",
-                "sanskrit_te": "యత్రోపరమతే చిత్తం నిరుద్ధం యోగసేవయా",
-                "en": "The mind restrained by the practice of yog",
-                "te": "The mind restrained by the practice of yog"
+                "sanskrit": "यत्रोपरमते चित्तं",
+                "word": "yatroparamate chittaṁ niruddhaṁ",
+                "transliteration": "yatroparamate chittaṁ niruddhaṁ",
+                "sanskrit_te": "యత్రోపరమతే చిత్తం",
+                "en": "The mind restrained",
+                "te": "Where the mind"
             },
             {
-                "sanskrit": "यत्र चैवात्मनाऽऽत्मानं पश्यन्नात्मनि तुष्यति",
-                "word": "yatra chaivātmanātmānaṁ paśhyann ātmani tuṣhyati",
-                "transliteration": "yatra chaivātmanātmānaṁ paśhyann ātmani tuṣhyati",
-                "sanskrit_te": "యత్ర చైవాత్మనాఽఽత్మానం పశ్యన్నాత్మని తుష్యతి",
-                "en": "When through the purified mind behold through the purified mind is satisfied",
-                "te": "When through the purified mind behold through the purified mind is satisfied"
+                "sanskrit": "निरुद्धं योगसेवया",
+                "word": "yoga sevayā yatra",
+                "transliteration": "yoga sevayā yatra",
+                "sanskrit_te": "నిరుద్ధం యోగసేవయా",
+                "en": "By the practice of yog when",
+                "te": "Controlled through the practice of Yoga"
+            },
+            {
+                "sanskrit": "यत्र चैवात्मनाऽऽत्मानं",
+                "word": "chaivātmanātmānaṁ paśhyann",
+                "transliteration": "chaivātmanātmānaṁ paśhyann",
+                "sanskrit_te": "యత్ర చైవాత్మనాఽఽత్మానం",
+                "en": "Through the purified mind behold",
+                "te": "Rests"
+            },
+            {
+                "sanskrit": "पश्यन्नात्मनि तुष्यति",
+                "word": "ātmani tuṣhyati",
+                "transliteration": "ātmani tuṣhyati",
+                "sanskrit_te": "పశ్యన్నాత్మని తుష్యతి",
+                "en": "Through the purified mind is satisfied",
+                "te": "And where one sees the Self by the Self and is delighted by the Self alone."
             }
         ]
     },
@@ -1356,19 +1668,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "सुखमात्यन्तिकं यत्तद्बुद्धिग्राह्यमतीन्द्रियम्",
-                "word": "sukham ātyantikaṁ yat tad buddhi-grāhyam atīndriyam",
-                "transliteration": "sukham ātyantikaṁ yat tad buddhi-grāhyam atīndriyam",
+                "word": "sukham ātyantikaṁ yat tad",
+                "transliteration": "sukham ātyantikaṁ yat tad",
                 "sanskrit_te": "సుఖమాత్యన్తికం యత్తద్బుద్ధిగ్రాహ్యమతీన్ద్రియమ్",
-                "en": "Happiness limitless which by intellect grasp transcending the senses",
-                "te": "Happiness limitless which by intellect grasp transcending the senses"
+                "en": "Happiness limitless which",
+                "te": "Where one knows that infinite happiness which can be"
             },
             {
-                "sanskrit": "वेत्ति यत्र न चैवायं स्थितश्चलति तत्त्वतः",
-                "word": "vetti yatra na chaivāyaṁ sthitaśh chalati tattvataḥ",
-                "transliteration": "vetti yatra na chaivāyaṁ sthitaśh chalati tattvataḥ",
-                "sanskrit_te": "వేత్తి యత్ర న చైవాయం స్థితశ్చలతి తత్త్వతః",
-                "en": "Knows wherein never he situated deviates from the Eternal Truth",
-                "te": "Knows wherein never he situated deviates from the Eternal Truth"
+                "sanskrit": "वेत्ति यत्र",
+                "word": "buddhi grāhyam atīndriyam vetti",
+                "transliteration": "buddhi grāhyam atīndriyam vetti",
+                "sanskrit_te": "వేత్తి యత్ర",
+                "en": "By intellect grasp transcending the senses knows",
+                "te": "Grasped by the intellect but is beyond the"
+            },
+            {
+                "sanskrit": "न चैवायं",
+                "word": "yatra na chaivāyaṁ",
+                "transliteration": "yatra na chaivāyaṁ",
+                "sanskrit_te": "న చైవాయం",
+                "en": "Wherein never he",
+                "te": "Reach of the senses, and is established in"
+            },
+            {
+                "sanskrit": "स्थितश्चलति तत्त्वतः",
+                "word": "sthitaśh chalati tattvataḥ",
+                "transliteration": "sthitaśh chalati tattvataḥ",
+                "sanskrit_te": "స్థితశ్చలతి తత్త్వతః",
+                "en": "Situated deviates from the Eternal Truth",
+                "te": "That condition, one does not swerve from it."
             }
         ]
     },
@@ -1420,20 +1748,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యం లబ్ధ్వా చాపరం లాభం మన్యతే నాధికం తతః |\nయస్మిన్స్థితో న దుఃఖేన గురుణాపి విచాల్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "यं लब्ध्वा चापरं लाभं मन्यते नाधिकं ततः",
-                "word": "yaṁ labdhvā chāparaṁ lābhaṁ manyate nādhikaṁ tataḥ",
-                "transliteration": "yaṁ labdhvā chāparaṁ lābhaṁ manyate nādhikaṁ tataḥ",
-                "sanskrit_te": "యం లబ్ధ్వా చాపరం లాభం మన్యతే నాధికం తతః",
-                "en": "Which having gained any other gain considers greater than that",
-                "te": "Which having gained any other gain considers greater than that"
+                "sanskrit": "यं लब्ध्वा चापरं",
+                "word": "yaṁ labdhvā chāparaṁ lābhaṁ",
+                "transliteration": "yaṁ labdhvā chāparaṁ lābhaṁ",
+                "sanskrit_te": "యం లబ్ధ్వా చాపరం",
+                "en": "Which having gained any other gain",
+                "te": "Having gained it"
             },
             {
-                "sanskrit": "यस्मिन्स्थितो न दुःखेन गुरुणापि विचाल्यते",
-                "word": "yasmin sthito na duḥkhena guruṇāpi vichālyate",
-                "transliteration": "yasmin sthito na duḥkhena guruṇāpi vichālyate",
-                "sanskrit_te": "యస్మిన్స్థితో న దుఃఖేన గురుణాపి విచాల్యతే",
-                "en": "In which being situated not by sorrow (by) the greatest is shaken",
-                "te": "In which being situated not by sorrow (by) the greatest is shaken"
+                "sanskrit": "लाभं मन्यते नाधिकं",
+                "word": "manyate nādhikaṁ tataḥ",
+                "transliteration": "manyate nādhikaṁ tataḥ",
+                "sanskrit_te": "లాభం మన్యతే నాధికం",
+                "en": "Considers greater than that",
+                "te": "One holds that there is no greater gain"
+            },
+            {
+                "sanskrit": "ततः यस्मिन्स्थितो न",
+                "word": "yasmin sthito na",
+                "transliteration": "yasmin sthito na",
+                "sanskrit_te": "తతః యస్మిన్స్థితో న",
+                "en": "In which being situated not",
+                "te": "Being established in it"
+            },
+            {
+                "sanskrit": "दुःखेन गुरुणापि विचाल्यते",
+                "word": "duḥkhena guruṇāpi vichālyate",
+                "transliteration": "duḥkhena guruṇāpi vichālyate",
+                "sanskrit_te": "దుఃఖేన గురుణాపి విచాల్యతే",
+                "en": "By sorrow (by) the greatest is shaken",
+                "te": "One is not moved even by the heaviest sorrow."
             }
         ]
     },
@@ -1485,20 +1829,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "తం విద్యాద్ దుఃఖసంయోగవియోగం యోగసంజ్ఞితమ్ |\nస నిశ్చయేన యోక్తవ్యో యోగోఽనిర్విణ్ణచేతసా",
         "lineBreakdown": [
             {
-                "sanskrit": "तं विद्याद् दुःखसंयोगवियोगं योगसंज्ञितम्",
-                "word": "taṁ vidyād duḥkha-sanyoga-viyogaṁ yogasaṅjñitam",
-                "transliteration": "taṁ vidyād duḥkha-sanyoga-viyogaṁ yogasaṅjñitam",
-                "sanskrit_te": "తం విద్యాద్ దుఃఖసంయోగవియోగం యోగసంజ్ఞితమ్",
-                "en": "That you should know state of severance from union with misery is known as yog",
-                "te": "That you should know state of severance from union with misery is known as yog"
+                "sanskrit": "तं विद्याद्",
+                "word": "taṁ vidyād duḥkha",
+                "transliteration": "taṁ vidyād duḥkha",
+                "sanskrit_te": "తం విద్యాద్",
+                "en": "That you should know state of severance from union with misery",
+                "te": "Know this deliverance from association with"
             },
             {
-                "sanskrit": "स निश्चयेन योक्तव्यो योगोऽनिर्विण्णचेतसा",
-                "word": "sa niśhchayena yoktavyo yogo ’nirviṇṇa-chetasā",
-                "transliteration": "sa niśhchayena yoktavyo yogo ’nirviṇṇa-chetasā",
-                "sanskrit_te": "స నిశ్చయేన యోక్తవ్యో యోగోఽనిర్విణ్ణచేతసా",
+                "sanskrit": "दुःखसंयोगवियोगं योगसंज्ञितम्",
+                "word": "sanyoga viyogaṁ yogasaṅjñitam",
+                "transliteration": "sanyoga viyogaṁ yogasaṅjñitam",
+                "sanskrit_te": "దుఃఖసంయోగవియోగం యోగసంజ్ఞితమ్",
+                "en": "Is known as yog is known as yog is known as yog",
+                "te": "Misery to be Yoga. This Yoga"
+            },
+            {
+                "sanskrit": "स निश्चयेन",
+                "word": "sa niśhchayena yoktavyo",
+                "transliteration": "sa niśhchayena yoktavyo",
+                "sanskrit_te": "స నిశ్చయేన",
                 "en": "That resolutely should be practiced",
-                "te": "That resolutely should be practiced"
+                "te": "Must be practiced with determination and"
+            },
+            {
+                "sanskrit": "योक्तव्यो योगोऽनिर्विण्णचेतसा",
+                "word": "yogo ’nirviṇṇa chetasā",
+                "transliteration": "yogo ’nirviṇṇa chetasā",
+                "sanskrit_te": "యోక్తవ్యో యోగోఽనిర్విణ్ణచేతసా",
+                "en": "With a mind free from despondency.",
+                "te": "With a mind free from despondency."
             }
         ]
     },
@@ -1551,19 +1911,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "सङ्कल्पप्रभवान्कामांस्त्यक्त्वा सर्वानशेषतः",
-                "word": "saṅkalpa-prabhavān kāmāns tyaktvā sarvān aśheṣhataḥ",
-                "transliteration": "saṅkalpa-prabhavān kāmāns tyaktvā sarvān aśheṣhataḥ",
+                "word": "saṅkalpa prabhavān kāmāns",
+                "transliteration": "saṅkalpa prabhavān kāmāns",
                 "sanskrit_te": "సఙ్కల్పప్రభవాన్కామాంస్త్యక్త్వా సర్వానశేషతః",
-                "en": "A resolve born of desires having abandoned all completely",
-                "te": "A resolve born of desires having abandoned all completely"
+                "en": "A resolve born of desires",
+                "te": "Renouncing entirely all desires born"
             },
             {
-                "sanskrit": "मनसैवेन्द्रियग्रामं विनियम्य समन्ततः",
-                "word": "manasaivendriya-grāmaṁ viniyamya samantataḥ",
-                "transliteration": "manasaivendriya-grāmaṁ viniyamya samantataḥ",
-                "sanskrit_te": "మనసైవేన్ద్రియగ్రామం వినియమ్య సమన్తతః",
-                "en": "Through the mind restraining from all sides",
-                "te": "Through the mind restraining from all sides"
+                "sanskrit": "मनसैवेन्द्रियग्रामं",
+                "word": "tyaktvā sarvān aśheṣhataḥ",
+                "transliteration": "tyaktvā sarvān aśheṣhataḥ",
+                "sanskrit_te": "మనసైవేన్ద్రియగ్రామం",
+                "en": "Having abandoned all completely",
+                "te": "Of volition and restraining the"
+            },
+            {
+                "sanskrit": "विनियम्य",
+                "word": "manasaivendriya grāmaṁ",
+                "transliteration": "manasaivendriya grāmaṁ",
+                "sanskrit_te": "వినియమ్య",
+                "en": "Mind from all the",
+                "te": "Mind from all the"
+            },
+            {
+                "sanskrit": "समन्ततः",
+                "word": "viniyamya samantataḥ",
+                "transliteration": "viniyamya samantataḥ",
+                "sanskrit_te": "సమన్తతః",
+                "en": "Restraining from all sides",
+                "te": "Senses on all sides,"
             }
         ]
     },
@@ -1615,20 +1991,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "శనైః శనైరుపరమేద్ బుద్ధ్యా ధృతిగృహీతయా |\nఆత్మసంస్థం మనః కృత్వా న కిఞ్చిదపి చిన్తయేత్",
         "lineBreakdown": [
             {
-                "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या धृतिगृहीतया",
-                "word": "śhanaiḥ śhanair uparamed buddhyā dhṛiti-gṛihītayā",
-                "transliteration": "śhanaiḥ śhanair uparamed buddhyā dhṛiti-gṛihītayā",
-                "sanskrit_te": "శనైః శనైరుపరమేద్ బుద్ధ్యా ధృతిగృహీతయా",
-                "en": "Gradually gradually attain peace by intellect achieved through determination of resolve that is in accordance with scriptures",
-                "te": "Gradually gradually attain peace by intellect achieved through determination of resolve that is in accordance with scriptures"
+                "sanskrit": "शनैः शनैरुपरमेद् बुद्ध्या",
+                "word": "śhanaiḥ śhanair uparamed buddhyā",
+                "transliteration": "śhanaiḥ śhanair uparamed buddhyā",
+                "sanskrit_te": "శనైః శనైరుపరమేద్ బుద్ధ్యా",
+                "en": "Gradually gradually attain peace by intellect",
+                "te": "Little by little, one should withdraw oneself from objects other"
             },
             {
-                "sanskrit": "आत्मसंस्थं मनः कृत्वा न किञ्चिदपि चिन्तयेत्",
-                "word": "ātma-sansthaṁ manaḥ kṛitvā na kiñchid api chintayet",
-                "transliteration": "ātma-sansthaṁ manaḥ kṛitvā na kiñchid api chintayet",
-                "sanskrit_te": "ఆత్మసంస్థం మనః కృత్వా న కిఞ్చిదపి చిన్తయేత్",
-                "en": "Fixed in God mind having made not anything even should think of",
-                "te": "Fixed in God mind having made not anything even should think of"
+                "sanskrit": "धृतिगृहीतया आत्मसंस्थं मनः",
+                "word": "dhṛiti gṛihītayā ātma sansthaṁ",
+                "transliteration": "dhṛiti gṛihītayā ātma sansthaṁ",
+                "sanskrit_te": "ధృతిగృహీతయా ఆత్మసంస్థం మనః",
+                "en": "Achieved through determination of resolve that is in accordance with scriptures fixed in God",
+                "te": "Than the self, with the help of the intellect held"
+            },
+            {
+                "sanskrit": "कृत्वा न",
+                "word": "manaḥ kṛitvā na",
+                "transliteration": "manaḥ kṛitvā na",
+                "sanskrit_te": "కృత్వా న",
+                "en": "Mind having made not",
+                "te": "By firm resolution; and then one should think of"
+            },
+            {
+                "sanskrit": "किञ्चिदपि चिन्तयेत्",
+                "word": "kiñchid api chintayet",
+                "transliteration": "kiñchid api chintayet",
+                "sanskrit_te": "కిఞ్చిదపి చిన్తయేత్",
+                "en": "Anything even should think of",
+                "te": "Nothing else, having fixed the mind upon the Self."
             }
         ]
     },
@@ -1680,20 +2072,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యతో యతో నిశ్చరతి మనశ్చఞ్చలమస్థిరమ్ |\nతతస్తతో నియమ్యైతదాత్మన్యేవ వశం నయేత్",
         "lineBreakdown": [
             {
-                "sanskrit": "यतो यतो निश्चरति मनश्चञ्चलमस्थिरम्",
-                "word": "yato yato niśhcharati manaśh chañchalam asthiram",
-                "transliteration": "yato yato niśhcharati manaśh chañchalam asthiram",
-                "sanskrit_te": "యతో యతో నిశ్చరతి మనశ్చఞ్చలమస్థిరమ్",
-                "en": "Wanders restless unsteady",
-                "te": "Wanders restless unsteady"
+                "sanskrit": "यतो यतो",
+                "word": "yato yato niśhcharati",
+                "transliteration": "yato yato niśhcharati",
+                "sanskrit_te": "యతో యతో",
+                "en": "Wherever the fickle and unsteady mind",
+                "te": "Wherever the fickle and unsteady mind"
             },
             {
-                "sanskrit": "ततस्ततो नियम्यैतदात्मन्येव वशं नयेत्",
-                "word": "tatas tato niyamyaitad ātmanyeva vaśhaṁ nayet",
-                "transliteration": "tatas tato niyamyaitad ātmanyeva vaśhaṁ nayet",
-                "sanskrit_te": "తతస్తతో నియమ్యైతదాత్మన్యేవ వశం నయేత్",
-                "en": "Having restrained on God control should bring",
-                "te": "Having restrained on God control should bring"
+                "sanskrit": "निश्चरति मनश्चञ्चलमस्थिरम्",
+                "word": "manaśh chañchalam asthiram",
+                "transliteration": "manaśh chañchalam asthiram",
+                "sanskrit_te": "నిశ్చరతి మనశ్చఞ్చలమస్థిరమ్",
+                "en": "Restless unsteady",
+                "te": "Wanders, one should subdue it and"
+            },
+            {
+                "sanskrit": "ततस्ततो नियम्यैतदात्मन्येव",
+                "word": "tatas tato niyamyaitad",
+                "transliteration": "tatas tato niyamyaitad",
+                "sanskrit_te": "తతస్తతో నియమ్యైతదాత్మన్యేవ",
+                "en": "Then bring it back under the",
+                "te": "Then bring it back under the"
+            },
+            {
+                "sanskrit": "वशं नयेत्",
+                "word": "ātmanyeva vaśhaṁ nayet",
+                "transliteration": "ātmanyeva vaśhaṁ nayet",
+                "sanskrit_te": "వశం నయేత్",
+                "en": "On God control should bring",
+                "te": "Control of the self alone."
             }
         ]
     },
@@ -1745,20 +2153,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ప్రశాన్తమనసం హ్యేనం యోగినం సుఖముత్తమమ్ |\nఉపైతి శాన్తరజసం బ్రహ్మభూతమకల్మషమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "प्रशान्तमनसं ह्येनं योगिनं सुखमुत्तमम्",
-                "word": "praśhānta-manasaṁ hyenaṁ yoginaṁ sukham uttamam",
-                "transliteration": "praśhānta-manasaṁ hyenaṁ yoginaṁ sukham uttamam",
-                "sanskrit_te": "ప్రశాన్తమనసం హ్యేనం యోగినం సుఖముత్తమమ్",
-                "en": "Peaceful mind this yogi the highest bliss",
-                "te": "Peaceful mind this yogi the highest bliss"
+                "sanskrit": "प्रशान्तमनसं ह्येनं",
+                "word": "praśhānta manasaṁ hyenaṁ",
+                "transliteration": "praśhānta manasaṁ hyenaṁ",
+                "sanskrit_te": "ప్రశాన్తమనసం హ్యేనం",
+                "en": "Peaceful mind this",
+                "te": "For supreme happiness comes to the Yogin whose mind is at peace"
             },
             {
-                "sanskrit": "उपैति शान्तरजसं ब्रह्मभूतमकल्मषम्",
-                "word": "upaiti śhānta-rajasaṁ brahma-bhūtam akalmaṣham",
-                "transliteration": "upaiti śhānta-rajasaṁ brahma-bhūtam akalmaṣham",
-                "sanskrit_te": "ఉపైతి శాన్తరజసం బ్రహ్మభూతమకల్మషమ్",
-                "en": "Attains whose passions are subdued endowed with God-realization without sin",
-                "te": "Attains whose passions are subdued endowed with God-realization without sin"
+                "sanskrit": "योगिनं सुखमुत्तमम्",
+                "word": "yoginaṁ sukham uttamam",
+                "transliteration": "yoginaṁ sukham uttamam",
+                "sanskrit_te": "యోగినం సుఖముత్తమమ్",
+                "en": "Yogi the highest bliss",
+                "te": "Who is free from evil"
+            },
+            {
+                "sanskrit": "उपैति शान्तरजसं",
+                "word": "upaiti śhānta rajasaṁ",
+                "transliteration": "upaiti śhānta rajasaṁ",
+                "sanskrit_te": "ఉపైతి శాన్తరజసం",
+                "en": "Attains whose passions are subdued",
+                "te": "From whom Rajas has departed"
+            },
+            {
+                "sanskrit": "ब्रह्मभूतमकल्मषम्",
+                "word": "brahma bhūtam akalmaṣham",
+                "transliteration": "brahma bhūtam akalmaṣham",
+                "sanskrit_te": "బ్రహ్మభూతమకల్మషమ్",
+                "en": "Endowed with God-realization without sin",
+                "te": "And who has become the Brahman."
             }
         ]
     },
@@ -1810,20 +2234,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యుఞ్జన్నేవం సదాఽఽత్మానం యోగీ విగతకల్మషః |\nసుఖేన బ్రహ్మసంస్పర్శమత్యన్తం సుఖమశ్నుతే",
         "lineBreakdown": [
             {
-                "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं योगी विगतकल्मषः",
-                "word": "yuñjann evaṁ sadātmānaṁ yogī vigata-kalmaṣhaḥ",
-                "transliteration": "yuñjann evaṁ sadātmānaṁ yogī vigata-kalmaṣhaḥ",
-                "sanskrit_te": "యుఞ్జన్నేవం సదాఽఽత్మానం యోగీ విగతకల్మషః",
-                "en": "Uniting (the self with God) thus always a yogi freed from sins",
-                "te": "Uniting (the self with God) thus always a yogi freed from sins"
+                "sanskrit": "युञ्जन्नेवं सदाऽऽत्मानं",
+                "word": "yuñjann evaṁ sadātmānaṁ",
+                "transliteration": "yuñjann evaṁ sadātmānaṁ",
+                "sanskrit_te": "యుఞ్జన్నేవం సదాఽఽత్మానం",
+                "en": "Uniting (the self with God) thus always",
+                "te": "Thus"
             },
             {
-                "sanskrit": "सुखेन ब्रह्मसंस्पर्शमत्यन्तं सुखमश्नुते",
-                "word": "sukhena brahma-sansparśham atyantaṁ sukham aśhnute",
-                "transliteration": "sukhena brahma-sansparśham atyantaṁ sukham aśhnute",
-                "sanskrit_te": "సుఖేన బ్రహ్మసంస్పర్శమత్యన్తం సుఖమశ్నుతే",
-                "en": "Easily constantly in touch with the Supreme the highest bliss attains",
-                "te": "Easily constantly in touch with the Supreme the highest bliss attains"
+                "sanskrit": "योगी विगतकल्मषः",
+                "word": "yogī vigata kalmaṣhaḥ",
+                "transliteration": "yogī vigata kalmaṣhaḥ",
+                "sanskrit_te": "యోగీ విగతకల్మషః",
+                "en": "A yogi freed from sins",
+                "te": "Devoting himself to the Yoga of the Self"
+            },
+            {
+                "sanskrit": "सुखेन ब्रह्मसंस्पर्शमत्यन्तं",
+                "word": "sukhena brahma sansparśham",
+                "transliteration": "sukhena brahma sansparśham",
+                "sanskrit_te": "సుఖేన బ్రహ్మసంస్పర్శమత్యన్తం",
+                "en": "Easily constantly in touch with the Supreme",
+                "te": "Freed from impurities"
+            },
+            {
+                "sanskrit": "सुखमश्नुते",
+                "word": "atyantaṁ sukham aśhnute",
+                "transliteration": "atyantaṁ sukham aśhnute",
+                "sanskrit_te": "సుఖమశ్నుతే",
+                "en": "The highest bliss attains",
+                "te": "The yogin easily attains the supreme bliss of contact with the Brahman."
             }
         ]
     },
@@ -1875,20 +2315,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "సర్వభూతస్థమాత్మానం సర్వభూతాని చాత్మని |\nఈక్షతే యోగయుక్తాత్మా సర్వత్ర సమదర్శనః",
         "lineBreakdown": [
             {
-                "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि चात्मनि",
-                "word": "sarva-bhūta-stham ātmānaṁ sarva-bhūtāni chātmani",
-                "transliteration": "sarva-bhūta-stham ātmānaṁ sarva-bhūtāni chātmani",
-                "sanskrit_te": "సర్వభూతస్థమాత్మానం సర్వభూతాని చాత్మని",
-                "en": "Situated in all living beings Supreme Soul all living beings in God",
-                "te": "Situated in all living beings Supreme Soul all living beings in God"
+                "sanskrit": "सर्वभूतस्थमात्मानं सर्वभूतानि",
+                "word": "sarva bhūta stham ātmānaṁ",
+                "transliteration": "sarva bhūta stham ātmānaṁ",
+                "sanskrit_te": "సర్వభూతస్థమాత్మానం సర్వభూతాని",
+                "en": "Situated in all living beings Supreme Soul",
+                "te": "He whose mind is fixed in Yoga"
             },
             {
-                "sanskrit": "ईक्षते योगयुक्तात्मा सर्वत्र समदर्शनः",
-                "word": "īkṣhate yoga-yuktātmā sarvatra sama-darśhanaḥ",
-                "transliteration": "īkṣhate yoga-yuktātmā sarvatra sama-darśhanaḥ",
-                "sanskrit_te": "ఈక్షతే యోగయుక్తాత్మా సర్వత్ర సమదర్శనః",
-                "en": "Sees one united in consciousness with God all equal vision",
-                "te": "Sees one united in consciousness with God all equal vision"
+                "sanskrit": "चात्मनि ईक्षते",
+                "word": "sarva bhūtāni chātmani",
+                "transliteration": "sarva bhūtāni chātmani",
+                "sanskrit_te": "చాత్మని ఈక్షతే",
+                "en": "All living beings in God",
+                "te": "Sees reality everywhere; he sees his"
+            },
+            {
+                "sanskrit": "योगयुक्तात्मा सर्वत्र",
+                "word": "īkṣhate yoga yuktātmā",
+                "transliteration": "īkṣhate yoga yuktātmā",
+                "sanskrit_te": "యోగయుక్తాత్మా సర్వత్ర",
+                "en": "Sees one united in consciousness with God",
+                "te": "Self as abiding in all beings"
+            },
+            {
+                "sanskrit": "समदर्शनः",
+                "word": "sarvatra sama darśhanaḥ",
+                "transliteration": "sarvatra sama darśhanaḥ",
+                "sanskrit_te": "సమదర్శనః",
+                "en": "All equal vision",
+                "te": "And all beings in his Self."
             }
         ]
     },
@@ -1940,20 +2396,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "యో మాం పశ్యతి సర్వత్ర సర్వం చ మయి పశ్యతి |\nతస్యాహం న ప్రణశ్యామి స చ మే న ప్రణశ్యతి",
         "lineBreakdown": [
             {
-                "sanskrit": "यो मां पश्यति सर्वत्र सर्वं च मयि पश्यति",
-                "word": "yo māṁ paśhyati sarvatra sarvaṁ cha mayi paśhyati",
-                "transliteration": "yo māṁ paśhyati sarvatra sarvaṁ cha mayi paśhyati",
-                "sanskrit_te": "యో మాం పశ్యతి సర్వత్ర సర్వం చ మయి పశ్యతి",
-                "en": "Me see everywhere everywhere and in me see",
-                "te": "Me see everywhere everywhere and in me see"
+                "sanskrit": "यो मां पश्यति सर्वत्र",
+                "word": "yo māṁ paśhyati sarvatra",
+                "transliteration": "yo māṁ paśhyati sarvatra",
+                "sanskrit_te": "యో మాం పశ్యతి సర్వత్ర",
+                "en": "Me see everywhere",
+                "te": "To him who sees Me in"
             },
             {
-                "sanskrit": "तस्याहं न प्रणश्यामि स च मे न प्रणश्यति",
-                "word": "tasyāhaṁ na praṇaśhyāmi sa cha me na praṇaśhyati",
-                "transliteration": "tasyāhaṁ na praṇaśhyāmi sa cha me na praṇaśhyati",
-                "sanskrit_te": "తస్యాహం న ప్రణశ్యామి స చ మే న ప్రణశ్యతి",
-                "en": "For him not lost that person and to me not lost",
-                "te": "For him not lost that person and to me not lost"
+                "sanskrit": "सर्वं च मयि पश्यति",
+                "word": "sarvaṁ cha mayi paśhyati",
+                "transliteration": "sarvaṁ cha mayi paśhyati",
+                "sanskrit_te": "సర్వం చ మయి పశ్యతి",
+                "en": "Everywhere and in me see",
+                "te": "Every self and every self in"
+            },
+            {
+                "sanskrit": "तस्याहं न प्रणश्यामि स",
+                "word": "tasyāhaṁ na praṇaśhyāmi sa",
+                "transliteration": "tasyāhaṁ na praṇaśhyāmi sa",
+                "sanskrit_te": "తస్యాహం న ప్రణశ్యామి స",
+                "en": "For him not lost that person",
+                "te": "Me—I am not lost to him,"
+            },
+            {
+                "sanskrit": "च मे न प्रणश्यति",
+                "word": "cha me na praṇaśhyati",
+                "transliteration": "cha me na praṇaśhyati",
+                "sanskrit_te": "చ మే న ప్రణశ్యతి",
+                "en": "And to me not lost",
+                "te": "Nor is he lost to Me."
             }
         ]
     },
@@ -2005,20 +2477,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "సర్వభూతస్థితం యో మాం భజత్యేకత్వమాస్థితః |\nసర్వథా వర్తమానోఽపి స యోగీ మయి వర్తతే",
         "lineBreakdown": [
             {
-                "sanskrit": "सर्वभूतस्थितं यो मां भजत्येकत्वमास्थितः",
-                "word": "sarva-bhūta-sthitaṁ yo māṁ bhajatyekatvam āsthitaḥ",
-                "transliteration": "sarva-bhūta-sthitaṁ yo māṁ bhajatyekatvam āsthitaḥ",
-                "sanskrit_te": "సర్వభూతస్థితం యో మాం భజత్యేకత్వమాస్థితః",
-                "en": "Situated in all beings me worships established",
-                "te": "Situated in all beings me worships established"
+                "sanskrit": "सर्वभूतस्थितं यो मां",
+                "word": "sarva bhūta sthitaṁ yo",
+                "transliteration": "sarva bhūta sthitaṁ yo",
+                "sanskrit_te": "సర్వభూతస్థితం యో మాం",
+                "en": "The yogi who",
+                "te": "The yogi who"
             },
             {
-                "sanskrit": "सर्वथा वर्तमानोऽपि स योगी मयि वर्तते",
-                "word": "sarvathā vartamāno ’pi sa yogī mayi vartate",
-                "transliteration": "sarvathā vartamāno ’pi sa yogī mayi vartate",
-                "sanskrit_te": "సర్వథా వర్తమానోఽపి స యోగీ మయి వర్తతే",
-                "en": "In all kinds of dwells he a yogi in me dwells",
-                "te": "In all kinds of dwells he a yogi in me dwells"
+                "sanskrit": "भजत्येकत्वमास्थितः सर्वथा वर्तमानोऽपि",
+                "word": "māṁ bhajatyekatvam āsthitaḥ sarvathā",
+                "transliteration": "māṁ bhajatyekatvam āsthitaḥ sarvathā",
+                "sanskrit_te": "భజత్యేకత్వమాస్థితః సర్వథా వర్తమానోఽపి",
+                "en": "Me worships established in all kinds of",
+                "te": "Fixed in oneness"
+            },
+            {
+                "sanskrit": "स योगी",
+                "word": "vartamāno ’pi sa",
+                "transliteration": "vartamāno ’pi sa",
+                "sanskrit_te": "స యోగీ",
+                "en": "Dwells he",
+                "te": "Worships Me dwelling in all beings—he abides in Me"
+            },
+            {
+                "sanskrit": "मयि वर्तते",
+                "word": "yogī mayi vartate",
+                "transliteration": "yogī mayi vartate",
+                "sanskrit_te": "మయి వర్తతే",
+                "en": "A yogi in me dwells",
+                "te": "No matter how he may live."
             }
         ]
     },
@@ -2070,20 +2558,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ఆత్మౌపమ్యేన సర్వత్ర సమం పశ్యతి యోఽర్జున |\nసుఖం వా యది వా దుఃఖం సః యోగీ పరమో మతః",
         "lineBreakdown": [
             {
-                "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन",
-                "word": "ātmaupamyena sarvatra samaṁ paśhyati yo ’rjuna",
-                "transliteration": "ātmaupamyena sarvatra samaṁ paśhyati yo ’rjuna",
-                "sanskrit_te": "ఆత్మౌపమ్యేన సర్వత్ర సమం పశ్యతి యోఽర్జున",
+                "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति",
+                "word": "ātmaupamyena sarvatra samaṁ paśhyati",
+                "transliteration": "ātmaupamyena sarvatra samaṁ paśhyati",
+                "sanskrit_te": "ఆత్మౌపమ్యేన సర్వత్ర సమం పశ్యతి",
                 "en": "Similar to oneself everywhere equally see",
-                "te": "Similar to oneself everywhere equally see"
+                "te": "He who, due to the similarity"
             },
             {
-                "sanskrit": "सुखं वा यदि वा दुःखं सः योगी परमो मतः",
-                "word": "sukhaṁ vā yadi vā duḥkhaṁ sa yogī paramo mataḥ",
-                "transliteration": "sukhaṁ vā yadi vā duḥkhaṁ sa yogī paramo mataḥ",
-                "sanskrit_te": "సుఖం వా యది వా దుఃఖం సః యోగీ పరమో మతః",
-                "en": "Joy or if or sorrow such a yogi highest is considered",
-                "te": "Joy or if or sorrow such a yogi highest is considered"
+                "sanskrit": "योऽर्जुन सुखं वा यदि",
+                "word": "yo ’rjuna sukhaṁ vā",
+                "transliteration": "yo ’rjuna sukhaṁ vā",
+                "sanskrit_te": "యోఽర్జున సుఖం వా యది",
+                "en": "Joy or",
+                "te": "Of selves everywhere, sees pleasure or"
+            },
+            {
+                "sanskrit": "वा दुःखं सः",
+                "word": "yadi vā duḥkhaṁ sa",
+                "transliteration": "yadi vā duḥkhaṁ sa",
+                "sanskrit_te": "వా దుఃఖం సః",
+                "en": "If or sorrow such",
+                "te": "Pain as the same everywhere—that yogi,"
+            },
+            {
+                "sanskrit": "योगी परमो मतः",
+                "word": "yogī paramo mataḥ",
+                "transliteration": "yogī paramo mataḥ",
+                "sanskrit_te": "యోగీ పరమో మతః",
+                "en": "A yogi highest is considered",
+                "te": "O Arjuna, is considered the closest."
             }
         ]
     },
@@ -2135,28 +2639,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "అర్జున ఉవాచ యోఽయం యోగస్త్వయా ప్రోక్తః సామ్యేన మధుసూదన |\nఏతస్యాహం న పశ్యామి చఞ్చలత్వాత్ స్థితిం స్థిరామ్",
         "lineBreakdown": [
             {
-                "sanskrit": "अर्जुन उवाच योऽयं योगस्त्वया प्रोक्तः साम्येन मधुसूदन",
-                "word": "arjuna uvācha",
-                "transliteration": "arjuna uvācha",
-                "sanskrit_te": "అర్జున ఉవాచ యోఽయం యోగస్త్వయా ప్రోక్తః సామ్యేన మధుసూదన",
-                "en": "Arjun said",
-                "te": "Arjun said"
+                "sanskrit": "अर्जुन उवाच योऽयं योगस्त्वया",
+                "word": "arjuna uvācha yo ’yaṁ",
+                "transliteration": "arjuna uvācha yo ’yaṁ",
+                "sanskrit_te": "అర్జున ఉవాచ యోఽయం యోగస్త్వయా",
+                "en": "Arjuna said, \"O Krsna, this Yoga of",
+                "te": "Arjuna said, \"O Krsna, this Yoga of"
             },
             {
-                "sanskrit": "एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्",
-                "word": "yo ’yaṁ yogas tvayā proktaḥ sāmyena madhusūdana",
-                "transliteration": "yo ’yaṁ yogas tvayā proktaḥ sāmyena madhusūdana",
-                "sanskrit_te": "ఏతస్యాహం న పశ్యామి చఞ్చలత్వాత్ స్థితిం స్థిరామ్",
-                "en": "By you described by equanimity Shree Krishna, the killer of the demon named Madhu",
-                "te": "By you described by equanimity Shree Krishna, the killer of the demon named Madhu"
+                "sanskrit": "प्रोक्तः साम्येन मधुसूदन",
+                "word": "yogas tvayā proktaḥ sāmyena",
+                "transliteration": "yogas tvayā proktaḥ sāmyena",
+                "sanskrit_te": "ప్రోక్తః సామ్యేన మధుసూదన",
+                "en": "By you described by equanimity",
+                "te": "Reality, which You have declared, I do"
             },
             {
-                "sanskrit": "एतस्याहं न पश्यामि चञ्चलत्वात् स्थितिं स्थिराम्",
-                "word": "etasyāhaṁ na paśhyāmi chañchalatvāt sthitiṁ sthirām",
-                "transliteration": "etasyāhaṁ na paśhyāmi chañchalatvāt sthitiṁ sthirām",
-                "sanskrit_te": "ఏతస్యాహం న పశ్యామి చఞ్చలత్వాత్ స్థితిం స్థిరామ్",
-                "en": "Of this do not see due to restlessness situation steady",
-                "te": "Of this do not see due to restlessness situation steady"
+                "sanskrit": "एतस्याहं न पश्यामि",
+                "word": "madhusūdana etasyāhaṁ na paśhyāmi",
+                "transliteration": "madhusūdana etasyāhaṁ na paśhyāmi",
+                "sanskrit_te": "ఏతస్యాహం న పశ్యామి",
+                "en": "Shree Krishna, the killer of the demon named Madhu of this do not see",
+                "te": "Not see how it can be steady"
+            },
+            {
+                "sanskrit": "चञ्चलत्वात् स्थितिं स्थिराम्",
+                "word": "chañchalatvāt sthitiṁ sthirām",
+                "transliteration": "chañchalatvāt sthitiṁ sthirām",
+                "sanskrit_te": "చఞ్చలత్వాత్ స్థితిం స్థిరామ్",
+                "en": "Due to restlessness situation steady",
+                "te": "Due to the fickleness of the mind.\""
             }
         ]
     },
@@ -2208,20 +2720,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "చఞ్చలం హి మనః కృష్ణ ప్రమాథి బలవద్దృఢమ్ |\nతస్యాహం నిగ్రహం మన్యే వాయోరివ సుదుష్కరమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "चञ्चलं हि मनः कृष्ण प्रमाथि बलवद्दृढम्",
-                "word": "chañchalaṁ hi manaḥ kṛiṣhṇa pramāthi balavad dṛiḍham",
-                "transliteration": "chañchalaṁ hi manaḥ kṛiṣhṇa pramāthi balavad dṛiḍham",
-                "sanskrit_te": "చఞ్చలం హి మనః కృష్ణ ప్రమాథి బలవద్దృఢమ్",
-                "en": "Restless certainly mind Shree Krishna turbulent strong obstinate",
-                "te": "Restless certainly mind Shree Krishna turbulent strong obstinate"
+                "sanskrit": "चञ्चलं हि मनः",
+                "word": "chañchalaṁ hi manaḥ kṛiṣhṇa",
+                "transliteration": "chañchalaṁ hi manaḥ kṛiṣhṇa",
+                "sanskrit_te": "చఞ్చలం హి మనః",
+                "en": "Restless certainly mind Shree Krishna",
+                "te": "For the mind is fickle, O"
             },
             {
-                "sanskrit": "तस्याहं निग्रहं मन्ये वायोरिव सुदुष्करम्",
-                "word": "tasyāhaṁ nigrahaṁ manye vāyor iva su-duṣhkaram",
-                "transliteration": "tasyāhaṁ nigrahaṁ manye vāyor iva su-duṣhkaram",
-                "sanskrit_te": "తస్యాహం నిగ్రహం మన్యే వాయోరివ సుదుష్కరమ్",
-                "en": "Its control think like difficult to perform",
-                "te": "Its control think like difficult to perform"
+                "sanskrit": "कृष्ण प्रमाथि बलवद्दृढम्",
+                "word": "pramāthi balavad dṛiḍham tasyāhaṁ",
+                "transliteration": "pramāthi balavad dṛiḍham tasyāhaṁ",
+                "sanskrit_te": "కృష్ణ ప్రమాథి బలవద్దృఢమ్",
+                "en": "Turbulent strong obstinate its",
+                "te": "Krsna, impetuous, powerful, and stubborn; I"
+            },
+            {
+                "sanskrit": "तस्याहं निग्रहं मन्ये",
+                "word": "nigrahaṁ manye vāyor",
+                "transliteration": "nigrahaṁ manye vāyor",
+                "sanskrit_te": "తస్యాహం నిగ్రహం మన్యే",
+                "en": "Control think",
+                "te": "Think that restraining it is as"
+            },
+            {
+                "sanskrit": "वायोरिव सुदुष्करम्",
+                "word": "iva su duṣhkaram",
+                "transliteration": "iva su duṣhkaram",
+                "sanskrit_te": "వాయోరివ సుదుష్కరమ్",
+                "en": "Like difficult to perform",
+                "te": "Difficult as restraining the wind."
             }
         ]
     },
@@ -2273,28 +2801,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "శ్రీ భగవానువాచ అసంశయం మహాబాహో మనో దుర్నిగ్రహం చలం |\nఅభ్యాసేన తు కౌన్తేయ వైరాగ్యేణ చ గృహ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "श्री भगवानुवाच असंशयं महाबाहो मनो दुर्निग्रहं चलं",
-                "word": "śhrī bhagavān uvācha",
-                "transliteration": "śhrī bhagavān uvācha",
-                "sanskrit_te": "శ్రీ భగవానువాచ అసంశయం మహాబాహో మనో దుర్నిగ్రహం చలం",
-                "en": "Lord Krishna said",
-                "te": "Lord Krishna said"
+                "sanskrit": "श्री भगवानुवाच असंशयं महाबाहो",
+                "word": "śhrī bhagavān uvācha asanśhayaṁ",
+                "transliteration": "śhrī bhagavān uvācha asanśhayaṁ",
+                "sanskrit_te": "శ్రీ భగవానువాచ అసంశయం మహాబాహో",
+                "en": "Lord Krishna said undoubtedly",
+                "te": "The Lord said, \"The mind is indeed hard to"
             },
             {
-                "sanskrit": "अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते",
-                "word": "asanśhayaṁ mahā-bāho mano durnigrahaṁ chalam",
-                "transliteration": "asanśhayaṁ mahā-bāho mano durnigrahaṁ chalam",
-                "sanskrit_te": "అభ్యాసేన తు కౌన్తేయ వైరాగ్యేణ చ గృహ్యతే",
-                "en": "Undoubtedly mighty-armed one difficult to restrain restless",
-                "te": "Undoubtedly mighty-armed one difficult to restrain restless"
+                "sanskrit": "मनो दुर्निग्रहं चलं",
+                "word": "mahā bāho mano durnigrahaṁ",
+                "transliteration": "mahā bāho mano durnigrahaṁ",
+                "sanskrit_te": "మనో దుర్నిగ్రహం చలం",
+                "en": "Mighty-armed one difficult to restrain",
+                "te": "Subdue and fickle, O mighty armed one, but, O"
             },
             {
-                "sanskrit": "अभ्यासेन तु कौन्तेय वैराग्येण च गृह्यते",
-                "word": "abhyāsena tu kaunteya vairāgyeṇa cha gṛihyate",
-                "transliteration": "abhyāsena tu kaunteya vairāgyeṇa cha gṛihyate",
-                "sanskrit_te": "అభ్యాసేన తు కౌన్తేయ వైరాగ్యేణ చ గృహ్యతే",
-                "en": "By practice but Arjun, the son of Kunti by detachment and can be controlled",
-                "te": "By practice but Arjun, the son of Kunti by detachment and can be controlled"
+                "sanskrit": "अभ्यासेन तु कौन्तेय",
+                "word": "chalam abhyāsena tu kaunteya",
+                "transliteration": "chalam abhyāsena tu kaunteya",
+                "sanskrit_te": "అభ్యాసేన తు కౌన్తేయ",
+                "en": "Restless by practice but Arjun, the son of Kunti",
+                "te": "Son of Kunti, it can be brought under"
+            },
+            {
+                "sanskrit": "वैराग्येण च गृह्यते",
+                "word": "vairāgyeṇa cha gṛihyate",
+                "transliteration": "vairāgyeṇa cha gṛihyate",
+                "sanskrit_te": "వైరాగ్యేణ చ గృహ్యతే",
+                "en": "By detachment and can be controlled",
+                "te": "Control through practice and the exercise of dispassion.\""
             }
         ]
     },
@@ -2346,20 +2882,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "అసంయతాత్మనా యోగో దుష్ప్రాప ఇతి మే మతిః |\nవశ్యాత్మనా తు యతతా శక్యోఽవాప్తుముపాయతః",
         "lineBreakdown": [
             {
-                "sanskrit": "असंयतात्मना योगो दुष्प्राप इति मे मतिः",
-                "word": "asaṅyatātmanā yogo duṣhprāpa iti me matiḥ",
-                "transliteration": "asaṅyatātmanā yogo duṣhprāpa iti me matiḥ",
-                "sanskrit_te": "అసంయతాత్మనా యోగో దుష్ప్రాప ఇతి మే మతిః",
-                "en": "One whose mind is unbridled difficult to attain thus my opinion",
-                "te": "One whose mind is unbridled difficult to attain thus my opinion"
+                "sanskrit": "असंयतात्मना योगो दुष्प्राप",
+                "word": "asaṅyatātmanā yogo duṣhprāpa",
+                "transliteration": "asaṅyatātmanā yogo duṣhprāpa",
+                "sanskrit_te": "అసంయతాత్మనా యోగో దుష్ప్రాప",
+                "en": "One whose mind is unbridled difficult to attain",
+                "te": "In my opinion"
             },
             {
-                "sanskrit": "वश्यात्मना तु यतता शक्योऽवाप्तुमुपायतः",
-                "word": "vaśhyātmanā tu yatatā śhakyo ’vāptum upāyataḥ",
-                "transliteration": "vaśhyātmanā tu yatatā śhakyo ’vāptum upāyataḥ",
-                "sanskrit_te": "వశ్యాత్మనా తు యతతా శక్యోఽవాప్తుముపాయతః",
-                "en": "By one whose mind is controlled but one who strives possible by right means",
-                "te": "By one whose mind is controlled but one who strives possible by right means"
+                "sanskrit": "इति मे मतिः",
+                "word": "iti me matiḥ",
+                "transliteration": "iti me matiḥ",
+                "sanskrit_te": "ఇతి మే మతిః",
+                "en": "Thus my opinion",
+                "te": "Yoga is hard to attain by a person of an unrestrained mind"
+            },
+            {
+                "sanskrit": "वश्यात्मना तु",
+                "word": "vaśhyātmanā tu yatatā",
+                "transliteration": "vaśhyātmanā tu yatatā",
+                "sanskrit_te": "వశ్యాత్మనా తు",
+                "en": "By one whose mind is controlled but one who strives",
+                "te": "However"
+            },
+            {
+                "sanskrit": "यतता शक्योऽवाप्तुमुपायतः",
+                "word": "śhakyo ’vāptum upāyataḥ",
+                "transliteration": "śhakyo ’vāptum upāyataḥ",
+                "sanskrit_te": "యతతా శక్యోఽవాప్తుముపాయతః",
+                "en": "Possible by right means",
+                "te": "It can be attained through the right means by one who strives for it and has a subdued mind."
             }
         ]
     },
@@ -2411,28 +2963,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "అర్జున ఉవాచ అయతిః శ్రద్ధయోపేతో యోగాచ్చలితమానసః |\nఅప్రాప్య యోగసంసిద్ధిం కాం గతిం కృష్ణ గచ్ఛతి",
         "lineBreakdown": [
             {
-                "sanskrit": "अर्जुन उवाच अयतिः श्रद्धयोपेतो योगाच्चलितमानसः",
-                "word": "arjuna uvācha",
-                "transliteration": "arjuna uvācha",
-                "sanskrit_te": "అర్జున ఉవాచ అయతిః శ్రద్ధయోపేతో యోగాచ్చలితమానసః",
-                "en": "Arjun said",
-                "te": "Arjun said"
+                "sanskrit": "अर्जुन उवाच अयतिः",
+                "word": "arjuna uvācha ayatiḥ śhraddhayopeto",
+                "transliteration": "arjuna uvācha ayatiḥ śhraddhayopeto",
+                "sanskrit_te": "అర్జున ఉవాచ అయతిః",
+                "en": "Arjun said lax with faith",
+                "te": "Arjuna said"
             },
             {
-                "sanskrit": "अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति",
-                "word": "ayatiḥ śhraddhayopeto yogāch chalita-mānasaḥ",
-                "transliteration": "ayatiḥ śhraddhayopeto yogāch chalita-mānasaḥ",
-                "sanskrit_te": "అప్రాప్య యోగసంసిద్ధిం కాం గతిం కృష్ణ గచ్ఛతి",
-                "en": "Lax with faith the highest perfection in yog whose mind becomes deviated",
-                "te": "Lax with faith the highest perfection in yog whose mind becomes deviated"
+                "sanskrit": "श्रद्धयोपेतो योगाच्चलितमानसः अप्राप्य",
+                "word": "yogāch chalita mānasaḥ aprāpya",
+                "transliteration": "yogāch chalita mānasaḥ aprāpya",
+                "sanskrit_te": "శ్రద్ధయోపేతో యోగాచ్చలితమానసః అప్రాప్య",
+                "en": "The highest perfection in yog whose mind becomes deviated failing to attain",
+                "te": "\"If a person who is possessed of faith but has put in only inadequate effort finds his mind wandering away from Yoga"
             },
             {
-                "sanskrit": "अप्राप्य योगसंसिद्धिं कां गतिं कृष्ण गच्छति",
-                "word": "aprāpya yoga-sansiddhiṁ kāṅ gatiṁ kṛiṣhṇa gachchhati",
-                "transliteration": "aprāpya yoga-sansiddhiṁ kāṅ gatiṁ kṛiṣhṇa gachchhati",
-                "sanskrit_te": "అప్రాప్య యోగసంసిద్ధిం కాం గతిం కృష్ణ గచ్ఛతి",
-                "en": "Failing to attain the highest perfection in yog destination Shree Krishna goes",
-                "te": "Failing to attain the highest perfection in yog destination Shree Krishna goes"
+                "sanskrit": "योगसंसिद्धिं कां गतिं",
+                "word": "yoga sansiddhiṁ kāṅ",
+                "transliteration": "yoga sansiddhiṁ kāṅ",
+                "sanskrit_te": "యోగసంసిద్ధిం కాం గతిం",
+                "en": "And then fails to attain perfection—what way does he go",
+                "te": "And then fails to attain perfection—what way does he go"
+            },
+            {
+                "sanskrit": "कृष्ण गच्छति",
+                "word": "gatiṁ kṛiṣhṇa gachchhati",
+                "transliteration": "gatiṁ kṛiṣhṇa gachchhati",
+                "sanskrit_te": "కృష్ణ గచ్ఛతి",
+                "en": "Destination Shree Krishna goes",
+                "te": "O Krishna?\""
             }
         ]
     },
@@ -2485,19 +3045,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "कच्चिन्नोभयविभ्रष्टश्छिन्नाभ्रमिव नश्यति",
-                "word": "kachchin nobhaya-vibhraṣhṭaśh chhinnābhram iva naśhyati",
-                "transliteration": "kachchin nobhaya-vibhraṣhṭaśh chhinnābhram iva naśhyati",
+                "word": "kachchin nobhaya vibhraṣhṭaśh",
+                "transliteration": "kachchin nobhaya vibhraṣhṭaśh",
                 "sanskrit_te": "కచ్చిన్నోభయవిభ్రష్టశ్ఛిన్నాభ్రమివ నశ్యతి",
-                "en": "Whether deviated from broken like perishes",
-                "te": "Whether deviated from broken like perishes"
+                "en": "Whether deviated from",
+                "te": "Without any support, confused in the path leading"
             },
             {
-                "sanskrit": "अप्रतिष्ठो महाबाहो विमूढो ब्रह्मणः पथि",
-                "word": "apratiṣhṭho mahā-bāho vimūḍho brahmaṇaḥ pathi",
-                "transliteration": "apratiṣhṭho mahā-bāho vimūḍho brahmaṇaḥ pathi",
-                "sanskrit_te": "అప్రతిష్ఠో మహాబాహో విమూఢో బ్రహ్మణః పథి",
-                "en": "Without any support mighty-armed Krishna bewildered of God-realization one on the path",
-                "te": "Without any support mighty-armed Krishna bewildered of God-realization one on the path"
+                "sanskrit": "अप्रतिष्ठो महाबाहो",
+                "word": "chhinnābhram iva naśhyati",
+                "transliteration": "chhinnābhram iva naśhyati",
+                "sanskrit_te": "అప్రతిష్ఠో మహాబాహో",
+                "en": "Broken like perishes",
+                "te": "To the Brahman, and thus having fallen"
+            },
+            {
+                "sanskrit": "विमूढो ब्रह्मणः",
+                "word": "apratiṣhṭho mahā bāho",
+                "transliteration": "apratiṣhṭho mahā bāho",
+                "sanskrit_te": "విమూఢో బ్రహ్మణః",
+                "en": "Without any support mighty-armed Krishna",
+                "te": "From both, does he not perish, O"
+            },
+            {
+                "sanskrit": "पथि",
+                "word": "vimūḍho brahmaṇaḥ pathi",
+                "transliteration": "vimūḍho brahmaṇaḥ pathi",
+                "sanskrit_te": "పథి",
+                "en": "Bewildered of God-realization one on the path",
+                "te": "Mighty armed one, like a rent cloud?"
             }
         ]
     },
@@ -2549,20 +3125,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ఏతన్మే సంశయం కృష్ణ ఛేత్తుమర్హస్యశేషతః |\nత్వదన్యః సంశయస్యాస్య ఛేత్తా న హ్యుపపద్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "एतन्मे संशयं कृष्ण छेत्तुमर्हस्यशेषतः",
-                "word": "etan me sanśhayaṁ kṛiṣhṇa chhettum arhasyaśheṣhataḥ",
-                "transliteration": "etan me sanśhayaṁ kṛiṣhṇa chhettum arhasyaśheṣhataḥ",
-                "sanskrit_te": "ఏతన్మే సంశయం కృష్ణ ఛేత్తుమర్హస్యశేషతః",
-                "en": "My doubt Krishna to dispel you can",
-                "te": "My doubt Krishna to dispel you can"
+                "sanskrit": "एतन्मे संशयं कृष्ण",
+                "word": "etan me sanśhayaṁ",
+                "transliteration": "etan me sanśhayaṁ",
+                "sanskrit_te": "ఏతన్మే సంశయం కృష్ణ",
+                "en": "My doubt",
+                "te": "O Krsna, you should altogether remove"
             },
             {
-                "sanskrit": "त्वदन्यः संशयस्यास्य छेत्ता न ह्युपपद्यते",
-                "word": "tvad-anyaḥ sanśhayasyāsya chhettā na hyupapadyate",
-                "transliteration": "tvad-anyaḥ sanśhayasyāsya chhettā na hyupapadyate",
-                "sanskrit_te": "త్వదన్యః సంశయస్యాస్య ఛేత్తా న హ్యుపపద్యతే",
-                "en": "Other doubt to dispel never is fit",
-                "te": "Other doubt to dispel never is fit"
+                "sanskrit": "छेत्तुमर्हस्यशेषतः त्वदन्यः",
+                "word": "kṛiṣhṇa chhettum arhasyaśheṣhataḥ",
+                "transliteration": "kṛiṣhṇa chhettum arhasyaśheṣhataḥ",
+                "sanskrit_te": "ఛేత్తుమర్హస్యశేషతః త్వదన్యః",
+                "en": "Krishna to dispel you can",
+                "te": "This doubt of mine, for"
+            },
+            {
+                "sanskrit": "संशयस्यास्य छेत्ता",
+                "word": "tvad anyaḥ sanśhayasyāsya",
+                "transliteration": "tvad anyaḥ sanśhayasyāsya",
+                "sanskrit_te": "సంశయస్యాస్య ఛేత్తా",
+                "en": "Other doubt",
+                "te": "There is no other remover"
+            },
+            {
+                "sanskrit": "न ह्युपपद्यते",
+                "word": "chhettā na hyupapadyate",
+                "transliteration": "chhettā na hyupapadyate",
+                "sanskrit_te": "న హ్యుపపద్యతే",
+                "en": "To dispel never is fit",
+                "te": "Of this doubt than you."
             }
         ]
     },
@@ -2614,28 +3206,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "శ్రీ భగవానువాచ పార్థ నైవేహ నాముత్ర వినాశస్తస్య విద్యతే |\nనహి కల్యాణకృత్కశ్ిచద్దుర్గతిం తాత గచ్ఛతి",
         "lineBreakdown": [
             {
-                "sanskrit": "श्री भगवानुवाच पार्थ नैवेह नामुत्र विनाशस्तस्य विद्यते",
-                "word": "śhrī bhagavān uvācha",
-                "transliteration": "śhrī bhagavān uvācha",
-                "sanskrit_te": "శ్రీ భగవానువాచ పార్థ నైవేహ నాముత్ర వినాశస్తస్య విద్యతే",
-                "en": "The Supreme Lord said",
-                "te": "The Supreme Lord said"
+                "sanskrit": "श्री भगवानुवाच पार्थ",
+                "word": "śhrī bhagavān uvācha pārtha naiveha",
+                "transliteration": "śhrī bhagavān uvācha pārtha naiveha",
+                "sanskrit_te": "శ్రీ భగవానువాచ పార్థ",
+                "en": "The Supreme Lord said Arjun, the son of Pritha",
+                "te": "The Lord said, \"Neither here in this world"
             },
             {
-                "sanskrit": "नहि कल्याणकृत्कश्िचद्दुर्गतिं तात गच्छति",
-                "word": "pārtha naiveha nāmutra vināśhas tasya vidyate",
-                "transliteration": "pārtha naiveha nāmutra vināśhas tasya vidyate",
-                "sanskrit_te": "నహి కల్యాణకృత్కశ్ిచద్దుర్గతిం తాత గచ్ఛతి",
-                "en": "Arjun, the son of Pritha in the next world destruction his exists",
-                "te": "Arjun, the son of Pritha in the next world destruction his exists"
+                "sanskrit": "नैवेह नामुत्र विनाशस्तस्य",
+                "word": "nāmutra vināśhas tasya vidyate",
+                "transliteration": "nāmutra vināśhas tasya vidyate",
+                "sanskrit_te": "నైవేహ నాముత్ర వినాశస్తస్య",
+                "en": "In the next world destruction his exists",
+                "te": "Nor there in the next is there destruction"
             },
             {
-                "sanskrit": "नहि कल्याणकृत्कश्िचद्दुर्गतिं तात गच्छति",
-                "word": "na hi kalyāṇa-kṛit kaśhchid durgatiṁ tāta gachchhati",
-                "transliteration": "na hi kalyāṇa-kṛit kaśhchid durgatiṁ tāta gachchhati",
-                "sanskrit_te": "నహి కల్యాణకృత్కశ్ిచద్దుర్గతిం తాత గచ్ఛతి",
-                "en": "Never certainly one who strives for God-realization anyone evil destination my friend goes",
-                "te": "Never certainly one who strives for God-realization anyone evil destination my friend goes"
+                "sanskrit": "विद्यते नहि कल्याणकृत्कश्िचद्दुर्गतिं",
+                "word": "na hi kalyāṇa kṛit",
+                "transliteration": "na hi kalyāṇa kṛit",
+                "sanskrit_te": "విద్యతే నహి కల్యాణకృత్కశ్ిచద్దుర్గతిం",
+                "en": "Never certainly one who strives for God-realization",
+                "te": "For him. For no one who does"
+            },
+            {
+                "sanskrit": "तात गच्छति",
+                "word": "kaśhchid durgatiṁ tāta gachchhati",
+                "transliteration": "kaśhchid durgatiṁ tāta gachchhati",
+                "sanskrit_te": "తాత గచ్ఛతి",
+                "en": "Anyone evil destination my friend goes",
+                "te": "Good ever comes to an evil end.\""
             }
         ]
     },
@@ -2687,20 +3287,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ప్రాప్య పుణ్యకృతాం లోకానుషిత్వా శాశ్వతీః సమాః |\nశుచీనాం శ్రీమతాం గేహే యోగభ్రష్టోఽభిజాయతే",
         "lineBreakdown": [
             {
-                "sanskrit": "प्राप्य पुण्यकृतां लोकानुषित्वा शाश्वतीः समाः",
-                "word": "prāpya puṇya-kṛitāṁ lokān uṣhitvā śhāśhvatīḥ samāḥ",
-                "transliteration": "prāpya puṇya-kṛitāṁ lokān uṣhitvā śhāśhvatīḥ samāḥ",
-                "sanskrit_te": "ప్రాప్య పుణ్యకృతాం లోకానుషిత్వా శాశ్వతీః సమాః",
-                "en": "Attain of the virtuous abodes after dwelling many ages",
-                "te": "Attain of the virtuous abodes after dwelling many ages"
+                "sanskrit": "प्राप्य पुण्यकृतां लोकानुषित्वा",
+                "word": "prāpya puṇya kṛitāṁ",
+                "transliteration": "prāpya puṇya kṛitāṁ",
+                "sanskrit_te": "ప్రాప్య పుణ్యకృతాం లోకానుషిత్వా",
+                "en": "Attain of the virtuous",
+                "te": "He who has fallen away from Yoga is born"
             },
             {
-                "sanskrit": "शुचीनां श्रीमतां गेहे योगभ्रष्टोऽभिजायते",
-                "word": "śhuchīnāṁ śhrīmatāṁ gehe yoga-bhraṣhṭo’bhijāyate",
-                "transliteration": "śhuchīnāṁ śhrīmatāṁ gehe yoga-bhraṣhṭo’bhijāyate",
-                "sanskrit_te": "శుచీనాం శ్రీమతాం గేహే యోగభ్రష్టోఽభిజాయతే",
-                "en": "Of the pious of the prosperous in the house the unsuccessful yogis",
-                "te": "Of the pious of the prosperous in the house the unsuccessful yogis"
+                "sanskrit": "शाश्वतीः समाः",
+                "word": "lokān uṣhitvā śhāśhvatīḥ",
+                "transliteration": "lokān uṣhitvā śhāśhvatīḥ",
+                "sanskrit_te": "శాశ్వతీః సమాః",
+                "en": "Abodes after dwelling many",
+                "te": "Again in the house of the pure and prosperous,"
+            },
+            {
+                "sanskrit": "शुचीनां श्रीमतां",
+                "word": "samāḥ śhuchīnāṁ śhrīmatāṁ",
+                "transliteration": "samāḥ śhuchīnāṁ śhrīmatāṁ",
+                "sanskrit_te": "శుచీనాం శ్రీమతాం",
+                "en": "Ages of the pious of the prosperous",
+                "te": "Having attained to the worlds of doers of good"
+            },
+            {
+                "sanskrit": "गेहे योगभ्रष्टोऽभिजायते",
+                "word": "gehe yoga bhraṣhṭo’bhijāyate",
+                "transliteration": "gehe yoga bhraṣhṭo’bhijāyate",
+                "sanskrit_te": "గేహే యోగభ్రష్టోఽభిజాయతే",
+                "en": "In the house the unsuccessful yogis",
+                "te": "Deeds and dwelled there for many long years."
             }
         ]
     },
@@ -2752,20 +3368,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "అథవా యోగినామేవ కులే భవతి ధీమతామ్ |\nఏతద్ధి దుర్లభతరం లోకే జన్మ యదీదృశమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "अथवा योगिनामेव कुले भवति धीमताम्",
-                "word": "atha vā yoginām eva kule bhavati dhīmatām",
-                "transliteration": "atha vā yoginām eva kule bhavati dhīmatām",
-                "sanskrit_te": "అథవా యోగినామేవ కులే భవతి ధీమతామ్",
-                "en": "Else of those endowed with divine wisdom certainly in the family take birth",
-                "te": "Else of those endowed with divine wisdom certainly in the family take birth"
+                "sanskrit": "अथवा योगिनामेव कुले",
+                "word": "atha vā yoginām eva",
+                "transliteration": "atha vā yoginām eva",
+                "sanskrit_te": "అథవా యోగినామేవ కులే",
+                "en": "Else of those endowed with divine wisdom certainly",
+                "te": "Or he is born into"
             },
             {
-                "sanskrit": "एतद्धि दुर्लभतरं लोके जन्म यदीदृशम्",
-                "word": "etad dhi durlabhataraṁ loke janma yad īdṛiśham",
-                "transliteration": "etad dhi durlabhataraṁ loke janma yad īdṛiśham",
-                "sanskrit_te": "ఏతద్ధి దుర్లభతరం లోకే జన్మ యదీదృశమ్",
-                "en": "Of the wise very rare in this world birth like this",
-                "te": "Of the wise very rare in this world birth like this"
+                "sanskrit": "भवति धीमताम् एतद्धि",
+                "word": "kule bhavati dhīmatām etad",
+                "transliteration": "kule bhavati dhīmatām etad",
+                "sanskrit_te": "భవతి ధీమతామ్ ఏతద్ధి",
+                "en": "In the family take birth",
+                "te": "A family of wise yogis."
+            },
+            {
+                "sanskrit": "दुर्लभतरं लोके",
+                "word": "dhi durlabhataraṁ loke",
+                "transliteration": "dhi durlabhataraṁ loke",
+                "sanskrit_te": "దుర్లభతరం లోకే",
+                "en": "Of the wise very rare in this world",
+                "te": "But such a birth in"
+            },
+            {
+                "sanskrit": "जन्म यदीदृशम्",
+                "word": "janma yad īdṛiśham",
+                "transliteration": "janma yad īdṛiśham",
+                "sanskrit_te": "జన్మ యదీదృశమ్",
+                "en": "Birth like this",
+                "te": "This world is rare."
             }
         ]
     },
@@ -2817,20 +3449,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "తత్ర తం బుద్ధిసంయోగం లభతే పౌర్వదేహికమ్ |\nయతతే చ తతో భూయః సంసిద్ధౌ కురునన్దన",
         "lineBreakdown": [
             {
-                "sanskrit": "तत्र तं बुद्धिसंयोगं लभते पौर्वदेहिकम्",
-                "word": "tatra taṁ buddhi-sanyogaṁ labhate paurva-dehikam",
-                "transliteration": "tatra taṁ buddhi-sanyogaṁ labhate paurva-dehikam",
-                "sanskrit_te": "తత్ర తం బుద్ధిసంయోగం లభతే పౌర్వదేహికమ్",
-                "en": "There that reawaken their wisdom obtains from the previous lives",
-                "te": "There that reawaken their wisdom obtains from the previous lives"
+                "sanskrit": "तत्र तं बुद्धिसंयोगं",
+                "word": "tatra taṁ buddhi sanyogaṁ",
+                "transliteration": "tatra taṁ buddhi sanyogaṁ",
+                "sanskrit_te": "తత్ర తం బుద్ధిసంయోగం",
+                "en": "There that reawaken their wisdom",
+                "te": "There"
             },
             {
-                "sanskrit": "यतते च ततो भूयः संसिद्धौ कुरुनन्दन",
-                "word": "yatate cha tato bhūyaḥ sansiddhau kuru-nandana",
-                "transliteration": "yatate cha tato bhūyaḥ sansiddhau kuru-nandana",
-                "sanskrit_te": "యతతే చ తతో భూయః సంసిద్ధౌ కురునన్దన",
-                "en": "Strives and again for perfection Arjun, descendant of the Kurus",
-                "te": "Strives and again for perfection Arjun, descendant of the Kurus"
+                "sanskrit": "लभते पौर्वदेहिकम् यतते",
+                "word": "labhate paurva dehikam yatate",
+                "transliteration": "labhate paurva dehikam yatate",
+                "sanskrit_te": "లభతే పౌర్వదేహికమ్ యతతే",
+                "en": "Obtains from the previous lives strives",
+                "te": "O Arjuna"
+            },
+            {
+                "sanskrit": "च ततो भूयः",
+                "word": "cha tato bhūyaḥ",
+                "transliteration": "cha tato bhūyaḥ",
+                "sanskrit_te": "చ తతో భూయః",
+                "en": "And again",
+                "te": "He regains the disposition of mind that he had in his former body"
+            },
+            {
+                "sanskrit": "संसिद्धौ कुरुनन्दन",
+                "word": "sansiddhau kuru nandana",
+                "transliteration": "sansiddhau kuru nandana",
+                "sanskrit_te": "సంసిద్ధౌ కురునన్దన",
+                "en": "For perfection Arjun, descendant of the Kurus",
+                "te": "And from there he strives even more for success in Yoga."
             }
         ]
     },
@@ -2882,20 +3530,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "పూర్వాభ్యాసేన తేనైవ హ్రియతే హ్యవశోఽపి సః |\nజిజ్ఞాసురపి యోగస్య శబ్దబ్రహ్మాతివర్తతే",
         "lineBreakdown": [
             {
-                "sanskrit": "पूर्वाभ्यासेन तेनैव ह्रियते ह्यवशोऽपि सः",
-                "word": "pūrvābhyāsena tenaiva hriyate hyavaśho ’pi saḥ",
-                "transliteration": "pūrvābhyāsena tenaiva hriyate hyavaśho ’pi saḥ",
-                "sanskrit_te": "పూర్వాభ్యాసేన తేనైవ హ్రియతే హ్యవశోఽపి సః",
-                "en": "Past by that is attracted that person",
-                "te": "Past by that is attracted that person"
+                "sanskrit": "पूर्वाभ्यासेन तेनैव",
+                "word": "pūrvābhyāsena tenaiva hriyate",
+                "transliteration": "pūrvābhyāsena tenaiva hriyate",
+                "sanskrit_te": "పూర్వాభ్యాసేన తేనైవ",
+                "en": "Past by that is attracted",
+                "te": "By the power of his earlier practice, he"
             },
             {
-                "sanskrit": "जिज्ञासुरपि योगस्य शब्दब्रह्मातिवर्तते",
-                "word": "jijñāsur api yogasya śhabda-brahmātivartate",
-                "transliteration": "jijñāsur api yogasya śhabda-brahmātivartate",
-                "sanskrit_te": "జిజ్ఞాసురపి యోగస్య శబ్దబ్రహ్మాతివర్తతే",
-                "en": "Inquisitive although about yog fruitive portion of the Vedas",
-                "te": "Inquisitive although about yog fruitive portion of the Vedas"
+                "sanskrit": "ह्रियते ह्यवशोऽपि",
+                "word": "hyavaśho ’pi saḥ",
+                "transliteration": "hyavaśho ’pi saḥ",
+                "sanskrit_te": "హ్రియతే హ్యవశోఽపి",
+                "en": "Is carried forward even against his will. Even",
+                "te": "Is carried forward even against his will. Even"
+            },
+            {
+                "sanskrit": "सः जिज्ञासुरपि",
+                "word": "jijñāsur api yogasya",
+                "transliteration": "jijñāsur api yogasya",
+                "sanskrit_te": "సః జిజ్ఞాసురపి",
+                "en": "Inquisitive although about yog",
+                "te": "Though he is an enquirer about Yoga, he"
+            },
+            {
+                "sanskrit": "योगस्य शब्दब्रह्मातिवर्तते",
+                "word": "śhabda brahmātivartate",
+                "transliteration": "śhabda brahmātivartate",
+                "sanskrit_te": "యోగస్య శబ్దబ్రహ్మాతివర్తతే",
+                "en": "Transcends the Sabda Brahman, i.e., Prakṛti or matter.",
+                "te": "Transcends the Sabda Brahman, i.e., Prakṛti or matter."
             }
         ]
     },
@@ -2947,20 +3611,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "ప్రయత్నాద్యతమానస్తు యోగీ సంశుద్ధకిల్బిషః |\nఅనేకజన్మసంసిద్ధస్తతో యాతి పరాం గతిమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "प्रयत्नाद्यतमानस्तु योगी संशुद्धकिल्बिषः",
-                "word": "prayatnād yatamānas tu yogī sanśhuddha-kilbiṣhaḥ",
-                "transliteration": "prayatnād yatamānas tu yogī sanśhuddha-kilbiṣhaḥ",
-                "sanskrit_te": "ప్రయత్నాద్యతమానస్తు యోగీ సంశుద్ధకిల్బిషః",
-                "en": "With great effort endeavoring and a yogi purified from material desires",
-                "te": "With great effort endeavoring and a yogi purified from material desires"
+                "sanskrit": "प्रयत्नाद्यतमानस्तु योगी",
+                "word": "prayatnād yatamānas tu yogī",
+                "transliteration": "prayatnād yatamānas tu yogī",
+                "sanskrit_te": "ప్రయత్నాద్యతమానస్తు యోగీ",
+                "en": "With great effort endeavoring and a yogi",
+                "te": "But the yogi"
             },
             {
-                "sanskrit": "अनेकजन्मसंसिद्धस्ततो याति परां गतिम्",
-                "word": "aneka-janma-sansiddhas tato yāti parāṁ gatim",
-                "transliteration": "aneka-janma-sansiddhas tato yāti parāṁ gatim",
-                "sanskrit_te": "అనేకజన్మసంసిద్ధస్తతో యాతి పరాం గతిమ్",
-                "en": "After many, many births attain perfection attains the highest path",
-                "te": "After many, many births attain perfection attains the highest path"
+                "sanskrit": "संशुद्धकिल्बिषः अनेकजन्मसंसिद्धस्ततो",
+                "word": "sanśhuddha kilbiṣhaḥ aneka",
+                "transliteration": "sanśhuddha kilbiṣhaḥ aneka",
+                "sanskrit_te": "సంశుద్ధకిల్బిషః అనేకజన్మసంసిద్ధస్తతో",
+                "en": "Purified from material desires after many, many",
+                "te": "Striving earnestly"
+            },
+            {
+                "sanskrit": "याति परां",
+                "word": "janma sansiddhas tato",
+                "transliteration": "janma sansiddhas tato",
+                "sanskrit_te": "యాతి పరాం",
+                "en": "Births attain perfection",
+                "te": "Cleansed of all his stains and perfected through many births"
+            },
+            {
+                "sanskrit": "गतिम्",
+                "word": "yāti parāṁ gatim",
+                "transliteration": "yāti parāṁ gatim",
+                "sanskrit_te": "గతిమ్",
+                "en": "Attains the highest path",
+                "te": "Reaches the supreme state."
             }
         ]
     },
@@ -3012,36 +3692,36 @@ const CHAPTER_6_SHLOKAS = {
         "telugu_script": "తపస్విభ్యోఽధికో యోగీ జ్ఞానిభ్యోఽపి మతోఽధికః |\nకర్మిభ్యశ్చాధికో యోగీ తస్మాద్యోగీ భవార్జున",
         "lineBreakdown": [
             {
-                "sanskrit": "तपस्विभ्योऽधिको योगी ज्ञानिभ्योऽपि मतोऽधिकः",
+                "sanskrit": "तपस्विभ्योऽधिको योगी",
                 "word": "tapasvibhyo ’dhiko yogī",
                 "transliteration": "tapasvibhyo ’dhiko yogī",
-                "sanskrit_te": "తపస్విభ్యోఽధికో యోగీ జ్ఞానిభ్యోఽపి మతోఽధికః",
+                "sanskrit_te": "తపస్విభ్యోఽధికో యోగీ",
                 "en": "Than the ascetics a yogi",
-                "te": "Than the ascetics a yogi"
+                "te": "Greater than the ascetics, greater than"
             },
             {
-                "sanskrit": "कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन",
+                "sanskrit": "ज्ञानिभ्योऽपि मतोऽधिकः",
                 "word": "jñānibhyo ’pi mato ’dhikaḥ",
                 "transliteration": "jñānibhyo ’pi mato ’dhikaḥ",
-                "sanskrit_te": "కర్మిభ్యశ్చాధికో యోగీ తస్మాద్యోగీ భవార్జున",
-                "en": "Than the persons of learning",
-                "te": "Than the persons of learning"
+                "sanskrit_te": "జ్ఞానిభ్యోఽపి మతోఽధికః",
+                "en": "Those who possess knowledge, greater than",
+                "te": "Those who possess knowledge, greater than"
             },
             {
-                "sanskrit": "कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन",
+                "sanskrit": "कर्मिभ्यश्चाधिको योगी",
                 "word": "karmibhyaśh chādhiko yogī",
                 "transliteration": "karmibhyaśh chādhiko yogī",
-                "sanskrit_te": "కర్మిభ్యశ్చాధికో యోగీ తస్మాద్యోగీ భవార్జున",
+                "sanskrit_te": "కర్మిభ్యశ్చాధికో యోగీ",
                 "en": "Than the ritualistic performers a yogi",
-                "te": "Than the ritualistic performers a yogi"
+                "te": "The ritualists is the Yogin. Therefore,"
             },
             {
-                "sanskrit": "कर्मिभ्यश्चाधिको योगी तस्माद्योगी भवार्जुन",
+                "sanskrit": "तस्माद्योगी भवार्जुन",
                 "word": "tasmād yogī bhavārjuna",
                 "transliteration": "tasmād yogī bhavārjuna",
-                "sanskrit_te": "కర్మిభ్యశ్చాధికో యోగీ తస్మాద్యోగీ భవార్జున",
+                "sanskrit_te": "తస్మాద్యోగీ భవార్జున",
                 "en": "Therefore a yogi just become",
-                "te": "Therefore a yogi just become"
+                "te": "O Arjuna, become a Yogin."
             }
         ]
     },
@@ -3094,19 +3774,35 @@ const CHAPTER_6_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "योगिनामपि सर्वेषां मद्गतेनान्तरात्मना",
-                "word": "yoginām api sarveṣhāṁ mad-gatenāntar-ātmanā",
-                "transliteration": "yoginām api sarveṣhāṁ mad-gatenāntar-ātmanā",
+                "word": "yoginām api sarveṣhāṁ mad",
+                "transliteration": "yoginām api sarveṣhāṁ mad",
                 "sanskrit_te": "యోగినామపి సర్వేషాం మద్గతేనాన్తరాత్మనా",
-                "en": "Of all yogis however all types of with the mind",
-                "te": "Of all yogis however all types of with the mind"
+                "en": "Of all yogis however all types of",
+                "te": "He who, with faith, worships Me,"
             },
             {
-                "sanskrit": "श्रद्धावान्भजते यो मां स मे युक्ततमो मतः",
-                "word": "śhraddhāvān bhajate yo māṁ sa me yuktatamo mataḥ",
-                "transliteration": "śhraddhāvān bhajate yo māṁ sa me yuktatamo mataḥ",
-                "sanskrit_te": "శ్రద్ధావాన్భజతే యో మాం స మే యుక్తతమో మతః",
-                "en": "With great faith engage in devotion to me he by me the highest yogi is considered",
-                "te": "With great faith engage in devotion to me he by me the highest yogi is considered"
+                "sanskrit": "श्रद्धावान्भजते यो मां",
+                "word": "gatenāntar ātmanā śhraddhāvān bhajate",
+                "transliteration": "gatenāntar ātmanā śhraddhāvān bhajate",
+                "sanskrit_te": "శ్రద్ధావాన్భజతే యో మాం",
+                "en": "With the mind with great faith engage in devotion",
+                "te": "And whose innermost self is fixed"
+            },
+            {
+                "sanskrit": "स मे",
+                "word": "yo māṁ sa",
+                "transliteration": "yo māṁ sa",
+                "sanskrit_te": "స మే",
+                "en": "To me he",
+                "te": "In Me, I consider him to"
+            },
+            {
+                "sanskrit": "युक्ततमो मतः",
+                "word": "me yuktatamo mataḥ",
+                "transliteration": "me yuktatamo mataḥ",
+                "sanskrit_te": "యుక్తతమో మతః",
+                "en": "By me the highest yogi is considered",
+                "te": "Be the greatest of the Yogins."
             }
         ]
     }

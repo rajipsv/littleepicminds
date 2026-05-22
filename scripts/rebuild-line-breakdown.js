@@ -10,8 +10,15 @@ const ROOT = path.join(__dirname, '..');
 const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
 const LIB_DATA = path.join(ROOT, 'lib', 'data');
 const VERSE_FILE = path.join(__dirname, 'data', 'gita-verse.json');
+const TE_CACHE_FILE = path.join(__dirname, 'data', 'line-te-cache.json');
 
 const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+
+function loadTeCache() {
+  if (!fs.existsSync(TE_CACHE_FILE)) return null;
+  const obj = JSON.parse(fs.readFileSync(TE_CACHE_FILE, 'utf8'));
+  return new Map(Object.entries(obj));
+}
 
 let verseIndex = null;
 if (fs.existsSync(VERSE_FILE)) {
@@ -48,6 +55,7 @@ function mirrorToLib(ch) {
 function main() {
   let total = 0;
   let changed = 0;
+  const teCache = loadTeCache();
 
   for (const chMeta of chaptersConfig.chapters) {
     const ch = chMeta.id;
@@ -67,6 +75,8 @@ function main() {
         word_meanings: source?.word_meanings,
         existingBreakdown: shloka.lineBreakdown,
         fallbackMeaning: shloka.en?.meaning,
+        fallbackMeaningTe: shloka.te?.meaning,
+        teCache,
       });
 
       const after = shloka.lineBreakdown.length;

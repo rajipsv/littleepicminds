@@ -19,6 +19,14 @@ const speakLine = (text, lang = 'en') => {
   window.speechSynthesis.speak(utterance);
 };
 
+const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
+
+const lineMeaning = (item, isTe) => {
+  if (!isTe) return item.en || item.meaning;
+  if (hasTeluguText(item.te)) return item.te;
+  return item.en || item.meaning;
+};
+
 /** Roman/Telugu line for TTS — Devanagari sounds unnatural on most TTS engines. */
 const ttsLineText = (item, isTe) => {
   if (isTe && item.sanskrit_te) return item.sanskrit_te;
@@ -87,7 +95,7 @@ const MeaningTable = ({ wordByWord }) => {
           <tbody className="bg-white/5 divide-y divide-white/5">
             {wordByWord.map((item, index) => {
               const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-              const meaning = isTe && item.te ? item.te : item.en || item.meaning;
+              const meaning = lineMeaning(item, isTe);
               const isPlaying = playingIndex === index;
 
               return (
@@ -121,7 +129,7 @@ const MeaningTable = ({ wordByWord }) => {
       <div className="md:hidden space-y-3">
         {wordByWord.map((item, index) => {
           const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-          const meaning = isTe && item.te ? item.te : item.en || item.meaning;
+          const meaning = lineMeaning(item, isTe);
           const isPlaying = playingIndex === index;
 
           return (
