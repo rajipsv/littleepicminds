@@ -4,7 +4,7 @@
  * - themes for seeds, seekers, warriors (themes_*.json)
  *
  * Preserves existing rich content for chapters 1, 2, 15 (themes + shlokas).
- * Syncs api/data/chapters/chapter1.js → backend when api version is larger.
+ * Syncs lib/data/chapters/chapter1.js → backend when lib version is larger.
  */
 const fs = require('fs');
 const path = require('path');
@@ -12,7 +12,7 @@ const vm = require('vm');
 
 const ROOT = path.join(__dirname, '..');
 const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const API_DATA = path.join(ROOT, 'api', 'data');
+const LIB_DATA = path.join(ROOT, 'lib', 'data');
 const BLUEPRINTS = require('./gita-chapter-blueprints');
 const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
 
@@ -49,14 +49,14 @@ function loadAllExistingShlokas() {
 }
 
 function syncApiChapter1() {
-  const apiCh1 = path.join(API_DATA, 'chapters', 'chapter1.js');
+  const libCh1 = path.join(LIB_DATA, 'chapters', 'chapter1.js');
   const backendCh1 = path.join(BACKEND_DATA, 'chapters', 'chapter1.js');
-  if (!fs.existsSync(apiCh1)) return;
-  const apiKeys = Object.keys(loadJsModule(apiCh1));
+  if (!fs.existsSync(libCh1)) return;
+  const libKeys = Object.keys(loadJsModule(libCh1));
   const backendKeys = fs.existsSync(backendCh1) ? Object.keys(loadJsModule(backendCh1)) : [];
-  if (apiKeys.length >= backendKeys.length) {
-    fs.copyFileSync(apiCh1, backendCh1);
-    console.log(`✅ Synced api chapter1.js → backend (${apiKeys.length} shlokas)`);
+  if (libKeys.length >= backendKeys.length) {
+    fs.copyFileSync(libCh1, backendCh1);
+    console.log(`✅ Synced lib chapter1.js → backend (${libKeys.length} shlokas)`);
   }
 }
 
@@ -254,15 +254,15 @@ function main() {
   fs.writeFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), JSON.stringify(themesSeekers, null, 2), 'utf-8');
   fs.writeFileSync(path.join(BACKEND_DATA, 'themes_warriors.json'), JSON.stringify(themesWarriors, null, 2), 'utf-8');
 
-  // Mirror to api/data for deploy parity
-  if (fs.existsSync(API_DATA)) {
-    fs.mkdirSync(path.join(API_DATA, 'chapters'), { recursive: true });
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), path.join(API_DATA, 'themes_seeds.json'));
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), path.join(API_DATA, 'themes_seekers.json'));
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_warriors.json'), path.join(API_DATA, 'themes_warriors.json'));
+  // Mirror to lib/data (Vercel bundles via includeFiles, not /api)
+  if (fs.existsSync(LIB_DATA)) {
+    fs.mkdirSync(path.join(LIB_DATA, 'chapters'), { recursive: true });
+    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), path.join(LIB_DATA, 'themes_seeds.json'));
+    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), path.join(LIB_DATA, 'themes_seekers.json'));
+    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_warriors.json'), path.join(LIB_DATA, 'themes_warriors.json'));
     for (let ch = 1; ch <= 18; ch++) {
       const src = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
-      if (fs.existsSync(src)) fs.copyFileSync(src, path.join(API_DATA, 'chapters', `chapter${ch}.js`));
+      if (fs.existsSync(src)) fs.copyFileSync(src, path.join(LIB_DATA, 'chapters', `chapter${ch}.js`));
     }
   }
 

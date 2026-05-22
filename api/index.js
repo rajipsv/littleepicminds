@@ -51,7 +51,7 @@ const adminAuth = (req, res, next) => {
 // --- DATA LOADING ---
 let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: {} };
 try {
-  data = require('./data');
+  data = require('../lib/data');
 } catch (e) {
   console.warn('Could not load static data:', e.message);
 }

@@ -228,14 +228,14 @@ function main() {
     console.log(`✅ Chapter ${ch}: ${chMeta.count} verses written`);
   }
 
-  // Mirror to api/data
-  const apiCh = path.join(ROOT, 'api', 'data', 'chapters');
-  if (fs.existsSync(path.join(ROOT, 'api', 'data'))) {
-    fs.mkdirSync(apiCh, { recursive: true });
+  // Mirror to lib/data (not under /api — Vercel Hobby 12-function limit)
+  const libCh = path.join(ROOT, 'lib', 'data', 'chapters');
+  if (fs.existsSync(path.join(ROOT, 'lib', 'data'))) {
+    fs.mkdirSync(libCh, { recursive: true });
     for (const chMeta of chaptersConfig.chapters) {
       const src = path.join(BACKEND_DATA, 'chapters', `chapter${chMeta.id}.js`);
       if (fs.existsSync(src)) {
-        fs.copyFileSync(src, path.join(apiCh, `chapter${chMeta.id}.js`));
+        fs.copyFileSync(src, path.join(libCh, `chapter${chMeta.id}.js`));
       }
     }
   }
