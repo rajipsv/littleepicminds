@@ -8,12 +8,16 @@
         "emoji": "⚔️",
         "micro_theme": "Observe the full picture before you act",
         "micro_theme_te": "చర్య తీసుకునే ముందు పూర్తి చిత్రాన్ని గమనించండి",
-        "shlokas": ["1.1", "1.20", "1.21"],
+        "shlokas": [
+          "1.1",
+          "1.20",
+          "1.21"
+        ],
         "story": {
           "title": "The Captain's Survey",
           "title_te": "కెప్టెన్ సర్వే",
           "content": "Before the championship final, the captain didn't just run onto the court. He stood at the entrance, studied the whole field, noted where each opponent stood, and then decided where to position his team. Arjuna did the same — he asked Krishna to drive the chariot between the two armies so he could observe everyone clearly. A wise leader always understands the full situation before making a single move.",
-          "content_te": "ఛాంపియన్‌షిప్ ఫైనల్‌కు ముందు, కెప్టెన్ వేగంగా మైదానంలోకి పరిగెత్తలేదు. అతను ప్రవేశద్వారంలో నిలబడి, మొత్తం మైదానాన్ని పరిశీలించాడు, ప్రతి ప్రత్యర్థి ఎక్కడ నిలుచున్నాడో గమనించాడు, ఆపై తన జట్టును ఎక్కడ ఉంచాలో నిర్ణయించాడు. అర్జున్ కూడా అదే చేశాడు — అందరినీ స్పష్టంగా చూడడానికి రెండు సైన్యాల మధ్య రథాన్ని నడపమని కృష్ణుడిని అడిగాడు. తెలివైన నాయకుడు ఒక్క అడుగు వేయడానికి ముందే పూర్తి పరిస్థితిని అర్థం చేసుకుంటాడు.",
+          "content_te": "ఛాంపియన్షిప్ ఫైనల్కు ముందు, కెప్టెన్ వేగంగా మైదానంలోకి పరిగెత్తలేదు. అతను ప్రవేశద్వారంలో నిలబడి, మొత్తం మైదానాన్ని పరిశీలించాడు, ప్రతి ప్రత్యర్థి ఎక్కడ నిలుచున్నాడో గమనించాడు, ఆపై తన జట్టును ఎక్కడ ఉంచాలో నిర్ణయించాడు. అర్జున్ కూడా అదే చేశాడు — అందరినీ స్పష్టంగా చూడడానికి రెండు సైన్యాల మధ్య రథాన్ని నడపమని కృష్ణుడిని అడిగాడు. తెలివైన నాయకుడు ఒక్క అడుగు వేయడానికి ముందే పూర్తి పరిస్థితిని అర్థం చేసుకుంటాడు.",
           "moral": "A wise person always surveys the full situation before acting — not just their own side.",
           "moral_te": "తెలివైన వ్యక్తి చర్య తీసుకునే ముందు ఎల్లప్పుడూ పూర్తి పరిస్థితిని పరిశీలిస్తాడు — తన పక్కను మాత్రమే కాదు."
         },
@@ -28,12 +32,16 @@
         "emoji": "😰",
         "micro_theme": "Strong emotions can cloud even the bravest mind",
         "micro_theme_te": "బలమైన భావాలు అత్యంత ధైర్యవంతుని మనసును కూడా మబ్బుగా చేయగలవు",
-        "shlokas": ["1.28", "1.29", "1.32"],
+        "shlokas": [
+          "1.28",
+          "1.29",
+          "1.32"
+        ],
         "story": {
           "title": "The Shaking Champion",
           "title_te": "వణుకుతున్న చాంపియన్",
           "content": "Priya was the school's best public speaker. But when she walked on stage for the district finals and saw her mother in the audience — and remembered her mother was unwell — she froze. Her hands shook. Her voice cracked. She couldn't remember why winning even mattered anymore. Arjuna felt the same way. Seeing his beloved grandfather and teacher on the opposite side, his whole body trembled and he asked: 'What is the point of victory if everyone I love suffers?'",
-          "content_te": "ప్రియ పాఠశాలలో అత్యుత్తమ వక్త. కానీ జిల్లా ఫైనల్‌కు వేదికపై నడుస్తూ ప్రేక్షకుల్లో తన తల్లిని చూసినప్పుడు — మరియు తల్లి అనారోగ్యంగా ఉందని గుర్తొచ్చినప్పుడు — ఆమె నిలబడిపోయింది. ఆమె చేతులు వణికాయి. గొంతు పగిలింది. గెలవడం ఇంకా ఎందుకు ముఖ్యమో గుర్తు రాలేదు. అర్జున్ కూడా అదే అనుభవించాడు. వ్యతిరేక పక్షంలో తన ప్రియమైన తాతయ్యను మరియు గురువును చూసి, అతని శరీరం మొత్తం వణికింది మరియు అడిగాడు: 'నేను ప్రేమించే వారందరూ బాధపడతే గెలుపు అంటే ఏమిటి?'",
+          "content_te": "ప్రియ పాఠశాలలో అత్యుత్తమ వక్త. కానీ జిల్లా ఫైనల్కు వేదికపై నడుస్తూ ప్రేక్షకుల్లో తన తల్లిని చూసినప్పుడు — మరియు తల్లి అనారోగ్యంగా ఉందని గుర్తొచ్చినప్పుడు — ఆమె నిలబడిపోయింది. ఆమె చేతులు వణికాయి. గొంతు పగిలింది. గెలవడం ఇంకా ఎందుకు ముఖ్యమో గుర్తు రాలేదు. అర్జున్ కూడా అదే అనుభవించాడు. వ్యతిరేక పక్షంలో తన ప్రియమైన తాతయ్యను మరియు గురువును చూసి, అతని శరీరం మొత్తం వణికింది మరియు అడిగాడు: 'నేను ప్రేమించే వారందరూ బాధపడతే గెలుపు అంటే ఏమిటి?'",
           "moral": "Your body reacts to what your mind feels. When emotions are too strong, step back and breathe before deciding anything.",
           "moral_te": "మీ మనసు ఏమి అనుభవిస్తుందో మీ శరీరం దానికి స్పందిస్తుంది. భావాలు చాలా బలంగా ఉన్నప్పుడు, ఏదైనా నిర్ణయించే ముందు వెనక్కి అడుగు వేసి శ్వాస తీసుకోండి."
         },
@@ -48,12 +56,16 @@
         "emoji": "🪑",
         "micro_theme": "Asking for help is wisdom, not weakness",
         "micro_theme_te": "సహాయం అడగడం జ్ఞానం, బలహీనత కాదు",
-        "shlokas": ["1.35", "1.46", "1.47"],
+        "shlokas": [
+          "1.35",
+          "1.46",
+          "1.47"
+        ],
         "story": {
           "title": "The Unexpected Surrender",
           "title_te": "ఊహించని లొంగుబాటు",
           "content": "In the middle of a chess tournament, the top-ranked player suddenly stopped, pushed the board away and said, 'I don't want to play anymore. There's no point.' Everyone was shocked. But his coach saw something different — this breakdown was actually the moment the student was ready to truly learn. Sometimes complete surrender is the beginning of real wisdom. Arjuna dropped his bow, sat in the back of his chariot, and turned to Krishna saying, 'Please teach me.' That question changed everything.",
-          "content_te": "చదరంగం పోటీ మధ్యలో, అత్యున్నత స్థాయి ఆటగాడు అకస్మాత్తుగా ఆగిపోయి, బోర్డ్‌ను తోసివేసి అన్నాడు, 'ఇంక ఆడాలని లేదు. ఇందులో అర్థం లేదు.' అందరూ నివ్వెరపోయారు. కానీ అతని కోచ్ వేరుగా చూశాడు — ఈ విచ్ఛిన్నం వాస్తవంగా విద్యార్థి నిజంగా నేర్చుకోవడానికి సిద్ధంగా ఉన్న క్షణం. కొన్నిసార్లు పూర్తి లొంగుబాటు నిజమైన జ్ఞానం యొక్క ప్రారంభం. అర్జున్ తన విల్లు వదిలాడు, తన రథం వెనుక కూర్చుని కృష్ణుడి వైపు తిరిగి అన్నాడు, 'దయచేసి నాకు బోధించండి.' ఆ ప్రశ్న అన్నింటినీ మార్చింది.",
+          "content_te": "చదరంగం పోటీ మధ్యలో, అత్యున్నత స్థాయి ఆటగాడు అకస్మాత్తుగా ఆగిపోయి, బోర్డ్ను తోసివేసి అన్నాడు, 'ఇంక ఆడాలని లేదు. ఇందులో అర్థం లేదు.' అందరూ నివ్వెరపోయారు. కానీ అతని కోచ్ వేరుగా చూశాడు — ఈ విచ్ఛిన్నం వాస్తవంగా విద్యార్థి నిజంగా నేర్చుకోవడానికి సిద్ధంగా ఉన్న క్షణం. కొన్నిసార్లు పూర్తి లొంగుబాటు నిజమైన జ్ఞానం యొక్క ప్రారంభం. అర్జున్ తన విల్లు వదిలాడు, తన రథం వెనుక కూర్చుని కృష్ణుడి వైపు తిరిగి అన్నాడు, 'దయచేసి నాకు బోధించండి.' ఆ ప్రశ్న అన్నింటినీ మార్చింది.",
           "moral": "When you are truly lost and confused, the wisest thing is to stop, be honest about it, and ask for guidance.",
           "moral_te": "మీరు నిజంగా తప్పిపోయినప్పుడు మరియు గందరగోళంగా ఉన్నప్పుడు, ఆగడం, దాని గురించి నిజాయితీగా ఉండడం మరియు మార్గదర్శకత్వం అడగడం అత్యంత తెలివైన పని."
         },
@@ -70,7 +82,13 @@
         "emoji": "♾️",
         "micro_theme": "Understanding that we are more than the physical body",
         "micro_theme_te": "మనం భౌతిక శరీరం కంటే ఎక్కువ అని అర్థం చేసుకోవడం",
-        "shlokas": ["2.11", "2.13", "2.20", "2.22", "2.27"],
+        "shlokas": [
+          "2.11",
+          "2.13",
+          "2.20",
+          "2.22",
+          "2.27"
+        ],
         "story": {
           "title": "The Old Favorite Shirt",
           "title_te": "పాత ఇష్టమైన చొక్కా",
@@ -90,12 +108,16 @@
         "emoji": "⚖️",
         "micro_theme": "Maintaining equanimity in all circumstances",
         "micro_theme_te": "అన్ని పరిస్థితులలోనూ సమతుల్యతను కాపాడుకోవడం",
-        "shlokas": ["2.14", "2.38", "2.48"],
+        "shlokas": [
+          "2.14",
+          "2.38",
+          "2.48"
+        ],
         "story": {
           "title": "The Soccer Finals",
           "title_te": "సాకర్ ఫైనల్స్",
           "content": "Sam's team was in the soccer finals. Last year they won, and he was over the moon! This year, they lost by just one goal. Sam wanted to cry and quit. His coach sat him down and said, 'Sam, a true athlete stays steady whether they win or lose. The heat and cold come and go, and so do victory and defeat. Treat them both the same, and you will find true peace.' Sam realized that his happiness shouldn't depend on the score, but on the effort he put in.",
-          "content_te": "శామ్ జట్టు సాకర్ ఫైనల్స్‌లో ఉంది. గత ఏడాది వారు గెలిచారు, అతను చాలా సంతోషించాడు! ఈ ఏడాది, వారు కేవలం ఒక గోల్ తేడాతో ఓడిపోయారు. శామ్ ఏడ్వాలని మరియు మానేయాలని అనుకున్నాడు. అతని కోచ్ అతనిని కూర్చోబెట్టి ఇలా అన్నాడు, 'శామ్, ఒక నిజమైన అథ్లెట్ గెలిచినా ఓడినా స్థిరంగా ఉంటాడు. ఎండ మరియు చలి వచ్చి పోతుంటాయి, విజయం మరియు అపజయం కూడా అలాగే. రెండింటినీ సమానంగా చూడు, అప్పుడు నీవు నిజమైన శాంతిని పొందుతావు.' శామ్ తన సంతోషం స్కోరు మీద కాకుండా, తాను చేసిన ప్రయత్నం మీద ఆధారపడి ఉండాలని గ్రహించాడు.",
+          "content_te": "శామ్ జట్టు సాకర్ ఫైనల్స్లో ఉంది. గత ఏడాది వారు గెలిచారు, అతను చాలా సంతోషించాడు! ఈ ఏడాది, వారు కేవలం ఒక గోల్ తేడాతో ఓడిపోయారు. శామ్ ఏడ్వాలని మరియు మానేయాలని అనుకున్నాడు. అతని కోచ్ అతనిని కూర్చోబెట్టి ఇలా అన్నాడు, 'శామ్, ఒక నిజమైన అథ్లెట్ గెలిచినా ఓడినా స్థిరంగా ఉంటాడు. ఎండ మరియు చలి వచ్చి పోతుంటాయి, విజయం మరియు అపజయం కూడా అలాగే. రెండింటినీ సమానంగా చూడు, అప్పుడు నీవు నిజమైన శాంతిని పొందుతావు.' శామ్ తన సంతోషం స్కోరు మీద కాకుండా, తాను చేసిన ప్రయత్నం మీద ఆధారపడి ఉండాలని గ్రహించాడు.",
           "moral": "Be like a mountain—steady and calm whether the sun is shining or the storm is raging.",
           "moral_te": "కొండలా ఉండండి—సూర్యుడు ప్రకాశిస్తున్నా లేదా తుపాను వస్తున్నా స్థిరంగా మరియు ప్రశాంతంగా ఉండండి."
         },
@@ -110,7 +132,10 @@
         "emoji": "🎯",
         "micro_theme": "Working with focus and without attachment to results",
         "micro_theme_te": "ఏకాగ్రతతో మరియు ఫలితాలపై వ్యామోహం లేకుండా పనిచేయడం",
-        "shlokas": ["2.41", "2.47"],
+        "shlokas": [
+          "2.41",
+          "2.47"
+        ],
         "story": {
           "title": "The Master Archer",
           "title_te": "మాస్టర్ ఆర్చర్",
@@ -120,17 +145,21 @@
           "moral_te": "మీ ప్రయత్నానికి 100% ఇవ్వండి మరియు ఫలితం గురించి చింతను వదిలివేయండి. ఇదే విజయ రహస్యం."
         },
         "activity": "Choose one chore or homework task today. Do it as perfectly as you can, focusing only on the task itself, without thinking about what you will get in return.",
-        "activity_te": "ఈరోజు ఒక పనిని లేదా హోంవర్క్‌ని ఎంచుకోండి. దానికి బదులుగా మీకు ఏమి వస్తుందో ఆలోచించకుండా, కేవలం ఆ పని మీద మాత్రమే దృష్టి పెట్టి, మీకు సాధ్యమైనంత ఖచ్చితంగా చేయండి.",
+        "activity_te": "ఈరోజు ఒక పనిని లేదా హోంవర్క్ని ఎంచుకోండి. దానికి బదులుగా మీకు ఏమి వస్తుందో ఆలోచించకుండా, కేవలం ఆ పని మీద మాత్రమే దృష్టి పెట్టి, మీకు సాధ్యమైనంత ఖచ్చితంగా చేయండి.",
         "videoUrl": ""
       },
       {
         "id": "theme_sk2_4",
         "title": "The Qualities of a Calm Person",
         "title_te": "ప్రశాంతమైన వ్యక్తి యొక్క లక్షణాలు",
-        "emoji": "🧘‍♂️",
+        "emoji": "🧘♂️",
         "micro_theme": "Learning to control the senses and find inner peace",
         "micro_theme_te": "ఇంద్రియాలను నియంత్రించడం మరియు అంతర్గత శాంతిని కనుగొనడం నేర్చుకోవడం",
-        "shlokas": ["2.54", "2.55", "2.58"],
+        "shlokas": [
+          "2.54",
+          "2.55",
+          "2.58"
+        ],
         "story": {
           "title": "The Tortoise Wisdom",
           "title_te": "తాబేలు జ్ఞానం",
@@ -144,6 +173,1259 @@
         "videoUrl": ""
       }
     ],
+    "3": [
+      {
+        "id": "theme_sk3_1",
+        "title": "Path of Action: Part 1",
+        "title_te": "Path of Action: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "doing your duty",
+        "micro_theme_te": "మీ కర్తవ్యం చేయడం",
+        "shlokas": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.4",
+          "3.5",
+          "3.6",
+          "3.7",
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11",
+          "3.12",
+          "3.13",
+          "3.14",
+          "3.15"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 1–15",
+          "title_te": "Karma Yoga — శ్లోకాలు 1–15",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on doing your duty helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మీ కర్తవ్యం చేయడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moral_te": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి."
+        },
+        "activity": "Journal: When did you need courage for \"doing your duty\"? What did you do?",
+        "activity_te": "\"మీ కర్తవ్యం చేయడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk3_2",
+        "title": "Path of Action: Part 2",
+        "title_te": "Path of Action: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "setting a good example",
+        "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
+        "shlokas": [
+          "3.16",
+          "3.17",
+          "3.18",
+          "3.19",
+          "3.20",
+          "3.21",
+          "3.22",
+          "3.23",
+          "3.24",
+          "3.25",
+          "3.26",
+          "3.27",
+          "3.28",
+          "3.29",
+          "3.30"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 16–30",
+          "title_te": "Karma Yoga — శ్లోకాలు 16–30",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on setting a good example helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మంచి ఆదర్శం ఉండటం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moral_te": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు."
+        },
+        "activity": "Journal: When did you need courage for \"setting a good example\"? What did you do?",
+        "activity_te": "\"మంచి ఆదర్శం ఉండటం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk3_3",
+        "title": "Path of Action: Part 3",
+        "title_te": "Path of Action: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "selfless service",
+        "micro_theme_te": "నిస్వార్థ సేవ",
+        "shlokas": [
+          "3.31",
+          "3.32",
+          "3.33",
+          "3.34",
+          "3.35",
+          "3.36",
+          "3.37",
+          "3.38",
+          "3.39",
+          "3.40",
+          "3.41",
+          "3.42",
+          "3.43"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 31–43",
+          "title_te": "Karma Yoga — శ్లోకాలు 31–43",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on selfless service helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. నిస్వార్థ సేవ పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Work done to help others brings real joy.",
+          "moral_te": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"selfless service\"? What did you do?",
+        "activity_te": "\"నిస్వార్థ సేవ\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "4": [
+      {
+        "id": "theme_sk4_1",
+        "title": "Path of Knowledge: Part 1",
+        "title_te": "Path of Knowledge: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "wisdom and action together",
+        "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
+        "shlokas": [
+          "4.1",
+          "4.2",
+          "4.3",
+          "4.4",
+          "4.5",
+          "4.6",
+          "4.7",
+          "4.8",
+          "4.9",
+          "4.10",
+          "4.11",
+          "4.12",
+          "4.13",
+          "4.14"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 1–14",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 1–14",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on wisdom and action together helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. జ్ఞానం మరియు చర్య కలిసి పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moral_te": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"wisdom and action together\"? What did you do?",
+        "activity_te": "\"జ్ఞానం మరియు చర్య కలిసి\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk4_2",
+        "title": "Path of Knowledge: Part 2",
+        "title_te": "Path of Knowledge: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "humility before teachers",
+        "micro_theme_te": "గురువుల ముందు వినయం",
+        "shlokas": [
+          "4.15",
+          "4.16",
+          "4.17",
+          "4.18",
+          "4.19",
+          "4.20",
+          "4.21",
+          "4.22",
+          "4.23",
+          "4.24",
+          "4.25",
+          "4.26",
+          "4.27",
+          "4.28"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 15–28",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 15–28",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on humility before teachers helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. గురువుల ముందు వినయం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moral_te": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"humility before teachers\"? What did you do?",
+        "activity_te": "\"గురువుల ముందు వినయం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk4_3",
+        "title": "Path of Knowledge: Part 3",
+        "title_te": "Path of Knowledge: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "seeing the divine in sacrifice",
+        "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
+        "shlokas": [
+          "4.29",
+          "4.30",
+          "4.31",
+          "4.32",
+          "4.33",
+          "4.34",
+          "4.35",
+          "4.36",
+          "4.37",
+          "4.38",
+          "4.39",
+          "4.40",
+          "4.41",
+          "4.42"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 29–42",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 29–42",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on seeing the divine in sacrifice helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. త్యాగంలో దైవాన్ని చూడటం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moral_te": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"seeing the divine in sacrifice\"? What did you do?",
+        "activity_te": "\"త్యాగంలో దైవాన్ని చూడటం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "5": [
+      {
+        "id": "theme_sk5_1",
+        "title": "Action in Krishna Consciousness: Part 1",
+        "title_te": "Action in Krishna Consciousness: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "peace through balanced action",
+        "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
+        "shlokas": [
+          "5.1",
+          "5.2",
+          "5.3",
+          "5.4",
+          "5.5",
+          "5.6",
+          "5.7",
+          "5.8",
+          "5.9",
+          "5.10"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 1–10",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 1–10",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on peace through balanced action helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సమతుల్య చర్య ద్వారా శాంతి పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "You can be active and peaceful at the same time.",
+          "moral_te": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు."
+        },
+        "activity": "Journal: When did you need courage for \"peace through balanced action\"? What did you do?",
+        "activity_te": "\"సమతుల్య చర్య ద్వారా శాంతి\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk5_2",
+        "title": "Action in Krishna Consciousness: Part 2",
+        "title_te": "Action in Krishna Consciousness: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "letting go of ego",
+        "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
+        "shlokas": [
+          "5.11",
+          "5.12",
+          "5.13",
+          "5.14",
+          "5.15",
+          "5.16",
+          "5.17",
+          "5.18",
+          "5.19",
+          "5.20"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 11–20",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 11–20",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on letting go of ego helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. అహంకారాన్ని వదిలివేయడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moral_te": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి."
+        },
+        "activity": "Journal: When did you need courage for \"letting go of ego\"? What did you do?",
+        "activity_te": "\"అహంకారాన్ని వదిలివేయడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk5_3",
+        "title": "Action in Krishna Consciousness: Part 3",
+        "title_te": "Action in Krishna Consciousness: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "seeing equally",
+        "micro_theme_te": "సమానంగా చూడటం",
+        "shlokas": [
+          "5.21",
+          "5.22",
+          "5.23",
+          "5.24",
+          "5.25",
+          "5.26",
+          "5.27",
+          "5.28",
+          "5.29"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 21–29",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 21–29",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on seeing equally helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సమానంగా చూడటం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moral_te": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి."
+        },
+        "activity": "Journal: When did you need courage for \"seeing equally\"? What did you do?",
+        "activity_te": "\"సమానంగా చూడటం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "6": [
+      {
+        "id": "theme_sk6_1",
+        "title": "Path of Meditation: Part 1",
+        "title_te": "Path of Meditation: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.1",
+          "6.2",
+          "6.3",
+          "6.4",
+          "6.5",
+          "6.6",
+          "6.7",
+          "6.8",
+          "6.9",
+          "6.10",
+          "6.11",
+          "6.12"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 1–12",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 1–12",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on training the mind helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మనస్సును శిక్షణ ఇవ్వడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Journal: When did you need courage for \"training the mind\"? What did you do?",
+        "activity_te": "\"మనస్సును శిక్షణ ఇవ్వడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk6_2",
+        "title": "Path of Meditation: Part 2",
+        "title_te": "Path of Meditation: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "moderation in life",
+        "micro_theme_te": "జీవితంలో మితత్వం",
+        "shlokas": [
+          "6.13",
+          "6.14",
+          "6.15",
+          "6.16",
+          "6.17",
+          "6.18",
+          "6.19",
+          "6.20",
+          "6.21",
+          "6.22",
+          "6.23",
+          "6.24"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 13–24",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 13–24",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on moderation in life helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. జీవితంలో మితత్వం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moral_te": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"moderation in life\"? What did you do?",
+        "activity_te": "\"జీవితంలో మితత్వం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk6_3",
+        "title": "Path of Meditation: Part 3",
+        "title_te": "Path of Meditation: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "yoga as union",
+        "micro_theme_te": "యోగం ఐక్యత",
+        "shlokas": [
+          "6.25",
+          "6.26",
+          "6.27",
+          "6.28",
+          "6.29",
+          "6.30",
+          "6.31",
+          "6.32",
+          "6.33",
+          "6.34",
+          "6.35",
+          "6.36"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 25–36",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 25–36",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on yoga as union helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. యోగం ఐక్యత పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moral_te": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం."
+        },
+        "activity": "Journal: When did you need courage for \"yoga as union\"? What did you do?",
+        "activity_te": "\"యోగం ఐక్యత\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk6_4",
+        "title": "Path of Meditation: Part 4",
+        "title_te": "Path of Meditation: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.37",
+          "6.38",
+          "6.39",
+          "6.40",
+          "6.41",
+          "6.42",
+          "6.43",
+          "6.44",
+          "6.45",
+          "6.46",
+          "6.47"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 37–47",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 37–47",
+          "content": "Dev had to make a hard choice between what was easy and what was right. Friends gave different advice, and Dev felt confused. Reading the Gita, Dev saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on training the mind helped Dev choose courage over comfort.",
+          "content_te": "Dev సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మనస్సును శిక్షణ ఇవ్వడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Journal: When did you need courage for \"training the mind\"? What did you do?",
+        "activity_te": "\"మనస్సును శిక్షణ ఇవ్వడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "7": [
+      {
+        "id": "theme_sk7_1",
+        "title": "Knowledge of the Ultimate: Part 1",
+        "title_te": "Knowledge of the Ultimate: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "material and spiritual energy",
+        "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+        "shlokas": [
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4",
+          "7.5",
+          "7.6",
+          "7.7",
+          "7.8",
+          "7.9",
+          "7.10"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 1–10",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 1–10",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on material and spiritual energy helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భౌతిక మరియు ఆధ్యాత్మిక శక్తి పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moral_te": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి."
+        },
+        "activity": "Journal: When did you need courage for \"material and spiritual energy\"? What did you do?",
+        "activity_te": "\"భౌతిక మరియు ఆధ్యాత్మిక శక్తి\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk7_2",
+        "title": "Knowledge of the Ultimate: Part 2",
+        "title_te": "Knowledge of the Ultimate: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "four kinds of seekers",
+        "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
+        "shlokas": [
+          "7.11",
+          "7.12",
+          "7.13",
+          "7.14",
+          "7.15",
+          "7.16",
+          "7.17",
+          "7.18",
+          "7.19",
+          "7.20"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 11–20",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 11–20",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on four kinds of seekers helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. నాలుగు రకాల అన్వేషకులు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moral_te": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు."
+        },
+        "activity": "Journal: When did you need courage for \"four kinds of seekers\"? What did you do?",
+        "activity_te": "\"నాలుగు రకాల అన్వేషకులు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk7_3",
+        "title": "Knowledge of the Ultimate: Part 3",
+        "title_te": "Knowledge of the Ultimate: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "surrender to the Supreme",
+        "micro_theme_te": "పరమునికి లొంగడం",
+        "shlokas": [
+          "7.21",
+          "7.22",
+          "7.23",
+          "7.24",
+          "7.25",
+          "7.26",
+          "7.27",
+          "7.28",
+          "7.29",
+          "7.30"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 21–30",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 21–30",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on surrender to the Supreme helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. పరమునికి లొంగడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moral_te": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"surrender to the Supreme\"? What did you do?",
+        "activity_te": "\"పరమునికి లొంగడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "8": [
+      {
+        "id": "theme_sk8_1",
+        "title": "Path to the Eternal: Part 1",
+        "title_te": "Path to the Eternal: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "remembering what lasts",
+        "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+        "shlokas": [
+          "8.1",
+          "8.2",
+          "8.3",
+          "8.4",
+          "8.5",
+          "8.6",
+          "8.7",
+          "8.8",
+          "8.9",
+          "8.10"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 1–10",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 1–10",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on remembering what lasts helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. శాశ్వతమైనది గుర్తు పెట్టుకోవడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "What is eternal matters more than what fades.",
+          "moral_te": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది."
+        },
+        "activity": "Journal: When did you need courage for \"remembering what lasts\"? What did you do?",
+        "activity_te": "\"శాశ్వతమైనది గుర్తు పెట్టుకోవడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk8_2",
+        "title": "Path to the Eternal: Part 2",
+        "title_te": "Path to the Eternal: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "thoughts at important moments",
+        "micro_theme_te": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+        "shlokas": [
+          "8.11",
+          "8.12",
+          "8.13",
+          "8.14",
+          "8.15",
+          "8.16",
+          "8.17",
+          "8.18",
+          "8.19",
+          "8.20"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 11–20",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 11–20",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on thoughts at important moments helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ముఖ్యమైన క్షణాలలో ఆలోచనలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "What you hold in your heart shapes your path.",
+          "moral_te": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"thoughts at important moments\"? What did you do?",
+        "activity_te": "\"ముఖ్యమైన క్షణాలలో ఆలోచనలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk8_3",
+        "title": "Path to the Eternal: Part 3",
+        "title_te": "Path to the Eternal: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "discipline of practice",
+        "micro_theme_te": "సాధన యొక్క క్రమశిక్షణ",
+        "shlokas": [
+          "8.21",
+          "8.22",
+          "8.23",
+          "8.24",
+          "8.25",
+          "8.26",
+          "8.27",
+          "8.28"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 21–28",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 21–28",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on discipline of practice helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సాధన యొక్క క్రమశిక్షణ పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Daily small habits build a great life.",
+          "moral_te": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Journal: When did you need courage for \"discipline of practice\"? What did you do?",
+        "activity_te": "\"సాధన యొక్క క్రమశిక్షణ\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "9": [
+      {
+        "id": "theme_sk9_1",
+        "title": "The Most Confidential Knowledge: Part 1",
+        "title_te": "The Most Confidential Knowledge: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "royal secret of devotion",
+        "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
+        "shlokas": [
+          "9.1",
+          "9.2",
+          "9.3",
+          "9.4",
+          "9.5",
+          "9.6",
+          "9.7",
+          "9.8",
+          "9.9",
+          "9.10",
+          "9.11",
+          "9.12"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 1–12",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 1–12",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on royal secret of devotion helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భక్తి యొక్క రాజ రహస్యం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Love offered sincerely is never too small.",
+          "moral_te": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు."
+        },
+        "activity": "Journal: When did you need courage for \"royal secret of devotion\"? What did you do?",
+        "activity_te": "\"భక్తి యొక్క రాజ రహస్యం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk9_2",
+        "title": "The Most Confidential Knowledge: Part 2",
+        "title_te": "The Most Confidential Knowledge: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "God cares for devotees",
+        "micro_theme_te": "దైవం భక్తులను చూసుకోవడం",
+        "shlokas": [
+          "9.13",
+          "9.14",
+          "9.15",
+          "9.16",
+          "9.17",
+          "9.18",
+          "9.19",
+          "9.20",
+          "9.21",
+          "9.22",
+          "9.23",
+          "9.24"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 13–24",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 13–24",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on God cares for devotees helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. దైవం భక్తులను చూసుకోవడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "You are never forgotten when you try to do good.",
+          "moral_te": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు."
+        },
+        "activity": "Journal: When did you need courage for \"God cares for devotees\"? What did you do?",
+        "activity_te": "\"దైవం భక్తులను చూసుకోవడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk9_3",
+        "title": "The Most Confidential Knowledge: Part 3",
+        "title_te": "The Most Confidential Knowledge: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "simple offerings",
+        "micro_theme_te": "సరళమైన అర్పణలు",
+        "shlokas": [
+          "9.25",
+          "9.26",
+          "9.27",
+          "9.28",
+          "9.29",
+          "9.30",
+          "9.31",
+          "9.32",
+          "9.33",
+          "9.34"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 25–34",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 25–34",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on simple offerings helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సరళమైన అర్పణలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moral_te": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు."
+        },
+        "activity": "Journal: When did you need courage for \"simple offerings\"? What did you do?",
+        "activity_te": "\"సరళమైన అర్పణలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "10": [
+      {
+        "id": "theme_sk10_1",
+        "title": "The Infinite Glories of the Divine: Part 1",
+        "title_te": "The Infinite Glories of the Divine: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "excellence everywhere",
+        "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
+        "shlokas": [
+          "10.1",
+          "10.2",
+          "10.3",
+          "10.4",
+          "10.5",
+          "10.6",
+          "10.7",
+          "10.8",
+          "10.9",
+          "10.10",
+          "10.11",
+          "10.12",
+          "10.13",
+          "10.14"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 1–14",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 1–14",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on excellence everywhere helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ప్రతిచోటా శ్రేష్ఠత పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "The best in every field reflects something divine.",
+          "moral_te": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"excellence everywhere\"? What did you do?",
+        "activity_te": "\"ప్రతిచోటా శ్రేష్ఠత\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk10_2",
+        "title": "The Infinite Glories of the Divine: Part 2",
+        "title_te": "The Infinite Glories of the Divine: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "seeing greatness with wonder",
+        "micro_theme_te": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+        "shlokas": [
+          "10.15",
+          "10.16",
+          "10.17",
+          "10.18",
+          "10.19",
+          "10.20",
+          "10.21",
+          "10.22",
+          "10.23",
+          "10.24",
+          "10.25",
+          "10.26",
+          "10.27",
+          "10.28"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 15–28",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 15–28",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on seeing greatness with wonder helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ఆశ్చర్యంతో గొప్పతనం చూడటం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moral_te": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"seeing greatness with wonder\"? What did you do?",
+        "activity_te": "\"ఆశ్చర్యంతో గొప్పతనం చూడటం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk10_3",
+        "title": "The Infinite Glories of the Divine: Part 3",
+        "title_te": "The Infinite Glories of the Divine: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "source of all power",
+        "micro_theme_te": "అన్ని శక్తి యొక్క మూలం",
+        "shlokas": [
+          "10.29",
+          "10.30",
+          "10.31",
+          "10.32",
+          "10.33",
+          "10.34",
+          "10.35",
+          "10.36",
+          "10.37",
+          "10.38",
+          "10.39",
+          "10.40",
+          "10.41",
+          "10.42"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 29–42",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 29–42",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on source of all power helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. అన్ని శక్తి యొక్క మూలం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moral_te": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది."
+        },
+        "activity": "Journal: When did you need courage for \"source of all power\"? What did you do?",
+        "activity_te": "\"అన్ని శక్తి యొక్క మూలం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "11": [
+      {
+        "id": "theme_sk11_1",
+        "title": "The Universal Form: Part 1",
+        "title_te": "The Universal Form: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4",
+          "11.5",
+          "11.6",
+          "11.7",
+          "11.8",
+          "11.9",
+          "11.10",
+          "11.11",
+          "11.12",
+          "11.13",
+          "11.14"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 1–14",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 1–14",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on awe and humility helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భయభక్తులు మరియు వినయం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"awe and humility\"? What did you do?",
+        "activity_te": "\"భయభక్తులు మరియు వినయం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk11_2",
+        "title": "The Universal Form: Part 2",
+        "title_te": "The Universal Form: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "courage after vision",
+        "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
+        "shlokas": [
+          "11.15",
+          "11.16",
+          "11.17",
+          "11.18",
+          "11.19",
+          "11.20",
+          "11.21",
+          "11.22",
+          "11.23",
+          "11.24",
+          "11.25",
+          "11.26",
+          "11.27",
+          "11.28"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 15–28",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 15–28",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on courage after vision helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. దర్శనం తర్వాత ధైర్యం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moral_te": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"courage after vision\"? What did you do?",
+        "activity_te": "\"దర్శనం తర్వాత ధైర్యం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk11_3",
+        "title": "The Universal Form: Part 3",
+        "title_te": "The Universal Form: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "devotion in wonder",
+        "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
+        "shlokas": [
+          "11.29",
+          "11.30",
+          "11.31",
+          "11.32",
+          "11.33",
+          "11.34",
+          "11.35",
+          "11.36",
+          "11.37",
+          "11.38",
+          "11.39",
+          "11.40",
+          "11.41",
+          "11.42"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 29–42",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 29–42",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on devotion in wonder helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ఆశ్చర్యంలో భక్తి పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moral_te": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి."
+        },
+        "activity": "Journal: When did you need courage for \"devotion in wonder\"? What did you do?",
+        "activity_te": "\"ఆశ్చర్యంలో భక్తి\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk11_4",
+        "title": "The Universal Form: Part 4",
+        "title_te": "The Universal Form: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.43",
+          "11.44",
+          "11.45",
+          "11.46",
+          "11.47",
+          "11.48",
+          "11.49",
+          "11.50",
+          "11.51",
+          "11.52",
+          "11.53",
+          "11.54",
+          "11.55"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 43–55",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 43–55",
+          "content": "Dev had to make a hard choice between what was easy and what was right. Friends gave different advice, and Dev felt confused. Reading the Gita, Dev saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on awe and humility helped Dev choose courage over comfort.",
+          "content_te": "Dev సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భయభక్తులు మరియు వినయం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"awe and humility\"? What did you do?",
+        "activity_te": "\"భయభక్తులు మరియు వినయం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "12": [
+      {
+        "id": "theme_sk12_1",
+        "title": "The Path of Devotion: Part 1",
+        "title_te": "The Path of Devotion: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "many paths one goal",
+        "micro_theme_te": "అనేక మార్గాలు ఒక లక్ష్యం",
+        "shlokas": [
+          "12.1",
+          "12.2",
+          "12.3",
+          "12.4",
+          "12.5",
+          "12.6",
+          "12.7"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 1–7",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 1–7",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on many paths one goal helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. అనేక మార్గాలు ఒక లక్ష్యం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moral_te": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది."
+        },
+        "activity": "Journal: When did you need courage for \"many paths one goal\"? What did you do?",
+        "activity_te": "\"అనేక మార్గాలు ఒక లక్ష్యం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk12_2",
+        "title": "The Path of Devotion: Part 2",
+        "title_te": "The Path of Devotion: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "qualities of a devotee",
+        "micro_theme_te": "భక్తుని లక్షణాలు",
+        "shlokas": [
+          "12.8",
+          "12.9",
+          "12.10",
+          "12.11",
+          "12.12",
+          "12.13",
+          "12.14"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 8–14",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 8–14",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on qualities of a devotee helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భక్తుని లక్షణాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Forgiveness, gentleness, and honesty are signs of a strong heart.",
+          "moral_te": "క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు."
+        },
+        "activity": "Journal: When did you need courage for \"qualities of a devotee\"? What did you do?",
+        "activity_te": "\"భక్తుని లక్షణాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk12_3",
+        "title": "The Path of Devotion: Part 3",
+        "title_te": "The Path of Devotion: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "fixing the mind on good",
+        "micro_theme_te": "మనస్సును మంచిది మీద నిలపడం",
+        "shlokas": [
+          "12.15",
+          "12.16",
+          "12.17",
+          "12.18",
+          "12.19",
+          "12.20"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 15–20",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 15–20",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on fixing the mind on good helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మనస్సును మంచిది మీద నిలపడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Where your mind rests, your life will follow.",
+          "moral_te": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"fixing the mind on good\"? What did you do?",
+        "activity_te": "\"మనస్సును మంచిది మీద నిలపడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "13": [
+      {
+        "id": "theme_sk13_1",
+        "title": "The Field and the Knower: Part 1",
+        "title_te": "The Field and the Knower: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "body as a field",
+        "micro_theme_te": "శరీరం ఒక క్షేత్రం",
+        "shlokas": [
+          "13.1",
+          "13.2",
+          "13.3",
+          "13.4",
+          "13.5",
+          "13.6",
+          "13.7",
+          "13.8",
+          "13.9",
+          "13.10",
+          "13.11",
+          "13.12"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 1–12",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 1–12",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on body as a field helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. శరీరం ఒక క్షేత్రం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moral_te": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు."
+        },
+        "activity": "Journal: When did you need courage for \"body as a field\"? What did you do?",
+        "activity_te": "\"శరీరం ఒక క్షేత్రం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk13_2",
+        "title": "The Field and the Knower: Part 2",
+        "title_te": "The Field and the Knower: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "the knower within",
+        "micro_theme_te": "లోపలి తెలిసినవాడు",
+        "shlokas": [
+          "13.13",
+          "13.14",
+          "13.15",
+          "13.16",
+          "13.17",
+          "13.18",
+          "13.19",
+          "13.20",
+          "13.21",
+          "13.22",
+          "13.23",
+          "13.24"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 13–24",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 13–24",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on the knower within helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. లోపలి తెలిసినవాడు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moral_te": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు."
+        },
+        "activity": "Journal: When did you need courage for \"the knower within\"? What did you do?",
+        "activity_te": "\"లోపలి తెలిసినవాడు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk13_3",
+        "title": "The Field and the Knower: Part 3",
+        "title_te": "The Field and the Knower: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "humility and non-violence",
+        "micro_theme_te": "వినయం మరియు అహింస",
+        "shlokas": [
+          "13.25",
+          "13.26",
+          "13.27",
+          "13.28",
+          "13.29",
+          "13.30",
+          "13.31",
+          "13.32",
+          "13.33",
+          "13.34"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 25–34",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 25–34",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on humility and non-violence helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. వినయం మరియు అహింస పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moral_te": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది."
+        },
+        "activity": "Journal: When did you need courage for \"humility and non-violence\"? What did you do?",
+        "activity_te": "\"వినయం మరియు అహింస\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "14": [
+      {
+        "id": "theme_sk14_1",
+        "title": "The Three Modes of Nature: Part 1",
+        "title_te": "The Three Modes of Nature: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "goodness passion and dullness",
+        "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
+        "shlokas": [
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.4",
+          "14.5",
+          "14.6",
+          "14.7",
+          "14.8",
+          "14.9"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 1–9",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 1–9",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on goodness passion and dullness helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సత్త్వం రజస్సు తమస్సు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moral_te": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి."
+        },
+        "activity": "Journal: When did you need courage for \"goodness passion and dullness\"? What did you do?",
+        "activity_te": "\"సత్త్వం రజస్సు తమస్సు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk14_2",
+        "title": "The Three Modes of Nature: Part 2",
+        "title_te": "The Three Modes of Nature: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "rising above moods",
+        "micro_theme_te": "భావాలకు అతీతంగా",
+        "shlokas": [
+          "14.10",
+          "14.11",
+          "14.12",
+          "14.13",
+          "14.14",
+          "14.15",
+          "14.16",
+          "14.17",
+          "14.18"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 10–18",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 10–18",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on rising above moods helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. భావాలకు అతీతంగా పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "You are more than a passing mood or habit.",
+          "moral_te": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ."
+        },
+        "activity": "Journal: When did you need courage for \"rising above moods\"? What did you do?",
+        "activity_te": "\"భావాలకు అతీతంగా\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk14_3",
+        "title": "The Three Modes of Nature: Part 3",
+        "title_te": "The Three Modes of Nature: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "food thoughts and habits",
+        "micro_theme_te": "ఆహారం ఆలోచనలు అలవాట్లు",
+        "shlokas": [
+          "14.19",
+          "14.20",
+          "14.21",
+          "14.22",
+          "14.23",
+          "14.24",
+          "14.25",
+          "14.26",
+          "14.27"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 19–27",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 19–27",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on food thoughts and habits helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ఆహారం ఆలోచనలు అలవాట్లు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moral_te": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"food thoughts and habits\"? What did you do?",
+        "activity_te": "\"ఆహారం ఆలోచనలు అలవాట్లు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
     "15": [
       {
         "id": "theme_sk15_1",
@@ -152,7 +1434,12 @@
         "emoji": "🌳",
         "micro_theme": "The world is like a tree — learn to see beyond it",
         "micro_theme_te": "ప్రపంచం ఒక చెట్టు లాంటిది — దానికి అతీతంగా చూడటం నేర్చుకోండి",
-        "shlokas": ["15.1", "15.2", "15.3", "15.4"],
+        "shlokas": [
+          "15.1",
+          "15.2",
+          "15.3",
+          "15.4"
+        ],
         "story": {
           "title": "The Tree That Traps Us",
           "title_te": "మనలను బంధించే వృక్షం",
@@ -172,12 +1459,16 @@
         "emoji": "✨",
         "micro_theme": "The soul is a spark of the Divine that needs no external light",
         "micro_theme_te": "ఆత్మ బాహ్య కాంతి అవసరం లేని దివ్య కణం",
-        "shlokas": ["15.6", "15.7", "15.8"],
+        "shlokas": [
+          "15.6",
+          "15.7",
+          "15.8"
+        ],
         "story": {
           "title": "A Light That Needs No Sun",
           "title_te": "సూర్యుడు అక్కర్లేని కాంతి",
           "content": "Have you ever been in a completely dark room? You need a flashlight or a lamp to see. But Krishna speaks of a place, a state of being, that doesn't need the sun, the moon, or fire to be illuminated. That place shines by its own light! And here's the amazing part: a spark of that same light is inside you right now. It is your soul. When we understand that we are not just the body but a spark of the divine, we begin to see life differently. We stop fearing darkness and change because we carry the light within us.",
-          "content_te": "మీరు ఎప్పుడైనా పూర్తిగా చీకటి గదిలో ఉన్నారా? చూడడానికి మీకు ఫ్లాష్‌లైట్ లేదా దీపం అవసరం. కానీ కృష్ణుడు సూర్యుడు, చంద్రుడు లేదా అగ్ని అవసరం లేని ఒక స్థలం గురించి, ఒక ఉనికి స్థితి గురించి మాట్లాడతాడు. ఆ స్థలం తన స్వంత కాంతితో ప్రకాశిస్తుంది! మరియు ఇక్కడ అద్భుతమైన భాగం ఉంది: అదే కాంతి యొక్క ఒక కణం ఇప్పుడు మీ లోపల ఉంది. అది మీ ఆత్మ. మనం కేవలం శరీరం మాత్రమే కాదని, దివ్య కాంతి యొక్క ఒక కణమని అర్థం చేసుకున్నప్పుడు, మనం జీవితాన్ని భిన్నంగా చూడటం ప్రారంభిస్తాము. మనలో కాంతిని మోస్తున్నందున మనం చీకటి మరియు మార్పుకు భయపడటం మానేస్తాము.",
+          "content_te": "మీరు ఎప్పుడైనా పూర్తిగా చీకటి గదిలో ఉన్నారా? చూడడానికి మీకు ఫ్లాష్లైట్ లేదా దీపం అవసరం. కానీ కృష్ణుడు సూర్యుడు, చంద్రుడు లేదా అగ్ని అవసరం లేని ఒక స్థలం గురించి, ఒక ఉనికి స్థితి గురించి మాట్లాడతాడు. ఆ స్థలం తన స్వంత కాంతితో ప్రకాశిస్తుంది! మరియు ఇక్కడ అద్భుతమైన భాగం ఉంది: అదే కాంతి యొక్క ఒక కణం ఇప్పుడు మీ లోపల ఉంది. అది మీ ఆత్మ. మనం కేవలం శరీరం మాత్రమే కాదని, దివ్య కాంతి యొక్క ఒక కణమని అర్థం చేసుకున్నప్పుడు, మనం జీవితాన్ని భిన్నంగా చూడటం ప్రారంభిస్తాము. మనలో కాంతిని మోస్తున్నందున మనం చీకటి మరియు మార్పుకు భయపడటం మానేస్తాము.",
           "moral": "Your soul is self-luminous. You don't need external validation or circumstances to shine.",
           "moral_te": "మీ ఆత్మ స్వయం ప్రకాశమానమైనది. ప్రకాశించడానికి మీకు బాహ్య ఆమోదం లేదా పరిస్థితులు అవసరం లేదు."
         },
@@ -192,7 +1483,12 @@
         "emoji": "☀️",
         "micro_theme": "The Divine is present in every aspect of life",
         "micro_theme_te": "జీవితంలోని ప్రతి అంశంలో దివ్యత్వం ఉంది",
-        "shlokas": ["15.12", "15.13", "15.14", "15.15"],
+        "shlokas": [
+          "15.12",
+          "15.13",
+          "15.14",
+          "15.15"
+        ],
         "story": {
           "title": "Finding the Divine in Everything",
           "title_te": "ప్రతిదానిలో దివ్యత్వాన్ని కనుగొనడం",
@@ -212,7 +1508,11 @@
         "emoji": "🌟",
         "micro_theme": "Beyond the temporary and eternal is the Supreme Person",
         "micro_theme_te": "తాత్కాలికం మరియు శాశ్వతానికి అతీతంగా పరమ పురుషుడు ఉన్నాడు",
-        "shlokas": ["15.16", "15.17", "15.18"],
+        "shlokas": [
+          "15.16",
+          "15.17",
+          "15.18"
+        ],
         "story": {
           "title": "Three Levels of Reality",
           "title_te": "వాస్తవికత యొక్క మూడు స్థాయిలు",
@@ -222,7 +1522,353 @@
           "moral_te": "తాత్కాలిక శరీరం మరియు శాశ్వతమైన ఆత్మ రెండింటికి అతీతుడైన పరమ పురుషునిలో మీ జీవితాన్ని పెట్టుబడి పెట్టండి."
         },
         "activity": "Create a three-column list in your journal: 'Perishable' (things that change), 'Imperishable' (things that last), 'Supreme' (the divine). Fill each column with examples from your life.",
-        "activity_te": "మీ జర్నల్‌లో మూడు నిలువు వరుసల జాబితా రూపొందించండి: 'నశ్వరమైనది' (మారే వస్తువులు), 'నాశనం లేనిది' (శాశ్వతమైనవి), 'పరమ' (దైవం). ప్రతి నిలువు వరుసను మీ జీవితంలోని ఉదాహరణలతో నింపండి.",
+        "activity_te": "మీ జర్నల్లో మూడు నిలువు వరుసల జాబితా రూపొందించండి: 'నశ్వరమైనది' (మారే వస్తువులు), 'నాశనం లేనిది' (శాశ్వతమైనవి), 'పరమ' (దైవం). ప్రతి నిలువు వరుసను మీ జీవితంలోని ఉదాహరణలతో నింపండి.",
+        "videoUrl": ""
+      }
+    ],
+    "16": [
+      {
+        "id": "theme_sk16_1",
+        "title": "Divine and Demoniac Natures: Part 1",
+        "title_te": "Divine and Demoniac Natures: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "divine qualities",
+        "micro_theme_te": "దైవీ లక్షణాలు",
+        "shlokas": [
+          "16.1",
+          "16.2",
+          "16.3",
+          "16.4",
+          "16.5",
+          "16.6",
+          "16.7",
+          "16.8"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 1–8",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 1–8",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on divine qualities helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. దైవీ లక్షణాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moral_te": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి."
+        },
+        "activity": "Journal: When did you need courage for \"divine qualities\"? What did you do?",
+        "activity_te": "\"దైవీ లక్షణాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk16_2",
+        "title": "Divine and Demoniac Natures: Part 2",
+        "title_te": "Divine and Demoniac Natures: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "demoniac tendencies",
+        "micro_theme_te": "ఆసుర ధర్మాలు",
+        "shlokas": [
+          "16.9",
+          "16.10",
+          "16.11",
+          "16.12",
+          "16.13",
+          "16.14",
+          "16.15",
+          "16.16"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 9–16",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 9–16",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on demoniac tendencies helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ఆసుర ధర్మాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Anger, greed, and pride create trouble for everyone.",
+          "moral_te": "కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి."
+        },
+        "activity": "Journal: When did you need courage for \"demoniac tendencies\"? What did you do?",
+        "activity_te": "\"ఆసుర ధర్మాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk16_3",
+        "title": "Divine and Demoniac Natures: Part 3",
+        "title_te": "Divine and Demoniac Natures: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "choosing your camp",
+        "micro_theme_te": "మీ వైపు ఎంచుకోవడం",
+        "shlokas": [
+          "16.17",
+          "16.18",
+          "16.19",
+          "16.20",
+          "16.21",
+          "16.22",
+          "16.23",
+          "16.24"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 17–24",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 17–24",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on choosing your camp helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మీ వైపు ఎంచుకోవడం పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Small daily choices build a noble character.",
+          "moral_te": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Journal: When did you need courage for \"choosing your camp\"? What did you do?",
+        "activity_te": "\"మీ వైపు ఎంచుకోవడం\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "17": [
+      {
+        "id": "theme_sk17_1",
+        "title": "The Three Divisions of Faith: Part 1",
+        "title_te": "The Three Divisions of Faith: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "faith shapes actions",
+        "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+        "shlokas": [
+          "17.1",
+          "17.2",
+          "17.3",
+          "17.4",
+          "17.5",
+          "17.6",
+          "17.7",
+          "17.8",
+          "17.9",
+          "17.10"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 1–10",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 1–10",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on faith shapes actions helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. శ్రద్ధ చర్యలను రూపొందిస్తుంది పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "What you deeply believe shows in what you do.",
+          "moral_te": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"faith shapes actions\"? What did you do?",
+        "activity_te": "\"శ్రద్ధ చర్యలను రూపొందిస్తుంది\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk17_2",
+        "title": "The Three Divisions of Faith: Part 2",
+        "title_te": "The Three Divisions of Faith: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "sattvic rajasic tamasic worship",
+        "micro_theme_te": "మూడు రకాల శ్రద్ధ",
+        "shlokas": [
+          "17.11",
+          "17.12",
+          "17.13",
+          "17.14",
+          "17.15",
+          "17.16",
+          "17.17",
+          "17.18",
+          "17.19",
+          "17.20"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 11–20",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 11–20",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on sattvic rajasic tamasic worship helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. మూడు రకాల శ్రద్ధ పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moral_te": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి."
+        },
+        "activity": "Journal: When did you need courage for \"sattvic rajasic tamasic worship\"? What did you do?",
+        "activity_te": "\"మూడు రకాల శ్రద్ధ\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk17_3",
+        "title": "The Three Divisions of Faith: Part 3",
+        "title_te": "The Three Divisions of Faith: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "OM Tat Sat",
+        "micro_theme_te": "ఓం తత్ సత్",
+        "shlokas": [
+          "17.21",
+          "17.22",
+          "17.23",
+          "17.24",
+          "17.25",
+          "17.26",
+          "17.27",
+          "17.28"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 21–28",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 21–28",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on OM Tat Sat helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. ఓం తత్ సత్ పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moral_te": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి."
+        },
+        "activity": "Journal: When did you need courage for \"OM Tat Sat\"? What did you do?",
+        "activity_te": "\"ఓం తత్ సత్\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "18": [
+      {
+        "id": "theme_sk18_1",
+        "title": "Final Liberation: Part 1",
+        "title_te": "Final Liberation: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.1",
+          "18.2",
+          "18.3",
+          "18.4",
+          "18.5",
+          "18.6",
+          "18.7",
+          "18.8",
+          "18.9",
+          "18.10",
+          "18.11",
+          "18.12",
+          "18.13",
+          "18.14",
+          "18.15",
+          "18.16",
+          "18.17",
+          "18.18",
+          "18.19",
+          "18.20"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 1–20",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 1–20",
+          "content": "Riya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Riya felt confused. Reading the Gita, Riya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on types of renunciation helped Riya choose courage over comfort.",
+          "content_te": "Riya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సన్యాస రకాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"types of renunciation\"? What did you do?",
+        "activity_te": "\"సన్యాస రకాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk18_2",
+        "title": "Final Liberation: Part 2",
+        "title_te": "Final Liberation: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.21",
+          "18.22",
+          "18.23",
+          "18.24",
+          "18.25",
+          "18.26",
+          "18.27",
+          "18.28",
+          "18.29",
+          "18.30",
+          "18.31",
+          "18.32",
+          "18.33",
+          "18.34",
+          "18.35",
+          "18.36",
+          "18.37",
+          "18.38",
+          "18.39",
+          "18.40"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 21–40",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 21–40",
+          "content": "Arjun had to make a hard choice between what was easy and what was right. Friends gave different advice, and Arjun felt confused. Reading the Gita, Arjun saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on five causes of action helped Arjun choose courage over comfort.",
+          "content_te": "Arjun సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. చర్యకు ఐదు కారణాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Journal: When did you need courage for \"five causes of action\"? What did you do?",
+        "activity_te": "\"చర్యకు ఐదు కారణాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk18_3",
+        "title": "Final Liberation: Part 3",
+        "title_te": "Final Liberation: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "final teaching surrender",
+        "micro_theme_te": "చివరి బోధన లొంగుబాటు",
+        "shlokas": [
+          "18.41",
+          "18.42",
+          "18.43",
+          "18.44",
+          "18.45",
+          "18.46",
+          "18.47",
+          "18.48",
+          "18.49",
+          "18.50",
+          "18.51",
+          "18.52",
+          "18.53",
+          "18.54",
+          "18.55",
+          "18.56",
+          "18.57",
+          "18.58",
+          "18.59",
+          "18.60"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 41–60",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 41–60",
+          "content": "Maya had to make a hard choice between what was easy and what was right. Friends gave different advice, and Maya felt confused. Reading the Gita, Maya saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on final teaching surrender helped Maya choose courage over comfort.",
+          "content_te": "Maya సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. చివరి బోధన లొంగుబాటు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moral_te": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి."
+        },
+        "activity": "Journal: When did you need courage for \"final teaching surrender\"? What did you do?",
+        "activity_te": "\"చివరి బోధన లొంగుబాటు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sk18_4",
+        "title": "Final Liberation: Part 4",
+        "title_te": "Final Liberation: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.61",
+          "18.62",
+          "18.63",
+          "18.64",
+          "18.65",
+          "18.66",
+          "18.67",
+          "18.68",
+          "18.69",
+          "18.70",
+          "18.71",
+          "18.72",
+          "18.73",
+          "18.74",
+          "18.75",
+          "18.76",
+          "18.77",
+          "18.78"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 61–78",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 61–78",
+          "content": "Dev had to make a hard choice between what was easy and what was right. Friends gave different advice, and Dev felt confused. Reading the Gita, Dev saw how Arjuna also felt torn on the field of Kurukshetra. Krishna's teaching on types of renunciation helped Dev choose courage over comfort.",
+          "content_te": "Dev సులభమైనది మరియు సరైనది మధ్య ఎంపిక చేయాల్సి వచ్చింది. గీతలో అర్జునుడు కూడా గందరగోళంలో ఉన్నాడని చూశాడు. సన్యాస రకాలు పై కృష్ణ బోధన సౌకర్యం కంటే ధైర్యాన్ని ఎంచుకోవడానికి సహాయపడింది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Journal: When did you need courage for \"types of renunciation\"? What did you do?",
+        "activity_te": "\"సన్యాస రకాలు\" కోసం మీకు ధైర్యం అవసరమైన సమయాన్ని జర్నల్‌లో రాయండి.",
         "videoUrl": ""
       }
     ]

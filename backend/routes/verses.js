@@ -77,6 +77,75 @@ router.get('/', (req, res) => {
   }
 });
 
+// GET /api/verses/quiz/:scripture/:chapter/:verse — Quiz from shloka exercises or theme
+router.get('/quiz/:scripture/:chapter/:verse', (req, res) => {
+  try {
+    const { scripture, chapter, verse } = req.params;
+    const level = req.query.level || 'seekers';
+
+    const generateShlokaQuestions = (shloka, ch, v) => {
+      if (!shloka) return [];
+      if (shloka.exercises && shloka.exercises[level]) {
+        const ex = shloka.exercises[level];
+        return [{
+          question: ex.question,
+          question_te: ex.question_te,
+          options: ex.options,
+          correct: ex.correct,
+        }];
+      }
+      const childMeaning = shloka.en?.childMeaning || '';
+      const activity = shloka.en?.activity || '';
+      return [
+        {
+          question: `What is the main teaching of Shloka ${ch}.${v}?`,
+          options: [
+            childMeaning.substring(0, 80) + (childMeaning.length > 80 ? '...' : ''),
+            'Only the strong should fight',
+            'Wealth brings happiness',
+          ],
+          correct: 0,
+        },
+        {
+          question: activity ? `The activity for Shloka ${ch}.${v} suggests:` : `What lesson does Shloka ${ch}.${v} teach?`,
+          options: activity
+            ? [activity.substring(0, 80) + (activity.length > 80 ? '...' : ''), 'Always expect a reward', 'Only act for praise']
+            : [(shloka.en?.meaning || '').substring(0, 80), 'Avoid good deeds', 'Compete to defeat others'],
+          correct: 0,
+        },
+      ];
+    };
+
+    if (typeof verse === 'string' && verse.startsWith('theme_')) {
+      const chThemes = contentData.themes?.gita?.[chapter]?.[level] || [];
+      const theme = chThemes.find((t) => t.id === verse);
+      if (!theme) return res.status(404).json({ error: 'Theme not found' });
+
+      let themeQuestions = [];
+      (theme.shlokas || []).forEach((shlokaId) => {
+        const shloka = contentData.shlokas[shlokaId];
+        const parts = shlokaId.split('.');
+        const vNum = parts[parts.length - 1];
+        themeQuestions = themeQuestions.concat(generateShlokaQuestions(shloka, chapter, vNum));
+      });
+      if (!themeQuestions.length) return res.status(404).json({ error: 'No questions for this theme' });
+      return res.json(themeQuestions);
+    }
+
+    let shloka = null;
+    if (scripture === 'gita') {
+      shloka = contentData.shlokas[`${chapter}.${verse}`];
+    } else if (scripture === 'hanuman') {
+      shloka = getHanumanVerse(verse);
+    }
+    if (!shloka) return res.status(404).json({ error: 'Shloka not found' });
+    return res.json(generateShlokaQuestions(shloka, chapter, verse));
+  } catch (err) {
+    console.error('Quiz error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
 // GET /api/verses/evaluations/:scripture/:chapter/:level - Get quiz questions
 router.get('/evaluations/:scripture/:chapter/:level', (req, res) => {
   const { scripture, chapter, level } = req.params;

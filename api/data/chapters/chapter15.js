@@ -1,661 +1,3077 @@
 const CHAPTER_15_SHLOKAS = {
     "15.1": {
-        sanskrit: "श्रीभगवानुवाच।\nऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्।\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्॥",
-        transliteration: "śrī-bhagavān uvāca\nūrdhva-mūlam adhaḥ-śākham aśvatthaṁ prāhur avyayam\nchandāṁsi yasya parṇāni yas taṁ veda sa veda-vit",
-        en: {
-            meaning: "The Supreme Lord said: There is a banyan tree with roots above and branches below. Its leaves are the Vedic hymns. One who understands this tree knows the Vedas.",
-            childMeaning: "Krishna says: Imagine a magical tree upside down! Its roots are in the sky and branches grow downward. Understanding this tree means understanding life.",
-            activity: "Draw an upside-down tree! What would it look like?"
+        "sanskrit": "श्री भगवानुवाचऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् |\nछन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्",
+        "transliteration": "śhrī-bhagavān uvācha\nūrdhva-mūlam adhaḥ-śhākham aśhvatthaṁ prāhur avyayam\nchhandānsi yasya parṇāni yas taṁ veda sa veda-vit",
+        "en": {
+            "meaning": "The Supreme Lord said: There is a banyan tree with roots above and branches below. Its leaves are the Vedic hymns. One who understands this tree knows the Vedas.",
+            "childMeaning": "Krishna says: Imagine a magical tree upside down! Its roots are in the sky and branches grow downward. Understanding this tree means understanding life.",
+            "activity": "Draw an upside-down tree! What would it look like?"
         },
-        te: {
-            meaning: "శ్రీభగవానుడు ఇలా అన్నాడు: పైకి వేర్లు మరియు క్రిందికి కొమ్మలు ఉన్న అశ్వత్థ వృక్షం ఉంది. దాని ఆకులు వేదాలు. దాన్ని తెలిసినవాడు వేదాలను తెలిసినవాడే.",
-            childMeaning: "కృష్ణుడు చెబుతున్నాడు: ఒక మాయా చెట్టును ఊహించు! అది తలకిందులుగా ఉంటుంది.",
-            activity: "ఒక తలకిందుల చెట్టును గీయండి!"
+        "te": {
+            "meaning": "శ్రీభగవానుడు ఇలా అన్నాడు: పైకి వేర్లు మరియు క్రిందికి కొమ్మలు ఉన్న అశ్వత్థ వృక్షం ఉంది. దాని ఆకులు వేదాలు. దాన్ని తెలిసినవాడు వేదాలను తెలిసినవాడే.",
+            "childMeaning": "కృష్ణుడు చెబుతున్నాడు: ఒక మాయా చెట్టును ఊహించు! అది తలకిందులుగా ఉంటుంది.",
+            "activity": "ఒక తలకిందుల చెట్టును గీయండి!"
         },
-        exercises: {
-            seeds: { question: "Where are the roots of the tree?", question_te: "చెట్టుకు వేర్లు ఎక్కడ ఉన్నాయి?", options: ["Up (⬆️)", "Down (⬇️)", "Side (➡️)"], correct: 0 },
-            seekers: { question: "What do the leaves represent?", question_te: "ఆకులు ఏమిని సూచిస్తాయి?", options: ["Fruits", "Vedas", "Birds"], correct: 1 },
-            warriors: { question: "What does the tree symbolize?", question_te: "ఈ చెట్టు ఏమిని సూచిస్తుంది?", options: ["Forest", "Material world", "River"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Where are the roots of the tree?",
+                "question_te": "చెట్టుకు వేర్లు ఎక్కడ ఉన్నాయి?",
+                "options": [
+                    "Up (⬆️)",
+                    "Down (⬇️)",
+                    "Side (➡️)"
+                ],
+                "correct": 0
+            },
+            "seekers": {
+                "question": "What do the leaves represent?",
+                "question_te": "ఆకులు ఏమిని సూచిస్తాయి?",
+                "options": [
+                    "Fruits",
+                    "Vedas",
+                    "Birds"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does the tree symbolize?",
+                "question_te": "ఈ చెట్టు ఏమిని సూచిస్తుంది?",
+                "options": [
+                    "Forest",
+                    "Material world",
+                    "River"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "శ్రీభగవానువాచ |\nఊర్ధ్వమూలమధఃశాఖమశ్వత్థం ప్రాహురవ్యయం |\nఛందాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్ ||",
-        lineBreakdown: [
-            { sanskrit: "ऊर्ध्वमूलमधःशाखम्", word: "ūrdhva-mūlam adhaḥ-śākham", sanskrit_te: "ఊర్ధ్వమూలమధఃశాఖమ్", en: "roots above and branches below", te: "పైకి వేర్లు క్రిందికి కొమ్మలు" },
-            { sanskrit: "अश्वत्थं प्राहुरव्ययम्", word: "aśvatthaṁ prāhur avyayam", sanskrit_te: "అశ్వత్థం ప్రాహురవ్యయం", en: "this eternal banyan tree", te: "ఈ శాశ్వత అశ్వత్థ చెట్టు" },
-            { sanskrit: "छन्दांसि यस्य पर्णानि", word: "chandāṁsi yasya parṇāni", sanskrit_te: "ఛందాంసి యస్య పర్ణాని", en: "whose leaves are the Vedas", te: "దాని ఆకులు వేదాలు" }
+        "telugu_script": "శ్రీ భగవానువాచఊర్ధ్వమూలమధఃశాఖమశ్వత్థం ప్రాహురవ్యయమ్ |\nఛన్దాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "śhrī-bhagavān uvācha",
+                "word": "śhrī-bhagavān uvācha",
+                "sanskrit_te": "శ్హ్రీ-భగవాన్ ఉవాఛ",
+                "en": "the Supreme Divine Personality said",
+                "te": "the Supreme Divine Personality said"
+            },
+            {
+                "sanskrit": "ūrdhva-mūlam",
+                "word": "ūrdhva-mūlam",
+                "sanskrit_te": "ఊర్ధ్వ-మూలమ్",
+                "en": "with roots above",
+                "te": "with roots above"
+            },
+            {
+                "sanskrit": "adhaḥ",
+                "word": "adhaḥ",
+                "sanskrit_te": "అధః",
+                "en": "downward",
+                "te": "downward"
+            },
+            {
+                "sanskrit": "śhākham",
+                "word": "śhākham",
+                "sanskrit_te": "శ్హాఖమ్",
+                "en": "branches",
+                "te": "branches"
+            },
+            {
+                "sanskrit": "aśhvattham",
+                "word": "aśhvattham",
+                "sanskrit_te": "అశ్హ్వత్థమ్",
+                "en": "the sacred fig tree",
+                "te": "the sacred fig tree"
+            },
+            {
+                "sanskrit": "prāhuḥ",
+                "word": "prāhuḥ",
+                "sanskrit_te": "ప్రాహుః",
+                "en": "they speak",
+                "te": "they speak"
+            },
+            {
+                "sanskrit": "avyayam",
+                "word": "avyayam",
+                "sanskrit_te": "అవ్యయమ్",
+                "en": "eternal",
+                "te": "eternal"
+            },
+            {
+                "sanskrit": "chhandānsi",
+                "word": "chhandānsi",
+                "sanskrit_te": "ఛ్హన్దాన్సి",
+                "en": "Vedic mantras",
+                "te": "Vedic mantras"
+            },
+            {
+                "sanskrit": "yasya",
+                "word": "yasya",
+                "sanskrit_te": "యస్య",
+                "en": "of which",
+                "te": "of which"
+            },
+            {
+                "sanskrit": "parṇāni",
+                "word": "parṇāni",
+                "sanskrit_te": "పర్ణాని",
+                "en": "leaves",
+                "te": "leaves"
+            },
+            {
+                "sanskrit": "yaḥ",
+                "word": "yaḥ",
+                "sanskrit_te": "యః",
+                "en": "who",
+                "te": "who"
+            },
+            {
+                "sanskrit": "tam",
+                "word": "tam",
+                "sanskrit_te": "తమ్",
+                "en": "that",
+                "te": "that"
+            },
+            {
+                "sanskrit": "veda",
+                "word": "veda",
+                "sanskrit_te": "వేద",
+                "en": "knows",
+                "te": "knows"
+            },
+            {
+                "sanskrit": "saḥ",
+                "word": "saḥ",
+                "sanskrit_te": "సః",
+                "en": "he",
+                "te": "he"
+            },
+            {
+                "sanskrit": "veda-vit",
+                "word": "veda-vit",
+                "sanskrit_te": "వేద-విత్",
+                "en": "the knower of the Vedas",
+                "te": "the knower of the Vedas"
+            }
         ]
     },
-
     "15.2": {
-        sanskrit: "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा गुणप्रवृद्धा विषयप्रवालाः।\nअधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके॥",
-        transliteration: "adhaś cordhvaṁ prasṛtās tasya śākhā guṇa-pravṛddhā viṣaya-pravālāḥ\nadhaś ca mūlāny anusantatāni karmānubandhīni manuṣya-loke",
-        en: {
-            meaning: "The branches extend upward and downward, nourished by the three qualities. The roots spread downward, binding humans through actions.",
-            childMeaning: "The tree spreads everywhere, and its roots tie people with their actions—like habits that keep growing.",
-            activity: "Write one good habit you want to grow like a tree."
+        "sanskrit": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा गुणप्रवृद्धा विषयप्रवालाः |\nअधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके",
+        "transliteration": "adhaśh chordhvaṁ prasṛitās tasya śhākhā\nguṇa-pravṛiddhā viṣhaya-pravālāḥ\nadhaśh cha mūlāny anusantatāni\nkarmānubandhīni manuṣhya-loke",
+        "en": {
+            "meaning": "The branches extend upward and downward, nourished by the three qualities. The roots spread downward, binding humans through actions.",
+            "childMeaning": "The tree spreads everywhere, and its roots tie people with their actions—like habits that keep growing.",
+            "activity": "Write one good habit you want to grow like a tree."
         },
-        te: {
-            meaning: "ఈ చెట్టు కొమ్మలు పైకి క్రిందికి వ్యాపించి ఉంటాయి. వేర్లు కర్మలతో మనుషులను కట్టిపడేస్తాయి.",
-            childMeaning: "ఈ చెట్టు మన అలవాట్లలాగా పెరుగుతుంది.",
-            activity: "మీరు పెంచుకోవాలనుకునే ఒక మంచి అలవాటు రాయండి."
+        "te": {
+            "meaning": "ఈ చెట్టు కొమ్మలు పైకి క్రిందికి వ్యాపించి ఉంటాయి. వేర్లు కర్మలతో మనుషులను కట్టిపడేస్తాయి.",
+            "childMeaning": "ఈ చెట్టు మన అలవాట్లలాగా పెరుగుతుంది.",
+            "activity": "మీరు పెంచుకోవాలనుకునే ఒక మంచి అలవాటు రాయండి."
         },
-        exercises: {
-            seeds: { question: "Tree branches go...", question_te: "కొమ్మలు ఎలా పెరుగుతాయి?", options: ["Only up", "Up and down", "Nowhere"], correct: 1 },
-            seekers: { question: "What binds humans?", question_te: "మనుషులను ఏమి కట్టిపడేస్తుంది?", options: ["Food", "Actions (karma)", "Sleep"], correct: 1 },
-            warriors: { question: "Meaning of 'guna-pravriddha'?", question_te: "'గుణప్రవృద్ధ' అంటే ఏమిటి?", options: ["Growing by qualities", "Cut tree", "Dry tree"], correct: 0 }
+        "exercises": {
+            "seeds": {
+                "question": "Tree branches go...",
+                "question_te": "కొమ్మలు ఎలా పెరుగుతాయి?",
+                "options": [
+                    "Only up",
+                    "Up and down",
+                    "Nowhere"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "What binds humans?",
+                "question_te": "మనుషులను ఏమి కట్టిపడేస్తుంది?",
+                "options": [
+                    "Food",
+                    "Actions (karma)",
+                    "Sleep"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "Meaning of 'guna-pravriddha'?",
+                "question_te": "'గుణప్రవృద్ధ' అంటే ఏమిటి?",
+                "options": [
+                    "Growing by qualities",
+                    "Cut tree",
+                    "Dry tree"
+                ],
+                "correct": 0
+            }
         },
-        telugu_script: "అధశ్చోర్ధ్వం ప్రసృతాస్తస్య శాఖా గుణప్రవృద్ధా విషయప్రవాలాః |\nఅధశ్చ మూలాన్యనుసంతతాని కర్మానుబంధీనిమనుష్యలోకే ||",
-        lineBreakdown: [
-            { sanskrit: "अधश्चोर्ध्वं प्रसृताः", word: "adhaś cordhvaṁ prasṛtāḥ", sanskrit_te: "అధశ్చోర్ధ్వం ప్రసృతాః", en: "spread above and below", te: "పైకి క్రిందికి వ్యాపించిన" },
-            { sanskrit: "गुणप्रवृद्धा", word: "guṇa-pravṛddhā", sanskrit_te: "గుణప్రవృద్ధా", en: "grown by qualities", te: "గుణాలతో పెరిగిన" }
+        "telugu_script": "అధశ్చోర్ధ్వం ప్రసృతాస్తస్య శాఖా గుణప్రవృద్ధా విషయప్రవాలాః |\nఅధశ్చ మూలాన్యనుసన్తతాని కర్మానుబన్ధీని మనుష్యలోకే",
+        "lineBreakdown": [
+            {
+                "sanskrit": "adhaḥ",
+                "word": "adhaḥ",
+                "sanskrit_te": "అధః",
+                "en": "downward",
+                "te": "downward"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "ūrdhvam",
+                "word": "ūrdhvam",
+                "sanskrit_te": "ఊర్ధ్వమ్",
+                "en": "upward",
+                "te": "upward"
+            },
+            {
+                "sanskrit": "prasṛitāḥ",
+                "word": "prasṛitāḥ",
+                "sanskrit_te": "ప్రసృఇతాః",
+                "en": "extended",
+                "te": "extended"
+            },
+            {
+                "sanskrit": "tasya",
+                "word": "tasya",
+                "sanskrit_te": "తస్య",
+                "en": "its",
+                "te": "its"
+            },
+            {
+                "sanskrit": "śhākhāḥ",
+                "word": "śhākhāḥ",
+                "sanskrit_te": "శ్హాఖాః",
+                "en": "branches",
+                "te": "branches"
+            },
+            {
+                "sanskrit": "guṇa",
+                "word": "guṇa",
+                "sanskrit_te": "గుణ",
+                "en": "modes of material nature",
+                "te": "modes of material nature"
+            },
+            {
+                "sanskrit": "pravṛiddhāḥ",
+                "word": "pravṛiddhāḥ",
+                "sanskrit_te": "ప్రవృఇద్ధాః",
+                "en": "nourished",
+                "te": "nourished"
+            },
+            {
+                "sanskrit": "viṣhaya",
+                "word": "viṣhaya",
+                "sanskrit_te": "విష్హయ",
+                "en": "objects of the senses",
+                "te": "objects of the senses"
+            },
+            {
+                "sanskrit": "pravālāḥ",
+                "word": "pravālāḥ",
+                "sanskrit_te": "ప్రవాలాః",
+                "en": "buds",
+                "te": "buds"
+            },
+            {
+                "sanskrit": "adhaḥ",
+                "word": "adhaḥ",
+                "sanskrit_te": "అధః",
+                "en": "downward",
+                "te": "downward"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "mūlāni",
+                "word": "mūlāni",
+                "sanskrit_te": "మూలాని",
+                "en": "roots",
+                "te": "roots"
+            },
+            {
+                "sanskrit": "anusantatāni",
+                "word": "anusantatāni",
+                "sanskrit_te": "అనుసన్తతాని",
+                "en": "keep growing",
+                "te": "keep growing"
+            },
+            {
+                "sanskrit": "karma",
+                "word": "karma",
+                "sanskrit_te": "కర్మ",
+                "en": "actions",
+                "te": "actions"
+            },
+            {
+                "sanskrit": "anubandhīni",
+                "word": "anubandhīni",
+                "sanskrit_te": "అనుబన్ధీని",
+                "en": "bound",
+                "te": "bound"
+            },
+            {
+                "sanskrit": "manuṣhya-loke",
+                "word": "manuṣhya-loke",
+                "sanskrit_te": "మనుష్హ్య-లోకే",
+                "en": "in the world of humans",
+                "te": "in the world of humans"
+            }
         ]
     },
-
     "15.3": {
-        sanskrit: "न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च सम्प्रतिष्ठा।\nअश्वत्थमेनं सुविरूढमूलमसङ्गशस्त्रेण दृढेन छित्त्वा॥",
-        transliteration: "na rūpam asya iha tathopalabhyate nānto na cādir na ca sampratiṣṭhā\naśvattham enaṁ su-virūḍha-mūlam asaṅga-śastreṇa dṛḍhena chittvā",
-        en: {
-            meaning: "This tree’s form is not easily understood. It has no beginning or end. Cut this deeply rooted tree with the weapon of detachment.",
-            childMeaning: "This tree is hard to understand. Krishna says: cut it using ‘detachment’—like letting go of things that distract you.",
-            activity: "Think of one distraction you want to reduce (like too much TV)."
+        "sanskrit": "न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च संप्रतिष्ठा |\nअश्वत्थमेनं सुविरूढमूल मसङ्गशस्त्रेण दृढेन छित्त्वा",
+        "transliteration": "na rūpam asyeha tathopalabhyate\nnānto na chādir na cha sampratiṣhṭhā\naśhvattham enaṁ su-virūḍha-mūlam\nasaṅga-śhastreṇa dṛiḍhena chhittvā",
+        "en": {
+            "meaning": "This tree’s form is not easily understood. It has no beginning or end. Cut this deeply rooted tree with the weapon of detachment.",
+            "childMeaning": "This tree is hard to understand. Krishna says: cut it using ‘detachment’—like letting go of things that distract you.",
+            "activity": "Think of one distraction you want to reduce (like too much TV)."
         },
-        te: {
-            meaning: "ఈ చెట్టు రూపం సులభంగా అర్థం కాదు. దీనికి ఆది అంతం లేదు. అసక్తి అనే ఆయుధంతో దీనిని కోయాలి.",
-            childMeaning: "మన దృష్టిని మళ్లించే వాటిని వదిలేయాలి అని కృష్ణుడు చెబుతున్నాడు.",
-            activity: "మీరు తగ్గించాలనుకునే ఒక అలవాటు రాయండి."
+        "te": {
+            "meaning": "ఈ చెట్టు రూపం సులభంగా అర్థం కాదు. దీనికి ఆది అంతం లేదు. అసక్తి అనే ఆయుధంతో దీనిని కోయాలి.",
+            "childMeaning": "మన దృష్టిని మళ్లించే వాటిని వదిలేయాలి అని కృష్ణుడు చెబుతున్నాడు.",
+            "activity": "మీరు తగ్గించాలనుకునే ఒక అలవాటు రాయండి."
         },
-        exercises: {
-            seeds: { question: "Is the tree easy to understand?", question_te: "ఈ చెట్టు అర్థం కావడం సులభమా?", options: ["Yes", "No", "Maybe"], correct: 1 },
-            seekers: { question: "What is used to cut the tree?", question_te: "ఈ చెట్టును ఏంతో కోయాలి?", options: ["Knife", "Detachment", "Stick"], correct: 1 },
-            warriors: { question: "Meaning of 'asanga shastra'?", question_te: "'అసంగ శస్త్రం' అంటే ఏమిటి?", options: ["Weapon of detachment", "Sword", "Arrow"], correct: 0 }
+        "exercises": {
+            "seeds": {
+                "question": "Is the tree easy to understand?",
+                "question_te": "ఈ చెట్టు అర్థం కావడం సులభమా?",
+                "options": [
+                    "Yes",
+                    "No",
+                    "Maybe"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "What is used to cut the tree?",
+                "question_te": "ఈ చెట్టును ఏంతో కోయాలి?",
+                "options": [
+                    "Knife",
+                    "Detachment",
+                    "Stick"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "Meaning of 'asanga shastra'?",
+                "question_te": "'అసంగ శస్త్రం' అంటే ఏమిటి?",
+                "options": [
+                    "Weapon of detachment",
+                    "Sword",
+                    "Arrow"
+                ],
+                "correct": 0
+            }
         },
-        telugu_script: "న రూపమస్యేహ తథోపలభ్యతే నాంతో న చాదిర్న చ సంప్రతిష్ఠా |\nఅశ్వత్థమేనం సువిరూఢమూలమసంగశస్త్రేణ దృఢేన ఛిత్వా ||",
-        lineBreakdown: [
-            { sanskrit: "न रूपमस्य", word: "na rūpam asya", sanskrit_te: "న రూపమస్య", en: "its form is not known", te: "దాని రూపం తెలియదు" },
-            { sanskrit: "असङ्गशस्त्रेण", word: "asaṅga-śastreṇa", sanskrit_te: "అసంగశస్త్రేణ", en: "with weapon of detachment", te: "అసక్తి అనే ఆయుధంతో" }
+        "telugu_script": "న రూపమస్యేహ తథోపలభ్యతే నాన్తో న చాదిర్న చ సంప్రతిష్ఠా |\nఅశ్వత్థమేనం సువిరూఢమూల మసఙ్గశస్త్రేణ దృఢేన ఛిత్త్వా",
+        "lineBreakdown": [
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "not",
+                "te": "not"
+            },
+            {
+                "sanskrit": "rūpam",
+                "word": "rūpam",
+                "sanskrit_te": "రూపమ్",
+                "en": "form",
+                "te": "form"
+            },
+            {
+                "sanskrit": "asya",
+                "word": "asya",
+                "sanskrit_te": "అస్య",
+                "en": "of this",
+                "te": "of this"
+            },
+            {
+                "sanskrit": "iha",
+                "word": "iha",
+                "sanskrit_te": "ఇహ",
+                "en": "in this world",
+                "te": "in this world"
+            },
+            {
+                "sanskrit": "tathā",
+                "word": "tathā",
+                "sanskrit_te": "తథా",
+                "en": "as such",
+                "te": "as such"
+            },
+            {
+                "sanskrit": "upalabhyate",
+                "word": "upalabhyate",
+                "sanskrit_te": "ఉపలభ్యతే",
+                "en": "is perceived",
+                "te": "is perceived"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "neither",
+                "te": "neither"
+            },
+            {
+                "sanskrit": "antaḥ",
+                "word": "antaḥ",
+                "sanskrit_te": "అన్తః",
+                "en": "end",
+                "te": "end"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "nor",
+                "te": "nor"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "ādiḥ",
+                "word": "ādiḥ",
+                "sanskrit_te": "ఆదిః",
+                "en": "beginning",
+                "te": "beginning"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "never",
+                "te": "never"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "sampratiṣhṭhā",
+                "word": "sampratiṣhṭhā",
+                "sanskrit_te": "సమ్ప్రతిష్హ్ఠా",
+                "en": "the basis",
+                "te": "the basis"
+            },
+            {
+                "sanskrit": "aśhvattham",
+                "word": "aśhvattham",
+                "sanskrit_te": "అశ్హ్వత్థమ్",
+                "en": "sacred fig tree",
+                "te": "sacred fig tree"
+            },
+            {
+                "sanskrit": "enam",
+                "word": "enam",
+                "sanskrit_te": "ఏనమ్",
+                "en": "this",
+                "te": "this"
+            },
+            {
+                "sanskrit": "su-virūḍha-mūlam",
+                "word": "su-virūḍha-mūlam",
+                "sanskrit_te": "సు-విరూఢ-మూలమ్",
+                "en": "deep-rooted",
+                "te": "deep-rooted"
+            },
+            {
+                "sanskrit": "asaṅga-śhastreṇa",
+                "word": "asaṅga-śhastreṇa",
+                "sanskrit_te": "అసఙ్గ-శ్హస్త్రేణ",
+                "en": "by the axe of detachment",
+                "te": "by the axe of detachment"
+            },
+            {
+                "sanskrit": "dṛiḍhena",
+                "word": "dṛiḍhena",
+                "sanskrit_te": "దృఇఢేన",
+                "en": "strong",
+                "te": "strong"
+            },
+            {
+                "sanskrit": "chhittvā",
+                "word": "chhittvā",
+                "sanskrit_te": "ఛ్హిత్త్వా",
+                "en": "having cut down",
+                "te": "having cut down"
+            }
         ]
     },
-
     "15.4": {
-        sanskrit: "ततः पदं तत्परिमार्गितव्यं यस्मिन्गता न निवर्तन्ति भूयः।\nतमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी॥",
-        transliteration: "tataḥ padaṁ tat parimārgitavyaṁ yasmin gatā na nivartanti bhūyaḥ\ntam eva cādyaṁ puruṣaṁ prapadye yataḥ pravṛttiḥ prasṛtā purāṇī",
-        en: {
-            meaning: "One must search for that supreme state, reaching which one never returns. Surrender to that original Supreme Person from whom everything began.",
-            childMeaning: "Krishna says: Find that special place where you never feel sad again and stay peaceful forever.",
-            activity: "Think of a place where you feel happiest and peaceful. Draw it."
+        "sanskrit": "ततः पदं तत्परिमार्गितव्य यस्मिन्गता न निवर्तन्ति भूयः |\nतमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी",
+        "transliteration": "tataḥ padaṁ tat parimārgitavyaṁ\nyasmin gatā na nivartanti bhūyaḥ\ntam eva chādyaṁ puruṣhaṁ prapadye\nyataḥ pravṛittiḥ prasṛitā purāṇī",
+        "en": {
+            "meaning": "One must search for that supreme state, reaching which one never returns. Surrender to that original Supreme Person from whom everything began.",
+            "childMeaning": "Krishna says: Find that special place where you never feel sad again and stay peaceful forever.",
+            "activity": "Think of a place where you feel happiest and peaceful. Draw it."
         },
-        te: {
-            meaning: "ఎవరైనా చేరిన తర్వాత తిరిగి రాని ఆ పరమపదాన్ని అన్వేషించాలి. అన్నింటి ఆది అయిన ఆ పరమాత్మునికి శరణు పొందాలి.",
-            childMeaning: "ఎప్పటికీ శాంతిగా ఉండే స్థలాన్ని కనుగొనమని కృష్ణుడు చెబుతున్నాడు.",
-            activity: "మీకు శాంతి ఇచ్చే ఒక ప్రదేశాన్ని ఊహించి గీయండి."
+        "te": {
+            "meaning": "ఎవరైనా చేరిన తర్వాత తిరిగి రాని ఆ పరమపదాన్ని అన్వేషించాలి. అన్నింటి ఆది అయిన ఆ పరమాత్మునికి శరణు పొందాలి.",
+            "childMeaning": "ఎప్పటికీ శాంతిగా ఉండే స్థలాన్ని కనుగొనమని కృష్ణుడు చెబుతున్నాడు.",
+            "activity": "మీకు శాంతి ఇచ్చే ఒక ప్రదేశాన్ని ఊహించి గీయండి."
         },
-        exercises: {
-            seeds: {
-                question: "Where do we want to go?",
-                question_te: "మనం ఎక్కడికి వెళ్లాలనుకుంటాము?",
-                options: ["Peaceful place 😊", "Noisy place 🔊", "Crowded place 👥"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "Where do we want to go?",
+                "question_te": "మనం ఎక్కడికి వెళ్లాలనుకుంటాము?",
+                "options": [
+                    "Peaceful place 😊",
+                    "Noisy place 🔊",
+                    "Crowded place 👥"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "What happens after reaching the supreme state?",
-                question_te: "పరమపదాన్ని చేరిన తర్వాత ఏమవుతుంది?",
-                options: ["No return", "Come back again", "Get lost"],
-                correct: 0
+            "seekers": {
+                "question": "What happens after reaching the supreme state?",
+                "question_te": "పరమపదాన్ని చేరిన తర్వాత ఏమవుతుంది?",
+                "options": [
+                    "No return",
+                    "Come back again",
+                    "Get lost"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What is meant by surrendering to the 'Adya Purusha'?",
-                question_te: "'ఆద్య పురుషునికి శరణు పొందడం' అంటే ఏమిటి?",
-                options: [
+            "warriors": {
+                "question": "What is meant by surrendering to the 'Adya Purusha'?",
+                "question_te": "'ఆద్య పురుషునికి శరణు పొందడం' అంటే ఏమిటి?",
+                "options": [
                     "Complete trust in the ultimate source of existence",
                     "Giving up all actions",
                     "Following traditions blindly"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "తతః పదం తత్ పరిమార్గితవ్యం యస్మిన్ గతా న నివర్తంతి భూయః |\nతమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ ||",
-        lineBreakdown: [
-            { sanskrit: "ततः पदं तत्परिमार्गितव्यं", word: "tataḥ padaṁ tat parimārgitavyam", sanskrit_te: "తతః పదం తత్ పరిమార్గితవ్యం", en: "that supreme state must be sought", te: "ఆ పరమపదాన్ని అన్వేషించాలి" },
-            { sanskrit: "यस्मिन्गता न निवर्तन्ति", word: "yasmin gatā na nivartanti", sanskrit_te: "యస్మిన్ గతా న నివర్తంతి", en: "once reached, none return", te: "చేరిన తర్వాత తిరిగి రారు" },
-            { sanskrit: "तमेव चाद्यं पुरुषं प्रपद्ये", word: "tam eva cādyaṁ puruṣaṁ prapadye", sanskrit_te: "తమేవ చాద్యం పురుషం ప్రపద్యే", en: "surrender to that original person", te: "ఆ ఆద్య పురుషునికి శరణు పొందాలి" },
-            { sanskrit: "यतः प्रवृत्तिः प्रसृता पुराणी", word: "yataḥ pravṛttiḥ prasṛtā purāṇī", sanskrit_te: "యతః ప్రవృత్తిః ప్రసృతా పురాణీ", en: "from whom creation has expanded", te: "అన్నీ ఎక్కడి నుండి ప్రారంభమయ్యాయో" }
+        "telugu_script": "తతః పదం తత్పరిమార్గితవ్య యస్మిన్గతా న నివర్తన్తి భూయః |\nతమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ",
+        "lineBreakdown": [
+            {
+                "sanskrit": "tataḥ",
+                "word": "tataḥ",
+                "sanskrit_te": "తతః",
+                "en": "then",
+                "te": "then"
+            },
+            {
+                "sanskrit": "padam",
+                "word": "padam",
+                "sanskrit_te": "పదమ్",
+                "en": "place",
+                "te": "place"
+            },
+            {
+                "sanskrit": "tat",
+                "word": "tat",
+                "sanskrit_te": "తత్",
+                "en": "that",
+                "te": "that"
+            },
+            {
+                "sanskrit": "parimārgitavyam",
+                "word": "parimārgitavyam",
+                "sanskrit_te": "పరిమార్గితవ్యమ్",
+                "en": "one must search out",
+                "te": "one must search out"
+            },
+            {
+                "sanskrit": "yasmin",
+                "word": "yasmin",
+                "sanskrit_te": "యస్మిన్",
+                "en": "where",
+                "te": "where"
+            },
+            {
+                "sanskrit": "gatāḥ",
+                "word": "gatāḥ",
+                "sanskrit_te": "గతాః",
+                "en": "having gone",
+                "te": "having gone"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "not",
+                "te": "not"
+            },
+            {
+                "sanskrit": "nivartanti",
+                "word": "nivartanti",
+                "sanskrit_te": "నివర్తన్తి",
+                "en": "return",
+                "te": "return"
+            },
+            {
+                "sanskrit": "bhūyaḥ",
+                "word": "bhūyaḥ",
+                "sanskrit_te": "భూయః",
+                "en": "again",
+                "te": "again"
+            },
+            {
+                "sanskrit": "tam",
+                "word": "tam",
+                "sanskrit_te": "తమ్",
+                "en": "to him",
+                "te": "to him"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "certainly",
+                "te": "certainly"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "ādyam",
+                "word": "ādyam",
+                "sanskrit_te": "ఆద్యమ్",
+                "en": "original",
+                "te": "original"
+            },
+            {
+                "sanskrit": "puruṣham",
+                "word": "puruṣham",
+                "sanskrit_te": "పురుష్హమ్",
+                "en": "the Supreme Lord",
+                "te": "the Supreme Lord"
+            },
+            {
+                "sanskrit": "prapadye",
+                "word": "prapadye",
+                "sanskrit_te": "ప్రపద్యే",
+                "en": "take refuge",
+                "te": "take refuge"
+            },
+            {
+                "sanskrit": "yataḥ",
+                "word": "yataḥ",
+                "sanskrit_te": "యతః",
+                "en": "whence",
+                "te": "whence"
+            },
+            {
+                "sanskrit": "pravṛittiḥ",
+                "word": "pravṛittiḥ",
+                "sanskrit_te": "ప్రవృఇత్తిః",
+                "en": "the activity",
+                "te": "the activity"
+            },
+            {
+                "sanskrit": "prasṛitā",
+                "word": "prasṛitā",
+                "sanskrit_te": "ప్రసృఇతా",
+                "en": "streamed forth",
+                "te": "streamed forth"
+            },
+            {
+                "sanskrit": "purāṇi",
+                "word": "purāṇi",
+                "sanskrit_te": "పురాణి",
+                "en": "very old",
+                "te": "very old"
+            }
         ]
     },
-
     "15.5": {
-        sanskrit: "निर्मानमोहा जितसंगदोषा अध्यात्मनित्या विनिवृत्तकामाः।\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञैर्गच्छन्त्यमूढाः पदमव्ययं तत्॥",
-        transliteration: "nirmāna-mohā jita-saṅga-doṣā adhyātma-nityā vinivṛtta-kāmāḥ\ndvandvair vimuktāḥ sukha-duḥkha-saṁjñair gacchanty amūḍhāḥ padam avyayaṁ tat",
-        en: {
-            meaning: "Those free from ego and illusion, who have overcome attachment and desires, and are balanced in happiness and sorrow, reach the eternal state.",
-            childMeaning: "People who are calm, kind, and not too attached to things become truly happy.",
-            activity: "Think of one situation where you stayed calm. Write or draw it."
+        "sanskrit": "निर्मानमोहा जितसङ्गदोषा अध्यात्मनित्या विनिवृत्तकामाः |\nद्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै र्गच्छन्त्यमूढाः पदमव्ययं तत्",
+        "transliteration": "nirmāna-mohā jita-saṅga-doṣhā\nadhyātma-nityā vinivṛitta-kāmāḥ\ndvandvair vimuktāḥ sukha-duḥkha-sanjñair\ngachchhanty amūḍhāḥ padam avyayaṁ tat",
+        "en": {
+            "meaning": "Those free from ego and illusion, who have overcome attachment and desires, and are balanced in happiness and sorrow, reach the eternal state.",
+            "childMeaning": "People who are calm, kind, and not too attached to things become truly happy.",
+            "activity": "Think of one situation where you stayed calm. Write or draw it."
         },
-        te: {
-            meaning: "అహంకారం, మోహం, ఆసక్తి, కోరికల నుండి విముక్తి పొంది, సుఖదుఃఖాలలో సమత్వంతో ఉన్నవారు ఆ శాశ్వత స్థితిని చేరుతారు.",
-            childMeaning: "శాంతంగా ఉండే వారు నిజమైన ఆనందాన్ని పొందుతారు.",
-            activity: "మీరు శాంతంగా ఉన్న ఒక సందర్భాన్ని గుర్తుచేసుకోండి."
+        "te": {
+            "meaning": "అహంకారం, మోహం, ఆసక్తి, కోరికల నుండి విముక్తి పొంది, సుఖదుఃఖాలలో సమత్వంతో ఉన్నవారు ఆ శాశ్వత స్థితిని చేరుతారు.",
+            "childMeaning": "శాంతంగా ఉండే వారు నిజమైన ఆనందాన్ని పొందుతారు.",
+            "activity": "మీరు శాంతంగా ఉన్న ఒక సందర్భాన్ని గుర్తుచేసుకోండి."
         },
-        exercises: {
-            seeds: {
-                question: "Should we stay calm?",
-                question_te: "మనము శాంతంగా ఉండాలా?",
-                options: ["Yes 😊", "No ❌", "Sometimes 🤔"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "Should we stay calm?",
+                "question_te": "మనము శాంతంగా ఉండాలా?",
+                "options": [
+                    "Yes 😊",
+                    "No ❌",
+                    "Sometimes 🤔"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "What should we control to grow spiritually?",
-                question_te: "ఆధ్యాత్మికంగా ఎదగడానికి ఏమి నియంత్రించాలి?",
-                options: ["Desires", "Friends", "Food"],
-                correct: 0
+            "seekers": {
+                "question": "What should we control to grow spiritually?",
+                "question_te": "ఆధ్యాత్మికంగా ఎదగడానికి ఏమి నియంత్రించాలి?",
+                "options": [
+                    "Desires",
+                    "Friends",
+                    "Food"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What is the significance of being free from 'dvandvas' (pairs like joy and sorrow)?",
-                question_te: "'ద్వంద్వాల నుండి విముక్తి' అంటే ఏమిటి?",
-                options: [
+            "warriors": {
+                "question": "What is the significance of being free from 'dvandvas' (pairs like joy and sorrow)?",
+                "question_te": "'ద్వంద్వాల నుండి విముక్తి' అంటే ఏమిటి?",
+                "options": [
                     "Maintaining inner balance regardless of situations",
                     "Ignoring emotions completely",
                     "Avoiding all experiences"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "నిర్మానమోహా జితసంగదోషా అధ్యాత్మనిత్యా వినివృత్తకామాః |\nద్వంద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞైర్గచ్ఛంత్యమూఢాః పదమవ్యయం తత్ ||",
-        lineBreakdown: [
-            { sanskrit: "निर्मानमोहा", word: "nirmāna-mohā", sanskrit_te: "నిర్మానమోహా", en: "free from ego and illusion", te: "అహంకారం మరియు మోహం లేని వారు" },
-            { sanskrit: "जितसंगदोषा", word: "jita-saṅga-doṣā", sanskrit_te: "జితసంగదోషా", en: "who conquered attachment", te: "ఆసక్తిని జయించిన వారు" },
-            { sanskrit: "विनिवृत्तकामाः", word: "vinivṛtta-kāmāḥ", sanskrit_te: "వినివృత్తకామాః", en: "free from desires", te: "కోరికలు లేని వారు" },
-            { sanskrit: "द्वन्द्वैर्विमुक्ताः", word: "dvandvair vimuktāḥ", sanskrit_te: "ద్వంద్వైర్విముక్తాః", en: "free from dualities", te: "ద్వంద్వాల నుండి విముక్తి పొందిన వారు" }
+        "telugu_script": "నిర్మానమోహా జితసఙ్గదోషా అధ్యాత్మనిత్యా వినివృత్తకామాః |\nద్వన్ద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞై ర్గచ్ఛన్త్యమూఢాః పదమవ్యయం తత్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "niḥ",
+                "word": "niḥ",
+                "sanskrit_te": "నిః",
+                "en": "free from",
+                "te": "free from"
+            },
+            {
+                "sanskrit": "māna",
+                "word": "māna",
+                "sanskrit_te": "మాన",
+                "en": "vanity",
+                "te": "vanity"
+            },
+            {
+                "sanskrit": "mohāḥ",
+                "word": "mohāḥ",
+                "sanskrit_te": "మోహాః",
+                "en": "delusion",
+                "te": "delusion"
+            },
+            {
+                "sanskrit": "jita",
+                "word": "jita",
+                "sanskrit_te": "జిత",
+                "en": "having overcome",
+                "te": "having overcome"
+            },
+            {
+                "sanskrit": "saṅga",
+                "word": "saṅga",
+                "sanskrit_te": "సఙ్గ",
+                "en": "attachment",
+                "te": "attachment"
+            },
+            {
+                "sanskrit": "doṣhāḥ",
+                "word": "doṣhāḥ",
+                "sanskrit_te": "దోష్హాః",
+                "en": "evils",
+                "te": "evils"
+            },
+            {
+                "sanskrit": "adhyātma-nityāḥ",
+                "word": "adhyātma-nityāḥ",
+                "sanskrit_te": "అధ్యాత్మ-నిత్యాః",
+                "en": "dwelling constantly in the self and God",
+                "te": "dwelling constantly in the self and God"
+            },
+            {
+                "sanskrit": "vinivṛitta",
+                "word": "vinivṛitta",
+                "sanskrit_te": "వినివృఇత్త",
+                "en": "freed from",
+                "te": "freed from"
+            },
+            {
+                "sanskrit": "kāmāḥ",
+                "word": "kāmāḥ",
+                "sanskrit_te": "కామాః",
+                "en": "desire to enjoy senses",
+                "te": "desire to enjoy senses"
+            },
+            {
+                "sanskrit": "dvandvaiḥ",
+                "word": "dvandvaiḥ",
+                "sanskrit_te": "ద్వన్ద్వైః",
+                "en": "from the dualities",
+                "te": "from the dualities"
+            },
+            {
+                "sanskrit": "vimuktāḥ",
+                "word": "vimuktāḥ",
+                "sanskrit_te": "విముక్తాః",
+                "en": "liberated",
+                "te": "liberated"
+            },
+            {
+                "sanskrit": "sukha-duḥkha",
+                "word": "sukha-duḥkha",
+                "sanskrit_te": "సుఖ-దుఃఖ",
+                "en": "pleasure and pain",
+                "te": "pleasure and pain"
+            },
+            {
+                "sanskrit": "saṁjñaiḥ",
+                "word": "saṁjñaiḥ",
+                "sanskrit_te": "సṁజ్ఞైః",
+                "en": "known as",
+                "te": "known as"
+            },
+            {
+                "sanskrit": "gachchhanti",
+                "word": "gachchhanti",
+                "sanskrit_te": "గఛ్ఛ్హన్తి",
+                "en": "attain",
+                "te": "attain"
+            },
+            {
+                "sanskrit": "amūḍhāḥ",
+                "word": "amūḍhāḥ",
+                "sanskrit_te": "అమూఢాః",
+                "en": "unbewildered",
+                "te": "unbewildered"
+            },
+            {
+                "sanskrit": "padam",
+                "word": "padam",
+                "sanskrit_te": "పదమ్",
+                "en": "abode",
+                "te": "abode"
+            },
+            {
+                "sanskrit": "avyayam",
+                "word": "avyayam",
+                "sanskrit_te": "అవ్యయమ్",
+                "en": "eternal",
+                "te": "eternal"
+            },
+            {
+                "sanskrit": "tat",
+                "word": "tat",
+                "sanskrit_te": "తత్",
+                "en": "that",
+                "te": "that"
+            }
         ]
     },
-
     "15.6": {
-        sanskrit: "न तद्भासयते सूर्यो न शशाङ्को न पावकः।\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम॥",
-        transliteration: "na tad bhāsayate sūryo na śaśāṅko na pāvakaḥ\nyad gatvā na nivartante tad dhāma paramaṁ mama",
-        en: {
-            meaning: "That supreme abode is not illuminated by the sun, moon, or fire. Having reached it, one never returns.",
-            childMeaning: "God’s place shines on its own and is always bright and peaceful.",
-            activity: "Draw a glowing light that shines by itself."
+        "sanskrit": "न तद्भासयते सूर्यो न शशाङ्को न पावकः |\nयद्गत्वा न निवर्तन्ते तद्धाम परमं मम",
+        "transliteration": "na tad bhāsayate sūryo na śhaśhāṅko na pāvakaḥ\nyad gatvā na nivartante tad dhāma paramaṁ mama",
+        "en": {
+            "meaning": "That supreme abode is not illuminated by the sun, moon, or fire. Having reached it, one never returns.",
+            "childMeaning": "God’s place shines on its own and is always bright and peaceful.",
+            "activity": "Draw a glowing light that shines by itself."
         },
-        te: {
-            meaning: "ఆ పరమధామాన్ని సూర్యుడు, చంద్రుడు, అగ్ని ప్రకాశింపజేయవు. దాన్ని చేరినవారు తిరిగి రారు.",
-            childMeaning: "దేవుని స్థలం ఎప్పుడూ వెలుగుతో ఉంటుంది.",
-            activity: "స్వయంగా వెలిగే వెలుగును గీయండి."
+        "te": {
+            "meaning": "ఆ పరమధామాన్ని సూర్యుడు, చంద్రుడు, అగ్ని ప్రకాశింపజేయవు. దాన్ని చేరినవారు తిరిగి రారు.",
+            "childMeaning": "దేవుని స్థలం ఎప్పుడూ వెలుగుతో ఉంటుంది.",
+            "activity": "స్వయంగా వెలిగే వెలుగును గీయండి."
         },
-        exercises: {
-            seeds: {
-                question: "Does this place need sunlight?",
-                question_te: "ఈ స్థలానికి సూర్యకాంతి అవసరమా?",
-                options: ["No 🌟", "Yes ☀️", "Maybe 🤔"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "Does this place need sunlight?",
+                "question_te": "ఈ స్థలానికి సూర్యకాంతి అవసరమా?",
+                "options": [
+                    "No 🌟",
+                    "Yes ☀️",
+                    "Maybe 🤔"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "Why doesn't it need external light?",
-                question_te: "ఎందుకు బయటి వెలుగు అవసరం లేదు?",
-                options: ["It shines itself", "It is dark", "It is night"],
-                correct: 0
+            "seekers": {
+                "question": "Why doesn't it need external light?",
+                "question_te": "ఎందుకు బయటి వెలుగు అవసరం లేదు?",
+                "options": [
+                    "It shines itself",
+                    "It is dark",
+                    "It is night"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What does this 'self-luminous' nature represent?",
-                question_te: "ఈ 'స్వప్రకాశం' ఏమి సూచిస్తుంది?",
-                options: [
+            "warriors": {
+                "question": "What does this 'self-luminous' nature represent?",
+                "question_te": "ఈ 'స్వప్రకాశం' ఏమి సూచిస్తుంది?",
+                "options": [
                     "Pure consciousness beyond material light",
                     "Physical brightness",
                     "Fire energy"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "న తద్భాసయతే సూర్యో న శశాంకో న పావకః |\nయద్గత్వా న నివర్తంతే తద్ధామ పరమం మమ ||",
-        lineBreakdown: [
-            { sanskrit: "न तद्भासयते सूर्यो", word: "na tad bhāsayate sūryo", sanskrit_te: "న తద్భాసయతే సూర్యో", en: "sun does not illuminate it", te: "సూర్యుడు దాన్ని ప్రకాశింపజేయడు" },
-            { sanskrit: "न शशाङ्को न पावकः", word: "na śaśāṅko na pāvakaḥ", sanskrit_te: "న శశాంకో న పావకః", en: "nor moon nor fire", te: "చంద్రుడు లేదా అగ్ని కాదు" },
-            { sanskrit: "यद्गत्वा न निवर्तन्ते", word: "yad gatvā na nivartante", sanskrit_te: "యద్గత్వా న నివర్తంతే", en: "once reached, no return", te: "చేరిన తర్వాత తిరిగి రారు" },
-            { sanskrit: "तद्धाम परमं मम", word: "tad dhāma paramaṁ mama", sanskrit_te: "తద్ధామ పరమం మమ", en: "that is my supreme abode", te: "అది నా పరమధామం" }
+        "telugu_script": "న తద్భాసయతే సూర్యో న శశాఙ్కో న పావకః |\nయద్గత్వా న నివర్తన్తే తద్ధామ పరమం మమ",
+        "lineBreakdown": [
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "neither",
+                "te": "neither"
+            },
+            {
+                "sanskrit": "tat",
+                "word": "tat",
+                "sanskrit_te": "తత్",
+                "en": "that",
+                "te": "that"
+            },
+            {
+                "sanskrit": "bhāsayate",
+                "word": "bhāsayate",
+                "sanskrit_te": "భాసయతే",
+                "en": "illumine",
+                "te": "illumine"
+            },
+            {
+                "sanskrit": "sūryaḥ",
+                "word": "sūryaḥ",
+                "sanskrit_te": "సూర్యః",
+                "en": "the sun",
+                "te": "the sun"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "nor",
+                "te": "nor"
+            },
+            {
+                "sanskrit": "śhaśhāṅkaḥ",
+                "word": "śhaśhāṅkaḥ",
+                "sanskrit_te": "శ్హశ్హాఙ్కః",
+                "en": "the moon",
+                "te": "the moon"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "nor",
+                "te": "nor"
+            },
+            {
+                "sanskrit": "pāvakaḥ",
+                "word": "pāvakaḥ",
+                "sanskrit_te": "పావకః",
+                "en": "fire",
+                "te": "fire"
+            },
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "where",
+                "te": "where"
+            },
+            {
+                "sanskrit": "gatvā",
+                "word": "gatvā",
+                "sanskrit_te": "గత్వా",
+                "en": "having gone",
+                "te": "having gone"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "never",
+                "te": "never"
+            },
+            {
+                "sanskrit": "nivartante",
+                "word": "nivartante",
+                "sanskrit_te": "నివర్తన్తే",
+                "en": "they return",
+                "te": "they return"
+            },
+            {
+                "sanskrit": "tat",
+                "word": "tat",
+                "sanskrit_te": "తత్",
+                "en": "that",
+                "te": "that"
+            },
+            {
+                "sanskrit": "dhāma",
+                "word": "dhāma",
+                "sanskrit_te": "ధామ",
+                "en": "abode",
+                "te": "abode"
+            },
+            {
+                "sanskrit": "paramam",
+                "word": "paramam",
+                "sanskrit_te": "పరమమ్",
+                "en": "supreme",
+                "te": "supreme"
+            },
+            {
+                "sanskrit": "mama",
+                "word": "mama",
+                "sanskrit_te": "మమ",
+                "en": "mine",
+                "te": "mine"
+            }
         ]
     },
-
     "15.7": {
-        sanskrit: "ममैवांशो जीवलोके जीवभूतः सनातनः।\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति॥",
-        transliteration: "mamaivāṁśo jīva-loke jīva-bhūtaḥ sanātanaḥ\nmanaḥ-ṣaṣṭhānīndriyāṇi prakṛti-sthāni karṣati",
-        en: {
-            meaning: "The living beings are eternal parts of Me, but they struggle with the six senses including the mind in material nature.",
-            childMeaning: "We are all tiny parts of God, but we sometimes struggle with our thoughts and senses.",
-            activity: "Think of one time your mind distracted you. What did you do?"
+        "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः |\nमनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति",
+        "transliteration": "mamaivānśho jīva-loke jīva-bhūtaḥ sanātanaḥ\nmanaḥ-ṣhaṣhṭhānīndriyāṇi prakṛiti-sthāni karṣhati",
+        "en": {
+            "meaning": "The living beings are eternal parts of Me, but they struggle with the six senses including the mind in material nature.",
+            "childMeaning": "We are all tiny parts of God, but we sometimes struggle with our thoughts and senses.",
+            "activity": "Think of one time your mind distracted you. What did you do?"
         },
-        te: {
-            meaning: "ప్రతి జీవి నా శాశ్వత భాగమే. కానీ అది మనస్సుతో కూడిన ఇంద్రియాలతో ప్రకృతిలో పోరాడుతుంది.",
-            childMeaning: "మనము దేవుని భాగం, కానీ మనస్సు వల్ల కొన్నిసార్లు కష్టపడతాము.",
-            activity: "మీ మనస్సు మిమ్మల్ని దృష్టి తప్పించిన ఒక సందర్భాన్ని గుర్తుచేసుకోండి."
+        "te": {
+            "meaning": "ప్రతి జీవి నా శాశ్వత భాగమే. కానీ అది మనస్సుతో కూడిన ఇంద్రియాలతో ప్రకృతిలో పోరాడుతుంది.",
+            "childMeaning": "మనము దేవుని భాగం, కానీ మనస్సు వల్ల కొన్నిసార్లు కష్టపడతాము.",
+            "activity": "మీ మనస్సు మిమ్మల్ని దృష్టి తప్పించిన ఒక సందర్భాన్ని గుర్తుచేసుకోండి."
         },
-        exercises: {
-            seeds: {
-                question: "We are part of whom?",
-                question_te: "మనము ఎవరి భాగం?",
-                options: ["God ✨", "Tree 🌳", "Toy 🧸"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "We are part of whom?",
+                "question_te": "మనము ఎవరి భాగం?",
+                "options": [
+                    "God ✨",
+                    "Tree 🌳",
+                    "Toy 🧸"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "What causes struggle in life?",
-                question_te: "జీవితంలో కష్టాలకు కారణం ఏమిటి?",
-                options: ["Mind and senses", "Friends", "Games"],
-                correct: 0
+            "seekers": {
+                "question": "What causes struggle in life?",
+                "question_te": "జీవితంలో కష్టాలకు కారణం ఏమిటి?",
+                "options": [
+                    "Mind and senses",
+                    "Friends",
+                    "Games"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What does 'mama eva amsha' imply philosophically?",
-                question_te: "'మమైవాంశః' అంటే తాత్వికంగా ఏమిటి?",
-                options: [
+            "warriors": {
+                "question": "What does 'mama eva amsha' imply philosophically?",
+                "question_te": "'మమైవాంశః' అంటే తాత్వికంగా ఏమిటి?",
+                "options": [
                     "Individual soul is a part of the supreme consciousness",
                     "Humans are separate from God",
                     "Only body exists"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "మమైవాంశో జీవలోకే జీవభూతః సనాతనః |\nమనఃషష్ఠానీంద్రియాణి ప్రకృతిస్థాని కర్షతి ||",
-        lineBreakdown: [
-            { sanskrit: "ममैवांशः", word: "mama eva amshaḥ", sanskrit_te: "మమైవాంశః", en: "a part of Me", te: "నా భాగం" },
-            { sanskrit: "जीवलोके जीवभूतः", word: "jīva-loke jīva-bhūtaḥ", sanskrit_te: "జీవలోకే జీవభూతః", en: "living beings in the world", te: "ప్రపంచంలోని జీవులు" },
-            { sanskrit: "मनःषष्ठानीन्द्रियाणि", word: "manaḥ-ṣaṣṭhāni indriyāṇi", sanskrit_te: "మనఃషష్ఠానీంద్రియాణి", en: "six senses including mind", te: "మనస్సుతో కూడిన ఆరు ఇంద్రియాలు" },
-            { sanskrit: "प्रकृतिस्थानि कर्षति", word: "prakṛti-sthāni karṣati", sanskrit_te: "ప్రకృతిస్థాని కర్షతి", en: "struggle within nature", te: "ప్రకృతిలో పోరాడుతుంది" }
+        "telugu_script": "మమైవాంశో జీవలోకే జీవభూతః సనాతనః |\nమనఃషష్ఠానీన్ద్రియాణి ప్రకృతిస్థాని కర్షతి",
+        "lineBreakdown": [
+            {
+                "sanskrit": "mama",
+                "word": "mama",
+                "sanskrit_te": "మమ",
+                "en": "my",
+                "te": "my"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "only",
+                "te": "only"
+            },
+            {
+                "sanskrit": "anśhaḥ",
+                "word": "anśhaḥ",
+                "sanskrit_te": "అన్శ్హః",
+                "en": "fragmental part",
+                "te": "fragmental part"
+            },
+            {
+                "sanskrit": "jīva-loke",
+                "word": "jīva-loke",
+                "sanskrit_te": "జీవ-లోకే",
+                "en": "in the material world",
+                "te": "in the material world"
+            },
+            {
+                "sanskrit": "jīva-bhūtaḥ",
+                "word": "jīva-bhūtaḥ",
+                "sanskrit_te": "జీవ-భూతః",
+                "en": "the embodied souls",
+                "te": "the embodied souls"
+            },
+            {
+                "sanskrit": "sanātanaḥ",
+                "word": "sanātanaḥ",
+                "sanskrit_te": "సనాతనః",
+                "en": "eternal",
+                "te": "eternal"
+            },
+            {
+                "sanskrit": "manaḥ",
+                "word": "manaḥ",
+                "sanskrit_te": "మనః",
+                "en": "with the mind",
+                "te": "with the mind"
+            },
+            {
+                "sanskrit": "ṣhaṣhṭhāni",
+                "word": "ṣhaṣhṭhāni",
+                "sanskrit_te": "ష్హష్హ్ఠాని",
+                "en": "the six",
+                "te": "the six"
+            },
+            {
+                "sanskrit": "indriyāṇi",
+                "word": "indriyāṇi",
+                "sanskrit_te": "ఇన్ద్రియాణి",
+                "en": "senses",
+                "te": "senses"
+            },
+            {
+                "sanskrit": "prakṛiti-sthāni",
+                "word": "prakṛiti-sthāni",
+                "sanskrit_te": "ప్రకృఇతి-స్థాని",
+                "en": "bound by material nature",
+                "te": "bound by material nature"
+            },
+            {
+                "sanskrit": "karṣhati",
+                "word": "karṣhati",
+                "sanskrit_te": "కర్ష్హతి",
+                "en": "struggling",
+                "te": "struggling"
+            }
         ]
     },
-
     "15.8": {
-        sanskrit: "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः।\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्॥",
-        transliteration: "śarīraṁ yad avāpnoti yac cāpy utkrāmatīśvaraḥ\ngṛhītvaitāni saṁyāti vāyur gandhān ivāśayāt",
-        en: {
-            meaning: "When the soul accepts a body and when it leaves it, it takes the mind and senses along, just as the wind carries fragrances from their source.",
-            childMeaning: "The soul moves from one body to another carrying thoughts and senses, like air carries smells from one place to another.",
-            activity: "Smell a flower or food item. Think how air carries that smell to you."
+        "sanskrit": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः |\nगृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्",
+        "transliteration": "śharīraṁ yad avāpnoti yach chāpy utkrāmatīśhvaraḥ\ngṛihītvaitāni sanyāti vāyur gandhān ivāśhayāt",
+        "en": {
+            "meaning": "When the soul accepts a body and when it leaves it, it takes the mind and senses along, just as the wind carries fragrances from their source.",
+            "childMeaning": "The soul moves from one body to another carrying thoughts and senses, like air carries smells from one place to another.",
+            "activity": "Smell a flower or food item. Think how air carries that smell to you."
         },
-        te: {
-            meaning: "జీవాత్మ ఒక శరీరాన్ని స్వీకరించినప్పుడు మరియు దాన్ని విడిచినప్పుడు, అది మనస్సు మరియు ఇంద్రియాలను వెంట తీసుకెళ్తుంది, గాలి వాసనను తీసుకెళ్లినట్లు.",
-            childMeaning: "గాలి వాసన తీసుకెళ్లినట్లు, ఆత్మ మన ఆలోచనలు మరియు ఇంద్రియాలను తీసుకెళ్తుంది.",
-            activity: "ఒక పువ్వు లేదా వాసనను గమనించండి. గాలి దాన్ని ఎలా తీసుకువస్తుందో ఆలోచించండి."
+        "te": {
+            "meaning": "జీవాత్మ ఒక శరీరాన్ని స్వీకరించినప్పుడు మరియు దాన్ని విడిచినప్పుడు, అది మనస్సు మరియు ఇంద్రియాలను వెంట తీసుకెళ్తుంది, గాలి వాసనను తీసుకెళ్లినట్లు.",
+            "childMeaning": "గాలి వాసన తీసుకెళ్లినట్లు, ఆత్మ మన ఆలోచనలు మరియు ఇంద్రియాలను తీసుకెళ్తుంది.",
+            "activity": "ఒక పువ్వు లేదా వాసనను గమనించండి. గాలి దాన్ని ఎలా తీసుకువస్తుందో ఆలోచించండి."
         },
-        exercises: {
-            seeds: {
-                question: "What carries smell from one place to another?",
-                question_te: "వాసనను ఒక చోటు నుండి మరొక చోటుకు ఏమి తీసుకెళ్తుంది?",
-                options: ["Air (🌬️)", "Water (💧)", "Stone (🪨)"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "What carries smell from one place to another?",
+                "question_te": "వాసనను ఒక చోటు నుండి మరొక చోటుకు ఏమి తీసుకెళ్తుంది?",
+                "options": [
+                    "Air (🌬️)",
+                    "Water (💧)",
+                    "Stone (🪨)"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "When the soul moves to a new body, what does it carry?",
-                question_te: "జీవాత్మ కొత్త శరీరానికి వెళ్తప్పుడు ఏమి తీసుకెళ్తుంది?",
-                options: ["Mind and senses", "Body parts", "Clothes"],
-                correct: 0
+            "seekers": {
+                "question": "When the soul moves to a new body, what does it carry?",
+                "question_te": "జీవాత్మ కొత్త శరీరానికి వెళ్తప్పుడు ఏమి తీసుకెళ్తుంది?",
+                "options": [
+                    "Mind and senses",
+                    "Body parts",
+                    "Clothes"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "Why is the soul compared to wind carrying fragrance?",
-                question_te: "ఆత్మను గాలి వాసనతో ఎందుకు పోల్చారు?",
-                options: [
+            "warriors": {
+                "question": "Why is the soul compared to wind carrying fragrance?",
+                "question_te": "ఆత్మను గాలి వాసనతో ఎందుకు పోల్చారు?",
+                "options": [
                     "To show subtle and invisible transfer of impressions (samskaras)",
                     "Because both move fast",
                     "Because both are powerful"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "శరీరం యదవాప్నోతి యచ్చాప్యుత్క్రమతీశ్వరః |\nగృహీత్వైతాని సంయాతి వాయుర్గంధానివాశయాత్ ||",
-        lineBreakdown: [
-            { sanskrit: "शरीरं यदवाप्नोति", word: "śarīraṁ yad avāpnoti", sanskrit_te: "శరీరం యదవాప్నోతి", en: "when it takes a body", te: "శరీరాన్ని పొందినప్పుడు" },
-            { sanskrit: "यच्चाप्युत्क्रामतीश्वरः", word: "yac cāpy utkrāmatīśvaraḥ", sanskrit_te: "యచ్చాప్యుత్క్రమతీశ్వరః", en: "and when it leaves the body", te: "శరీరాన్ని విడిచినప్పుడు" },
-            { sanskrit: "गृहीत्वैतानि संयाति", word: "gṛhītvaitāni saṁyāti", sanskrit_te: "గృహీత్వైతాని సంయాతి", en: "it carries these along", te: "వాటిని వెంట తీసుకెళ్తుంది" },
-            { sanskrit: "वायुर्गन्धानिवाशयात्", word: "vāyur gandhān ivāśayāt", sanskrit_te: "వాయుర్గంధానివాశయాత్", en: "like air carries fragrance", te: "గాలి వాసన తీసుకెళ్లినట్లు" }
+        "telugu_script": "శరీరం యదవాప్నోతి యచ్చాప్యుత్క్రామతీశ్వరః |\nగృహీత్వైతాని సంయాతి వాయుర్గన్ధానివాశయాత్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "śharīram",
+                "word": "śharīram",
+                "sanskrit_te": "శ్హరీరమ్",
+                "en": "the body",
+                "te": "the body"
+            },
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "as",
+                "te": "as"
+            },
+            {
+                "sanskrit": "avāpnoti",
+                "word": "avāpnoti",
+                "sanskrit_te": "అవాప్నోతి",
+                "en": "carries",
+                "te": "carries"
+            },
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "as",
+                "te": "as"
+            },
+            {
+                "sanskrit": "cha api",
+                "word": "cha api",
+                "sanskrit_te": "ఛ అపి",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "utkrāmati",
+                "word": "utkrāmati",
+                "sanskrit_te": "ఉత్క్రామతి",
+                "en": "leaves",
+                "te": "leaves"
+            },
+            {
+                "sanskrit": "īśhvaraḥ",
+                "word": "īśhvaraḥ",
+                "sanskrit_te": "ఈశ్హ్వరః",
+                "en": "the Lord of the material body, the embodied soul",
+                "te": "the Lord of the material body, the embodied soul"
+            },
+            {
+                "sanskrit": "gṛihītvā",
+                "word": "gṛihītvā",
+                "sanskrit_te": "గృఇహీత్వా",
+                "en": "taking",
+                "te": "taking"
+            },
+            {
+                "sanskrit": "etāni",
+                "word": "etāni",
+                "sanskrit_te": "ఏతాని",
+                "en": "these",
+                "te": "these"
+            },
+            {
+                "sanskrit": "sanyāti",
+                "word": "sanyāti",
+                "sanskrit_te": "సన్యాతి",
+                "en": "goes away",
+                "te": "goes away"
+            },
+            {
+                "sanskrit": "vāyuḥ",
+                "word": "vāyuḥ",
+                "sanskrit_te": "వాయుః",
+                "en": "the air",
+                "te": "the air"
+            },
+            {
+                "sanskrit": "gandhān",
+                "word": "gandhān",
+                "sanskrit_te": "గన్ధాన్",
+                "en": "fragrance",
+                "te": "fragrance"
+            },
+            {
+                "sanskrit": "iva",
+                "word": "iva",
+                "sanskrit_te": "ఇవ",
+                "en": "like",
+                "te": "like"
+            },
+            {
+                "sanskrit": "āśhayāt",
+                "word": "āśhayāt",
+                "sanskrit_te": "ఆశ్హయాత్",
+                "en": "from seats",
+                "te": "from seats"
+            }
         ]
     },
-
     "15.9": {
-        sanskrit: "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च।\nअधिष्ठाय मनश्चायं विषयानुपसेवते॥",
-        transliteration: "śrotraṁ cakṣuḥ sparśanaṁ ca rasanaṁ ghrāṇam eva ca\nadhiṣṭhāya manaś cāyaṁ viṣayān upasevate",
-        en: {
-            meaning: "The soul uses the ears, eyes, skin, tongue, and nose, along with the mind, to experience the objects of the world.",
-            childMeaning: "We use our eyes, ears, nose, tongue, and skin to see, hear, smell, taste, and feel things.",
-            activity: "List your five senses and one thing each sense helps you do."
+        "sanskrit": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च |\nअधिष्ठाय मनश्चायं विषयानुपसेवते",
+        "transliteration": "śhrotraṁ chakṣhuḥ sparśhanaṁ cha rasanaṁ ghrāṇam eva cha\nadhiṣhṭhāya manaśh chāyaṁ viṣhayān upasevate",
+        "en": {
+            "meaning": "The soul uses the ears, eyes, skin, tongue, and nose, along with the mind, to experience the objects of the world.",
+            "childMeaning": "We use our eyes, ears, nose, tongue, and skin to see, hear, smell, taste, and feel things.",
+            "activity": "List your five senses and one thing each sense helps you do."
         },
-        te: {
-            meaning: "జీవాత్మ మనస్సుతో కలిసి చెవులు, కళ్ళు, చర్మం, నాలుక, ముక్కు ద్వారా ప్రపంచాన్ని అనుభవిస్తుంది.",
-            childMeaning: "మనము కళ్ళు, చెవులు, ముక్కు, నాలుక, చర్మంతో ప్రపంచాన్ని తెలుసుకుంటాము.",
-            activity: "మీ ఐదు ఇంద్రియాలు మరియు వాటి పనులను రాయండి."
+        "te": {
+            "meaning": "జీవాత్మ మనస్సుతో కలిసి చెవులు, కళ్ళు, చర్మం, నాలుక, ముక్కు ద్వారా ప్రపంచాన్ని అనుభవిస్తుంది.",
+            "childMeaning": "మనము కళ్ళు, చెవులు, ముక్కు, నాలుక, చర్మంతో ప్రపంచాన్ని తెలుసుకుంటాము.",
+            "activity": "మీ ఐదు ఇంద్రియాలు మరియు వాటి పనులను రాయండి."
         },
-        exercises: {
-            seeds: {
-                question: "Which of these is a sense organ?",
-                question_te: "ఇందులో ఏది ఇంద్రియం?",
-                options: ["Eyes 👀", "Chair 🪑", "Stone 🪨"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "Which of these is a sense organ?",
+                "question_te": "ఇందులో ఏది ఇంద్రియం?",
+                "options": [
+                    "Eyes 👀",
+                    "Chair 🪑",
+                    "Stone 🪨"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "What helps control and coordinate all senses?",
-                question_te: "ఇంద్రియాలను ఏది నియంత్రిస్తుంది?",
-                options: ["Mind", "Hand", "Food"],
-                correct: 0
+            "seekers": {
+                "question": "What helps control and coordinate all senses?",
+                "question_te": "ఇంద్రియాలను ఏది నియంత్రిస్తుంది?",
+                "options": [
+                    "Mind",
+                    "Hand",
+                    "Food"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What is the role of the mind in perception?",
-                question_te: "మనస్సు గ్రహణంలో ఏమి చేస్తుంది?",
-                options: [
+            "warriors": {
+                "question": "What is the role of the mind in perception?",
+                "question_te": "మనస్సు గ్రహణంలో ఏమి చేస్తుంది?",
+                "options": [
                     "Integrates inputs from senses to create experience",
                     "Works separately from senses",
                     "Only stores memories"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "శ్రోత్రం చక్షుః స్పర్శనం చ రసనం ఘ్రాణమేవ చ |\nఅధిష్ఠాయ మనశ్చాయం విషయానుపసేవతే ||",
-        lineBreakdown: [
-            { sanskrit: "श्रोत्रं चक्षुः", word: "śrotraṁ cakṣuḥ", sanskrit_te: "శ్రోత్రం చక్షుః", en: "ears and eyes", te: "చెవులు మరియు కళ్ళు" },
-            { sanskrit: "स्पर्शनं च रसनं", word: "sparśanaṁ ca rasanaṁ", sanskrit_te: "స్పర్శనం చ రసనం", en: "touch and taste", te: "స్పర్శ మరియు రుచి" },
-            { sanskrit: "घ्राणमेव च", word: "ghrāṇam eva ca", sanskrit_te: "ఘ్రాణమేవ చ", en: "and smell", te: "మరియు వాసన" },
-            { sanskrit: "अधिष्ठाय मनः", word: "adhiṣṭhāya manaḥ", sanskrit_te: "అధిష్ఠాయ మనః", en: "with the mind", te: "మనస్సుతో కలిసి" }
+        "telugu_script": "శ్రోత్రం చక్షుః స్పర్శనం చ రసనం ఘ్రాణమేవ చ |\nఅధిష్ఠాయ మనశ్చాయం విషయానుపసేవతే",
+        "lineBreakdown": [
+            {
+                "sanskrit": "śhrotram",
+                "word": "śhrotram",
+                "sanskrit_te": "శ్హ్రోత్రమ్",
+                "en": "ears",
+                "te": "ears"
+            },
+            {
+                "sanskrit": "chakṣhuḥ",
+                "word": "chakṣhuḥ",
+                "sanskrit_te": "ఛక్ష్హుః",
+                "en": "eyes",
+                "te": "eyes"
+            },
+            {
+                "sanskrit": "sparśhanam",
+                "word": "sparśhanam",
+                "sanskrit_te": "స్పర్శ్హనమ్",
+                "en": "the sense of touch",
+                "te": "the sense of touch"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "rasanam",
+                "word": "rasanam",
+                "sanskrit_te": "రసనమ్",
+                "en": "tongue",
+                "te": "tongue"
+            },
+            {
+                "sanskrit": "ghrāṇam",
+                "word": "ghrāṇam",
+                "sanskrit_te": "ఘ్రాణమ్",
+                "en": "nose",
+                "te": "nose"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "adhiṣhṭhāya",
+                "word": "adhiṣhṭhāya",
+                "sanskrit_te": "అధిష్హ్ఠాయ",
+                "en": "grouped around",
+                "te": "grouped around"
+            },
+            {
+                "sanskrit": "manaḥ",
+                "word": "manaḥ",
+                "sanskrit_te": "మనః",
+                "en": "mind",
+                "te": "mind"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "ayam",
+                "word": "ayam",
+                "sanskrit_te": "అయమ్",
+                "en": "they",
+                "te": "they"
+            },
+            {
+                "sanskrit": "viṣhayān",
+                "word": "viṣhayān",
+                "sanskrit_te": "విష్హయాన్",
+                "en": "sense objects",
+                "te": "sense objects"
+            },
+            {
+                "sanskrit": "upasevate",
+                "word": "upasevate",
+                "sanskrit_te": "ఉపసేవతే",
+                "en": "savors",
+                "te": "savors"
+            }
         ]
     },
-
     "15.10": {
-        sanskrit: "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः॥",
-        transliteration: "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam\nvimūḍhā nānupaśyanti paśyanti jñāna-cakṣuṣaḥ",
-        en: {
-            meaning: "The ignorant cannot perceive the soul as it leaves or stays in the body or enjoys through the senses, but those with knowledge can see it.",
-            childMeaning: "Not everyone understands the soul, but wise people who learn deeply can understand it.",
-            activity: "Close your eyes and sit quietly for one minute. Notice your thoughts."
+        "sanskrit": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम् |\nविमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः",
+        "transliteration": "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam\nvimūḍhā nānupaśhyanti paśhyanti jñāna-chakṣhuṣhaḥ",
+        "en": {
+            "meaning": "The ignorant cannot perceive the soul as it leaves or stays in the body or enjoys through the senses, but those with knowledge can see it.",
+            "childMeaning": "Not everyone understands the soul, but wise people who learn deeply can understand it.",
+            "activity": "Close your eyes and sit quietly for one minute. Notice your thoughts."
         },
-        te: {
-            meaning: "ఆత్మ శరీరాన్ని విడిచినా, ఉండినా, అనుభవించినా అజ్ఞానులు గ్రహించలేరు, కానీ జ్ఞానులు దాన్ని తెలుసుకుంటారు.",
-            childMeaning: "అందరూ అర్థం చేసుకోలేరు, కానీ జ్ఞానులు అర్థం చేసుకుంటారు.",
-            activity: "ఒక నిమిషం నిశ్శబ్దంగా కూర్చొని మీ ఆలోచనలను గమనించండి."
+        "te": {
+            "meaning": "ఆత్మ శరీరాన్ని విడిచినా, ఉండినా, అనుభవించినా అజ్ఞానులు గ్రహించలేరు, కానీ జ్ఞానులు దాన్ని తెలుసుకుంటారు.",
+            "childMeaning": "అందరూ అర్థం చేసుకోలేరు, కానీ జ్ఞానులు అర్థం చేసుకుంటారు.",
+            "activity": "ఒక నిమిషం నిశ్శబ్దంగా కూర్చొని మీ ఆలోచనలను గమనించండి."
         },
-        exercises: {
-            seeds: {
-                question: "Who understands better?",
-                question_te: "ఎవరు బాగా అర్థం చేసుకుంటారు?",
-                options: ["Wise people 🧠", "Everyone", "No one"],
-                correct: 0
+        "exercises": {
+            "seeds": {
+                "question": "Who understands better?",
+                "question_te": "ఎవరు బాగా అర్థం చేసుకుంటారు?",
+                "options": [
+                    "Wise people 🧠",
+                    "Everyone",
+                    "No one"
+                ],
+                "correct": 0
             },
-            seekers: {
-                question: "Why can't everyone understand the soul?",
-                question_te: "ఎందుకు అందరూ ఆత్మను అర్థం చేసుకోలేరు?",
-                options: ["Lack of knowledge", "No eyes", "Too small"],
-                correct: 0
+            "seekers": {
+                "question": "Why can't everyone understand the soul?",
+                "question_te": "ఎందుకు అందరూ ఆత్మను అర్థం చేసుకోలేరు?",
+                "options": [
+                    "Lack of knowledge",
+                    "No eyes",
+                    "Too small"
+                ],
+                "correct": 0
             },
-            warriors: {
-                question: "What does 'jnana chakshu' (eye of knowledge) mean?",
-                question_te: "'జ్ఞాన చక్షు' అంటే ఏమిటి?",
-                options: [
+            "warriors": {
+                "question": "What does 'jnana chakshu' (eye of knowledge) mean?",
+                "question_te": "'జ్ఞాన చక్షు' అంటే ఏమిటి?",
+                "options": [
                     "Inner awareness beyond physical perception",
                     "A special physical eye",
                     "Imagination only"
                 ],
-                correct: 0
+                "correct": 0
             }
         },
-        telugu_script: "ఉత్క్రామంతం స్థితం వాపి భుఞ్జానం వా గుణాన్వితం |\nవిమూఢా నానుపశ్యంతి పశ్యంతి జ్ఞానచక్షుషః ||",
-        lineBreakdown: [
-            { sanskrit: "उत्क्रामन्तं", word: "utkrāmantam", sanskrit_te: "ఉత్క్రామంతం", en: "leaving the body", te: "శరీరం విడిచినప్పుడు" },
-            { sanskrit: "भुञ्जानं वा", word: "bhuñjānam vā", sanskrit_te: "భుఞ్జానం వా", en: "experiencing", te: "అనుభవిస్తున్నప్పుడు" },
-            { sanskrit: "विमूढा नानुपश्यन्ति", word: "vimūḍhā nānupaśyanti", sanskrit_te: "విమూఢా నానుపశ్యంతి", en: "the ignorant do not see", te: "అజ్ఞానులు చూడలేరు" },
-            { sanskrit: "पश्यन्ति ज्ञानचक्षुषः", word: "paśyanti jñāna-cakṣuṣaḥ", sanskrit_te: "పశ్యంతి జ్ఞానచక్షుషః", en: "the wise see with knowledge", te: "జ్ఞానంతో చూసేవారు" }
+        "telugu_script": "ఉత్క్రామన్తం స్థితం వాపి భుఞ్జానం వా గుణాన్వితమ్ |\nవిమూఢా నానుపశ్యన్తి పశ్యన్తి జ్ఞానచక్షుషః",
+        "lineBreakdown": [
+            {
+                "sanskrit": "utkrāmantam",
+                "word": "utkrāmantam",
+                "sanskrit_te": "ఉత్క్రామన్తమ్",
+                "en": "departing",
+                "te": "departing"
+            },
+            {
+                "sanskrit": "sthitam",
+                "word": "sthitam",
+                "sanskrit_te": "స్థితమ్",
+                "en": "residing",
+                "te": "residing"
+            },
+            {
+                "sanskrit": "vā api",
+                "word": "vā api",
+                "sanskrit_te": "వా అపి",
+                "en": "or even",
+                "te": "or even"
+            },
+            {
+                "sanskrit": "bhuñjānam",
+                "word": "bhuñjānam",
+                "sanskrit_te": "భుఞ్జానమ్",
+                "en": "enjoys",
+                "te": "enjoys"
+            },
+            {
+                "sanskrit": "vā",
+                "word": "vā",
+                "sanskrit_te": "వా",
+                "en": "or",
+                "te": "or"
+            },
+            {
+                "sanskrit": "guṇa-anvitam",
+                "word": "guṇa-anvitam",
+                "sanskrit_te": "గుణ-అన్వితమ్",
+                "en": "under the spell of the modes of material nature",
+                "te": "under the spell of the modes of material nature"
+            },
+            {
+                "sanskrit": "vimūḍhāḥ",
+                "word": "vimūḍhāḥ",
+                "sanskrit_te": "విమూఢాః",
+                "en": "the ignorant",
+                "te": "the ignorant"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "not",
+                "te": "not"
+            },
+            {
+                "sanskrit": "anupaśhyanti",
+                "word": "anupaśhyanti",
+                "sanskrit_te": "అనుపశ్హ్యన్తి",
+                "en": "percieve",
+                "te": "percieve"
+            },
+            {
+                "sanskrit": "paśhyanti",
+                "word": "paśhyanti",
+                "sanskrit_te": "పశ్హ్యన్తి",
+                "en": "behold",
+                "te": "behold"
+            },
+            {
+                "sanskrit": "jñāna-chakṣhuṣhaḥ",
+                "word": "jñāna-chakṣhuṣhaḥ",
+                "sanskrit_te": "జ్ఞాన-ఛక్ష్హుష్హః",
+                "en": "those who possess the eyes of knowledge",
+                "te": "those who possess the eyes of knowledge"
+            }
         ]
     },
     "15.11": {
-        sanskrit: "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम्।\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः॥",
-        transliteration: "yatanto yoginaś cainaṁ paśyanty ātmany avasthitam |\nyatanto ’py akṛtātmāno nainaṁ paśyanty acetasaḥ ||",
-        en: {
-            meaning: "The striving yogīs see this (Supreme Lord) established within themselves. But those who are unrefined and lack discrimination, though striving, do not see Him.",
-            childMeaning: "People who work on themselves can feel God inside. But those who don't calm their minds cannot feel Him, even if they try.",
-            activity: "Sit quietly for 2 minutes and notice what you feel inside."
+        "sanskrit": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम् |\nयतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः",
+        "transliteration": "yatanto yoginaśh chainaṁ paśhyanty ātmany avasthitam\nyatanto ‘py akṛitātmāno nainaṁ paśhyanty achetasaḥ",
+        "en": {
+            "meaning": "The striving yogīs see this (Supreme Lord) established within themselves. But those who are unrefined and lack discrimination, though striving, do not see Him.",
+            "childMeaning": "People who work on themselves can feel God inside. But those who don't calm their minds cannot feel Him, even if they try.",
+            "activity": "Sit quietly for 2 minutes and notice what you feel inside."
         },
-        te: {
-            meaning: "ప్రయత్నించే యోగులు దీనిని (పరమాత్మను) తమలోనే స్థితమై ఉండడం చూస్తారు. ప్రయత్నించినా, అపరిపక్వమైన మనస్సు గలవారు, వివేకం లేనివారు దీనిని చూడలేరు.",
-            childMeaning: "మనసును అదుపు చేసుకునే వారికి దేవుడు కనిపిస్తాడు. మనసు చంచలంగా ఉంటే కనిపించడు.",
-            activity: "2 నిమిషాలు నిశ్శబ్దంగా కూర్చుని, లోపల ఏం జరుగుతుందో గమనించండి."
+        "te": {
+            "meaning": "ప్రయత్నించే యోగులు దీనిని (పరమాత్మను) తమలోనే స్థితమై ఉండడం చూస్తారు. ప్రయత్నించినా, అపరిపక్వమైన మనస్సు గలవారు, వివేకం లేనివారు దీనిని చూడలేరు.",
+            "childMeaning": "మనసును అదుపు చేసుకునే వారికి దేవుడు కనిపిస్తాడు. మనసు చంచలంగా ఉంటే కనిపించడు.",
+            "activity": "2 నిమిషాలు నిశ్శబ్దంగా కూర్చుని, లోపల ఏం జరుగుతుందో గమనించండి."
         },
-        exercises: {
-            seeds: { question: "Who sees the Supreme Lord within?", question_te: "పరమాత్మను తమలో ఎవరు చూస్తారు?", options: ["Ignorant people", "Striving yogis", "Children"], correct: 1 },
-            seekers: { question: "Why do some not see Him even after striving?", question_te: "ప్రయత్నించినా కొందరు ఎందుకు చూడలేరు?", options: ["They are too busy", "They lack self-purification", "They don't want to"], correct: 1 },
-            warriors: { question: "What does 'akṛtātmānaḥ' mean here?", question_te: "'అకృతాత్మానః' అంటే ఇక్కడ అర్థం?", options: ["Those with a refined mind", "Those with unrefined inner self", "Those who are wealthy"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Who sees the Supreme Lord within?",
+                "question_te": "పరమాత్మను తమలో ఎవరు చూస్తారు?",
+                "options": [
+                    "Ignorant people",
+                    "Striving yogis",
+                    "Children"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "Why do some not see Him even after striving?",
+                "question_te": "ప్రయత్నించినా కొందరు ఎందుకు చూడలేరు?",
+                "options": [
+                    "They are too busy",
+                    "They lack self-purification",
+                    "They don't want to"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'akṛtātmānaḥ' mean here?",
+                "question_te": "'అకృతాత్మానః' అంటే ఇక్కడ అర్థం?",
+                "options": [
+                    "Those with a refined mind",
+                    "Those with unrefined inner self",
+                    "Those who are wealthy"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "యతన్తో యోగినశ్చైనం పశ్యన్త్యాత్మన్యవస్థితమ్ |\nయతన్తోऽప్యకృతాత్మానో నైనం పశ్యన్త్యచేతసః ||",
-        lineBreakdown: [
-            { sanskrit: "यतन्तो योगिनश्चैनं", word: "yatanto yoginaś cainaṁ", sanskrit_te: "యతన్తో యోగినశ్చైనం", en: "The striving yogis indeed this", te: "ప్రయత్నించే యోగులు ఈ పరమాత్మను" },
-            { sanskrit: "पश्यन्त्यात्मन्यवस्थितम्", word: "paśyanty ātmany avasthitam", sanskrit_te: "పశ్యన్త్యాత్మన్యవస్థితమ్", en: "see (Him) established in the self", te: "తమలో నిలిచి ఉండడం చూస్తారు" },
-            { sanskrit: "यतन्तोऽप्यकृतात्मानो", word: "yatanto ’py akṛtātmāno", sanskrit_te: "యతన్తోఽప్యకృతాత్మానో", en: "striving also, those with unrefined self", te: "ప్రయత్నించినా అపరిపక్వ మనస్సు గలవారు" },
-            { sanskrit: "नैनं पश्यन्त्यचेतसः", word: "nainaṁ paśyanty acetasaḥ", sanskrit_te: "నైనం పశ్యన్త్యచేతసః", en: "do not see Him, lacking discrimination", te: "ఆయనను చూడలేరు, వివేకం లేనివారు" }
+        "telugu_script": "యతన్తో యోగినశ్చైనం పశ్యన్త్యాత్మన్యవస్థితమ్ |\nయతన్తోఽప్యకృతాత్మానో నైనం పశ్యన్త్యచేతసః",
+        "lineBreakdown": [
+            {
+                "sanskrit": "yatantaḥ",
+                "word": "yatantaḥ",
+                "sanskrit_te": "యతన్తః",
+                "en": "striving",
+                "te": "striving"
+            },
+            {
+                "sanskrit": "yoginaḥ",
+                "word": "yoginaḥ",
+                "sanskrit_te": "యోగినః",
+                "en": "yogis",
+                "te": "yogis"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "too",
+                "te": "too"
+            },
+            {
+                "sanskrit": "enam",
+                "word": "enam",
+                "sanskrit_te": "ఏనమ్",
+                "en": "this (the soul)",
+                "te": "this (the soul)"
+            },
+            {
+                "sanskrit": "paśhyanti",
+                "word": "paśhyanti",
+                "sanskrit_te": "పశ్హ్యన్తి",
+                "en": "see",
+                "te": "see"
+            },
+            {
+                "sanskrit": "ātmani",
+                "word": "ātmani",
+                "sanskrit_te": "ఆత్మని",
+                "en": "in the body",
+                "te": "in the body"
+            },
+            {
+                "sanskrit": "avasthitam",
+                "word": "avasthitam",
+                "sanskrit_te": "అవస్థితమ్",
+                "en": "enshrined",
+                "te": "enshrined"
+            },
+            {
+                "sanskrit": "yatantaḥ",
+                "word": "yatantaḥ",
+                "sanskrit_te": "యతన్తః",
+                "en": "strive",
+                "te": "strive"
+            },
+            {
+                "sanskrit": "api",
+                "word": "api",
+                "sanskrit_te": "అపి",
+                "en": "even though",
+                "te": "even though"
+            },
+            {
+                "sanskrit": "akṛita-ātmānaḥ",
+                "word": "akṛita-ātmānaḥ",
+                "sanskrit_te": "అకృఇత-ఆత్మానః",
+                "en": "those whose minds are not purified",
+                "te": "those whose minds are not purified"
+            },
+            {
+                "sanskrit": "na",
+                "word": "na",
+                "sanskrit_te": "న",
+                "en": "not",
+                "te": "not"
+            },
+            {
+                "sanskrit": "enam",
+                "word": "enam",
+                "sanskrit_te": "ఏనమ్",
+                "en": "this",
+                "te": "this"
+            },
+            {
+                "sanskrit": "paśhyanti",
+                "word": "paśhyanti",
+                "sanskrit_te": "పశ్హ్యన్తి",
+                "en": "cognize",
+                "te": "cognize"
+            },
+            {
+                "sanskrit": "achetasaḥ",
+                "word": "achetasaḥ",
+                "sanskrit_te": "అఛేతసః",
+                "en": "unaware",
+                "te": "unaware"
+            }
         ]
     },
     "15.12": {
-        sanskrit: "यदादित्यगतं तेजो जगद्भासयतेऽखिलम्।\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्॥",
-        transliteration: "yad āditya-gataṁ tejo jagad bhāsayate ’khilam |\nyac candramasi yac cāgnau tat tejo viddhi māmakam ||",
-        en: {
-            meaning: "The radiance that resides in the sun and illuminates the entire world, that which is in the moon and in fire—know that radiance to be Mine.",
-            childMeaning: "The light of the sun, moon, and fire comes from God.",
-            activity: "Look at sunlight or a lamp and remember: this light is from the Divine."
+        "sanskrit": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम् |\nयच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्",
+        "transliteration": "yad āditya-gataṁ tejo jagad bhāsayate ’khilam\nyach chandramasi yach chāgnau tat tejo viddhi māmakam",
+        "en": {
+            "meaning": "The radiance that resides in the sun and illuminates the entire world, that which is in the moon and in fire—know that radiance to be Mine.",
+            "childMeaning": "The light of the sun, moon, and fire comes from God.",
+            "activity": "Look at sunlight or a lamp and remember: this light is from the Divine."
         },
-        te: {
-            meaning: "సూర్యునిలో ఉండి సమస్త జగత్తును ప్రకాశింపజేసే తేజస్సు, చంద్రునిలోని తేజస్సు, అగ్నిలోని తేజస్సు - ఆ తేజస్సు నాది అని తెలుసుకో.",
-            childMeaning: "సూర్యుడి, చంద్రుడి, నిప్పు వెలుగు దేవుడిదే.",
-            activity: "సూర్యకాంతి లేదా దీపం చూడండి: ఈ వెలుగు దేవునిది అని గుర్తించండి."
+        "te": {
+            "meaning": "సూర్యునిలో ఉండి సమస్త జగత్తును ప్రకాశింపజేసే తేజస్సు, చంద్రునిలోని తేజస్సు, అగ్నిలోని తేజస్సు - ఆ తేజస్సు నాది అని తెలుసుకో.",
+            "childMeaning": "సూర్యుడి, చంద్రుడి, నిప్పు వెలుగు దేవుడిదే.",
+            "activity": "సూర్యకాంతి లేదా దీపం చూడండి: ఈ వెలుగు దేవునిది అని గుర్తించండి."
         },
-        exercises: {
-            seeds: { question: "Whose is the radiance in the sun?", question_te: "సూర్యునిలోని తేజస్సు ఎవరిది?", options: ["Sun god's own", "Lord's", "Nature's"], correct: 1 },
-            seekers: { question: "Where else is this radiance found?", question_te: "ఈ తేజస్సు ఇంకెక్కడ ఉంది?", options: ["Only in sun", "In moon and fire", "Only in stars"], correct: 1 },
-            warriors: { question: "What is the spiritual implication of this verse?", question_te: "ఈ శ్లోకం యొక్క ఆధ్యాత్మిక సారం?", options: ["God is light", "All light and energy originate from the Supreme", "Sun is God"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Whose is the radiance in the sun?",
+                "question_te": "సూర్యునిలోని తేజస్సు ఎవరిది?",
+                "options": [
+                    "Sun god's own",
+                    "Lord's",
+                    "Nature's"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "Where else is this radiance found?",
+                "question_te": "ఈ తేజస్సు ఇంకెక్కడ ఉంది?",
+                "options": [
+                    "Only in sun",
+                    "In moon and fire",
+                    "Only in stars"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What is the spiritual implication of this verse?",
+                "question_te": "ఈ శ్లోకం యొక్క ఆధ్యాత్మిక సారం?",
+                "options": [
+                    "God is light",
+                    "All light and energy originate from the Supreme",
+                    "Sun is God"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "యదాదిత్యగతం తేజో జగద్భాసయతేऽఖిలమ్ |\nయచ్చన్ద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్ ||",
-        lineBreakdown: [
-            { sanskrit: "यदादित्यगतं तेजो", word: "yad āditya-gataṁ tejaḥ", sanskrit_te: "యదాదిత్యగతం తేజో", en: "That which is radiance in the sun", te: "సూర్యునిలో ఉన్న తేజస్సు ఏదో" },
-            { sanskrit: "जगद्भासयतेऽखिलम्", word: "jagad bhāsayate ’khilam", sanskrit_te: "జగద్భాసయతేఽఖిలమ్", en: "illuminates the entire world", te: "సమస్త లోకాన్ని ప్రకాశింపజేస్తుందో" },
-            { sanskrit: "यच्चन्द्रमसि यच्चाग्नौ", word: "yac candramasi yac cāgnau", sanskrit_te: "యచ్చన్ద్రమసి యచ్చాగ్నౌ", en: "and that in the moon and that in fire", te: "మరియు చంద్రునిలో, అగ్నిలో ఏది" },
-            { sanskrit: "तत्तेजो विद्धि मामकम्", word: "tat tejo viddhi māmakam", sanskrit_te: "తత్తేజో విద్ధి మామకమ్", en: "that radiance know as Mine", te: "ఆ తేజస్సును నాది అని తెలుసుకో" }
+        "telugu_script": "యదాదిత్యగతం తేజో జగద్భాసయతేఽఖిలమ్ |\nయచ్చన్ద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "which",
+                "te": "which"
+            },
+            {
+                "sanskrit": "āditya-gatam",
+                "word": "āditya-gatam",
+                "sanskrit_te": "ఆదిత్య-గతమ్",
+                "en": "in the sun",
+                "te": "in the sun"
+            },
+            {
+                "sanskrit": "tejaḥ",
+                "word": "tejaḥ",
+                "sanskrit_te": "తేజః",
+                "en": "brilliance",
+                "te": "brilliance"
+            },
+            {
+                "sanskrit": "jagat",
+                "word": "jagat",
+                "sanskrit_te": "జగత్",
+                "en": "solar system",
+                "te": "solar system"
+            },
+            {
+                "sanskrit": "bhāsayate",
+                "word": "bhāsayate",
+                "sanskrit_te": "భాసయతే",
+                "en": "illuminates",
+                "te": "illuminates"
+            },
+            {
+                "sanskrit": "akhilam",
+                "word": "akhilam",
+                "sanskrit_te": "అఖిలమ్",
+                "en": "entire",
+                "te": "entire"
+            },
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "which",
+                "te": "which"
+            },
+            {
+                "sanskrit": "chandramasi",
+                "word": "chandramasi",
+                "sanskrit_te": "ఛన్ద్రమసి",
+                "en": "in the moon",
+                "te": "in the moon"
+            },
+            {
+                "sanskrit": "yat",
+                "word": "yat",
+                "sanskrit_te": "యత్",
+                "en": "which",
+                "te": "which"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "also",
+                "te": "also"
+            },
+            {
+                "sanskrit": "agnau",
+                "word": "agnau",
+                "sanskrit_te": "అగ్నౌ",
+                "en": "in the fire",
+                "te": "in the fire"
+            },
+            {
+                "sanskrit": "tat",
+                "word": "tat",
+                "sanskrit_te": "తత్",
+                "en": "that",
+                "te": "that"
+            },
+            {
+                "sanskrit": "tejaḥ",
+                "word": "tejaḥ",
+                "sanskrit_te": "తేజః",
+                "en": "brightness",
+                "te": "brightness"
+            },
+            {
+                "sanskrit": "viddhi",
+                "word": "viddhi",
+                "sanskrit_te": "విద్ధి",
+                "en": "know",
+                "te": "know"
+            },
+            {
+                "sanskrit": "māmakam",
+                "word": "māmakam",
+                "sanskrit_te": "మామకమ్",
+                "en": "mine",
+                "te": "mine"
+            }
         ]
     },
     "15.13": {
-        sanskrit: "गामाविश्य च भूतानि धारयाम्यहमोजसा।\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः॥",
-        transliteration: "gām āviśya ca bhūtāni dhārayāmy aham ojasā |\nuṣṇāmi cauṣadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ ||",
-        en: {
-            meaning: "Entering the earth, I support all beings with My energy. Becoming the moon (Soma), I nourish all herbs with the essence of juice.",
-            childMeaning: "God enters the earth and holds everything up. As the moon, He makes plants and food grow.",
-            activity: "Thank the earth and moon before eating a meal today."
+        "sanskrit": "गामाविश्य च भूतानि धारयाम्यहमोजसा |\nपुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः",
+        "transliteration": "gām āviśhya cha bhūtāni dhārayāmy aham ojasā\npuṣhṇāmi chauṣhadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ",
+        "en": {
+            "meaning": "Entering the earth, I support all beings with My energy. Becoming the moon (Soma), I nourish all herbs with the essence of juice.",
+            "childMeaning": "God enters the earth and holds everything up. As the moon, He makes plants and food grow.",
+            "activity": "Thank the earth and moon before eating a meal today."
         },
-        te: {
-            meaning: "భూమిలో ప్రవేశించి, నేను నా శక్తితో సమస్త ప్రాణులను ధరిస్తాను. సోముడినై (చంద్రుడినై) రసాత్మకుడినై, సమస్త ఔషధులను పోషిస్తాను.",
-            childMeaning: "దేవుడు భూమిలోకి వచ్చి అంతటినీ నిలుపుతాడు. చంద్రునిగా మొక్కలను, ఆహారాన్ని పెంచుతాడు.",
-            activity: "భోజనం చేసేముందు భూమికి, చంద్రునికి కృతజ్ఞత తెలుపుకోండి."
+        "te": {
+            "meaning": "భూమిలో ప్రవేశించి, నేను నా శక్తితో సమస్త ప్రాణులను ధరిస్తాను. సోముడినై (చంద్రుడినై) రసాత్మకుడినై, సమస్త ఔషధులను పోషిస్తాను.",
+            "childMeaning": "దేవుడు భూమిలోకి వచ్చి అంతటినీ నిలుపుతాడు. చంద్రునిగా మొక్కలను, ఆహారాన్ని పెంచుతాడు.",
+            "activity": "భోజనం చేసేముందు భూమికి, చంద్రునికి కృతజ్ఞత తెలుపుకోండి."
         },
-        exercises: {
-            seeds: { question: "Who supports the earth?", question_te: "భూమిని ఎవరు ధరిస్తారు?", options: ["Gravity", "The Lord", "Wind"], correct: 1 },
-            seekers: { question: "As what does the Lord nourish herbs?", question_te: "ప్రభువు ఏ రూపంలో ఔషధులను పోషిస్తాడు?", options: ["As sun", "As moon (Soma)", "As fire"], correct: 1 },
-            warriors: { question: "What does 'rasātmakaḥ' imply?", question_te: "'రసాత్మకః' అంటే?", options: ["Full of essence/juice", "Dry", "Bitter"], correct: 0 }
+        "exercises": {
+            "seeds": {
+                "question": "Who supports the earth?",
+                "question_te": "భూమిని ఎవరు ధరిస్తారు?",
+                "options": [
+                    "Gravity",
+                    "The Lord",
+                    "Wind"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "As what does the Lord nourish herbs?",
+                "question_te": "ప్రభువు ఏ రూపంలో ఔషధులను పోషిస్తాడు?",
+                "options": [
+                    "As sun",
+                    "As moon (Soma)",
+                    "As fire"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'rasātmakaḥ' imply?",
+                "question_te": "'రసాత్మకః' అంటే?",
+                "options": [
+                    "Full of essence/juice",
+                    "Dry",
+                    "Bitter"
+                ],
+                "correct": 0
+            }
         },
-        telugu_script: "గామావిశ్య చ భూతాని ధారయామ్యహమోజసా |\nపుష్ణామి చౌషధీః సర్వాః సోమో భూత్వా రసాత్మకః ||",
-        lineBreakdown: [
-            { sanskrit: "गामाविश्य च भूतानि", word: "gām āviśya ca bhūtāni", sanskrit_te: "గామావిశ్య చ భూతాని", en: "Entering the earth and all beings", te: "భూమిలో మరియు ప్రాణులలో ప్రవేశించి" },
-            { sanskrit: "धारयाम्यहमोजसा", word: "dhārayāmy aham ojasā", sanskrit_te: "ధారయామ్యహమోజసా", en: "I support with (My) energy", te: "నా శక్తితో ధరిస్తాను" },
-            { sanskrit: "पुष्णामि चौषधीः सर्वाः", word: "puṣṇāmi cauṣadhīḥ sarvāḥ", sanskrit_te: "పుష్ణామి చౌషధీః సర్వాః", en: "I nourish all herbs", te: "సమస్త ఔషధులను పోషిస్తాను" },
-            { sanskrit: "सोमो भूत्वा रसात्मकः", word: "somo bhūtvā rasātmakaḥ", sanskrit_te: "సోమో భూత్వా రసాత్మకః", en: "becoming the moon, full of essence", te: "రసమయుడైన చంద్రుడిగా మారి" }
+        "telugu_script": "గామావిశ్య చ భూతాని ధారయామ్యహమోజసా |\nపుష్ణామి చౌషధీః సర్వాః సోమో భూత్వా రసాత్మకః",
+        "lineBreakdown": [
+            {
+                "sanskrit": "gām",
+                "word": "gām",
+                "sanskrit_te": "గామ్",
+                "en": "earth",
+                "te": "earth"
+            },
+            {
+                "sanskrit": "āviśhya",
+                "word": "āviśhya",
+                "sanskrit_te": "ఆవిశ్హ్య",
+                "en": "permeating",
+                "te": "permeating"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "bhūtāni",
+                "word": "bhūtāni",
+                "sanskrit_te": "భూతాని",
+                "en": "living beings",
+                "te": "living beings"
+            },
+            {
+                "sanskrit": "dhārayāmi",
+                "word": "dhārayāmi",
+                "sanskrit_te": "ధారయామి",
+                "en": "sustain",
+                "te": "sustain"
+            },
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            },
+            {
+                "sanskrit": "ojasā",
+                "word": "ojasā",
+                "sanskrit_te": "ఓజసా",
+                "en": "energy",
+                "te": "energy"
+            },
+            {
+                "sanskrit": "puṣhṇāmi",
+                "word": "puṣhṇāmi",
+                "sanskrit_te": "పుష్హ్ణామి",
+                "en": "nourish",
+                "te": "nourish"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "auṣhadhīḥ",
+                "word": "auṣhadhīḥ",
+                "sanskrit_te": "ఔష్హధీః",
+                "en": "plants",
+                "te": "plants"
+            },
+            {
+                "sanskrit": "sarvāḥ",
+                "word": "sarvāḥ",
+                "sanskrit_te": "సర్వాః",
+                "en": "all",
+                "te": "all"
+            },
+            {
+                "sanskrit": "somaḥ",
+                "word": "somaḥ",
+                "sanskrit_te": "సోమః",
+                "en": "the moon",
+                "te": "the moon"
+            },
+            {
+                "sanskrit": "bhūtvā",
+                "word": "bhūtvā",
+                "sanskrit_te": "భూత్వా",
+                "en": "becoming",
+                "te": "becoming"
+            },
+            {
+                "sanskrit": "rasa-ātmakaḥ",
+                "word": "rasa-ātmakaḥ",
+                "sanskrit_te": "రస-ఆత్మకః",
+                "en": "supplying the juice of life",
+                "te": "supplying the juice of life"
+            }
         ]
     },
     "15.14": {
-        sanskrit: "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः।\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्॥",
-        transliteration: "ahaṁ vaiśvānaro bhūtvā prāṇināṁ deham āśritaḥ |\nprāṇāpāna-samāyuktaḥ pacāmy annaṁ catur-vidham ||",
-        en: {
-            meaning: "Becoming the fire Vaiśvānara (digestive fire) and abiding in the body of living beings, associated with prāṇa (incoming breath) and apāna (outgoing breath), I digest the four kinds of food.",
-            childMeaning: "God is the digestive fire in your stomach that helps you digest food.",
-            activity: "Notice your hunger and digestion today—it’s divine energy."
+        "sanskrit": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः |\nप्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्",
+        "transliteration": "ahaṁ vaiśhvānaro bhūtvā prāṇināṁ deham āśhritaḥ\nprāṇāpāna-samāyuktaḥ pachāmy annaṁ chatur-vidham",
+        "en": {
+            "meaning": "Becoming the fire Vaiśvānara (digestive fire) and abiding in the body of living beings, associated with prāṇa (incoming breath) and apāna (outgoing breath), I digest the four kinds of food.",
+            "childMeaning": "God is the digestive fire in your stomach that helps you digest food.",
+            "activity": "Notice your hunger and digestion today—it’s divine energy."
         },
-        te: {
-            meaning: "నేను వైశ్వానరుడనై (జఠరాగ్నినై) ప్రాణుల దేహంలో ప్రవేశించి, ప్రాణాపానాలతో కూడి, నాలుగు రకాల ఆహారాన్ని జీర్ణం చేస్తాను.",
-            childMeaning: "దేవుడే మీ కడుపులోని అగ్నిగా ఉండి ఆహారాన్ని జీర్ణం చేస్తాడు.",
-            activity: "ఈ రోజు మీ ఆకలి, జీర్ణశక్తిని గమనించండి — అది దైవశక్తి."
+        "te": {
+            "meaning": "నేను వైశ్వానరుడనై (జఠరాగ్నినై) ప్రాణుల దేహంలో ప్రవేశించి, ప్రాణాపానాలతో కూడి, నాలుగు రకాల ఆహారాన్ని జీర్ణం చేస్తాను.",
+            "childMeaning": "దేవుడే మీ కడుపులోని అగ్నిగా ఉండి ఆహారాన్ని జీర్ణం చేస్తాడు.",
+            "activity": "ఈ రోజు మీ ఆకలి, జీర్ణశక్తిని గమనించండి — అది దైవశక్తి."
         },
-        exercises: {
-            seeds: { question: "As whom does the Lord digest food?", question_te: "ప్రభువు ఎవరి రూపంలో ఆహారాన్ని జీర్ణం చేస్తాడు?", options: ["Indra", "Vaiśvānara (digestive fire)", "Vāyu"], correct: 1 },
-            seekers: { question: "How many kinds of food are mentioned?", question_te: "ఎన్ని రకాల ఆహారాలు చెప్పబడ్డాయి?", options: ["Two", "Three", "Four"], correct: 2 },
-            warriors: { question: "What does 'prāṇāpāna-samāyuktaḥ' mean?", question_te: "'ప్రాణాపానసమాయుక్తః' అంటే?", options: ["Without breath", "United with incoming and outgoing breath", "Only with outgoing breath"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "As whom does the Lord digest food?",
+                "question_te": "ప్రభువు ఎవరి రూపంలో ఆహారాన్ని జీర్ణం చేస్తాడు?",
+                "options": [
+                    "Indra",
+                    "Vaiśvānara (digestive fire)",
+                    "Vāyu"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "How many kinds of food are mentioned?",
+                "question_te": "ఎన్ని రకాల ఆహారాలు చెప్పబడ్డాయి?",
+                "options": [
+                    "Two",
+                    "Three",
+                    "Four"
+                ],
+                "correct": 2
+            },
+            "warriors": {
+                "question": "What does 'prāṇāpāna-samāyuktaḥ' mean?",
+                "question_te": "'ప్రాణాపానసమాయుక్తః' అంటే?",
+                "options": [
+                    "Without breath",
+                    "United with incoming and outgoing breath",
+                    "Only with outgoing breath"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "అహం వైశ్వానరో భూత్వా ప్రాణినాం దేహమాశ్రితః |\nప్రాణాపానసమాయుక్తః పచామ్యన్నం చతుర్విధమ్ ||",
-        lineBreakdown: [
-            { sanskrit: "अहं वैश्वानरो भूत्वा", word: "ahaṁ vaiśvānaro bhūtvā", sanskrit_te: "అహం వైశ్వానరో భూత్వా", en: "I, becoming Vaiśvānara", te: "నేను జఠరాగ్నినై" },
-            { sanskrit: "प्राणिनां देहमाश्रितः", word: "prāṇināṁ deham āśritaḥ", sanskrit_te: "ప్రాణినాం దేహమాశ్రితః", en: "abiding in the body of beings", te: "ప్రాణుల దేహంలో ప్రవేశించి" },
-            { sanskrit: "प्राणापानसमायुक्तः", word: "prāṇāpāna-samāyuktaḥ", sanskrit_te: "ప్రాణాపానసమాయుక్తః", en: "united with prāṇa and apāna", te: "ప్రాణాపానాలతో కూడి" },
-            { sanskrit: "पचाम्यन्नं चतुर्विधम्", word: "pacāmy annaṁ catur-vidham", sanskrit_te: "పచామ్యన్నం చతుర్విధమ్", en: "I digest four kinds of food", te: "నాలుగు రకాల ఆహారాన్ని జీర్ణం చేస్తాను" }
+        "telugu_script": "అహం వైశ్వానరో భూత్వా ప్రాణినాం దేహమాశ్రితః |\nప్రాణాపానసమాయుక్తః పచామ్యన్నం చతుర్విధమ్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            },
+            {
+                "sanskrit": "vaiśhvānaraḥ",
+                "word": "vaiśhvānaraḥ",
+                "sanskrit_te": "వైశ్హ్వానరః",
+                "en": "fire of digestion",
+                "te": "fire of digestion"
+            },
+            {
+                "sanskrit": "bhūtvā",
+                "word": "bhūtvā",
+                "sanskrit_te": "భూత్వా",
+                "en": "becoming",
+                "te": "becoming"
+            },
+            {
+                "sanskrit": "prāṇinām",
+                "word": "prāṇinām",
+                "sanskrit_te": "ప్రాణినామ్",
+                "en": "of all living beings",
+                "te": "of all living beings"
+            },
+            {
+                "sanskrit": "deham",
+                "word": "deham",
+                "sanskrit_te": "దేహమ్",
+                "en": "the body",
+                "te": "the body"
+            },
+            {
+                "sanskrit": "āśhritaḥ",
+                "word": "āśhritaḥ",
+                "sanskrit_te": "ఆశ్హ్రితః",
+                "en": "situated",
+                "te": "situated"
+            },
+            {
+                "sanskrit": "prāṇa-apāna",
+                "word": "prāṇa-apāna",
+                "sanskrit_te": "ప్రాణ-అపాన",
+                "en": "outgoing and incoming breath",
+                "te": "outgoing and incoming breath"
+            },
+            {
+                "sanskrit": "samāyuktaḥ",
+                "word": "samāyuktaḥ",
+                "sanskrit_te": "సమాయుక్తః",
+                "en": "keeping in balance",
+                "te": "keeping in balance"
+            },
+            {
+                "sanskrit": "pachāmi",
+                "word": "pachāmi",
+                "sanskrit_te": "పఛామి",
+                "en": "I digest",
+                "te": "I digest"
+            },
+            {
+                "sanskrit": "annam",
+                "word": "annam",
+                "sanskrit_te": "అన్నమ్",
+                "en": "foods",
+                "te": "foods"
+            },
+            {
+                "sanskrit": "chatuḥ-vidham",
+                "word": "chatuḥ-vidham",
+                "sanskrit_te": "ఛతుః-విధమ్",
+                "en": "the four kinds",
+                "te": "the four kinds"
+            }
         ]
     },
     "15.15": {
-        sanskrit: "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च।\nवेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्॥",
-        transliteration: "sarvasya cāhaṁ hṛdi sanniviṣṭo mattaḥ smṛtir jñānam apohanaṁ ca |\nvedaiś ca sarvair aham eva vedyo vedānta-kṛd veda-vid eva cāham ||",
-        en: {
-            meaning: "And I am situated in the heart of everyone. From Me come memory, knowledge, and their loss. I alone am to be known by all the Vedas. I am the author of Vedānta, and the knower of the Vedas I am.",
-            childMeaning: "God lives in everyone’s heart. He gives memory and knowledge. All holy books talk about Him.",
-            activity: "Close your eyes, place hand on heart, and say: 'You are here.'"
+        "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च |\nवेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्",
+        "transliteration": "sarvasya chāhaṁ hṛidi sanniviṣhṭo\nmattaḥ smṛitir jñānam apohanaṁ cha\nvedaiśh cha sarvair aham eva vedyo\nvedānta-kṛid veda-vid eva chāham",
+        "en": {
+            "meaning": "And I am situated in the heart of everyone. From Me come memory, knowledge, and their loss. I alone am to be known by all the Vedas. I am the author of Vedānta, and the knower of the Vedas I am.",
+            "childMeaning": "God lives in everyone’s heart. He gives memory and knowledge. All holy books talk about Him.",
+            "activity": "Close your eyes, place hand on heart, and say: 'You are here.'"
         },
-        te: {
-            meaning: "నేను అందరి హృదయంలోనూ ఉన్నాను. నా నుండే జ్ఞాపకం, జ్ఞానం, వాటి నాశనం కలుగుతాయి. అన్ని వేదాలకు నేనే తెలియదగినవాడిని. వేదాంతాన్ని చెప్పినవాడను, వేదాలను తెలిసినవాడను నేనే.",
-            childMeaning: "దేవుడు అందరి హృదయంలో ఉంటాడు. జ్ఞాపకం, తెలివి ఆయన నుండే వస్తాయి. అన్ని పవిత్ర గ్రంథాలు ఆయన గురించే చెబుతాయి.",
-            activity: "కళ్ళు మూసుకుని, చేతిని గుండెపై ఉంచండి: 'నువ్వు ఇక్కడ ఉన్నావు' అనుకోండి."
+        "te": {
+            "meaning": "నేను అందరి హృదయంలోనూ ఉన్నాను. నా నుండే జ్ఞాపకం, జ్ఞానం, వాటి నాశనం కలుగుతాయి. అన్ని వేదాలకు నేనే తెలియదగినవాడిని. వేదాంతాన్ని చెప్పినవాడను, వేదాలను తెలిసినవాడను నేనే.",
+            "childMeaning": "దేవుడు అందరి హృదయంలో ఉంటాడు. జ్ఞాపకం, తెలివి ఆయన నుండే వస్తాయి. అన్ని పవిత్ర గ్రంథాలు ఆయన గురించే చెబుతాయి.",
+            "activity": "కళ్ళు మూసుకుని, చేతిని గుండెపై ఉంచండి: 'నువ్వు ఇక్కడ ఉన్నావు' అనుకోండి."
         },
-        exercises: {
-            seeds: { question: "Where does the Lord dwell?", question_te: "ప్రభువు ఎక్కడ నివసిస్తాడు?", options: ["In heaven", "In the heart", "In the sky"], correct: 1 },
-            seekers: { question: "What comes from the Lord?", question_te: "ప్రభువు నుండి ఏమి వస్తాయి?", options: ["Only wealth", "Memory and knowledge", "Only sorrow"], correct: 1 },
-            warriors: { question: "What does 'vedānta-kṛt' mean?", question_te: "'వేదాంతకృత్' అంటే?", options: ["Destroyer of Vedas", "Author of Vedānta", "Ignorant of Vedas"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Where does the Lord dwell?",
+                "question_te": "ప్రభువు ఎక్కడ నివసిస్తాడు?",
+                "options": [
+                    "In heaven",
+                    "In the heart",
+                    "In the sky"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "What comes from the Lord?",
+                "question_te": "ప్రభువు నుండి ఏమి వస్తాయి?",
+                "options": [
+                    "Only wealth",
+                    "Memory and knowledge",
+                    "Only sorrow"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'vedānta-kṛt' mean?",
+                "question_te": "'వేదాంతకృత్' అంటే?",
+                "options": [
+                    "Destroyer of Vedas",
+                    "Author of Vedānta",
+                    "Ignorant of Vedas"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "సర్వస్య చాహం హృది సన్నివిష్టో మత్తః స్మృతిర్జ్ఞానమపోహనం చ |\nవేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్ ||",
-        lineBreakdown: [
-            { sanskrit: "सर्वस्य चाहं हृदि सन्निविष्टो", word: "sarvasya cāhaṁ hṛdi sanniviṣṭaḥ", sanskrit_te: "సర్వస్య చాహం హృది సన్నివిష్టో", en: "And of everyone, I am in the heart", te: "మరియు అందరి హృదయంలోనూ నేను ఉన్నాను" },
-            { sanskrit: "मत्तः स्मृतिर्ज्ञानमपोहनं च", word: "mattaḥ smṛtir jñānam apohanaṁ ca", sanskrit_te: "మత్తః స్మృతిర్జ్ఞానమపోహనం చ", en: "From Me memory, knowledge, loss", te: "నా నుండే జ్ఞాపకం, జ్ఞానం, నాశనం" },
-            { sanskrit: "वेदैश्च सर्वैरहमेव वेद्यो", word: "vedaiś ca sarvair aham eva vedyaḥ", sanskrit_te: "వేదైశ్చ సర్వైరహమేవ వేద్యో", en: "By all Vedas, I alone am known", te: "అన్ని వేదాలచేత నేనే తెలియబడతాను" },
-            { sanskrit: "वेदान्तकृद्वेदविदेव चाहम्", word: "vedānta-kṛd veda-vid eva cāham", sanskrit_te: "వేదాన్తకృద్వేదవిదేవ చాహమ్", en: "I am Vedānta's maker and Vedas' knower", te: "వేదాంతాన్ని చెప్పినవాడను, వేదాలను తెలిసినవాడను నేనే" }
+        "telugu_script": "సర్వస్య చాహం హృది సన్నివిష్టో మత్తః స్మృతిర్జ్ఞానమపోహనం చ |\nవేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్",
+        "lineBreakdown": [
+            {
+                "sanskrit": "sarvasya",
+                "word": "sarvasya",
+                "sanskrit_te": "సర్వస్య",
+                "en": "of all living beings",
+                "te": "of all living beings"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            },
+            {
+                "sanskrit": "hṛidi",
+                "word": "hṛidi",
+                "sanskrit_te": "హృఇది",
+                "en": "in the hearts",
+                "te": "in the hearts"
+            },
+            {
+                "sanskrit": "sanniviṣhṭaḥ",
+                "word": "sanniviṣhṭaḥ",
+                "sanskrit_te": "సన్నివిష్హ్టః",
+                "en": "seated",
+                "te": "seated"
+            },
+            {
+                "sanskrit": "mattaḥ",
+                "word": "mattaḥ",
+                "sanskrit_te": "మత్తః",
+                "en": "from me",
+                "te": "from me"
+            },
+            {
+                "sanskrit": "smṛitiḥ",
+                "word": "smṛitiḥ",
+                "sanskrit_te": "స్మృఇతిః",
+                "en": "memory",
+                "te": "memory"
+            },
+            {
+                "sanskrit": "jñānam",
+                "word": "jñānam",
+                "sanskrit_te": "జ్ఞానమ్",
+                "en": "knowledge",
+                "te": "knowledge"
+            },
+            {
+                "sanskrit": "apohanam",
+                "word": "apohanam",
+                "sanskrit_te": "అపోహనమ్",
+                "en": "forgetfulness",
+                "te": "forgetfulness"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "as well as",
+                "te": "as well as"
+            },
+            {
+                "sanskrit": "vedaiḥ",
+                "word": "vedaiḥ",
+                "sanskrit_te": "వేదైః",
+                "en": "by the Vedas",
+                "te": "by the Vedas"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "sarvaiḥ",
+                "word": "sarvaiḥ",
+                "sanskrit_te": "సర్వైః",
+                "en": "all",
+                "te": "all"
+            },
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "alone",
+                "te": "alone"
+            },
+            {
+                "sanskrit": "vedyaḥ",
+                "word": "vedyaḥ",
+                "sanskrit_te": "వేద్యః",
+                "en": "to be known",
+                "te": "to be known"
+            },
+            {
+                "sanskrit": "vedānta-kṛit",
+                "word": "vedānta-kṛit",
+                "sanskrit_te": "వేదాన్త-కృఇత్",
+                "en": "the author of the Vedānt",
+                "te": "the author of the Vedānt"
+            },
+            {
+                "sanskrit": "veda-vit",
+                "word": "veda-vit",
+                "sanskrit_te": "వేద-విత్",
+                "en": "the knower of the meaning of the Vedas",
+                "te": "the knower of the meaning of the Vedas"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "alone",
+                "te": "alone"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            }
         ]
     },
     "15.16": {
-        sanskrit: "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च।\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते॥",
-        transliteration: "dvāv imau puruṣau loke kṣaraś cākṣara eva ca |\nkṣaraḥ sarvāṇi bhūtāni kūṭastho ’kṣara ucyate ||",
-        en: {
-            meaning: "There are two Puruṣas (beings) in the world: the Kṣara (perishable) and the Akṣara (imperishable). The Kṣara is all beings (material bodies). The Kūṭastha (unchanging) is called the Akṣara.",
-            childMeaning: "Everything that changes (bodies, things) is perishable. The soul that never changes is imperishable.",
-            activity: "Look at something old and something that never changes inside you."
+        "sanskrit": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च |\nक्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते",
+        "transliteration": "dvāv imau puruṣhau loke kṣharaśh chākṣhara eva cha\nkṣharaḥ sarvāṇi bhūtāni kūṭa-stho ’kṣhara uchyate",
+        "en": {
+            "meaning": "There are two Puruṣas (beings) in the world: the Kṣara (perishable) and the Akṣara (imperishable). The Kṣara is all beings (material bodies). The Kūṭastha (unchanging) is called the Akṣara.",
+            "childMeaning": "Everything that changes (bodies, things) is perishable. The soul that never changes is imperishable.",
+            "activity": "Look at something old and something that never changes inside you."
         },
-        te: {
-            meaning: "ఈ లోకంలో రెండు పురుషులు ఉన్నారు: క్షరుడు (నాశనం అయ్యేవాడు) మరియు అక్షరుడు (నాశనం లేనివాడు). క్షరుడు అంటే సమస్త ప్రాణులు (శరీరాలు). అక్షరుడు అంటే కూటస్థుడు (మార్పులేనివాడు).",
-            childMeaning: "మారేవి అన్నీ నశించేవి. మారని ఆత్మ నశించనిది.",
-            activity: "ఒక పాత వస్తువు చూడండి, మరి మీలో ఎప్పటికీ మారనిదేదో గుర్తించండి."
+        "te": {
+            "meaning": "ఈ లోకంలో రెండు పురుషులు ఉన్నారు: క్షరుడు (నాశనం అయ్యేవాడు) మరియు అక్షరుడు (నాశనం లేనివాడు). క్షరుడు అంటే సమస్త ప్రాణులు (శరీరాలు). అక్షరుడు అంటే కూటస్థుడు (మార్పులేనివాడు).",
+            "childMeaning": "మారేవి అన్నీ నశించేవి. మారని ఆత్మ నశించనిది.",
+            "activity": "ఒక పాత వస్తువు చూడండి, మరి మీలో ఎప్పటికీ మారనిదేదో గుర్తించండి."
         },
-        exercises: {
-            seeds: { question: "How many Puruṣas are mentioned?", question_te: "ఎంతమంది పురుషులు చెప్పబడ్డారు?", options: ["One", "Two", "Three"], correct: 1 },
-            seekers: { question: "Who is Kṣara?", question_te: "క్షరుడు ఎవరు?", options: ["The imperishable", "All perishable beings", "God"], correct: 1 },
-            warriors: { question: "What does 'Kūṭastha' mean?", question_te: "'కూటస్థ' అంటే?", options: ["Changing", "Unchanging, like an anvil", "Moving"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "How many Puruṣas are mentioned?",
+                "question_te": "ఎంతమంది పురుషులు చెప్పబడ్డారు?",
+                "options": [
+                    "One",
+                    "Two",
+                    "Three"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "Who is Kṣara?",
+                "question_te": "క్షరుడు ఎవరు?",
+                "options": [
+                    "The imperishable",
+                    "All perishable beings",
+                    "God"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'Kūṭastha' mean?",
+                "question_te": "'కూటస్థ' అంటే?",
+                "options": [
+                    "Changing",
+                    "Unchanging, like an anvil",
+                    "Moving"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "ద్వావిమౌ పురుషౌ లోకే క్షరశ్చాక్షర ఏవ చ |\nక్షరః సర్వాణి భూతాని కూటస్థోऽక్షర ఉచ్యతే ||",
-        lineBreakdown: [
-            { sanskrit: "द्वाविमौ पुरुषौ लोके", word: "dvāv imau puruṣau loke", sanskrit_te: "ద్వావిమౌ పురుషౌ లోకే", en: "Two Puruṣas in the world", te: "లోకంలో ఇద్దరు పురుషులు" },
-            { sanskrit: "क्षरश्चाक्षर एव च", word: "kṣaraś cākṣara eva ca", sanskrit_te: "క్షరశ్చాక్షర ఏవ చ", en: "Perishable and imperishable indeed", te: "నాశనమయ్యేవాడు, నాశనం లేనివాడు" },
-            { sanskrit: "क्षरः सर्वाणि भूतानि", word: "kṣaraḥ sarvāṇi bhūtāni", sanskrit_te: "క్షరః సర్వాణి భూతాని", en: "Perishable are all beings", te: "నాశనమయ్యేవాడు = సమస్త ప్రాణులు" },
-            { sanskrit: "कूटस्थोऽक्षर उच्यते", word: "kūṭastho ’kṣara ucyate", sanskrit_te: "కూటస్థోఽక్షర ఉచ్యతే", en: "Unchanging is called imperishable", te: "మార్పులేనివాడు = అక్షరుడు అనబడతాడు" }
+        "telugu_script": "ద్వావిమౌ పురుషౌ లోకే క్షరశ్చాక్షర ఏవ చ |\nక్షరః సర్వాణి భూతాని కూటస్థోఽక్షర ఉచ్యతే",
+        "lineBreakdown": [
+            {
+                "sanskrit": "dvau",
+                "word": "dvau",
+                "sanskrit_te": "ద్వౌ",
+                "en": "two",
+                "te": "two"
+            },
+            {
+                "sanskrit": "imau",
+                "word": "imau",
+                "sanskrit_te": "ఇమౌ",
+                "en": "these",
+                "te": "these"
+            },
+            {
+                "sanskrit": "puruṣhau",
+                "word": "puruṣhau",
+                "sanskrit_te": "పురుష్హౌ",
+                "en": "beings",
+                "te": "beings"
+            },
+            {
+                "sanskrit": "loke",
+                "word": "loke",
+                "sanskrit_te": "లోకే",
+                "en": "in creation",
+                "te": "in creation"
+            },
+            {
+                "sanskrit": "kṣharaḥ",
+                "word": "kṣharaḥ",
+                "sanskrit_te": "క్ష్హరః",
+                "en": "the perishable",
+                "te": "the perishable"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "akṣharaḥ",
+                "word": "akṣharaḥ",
+                "sanskrit_te": "అక్ష్హరః",
+                "en": "the imperishable",
+                "te": "the imperishable"
+            },
+            {
+                "sanskrit": "eva",
+                "word": "eva",
+                "sanskrit_te": "ఏవ",
+                "en": "even",
+                "te": "even"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "kṣharaḥ",
+                "word": "kṣharaḥ",
+                "sanskrit_te": "క్ష్హరః",
+                "en": "the perishable",
+                "te": "the perishable"
+            },
+            {
+                "sanskrit": "sarvāṇi",
+                "word": "sarvāṇi",
+                "sanskrit_te": "సర్వాణి",
+                "en": "all",
+                "te": "all"
+            },
+            {
+                "sanskrit": "bhūtāni",
+                "word": "bhūtāni",
+                "sanskrit_te": "భూతాని",
+                "en": "beings",
+                "te": "beings"
+            },
+            {
+                "sanskrit": "kūṭa-sthaḥ",
+                "word": "kūṭa-sthaḥ",
+                "sanskrit_te": "కూట-స్థః",
+                "en": "the liberated",
+                "te": "the liberated"
+            },
+            {
+                "sanskrit": "akṣharaḥ",
+                "word": "akṣharaḥ",
+                "sanskrit_te": "అక్ష్హరః",
+                "en": "the imperishable",
+                "te": "the imperishable"
+            },
+            {
+                "sanskrit": "uchyate",
+                "word": "uchyate",
+                "sanskrit_te": "ఉఛ్యతే",
+                "en": "is said",
+                "te": "is said"
+            }
         ]
     },
     "15.17": {
-        sanskrit: "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः।\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः॥",
-        transliteration: "uttamaḥ puruṣas tv anyaḥ paramātma ity udāhṛtaḥ |\nyo loka-trayam āviśya bibharty avyaya īśvaraḥ ||",
-        en: {
-            meaning: "But distinct is the Supreme Puruṣa (Puruṣottama), called the Paramātmā, who, entering the three worlds, sustains them, the imperishable Lord.",
-            childMeaning: "Above all is God (Paramātmā). He enters and holds up all the worlds and never fades away.",
-            activity: "Think: 'Something greater than everything holds me up.'"
+        "sanskrit": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः |\nयो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः",
+        "transliteration": "uttamaḥ puruṣhas tv anyaḥ paramātmety udāhṛitaḥ\nyo loka-trayam āviśhya bibharty avyaya īśhvaraḥ",
+        "en": {
+            "meaning": "But distinct is the Supreme Puruṣa (Puruṣottama), called the Paramātmā, who, entering the three worlds, sustains them, the imperishable Lord.",
+            "childMeaning": "Above all is God (Paramātmā). He enters and holds up all the worlds and never fades away.",
+            "activity": "Think: 'Something greater than everything holds me up.'"
         },
-        te: {
-            meaning: "అయితే వేరే ఉత్తమ పురుషుడు (పురుషోత్తముడు) ఉన్నాడు. ఆయన పరమాత్మ అని చెప్పబడ్డాడు. ఆయన మూడు లోకాలలోకి ప్రవేశించి వాటిని ధరిస్తాడు, అవ్యయుడు, ఈశ్వరుడు.",
-            childMeaning: "అన్నిటికీ పైన దేవుడు (పరమాత్మ). ఆయన అన్ని లోకాలలోకి వెళ్లి వాటిని నిలుపుతాడు, ఎప్పటికీ నశించడు.",
-            activity: "ఒక్క క్షణం ఆలోచించండి: 'నన్ను నిలుపుతున్నది దేవుడు.'"
+        "te": {
+            "meaning": "అయితే వేరే ఉత్తమ పురుషుడు (పురుషోత్తముడు) ఉన్నాడు. ఆయన పరమాత్మ అని చెప్పబడ్డాడు. ఆయన మూడు లోకాలలోకి ప్రవేశించి వాటిని ధరిస్తాడు, అవ్యయుడు, ఈశ్వరుడు.",
+            "childMeaning": "అన్నిటికీ పైన దేవుడు (పరమాత్మ). ఆయన అన్ని లోకాలలోకి వెళ్లి వాటిని నిలుపుతాడు, ఎప్పటికీ నశించడు.",
+            "activity": "ఒక్క క్షణం ఆలోచించండి: 'నన్ను నిలుపుతున్నది దేవుడు.'"
         },
-        exercises: {
-            seeds: { question: "Who is the Supreme Puruṣa?", question_te: "ఉత్తమ పురుషుడు ఎవరు?", options: ["Kṣara", "Akṣara", "Paramātmā"], correct: 2 },
-            seekers: { question: "What does the Supreme Lord do?", question_te: "పరమాత్మ ఏమి చేస్తాడు?", options: ["Destroys", "Sustains the three worlds", "Sleeps"], correct: 1 },
-            warriors: { question: "Why is He called 'avyaya'?", question_te: "ఆయనను 'అవ్యయుడు' అని ఎందుకు అంటారు?", options: ["Because He dies", "Because He is imperishable", "Because He changes"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Who is the Supreme Puruṣa?",
+                "question_te": "ఉత్తమ పురుషుడు ఎవరు?",
+                "options": [
+                    "Kṣara",
+                    "Akṣara",
+                    "Paramātmā"
+                ],
+                "correct": 2
+            },
+            "seekers": {
+                "question": "What does the Supreme Lord do?",
+                "question_te": "పరమాత్మ ఏమి చేస్తాడు?",
+                "options": [
+                    "Destroys",
+                    "Sustains the three worlds",
+                    "Sleeps"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "Why is He called 'avyaya'?",
+                "question_te": "ఆయనను 'అవ్యయుడు' అని ఎందుకు అంటారు?",
+                "options": [
+                    "Because He dies",
+                    "Because He is imperishable",
+                    "Because He changes"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "ఉత్తమః పురుషస్త్వన్యః పరమాత్మేత్యుదాహృతః |\nయో లోకత్రయమావిశ్య బిభర్త్యవ్యయ ఈశ్వరః ||",
-        lineBreakdown: [
-            { sanskrit: "उत्तमः पुरुषस्त्वन्यः", word: "uttamaḥ puruṣas tv anyaḥ", sanskrit_te: "ఉత్తమః పురుషస్త్వన్యః", en: "The Supreme Puruṣa, distinct", te: "ఉత్తమ పురుషుడు వేరే" },
-            { sanskrit: "परमात्मेत्युदाहृतः", word: "paramātma ity udāhṛtaḥ", sanskrit_te: "పరమాత్మేత్యుదాహృతః", en: "is called Paramātmā", te: "పరమాత్మ అని చెప్పబడ్డాడు" },
-            { sanskrit: "यो लोकत्रयमाविश्य", word: "yo loka-trayam āviśya", sanskrit_te: "యో లోకత్రయమావిశ్య", en: "who, entering the three worlds", te: "ఎవడు మూడు లోకాలలోకి ప్రవేశించి" },
-            { sanskrit: "बिभर्त्यव्यय ईश्वरः", word: "bibharty avyaya īśvaraḥ", sanskrit_te: "బిభర్త్యవ్యయ ఈశ్వరః", en: "sustains, imperishable Lord", te: "ధరిస్తాడు, అవ్యయుడు, ఈశ్వరుడు" }
+        "telugu_script": "ఉత్తమః పురుషస్త్వన్యః పరమాత్మేత్యుదాహృతః |\nయో లోకత్రయమావిశ్య బిభర్త్యవ్యయ ఈశ్వరః",
+        "lineBreakdown": [
+            {
+                "sanskrit": "uttamaḥ",
+                "word": "uttamaḥ",
+                "sanskrit_te": "ఉత్తమః",
+                "en": "the Supreme",
+                "te": "the Supreme"
+            },
+            {
+                "sanskrit": "puruṣhaḥ",
+                "word": "puruṣhaḥ",
+                "sanskrit_te": "పురుష్హః",
+                "en": "Divine Personality",
+                "te": "Divine Personality"
+            },
+            {
+                "sanskrit": "tu",
+                "word": "tu",
+                "sanskrit_te": "తు",
+                "en": "but",
+                "te": "but"
+            },
+            {
+                "sanskrit": "anyaḥ",
+                "word": "anyaḥ",
+                "sanskrit_te": "అన్యః",
+                "en": "besides",
+                "te": "besides"
+            },
+            {
+                "sanskrit": "parama-ātmā",
+                "word": "parama-ātmā",
+                "sanskrit_te": "పరమ-ఆత్మా",
+                "en": "the Supreme Soul",
+                "te": "the Supreme Soul"
+            },
+            {
+                "sanskrit": "iti",
+                "word": "iti",
+                "sanskrit_te": "ఇతి",
+                "en": "thus",
+                "te": "thus"
+            },
+            {
+                "sanskrit": "udāhṛitaḥ",
+                "word": "udāhṛitaḥ",
+                "sanskrit_te": "ఉదాహృఇతః",
+                "en": "is said",
+                "te": "is said"
+            },
+            {
+                "sanskrit": "yaḥ",
+                "word": "yaḥ",
+                "sanskrit_te": "యః",
+                "en": "who",
+                "te": "who"
+            },
+            {
+                "sanskrit": "loka trayam",
+                "word": "loka trayam",
+                "sanskrit_te": "లోక త్రయమ్",
+                "en": "the three worlds",
+                "te": "the three worlds"
+            },
+            {
+                "sanskrit": "āviśhya",
+                "word": "āviśhya",
+                "sanskrit_te": "ఆవిశ్హ్య",
+                "en": "enters",
+                "te": "enters"
+            },
+            {
+                "sanskrit": "bibharti",
+                "word": "bibharti",
+                "sanskrit_te": "బిభర్తి",
+                "en": "supports",
+                "te": "supports"
+            },
+            {
+                "sanskrit": "avyayaḥ",
+                "word": "avyayaḥ",
+                "sanskrit_te": "అవ్యయః",
+                "en": "indestructible",
+                "te": "indestructible"
+            },
+            {
+                "sanskrit": "īśhvaraḥ",
+                "word": "īśhvaraḥ",
+                "sanskrit_te": "ఈశ్హ్వరః",
+                "en": "the controller",
+                "te": "the controller"
+            }
         ]
     },
     "15.18": {
-        sanskrit: "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः।\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः॥",
-        transliteration: "yasmāt kṣaram atīto ’ham akṣarād api ca uttamaḥ |\nato ’smi loke vede ca prathitaḥ puruṣottamaḥ ||",
-        en: {
-            meaning: "Because I transcend the perishable (Kṣara) and am even higher than the imperishable (Akṣara), therefore in the world and in the Vedas I am renowned as Puruṣottama (the Supreme Being).",
-            childMeaning: "God is greater than both the changing world and the unchanging soul. That’s why He is called Supreme.",
-            activity: "Write: 'Purushottama — the Supreme beyond all.'"
+        "sanskrit": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः |\nअतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः",
+        "transliteration": "yasmāt kṣharam atīto ’ham akṣharād api chottamaḥ\nato ’smi loke vede cha prathitaḥ puruṣhottamaḥ",
+        "en": {
+            "meaning": "Because I transcend the perishable (Kṣara) and am even higher than the imperishable (Akṣara), therefore in the world and in the Vedas I am renowned as Puruṣottama (the Supreme Being).",
+            "childMeaning": "God is greater than both the changing world and the unchanging soul. That’s why He is called Supreme.",
+            "activity": "Write: 'Purushottama — the Supreme beyond all.'"
         },
-        te: {
-            meaning: "నేను క్షరునికి అతీతుడిని, అక్షరునికంటే కూడా ఉత్తముడిని కాబట్టి, లోకంలోను, వేదంలోను నేను పురుషోత్తముడిగా ప్రసిద్ధుడిని.",
-            childMeaning: "దేవుడు మారే ప్రపంచం కంటే, మారని ఆత్మ కంటే కూడా గొప్పవాడు. అందుకే ఆయనను పురుషోత్తముడు అంటారు.",
-            activity: "రాయండి: 'పురుషోత్తముడు — అన్నిటికీ మించిన దేవుడు.'"
+        "te": {
+            "meaning": "నేను క్షరునికి అతీతుడిని, అక్షరునికంటే కూడా ఉత్తముడిని కాబట్టి, లోకంలోను, వేదంలోను నేను పురుషోత్తముడిగా ప్రసిద్ధుడిని.",
+            "childMeaning": "దేవుడు మారే ప్రపంచం కంటే, మారని ఆత్మ కంటే కూడా గొప్పవాడు. అందుకే ఆయనను పురుషోత్తముడు అంటారు.",
+            "activity": "రాయండి: 'పురుషోత్తముడు — అన్నిటికీ మించిన దేవుడు.'"
         },
-        exercises: {
-            seeds: { question: "Why is the Lord called Puruṣottama?", question_te: "ప్రభువును పురుషోత్తముడు అని ఎందుకు పిలుస్తారు?", options: ["Because He is strong", "Because He transcends both Kṣara and Akṣara", "Because He is kind"], correct: 1 },
-            seekers: { question: "Where is He renowned as Puruṣottama?", question_te: "ఆయన పురుషోత్తముడిగా ఎక్కడ ప్రసిద్ధుడు?", options: ["Only in heaven", "In the world and Vedas", "Only in forest"], correct: 1 },
-            warriors: { question: "What does 'atītaḥ' mean?", question_te: "'అతీతః' అంటే?", options: ["Below", "Transcending", "Equal to"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Why is the Lord called Puruṣottama?",
+                "question_te": "ప్రభువును పురుషోత్తముడు అని ఎందుకు పిలుస్తారు?",
+                "options": [
+                    "Because He is strong",
+                    "Because He transcends both Kṣara and Akṣara",
+                    "Because He is kind"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "Where is He renowned as Puruṣottama?",
+                "question_te": "ఆయన పురుషోత్తముడిగా ఎక్కడ ప్రసిద్ధుడు?",
+                "options": [
+                    "Only in heaven",
+                    "In the world and Vedas",
+                    "Only in forest"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'atītaḥ' mean?",
+                "question_te": "'అతీతః' అంటే?",
+                "options": [
+                    "Below",
+                    "Transcending",
+                    "Equal to"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "యస్మాత్క్షరమతీతోऽహమక్షరాదపి చోత్తమః |\nఅతోऽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః ||",
-        lineBreakdown: [
-            { sanskrit: "यस्मात्क्षरमतीतोऽहम्", word: "yasmāt kṣaram atīto ’ham", sanskrit_te: "యస్మాత్క్షరమతీతోఽహమ్", en: "Because I transcend the perishable", te: "ఎందుకంటే నేను క్షరునికి అతీతుడను" },
-            { sanskrit: "अक्षरादपि चोत्तमः", word: "akṣarād api ca uttamaḥ", sanskrit_te: "అక్షరాదపి చోత్తమః", en: "and higher than imperishable too", te: "మరియు అక్షరునికంటే కూడా ఉత్తముడను" },
-            { sanskrit: "अतोऽस्मि लोके वेदे च", word: "ato ’smi loke vede ca", sanskrit_te: "అతోఽస్మి లోకే వేదే చ", en: "therefore in the world and Vedas", te: "అందుకే లోకంలో మరియు వేదంలో" },
-            { sanskrit: "प्रथितः पुरुषोत्तमः", word: "prathitaḥ puruṣottamaḥ", sanskrit_te: "ప్రథితః పురుషోత్తమః", en: "I am renowned as Puruṣottama", te: "నేను పురుషోత్తముడిగా ప్రసిద్ధుడను" }
+        "telugu_script": "యస్మాత్క్షరమతీతోఽహమక్షరాదపి చోత్తమః |\nఅతోఽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః",
+        "lineBreakdown": [
+            {
+                "sanskrit": "yasmāt",
+                "word": "yasmāt",
+                "sanskrit_te": "యస్మాత్",
+                "en": "hence",
+                "te": "hence"
+            },
+            {
+                "sanskrit": "kṣharam",
+                "word": "kṣharam",
+                "sanskrit_te": "క్ష్హరమ్",
+                "en": "to the perishable",
+                "te": "to the perishable"
+            },
+            {
+                "sanskrit": "atītaḥ",
+                "word": "atītaḥ",
+                "sanskrit_te": "అతీతః",
+                "en": "transcendental",
+                "te": "transcendental"
+            },
+            {
+                "sanskrit": "aham",
+                "word": "aham",
+                "sanskrit_te": "అహమ్",
+                "en": "I",
+                "te": "I"
+            },
+            {
+                "sanskrit": "akṣharāt",
+                "word": "akṣharāt",
+                "sanskrit_te": "అక్ష్హరాత్",
+                "en": "to the imperishable",
+                "te": "to the imperishable"
+            },
+            {
+                "sanskrit": "api",
+                "word": "api",
+                "sanskrit_te": "అపి",
+                "en": "even",
+                "te": "even"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "uttamaḥ",
+                "word": "uttamaḥ",
+                "sanskrit_te": "ఉత్తమః",
+                "en": "transcendental",
+                "te": "transcendental"
+            },
+            {
+                "sanskrit": "ataḥ",
+                "word": "ataḥ",
+                "sanskrit_te": "అతః",
+                "en": "therefore",
+                "te": "therefore"
+            },
+            {
+                "sanskrit": "asmi",
+                "word": "asmi",
+                "sanskrit_te": "అస్మి",
+                "en": "I am",
+                "te": "I am"
+            },
+            {
+                "sanskrit": "loke",
+                "word": "loke",
+                "sanskrit_te": "లోకే",
+                "en": "in the world",
+                "te": "in the world"
+            },
+            {
+                "sanskrit": "vede",
+                "word": "vede",
+                "sanskrit_te": "వేదే",
+                "en": "in the Vedas",
+                "te": "in the Vedas"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "prathitaḥ",
+                "word": "prathitaḥ",
+                "sanskrit_te": "ప్రథితః",
+                "en": "celebrated",
+                "te": "celebrated"
+            },
+            {
+                "sanskrit": "puruṣha-uttamaḥ",
+                "word": "puruṣha-uttamaḥ",
+                "sanskrit_te": "పురుష్హ-ఉత్తమః",
+                "en": "as the Supreme Divine Personality",
+                "te": "as the Supreme Divine Personality"
+            }
         ]
     },
     "15.19": {
-        sanskrit: "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम्।\nस सर्वविद्भजति मां सर्वभावेन भारत॥",
-        transliteration: "yo mām evam asammūḍho jānāti puruṣottamam |\nsa sarva-vid bhajati māṁ sarva-bhāvena bhārata ||",
-        en: {
-            meaning: "He who, free from delusion, knows Me thus as the Supreme Being (Puruṣottama), knows everything, O Arjuna, and worships Me with his whole being.",
-            childMeaning: "If you truly know God as Supreme, you will know everything worth knowing and love Him completely.",
-            activity: "For one day, see every person and thing as part of the Supreme."
+        "sanskrit": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम् |\nस सर्वविद्भजति मां सर्वभावेन भारत",
+        "transliteration": "yo mām evam asammūḍho jānāti puruṣhottamam\nsa sarva-vid bhajati māṁ sarva-bhāvena bhārata",
+        "en": {
+            "meaning": "He who, free from delusion, knows Me thus as the Supreme Being (Puruṣottama), knows everything, O Arjuna, and worships Me with his whole being.",
+            "childMeaning": "If you truly know God as Supreme, you will know everything worth knowing and love Him completely.",
+            "activity": "For one day, see every person and thing as part of the Supreme."
         },
-        te: {
-            meaning: "ఎవడు ఈ విధంగా మోహం లేకుండా నన్ను పురుషోత్తమునిగా తెలుసుకుంటాడో, అతడు అంతటినీ తెలిసినవాడు, ఓ అర్జునా, మరియు సమస్త భావంతో నన్ను భజిస్తాడు.",
-            childMeaning: "దేవుణ్ణి నిజంగా పరమాత్మగా తెలుసుకుంటే, తెలుసుకోవలసిందంతా తెలుసుకుంటావు, పూర్తిగా ప్రేమిస్తావు.",
-            activity: "ఒక రోజు మొత్తం ప్రతి మనిషిని, ప్రతి వస్తువును దేవుని భాగంగా చూడండి."
+        "te": {
+            "meaning": "ఎవడు ఈ విధంగా మోహం లేకుండా నన్ను పురుషోత్తమునిగా తెలుసుకుంటాడో, అతడు అంతటినీ తెలిసినవాడు, ఓ అర్జునా, మరియు సమస్త భావంతో నన్ను భజిస్తాడు.",
+            "childMeaning": "దేవుణ్ణి నిజంగా పరమాత్మగా తెలుసుకుంటే, తెలుసుకోవలసిందంతా తెలుసుకుంటావు, పూర్తిగా ప్రేమిస్తావు.",
+            "activity": "ఒక రోజు మొత్తం ప్రతి మనిషిని, ప్రతి వస్తువును దేవుని భాగంగా చూడండి."
         },
-        exercises: {
-            seeds: { question: "Who knows everything?", question_te: "సర్వం ఎవరు తెలుసుకుంటారు?", options: ["The rich", "He who knows Puruṣottama", "The powerful"], correct: 1 },
-            seekers: { question: "How does he worship the Lord?", question_te: "అతడు ప్రభువును ఎలా భజిస్తాడు?", options: ["With doubt", "With his whole being", "Only with words"], correct: 1 },
-            warriors: { question: "What does 'asammūḍhaḥ' mean?", question_te: "'అసమ్మూఢః' అంటే?", options: ["Deluded", "Free from delusion", "Confused"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "Who knows everything?",
+                "question_te": "సర్వం ఎవరు తెలుసుకుంటారు?",
+                "options": [
+                    "The rich",
+                    "He who knows Puruṣottama",
+                    "The powerful"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "How does he worship the Lord?",
+                "question_te": "అతడు ప్రభువును ఎలా భజిస్తాడు?",
+                "options": [
+                    "With doubt",
+                    "With his whole being",
+                    "Only with words"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'asammūḍhaḥ' mean?",
+                "question_te": "'అసమ్మూఢః' అంటే?",
+                "options": [
+                    "Deluded",
+                    "Free from delusion",
+                    "Confused"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "యో మామేవమసమ్మూఢో జానాతి పురుషోత్తమమ్ |\nస సర్వవిద్భజతి మాం సర్వభావేన భారత ||",
-        lineBreakdown: [
-            { sanskrit: "यो मामेवमसम्मूढो", word: "yo mām evam asammūḍhaḥ", sanskrit_te: "యో మామేవమసమ్మూఢో", en: "He who, thus free from delusion, Me", te: "ఎవడు ఈ విధంగా మోహం లేకుండా నన్ను" },
-            { sanskrit: "जानाति पुरुषोत्तमम्", word: "jānāti puruṣottamam", sanskrit_te: "జానాతి పురుషోత్తమమ్", en: "knows as Puruṣottama", te: "పురుషోత్తమునిగా తెలుసుకుంటాడో" },
-            { sanskrit: "स सर्वविद्भजति माम्", word: "sa sarva-vid bhajati mām", sanskrit_te: "స సర్వవిద్భజతి మామ్", en: "he, all-knowing, worships Me", te: "అతడు సర్వజ్ఞుడై నన్ను భజిస్తాడు" },
-            { sanskrit: "सर्वभावेन भारत", word: "sarva-bhāvena bhārata", sanskrit_te: "సర్వభావేన భారత", en: "with whole being, O Arjuna", te: "సమస్త భావంతో, ఓ భారత" }
+        "telugu_script": "యో మామేవమసమ్మూఢో జానాతి పురుషోత్తమమ్ |\nస సర్వవిద్భజతి మాం సర్వభావేన భారత",
+        "lineBreakdown": [
+            {
+                "sanskrit": "yaḥ",
+                "word": "yaḥ",
+                "sanskrit_te": "యః",
+                "en": "who",
+                "te": "who"
+            },
+            {
+                "sanskrit": "mām",
+                "word": "mām",
+                "sanskrit_te": "మామ్",
+                "en": "me",
+                "te": "me"
+            },
+            {
+                "sanskrit": "evam",
+                "word": "evam",
+                "sanskrit_te": "ఏవమ్",
+                "en": "thus",
+                "te": "thus"
+            },
+            {
+                "sanskrit": "asammūḍhaḥ",
+                "word": "asammūḍhaḥ",
+                "sanskrit_te": "అసమ్మూఢః",
+                "en": "without a doubt",
+                "te": "without a doubt"
+            },
+            {
+                "sanskrit": "jānāti",
+                "word": "jānāti",
+                "sanskrit_te": "జానాతి",
+                "en": "know",
+                "te": "know"
+            },
+            {
+                "sanskrit": "puruṣha-uttamam",
+                "word": "puruṣha-uttamam",
+                "sanskrit_te": "పురుష్హ-ఉత్తమమ్",
+                "en": "the Supreme Divine Personality",
+                "te": "the Supreme Divine Personality"
+            },
+            {
+                "sanskrit": "saḥ",
+                "word": "saḥ",
+                "sanskrit_te": "సః",
+                "en": "they",
+                "te": "they"
+            },
+            {
+                "sanskrit": "sarva-vit",
+                "word": "sarva-vit",
+                "sanskrit_te": "సర్వ-విత్",
+                "en": "those with complete knowledge",
+                "te": "those with complete knowledge"
+            },
+            {
+                "sanskrit": "bhajati",
+                "word": "bhajati",
+                "sanskrit_te": "భజతి",
+                "en": "worship",
+                "te": "worship"
+            },
+            {
+                "sanskrit": "mām",
+                "word": "mām",
+                "sanskrit_te": "మామ్",
+                "en": "me",
+                "te": "me"
+            },
+            {
+                "sanskrit": "sarva-bhāvena",
+                "word": "sarva-bhāvena",
+                "sanskrit_te": "సర్వ-భావేన",
+                "en": "with one’s whole being",
+                "te": "with one’s whole being"
+            },
+            {
+                "sanskrit": "bhārata",
+                "word": "bhārata",
+                "sanskrit_te": "భారత",
+                "en": "Arjun, the son of Bharat",
+                "te": "Arjun, the son of Bharat"
+            }
         ]
     },
     "15.20": {
-        sanskrit: "इति गुह्यतमं शास्त्रमिदमुक्तं मयानघ।\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत॥",
-        transliteration: "iti guhyatamaṁ śāstram idam uktaṁ mayānagha |\netad buddhvā buddhimān syāt kṛta-kṛtyaś ca bhārata ||",
-        en: {
-            meaning: "Thus this most secret scripture has been spoken by Me, O sinless one. Knowing this, one becomes wise and achieves all that is to be done, O Arjuna.",
-            childMeaning: "This is a secret teaching. If you understand it, you will become wise and feel complete.",
-            activity: "Write down one thing you learned from Chapter 15."
+        "sanskrit": "इति गुह्यतमं शास्त्रमिदमुक्तं मयाऽनघ |\nएतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत",
+        "transliteration": "iti guhyatamaṁ śhāstram idam uktaṁ mayānagha\netad buddhvā buddhimān syāt kṛita-kṛityaśh cha bhārata",
+        "en": {
+            "meaning": "Thus this most secret scripture has been spoken by Me, O sinless one. Knowing this, one becomes wise and achieves all that is to be done, O Arjuna.",
+            "childMeaning": "This is a secret teaching. If you understand it, you will become wise and feel complete.",
+            "activity": "Write down one thing you learned from Chapter 15."
         },
-        te: {
-            meaning: "ఈ విధంగా అతి రహస్యమైన శాస్త్రం నా చేత చెప్పబడింది, ఓ పాపరహితుడా (అర్జునా). దీనిని తెలుసుకుని, మనిషి బుద్ధిమంతుడు అవుతాడు మరియు కృతకృత్యుడు అవుతాడు.",
-            childMeaning: "ఇది రహస్య బోధన. దీన్ని అర్థం చేసుకుంటే, తెలివిగలవాడవుతావు, సంపూర్ణత పొందుతావు.",
-            activity: "15వ అధ్యాయం నుండి నేర్చుకున్న ఒక విషయం రాయండి."
+        "te": {
+            "meaning": "ఈ విధంగా అతి రహస్యమైన శాస్త్రం నా చేత చెప్పబడింది, ఓ పాపరహితుడా (అర్జునా). దీనిని తెలుసుకుని, మనిషి బుద్ధిమంతుడు అవుతాడు మరియు కృతకృత్యుడు అవుతాడు.",
+            "childMeaning": "ఇది రహస్య బోధన. దీన్ని అర్థం చేసుకుంటే, తెలివిగలవాడవుతావు, సంపూర్ణత పొందుతావు.",
+            "activity": "15వ అధ్యాయం నుండి నేర్చుకున్న ఒక విషయం రాయండి."
         },
-        exercises: {
-            seeds: { question: "What kind of scripture is this?", question_te: "ఈ శాస్త్రం ఎలాంటిది?", options: ["Ordinary", "Most secret", "Public"], correct: 1 },
-            seekers: { question: "What happens after knowing this?", question_te: "దీన్ని తెలుసుకున్న తర్వాత ఏమవుతుంది?", options: ["One becomes rich", "One becomes wise and complete", "One becomes powerful"], correct: 1 },
-            warriors: { question: "What does 'kṛta-kṛtyaḥ' mean?", question_te: "'కృతకృత్యః' అంటే?", options: ["One who has done nothing", "One who has accomplished all duties", "One who is confused"], correct: 1 }
+        "exercises": {
+            "seeds": {
+                "question": "What kind of scripture is this?",
+                "question_te": "ఈ శాస్త్రం ఎలాంటిది?",
+                "options": [
+                    "Ordinary",
+                    "Most secret",
+                    "Public"
+                ],
+                "correct": 1
+            },
+            "seekers": {
+                "question": "What happens after knowing this?",
+                "question_te": "దీన్ని తెలుసుకున్న తర్వాత ఏమవుతుంది?",
+                "options": [
+                    "One becomes rich",
+                    "One becomes wise and complete",
+                    "One becomes powerful"
+                ],
+                "correct": 1
+            },
+            "warriors": {
+                "question": "What does 'kṛta-kṛtyaḥ' mean?",
+                "question_te": "'కృతకృత్యః' అంటే?",
+                "options": [
+                    "One who has done nothing",
+                    "One who has accomplished all duties",
+                    "One who is confused"
+                ],
+                "correct": 1
+            }
         },
-        telugu_script: "ఇతి గుహ్యతమం శాస్త్రమిదముక్తం మయానఘ |\nఏతద్బుద్ధ్వా బుద్ధిమాన్స్యాత్కృతకృత్యశ్చ భారత ||",
-        lineBreakdown: [
-            { sanskrit: "इति गुह्यतमं शास्त्रम्", word: "iti guhyatamaṁ śāstram", sanskrit_te: "ఇతి గుహ్యతమం శాస్త్రమ్", en: "Thus the most secret scripture", te: "ఈ విధంగా అతి రహస్యమైన శాస్త్రం" },
-            { sanskrit: "इदमुक्तं मयानघ", word: "idam uktaṁ mayā anagha", sanskrit_te: "ఇదముక్తం మయానఘ", en: "this has been spoken by Me, O sinless one", te: "ఇది నా చేత చెప్పబడింది, ఓ పాపరహితుడా" },
-            { sanskrit: "एतद्बुद्ध्वा बुद्धिमान्स्यात्", word: "etad buddhvā buddhimān syāt", sanskrit_te: "ఏతద్బుద్ధ్వా బుద్ధిమాన్స్యాత్", en: "knowing this, one becomes wise", te: "దీనిని తెలుసుకుని, మనిషి బుద్ధిమంతుడవుతాడు" },
-            { sanskrit: "कृतकृत्यश्च भारत", word: "kṛta-kṛtyaś ca bhārata", sanskrit_te: "కృతకృత్యశ్చ భారత", en: "and one who has accomplished all duties, O Arjuna", te: "మరియు కృతకృత్యుడు అవుతాడు, ఓ భారత" }
+        "telugu_script": "ఇతి గుహ్యతమం శాస్త్రమిదముక్తం మయాఽనఘ |\nఏతద్బుద్ధ్వా బుద్ధిమాన్స్యాత్కృతకృత్యశ్చ భారత",
+        "lineBreakdown": [
+            {
+                "sanskrit": "iti",
+                "word": "iti",
+                "sanskrit_te": "ఇతి",
+                "en": "these",
+                "te": "these"
+            },
+            {
+                "sanskrit": "guhya-tamam",
+                "word": "guhya-tamam",
+                "sanskrit_te": "గుహ్య-తమమ్",
+                "en": "most secret",
+                "te": "most secret"
+            },
+            {
+                "sanskrit": "śhāstram",
+                "word": "śhāstram",
+                "sanskrit_te": "శ్హాస్త్రమ్",
+                "en": "Vedic scriptures",
+                "te": "Vedic scriptures"
+            },
+            {
+                "sanskrit": "idam",
+                "word": "idam",
+                "sanskrit_te": "ఇదమ్",
+                "en": "this",
+                "te": "this"
+            },
+            {
+                "sanskrit": "uktam",
+                "word": "uktam",
+                "sanskrit_te": "ఉక్తమ్",
+                "en": "spoken",
+                "te": "spoken"
+            },
+            {
+                "sanskrit": "mayā",
+                "word": "mayā",
+                "sanskrit_te": "మయా",
+                "en": "by me",
+                "te": "by me"
+            },
+            {
+                "sanskrit": "anagha",
+                "word": "anagha",
+                "sanskrit_te": "అనఘ",
+                "en": "Arjun, the sinless one",
+                "te": "Arjun, the sinless one"
+            },
+            {
+                "sanskrit": "etat",
+                "word": "etat",
+                "sanskrit_te": "ఏతత్",
+                "en": "this",
+                "te": "this"
+            },
+            {
+                "sanskrit": "buddhvā",
+                "word": "buddhvā",
+                "sanskrit_te": "బుద్ధ్వా",
+                "en": "understanding",
+                "te": "understanding"
+            },
+            {
+                "sanskrit": "buddhi-mān",
+                "word": "buddhi-mān",
+                "sanskrit_te": "బుద్ధి-మాన్",
+                "en": "enlightened",
+                "te": "enlightened"
+            },
+            {
+                "sanskrit": "syāt",
+                "word": "syāt",
+                "sanskrit_te": "స్యాత్",
+                "en": "one becomes",
+                "te": "one becomes"
+            },
+            {
+                "sanskrit": "kṛita-kṛityaḥ",
+                "word": "kṛita-kṛityaḥ",
+                "sanskrit_te": "కృఇత-కృఇత్యః",
+                "en": "who fulfills all that is to be accomplished",
+                "te": "who fulfills all that is to be accomplished"
+            },
+            {
+                "sanskrit": "cha",
+                "word": "cha",
+                "sanskrit_te": "ఛ",
+                "en": "and",
+                "te": "and"
+            },
+            {
+                "sanskrit": "bhārata",
+                "word": "bhārata",
+                "sanskrit_te": "భారత",
+                "en": "Arjun, the son of Bharat",
+                "te": "Arjun, the son of Bharat"
+            }
         ]
-        }
+    }
 };
 
 module.exports = CHAPTER_15_SHLOKAS;

@@ -8,7 +8,19 @@
         "emoji": "🚩",
         "micro_theme": "Analyzing the situation and the opposition",
         "micro_theme_te": "పరిస్థితిని మరియు ప్రత్యర్థులను విశ్లేషించడం",
-        "shlokas": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "1.8", "1.9", "1.10", "1.11"],
+        "shlokas": [
+          "1.1",
+          "1.2",
+          "1.3",
+          "1.4",
+          "1.5",
+          "1.6",
+          "1.7",
+          "1.8",
+          "1.9",
+          "1.10",
+          "1.11"
+        ],
         "story": {
           "title": "Duryodhana's Anxiety",
           "title_te": "దుర్యోధనుడి ఆందోళన",
@@ -18,7 +30,7 @@
           "moral_te": "నిజమైన బలం అంతర్గత శాంతి నుండి వస్తుంది, మీ సైన్యాన్ని ఇతరులతో పోల్చుకోవడం వల్ల కాదు."
         },
         "activity": "In your journal, list a 'challenge' you are facing. Instead of listing why it is hard, list 3 strengths YOU have to face it.",
-        "activity_te": "మీ జర్నల్‌లో, మీరు ఎదుర్కొంటున్న ఒక 'సవాలు'ను రాయండి. అది ఎందుకు కష్టమో రాయడానికి బదులుగా, దాన్ని ఎదుర్కోవడానికి మీ వద్ద ఉన్న 3 బలాలను రాయండి.",
+        "activity_te": "మీ జర్నల్లో, మీరు ఎదుర్కొంటున్న ఒక 'సవాలు'ను రాయండి. అది ఎందుకు కష్టమో రాయడానికి బదులుగా, దాన్ని ఎదుర్కోవడానికి మీ వద్ద ఉన్న 3 బలాలను రాయండి.",
         "videoUrl": ""
       },
       {
@@ -28,7 +40,17 @@
         "emoji": "🐚",
         "micro_theme": "The energy and vibration of readiness",
         "micro_theme_te": "సిద్ధత యొక్క శక్తి మరియు కంపనం",
-        "shlokas": ["1.12", "1.13", "1.14", "1.15", "1.16", "1.17", "1.18", "1.19", "1.20"],
+        "shlokas": [
+          "1.12",
+          "1.13",
+          "1.14",
+          "1.15",
+          "1.16",
+          "1.17",
+          "1.18",
+          "1.19",
+          "1.20"
+        ],
         "story": {
           "title": "The Sound of the Conches",
           "title_te": "శంఖాల ధ్వని",
@@ -48,7 +70,15 @@
         "emoji": "🏹",
         "micro_theme": "Observation before the final decision",
         "micro_theme_te": "చివరి నిర్ణయానికి ముందు పరిశీలన",
-        "shlokas": ["1.21", "1.22", "1.23", "1.24", "1.25", "1.26", "1.27"],
+        "shlokas": [
+          "1.21",
+          "1.22",
+          "1.23",
+          "1.24",
+          "1.25",
+          "1.26",
+          "1.27"
+        ],
         "story": {
           "title": "Between the Two Armies",
           "title_te": "రెండు సైన్యాల మధ్య",
@@ -68,7 +98,16 @@
         "emoji": "💔",
         "micro_theme": "Understanding physical and mental breakdown",
         "micro_theme_te": "శారీరక మరియు మానసిక విచ్ఛిన్నతను అర్థం చేసుకోవడం",
-        "shlokas": ["1.28", "1.29", "1.30", "1.31", "1.32", "1.33", "1.34", "1.35"],
+        "shlokas": [
+          "1.28",
+          "1.29",
+          "1.30",
+          "1.31",
+          "1.32",
+          "1.33",
+          "1.34",
+          "1.35"
+        ],
         "story": {
           "title": "Arjuna's Grief",
           "title_te": "అర్జునుడి దుఃఖం",
@@ -88,7 +127,18 @@
         "emoji": "⚖️",
         "micro_theme": "How the mind justifies running away from duty",
         "micro_theme_te": "కర్తవ్యం నుండి తప్పించుకోవడాన్ని మనసు ఎలా సమర్థించుకుంటుంది",
-        "shlokas": ["1.36", "1.37", "1.38", "1.39", "1.40", "1.41", "1.42", "1.43", "1.44", "1.45"],
+        "shlokas": [
+          "1.36",
+          "1.37",
+          "1.38",
+          "1.39",
+          "1.40",
+          "1.41",
+          "1.42",
+          "1.43",
+          "1.44",
+          "1.45"
+        ],
         "story": {
           "title": "The Reason of the Heart",
           "title_te": "హృదయ కారణం",
@@ -108,7 +158,10 @@
         "emoji": "🧘",
         "micro_theme": "Admitting you don't have the answer",
         "micro_theme_te": "మీ దగ్గర సమాధానం లేదని అంగీకరించడం",
-        "shlokas": ["1.46", "1.47"],
+        "shlokas": [
+          "1.46",
+          "1.47"
+        ],
         "story": {
           "title": "The Bow is Dropped",
           "title_te": "విల్లు వదిలివేయబడింది",
@@ -130,7 +183,18 @@
         "emoji": "🏔️",
         "micro_theme": "Moving from emotional confusion to intellectual clarity",
         "micro_theme_te": "భావోద్వేగ గందరగోళం నుండి మేధోపరమైన స్పష్టతకు మారడం",
-        "shlokas": ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "2.7", "2.8", "2.9", "2.10"],
+        "shlokas": [
+          "2.1",
+          "2.2",
+          "2.3",
+          "2.4",
+          "2.5",
+          "2.6",
+          "2.7",
+          "2.8",
+          "2.9",
+          "2.10"
+        ],
         "story": {
           "title": "Surrendering the Ego",
           "title_te": "అహంకారాన్ని విడనాడటం",
@@ -150,7 +214,28 @@
         "emoji": "♾️",
         "micro_theme": "Discriminating between the temporary body and the eternal self",
         "micro_theme_te": "తాత్కాలిక శరీరం మరియు శాశ్వతమైన ఆత్మ మధ్య విచక్షణ",
-        "shlokas": ["2.11", "2.12", "2.13", "2.14", "2.15", "2.16", "2.17", "2.18", "2.19", "2.20", "2.21", "2.22", "2.23", "2.24", "2.25", "2.26", "2.27", "2.28", "2.29", "2.30"],
+        "shlokas": [
+          "2.11",
+          "2.12",
+          "2.13",
+          "2.14",
+          "2.15",
+          "2.16",
+          "2.17",
+          "2.18",
+          "2.19",
+          "2.20",
+          "2.21",
+          "2.22",
+          "2.23",
+          "2.24",
+          "2.25",
+          "2.26",
+          "2.27",
+          "2.28",
+          "2.29",
+          "2.30"
+        ],
         "story": {
           "title": "That Which is Never Slain",
           "title_te": "ఎన్నటికీ సంహరించబడనిది",
@@ -170,7 +255,16 @@
         "emoji": "⚔️",
         "micro_theme": "Aligning action with cosmic and personal righteousness",
         "micro_theme_te": "విశ్వవ్యాప్త మరియు వ్యక్తిగత ధర్మంతో చర్యను అనుసంధానించడం",
-        "shlokas": ["2.31", "2.32", "2.33", "2.34", "2.35", "2.36", "2.37", "2.38"],
+        "shlokas": [
+          "2.31",
+          "2.32",
+          "2.33",
+          "2.34",
+          "2.35",
+          "2.36",
+          "2.37",
+          "2.38"
+        ],
         "story": {
           "title": "The Price of Inaction",
           "title_te": "స్తబ్దతకు మూల్యం",
@@ -190,7 +284,23 @@
         "emoji": "⚙️",
         "micro_theme": "How to act without becoming bound by the results",
         "micro_theme_te": "ఫలితాలకు బందీ కాకుండా ఎలా పనిచేయాలి",
-        "shlokas": ["2.39", "2.40", "2.41", "2.42", "2.43", "2.44", "2.45", "2.46", "2.47", "2.48", "2.49", "2.50", "2.51", "2.52", "2.53"],
+        "shlokas": [
+          "2.39",
+          "2.40",
+          "2.41",
+          "2.42",
+          "2.43",
+          "2.44",
+          "2.45",
+          "2.46",
+          "2.47",
+          "2.48",
+          "2.49",
+          "2.50",
+          "2.51",
+          "2.52",
+          "2.53"
+        ],
         "story": {
           "title": "Excellence in Action",
           "title_te": "చర్యలో నైపుణ్యం",
@@ -207,10 +317,30 @@
         "id": "theme_w2_5",
         "title": "Sthitaprajna: The State of Enlightenment",
         "title_te": "స్థితప్రజ్ఞ: జ్ఞానోదయ స్థితి",
-        "emoji": "🧘‍♂️",
+        "emoji": "🧘♂️",
         "micro_theme": "Description of the person with steady wisdom",
         "micro_theme_te": "స్థిరమైన జ్ఞానం కలిగిన వ్యక్తి యొక్క వివరణ",
-        "shlokas": ["2.54", "2.55", "2.56", "2.57", "2.58", "2.59", "2.60", "2.61", "2.62", "2.63", "2.64", "2.65", "2.66", "2.67", "2.68", "2.69", "2.70", "2.71", "2.72"],
+        "shlokas": [
+          "2.54",
+          "2.55",
+          "2.56",
+          "2.57",
+          "2.58",
+          "2.59",
+          "2.60",
+          "2.61",
+          "2.62",
+          "2.63",
+          "2.64",
+          "2.65",
+          "2.66",
+          "2.67",
+          "2.68",
+          "2.69",
+          "2.70",
+          "2.71",
+          "2.72"
+        ],
         "story": {
           "title": "Steady Amidst the Storm",
           "title_te": "తుపానులోనూ స్థిరంగా",
@@ -224,6 +354,1490 @@
         "videoUrl": ""
       }
     ],
+    "3": [
+      {
+        "id": "theme_w3_1",
+        "title": "Path of Action: Part 1",
+        "title_te": "Path of Action: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "doing your duty",
+        "micro_theme_te": "మీ కర్తవ్యం చేయడం",
+        "shlokas": [
+          "3.1",
+          "3.2",
+          "3.3",
+          "3.4",
+          "3.5",
+          "3.6",
+          "3.7",
+          "3.8",
+          "3.9",
+          "3.10",
+          "3.11"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 1–11",
+          "title_te": "Karma Yoga — శ్లోకాలు 1–11",
+          "content": "In Chapter 3 (Karma Yoga), Krishna explains doing your duty through verses 1 to 11. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Do your best work without worrying only about prizes. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 3 (Karma Yoga)లో, కృష్ణుడు 1–11 శ్లోకాల ద్వారా మీ కర్తవ్యం చేయడంను వివరిస్తాడు. బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moral_te": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి."
+        },
+        "activity": "Reflect on verses 1–11: list three ways doing your duty applies to your week.",
+        "activity_te": "శ్లోకాలు 1–11పై ఆలోచించి, ఈ వారం \"మీ కర్తవ్యం చేయడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w3_2",
+        "title": "Path of Action: Part 2",
+        "title_te": "Path of Action: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "setting a good example",
+        "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
+        "shlokas": [
+          "3.12",
+          "3.13",
+          "3.14",
+          "3.15",
+          "3.16",
+          "3.17",
+          "3.18",
+          "3.19",
+          "3.20",
+          "3.21",
+          "3.22"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 12–22",
+          "title_te": "Karma Yoga — శ్లోకాలు 12–22",
+          "content": "In Chapter 3 (Karma Yoga), Krishna explains setting a good example through verses 12 to 22. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Leaders teach others more by actions than by words. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 3 (Karma Yoga)లో, కృష్ణుడు 12–22 శ్లోకాల ద్వారా మంచి ఆదర్శం ఉండటంను వివరిస్తాడు. నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moral_te": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు."
+        },
+        "activity": "Reflect on verses 12–22: list three ways setting a good example applies to your week.",
+        "activity_te": "శ్లోకాలు 12–22పై ఆలోచించి, ఈ వారం \"మంచి ఆదర్శం ఉండటం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w3_3",
+        "title": "Path of Action: Part 3",
+        "title_te": "Path of Action: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "selfless service",
+        "micro_theme_te": "నిస్వార్థ సేవ",
+        "shlokas": [
+          "3.23",
+          "3.24",
+          "3.25",
+          "3.26",
+          "3.27",
+          "3.28",
+          "3.29",
+          "3.30",
+          "3.31",
+          "3.32",
+          "3.33"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 23–33",
+          "title_te": "Karma Yoga — శ్లోకాలు 23–33",
+          "content": "In Chapter 3 (Karma Yoga), Krishna explains selfless service through verses 23 to 33. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Work done to help others brings real joy. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 3 (Karma Yoga)లో, కృష్ణుడు 23–33 శ్లోకాల ద్వారా నిస్వార్థ సేవను వివరిస్తాడు. ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "moral": "Work done to help others brings real joy.",
+          "moral_te": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది."
+        },
+        "activity": "Reflect on verses 23–33: list three ways selfless service applies to your week.",
+        "activity_te": "శ్లోకాలు 23–33పై ఆలోచించి, ఈ వారం \"నిస్వార్థ సేవ\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w3_4",
+        "title": "Path of Action: Part 4",
+        "title_te": "Path of Action: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "doing your duty",
+        "micro_theme_te": "మీ కర్తవ్యం చేయడం",
+        "shlokas": [
+          "3.34",
+          "3.35",
+          "3.36",
+          "3.37",
+          "3.38",
+          "3.39",
+          "3.40",
+          "3.41",
+          "3.42",
+          "3.43"
+        ],
+        "story": {
+          "title": "Karma Yoga — Verses 34–43",
+          "title_te": "Karma Yoga — శ్లోకాలు 34–43",
+          "content": "In Chapter 3 (Karma Yoga), Krishna explains doing your duty through verses 34 to 43. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Do your best work without worrying only about prizes. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 3 (Karma Yoga)లో, కృష్ణుడు 34–43 శ్లోకాల ద్వారా మీ కర్తవ్యం చేయడంను వివరిస్తాడు. బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moral_te": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి."
+        },
+        "activity": "Reflect on verses 34–43: list three ways doing your duty applies to your week.",
+        "activity_te": "శ్లోకాలు 34–43పై ఆలోచించి, ఈ వారం \"మీ కర్తవ్యం చేయడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "4": [
+      {
+        "id": "theme_w4_1",
+        "title": "Path of Knowledge: Part 1",
+        "title_te": "Path of Knowledge: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "wisdom and action together",
+        "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
+        "shlokas": [
+          "4.1",
+          "4.2",
+          "4.3",
+          "4.4",
+          "4.5",
+          "4.6",
+          "4.7",
+          "4.8",
+          "4.9",
+          "4.10",
+          "4.11"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 1–11",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 1–11",
+          "content": "In Chapter 4 (Jnana Karma Sanyasa Yoga), Krishna explains wisdom and action together through verses 1 to 11. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Knowing what is right helps you act with courage. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 4 (Jnana Karma Sanyasa Yoga)లో, కృష్ణుడు 1–11 శ్లోకాల ద్వారా జ్ఞానం మరియు చర్య కలిసిను వివరిస్తాడు. ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moral_te": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది."
+        },
+        "activity": "Reflect on verses 1–11: list three ways wisdom and action together applies to your week.",
+        "activity_te": "శ్లోకాలు 1–11పై ఆలోచించి, ఈ వారం \"జ్ఞానం మరియు చర్య కలిసి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w4_2",
+        "title": "Path of Knowledge: Part 2",
+        "title_te": "Path of Knowledge: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "humility before teachers",
+        "micro_theme_te": "గురువుల ముందు వినయం",
+        "shlokas": [
+          "4.12",
+          "4.13",
+          "4.14",
+          "4.15",
+          "4.16",
+          "4.17",
+          "4.18",
+          "4.19",
+          "4.20",
+          "4.21",
+          "4.22"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 12–22",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 12–22",
+          "content": "In Chapter 4 (Jnana Karma Sanyasa Yoga), Krishna explains humility before teachers through verses 12 to 22. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Ask questions and listen—wisdom grows in humble hearts. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 4 (Jnana Karma Sanyasa Yoga)లో, కృష్ణుడు 12–22 శ్లోకాల ద్వారా గురువుల ముందు వినయంను వివరిస్తాడు. ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moral_te": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది."
+        },
+        "activity": "Reflect on verses 12–22: list three ways humility before teachers applies to your week.",
+        "activity_te": "శ్లోకాలు 12–22పై ఆలోచించి, ఈ వారం \"గురువుల ముందు వినయం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w4_3",
+        "title": "Path of Knowledge: Part 3",
+        "title_te": "Path of Knowledge: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "seeing the divine in sacrifice",
+        "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
+        "shlokas": [
+          "4.23",
+          "4.24",
+          "4.25",
+          "4.26",
+          "4.27",
+          "4.28",
+          "4.29",
+          "4.30",
+          "4.31",
+          "4.32",
+          "4.33"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 23–33",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 23–33",
+          "content": "In Chapter 4 (Jnana Karma Sanyasa Yoga), Krishna explains seeing the divine in sacrifice through verses 23 to 33. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: When you offer your effort with love, it becomes sacred. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 4 (Jnana Karma Sanyasa Yoga)లో, కృష్ణుడు 23–33 శ్లోకాల ద్వారా త్యాగంలో దైవాన్ని చూడటంను వివరిస్తాడు. మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moral_te": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది."
+        },
+        "activity": "Reflect on verses 23–33: list three ways seeing the divine in sacrifice applies to your week.",
+        "activity_te": "శ్లోకాలు 23–33పై ఆలోచించి, ఈ వారం \"త్యాగంలో దైవాన్ని చూడటం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w4_4",
+        "title": "Path of Knowledge: Part 4",
+        "title_te": "Path of Knowledge: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "wisdom and action together",
+        "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
+        "shlokas": [
+          "4.34",
+          "4.35",
+          "4.36",
+          "4.37",
+          "4.38",
+          "4.39",
+          "4.40",
+          "4.41",
+          "4.42"
+        ],
+        "story": {
+          "title": "Jnana Karma Sanyasa Yoga — Verses 34–42",
+          "title_te": "Jnana Karma Sanyasa Yoga — శ్లోకాలు 34–42",
+          "content": "In Chapter 4 (Jnana Karma Sanyasa Yoga), Krishna explains wisdom and action together through verses 34 to 42. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Knowing what is right helps you act with courage. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 4 (Jnana Karma Sanyasa Yoga)లో, కృష్ణుడు 34–42 శ్లోకాల ద్వారా జ్ఞానం మరియు చర్య కలిసిను వివరిస్తాడు. ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moral_te": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది."
+        },
+        "activity": "Reflect on verses 34–42: list three ways wisdom and action together applies to your week.",
+        "activity_te": "శ్లోకాలు 34–42పై ఆలోచించి, ఈ వారం \"జ్ఞానం మరియు చర్య కలిసి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "5": [
+      {
+        "id": "theme_w5_1",
+        "title": "Action in Krishna Consciousness: Part 1",
+        "title_te": "Action in Krishna Consciousness: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "peace through balanced action",
+        "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
+        "shlokas": [
+          "5.1",
+          "5.2",
+          "5.3",
+          "5.4",
+          "5.5",
+          "5.6",
+          "5.7",
+          "5.8"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 1–8",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 1–8",
+          "content": "In Chapter 5 (Karma Sanyasa Yoga), Krishna explains peace through balanced action through verses 1 to 8. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: You can be active and peaceful at the same time. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 5 (Karma Sanyasa Yoga)లో, కృష్ణుడు 1–8 శ్లోకాల ద్వారా సమతుల్య చర్య ద్వారా శాంతిను వివరిస్తాడు. మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "moral": "You can be active and peaceful at the same time.",
+          "moral_te": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు."
+        },
+        "activity": "Reflect on verses 1–8: list three ways peace through balanced action applies to your week.",
+        "activity_te": "శ్లోకాలు 1–8పై ఆలోచించి, ఈ వారం \"సమతుల్య చర్య ద్వారా శాంతి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w5_2",
+        "title": "Action in Krishna Consciousness: Part 2",
+        "title_te": "Action in Krishna Consciousness: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "letting go of ego",
+        "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
+        "shlokas": [
+          "5.9",
+          "5.10",
+          "5.11",
+          "5.12",
+          "5.13",
+          "5.14",
+          "5.15",
+          "5.16"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 9–16",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 9–16",
+          "content": "In Chapter 5 (Karma Sanyasa Yoga), Krishna explains letting go of ego through verses 9 to 16. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Praise and blame both pass away—stay steady. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 5 (Karma Sanyasa Yoga)లో, కృష్ణుడు 9–16 శ్లోకాల ద్వారా అహంకారాన్ని వదిలివేయడంను వివరిస్తాడు. ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి.",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moral_te": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి."
+        },
+        "activity": "Reflect on verses 9–16: list three ways letting go of ego applies to your week.",
+        "activity_te": "శ్లోకాలు 9–16పై ఆలోచించి, ఈ వారం \"అహంకారాన్ని వదిలివేయడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w5_3",
+        "title": "Action in Krishna Consciousness: Part 3",
+        "title_te": "Action in Krishna Consciousness: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "seeing equally",
+        "micro_theme_te": "సమానంగా చూడటం",
+        "shlokas": [
+          "5.17",
+          "5.18",
+          "5.19",
+          "5.20",
+          "5.21",
+          "5.22",
+          "5.23",
+          "5.24"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 17–24",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 17–24",
+          "content": "In Chapter 5 (Karma Sanyasa Yoga), Krishna explains seeing equally through verses 17 to 24. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Treat friends and strangers with the same kindness. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 5 (Karma Sanyasa Yoga)లో, కృష్ణుడు 17–24 శ్లోకాల ద్వారా సమానంగా చూడటంను వివరిస్తాడు. స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి.",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moral_te": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి."
+        },
+        "activity": "Reflect on verses 17–24: list three ways seeing equally applies to your week.",
+        "activity_te": "శ్లోకాలు 17–24పై ఆలోచించి, ఈ వారం \"సమానంగా చూడటం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w5_4",
+        "title": "Action in Krishna Consciousness: Part 4",
+        "title_te": "Action in Krishna Consciousness: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "peace through balanced action",
+        "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
+        "shlokas": [
+          "5.25",
+          "5.26",
+          "5.27",
+          "5.28",
+          "5.29"
+        ],
+        "story": {
+          "title": "Karma Sanyasa Yoga — Verses 25–29",
+          "title_te": "Karma Sanyasa Yoga — శ్లోకాలు 25–29",
+          "content": "In Chapter 5 (Karma Sanyasa Yoga), Krishna explains peace through balanced action through verses 25 to 29. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: You can be active and peaceful at the same time. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 5 (Karma Sanyasa Yoga)లో, కృష్ణుడు 25–29 శ్లోకాల ద్వారా సమతుల్య చర్య ద్వారా శాంతిను వివరిస్తాడు. మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "moral": "You can be active and peaceful at the same time.",
+          "moral_te": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు."
+        },
+        "activity": "Reflect on verses 25–29: list three ways peace through balanced action applies to your week.",
+        "activity_te": "శ్లోకాలు 25–29పై ఆలోచించి, ఈ వారం \"సమతుల్య చర్య ద్వారా శాంతి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "6": [
+      {
+        "id": "theme_w6_1",
+        "title": "Path of Meditation: Part 1",
+        "title_te": "Path of Meditation: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.1",
+          "6.2",
+          "6.3",
+          "6.4",
+          "6.5",
+          "6.6",
+          "6.7",
+          "6.8",
+          "6.9",
+          "6.10",
+          "6.11",
+          "6.12"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 1–12",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 1–12",
+          "content": "In Chapter 6 (Dhyana Yoga), Krishna explains training the mind through verses 1 to 12. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: A calm mind is like a steady lamp in the wind. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 6 (Dhyana Yoga)లో, కృష్ణుడు 1–12 శ్లోకాల ద్వారా మనస్సును శిక్షణ ఇవ్వడంను వివరిస్తాడు. శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Reflect on verses 1–12: list three ways training the mind applies to your week.",
+        "activity_te": "శ్లోకాలు 1–12పై ఆలోచించి, ఈ వారం \"మనస్సును శిక్షణ ఇవ్వడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w6_2",
+        "title": "Path of Meditation: Part 2",
+        "title_te": "Path of Meditation: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "moderation in life",
+        "micro_theme_te": "జీవితంలో మితత్వం",
+        "shlokas": [
+          "6.13",
+          "6.14",
+          "6.15",
+          "6.16",
+          "6.17",
+          "6.18",
+          "6.19",
+          "6.20",
+          "6.21",
+          "6.22",
+          "6.23",
+          "6.24"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 13–24",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 13–24",
+          "content": "In Chapter 6 (Dhyana Yoga), Krishna explains moderation in life through verses 13 to 24. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Too much or too little of anything upsets balance. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 6 (Dhyana Yoga)లో, కృష్ణుడు 13–24 శ్లోకాల ద్వారా జీవితంలో మితత్వంను వివరిస్తాడు. ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moral_te": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది."
+        },
+        "activity": "Reflect on verses 13–24: list three ways moderation in life applies to your week.",
+        "activity_te": "శ్లోకాలు 13–24పై ఆలోచించి, ఈ వారం \"జీవితంలో మితత్వం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w6_3",
+        "title": "Path of Meditation: Part 3",
+        "title_te": "Path of Meditation: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "yoga as union",
+        "micro_theme_te": "యోగం ఐక్యత",
+        "shlokas": [
+          "6.25",
+          "6.26",
+          "6.27",
+          "6.28",
+          "6.29",
+          "6.30",
+          "6.31",
+          "6.32",
+          "6.33",
+          "6.34",
+          "6.35",
+          "6.36"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 25–36",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 25–36",
+          "content": "In Chapter 6 (Dhyana Yoga), Krishna explains yoga as union through verses 25 to 36. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Connecting with your inner self is the highest yoga. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 6 (Dhyana Yoga)లో, కృష్ణుడు 25–36 శ్లోకాల ద్వారా యోగం ఐక్యతను వివరిస్తాడు. మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moral_te": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం."
+        },
+        "activity": "Reflect on verses 25–36: list three ways yoga as union applies to your week.",
+        "activity_te": "శ్లోకాలు 25–36పై ఆలోచించి, ఈ వారం \"యోగం ఐక్యత\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w6_4",
+        "title": "Path of Meditation: Part 4",
+        "title_te": "Path of Meditation: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.37",
+          "6.38",
+          "6.39",
+          "6.40",
+          "6.41",
+          "6.42",
+          "6.43",
+          "6.44",
+          "6.45",
+          "6.46",
+          "6.47"
+        ],
+        "story": {
+          "title": "Dhyana Yoga — Verses 37–47",
+          "title_te": "Dhyana Yoga — శ్లోకాలు 37–47",
+          "content": "In Chapter 6 (Dhyana Yoga), Krishna explains training the mind through verses 37 to 47. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: A calm mind is like a steady lamp in the wind. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 6 (Dhyana Yoga)లో, కృష్ణుడు 37–47 శ్లోకాల ద్వారా మనస్సును శిక్షణ ఇవ్వడంను వివరిస్తాడు. శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Reflect on verses 37–47: list three ways training the mind applies to your week.",
+        "activity_te": "శ్లోకాలు 37–47పై ఆలోచించి, ఈ వారం \"మనస్సును శిక్షణ ఇవ్వడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "7": [
+      {
+        "id": "theme_w7_1",
+        "title": "Knowledge of the Ultimate: Part 1",
+        "title_te": "Knowledge of the Ultimate: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "material and spiritual energy",
+        "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+        "shlokas": [
+          "7.1",
+          "7.2",
+          "7.3",
+          "7.4",
+          "7.5",
+          "7.6",
+          "7.7",
+          "7.8"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 1–8",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 1–8",
+          "content": "In Chapter 7 (Jnana Vijnana Yoga), Krishna explains material and spiritual energy through verses 1 to 8. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: The world runs on energy—remember the source behind it. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 7 (Jnana Vijnana Yoga)లో, కృష్ణుడు 1–8 శ్లోకాల ద్వారా భౌతిక మరియు ఆధ్యాత్మిక శక్తిను వివరిస్తాడు. ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moral_te": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి."
+        },
+        "activity": "Reflect on verses 1–8: list three ways material and spiritual energy applies to your week.",
+        "activity_te": "శ్లోకాలు 1–8పై ఆలోచించి, ఈ వారం \"భౌతిక మరియు ఆధ్యాత్మిక శక్తి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w7_2",
+        "title": "Knowledge of the Ultimate: Part 2",
+        "title_te": "Knowledge of the Ultimate: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "four kinds of seekers",
+        "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
+        "shlokas": [
+          "7.9",
+          "7.10",
+          "7.11",
+          "7.12",
+          "7.13",
+          "7.14",
+          "7.15",
+          "7.16"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 9–16",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 9–16",
+          "content": "In Chapter 7 (Jnana Vijnana Yoga), Krishna explains four kinds of seekers through verses 9 to 16. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: People come to wisdom for different reasons—all can grow. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 7 (Jnana Vijnana Yoga)లో, కృష్ణుడు 9–16 శ్లోకాల ద్వారా నాలుగు రకాల అన్వేషకులును వివరిస్తాడు. ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు.",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moral_te": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు."
+        },
+        "activity": "Reflect on verses 9–16: list three ways four kinds of seekers applies to your week.",
+        "activity_te": "శ్లోకాలు 9–16పై ఆలోచించి, ఈ వారం \"నాలుగు రకాల అన్వేషకులు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w7_3",
+        "title": "Knowledge of the Ultimate: Part 3",
+        "title_te": "Knowledge of the Ultimate: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "surrender to the Supreme",
+        "micro_theme_te": "పరమునికి లొంగడం",
+        "shlokas": [
+          "7.17",
+          "7.18",
+          "7.19",
+          "7.20",
+          "7.21",
+          "7.22",
+          "7.23",
+          "7.24"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 17–24",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 17–24",
+          "content": "In Chapter 7 (Jnana Vijnana Yoga), Krishna explains surrender to the Supreme through verses 17 to 24. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: When you trust the highest good, fear becomes smaller. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 7 (Jnana Vijnana Yoga)లో, కృష్ణుడు 17–24 శ్లోకాల ద్వారా పరమునికి లొంగడంను వివరిస్తాడు. మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది.",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moral_te": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది."
+        },
+        "activity": "Reflect on verses 17–24: list three ways surrender to the Supreme applies to your week.",
+        "activity_te": "శ్లోకాలు 17–24పై ఆలోచించి, ఈ వారం \"పరమునికి లొంగడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w7_4",
+        "title": "Knowledge of the Ultimate: Part 4",
+        "title_te": "Knowledge of the Ultimate: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "material and spiritual energy",
+        "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+        "shlokas": [
+          "7.25",
+          "7.26",
+          "7.27",
+          "7.28",
+          "7.29",
+          "7.30"
+        ],
+        "story": {
+          "title": "Jnana Vijnana Yoga — Verses 25–30",
+          "title_te": "Jnana Vijnana Yoga — శ్లోకాలు 25–30",
+          "content": "In Chapter 7 (Jnana Vijnana Yoga), Krishna explains material and spiritual energy through verses 25 to 30. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: The world runs on energy—remember the source behind it. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 7 (Jnana Vijnana Yoga)లో, కృష్ణుడు 25–30 శ్లోకాల ద్వారా భౌతిక మరియు ఆధ్యాత్మిక శక్తిను వివరిస్తాడు. ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moral_te": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి."
+        },
+        "activity": "Reflect on verses 25–30: list three ways material and spiritual energy applies to your week.",
+        "activity_te": "శ్లోకాలు 25–30పై ఆలోచించి, ఈ వారం \"భౌతిక మరియు ఆధ్యాత్మిక శక్తి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "8": [
+      {
+        "id": "theme_w8_1",
+        "title": "Path to the Eternal: Part 1",
+        "title_te": "Path to the Eternal: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "remembering what lasts",
+        "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+        "shlokas": [
+          "8.1",
+          "8.2",
+          "8.3",
+          "8.4",
+          "8.5",
+          "8.6",
+          "8.7"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 1–7",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 1–7",
+          "content": "In Chapter 8 (Akshara Brahma Yoga), Krishna explains remembering what lasts through verses 1 to 7. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What is eternal matters more than what fades. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 8 (Akshara Brahma Yoga)లో, కృష్ణుడు 1–7 శ్లోకాల ద్వారా శాశ్వతమైనది గుర్తు పెట్టుకోవడంను వివరిస్తాడు. శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "moral": "What is eternal matters more than what fades.",
+          "moral_te": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది."
+        },
+        "activity": "Reflect on verses 1–7: list three ways remembering what lasts applies to your week.",
+        "activity_te": "శ్లోకాలు 1–7పై ఆలోచించి, ఈ వారం \"శాశ్వతమైనది గుర్తు పెట్టుకోవడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w8_2",
+        "title": "Path to the Eternal: Part 2",
+        "title_te": "Path to the Eternal: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "thoughts at important moments",
+        "micro_theme_te": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+        "shlokas": [
+          "8.8",
+          "8.9",
+          "8.10",
+          "8.11",
+          "8.12",
+          "8.13",
+          "8.14"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 8–14",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 8–14",
+          "content": "In Chapter 8 (Akshara Brahma Yoga), Krishna explains thoughts at important moments through verses 8 to 14. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What you hold in your heart shapes your path. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 8 (Akshara Brahma Yoga)లో, కృష్ణుడు 8–14 శ్లోకాల ద్వారా ముఖ్యమైన క్షణాలలో ఆలోచనలును వివరిస్తాడు. మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది.",
+          "moral": "What you hold in your heart shapes your path.",
+          "moral_te": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది."
+        },
+        "activity": "Reflect on verses 8–14: list three ways thoughts at important moments applies to your week.",
+        "activity_te": "శ్లోకాలు 8–14పై ఆలోచించి, ఈ వారం \"ముఖ్యమైన క్షణాలలో ఆలోచనలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w8_3",
+        "title": "Path to the Eternal: Part 3",
+        "title_te": "Path to the Eternal: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "discipline of practice",
+        "micro_theme_te": "సాధన యొక్క క్రమశిక్షణ",
+        "shlokas": [
+          "8.15",
+          "8.16",
+          "8.17",
+          "8.18",
+          "8.19",
+          "8.20",
+          "8.21"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 15–21",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 15–21",
+          "content": "In Chapter 8 (Akshara Brahma Yoga), Krishna explains discipline of practice through verses 15 to 21. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Daily small habits build a great life. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 8 (Akshara Brahma Yoga)లో, కృష్ణుడు 15–21 శ్లోకాల ద్వారా సాధన యొక్క క్రమశిక్షణను వివరిస్తాడు. రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి.",
+          "moral": "Daily small habits build a great life.",
+          "moral_te": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Reflect on verses 15–21: list three ways discipline of practice applies to your week.",
+        "activity_te": "శ్లోకాలు 15–21పై ఆలోచించి, ఈ వారం \"సాధన యొక్క క్రమశిక్షణ\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w8_4",
+        "title": "Path to the Eternal: Part 4",
+        "title_te": "Path to the Eternal: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "remembering what lasts",
+        "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+        "shlokas": [
+          "8.22",
+          "8.23",
+          "8.24",
+          "8.25",
+          "8.26",
+          "8.27",
+          "8.28"
+        ],
+        "story": {
+          "title": "Akshara Brahma Yoga — Verses 22–28",
+          "title_te": "Akshara Brahma Yoga — శ్లోకాలు 22–28",
+          "content": "In Chapter 8 (Akshara Brahma Yoga), Krishna explains remembering what lasts through verses 22 to 28. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What is eternal matters more than what fades. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 8 (Akshara Brahma Yoga)లో, కృష్ణుడు 22–28 శ్లోకాల ద్వారా శాశ్వతమైనది గుర్తు పెట్టుకోవడంను వివరిస్తాడు. శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "moral": "What is eternal matters more than what fades.",
+          "moral_te": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది."
+        },
+        "activity": "Reflect on verses 22–28: list three ways remembering what lasts applies to your week.",
+        "activity_te": "శ్లోకాలు 22–28పై ఆలోచించి, ఈ వారం \"శాశ్వతమైనది గుర్తు పెట్టుకోవడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "9": [
+      {
+        "id": "theme_w9_1",
+        "title": "The Most Confidential Knowledge: Part 1",
+        "title_te": "The Most Confidential Knowledge: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "royal secret of devotion",
+        "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
+        "shlokas": [
+          "9.1",
+          "9.2",
+          "9.3",
+          "9.4",
+          "9.5",
+          "9.6",
+          "9.7",
+          "9.8",
+          "9.9"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 1–9",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 1–9",
+          "content": "In Chapter 9 (Raja Vidya Raja Guhya Yoga), Krishna explains royal secret of devotion through verses 1 to 9. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Love offered sincerely is never too small. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 9 (Raja Vidya Raja Guhya Yoga)లో, కృష్ణుడు 1–9 శ్లోకాల ద్వారా భక్తి యొక్క రాజ రహస్యంను వివరిస్తాడు. నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "moral": "Love offered sincerely is never too small.",
+          "moral_te": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు."
+        },
+        "activity": "Reflect on verses 1–9: list three ways royal secret of devotion applies to your week.",
+        "activity_te": "శ్లోకాలు 1–9పై ఆలోచించి, ఈ వారం \"భక్తి యొక్క రాజ రహస్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w9_2",
+        "title": "The Most Confidential Knowledge: Part 2",
+        "title_te": "The Most Confidential Knowledge: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "God cares for devotees",
+        "micro_theme_te": "దైవం భక్తులను చూసుకోవడం",
+        "shlokas": [
+          "9.10",
+          "9.11",
+          "9.12",
+          "9.13",
+          "9.14",
+          "9.15",
+          "9.16",
+          "9.17",
+          "9.18"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 10–18",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 10–18",
+          "content": "In Chapter 9 (Raja Vidya Raja Guhya Yoga), Krishna explains God cares for devotees through verses 10 to 18. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: You are never forgotten when you try to do good. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 9 (Raja Vidya Raja Guhya Yoga)లో, కృష్ణుడు 10–18 శ్లోకాల ద్వారా దైవం భక్తులను చూసుకోవడంను వివరిస్తాడు. మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "moral": "You are never forgotten when you try to do good.",
+          "moral_te": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు."
+        },
+        "activity": "Reflect on verses 10–18: list three ways God cares for devotees applies to your week.",
+        "activity_te": "శ్లోకాలు 10–18పై ఆలోచించి, ఈ వారం \"దైవం భక్తులను చూసుకోవడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w9_3",
+        "title": "The Most Confidential Knowledge: Part 3",
+        "title_te": "The Most Confidential Knowledge: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "simple offerings",
+        "micro_theme_te": "సరళమైన అర్పణలు",
+        "shlokas": [
+          "9.19",
+          "9.20",
+          "9.21",
+          "9.22",
+          "9.23",
+          "9.24",
+          "9.25",
+          "9.26",
+          "9.27"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 19–27",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 19–27",
+          "content": "In Chapter 9 (Raja Vidya Raja Guhya Yoga), Krishna explains simple offerings through verses 19 to 27. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: A leaf, a flower, or kind words can be a true gift. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 9 (Raja Vidya Raja Guhya Yoga)లో, కృష్ణుడు 19–27 శ్లోకాల ద్వారా సరళమైన అర్పణలును వివరిస్తాడు. ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు.",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moral_te": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు."
+        },
+        "activity": "Reflect on verses 19–27: list three ways simple offerings applies to your week.",
+        "activity_te": "శ్లోకాలు 19–27పై ఆలోచించి, ఈ వారం \"సరళమైన అర్పణలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w9_4",
+        "title": "The Most Confidential Knowledge: Part 4",
+        "title_te": "The Most Confidential Knowledge: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "royal secret of devotion",
+        "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
+        "shlokas": [
+          "9.28",
+          "9.29",
+          "9.30",
+          "9.31",
+          "9.32",
+          "9.33",
+          "9.34"
+        ],
+        "story": {
+          "title": "Raja Vidya Raja Guhya Yoga — Verses 28–34",
+          "title_te": "Raja Vidya Raja Guhya Yoga — శ్లోకాలు 28–34",
+          "content": "In Chapter 9 (Raja Vidya Raja Guhya Yoga), Krishna explains royal secret of devotion through verses 28 to 34. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Love offered sincerely is never too small. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 9 (Raja Vidya Raja Guhya Yoga)లో, కృష్ణుడు 28–34 శ్లోకాల ద్వారా భక్తి యొక్క రాజ రహస్యంను వివరిస్తాడు. నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "moral": "Love offered sincerely is never too small.",
+          "moral_te": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు."
+        },
+        "activity": "Reflect on verses 28–34: list three ways royal secret of devotion applies to your week.",
+        "activity_te": "శ్లోకాలు 28–34పై ఆలోచించి, ఈ వారం \"భక్తి యొక్క రాజ రహస్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "10": [
+      {
+        "id": "theme_w10_1",
+        "title": "The Infinite Glories of the Divine: Part 1",
+        "title_te": "The Infinite Glories of the Divine: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "excellence everywhere",
+        "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
+        "shlokas": [
+          "10.1",
+          "10.2",
+          "10.3",
+          "10.4",
+          "10.5",
+          "10.6",
+          "10.7",
+          "10.8",
+          "10.9",
+          "10.10",
+          "10.11"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 1–11",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 1–11",
+          "content": "In Chapter 10 (Vibhuti Yoga), Krishna explains excellence everywhere through verses 1 to 11. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: The best in every field reflects something divine. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 10 (Vibhuti Yoga)లో, కృష్ణుడు 1–11 శ్లోకాల ద్వారా ప్రతిచోటా శ్రేష్ఠతను వివరిస్తాడు. ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "moral": "The best in every field reflects something divine.",
+          "moral_te": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది."
+        },
+        "activity": "Reflect on verses 1–11: list three ways excellence everywhere applies to your week.",
+        "activity_te": "శ్లోకాలు 1–11పై ఆలోచించి, ఈ వారం \"ప్రతిచోటా శ్రేష్ఠత\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w10_2",
+        "title": "The Infinite Glories of the Divine: Part 2",
+        "title_te": "The Infinite Glories of the Divine: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "seeing greatness with wonder",
+        "micro_theme_te": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+        "shlokas": [
+          "10.12",
+          "10.13",
+          "10.14",
+          "10.15",
+          "10.16",
+          "10.17",
+          "10.18",
+          "10.19",
+          "10.20",
+          "10.21",
+          "10.22"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 12–22",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 12–22",
+          "content": "In Chapter 10 (Vibhuti Yoga), Krishna explains seeing greatness with wonder through verses 12 to 22. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Wonder keeps your heart humble and open. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 10 (Vibhuti Yoga)లో, కృష్ణుడు 12–22 శ్లోకాల ద్వారా ఆశ్చర్యంతో గొప్పతనం చూడటంను వివరిస్తాడు. ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moral_te": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది."
+        },
+        "activity": "Reflect on verses 12–22: list three ways seeing greatness with wonder applies to your week.",
+        "activity_te": "శ్లోకాలు 12–22పై ఆలోచించి, ఈ వారం \"ఆశ్చర్యంతో గొప్పతనం చూడటం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w10_3",
+        "title": "The Infinite Glories of the Divine: Part 3",
+        "title_te": "The Infinite Glories of the Divine: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "source of all power",
+        "micro_theme_te": "అన్ని శక్తి యొక్క మూలం",
+        "shlokas": [
+          "10.23",
+          "10.24",
+          "10.25",
+          "10.26",
+          "10.27",
+          "10.28",
+          "10.29",
+          "10.30",
+          "10.31",
+          "10.32",
+          "10.33"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 23–33",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 23–33",
+          "content": "In Chapter 10 (Vibhuti Yoga), Krishna explains source of all power through verses 23 to 33. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Strength, beauty, and wisdom all have one root. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 10 (Vibhuti Yoga)లో, కృష్ణుడు 23–33 శ్లోకాల ద్వారా అన్ని శక్తి యొక్క మూలంను వివరిస్తాడు. బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moral_te": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది."
+        },
+        "activity": "Reflect on verses 23–33: list three ways source of all power applies to your week.",
+        "activity_te": "శ్లోకాలు 23–33పై ఆలోచించి, ఈ వారం \"అన్ని శక్తి యొక్క మూలం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w10_4",
+        "title": "The Infinite Glories of the Divine: Part 4",
+        "title_te": "The Infinite Glories of the Divine: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "excellence everywhere",
+        "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
+        "shlokas": [
+          "10.34",
+          "10.35",
+          "10.36",
+          "10.37",
+          "10.38",
+          "10.39",
+          "10.40",
+          "10.41",
+          "10.42"
+        ],
+        "story": {
+          "title": "Vibhuti Yoga — Verses 34–42",
+          "title_te": "Vibhuti Yoga — శ్లోకాలు 34–42",
+          "content": "In Chapter 10 (Vibhuti Yoga), Krishna explains excellence everywhere through verses 34 to 42. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: The best in every field reflects something divine. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 10 (Vibhuti Yoga)లో, కృష్ణుడు 34–42 శ్లోకాల ద్వారా ప్రతిచోటా శ్రేష్ఠతను వివరిస్తాడు. ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "moral": "The best in every field reflects something divine.",
+          "moral_te": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది."
+        },
+        "activity": "Reflect on verses 34–42: list three ways excellence everywhere applies to your week.",
+        "activity_te": "శ్లోకాలు 34–42పై ఆలోచించి, ఈ వారం \"ప్రతిచోటా శ్రేష్ఠత\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "11": [
+      {
+        "id": "theme_w11_1",
+        "title": "The Universal Form: Part 1",
+        "title_te": "The Universal Form: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.1",
+          "11.2",
+          "11.3",
+          "11.4",
+          "11.5",
+          "11.6",
+          "11.7",
+          "11.8",
+          "11.9",
+          "11.10",
+          "11.11"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 1–11",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 1–11",
+          "content": "In Chapter 11 (Viswarupa Darshana Yoga), Krishna explains awe and humility through verses 1 to 11. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: When you see how vast life is, ego becomes quiet. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 11 (Viswarupa Darshana Yoga)లో, కృష్ణుడు 1–11 శ్లోకాల ద్వారా భయభక్తులు మరియు వినయంను వివరిస్తాడు. జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Reflect on verses 1–11: list three ways awe and humility applies to your week.",
+        "activity_te": "శ్లోకాలు 1–11పై ఆలోచించి, ఈ వారం \"భయభక్తులు మరియు వినయం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w11_2",
+        "title": "The Universal Form: Part 2",
+        "title_te": "The Universal Form: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "courage after vision",
+        "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
+        "shlokas": [
+          "11.12",
+          "11.13",
+          "11.14",
+          "11.15",
+          "11.16",
+          "11.17",
+          "11.18",
+          "11.19",
+          "11.20",
+          "11.21",
+          "11.22"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 12–22",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 12–22",
+          "content": "In Chapter 11 (Viswarupa Darshana Yoga), Krishna explains courage after vision through verses 12 to 22. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: True sight of truth can make you braver, not prouder. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 11 (Viswarupa Darshana Yoga)లో, కృష్ణుడు 12–22 శ్లోకాల ద్వారా దర్శనం తర్వాత ధైర్యంను వివరిస్తాడు. సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moral_te": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది."
+        },
+        "activity": "Reflect on verses 12–22: list three ways courage after vision applies to your week.",
+        "activity_te": "శ్లోకాలు 12–22పై ఆలోచించి, ఈ వారం \"దర్శనం తర్వాత ధైర్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w11_3",
+        "title": "The Universal Form: Part 3",
+        "title_te": "The Universal Form: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "devotion in wonder",
+        "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
+        "shlokas": [
+          "11.23",
+          "11.24",
+          "11.25",
+          "11.26",
+          "11.27",
+          "11.28",
+          "11.29",
+          "11.30",
+          "11.31",
+          "11.32",
+          "11.33"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 23–33",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 23–33",
+          "content": "In Chapter 11 (Viswarupa Darshana Yoga), Krishna explains devotion in wonder through verses 23 to 33. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Love and respect grow when we see the whole picture. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 11 (Viswarupa Darshana Yoga)లో, కృష్ణుడు 23–33 శ్లోకాల ద్వారా ఆశ్చర్యంలో భక్తిను వివరిస్తాడు. మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moral_te": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి."
+        },
+        "activity": "Reflect on verses 23–33: list three ways devotion in wonder applies to your week.",
+        "activity_te": "శ్లోకాలు 23–33పై ఆలోచించి, ఈ వారం \"ఆశ్చర్యంలో భక్తి\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w11_4",
+        "title": "The Universal Form: Part 4",
+        "title_te": "The Universal Form: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.34",
+          "11.35",
+          "11.36",
+          "11.37",
+          "11.38",
+          "11.39",
+          "11.40",
+          "11.41",
+          "11.42",
+          "11.43",
+          "11.44"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 34–44",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 34–44",
+          "content": "In Chapter 11 (Viswarupa Darshana Yoga), Krishna explains awe and humility through verses 34 to 44. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: When you see how vast life is, ego becomes quiet. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 11 (Viswarupa Darshana Yoga)లో, కృష్ణుడు 34–44 శ్లోకాల ద్వారా భయభక్తులు మరియు వినయంను వివరిస్తాడు. జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Reflect on verses 34–44: list three ways awe and humility applies to your week.",
+        "activity_te": "శ్లోకాలు 34–44పై ఆలోచించి, ఈ వారం \"భయభక్తులు మరియు వినయం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w11_5",
+        "title": "The Universal Form: Part 5",
+        "title_te": "The Universal Form: భాగం 5",
+        "emoji": "🎯",
+        "micro_theme": "courage after vision",
+        "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
+        "shlokas": [
+          "11.45",
+          "11.46",
+          "11.47",
+          "11.48",
+          "11.49",
+          "11.50",
+          "11.51",
+          "11.52",
+          "11.53",
+          "11.54",
+          "11.55"
+        ],
+        "story": {
+          "title": "Viswarupa Darshana Yoga — Verses 45–55",
+          "title_te": "Viswarupa Darshana Yoga — శ్లోకాలు 45–55",
+          "content": "In Chapter 11 (Viswarupa Darshana Yoga), Krishna explains courage after vision through verses 45 to 55. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: True sight of truth can make you braver, not prouder. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 11 (Viswarupa Darshana Yoga)లో, కృష్ణుడు 45–55 శ్లోకాల ద్వారా దర్శనం తర్వాత ధైర్యంను వివరిస్తాడు. సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moral_te": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది."
+        },
+        "activity": "Reflect on verses 45–55: list three ways courage after vision applies to your week.",
+        "activity_te": "శ్లోకాలు 45–55పై ఆలోచించి, ఈ వారం \"దర్శనం తర్వాత ధైర్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "12": [
+      {
+        "id": "theme_w12_1",
+        "title": "The Path of Devotion: Part 1",
+        "title_te": "The Path of Devotion: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "many paths one goal",
+        "micro_theme_te": "అనేక మార్గాలు ఒక లక్ష్యం",
+        "shlokas": [
+          "12.1",
+          "12.2",
+          "12.3",
+          "12.4",
+          "12.5"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 1–5",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 1–5",
+          "content": "In Chapter 12 (Bhakti Yoga), Krishna explains many paths one goal through verses 1 to 5. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Different people grow in different ways—kindness unites all. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 12 (Bhakti Yoga)లో, కృష్ణుడు 1–5 శ్లోకాల ద్వారా అనేక మార్గాలు ఒక లక్ష్యంను వివరిస్తాడు. వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది.",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moral_te": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది."
+        },
+        "activity": "Reflect on verses 1–5: list three ways many paths one goal applies to your week.",
+        "activity_te": "శ్లోకాలు 1–5పై ఆలోచించి, ఈ వారం \"అనేక మార్గాలు ఒక లక్ష్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w12_2",
+        "title": "The Path of Devotion: Part 2",
+        "title_te": "The Path of Devotion: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "qualities of a devotee",
+        "micro_theme_te": "భక్తుని లక్షణాలు",
+        "shlokas": [
+          "12.6",
+          "12.7",
+          "12.8",
+          "12.9",
+          "12.10"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 6–10",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 6–10",
+          "content": "In Chapter 12 (Bhakti Yoga), Krishna explains qualities of a devotee through verses 6 to 10. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Forgiveness, gentleness, and honesty are signs of a strong heart. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 12 (Bhakti Yoga)లో, కృష్ణుడు 6–10 శ్లోకాల ద్వారా భక్తుని లక్షణాలును వివరిస్తాడు. క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు.",
+          "moral": "Forgiveness, gentleness, and honesty are signs of a strong heart.",
+          "moral_te": "క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు."
+        },
+        "activity": "Reflect on verses 6–10: list three ways qualities of a devotee applies to your week.",
+        "activity_te": "శ్లోకాలు 6–10పై ఆలోచించి, ఈ వారం \"భక్తుని లక్షణాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w12_3",
+        "title": "The Path of Devotion: Part 3",
+        "title_te": "The Path of Devotion: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "fixing the mind on good",
+        "micro_theme_te": "మనస్సును మంచిది మీద నిలపడం",
+        "shlokas": [
+          "12.11",
+          "12.12",
+          "12.13",
+          "12.14",
+          "12.15"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 11–15",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 11–15",
+          "content": "In Chapter 12 (Bhakti Yoga), Krishna explains fixing the mind on good through verses 11 to 15. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Where your mind rests, your life will follow. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 12 (Bhakti Yoga)లో, కృష్ణుడు 11–15 శ్లోకాల ద్వారా మనస్సును మంచిది మీద నిలపడంను వివరిస్తాడు. మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది.",
+          "moral": "Where your mind rests, your life will follow.",
+          "moral_te": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది."
+        },
+        "activity": "Reflect on verses 11–15: list three ways fixing the mind on good applies to your week.",
+        "activity_te": "శ్లోకాలు 11–15పై ఆలోచించి, ఈ వారం \"మనస్సును మంచిది మీద నిలపడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w12_4",
+        "title": "The Path of Devotion: Part 4",
+        "title_te": "The Path of Devotion: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "many paths one goal",
+        "micro_theme_te": "అనేక మార్గాలు ఒక లక్ష్యం",
+        "shlokas": [
+          "12.16",
+          "12.17",
+          "12.18",
+          "12.19",
+          "12.20"
+        ],
+        "story": {
+          "title": "Bhakti Yoga — Verses 16–20",
+          "title_te": "Bhakti Yoga — శ్లోకాలు 16–20",
+          "content": "In Chapter 12 (Bhakti Yoga), Krishna explains many paths one goal through verses 16 to 20. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Different people grow in different ways—kindness unites all. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 12 (Bhakti Yoga)లో, కృష్ణుడు 16–20 శ్లోకాల ద్వారా అనేక మార్గాలు ఒక లక్ష్యంను వివరిస్తాడు. వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది.",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moral_te": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది."
+        },
+        "activity": "Reflect on verses 16–20: list three ways many paths one goal applies to your week.",
+        "activity_te": "శ్లోకాలు 16–20పై ఆలోచించి, ఈ వారం \"అనేక మార్గాలు ఒక లక్ష్యం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "13": [
+      {
+        "id": "theme_w13_1",
+        "title": "The Field and the Knower: Part 1",
+        "title_te": "The Field and the Knower: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "body as a field",
+        "micro_theme_te": "శరీరం ఒక క్షేత్రం",
+        "shlokas": [
+          "13.1",
+          "13.2",
+          "13.3",
+          "13.4",
+          "13.5",
+          "13.6",
+          "13.7",
+          "13.8",
+          "13.9"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 1–9",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 1–9",
+          "content": "In Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga), Krishna explains body as a field through verses 1 to 9. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Your body is like a garden—you choose what grows in it. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 13 (Kshetra Kshetrajna Vibhaga Yoga)లో, కృష్ణుడు 1–9 శ్లోకాల ద్వారా శరీరం ఒక క్షేత్రంను వివరిస్తాడు. మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moral_te": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు."
+        },
+        "activity": "Reflect on verses 1–9: list three ways body as a field applies to your week.",
+        "activity_te": "శ్లోకాలు 1–9పై ఆలోచించి, ఈ వారం \"శరీరం ఒక క్షేత్రం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w13_2",
+        "title": "The Field and the Knower: Part 2",
+        "title_te": "The Field and the Knower: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "the knower within",
+        "micro_theme_te": "లోపలి తెలిసినవాడు",
+        "shlokas": [
+          "13.10",
+          "13.11",
+          "13.12",
+          "13.13",
+          "13.14",
+          "13.15",
+          "13.16",
+          "13.17",
+          "13.18"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 10–18",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 10–18",
+          "content": "In Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga), Krishna explains the knower within through verses 10 to 18. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: You are the one who watches thoughts come and go. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 13 (Kshetra Kshetrajna Vibhaga Yoga)లో, కృష్ణుడు 10–18 శ్లోకాల ద్వారా లోపలి తెలిసినవాడును వివరిస్తాడు. ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moral_te": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు."
+        },
+        "activity": "Reflect on verses 10–18: list three ways the knower within applies to your week.",
+        "activity_te": "శ్లోకాలు 10–18పై ఆలోచించి, ఈ వారం \"లోపలి తెలిసినవాడు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w13_3",
+        "title": "The Field and the Knower: Part 3",
+        "title_te": "The Field and the Knower: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "humility and non-violence",
+        "micro_theme_te": "వినయం మరియు అహింస",
+        "shlokas": [
+          "13.19",
+          "13.20",
+          "13.21",
+          "13.22",
+          "13.23",
+          "13.24",
+          "13.25",
+          "13.26",
+          "13.27"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 19–27",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 19–27",
+          "content": "In Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga), Krishna explains humility and non-violence through verses 19 to 27. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Gentle strength is stronger than loud force. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 13 (Kshetra Kshetrajna Vibhaga Yoga)లో, కృష్ణుడు 19–27 శ్లోకాల ద్వారా వినయం మరియు అహింసను వివరిస్తాడు. సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది.",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moral_te": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది."
+        },
+        "activity": "Reflect on verses 19–27: list three ways humility and non-violence applies to your week.",
+        "activity_te": "శ్లోకాలు 19–27పై ఆలోచించి, ఈ వారం \"వినయం మరియు అహింస\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w13_4",
+        "title": "The Field and the Knower: Part 4",
+        "title_te": "The Field and the Knower: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "body as a field",
+        "micro_theme_te": "శరీరం ఒక క్షేత్రం",
+        "shlokas": [
+          "13.28",
+          "13.29",
+          "13.30",
+          "13.31",
+          "13.32",
+          "13.33",
+          "13.34"
+        ],
+        "story": {
+          "title": "Kshetra Kshetrajna Vibhaga Yoga — Verses 28–34",
+          "title_te": "Kshetra Kshetrajna Vibhaga Yoga — శ్లోకాలు 28–34",
+          "content": "In Chapter 13 (Kshetra Kshetrajna Vibhaga Yoga), Krishna explains body as a field through verses 28 to 34. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Your body is like a garden—you choose what grows in it. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 13 (Kshetra Kshetrajna Vibhaga Yoga)లో, కృష్ణుడు 28–34 శ్లోకాల ద్వారా శరీరం ఒక క్షేత్రంను వివరిస్తాడు. మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moral_te": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు."
+        },
+        "activity": "Reflect on verses 28–34: list three ways body as a field applies to your week.",
+        "activity_te": "శ్లోకాలు 28–34పై ఆలోచించి, ఈ వారం \"శరీరం ఒక క్షేత్రం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "14": [
+      {
+        "id": "theme_w14_1",
+        "title": "The Three Modes of Nature: Part 1",
+        "title_te": "The Three Modes of Nature: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "goodness passion and dullness",
+        "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
+        "shlokas": [
+          "14.1",
+          "14.2",
+          "14.3",
+          "14.4",
+          "14.5",
+          "14.6",
+          "14.7"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 1–7",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 1–7",
+          "content": "In Chapter 14 (Gunatraya Vibhaga Yoga), Krishna explains goodness passion and dullness through verses 1 to 7. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Notice which mood guides you—then choose wisely. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 14 (Gunatraya Vibhaga Yoga)లో, కృష్ణుడు 1–7 శ్లోకాల ద్వారా సత్త్వం రజస్సు తమస్సును వివరిస్తాడు. ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moral_te": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి."
+        },
+        "activity": "Reflect on verses 1–7: list three ways goodness passion and dullness applies to your week.",
+        "activity_te": "శ్లోకాలు 1–7పై ఆలోచించి, ఈ వారం \"సత్త్వం రజస్సు తమస్సు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w14_2",
+        "title": "The Three Modes of Nature: Part 2",
+        "title_te": "The Three Modes of Nature: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "rising above moods",
+        "micro_theme_te": "భావాలకు అతీతంగా",
+        "shlokas": [
+          "14.8",
+          "14.9",
+          "14.10",
+          "14.11",
+          "14.12",
+          "14.13",
+          "14.14"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 8–14",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 8–14",
+          "content": "In Chapter 14 (Gunatraya Vibhaga Yoga), Krishna explains rising above moods through verses 8 to 14. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: You are more than a passing mood or habit. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 14 (Gunatraya Vibhaga Yoga)లో, కృష్ణుడు 8–14 శ్లోకాల ద్వారా భావాలకు అతీతంగాను వివరిస్తాడు. మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ.",
+          "moral": "You are more than a passing mood or habit.",
+          "moral_te": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ."
+        },
+        "activity": "Reflect on verses 8–14: list three ways rising above moods applies to your week.",
+        "activity_te": "శ్లోకాలు 8–14పై ఆలోచించి, ఈ వారం \"భావాలకు అతీతంగా\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w14_3",
+        "title": "The Three Modes of Nature: Part 3",
+        "title_te": "The Three Modes of Nature: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "food thoughts and habits",
+        "micro_theme_te": "ఆహారం ఆలోచనలు అలవాట్లు",
+        "shlokas": [
+          "14.15",
+          "14.16",
+          "14.17",
+          "14.18",
+          "14.19",
+          "14.20",
+          "14.21"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 15–21",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 15–21",
+          "content": "In Chapter 14 (Gunatraya Vibhaga Yoga), Krishna explains food thoughts and habits through verses 15 to 21. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What you eat and think slowly shapes who you become. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 14 (Gunatraya Vibhaga Yoga)లో, కృష్ణుడు 15–21 శ్లోకాల ద్వారా ఆహారం ఆలోచనలు అలవాట్లును వివరిస్తాడు. మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది.",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moral_te": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది."
+        },
+        "activity": "Reflect on verses 15–21: list three ways food thoughts and habits applies to your week.",
+        "activity_te": "శ్లోకాలు 15–21పై ఆలోచించి, ఈ వారం \"ఆహారం ఆలోచనలు అలవాట్లు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w14_4",
+        "title": "The Three Modes of Nature: Part 4",
+        "title_te": "The Three Modes of Nature: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "goodness passion and dullness",
+        "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
+        "shlokas": [
+          "14.22",
+          "14.23",
+          "14.24",
+          "14.25",
+          "14.26",
+          "14.27"
+        ],
+        "story": {
+          "title": "Gunatraya Vibhaga Yoga — Verses 22–27",
+          "title_te": "Gunatraya Vibhaga Yoga — శ్లోకాలు 22–27",
+          "content": "In Chapter 14 (Gunatraya Vibhaga Yoga), Krishna explains goodness passion and dullness through verses 22 to 27. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Notice which mood guides you—then choose wisely. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 14 (Gunatraya Vibhaga Yoga)లో, కృష్ణుడు 22–27 శ్లోకాల ద్వారా సత్త్వం రజస్సు తమస్సును వివరిస్తాడు. ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moral_te": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి."
+        },
+        "activity": "Reflect on verses 22–27: list three ways goodness passion and dullness applies to your week.",
+        "activity_te": "శ్లోకాలు 22–27పై ఆలోచించి, ఈ వారం \"సత్త్వం రజస్సు తమస్సు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
     "15": [
       {
         "id": "theme_w15_1",
@@ -232,7 +1846,13 @@
         "emoji": "🌳",
         "micro_theme": "The eternal Ashvattha tree must be cut with the axe of knowledge and detachment",
         "micro_theme_te": "శాశ్వతమైన అశ్వత్థ వృక్షాన్ని జ్ఞానం మరియు వైరాగ్యం అనే గొడ్డలితో నరికివేయాలి",
-        "shlokas": ["15.1", "15.2", "15.3", "15.4", "15.5"],
+        "shlokas": [
+          "15.1",
+          "15.2",
+          "15.3",
+          "15.4",
+          "15.5"
+        ],
         "story": {
           "title": "The Root Above, the Branches Below",
           "title_te": "పైన వేరు, కింద కొమ్మలు",
@@ -252,7 +1872,14 @@
         "emoji": "👁️",
         "micro_theme": "The jiva and the Supreme Soul coexist; awareness distinguishes them",
         "micro_theme_te": "జీవుడు మరియు పరమాత్మ సహజీవనం చేస్తారు; అవగాహన వారిని వేరు చేస్తుంది",
-        "shlokas": ["15.6", "15.7", "15.8", "15.9", "15.10", "15.11"],
+        "shlokas": [
+          "15.6",
+          "15.7",
+          "15.8",
+          "15.9",
+          "15.10",
+          "15.11"
+        ],
         "story": {
           "title": "The Eternal Witness and the Traveler",
           "title_te": "శాశ్వత సాక్షి మరియు ప్రయాణికుడు",
@@ -272,7 +1899,12 @@
         "emoji": "☀️",
         "micro_theme": "The Supreme sustains the universe through His multifaceted presence",
         "micro_theme_te": "పరముడు తన బహుముఖ సాన్నిధ్యం ద్వారా విశ్వాన్ని ధరించి ఉన్నాడు",
-        "shlokas": ["15.12", "15.13", "15.14", "15.15"],
+        "shlokas": [
+          "15.12",
+          "15.13",
+          "15.14",
+          "15.15"
+        ],
         "story": {
           "title": "The Thread That Holds the Universe",
           "title_te": "విశ్వాన్ని ధరించే దారం",
@@ -292,7 +1924,13 @@
         "emoji": "🏆",
         "micro_theme": "Krishna as the Supreme Person beyond both the perishable and the imperishable",
         "micro_theme_te": "నశ్వరమైన మరియు నాశనం లేని రెండింటికి అతీతుడైన పరమ పురుషుడిగా కృష్ణుడు",
-        "shlokas": ["15.16", "15.17", "15.18", "15.19", "15.20"],
+        "shlokas": [
+          "15.16",
+          "15.17",
+          "15.18",
+          "15.19",
+          "15.20"
+        ],
         "story": {
           "title": "Three Categories, One Supreme Truth",
           "title_te": "మూడు వర్గాలు, ఒక పరమ సత్యం",
@@ -305,7 +1943,436 @@
         "activity_te": "త్రయ విశ్లేషణ: ఒక పేజీని మూడు నిలువు వరుసలుగా విభజించండి — క్షర (నా శరీరం, సంపదలు, హోదా), అక్షర (నా ఆత్మ, చైతన్యం, శాశ్వత స్వభావం), పురుషోత్తముడు (ఇద్దరికీ అతీతుడైన పరముడు). మూడవదాన్ని గుర్తించడం మొదటి రెండింటితో మీ సంబంధాన్ని ఎలా మారుస్తుందో ధ్యానించండి.",
         "videoUrl": ""
       }
+    ],
+    "16": [
+      {
+        "id": "theme_w16_1",
+        "title": "Divine and Demoniac Natures: Part 1",
+        "title_te": "Divine and Demoniac Natures: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "divine qualities",
+        "micro_theme_te": "దైవీ లక్షణాలు",
+        "shlokas": [
+          "16.1",
+          "16.2",
+          "16.3",
+          "16.4",
+          "16.5",
+          "16.6"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 1–6",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 1–6",
+          "content": "In Chapter 16 (Daivasura Sampad Vibhaga Yoga), Krishna explains divine qualities through verses 1 to 6. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Fearlessness, purity, and compassion light up your path. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 16 (Daivasura Sampad Vibhaga Yoga)లో, కృష్ణుడు 1–6 శ్లోకాల ద్వారా దైవీ లక్షణాలును వివరిస్తాడు. నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moral_te": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి."
+        },
+        "activity": "Reflect on verses 1–6: list three ways divine qualities applies to your week.",
+        "activity_te": "శ్లోకాలు 1–6పై ఆలోచించి, ఈ వారం \"దైవీ లక్షణాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w16_2",
+        "title": "Divine and Demoniac Natures: Part 2",
+        "title_te": "Divine and Demoniac Natures: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "demoniac tendencies",
+        "micro_theme_te": "ఆసుర ధర్మాలు",
+        "shlokas": [
+          "16.7",
+          "16.8",
+          "16.9",
+          "16.10",
+          "16.11",
+          "16.12"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 7–12",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 7–12",
+          "content": "In Chapter 16 (Daivasura Sampad Vibhaga Yoga), Krishna explains demoniac tendencies through verses 7 to 12. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Anger, greed, and pride create trouble for everyone. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 16 (Daivasura Sampad Vibhaga Yoga)లో, కృష్ణుడు 7–12 శ్లోకాల ద్వారా ఆసుర ధర్మాలును వివరిస్తాడు. కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి.",
+          "moral": "Anger, greed, and pride create trouble for everyone.",
+          "moral_te": "కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి."
+        },
+        "activity": "Reflect on verses 7–12: list three ways demoniac tendencies applies to your week.",
+        "activity_te": "శ్లోకాలు 7–12పై ఆలోచించి, ఈ వారం \"ఆసుర ధర్మాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w16_3",
+        "title": "Divine and Demoniac Natures: Part 3",
+        "title_te": "Divine and Demoniac Natures: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "choosing your camp",
+        "micro_theme_te": "మీ వైపు ఎంచుకోవడం",
+        "shlokas": [
+          "16.13",
+          "16.14",
+          "16.15",
+          "16.16",
+          "16.17",
+          "16.18"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 13–18",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 13–18",
+          "content": "In Chapter 16 (Daivasura Sampad Vibhaga Yoga), Krishna explains choosing your camp through verses 13 to 18. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Small daily choices build a noble character. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 16 (Daivasura Sampad Vibhaga Yoga)లో, కృష్ణుడు 13–18 శ్లోకాల ద్వారా మీ వైపు ఎంచుకోవడంను వివరిస్తాడు. చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి.",
+          "moral": "Small daily choices build a noble character.",
+          "moral_te": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Reflect on verses 13–18: list three ways choosing your camp applies to your week.",
+        "activity_te": "శ్లోకాలు 13–18పై ఆలోచించి, ఈ వారం \"మీ వైపు ఎంచుకోవడం\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w16_4",
+        "title": "Divine and Demoniac Natures: Part 4",
+        "title_te": "Divine and Demoniac Natures: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "divine qualities",
+        "micro_theme_te": "దైవీ లక్షణాలు",
+        "shlokas": [
+          "16.19",
+          "16.20",
+          "16.21",
+          "16.22",
+          "16.23",
+          "16.24"
+        ],
+        "story": {
+          "title": "Daivasura Sampad Vibhaga Yoga — Verses 19–24",
+          "title_te": "Daivasura Sampad Vibhaga Yoga — శ్లోకాలు 19–24",
+          "content": "In Chapter 16 (Daivasura Sampad Vibhaga Yoga), Krishna explains divine qualities through verses 19 to 24. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Fearlessness, purity, and compassion light up your path. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 16 (Daivasura Sampad Vibhaga Yoga)లో, కృష్ణుడు 19–24 శ్లోకాల ద్వారా దైవీ లక్షణాలును వివరిస్తాడు. నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moral_te": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి."
+        },
+        "activity": "Reflect on verses 19–24: list three ways divine qualities applies to your week.",
+        "activity_te": "శ్లోకాలు 19–24పై ఆలోచించి, ఈ వారం \"దైవీ లక్షణాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "17": [
+      {
+        "id": "theme_w17_1",
+        "title": "The Three Divisions of Faith: Part 1",
+        "title_te": "The Three Divisions of Faith: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "faith shapes actions",
+        "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+        "shlokas": [
+          "17.1",
+          "17.2",
+          "17.3",
+          "17.4",
+          "17.5",
+          "17.6",
+          "17.7"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 1–7",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 1–7",
+          "content": "In Chapter 17 (Shraddhatraya Vibhaga Yoga), Krishna explains faith shapes actions through verses 1 to 7. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What you deeply believe shows in what you do. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 17 (Shraddhatraya Vibhaga Yoga)లో, కృష్ణుడు 1–7 శ్లోకాల ద్వారా శ్రద్ధ చర్యలను రూపొందిస్తుందిను వివరిస్తాడు. మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "moral": "What you deeply believe shows in what you do.",
+          "moral_te": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది."
+        },
+        "activity": "Reflect on verses 1–7: list three ways faith shapes actions applies to your week.",
+        "activity_te": "శ్లోకాలు 1–7పై ఆలోచించి, ఈ వారం \"శ్రద్ధ చర్యలను రూపొందిస్తుంది\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w17_2",
+        "title": "The Three Divisions of Faith: Part 2",
+        "title_te": "The Three Divisions of Faith: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "sattvic rajasic tamasic worship",
+        "micro_theme_te": "మూడు రకాల శ్రద్ధ",
+        "shlokas": [
+          "17.8",
+          "17.9",
+          "17.10",
+          "17.11",
+          "17.12",
+          "17.13",
+          "17.14"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 8–14",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 8–14",
+          "content": "In Chapter 17 (Shraddhatraya Vibhaga Yoga), Krishna explains sattvic rajasic tamasic worship through verses 8 to 14. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Offer your best with a pure heart, not for show. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 17 (Shraddhatraya Vibhaga Yoga)లో, కృష్ణుడు 8–14 శ్లోకాల ద్వారా మూడు రకాల శ్రద్ధను వివరిస్తాడు. ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి.",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moral_te": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి."
+        },
+        "activity": "Reflect on verses 8–14: list three ways sattvic rajasic tamasic worship applies to your week.",
+        "activity_te": "శ్లోకాలు 8–14పై ఆలోచించి, ఈ వారం \"మూడు రకాల శ్రద్ధ\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w17_3",
+        "title": "The Three Divisions of Faith: Part 3",
+        "title_te": "The Three Divisions of Faith: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "OM Tat Sat",
+        "micro_theme_te": "ఓం తత్ సత్",
+        "shlokas": [
+          "17.15",
+          "17.16",
+          "17.17",
+          "17.18",
+          "17.19",
+          "17.20",
+          "17.21"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 15–21",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 15–21",
+          "content": "In Chapter 17 (Shraddhatraya Vibhaga Yoga), Krishna explains OM Tat Sat through verses 15 to 21. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Truth, discipline, and charity should begin with sincerity. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 17 (Shraddhatraya Vibhaga Yoga)లో, కృష్ణుడు 15–21 శ్లోకాల ద్వారా ఓం తత్ సత్ను వివరిస్తాడు. సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి.",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moral_te": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి."
+        },
+        "activity": "Reflect on verses 15–21: list three ways OM Tat Sat applies to your week.",
+        "activity_te": "శ్లోకాలు 15–21పై ఆలోచించి, ఈ వారం \"ఓం తత్ సత్\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w17_4",
+        "title": "The Three Divisions of Faith: Part 4",
+        "title_te": "The Three Divisions of Faith: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "faith shapes actions",
+        "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+        "shlokas": [
+          "17.22",
+          "17.23",
+          "17.24",
+          "17.25",
+          "17.26",
+          "17.27",
+          "17.28"
+        ],
+        "story": {
+          "title": "Shraddhatraya Vibhaga Yoga — Verses 22–28",
+          "title_te": "Shraddhatraya Vibhaga Yoga — శ్లోకాలు 22–28",
+          "content": "In Chapter 17 (Shraddhatraya Vibhaga Yoga), Krishna explains faith shapes actions through verses 22 to 28. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: What you deeply believe shows in what you do. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 17 (Shraddhatraya Vibhaga Yoga)లో, కృష్ణుడు 22–28 శ్లోకాల ద్వారా శ్రద్ధ చర్యలను రూపొందిస్తుందిను వివరిస్తాడు. మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "moral": "What you deeply believe shows in what you do.",
+          "moral_te": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది."
+        },
+        "activity": "Reflect on verses 22–28: list three ways faith shapes actions applies to your week.",
+        "activity_te": "శ్లోకాలు 22–28పై ఆలోచించి, ఈ వారం \"శ్రద్ధ చర్యలను రూపొందిస్తుంది\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
+    ],
+    "18": [
+      {
+        "id": "theme_w18_1",
+        "title": "Final Liberation: Part 1",
+        "title_te": "Final Liberation: భాగం 1",
+        "emoji": "🌱",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.1",
+          "18.2",
+          "18.3",
+          "18.4",
+          "18.5",
+          "18.6",
+          "18.7",
+          "18.8",
+          "18.9",
+          "18.10",
+          "18.11",
+          "18.12",
+          "18.13"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 1–13",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 1–13",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains types of renunciation through verses 1 to 13. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Letting go of selfish desire frees your energy for good work. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 1–13 శ్లోకాల ద్వారా సన్యాస రకాలును వివరిస్తాడు. స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Reflect on verses 1–13: list three ways types of renunciation applies to your week.",
+        "activity_te": "శ్లోకాలు 1–13పై ఆలోచించి, ఈ వారం \"సన్యాస రకాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w18_2",
+        "title": "Final Liberation: Part 2",
+        "title_te": "Final Liberation: భాగం 2",
+        "emoji": "📖",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.14",
+          "18.15",
+          "18.16",
+          "18.17",
+          "18.18",
+          "18.19",
+          "18.20",
+          "18.21",
+          "18.22",
+          "18.23",
+          "18.24",
+          "18.25",
+          "18.26"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 14–26",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 14–26",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains five causes of action through verses 14 to 26. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Understand why you act—then act with clarity. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 14–26 శ్లోకాల ద్వారా చర్యకు ఐదు కారణాలును వివరిస్తాడు. మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Reflect on verses 14–26: list three ways five causes of action applies to your week.",
+        "activity_te": "శ్లోకాలు 14–26పై ఆలోచించి, ఈ వారం \"చర్యకు ఐదు కారణాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w18_3",
+        "title": "Final Liberation: Part 3",
+        "title_te": "Final Liberation: భాగం 3",
+        "emoji": "💡",
+        "micro_theme": "final teaching surrender",
+        "micro_theme_te": "చివరి బోధన లొంగుబాటు",
+        "shlokas": [
+          "18.27",
+          "18.28",
+          "18.29",
+          "18.30",
+          "18.31",
+          "18.32",
+          "18.33",
+          "18.34",
+          "18.35",
+          "18.36",
+          "18.37",
+          "18.38",
+          "18.39"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 27–39",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 27–39",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains final teaching surrender through verses 27 to 39. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Do your duty, love the good, and trust the highest—then be at peace. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 27–39 శ్లోకాల ద్వారా చివరి బోధన లొంగుబాటును వివరిస్తాడు. మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moral_te": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి."
+        },
+        "activity": "Reflect on verses 27–39: list three ways final teaching surrender applies to your week.",
+        "activity_te": "శ్లోకాలు 27–39పై ఆలోచించి, ఈ వారం \"చివరి బోధన లొంగుబాటు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w18_4",
+        "title": "Final Liberation: Part 4",
+        "title_te": "Final Liberation: భాగం 4",
+        "emoji": "🌟",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.40",
+          "18.41",
+          "18.42",
+          "18.43",
+          "18.44",
+          "18.45",
+          "18.46",
+          "18.47",
+          "18.48",
+          "18.49",
+          "18.50",
+          "18.51",
+          "18.52"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 40–52",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 40–52",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains types of renunciation through verses 40 to 52. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Letting go of selfish desire frees your energy for good work. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 40–52 శ్లోకాల ద్వారా సన్యాస రకాలును వివరిస్తాడు. స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Reflect on verses 40–52: list three ways types of renunciation applies to your week.",
+        "activity_te": "శ్లోకాలు 40–52పై ఆలోచించి, ఈ వారం \"సన్యాస రకాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w18_5",
+        "title": "Final Liberation: Part 5",
+        "title_te": "Final Liberation: భాగం 5",
+        "emoji": "🎯",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.53",
+          "18.54",
+          "18.55",
+          "18.56",
+          "18.57",
+          "18.58",
+          "18.59",
+          "18.60",
+          "18.61",
+          "18.62",
+          "18.63",
+          "18.64",
+          "18.65"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 53–65",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 53–65",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains five causes of action through verses 53 to 65. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Understand why you act—then act with clarity. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 53–65 శ్లోకాల ద్వారా చర్యకు ఐదు కారణాలును వివరిస్తాడు. మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Reflect on verses 53–65: list three ways five causes of action applies to your week.",
+        "activity_te": "శ్లోకాలు 53–65పై ఆలోచించి, ఈ వారం \"చర్యకు ఐదు కారణాలు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_w18_6",
+        "title": "Final Liberation: Part 6",
+        "title_te": "Final Liberation: భాగం 6",
+        "emoji": "🛡️",
+        "micro_theme": "final teaching surrender",
+        "micro_theme_te": "చివరి బోధన లొంగుబాటు",
+        "shlokas": [
+          "18.66",
+          "18.67",
+          "18.68",
+          "18.69",
+          "18.70",
+          "18.71",
+          "18.72",
+          "18.73",
+          "18.74",
+          "18.75",
+          "18.76",
+          "18.77",
+          "18.78"
+        ],
+        "story": {
+          "title": "Moksha Sanyasa Yoga — Verses 66–78",
+          "title_te": "Moksha Sanyasa Yoga — శ్లోకాలు 66–78",
+          "content": "In Chapter 18 (Moksha Sanyasa Yoga), Krishna explains final teaching surrender through verses 66 to 78. This section of the Gita connects the epic story of Arjuna's dilemma to timeless ethics: Do your duty, love the good, and trust the highest—then be at peace. The verses invite us to examine our own duties, motives, and faith with honest discrimination.",
+          "content_te": "అధ్యాయం 18 (Moksha Sanyasa Yoga)లో, కృష్ణుడు 66–78 శ్లోకాల ద్వారా చివరి బోధన లొంగుబాటును వివరిస్తాడు. మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moral_te": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి."
+        },
+        "activity": "Reflect on verses 66–78: list three ways final teaching surrender applies to your week.",
+        "activity_te": "శ్లోకాలు 66–78పై ఆలోచించి, ఈ వారం \"చివరి బోధన లొంగుబాటు\" ఎలా వర్తిస్తుందో మూడు మార్గాలు రాయండి.",
+        "videoUrl": ""
+      }
     ]
   }
 }
-

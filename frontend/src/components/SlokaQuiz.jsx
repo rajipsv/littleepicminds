@@ -117,7 +117,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
               <div key={i} className={`p-3 rounded-xl border text-sm ${isRight ? 'border-green-500/40 bg-green-500/10' : 'border-red-500/40 bg-red-500/10'}`}>
                 <div className="flex items-center gap-2 font-bold mb-1">
                   {isRight ? <CheckCircle size={16} className="text-green-400 flex-shrink-0" /> : <XCircle size={16} className="text-red-400 flex-shrink-0" />}
-                  <span className="text-gray-300">{q.question}</span>
+                  <span className="text-gray-300">{isTe && q.question_te ? q.question_te : q.question}</span>
                 </div>
                 {!isRight && (
                   <p className="text-green-300 text-xs ml-6">✓ Correct: {q.options[correct]}</p>
@@ -172,7 +172,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
         <div className="h-full bg-lem-accent transition-all duration-300" style={{ width: `${(currentQ / questions.length) * 100}%` }} />
       </div>
 
-      <h3 className="text-xl font-bold text-white mb-6 leading-relaxed">{q.question}</h3>
+      <h3 className="text-xl font-bold text-white mb-6 leading-relaxed">{isTe && q.question_te ? q.question_te : q.question}</h3>
 
       <div className="space-y-3 mb-8">
         {q.options?.map((opt, i) => (
