@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
 import { API_URL } from '../api';
@@ -21,11 +21,7 @@ const speakLine = (text, lang = 'en') => {
 
 const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
 
-const lineMeaning = (item, isTe) => {
-  if (!isTe) return item.en || item.meaning;
-  if (hasTeluguText(item.te)) return item.te;
-  return item.en || item.meaning;
-};
+const lineMeaningEn = (item) => item.en || item.meaning || '';
 
 /** Roman/Telugu line for TTS — Devanagari sounds unnatural on most TTS engines. */
 const ttsLineText = (item, isTe) => {
@@ -37,12 +33,64 @@ const MeaningTable = ({ wordByWord }) => {
   const { currentLang } = useAuth();
   const isTe = currentLang === 'te';
   const [playingIndex, setPlayingIndex] = useState(-1);
+  const [teMeanings, setTeMeanings] = useState({});
+
+  const rowsKey = useMemo(
+    () => (wordByWord || []).map((item) => lineMeaningEn(item)).join('\n'),
+    [wordByWord]
+  );
+
+  useEffect(() => {
+    if (!isTe || !wordByWord?.length) {
+      setTeMeanings({});
+      return;
+    }
+
+    let cancelled = false;
+    const next = {};
+
+    (async () => {
+      await Promise.all(
+        wordByWord.map(async (item, index) => {
+          if (hasTeluguText(item.te)) {
+            next[index] = item.te;
+            return;
+          }
+          const en = lineMeaningEn(item).trim();
+          if (!en) return;
+          try {
+            const res = await fetch(`${API_URL || ''}/api/translate-meaning`, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({ text: en }),
+            });
+            if (!res.ok) return;
+            const data = await res.json();
+            if (data.te && hasTeluguText(data.te)) next[index] = data.te;
+          } catch {
+            /* keep English fallback */
+          }
+        })
+      );
+      if (!cancelled) setTeMeanings(next);
+    })();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [isTe, rowsKey, wordByWord]);
 
   if (!wordByWord || wordByWord.length === 0) return null;
 
+  const displayMeaning = (item, index) => {
+    if (!isTe) return lineMeaningEn(item);
+    if (hasTeluguText(item.te)) return item.te;
+    if (teMeanings[index]) return teMeanings[index];
+    return lineMeaningEn(item);
+  };
+
   const handlePlay = async (item, meaning, index) => {
     const line = ttsLineText(item, isTe);
-    // IAST line → hi-IN; Telugu script → te-IN (Devanagari to TTS sounds unnatural)
     const ttsLang = isTe ? 'te' : 'hi';
     const ttsText = `${line}, ${meaning}`;
 
@@ -54,8 +102,8 @@ const MeaningTable = ({ wordByWord }) => {
         body: JSON.stringify({
           text: ttsText,
           target_language_code: ttsLang,
-          speaker: 'roopa'
-        })
+          speaker: 'roopa',
+        }),
       });
 
       if (!response.ok) throw new Error('TTS unavailable');
@@ -64,13 +112,16 @@ const MeaningTable = ({ wordByWord }) => {
       if (data.audios && data.audios[0]) {
         const audio = new Audio(`data:audio/wav;base64,${data.audios[0]}`);
         audio.onended = () => setPlayingIndex(-1);
-        audio.onerror = () => { setPlayingIndex(-1); speakLine(ttsText, ttsLang); };
+        audio.onerror = () => {
+          setPlayingIndex(-1);
+          speakLine(ttsText, ttsLang);
+        };
         await audio.play();
       } else {
         speakLine(ttsText, ttsLang);
         setTimeout(() => setPlayingIndex(-1), 2000);
       }
-    } catch (err) {
+    } catch {
       speakLine(ttsText, ttsLang);
       setTimeout(() => setPlayingIndex(-1), 2000);
     }
@@ -78,24 +129,23 @@ const MeaningTable = ({ wordByWord }) => {
 
   return (
     <div className="mt-6">
-      {/* Desktop Table View */}
       <div className="hidden md:block overflow-hidden rounded-xl border border-lem-glass-border shadow-sm">
         <table className="min-w-full divide-y divide-lem-glass-border">
           <thead className="bg-lem-sidebar">
             <tr>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider w-10"></th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
-                {isTe ? "పంక్తి" : "Line"}
+                {isTe ? 'పంక్తి' : 'Line'}
               </th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
-                {isTe ? "అర్థం" : "Meaning"}
+                {isTe ? 'అర్థం' : 'Meaning'}
               </th>
             </tr>
           </thead>
           <tbody className="bg-white/5 divide-y divide-white/5">
             {wordByWord.map((item, index) => {
               const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-              const meaning = lineMeaning(item, isTe);
+              const meaning = displayMeaning(item, index);
               const isPlaying = playingIndex === index;
 
               return (
@@ -125,11 +175,10 @@ const MeaningTable = ({ wordByWord }) => {
         </table>
       </div>
 
-      {/* Mobile Card View */}
       <div className="md:hidden space-y-3">
         {wordByWord.map((item, index) => {
           const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-          const meaning = lineMeaning(item, isTe);
+          const meaning = displayMeaning(item, index);
           const isPlaying = playingIndex === index;
 
           return (
@@ -157,4 +206,3 @@ const MeaningTable = ({ wordByWord }) => {
 };
 
 export default MeaningTable;
-

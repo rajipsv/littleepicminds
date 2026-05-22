@@ -40,6 +40,10 @@ function saveCache(map) {
   const obj = {};
   for (const [k, v] of map.entries()) obj[k] = v;
   fs.writeFileSync(CACHE_FILE, JSON.stringify(obj, null, 2), 'utf8');
+  const libCache = path.join(LIB_DATA, 'line-te-cache.json');
+  if (fs.existsSync(LIB_DATA)) {
+    fs.writeFileSync(libCache, JSON.stringify(obj, null, 2), 'utf8');
+  }
 }
 
 async function translateEnToTe(text, apiKey) {
@@ -146,19 +150,26 @@ async function main() {
     console.log('Applying existing cache only...');
   } else if (needed.length && apiKey) {
     const delay = (ms) => new Promise((r) => setTimeout(r, ms));
-    for (let i = 0; i < needed.length; i++) {
-      const en = needed[i];
-      try {
-        const te = await translateEnToTe(en, apiKey);
-        teCache.set(en, te);
-        if ((i + 1) % 25 === 0) {
-          saveCache(teCache);
-          console.log(`  ${i + 1}/${needed.length} translated...`);
-        }
-      } catch (err) {
-        console.warn(`  skip "${en.slice(0, 40)}...": ${err.message}`);
+    const concurrency = 4;
+    let done = 0;
+    for (let i = 0; i < needed.length; i += concurrency) {
+      const batch = needed.slice(i, i + concurrency);
+      await Promise.all(
+        batch.map(async (en) => {
+          try {
+            const te = await translateEnToTe(en, apiKey);
+            if (te && hasTeluguScript(te)) teCache.set(en, te);
+          } catch (err) {
+            console.warn(`  skip "${en.slice(0, 40)}...": ${err.message}`);
+          }
+        })
+      );
+      done += batch.length;
+      if (done % 50 === 0 || done >= needed.length) {
+        saveCache(teCache);
+        console.log(`  ${done}/${needed.length} translated (cache: ${teCache.size})...`);
       }
-      await delay(350);
+      await delay(300);
     }
     saveCache(teCache);
     console.log(`✅ Cache saved: ${teCache.size} entries`);
@@ -166,6 +177,13 @@ async function main() {
 
   const rows = applyCacheToChapters(teCache);
   console.log(`\n🚀 Applied Telugu to ${rows} line rows across chapter files.`);
+
+  // Rebuild so line rows pick up teCache via buildLineBreakdown
+  console.log('Rebuilding line breakdown with Telugu cache...');
+  require('child_process').execSync('node scripts/rebuild-line-breakdown.js', {
+    cwd: ROOT,
+    stdio: 'inherit',
+  });
 }
 
 main().catch((e) => {

@@ -300,7 +300,7 @@ function buildLineBreakdown(opts = {}) {
     }
     if (!en) en = line;
 
-    if (fallbackTeParts && fallbackTeParts[i]) {
+    if (fallbackTeParts && fallbackTeParts[i] && hasTeluguScript(fallbackTeParts[i])) {
       te = capitalize(fallbackTeParts[i]);
     } else if (teCache && en && teCache.has(en)) {
       te = teCache.get(en);
@@ -311,7 +311,7 @@ function buildLineBreakdown(opts = {}) {
     } else if (teCache && opts.fallbackMeaning && teCache.has(opts.fallbackMeaning)) {
       te = teCache.get(opts.fallbackMeaning);
     } else {
-      te = en;
+      te = teCache?.get(en) || teCache?.get(en?.toLowerCase()) || '';
     }
 
     const skLine = skLines[i] || skLines[skLines.length - 1] || line;

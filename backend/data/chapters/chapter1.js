@@ -1584,7 +1584,7 @@ const CHAPTER_1_SHLOKAS = {
                 "transliteration": "atha vyavasthitān dṛiṣhṭvā dhārtarāṣhṭrān kapi",
                 "sanskrit_te": "అథ వ్యవస్థితాన్",
                 "en": "Thereupon arrayed seeing Dhritarashtra’s sons the Monkey Bannered",
-                "te": "Then Arjuna, whose banner crest was"
+                "te": "అప్పుడు ధృతరాష్ట్ర కుమారులను చూసి కోతులు బనేర్డ్‌గా సమావేశమయ్యారు."
             },
             {
                 "sanskrit": "दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः",

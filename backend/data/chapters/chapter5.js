@@ -52,7 +52,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "arjuna uvācha sannyāsaṁ karmaṇāṁ kṛiṣhṇa",
                 "sanskrit_te": "అర్జున ఉవాచ సంన్యాసం కర్మణాం",
                 "en": "Arjun said of actions Shree Krishna",
-                "te": "Arjuna said, \"O Krsna, you praise the renunciation of"
+                "te": "అర్జునుడు అన్నాడు: ఓ కృష్ణా, కర్మల సంన్యాసాన్ని"
             },
             {
                 "sanskrit": "कृष्ण पुनर्योगं च",
@@ -60,7 +60,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "punar yogaṁ cha śhansasi yach",
                 "sanskrit_te": "కృష్ణ పునర్యోగం చ",
                 "en": "About karm yog also you praise",
-                "te": "Actions, and then you also praise Karma Yoga. Please"
+                "te": "మరియు కర్మయోగాన్ని కూడా మీరు ప్రశంసిస్తున్నారు"
             },
             {
                 "sanskrit": "शंससि यच्छ्रेय एतयोरेकं",
@@ -68,7 +68,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "chhreya etayor ekaṁ tan",
                 "sanskrit_te": "శంససి యచ్ఛ్రేయ ఏతయోరేకం",
                 "en": "Of the two one",
-                "te": "Tell me with certainty which of these is"
+                "te": "ఈ రెండింటిలో ఏది శ్రేయస్కరమో"
             },
             {
                 "sanskrit": "तन्मे ब्रूहि सुनिश्िचतम्",
@@ -76,7 +76,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "me brūhi su niśhchitam",
                 "sanskrit_te": "తన్మే బ్రూహి సునిశ్ిచతమ్",
                 "en": "Unto me please tell conclusively",
-                "te": "The superior one, leading to the ultimate good."
+                "te": "దానిని నాకు నిశ్చయంగా చెప్పండి"
             }
         ]
     },
@@ -619,7 +619,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "naiva kiñchit karomīti yukto manyeta tattva-vit",
                 "sanskrit_te": "నైవ కించిత్కరోమీతి",
                 "en": "Anything I do thinks one who knows the truth",
-                "te": "The one who knows the truth and is"
+                "te": "నేను చేసేదంతా సత్యం తెలిసినవాడు అనుకుంటాడు"
             },
             {
                 "sanskrit": "युक्तो मन्येत",
@@ -627,7 +627,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "paśhyañ śhṛiṇvan spṛiśhañjighrann aśhnangachchhan svapañśhvasan",
                 "sanskrit_te": "యుక్తో మన్యేత",
                 "en": "Seeing hearing touching eating sleeping",
-                "te": "Devoted to yoga should think, \"I am not"
+                "te": "చూస్తూ, వినడం, తాకడం, నిద్రపోవడం"
             },
             {
                 "sanskrit": "तत्त्ववित् पश्यन्",
@@ -635,7 +635,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "pralapan visṛijan gṛihṇann unmiṣhan nimiṣhann api",
                 "sanskrit_te": "తత్త్వవిత్ పశ్యన్",
                 "en": "Talking giving up accepting opening (the eyes) closing (the eyes) although",
-                "te": "Doing anything,\" even though they are seeing, hearing,"
+                "te": "మాట్లాడటం, వదులుకోవడం, తెరవడం (కళ్ళు), మూయడం (కళ్ళు) అయినప్పటికీ"
             },
             {
                 "sanskrit": "श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्",
@@ -643,7 +643,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "indriyāṇīndriyārtheṣhu vartanta iti dhārayan",
                 "sanskrit_te": "శ్రృణవన్స్పృశఞ్జిఘ్రన్నశ్నన్గచ్ఛన్స్వపన్ శ్వసన్",
                 "en": "The senses moving thus convinced",
-                "te": "Touching, smelling, eating, moving, sleeping, and breathing."
+                "te": "ఇలానే కదిలిన ఇంద్రియాలు నమ్మించాయి"
             }
         ]
     },
@@ -2158,7 +2158,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "sparśhān kṛitvā bahir bāhyānśh chakṣhuśh chaivāntare bhruvoḥ",
                 "sanskrit_te": "స్పర్శాన్కృత్వా బహిర్బాహ్యాంశ్చక్షుశ్చైవాన్తరే",
                 "en": "Contacts (through senses) keeping external eyes between of the eyebrows",
-                "te": "Shutting off outward contacts, fixing"
+                "te": "పరిచయాలు (ఇంద్రియాల ద్వారా) కనుబొమ్మల మధ్య బాహ్య కళ్ళను ఉంచుతాయి."
             },
             {
                 "sanskrit": "भ्रुवोः प्राणापानौ",
@@ -2166,7 +2166,7 @@ const CHAPTER_5_SHLOKAS = {
                 "transliteration": "prāṇāpānau samau kṛitvā nāsābhyantara-chāriṇau",
                 "sanskrit_te": "భ్రువోః ప్రాణాపానౌ",
                 "en": "The outgoing and incoming breaths equal keeping within the nostrils moving",
-                "te": "The gaze between the eyebrows,"
+                "te": "బయటకు వెళ్ళే మరియు లోపలికి వచ్చే శ్వాసలు సమానంగా ఉంటాయి, ఇది ముక్కు రంధ్రాల లోపల కదులుతుంది"
             },
             {
                 "sanskrit": "समौ कृत्वा",

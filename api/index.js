@@ -630,6 +630,78 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
   }
 });
 
+// --- Line meaning Telugu translation (cached) ---
+const LINE_TE_CACHE_PATH = path.join(__dirname, '..', 'lib', 'data', 'line-te-cache.json');
+let lineTeCache = null;
+
+function loadLineTeCache() {
+  if (lineTeCache) return lineTeCache;
+  lineTeCache = {};
+  try {
+    if (fs.existsSync(LINE_TE_CACHE_PATH)) {
+      lineTeCache = JSON.parse(fs.readFileSync(LINE_TE_CACHE_PATH, 'utf8'));
+    }
+  } catch (e) {
+    console.warn('[Line TE cache] load failed:', e.message);
+  }
+  return lineTeCache;
+}
+
+function hasTeluguScript(text) {
+  return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
+}
+
+router.post('/translate-meaning', async (req, res) => {
+  try {
+    const { text } = req.body;
+    if (!text || typeof text !== 'string') {
+      return res.status(400).json({ error: 'Text is required' });
+    }
+    const key = text.trim();
+    const cache = loadLineTeCache();
+    if (cache[key]) return res.json({ te: cache[key] });
+
+    if (!process.env.SARVAM_API_KEY) {
+      return res.status(501).json({ error: 'Translation not configured' });
+    }
+
+    const response = await axios.post(
+      'https://api.sarvam.ai/translate',
+      {
+        input: key,
+        source_language_code: 'en-IN',
+        target_language_code: 'te-IN',
+        model: 'mayura:v1',
+        mode: 'formal',
+      },
+      {
+        headers: {
+          'api-subscription-key': process.env.SARVAM_API_KEY,
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    const te = (response.data?.translated_text || '').trim();
+    if (!te || !hasTeluguScript(te)) {
+      return res.status(500).json({ error: 'Invalid translation response' });
+    }
+
+    cache[key] = te;
+    lineTeCache = cache;
+    try {
+      fs.writeFileSync(LINE_TE_CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
+    } catch (e) {
+      /* read-only on Vercel — in-memory still works per instance */
+    }
+
+    res.json({ te });
+  } catch (err) {
+    console.error('[Translate meaning]:', err.message);
+    res.status(500).json({ error: 'Failed to translate' });
+  }
+});
+
 // --- TTS (Voice Generation) ---
 const CACHE_DIR = '/tmp/audio_cache';
 if (!fs.existsSync(CACHE_DIR)) {
