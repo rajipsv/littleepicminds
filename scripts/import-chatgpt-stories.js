@@ -28,8 +28,24 @@ const CLUSTERS_PATH = path.join(__dirname, 'data', 'gita-theme-clusters.json');
 
 const REQUIRED = ['title', 'content', 'moral', 'activity'];
 
+function loadClusters() {
+  return JSON.parse(fs.readFileSync(CLUSTERS_PATH, 'utf8'));
+}
+
+function shlokaById() {
+  const map = {};
+  for (const data of Object.values(loadClusters().gita)) {
+    for (const level of ['seeds', 'seekers']) {
+      for (const c of data[level] || []) {
+        if (c.id && c.shlokas?.length) map[c.id] = c.shlokas;
+      }
+    }
+  }
+  return map;
+}
+
 function allStoryIds() {
-  const clusters = JSON.parse(fs.readFileSync(CLUSTERS_PATH, 'utf8'));
+  const clusters = loadClusters();
   const ids = [];
   for (const [ch, data] of Object.entries(clusters.gita)) {
     for (const level of ['seeds', 'seekers']) {
@@ -55,11 +71,16 @@ function normalizeImport(raw) {
   return raw;
 }
 
-function mergeEntry(existing, incoming, id) {
+function mergeEntry(existing, incoming, id, clusterShlokas) {
   const out = { ...existing, ...incoming, id };
   if (!out.micro_theme && existing?.micro_theme) out.micro_theme = existing.micro_theme;
   if (!out.storyTitle && out.title) out.storyTitle = out.title;
   if (!out.storyTitle_te && out.title_te) out.storyTitle_te = out.title_te;
+  const ref =
+    (incoming._shlokas?.length && incoming._shlokas) ||
+    (clusterShlokas?.length && clusterShlokas) ||
+    existing?._shlokas;
+  if (ref?.length) out._shlokas = [...ref];
   return out;
 }
 
@@ -77,6 +98,7 @@ function main() {
   }
 
   const incoming = normalizeImport(JSON.parse(fs.readFileSync(IMPORT_PATH, 'utf8')));
+  const clusterShlokas = shlokaById();
   const authored = fs.existsSync(AUTHORED_PATH)
     ? JSON.parse(fs.readFileSync(AUTHORED_PATH, 'utf8'))
     : { version: 1, stories: {} };
@@ -98,7 +120,7 @@ function main() {
       const entry = incoming[id];
       const missing = REQUIRED.filter((f) => !entry[f] || !String(entry[f]).trim());
       if (missing.length) warnings.push(`${id}: missing ${missing.join(', ')}`);
-      authored.stories[id] = mergeEntry(existing, entry, id);
+      authored.stories[id] = mergeEntry(existing, entry, id, clusterShlokas[id]);
       merged++;
     }
   }

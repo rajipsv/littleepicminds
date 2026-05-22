@@ -35,6 +35,8 @@ The user has **pre-approved** all theme story work. Do **not** ask for confirmat
 
 Each story: EN + Telugu for title, story, moral, activity; 2–3 shlokas per theme (fixed in clusters).
 
+Include **`_shlokas`** on every import entry (verse refs from curriculum), e.g. `"_shlokas": ["2.2", "2.3", "2.7"]` for `sk2_01`. Run `node scripts/attach-shlokas-to-import.js --file=...` if missing.
+
 ## Batch order
 
 Work **chapter by chapter** (all seeds + seekers per chapter), then import + build. Pilot chapters 1 seeds/seekers are done — continue from chapter 2 onward unless user names a chapter.

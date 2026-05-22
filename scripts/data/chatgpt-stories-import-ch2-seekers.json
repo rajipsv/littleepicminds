@@ -14,7 +14,12 @@
       "moral": "Asking for help is the first brave step when you feel lost.",
       "moral_te": "తప్పిపోయినట్లు అనిపిస్తే సహాయం అడగడం మొదటి ధైర్యమైన అడుగు.",
       "activity": "Write one question you could ask a trusted adult this week.",
-      "activity_te": "ఈ వారం నమ్మకమైన వారిని అడగగల ఒక ప్రశ్న రాయండి."
+      "activity_te": "ఈ వారం నమ్మకమైన వారిని అడగగల ఒక ప్రశ్న రాయండి.",
+      "_shlokas": [
+        "2.2",
+        "2.3",
+        "2.7"
+      ]
     },
     "sk2_02": {
       "id": "sk2_02",
@@ -30,7 +35,12 @@
       "moral": "When feelings fight inside, pause and talk before you decide.",
       "moral_te": "లోపల భావాలు పోరాడినప్పుడు ఆగి, నిర్ణయించే ముందు మాట్లాడండి.",
       "activity": "Draw two columns: 'heart says' and 'fairness says' for one choice you face.",
-      "activity_te": "రెండు నిలువు వరుసలు: 'హృదయం చెబుతుంది' మరియు 'న్యాయం చెబుతుంది'."
+      "activity_te": "రెండు నిలువు వరుసలు: 'హృదయం చెబుతుంది' మరియు 'న్యాయం చెబుతుంది'.",
+      "_shlokas": [
+        "2.4",
+        "2.5",
+        "2.6"
+      ]
     },
     "sk2_03": {
       "id": "sk2_03",
@@ -46,7 +56,11 @@
       "moral": "Name strong feelings first, then let your mind work.",
       "moral_te": "ముందు బలమైన భావాలకు పేరు పెట్టండి, తర్వాత మనస్సు పని చేయనివ్వండి.",
       "activity": "When upset before a task, say: 'I feel ___' and breathe five times.",
-      "activity_te": "పని ముందు బాధగా ఉంటే: 'నాకు ___ అనిపిస్తుంది' అని ఐదు శ్వాసలు."
+      "activity_te": "పని ముందు బాధగా ఉంటే: 'నాకు ___ అనిపిస్తుంది' అని ఐదు శ్వాసలు.",
+      "_shlokas": [
+        "2.8",
+        "2.11"
+      ]
     },
     "sk2_04": {
       "id": "sk2_04",
@@ -62,7 +76,12 @@
       "moral": "Feelings change like weather. You are not one storm forever.",
       "moral_te": "భావాలు వాతావరణం లా మారుతాయి. మీరు ఒక తుఫాను శాశ్వతం కాదు.",
       "activity": "Make a simple mood chart for three days.",
-      "activity_te": "మూడు రోజుల సాధారణ మూడ్ చార్ట్ చేయండి."
+      "activity_te": "మూడు రోజుల సాధారణ మూడ్ చార్ట్ చేయండి.",
+      "_shlokas": [
+        "2.12",
+        "2.13",
+        "2.14"
+      ]
     },
     "sk2_05": {
       "id": "sk2_05",
@@ -78,7 +97,12 @@
       "moral": "When life shakes outside, remember what is still true about you.",
       "moral_te": "బయట జీవితం కదిలినప్పుడు మీ గురించి ఇంకా నిజం ఏమిటో గుర్తు చేసుకోండి.",
       "activity": "List three truths about yourself that do not move when school changes.",
-      "activity_te": "స్కూల్ మారినా మారని మీ గురించి మూడు నిజాలు జాబితా."
+      "activity_te": "స్కూల్ మారినా మారని మీ గురించి మూడు నిజాలు జాబితా.",
+      "_shlokas": [
+        "2.15",
+        "2.16",
+        "2.17"
+      ]
     },
     "sk2_06": {
       "id": "sk2_06",
@@ -94,7 +118,11 @@
       "moral": "Bodies change and end; love and inner light matter deeply.",
       "moral_te": "శరీరాలు మారుతాయి, ముగుస్తాయి; ప్రేమ, లోపల వెలుగు లోతుగా ముఖ్యం.",
       "activity": "Draw something you lost or miss with a heart or light around it.",
-      "activity_te": "మిస్ అయినదాన్ని హృదయం లేదా వెలుగుతో గీయండి."
+      "activity_te": "మిస్ అయినదాన్ని హృదయం లేదా వెలుగుతో గీయండి.",
+      "_shlokas": [
+        "2.18",
+        "2.20"
+      ]
     },
     "sk2_07": {
       "id": "sk2_07",
@@ -110,7 +138,12 @@
       "moral": "Bodies age and change; love and the soul's journey continue.",
       "moral_te": "శరీరాలు వృద్ధిగా, మారుతాయి; ప్రేమ, ఆత్మ ప్రయాణం కొనసాగుతాయి.",
       "activity": "Interview an elder: what changed? what stayed the same?",
-      "activity_te": "పెద్దవారిని అడగండి: ఏమి మారింది? ఏమి అలాగే ఉంది?"
+      "activity_te": "పెద్దవారిని అడగండి: ఏమి మారింది? ఏమి అలాగే ఉంది?",
+      "_shlokas": [
+        "2.22",
+        "2.27",
+        "2.30"
+      ]
     },
     "sk2_08": {
       "id": "sk2_08",
@@ -126,7 +159,12 @@
       "moral": "Do your duty with courage and calm fairness, not revenge.",
       "moral_te": "ప్రతీకారం కాదు — ధైర్యం, ప్రశాంత న్యాయంతో బాధ్యత చేయండి.",
       "activity": "Name one duty you have this week. How can you do it fairly?",
-      "activity_te": "ఈ వారం మీ బాధ్యత ఒకటి పేరు చెప్పండి. న్యాయంగా ఎలా చేస్తారు?"
+      "activity_te": "ఈ వారం మీ బాధ్యత ఒకటి పేరు చెప్పండి. న్యాయంగా ఎలా చేస్తారు?",
+      "_shlokas": [
+        "2.31",
+        "2.37",
+        "2.38"
+      ]
     },
     "sk2_09": {
       "id": "sk2_09",
@@ -142,7 +180,12 @@
       "moral": "Remove distractions when something important needs your mind.",
       "moral_te": "ముఖ్యమైన పనికి మనస్సు అవసరమైనప్పుడు శోషణలను తొలగించండి.",
       "activity": "Try 20 minutes of one-task-only study today.",
-      "activity_te": "ఈరోజు 20 నిమిషాలు ఒక పని మాత్రమే చదవండి."
+      "activity_te": "ఈరోజు 20 నిమిషాలు ఒక పని మాత్రమే చదవండి.",
+      "_shlokas": [
+        "2.39",
+        "2.41",
+        "2.44"
+      ]
     },
     "sk2_10": {
       "id": "sk2_10",
@@ -158,7 +201,11 @@
       "moral": "Balance beats extremes. Find a steady middle that you can repeat.",
       "moral_te": "సమతుల్యత అతివ్యయాలను ఓడిస్తుంది. మధ్య స్థిర మార్గం కనుగొనండి.",
       "activity": "Plan one balanced study block with a break in the middle.",
-      "activity_te": "మధ్య విరామంతో ఒక సమతుల్య చదువు బ్లాక్ ప్లాన్ చేయండి."
+      "activity_te": "మధ్య విరామంతో ఒక సమతుల్య చదువు బ్లాక్ ప్లాన్ చేయండి.",
+      "_shlokas": [
+        "2.45",
+        "2.46"
+      ]
     },
     "sk2_11": {
       "id": "sk2_11",
@@ -174,7 +221,12 @@
       "moral": "Give calm, steady effort. Hold results lightly.",
       "moral_te": "ప్రశాంత, స్థిర ప్రయత్నం ఇవ్వండి. ఫలితాలను తేలికగా పట్టుకోండి.",
       "activity": "Do one activity for the joy of doing it, not to win.",
-      "activity_te": "గెలవడం కాదు చేయడం ఆనందానికి ఒక పని చేయండి."
+      "activity_te": "గెలవడం కాదు చేయడం ఆనందానికి ఒక పని చేయండి.",
+      "_shlokas": [
+        "2.47",
+        "2.48",
+        "2.50"
+      ]
     },
     "sk2_12": {
       "id": "sk2_12",
@@ -190,7 +242,12 @@
       "moral": "When confused in a group, write roles and listen one by one.",
       "moral_te": "గ్రూప్‌లో గందరగోళంగా ఉంటే పాత్రలు రాసి ఒకరొకరు వినండి.",
       "activity": "Use a list to plan one group or family task clearly.",
-      "activity_te": "ఒక గ్రూప్ లేదా కుటుంబ పనికి జాబితా తో స్పష్ట ప్లాన్."
+      "activity_te": "ఒక గ్రూప్ లేదా కుటుంబ పనికి జాబితా తో స్పష్ట ప్లాన్.",
+      "_shlokas": [
+        "2.51",
+        "2.52",
+        "2.53"
+      ]
     },
     "sk2_13": {
       "id": "sk2_13",
@@ -206,7 +263,12 @@
       "moral": "Practice small pauses. Stability grows with repetition.",
       "moral_te": "చిన్న విరామాలు సాధన. పునరావృత్తితో స్థిరత్వం పెరుగుతుంది.",
       "activity": "Use STOP once today when you feel triggered.",
-      "activity_te": "ఈరోజు ఒకసారి ట్రిగర్ అయినప్పుడు STOP ఉపయోగించండి."
+      "activity_te": "ఈరోజు ఒకసారి ట్రిగర్ అయినప్పుడు STOP ఉపయోగించండి.",
+      "_shlokas": [
+        "2.54",
+        "2.55",
+        "2.56"
+      ]
     },
     "sk2_14": {
       "id": "sk2_14",
@@ -222,7 +284,12 @@
       "moral": "Healthy rules protect your mind so wisdom can grow.",
       "moral_te": "ఆరోగ్యకర నియమాలు మనస్సును రక్షిస్తాయి, జ్ఞానం పెరగనిస్తుంది.",
       "activity": "Agree on one screen-time rule that helps your sleep.",
-      "activity_te": "నిద్రకు సహాయపడే ఒక స్క్రీన్ నియమం అంగీకరించండి."
+      "activity_te": "నిద్రకు సహాయపడే ఒక స్క్రీన్ నియమం అంగీకరించండి.",
+      "_shlokas": [
+        "2.57",
+        "2.58",
+        "2.61"
+      ]
     },
     "sk2_15": {
       "id": "sk2_15",
@@ -238,7 +305,12 @@
       "moral": "Stop negative chains early. One kind repair can heal a lot.",
       "moral_te": "నెగటివ్ చైన్లను ముందే ఆపండి. ఒక దయ మరమ్మత్ చాలా నయం చేస్తుంది.",
       "activity": "If a thought chain starts, tell an adult before you post or shout.",
-      "activity_te": "ఆలోచన చైన్ మొదలైతే పోస్ట్ లేదా అరచే ముందు పెద్దలకు చెప్పండి."
+      "activity_te": "ఆలోచన చైన్ మొదలైతే పోస్ట్ లేదా అరచే ముందు పెద్దలకు చెప్పండి.",
+      "_shlokas": [
+        "2.62",
+        "2.63",
+        "2.67"
+      ]
     },
     "sk2_16": {
       "id": "sk2_16",
@@ -254,7 +326,12 @@
       "moral": "Daily small discipline can bring peace to a busy mind.",
       "moral_te": "రోజువారీ చిన్న శిక్షణ బిజీ మనస్సుకు శాంతి తెస్తుంది.",
       "activity": "Write three morning lines tomorrow: feel, hope, thanks.",
-      "activity_te": "రేపు మూడు పంక్తులు: భావం, ఆశ, ధన్యవాదం."
+      "activity_te": "రేపు మూడు పంక్తులు: భావం, ఆశ, ధన్యవాదం.",
+      "_shlokas": [
+        "2.64",
+        "2.65",
+        "2.66"
+      ]
     },
     "sk2_17": {
       "id": "sk2_17",
@@ -270,7 +347,12 @@
       "moral": "Grieve what you wanted, then let go and find a new good part.",
       "moral_te": "కోరినదాన్ని విచారించు, వదిలివేసి కొత్త మంచి భాగం కనుగొనండి.",
       "activity": "Name something you must release. Name one new way to help anyway.",
-      "activity_te": "వదిలివేయవలసినది పేరు చెప్పండి. ఇంకా సహాయం చేయగల మార్గం ఒకటి."
+      "activity_te": "వదిలివేయవలసినది పేరు చెప్పండి. ఇంకా సహాయం చేయగల మార్గం ఒకటి.",
+      "_shlokas": [
+        "2.68",
+        "2.70",
+        "2.71"
+      ]
     },
     "sk2_18": {
       "id": "sk2_18",
@@ -286,7 +368,10 @@
       "moral": "Practice quiet steady moments. Lasting peace grows there.",
       "moral_te": "నిశ్శబ్ద స్థిర క్షణాలు సాధన. నిలకడైన శాంతి అక్కడ పెరుగుతుంది.",
       "activity": "Take a five-minute quiet walk or sit with no screens.",
-      "activity_te": "ఐదు నిమిషాల నిశ్శబ్ద నడక లేదా స్క్రీన్ లేకుండా కూర్చోండి."
+      "activity_te": "ఐదు నిమిషాల నిశ్శబ్ద నడక లేదా స్క్రీన్ లేకుండా కూర్చోండి.",
+      "_shlokas": [
+        "2.72"
+      ]
     }
   }
 }
