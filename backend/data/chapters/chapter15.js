@@ -47,109 +47,28 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "శ్రీ భగవానువాచఊర్ధ్వమూలమధఃశాఖమశ్వత్థం ప్రాహురవ్యయమ్ |\nఛన్దాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్",
         "lineBreakdown": [
             {
-                "sanskrit": "śhrī-bhagavān uvācha",
+                "sanskrit": "श्री भगवानुवाचऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम्",
                 "word": "śhrī-bhagavān uvācha",
-                "sanskrit_te": "శ్హ్రీ-భగవాన్ ఉవాఛ",
-                "en": "the Supreme Divine Personality said",
-                "te": "the Supreme Divine Personality said"
+                "transliteration": "śhrī-bhagavān uvācha",
+                "sanskrit_te": "శ్రీ భగవానువాచఊర్ధ్వమూలమధఃశాఖమశ్వత్థం ప్రాహురవ్యయమ్",
+                "en": "The Supreme Lord said: There is a banyan tree with roots above and branches below.",
+                "te": "The Supreme Lord said: There is a banyan tree with roots above and branches below."
             },
             {
-                "sanskrit": "ūrdhva-mūlam",
-                "word": "ūrdhva-mūlam",
-                "sanskrit_te": "ఊర్ధ్వ-మూలమ్",
-                "en": "with roots above",
-                "te": "with roots above"
+                "sanskrit": "छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्",
+                "word": "ūrdhva-mūlam adhaḥ-śhākham aśhvatthaṁ prāhur avyayam",
+                "transliteration": "ūrdhva-mūlam adhaḥ-śhākham aśhvatthaṁ prāhur avyayam",
+                "sanskrit_te": "ఛన్దాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్",
+                "en": "With roots above downward branches the sacred fig tree they speak eternal",
+                "te": "With roots above downward branches the sacred fig tree they speak eternal"
             },
             {
-                "sanskrit": "adhaḥ",
-                "word": "adhaḥ",
-                "sanskrit_te": "అధః",
-                "en": "downward",
-                "te": "downward"
-            },
-            {
-                "sanskrit": "śhākham",
-                "word": "śhākham",
-                "sanskrit_te": "శ్హాఖమ్",
-                "en": "branches",
-                "te": "branches"
-            },
-            {
-                "sanskrit": "aśhvattham",
-                "word": "aśhvattham",
-                "sanskrit_te": "అశ్హ్వత్థమ్",
-                "en": "the sacred fig tree",
-                "te": "the sacred fig tree"
-            },
-            {
-                "sanskrit": "prāhuḥ",
-                "word": "prāhuḥ",
-                "sanskrit_te": "ప్రాహుః",
-                "en": "they speak",
-                "te": "they speak"
-            },
-            {
-                "sanskrit": "avyayam",
-                "word": "avyayam",
-                "sanskrit_te": "అవ్యయమ్",
-                "en": "eternal",
-                "te": "eternal"
-            },
-            {
-                "sanskrit": "chhandānsi",
-                "word": "chhandānsi",
-                "sanskrit_te": "ఛ్హన్దాన్సి",
-                "en": "Vedic mantras",
-                "te": "Vedic mantras"
-            },
-            {
-                "sanskrit": "yasya",
-                "word": "yasya",
-                "sanskrit_te": "యస్య",
-                "en": "of which",
-                "te": "of which"
-            },
-            {
-                "sanskrit": "parṇāni",
-                "word": "parṇāni",
-                "sanskrit_te": "పర్ణాని",
-                "en": "leaves",
-                "te": "leaves"
-            },
-            {
-                "sanskrit": "yaḥ",
-                "word": "yaḥ",
-                "sanskrit_te": "యః",
-                "en": "who",
-                "te": "who"
-            },
-            {
-                "sanskrit": "tam",
-                "word": "tam",
-                "sanskrit_te": "తమ్",
-                "en": "that",
-                "te": "that"
-            },
-            {
-                "sanskrit": "veda",
-                "word": "veda",
-                "sanskrit_te": "వేద",
-                "en": "knows",
-                "te": "knows"
-            },
-            {
-                "sanskrit": "saḥ",
-                "word": "saḥ",
-                "sanskrit_te": "సః",
-                "en": "he",
-                "te": "he"
-            },
-            {
-                "sanskrit": "veda-vit",
-                "word": "veda-vit",
-                "sanskrit_te": "వేద-విత్",
-                "en": "the knower of the Vedas",
-                "te": "the knower of the Vedas"
+                "sanskrit": "छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित्",
+                "word": "chhandānsi yasya parṇāni yas taṁ veda sa veda-vit",
+                "transliteration": "chhandānsi yasya parṇāni yas taṁ veda sa veda-vit",
+                "sanskrit_te": "ఛన్దాంసి యస్య పర్ణాని యస్తం వేద స వేదవిత్",
+                "en": "Vedic mantras of which leaves that knows he the knower of the Vedas",
+                "te": "Vedic mantras of which leaves that knows he the knower of the Vedas"
             }
         ]
     },
@@ -201,123 +120,36 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "అధశ్చోర్ధ్వం ప్రసృతాస్తస్య శాఖా గుణప్రవృద్ధా విషయప్రవాలాః |\nఅధశ్చ మూలాన్యనుసన్తతాని కర్మానుబన్ధీని మనుష్యలోకే",
         "lineBreakdown": [
             {
-                "sanskrit": "adhaḥ",
-                "word": "adhaḥ",
-                "sanskrit_te": "అధః",
-                "en": "downward",
-                "te": "downward"
+                "sanskrit": "अधश्चोर्ध्वं प्रसृतास्तस्य शाखा गुणप्रवृद्धा विषयप्रवालाः",
+                "word": "adhaśh chordhvaṁ prasṛitās tasya śhākhā",
+                "transliteration": "adhaśh chordhvaṁ prasṛitās tasya śhākhā",
+                "sanskrit_te": "అధశ్చోర్ధ్వం ప్రసృతాస్తస్య శాఖా గుణప్రవృద్ధా విషయప్రవాలాః",
+                "en": "Extended its branches",
+                "te": "Extended its branches"
             },
             {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
+                "sanskrit": "अधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके",
+                "word": "guṇa-pravṛiddhā viṣhaya-pravālāḥ",
+                "transliteration": "guṇa-pravṛiddhā viṣhaya-pravālāḥ",
+                "sanskrit_te": "అధశ్చ మూలాన్యనుసన్తతాని కర్మానుబన్ధీని మనుష్యలోకే",
+                "en": "Modes of material nature nourished objects of the senses buds",
+                "te": "Modes of material nature nourished objects of the senses buds"
             },
             {
-                "sanskrit": "ūrdhvam",
-                "word": "ūrdhvam",
-                "sanskrit_te": "ఊర్ధ్వమ్",
-                "en": "upward",
-                "te": "upward"
+                "sanskrit": "अधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके",
+                "word": "adhaśh cha mūlāny anusantatāni",
+                "transliteration": "adhaśh cha mūlāny anusantatāni",
+                "sanskrit_te": "అధశ్చ మూలాన్యనుసన్తతాని కర్మానుబన్ధీని మనుష్యలోకే",
+                "en": "And roots keep growing",
+                "te": "And roots keep growing"
             },
             {
-                "sanskrit": "prasṛitāḥ",
-                "word": "prasṛitāḥ",
-                "sanskrit_te": "ప్రసృఇతాః",
-                "en": "extended",
-                "te": "extended"
-            },
-            {
-                "sanskrit": "tasya",
-                "word": "tasya",
-                "sanskrit_te": "తస్య",
-                "en": "its",
-                "te": "its"
-            },
-            {
-                "sanskrit": "śhākhāḥ",
-                "word": "śhākhāḥ",
-                "sanskrit_te": "శ్హాఖాః",
-                "en": "branches",
-                "te": "branches"
-            },
-            {
-                "sanskrit": "guṇa",
-                "word": "guṇa",
-                "sanskrit_te": "గుణ",
-                "en": "modes of material nature",
-                "te": "modes of material nature"
-            },
-            {
-                "sanskrit": "pravṛiddhāḥ",
-                "word": "pravṛiddhāḥ",
-                "sanskrit_te": "ప్రవృఇద్ధాః",
-                "en": "nourished",
-                "te": "nourished"
-            },
-            {
-                "sanskrit": "viṣhaya",
-                "word": "viṣhaya",
-                "sanskrit_te": "విష్హయ",
-                "en": "objects of the senses",
-                "te": "objects of the senses"
-            },
-            {
-                "sanskrit": "pravālāḥ",
-                "word": "pravālāḥ",
-                "sanskrit_te": "ప్రవాలాః",
-                "en": "buds",
-                "te": "buds"
-            },
-            {
-                "sanskrit": "adhaḥ",
-                "word": "adhaḥ",
-                "sanskrit_te": "అధః",
-                "en": "downward",
-                "te": "downward"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "mūlāni",
-                "word": "mūlāni",
-                "sanskrit_te": "మూలాని",
-                "en": "roots",
-                "te": "roots"
-            },
-            {
-                "sanskrit": "anusantatāni",
-                "word": "anusantatāni",
-                "sanskrit_te": "అనుసన్తతాని",
-                "en": "keep growing",
-                "te": "keep growing"
-            },
-            {
-                "sanskrit": "karma",
-                "word": "karma",
-                "sanskrit_te": "కర్మ",
-                "en": "actions",
-                "te": "actions"
-            },
-            {
-                "sanskrit": "anubandhīni",
-                "word": "anubandhīni",
-                "sanskrit_te": "అనుబన్ధీని",
-                "en": "bound",
-                "te": "bound"
-            },
-            {
-                "sanskrit": "manuṣhya-loke",
-                "word": "manuṣhya-loke",
-                "sanskrit_te": "మనుష్హ్య-లోకే",
-                "en": "in the world of humans",
-                "te": "in the world of humans"
+                "sanskrit": "अधश्च मूलान्यनुसन्ततानि कर्मानुबन्धीनि मनुष्यलोके",
+                "word": "karmānubandhīni manuṣhya-loke",
+                "transliteration": "karmānubandhīni manuṣhya-loke",
+                "sanskrit_te": "అధశ్చ మూలాన్యనుసన్తతాని కర్మానుబన్ధీని మనుష్యలోకే",
+                "en": "Actions in the world of humans",
+                "te": "Actions in the world of humans"
             }
         ]
     },
@@ -369,144 +201,36 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "న రూపమస్యేహ తథోపలభ్యతే నాన్తో న చాదిర్న చ సంప్రతిష్ఠా |\nఅశ్వత్థమేనం సువిరూఢమూల మసఙ్గశస్త్రేణ దృఢేన ఛిత్త్వా",
         "lineBreakdown": [
             {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "not",
-                "te": "not"
+                "sanskrit": "न रूपमस्येह तथोपलभ्यते नान्तो न चादिर्न च संप्रतिष्ठा",
+                "word": "na rūpam asyeha tathopalabhyate",
+                "transliteration": "na rūpam asyeha tathopalabhyate",
+                "sanskrit_te": "న రూపమస్యేహ తథోపలభ్యతే నాన్తో న చాదిర్న చ సంప్రతిష్ఠా",
+                "en": "Not form",
+                "te": "Not form"
             },
             {
-                "sanskrit": "rūpam",
-                "word": "rūpam",
-                "sanskrit_te": "రూపమ్",
-                "en": "form",
-                "te": "form"
+                "sanskrit": "अश्वत्थमेनं सुविरूढमूल मसङ्गशस्त्रेण दृढेन छित्त्वा",
+                "word": "nānto na chādir na cha sampratiṣhṭhā",
+                "transliteration": "nānto na chādir na cha sampratiṣhṭhā",
+                "sanskrit_te": "అశ్వత్థమేనం సువిరూఢమూల మసఙ్గశస్త్రేణ దృఢేన ఛిత్త్వా",
+                "en": "Not not also the basis",
+                "te": "Not not also the basis"
             },
             {
-                "sanskrit": "asya",
-                "word": "asya",
-                "sanskrit_te": "అస్య",
-                "en": "of this",
-                "te": "of this"
+                "sanskrit": "अश्वत्थमेनं सुविरूढमूल मसङ्गशस्त्रेण दृढेन छित्त्वा",
+                "word": "aśhvattham enaṁ su-virūḍha-mūlam",
+                "transliteration": "aśhvattham enaṁ su-virūḍha-mūlam",
+                "sanskrit_te": "అశ్వత్థమేనం సువిరూఢమూల మసఙ్గశస్త్రేణ దృఢేన ఛిత్త్వా",
+                "en": "Sacred fig tree this deep-rooted",
+                "te": "Sacred fig tree this deep-rooted"
             },
             {
-                "sanskrit": "iha",
-                "word": "iha",
-                "sanskrit_te": "ఇహ",
-                "en": "in this world",
-                "te": "in this world"
-            },
-            {
-                "sanskrit": "tathā",
-                "word": "tathā",
-                "sanskrit_te": "తథా",
-                "en": "as such",
-                "te": "as such"
-            },
-            {
-                "sanskrit": "upalabhyate",
-                "word": "upalabhyate",
-                "sanskrit_te": "ఉపలభ్యతే",
-                "en": "is perceived",
-                "te": "is perceived"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "neither",
-                "te": "neither"
-            },
-            {
-                "sanskrit": "antaḥ",
-                "word": "antaḥ",
-                "sanskrit_te": "అన్తః",
-                "en": "end",
-                "te": "end"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "nor",
-                "te": "nor"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "ādiḥ",
-                "word": "ādiḥ",
-                "sanskrit_te": "ఆదిః",
-                "en": "beginning",
-                "te": "beginning"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "never",
-                "te": "never"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "sampratiṣhṭhā",
-                "word": "sampratiṣhṭhā",
-                "sanskrit_te": "సమ్ప్రతిష్హ్ఠా",
-                "en": "the basis",
-                "te": "the basis"
-            },
-            {
-                "sanskrit": "aśhvattham",
-                "word": "aśhvattham",
-                "sanskrit_te": "అశ్హ్వత్థమ్",
-                "en": "sacred fig tree",
-                "te": "sacred fig tree"
-            },
-            {
-                "sanskrit": "enam",
-                "word": "enam",
-                "sanskrit_te": "ఏనమ్",
-                "en": "this",
-                "te": "this"
-            },
-            {
-                "sanskrit": "su-virūḍha-mūlam",
-                "word": "su-virūḍha-mūlam",
-                "sanskrit_te": "సు-విరూఢ-మూలమ్",
-                "en": "deep-rooted",
-                "te": "deep-rooted"
-            },
-            {
-                "sanskrit": "asaṅga-śhastreṇa",
-                "word": "asaṅga-śhastreṇa",
-                "sanskrit_te": "అసఙ్గ-శ్హస్త్రేణ",
-                "en": "by the axe of detachment",
-                "te": "by the axe of detachment"
-            },
-            {
-                "sanskrit": "dṛiḍhena",
-                "word": "dṛiḍhena",
-                "sanskrit_te": "దృఇఢేన",
-                "en": "strong",
-                "te": "strong"
-            },
-            {
-                "sanskrit": "chhittvā",
-                "word": "chhittvā",
-                "sanskrit_te": "ఛ్హిత్త్వా",
-                "en": "having cut down",
-                "te": "having cut down"
+                "sanskrit": "अश्वत्थमेनं सुविरूढमूल मसङ्गशस्त्रेण दृढेन छित्त्वा",
+                "word": "asaṅga-śhastreṇa dṛiḍhena chhittvā",
+                "transliteration": "asaṅga-śhastreṇa dṛiḍhena chhittvā",
+                "sanskrit_te": "అశ్వత్థమేనం సువిరూఢమూల మసఙ్గశస్త్రేణ దృఢేన ఛిత్త్వా",
+                "en": "By the axe of detachment strong having cut down",
+                "te": "By the axe of detachment strong having cut down"
             }
         ]
     },
@@ -558,137 +282,36 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "తతః పదం తత్పరిమార్గితవ్య యస్మిన్గతా న నివర్తన్తి భూయః |\nతమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ",
         "lineBreakdown": [
             {
-                "sanskrit": "tataḥ",
-                "word": "tataḥ",
-                "sanskrit_te": "తతః",
-                "en": "then",
-                "te": "then"
+                "sanskrit": "ततः पदं तत्परिमार्गितव्य यस्मिन्गता न निवर्तन्ति भूयः",
+                "word": "tataḥ padaṁ tat parimārgitavyaṁ",
+                "transliteration": "tataḥ padaṁ tat parimārgitavyaṁ",
+                "sanskrit_te": "తతః పదం తత్పరిమార్గితవ్య యస్మిన్గతా న నివర్తన్తి భూయః",
+                "en": "Then place that one must search out",
+                "te": "Then place that one must search out"
             },
             {
-                "sanskrit": "padam",
-                "word": "padam",
-                "sanskrit_te": "పదమ్",
-                "en": "place",
-                "te": "place"
+                "sanskrit": "तमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी",
+                "word": "yasmin gatā na nivartanti bhūyaḥ",
+                "transliteration": "yasmin gatā na nivartanti bhūyaḥ",
+                "sanskrit_te": "తమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ",
+                "en": "Where having gone not return again",
+                "te": "Where having gone not return again"
             },
             {
-                "sanskrit": "tat",
-                "word": "tat",
-                "sanskrit_te": "తత్",
-                "en": "that",
-                "te": "that"
+                "sanskrit": "तमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी",
+                "word": "tam eva chādyaṁ puruṣhaṁ prapadye",
+                "transliteration": "tam eva chādyaṁ puruṣhaṁ prapadye",
+                "sanskrit_te": "తమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ",
+                "en": "To him certainly original the Supreme Lord take refuge",
+                "te": "To him certainly original the Supreme Lord take refuge"
             },
             {
-                "sanskrit": "parimārgitavyam",
-                "word": "parimārgitavyam",
-                "sanskrit_te": "పరిమార్గితవ్యమ్",
-                "en": "one must search out",
-                "te": "one must search out"
-            },
-            {
-                "sanskrit": "yasmin",
-                "word": "yasmin",
-                "sanskrit_te": "యస్మిన్",
-                "en": "where",
-                "te": "where"
-            },
-            {
-                "sanskrit": "gatāḥ",
-                "word": "gatāḥ",
-                "sanskrit_te": "గతాః",
-                "en": "having gone",
-                "te": "having gone"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "not",
-                "te": "not"
-            },
-            {
-                "sanskrit": "nivartanti",
-                "word": "nivartanti",
-                "sanskrit_te": "నివర్తన్తి",
-                "en": "return",
-                "te": "return"
-            },
-            {
-                "sanskrit": "bhūyaḥ",
-                "word": "bhūyaḥ",
-                "sanskrit_te": "భూయః",
-                "en": "again",
-                "te": "again"
-            },
-            {
-                "sanskrit": "tam",
-                "word": "tam",
-                "sanskrit_te": "తమ్",
-                "en": "to him",
-                "te": "to him"
-            },
-            {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "certainly",
-                "te": "certainly"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "ādyam",
-                "word": "ādyam",
-                "sanskrit_te": "ఆద్యమ్",
-                "en": "original",
-                "te": "original"
-            },
-            {
-                "sanskrit": "puruṣham",
-                "word": "puruṣham",
-                "sanskrit_te": "పురుష్హమ్",
-                "en": "the Supreme Lord",
-                "te": "the Supreme Lord"
-            },
-            {
-                "sanskrit": "prapadye",
-                "word": "prapadye",
-                "sanskrit_te": "ప్రపద్యే",
-                "en": "take refuge",
-                "te": "take refuge"
-            },
-            {
-                "sanskrit": "yataḥ",
-                "word": "yataḥ",
-                "sanskrit_te": "యతః",
-                "en": "whence",
-                "te": "whence"
-            },
-            {
-                "sanskrit": "pravṛittiḥ",
-                "word": "pravṛittiḥ",
-                "sanskrit_te": "ప్రవృఇత్తిః",
-                "en": "the activity",
-                "te": "the activity"
-            },
-            {
-                "sanskrit": "prasṛitā",
-                "word": "prasṛitā",
-                "sanskrit_te": "ప్రసృఇతా",
-                "en": "streamed forth",
-                "te": "streamed forth"
-            },
-            {
-                "sanskrit": "purāṇi",
-                "word": "purāṇi",
-                "sanskrit_te": "పురాణి",
-                "en": "very old",
-                "te": "very old"
+                "sanskrit": "तमेव चाद्यं पुरुषं प्रपद्ये यतः प्रवृत्तिः प्रसृता पुराणी",
+                "word": "yataḥ pravṛittiḥ prasṛitā purāṇī",
+                "transliteration": "yataḥ pravṛittiḥ prasṛitā purāṇī",
+                "sanskrit_te": "తమేవ చాద్యం పురుషం ప్రపద్యే యతః ప్రవృత్తిః ప్రసృతా పురాణీ",
+                "en": "Whence the activity streamed forth very old",
+                "te": "Whence the activity streamed forth very old"
             }
         ]
     },
@@ -740,130 +363,36 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "నిర్మానమోహా జితసఙ్గదోషా అధ్యాత్మనిత్యా వినివృత్తకామాః |\nద్వన్ద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞై ర్గచ్ఛన్త్యమూఢాః పదమవ్యయం తత్",
         "lineBreakdown": [
             {
-                "sanskrit": "niḥ",
-                "word": "niḥ",
-                "sanskrit_te": "నిః",
-                "en": "free from",
-                "te": "free from"
+                "sanskrit": "निर्मानमोहा जितसङ्गदोषा अध्यात्मनित्या विनिवृत्तकामाः",
+                "word": "nirmāna-mohā jita-saṅga-doṣhā",
+                "transliteration": "nirmāna-mohā jita-saṅga-doṣhā",
+                "sanskrit_te": "నిర్మానమోహా జితసఙ్గదోషా అధ్యాత్మనిత్యా వినివృత్తకామాః",
+                "en": "Vanity delusion having overcome attachment evils",
+                "te": "Vanity delusion having overcome attachment evils"
             },
             {
-                "sanskrit": "māna",
-                "word": "māna",
-                "sanskrit_te": "మాన",
-                "en": "vanity",
-                "te": "vanity"
+                "sanskrit": "द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै र्गच्छन्त्यमूढाः पदमव्ययं तत्",
+                "word": "adhyātma-nityā vinivṛitta-kāmāḥ",
+                "transliteration": "adhyātma-nityā vinivṛitta-kāmāḥ",
+                "sanskrit_te": "ద్వన్ద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞై ర్గచ్ఛన్త్యమూఢాః పదమవ్యయం తత్",
+                "en": "Dwelling constantly in the self and God freed from desire to enjoy senses",
+                "te": "Dwelling constantly in the self and God freed from desire to enjoy senses"
             },
             {
-                "sanskrit": "mohāḥ",
-                "word": "mohāḥ",
-                "sanskrit_te": "మోహాః",
-                "en": "delusion",
-                "te": "delusion"
+                "sanskrit": "द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै र्गच्छन्त्यमूढाः पदमव्ययं तत्",
+                "word": "dvandvair vimuktāḥ sukha-duḥkha-sanjñair",
+                "transliteration": "dvandvair vimuktāḥ sukha-duḥkha-sanjñair",
+                "sanskrit_te": "ద్వన్ద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞై ర్గచ్ఛన్త్యమూఢాః పదమవ్యయం తత్",
+                "en": "From the dualities liberated pleasure and pain",
+                "te": "From the dualities liberated pleasure and pain"
             },
             {
-                "sanskrit": "jita",
-                "word": "jita",
-                "sanskrit_te": "జిత",
-                "en": "having overcome",
-                "te": "having overcome"
-            },
-            {
-                "sanskrit": "saṅga",
-                "word": "saṅga",
-                "sanskrit_te": "సఙ్గ",
-                "en": "attachment",
-                "te": "attachment"
-            },
-            {
-                "sanskrit": "doṣhāḥ",
-                "word": "doṣhāḥ",
-                "sanskrit_te": "దోష్హాః",
-                "en": "evils",
-                "te": "evils"
-            },
-            {
-                "sanskrit": "adhyātma-nityāḥ",
-                "word": "adhyātma-nityāḥ",
-                "sanskrit_te": "అధ్యాత్మ-నిత్యాః",
-                "en": "dwelling constantly in the self and God",
-                "te": "dwelling constantly in the self and God"
-            },
-            {
-                "sanskrit": "vinivṛitta",
-                "word": "vinivṛitta",
-                "sanskrit_te": "వినివృఇత్త",
-                "en": "freed from",
-                "te": "freed from"
-            },
-            {
-                "sanskrit": "kāmāḥ",
-                "word": "kāmāḥ",
-                "sanskrit_te": "కామాః",
-                "en": "desire to enjoy senses",
-                "te": "desire to enjoy senses"
-            },
-            {
-                "sanskrit": "dvandvaiḥ",
-                "word": "dvandvaiḥ",
-                "sanskrit_te": "ద్వన్ద్వైః",
-                "en": "from the dualities",
-                "te": "from the dualities"
-            },
-            {
-                "sanskrit": "vimuktāḥ",
-                "word": "vimuktāḥ",
-                "sanskrit_te": "విముక్తాః",
-                "en": "liberated",
-                "te": "liberated"
-            },
-            {
-                "sanskrit": "sukha-duḥkha",
-                "word": "sukha-duḥkha",
-                "sanskrit_te": "సుఖ-దుఃఖ",
-                "en": "pleasure and pain",
-                "te": "pleasure and pain"
-            },
-            {
-                "sanskrit": "saṁjñaiḥ",
-                "word": "saṁjñaiḥ",
-                "sanskrit_te": "సṁజ్ఞైః",
-                "en": "known as",
-                "te": "known as"
-            },
-            {
-                "sanskrit": "gachchhanti",
-                "word": "gachchhanti",
-                "sanskrit_te": "గఛ్ఛ్హన్తి",
-                "en": "attain",
-                "te": "attain"
-            },
-            {
-                "sanskrit": "amūḍhāḥ",
-                "word": "amūḍhāḥ",
-                "sanskrit_te": "అమూఢాః",
-                "en": "unbewildered",
-                "te": "unbewildered"
-            },
-            {
-                "sanskrit": "padam",
-                "word": "padam",
-                "sanskrit_te": "పదమ్",
-                "en": "abode",
-                "te": "abode"
-            },
-            {
-                "sanskrit": "avyayam",
-                "word": "avyayam",
-                "sanskrit_te": "అవ్యయమ్",
-                "en": "eternal",
-                "te": "eternal"
-            },
-            {
-                "sanskrit": "tat",
-                "word": "tat",
-                "sanskrit_te": "తత్",
-                "en": "that",
-                "te": "that"
+                "sanskrit": "द्वन्द्वैर्विमुक्ताः सुखदुःखसंज्ञै र्गच्छन्त्यमूढाः पदमव्ययं तत्",
+                "word": "gachchhanty amūḍhāḥ padam avyayaṁ tat",
+                "transliteration": "gachchhanty amūḍhāḥ padam avyayaṁ tat",
+                "sanskrit_te": "ద్వన్ద్వైర్విముక్తాః సుఖదుఃఖసంజ్ఞై ర్గచ్ఛన్త్యమూఢాః పదమవ్యయం తత్",
+                "en": "Attain unbewildered abode eternal that",
+                "te": "Attain unbewildered abode eternal that"
             }
         ]
     },
@@ -915,116 +444,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "న తద్భాసయతే సూర్యో న శశాఙ్కో న పావకః |\nయద్గత్వా న నివర్తన్తే తద్ధామ పరమం మమ",
         "lineBreakdown": [
             {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "neither",
-                "te": "neither"
+                "sanskrit": "न तद्भासयते सूर्यो न शशाङ्को न पावकः",
+                "word": "na tad bhāsayate sūryo na śhaśhāṅko na pāvakaḥ",
+                "transliteration": "na tad bhāsayate sūryo na śhaśhāṅko na pāvakaḥ",
+                "sanskrit_te": "న తద్భాసయతే సూర్యో న శశాఙ్కో న పావకః",
+                "en": "Neither illumine neither the moon neither fire",
+                "te": "Neither illumine neither the moon neither fire"
             },
             {
-                "sanskrit": "tat",
-                "word": "tat",
-                "sanskrit_te": "తత్",
-                "en": "that",
-                "te": "that"
-            },
-            {
-                "sanskrit": "bhāsayate",
-                "word": "bhāsayate",
-                "sanskrit_te": "భాసయతే",
-                "en": "illumine",
-                "te": "illumine"
-            },
-            {
-                "sanskrit": "sūryaḥ",
-                "word": "sūryaḥ",
-                "sanskrit_te": "సూర్యః",
-                "en": "the sun",
-                "te": "the sun"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "nor",
-                "te": "nor"
-            },
-            {
-                "sanskrit": "śhaśhāṅkaḥ",
-                "word": "śhaśhāṅkaḥ",
-                "sanskrit_te": "శ్హశ్హాఙ్కః",
-                "en": "the moon",
-                "te": "the moon"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "nor",
-                "te": "nor"
-            },
-            {
-                "sanskrit": "pāvakaḥ",
-                "word": "pāvakaḥ",
-                "sanskrit_te": "పావకః",
-                "en": "fire",
-                "te": "fire"
-            },
-            {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "where",
-                "te": "where"
-            },
-            {
-                "sanskrit": "gatvā",
-                "word": "gatvā",
-                "sanskrit_te": "గత్వా",
-                "en": "having gone",
-                "te": "having gone"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "never",
-                "te": "never"
-            },
-            {
-                "sanskrit": "nivartante",
-                "word": "nivartante",
-                "sanskrit_te": "నివర్తన్తే",
-                "en": "they return",
-                "te": "they return"
-            },
-            {
-                "sanskrit": "tat",
-                "word": "tat",
-                "sanskrit_te": "తత్",
-                "en": "that",
-                "te": "that"
-            },
-            {
-                "sanskrit": "dhāma",
-                "word": "dhāma",
-                "sanskrit_te": "ధామ",
-                "en": "abode",
-                "te": "abode"
-            },
-            {
-                "sanskrit": "paramam",
-                "word": "paramam",
-                "sanskrit_te": "పరమమ్",
-                "en": "supreme",
-                "te": "supreme"
-            },
-            {
-                "sanskrit": "mama",
-                "word": "mama",
-                "sanskrit_te": "మమ",
-                "en": "mine",
-                "te": "mine"
+                "sanskrit": "यद्गत्वा न निवर्तन्ते तद्धाम परमं मम",
+                "word": "yad gatvā na nivartante tad dhāma paramaṁ mama",
+                "transliteration": "yad gatvā na nivartante tad dhāma paramaṁ mama",
+                "sanskrit_te": "యద్గత్వా న నివర్తన్తే తద్ధామ పరమం మమ",
+                "en": "Having gone neither they return abode supreme mine",
+                "te": "Having gone neither they return abode supreme mine"
             }
         ]
     },
@@ -1076,81 +509,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "మమైవాంశో జీవలోకే జీవభూతః సనాతనః |\nమనఃషష్ఠానీన్ద్రియాణి ప్రకృతిస్థాని కర్షతి",
         "lineBreakdown": [
             {
-                "sanskrit": "mama",
-                "word": "mama",
-                "sanskrit_te": "మమ",
-                "en": "my",
-                "te": "my"
+                "sanskrit": "ममैवांशो जीवलोके जीवभूतः सनातनः",
+                "word": "mamaivānśho jīva-loke jīva-bhūtaḥ sanātanaḥ",
+                "transliteration": "mamaivānśho jīva-loke jīva-bhūtaḥ sanātanaḥ",
+                "sanskrit_te": "మమైవాంశో జీవలోకే జీవభూతః సనాతనః",
+                "en": "My in the material world the embodied souls eternal",
+                "te": "My in the material world the embodied souls eternal"
             },
             {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "only",
-                "te": "only"
-            },
-            {
-                "sanskrit": "anśhaḥ",
-                "word": "anśhaḥ",
-                "sanskrit_te": "అన్శ్హః",
-                "en": "fragmental part",
-                "te": "fragmental part"
-            },
-            {
-                "sanskrit": "jīva-loke",
-                "word": "jīva-loke",
-                "sanskrit_te": "జీవ-లోకే",
-                "en": "in the material world",
-                "te": "in the material world"
-            },
-            {
-                "sanskrit": "jīva-bhūtaḥ",
-                "word": "jīva-bhūtaḥ",
-                "sanskrit_te": "జీవ-భూతః",
-                "en": "the embodied souls",
-                "te": "the embodied souls"
-            },
-            {
-                "sanskrit": "sanātanaḥ",
-                "word": "sanātanaḥ",
-                "sanskrit_te": "సనాతనః",
-                "en": "eternal",
-                "te": "eternal"
-            },
-            {
-                "sanskrit": "manaḥ",
-                "word": "manaḥ",
-                "sanskrit_te": "మనః",
-                "en": "with the mind",
-                "te": "with the mind"
-            },
-            {
-                "sanskrit": "ṣhaṣhṭhāni",
-                "word": "ṣhaṣhṭhāni",
-                "sanskrit_te": "ష్హష్హ్ఠాని",
-                "en": "the six",
-                "te": "the six"
-            },
-            {
-                "sanskrit": "indriyāṇi",
-                "word": "indriyāṇi",
-                "sanskrit_te": "ఇన్ద్రియాణి",
-                "en": "senses",
-                "te": "senses"
-            },
-            {
-                "sanskrit": "prakṛiti-sthāni",
-                "word": "prakṛiti-sthāni",
-                "sanskrit_te": "ప్రకృఇతి-స్థాని",
-                "en": "bound by material nature",
-                "te": "bound by material nature"
-            },
-            {
-                "sanskrit": "karṣhati",
-                "word": "karṣhati",
-                "sanskrit_te": "కర్ష్హతి",
-                "en": "struggling",
-                "te": "struggling"
+                "sanskrit": "मनःषष्ठानीन्द्रियाणि प्रकृतिस्थानि कर्षति",
+                "word": "manaḥ-ṣhaṣhṭhānīndriyāṇi prakṛiti-sthāni karṣhati",
+                "transliteration": "manaḥ-ṣhaṣhṭhānīndriyāṇi prakṛiti-sthāni karṣhati",
+                "sanskrit_te": "మనఃషష్ఠానీన్ద్రియాణి ప్రకృతిస్థాని కర్షతి",
+                "en": "With the mind the six bound by material nature struggling",
+                "te": "With the mind the six bound by material nature struggling"
             }
         ]
     },
@@ -1202,102 +574,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "శరీరం యదవాప్నోతి యచ్చాప్యుత్క్రామతీశ్వరః |\nగృహీత్వైతాని సంయాతి వాయుర్గన్ధానివాశయాత్",
         "lineBreakdown": [
             {
-                "sanskrit": "śharīram",
-                "word": "śharīram",
-                "sanskrit_te": "శ్హరీరమ్",
-                "en": "the body",
-                "te": "the body"
+                "sanskrit": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः",
+                "word": "śharīraṁ yad avāpnoti yach chāpy utkrāmatīśhvaraḥ",
+                "transliteration": "śharīraṁ yad avāpnoti yach chāpy utkrāmatīśhvaraḥ",
+                "sanskrit_te": "శరీరం యదవాప్నోతి యచ్చాప్యుత్క్రామతీశ్వరః",
+                "en": "The body carries leaves",
+                "te": "The body carries leaves"
             },
             {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "as",
-                "te": "as"
-            },
-            {
-                "sanskrit": "avāpnoti",
-                "word": "avāpnoti",
-                "sanskrit_te": "అవాప్నోతి",
-                "en": "carries",
-                "te": "carries"
-            },
-            {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "as",
-                "te": "as"
-            },
-            {
-                "sanskrit": "cha api",
-                "word": "cha api",
-                "sanskrit_te": "ఛ అపి",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "utkrāmati",
-                "word": "utkrāmati",
-                "sanskrit_te": "ఉత్క్రామతి",
-                "en": "leaves",
-                "te": "leaves"
-            },
-            {
-                "sanskrit": "īśhvaraḥ",
-                "word": "īśhvaraḥ",
-                "sanskrit_te": "ఈశ్హ్వరః",
-                "en": "the Lord of the material body, the embodied soul",
-                "te": "the Lord of the material body, the embodied soul"
-            },
-            {
-                "sanskrit": "gṛihītvā",
-                "word": "gṛihītvā",
-                "sanskrit_te": "గృఇహీత్వా",
-                "en": "taking",
-                "te": "taking"
-            },
-            {
-                "sanskrit": "etāni",
-                "word": "etāni",
-                "sanskrit_te": "ఏతాని",
-                "en": "these",
-                "te": "these"
-            },
-            {
-                "sanskrit": "sanyāti",
-                "word": "sanyāti",
-                "sanskrit_te": "సన్యాతి",
-                "en": "goes away",
-                "te": "goes away"
-            },
-            {
-                "sanskrit": "vāyuḥ",
-                "word": "vāyuḥ",
-                "sanskrit_te": "వాయుః",
-                "en": "the air",
-                "te": "the air"
-            },
-            {
-                "sanskrit": "gandhān",
-                "word": "gandhān",
-                "sanskrit_te": "గన్ధాన్",
-                "en": "fragrance",
-                "te": "fragrance"
-            },
-            {
-                "sanskrit": "iva",
-                "word": "iva",
-                "sanskrit_te": "ఇవ",
-                "en": "like",
-                "te": "like"
-            },
-            {
-                "sanskrit": "āśhayāt",
-                "word": "āśhayāt",
-                "sanskrit_te": "ఆశ్హయాత్",
-                "en": "from seats",
-                "te": "from seats"
+                "sanskrit": "गृहीत्वैतानि संयाति वायुर्गन्धानिवाशयात्",
+                "word": "gṛihītvaitāni sanyāti vāyur gandhān ivāśhayāt",
+                "transliteration": "gṛihītvaitāni sanyāti vāyur gandhān ivāśhayāt",
+                "sanskrit_te": "గృహీత్వైతాని సంయాతి వాయుర్గన్ధానివాశయాత్",
+                "en": "Taking goes away fragrance from seats",
+                "te": "Taking goes away fragrance from seats"
             }
         ]
     },
@@ -1349,102 +639,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "శ్రోత్రం చక్షుః స్పర్శనం చ రసనం ఘ్రాణమేవ చ |\nఅధిష్ఠాయ మనశ్చాయం విషయానుపసేవతే",
         "lineBreakdown": [
             {
-                "sanskrit": "śhrotram",
-                "word": "śhrotram",
-                "sanskrit_te": "శ్హ్రోత్రమ్",
-                "en": "ears",
-                "te": "ears"
+                "sanskrit": "श्रोत्रं चक्षुः स्पर्शनं च रसनं घ्राणमेव च",
+                "word": "śhrotraṁ chakṣhuḥ sparśhanaṁ cha rasanaṁ ghrāṇam eva cha",
+                "transliteration": "śhrotraṁ chakṣhuḥ sparśhanaṁ cha rasanaṁ ghrāṇam eva cha",
+                "sanskrit_te": "శ్రోత్రం చక్షుః స్పర్శనం చ రసనం ఘ్రాణమేవ చ",
+                "en": "Ears eyes the sense of touch and tongue nose also and",
+                "te": "Ears eyes the sense of touch and tongue nose also and"
             },
             {
-                "sanskrit": "chakṣhuḥ",
-                "word": "chakṣhuḥ",
-                "sanskrit_te": "ఛక్ష్హుః",
-                "en": "eyes",
-                "te": "eyes"
-            },
-            {
-                "sanskrit": "sparśhanam",
-                "word": "sparśhanam",
-                "sanskrit_te": "స్పర్శ్హనమ్",
-                "en": "the sense of touch",
-                "te": "the sense of touch"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "rasanam",
-                "word": "rasanam",
-                "sanskrit_te": "రసనమ్",
-                "en": "tongue",
-                "te": "tongue"
-            },
-            {
-                "sanskrit": "ghrāṇam",
-                "word": "ghrāṇam",
-                "sanskrit_te": "ఘ్రాణమ్",
-                "en": "nose",
-                "te": "nose"
-            },
-            {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "adhiṣhṭhāya",
-                "word": "adhiṣhṭhāya",
-                "sanskrit_te": "అధిష్హ్ఠాయ",
-                "en": "grouped around",
-                "te": "grouped around"
-            },
-            {
-                "sanskrit": "manaḥ",
-                "word": "manaḥ",
-                "sanskrit_te": "మనః",
-                "en": "mind",
-                "te": "mind"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "ayam",
-                "word": "ayam",
-                "sanskrit_te": "అయమ్",
-                "en": "they",
-                "te": "they"
-            },
-            {
-                "sanskrit": "viṣhayān",
-                "word": "viṣhayān",
-                "sanskrit_te": "విష్హయాన్",
-                "en": "sense objects",
-                "te": "sense objects"
-            },
-            {
-                "sanskrit": "upasevate",
-                "word": "upasevate",
-                "sanskrit_te": "ఉపసేవతే",
-                "en": "savors",
-                "te": "savors"
+                "sanskrit": "अधिष्ठाय मनश्चायं विषयानुपसेवते",
+                "word": "adhiṣhṭhāya manaśh chāyaṁ viṣhayān upasevate",
+                "transliteration": "adhiṣhṭhāya manaśh chāyaṁ viṣhayān upasevate",
+                "sanskrit_te": "అధిష్ఠాయ మనశ్చాయం విషయానుపసేవతే",
+                "en": "Grouped around they sense objects savors",
+                "te": "Grouped around they sense objects savors"
             }
         ]
     },
@@ -1496,81 +704,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "ఉత్క్రామన్తం స్థితం వాపి భుఞ్జానం వా గుణాన్వితమ్ |\nవిమూఢా నానుపశ్యన్తి పశ్యన్తి జ్ఞానచక్షుషః",
         "lineBreakdown": [
             {
-                "sanskrit": "utkrāmantam",
-                "word": "utkrāmantam",
-                "sanskrit_te": "ఉత్క్రామన్తమ్",
-                "en": "departing",
-                "te": "departing"
+                "sanskrit": "उत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्",
+                "word": "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam",
+                "transliteration": "utkrāmantaṁ sthitaṁ vāpi bhuñjānaṁ vā guṇānvitam",
+                "sanskrit_te": "ఉత్క్రామన్తం స్థితం వాపి భుఞ్జానం వా గుణాన్వితమ్",
+                "en": "Departing residing enjoys or under the spell of the modes of material nature",
+                "te": "Departing residing enjoys or under the spell of the modes of material nature"
             },
             {
-                "sanskrit": "sthitam",
-                "word": "sthitam",
-                "sanskrit_te": "స్థితమ్",
-                "en": "residing",
-                "te": "residing"
-            },
-            {
-                "sanskrit": "vā api",
-                "word": "vā api",
-                "sanskrit_te": "వా అపి",
-                "en": "or even",
-                "te": "or even"
-            },
-            {
-                "sanskrit": "bhuñjānam",
-                "word": "bhuñjānam",
-                "sanskrit_te": "భుఞ్జానమ్",
-                "en": "enjoys",
-                "te": "enjoys"
-            },
-            {
-                "sanskrit": "vā",
-                "word": "vā",
-                "sanskrit_te": "వా",
-                "en": "or",
-                "te": "or"
-            },
-            {
-                "sanskrit": "guṇa-anvitam",
-                "word": "guṇa-anvitam",
-                "sanskrit_te": "గుణ-అన్వితమ్",
-                "en": "under the spell of the modes of material nature",
-                "te": "under the spell of the modes of material nature"
-            },
-            {
-                "sanskrit": "vimūḍhāḥ",
-                "word": "vimūḍhāḥ",
-                "sanskrit_te": "విమూఢాః",
-                "en": "the ignorant",
-                "te": "the ignorant"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "not",
-                "te": "not"
-            },
-            {
-                "sanskrit": "anupaśhyanti",
-                "word": "anupaśhyanti",
-                "sanskrit_te": "అనుపశ్హ్యన్తి",
-                "en": "percieve",
-                "te": "percieve"
-            },
-            {
-                "sanskrit": "paśhyanti",
-                "word": "paśhyanti",
-                "sanskrit_te": "పశ్హ్యన్తి",
-                "en": "behold",
-                "te": "behold"
-            },
-            {
-                "sanskrit": "jñāna-chakṣhuṣhaḥ",
-                "word": "jñāna-chakṣhuṣhaḥ",
-                "sanskrit_te": "జ్ఞాన-ఛక్ష్హుష్హః",
-                "en": "those who possess the eyes of knowledge",
-                "te": "those who possess the eyes of knowledge"
+                "sanskrit": "विमूढा नानुपश्यन्ति पश्यन्ति ज्ञानचक्षुषः",
+                "word": "vimūḍhā nānupaśhyanti paśhyanti jñāna-chakṣhuṣhaḥ",
+                "transliteration": "vimūḍhā nānupaśhyanti paśhyanti jñāna-chakṣhuṣhaḥ",
+                "sanskrit_te": "విమూఢా నానుపశ్యన్తి పశ్యన్తి జ్ఞానచక్షుషః",
+                "en": "The ignorant percieve behold those who possess the eyes of knowledge",
+                "te": "The ignorant percieve behold those who possess the eyes of knowledge"
             }
         ]
     },
@@ -1622,102 +769,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "యతన్తో యోగినశ్చైనం పశ్యన్త్యాత్మన్యవస్థితమ్ |\nయతన్తోఽప్యకృతాత్మానో నైనం పశ్యన్త్యచేతసః",
         "lineBreakdown": [
             {
-                "sanskrit": "yatantaḥ",
-                "word": "yatantaḥ",
-                "sanskrit_te": "యతన్తః",
-                "en": "striving",
-                "te": "striving"
+                "sanskrit": "यतन्तो योगिनश्चैनं पश्यन्त्यात्मन्यवस्थितम्",
+                "word": "yatanto yoginaśh chainaṁ paśhyanty ātmany avasthitam",
+                "transliteration": "yatanto yoginaśh chainaṁ paśhyanty ātmany avasthitam",
+                "sanskrit_te": "యతన్తో యోగినశ్చైనం పశ్యన్త్యాత్మన్యవస్థితమ్",
+                "en": "Striving yogis see in the body enshrined",
+                "te": "Striving yogis see in the body enshrined"
             },
             {
-                "sanskrit": "yoginaḥ",
-                "word": "yoginaḥ",
-                "sanskrit_te": "యోగినః",
-                "en": "yogis",
-                "te": "yogis"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "too",
-                "te": "too"
-            },
-            {
-                "sanskrit": "enam",
-                "word": "enam",
-                "sanskrit_te": "ఏనమ్",
-                "en": "this (the soul)",
-                "te": "this (the soul)"
-            },
-            {
-                "sanskrit": "paśhyanti",
-                "word": "paśhyanti",
-                "sanskrit_te": "పశ్హ్యన్తి",
-                "en": "see",
-                "te": "see"
-            },
-            {
-                "sanskrit": "ātmani",
-                "word": "ātmani",
-                "sanskrit_te": "ఆత్మని",
-                "en": "in the body",
-                "te": "in the body"
-            },
-            {
-                "sanskrit": "avasthitam",
-                "word": "avasthitam",
-                "sanskrit_te": "అవస్థితమ్",
-                "en": "enshrined",
-                "te": "enshrined"
-            },
-            {
-                "sanskrit": "yatantaḥ",
-                "word": "yatantaḥ",
-                "sanskrit_te": "యతన్తః",
-                "en": "strive",
-                "te": "strive"
-            },
-            {
-                "sanskrit": "api",
-                "word": "api",
-                "sanskrit_te": "అపి",
-                "en": "even though",
-                "te": "even though"
-            },
-            {
-                "sanskrit": "akṛita-ātmānaḥ",
-                "word": "akṛita-ātmānaḥ",
-                "sanskrit_te": "అకృఇత-ఆత్మానః",
-                "en": "those whose minds are not purified",
-                "te": "those whose minds are not purified"
-            },
-            {
-                "sanskrit": "na",
-                "word": "na",
-                "sanskrit_te": "న",
-                "en": "not",
-                "te": "not"
-            },
-            {
-                "sanskrit": "enam",
-                "word": "enam",
-                "sanskrit_te": "ఏనమ్",
-                "en": "this",
-                "te": "this"
-            },
-            {
-                "sanskrit": "paśhyanti",
-                "word": "paśhyanti",
-                "sanskrit_te": "పశ్హ్యన్తి",
-                "en": "cognize",
-                "te": "cognize"
-            },
-            {
-                "sanskrit": "achetasaḥ",
-                "word": "achetasaḥ",
-                "sanskrit_te": "అఛేతసః",
-                "en": "unaware",
-                "te": "unaware"
+                "sanskrit": "यतन्तोऽप्यकृतात्मानो नैनं पश्यन्त्यचेतसः",
+                "word": "yatanto ‘py akṛitātmāno nainaṁ paśhyanty achetasaḥ",
+                "transliteration": "yatanto ‘py akṛitātmāno nainaṁ paśhyanty achetasaḥ",
+                "sanskrit_te": "యతన్తోఽప్యకృతాత్మానో నైనం పశ్యన్త్యచేతసః",
+                "en": "Striving those whose minds are not purified see unaware",
+                "te": "Striving those whose minds are not purified see unaware"
             }
         ]
     },
@@ -1769,109 +834,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "యదాదిత్యగతం తేజో జగద్భాసయతేఽఖిలమ్ |\nయచ్చన్ద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "which",
-                "te": "which"
+                "sanskrit": "यदादित्यगतं तेजो जगद्भासयतेऽखिलम्",
+                "word": "yad āditya-gataṁ tejo jagad bhāsayate ’khilam",
+                "transliteration": "yad āditya-gataṁ tejo jagad bhāsayate ’khilam",
+                "sanskrit_te": "యదాదిత్యగతం తేజో జగద్భాసయతేఽఖిలమ్",
+                "en": "In the sun illuminates",
+                "te": "In the sun illuminates"
             },
             {
-                "sanskrit": "āditya-gatam",
-                "word": "āditya-gatam",
-                "sanskrit_te": "ఆదిత్య-గతమ్",
-                "en": "in the sun",
-                "te": "in the sun"
-            },
-            {
-                "sanskrit": "tejaḥ",
-                "word": "tejaḥ",
-                "sanskrit_te": "తేజః",
-                "en": "brilliance",
-                "te": "brilliance"
-            },
-            {
-                "sanskrit": "jagat",
-                "word": "jagat",
-                "sanskrit_te": "జగత్",
-                "en": "solar system",
-                "te": "solar system"
-            },
-            {
-                "sanskrit": "bhāsayate",
-                "word": "bhāsayate",
-                "sanskrit_te": "భాసయతే",
-                "en": "illuminates",
-                "te": "illuminates"
-            },
-            {
-                "sanskrit": "akhilam",
-                "word": "akhilam",
-                "sanskrit_te": "అఖిలమ్",
-                "en": "entire",
-                "te": "entire"
-            },
-            {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "which",
-                "te": "which"
-            },
-            {
-                "sanskrit": "chandramasi",
-                "word": "chandramasi",
-                "sanskrit_te": "ఛన్ద్రమసి",
-                "en": "in the moon",
-                "te": "in the moon"
-            },
-            {
-                "sanskrit": "yat",
-                "word": "yat",
-                "sanskrit_te": "యత్",
-                "en": "which",
-                "te": "which"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "also",
-                "te": "also"
-            },
-            {
-                "sanskrit": "agnau",
-                "word": "agnau",
-                "sanskrit_te": "అగ్నౌ",
-                "en": "in the fire",
-                "te": "in the fire"
-            },
-            {
-                "sanskrit": "tat",
-                "word": "tat",
-                "sanskrit_te": "తత్",
-                "en": "that",
-                "te": "that"
-            },
-            {
-                "sanskrit": "tejaḥ",
-                "word": "tejaḥ",
-                "sanskrit_te": "తేజః",
-                "en": "brightness",
-                "te": "brightness"
-            },
-            {
-                "sanskrit": "viddhi",
-                "word": "viddhi",
-                "sanskrit_te": "విద్ధి",
-                "en": "know",
-                "te": "know"
-            },
-            {
-                "sanskrit": "māmakam",
-                "word": "māmakam",
-                "sanskrit_te": "మామకమ్",
-                "en": "mine",
-                "te": "mine"
+                "sanskrit": "यच्चन्द्रमसि यच्चाग्नौ तत्तेजो विद्धि मामकम्",
+                "word": "yach chandramasi yach chāgnau tat tejo viddhi māmakam",
+                "transliteration": "yach chandramasi yach chāgnau tat tejo viddhi māmakam",
+                "sanskrit_te": "యచ్చన్ద్రమసి యచ్చాగ్నౌ తత్తేజో విద్ధి మామకమ్",
+                "en": "In the moon in the fire that know mine",
+                "te": "In the moon in the fire that know mine"
             }
         ]
     },
@@ -1923,102 +899,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "గామావిశ్య చ భూతాని ధారయామ్యహమోజసా |\nపుష్ణామి చౌషధీః సర్వాః సోమో భూత్వా రసాత్మకః",
         "lineBreakdown": [
             {
-                "sanskrit": "gām",
-                "word": "gām",
-                "sanskrit_te": "గామ్",
-                "en": "earth",
-                "te": "earth"
+                "sanskrit": "गामाविश्य च भूतानि धारयाम्यहमोजसा",
+                "word": "gām āviśhya cha bhūtāni dhārayāmy aham ojasā",
+                "transliteration": "gām āviśhya cha bhūtāni dhārayāmy aham ojasā",
+                "sanskrit_te": "గామావిశ్య చ భూతాని ధారయామ్యహమోజసా",
+                "en": "Earth permeating and living beings sustain I energy",
+                "te": "Earth permeating and living beings sustain I energy"
             },
             {
-                "sanskrit": "āviśhya",
-                "word": "āviśhya",
-                "sanskrit_te": "ఆవిశ్హ్య",
-                "en": "permeating",
-                "te": "permeating"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "bhūtāni",
-                "word": "bhūtāni",
-                "sanskrit_te": "భూతాని",
-                "en": "living beings",
-                "te": "living beings"
-            },
-            {
-                "sanskrit": "dhārayāmi",
-                "word": "dhārayāmi",
-                "sanskrit_te": "ధారయామి",
-                "en": "sustain",
-                "te": "sustain"
-            },
-            {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
-            },
-            {
-                "sanskrit": "ojasā",
-                "word": "ojasā",
-                "sanskrit_te": "ఓజసా",
-                "en": "energy",
-                "te": "energy"
-            },
-            {
-                "sanskrit": "puṣhṇāmi",
-                "word": "puṣhṇāmi",
-                "sanskrit_te": "పుష్హ్ణామి",
-                "en": "nourish",
-                "te": "nourish"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "auṣhadhīḥ",
-                "word": "auṣhadhīḥ",
-                "sanskrit_te": "ఔష్హధీః",
-                "en": "plants",
-                "te": "plants"
-            },
-            {
-                "sanskrit": "sarvāḥ",
-                "word": "sarvāḥ",
-                "sanskrit_te": "సర్వాః",
-                "en": "all",
-                "te": "all"
-            },
-            {
-                "sanskrit": "somaḥ",
-                "word": "somaḥ",
-                "sanskrit_te": "సోమః",
-                "en": "the moon",
-                "te": "the moon"
-            },
-            {
-                "sanskrit": "bhūtvā",
-                "word": "bhūtvā",
-                "sanskrit_te": "భూత్వా",
-                "en": "becoming",
-                "te": "becoming"
-            },
-            {
-                "sanskrit": "rasa-ātmakaḥ",
-                "word": "rasa-ātmakaḥ",
-                "sanskrit_te": "రస-ఆత్మకః",
-                "en": "supplying the juice of life",
-                "te": "supplying the juice of life"
+                "sanskrit": "पुष्णामि चौषधीः सर्वाः सोमो भूत्वा रसात्मकः",
+                "word": "puṣhṇāmi chauṣhadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ",
+                "transliteration": "puṣhṇāmi chauṣhadhīḥ sarvāḥ somo bhūtvā rasātmakaḥ",
+                "sanskrit_te": "పుష్ణామి చౌషధీః సర్వాః సోమో భూత్వా రసాత్మకః",
+                "en": "Nourish plants all becoming supplying the juice of life",
+                "te": "Nourish plants all becoming supplying the juice of life"
             }
         ]
     },
@@ -2070,81 +964,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "అహం వైశ్వానరో భూత్వా ప్రాణినాం దేహమాశ్రితః |\nప్రాణాపానసమాయుక్తః పచామ్యన్నం చతుర్విధమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
+                "sanskrit": "अहं वैश्वानरो भूत्वा प्राणिनां देहमाश्रितः",
+                "word": "ahaṁ vaiśhvānaro bhūtvā prāṇināṁ deham āśhritaḥ",
+                "transliteration": "ahaṁ vaiśhvānaro bhūtvā prāṇināṁ deham āśhritaḥ",
+                "sanskrit_te": "అహం వైశ్వానరో భూత్వా ప్రాణినాం దేహమాశ్రితః",
+                "en": "I fire of digestion becoming of all living beings the body situated",
+                "te": "I fire of digestion becoming of all living beings the body situated"
             },
             {
-                "sanskrit": "vaiśhvānaraḥ",
-                "word": "vaiśhvānaraḥ",
-                "sanskrit_te": "వైశ్హ్వానరః",
-                "en": "fire of digestion",
-                "te": "fire of digestion"
-            },
-            {
-                "sanskrit": "bhūtvā",
-                "word": "bhūtvā",
-                "sanskrit_te": "భూత్వా",
-                "en": "becoming",
-                "te": "becoming"
-            },
-            {
-                "sanskrit": "prāṇinām",
-                "word": "prāṇinām",
-                "sanskrit_te": "ప్రాణినామ్",
-                "en": "of all living beings",
-                "te": "of all living beings"
-            },
-            {
-                "sanskrit": "deham",
-                "word": "deham",
-                "sanskrit_te": "దేహమ్",
-                "en": "the body",
-                "te": "the body"
-            },
-            {
-                "sanskrit": "āśhritaḥ",
-                "word": "āśhritaḥ",
-                "sanskrit_te": "ఆశ్హ్రితః",
-                "en": "situated",
-                "te": "situated"
-            },
-            {
-                "sanskrit": "prāṇa-apāna",
-                "word": "prāṇa-apāna",
-                "sanskrit_te": "ప్రాణ-అపాన",
-                "en": "outgoing and incoming breath",
-                "te": "outgoing and incoming breath"
-            },
-            {
-                "sanskrit": "samāyuktaḥ",
-                "word": "samāyuktaḥ",
-                "sanskrit_te": "సమాయుక్తః",
-                "en": "keeping in balance",
-                "te": "keeping in balance"
-            },
-            {
-                "sanskrit": "pachāmi",
-                "word": "pachāmi",
-                "sanskrit_te": "పఛామి",
-                "en": "I digest",
-                "te": "I digest"
-            },
-            {
-                "sanskrit": "annam",
-                "word": "annam",
-                "sanskrit_te": "అన్నమ్",
-                "en": "foods",
-                "te": "foods"
-            },
-            {
-                "sanskrit": "chatuḥ-vidham",
-                "word": "chatuḥ-vidham",
-                "sanskrit_te": "ఛతుః-విధమ్",
-                "en": "the four kinds",
-                "te": "the four kinds"
+                "sanskrit": "प्राणापानसमायुक्तः पचाम्यन्नं चतुर्विधम्",
+                "word": "prāṇāpāna-samāyuktaḥ pachāmy annaṁ chatur-vidham",
+                "transliteration": "prāṇāpāna-samāyuktaḥ pachāmy annaṁ chatur-vidham",
+                "sanskrit_te": "ప్రాణాపానసమాయుక్తః పచామ్యన్నం చతుర్విధమ్",
+                "en": "Outgoing and incoming breath keeping in balance I digest foods the four kinds",
+                "te": "Outgoing and incoming breath keeping in balance I digest foods the four kinds"
             }
         ]
     },
@@ -2196,151 +1029,36 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "సర్వస్య చాహం హృది సన్నివిష్టో మత్తః స్మృతిర్జ్ఞానమపోహనం చ |\nవేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "sarvasya",
-                "word": "sarvasya",
-                "sanskrit_te": "సర్వస్య",
-                "en": "of all living beings",
-                "te": "of all living beings"
+                "sanskrit": "सर्वस्य चाहं हृदि सन्निविष्टो मत्तः स्मृतिर्ज्ञानमपोहनं च",
+                "word": "sarvasya chāhaṁ hṛidi sanniviṣhṭo",
+                "transliteration": "sarvasya chāhaṁ hṛidi sanniviṣhṭo",
+                "sanskrit_te": "సర్వస్య చాహం హృది సన్నివిష్టో మత్తః స్మృతిర్జ్ఞానమపోహనం చ",
+                "en": "Of all living beings I in the hearts seated",
+                "te": "Of all living beings I in the hearts seated"
             },
             {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
+                "sanskrit": "वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्",
+                "word": "mattaḥ smṛitir jñānam apohanaṁ cha",
+                "transliteration": "mattaḥ smṛitir jñānam apohanaṁ cha",
+                "sanskrit_te": "వేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్",
+                "en": "From me memory knowledge forgetfulness and",
+                "te": "From me memory knowledge forgetfulness and"
             },
             {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
+                "sanskrit": "वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्",
+                "word": "vedaiśh cha sarvair aham eva vedyo",
+                "transliteration": "vedaiśh cha sarvair aham eva vedyo",
+                "sanskrit_te": "వేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్",
+                "en": "By the Vedas and of all living beings I alone",
+                "te": "By the Vedas and of all living beings I alone"
             },
             {
-                "sanskrit": "hṛidi",
-                "word": "hṛidi",
-                "sanskrit_te": "హృఇది",
-                "en": "in the hearts",
-                "te": "in the hearts"
-            },
-            {
-                "sanskrit": "sanniviṣhṭaḥ",
-                "word": "sanniviṣhṭaḥ",
-                "sanskrit_te": "సన్నివిష్హ్టః",
-                "en": "seated",
-                "te": "seated"
-            },
-            {
-                "sanskrit": "mattaḥ",
-                "word": "mattaḥ",
-                "sanskrit_te": "మత్తః",
-                "en": "from me",
-                "te": "from me"
-            },
-            {
-                "sanskrit": "smṛitiḥ",
-                "word": "smṛitiḥ",
-                "sanskrit_te": "స్మృఇతిః",
-                "en": "memory",
-                "te": "memory"
-            },
-            {
-                "sanskrit": "jñānam",
-                "word": "jñānam",
-                "sanskrit_te": "జ్ఞానమ్",
-                "en": "knowledge",
-                "te": "knowledge"
-            },
-            {
-                "sanskrit": "apohanam",
-                "word": "apohanam",
-                "sanskrit_te": "అపోహనమ్",
-                "en": "forgetfulness",
-                "te": "forgetfulness"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "as well as",
-                "te": "as well as"
-            },
-            {
-                "sanskrit": "vedaiḥ",
-                "word": "vedaiḥ",
-                "sanskrit_te": "వేదైః",
-                "en": "by the Vedas",
-                "te": "by the Vedas"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "sarvaiḥ",
-                "word": "sarvaiḥ",
-                "sanskrit_te": "సర్వైః",
-                "en": "all",
-                "te": "all"
-            },
-            {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
-            },
-            {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "alone",
-                "te": "alone"
-            },
-            {
-                "sanskrit": "vedyaḥ",
-                "word": "vedyaḥ",
-                "sanskrit_te": "వేద్యః",
-                "en": "to be known",
-                "te": "to be known"
-            },
-            {
-                "sanskrit": "vedānta-kṛit",
-                "word": "vedānta-kṛit",
-                "sanskrit_te": "వేదాన్త-కృఇత్",
-                "en": "the author of the Vedānt",
-                "te": "the author of the Vedānt"
-            },
-            {
-                "sanskrit": "veda-vit",
-                "word": "veda-vit",
-                "sanskrit_te": "వేద-విత్",
-                "en": "the knower of the meaning of the Vedas",
-                "te": "the knower of the meaning of the Vedas"
-            },
-            {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "alone",
-                "te": "alone"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
+                "sanskrit": "वेदैश्च सर्वैरहमेव वेद्यो वेदान्तकृद्वेदविदेव चाहम्",
+                "word": "vedānta-kṛid veda-vid eva chāham",
+                "transliteration": "vedānta-kṛid veda-vid eva chāham",
+                "sanskrit_te": "వేదైశ్చ సర్వైరహమేవ వేద్యో వేదాన్తకృద్వేదవిదేవ చాహమ్",
+                "en": "The author of the Vedānt by the Vedas alone I",
+                "te": "The author of the Vedānt by the Vedas alone I"
             }
         ]
     },
@@ -2392,109 +1110,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "ద్వావిమౌ పురుషౌ లోకే క్షరశ్చాక్షర ఏవ చ |\nక్షరః సర్వాణి భూతాని కూటస్థోఽక్షర ఉచ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "dvau",
-                "word": "dvau",
-                "sanskrit_te": "ద్వౌ",
-                "en": "two",
-                "te": "two"
+                "sanskrit": "द्वाविमौ पुरुषौ लोके क्षरश्चाक्षर एव च",
+                "word": "dvāv imau puruṣhau loke kṣharaśh chākṣhara eva cha",
+                "transliteration": "dvāv imau puruṣhau loke kṣharaśh chākṣhara eva cha",
+                "sanskrit_te": "ద్వావిమౌ పురుషౌ లోకే క్షరశ్చాక్షర ఏవ చ",
+                "en": "These beings in creation the perishable even and",
+                "te": "These beings in creation the perishable even and"
             },
             {
-                "sanskrit": "imau",
-                "word": "imau",
-                "sanskrit_te": "ఇమౌ",
-                "en": "these",
-                "te": "these"
-            },
-            {
-                "sanskrit": "puruṣhau",
-                "word": "puruṣhau",
-                "sanskrit_te": "పురుష్హౌ",
-                "en": "beings",
-                "te": "beings"
-            },
-            {
-                "sanskrit": "loke",
-                "word": "loke",
-                "sanskrit_te": "లోకే",
-                "en": "in creation",
-                "te": "in creation"
-            },
-            {
-                "sanskrit": "kṣharaḥ",
-                "word": "kṣharaḥ",
-                "sanskrit_te": "క్ష్హరః",
-                "en": "the perishable",
-                "te": "the perishable"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "akṣharaḥ",
-                "word": "akṣharaḥ",
-                "sanskrit_te": "అక్ష్హరః",
-                "en": "the imperishable",
-                "te": "the imperishable"
-            },
-            {
-                "sanskrit": "eva",
-                "word": "eva",
-                "sanskrit_te": "ఏవ",
-                "en": "even",
-                "te": "even"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "kṣharaḥ",
-                "word": "kṣharaḥ",
-                "sanskrit_te": "క్ష్హరః",
-                "en": "the perishable",
-                "te": "the perishable"
-            },
-            {
-                "sanskrit": "sarvāṇi",
-                "word": "sarvāṇi",
-                "sanskrit_te": "సర్వాణి",
-                "en": "all",
-                "te": "all"
-            },
-            {
-                "sanskrit": "bhūtāni",
-                "word": "bhūtāni",
-                "sanskrit_te": "భూతాని",
-                "en": "beings",
-                "te": "beings"
-            },
-            {
-                "sanskrit": "kūṭa-sthaḥ",
-                "word": "kūṭa-sthaḥ",
-                "sanskrit_te": "కూట-స్థః",
-                "en": "the liberated",
-                "te": "the liberated"
-            },
-            {
-                "sanskrit": "akṣharaḥ",
-                "word": "akṣharaḥ",
-                "sanskrit_te": "అక్ష్హరః",
-                "en": "the imperishable",
-                "te": "the imperishable"
-            },
-            {
-                "sanskrit": "uchyate",
-                "word": "uchyate",
-                "sanskrit_te": "ఉఛ్యతే",
-                "en": "is said",
-                "te": "is said"
+                "sanskrit": "क्षरः सर्वाणि भूतानि कूटस्थोऽक्षर उच्यते",
+                "word": "kṣharaḥ sarvāṇi bhūtāni kūṭa-stho ’kṣhara uchyate",
+                "transliteration": "kṣharaḥ sarvāṇi bhūtāni kūṭa-stho ’kṣhara uchyate",
+                "sanskrit_te": "క్షరః సర్వాణి భూతాని కూటస్థోఽక్షర ఉచ్యతే",
+                "en": "The perishable all beings the liberated the perishable is said",
+                "te": "The perishable all beings the liberated the perishable is said"
             }
         ]
     },
@@ -2546,95 +1175,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "ఉత్తమః పురుషస్త్వన్యః పరమాత్మేత్యుదాహృతః |\nయో లోకత్రయమావిశ్య బిభర్త్యవ్యయ ఈశ్వరః",
         "lineBreakdown": [
             {
-                "sanskrit": "uttamaḥ",
-                "word": "uttamaḥ",
-                "sanskrit_te": "ఉత్తమః",
-                "en": "the Supreme",
-                "te": "the Supreme"
+                "sanskrit": "उत्तमः पुरुषस्त्वन्यः परमात्मेत्युदाहृतः",
+                "word": "uttamaḥ puruṣhas tv anyaḥ paramātmety udāhṛitaḥ",
+                "transliteration": "uttamaḥ puruṣhas tv anyaḥ paramātmety udāhṛitaḥ",
+                "sanskrit_te": "ఉత్తమః పురుషస్త్వన్యః పరమాత్మేత్యుదాహృతః",
+                "en": "The Supreme Divine Personality besides the Supreme Soul is said",
+                "te": "The Supreme Divine Personality besides the Supreme Soul is said"
             },
             {
-                "sanskrit": "puruṣhaḥ",
-                "word": "puruṣhaḥ",
-                "sanskrit_te": "పురుష్హః",
-                "en": "Divine Personality",
-                "te": "Divine Personality"
-            },
-            {
-                "sanskrit": "tu",
-                "word": "tu",
-                "sanskrit_te": "తు",
-                "en": "but",
-                "te": "but"
-            },
-            {
-                "sanskrit": "anyaḥ",
-                "word": "anyaḥ",
-                "sanskrit_te": "అన్యః",
-                "en": "besides",
-                "te": "besides"
-            },
-            {
-                "sanskrit": "parama-ātmā",
-                "word": "parama-ātmā",
-                "sanskrit_te": "పరమ-ఆత్మా",
-                "en": "the Supreme Soul",
-                "te": "the Supreme Soul"
-            },
-            {
-                "sanskrit": "iti",
-                "word": "iti",
-                "sanskrit_te": "ఇతి",
-                "en": "thus",
-                "te": "thus"
-            },
-            {
-                "sanskrit": "udāhṛitaḥ",
-                "word": "udāhṛitaḥ",
-                "sanskrit_te": "ఉదాహృఇతః",
-                "en": "is said",
-                "te": "is said"
-            },
-            {
-                "sanskrit": "yaḥ",
-                "word": "yaḥ",
-                "sanskrit_te": "యః",
-                "en": "who",
-                "te": "who"
-            },
-            {
-                "sanskrit": "loka trayam",
-                "word": "loka trayam",
-                "sanskrit_te": "లోక త్రయమ్",
-                "en": "the three worlds",
-                "te": "the three worlds"
-            },
-            {
-                "sanskrit": "āviśhya",
-                "word": "āviśhya",
-                "sanskrit_te": "ఆవిశ్హ్య",
-                "en": "enters",
-                "te": "enters"
-            },
-            {
-                "sanskrit": "bibharti",
-                "word": "bibharti",
-                "sanskrit_te": "బిభర్తి",
-                "en": "supports",
-                "te": "supports"
-            },
-            {
-                "sanskrit": "avyayaḥ",
-                "word": "avyayaḥ",
-                "sanskrit_te": "అవ్యయః",
-                "en": "indestructible",
-                "te": "indestructible"
-            },
-            {
-                "sanskrit": "īśhvaraḥ",
-                "word": "īśhvaraḥ",
-                "sanskrit_te": "ఈశ్హ్వరః",
-                "en": "the controller",
-                "te": "the controller"
+                "sanskrit": "यो लोकत्रयमाविश्य बिभर्त्यव्यय ईश्वरः",
+                "word": "yo loka-trayam āviśhya bibharty avyaya īśhvaraḥ",
+                "transliteration": "yo loka-trayam āviśhya bibharty avyaya īśhvaraḥ",
+                "sanskrit_te": "యో లోకత్రయమావిశ్య బిభర్త్యవ్యయ ఈశ్వరః",
+                "en": "The three worlds enters supports indestructible the controller",
+                "te": "The three worlds enters supports indestructible the controller"
             }
         ]
     },
@@ -2686,109 +1240,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "యస్మాత్క్షరమతీతోఽహమక్షరాదపి చోత్తమః |\nఅతోఽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః",
         "lineBreakdown": [
             {
-                "sanskrit": "yasmāt",
-                "word": "yasmāt",
-                "sanskrit_te": "యస్మాత్",
-                "en": "hence",
-                "te": "hence"
+                "sanskrit": "यस्मात्क्षरमतीतोऽहमक्षरादपि चोत्तमः",
+                "word": "yasmāt kṣharam atīto ’ham akṣharād api chottamaḥ",
+                "transliteration": "yasmāt kṣharam atīto ’ham akṣharād api chottamaḥ",
+                "sanskrit_te": "యస్మాత్క్షరమతీతోఽహమక్షరాదపి చోత్తమః",
+                "en": "Hence to the perishable to the imperishable even",
+                "te": "Hence to the perishable to the imperishable even"
             },
             {
-                "sanskrit": "kṣharam",
-                "word": "kṣharam",
-                "sanskrit_te": "క్ష్హరమ్",
-                "en": "to the perishable",
-                "te": "to the perishable"
-            },
-            {
-                "sanskrit": "atītaḥ",
-                "word": "atītaḥ",
-                "sanskrit_te": "అతీతః",
-                "en": "transcendental",
-                "te": "transcendental"
-            },
-            {
-                "sanskrit": "aham",
-                "word": "aham",
-                "sanskrit_te": "అహమ్",
-                "en": "I",
-                "te": "I"
-            },
-            {
-                "sanskrit": "akṣharāt",
-                "word": "akṣharāt",
-                "sanskrit_te": "అక్ష్హరాత్",
-                "en": "to the imperishable",
-                "te": "to the imperishable"
-            },
-            {
-                "sanskrit": "api",
-                "word": "api",
-                "sanskrit_te": "అపి",
-                "en": "even",
-                "te": "even"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "uttamaḥ",
-                "word": "uttamaḥ",
-                "sanskrit_te": "ఉత్తమః",
-                "en": "transcendental",
-                "te": "transcendental"
-            },
-            {
-                "sanskrit": "ataḥ",
-                "word": "ataḥ",
-                "sanskrit_te": "అతః",
-                "en": "therefore",
-                "te": "therefore"
-            },
-            {
-                "sanskrit": "asmi",
-                "word": "asmi",
-                "sanskrit_te": "అస్మి",
-                "en": "I am",
-                "te": "I am"
-            },
-            {
-                "sanskrit": "loke",
-                "word": "loke",
-                "sanskrit_te": "లోకే",
-                "en": "in the world",
-                "te": "in the world"
-            },
-            {
-                "sanskrit": "vede",
-                "word": "vede",
-                "sanskrit_te": "వేదే",
-                "en": "in the Vedas",
-                "te": "in the Vedas"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "prathitaḥ",
-                "word": "prathitaḥ",
-                "sanskrit_te": "ప్రథితః",
-                "en": "celebrated",
-                "te": "celebrated"
-            },
-            {
-                "sanskrit": "puruṣha-uttamaḥ",
-                "word": "puruṣha-uttamaḥ",
-                "sanskrit_te": "పురుష్హ-ఉత్తమః",
-                "en": "as the Supreme Divine Personality",
-                "te": "as the Supreme Divine Personality"
+                "sanskrit": "अतोऽस्मि लोके वेदे च प्रथितः पुरुषोत्तमः",
+                "word": "ato ’smi loke vede cha prathitaḥ puruṣhottamaḥ",
+                "transliteration": "ato ’smi loke vede cha prathitaḥ puruṣhottamaḥ",
+                "sanskrit_te": "అతోఽస్మి లోకే వేదే చ ప్రథితః పురుషోత్తమః",
+                "en": "In the world in the Vedas and celebrated as the Supreme Divine Personality",
+                "te": "In the world in the Vedas and celebrated as the Supreme Divine Personality"
             }
         ]
     },
@@ -2840,88 +1305,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "యో మామేవమసమ్మూఢో జానాతి పురుషోత్తమమ్ |\nస సర్వవిద్భజతి మాం సర్వభావేన భారత",
         "lineBreakdown": [
             {
-                "sanskrit": "yaḥ",
-                "word": "yaḥ",
-                "sanskrit_te": "యః",
-                "en": "who",
-                "te": "who"
+                "sanskrit": "यो मामेवमसम्मूढो जानाति पुरुषोत्तमम्",
+                "word": "yo mām evam asammūḍho jānāti puruṣhottamam",
+                "transliteration": "yo mām evam asammūḍho jānāti puruṣhottamam",
+                "sanskrit_te": "యో మామేవమసమ్మూఢో జానాతి పురుషోత్తమమ్",
+                "en": "Me thus without a doubt know the Supreme Divine Personality",
+                "te": "Me thus without a doubt know the Supreme Divine Personality"
             },
             {
-                "sanskrit": "mām",
-                "word": "mām",
-                "sanskrit_te": "మామ్",
-                "en": "me",
-                "te": "me"
-            },
-            {
-                "sanskrit": "evam",
-                "word": "evam",
-                "sanskrit_te": "ఏవమ్",
-                "en": "thus",
-                "te": "thus"
-            },
-            {
-                "sanskrit": "asammūḍhaḥ",
-                "word": "asammūḍhaḥ",
-                "sanskrit_te": "అసమ్మూఢః",
-                "en": "without a doubt",
-                "te": "without a doubt"
-            },
-            {
-                "sanskrit": "jānāti",
-                "word": "jānāti",
-                "sanskrit_te": "జానాతి",
-                "en": "know",
-                "te": "know"
-            },
-            {
-                "sanskrit": "puruṣha-uttamam",
-                "word": "puruṣha-uttamam",
-                "sanskrit_te": "పురుష్హ-ఉత్తమమ్",
-                "en": "the Supreme Divine Personality",
-                "te": "the Supreme Divine Personality"
-            },
-            {
-                "sanskrit": "saḥ",
-                "word": "saḥ",
-                "sanskrit_te": "సః",
-                "en": "they",
-                "te": "they"
-            },
-            {
-                "sanskrit": "sarva-vit",
-                "word": "sarva-vit",
-                "sanskrit_te": "సర్వ-విత్",
-                "en": "those with complete knowledge",
-                "te": "those with complete knowledge"
-            },
-            {
-                "sanskrit": "bhajati",
-                "word": "bhajati",
-                "sanskrit_te": "భజతి",
-                "en": "worship",
-                "te": "worship"
-            },
-            {
-                "sanskrit": "mām",
-                "word": "mām",
-                "sanskrit_te": "మామ్",
-                "en": "me",
-                "te": "me"
-            },
-            {
-                "sanskrit": "sarva-bhāvena",
-                "word": "sarva-bhāvena",
-                "sanskrit_te": "సర్వ-భావేన",
-                "en": "with one’s whole being",
-                "te": "with one’s whole being"
-            },
-            {
-                "sanskrit": "bhārata",
-                "word": "bhārata",
-                "sanskrit_te": "భారత",
-                "en": "Arjun, the son of Bharat",
-                "te": "Arjun, the son of Bharat"
+                "sanskrit": "स सर्वविद्भजति मां सर्वभावेन भारत",
+                "word": "sa sarva-vid bhajati māṁ sarva-bhāvena bhārata",
+                "transliteration": "sa sarva-vid bhajati māṁ sarva-bhāvena bhārata",
+                "sanskrit_te": "స సర్వవిద్భజతి మాం సర్వభావేన భారత",
+                "en": "They those with complete knowledge worship me with one’s whole being Arjun, the son of Bharat",
+                "te": "They those with complete knowledge worship me with one’s whole being Arjun, the son of Bharat"
             }
         ]
     },
@@ -2973,102 +1370,20 @@ const CHAPTER_15_SHLOKAS = {
         "telugu_script": "ఇతి గుహ్యతమం శాస్త్రమిదముక్తం మయాఽనఘ |\nఏతద్బుద్ధ్వా బుద్ధిమాన్స్యాత్కృతకృత్యశ్చ భారత",
         "lineBreakdown": [
             {
-                "sanskrit": "iti",
-                "word": "iti",
-                "sanskrit_te": "ఇతి",
-                "en": "these",
-                "te": "these"
+                "sanskrit": "इति गुह्यतमं शास्त्रमिदमुक्तं मयाऽनघ",
+                "word": "iti guhyatamaṁ śhāstram idam uktaṁ mayānagha",
+                "transliteration": "iti guhyatamaṁ śhāstram idam uktaṁ mayānagha",
+                "sanskrit_te": "ఇతి గుహ్యతమం శాస్త్రమిదముక్తం మయాఽనఘ",
+                "en": "These most secret Vedic scriptures this spoken by me",
+                "te": "These most secret Vedic scriptures this spoken by me"
             },
             {
-                "sanskrit": "guhya-tamam",
-                "word": "guhya-tamam",
-                "sanskrit_te": "గుహ్య-తమమ్",
-                "en": "most secret",
-                "te": "most secret"
-            },
-            {
-                "sanskrit": "śhāstram",
-                "word": "śhāstram",
-                "sanskrit_te": "శ్హాస్త్రమ్",
-                "en": "Vedic scriptures",
-                "te": "Vedic scriptures"
-            },
-            {
-                "sanskrit": "idam",
-                "word": "idam",
-                "sanskrit_te": "ఇదమ్",
-                "en": "this",
-                "te": "this"
-            },
-            {
-                "sanskrit": "uktam",
-                "word": "uktam",
-                "sanskrit_te": "ఉక్తమ్",
-                "en": "spoken",
-                "te": "spoken"
-            },
-            {
-                "sanskrit": "mayā",
-                "word": "mayā",
-                "sanskrit_te": "మయా",
-                "en": "by me",
-                "te": "by me"
-            },
-            {
-                "sanskrit": "anagha",
-                "word": "anagha",
-                "sanskrit_te": "అనఘ",
-                "en": "Arjun, the sinless one",
-                "te": "Arjun, the sinless one"
-            },
-            {
-                "sanskrit": "etat",
-                "word": "etat",
-                "sanskrit_te": "ఏతత్",
-                "en": "this",
-                "te": "this"
-            },
-            {
-                "sanskrit": "buddhvā",
-                "word": "buddhvā",
-                "sanskrit_te": "బుద్ధ్వా",
-                "en": "understanding",
-                "te": "understanding"
-            },
-            {
-                "sanskrit": "buddhi-mān",
-                "word": "buddhi-mān",
-                "sanskrit_te": "బుద్ధి-మాన్",
-                "en": "enlightened",
-                "te": "enlightened"
-            },
-            {
-                "sanskrit": "syāt",
-                "word": "syāt",
-                "sanskrit_te": "స్యాత్",
-                "en": "one becomes",
-                "te": "one becomes"
-            },
-            {
-                "sanskrit": "kṛita-kṛityaḥ",
-                "word": "kṛita-kṛityaḥ",
-                "sanskrit_te": "కృఇత-కృఇత్యః",
-                "en": "who fulfills all that is to be accomplished",
-                "te": "who fulfills all that is to be accomplished"
-            },
-            {
-                "sanskrit": "cha",
-                "word": "cha",
-                "sanskrit_te": "ఛ",
-                "en": "and",
-                "te": "and"
-            },
-            {
-                "sanskrit": "bhārata",
-                "word": "bhārata",
-                "sanskrit_te": "భారత",
-                "en": "Arjun, the son of Bharat",
-                "te": "Arjun, the son of Bharat"
+                "sanskrit": "एतद्बुद्ध्वा बुद्धिमान्स्यात्कृतकृत्यश्च भारत",
+                "word": "etad buddhvā buddhimān syāt kṛita-kṛityaśh cha bhārata",
+                "transliteration": "etad buddhvā buddhimān syāt kṛita-kṛityaśh cha bhārata",
+                "sanskrit_te": "ఏతద్బుద్ధ్వా బుద్ధిమాన్స్యాత్కృతకృత్యశ్చ భారత",
+                "en": "Understanding understanding one becomes who fulfills all that is to be accomplished and Arjun, the son of Bharat",
+                "te": "Understanding understanding one becomes who fulfills all that is to be accomplished and Arjun, the son of Bharat"
             }
         ]
     }

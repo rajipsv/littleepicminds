@@ -5,7 +5,8 @@
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
     "gita:generate": "node scripts/generate-gita-full-content.js",
-    "gita:import": "node scripts/import-gita-real-verses.js"
+    "gita:import": "node scripts/import-gita-real-verses.js",
+    "gita:line-breakdown": "node scripts/rebuild-line-breakdown.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",

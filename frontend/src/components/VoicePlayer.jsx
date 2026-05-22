@@ -22,8 +22,8 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
     };
   }, []);
 
-  // Always use English for reliability
-  const effectiveLang = 'en';
+  // hi = Sanskrit shloka (IAST/transliteration); te = Telugu script; en = meanings
+  const effectiveLang = targetLang || currentLang || 'hi';
 
   const playAiVoice = async () => {
     setIsAiLoading(true);
@@ -72,16 +72,16 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
     const utterance = new SpeechSynthesisUtterance(text);
     utteranceRef.current = utterance;
 
-    // Pick the best English voice
     const voices = window.speechSynthesis.getVoices();
-    const enVoice =
-      voices.find(v => v.lang === 'en-US' && v.name.toLowerCase().includes('female')) ||
-      voices.find(v => v.lang === 'en-US') ||
-      voices.find(v => v.lang.startsWith('en')) ||
+    const langPrefix =
+      effectiveLang === 'te' ? 'te' : effectiveLang === 'hi' ? 'hi' : 'en';
+    const preferred =
+      voices.find((v) => v.lang.startsWith(langPrefix)) ||
+      voices.find((v) => v.lang.startsWith('en')) ||
       voices[0];
 
-    if (enVoice) utterance.voice = enVoice;
-    utterance.lang = 'en-US';
+    if (preferred) utterance.voice = preferred;
+    utterance.lang = preferred?.lang || (langPrefix === 'te' ? 'te-IN' : langPrefix === 'hi' ? 'hi-IN' : 'en-US');
     utterance.rate = voiceMode === 'divine' ? 0.8 : rate;
     utterance.pitch = voiceMode === 'divine' ? 0.9 : 1;
 

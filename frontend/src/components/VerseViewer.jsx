@@ -141,18 +141,18 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
           
           <div className="flex-shrink-0 z-10">
             <VoicePlayer 
-              text={isTe && verse.telugu_script ? verse.telugu_script : verse.sanskrit} 
-              targetLang={isTe ? 'te' : 'hi'} // Force hi-IN accent for Sanskrit shlokas
+              text={isTe && verse.telugu_script ? verse.telugu_script : (verse.transliteration || verse.sanskrit)} 
+              targetLang={isTe ? 'te' : 'hi'}
               onWordBoundary={handleWordBoundary}
               onEnd={handleAudioEnd}
             />
           </div>
         </div>
 
-        {/* Step 2: Word by Word — shown immediately after sloka */}
+        {/* Step 2: Line by line — shown immediately after sloka */}
         <div className={`transition-all duration-700 mt-6 ${currentStep >= 2 ? 'opacity-100 translate-y-0 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
           <div className="mb-4 flex justify-between items-center">
-            <h3 className="text-lg font-bold text-white">{isTe ? "పదాల అర్థాలు" : "Word by Word"}</h3>
+            <h3 className="text-lg font-bold text-white">{isTe ? "పంక్తి వారీ అర్థాలు" : "Line by Line"}</h3>
             {currentStep === 2 && (
               <button onClick={handleRepeatComplete} className="text-xs bg-lem-glass-border px-3 py-1 rounded-full text-white hover:bg-lem-accent hover:text-lem-dark transition-colors">
                 {isTe ? "పూర్తయింది" : "Mark Done"}
@@ -162,7 +162,7 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
           <MeaningTable wordByWord={verse.lineBreakdown || verse.word_by_word} />
         </div>
 
-        {/* Step 3: Meaning + Child Meaning — shown after Word by Word */}
+        {/* Step 3: Meaning + Child Meaning — shown after line breakdown */}
         <div className={`transition-all duration-700 ${currentStep >= 3 ? 'opacity-100 translate-y-0 mt-6 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
           <div className="bg-lem-sidebar border border-lem-glass-border text-white p-6 rounded-2xl shadow-md relative overflow-hidden">
             <h3 className="text-xs font-bold text-lem-accent uppercase tracking-widest mb-3 opacity-80">{isTe ? "తాత్పర్యం" : "Meaning"}</h3>

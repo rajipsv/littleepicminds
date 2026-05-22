@@ -9,6 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const Sanscript = require('@indic-transliteration/sanscript');
+const { buildLineBreakdown, cleanSanskrit: cleanSk } = require('./gita-line-breakdown');
 
 const ROOT = path.join(__dirname, '..');
 const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
@@ -42,13 +43,7 @@ const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
 const PREFERRED_AUTHORS = ['Swami Sivananda', 'Swami Gambirananda', 'Swami Adidevananda'];
 
 function cleanSanskrit(text) {
-  if (!text) return '';
-  return text
-    .replace(/।।[\d.]+।।/g, '')
-    .replace(/[।॥]/g, '|')
-    .replace(/\s+/g, ' ')
-    .replace(/\s*\|\s*/g, ' |\n')
-    .trim();
+  return cleanSk(text);
 }
 
 function isPlaceholderShloka(entry) {
@@ -81,36 +76,6 @@ function isPlaceholderTe(entry) {
   return m.includes('అధ్యాయం') || m.includes('Path of Action') || m.includes('Karma Yoga)');
 }
 
-function parseWordMeanings(wordMeanings) {
-  if (!wordMeanings) return [];
-  return wordMeanings
-    .split(/[;\n]/)
-    .map((part) => part.trim())
-    .filter(Boolean)
-    .map((part) => {
-      const dash = part.indexOf('—');
-      if (dash === -1) {
-        const hyphen = part.indexOf('-');
-        if (hyphen > 0) {
-          return {
-            word: part.slice(0, hyphen).trim(),
-            en: part.slice(hyphen + 1).trim(),
-          };
-        }
-        return { word: part, en: part };
-      }
-      const word = part.slice(0, dash).trim();
-      const en = part.slice(dash + 1).trim();
-      return { word, en, te: en };
-    })
-    .map((item) => ({
-      sanskrit: item.word,
-      word: item.word,
-      sanskrit_te: toTeluguFromIast(item.word),
-      en: item.en,
-      te: item.en,
-    }));
-}
 
 function buildEnglishMap() {
   const byVerseId = new Map();
@@ -147,7 +112,6 @@ function verseIndex() {
 function mergeShloka(existing, source, english) {
   const sanskrit = cleanSanskrit(source.text);
   const transliteration = (source.transliteration || '').trim();
-  const lineBreakdown = parseWordMeanings(source.word_meanings);
   const telugu_script = toTeluguScript(sanskrit);
   const placeholder = !existing || isPlaceholderShloka(existing);
 
@@ -156,7 +120,14 @@ function mergeShloka(existing, source, english) {
   merged.sanskrit = sanskrit;
   merged.transliteration = transliteration;
   merged.telugu_script = telugu_script;
-  merged.lineBreakdown = lineBreakdown.length ? lineBreakdown : merged.lineBreakdown;
+  merged.lineBreakdown = buildLineBreakdown({
+    transliteration,
+    sanskrit,
+    telugu_script,
+    word_meanings: source.word_meanings,
+    existingBreakdown: merged.lineBreakdown,
+    fallbackMeaning: english || merged.en?.meaning,
+  });
 
   if (!merged.en) merged.en = {};
   if (!merged.te) merged.te = {};

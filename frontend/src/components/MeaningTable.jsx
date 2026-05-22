@@ -3,19 +3,26 @@ import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
 import { API_URL } from '../api';
 
-const speakWord = (text) => {
+const speakLine = (text, lang = 'en') => {
   if (!('speechSynthesis' in window)) return;
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
   const voices = window.speechSynthesis.getVoices();
+  const prefix = lang === 'te' ? 'te' : lang === 'hi' ? 'hi' : 'en';
   const preferred =
-    voices.find(v => v.lang === 'en-US') ||
-    voices.find(v => v.lang.startsWith('en')) ||
+    voices.find((v) => v.lang.startsWith(prefix)) ||
+    voices.find((v) => v.lang.startsWith('en')) ||
     voices[0];
   if (preferred) utterance.voice = preferred;
-  utterance.lang = 'en-US';
+  utterance.lang = preferred?.lang || 'en-US';
   utterance.rate = 0.8;
   window.speechSynthesis.speak(utterance);
+};
+
+/** Roman/Telugu line for TTS — Devanagari sounds unnatural on most TTS engines. */
+const ttsLineText = (item, isTe) => {
+  if (isTe && item.sanskrit_te) return item.sanskrit_te;
+  return item.transliteration || item.word || item.sanskrit || '';
 };
 
 const MeaningTable = ({ wordByWord }) => {
@@ -25,15 +32,20 @@ const MeaningTable = ({ wordByWord }) => {
 
   if (!wordByWord || wordByWord.length === 0) return null;
 
-  const handlePlay = async (word, meaning, index) => {
+  const handlePlay = async (item, meaning, index) => {
+    const line = ttsLineText(item, isTe);
+    // IAST line → hi-IN; Telugu script → te-IN (Devanagari to TTS sounds unnatural)
+    const ttsLang = isTe ? 'te' : 'hi';
+    const ttsText = `${line}, ${meaning}`;
+
     setPlayingIndex(index);
     try {
       const response = await fetch(`${API_URL || ''}/api/tts`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          text: `${word}. ${meaning}`,
-          target_language_code: 'en',
+          text: ttsText,
+          target_language_code: ttsLang,
           speaker: 'roopa'
         })
       });
@@ -44,15 +56,14 @@ const MeaningTable = ({ wordByWord }) => {
       if (data.audios && data.audios[0]) {
         const audio = new Audio(`data:audio/wav;base64,${data.audios[0]}`);
         audio.onended = () => setPlayingIndex(-1);
-        audio.onerror = () => { setPlayingIndex(-1); speakWord(`${word}. ${meaning}`); };
+        audio.onerror = () => { setPlayingIndex(-1); speakLine(ttsText, ttsLang); };
         await audio.play();
       } else {
-        speakWord(`${word}. ${meaning}`);
+        speakLine(ttsText, ttsLang);
         setTimeout(() => setPlayingIndex(-1), 2000);
       }
     } catch (err) {
-      // Silently fall back to browser TTS
-      speakWord(`${word}. ${meaning}`);
+      speakLine(ttsText, ttsLang);
       setTimeout(() => setPlayingIndex(-1), 2000);
     }
   };
@@ -66,7 +77,7 @@ const MeaningTable = ({ wordByWord }) => {
             <tr>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider w-10"></th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
-                {isTe ? "పదం" : "Word"}
+                {isTe ? "పంక్తి" : "Line"}
               </th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
                 {isTe ? "అర్థం" : "Meaning"}
@@ -76,7 +87,6 @@ const MeaningTable = ({ wordByWord }) => {
           <tbody className="bg-white/5 divide-y divide-white/5">
             {wordByWord.map((item, index) => {
               const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-              const audioWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.sanskrit_devanagari || item.sanskrit);
               const meaning = isTe && item.te ? item.te : item.en || item.meaning;
               const isPlaying = playingIndex === index;
 
@@ -84,7 +94,7 @@ const MeaningTable = ({ wordByWord }) => {
                 <tr key={index} className="hover:bg-white/10 transition-colors">
                   <td className="px-3 py-3">
                     <button
-                      onClick={() => handlePlay(audioWord, meaning, index)}
+                      onClick={() => handlePlay(item, meaning, index)}
                       className={`w-8 h-8 rounded-full flex items-center justify-center transition-all border ${
                         isPlaying
                           ? 'bg-lem-accent border-lem-accent text-lem-dark scale-110'
@@ -111,14 +121,13 @@ const MeaningTable = ({ wordByWord }) => {
       <div className="md:hidden space-y-3">
         {wordByWord.map((item, index) => {
           const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
-          const audioWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.sanskrit_devanagari || item.sanskrit);
           const meaning = isTe && item.te ? item.te : item.en || item.meaning;
           const isPlaying = playingIndex === index;
 
           return (
             <div key={index} className="glass-panel p-4 rounded-2xl border border-white/5 flex items-start gap-4">
               <button
-                onClick={() => handlePlay(audioWord, meaning, index)}
+                onClick={() => handlePlay(item, meaning, index)}
                 className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all border ${
                   isPlaying
                     ? 'bg-lem-accent border-lem-accent text-lem-dark shadow-lg'

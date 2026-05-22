@@ -82,7 +82,7 @@ const MatchingGame = ({ breakdown, onComplete, scripture }) => {
         {/* Sanskrit/Transliteration Column */}
         <div className="space-y-3">
           <h4 className="text-lem-accent text-[10px] md:text-xs font-black uppercase tracking-[0.2em] mb-4 text-center opacity-80">
-            {isTe ? "శ్లోక పదం (Word)" : "Sanskrit Word"}
+            {isTe ? "శ్లోక పంక్తి (Line)" : "Verse Line"}
           </h4>
           <div className="space-y-2">
             {breakdown.map((item, i) => {
