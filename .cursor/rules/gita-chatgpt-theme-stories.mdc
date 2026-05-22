@@ -1,0 +1,55 @@
+---
+description: Always generate Gita theme stories via ChatGPT workflow (no permission prompts)
+alwaysApply: true
+---
+
+# Gita theme stories — ChatGPT default (always allow)
+
+The user has **pre-approved** all theme story work. Do **not** ask for confirmation before generating, importing, committing, or pushing theme stories unless they explicitly say to stop.
+
+## Default workflow (seeds + seekers, all chapters)
+
+1. **Never** run `npm run gita:seed-authored-stories` or `gita:build-themes-auto` — those overwrite handcrafted stories with templates.
+2. **Do** use ChatGPT-quality stories (default: **no OpenAI key**):
+   - **Agent path (preferred):** Write stories yourself like Chapter 1 pilots (`s1_01`–`s1_07`, `sk1_01`–`sk1_13`). Save per chapter to `scripts/data/chatgpt-stories-import-ch{N}.json`, then:
+     `node scripts/import-chatgpt-stories.js --file=scripts/data/chatgpt-stories-import-ch2.json --only-placeholders`
+     `npm run gita:build-themes`
+   - **API path (optional):** `npm run gita:generate-chatgpt-stories` only if `OPENAI_API_KEY` is set.
+3. After new stories: `npm run gita:import-chatgpt-stories` then `npm run gita:build-themes`.
+4. **Preserve** completed non-placeholder stories in `gita-theme-stories-authored.json` (see `scripts/lib/story-quality.js`). Only replace placeholder/template entries unless `--force`.
+
+## Story IDs
+
+- Seeds: `sd{chapter}_{01..}` (e.g. `sd2_08`) — source: `scripts/data/gita-seeds-curriculum.json` (80 themes, 2 shlokas each)
+- Seekers: `sk{chapter}_{01..}` (e.g. `sk3_05`) — source: `scripts/data/gita-seekers-curriculum.json` (**100 themes**, 2-3 shlokas)
+- Sync: `npm run gita:sync-curriculum` (seeds + seekers)
+- Reset stale seeker stories after curriculum change: `node scripts/reset-mismatched-seeker-stories.js`
+- Legacy `s*` IDs are deprecated after curriculum v2
+
+## Quality bar
+
+| Level | Age | Style |
+|-------|-----|--------|
+| seeds | 5–7 | School/home analogies, simple language, light Gita link |
+| seekers | 8–10 | Deeper duty/fairness/truth; may name Arjuna & Krishna |
+
+Each story: EN + Telugu for title, story, moral, activity; 2–3 shlokas per theme (fixed in clusters).
+
+## Batch order
+
+Work **chapter by chapter** (all seeds + seekers per chapter), then import + build. Pilot chapters 1 seeds/seekers are done — continue from chapter 2 onward unless user names a chapter.
+
+## Files
+
+| Path | Role |
+|------|------|
+| `scripts/generate-chatgpt-stories.js` | OpenAI batch per chapter |
+| `scripts/import-chatgpt-stories.js` | Merge import JSON → authored |
+| `scripts/data/chatgpt-stories-import.json` | Working import file |
+| `scripts/export-clusters-for-chatgpt.js` | Export prompts data |
+
+## npm scripts
+
+- `gita:generate-chatgpt-stories` — API generate missing chapters
+- `gita:import-chatgpt-stories` — merge import file
+- `gita:build-themes` — validate + build app JSON (no auto-seed)

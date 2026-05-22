@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "version": 1,
+    "title": "Little Epic Minds — Seekers curriculum (100 themes, 2-3 shlokas each)",
+    "seekersTotal": 100,
+    "idPrefix": "sk",
+    "shlokasPerTheme": "2-3"
+  },
+  "chapters": {
+    "1": {
+      "title": "Arjuna's Emotional Conflict",
+      "themes": [
+        { "id": "sk1_01", "shlokas": ["1.1", "1.2"], "theme": "Big challenges create inner pressure" },
+        { "id": "sk1_02", "shlokas": ["1.3", "1.7", "1.10"], "theme": "Leaders can feel fear and insecurity too" },
+        { "id": "sk1_03", "shlokas": ["1.12", "1.14", "1.15"], "theme": "Guidance and support create confidence" },
+        { "id": "sk1_04", "shlokas": ["1.21", "1.22", "1.23"], "theme": "Observe carefully before reacting" },
+        { "id": "sk1_05", "shlokas": ["1.28", "1.29", "1.30"], "theme": "Fear affects body, thoughts, and confidence" },
+        { "id": "sk1_06", "shlokas": ["1.31", "1.32", "1.33"], "theme": "Emotional confusion can remove motivation" },
+        { "id": "sk1_07", "shlokas": ["1.34", "1.35", "1.36"], "theme": "Attachment makes difficult duties painful" },
+        { "id": "sk1_08", "shlokas": ["1.36", "1.37"], "theme": "Fear of consequences creates hesitation" },
+        { "id": "sk1_09", "shlokas": ["1.38", "1.39", "1.40"], "theme": "Overthinking future problems creates stress" },
+        { "id": "sk1_10", "shlokas": ["1.41", "1.42", "1.45"], "theme": "Negative thinking leads to hopelessness" }
+      ]
+    },
+    "2": {
+      "title": "Courage, Wisdom & Emotional Balance",
+      "themes": [
+        { "id": "sk2_01", "shlokas": ["2.2", "2.3", "2.7"], "theme": "Courage begins when we ask for guidance" },
+        { "id": "sk2_02", "shlokas": ["2.4", "2.5", "2.6"], "theme": "Emotional conflict makes decisions harder" },
+        { "id": "sk2_03", "shlokas": ["2.8", "2.11"], "theme": "Strong emotions can block clear thinking" },
+        { "id": "sk2_04", "shlokas": ["2.12", "2.13", "2.14"], "theme": "Wise people understand change and emotions" },
+        { "id": "sk2_05", "shlokas": ["2.15", "2.16", "2.17"], "theme": "Truth stays strong during difficulties" },
+        { "id": "sk2_06", "shlokas": ["2.18", "2.20"], "theme": "The soul cannot be destroyed" },
+        { "id": "sk2_07", "shlokas": ["2.22", "2.27", "2.30"], "theme": "Change is natural and the soul continues" },
+        { "id": "sk2_08", "shlokas": ["2.31", "2.37", "2.38"], "theme": "Duty requires courage and balance" },
+        { "id": "sk2_09", "shlokas": ["2.39", "2.41", "2.44"], "theme": "Focused minds avoid distractions" },
+        { "id": "sk2_10", "shlokas": ["2.45", "2.46"], "theme": "Rise above extremes" },
+        { "id": "sk2_11", "shlokas": ["2.47", "2.48", "2.50"], "theme": "Calm effort matters more than rewards" },
+        { "id": "sk2_12", "shlokas": ["2.51", "2.52", "2.53"], "theme": "Wisdom removes confusion" },
+        { "id": "sk2_13", "shlokas": ["2.54", "2.55", "2.56"], "theme": "Self-control creates emotional stability" },
+        { "id": "sk2_14", "shlokas": ["2.57", "2.58", "2.61"], "theme": "Discipline protects the mind" },
+        { "id": "sk2_15", "shlokas": ["2.62", "2.63", "2.67"], "theme": "Small negative thoughts grow into suffering" },
+        { "id": "sk2_16", "shlokas": ["2.64", "2.65", "2.66"], "theme": "Peace comes through discipline" },
+        { "id": "sk2_17", "shlokas": ["2.68", "2.70", "2.71"], "theme": "Inner peace comes from letting go" },
+        { "id": "sk2_18", "shlokas": ["2.72"], "theme": "Steady wisdom brings lasting peace" }
+      ]
+    },
+    "3": {
+      "title": "Responsibility & Karma Yoga",
+      "themes": [
+        { "id": "sk3_01", "shlokas": ["3.5", "3.7", "3.8"], "theme": "Responsibility cannot be avoided" },
+        { "id": "sk3_02", "shlokas": ["3.9", "3.10", "3.13"], "theme": "Work should help and nourish others" },
+        { "id": "sk3_03", "shlokas": ["3.19", "3.20", "3.21"], "theme": "Good leaders inspire through actions" },
+        { "id": "sk3_04", "shlokas": ["3.22", "3.25"], "theme": "Wise people serve without selfishness" },
+        { "id": "sk3_05", "shlokas": ["3.27", "3.30", "3.35"], "theme": "Ego and comparison create confusion" },
+        { "id": "sk3_06", "shlokas": ["3.36", "3.37", "3.39"], "theme": "Desire slowly hides wisdom" },
+        { "id": "sk3_07", "shlokas": ["3.41", "3.42", "3.43"], "theme": "Inner enemies must be controlled early" }
+      ]
+    },
+    "4": {
+      "title": "Knowledge & Sacred Action",
+      "themes": [
+        { "id": "sk4_01", "shlokas": ["4.1", "4.5"], "theme": "Ancient wisdom guides humanity" },
+        { "id": "sk4_02", "shlokas": ["4.7", "4.8", "4.9"], "theme": "Divine goodness protects the world" },
+        { "id": "sk4_03", "shlokas": ["4.13", "4.14"], "theme": "Every role has purpose" },
+        { "id": "sk4_04", "shlokas": ["4.18", "4.19", "4.22"], "theme": "Wise people act without selfishness" },
+        { "id": "sk4_05", "shlokas": ["4.24", "4.28"], "theme": "Work becomes sacred with the right attitude" },
+        { "id": "sk4_06", "shlokas": ["4.33", "4.34"], "theme": "Humility helps learning" },
+        { "id": "sk4_07", "shlokas": ["4.36", "4.38", "4.39"], "theme": "Knowledge removes fear and confusion" },
+        { "id": "sk4_08", "shlokas": ["4.40", "4.41", "4.42"], "theme": "Doubt blocks growth and clarity" }
+      ]
+    },
+    "5": {
+      "title": "Peace, Equality & Detachment",
+      "themes": [
+        { "id": "sk5_01", "shlokas": ["5.8", "5.10", "5.11"], "theme": "Peace comes from selfless action" },
+        { "id": "sk5_02", "shlokas": ["5.12", "5.18", "5.19"], "theme": "Wise people stay calm and equal" },
+        { "id": "sk5_03", "shlokas": ["5.20", "5.21"], "theme": "Real happiness comes from within" },
+        { "id": "sk5_04", "shlokas": ["5.22", "5.23", "5.24"], "theme": "Temporary pleasures cannot create lasting peace" },
+        { "id": "sk5_05", "shlokas": ["5.25", "5.27", "5.29"], "theme": "Calm and spiritual people help the world" }
+      ]
+    },
+    "6": {
+      "title": "Mind, Discipline & Focus",
+      "themes": [
+        { "id": "sk6_01", "shlokas": ["6.5", "6.6", "6.7"], "theme": "The mind can become our best friend" },
+        { "id": "sk6_02", "shlokas": ["6.9", "6.10"], "theme": "Balanced people treat everyone fairly" },
+        { "id": "sk6_03", "shlokas": ["6.11", "6.16", "6.17"], "theme": "Discipline and healthy habits create focus" },
+        { "id": "sk6_04", "shlokas": ["6.19", "6.20"], "theme": "Deep concentration creates peace" },
+        { "id": "sk6_05", "shlokas": ["6.26", "6.27", "6.29"], "theme": "Bringing the mind back builds compassion" },
+        { "id": "sk6_06", "shlokas": ["6.32", "6.35", "6.36"], "theme": "Understanding others requires self-control" },
+        { "id": "sk6_07", "shlokas": ["6.40", "6.41"], "theme": "Good efforts are never wasted" },
+        { "id": "sk6_08", "shlokas": ["6.46", "6.47"], "theme": "Devotion completes wisdom" }
+      ]
+    },
+    "7": {
+      "title": "Faith & Understanding",
+      "themes": [
+        { "id": "sk7_01", "shlokas": ["7.3", "7.5", "7.7"], "theme": "Deep wisdom is rare and valuable" },
+        { "id": "sk7_02", "shlokas": ["7.8", "7.9"], "theme": "Divine presence exists everywhere" },
+        { "id": "sk7_03", "shlokas": ["7.14", "7.15"], "theme": "Ego blocks wisdom" },
+        { "id": "sk7_04", "shlokas": ["7.16", "7.17"], "theme": "People seek wisdom for different reasons" },
+        { "id": "sk7_05", "shlokas": ["7.19", "7.20"], "theme": "Wisdom grows slowly through experience" }
+      ]
+    },
+    "8": {
+      "title": "Thought & Spiritual Focus",
+      "themes": [
+        { "id": "sk8_01", "shlokas": ["8.5", "8.6", "8.7"], "theme": "Thoughts shape our future" },
+        { "id": "sk8_02", "shlokas": ["8.8", "8.10"], "theme": "Focused minds become spiritually strong" },
+        { "id": "sk8_03", "shlokas": ["8.13", "8.15"], "theme": "Spiritual focus creates peace" }
+      ]
+    },
+    "9": {
+      "title": "Love, Trust & Devotion",
+      "themes": [
+        { "id": "sk9_01", "shlokas": ["9.22", "9.24"], "theme": "God protects sincere devotion" },
+        { "id": "sk9_02", "shlokas": ["9.26", "9.27", "9.28"], "theme": "Small actions done with love matter" },
+        { "id": "sk9_03", "shlokas": ["9.29", "9.30", "9.31"], "theme": "Everyone can improve and grow" },
+        { "id": "sk9_04", "shlokas": ["9.32", "9.33", "9.34"], "theme": "Devotion is open to everyone" }
+      ]
+    },
+    "10": {
+      "title": "Divine Greatness",
+      "themes": [
+        { "id": "sk10_01", "shlokas": ["10.8", "10.9", "10.10"], "theme": "Wisdom grows through devotion" },
+        { "id": "sk10_02", "shlokas": ["10.11", "10.20"], "theme": "Divine guidance removes darkness" },
+        { "id": "sk10_03", "shlokas": ["10.22", "10.41", "10.42"], "theme": "Greatness reflects divine power" }
+      ]
+    },
+    "11": {
+      "title": "Universal Vision",
+      "themes": [
+        { "id": "sk11_01", "shlokas": ["11.8", "11.10", "11.12"], "theme": "Some truths are beyond ordinary sight" },
+        { "id": "sk11_02", "shlokas": ["11.13", "11.15"], "theme": "Everything in the universe is connected" },
+        { "id": "sk11_03", "shlokas": ["11.32", "11.33"], "theme": "Become an instrument for good" }
+      ]
+    },
+    "12": {
+      "title": "Devotion & Character",
+      "themes": [
+        { "id": "sk12_01", "shlokas": ["12.13", "12.14", "12.15"], "theme": "Kindness and patience create peace" },
+        { "id": "sk12_02", "shlokas": ["12.16", "12.17"], "theme": "Balanced people stay emotionally strong" },
+        { "id": "sk12_03", "shlokas": ["12.18", "12.19", "12.20"], "theme": "Calm and fair people are deeply loved" }
+      ]
+    },
+    "13": {
+      "title": "Wisdom & Self-Understanding",
+      "themes": [
+        { "id": "sk13_01", "shlokas": ["13.8", "13.9", "13.12"], "theme": "Humility is the beginning of wisdom" },
+        { "id": "sk13_02", "shlokas": ["13.10", "13.11"], "theme": "Seeking truth requires sincerity" },
+        { "id": "sk13_03", "shlokas": ["13.22", "13.23"], "theme": "The soul experiences life through the body" }
+      ]
+    },
+    "14": {
+      "title": "Habits & Human Nature",
+      "themes": [
+        { "id": "sk14_01", "shlokas": ["14.6", "14.7", "14.8"], "theme": "Human behavior is shaped by habits" },
+        { "id": "sk14_02", "shlokas": ["14.9", "14.11"], "theme": "Our actions reveal our mindset" },
+        { "id": "sk14_03", "shlokas": ["14.13", "14.17"], "theme": "Laziness blocks wisdom" },
+        { "id": "sk14_04", "shlokas": ["14.18", "14.20", "14.26"], "theme": "Wisdom and devotion help us rise higher" }
+      ]
+    },
+    "15": {
+      "title": "Soul & Purpose",
+      "themes": [
+        { "id": "sk15_01", "shlokas": ["15.1", "15.3", "15.5"], "theme": "Life is a journey of understanding" },
+        { "id": "sk15_02", "shlokas": ["15.6", "15.7"], "theme": "Every soul carries divine value" },
+        { "id": "sk15_03", "shlokas": ["15.10", "15.15", "15.16"], "theme": "Divine wisdom guides our understanding" }
+      ]
+    },
+    "16": {
+      "title": "Good & Bad Qualities",
+      "themes": [
+        { "id": "sk16_01", "shlokas": ["16.1", "16.2", "16.3"], "theme": "Good qualities build strong character" },
+        { "id": "sk16_02", "shlokas": ["16.5", "16.7"], "theme": "Negative qualities create suffering" },
+        { "id": "sk16_03", "shlokas": ["16.10", "16.12"], "theme": "Greed and ego create endless stress" },
+        { "id": "sk16_04", "shlokas": ["16.21", "16.22"], "theme": "Anger, greed, and desire destroy peace" }
+      ]
+    },
+    "17": {
+      "title": "Faith & Discipline",
+      "themes": [
+        { "id": "sk17_01", "shlokas": ["17.3", "17.4"], "theme": "Faith shapes personality" },
+        { "id": "sk17_02", "shlokas": ["17.14", "17.15", "17.16"], "theme": "Discipline includes thoughts, words, and actions" },
+        { "id": "sk17_03", "shlokas": ["17.17", "17.20"], "theme": "Calmness and generosity create inner strength" },
+        { "id": "sk17_04", "shlokas": ["17.22", "17.28"], "theme": "Careless actions lose meaning" }
+      ]
+    },
+    "18": {
+      "title": "Duty, Purpose & Surrender",
+      "themes": [
+        { "id": "sk18_01", "shlokas": ["18.45", "18.46", "18.47"], "theme": "Everyone has a unique purpose" },
+        { "id": "sk18_02", "shlokas": ["18.48", "18.49"], "theme": "Growth happens slowly through effort" },
+        { "id": "sk18_03", "shlokas": ["18.56", "18.57", "18.58"], "theme": "Trust reduces fear during difficult work" },
+        { "id": "sk18_04", "shlokas": ["18.61", "18.62"], "theme": "Divine guidance exists within us" },
+        { "id": "sk18_05", "shlokas": ["18.65", "18.66"], "theme": "Love and surrender bring lasting peace" }
+      ]
+    }
+  }
+}

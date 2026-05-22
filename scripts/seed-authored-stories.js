@@ -53,8 +53,8 @@ function main() {
   for (const [ch, data] of Object.entries(clusters.gita)) {
     for (const level of ['seeds', 'seekers']) {
       (data[level] || []).forEach((cluster, i) => {
-        const prefix = level === 'seeds' ? 's' : 'sk';
-        const id = `${prefix}${ch}_${String(i + 1).padStart(2, '0')}`;
+        const prefix = level === 'seeds' ? 'sd' : 'sk';
+        const id = cluster.id || `${prefix}${ch}_${String(i + 1).padStart(2, '0')}`;
         stories[id] = buildAuthoredEntry(id, cluster, Number(ch), level, i, sources);
       });
     }

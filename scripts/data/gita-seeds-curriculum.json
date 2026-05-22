@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "version": 2,
+    "title": "Little Epic Minds — Seeds curriculum (80 themes, 2 shlokas each)",
+    "seedsTotal": 80,
+    "idPrefix": "sd",
+    "shlokasPerTheme": 2
+  },
+  "chapters": {
+    "1": {
+      "title": "Arjuna's Feelings & Fear",
+      "themes": [
+        { "id": "sd1_01", "shlokas": ["1.1", "1.2"], "theme": "Big situations can make people nervous" },
+        { "id": "sd1_02", "shlokas": ["1.3", "1.7"], "theme": "Leaders should stay calm during challenges" },
+        { "id": "sd1_03", "shlokas": ["1.10", "1.12"], "theme": "Fear can hide behind loud confidence" },
+        { "id": "sd1_04", "shlokas": ["1.14", "1.21"], "theme": "Asking for guidance is a strength" },
+        { "id": "sd1_05", "shlokas": ["1.22", "1.23"], "theme": "Think carefully before acting" },
+        { "id": "sd1_06", "shlokas": ["1.28", "1.29"], "theme": "Fear affects both body and mind" },
+        { "id": "sd1_07", "shlokas": ["1.30", "1.31"], "theme": "Confusion makes decisions difficult" },
+        { "id": "sd1_08", "shlokas": ["1.32", "1.35"], "theme": "Rewards are not more important than people" },
+        { "id": "sd1_09", "shlokas": ["1.36", "1.38"], "theme": "Overthinking creates more fear" },
+        { "id": "sd1_10", "shlokas": ["1.40", "1.45"], "theme": "Giving up begins in the mind" }
+      ]
+    },
+    "2": {
+      "title": "Courage, Calmness & Wisdom",
+      "themes": [
+        { "id": "sd2_01", "shlokas": ["2.2", "2.3"], "theme": "Courage means standing up again" },
+        { "id": "sd2_02", "shlokas": ["2.7", "2.11"], "theme": "Wise people ask questions and learn" },
+        { "id": "sd2_03", "shlokas": ["2.13", "2.14"], "theme": "Life keeps changing" },
+        { "id": "sd2_04", "shlokas": ["2.15", "2.16"], "theme": "Truth stays strong through difficulties" },
+        { "id": "sd2_05", "shlokas": ["2.17", "2.20"], "theme": "The soul lives forever" },
+        { "id": "sd2_06", "shlokas": ["2.22", "2.27"], "theme": "Change is natural in life" },
+        { "id": "sd2_07", "shlokas": ["2.31", "2.38"], "theme": "Do the right thing bravely" },
+        { "id": "sd2_08", "shlokas": ["2.47", "2.48"], "theme": "Focus on effort instead of rewards" },
+        { "id": "sd2_09", "shlokas": ["2.49", "2.50"], "theme": "Smart and calm work matters" },
+        { "id": "sd2_10", "shlokas": ["2.55", "2.56"], "theme": "Calm people make better choices" },
+        { "id": "sd2_11", "shlokas": ["2.57", "2.58"], "theme": "Self-control creates strength" },
+        { "id": "sd2_12", "shlokas": ["2.62", "2.63"], "theme": "Angry thoughts grow step by step" },
+        { "id": "sd2_13", "shlokas": ["2.64", "2.65"], "theme": "Discipline brings peace" },
+        { "id": "sd2_14", "shlokas": ["2.66", "2.67"], "theme": "A restless mind cannot stay happy" },
+        { "id": "sd2_15", "shlokas": ["2.70", "2.71"], "theme": "Peace comes from letting go" }
+      ]
+    },
+    "3": {
+      "title": "Responsibility & Action",
+      "themes": [
+        { "id": "sd3_01", "shlokas": ["3.5", "3.8"], "theme": "Everyone has responsibilities" },
+        { "id": "sd3_02", "shlokas": ["3.9", "3.13"], "theme": "Sharing makes work meaningful" },
+        { "id": "sd3_03", "shlokas": ["3.19", "3.21"], "theme": "Good children inspire others" },
+        { "id": "sd3_04", "shlokas": ["3.27", "3.30"], "theme": "Ego creates confusion" },
+        { "id": "sd3_05", "shlokas": ["3.35", "3.36"], "theme": "Follow your own good path" },
+        { "id": "sd3_06", "shlokas": ["3.37", "3.41"], "theme": "Bad habits should be stopped early" },
+        { "id": "sd3_07", "shlokas": ["3.42", "3.43"], "theme": "The mind becomes strong with practice" }
+      ]
+    },
+    "4": {
+      "title": "Learning & Knowledge",
+      "themes": [
+        { "id": "sd4_01", "shlokas": ["4.7", "4.8"], "theme": "Goodness protects the world" },
+        { "id": "sd4_02", "shlokas": ["4.13", "4.18"], "theme": "Every role has value" },
+        { "id": "sd4_03", "shlokas": ["4.24", "4.33"], "theme": "Work becomes special when done with care" },
+        { "id": "sd4_04", "shlokas": ["4.34", "4.38"], "theme": "Respect teachers and learning" },
+        { "id": "sd4_05", "shlokas": ["4.39", "4.40"], "theme": "Faith helps learning grow" }
+      ]
+    },
+    "5": {
+      "title": "Peace & Equality",
+      "themes": [
+        { "id": "sd5_01", "shlokas": ["5.10", "5.12"], "theme": "Peace comes from non-selfish work" },
+        { "id": "sd5_02", "shlokas": ["5.18", "5.19"], "theme": "Treat everyone equally" },
+        { "id": "sd5_03", "shlokas": ["5.20", "5.22"], "theme": "Temporary pleasures do not last" },
+        { "id": "sd5_04", "shlokas": ["5.23", "5.24"], "theme": "Patience brings inner happiness" },
+        { "id": "sd5_05", "shlokas": ["5.25", "5.29"], "theme": "Peaceful people help the world" }
+      ]
+    },
+    "6": {
+      "title": "Mind, Habits & Focus",
+      "themes": [
+        { "id": "sd6_01", "shlokas": ["6.5", "6.6"], "theme": "Your mind can become your friend" },
+        { "id": "sd6_02", "shlokas": ["6.16", "6.17"], "theme": "Healthy habits create balance" },
+        { "id": "sd6_03", "shlokas": ["6.19", "6.26"], "theme": "Bring your wandering mind back gently" },
+        { "id": "sd6_04", "shlokas": ["6.29", "6.32"], "theme": "Treat others like yourself" },
+        { "id": "sd6_05", "shlokas": ["6.35", "6.40"], "theme": "Practice slowly makes us stronger" },
+        { "id": "sd6_06", "shlokas": ["6.46", "6.47"], "theme": "Love and devotion bring peace" }
+      ]
+    },
+    "7": {
+      "title": "Faith & Understanding",
+      "themes": [
+        { "id": "sd7_01", "shlokas": ["7.3", "7.7"], "theme": "True wisdom is rare and valuable" },
+        { "id": "sd7_02", "shlokas": ["7.14", "7.16"], "theme": "Faith helps during difficult times" },
+        { "id": "sd7_03", "shlokas": ["7.19", "7.24"], "theme": "Wisdom grows slowly over time" }
+      ]
+    },
+    "8": {
+      "title": "Remembering Goodness",
+      "themes": [
+        { "id": "sd8_01", "shlokas": ["8.5", "8.7"], "theme": "Remember goodness while doing your work" },
+        { "id": "sd8_02", "shlokas": ["8.13", "8.15"], "theme": "Peace comes from spiritual focus" }
+      ]
+    },
+    "9": {
+      "title": "Love & Devotion",
+      "themes": [
+        { "id": "sd9_01", "shlokas": ["9.22", "9.26"], "theme": "Love matters more than expensive gifts" },
+        { "id": "sd9_02", "shlokas": ["9.27", "9.28"], "theme": "Offer your work with sincerity" },
+        { "id": "sd9_03", "shlokas": ["9.29", "9.30"], "theme": "Everyone deserves kindness" },
+        { "id": "sd9_04", "shlokas": ["9.31", "9.34"], "theme": "Anyone can become better" }
+      ]
+    },
+    "10": {
+      "title": "God's Greatness",
+      "themes": [
+        { "id": "sd10_01", "shlokas": ["10.8", "10.10"], "theme": "Wisdom comes from devotion" },
+        { "id": "sd10_02", "shlokas": ["10.11", "10.20"], "theme": "God brings light into our hearts" },
+        { "id": "sd10_03", "shlokas": ["10.41", "10.42"], "theme": "Greatness in the world reflects divine power" }
+      ]
+    },
+    "11": {
+      "title": "Divine Vision",
+      "themes": [
+        { "id": "sd11_01", "shlokas": ["11.8", "11.12"], "theme": "Some truths are bigger than imagination" },
+        { "id": "sd11_02", "shlokas": ["11.32", "11.33"], "theme": "Become a helper for good things" }
+      ]
+    },
+    "12": {
+      "title": "Kindness & Devotion",
+      "themes": [
+        { "id": "sd12_01", "shlokas": ["12.13", "12.14"], "theme": "Kindness and patience are strengths" },
+        { "id": "sd12_02", "shlokas": ["12.15", "12.16"], "theme": "Peaceful people make others feel safe" },
+        { "id": "sd12_03", "shlokas": ["12.18", "12.19"], "theme": "Treat everyone fairly" }
+      ]
+    },
+    "13": {
+      "title": "Humility & Wisdom",
+      "themes": [
+        { "id": "sd13_01", "shlokas": ["13.8", "13.9"], "theme": "Humility helps us learn" },
+        { "id": "sd13_02", "shlokas": ["13.22", "13.23"], "theme": "The soul experiences life through the body" }
+      ]
+    },
+    "14": {
+      "title": "Habits & Nature",
+      "themes": [
+        { "id": "sd14_01", "shlokas": ["14.6", "14.7"], "theme": "Good habits and restless habits shape us" },
+        { "id": "sd14_02", "shlokas": ["14.8", "14.9"], "theme": "Laziness can trap us" },
+        { "id": "sd14_03", "shlokas": ["14.17", "14.20"], "theme": "Wisdom helps us rise above negativity" }
+      ]
+    },
+    "15": {
+      "title": "The Soul & Life",
+      "themes": [
+        { "id": "sd15_01", "shlokas": ["15.1", "15.3"], "theme": "Life is a journey of learning" },
+        { "id": "sd15_02", "shlokas": ["15.7", "15.15"], "theme": "Every soul is special and guided" }
+      ]
+    },
+    "16": {
+      "title": "Good & Bad Qualities",
+      "themes": [
+        { "id": "sd16_01", "shlokas": ["16.1", "16.2"], "theme": "Fearlessness and kindness build character" },
+        { "id": "sd16_02", "shlokas": ["16.3", "16.5"], "theme": "Good qualities help us grow" },
+        { "id": "sd16_03", "shlokas": ["16.21", "16.22"], "theme": "Anger, greed, and desire hurt peace" }
+      ]
+    },
+    "17": {
+      "title": "Faith & Personality",
+      "themes": [
+        { "id": "sd17_01", "shlokas": ["17.3", "17.4"], "theme": "What we believe shapes our actions" },
+        { "id": "sd17_02", "shlokas": ["17.14", "17.15"], "theme": "Kind words are also discipline" }
+      ]
+    },
+    "18": {
+      "title": "Purpose & Surrender",
+      "themes": [
+        { "id": "sd18_01", "shlokas": ["18.45", "18.46"], "theme": "Use your talents to help the world" },
+        { "id": "sd18_02", "shlokas": ["18.47", "18.48"], "theme": "Nobody is perfect while learning" },
+        { "id": "sd18_03", "shlokas": ["18.65", "18.66"], "theme": "Trust God with love and faith" }
+      ]
+    }
+  }
+}

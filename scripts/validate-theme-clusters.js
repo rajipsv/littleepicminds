@@ -43,8 +43,10 @@ function main() {
       }
       list.forEach((cluster, i) => {
         const n = cluster.shlokas?.length || 0;
-        if (n < 2 || n > 3) {
-          errors.push(`Chapter ${ch} ${level}[${i}]: ${n} shlokas (need 2-3)`);
+        if (level === 'seeds') {
+          if (n !== 2) errors.push(`Chapter ${ch} seeds[${i}] (${cluster.id || i}): ${n} shlokas (need exactly 2)`);
+        } else if (n < 1 || n > 3) {
+          errors.push(`Chapter ${ch} seekers[${i}] (${cluster.id || i}): ${n} shlokas (need 1-3)`);
         }
         if (!cluster.idea) {
           errors.push(`Chapter ${ch} ${level}[${i}]: missing idea`);
@@ -60,15 +62,17 @@ function main() {
     }
   }
 
-  if (seeds !== 100) errors.push(`Global seeds: ${seeds}, expected 100`);
-  if (seekers !== 200) errors.push(`Global seekers: ${seekers}, expected 200`);
+  const expectedSeeds = clusters.meta.seedsTotal ?? 100;
+  if (seeds !== expectedSeeds) errors.push(`Global seeds: ${seeds}, expected ${expectedSeeds}`);
+  const expectedSeekers = clusters.meta.seekersTotal ?? 200;
+  if (seekers !== expectedSeekers) errors.push(`Global seekers: ${seekers}, expected ${expectedSeekers}`);
 
   if (errors.length) {
     console.error('❌ Cluster validation failed:\n' + errors.slice(0, 30).join('\n'));
     if (errors.length > 30) console.error(`... and ${errors.length - 30} more`);
     process.exit(1);
   }
-  console.log('✅ Clusters valid: 100 seeds, 200 seekers, all shlokas 2-3 and present in chapter data');
+  console.log(`✅ Clusters valid: ${seeds} seeds, ${seekers} seekers, verses present in chapter data`);
 }
 
 main();

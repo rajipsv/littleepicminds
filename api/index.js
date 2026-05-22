@@ -607,8 +607,8 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
     // Count themes completed per chapter by matching ID patterns
     for (const ch of gitaProgress) {
       const chStr = String(ch.chapter_number);
-      // Seeds: theme_s{chapter}_*, Seekers: theme_sk{chapter}_*, Warriors: theme_w{chapter}_*
-      const prefixes = [`theme_s${chStr}_`, `theme_sk${chStr}_`, `theme_w${chStr}_`];
+      // Seeds: theme_sd{chapter}_* (legacy theme_s*), Seekers: theme_sk*, Warriors: theme_w*
+      const prefixes = [`theme_sd${chStr}_`, `theme_s${chStr}_`, `theme_sk${chStr}_`, `theme_w${chStr}_`];
       for (const themeId of completedThemes) {
         if (prefixes.some(p => themeId.startsWith(p))) {
           ch.themes_completed = (ch.themes_completed || 0) + 1;

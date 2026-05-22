@@ -24,16 +24,18 @@ function main() {
 
     for (const level of ['seeds', 'seekers']) {
       const out = level === 'seeds' ? themesSeeds.gita[ch] : themesSeekers.gita[ch];
-      const prefix = level === 'seeds' ? 's' : 'sk';
+      const prefix = level === 'seeds' ? 'sd' : 'sk';
       (data[level] || []).forEach((cluster, i) => {
-        const id = `${prefix}${ch}_${String(i + 1).padStart(2, '0')}`;
+        const id =
+          cluster.id || `${prefix}${ch}_${String(i + 1).padStart(2, '0')}`;
         const story = authored.stories[id];
         if (!story) {
           missing.push(id);
           return;
         }
+        const themeNum = id.split('_')[1];
         out.push({
-          id: `theme_${prefix}${ch}_${i + 1}`,
+          id: `theme_${prefix}${ch}_${themeNum}`,
           title: story.title,
           title_te: story.title_te,
           emoji: story.emoji,

@@ -1,0 +1,9 @@
+{
+  "autoAllow": true,
+  "preserveCompleteStories": true,
+  "provider": "openai",
+  "modelEnv": "OPENAI_MODEL",
+  "defaultModel": "gpt-4o-mini",
+  "batchByChapter": true,
+  "delayMsBetweenChapters": 2000
+}

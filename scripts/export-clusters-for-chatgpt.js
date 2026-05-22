@@ -33,8 +33,9 @@ function verseSummary(ch, shlokaId, level) {
   };
 }
 
-function storyId(ch, level, index) {
-  const prefix = level === 'seeds' ? 's' : 'sk';
+function storyId(ch, level, index, cluster) {
+  if (cluster?.id) return cluster.id;
+  const prefix = level === 'seeds' ? 'sd' : 'sk';
   return `${prefix}${ch}_${String(index + 1).padStart(2, '0')}`;
 }
 
@@ -50,7 +51,7 @@ function main() {
   for (const [ch, data] of Object.entries(clusters.gita)) {
     for (const level of ['seeds', 'seekers']) {
       (data[level] || []).forEach((cluster, i) => {
-        const id = storyId(ch, level, i);
+        const id = storyId(ch, level, i, cluster);
         const summaries = cluster.shlokas.map((sid) => {
           const s = verseSummary(Number(ch), sid, level);
           return { shloka: sid, en: s.en, te: s.te };

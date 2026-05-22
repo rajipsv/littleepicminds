@@ -9,12 +9,20 @@
  *   or [ { "id": "s1_01", ... }, ... ]
  *
  * Run: node scripts/import-chatgpt-stories.js
+ *      node scripts/import-chatgpt-stories.js --only-placeholders
  *      npm run gita:import-chatgpt-stories
  */
 const fs = require('fs');
 const path = require('path');
+const { isPlaceholderStory } = require('./lib/story-quality');
 
-const IMPORT_PATH = path.join(__dirname, 'data', 'chatgpt-stories-import.json');
+const DEFAULT_IMPORT = path.join(__dirname, 'data', 'chatgpt-stories-import.json');
+
+function resolveImportPath() {
+  const fileArg = process.argv.find((a) => a.startsWith('--file='));
+  if (fileArg) return path.resolve(process.cwd(), fileArg.slice(7));
+  return DEFAULT_IMPORT;
+}
 const AUTHORED_PATH = path.join(__dirname, 'data', 'gita-theme-stories-authored.json');
 const CLUSTERS_PATH = path.join(__dirname, 'data', 'gita-theme-clusters.json');
 
@@ -25,9 +33,9 @@ function allStoryIds() {
   const ids = [];
   for (const [ch, data] of Object.entries(clusters.gita)) {
     for (const level of ['seeds', 'seekers']) {
-      const prefix = level === 'seeds' ? 's' : 'sk';
-      (data[level] || []).forEach((_, i) => {
-        ids.push(`${prefix}${ch}_${String(i + 1).padStart(2, '0')}`);
+      const prefix = level === 'seeds' ? 'sd' : 'sk';
+      (data[level] || []).forEach((cluster, i) => {
+        ids.push(cluster.id || `${prefix}${ch}_${String(i + 1).padStart(2, '0')}`);
       });
     }
   }
@@ -55,7 +63,13 @@ function mergeEntry(existing, incoming, id) {
   return out;
 }
 
+function parseArgs() {
+  return { onlyPlaceholders: process.argv.includes('--only-placeholders') };
+}
+
 function main() {
+  const { onlyPlaceholders } = parseArgs();
+  const IMPORT_PATH = resolveImportPath();
   if (!fs.existsSync(IMPORT_PATH)) {
     console.error(`Missing ${IMPORT_PATH}`);
     console.error('Copy chatgpt-stories-template.json, fill stories, save as chatgpt-stories-import.json');
@@ -72,12 +86,19 @@ function main() {
   let merged = 0;
   const warnings = [];
 
+  let skippedComplete = 0;
+
   for (const id of expectedIds) {
     if (incoming[id]) {
+      const existing = authored.stories[id];
+      if (onlyPlaceholders && existing && !isPlaceholderStory(existing)) {
+        skippedComplete++;
+        continue;
+      }
       const entry = incoming[id];
       const missing = REQUIRED.filter((f) => !entry[f] || !String(entry[f]).trim());
       if (missing.length) warnings.push(`${id}: missing ${missing.join(', ')}`);
-      authored.stories[id] = mergeEntry(authored.stories[id], entry, id);
+      authored.stories[id] = mergeEntry(existing, entry, id);
       merged++;
     }
   }
@@ -86,6 +107,7 @@ function main() {
   fs.writeFileSync(AUTHORED_PATH, JSON.stringify(authored, null, 2), 'utf8');
 
   console.log(`Merged ${merged} / ${expectedIds.length} stories into ${AUTHORED_PATH}`);
+  if (skippedComplete) console.log(`Skipped ${skippedComplete} already-complete stories (--only-placeholders).`);
   if (extra.length) console.log(`Ignored ${extra.length} unknown ids: ${extra.slice(0, 5).join(', ')}...`);
   if (warnings.length) {
     console.warn(`Warnings (${warnings.length}):`);
