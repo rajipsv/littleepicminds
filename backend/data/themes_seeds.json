@@ -26,96 +26,372 @@
       },
       {
         "id": "theme_s1_2",
-        "title": "It's Okay to Feel Sad",
-        "title_te": "దుఃఖంగా అనిపించడం సరే",
-        "emoji": "😢",
-        "micro_theme": "Big feelings are normal — face them with courage",
-        "micro_theme_te": "పెద్ద భావాలు సాధారణమే — ధైర్యంగా వాటిని ఎదుర్కోండి",
+        "title": "Overwhelmed by Emotions",
+        "title_te": "Overwhelmed by Emotions",
+        "emoji": "😟",
+        "micro_theme": "Fear and confusion can take over",
+        "micro_theme_te": "Fear and confusion can take over",
         "shlokas": [
           "1.28",
+          "1.29"
+        ],
+        "story": {
+          "title": "The Big Stage Fright",
+          "title_te": "The Big Stage Fright",
+          "content": "A child named Rohan was so excited for the school talent show. But right before stepping on stage, he looked at the huge crowd and completely froze! Fear and confusion took over, just like how Arjuna felt when he saw everyone lined up to fight.",
+          "content_te": "A child named Rohan was so excited for the school talent show. But right before stepping on stage, he looked at the huge crowd and completely froze! Fear and confusion took over, just like how Arjuna felt when he saw everyone lined up to fight.",
+          "moral": "It is completely normal to feel overwhelmed by big emotions when facing something scary.",
+          "moral_te": "It is completely normal to feel overwhelmed by big emotions when facing something scary."
+        },
+        "activity": "Draw a face showing what 'overwhelmed' looks like, and another showing 'calm'.",
+        "activity_te": "Draw a face showing what 'overwhelmed' looks like, and another showing 'calm'.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s1_3",
+        "title": "Losing Clarity",
+        "title_te": "Losing Clarity",
+        "emoji": "❓",
+        "micro_theme": "Confusion makes decisions hard",
+        "micro_theme_te": "Confusion makes decisions hard",
+        "shlokas": [
+          "1.30",
+          "1.31"
+        ],
+        "story": {
+          "title": "The Ice Cream Dilemma",
+          "title_te": "The Ice Cream Dilemma",
+          "content": "Mia was at the ice cream shop. There were 50 flavors! Her mind got so confused she just couldn't pick. The longer she looked, the harder it got. When our mind is confused, even simple decisions seem impossible.",
+          "content_te": "Mia was at the ice cream shop. There were 50 flavors! Her mind got so confused she just couldn't pick. The longer she looked, the harder it got. When our mind is confused, even simple decisions seem impossible.",
+          "moral": "When you are confused, take a deep breath and keep things simple.",
+          "moral_te": "When you are confused, take a deep breath and keep things simple."
+        },
+        "activity": "What do you do when you can't decide between two fun things?",
+        "activity_te": "What do you do when you can't decide between two fun things?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s1_4",
+        "title": "Emotional Attachment",
+        "title_te": "Emotional Attachment",
+        "emoji": "💔",
+        "micro_theme": "Attachment affects decisions",
+        "micro_theme_te": "Attachment affects decisions",
+        "shlokas": [
+          "1.33",
+          "1.34"
+        ],
+        "story": {
+          "title": "The Spelling Bee",
+          "title_te": "The Spelling Bee",
+          "content": "Tina had to compete against her best friend in the final round of the spelling bee. She didn't want to spell the word right because she didn't want her friend to lose. Her attachment to her friend clouded her judgment of simply doing her best.",
+          "content_te": "Tina had to compete against her best friend in the final round of the spelling bee. She didn't want to spell the word right because she didn't want her friend to lose. Her attachment to her friend clouded her judgment of simply doing her best.",
+          "moral": "Sometimes our love for others makes it hard to do what we are supposed to do.",
+          "moral_te": "Sometimes our love for others makes it hard to do what we are supposed to do."
+        },
+        "activity": "Is it better to let your friend win, or for both of you to do your absolute best?",
+        "activity_te": "Is it better to let your friend win, or for both of you to do your absolute best?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s1_5",
+        "title": "Thinking Too Much",
+        "title_te": "Thinking Too Much",
+        "emoji": "🌪️",
+        "micro_theme": "Overthinking leads to stress",
+        "micro_theme_te": "Overthinking leads to stress",
+        "shlokas": [
+          "1.38",
+          "1.39"
+        ],
+        "story": {
+          "title": "The Scary Shadows",
+          "title_te": "The Scary Shadows",
+          "content": "At night, Lily saw a weird shadow on her wall. She started imagining it was a monster, then a dragon, then aliens! She overthought it so much she couldn't sleep. Her dad turned on the light—it was just a jacket. Overthinking creates stress that isn't real.",
+          "content_te": "At night, Lily saw a weird shadow on her wall. She started imagining it was a monster, then a dragon, then aliens! She overthought it so much she couldn't sleep. Her dad turned on the light—it was just a jacket. Overthinking creates stress that isn't real.",
+          "moral": "Don't let your imagination create problems that aren't there.",
+          "moral_te": "Don't let your imagination create problems that aren't there."
+        },
+        "activity": "When you start overthinking, name 3 things you can see in the room to ground yourself.",
+        "activity_te": "When you start overthinking, name 3 things you can see in the room to ground yourself.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s1_6",
+        "title": "Losing Confidence",
+        "title_te": "Losing Confidence",
+        "emoji": "😔",
+        "micro_theme": "Giving up mentally",
+        "micro_theme_te": "Giving up mentally",
+        "shlokas": [
+          "1.44",
+          "1.45"
+        ],
+        "story": {
+          "title": "The Steep Hill",
+          "title_te": "The Steep Hill",
+          "content": "Ravi was riding his bike up a hill. It looked so steep! Before he even tried pedaling hard, his mind said 'I can't do this,' and he put his feet down. He gave up in his mind before his legs even got tired.",
+          "content_te": "Ravi was riding his bike up a hill. It looked so steep! Before he even tried pedaling hard, his mind said 'I can't do this,' and he put his feet down. He gave up in his mind before his legs even got tired.",
+          "moral": "Your mind gives up way before your body does. Stay confident!",
+          "moral_te": "Your mind gives up way before your body does. Stay confident!"
+        },
+        "activity": "Stand up tall like a superhero and say, 'I can do hard things!'",
+        "activity_te": "Stand up tall like a superhero and say, 'I can do hard things!'",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s1_7",
+        "title": "Complete Withdrawal",
+        "title_te": "Complete Withdrawal",
+        "emoji": "🪑",
+        "micro_theme": "Shutting down and quitting",
+        "micro_theme_te": "Shutting down and quitting",
+        "shlokas": [
           "1.46",
           "1.47"
         ],
         "story": {
-          "title": "The Final Match",
-          "title_te": "చివరి పోటీ",
-          "content": "Arjun had practiced for months for the big competition. But when he arrived and saw that his best friend was on the other team, his hands started shaking. Tears came to his eyes. He dropped his bat and sat down saying, 'I can't do this.' His heart felt too heavy to move. Have you ever felt so sad that you couldn't even start?",
-          "content_te": "అర్జున్ పెద్ద పోటీ కోసం నెలల తరబడి సాధన చేశాడు. కానీ వచ్చి చూస్తే తన ప్రియ స్నేహితుడు వ్యతిరేక జట్టులో ఉన్నాడు! అతని చేతులు వణకడం మొదలైంది. కళ్ళలో నీళ్ళు వచ్చాయి. అతను బ్యాట్ వేసి కూర్చుంటూ, 'నేను ఇది చేయలేను' అన్నాడు. మీకు ఎప్పుడైనా ప్రారంభించడానికి కూడా వీలు కాలేదా అంత దుఃఖంగా అనిపించిందా?",
-          "moral": "When big feelings come, we must learn to face them with courage — not run away.",
-          "moral_te": "పెద్ద భావాలు వచ్చినప్పుడు, మనం ధైర్యంగా వాటిని ఎదుర్కోవడం నేర్చుకోవాలి — పరిగెత్తకుండా."
+          "title": "Sitting Out",
+          "title_te": "Sitting Out",
+          "content": "In gym class, the teacher announced a complicated new game. Instead of trying to learn it, Maya just went and sat on the bench. She completely shut down. Arjuna did the same thing when he sat down in his chariot and dropped his bow.",
+          "content_te": "In gym class, the teacher announced a complicated new game. Instead of trying to learn it, Maya just went and sat on the bench. She completely shut down. Arjuna did the same thing when he sat down in his chariot and dropped his bow.",
+          "moral": "It is okay to ask for help when things are hard, but completely quitting helps no one.",
+          "moral_te": "It is okay to ask for help when things are hard, but completely quitting helps no one."
         },
-        "activity": "Draw two faces — one showing 'overwhelmed' and one showing 'brave'. Which face do you want to show today?",
-        "activity_te": "రెండు ముఖాలు గీయండి — ఒకటి 'ముప్పు అనిపించడం' చూపుతూ మరియు ఒకటి 'ధైర్యంగా' చూపుతూ. ఈరోజు మీరు ఏ ముఖాన్ని చూపాలనుకుంటున్నారు?",
+        "activity": "When you want to quit, who can you ask for help instead?",
+        "activity_te": "When you want to quit, who can you ask for help instead?",
         "videoUrl": ""
       }
     ],
     "2": [
       {
         "id": "theme_s2_1",
-        "title": "Be Strong and Brave",
-        "title_te": "బలంగా మరియు ధైర్యంగా ఉండండి",
-        "emoji": "🛡️",
-        "micro_theme": "Face your fears with a steady mind",
-        "micro_theme_te": "స్థిరమైన మనస్సుతో మీ భయాలను ఎదుర్కోండి",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🌱",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
         "shlokas": [
           "2.2",
-          "2.14"
+          "2.3"
         ],
         "story": {
-          "title": "The Cold Morning Practice",
-          "title_te": "చలికాలం ఉదయం సాధన",
-          "content": "On a very cold morning, Arjun didn't want to get out of bed to practice. He felt 'weak' and wanted to stay cozy. Krishna told him: 'Arjun, the cold and heat come and go, just like happiness and sadness. Be brave and do what you need to do anyway!' Arjun realized that being brave means doing the right thing even when it feels a little uncomfortable.",
-          "content_te": "ఒక చలికాలం ఉదయం, అర్జునుడు సాధన చేయడానికి పడక మీద నుండి లేవాలని అనుకోలేదు. అతను 'బలహీనంగా' అనిపించి వెచ్చగా అక్కడే ఉండాలనుకున్నాడు. కృష్ణుడు అతనితో ఇలా అన్నాడు: 'అర్జునా, చలి మరియు వేడి వచ్చి పోతుంటాయి, సుఖం మరియు దుఃఖం లాగే. ధైర్యంగా ఉండు మరియు నీవు చేయవలసింది చేయి!' ధైర్యంగా ఉండటం అంటే కొంచెం ఇబ్బందిగా ఉన్నా సరైన పని చేయడం అని అర్జునుడు గ్రహించాడు.",
-          "moral": "Happiness and sadness come and go like seasons. Stay strong and keep going!",
-          "moral_te": "సుఖం మరియు దుఃఖం ఋతువుల లాగా వచ్చి పోతుంటాయి. బలంగా ఉండి ముందుకు సాగండి!"
+          "title": "Riya's Choice",
+          "title_te": "Riya యొక్క ఎంపిక",
+          "content": "Riya had a school day that tested something important. In the Gita, Chapter 2 teaches: Krishna asked: 'Why are you feeling so weak? You are a brave warrior! These sad thoughts don't help you grow.' Krishna said: 'Don't be a coward! Shake off this small worry and stand up ready to do you... Riya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Riya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Riyaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: కృష్ణుడు అడిగాడు: 'నువ్వు ఎందుకు ఇంత బలహీనంగా ఉన్నావు? నువ్వు ఒక వీరుడివి! ఈ బాధాకరమైన ఆలోచనలు నీ ఎదుగుదలకు పనికిరావు.' కృష్ణుడు ఇలా అన్నాడు: 'భయపడవద్దు! నీ చిన్న చిన్న బాధలను వదిల... Riya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
         },
-        "activity": "Can you stand in one place and take 3 deep 'brave' breaths? Feel your strength growing with each breath.",
-        "activity_te": "మీరు ఒక చోట నిలబడి 3 సార్లు లోతైన 'ధైర్యమైన' శ్వాసలు తీసుకోగలరా? ప్రతి శ్వాసతో మీ బలం పెరుగుతున్నట్లు అనిపిస్తుందా?",
+        "activity": "Draw how Riya made a good choice today.",
+        "activity_te": "Riya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
       },
       {
         "id": "theme_s2_2",
-        "title": "Your Inner Light",
-        "title_te": "మీ అంతర్గత కాంతి",
-        "emoji": "♾️",
-        "micro_theme": "You are eternal and wonderful",
-        "micro_theme_te": "మీరు శాశ్వతమైన వారు మరియు అద్భుతమైన వారు",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "📖",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
         "shlokas": [
-          "2.20"
+          "2.11",
+          "2.12"
         ],
         "story": {
-          "title": "The Unbreakable Spark",
-          "title_te": "పగలకుండా ఉండే నిప్పుకణిక",
-          "content": "Imagine you have a beautiful golden flashlight. You can change the batteries, or even get a new case, but the light inside is the same. Krishna told Arjun that we are all like that light. Our bodies grow and change, but the 'real you' inside—your soul—is eternal, never breaks, and is always shining. You are a wonderful spark of the Divine!",
-          "content_te": "మీ దగ్గర ఒక అందమైన బంగారు రంగు ఫ్లాష్లైట్ ఉందని ఊహించుకోండి. మీరు బ్యాటరీలను మార్చవచ్చు, లేదా కొత్త కేసును కూడా తీసుకోవచ్చు, కానీ లోపల ఉన్న కాంతి మాత్రం అదే. కృష్ణుడు అర్జునుడితో మనం అందరం ఆ కాంతి లాంటి వాళ్ళమే అని చెప్పాడు. మన శరీరాలు పెరుగుతాయి మరియు మారుతాయి, కానీ లోపల ఉన్న 'నిజమైన మీరు'—అంటే మీ ఆత్మ—శాశ్వతమైనది, ఎప్పటికీ పాడవదు మరియు ఎల్లప్పుడూ ప్రకాశిస్తుంది.",
-          "moral": "You are much more than just your body. You are a beautiful, eternal soul.",
-          "moral_te": "మీరు కేవలం మీ శరీరం మాత్రమే కాదు. మీరు ఒక అందమైన, శాశ్వతమైన ఆత్మ."
+          "title": "Arjun's Choice",
+          "title_te": "Arjun యొక్క ఎంపిక",
+          "content": "Arjun had a school day that tested something important. In the Gita, Chapter 2 teaches: Krishna said: 'You talk smart, but worry about small things! Wise people know the soul stays forever.' There never was a time when I did not exist, nor you, nor any of these kings. Nor will there be a... Arjun felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Arjun felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Arjunకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: కృష్ణుడు అన్నాడు: 'నువ్వు గొప్ప మాటలు మాట్లాడుతున్నావు, కానీ చిన్న విషయాలకే భయపడుతున్నావు! ప్రాణం ఎప్పటికీ ఉంటుందని తెలిసిన వారు బాధపడరు.' There never was a time when I did not exi... Arjun మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
         },
-        "activity": "Close your eyes and imagine a tiny, bright star in your heart. That star is the real you!",
-        "activity_te": "కళ్ళు మూసుకుని మీ హృదయంలో ఒక చిన్న, ప్రకాశవంతమైన నక్షత్రాన్ని ఊహించుకోండి. ఆ నక్షత్రమే నిజమైన మీరు!",
+        "activity": "Draw how Arjun made a good choice today.",
+        "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
       },
       {
         "id": "theme_s2_3",
-        "title": "Do Your Best, Forget the Rest",
-        "title_te": "మీ ఉత్తమమైనది చేయండి, మిగిలినది మరచిపోండి",
-        "emoji": "🎯",
-        "micro_theme": "Focus on your effort, not just the prize",
-        "micro_theme_te": "కేవలం బహుమతి మీద కాకుండా మీ ప్రయత్నం మీద దృష్టి పెట్టండి",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "💡",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
         "shlokas": [
-          "2.47",
-          "2.55"
+          "2.13",
+          "2.14"
         ],
         "story": {
-          "title": "Sia's Painting",
-          "title_te": "సియా పెయింటింగ్",
-          "content": "Sia was painting a picture for a contest. She kept worrying: 'Will I win first prize? What if mine is not the best?' Her hands started shaking. Then she remembered Krishna's advice: 'Just focus on the painting and enjoy it. Don't worry about the marks.' Sia relaxed and made her most beautiful painting ever because she was focused on the joy of doing it!",
-          "content_te": "సియా ఒక పోటీ కోసం పెయింటింగ్ వేస్తోంది. ఆమె ఆందోళన చెందుతోంది: 'నాకు మొదటి బహుమతి వస్తుందా? నాది ఉత్తమంగా లేకపోతే ఎలా?' ఆమె చేతులు వణకడం మొదలైంది. అప్పుడు ఆమె కృష్ణుడి సలహాను గుర్తు తెచ్చుకుంది: 'పెయింటింగ్ మీద దృష్టి పెట్టు మరియు దానిని ఆనందించు. మార్కుల గురించి చింతించకు.' సియా ప్రశాంతంగా ఉండి తన అత్యంత అందమైన పెయింటింగ్ను వేసింది ఎందుకంటే ఆమె ఆ పని చేసే ఆనందం మీద దృష్టి పెట్టింది!",
-          "moral": "You only have control over your hard work, not the result. Do your best and be happy!",
-          "moral_te": "మీరు చేసే కష్టపడి పని మీద మాత్రమే మీకు నియంత్రణ ఉంటుంది, ఫలితం మీద కాదు. మీ వంతు కృషి చేయండి మరియు సంతోషంగా ఉండండి!"
+          "title": "Maya's Choice",
+          "title_te": "Maya యొక్క ఎంపిక",
+          "content": "Maya had a school day that tested something important. In the Gita, Chapter 2 teaches: Just like you grow from a baby to a kid, the 'real you' (soul) just moves from one 'costume' to another. The contact of the senses with their objects, O Arjuna, gives rise to feelings of cold and heat... Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: నువ్వు చిన్న పాప నుండి పెద్ద బాబుగా ఎలా మారుతావో, లోపల ఉన్న 'నువ్వు' (ఆత్మ) కూడా ఒక డ్రెస్ నుండి మరో డ్రెస్ మారినట్లు మారుతుంది. The contact of the senses with their objects, O Arj... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
         },
-        "activity": "What is one thing you will do today JUST for the fun of it, without worrying about winning?",
-        "activity_te": "ఈరోజు గెలవడం గురించి చింతించకుండా, కేవలం ఆనందం కోసం మీరు చేసే ఒక పని ఏమిటి?",
+        "activity": "Draw how Maya made a good choice today.",
+        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_4",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🌟",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.20",
+          "2.21"
+        ],
+        "story": {
+          "title": "Dev's Choice",
+          "title_te": "Dev యొక్క ఎంపిక",
+          "content": "Dev had a school day that tested something important. In the Gita, Chapter 2 teaches: The soul is like a superhero that can never be hurt! It was never born and never dies. He who knows this self to be indestructible, unborn, unchanging, and thus eternal—how, O Arjuna, does he cause an... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: నీ ఆత్మ ఒక సూపర్ హీరో లాంటిది! దానికి దెబ్బ తగలదు, అది ఎప్పుడూ చనిపోదు. He who knows this self to be indestructible, unborn, unchanging, and thus eternal—how, O Arjuna, does he cau... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Dev made a good choice today.",
+        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_5",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🎯",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.27",
+          "2.28"
+        ],
+        "story": {
+          "title": "Anika's Choice",
+          "title_te": "Anika యొక్క ఎంపిక",
+          "content": "Anika had a school day that tested something important. In the Gita, Chapter 2 teaches: For, death is certain for the born, and rebirth is certain for the dead; therefore, you should not grieve for what is inevitable. O Arjuna, beings have an unknown beginning, a known middle, and an unk... Anika felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Anika felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Anikaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: For, death is certain for the born, and rebirth is certain for the dead; therefore, you should not grieve for what is inevitable. O Arjuna, beings have an unknown beginning, a know... Anika మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Anika made a good choice today.",
+        "activity_te": "Anika ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_6",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🛡️",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.47",
+          "2.48"
+        ],
+        "story": {
+          "title": "Kiran's Choice",
+          "title_te": "Kiran యొక్క ఎంపిక",
+          "content": "Kiran had a school day that tested something important. In the Gita, Chapter 2 teaches: Focus on effort and enjoy the activity! The fun is in the doing, not just the prize. Abandoning attachment and established in Yoga, perform works, viewing success and failure with an even mind. Evenne... Kiran felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Kiran felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Kiranకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: నీ వంతు ప్రయత్నం నువ్వు చేయి, ఫలితం గురించి భయం వద్దు. చేసే పనిని ఇష్టపడి చేయి! Abandoning attachment and established in Yoga, perform works, viewing success and failure with an ev... Kiran మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Kiran made a good choice today.",
+        "activity_te": "Kiran ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_7",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "⚖️",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.55",
+          "2.56"
+        ],
+        "story": {
+          "title": "Priya's Choice",
+          "title_te": "Priya యొక్క ఎంపిక",
+          "content": "Priya had a school day that tested something important. In the Gita, Chapter 2 teaches: The Lord said, \"When a man renounces all the desires of the mind and is content with himself, then he is said to possess firm wisdom.\" He whose mind is not perturbed by pain, who has no longing for pl... Priya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Priya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Priyaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: The Lord said, \"When a man renounces all the desires of the mind and is content with himself, then he is said to possess firm wisdom.\" He whose mind is not perturbed by pain, who h... Priya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Priya made a good choice today.",
+        "activity_te": "Priya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_8",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🔥",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.62",
+          "2.63"
+        ],
+        "story": {
+          "title": "Sia's Choice",
+          "title_te": "Sia యొక్క ఎంపిక",
+          "content": "Sia had a school day that tested something important. In the Gita, Chapter 2 teaches: To one who is thinking about sense-objects, attachment to them arises; from attachment arises desire, and from desire arises anger. Anger leads to delusion, which causes the loss of memory; the loss o... Sia felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Sia felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Siaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: To one who is thinking about sense-objects, attachment to them arises; from attachment arises desire, and from desire arises anger. Anger leads to delusion, which causes the loss o... Sia మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Sia made a good choice today.",
+        "activity_te": "Sia ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_9",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "🌳",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.70",
+          "2.71"
+        ],
+        "story": {
+          "title": "Riya's Choice",
+          "title_te": "Riya యొక్క ఎంపిక",
+          "content": "Riya had a school day that tested something important. In the Gita, Chapter 2 teaches: He into whom all desires enter, just as the waters enter the full and undisturbed sea, attains peace, and not he who longs after objects of desire. The one who, abandoning all desires, abides without ... Riya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Riya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Riyaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: He into whom all desires enter, just as the waters enter the full and undisturbed sea, attains peace, and not he who longs after objects of desire. The one who, abandoning all desi... Riya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Riya made a good choice today.",
+        "activity_te": "Riya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s2_10",
+        "title": "Transcendental Knowledge",
+        "title_te": "Transcendental Knowledge",
+        "emoji": "✨",
+        "micro_theme": "Transcendental Knowledge",
+        "micro_theme_te": "Transcendental Knowledge",
+        "shlokas": [
+          "2.71",
+          "2.72"
+        ],
+        "story": {
+          "title": "Arjun's Choice",
+          "title_te": "Arjun యొక్క ఎంపిక",
+          "content": "Arjun had a school day that tested something important. In the Gita, Chapter 2 teaches: The one who, abandoning all desires, abides without longing, possession, and the sense of 'I' and 'mine', wins peace. This is the Brahmic state, O Arjuna. No one attaining to this is deluded. By abidi... Arjun felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Arjun felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Arjunకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 2 బోధన: The one who, abandoning all desires, abides without longing, possession, and the sense of 'I' and 'mine', wins peace. This is the Brahmic state, O Arjuna. No one attaining to this ... Arjun మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Transcendental Knowledge.",
+          "moral_te": "Transcendental Knowledge"
+        },
+        "activity": "Draw how Arjun made a good choice today.",
+        "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
       }
     ],
@@ -130,19 +406,7 @@
         "shlokas": [
           "3.1",
           "3.2",
-          "3.3",
-          "3.4",
-          "3.5",
-          "3.6",
-          "3.7",
-          "3.8",
-          "3.9",
-          "3.10",
-          "3.11",
-          "3.12",
-          "3.13",
-          "3.14",
-          "3.15"
+          "3.3"
         ],
         "story": {
           "title": "Ravi Keeps Showing Up",
@@ -164,21 +428,8 @@
         "micro_theme": "setting a good example",
         "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
         "shlokas": [
-          "3.16",
-          "3.17",
-          "3.18",
-          "3.19",
-          "3.20",
-          "3.21",
-          "3.22",
-          "3.23",
-          "3.24",
-          "3.25",
-          "3.26",
-          "3.27",
-          "3.28",
-          "3.29",
-          "3.30"
+          "3.9",
+          "3.10"
         ],
         "story": {
           "title": "Anika Picks Up the Paper",
@@ -200,19 +451,8 @@
         "micro_theme": "selfless service",
         "micro_theme_te": "నిస్వార్థ సేవ",
         "shlokas": [
-          "3.31",
-          "3.32",
-          "3.33",
-          "3.34",
-          "3.35",
-          "3.36",
-          "3.37",
-          "3.38",
-          "3.39",
-          "3.40",
-          "3.41",
-          "3.42",
-          "3.43"
+          "3.19",
+          "3.20"
         ],
         "story": {
           "title": "Kiran Shares His Lunch",
@@ -225,6 +465,75 @@
         "activity": "Tell your family the story \"Kiran Shares His Lunch\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"కిరణ్ తన భోజనం పంచుకున్నాడు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s3_4",
+        "title": "The Team Captain",
+        "title_te": "జట్టు కెప్టెన్",
+        "emoji": "🌟",
+        "micro_theme": "doing your duty",
+        "micro_theme_te": "మీ కర్తవ్యం చేయడం",
+        "shlokas": [
+          "3.21",
+          "3.22"
+        ],
+        "story": {
+          "title": "Ravi Keeps Showing Up",
+          "title_te": "రవి కొనసాగిస్తూనే ఉన్నాడు",
+          "content": "Ravi was chosen as captain of the classroom cricket team. Some days he felt tired and wanted to skip practice. \"If I rest, the team will be fine,\" he thought. But when he stayed home, the younger players looked lost without his encouragement. Ravi remembered Krishna telling Arjuna that leaders must act to guide others—not hide away. He came back, cheered every player, and tried his best even when winning felt far away.",
+          "content_te": "రవిని తరగతి క్రికెట్ జట్టు కెప్టెన్గా ఎంచుకున్నారు. కొన్ని రోజులు అలసిపోయి సాధన మానేయాలనిపించింది. \"నేను విశ్రాంతి తీసుకుంటే జట్టు బాగానే ఉంటుంది\" అని అనుకున్నాడు. కానీ అతను ఇంట్లో ఉండగా చిన్న ప్లేయర్లు అతని ప్రోత్సాహం లేక గందరగోళంలో ఉన్నారు. నాయకులు ఇతరులకు మార్గనిర్దేశం చేయడానికి పని చేయాలని కృష్ణుడు అర్జునుడికి చెప్పినది రవికి గుర్తుకు వచ్చింది. అతను తిరిగి వచ్చి, ప్రతి ప్లేయర్ను ప్రోత్సహించాడు, గెలవడం దూరంగా ఉన్నా తన వంతు బాగా ప్రయత్నించాడు.",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moral_te": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి."
+        },
+        "activity": "What is one duty you can do today with a smile—even if nobody claps for you?",
+        "activity_te": "ఈరోజు ఒక కర్తవ్యాన్ని చిరునవ్వుతో చేయండి—ఎవరూ చప్పట్లు కొట్టకపోయినా.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s3_5",
+        "title": "Show, Don't Only Tell",
+        "title_te": "చూపించు, మాటలు మాత్రమే కాదు",
+        "emoji": "🎯",
+        "micro_theme": "setting a good example",
+        "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
+        "shlokas": [
+          "3.35",
+          "3.36"
+        ],
+        "story": {
+          "title": "Anika Picks Up the Paper",
+          "title_te": "అనిక చెత్త తీసింది",
+          "content": "One ordinary school day became special for Anika. The story is called \"Anika Picks Up the Paper.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Show, Don't Only Tell. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"అనిక చెత్త తీసింది.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చూపించు, మాటలు మాత్రమే కాదు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moral_te": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు."
+        },
+        "activity": "Tell your family the story \"Anika Picks Up the Paper\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"అనిక చెత్త తీసింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s3_6",
+        "title": "Helping Without Counting",
+        "title_te": "లెక్కించకుండా సహాయం",
+        "emoji": "🛡️",
+        "micro_theme": "selfless service",
+        "micro_theme_te": "నిస్వార్థ సేవ",
+        "shlokas": [
+          "3.40",
+          "3.41"
+        ],
+        "story": {
+          "title": "Kiran Shares His Lunch",
+          "title_te": "కిరణ్ తన భోజనం పంచుకున్నాడు",
+          "content": "One ordinary school day became special for Kiran. The story is called \"Kiran Shares His Lunch.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Helping Without Counting. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"కిరణ్ తన భోజనం పంచుకున్నాడు.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన లెక్కించకుండా సహాయం గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Work done to help others brings real joy.",
+          "moral_te": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది."
+        },
+        "activity": "Tell your family the story \"Kiran Shares His Lunch\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"కిరణ్ తన భోజనం పంచుకున్నాడు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "4": [
@@ -236,20 +545,8 @@
         "micro_theme": "wisdom and action together",
         "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
         "shlokas": [
-          "4.1",
-          "4.2",
-          "4.3",
-          "4.4",
-          "4.5",
-          "4.6",
           "4.7",
-          "4.8",
-          "4.9",
-          "4.10",
-          "4.11",
-          "4.12",
-          "4.13",
-          "4.14"
+          "4.8"
         ],
         "story": {
           "title": "Maya Plans Her Project",
@@ -271,20 +568,8 @@
         "micro_theme": "humility before teachers",
         "micro_theme_te": "గురువుల ముందు వినయం",
         "shlokas": [
-          "4.15",
-          "4.16",
-          "4.17",
-          "4.18",
-          "4.19",
-          "4.20",
-          "4.21",
-          "4.22",
-          "4.23",
-          "4.24",
-          "4.25",
-          "4.26",
-          "4.27",
-          "4.28"
+          "4.9",
+          "4.10"
         ],
         "story": {
           "title": "Dev Asks a Silly Question",
@@ -306,20 +591,8 @@
         "micro_theme": "seeing the divine in sacrifice",
         "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
         "shlokas": [
-          "4.29",
-          "4.30",
-          "4.31",
-          "4.32",
-          "4.33",
-          "4.34",
-          "4.35",
-          "4.36",
-          "4.37",
-          "4.38",
-          "4.39",
-          "4.40",
-          "4.41",
-          "4.42"
+          "4.13",
+          "4.14"
         ],
         "story": {
           "title": "The Leaf on the Plate",
@@ -332,6 +605,75 @@
         "activity": "Tell your family the story \"The Leaf on the Plate\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"ప్లేట్‌పై ఆకు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s4_4",
+        "title": "Think, Then Do",
+        "title_te": "ఆలోచించు, తర్వాత చేయి",
+        "emoji": "🌟",
+        "micro_theme": "wisdom and action together",
+        "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
+        "shlokas": [
+          "4.34",
+          "4.35"
+        ],
+        "story": {
+          "title": "Maya Plans Her Project",
+          "title_te": "మాయ ప్రాజెక్ట్ ప్లాన్ చేసింది",
+          "content": "One ordinary school day became special for Dev. The story is called \"Maya Plans Her Project.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Think, Then Do. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"మాయ ప్రాజెక్ట్ ప్లాన్ చేసింది.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ఆలోచించు, తర్వాత చేయి గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moral_te": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది."
+        },
+        "activity": "Tell your family the story \"Maya Plans Her Project\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"మాయ ప్రాజెక్ట్ ప్లాన్ చేసింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s4_5",
+        "title": "The Empty Cup",
+        "title_te": "ఖాళీ కప్",
+        "emoji": "🎯",
+        "micro_theme": "humility before teachers",
+        "micro_theme_te": "గురువుల ముందు వినయం",
+        "shlokas": [
+          "4.37",
+          "4.38"
+        ],
+        "story": {
+          "title": "Dev Asks a Silly Question",
+          "title_te": "దేవ్ అడిగిన సాధారణ ప్రశ్న",
+          "content": "One ordinary school day became special for Anika. The story is called \"Dev Asks a Silly Question.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: The Empty Cup. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"దేవ్ అడిగిన సాధారణ ప్రశ్న.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ఖాళీ కప్ గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moral_te": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది."
+        },
+        "activity": "Tell your family the story \"Dev Asks a Silly Question\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"దేవ్ అడిగిన సాధారణ ప్రశ్న\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s4_6",
+        "title": "A Small Offering",
+        "title_te": "చిన్న అర్పణ",
+        "emoji": "🛡️",
+        "micro_theme": "seeing the divine in sacrifice",
+        "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
+        "shlokas": [
+          "4.41",
+          "4.42"
+        ],
+        "story": {
+          "title": "The Leaf on the Plate",
+          "title_te": "ప్లేట్‌పై ఆకు",
+          "content": "One ordinary school day became special for Kiran. The story is called \"The Leaf on the Plate.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: A Small Offering. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"ప్లేట్‌పై ఆకు.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చిన్న అర్పణ గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moral_te": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది."
+        },
+        "activity": "Tell your family the story \"The Leaf on the Plate\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"ప్లేట్‌పై ఆకు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "5": [
@@ -343,21 +685,8 @@
         "micro_theme": "peace through balanced action",
         "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
         "shlokas": [
-          "5.1",
           "5.2",
-          "5.3",
-          "5.4",
-          "5.5",
-          "5.6",
-          "5.7",
-          "5.8",
-          "5.9",
-          "5.10",
-          "5.11",
-          "5.12",
-          "5.13",
-          "5.14",
-          "5.15"
+          "5.3"
         ],
         "story": {
           "title": "Priya and the Table Duty",
@@ -379,20 +708,8 @@
         "micro_theme": "letting go of ego",
         "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
         "shlokas": [
-          "5.16",
-          "5.17",
-          "5.18",
-          "5.19",
-          "5.20",
-          "5.21",
-          "5.22",
-          "5.23",
-          "5.24",
-          "5.25",
-          "5.26",
-          "5.27",
-          "5.28",
-          "5.29"
+          "5.8",
+          "5.9"
         ],
         "story": {
           "title": "Dev Learns to Share Credit",
@@ -401,6 +718,52 @@
           "content_te": "దేవ్ జట్టు సైన్స్ క్విజ్ గెలిచింది. \"నేనే హీరో!\" అని అరిచాడు, ప్రతి సాయంకాలం కలిసి చదివిన అనికకు ధన్యవాదాలు చెప్పడం మరచిపోయాడు. అనిక దుఃఖంగా నిశ్శబ్దంగా ఉంది. గీత నుండి ఒక కథ చెప్పారు: జ్ఞానులు ప్రశంసను ఆకలితో ఉన్న పక్షి లాగా ఎగిరి తీసుకోరు. ఇతరులు నిందిస్తే కూడా విస్పోటనం చేయరు. దేవ్ వెళ్లి క్షమాపణ చెప్పి, ట్రోఫీని అనికతో కలిపి పట్టుకున్నాడు. \"కేవలం నేను\" అనేది వదిలివేసినప్పుడు విజయం మరింత మధురంగా అనిపించింది.",
           "moral": "Praise and blame both pass away—stay steady.",
           "moral_te": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి."
+        },
+        "activity": "Thank one person who helped you this week—even for something small.",
+        "activity_te": "ఈ వారం మీకు సహాయం చేసిన ఒకరికి ధన్యవాదాలు చెప్పండి—చిన్నదైనా సరే.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s5_3",
+        "title": "The Same Smile",
+        "title_te": "అదే చిరునవ్వు",
+        "emoji": "💡",
+        "micro_theme": "seeing equally",
+        "micro_theme_te": "సమానంగా చూడటం",
+        "shlokas": [
+          "5.17",
+          "5.18"
+        ],
+        "story": {
+          "title": "Maya at the Bus Stop",
+          "title_te": "బస్ స్టాప్‌లో మాయ",
+          "content": "Maya saw her best friend at the bus stop and waved big. A new student stood alone with a heavy bag. Maya almost looked away, then remembered: Krishna says wise people see a learned teacher, a friend, and a stranger with the same kind eyes. She smiled at the new student too and said, \"Want to sit together?\" The bus ride felt warmer for everyone. Equality does not mean everyone is the same—it means everyone deserves kindness.",
+          "content_te": "మాయ బస్ స్టాప్‌లో స్నేహితురాలిని చూసి పెద్గగా చేయి ఊపింది. కొత్త విద్యార్థి భారీ బ్యాగ్‌తో ఒంటరిగా నిలబడి ఉన్నాడు. మాయ దాదాపు చూడకుండా వెళ్లబోతుంది, అప్పుడు గుర్తుకు వచ్చింది: జ్ఞాని గురువు, స్నేహితుడు, అపరిచితుడిని ఒకే దయగల చూపుతో చూస్తాడని కృష్ణుడు చెబుతాడు. కొత్త విద్యార్థినికి కూడా నవ్వి \"కలిసి కూర్చుందామా?\" అన్నది. బస్ ప్రయాణం అందరికీ వెచ్చగా అనిపించింది. సమానత్వం అందరూ ఒకేలా అని కాదు—అందరికీ దయ అర్హత ఉందని.",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moral_te": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి."
+        },
+        "activity": "Smile or say hello to someone you do not know well today.",
+        "activity_te": "ఈరోజు మీకు బాగా తెలియని ఒకరిని చూసి నమస్కరించండి లేదా హలో చెప్పండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s5_4",
+        "title": "The Loud Trophy",
+        "title_te": "బిగ్గరగా మాట్లాడే ట్రోఫీ",
+        "emoji": "🌟",
+        "micro_theme": "letting go of ego",
+        "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
+        "shlokas": [
+          "5.24",
+          "5.25"
+        ],
+        "story": {
+          "title": "Dev Learns to Share Credit",
+          "title_te": "దేవ్ క్రెడిట్ పంచుకోవడం నేర్చుకున్నాడు",
+          "content": "Dev's team won the science quiz. He shouted, \"I am the hero!\" and forgot to thank his partner Anika who had studied with him every evening. Anika felt hurt and quiet. Their teacher told a story from the Gita: wise people do not grab praise like a hungry bird. When others blame them, they do not explode either. Dev walked over, said sorry, and held the trophy with Anika so both could smile. Letting go of \"only me\" made the victory sweeter.",
+          "content_te": "దేవ్ జట్టు సైన్స్ క్విజ్ గెలిచింది. \"నేనే హీరో!\" అని అరిచాడు, ప్రతి సాయంకాలం కలిసి చదివిన అనికకు ధన్యవాదాలు చెప్పడం మరచిపోయాడు. అనిక దుఃఖంగా నిశ్శబ్దంగా ఉంది. గీత నుండి ఒక కథ చెప్పారు: జ్ఞానులు ప్రశంసను ఆకలితో ఉన్న పక్షి లాగా ఎగిరి తీసుకోరు. ఇతరులు నిందిస్తే కూడా విస్పోటనం చేయరు. దేవ్ వెళ్లి క్షమాపణ చెప్పి, ట్రోఫీని అనికతో కలిపి పట్టుకున్నాడు. \"కేవలం నేను\" అనేది వదిలివేసినప్పుడు విజయం మరింత మధురంగా అనిపించింది.",
+          "moral": "You can be active and peaceful at the same time.",
+          "moral_te": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు."
         },
         "activity": "Thank one person who helped you this week—even for something small.",
         "activity_te": "ఈ వారం మీకు సహాయం చేసిన ఒకరికి ధన్యవాదాలు చెప్పండి—చిన్నదైనా సరే.",
@@ -416,22 +779,8 @@
         "micro_theme": "training the mind",
         "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
         "shlokas": [
-          "6.1",
-          "6.2",
-          "6.3",
-          "6.4",
           "6.5",
-          "6.6",
-          "6.7",
-          "6.8",
-          "6.9",
-          "6.10",
-          "6.11",
-          "6.12",
-          "6.13",
-          "6.14",
-          "6.15",
-          "6.16"
+          "6.6"
         ],
         "story": {
           "title": "Anika Counts Her Breaths",
@@ -453,22 +802,8 @@
         "micro_theme": "moderation in life",
         "micro_theme_te": "జీవితంలో మితత్వం",
         "shlokas": [
-          "6.17",
-          "6.18",
-          "6.19",
-          "6.20",
-          "6.21",
-          "6.22",
-          "6.23",
-          "6.24",
-          "6.25",
-          "6.26",
-          "6.27",
-          "6.28",
-          "6.29",
-          "6.30",
-          "6.31",
-          "6.32"
+          "6.16",
+          "6.17"
         ],
         "story": {
           "title": "Ravi's Screen Time",
@@ -490,21 +825,8 @@
         "micro_theme": "yoga as union",
         "micro_theme_te": "యోగం ఐక్యత",
         "shlokas": [
-          "6.33",
-          "6.34",
-          "6.35",
-          "6.36",
-          "6.37",
-          "6.38",
-          "6.39",
-          "6.40",
-          "6.41",
-          "6.42",
-          "6.43",
-          "6.44",
-          "6.45",
-          "6.46",
-          "6.47"
+          "6.26",
+          "6.27"
         ],
         "story": {
           "title": "Quiet Five Minutes",
@@ -517,6 +839,98 @@
         "activity": "Tell your family the story \"Quiet Five Minutes\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"నిశ్శబ్ద ఐదు నిమిషాలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s6_4",
+        "title": "The Wandering Butterfly",
+        "title_te": "తిరిగే సీతాకోక చిలుక",
+        "emoji": "🌟",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.35",
+          "6.36"
+        ],
+        "story": {
+          "title": "Anika Counts Her Breaths",
+          "title_te": "అనిక తన శ్వాసలను లెక్కించింది",
+          "content": "One ordinary school day became special for Dev. The story is called \"Anika Counts Her Breaths.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: The Wandering Butterfly. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"అనిక తన శ్వాసలను లెక్కించింది.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన తిరిగే సీతాకోక చిలుక గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Tell your family the story \"Anika Counts Her Breaths\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"అనిక తన శ్వాసలను లెక్కించింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s6_5",
+        "title": "Not Too Much, Not Too Little",
+        "title_te": "ఎక్కువ కాదు, తక్కువ కాదు",
+        "emoji": "🎯",
+        "micro_theme": "moderation in life",
+        "micro_theme_te": "జీవితంలో మితత్వం",
+        "shlokas": [
+          "6.40",
+          "6.41"
+        ],
+        "story": {
+          "title": "Ravi's Screen Time",
+          "title_te": "రవి స్క్రీన్ టైమ్",
+          "content": "One ordinary school day became special for Anika. The story is called \"Ravi's Screen Time.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Not Too Much, Not Too Little. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"రవి స్క్రీన్ టైమ్.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ఎక్కువ కాదు, తక్కువ కాదు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moral_te": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది."
+        },
+        "activity": "Tell your family the story \"Ravi's Screen Time\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"రవి స్క్రీన్ టైమ్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s6_6",
+        "title": "Connecting Inside",
+        "title_te": "లోపల కనెక్ట్ అవ్వడం",
+        "emoji": "🛡️",
+        "micro_theme": "yoga as union",
+        "micro_theme_te": "యోగం ఐక్యత",
+        "shlokas": [
+          "6.46",
+          "6.47"
+        ],
+        "story": {
+          "title": "Quiet Five Minutes",
+          "title_te": "నిశ్శబ్ద ఐదు నిమిషాలు",
+          "content": "One ordinary school day became special for Kiran. The story is called \"Quiet Five Minutes.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Connecting Inside. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"నిశ్శబ్ద ఐదు నిమిషాలు.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన లోపల కనెక్ట్ అవ్వడం గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moral_te": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం."
+        },
+        "activity": "Tell your family the story \"Quiet Five Minutes\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"నిశ్శబ్ద ఐదు నిమిషాలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s6_7",
+        "title": "The Wandering Butterfly",
+        "title_te": "తిరిగే సీతాకోక చిలుక",
+        "emoji": "⚖️",
+        "micro_theme": "training the mind",
+        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
+        "shlokas": [
+          "6.46",
+          "6.47"
+        ],
+        "story": {
+          "title": "Anika Counts Her Breaths",
+          "title_te": "అనిక తన శ్వాసలను లెక్కించింది",
+          "content": "One ordinary school day became special for Priya. The story is called \"Anika Counts Her Breaths.\" Priya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Priya wanted to walk away. Then Priya remembered what Krishna teaches in the Gita: The Wandering Butterfly. Priya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Priya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Priyaకి ప్రత్యేకమైనది. కథ పేరు \"అనిక తన శ్వాసలను లెక్కించింది.\" Priya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Priya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన తిరిగే సీతాకోక చిలుక గుర్తుకు వచ్చింది. Priya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
+        },
+        "activity": "Tell your family the story \"Anika Counts Her Breaths\" in your own words. What would you do in Priya's place?",
+        "activity_te": "\"అనిక తన శ్వాసలను లెక్కించింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Priya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "7": [
@@ -528,21 +942,8 @@
         "micro_theme": "material and spiritual energy",
         "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
         "shlokas": [
-          "7.1",
-          "7.2",
-          "7.3",
-          "7.4",
-          "7.5",
-          "7.6",
           "7.7",
-          "7.8",
-          "7.9",
-          "7.10",
-          "7.11",
-          "7.12",
-          "7.13",
-          "7.14",
-          "7.15"
+          "7.8"
         ],
         "story": {
           "title": "The Fan and the Sun",
@@ -564,21 +965,8 @@
         "micro_theme": "four kinds of seekers",
         "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
         "shlokas": [
-          "7.16",
-          "7.17",
-          "7.18",
-          "7.19",
-          "7.20",
-          "7.21",
-          "7.22",
-          "7.23",
-          "7.24",
-          "7.25",
-          "7.26",
-          "7.27",
-          "7.28",
-          "7.29",
-          "7.30"
+          "7.14",
+          "7.15"
         ],
         "story": {
           "title": "Four Friends, One Library",
@@ -591,6 +979,52 @@
         "activity": "Tell your family the story \"Four Friends, One Library\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"నాలుగు స్నేహితులు, ఒక లైబ్రరీ\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s7_3",
+        "title": "Trust the Good",
+        "title_te": "మంచిది నమ్ము",
+        "emoji": "💡",
+        "micro_theme": "surrender to the Supreme",
+        "micro_theme_te": "పరమునికి లొంగడం",
+        "shlokas": [
+          "7.16",
+          "7.17"
+        ],
+        "story": {
+          "title": "The Night Before the Test",
+          "title_te": "పరీక్ష ముందు రాత్రి",
+          "content": "One ordinary school day became special for Maya. The story is called \"The Night Before the Test.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Trust the Good. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"పరీక్ష ముందు రాత్రి.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మంచిది నమ్ము గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moral_te": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది."
+        },
+        "activity": "Tell your family the story \"The Night Before the Test\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"పరీక్ష ముందు రాత్రి\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s7_4",
+        "title": "Two Kinds of Power",
+        "title_te": "రెండు రకాల శక్తి",
+        "emoji": "🌟",
+        "micro_theme": "material and spiritual energy",
+        "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+        "shlokas": [
+          "7.28",
+          "7.29"
+        ],
+        "story": {
+          "title": "The Fan and the Sun",
+          "title_te": "ఫ్యాన్ మరియు సూర్యుడు",
+          "content": "One ordinary school day became special for Dev. The story is called \"The Fan and the Sun.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Two Kinds of Power. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"ఫ్యాన్ మరియు సూర్యుడు.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన రెండు రకాల శక్తి గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moral_te": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి."
+        },
+        "activity": "Tell your family the story \"The Fan and the Sun\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"ఫ్యాన్ మరియు సూర్యుడు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "8": [
@@ -602,20 +1036,8 @@
         "micro_theme": "remembering what lasts",
         "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
         "shlokas": [
-          "8.1",
-          "8.2",
-          "8.3",
-          "8.4",
           "8.5",
-          "8.6",
-          "8.7",
-          "8.8",
-          "8.9",
-          "8.10",
-          "8.11",
-          "8.12",
-          "8.13",
-          "8.14"
+          "8.6"
         ],
         "story": {
           "title": "The Sand Castle",
@@ -637,20 +1059,8 @@
         "micro_theme": "thoughts at important moments",
         "micro_theme_te": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
         "shlokas": [
-          "8.15",
-          "8.16",
-          "8.17",
-          "8.18",
-          "8.19",
-          "8.20",
-          "8.21",
-          "8.22",
-          "8.23",
-          "8.24",
-          "8.25",
-          "8.26",
-          "8.27",
-          "8.28"
+          "8.7",
+          "8.8"
         ],
         "story": {
           "title": "Before the Big Game",
@@ -663,6 +1073,52 @@
         "activity": "Tell your family the story \"Before the Big Game\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"పెద్ద ఆట ముందు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s8_3",
+        "title": "Little Steps Every Day",
+        "title_te": "ప్రతి రోజు చిన్న అడుగులు",
+        "emoji": "💡",
+        "micro_theme": "discipline of practice",
+        "micro_theme_te": "సాధన యొక్క క్రమశిక్షణ",
+        "shlokas": [
+          "8.15",
+          "8.16"
+        ],
+        "story": {
+          "title": "Ten Minutes of Practice",
+          "title_te": "పది నిమిషాల సాధన",
+          "content": "One ordinary school day became special for Maya. The story is called \"Ten Minutes of Practice.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Little Steps Every Day. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"పది నిమిషాల సాధన.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ప్రతి రోజు చిన్న అడుగులు గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Daily small habits build a great life.",
+          "moral_te": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Tell your family the story \"Ten Minutes of Practice\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"పది నిమిషాల సాధన\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s8_4",
+        "title": "What Stays Forever",
+        "title_te": "శాశ్వతంగా ఉండేది",
+        "emoji": "🌟",
+        "micro_theme": "remembering what lasts",
+        "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+        "shlokas": [
+          "8.20",
+          "8.21"
+        ],
+        "story": {
+          "title": "The Sand Castle",
+          "title_te": "ఇసుక కోట",
+          "content": "One ordinary school day became special for Dev. The story is called \"The Sand Castle.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: What Stays Forever. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"ఇసుక కోట.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన శాశ్వతంగా ఉండేది గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "What is eternal matters more than what fades.",
+          "moral_te": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది."
+        },
+        "activity": "Tell your family the story \"The Sand Castle\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"ఇసుక కోట\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "9": [
@@ -674,23 +1130,8 @@
         "micro_theme": "royal secret of devotion",
         "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
         "shlokas": [
-          "9.1",
           "9.2",
-          "9.3",
-          "9.4",
-          "9.5",
-          "9.6",
-          "9.7",
-          "9.8",
-          "9.9",
-          "9.10",
-          "9.11",
-          "9.12",
-          "9.13",
-          "9.14",
-          "9.15",
-          "9.16",
-          "9.17"
+          "9.3"
         ],
         "story": {
           "title": "The Handwritten Card",
@@ -712,23 +1153,8 @@
         "micro_theme": "God cares for devotees",
         "micro_theme_te": "దైవం భక్తులను చూసుకోవడం",
         "shlokas": [
-          "9.18",
-          "9.19",
-          "9.20",
-          "9.21",
-          "9.22",
-          "9.23",
-          "9.24",
-          "9.25",
-          "9.26",
-          "9.27",
-          "9.28",
-          "9.29",
-          "9.30",
-          "9.31",
-          "9.32",
-          "9.33",
-          "9.34"
+          "9.10",
+          "9.11"
         ],
         "story": {
           "title": "Grandma's Prayer",
@@ -741,6 +1167,75 @@
         "activity": "Tell your family the story \"Grandma's Prayer\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"అమ్మమ్మ ప్రార్థన\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s9_3",
+        "title": "Small Gifts Matter",
+        "title_te": "చిన్న బహుమతులు ముఖ్యం",
+        "emoji": "💡",
+        "micro_theme": "simple offerings",
+        "micro_theme_te": "సరళమైన అర్పణలు",
+        "shlokas": [
+          "9.22",
+          "9.23"
+        ],
+        "story": {
+          "title": "The Flower on the Desk",
+          "title_te": "బెంచ్‌పై పువ్వు",
+          "content": "One ordinary school day became special for Maya. The story is called \"The Flower on the Desk.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Small Gifts Matter. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"బెంచ్‌పై పువ్వు.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చిన్న బహుమతులు ముఖ్యం గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moral_te": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు."
+        },
+        "activity": "Tell your family the story \"The Flower on the Desk\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"బెంచ్‌పై పువ్వు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s9_4",
+        "title": "Love in a Small Gift",
+        "title_te": "చిన్న బహుమతిలో ప్రేమ",
+        "emoji": "🌟",
+        "micro_theme": "royal secret of devotion",
+        "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
+        "shlokas": [
+          "9.26",
+          "9.27"
+        ],
+        "story": {
+          "title": "The Handwritten Card",
+          "title_te": "చేతితో వ్రాసిన కార్డు",
+          "content": "One ordinary school day became special for Dev. The story is called \"The Handwritten Card.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Love in a Small Gift. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"చేతితో వ్రాసిన కార్డు.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చిన్న బహుమతిలో ప్రేమ గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Love offered sincerely is never too small.",
+          "moral_te": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు."
+        },
+        "activity": "Tell your family the story \"The Handwritten Card\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"చేతితో వ్రాసిన కార్డు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s9_5",
+        "title": "You Are Not Forgotten",
+        "title_te": "మిమ్మల్ని మరచిపోరు",
+        "emoji": "🎯",
+        "micro_theme": "God cares for devotees",
+        "micro_theme_te": "దైవం భక్తులను చూసుకోవడం",
+        "shlokas": [
+          "9.33",
+          "9.34"
+        ],
+        "story": {
+          "title": "Grandma's Prayer",
+          "title_te": "అమ్మమ్మ ప్రార్థన",
+          "content": "One ordinary school day became special for Anika. The story is called \"Grandma's Prayer.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: You Are Not Forgotten. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"అమ్మమ్మ ప్రార్థన.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మిమ్మల్ని మరచిపోరు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "You are never forgotten when you try to do good.",
+          "moral_te": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు."
+        },
+        "activity": "Tell your family the story \"Grandma's Prayer\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"అమ్మమ్మ ప్రార్థన\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "10": [
@@ -752,20 +1247,8 @@
         "micro_theme": "excellence everywhere",
         "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
         "shlokas": [
-          "10.1",
-          "10.2",
-          "10.3",
-          "10.4",
-          "10.5",
-          "10.6",
-          "10.7",
           "10.8",
-          "10.9",
-          "10.10",
-          "10.11",
-          "10.12",
-          "10.13",
-          "10.14"
+          "10.9"
         ],
         "story": {
           "title": "Stars in Many Skills",
@@ -787,20 +1270,8 @@
         "micro_theme": "seeing greatness with wonder",
         "micro_theme_te": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
         "shlokas": [
-          "10.15",
-          "10.16",
-          "10.17",
-          "10.18",
-          "10.19",
-          "10.20",
-          "10.21",
-          "10.22",
-          "10.23",
-          "10.24",
-          "10.25",
-          "10.26",
-          "10.27",
-          "10.28"
+          "10.10",
+          "10.11"
         ],
         "story": {
           "title": "The Science Fair Winner",
@@ -822,20 +1293,8 @@
         "micro_theme": "source of all power",
         "micro_theme_te": "అన్ని శక్తి యొక్క మూలం",
         "shlokas": [
-          "10.29",
-          "10.30",
-          "10.31",
-          "10.32",
-          "10.33",
-          "10.34",
-          "10.35",
-          "10.36",
-          "10.37",
-          "10.38",
-          "10.39",
-          "10.40",
-          "10.41",
-          "10.42"
+          "10.20",
+          "10.21"
         ],
         "story": {
           "title": "The Tiny Seed",
@@ -847,6 +1306,75 @@
         },
         "activity": "Tell your family the story \"The Tiny Seed\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"చిన్న విత్తనం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s10_4",
+        "title": "Goodness All Around",
+        "title_te": "చుట్టూ మంచిది",
+        "emoji": "🌟",
+        "micro_theme": "excellence everywhere",
+        "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
+        "shlokas": [
+          "10.41",
+          "10.42"
+        ],
+        "story": {
+          "title": "Stars in Many Skills",
+          "title_te": "అనేక నైపుణ్యాలలో నక్షత్రాలు",
+          "content": "One ordinary school day became special for Dev. The story is called \"Stars in Many Skills.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Goodness All Around. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"అనేక నైపుణ్యాలలో నక్షత్రాలు.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చుట్టూ మంచిది గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "The best in every field reflects something divine.",
+          "moral_te": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది."
+        },
+        "activity": "Tell your family the story \"Stars in Many Skills\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"అనేక నైపుణ్యాలలో నక్షత్రాలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s10_5",
+        "title": "Wow, Not Jealous",
+        "title_te": "ఆశ్చర్యం, అసూయ కాదు",
+        "emoji": "🎯",
+        "micro_theme": "seeing greatness with wonder",
+        "micro_theme_te": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+        "shlokas": [
+          "10.41",
+          "10.42"
+        ],
+        "story": {
+          "title": "The Science Fair Winner",
+          "title_te": "సైన్స్ ఫేర్ విజేత",
+          "content": "One ordinary school day became special for Anika. The story is called \"The Science Fair Winner.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Wow, Not Jealous. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"సైన్స్ ఫేర్ విజేత.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ఆశ్చర్యం, అసూయ కాదు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moral_te": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది."
+        },
+        "activity": "Tell your family the story \"The Science Fair Winner\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"సైన్స్ ఫేర్ విజేత\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s10_6",
+        "title": "Where Strength Comes From",
+        "title_te": "బలం ఎక్కడ నుండి వస్తుంది",
+        "emoji": "🛡️",
+        "micro_theme": "source of all power",
+        "micro_theme_te": "అన్ని శక్తి యొక్క మూలం",
+        "shlokas": [
+          "10.1",
+          "10.3"
+        ],
+        "story": {
+          "title": "The Tiny Seed",
+          "title_te": "చిన్న విత్తనం",
+          "content": "One ordinary school day became special for Kiran. The story is called \"The Tiny Seed.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Where Strength Comes From. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"చిన్న విత్తనం.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన బలం ఎక్కడ నుండి వస్తుంది గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moral_te": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది."
+        },
+        "activity": "Tell your family the story \"The Tiny Seed\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"చిన్న విత్తనం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
       }
     ],
@@ -860,24 +1388,7 @@
         "micro_theme_te": "భయభక్తులు మరియు వినయం",
         "shlokas": [
           "11.1",
-          "11.2",
-          "11.3",
-          "11.4",
-          "11.5",
-          "11.6",
-          "11.7",
-          "11.8",
-          "11.9",
-          "11.10",
-          "11.11",
-          "11.12",
-          "11.13",
-          "11.14",
-          "11.15",
-          "11.16",
-          "11.17",
-          "11.18",
-          "11.19"
+          "11.2"
         ],
         "story": {
           "title": "Under the Starry Sky",
@@ -899,25 +1410,8 @@
         "micro_theme": "courage after vision",
         "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
         "shlokas": [
-          "11.20",
-          "11.21",
-          "11.22",
-          "11.23",
-          "11.24",
-          "11.25",
-          "11.26",
-          "11.27",
-          "11.28",
-          "11.29",
-          "11.30",
-          "11.31",
-          "11.32",
-          "11.33",
-          "11.34",
-          "11.35",
-          "11.36",
-          "11.37",
-          "11.38"
+          "11.4",
+          "11.5"
         ],
         "story": {
           "title": "The Hard Right Choice",
@@ -939,23 +1433,8 @@
         "micro_theme": "devotion in wonder",
         "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
         "shlokas": [
-          "11.39",
-          "11.40",
-          "11.41",
-          "11.42",
-          "11.43",
-          "11.44",
-          "11.45",
-          "11.46",
-          "11.47",
-          "11.48",
-          "11.49",
-          "11.50",
-          "11.51",
-          "11.52",
-          "11.53",
-          "11.54",
-          "11.55"
+          "11.32",
+          "11.33"
         ],
         "story": {
           "title": "Thank You, Teacher",
@@ -968,6 +1447,121 @@
         "activity": "Tell your family the story \"Thank You, Teacher\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"ధన్యవాదాలు, టీచర్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s11_4",
+        "title": "Small Before the Big",
+        "title_te": "పెద్దది ముందు చిన్నది",
+        "emoji": "🌟",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.54",
+          "11.55"
+        ],
+        "story": {
+          "title": "Under the Starry Sky",
+          "title_te": "నక్షత్రాల ఆకాశం కింద",
+          "content": "One ordinary school day became special for Dev. The story is called \"Under the Starry Sky.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Small Before the Big. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"నక్షత్రాల ఆకాశం కింద.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన పెద్దది ముందు చిన్నది గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Tell your family the story \"Under the Starry Sky\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"నక్షత్రాల ఆకాశం కింద\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s11_5",
+        "title": "Brave After Seeing Truth",
+        "title_te": "సత్యం చూసిన తర్వాత ధైర్యం",
+        "emoji": "🎯",
+        "micro_theme": "courage after vision",
+        "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
+        "shlokas": [
+          "11.54",
+          "11.55"
+        ],
+        "story": {
+          "title": "The Hard Right Choice",
+          "title_te": "కఠినమైన సరైన ఎంపిక",
+          "content": "One ordinary school day became special for Anika. The story is called \"The Hard Right Choice.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Brave After Seeing Truth. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"కఠినమైన సరైన ఎంపిక.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన సత్యం చూసిన తర్వాత ధైర్యం గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moral_te": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది."
+        },
+        "activity": "Tell your family the story \"The Hard Right Choice\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"కఠినమైన సరైన ఎంపిక\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s11_6",
+        "title": "Love and Respect Together",
+        "title_te": "ప్రేమ మరియు గౌరవం కలిసి",
+        "emoji": "🛡️",
+        "micro_theme": "devotion in wonder",
+        "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
+        "shlokas": [
+          "11.1",
+          "11.3"
+        ],
+        "story": {
+          "title": "Thank You, Teacher",
+          "title_te": "ధన్యవాదాలు, టీచర్",
+          "content": "One ordinary school day became special for Kiran. The story is called \"Thank You, Teacher.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Love and Respect Together. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"ధన్యవాదాలు, టీచర్.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ప్రేమ మరియు గౌరవం కలిసి గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moral_te": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి."
+        },
+        "activity": "Tell your family the story \"Thank You, Teacher\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"ధన్యవాదాలు, టీచర్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s11_7",
+        "title": "Small Before the Big",
+        "title_te": "పెద్దది ముందు చిన్నది",
+        "emoji": "⚖️",
+        "micro_theme": "awe and humility",
+        "micro_theme_te": "భయభక్తులు మరియు వినయం",
+        "shlokas": [
+          "11.4",
+          "11.6"
+        ],
+        "story": {
+          "title": "Under the Starry Sky",
+          "title_te": "నక్షత్రాల ఆకాశం కింద",
+          "content": "One ordinary school day became special for Priya. The story is called \"Under the Starry Sky.\" Priya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Priya wanted to walk away. Then Priya remembered what Krishna teaches in the Gita: Small Before the Big. Priya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Priya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Priyaకి ప్రత్యేకమైనది. కథ పేరు \"నక్షత్రాల ఆకాశం కింద.\" Priya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Priya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన పెద్దది ముందు చిన్నది గుర్తుకు వచ్చింది. Priya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moral_te": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది."
+        },
+        "activity": "Tell your family the story \"Under the Starry Sky\" in your own words. What would you do in Priya's place?",
+        "activity_te": "\"నక్షత్రాల ఆకాశం కింద\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Priya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s11_8",
+        "title": "Brave After Seeing Truth",
+        "title_te": "సత్యం చూసిన తర్వాత ధైర్యం",
+        "emoji": "🔥",
+        "micro_theme": "courage after vision",
+        "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
+        "shlokas": [
+          "11.7",
+          "11.9"
+        ],
+        "story": {
+          "title": "The Hard Right Choice",
+          "title_te": "కఠినమైన సరైన ఎంపిక",
+          "content": "One ordinary school day became special for Sia. The story is called \"The Hard Right Choice.\" Sia felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Sia wanted to walk away. Then Sia remembered what Krishna teaches in the Gita: Brave After Seeing Truth. Sia took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Sia felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Siaకి ప్రత్యేకమైనది. కథ పేరు \"కఠినమైన సరైన ఎంపిక.\" Sia చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Sia దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన సత్యం చూసిన తర్వాత ధైర్యం గుర్తుకు వచ్చింది. Sia లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moral_te": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది."
+        },
+        "activity": "Tell your family the story \"The Hard Right Choice\" in your own words. What would you do in Sia's place?",
+        "activity_te": "\"కఠినమైన సరైన ఎంపిక\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Sia స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "12": [
@@ -979,16 +1573,8 @@
         "micro_theme": "many paths one goal",
         "micro_theme_te": "అనేక మార్గాలు ఒక లక్ష్యం",
         "shlokas": [
-          "12.1",
-          "12.2",
-          "12.3",
-          "12.4",
-          "12.5",
           "12.6",
-          "12.7",
-          "12.8",
-          "12.9",
-          "12.10"
+          "12.7"
         ],
         "story": {
           "title": "Three Ways to Help",
@@ -1010,16 +1596,8 @@
         "micro_theme": "qualities of a devotee",
         "micro_theme_te": "భక్తుని లక్షణాలు",
         "shlokas": [
-          "12.11",
-          "12.12",
           "12.13",
-          "12.14",
-          "12.15",
-          "12.16",
-          "12.17",
-          "12.18",
-          "12.19",
-          "12.20"
+          "12.14"
         ],
         "story": {
           "title": "Forgive and Try Again",
@@ -1031,6 +1609,29 @@
         },
         "activity": "Tell your family the story \"Forgive and Try Again\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"క్షమించు, మళ్ళీ ప్రయత్నించు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s12_3",
+        "title": "Where the Mind Rests",
+        "title_te": "మనస్సు ఎక్కడ నిలుస్తుంది",
+        "emoji": "💡",
+        "micro_theme": "fixing the mind on good",
+        "micro_theme_te": "మనస్సును మంచిది మీద నిలపడం",
+        "shlokas": [
+          "12.19",
+          "12.20"
+        ],
+        "story": {
+          "title": "The Poster on the Wall",
+          "title_te": "గోడపై పోస్టర్",
+          "content": "One ordinary school day became special for Maya. The story is called \"The Poster on the Wall.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Where the Mind Rests. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"గోడపై పోస్టర్.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మనస్సు ఎక్కడ నిలుస్తుంది గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Where your mind rests, your life will follow.",
+          "moral_te": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది."
+        },
+        "activity": "Tell your family the story \"The Poster on the Wall\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"గోడపై పోస్టర్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
       }
     ],
@@ -1044,22 +1645,7 @@
         "micro_theme_te": "శరీరం ఒక క్షేత్రం",
         "shlokas": [
           "13.1",
-          "13.2",
-          "13.3",
-          "13.4",
-          "13.5",
-          "13.6",
-          "13.7",
-          "13.8",
-          "13.9",
-          "13.10",
-          "13.11",
-          "13.12",
-          "13.13",
-          "13.14",
-          "13.15",
-          "13.16",
-          "13.17"
+          "13.2"
         ],
         "story": {
           "title": "Planting Good Habits",
@@ -1081,23 +1667,8 @@
         "micro_theme": "the knower within",
         "micro_theme_te": "లోపలి తెలిసినవాడు",
         "shlokas": [
-          "13.18",
-          "13.19",
-          "13.20",
-          "13.21",
-          "13.22",
-          "13.23",
-          "13.24",
-          "13.25",
-          "13.26",
-          "13.27",
-          "13.28",
-          "13.29",
-          "13.30",
-          "13.31",
-          "13.32",
-          "13.33",
-          "13.34"
+          "13.8",
+          "13.9"
         ],
         "story": {
           "title": "Thoughts Like Clouds",
@@ -1110,6 +1681,75 @@
         "activity": "Tell your family the story \"Thoughts Like Clouds\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"మేఘాల లాంటి ఆలోచనలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s13_3",
+        "title": "Gentle Wins",
+        "title_te": "సౌమ్యత జయిస్తుంది",
+        "emoji": "💡",
+        "micro_theme": "humility and non-violence",
+        "micro_theme_te": "వినయం మరియు అహింస",
+        "shlokas": [
+          "13.27",
+          "13.28"
+        ],
+        "story": {
+          "title": "Words Instead of Pushes",
+          "title_te": "నెట్టేబదులు మాటలు",
+          "content": "One ordinary school day became special for Maya. The story is called \"Words Instead of Pushes.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Gentle Wins. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"నెట్టేబదులు మాటలు.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన సౌమ్యత జయిస్తుంది గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moral_te": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది."
+        },
+        "activity": "Tell your family the story \"Words Instead of Pushes\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"నెట్టేబదులు మాటలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s13_4",
+        "title": "Your Body, Your Garden",
+        "title_te": "నీ శరీరం, నీ తోట",
+        "emoji": "🌟",
+        "micro_theme": "body as a field",
+        "micro_theme_te": "శరీరం ఒక క్షేత్రం",
+        "shlokas": [
+          "13.33",
+          "13.34"
+        ],
+        "story": {
+          "title": "Planting Good Habits",
+          "title_te": "మంచి అలవాట్లను నాటడం",
+          "content": "One ordinary school day became special for Dev. The story is called \"Planting Good Habits.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Your Body, Your Garden. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"మంచి అలవాట్లను నాటడం.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన నీ శరీరం, నీ తోట గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moral_te": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు."
+        },
+        "activity": "Tell your family the story \"Planting Good Habits\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"మంచి అలవాట్లను నాటడం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s13_5",
+        "title": "The Watcher Inside",
+        "title_te": "లోపలి చూసేవాడు",
+        "emoji": "🎯",
+        "micro_theme": "the knower within",
+        "micro_theme_te": "లోపలి తెలిసినవాడు",
+        "shlokas": [
+          "13.1",
+          "13.3"
+        ],
+        "story": {
+          "title": "Thoughts Like Clouds",
+          "title_te": "మేఘాల లాంటి ఆలోచనలు",
+          "content": "One ordinary school day became special for Anika. The story is called \"Thoughts Like Clouds.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: The Watcher Inside. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"మేఘాల లాంటి ఆలోచనలు.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన లోపలి చూసేవాడు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moral_te": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు."
+        },
+        "activity": "Tell your family the story \"Thoughts Like Clouds\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"మేఘాల లాంటి ఆలోచనలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "14": [
@@ -1121,20 +1761,8 @@
         "micro_theme": "goodness passion and dullness",
         "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
         "shlokas": [
-          "14.1",
-          "14.2",
-          "14.3",
-          "14.4",
           "14.5",
-          "14.6",
-          "14.7",
-          "14.8",
-          "14.9",
-          "14.10",
-          "14.11",
-          "14.12",
-          "14.13",
-          "14.14"
+          "14.6"
         ],
         "story": {
           "title": "Morning, Noon, Evening",
@@ -1156,17 +1784,6 @@
         "micro_theme": "rising above moods",
         "micro_theme_te": "భావాలకు అతీతంగా",
         "shlokas": [
-          "14.15",
-          "14.16",
-          "14.17",
-          "14.18",
-          "14.19",
-          "14.20",
-          "14.21",
-          "14.22",
-          "14.23",
-          "14.24",
-          "14.25",
           "14.26",
           "14.27"
         ],
@@ -1181,77 +1798,122 @@
         "activity": "Tell your family the story \"The Cloud Passes\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"మేఘం గడిచిపోయింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s14_3",
+        "title": "You Become What You Choose",
+        "title_te": "మీరు ఎంచుకున్నది మీరవుతారు",
+        "emoji": "💡",
+        "micro_theme": "food thoughts and habits",
+        "micro_theme_te": "ఆహారం ఆలోచనలు అలవాట్లు",
+        "shlokas": [
+          "14.26",
+          "14.27"
+        ],
+        "story": {
+          "title": "Lunch Box Choices",
+          "title_te": "లంచ్ బాక్స్ ఎంపికలు",
+          "content": "One ordinary school day became special for Maya. The story is called \"Lunch Box Choices.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: You Become What You Choose. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"లంచ్ బాక్స్ ఎంపికలు.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మీరు ఎంచుకున్నది మీరవుతారు గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moral_te": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది."
+        },
+        "activity": "Tell your family the story \"Lunch Box Choices\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"లంచ్ బాక్స్ ఎంపికలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s14_4",
+        "title": "Three Moods in a Day",
+        "title_te": "ఒక రోజులో మూడు భావాలు",
+        "emoji": "🌟",
+        "micro_theme": "goodness passion and dullness",
+        "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
+        "shlokas": [
+          "14.1",
+          "14.3"
+        ],
+        "story": {
+          "title": "Morning, Noon, Evening",
+          "title_te": "ఉదయం, మధ్యాహ్నం, సాయంత్రం",
+          "content": "One ordinary school day became special for Dev. The story is called \"Morning, Noon, Evening.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Three Moods in a Day. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"ఉదయం, మధ్యాహ్నం, సాయంత్రం.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన ఒక రోజులో మూడు భావాలు గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moral_te": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి."
+        },
+        "activity": "Tell your family the story \"Morning, Noon, Evening\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"ఉదయం, మధ్యాహ్నం, సాయంత్రం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "15": [
       {
         "id": "theme_s15_1",
         "title": "The Tree of Life",
-        "title_te": "జీవ వృక్షం",
+        "title_te": "The Tree of Life",
         "emoji": "🌳",
-        "micro_theme": "We are all connected to something higher",
-        "micro_theme_te": "మనమందరం ఉన్నతమైన దానితో అనుసంధానించబడి ఉన్నాము",
+        "micro_theme": "Life is like a growing tree",
+        "micro_theme_te": "Life is like a growing tree",
         "shlokas": [
           "15.1",
           "15.2"
         ],
         "story": {
-          "title": "The Upside-Down Magic Tree",
-          "title_te": "తలక్రిందులుగా ఉన్న మాయా వృక్షం",
-          "content": "Imagine a magical tree where the roots grow up into the sky and the branches spread out below! The roots in the sky remind us that we are connected to something very big and wonderful. We are like leaves on this giant tree, swaying and playing in the wind, but always connected to the same source. No matter how far the branches spread, every leaf is still part of the same tree.",
-          "content_te": "వేర్లు ఆకాశంలో పైకి పెరిగే మరియు కొమ్మలు కిందకు వ్యాపించే ఒక మాయా వృక్షాన్ని ఊహించండి! ఆకాశంలో ఉన్న వేర్లు మనం చాలా పెద్ద మరియు అద్భుతమైన దానితో అనుసంధానించబడి ఉన్నామని గుర్తు చేస్తాయి. మనం ఈ పెద్ద వృక్షంపై ఆకుల్లా ఉన్నాము, గాలిలో ఊగుతూ మరియు ఆడుతూ, కానీ ఎల్లప్పుడూ ఒకే మూలంతో అనుసంధానించబడి ఉంటాము. కొమ్మలు ఎంత దూరం వ్యాపించినా, ప్రతి ఆకు ఇంకా అదే వృక్షంలో భాగమే.",
-          "moral": "You are connected to something bigger and higher than what you can see.",
-          "moral_te": "మీరు మీరు చూడగలిగిన దానికంటే పెద్ద మరియు ఉన్నతమైన దానితో అనుసంధానించబడి ఉన్నారు."
+          "title": "The Upside-Down Tree",
+          "title_te": "The Upside-Down Tree",
+          "content": "Imagine a magical tree where the roots are in the sky and the branches grow downwards! The roots in the sky represent our connection to the divine, and the branches spreading out are the world we live in. We are all leaves on this giant, magical tree of life.",
+          "content_te": "Imagine a magical tree where the roots are in the sky and the branches grow downwards! The roots in the sky represent our connection to the divine, and the branches spreading out are the world we live in. We are all leaves on this giant, magical tree of life.",
+          "moral": "We are connected to something much higher, even if we are busy playing in the branches.",
+          "moral_te": "We are connected to something much higher, even if we are busy playing in the branches."
         },
-        "activity": "Draw an upside-down tree with roots in the sky and branches on the ground. Write your name on one leaf!",
-        "activity_te": "ఆకాశంలో వేర్లతో మరియు నేలపై కొమ్మలతో తలక్రిందులుగా ఉన్న చెట్టును గీయండి. ఒక ఆకుపై మీ పేరు రాయండి!",
+        "activity": "Draw an upside-down tree! Put the roots at the top of your paper.",
+        "activity_te": "Draw an upside-down tree! Put the roots at the top of your paper.",
         "videoUrl": ""
       },
       {
         "id": "theme_s15_2",
-        "title": "The Soul's Journey",
-        "title_te": "ఆత్మ యొక్క ప్రయాణం",
-        "emoji": "🌱",
-        "micro_theme": "The soul continues its beautiful journey",
-        "micro_theme_te": "ఆత్మ తన అందమైన ప్రయాణాన్ని కొనసాగిస్తుంది",
+        "title": "Detach from Illusion",
+        "title_te": "Detach from Illusion",
+        "emoji": "✂️",
+        "micro_theme": "Cut unnecessary attachments",
+        "micro_theme_te": "Cut unnecessary attachments",
         "shlokas": [
-          "15.7",
-          "15.8"
+          "15.2",
+          "15.3"
         ],
         "story": {
-          "title": "The Traveler with a Suitcase",
-          "title_te": "సూట్కేసుతో ప్రయాణికుడు",
-          "content": "Imagine a happy traveler who visits one beautiful city, then packs their bag and moves to the next city for a new adventure. When the time comes, they pack up again and go to yet another wonderful place. Krishna tells us that our soul is just like that traveler. When one life's adventure is complete, the soul packs its experiences and moves to a new body for a brand new adventure. You are a traveler on an incredible journey!",
-          "content_te": "ఒక అందమైన నగరాన్ని సందర్శించి, ఆపై తన బ్యాగ్ సర్దుకుని కొత్త సాహసం కోసం తదుపరి నగరానికి వెళ్ళే ఒక సంతోషకరమైన ప్రయాణికుడిని ఊహించండి. సమయం వచ్చినప్పుడు, వారు మళ్ళీ సర్దుకుని మరొక అద్భుతమైన ప్రదేశానికి వెళ్తారు. మన ఆత్మ కూడా ఆ ప్రయాణికుడిలాంటిదేనని కృష్ణుడు మనకు చెప్పాడు. ఒక జీవిత సాహసం పూర్తయినప్పుడు, ఆత్మ తన అనుభవాలను సర్దుకుని కొత్త సాహసం కోసం కొత్త శరీరానికి వెళ్తుంది. మీరు ఒక అద్భుతమైన ప్రయాణంలో ఉన్న ప్రయాణికుడు!",
-          "moral": "Life is an amazing journey for your soul. Every adventure teaches you something new.",
-          "moral_te": "జీవితం మీ ఆత్మకు ఒక అద్భుతమైన ప్రయాణం. ప్రతి సాహసం మీకు కొత్తదాన్ని నేర్పిస్తుంది."
+          "title": "The Heavy Backpack",
+          "title_te": "The Heavy Backpack",
+          "content": "Rahul went hiking but filled his backpack with rocks just because they looked shiny. Soon, he was too tired to climb. His guide told him to empty the rocks so he could reach the top. To grow, we have to cut our attachment to heavy, unnecessary things.",
+          "content_te": "Rahul went hiking but filled his backpack with rocks just because they looked shiny. Soon, he was too tired to climb. His guide told him to empty the rocks so he could reach the top. To grow, we have to cut our attachment to heavy, unnecessary things.",
+          "moral": "Letting go of distractions and silly attachments makes your journey much lighter.",
+          "moral_te": "Letting go of distractions and silly attachments makes your journey much lighter."
         },
-        "activity": "If your soul is a traveler, what is one good quality you want to pack in your suitcase for the next adventure?",
-        "activity_te": "మీ ఆత్మ ఒక ప్రయాణికుడైతే, తదుపరి సాహసం కోసం మీరు మీ సూట్కేసులో ఏ ఒక మంచి లక్షణాన్ని ప్యాక్ చేయాలనుకుంటున్నారు?",
+        "activity": "What is one 'heavy rock' (like playing too many video games) you can put down?",
+        "activity_te": "What is one 'heavy rock' (like playing too many video games) you can put down?",
         "videoUrl": ""
       },
       {
         "id": "theme_s15_3",
-        "title": "Energy in Everything",
-        "title_te": "ప్రతిదానిలో శక్తి",
-        "emoji": "🔥",
-        "micro_theme": "The same divine energy powers everything",
-        "micro_theme_te": "అదే దివ్య శక్తి ప్రతిదాన్ని శక్తివంతం చేస్తుంది",
+        "title": "Search for Truth",
+        "title_te": "Search for Truth",
+        "emoji": "🔍",
+        "micro_theme": "Look for what is real",
+        "micro_theme_te": "Look for what is real",
         "shlokas": [
-          "15.12",
-          "15.13",
-          "15.14"
+          "15.3",
+          "15.4"
         ],
         "story": {
-          "title": "The Sun's Magic",
-          "title_te": "సూర్యుని మాయా",
-          "content": "Have you ever wondered where the energy in your food comes from? The sun! The sun shines on plants and helps them grow. We eat the plants (or animals that ate the plants) and get energy to run and play. Krishna says the same divine energy that lights up the sun also nourishes the earth and even helps us digest our food! That amazing energy is inside you right now, giving you life and strength.",
-          "content_te": "మీ ఆహారంలోని శక్తి ఎక్కడ నుండి వస్తుందని మీరు ఎప్పుడైనా ఆలోచించారా? సూర్యుడి నుండి! సూర్యుడు మొక్కలపై ప్రకాశించి వాటిని పెరగడానికి సహాయం చేస్తాడు. మనం మొక్కలను (లేదా మొక్కలను తిన్న జంతువులను) తింటాము మరియు పరిగెత్తడానికి, ఆడటానికి శక్తిని పొందుతాము. సూర్యుడిని వెలిగించే అదే దివ్య శక్తి భూమిని పోషించడమే కాకుండా మన ఆహారాన్ని జీర్ణం చేయడానికి కూడా సహాయపడుతుందని కృష్ణుడు చెప్పాడు! ఆ అద్భుతమైన శక్తి ఇప్పుడు మీ లోపల ఉంది, మీకు జీవితాన్ని మరియు బలాన్ని ఇస్తుంది.",
-          "moral": "The same divine energy is in the sun, the plants, and in you! You are part of something amazing.",
-          "moral_te": "అదే దివ్య శక్తి సూర్యుడిలో, మొక్కలలో మరియు మీలో ఉంది! మీరు ఒక అద్భుతమైన దానిలో భాగం."
+          "title": "The Treasure Hunt",
+          "title_te": "The Treasure Hunt",
+          "content": "Ahaana had a map to a hidden treasure. Many people told her to stop and just play in the mud, but she kept searching for the real treasure. Seeking the ultimate truth is like a great treasure hunt for your soul.",
+          "content_te": "Ahaana had a map to a hidden treasure. Many people told her to stop and just play in the mud, but she kept searching for the real treasure. Seeking the ultimate truth is like a great treasure hunt for your soul.",
+          "moral": "Never stop searching for what is truly real and important in life.",
+          "moral_te": "Never stop searching for what is truly real and important in life."
         },
-        "activity": "Next time you eat a meal, take one second to think: 'The sun helped make this food possible!'",
-        "activity_te": "తదుపరి సారి మీరు భోజనం చేసినప్పుడు, ఒక్క సెకను ఆలోచించండి: 'ఈ ఆహారాన్ని సాధ్యం చేయడానికి సూర్యుడు సహాయపడ్డాడు!'",
+        "activity": "If you could ask the smartest person in the universe one question, what would it be?",
+        "activity_te": "If you could ask the smartest person in the universe one question, what would it be?",
         "videoUrl": ""
       }
     ],
@@ -1265,17 +1927,7 @@
         "micro_theme_te": "దైవీ లక్షణాలు",
         "shlokas": [
           "16.1",
-          "16.2",
-          "16.3",
-          "16.4",
-          "16.5",
-          "16.6",
-          "16.7",
-          "16.8",
-          "16.9",
-          "16.10",
-          "16.11",
-          "16.12"
+          "16.2"
         ],
         "story": {
           "title": "The Courage to Tell Truth",
@@ -1297,18 +1949,8 @@
         "micro_theme": "demoniac tendencies",
         "micro_theme_te": "ఆసుర ధర్మాలు",
         "shlokas": [
-          "16.13",
-          "16.14",
-          "16.15",
-          "16.16",
-          "16.17",
-          "16.18",
-          "16.19",
-          "16.20",
           "16.21",
-          "16.22",
-          "16.23",
-          "16.24"
+          "16.22"
         ],
         "story": {
           "title": "The Hot Words Game",
@@ -1321,6 +1963,29 @@
         "activity": "Tell your family the story \"The Hot Words Game\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"వేడి మాటల ఆట\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s16_3",
+        "title": "Choose Your Team Inside",
+        "title_te": "లోపల మీ జట్టు ఎంచుకోండి",
+        "emoji": "💡",
+        "micro_theme": "choosing your camp",
+        "micro_theme_te": "మీ వైపు ఎంచుకోవడం",
+        "shlokas": [
+          "16.23",
+          "16.24"
+        ],
+        "story": {
+          "title": "The Two Wolves Story",
+          "title_te": "రెండు తోడేలు కథ",
+          "content": "One ordinary school day became special for Maya. The story is called \"The Two Wolves Story.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Choose Your Team Inside. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"రెండు తోడేలు కథ.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన లోపల మీ జట్టు ఎంచుకోండి గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Small daily choices build a noble character.",
+          "moral_te": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి."
+        },
+        "activity": "Tell your family the story \"The Two Wolves Story\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"రెండు తోడేలు కథ\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "17": [
@@ -1332,20 +1997,8 @@
         "micro_theme": "faith shapes actions",
         "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
         "shlokas": [
-          "17.1",
-          "17.2",
           "17.3",
-          "17.4",
-          "17.5",
-          "17.6",
-          "17.7",
-          "17.8",
-          "17.9",
-          "17.10",
-          "17.11",
-          "17.12",
-          "17.13",
-          "17.14"
+          "17.4"
         ],
         "story": {
           "title": "Practice What You Trust",
@@ -1367,20 +2020,8 @@
         "micro_theme": "sattvic rajasic tamasic worship",
         "micro_theme_te": "మూడు రకాల శ్రద్ధ",
         "shlokas": [
-          "17.15",
-          "17.16",
-          "17.17",
-          "17.18",
-          "17.19",
           "17.20",
-          "17.21",
-          "17.22",
-          "17.23",
-          "17.24",
-          "17.25",
-          "17.26",
-          "17.27",
-          "17.28"
+          "17.21"
         ],
         "story": {
           "title": "Flowers with Love",
@@ -1393,6 +2034,52 @@
         "activity": "Tell your family the story \"Flowers with Love\" in your own words. What would you do in Arjun's place?",
         "activity_te": "\"ప్రేమతో పువ్వులు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_s17_3",
+        "title": "Truth in Small Acts",
+        "title_te": "చిన్న చర్యలలో సత్యం",
+        "emoji": "💡",
+        "micro_theme": "OM Tat Sat",
+        "micro_theme_te": "ఓం తత్ సత్",
+        "shlokas": [
+          "17.27",
+          "17.28"
+        ],
+        "story": {
+          "title": "Honest Homework",
+          "title_te": "నిజాయితీ హోంవర్క్",
+          "content": "One ordinary school day became special for Maya. The story is called \"Honest Homework.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Truth in Small Acts. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"నిజాయితీ హోంవర్క్.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చిన్న చర్యలలో సత్యం గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moral_te": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి."
+        },
+        "activity": "Tell your family the story \"Honest Homework\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"నిజాయితీ హోంవర్క్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s17_4",
+        "title": "Belief Shows in Actions",
+        "title_te": "నమ్మకం చర్యలలో కనిపిస్తుంది",
+        "emoji": "🌟",
+        "micro_theme": "faith shapes actions",
+        "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+        "shlokas": [
+          "17.1",
+          "17.3"
+        ],
+        "story": {
+          "title": "Practice What You Trust",
+          "title_te": "నమ్మేది సాధన చేయి",
+          "content": "One ordinary school day became special for Dev. The story is called \"Practice What You Trust.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Belief Shows in Actions. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"నమ్మేది సాధన చేయి.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన నమ్మకం చర్యలలో కనిపిస్తుంది గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "What you deeply believe shows in what you do.",
+          "moral_te": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది."
+        },
+        "activity": "Tell your family the story \"Practice What You Trust\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"నమ్మేది సాధన చేయి\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
       }
     ],
     "18": [
@@ -1404,32 +2091,8 @@
         "micro_theme": "types of renunciation",
         "micro_theme_te": "సన్యాస రకాలు",
         "shlokas": [
-          "18.1",
           "18.2",
-          "18.3",
-          "18.4",
-          "18.5",
-          "18.6",
-          "18.7",
-          "18.8",
-          "18.9",
-          "18.10",
-          "18.11",
-          "18.12",
-          "18.13",
-          "18.14",
-          "18.15",
-          "18.16",
-          "18.17",
-          "18.18",
-          "18.19",
-          "18.20",
-          "18.21",
-          "18.22",
-          "18.23",
-          "18.24",
-          "18.25",
-          "18.26"
+          "18.3"
         ],
         "story": {
           "title": "Sharing the Extra Snack",
@@ -1451,32 +2114,9 @@
         "micro_theme": "five causes of action",
         "micro_theme_te": "చర్యకు ఐదు కారణాలు",
         "shlokas": [
-          "18.27",
-          "18.28",
-          "18.29",
-          "18.30",
-          "18.31",
-          "18.32",
-          "18.33",
-          "18.34",
-          "18.35",
-          "18.36",
-          "18.37",
-          "18.38",
-          "18.39",
-          "18.40",
-          "18.41",
-          "18.42",
-          "18.43",
-          "18.44",
-          "18.45",
-          "18.46",
-          "18.47",
-          "18.48",
-          "18.49",
-          "18.50",
-          "18.51",
-          "18.52"
+          "18.5",
+          "18.6",
+          "18.7"
         ],
         "story": {
           "title": "The Science Project Team",
@@ -1498,32 +2138,9 @@
         "micro_theme": "final teaching surrender",
         "micro_theme_te": "చివరి బోధన లొంగుబాటు",
         "shlokas": [
-          "18.53",
-          "18.54",
-          "18.55",
-          "18.56",
-          "18.57",
-          "18.58",
-          "18.59",
-          "18.60",
-          "18.61",
-          "18.62",
-          "18.63",
-          "18.64",
-          "18.65",
-          "18.66",
-          "18.67",
-          "18.68",
-          "18.69",
-          "18.70",
-          "18.71",
-          "18.72",
-          "18.73",
-          "18.74",
-          "18.75",
-          "18.76",
-          "18.77",
-          "18.78"
+          "18.11",
+          "18.12",
+          "18.13"
         ],
         "story": {
           "title": "The Last Day of School",
@@ -1535,6 +2152,190 @@
         },
         "activity": "Tell your family the story \"The Last Day of School\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"పాఠశాల చివరి రోజు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_4",
+        "title": "Letting Go of Greed",
+        "title_te": "అలుకుతనం వదలడం",
+        "emoji": "🌟",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.15",
+          "18.16"
+        ],
+        "story": {
+          "title": "Sharing the Extra Snack",
+          "title_te": "అదనపు స్నాక్ పంచుకోవడం",
+          "content": "One ordinary school day became special for Dev. The story is called \"Sharing the Extra Snack.\" Dev felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Dev wanted to walk away. Then Dev remembered what Krishna teaches in the Gita: Letting Go of Greed. Dev took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Dev felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Devకి ప్రత్యేకమైనది. కథ పేరు \"అదనపు స్నాక్ పంచుకోవడం.\" Dev చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Dev దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన అలుకుతనం వదలడం గుర్తుకు వచ్చింది. Dev లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Tell your family the story \"Sharing the Extra Snack\" in your own words. What would you do in Dev's place?",
+        "activity_te": "\"అదనపు స్నాక్ పంచుకోవడం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_5",
+        "title": "Why We Act",
+        "title_te": "మనం ఎందుకు పని చేస్తాం",
+        "emoji": "🎯",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.33",
+          "18.34"
+        ],
+        "story": {
+          "title": "The Science Project Team",
+          "title_te": "సైన్స్ ప్రాజెక్ట్ జట్టు",
+          "content": "One ordinary school day became special for Anika. The story is called \"The Science Project Team.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Why We Act. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"సైన్స్ ప్రాజెక్ట్ జట్టు.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మనం ఎందుకు పని చేస్తాం గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Tell your family the story \"The Science Project Team\" in your own words. What would you do in Anika's place?",
+        "activity_te": "\"సైన్స్ ప్రాజెక్ట్ జట్టు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_6",
+        "title": "Do Your Best, Then Trust",
+        "title_te": "మీ వంతు చేయి, తర్వాత నమ్ము",
+        "emoji": "🛡️",
+        "micro_theme": "final teaching surrender",
+        "micro_theme_te": "చివరి బోధన లొంగుబాటు",
+        "shlokas": [
+          "18.46",
+          "18.47"
+        ],
+        "story": {
+          "title": "The Last Day of School",
+          "title_te": "పాఠశాల చివరి రోజు",
+          "content": "One ordinary school day became special for Kiran. The story is called \"The Last Day of School.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Do Your Best, Then Trust. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"పాఠశాల చివరి రోజు.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మీ వంతు చేయి, తర్వాత నమ్ము గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moral_te": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి."
+        },
+        "activity": "Tell your family the story \"The Last Day of School\" in your own words. What would you do in Kiran's place?",
+        "activity_te": "\"పాఠశాల చివరి రోజు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_7",
+        "title": "Letting Go of Greed",
+        "title_te": "అలుకుతనం వదలడం",
+        "emoji": "⚖️",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.54",
+          "18.55"
+        ],
+        "story": {
+          "title": "Sharing the Extra Snack",
+          "title_te": "అదనపు స్నాక్ పంచుకోవడం",
+          "content": "One ordinary school day became special for Priya. The story is called \"Sharing the Extra Snack.\" Priya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Priya wanted to walk away. Then Priya remembered what Krishna teaches in the Gita: Letting Go of Greed. Priya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Priya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Priyaకి ప్రత్యేకమైనది. కథ పేరు \"అదనపు స్నాక్ పంచుకోవడం.\" Priya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Priya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన అలుకుతనం వదలడం గుర్తుకు వచ్చింది. Priya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Tell your family the story \"Sharing the Extra Snack\" in your own words. What would you do in Priya's place?",
+        "activity_te": "\"అదనపు స్నాక్ పంచుకోవడం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Priya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_8",
+        "title": "Why We Act",
+        "title_te": "మనం ఎందుకు పని చేస్తాం",
+        "emoji": "🔥",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.57",
+          "18.58"
+        ],
+        "story": {
+          "title": "The Science Project Team",
+          "title_te": "సైన్స్ ప్రాజెక్ట్ జట్టు",
+          "content": "One ordinary school day became special for Sia. The story is called \"The Science Project Team.\" Sia felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Sia wanted to walk away. Then Sia remembered what Krishna teaches in the Gita: Why We Act. Sia took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Sia felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Siaకి ప్రత్యేకమైనది. కథ పేరు \"సైన్స్ ప్రాజెక్ట్ జట్టు.\" Sia చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Sia దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మనం ఎందుకు పని చేస్తాం గుర్తుకు వచ్చింది. Sia లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Tell your family the story \"The Science Project Team\" in your own words. What would you do in Sia's place?",
+        "activity_te": "\"సైన్స్ ప్రాజెక్ట్ జట్టు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Sia స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_9",
+        "title": "Do Your Best, Then Trust",
+        "title_te": "మీ వంతు చేయి, తర్వాత నమ్ము",
+        "emoji": "🌳",
+        "micro_theme": "final teaching surrender",
+        "micro_theme_te": "చివరి బోధన లొంగుబాటు",
+        "shlokas": [
+          "18.61",
+          "18.62"
+        ],
+        "story": {
+          "title": "The Last Day of School",
+          "title_te": "పాఠశాల చివరి రోజు",
+          "content": "One ordinary school day became special for Riya. The story is called \"The Last Day of School.\" Riya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Riya wanted to walk away. Then Riya remembered what Krishna teaches in the Gita: Do Your Best, Then Trust. Riya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Riya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Riyaకి ప్రత్యేకమైనది. కథ పేరు \"పాఠశాల చివరి రోజు.\" Riya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Riya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మీ వంతు చేయి, తర్వాత నమ్ము గుర్తుకు వచ్చింది. Riya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moral_te": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి."
+        },
+        "activity": "Tell your family the story \"The Last Day of School\" in your own words. What would you do in Riya's place?",
+        "activity_te": "\"పాఠశాల చివరి రోజు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Riya స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_10",
+        "title": "Letting Go of Greed",
+        "title_te": "అలుకుతనం వదలడం",
+        "emoji": "✨",
+        "micro_theme": "types of renunciation",
+        "micro_theme_te": "సన్యాస రకాలు",
+        "shlokas": [
+          "18.66",
+          "18.67"
+        ],
+        "story": {
+          "title": "Sharing the Extra Snack",
+          "title_te": "అదనపు స్నాక్ పంచుకోవడం",
+          "content": "One ordinary school day became special for Arjun. The story is called \"Sharing the Extra Snack.\" Arjun felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Arjun wanted to walk away. Then Arjun remembered what Krishna teaches in the Gita: Letting Go of Greed. Arjun took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Arjun felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Arjunకి ప్రత్యేకమైనది. కథ పేరు \"అదనపు స్నాక్ పంచుకోవడం.\" Arjun చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Arjun దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన అలుకుతనం వదలడం గుర్తుకు వచ్చింది. Arjun లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
+        },
+        "activity": "Tell your family the story \"Sharing the Extra Snack\" in your own words. What would you do in Arjun's place?",
+        "activity_te": "\"అదనపు స్నాక్ పంచుకోవడం\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Arjun స్థానంలో మీరు ఏమి చేస్తారు?",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_s18_11",
+        "title": "Why We Act",
+        "title_te": "మనం ఎందుకు పని చేస్తాం",
+        "emoji": "☀️",
+        "micro_theme": "five causes of action",
+        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
+        "shlokas": [
+          "18.77",
+          "18.78"
+        ],
+        "story": {
+          "title": "The Science Project Team",
+          "title_te": "సైన్స్ ప్రాజెక్ట్ జట్టు",
+          "content": "One ordinary school day became special for Maya. The story is called \"The Science Project Team.\" Maya felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Maya wanted to walk away. Then Maya remembered what Krishna teaches in the Gita: Why We Act. Maya took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Maya felt proud—not because everyone clapped, but because the heart felt quiet and good.",
+          "content_te": "ఒక సాధారణ పాఠశాల రోజు Mayaకి ప్రత్యేకమైనది. కథ పేరు \"సైన్స్ ప్రాజెక్ట్ జట్టు.\" Maya చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Maya దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన మనం ఎందుకు పని చేస్తాం గుర్తుకు వచ్చింది. Maya లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
+          "moral": "Understand why you act—then act with clarity.",
+          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
+        },
+        "activity": "Tell your family the story \"The Science Project Team\" in your own words. What would you do in Maya's place?",
+        "activity_te": "\"సైన్స్ ప్రాజెక్ట్ జట్టు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
       }
     ]

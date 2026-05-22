@@ -410,30 +410,67 @@ const ScriptureLayout = () => {
                   </p>
               </div>
 
-              {/* Theme Navigation Dropdown */}
-              <div className="flex items-center justify-between bg-white/5 p-4 rounded-2xl border border-lem-glass-border">
-                <span className="font-bold text-gray-300">
-                  {isTe ? "ఇతివృత్తాన్ని ఎంచుకోండి:" : "Select Theme:"}
-                </span>
-                <div className="flex items-center gap-3">
-                  <select
-                    value={activeThemeIndex}
-                    onChange={(e) => { setActiveThemeIndex(Number(e.target.value)); setShowQuiz(false); }}
-                    className="bg-lem-dark border border-lem-glass-border text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:border-lem-accent cursor-pointer shadow-inner max-w-[200px] md:max-w-md"
-                  >
-                    {themes.map((theme, idx) => (
-                      <option key={theme.id} value={idx}>
-                        {idx + 1}. {isTe && theme.title_te ? theme.title_te : theme.title}
-                      </option>
-                    ))}
-                  </select>
-                  <button 
-                    onClick={() => setShowQuiz(true)}
-                    className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/40 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all"
-                  >
-                    <Star size={16} />
-                    {isTe ? "పరీక్ష" : "Test Theme"}
-                  </button>
+              {/* Theme navigation: cards + prev/next */}
+              <div className="bg-white/5 p-4 rounded-2xl border border-lem-glass-border space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="font-bold text-gray-300">
+                    {isTe ? "ఇతివృత్తాన్ని ఎంచుకోండి" : "Choose a theme"}
+                    <span className="text-lem-accent ml-2">
+                      ({activeThemeIndex + 1} / {themes.length})
+                    </span>
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      disabled={activeThemeIndex <= 0}
+                      onClick={() => { setActiveThemeIndex((i) => Math.max(0, i - 1)); setShowQuiz(false); }}
+                      className="px-3 py-2 rounded-xl border border-lem-glass-border text-white font-bold disabled:opacity-30 hover:border-lem-accent"
+                    >
+                      {isTe ? "← మునుపటి" : "← Prev"}
+                    </button>
+                    <button
+                      type="button"
+                      disabled={activeThemeIndex >= themes.length - 1}
+                      onClick={() => { setActiveThemeIndex((i) => Math.min(themes.length - 1, i + 1)); setShowQuiz(false); }}
+                      className="px-3 py-2 rounded-xl border border-lem-glass-border text-white font-bold disabled:opacity-30 hover:border-lem-accent"
+                    >
+                      {isTe ? "తర్వాత →" : "Next →"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setShowQuiz(true)}
+                      className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/40 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all"
+                    >
+                      <Star size={16} />
+                      {isTe ? "పరీక్ష" : "Test Theme"}
+                    </button>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[280px] overflow-y-auto pr-1">
+                  {themes.map((theme, idx) => (
+                    <button
+                      key={theme.id}
+                      type="button"
+                      onClick={() => { setActiveThemeIndex(idx); setShowQuiz(false); }}
+                      className={`text-left p-4 rounded-xl border transition-all ${
+                        idx === activeThemeIndex
+                          ? 'border-lem-accent bg-lem-accent/15 shadow-[0_0_12px_rgba(253,160,133,0.25)]'
+                          : 'border-lem-glass-border bg-lem-dark/40 hover:border-lem-accent/50'
+                      }`}
+                    >
+                      <div className="flex items-start gap-2">
+                        <span className="text-xl">{theme.emoji}</span>
+                        <div className="min-w-0 flex-1">
+                          <p className="font-black text-white text-sm leading-snug truncate">
+                            {idx + 1}. {isTe && theme.title_te ? theme.title_te : theme.title}
+                          </p>
+                          <p className="text-xs text-gray-500 mt-1">
+                            {theme.shlokas?.length || 0} {isTe ? 'శ్లోకాలు' : 'shlokas'}
+                          </p>
+                        </div>
+                      </div>
+                    </button>
+                  ))}
                 </div>
               </div>
 

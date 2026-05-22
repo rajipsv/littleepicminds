@@ -1,0 +1,3381 @@
+{
+  "meta": {
+    "version": 1,
+    "seedsTotal": 100,
+    "seekersTotal": 200,
+    "shlokasPerCluster": "2-3",
+    "quotas": {
+      "1": {
+        "seeds": 7,
+        "seekers": 13
+      },
+      "2": {
+        "seeds": 10,
+        "seekers": 21
+      },
+      "3": {
+        "seeds": 6,
+        "seekers": 12
+      },
+      "4": {
+        "seeds": 6,
+        "seekers": 12
+      },
+      "5": {
+        "seeds": 4,
+        "seekers": 8
+      },
+      "6": {
+        "seeds": 7,
+        "seekers": 13
+      },
+      "7": {
+        "seeds": 4,
+        "seekers": 9
+      },
+      "8": {
+        "seeds": 4,
+        "seekers": 8
+      },
+      "9": {
+        "seeds": 5,
+        "seekers": 10
+      },
+      "10": {
+        "seeds": 6,
+        "seekers": 12
+      },
+      "11": {
+        "seeds": 8,
+        "seekers": 16
+      },
+      "12": {
+        "seeds": 3,
+        "seekers": 6
+      },
+      "13": {
+        "seeds": 5,
+        "seekers": 10
+      },
+      "14": {
+        "seeds": 4,
+        "seekers": 8
+      },
+      "15": {
+        "seeds": 3,
+        "seekers": 6
+      },
+      "16": {
+        "seeds": 3,
+        "seekers": 7
+      },
+      "17": {
+        "seeds": 4,
+        "seekers": 8
+      },
+      "18": {
+        "seeds": 11,
+        "seekers": 21
+      }
+    }
+  },
+  "gita": {
+    "1": {
+      "seeds": [
+        {
+          "shlokas": [
+            "1.1",
+            "1.20"
+          ],
+          "idea": "Look carefully before you begin",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.28",
+            "1.29"
+          ],
+          "idea": "Fear and confusion can take over",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.30",
+            "1.31"
+          ],
+          "idea": "Confusion makes decisions hard",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.33",
+            "1.34"
+          ],
+          "idea": "Attachment affects decisions",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.38",
+            "1.39"
+          ],
+          "idea": "Overthinking leads to stress",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.44",
+            "1.45"
+          ],
+          "idea": "Giving up mentally",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.46",
+            "1.47"
+          ],
+          "idea": "Shutting down and quitting",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "1.28",
+            "1.29"
+          ],
+          "idea": "Fear and confusion can take over",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.29",
+            "1.30"
+          ],
+          "idea": "Fear affects body and mind",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.30",
+            "1.31"
+          ],
+          "idea": "Confusion makes decisions hard",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "1.31",
+            "1.32"
+          ],
+          "idea": "Running away from duty",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.33",
+            "1.34"
+          ],
+          "idea": "Attachment affects decisions",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.34",
+            "1.35"
+          ],
+          "idea": "Hard choices with loved ones",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.35",
+            "1.36"
+          ],
+          "idea": "Saying no to responsibility",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.36",
+            "1.37"
+          ],
+          "idea": "Overthinking outcomes",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.38",
+            "1.39"
+          ],
+          "idea": "Overthinking leads to stress",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.40",
+            "1.41"
+          ],
+          "idea": "Confusion clouds right thinking",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.41",
+            "1.42"
+          ],
+          "idea": "One negative thought leads to another",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.42",
+            "1.43"
+          ],
+          "idea": "Fear of losing everything",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "1.44",
+            "1.45"
+          ],
+          "idea": "Giving up mentally",
+          "priority": 2
+        }
+      ]
+    },
+    "2": {
+      "seeds": [
+        {
+          "shlokas": [
+            "2.2",
+            "2.3"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.11",
+            "2.12"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.13",
+            "2.14"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.20",
+            "2.21"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.27",
+            "2.28"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.47",
+            "2.48"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.55",
+            "2.56"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.62",
+            "2.63"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.70",
+            "2.71"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.71",
+            "2.72"
+          ],
+          "idea": "Transcendental Knowledge",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "2.1",
+            "2.2"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.4",
+            "2.5"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.7",
+            "2.8"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "2.11",
+            "2.12",
+            "2.13"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.14",
+            "2.15"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.16",
+            "2.17"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.18",
+            "2.19"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.20",
+            "2.21",
+            "2.22"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.23",
+            "2.24"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.25",
+            "2.26"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.27",
+            "2.28"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.31",
+            "2.32"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.33",
+            "2.34"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.38",
+            "2.39"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.40",
+            "2.41"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.47",
+            "2.48",
+            "2.49"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.50",
+            "2.51"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.55",
+            "2.56",
+            "2.57"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.62",
+            "2.63",
+            "2.64"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.64",
+            "2.65"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "2.70",
+            "2.71",
+            "2.72"
+          ],
+          "idea": "Transcendental Knowledge — deeper look",
+          "priority": 2
+        }
+      ]
+    },
+    "3": {
+      "seeds": [
+        {
+          "shlokas": [
+            "3.1",
+            "3.2",
+            "3.3"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.9",
+            "3.10"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.19",
+            "3.20"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.21",
+            "3.22"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.35",
+            "3.36"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.40",
+            "3.41"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "3.1",
+            "3.2"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.3",
+            "3.4",
+            "3.5"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.8",
+            "3.9"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "3.13",
+            "3.14"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.16",
+            "3.17"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.19",
+            "3.20",
+            "3.21"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.22",
+            "3.23"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.27",
+            "3.28"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.30",
+            "3.31"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.35",
+            "3.36",
+            "3.37"
+          ],
+          "idea": "doing your duty",
+          "ideaTe": "మీ కర్తవ్యం చేయడం",
+          "moral": "Do your best work without worrying only about prizes.",
+          "moralTe": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.38",
+            "3.39"
+          ],
+          "idea": "setting a good example",
+          "ideaTe": "మంచి ఆదర్శం ఉండటం",
+          "moral": "Leaders teach others more by actions than by words.",
+          "moralTe": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "3.41",
+            "3.42",
+            "3.43"
+          ],
+          "idea": "selfless service",
+          "ideaTe": "నిస్వార్థ సేవ",
+          "moral": "Work done to help others brings real joy.",
+          "moralTe": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "4": {
+      "seeds": [
+        {
+          "shlokas": [
+            "4.7",
+            "4.8"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.9",
+            "4.10"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.13",
+            "4.14"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.34",
+            "4.35"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.37",
+            "4.38"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.41",
+            "4.42"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "4.1",
+            "4.2"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.3",
+            "4.4",
+            "4.5"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.7",
+            "4.8",
+            "4.9"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "4.10",
+            "4.11"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.13",
+            "4.14",
+            "4.15"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.16",
+            "4.17"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.18",
+            "4.19"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.33",
+            "4.34"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.37",
+            "4.38",
+            "4.39"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.40",
+            "4.41"
+          ],
+          "idea": "wisdom and action together",
+          "ideaTe": "జ్ఞానం మరియు చర్య కలిసి",
+          "moral": "Knowing what is right helps you act with courage.",
+          "moralTe": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.41",
+            "4.42"
+          ],
+          "idea": "humility before teachers",
+          "ideaTe": "గురువుల ముందు వినయం",
+          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
+          "moralTe": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "4.1",
+            "4.3"
+          ],
+          "idea": "seeing the divine in sacrifice",
+          "ideaTe": "త్యాగంలో దైవాన్ని చూడటం",
+          "moral": "When you offer your effort with love, it becomes sacred.",
+          "moralTe": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "5": {
+      "seeds": [
+        {
+          "shlokas": [
+            "5.2",
+            "5.3"
+          ],
+          "idea": "peace through balanced action",
+          "ideaTe": "సమతుల్య చర్య ద్వారా శాంతి",
+          "moral": "You can be active and peaceful at the same time.",
+          "moralTe": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.8",
+            "5.9"
+          ],
+          "idea": "letting go of ego",
+          "ideaTe": "అహంకారాన్ని వదిలివేయడం",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moralTe": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.17",
+            "5.18"
+          ],
+          "idea": "seeing equally",
+          "ideaTe": "సమానంగా చూడటం",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moralTe": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.24",
+            "5.25"
+          ],
+          "idea": "letting go of ego",
+          "ideaTe": "సమతుల్య చర్య ద్వారా శాంతి",
+          "moral": "You can be active and peaceful at the same time.",
+          "moralTe": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "5.1",
+            "5.2",
+            "5.3"
+          ],
+          "idea": "peace through balanced action",
+          "ideaTe": "సమతుల్య చర్య ద్వారా శాంతి",
+          "moral": "You can be active and peaceful at the same time.",
+          "moralTe": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.7",
+            "5.8",
+            "5.9"
+          ],
+          "idea": "letting go of ego",
+          "ideaTe": "అహంకారాన్ని వదిలివేయడం",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moralTe": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.16",
+            "5.17",
+            "5.18"
+          ],
+          "idea": "seeing equally",
+          "ideaTe": "సమానంగా చూడటం",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moralTe": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "5.19",
+            "5.20"
+          ],
+          "idea": "peace through balanced action",
+          "ideaTe": "సమతుల్య చర్య ద్వారా శాంతి",
+          "moral": "You can be active and peaceful at the same time.",
+          "moralTe": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "5.22",
+            "5.23"
+          ],
+          "idea": "letting go of ego",
+          "ideaTe": "అహంకారాన్ని వదిలివేయడం",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moralTe": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "5.24",
+            "5.25"
+          ],
+          "idea": "seeing equally",
+          "ideaTe": "సమానంగా చూడటం",
+          "moral": "Treat friends and strangers with the same kindness.",
+          "moralTe": "స్నేహితులు మరియు అపరిచితులను ఒకే దయతో చూడండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "5.26",
+            "5.27"
+          ],
+          "idea": "peace through balanced action",
+          "ideaTe": "సమతుల్య చర్య ద్వారా శాంతి",
+          "moral": "You can be active and peaceful at the same time.",
+          "moralTe": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "5.28",
+            "5.29"
+          ],
+          "idea": "letting go of ego",
+          "ideaTe": "అహంకారాన్ని వదిలివేయడం",
+          "moral": "Praise and blame both pass away—stay steady.",
+          "moralTe": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి.",
+          "priority": 2
+        }
+      ]
+    },
+    "6": {
+      "seeds": [
+        {
+          "shlokas": [
+            "6.5",
+            "6.6"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.16",
+            "6.17"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.26",
+            "6.27"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.35",
+            "6.36"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.40",
+            "6.41"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.46",
+            "6.47"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.46",
+            "6.47"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "6.1",
+            "6.2"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.4",
+            "6.5",
+            "6.6"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.9",
+            "6.10"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "6.16",
+            "6.17",
+            "6.18"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.19",
+            "6.20"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.26",
+            "6.27",
+            "6.28"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.30",
+            "6.31"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.32",
+            "6.33"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.34",
+            "6.35",
+            "6.36"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.37",
+            "6.38"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.40",
+            "6.41",
+            "6.42"
+          ],
+          "idea": "moderation in life",
+          "ideaTe": "జీవితంలో మితత్వం",
+          "moral": "Too much or too little of anything upsets balance.",
+          "moralTe": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.46",
+            "6.47"
+          ],
+          "idea": "yoga as union",
+          "ideaTe": "యోగం ఐక్యత",
+          "moral": "Connecting with your inner self is the highest yoga.",
+          "moralTe": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "6.1",
+            "6.3"
+          ],
+          "idea": "training the mind",
+          "ideaTe": "మనస్సును శిక్షణ ఇవ్వడం",
+          "moral": "A calm mind is like a steady lamp in the wind.",
+          "moralTe": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది.",
+          "priority": 2
+        }
+      ]
+    },
+    "7": {
+      "seeds": [
+        {
+          "shlokas": [
+            "7.7",
+            "7.8"
+          ],
+          "idea": "material and spiritual energy",
+          "ideaTe": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moralTe": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.14",
+            "7.15"
+          ],
+          "idea": "four kinds of seekers",
+          "ideaTe": "నాలుగు రకాల అన్వేషకులు",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moralTe": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.16",
+            "7.17"
+          ],
+          "idea": "surrender to the Supreme",
+          "ideaTe": "పరమునికి లొంగడం",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moralTe": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.28",
+            "7.29"
+          ],
+          "idea": "material and spiritual energy",
+          "ideaTe": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moralTe": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "7.1",
+            "7.2",
+            "7.3"
+          ],
+          "idea": "material and spiritual energy",
+          "ideaTe": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moralTe": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.7",
+            "7.8",
+            "7.9"
+          ],
+          "idea": "four kinds of seekers",
+          "ideaTe": "నాలుగు రకాల అన్వేషకులు",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moralTe": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.14",
+            "7.15",
+            "7.16"
+          ],
+          "idea": "surrender to the Supreme",
+          "ideaTe": "పరమునికి లొంగడం",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moralTe": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "7.17",
+            "7.18",
+            "7.19"
+          ],
+          "idea": "material and spiritual energy",
+          "ideaTe": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moralTe": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "7.20",
+            "7.21"
+          ],
+          "idea": "four kinds of seekers",
+          "ideaTe": "నాలుగు రకాల అన్వేషకులు",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moralTe": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "7.23",
+            "7.24"
+          ],
+          "idea": "surrender to the Supreme",
+          "ideaTe": "పరమునికి లొంగడం",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moralTe": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "7.27",
+            "7.28"
+          ],
+          "idea": "material and spiritual energy",
+          "ideaTe": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
+          "moral": "The world runs on energy—remember the source behind it.",
+          "moralTe": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "7.29",
+            "7.30"
+          ],
+          "idea": "four kinds of seekers",
+          "ideaTe": "నాలుగు రకాల అన్వేషకులు",
+          "moral": "People come to wisdom for different reasons—all can grow.",
+          "moralTe": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "7.1",
+            "7.3"
+          ],
+          "idea": "surrender to the Supreme",
+          "ideaTe": "పరమునికి లొంగడం",
+          "moral": "When you trust the highest good, fear becomes smaller.",
+          "moralTe": "మీరు అత్యున్నత మంచికి నమ్మకం పెట్టినప్పుడు, భయం చిన్నది అవుతుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "8": {
+      "seeds": [
+        {
+          "shlokas": [
+            "8.5",
+            "8.6"
+          ],
+          "idea": "remembering what lasts",
+          "ideaTe": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+          "moral": "What is eternal matters more than what fades.",
+          "moralTe": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.7",
+            "8.8"
+          ],
+          "idea": "thoughts at important moments",
+          "ideaTe": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+          "moral": "What you hold in your heart shapes your path.",
+          "moralTe": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.15",
+            "8.16"
+          ],
+          "idea": "discipline of practice",
+          "ideaTe": "సాధన యొక్క క్రమశిక్షణ",
+          "moral": "Daily small habits build a great life.",
+          "moralTe": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.20",
+            "8.21"
+          ],
+          "idea": "remembering what lasts",
+          "ideaTe": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+          "moral": "What is eternal matters more than what fades.",
+          "moralTe": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "8.1",
+            "8.2",
+            "8.3"
+          ],
+          "idea": "remembering what lasts",
+          "ideaTe": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+          "moral": "What is eternal matters more than what fades.",
+          "moralTe": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.5",
+            "8.6",
+            "8.7"
+          ],
+          "idea": "thoughts at important moments",
+          "ideaTe": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+          "moral": "What you hold in your heart shapes your path.",
+          "moralTe": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.8",
+            "8.9",
+            "8.10"
+          ],
+          "idea": "discipline of practice",
+          "ideaTe": "సాధన యొక్క క్రమశిక్షణ",
+          "moral": "Daily small habits build a great life.",
+          "moralTe": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "8.13",
+            "8.14"
+          ],
+          "idea": "remembering what lasts",
+          "ideaTe": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+          "moral": "What is eternal matters more than what fades.",
+          "moralTe": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "8.15",
+            "8.16",
+            "8.17"
+          ],
+          "idea": "thoughts at important moments",
+          "ideaTe": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+          "moral": "What you hold in your heart shapes your path.",
+          "moralTe": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "8.20",
+            "8.21"
+          ],
+          "idea": "discipline of practice",
+          "ideaTe": "సాధన యొక్క క్రమశిక్షణ",
+          "moral": "Daily small habits build a great life.",
+          "moralTe": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "8.27",
+            "8.28"
+          ],
+          "idea": "remembering what lasts",
+          "ideaTe": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
+          "moral": "What is eternal matters more than what fades.",
+          "moralTe": "శాశ్వతమైనది మాయమయ్యే దానికంటే ముఖ్యమైనది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "8.1",
+            "8.3"
+          ],
+          "idea": "thoughts at important moments",
+          "ideaTe": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
+          "moral": "What you hold in your heart shapes your path.",
+          "moralTe": "మీ హృదయంలో ఉంచుకున్నది మీ మార్గాన్ని రూపొందిస్తుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "9": {
+      "seeds": [
+        {
+          "shlokas": [
+            "9.2",
+            "9.3"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.10",
+            "9.11"
+          ],
+          "idea": "God cares for devotees",
+          "ideaTe": "దైవం భక్తులను చూసుకోవడం",
+          "moral": "You are never forgotten when you try to do good.",
+          "moralTe": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.22",
+            "9.23"
+          ],
+          "idea": "simple offerings",
+          "ideaTe": "సరళమైన అర్పణలు",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moralTe": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.26",
+            "9.27"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.33",
+            "9.34"
+          ],
+          "idea": "God cares for devotees",
+          "ideaTe": "దైవం భక్తులను చూసుకోవడం",
+          "moral": "You are never forgotten when you try to do good.",
+          "moralTe": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "9.1",
+            "9.2"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.4",
+            "9.5",
+            "9.6"
+          ],
+          "idea": "God cares for devotees",
+          "ideaTe": "దైవం భక్తులను చూసుకోవడం",
+          "moral": "You are never forgotten when you try to do good.",
+          "moralTe": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.10",
+            "9.11",
+            "9.12"
+          ],
+          "idea": "simple offerings",
+          "ideaTe": "సరళమైన అర్పణలు",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moralTe": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "9.13",
+            "9.14"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.17",
+            "9.18"
+          ],
+          "idea": "God cares for devotees",
+          "ideaTe": "దైవం భక్తులను చూసుకోవడం",
+          "moral": "You are never forgotten when you try to do good.",
+          "moralTe": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.22",
+            "9.23",
+            "9.24"
+          ],
+          "idea": "simple offerings",
+          "ideaTe": "సరళమైన అర్పణలు",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moralTe": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.26",
+            "9.27",
+            "9.28"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.30",
+            "9.31"
+          ],
+          "idea": "God cares for devotees",
+          "ideaTe": "దైవం భక్తులను చూసుకోవడం",
+          "moral": "You are never forgotten when you try to do good.",
+          "moralTe": "మీరు మంచి చేయడానికి ప్రయత్నించినప్పుడు మిమ్మల్ని ఎప్పుడూ మరచిపోరు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.32",
+            "9.33"
+          ],
+          "idea": "simple offerings",
+          "ideaTe": "సరళమైన అర్పణలు",
+          "moral": "A leaf, a flower, or kind words can be a true gift.",
+          "moralTe": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "9.33",
+            "9.34"
+          ],
+          "idea": "royal secret of devotion",
+          "ideaTe": "భక్తి యొక్క రాజ రహస్యం",
+          "moral": "Love offered sincerely is never too small.",
+          "moralTe": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు.",
+          "priority": 2
+        }
+      ]
+    },
+    "10": {
+      "seeds": [
+        {
+          "shlokas": [
+            "10.8",
+            "10.9"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.10",
+            "10.11"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.20",
+            "10.21"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.41",
+            "10.42"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.41",
+            "10.42"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.1",
+            "10.3"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "10.1",
+            "10.2"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.4",
+            "10.5",
+            "10.6"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.8",
+            "10.9",
+            "10.10"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "10.11",
+            "10.12"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.15",
+            "10.16"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.20",
+            "10.21",
+            "10.22"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.30",
+            "10.31"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.34",
+            "10.35"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.38",
+            "10.39"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.40",
+            "10.41"
+          ],
+          "idea": "excellence everywhere",
+          "ideaTe": "ప్రతిచోటా శ్రేష్ఠత",
+          "moral": "The best in every field reflects something divine.",
+          "moralTe": "ప్రతి రంగంలోని ఉత్తమమైనది ఏదో దివ్యత్వాన్ని ప్రతిబింబిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.41",
+            "10.42"
+          ],
+          "idea": "seeing greatness with wonder",
+          "ideaTe": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
+          "moral": "Wonder keeps your heart humble and open.",
+          "moralTe": "ఆశ్చర్యం మీ హృదయాన్ని వినయంగా మరియు తెరిచి ఉంచుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "10.1",
+            "10.3"
+          ],
+          "idea": "source of all power",
+          "ideaTe": "అన్ని శక్తి యొక్క మూలం",
+          "moral": "Strength, beauty, and wisdom all have one root.",
+          "moralTe": "బలం, అందం మరియు జ్ఞానం అన్నింటికీ ఒకే మూలం ఉంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "11": {
+      "seeds": [
+        {
+          "shlokas": [
+            "11.1",
+            "11.2"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.4",
+            "11.5"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.32",
+            "11.33"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.54",
+            "11.55"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.54",
+            "11.55"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.1",
+            "11.3"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.4",
+            "11.6"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.7",
+            "11.9"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "11.1",
+            "11.2",
+            "11.3"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.4",
+            "11.5",
+            "11.6"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.7",
+            "11.8"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "11.9",
+            "11.10"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.14",
+            "11.15"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.20",
+            "11.21"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.24",
+            "11.25"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.30",
+            "11.31",
+            "11.32"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.32",
+            "11.33",
+            "11.34"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.47",
+            "11.48"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.50",
+            "11.51"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.53",
+            "11.54"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.54",
+            "11.55"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.31",
+            "11.32"
+          ],
+          "idea": "courage after vision",
+          "ideaTe": "దర్శనం తర్వాత ధైర్యం",
+          "moral": "True sight of truth can make you braver, not prouder.",
+          "moralTe": "సత్యం యొక్క నిజమైన దృష్టి మిమ్మల్ని గర్వంగా కాక ధైర్యవంతులను చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.33",
+            "11.34"
+          ],
+          "idea": "devotion in wonder",
+          "ideaTe": "ఆశ్చర్యంలో భక్తి",
+          "moral": "Love and respect grow when we see the whole picture.",
+          "moralTe": "మనం పూర్తి చిత్రాన్ని చూసినప్పుడు ప్రేమ మరియు గౌరవం పెరుగుతాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "11.54",
+            "11.55"
+          ],
+          "idea": "awe and humility",
+          "ideaTe": "భయభక్తులు మరియు వినయం",
+          "moral": "When you see how vast life is, ego becomes quiet.",
+          "moralTe": "జీవితం ఎంత విశాలమైనదో చూసినప్పుడు, అహంకారం నిశ్శబ్దమవుతుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "12": {
+      "seeds": [
+        {
+          "shlokas": [
+            "12.6",
+            "12.7"
+          ],
+          "idea": "many paths one goal",
+          "ideaTe": "అనేక మార్గాలు ఒక లక్ష్యం",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moralTe": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "12.13",
+            "12.14"
+          ],
+          "idea": "qualities of a devotee",
+          "ideaTe": "భక్తుని లక్షణాలు",
+          "moral": "Forgiveness, gentleness, and honesty are signs of a strong heart.",
+          "moralTe": "క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "12.19",
+            "12.20"
+          ],
+          "idea": "fixing the mind on good",
+          "ideaTe": "మనస్సును మంచిది మీద నిలపడం",
+          "moral": "Where your mind rests, your life will follow.",
+          "moralTe": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది.",
+          "priority": 1
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "12.1",
+            "12.2",
+            "12.3"
+          ],
+          "idea": "many paths one goal",
+          "ideaTe": "అనేక మార్గాలు ఒక లక్ష్యం",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moralTe": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "12.6",
+            "12.7",
+            "12.8"
+          ],
+          "idea": "qualities of a devotee",
+          "ideaTe": "భక్తుని లక్షణాలు",
+          "moral": "Forgiveness, gentleness, and honesty are signs of a strong heart.",
+          "moralTe": "క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "12.13",
+            "12.14",
+            "12.15"
+          ],
+          "idea": "fixing the mind on good",
+          "ideaTe": "మనస్సును మంచిది మీద నిలపడం",
+          "moral": "Where your mind rests, your life will follow.",
+          "moralTe": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "12.16",
+            "12.17"
+          ],
+          "idea": "many paths one goal",
+          "ideaTe": "అనేక మార్గాలు ఒక లక్ష్యం",
+          "moral": "Different people grow in different ways—kindness unites all.",
+          "moralTe": "వివిధ ప్రజలు వివిధ మార్గాలలో ఎదుగుతారు—దయ అందరినీ కలుపుతుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "12.18",
+            "12.19",
+            "12.20"
+          ],
+          "idea": "qualities of a devotee",
+          "ideaTe": "భక్తుని లక్షణాలు",
+          "moral": "Forgiveness, gentleness, and honesty are signs of a strong heart.",
+          "moralTe": "క్షమ, సౌమ్యత మరియు నిజాయితీ బలమైన హృదయం యొక్క గుర్తులు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "12.1",
+            "12.3"
+          ],
+          "idea": "fixing the mind on good",
+          "ideaTe": "మనస్సును మంచిది మీద నిలపడం",
+          "moral": "Where your mind rests, your life will follow.",
+          "moralTe": "మీ మనస్సు ఎక్కడ నిలుస్తుందో, మీ జీవితం అక్కడికి వెళ్తుంది.",
+          "priority": 2
+        }
+      ]
+    },
+    "13": {
+      "seeds": [
+        {
+          "shlokas": [
+            "13.1",
+            "13.2"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.8",
+            "13.9"
+          ],
+          "idea": "the knower within",
+          "ideaTe": "లోపలి తెలిసినవాడు",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moralTe": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.27",
+            "13.28"
+          ],
+          "idea": "humility and non-violence",
+          "ideaTe": "వినయం మరియు అహింస",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moralTe": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.33",
+            "13.34"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.1",
+            "13.3"
+          ],
+          "idea": "the knower within",
+          "ideaTe": "లోపలి తెలిసినవాడు",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moralTe": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "13.1",
+            "13.2",
+            "13.3"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.7",
+            "13.8",
+            "13.9"
+          ],
+          "idea": "the knower within",
+          "ideaTe": "లోపలి తెలిసినవాడు",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moralTe": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.10",
+            "13.11",
+            "13.12"
+          ],
+          "idea": "humility and non-violence",
+          "ideaTe": "వినయం మరియు అహింస",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moralTe": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "13.13",
+            "13.14"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.22",
+            "13.23"
+          ],
+          "idea": "the knower within",
+          "ideaTe": "లోపలి తెలిసినవాడు",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moralTe": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.27",
+            "13.28",
+            "13.29"
+          ],
+          "idea": "humility and non-violence",
+          "ideaTe": "వినయం మరియు అహింస",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moralTe": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.30",
+            "13.31"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.32",
+            "13.33"
+          ],
+          "idea": "the knower within",
+          "ideaTe": "లోపలి తెలిసినవాడు",
+          "moral": "You are the one who watches thoughts come and go.",
+          "moralTe": "ఆలోచనలు వచ్చి పోవడం మీరు చూసేవారు.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.33",
+            "13.34"
+          ],
+          "idea": "humility and non-violence",
+          "ideaTe": "వినయం మరియు అహింస",
+          "moral": "Gentle strength is stronger than loud force.",
+          "moralTe": "సౌమ్యమైన బలం బిగ్గరగా ఉపయోగించే బలం కంటే బలమైనది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "13.1",
+            "13.3"
+          ],
+          "idea": "body as a field",
+          "ideaTe": "శరీరం ఒక క్షేత్రం",
+          "moral": "Your body is like a garden—you choose what grows in it.",
+          "moralTe": "మీ శరీరం తోట లాంటిది—అందులో ఏమి పెరుగుతుందో మీరు ఎంచుకుంటారు.",
+          "priority": 2
+        }
+      ]
+    },
+    "14": {
+      "seeds": [
+        {
+          "shlokas": [
+            "14.5",
+            "14.6"
+          ],
+          "idea": "goodness passion and dullness",
+          "ideaTe": "సత్త్వం రజస్సు తమస్సు",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moralTe": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.26",
+            "14.27"
+          ],
+          "idea": "rising above moods",
+          "ideaTe": "భావాలకు అతీతంగా",
+          "moral": "You are more than a passing mood or habit.",
+          "moralTe": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.26",
+            "14.27"
+          ],
+          "idea": "food thoughts and habits",
+          "ideaTe": "ఆహారం ఆలోచనలు అలవాట్లు",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moralTe": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.1",
+            "14.3"
+          ],
+          "idea": "goodness passion and dullness",
+          "ideaTe": "సత్త్వం రజస్సు తమస్సు",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moralTe": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "14.1",
+            "14.2",
+            "14.3"
+          ],
+          "idea": "goodness passion and dullness",
+          "ideaTe": "సత్త్వం రజస్సు తమస్సు",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moralTe": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.5",
+            "14.6",
+            "14.7"
+          ],
+          "idea": "rising above moods",
+          "ideaTe": "భావాలకు అతీతంగా",
+          "moral": "You are more than a passing mood or habit.",
+          "moralTe": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.8",
+            "14.9",
+            "14.10"
+          ],
+          "idea": "food thoughts and habits",
+          "ideaTe": "ఆహారం ఆలోచనలు అలవాట్లు",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moralTe": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "14.14",
+            "14.15"
+          ],
+          "idea": "goodness passion and dullness",
+          "ideaTe": "సత్త్వం రజస్సు తమస్సు",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moralTe": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "14.19",
+            "14.20"
+          ],
+          "idea": "rising above moods",
+          "ideaTe": "భావాలకు అతీతంగా",
+          "moral": "You are more than a passing mood or habit.",
+          "moralTe": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "14.22",
+            "14.23"
+          ],
+          "idea": "food thoughts and habits",
+          "ideaTe": "ఆహారం ఆలోచనలు అలవాట్లు",
+          "moral": "What you eat and think slowly shapes who you become.",
+          "moralTe": "మీరు తినేది మరియు ఆలోచించేది క్రమేణా మిమ్మల్ని రూపొందిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "14.26",
+            "14.27"
+          ],
+          "idea": "goodness passion and dullness",
+          "ideaTe": "సత్త్వం రజస్సు తమస్సు",
+          "moral": "Notice which mood guides you—then choose wisely.",
+          "moralTe": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "14.1",
+            "14.3"
+          ],
+          "idea": "rising above moods",
+          "ideaTe": "భావాలకు అతీతంగా",
+          "moral": "You are more than a passing mood or habit.",
+          "moralTe": "మీరు గడిచిపోయే భావన లేదా అలవాటు కంటే ఎక్కువ.",
+          "priority": 2
+        }
+      ]
+    },
+    "15": {
+      "seeds": [
+        {
+          "shlokas": [
+            "15.1",
+            "15.2"
+          ],
+          "idea": "Life is like a growing tree",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "15.2",
+            "15.3"
+          ],
+          "idea": "Cut unnecessary attachments",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "15.3",
+            "15.4"
+          ],
+          "idea": "Look for what is real",
+          "priority": 1
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "15.1",
+            "15.2"
+          ],
+          "idea": "Life is like a growing tree",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "15.2",
+            "15.3"
+          ],
+          "idea": "Cut unnecessary attachments",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "15.3",
+            "15.4"
+          ],
+          "idea": "Look for what is real",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "15.4",
+            "15.5"
+          ],
+          "idea": "Purity leads to higher understanding",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "15.6",
+            "15.7"
+          ],
+          "idea": "Real light is inside you",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "15.7",
+            "15.8"
+          ],
+          "idea": "Soul continues its journey",
+          "priority": 2
+        }
+      ]
+    },
+    "16": {
+      "seeds": [
+        {
+          "shlokas": [
+            "16.1",
+            "16.2"
+          ],
+          "idea": "divine qualities",
+          "ideaTe": "దైవీ లక్షణాలు",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moralTe": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "16.21",
+            "16.22"
+          ],
+          "idea": "demoniac tendencies",
+          "ideaTe": "ఆసుర ధర్మాలు",
+          "moral": "Anger, greed, and pride create trouble for everyone.",
+          "moralTe": "కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "16.23",
+            "16.24"
+          ],
+          "idea": "choosing your camp",
+          "ideaTe": "మీ వైపు ఎంచుకోవడం",
+          "moral": "Small daily choices build a noble character.",
+          "moralTe": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి.",
+          "priority": 1
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "16.1",
+            "16.2",
+            "16.3"
+          ],
+          "idea": "divine qualities",
+          "ideaTe": "దైవీ లక్షణాలు",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moralTe": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "16.4",
+            "16.5",
+            "16.6"
+          ],
+          "idea": "demoniac tendencies",
+          "ideaTe": "ఆసుర ధర్మాలు",
+          "moral": "Anger, greed, and pride create trouble for everyone.",
+          "moralTe": "కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "16.7",
+            "16.8"
+          ],
+          "idea": "choosing your camp",
+          "ideaTe": "మీ వైపు ఎంచుకోవడం",
+          "moral": "Small daily choices build a noble character.",
+          "moralTe": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "16.21",
+            "16.22",
+            "16.23"
+          ],
+          "idea": "divine qualities",
+          "ideaTe": "దైవీ లక్షణాలు",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moralTe": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "16.23",
+            "16.24"
+          ],
+          "idea": "demoniac tendencies",
+          "ideaTe": "ఆసుర ధర్మాలు",
+          "moral": "Anger, greed, and pride create trouble for everyone.",
+          "moralTe": "కోపం, అసూయ మరియు అహంకారం అందరికీ ఇబ్బంది సృష్టిస్తాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "16.1",
+            "16.3"
+          ],
+          "idea": "choosing your camp",
+          "ideaTe": "మీ వైపు ఎంచుకోవడం",
+          "moral": "Small daily choices build a noble character.",
+          "moralTe": "చిన్న రోజువారీ ఎంపికలు ఉన్నతమైన శీలాన్ని నిర్మిస్తాయి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "16.4",
+            "16.6"
+          ],
+          "idea": "divine qualities",
+          "ideaTe": "దైవీ లక్షణాలు",
+          "moral": "Fearlessness, purity, and compassion light up your path.",
+          "moralTe": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి.",
+          "priority": 2
+        }
+      ]
+    },
+    "17": {
+      "seeds": [
+        {
+          "shlokas": [
+            "17.3",
+            "17.4"
+          ],
+          "idea": "faith shapes actions",
+          "ideaTe": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+          "moral": "What you deeply believe shows in what you do.",
+          "moralTe": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.20",
+            "17.21"
+          ],
+          "idea": "sattvic rajasic tamasic worship",
+          "ideaTe": "మూడు రకాల శ్రద్ధ",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moralTe": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.27",
+            "17.28"
+          ],
+          "idea": "OM Tat Sat",
+          "ideaTe": "ఓం తత్ సత్",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moralTe": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.1",
+            "17.3"
+          ],
+          "idea": "faith shapes actions",
+          "ideaTe": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+          "moral": "What you deeply believe shows in what you do.",
+          "moralTe": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "17.1",
+            "17.2",
+            "17.3"
+          ],
+          "idea": "faith shapes actions",
+          "ideaTe": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+          "moral": "What you deeply believe shows in what you do.",
+          "moralTe": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.8",
+            "17.9",
+            "17.10"
+          ],
+          "idea": "sattvic rajasic tamasic worship",
+          "ideaTe": "మూడు రకాల శ్రద్ధ",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moralTe": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.11",
+            "17.12",
+            "17.13"
+          ],
+          "idea": "OM Tat Sat",
+          "ideaTe": "ఓం తత్ సత్",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moralTe": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "17.20",
+            "17.21",
+            "17.22"
+          ],
+          "idea": "faith shapes actions",
+          "ideaTe": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+          "moral": "What you deeply believe shows in what you do.",
+          "moralTe": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "17.23",
+            "17.24"
+          ],
+          "idea": "sattvic rajasic tamasic worship",
+          "ideaTe": "మూడు రకాల శ్రద్ధ",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moralTe": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "17.26",
+            "17.27"
+          ],
+          "idea": "OM Tat Sat",
+          "ideaTe": "ఓం తత్ సత్",
+          "moral": "Truth, discipline, and charity should begin with sincerity.",
+          "moralTe": "సత్యం, క్రమశిక్షణ మరియు దానం నిజాయితీతో ప్రారంభించాలి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "17.27",
+            "17.28"
+          ],
+          "idea": "faith shapes actions",
+          "ideaTe": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
+          "moral": "What you deeply believe shows in what you do.",
+          "moralTe": "మీరు లోతుగా నమ్మేది మీరు చేసే పనిలో కనిపిస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "17.1",
+            "17.3"
+          ],
+          "idea": "sattvic rajasic tamasic worship",
+          "ideaTe": "మూడు రకాల శ్రద్ధ",
+          "moral": "Offer your best with a pure heart, not for show.",
+          "moralTe": "ప్రదర్శన కోసం కాక, పవిత్ర హృదయంతో మీ ఉత్తమమైనది అర్పించండి.",
+          "priority": 2
+        }
+      ]
+    },
+    "18": {
+      "seeds": [
+        {
+          "shlokas": [
+            "18.2",
+            "18.3"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.5",
+            "18.6",
+            "18.7"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.11",
+            "18.12",
+            "18.13"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.15",
+            "18.16"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.33",
+            "18.34"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.46",
+            "18.47"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.54",
+            "18.55"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.57",
+            "18.58"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.61",
+            "18.62"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.66",
+            "18.67"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.77",
+            "18.78"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        }
+      ],
+      "seekers": [
+        {
+          "shlokas": [
+            "18.1",
+            "18.2"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.3",
+            "18.4",
+            "18.5"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.5",
+            "18.6",
+            "18.7"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 1
+        },
+        {
+          "shlokas": [
+            "18.11",
+            "18.12",
+            "18.13"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.15",
+            "18.16"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.20",
+            "18.21"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.33",
+            "18.34"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.37",
+            "18.38",
+            "18.39"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.40",
+            "18.41"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.45",
+            "18.46",
+            "18.47"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.48",
+            "18.49"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.54",
+            "18.55",
+            "18.56"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.57",
+            "18.58"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.61",
+            "18.62",
+            "18.63"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.64",
+            "18.65"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.66",
+            "18.67"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.70",
+            "18.71"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.73",
+            "18.74"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.75",
+            "18.76"
+          ],
+          "idea": "types of renunciation",
+          "ideaTe": "సన్యాస రకాలు",
+          "moral": "Letting go of selfish desire frees your energy for good work.",
+          "moralTe": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.77",
+            "18.78"
+          ],
+          "idea": "five causes of action",
+          "ideaTe": "చర్యకు ఐదు కారణాలు",
+          "moral": "Understand why you act—then act with clarity.",
+          "moralTe": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి.",
+          "priority": 2
+        },
+        {
+          "shlokas": [
+            "18.1",
+            "18.3"
+          ],
+          "idea": "final teaching surrender",
+          "ideaTe": "చివరి బోధన లొంగుబాటు",
+          "moral": "Do your duty, love the good, and trust the highest—then be at peace.",
+          "moralTe": "మీ కర్తవ్యం చేయండి, మంచిని ప్రేమించండి, పరముని నమ్మండి—ఆపై శాంతిగా ఉండండి.",
+          "priority": 2
+        }
+      ]
+    }
+  }
+}
