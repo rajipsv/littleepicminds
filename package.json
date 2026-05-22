@@ -13,7 +13,10 @@
     "gita:generate-clusters": "node scripts/generate-theme-clusters.js",
     "gita:validate-clusters": "node scripts/validate-theme-clusters.js",
     "gita:seed-authored-stories": "node scripts/seed-authored-stories.js",
-    "gita:build-themes": "node scripts/validate-theme-clusters.js && node scripts/seed-authored-stories.js && node scripts/build-themes-from-clusters.js"
+    "gita:export-for-chatgpt": "node scripts/export-clusters-for-chatgpt.js",
+    "gita:import-chatgpt-stories": "node scripts/import-chatgpt-stories.js",
+    "gita:build-themes": "node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
+    "gita:build-themes-auto": "node scripts/validate-theme-clusters.js && node scripts/seed-authored-stories.js && node scripts/build-themes-from-clusters.js"
   },
   "dependencies": {
     "@indic-transliteration/sanscript": "^1.3.3",

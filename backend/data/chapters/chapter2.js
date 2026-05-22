@@ -781,7 +781,7 @@ const CHAPTER_2_SHLOKAS = {
                 "transliteration": "tam uvācha hṛiṣhīkeśhaḥ",
                 "sanskrit_te": "తమువాచ హృషీకేశః",
                 "en": "To him said Shree Krishna, the master of mind and senses",
-                "te": "O King"
+                "te": "ఆయనకు శ్రీకృష్ణుడు, మనస్సు మరియు ఇంద్రియాలకు అధిపతి, ఇలా చెప్పాడు."
             },
             {
                 "sanskrit": "प्रहसन्निव भारत",
@@ -967,7 +967,7 @@ const CHAPTER_2_SHLOKAS = {
                 "transliteration": "sarve vayamataḥ param",
                 "sanskrit_te": "సర్వే వయమతః పరమ్",
                 "en": "All of us after",
-                "te": "When all of us shall cease to exist."
+                "te": "మనమందరం తరువాత"
             }
         ]
     },
@@ -1267,7 +1267,7 @@ const CHAPTER_2_SHLOKAS = {
                 "transliteration": "nāsato vidyate bhāvo",
                 "sanskrit_te": "నాసతో విద్యతే",
                 "en": "The unreal never comes into being,",
-                "te": "The unreal never comes into being,"
+                "te": "అవాస్తవం ఎప్పుడూ ఉనికిలోకి రాదు,"
             },
             {
                 "sanskrit": "भावो नाभावो",
