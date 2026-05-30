@@ -1,4 +1,5 @@
 import api, { API_URL } from '../api';
+import { getLineScriptText } from './verseDisplay';
 
 const DEFAULT_GAP_MS = 450;
 
@@ -8,16 +9,13 @@ export function getChantAudioUrl(verseId) {
   return `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
 }
 
-export function lineTextFromRow(item, isTe) {
-  if (!item) return '';
-  if (isTe && item.sanskrit_te) return String(item.sanskrit_te).trim();
-  return String(item.transliteration || item.word || item.sanskrit || '').trim();
+export function lineTextFromRow(item, lang) {
+  return getLineScriptText(item, lang);
 }
 
-export function linesFromBreakdown(wordByWord, isTe) {
+export function linesFromBreakdown(wordByWord, lang) {
   if (!wordByWord?.length) return [];
-  const lang = isTe ? 'te' : 'hi';
-  return wordByWord.map((row) => lineTextFromRow(row, isTe)).filter(Boolean);
+  return wordByWord.map((row) => lineTextFromRow(row, lang)).filter(Boolean);
 }
 
 export async function fetchTtsAudio(text, targetLang) {
@@ -45,9 +43,6 @@ export function playAudioBase64(base64, encoding, playbackRate = 1) {
 
 const delay = (ms) => new Promise((r) => setTimeout(r, ms));
 
-/**
- * Play cached per-line TTS in order (full śloka = same clips as MeaningTable rows).
- */
 export async function playLineSequence(lines, {
   targetLang,
   gapMs = DEFAULT_GAP_MS,
@@ -60,13 +55,9 @@ export async function playLineSequence(lines, {
     const line = lines[i];
     if (!line?.trim()) continue;
     onLineStart?.(i);
-    try {
-      const { base64, encoding } = await fetchTtsAudio(line, targetLang);
-      if (signal?.aborted) break;
-      await playAudioBase64(base64, encoding, playbackRate);
-    } catch (err) {
-      throw err;
-    }
+    const { base64, encoding } = await fetchTtsAudio(line, targetLang);
+    if (signal?.aborted) break;
+    await playAudioBase64(base64, encoding, playbackRate);
     if (i < lines.length - 1 && !signal?.aborted) {
       await delay(gapMs);
     }

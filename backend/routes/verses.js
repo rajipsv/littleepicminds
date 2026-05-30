@@ -1,6 +1,7 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const contentData = require('../data');
+const { applyHfToVerse, applyHfToChapterMap } = require('../../lib/gita-hf');
 
 const router = express.Router();
 
@@ -49,11 +50,10 @@ router.get('/', (req, res) => {
       const key = `${chapter}.${verse}`;
       const data = contentData.shlokas[key];
       if (!data) return res.status(404).json({ error: 'Shloka not found', key });
-      return res.json({ ...data, id: key });
+      return res.json(applyHfToVerse({ ...data, id: key }, key));
     }
 
     if (chapter) {
-      // Return all shlokas for a chapter
       const chapterShlokas = {};
       for (const [key, val] of Object.entries(contentData.shlokas)) {
         if (key.startsWith(`${chapter}.`)) {
@@ -61,7 +61,7 @@ router.get('/', (req, res) => {
         }
       }
       console.log(`Found ${Object.keys(chapterShlokas).length} shlokas for chapter ${chapter}`);
-      return res.json(chapterShlokas);
+      return res.json(applyHfToChapterMap(chapterShlokas));
     }
 
     // Return summary: available keys

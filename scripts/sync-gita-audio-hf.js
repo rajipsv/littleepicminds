@@ -1,7 +1,8 @@
 /**
- * Download per-śloka chanting WAV from Hugging Face (Apache-2.0).
+ * Sync Bhagavad Gita from Hugging Face (Apache-2.0): audio + sanskrit + transliteration.
  *   npm run gita:sync-hf-audio
  *   npm run gita:sync-hf-audio -- --chapter=1
+ *   npm run gita:sync-hf-audio -- --text-only
  *
  * Dataset: https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio
  */
@@ -10,14 +11,8 @@ const path = require('path');
 const https = require('https');
 const http = require('http');
 
-const {
-  AUDIO_DIR,
-  shlokaIdToVerseId,
-  loadManifest,
-  saveManifest,
-  HF_DATASET,
-  HF_LICENSE,
-} = require('../lib/gita-audio');
+const { AUDIO_DIR, loadManifest, saveManifest, shlokaIdToVerseId } = require('../lib/gita-audio');
+const { loadHfVerses, saveHfVerses, HF_DATASET, HF_LICENSE } = require('../lib/gita-hf');
 
 const DATASET = 'JDhruv14/Bhagavad-Gita_Audio';
 const ROWS_API = `https://datasets-server.huggingface.co/rows?dataset=${encodeURIComponent(DATASET)}&config=default&split=train`;
@@ -87,27 +82,35 @@ function parseChapterArg() {
   return parseInt(arg.split('=')[1], 10);
 }
 
+const textOnly = process.argv.includes('--text-only');
+const audioOnly = process.argv.includes('--audio-only');
+
 async function main() {
   const chapterFilter = parseChapterArg();
-  fs.mkdirSync(AUDIO_DIR, { recursive: true });
+  if (!textOnly) fs.mkdirSync(AUDIO_DIR, { recursive: true });
 
-  const manifest = loadManifest();
-  manifest.source = HF_DATASET;
-  manifest.license = HF_LICENSE;
-  manifest.syncedAt = new Date().toISOString();
-  if (!manifest.verses) manifest.verses = {};
+  const hfData = loadHfVerses();
+  hfData.source = HF_DATASET;
+  hfData.license = HF_LICENSE;
+  hfData.syncedAt = new Date().toISOString();
+  if (!hfData.verses) hfData.verses = {};
+
+  const audioManifest = loadManifest();
+  audioManifest.source = HF_DATASET;
+  audioManifest.license = HF_LICENSE;
+  if (!audioManifest.verses) audioManifest.verses = {};
 
   let offset = 0;
   const pageSize = 50;
   let total = 701;
   let downloaded = 0;
-  let skipped = 0;
-  let failed = 0;
+  let skippedAudio = 0;
+  let failedAudio = 0;
+  let textUpdated = 0;
 
   console.log(
-    `Syncing Gita chant audio from ${HF_DATASET}${chapterFilter ? ` (chapter ${chapterFilter} only)` : ''}...`
+    `Syncing from ${HF_DATASET}${chapterFilter ? ` chapter ${chapterFilter}` : ''}${textOnly ? ' (text only)' : ''}${audioOnly ? ' (audio only)' : ''}...`
   );
-  console.log('Output:', AUDIO_DIR);
 
   while (offset < total) {
     const page = await fetchRows(offset, pageSize);
@@ -119,28 +122,39 @@ async function main() {
       if (!verseId) continue;
       if (chapterFilter && parseInt(verseId.split('.')[0], 10) !== chapterFilter) continue;
 
-      const dest = path.join(AUDIO_DIR, `${verseId}.wav`);
-      if (fs.existsSync(dest)) {
-        manifest.verses[verseId] = true;
-        skipped++;
-        continue;
+      if (!audioOnly && (row.sanskrit || row.transliteration)) {
+        hfData.verses[verseId] = {
+          ...(hfData.verses[verseId] || {}),
+          sanskrit: String(row.sanskrit || '').trim(),
+          transliteration: String(row.transliteration || '').trim(),
+        };
+        textUpdated++;
       }
 
-      const audioUrl = getAudioUrl(row.audio);
-      if (!audioUrl) {
-        console.warn(`  no audio URL for ${row.shloka_id}`);
-        failed++;
-        continue;
-      }
-
-      try {
-        await downloadFile(audioUrl, dest);
-        manifest.verses[verseId] = true;
-        downloaded++;
-        if (downloaded % 10 === 0) console.log(`  downloaded ${downloaded} (${verseId})`);
-      } catch (e) {
-        console.warn(`  failed ${verseId}: ${e.message}`);
-        failed++;
+      if (!textOnly) {
+        const dest = path.join(AUDIO_DIR, `${verseId}.wav`);
+        if (fs.existsSync(dest)) {
+          audioManifest.verses[verseId] = true;
+          if (hfData.verses[verseId]) hfData.verses[verseId].audio = true;
+          skippedAudio++;
+        } else {
+          const audioUrl = getAudioUrl(row.audio);
+          if (!audioUrl) {
+            console.warn(`  no audio URL for ${row.shloka_id}`);
+            failedAudio++;
+          } else {
+            try {
+              await downloadFile(audioUrl, dest);
+              audioManifest.verses[verseId] = true;
+              if (hfData.verses[verseId]) hfData.verses[verseId].audio = true;
+              downloaded++;
+              if (downloaded % 10 === 0) console.log(`  audio ${downloaded} (${verseId})`);
+            } catch (e) {
+              console.warn(`  audio failed ${verseId}: ${e.message}`);
+              failedAudio++;
+            }
+          }
+        }
       }
     }
 
@@ -148,8 +162,12 @@ async function main() {
     if (!rows.length) break;
   }
 
-  saveManifest(manifest);
-  console.log(`Done. new=${downloaded} skipped=${skipped} failed=${failed} total in manifest=${Object.keys(manifest.verses).length}`);
+  saveHfVerses(hfData);
+  if (!textOnly) saveManifest(audioManifest);
+
+  console.log(
+    `Done. text=${textUpdated} audio_new=${downloaded} audio_skip=${skippedAudio} audio_fail=${failedAudio} hf_verses=${Object.keys(hfData.verses).length}`
+  );
 }
 
 main().catch((e) => {

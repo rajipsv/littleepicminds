@@ -7,6 +7,7 @@ const axios = require('axios');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+const { applyHfToVerse, applyHfToChapterMap } = require('../lib/gita-hf');
 
 // --- DATABASE CONFIG ---
 const pool = process.env.DATABASE_URL ? new Pool({
@@ -297,7 +298,7 @@ router.get('/verses', (req, res) => {
       const key = `${chapter}.${verse}`;
       const d = data.shlokas[key];
       if (!d) return res.status(404).json({ error: 'Shloka not found' });
-      return res.json({ ...d, id: key });
+      return res.json(applyHfToVerse({ ...d, id: key }, key));
     }
     if (chapter) {
       const chapterShlokas = {};
@@ -307,7 +308,7 @@ router.get('/verses', (req, res) => {
           chapterShlokas[key] = { ...val, id: key };
         }
       }
-      return res.json(chapterShlokas);
+      return res.json(applyHfToChapterMap(chapterShlokas));
     }
     res.json({ gita: Object.keys(data.shlokas || {}).length, hanuman: Object.keys(data.hanumanChalisa || {}).length });
   } catch (err) {

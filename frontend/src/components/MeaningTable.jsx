@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
+import api, { API_URL } from '../api';
 import { lineTextFromRow, fetchTtsAudio, playAudioBase64 } from '../utils/lineTts';
+import { getLineScriptText, getLineMeaningText, ttsLangForUi } from '../utils/verseDisplay';
 
 const speakLine = (text, lang = 'en') => {
   if (!('speechSynthesis' in window)) return;
@@ -14,28 +16,26 @@ const speakLine = (text, lang = 'en') => {
     voices.find((v) => v.lang.startsWith('en')) ||
     voices[0];
   if (preferred) utterance.voice = preferred;
-  utterance.lang = preferred?.lang || 'en-US';
+  utterance.lang = preferred?.lang || (lang === 'te' ? 'te-IN' : lang === 'hi' ? 'hi-IN' : 'en-US');
   utterance.rate = 0.8;
   window.speechSynthesis.speak(utterance);
 };
 
 const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
 
-const lineMeaningEn = (item) => item.en || item.meaning || '';
-
 const MeaningTable = ({ wordByWord }) => {
   const { currentLang } = useAuth();
-  const isTe = currentLang === 'te';
+  const lang = currentLang === 'te' || currentLang === 'hi' ? currentLang : 'en';
   const [playingIndex, setPlayingIndex] = useState(-1);
   const [teMeanings, setTeMeanings] = useState({});
 
   const rowsKey = useMemo(
-    () => (wordByWord || []).map((item) => lineMeaningEn(item)).join('\n'),
+    () => (wordByWord || []).map((item) => getLineMeaningText(item, 'en')).join('\n'),
     [wordByWord]
   );
 
   useEffect(() => {
-    if (!isTe || !wordByWord?.length) {
+    if (lang !== 'te' || !wordByWord?.length) {
       setTeMeanings({});
       return;
     }
@@ -50,7 +50,7 @@ const MeaningTable = ({ wordByWord }) => {
             next[index] = item.te;
             return;
           }
-          const en = lineMeaningEn(item).trim();
+          const en = getLineMeaningText(item, 'en').trim();
           if (!en) return;
           try {
             const res = await fetch(`${API_URL || ''}/api/translate-meaning`, {
@@ -72,20 +72,24 @@ const MeaningTable = ({ wordByWord }) => {
     return () => {
       cancelled = true;
     };
-  }, [isTe, rowsKey, wordByWord]);
+  }, [lang, rowsKey, wordByWord]);
 
   if (!wordByWord || wordByWord.length === 0) return null;
 
   const displayMeaning = (item, index) => {
-    if (!isTe) return lineMeaningEn(item);
-    if (hasTeluguText(item.te)) return item.te;
-    if (teMeanings[index]) return teMeanings[index];
-    return lineMeaningEn(item);
+    if (lang === 'te') {
+      if (hasTeluguText(item.te)) return item.te;
+      if (teMeanings[index]) return teMeanings[index];
+    }
+    return getLineMeaningText(item, 'en');
   };
 
+  const lineColumnLabel = lang === 'te' ? 'పంక్తి' : lang === 'hi' ? 'श्लोक पंक्ति' : 'Line (IAST)';
+  const meaningLabel = lang === 'te' ? 'అర్థం' : lang === 'hi' ? 'अर्थ (EN)' : 'Meaning';
+
   const handlePlay = async (item, index) => {
-    const line = lineTextFromRow(item, isTe);
-    const ttsLang = isTe ? 'te' : 'hi';
+    const line = lineTextFromRow(item, lang);
+    const ttsLang = ttsLangForUi(lang);
     if (!line) return;
 
     setPlayingIndex(index);
@@ -107,16 +111,16 @@ const MeaningTable = ({ wordByWord }) => {
             <tr>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider w-10"></th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
-                {isTe ? 'పంక్తి' : 'Line'}
+                {lineColumnLabel}
               </th>
               <th scope="col" className="px-4 py-3 text-left text-sm font-bold text-lem-accent uppercase tracking-wider">
-                {isTe ? 'అర్థం' : 'Meaning'}
+                {meaningLabel}
               </th>
             </tr>
           </thead>
           <tbody className="bg-white/5 divide-y divide-white/5">
             {wordByWord.map((item, index) => {
-              const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
+              const displayWord = getLineScriptText(item, lang);
               const meaning = displayMeaning(item, index);
               const isPlaying = playingIndex === index;
 
@@ -134,12 +138,14 @@ const MeaningTable = ({ wordByWord }) => {
                       <Volume2 size={14} />
                     </button>
                   </td>
-                  <td className="px-4 py-3 text-sm font-medium text-white whitespace-nowrap">
+                  <td
+                    className={`px-4 py-3 text-sm font-medium text-white whitespace-pre-wrap ${
+                      lang === 'hi' ? 'devanagari-text' : ''
+                    } ${lang === 'te' ? 'telugu-text' : ''}`}
+                  >
                     {displayWord}
                   </td>
-                  <td className="px-4 py-3 text-sm text-gray-300">
-                    {meaning}
-                  </td>
+                  <td className="px-4 py-3 text-sm text-gray-300">{meaning}</td>
                 </tr>
               );
             })}
@@ -149,7 +155,7 @@ const MeaningTable = ({ wordByWord }) => {
 
       <div className="md:hidden space-y-3">
         {wordByWord.map((item, index) => {
-          const displayWord = isTe && item.sanskrit_te ? item.sanskrit_te : (item.transliteration || item.word || item.sanskrit);
+          const displayWord = getLineScriptText(item, lang);
           const meaning = displayMeaning(item, index);
           const isPlaying = playingIndex === index;
 
@@ -166,7 +172,13 @@ const MeaningTable = ({ wordByWord }) => {
                 <Volume2 size={18} />
               </button>
               <div className="flex-1">
-                <div className="text-lem-accent font-bold text-base mb-1">{displayWord}</div>
+                <div
+                  className={`text-lem-accent font-bold text-base mb-1 whitespace-pre-wrap ${
+                    lang === 'hi' ? 'devanagari-text' : ''
+                  } ${lang === 'te' ? 'telugu-text' : ''}`}
+                >
+                  {displayWord}
+                </div>
                 <div className="text-gray-300 text-sm leading-relaxed">{meaning}</div>
               </div>
             </div>
