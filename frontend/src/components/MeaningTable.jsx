@@ -102,7 +102,7 @@ const MeaningTable = ({ wordByWord }) => {
         body: JSON.stringify({
           text: ttsText,
           target_language_code: ttsLang,
-          speaker: 'roopa',
+          speaker: 'priya',
         }),
       });
 

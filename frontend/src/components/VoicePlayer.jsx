@@ -31,7 +31,7 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
       const res = await api.post('/api/tts', {
         text: text,
         target_language_code: effectiveLang,
-        speaker: 'roopa'
+        speaker: 'priya'
       });
 
       if (res.data.audios && res.data.audios.length > 0 && res.data.audios[0]) {
@@ -59,7 +59,7 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
         throw new Error('No audio content received');
       }
     } catch (err) {
-      console.warn('Sarvam TTS (roopa) failed, using browser voice:', err.message);
+      console.warn('Sarvam TTS (priya) failed, using browser voice:', err.message);
       setLastPlayUsedBrowser(true);
       playBrowserVoice();
     } finally {

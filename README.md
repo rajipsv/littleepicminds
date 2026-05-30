@@ -10,7 +10,7 @@ Welcome to **littleEpicMinds** – a premium, interactive learning platform desi
 - **Interactive Verse Discovery**: Navigate through Shlokas with ease using our child-friendly dropdown system.
 - **English Transliteration**: Primary learning text in English for easy pronunciation and memorization.
 - **Wisdom Path (4-Step Mastery)**:
-  1. 🎧 **Listen**: AI-powered audio (Google Cloud TTS by default; Sarvam Roopa optional fallback).
+  1. 🎧 **Listen**: AI-powered audio (Google Cloud TTS optional; Sarvam Priya default for Indian languages).
   2. 🗣️ **Repeat**: Practice speaking the verse out loud.
   3. 🧩 **Match**: Interactive word-meaning matching game.
   4. ✍️ **Journal**: Reflection space to connect ancient wisdom with daily life.
@@ -28,7 +28,7 @@ This project is optimized for Vercel deployment.
    - `DATABASE_URL`: Your Neon PostgreSQL connection string.
    - `JWT_SECRET`: A secure string for user authentication.
    - `TTS_PROVIDER`: `auto` (default), `sarvam`, `hybrid`, `google`, or `browser`.
-   - `SARVAM_API_KEY`: Optional; Sarvam Roopa when you have credits (signup may include trial).
+   - `SARVAM_API_KEY`: Optional; Sarvam Bulbul v3 (Priya voice) when you have credits (signup may include trial).
    - `GOOGLE_TTS_API_KEY`: Optional; needs GCP billing account even for free tier.
    - `TRANSLATE_LIVE`: `false` in production (use `npm run gita:translate-lines` batch cache).
 4. Click **Deploy**!
@@ -67,7 +67,7 @@ This project is optimized for Vercel deployment.
 | Option | Cost | Card required? | Quality |
 |--------|------|----------------|---------|
 | **Browser voice** (built-in fallback) | $0 | No | OK; varies by device |
-| **Sarvam** (`SARVAM_API_KEY`) | Trial / paid credits | Signup only | Best Indian accent (Roopa) |
+| **Sarvam** (`SARVAM_API_KEY`) | Trial / paid credits | Signup only | Best Indian accent (Priya, Telugu/Hindi) |
 | **Bhashini** ([bhashini.gov.in](https://bhashini.gov.in/ulca/user/register)) | Free for PoC | No | Telugu, Hindi, Sanskrit; API key after email verify |
 | **Pre-warmed cache** (`npm run gita:prewarm-tts`) | $0 after one-time generate | Only if you use a paid API once | Same as provider used to build cache |
 | **Google Cloud TTS** | Free tier exists | **Yes** (billing account) | Good te/hi/en |
