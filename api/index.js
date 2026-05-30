@@ -630,139 +630,35 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
   }
 });
 
-// --- Line meaning Telugu translation (cached) ---
-const LINE_TE_CACHE_PATH = path.join(__dirname, '..', 'lib', 'data', 'line-te-cache.json');
-let lineTeCache = null;
-
-function loadLineTeCache() {
-  if (lineTeCache) return lineTeCache;
-  lineTeCache = {};
-  try {
-    if (fs.existsSync(LINE_TE_CACHE_PATH)) {
-      lineTeCache = JSON.parse(fs.readFileSync(LINE_TE_CACHE_PATH, 'utf8'));
-    }
-  } catch (e) {
-    console.warn('[Line TE cache] load failed:', e.message);
-  }
-  return lineTeCache;
-}
-
-function hasTeluguScript(text) {
-  return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
-}
+// --- Line meaning Telugu (cache-first; batch via npm run gita:translate-lines) ---
+const { translateLineMeaning } = require('../lib/translate/line-meaning');
 
 router.post('/translate-meaning', async (req, res) => {
   try {
     const { text } = req.body;
-    if (!text || typeof text !== 'string') {
-      return res.status(400).json({ error: 'Text is required' });
-    }
-    const key = text.trim();
-    const cache = loadLineTeCache();
-    if (cache[key]) return res.json({ te: cache[key] });
-
-    if (!process.env.SARVAM_API_KEY) {
-      return res.status(501).json({ error: 'Translation not configured' });
-    }
-
-    const response = await axios.post(
-      'https://api.sarvam.ai/translate',
-      {
-        input: key,
-        source_language_code: 'en-IN',
-        target_language_code: 'te-IN',
-        model: 'mayura:v1',
-        mode: 'formal',
-      },
-      {
-        headers: {
-          'api-subscription-key': process.env.SARVAM_API_KEY,
-          'Content-Type': 'application/json',
-        },
-      }
-    );
-
-    const te = (response.data?.translated_text || '').trim();
-    if (!te || !hasTeluguScript(te)) {
-      return res.status(500).json({ error: 'Invalid translation response' });
-    }
-
-    cache[key] = te;
-    lineTeCache = cache;
-    try {
-      fs.writeFileSync(LINE_TE_CACHE_PATH, JSON.stringify(cache, null, 2), 'utf8');
-    } catch (e) {
-      /* read-only on Vercel — in-memory still works per instance */
-    }
-
-    res.json({ te });
+    const { te, source } = await translateLineMeaning(text);
+    res.json({ te, source });
   } catch (err) {
     console.error('[Translate meaning]:', err.message);
-    res.status(500).json({ error: 'Failed to translate' });
+    res.status(err.status || 500).json({ error: err.message || 'Failed to translate' });
   }
 });
 
-// --- TTS (Voice Generation) ---
-const CACHE_DIR = '/tmp/audio_cache';
-if (!fs.existsSync(CACHE_DIR)) {
-  try { fs.mkdirSync(CACHE_DIR, { recursive: true }); } catch (e) {}
-}
-
-const SARVAM_LANG_MAP = {
-  'hi': 'hi-IN', 'te': 'te-IN', 'ta': 'ta-IN', 'en': 'en-IN', 'sa': 'hi-IN'
-};
+// --- TTS (Voice Generation) — google default, sarvam fallback; cache in backend/data/audio_cache ---
+const { synthesizeSpeech } = require('../lib/tts');
 
 router.post('/tts', async (req, res) => {
   try {
-    const { text, target_language_code, speaker = 'meera' } = req.body;
-    if (!text) return res.status(400).json({ error: 'Text is required' });
-
-    let rhythmicText = text;
-    if (text.includes('\n')) {
-      rhythmicText = text.split('\n').map(l => l.trim()).filter(l => l.length > 0).join(', ') + '.'; 
-    } else if (text.includes('. ')) {
-      rhythmicText = text.replace('. ', ', ');
-    }
-
-    const langCode = SARVAM_LANG_MAP[target_language_code] || 'hi-IN';
-    const hash = crypto.createHash('md5').update(`${rhythmicText}_${langCode}_roopa`).digest('hex');
-    const cacheFile = path.join(CACHE_DIR, `${hash}.wav`);
-
-    if (fs.existsSync(cacheFile)) {
-      const audioBuffer = fs.readFileSync(cacheFile);
-      return res.json({ audios: [audioBuffer.toString('base64')] });
-    }
-
-    if (!process.env.SARVAM_API_KEY) {
-      return res.status(501).json({ error: 'Sarvam API key not configured on server' });
-    }
-
-    const response = await axios.post(
-      'https://api.sarvam.ai/text-to-speech',
-      {
-        text: rhythmicText,
-        target_language_code: langCode,
-        speaker: 'roopa',
-        model: 'bulbul:v3' 
-      },
-      {
-        headers: {
-          'api-subscription-key': process.env.SARVAM_API_KEY,
-          'Content-Type': 'application/json'
-        }
-      }
-    );
-
-    if (response.data && response.data.audios && response.data.audios.length > 0) {
-      const audioBuffer = Buffer.from(response.data.audios[0], 'base64');
-      try { fs.writeFileSync(cacheFile, audioBuffer); } catch (e) {}
-      return res.json(response.data);
-    } else {
-      throw new Error('Invalid response from Sarvam AI');
-    }
+    const { text, target_language_code } = req.body;
+    const result = await synthesizeSpeech({ text, targetLanguageCode: target_language_code });
+    res.json(result);
   } catch (err) {
     console.error('[TTS Error]:', err.message);
-    res.status(500).json({ error: 'Failed to generate speech' });
+    const status = err.status || 500;
+    res.status(status).json({
+      error: err.message || 'Failed to generate speech',
+      ...(err.useBrowser ? { useBrowser: true } : {}),
+    });
   }
 });
 

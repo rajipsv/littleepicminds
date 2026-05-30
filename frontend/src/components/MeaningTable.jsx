@@ -110,7 +110,8 @@ const MeaningTable = ({ wordByWord }) => {
 
       const data = await response.json();
       if (data.audios && data.audios[0]) {
-        const audio = new Audio(`data:audio/wav;base64,${data.audios[0]}`);
+        const mime = data.audioEncoding === 'MP3' ? 'mpeg' : 'wav';
+        const audio = new Audio(`data:audio/${mime};base64,${data.audios[0]}`);
         audio.onended = () => setPlayingIndex(-1);
         audio.onerror = () => {
           setPlayingIndex(-1);

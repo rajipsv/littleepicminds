@@ -4,6 +4,7 @@
  *
  * Requires SARVAM_API_KEY in backend/.env or environment.
  * Run: npm run gita:translate-lines
+ * Production API serves cache only unless TRANSLATE_LIVE=true (see backend/.env.template).
  */
 const fs = require('fs');
 const path = require('path');

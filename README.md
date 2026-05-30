@@ -10,7 +10,7 @@ Welcome to **littleEpicMinds** – a premium, interactive learning platform desi
 - **Interactive Verse Discovery**: Navigate through Shlokas with ease using our child-friendly dropdown system.
 - **English Transliteration**: Primary learning text in English for easy pronunciation and memorization.
 - **Wisdom Path (4-Step Mastery)**:
-  1. 🎧 **Listen**: High-quality AI-powered audio (via Sarvam AI).
+  1. 🎧 **Listen**: AI-powered audio (Google Cloud TTS by default; Sarvam Roopa optional fallback).
   2. 🗣️ **Repeat**: Practice speaking the verse out loud.
   3. 🧩 **Match**: Interactive word-meaning matching game.
   4. ✍️ **Journal**: Reflection space to connect ancient wisdom with daily life.
@@ -26,8 +26,11 @@ This project is optimized for Vercel deployment.
 2. Select **`frontend`** as the **Root Directory**.
 3. Add the following **Environment Variables**:
    - `DATABASE_URL`: Your Neon PostgreSQL connection string.
-   - `SARVAM_API_KEY`: Your API key for high-quality Indian TTS.
    - `JWT_SECRET`: A secure string for user authentication.
+   - `TTS_PROVIDER`: `auto` (default), `sarvam`, `hybrid`, `google`, or `browser`.
+   - `SARVAM_API_KEY`: Optional; Sarvam Roopa when you have credits (signup may include trial).
+   - `GOOGLE_TTS_API_KEY`: Optional; needs GCP billing account even for free tier.
+   - `TRANSLATE_LIVE`: `false` in production (use `npm run gita:translate-lines` batch cache).
 4. Click **Deploy**!
 
 ## 🛠️ Local Development
@@ -47,7 +50,7 @@ This project is optimized for Vercel deployment.
    ```bash
    cd frontend/backend
    npm install
-   # Create a .env file with your DATABASE_URL and SARVAM_API_KEY
+   # Copy backend/.env.template → backend/.env (DATABASE_URL, GOOGLE_TTS_API_KEY, etc.)
    node migrate.js # Initialize database tables
    node server.js
    ```
@@ -58,6 +61,30 @@ This project is optimized for Vercel deployment.
    npm install
    npm run dev
    ```
+
+## 🎙️ Voice (TTS) — free options (no Google billing)
+
+| Option | Cost | Card required? | Quality |
+|--------|------|----------------|---------|
+| **Browser voice** (built-in fallback) | $0 | No | OK; varies by device |
+| **Sarvam** (`SARVAM_API_KEY`) | Trial / paid credits | Signup only | Best Indian accent (Roopa) |
+| **Bhashini** ([bhashini.gov.in](https://bhashini.gov.in/ulca/user/register)) | Free for PoC | No | Telugu, Hindi, Sanskrit; API key after email verify |
+| **Pre-warmed cache** (`npm run gita:prewarm-tts`) | $0 after one-time generate | Only if you use a paid API once | Same as provider used to build cache |
+| **Google Cloud TTS** | Free tier exists | **Yes** (billing account) | Good te/hi/en |
+
+**Recommended without a credit card:** set `TTS_PROVIDER=auto` and `SARVAM_API_KEY` if you have Sarvam credits, otherwise the app uses **browser TTS** automatically when the server has no keys.
+
+## 🎙️ Voice (TTS) and translation
+
+| Script | Purpose |
+|--------|---------|
+| `npm run gita:prewarm-tts` | Generate audio once into cache (no repeat API cost on replay) |
+| `npm run gita:tts-cache-stats` | Show cache folders and file count |
+| `npm run gita:translate-lines` | Batch EN→TE line meanings into `lib/data/line-te-cache.json` |
+
+- **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores audio by **text + language only**. Playing the same shloka or line again returns cached WAV — **no Sarvam credit used**. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
+- **TTS providers**: [`lib/tts/`](lib/tts/) — `TTS_PROVIDER=auto` uses Sarvam if keyed, else Google if keyed; cache always checked first.
+- **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 
 ## 📜 Credits & Content
 Content is ported and enhanced from the original *Gita Kids Hub* data, restructured for a more immersive and gamified experience.

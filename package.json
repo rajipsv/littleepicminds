@@ -22,9 +22,13 @@
     "gita:import-chatgpt-stories-safe": "node scripts/import-chatgpt-stories.js --only-placeholders",
     "gita:build-themes": "node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
     "gita:build-themes-auto": "node scripts/validate-theme-clusters.js && node scripts/seed-authored-stories.js && node scripts/build-themes-from-clusters.js",
-    "gita:chatgpt-themes-pipeline": "node scripts/generate-chatgpt-stories.js && node scripts/import-chatgpt-stories.js --only-placeholders && node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js"
+    "gita:chatgpt-themes-pipeline": "node scripts/generate-chatgpt-stories.js && node scripts/import-chatgpt-stories.js --only-placeholders && node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
+    "gita:prewarm-tts": "node scripts/prewarm-tts-cache.js",
+    "gita:tts-cache-stats": "node scripts/tts-cache-stats.js",
+    "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js"
   },
   "dependencies": {
+    "@google-cloud/text-to-speech": "^5.8.1",
     "@indic-transliteration/sanscript": "^1.3.3",
     "axios": "^1.15.2",
     "bcryptjs": "^2.4.3",

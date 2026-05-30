@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAiLoading, setIsAiLoading] = useState(false);
-  const [useFallback, setUseFallback] = useState(false);
+  const [lastPlayUsedBrowser, setLastPlayUsedBrowser] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [rate, setRate] = useState(1);
   const [voiceMode, setVoiceMode] = useState('divine'); // 'divine' or 'normal'
@@ -35,7 +35,8 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
       });
 
       if (res.data.audios && res.data.audios.length > 0 && res.data.audios[0]) {
-        const audioSrc = `data:audio/wav;base64,${res.data.audios[0]}`;
+        const mime = res.data.audioEncoding === 'MP3' ? 'mpeg' : 'wav';
+        const audioSrc = `data:audio/${mime};base64,${res.data.audios[0]}`;
         const audio = new Audio(audioSrc);
         audioRef.current = audio;
         audio.playbackRate = voiceMode === 'divine' ? 0.85 : rate;
@@ -47,18 +48,19 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
 
         audio.onerror = () => {
           setIsPlaying(false);
-          setUseFallback(true);
+          setLastPlayUsedBrowser(true);
           playBrowserVoice();
         };
 
         await audio.play();
         setIsPlaying(true);
+        setLastPlayUsedBrowser(false);
       } else {
         throw new Error('No audio content received');
       }
     } catch (err) {
-      console.warn('AI voice unavailable, using browser voice:', err.message);
-      setUseFallback(true);
+      console.warn('Sarvam TTS (roopa) failed, using browser voice:', err.message);
+      setLastPlayUsedBrowser(true);
       playBrowserVoice();
     } finally {
       setIsAiLoading(false);
@@ -113,11 +115,7 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
       setIsPlaying(false);
       if (onEnd) onEnd();
     } else {
-      if (!useFallback) {
-        playAiVoice();
-      } else {
-        playBrowserVoice();
-      }
+      playAiVoice();
     }
   };
 
@@ -143,7 +141,7 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
           <Play size={24} className="fill-current ml-1" />
         )}
 
-        {!useFallback && !isPlaying && !isAiLoading && (
+        {!lastPlayUsedBrowser && !isPlaying && !isAiLoading && (
           <Sparkles className="absolute -top-1 -right-1 text-white drop-shadow-md w-5 h-5 animate-pulse" />
         )}
       </button>
@@ -160,10 +158,10 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
         {showSettings && (
           <div className="absolute top-full mt-3 right-0 md:left-1/2 md:-translate-x-1/2 bg-lem-sidebar border border-lem-glass-border rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] p-5 w-64 z-50 flex flex-col space-y-5 animate-slide-up">
 
-            {useFallback && (
+            {lastPlayUsedBrowser && (
               <div className="bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs p-3 rounded-xl flex items-start gap-2">
                 <AlertCircle size={14} className="shrink-0 mt-0.5" />
-                <p>Using browser voice (AI voice requires server config).</p>
+                <p>Last play used browser voice. Set GOOGLE_TTS_API_KEY or SARVAM_API_KEY on server, then press play again.</p>
               </div>
             )}
 
