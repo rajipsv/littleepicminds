@@ -21,6 +21,7 @@ app.use((req, res, next) => {
 const authRoutes = require('./routes/auth');
 const verseRoutes = require('./routes/verses');
 const ttsRoutes = require('./routes/tts');
+const gitaAudioRoutes = require('./routes/gita-audio');
 const journalRoutes = require('./routes/journal');
 const evaluationRoutes = require('./routes/evaluations');
 
@@ -28,6 +29,7 @@ const evaluationRoutes = require('./routes/evaluations');
 app.use('/api/auth', authRoutes);
 app.use('/api/verses', verseRoutes);
 app.use('/api/tts', ttsRoutes);
+app.use('/api/gita-audio', gitaAudioRoutes);
 app.use('/api/journal', journalRoutes);
 app.use('/api/evaluations', evaluationRoutes);
 

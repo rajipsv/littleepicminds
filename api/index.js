@@ -662,6 +662,11 @@ router.post('/tts', async (req, res) => {
   }
 });
 
+const { registerGitaAudioRoutes } = require('../lib/gita-audio');
+const gitaAudioRouter = express.Router();
+registerGitaAudioRoutes(gitaAudioRouter);
+router.use('/gita-audio', gitaAudioRouter);
+
 router.post('/tts/lines', async (req, res) => {
   try {
     const { lines, target_language_code } = req.body;

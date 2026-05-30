@@ -159,6 +159,7 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
           
           <div className="flex-shrink-0 z-10">
             <VoicePlayer
+              verseId={scripture === 'gita' ? verse.id : undefined}
               lines={shlokaTtsLines.length > 0 ? shlokaTtsLines : undefined}
               text={isTe && verse.telugu_script ? verse.telugu_script : (verse.transliteration || verse.sanskrit)}
               targetLang={isTe ? 'te' : 'hi'}

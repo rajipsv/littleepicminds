@@ -25,7 +25,8 @@
     "gita:chatgpt-themes-pipeline": "node scripts/generate-chatgpt-stories.js && node scripts/import-chatgpt-stories.js --only-placeholders && node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
     "gita:prewarm-tts": "node scripts/prewarm-tts-cache.js",
     "gita:tts-cache-stats": "node scripts/tts-cache-stats.js",
-    "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js"
+    "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js",
+    "gita:sync-hf-audio": "node scripts/sync-gita-audio-hf.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",
@@ -37,5 +38,8 @@
     "express": "^4.19.2",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@huggingface/hub": "^2.13.0"
   }
 }

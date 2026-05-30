@@ -1,6 +1,12 @@
-import api from '../api';
+import api, { API_URL } from '../api';
 
 const DEFAULT_GAP_MS = 450;
+
+/** Apache-2.0 HF chanting WAV when synced (npm run gita:sync-hf-audio). */
+export function getChantAudioUrl(verseId) {
+  if (!verseId || !/^\d+\.\d+$/.test(String(verseId))) return null;
+  return `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
+}
 
 export function lineTextFromRow(item, isTe) {
   if (!item) return '';

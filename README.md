@@ -81,8 +81,10 @@ This project is optimized for Vercel deployment.
 | `npm run gita:prewarm-tts` | Generate audio once into cache (no repeat API cost on replay) |
 | `npm run gita:tts-cache-stats` | Show cache folders and file count |
 | `npm run gita:translate-lines` | Batch EN→TE line meanings into `lib/data/line-te-cache.json` |
+| `npm run gita:sync-hf-audio` | Download per-śloka chanting WAV (Apache-2.0 HF dataset); add `-- --chapter=1` for one chapter |
 
 - **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
+- **Śloka chanting (HF, Apache-2.0):** [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio) — `npm run gita:sync-hf-audio` saves `lib/data/gita_audio/{chapter}.{verse}.wav`. Listen prefers this over TTS when present. See [`NOTICES.md`](NOTICES.md). Host on R2 for production (~3.6 GB full set).
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `TTS_PROVIDER=auto` uses Sarvam if keyed, else Google if keyed; cache always checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 

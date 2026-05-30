@@ -4,12 +4,14 @@ import { useAuth } from '../context/AuthContext';
 import {
   playLineSequence,
   fetchTtsAudio,
+  getChantAudioUrl,
   DEFAULT_GAP_MS,
 } from '../utils/lineTts';
 
 const VoicePlayer = ({
   text,
   lines,
+  verseId,
   lineGapMs = DEFAULT_GAP_MS,
   onWordBoundary,
   onLineStart,
@@ -19,6 +21,7 @@ const VoicePlayer = ({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [lastPlayUsedBrowser, setLastPlayUsedBrowser] = useState(false);
+  const [usedChantAudio, setUsedChantAudio] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [rate, setRate] = useState(1);
   const [voiceMode, setVoiceMode] = useState('divine');
@@ -39,13 +42,40 @@ const VoicePlayer = ({
   const effectiveLang = targetLang || currentLang || 'hi';
   const playbackRate = voiceMode === 'divine' ? 0.85 : rate;
   const shlokaLines = Array.isArray(lines) ? lines.filter((l) => l?.trim()) : [];
+  const chantUrl = getChantAudioUrl(verseId);
+
+  const playChantWav = () =>
+    new Promise((resolve, reject) => {
+      const audio = new Audio(chantUrl);
+      audioRef.current = audio;
+      audio.playbackRate = playbackRate;
+      audio.onended = () => resolve();
+      audio.onerror = () => reject(new Error('Chant audio failed'));
+      audio.play().catch(reject);
+    });
 
   const playAiVoice = async () => {
     setIsAiLoading(true);
+    setUsedChantAudio(false);
     abortRef.current = new AbortController();
     const signal = abortRef.current.signal;
 
     try {
+      if (chantUrl) {
+        try {
+          await playChantWav();
+          if (!signal.aborted) {
+            setIsPlaying(false);
+            setLastPlayUsedBrowser(false);
+            setUsedChantAudio(true);
+            if (onEnd) onEnd();
+          }
+          return;
+        } catch (chantErr) {
+          console.warn('Chant WAV unavailable, falling back to TTS:', chantErr.message);
+        }
+      }
+
       if (shlokaLines.length > 0) {
         await playLineSequence(shlokaLines, {
           targetLang: effectiveLang,
@@ -87,7 +117,7 @@ const VoicePlayer = ({
       setLastPlayUsedBrowser(false);
     } catch (err) {
       if (signal.aborted) return;
-      console.warn('Sarvam TTS (priya) failed, using browser voice:', err.message);
+      console.warn('TTS failed, using browser voice:', err.message);
       setLastPlayUsedBrowser(true);
       if (shlokaLines.length > 0) {
         playBrowserLines();
@@ -215,6 +245,10 @@ const VoicePlayer = ({
 
         {showSettings && (
           <div className="absolute top-full mt-3 right-0 md:left-1/2 md:-translate-x-1/2 bg-lem-sidebar border border-lem-glass-border rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] p-5 w-64 z-50 flex flex-col space-y-5 animate-slide-up">
+
+            {usedChantAudio && (
+              <p className="text-xs text-lem-accent/90">Playing traditional śloka chanting (HF dataset).</p>
+            )}
 
             {lastPlayUsedBrowser && (
               <div className="bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs p-3 rounded-xl flex items-start gap-2">
