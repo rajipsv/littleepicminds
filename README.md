@@ -82,7 +82,7 @@ This project is optimized for Vercel deployment.
 | `npm run gita:tts-cache-stats` | Show cache folders and file count |
 | `npm run gita:translate-lines` | Batch EN→TE line meanings into `lib/data/line-te-cache.json` |
 
-- **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores audio by **text + language only**. Playing the same shloka or line again returns cached WAV — **no Sarvam credit used**. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
+- **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `TTS_PROVIDER=auto` uses Sarvam if keyed, else Google if keyed; cache always checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 

@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import VoicePlayer from './VoicePlayer';
 import MeaningTable from './MeaningTable';
+import { linesFromBreakdown } from '../utils/lineTts';
 import MatchingGame from './MatchingGame';
 import WisdomJournal from './WisdomJournal';
 import { useAuth } from '../context/AuthContext';
@@ -18,6 +19,23 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
     if (!verse?.transliteration) return [];
     return verse.transliteration.split(/\s+/);
   }, [verse]);
+
+  const shlokaTtsLines = useMemo(
+    () => linesFromBreakdown(verse?.lineBreakdown || verse?.word_by_word, isTe),
+    [verse, isTe]
+  );
+
+  const lineWordStarts = useMemo(() => {
+    const breakdown = verse?.lineBreakdown || verse?.word_by_word;
+    if (!breakdown?.length || isTe) return [];
+    let offset = 0;
+    return breakdown.map((row) => {
+      const start = offset;
+      const words = (row.transliteration || row.word || '').split(/\s+/).filter(Boolean);
+      offset += words.length;
+      return start;
+    });
+  }, [verse, isTe]);
 
   // Reset steps when verse changes
   useEffect(() => {
@@ -140,9 +158,15 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
           </div>
           
           <div className="flex-shrink-0 z-10">
-            <VoicePlayer 
-              text={isTe && verse.telugu_script ? verse.telugu_script : (verse.transliteration || verse.sanskrit)} 
+            <VoicePlayer
+              lines={shlokaTtsLines.length > 0 ? shlokaTtsLines : undefined}
+              text={isTe && verse.telugu_script ? verse.telugu_script : (verse.transliteration || verse.sanskrit)}
               targetLang={isTe ? 'te' : 'hi'}
+              onLineStart={(lineIndex) => {
+                if (!isTe && lineWordStarts[lineIndex] != null) {
+                  setActiveWordIndex(lineWordStarts[lineIndex]);
+                }
+              }}
               onWordBoundary={handleWordBoundary}
               onEnd={handleAudioEnd}
             />

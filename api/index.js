@@ -645,7 +645,7 @@ router.post('/translate-meaning', async (req, res) => {
 });
 
 // --- TTS (Voice Generation) — google default, sarvam fallback; cache in backend/data/audio_cache ---
-const { synthesizeSpeech } = require('../lib/tts');
+const { synthesizeSpeech, synthesizeSpeechLines } = require('../lib/tts');
 
 router.post('/tts', async (req, res) => {
   try {
@@ -654,6 +654,24 @@ router.post('/tts', async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error('[TTS Error]:', err.message);
+    const status = err.status || 500;
+    res.status(status).json({
+      error: err.message || 'Failed to generate speech',
+      ...(err.useBrowser ? { useBrowser: true } : {}),
+    });
+  }
+});
+
+router.post('/tts/lines', async (req, res) => {
+  try {
+    const { lines, target_language_code } = req.body;
+    const result = await synthesizeSpeechLines({
+      lines,
+      targetLanguageCode: target_language_code,
+    });
+    res.json(result);
+  } catch (err) {
+    console.error('[TTS lines Error]:', err.message);
     const status = err.status || 500;
     res.status(status).json({
       error: err.message || 'Failed to generate speech',

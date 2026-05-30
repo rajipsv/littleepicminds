@@ -24,6 +24,8 @@ function loadEnv() {
   }
 }
 
+const { lineTextFromRow } = require('../lib/tts/shloka-line');
+
 function collectSamples() {
   const samples = [];
   const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
@@ -34,17 +36,10 @@ function collectSamples() {
       if (!/^\d+\.\d+$/.test(key)) continue;
       const verse = chapter[key];
       for (const row of verse.lineBreakdown || []) {
-        const line = row.transliteration || row.word || row.sanskrit || '';
-        const en = (row.en || row.meaning || '').trim();
-        if (line && en) {
-          samples.push({ text: `${line}, ${en}`, lang: 'hi' });
-        }
-        if (row.sanskrit_te && en) {
-          samples.push({ text: `${row.sanskrit_te}, ${en}`, lang: 'te' });
-        }
-      }
-      if (verse.transliteration) {
-        samples.push({ text: verse.transliteration, lang: 'hi' });
+        const hi = lineTextFromRow(row, 'hi');
+        const te = lineTextFromRow(row, 'te');
+        if (hi) samples.push({ text: hi, lang: 'hi' });
+        if (te) samples.push({ text: te, lang: 'te' });
       }
     }
   }
@@ -88,9 +83,10 @@ async function main() {
       if (!/^\d+\.\d+$/.test(key)) continue;
       const verse = chapter[key];
       for (const row of verse.lineBreakdown || []) {
-        const line = row.transliteration || row.word || '';
-        const en = (row.en || row.meaning || '').trim();
-        if (line && en) samples.push({ text: `${line}, ${en}`, lang: 'hi' });
+        const hi = lineTextFromRow(row, 'hi');
+        const te = lineTextFromRow(row, 'te');
+        if (hi) samples.push({ text: hi, lang: 'hi' });
+        if (te) samples.push({ text: te, lang: 'te' });
       }
     }
   }

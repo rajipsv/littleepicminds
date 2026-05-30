@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
-import { API_URL } from '../api';
+import { lineTextFromRow, fetchTtsAudio, playAudioBase64 } from '../utils/lineTts';
 
 const speakLine = (text, lang = 'en') => {
   if (!('speechSynthesis' in window)) return;
@@ -22,12 +22,6 @@ const speakLine = (text, lang = 'en') => {
 const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
 
 const lineMeaningEn = (item) => item.en || item.meaning || '';
-
-/** Roman/Telugu line for TTS — Devanagari sounds unnatural on most TTS engines. */
-const ttsLineText = (item, isTe) => {
-  if (isTe && item.sanskrit_te) return item.sanskrit_te;
-  return item.transliteration || item.word || item.sanskrit || '';
-};
 
 const MeaningTable = ({ wordByWord }) => {
   const { currentLang } = useAuth();
@@ -89,41 +83,18 @@ const MeaningTable = ({ wordByWord }) => {
     return lineMeaningEn(item);
   };
 
-  const handlePlay = async (item, meaning, index) => {
-    const line = ttsLineText(item, isTe);
+  const handlePlay = async (item, index) => {
+    const line = lineTextFromRow(item, isTe);
     const ttsLang = isTe ? 'te' : 'hi';
-    const ttsText = `${line}, ${meaning}`;
+    if (!line) return;
 
     setPlayingIndex(index);
     try {
-      const response = await fetch(`${API_URL || ''}/api/tts`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          text: ttsText,
-          target_language_code: ttsLang,
-          speaker: 'priya',
-        }),
-      });
-
-      if (!response.ok) throw new Error('TTS unavailable');
-
-      const data = await response.json();
-      if (data.audios && data.audios[0]) {
-        const mime = data.audioEncoding === 'MP3' ? 'mpeg' : 'wav';
-        const audio = new Audio(`data:audio/${mime};base64,${data.audios[0]}`);
-        audio.onended = () => setPlayingIndex(-1);
-        audio.onerror = () => {
-          setPlayingIndex(-1);
-          speakLine(ttsText, ttsLang);
-        };
-        await audio.play();
-      } else {
-        speakLine(ttsText, ttsLang);
-        setTimeout(() => setPlayingIndex(-1), 2000);
-      }
+      const { base64, encoding } = await fetchTtsAudio(line, ttsLang);
+      await playAudioBase64(base64, encoding, 0.9);
+      setPlayingIndex(-1);
     } catch {
-      speakLine(ttsText, ttsLang);
+      speakLine(line, ttsLang);
       setTimeout(() => setPlayingIndex(-1), 2000);
     }
   };
@@ -153,7 +124,7 @@ const MeaningTable = ({ wordByWord }) => {
                 <tr key={index} className="hover:bg-white/10 transition-colors">
                   <td className="px-3 py-3">
                     <button
-                      onClick={() => handlePlay(item, meaning, index)}
+                      onClick={() => handlePlay(item, index)}
                       className={`w-8 h-8 rounded-full flex items-center justify-center transition-all border ${
                         isPlaying
                           ? 'bg-lem-accent border-lem-accent text-lem-dark scale-110'
@@ -185,7 +156,7 @@ const MeaningTable = ({ wordByWord }) => {
           return (
             <div key={index} className="glass-panel p-4 rounded-2xl border border-white/5 flex items-start gap-4">
               <button
-                onClick={() => handlePlay(item, meaning, index)}
+                onClick={() => handlePlay(item, index)}
                 className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all border ${
                   isPlaying
                     ? 'bg-lem-accent border-lem-accent text-lem-dark shadow-lg'

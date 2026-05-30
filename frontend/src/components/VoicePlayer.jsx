@@ -1,70 +1,126 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, Volume2, Settings2, Sparkles, AlertCircle } from 'lucide-react';
-import api from '../api';
 import { useAuth } from '../context/AuthContext';
+import {
+  playLineSequence,
+  fetchTtsAudio,
+  DEFAULT_GAP_MS,
+} from '../utils/lineTts';
 
-const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
+const VoicePlayer = ({
+  text,
+  lines,
+  lineGapMs = DEFAULT_GAP_MS,
+  onWordBoundary,
+  onLineStart,
+  onEnd,
+  targetLang,
+}) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [lastPlayUsedBrowser, setLastPlayUsedBrowser] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [rate, setRate] = useState(1);
-  const [voiceMode, setVoiceMode] = useState('divine'); // 'divine' or 'normal'
+  const [voiceMode, setVoiceMode] = useState('divine');
 
   const audioRef = useRef(null);
   const utteranceRef = useRef(null);
+  const abortRef = useRef(null);
   const { currentLang } = useAuth();
 
   useEffect(() => {
     return () => {
+      if (abortRef.current) abortRef.current.abort();
       if (audioRef.current) audioRef.current.pause();
       window.speechSynthesis.cancel();
     };
   }, []);
 
-  // hi = Sanskrit shloka (IAST/transliteration); te = Telugu script; en = meanings
   const effectiveLang = targetLang || currentLang || 'hi';
+  const playbackRate = voiceMode === 'divine' ? 0.85 : rate;
+  const shlokaLines = Array.isArray(lines) ? lines.filter((l) => l?.trim()) : [];
 
   const playAiVoice = async () => {
     setIsAiLoading(true);
+    abortRef.current = new AbortController();
+    const signal = abortRef.current.signal;
+
     try {
-      const res = await api.post('/api/tts', {
-        text: text,
-        target_language_code: effectiveLang,
-        speaker: 'priya'
-      });
-
-      if (res.data.audios && res.data.audios.length > 0 && res.data.audios[0]) {
-        const mime = res.data.audioEncoding === 'MP3' ? 'mpeg' : 'wav';
-        const audioSrc = `data:audio/${mime};base64,${res.data.audios[0]}`;
-        const audio = new Audio(audioSrc);
-        audioRef.current = audio;
-        audio.playbackRate = voiceMode === 'divine' ? 0.85 : rate;
-
-        audio.onended = () => {
+      if (shlokaLines.length > 0) {
+        await playLineSequence(shlokaLines, {
+          targetLang: effectiveLang,
+          gapMs: lineGapMs,
+          playbackRate,
+          signal,
+          onLineStart: (index) => {
+            if (onLineStart) onLineStart(index);
+            if (onWordBoundary) onWordBoundary(index);
+          },
+        });
+        if (!signal.aborted) {
           setIsPlaying(false);
+          setLastPlayUsedBrowser(false);
           if (onEnd) onEnd();
-        };
-
-        audio.onerror = () => {
-          setIsPlaying(false);
-          setLastPlayUsedBrowser(true);
-          playBrowserVoice();
-        };
-
-        await audio.play();
-        setIsPlaying(true);
-        setLastPlayUsedBrowser(false);
-      } else {
-        throw new Error('No audio content received');
+        }
+        return;
       }
+
+      const { base64, encoding } = await fetchTtsAudio(text, effectiveLang);
+      const audioSrc = `data:audio/${encoding};base64,${base64}`;
+      const audio = new Audio(audioSrc);
+      audioRef.current = audio;
+      audio.playbackRate = playbackRate;
+
+      audio.onended = () => {
+        setIsPlaying(false);
+        if (onEnd) onEnd();
+      };
+
+      audio.onerror = () => {
+        setIsPlaying(false);
+        setLastPlayUsedBrowser(true);
+        playBrowserVoice();
+      };
+
+      await audio.play();
+      setIsPlaying(true);
+      setLastPlayUsedBrowser(false);
     } catch (err) {
+      if (signal.aborted) return;
       console.warn('Sarvam TTS (priya) failed, using browser voice:', err.message);
       setLastPlayUsedBrowser(true);
-      playBrowserVoice();
+      if (shlokaLines.length > 0) {
+        playBrowserLines();
+      } else {
+        playBrowserVoice();
+      }
     } finally {
       setIsAiLoading(false);
     }
+  };
+
+  const playBrowserLines = () => {
+    if (!('speechSynthesis' in window) || !shlokaLines.length) return;
+    window.speechSynthesis.cancel();
+    let i = 0;
+    const speakNext = () => {
+      if (i >= shlokaLines.length) {
+        setIsPlaying(false);
+        if (onEnd) onEnd();
+        return;
+      }
+      if (onLineStart) onLineStart(i);
+      if (onWordBoundary) onWordBoundary(i);
+      const utterance = new SpeechSynthesisUtterance(shlokaLines[i]);
+      utterance.rate = voiceMode === 'divine' ? 0.8 : rate;
+      utterance.onend = () => {
+        i += 1;
+        setTimeout(speakNext, lineGapMs);
+      };
+      window.speechSynthesis.speak(utterance);
+    };
+    setIsPlaying(true);
+    speakNext();
   };
 
   const playBrowserVoice = () => {
@@ -110,11 +166,13 @@ const VoicePlayer = ({ text, onWordBoundary, onEnd, targetLang }) => {
 
   const togglePlay = () => {
     if (isPlaying) {
+      if (abortRef.current) abortRef.current.abort();
       if (audioRef.current) audioRef.current.pause();
       window.speechSynthesis.cancel();
       setIsPlaying(false);
       if (onEnd) onEnd();
     } else {
+      setIsPlaying(true);
       playAiVoice();
     }
   };
