@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "_comment": "Optional intro = narrator (e.g. sañjaya uvāca), not a pada line. lines = 4 IAST padas. Run npm run gita:line-breakdown after edits. Draft export: npm run gita:pada-lines:export",
+  "_comment": "intro = narrator (not a pada row). lines = 4 IAST padas. meaningsEn/meaningsTe = line-by-line gloss (source of truth when set). Else rebuild splits chapter en.meaning. Run npm run gita:line-breakdown after edits.",
   "verses": {
     "1.1": {
       "intro": "dhṛtarāṣṭra uvāca",
@@ -11,16 +11,16 @@
         "kimakurvata sañjaya"
       ],
       "meaningsEn": [
-        "On the holy field of Dharma and Kurukshetra,",
-        "gathered together, eager to fight,",
-        "what did my sons and the sons of Pandu",
-        "do?"
+        "In the holy field of Kurukshetra",
+        "gathered together, desiring to fight",
+        "my sons and the sons of Pandu",
+        "what did they do, O Sanjaya?"
       ],
       "meaningsTe": [
-        "పుణ్యక్షేత్రమైన కురుక్షేత్రంలో,",
-        "యుద్ధం చేయడానికి సిద్ధపడి చేరిన,",
+        "పుణ్యక్షేత్రమైన కురుక్షేత్రంలో",
+        "యుద్ధం చేయడానికి సిద్ధపడి చేరిన",
         "నా కుమారులు మరియు పాండు కుమారులు",
-        "ఏమి చేశారు?"
+        "ఏమి చేశారు, ఓ సంజయా?"
       ]
     },
     "1.2": {
