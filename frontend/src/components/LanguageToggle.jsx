@@ -20,7 +20,6 @@ const LanguageToggle = () => {
   return (
     <div className="flex items-center space-x-2 bg-lem-sidebar p-1 rounded-full border border-lem-glass-border shadow-sm">
       {btn('en', 'EN')}
-      {btn('hi', 'HI')}
       {btn('te', 'TE')}
     </div>
   );
