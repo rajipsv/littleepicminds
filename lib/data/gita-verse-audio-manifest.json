@@ -4,22 +4,19 @@
   "license": "Apache-2.0",
   "verses": {
     "1.1": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/0/audio/audio.wav?Expires=1780206722&Signature=ZeIV5vI33PA~EdfbZubMqlBSYQoYpiBmFK~nntbhuBt0eXM-hpzv1aL1AvaWJ2H-k69xztLFtihDifXCOOqf9uqnluSgHkPZJ8MhOqHHkZwLFyZtaTQZlToyA53CDbHBOvueUm8lZPKwkCLdGxzxvayE0EM-BVWJEYCHkL6Zj~1If3mQfBvzitLMwAU-HKYLh7sMVLizkt3ttbezmyiCxvj9q8UUXcJnqwqdRkuTPgY3xREszkCLUSVHWXyZpA4wlS8hJZcDDdf995KEGRCcqKMUNpZYVlUk00tIDWte~zCf-og9sm1NeECD5EDBo5hTX6xZyIhiPUOxfK8qssO9IA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/0/audio/audio.wav?Expires=1780214706&Signature=XdNU2DiQmgf8BQY47NrvUD--OOAIMrHVPPggRDCPOc6kkA47o3gIuj8rJwEDiuUodmexHWcV0-TPN9Vp4EkU3hWA7kPFE5RCXQTgab0XzGNl5gwtfBzfhHQklzO0vATjPXvEwdvOQ~lfiFRqBzN9QObjeqhLo9PkQDmZp3sJ5yPz6LbEPnw9fwToDGZZ7xv9o5P0IQGYwb2LVzaO~5wzD711K2STwxsDO9vWm4xOmUmh1kArVLx4kkRaX0SiAo02ciUQPxhUgSu~GhwwimJml2uXeOWnZxdZ4QhgdjMeQSBdi-RDvf0cG93qk3eMbeojBHTWN7PcjYj-3KP~vzw89g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 0,
-      "local": true,
       "lineTimings": [
         3.206,
         7.104,
         9.94,
         13.664
       ],
-      "lineCount": 4,
-      "introEnd": 3.206
+      "lineCount": 4
     },
     "1.10": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/9/audio/audio.wav?Expires=1780206722&Signature=mNqcvAR0jm-aj3CJBa~j0mUHSfPjLPyL8jdMYo7fPQo7zxofKVyBc6HjzfYfXG-7I7B1kpFXUT-XeXGtrW5wW0q5~dGa82qSxmAus7A-eSLmR~4o9rwRUNc0hfpHC3QsCigP2Gg2Wo5We3Jz~axuK2RtBbI5xouhle1RgOfGIjHFdDlFdedeLrrp-ZLVLQNkudttaV7Zi26W6nIT47WKdKyqbKBNv7Q8y2MtQch4MLaFyvlXI3CUqmQpMF57gjnpE4Zhmf986EiRUEHLs2O6ahAx0O5etNAKXLXTU1E6NDc4Cn9rv-i4ZpmihPjMlmmZ5xBpe2KcrZ7pwbSyw-6VUw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/9/audio/audio.wav?Expires=1780214706&Signature=smg-5p4FfYoij1VsWv9vDmk6bqvJm9P~YL7WN7kJtM7nmu5-11BsEtmBTgKSfozp9PgrhqgIkjAv8BZeswcZOTPPFAhxV9JIkEpuADGoUlHzge-kpDSmXLtPahUVmYf5rFw5J1gqa8wxaXePzH-ZHKKiQuYlfuy46IwVaDZdnNeGceDk0JOD~rCYuwPPOKMoE~AKRc4OZRUL3A0Ll-jNag5PXv3o17~tLvJ5DdD0H9z8xFlyf~t7Uv-FHbr6uzkeMtobFZ9-WdRjUH~SaNKZ01uAayH4T0DS9AkZHg5F9OyfIic0AEiXyfPOSduT0OJgL354OBfDSHgXr~fClDkErA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 9,
-      "local": true,
       "lineTimings": [
         0,
         0.42,
@@ -30,9 +27,8 @@
       "lineCount": 4
     },
     "1.11": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/10/audio/audio.wav?Expires=1780206722&Signature=xXSMmHpajKzjliv8B5my6pqoyJwNVfmSXLSSyyPmd3twHo-X8zB6AU2c8jcOOek1YIRwWUqf70Cum9c6VGVy97guDS195oLBePEbblL4eq98skwbOaVgVrqVQHmRYDsxHecCn9ikMiVj9cFzCUobdl8H9j0Hw-617-mlUIdlsSnCyh3c0khZ7X~-elGMknBSmj6iF5NMXY8SzvwZX2JvXkeo7TSPlqnO9uO~E8hJ2Pcf-f9vZP4ZKuD8KO3-fltqiBXw18Rnq4YeXhR1DIBlRiAD0fYi~lSDqb1qcfhsUI5OFz8NtmmYw9YOYHcT2C0EvZ8OKxSXHScVx6dfnnLSQA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/10/audio/audio.wav?Expires=1780214706&Signature=GHr8LI1EsJ-1KgBIB7ah5AZ7nW2wOJHTXwecOhggJXxMCIR8m8U0NlsoICE4dkXMUfGETA7ca5lU2Asg1G9C9HQv1X-d5Fqcx00cgtOS4LBDuPUhc5hkQn2LPjG3OhBSrtMQwklXIOn7Zo99g9RuzyHFB6gusgOUZg8Y3sj8ZXPiy5FoQ2-~QOjqvE87UhpHsuau-zgL5fbdlhyua097~CB7FIXliZUqRhRDSsZfv6gYIngleVh4m62ZVEk4UmbfghAvpgyoNICGKvy0hTsjtYbac49hdxNjO4SFR3bWJnD~7XJlJSbH8mgorklSb7yrXlCB083IbqAejN2WiWuNjQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 10,
-      "local": true,
       "lineTimings": [
         0,
         3.356,
@@ -43,9 +39,8 @@
       "lineCount": 4
     },
     "1.12": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/11/audio/audio.wav?Expires=1780206722&Signature=vTNOlVUn8NVzA47fL2O~Ta2NUHKTmUbX1aPyZoLGrVoMy8p6qWikTpd2xsPj3PcOfE0~ZYulh0XGL2f5G301a6ii-5iuC0AIpAA7ppLZCRZyMwGuB0VV91py7oa-nFtsXlEIZDkDzeY5GM4Su7LFLX8qjU6lBiKiuKMCYj5N7yuxeCVZvrXGojlfvfEw9-6f4D5GhKE5KTkBlwAe12RgjKPXkFMM5clmT3SYLfd2xR1hD77OC9CSlBKDdgzlfKmGF862P~1RXNxJn~3gmha93z86OdJhEDoVUN87FxAFWfxdghFu6i9MXS7uQ6srxGKwcdLIXHd45IzN5yjyUo9vtg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/11/audio/audio.wav?Expires=1780214706&Signature=LUo~64X4RF8awKqBhCfB9wUXyy0BNqugVgsKf9Pu-tDqE~VUsGix1n00YUbEBBgK7Z~qzOy~DTjXL6BDMPnJhX-cckGatQ0uWICTWkDdK0gQFmEXaGuxSTzgZf2hTS5pJ4~vrbP167rd3ys2HuJEVQKzxJ74mrGsyH3UW8oCNMTE3R4qTUrKbTwdoThdq1HakHVZxl4xvXowqqlWleDXfd2K1gMxMSIBJN2~Ob6MFNbYEPwxeSaBBQbJiaLafZgo1Fjw105Jnd7EDluw4-qcHhrpFLvSx2jeW67UwcObpc-MbeLGGN0y3ap-4Wxl1Ac2XKEaBspfIjOl-hkoS3jYVg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 11,
-      "local": true,
       "lineTimings": [
         0,
         3.593,
@@ -56,9 +51,8 @@
       "lineCount": 4
     },
     "1.13": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/12/audio/audio.wav?Expires=1780206722&Signature=BxAi6aXaq8sqyJzOWZxf63hYL0q1jdgHTX7Ixe7KWz~ZpuJJ1rLWWZYBjpalhSgWfQXw3ZREkcAJoQCTWM88RQMaKmJ9W4g9Xw4ERiJ378365SPjtTt69auHZxPnzmctxZ39iGdyGOu9raAKJ7wIlALtRKnfyGJpguWAq3GTYoycbYxHawVZR4X8dr6CgegJE4CROl0KQFFffgjUwOCG4~YtSK6aVFoNZYdQTWH3MoAGsPXsuK4vtz2caUu60WHDLay9W2--wk1rC-3f4LAxGl6PsWi6~QFjEKIQeIzwxTXsQHFZUm4Jks8v8t0qLfKtrlyh2hu2JZWyyXY5VXz58w__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/12/audio/audio.wav?Expires=1780214706&Signature=ce0q3QdB-o7TCbCG2~8oFWbwHtG0ARHzH8NH6vaQrj7dUCA-FwdPDhosS4AbR5E61jH0U1Ay5kopSuAiAG-9yTG1lq71WRKqPqxJ4-~CEA4zd00Do9qlj-SeANScawHDSpxHZSx1rXHV2ySTA88~GBFi5WHY~ueGCrzJeJadm4lpqY5cYfdVlwtI72d0x7gOHfxHy5Eu8AhRpPZmLmUzdSRfxzxOQAMPa1lljvMbz10cRxj~LiswuBfTcpweoap~EoSNZ7NifiVb-K-SgPlZ1bFeOl-4XX83F5IciWswBhrbhW9oqR9LS1UiKc3mAg0UEROWCOPily3AEkLa2YPkYQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 12,
-      "local": true,
       "lineTimings": [
         0,
         3.618,
@@ -69,9 +63,8 @@
       "lineCount": 4
     },
     "1.14": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/13/audio/audio.wav?Expires=1780206722&Signature=kaypnR3Gsmvidrr9tZvlxtd-mdbI0c7J15vHsoWCEKzrQn00yn4XhlsRmDOFCS5lCMzPDMheg5F9dTg55CORm2IZ0smyK0qPXyYbw~BUh~KRfiU-d6E~stY0Y6cxLpmcJdixFfrMcXoUHn1DrB823-KGXw1OwEO0ZtLTXrwBB9jgglgboLV9PZHBJA2JPlgrY7gdTUIxcuDIZttG4TaIm8zlPx-6tFq89Z3FbafKDYo2fkzleGgmOUeXlCeeEirdX0zz7VQSbNUhHzMZYzRStNQMXJ4-YAKIkulLKxoIdvtVB6NjiVDF2yRd7n-BwwVkabeYsTtTVek7ziShh4pmdw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/13/audio/audio.wav?Expires=1780214706&Signature=l5cM8MyyLOAcCqKd9aPmoxdvzaqc6NyeZI83EA69EXY-w-3l6Xh3FBJy~Z644Qtdn-3fTfShXEh8Q5OSfam-cBMILZJkYNPpPGrmhVBrg14pJ6925ot0Quwcp-xcZCpeKa0K3ELdYHSZKiq~6V2HRmRpxo8Bod36kShMlZXhKmS6mbb7Wy3xh9z6D1JKalbDEAgGPjpl7L28hD8UI0Th0XFJmgQhuh97ajgLxS9VGMrHzcfz-t4l6ar5woaq5uRdLW7UmTcG~XoTTuJzxmgqNtjr1aV4WdtRRHWHfp5sOvrzIuJIJDeD1LPVsAseooz4e53TD9VVvGRMkvYpMMBA~A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 13,
-      "local": true,
       "lineTimings": [
         0,
         3.768,
@@ -82,9 +75,8 @@
       "lineCount": 4
     },
     "1.15": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/14/audio/audio.wav?Expires=1780206722&Signature=zuFWqIj9sGJuNoSuMrLRsg40-clnSyr73mXF8QLCYNyuMednMjVPL6H9Rhrlhly2xtOaNhKd9V284LEAx2R0FZzTy1Hqj5pxjT8JFnyCQvS51CeBw2mSH3D0YnQP2lGIdmcohH4pIa4VE27D7UOW-n5egtPt1SCtu2jWUo~o9ov7fpYb7UJ8ACE7mWoSzBij1T9~I-YUnxWAy-5eYVHM5P2owjAX6BJQF4Fwql3a-elnGYakXEU28ZQqhjif4hGE6fDrHmo4AneuUN9mtxZaTGyZAC8xpBvoyvTN1LJgZ7H5hMdlzJDe6zgjshGDtCE3txq1yW7xZAk3~sm5SwKV5g__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/14/audio/audio.wav?Expires=1780214706&Signature=DwhlaGJNYtivkHU7ykdynUx4hj1IIXZqskSTCJawK0h75F8VZM9zeUCTiFBDuzvDD29hun0b-dZSAQwQoi09Hf9UAI1LFOSC7EI-vqLm2orMy-hzRDtmAJ~~EUvLlIXC~o0IM4r47ZyFMSjCrS09ngfC244T1NrF~20aZx6xb8ohEqItHjq0l~2AdvdHPJaFhw-RthmIMsbZReVx5bMUN0L98tYYtpAaj6DNjCHmY5FHxu~ZwSm5oGTUTpJrV~4fi5pY2ab1KMfzO06xxkQS1B42J6lWnWDTfZz-o2QGFnrarFdAgCBHQy4rkToDXgxIEGQ6NDsQotSbnd2GO7L~lQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 14,
-      "local": true,
       "lineTimings": [
         0,
         3.818,
@@ -95,9 +87,8 @@
       "lineCount": 4
     },
     "1.16": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/15/audio/audio.wav?Expires=1780206722&Signature=e7FCsDm0ol6rLJlBn3IpVvsqEvtAqA5-94BtABEIQ41rTPbjLFnise36X2LvZXgvX7EX2rJRSQnoR6kWREzhdcXKZV5rLMULlS2zlDpTloRsx66UTfS7SWiZbo8UpFtHrIgZ1kPlzpTKwctKLfzhYIQE3D~M1wKnVMti2SwhIjskj23uJdUSCRW6kwwq9WtxuNv2DMcXaNBs9B9c9q2Zubfyiwg7L7uHDRGwH7IPsV0zPCNjN4yo1Sv00JJUaQ4bep0M2MN26ZGQQVHdpqLS8uhGepqoHJuDCRMmQMDgHzjlxouYeQwkExwmtAzrr299MssGpIFrYdFLb0ivsxDDHQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/15/audio/audio.wav?Expires=1780214706&Signature=MXMSaseuLqMCC15HHsQnk7~S3kdDnQcevUvQ8X1gQ9QjklxLCnp2vkxE8mUmrV8-o93C8DrnMFhYZ~jENwBaP-K6lzEJCuNnQv2GOPWDHHAA72xv1LZAsW1oBjryruCoSbe0F3oVW6dIp3tR0AWMpoFxRtco~ky2GDO2c~CPBhAPA~VrbviGzH-8z1mOnAVSy0lUeEHXPvv37YxeayQ3v8RGK03ilZh5S4L718L1OYp-YCQFNAKogZgaF1BqPwHaVFKAkQmbFwDmwoftoTNoJSIKQp3w9QQOohMM7vTDiX8NqieSwyVrPj7XJbrgUcDXNGb5jwoSPoSEcCJ4yHWgqQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 15,
-      "local": true,
       "lineTimings": [
         0,
         0.482,
@@ -108,9 +99,8 @@
       "lineCount": 4
     },
     "1.17": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/16/audio/audio.wav?Expires=1780206722&Signature=KgBFfK64OPYObxe40XHeQpZwcUhryX3gs3qpjOMIpvyHU5a-hVqGRZrJI99dwuvCRGPAxNkkbw-23befyMlqTifKfvAHJvKip~uK5AyijDo-WQlvvKlywjglI0rwkSf8PzHkHMZPcNxEf91~CR36LvUIsrxefk35-btFayjbQp9SQjYcnNru8mRQ8U5GsxbcD4ELZDNVHGUmUoJuq9L~9XiBWHrqXZZJE5BePBSrnRrfgchftiqZEvxvktC1HMZh8FVJl~fSBwezuZlY9YLxB1q0iu1YApyqSrYTu3qmJ9nnsL03lJJ-JPg0AfpkgGqhKcyR4aBk65p40BZPn8hxzA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/16/audio/audio.wav?Expires=1780214706&Signature=q-gKdi2zEuyttLbcbpdpaDupnhN44i~CVxBnWv3rfU5yW98ybIb7RVC76JarEDgA48UIWLEAvJWImBfEF3nh1VhAKhaWeVbMEOJB2ZMlk3vbXJiNH9VlwpwMkx0kvYitU3MSkQQy~bz6DUdeWM6Ki6Q6fbzR~QPN6SwXjpi-frq02XSLzEXHsEFLEXnoFLJFZrK-fIV5LSq~Xl~Y16nOv7ix76EY-fuVg7oD54lQhD4SifvTjEO6PL6QaZKB5b7kJ~Q7-1~~seWSmsSjy-LeNzt1eZTba-hFkbQuRz4PAsj2XOe5dJ1t4DAfGvONKpNW0rfWc6vgkjChTBxK3m~t7A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 16,
-      "local": true,
       "lineTimings": [
         0,
         3.831,
@@ -121,9 +111,8 @@
       "lineCount": 4
     },
     "1.18": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/17/audio/audio.wav?Expires=1780206722&Signature=NGA7nyGbhOlCOzOdytVoHK2k4M3zliJ1dqf9nHLn960xqDi~MaTuslLr8ly6~d7YCrWFwGQzXkmxzjy8yxHF8jOC1WlrAy~vkcdu7iODsHsyJnG~BJVDEVToK0Gq6pYVxLd-tbZjVcQEA2KelJgdoDeTaa1hukhwaFhTwrNKPcntT1hUykhj0oB5KL1CKg3VQzNLiKEwb1tN4lLA41Ma~WvW-xI3sYV7Ypc4zqo0gMAACT-6Z1DEqz9kgdMqtzyrh88F2~IQ44MYXCj8S~cWXf6zzZswLdWSH~4vElZPqoE3xLuZ3auaoOoO-fd-QADqFDOiM-BMHVLFP3arSf~TOg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/17/audio/audio.wav?Expires=1780214706&Signature=R5vNQHh-W925lVYJU0-zw339cEBAJ1J3fdXutUNf0tLNggtlINCfloDENkzpk6Any8KLCyJnP6yuaqsk1Yj00pIQcUyy6u38nb4XP84I1~yTuqcfoVzgjcv-7~GBYrX9muFn2F6f9WxIau64am5Ir5JI3i8adiAHKv8UcjPp3PThgRGli-ef2roZ-4H8JqmWPIi2Ituxi~Rn73c~IfoVaV39oOS20fxjJLM7bNQslqtTL3x~T5Md47CeKF0sDgggR6SFCBPTe4CY6WQoflcw2Sgdilly5naO2C7GLfWG1skVt3W8Ybx9~x0vDbNLZIJL5x-9jnfplmVQ0sZ1fFd2rw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 17,
-      "local": true,
       "lineTimings": [
         0,
         0.657,
@@ -134,9 +123,8 @@
       "lineCount": 4
     },
     "1.19": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/18/audio/audio.wav?Expires=1780206722&Signature=bh5oa2xOOe8~9moABCVxJSxV1G-B9FbxfVLbY7Duxc0DRwzmQxYmk-uNxZcD5rmk-s1wMJabxRaFG6~RkYeWdxFA~bJvU3wLK8-efoc0q2C-s24Fw~kXLg12wgxZpWBna-qVhF6DNGZnIBT9NVyDImG3l3Iy5RV-kUtj7pafbUOsgOIkdzAGDXDWVBefEgHGEHjXKn7BbsTyuXWvtO6ZORfGrBswzWPPnB32JY6C7NK9ti6OKHoFBYF9FiTzM6BYVnVc5CG~WyCuWbT0gWuSUqFNINKBvUtAVkfKWBW0g7zftbhIQy~57w51Dt9WljdUQc9d~NF5AZ81sHFTMhBK~g__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/18/audio/audio.wav?Expires=1780214706&Signature=E0TgLwKSqKo6tIYAiJVE-aDActx5Pvu9o5tZ3tzp-mqkjgEdhOORZjQld4VhMyYnM2m6HxDZrkwYOJKxw0jYAHCwK0W~FrfdmcHOa~PMuhDzbEV0o8NTJFSkLVpTdtf9qkvrfgvOtO9HiLcF3LQx1-CHOOkJzMiihZOvkJLnfop1nKJAinhGgbRf67Bzmi8XUG4igpnxvqzF3ws4nRXQH8FUye2anWVI8cKMQZZwfSmGyQWH5wgIlpf4RHqQ3rN~vCvjswbh-VJ-Y6B9n81tEYhEb9SipS8O731p~7VFh72ezFjNB19SvPpuxuA7yWx6WvH48vJUNxck3cEuFz280w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 18,
-      "local": true,
       "lineTimings": [
         0,
         3.831,
@@ -147,22 +135,19 @@
       "lineCount": 4
     },
     "1.2": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/1/audio/audio.wav?Expires=1780206722&Signature=K3ybvRa0vZ7U7HS-8~MDF0jKeK7WYXKsa1fafc6dFtXZIlOizWvg2-OTN51wU9imuTtl3mQzo0CEIt6mvAo9Hu1osdQ0A~aZ3Y~CmHxhgwU3~glV8DHO2XNxlGBwsUmSD~9Asu-RPeNd3BYwMHlSOnYZO1-IJ-sGSGERRYwJ6CufZsh3q2dt9ljmTbBXXDs0oIar-fQMME2LUCkq4wD6DmFbrUuodPQAMsUJI7pT2t8pCfjO66gXX8QrxTTfqOP3LgjM0J6fg5JwZE-isJsSIFVB1fmquSvTfkSy803Z7mQIPLxyXgww3R7sU2Tu~MCvqzBXpelFJa~YM-IL2nK-Lw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/1/audio/audio.wav?Expires=1780214706&Signature=uwkJ7xJmPcU~kLQV0qy~tLiBRqbjPhftRWqaQ1INfe1XjG~6~U0daoAafH77vZGy-vFpAZUuXOIumDhbA5vpt4L0G12Ry5VOHEAHPEVkgNFwV~kV~w9hTkQ-r9-Og1b9dXfR0YIbwjzNrDSarYt0I1fWVQuv5KiJpGst0avwF70p9e1ZpKqudm7RqZmSCCwm6UGfkMtxgQ6KiCKgem6rsTv6wAAc~YFd8oEAJ3QzHqeY8HSgC6SQ7vmv8G66qH0KjIq1~Zpjusl5LJTtKwNO2eA81B5ZL4NPL0A9Yr4nIAz~G-5KYw7WuiBdYNgsmjVRD94Hj~S1NWj2vUygDE3eGA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 1,
-      "local": true,
       "lineTimings": [
         0.682,
         3.506,
         10.553,
         13.876
       ],
-      "lineCount": 4,
-      "introEnd": 0.682
+      "lineCount": 4
     },
     "1.20": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/19/audio/audio.wav?Expires=1780206722&Signature=fsbnGpgWzSVw5pFmupAUWZwf6pc7~Xh2hfIB~nL06olSZVTqvHTDTrvSRPs5HRP1Cc4hUFTOJIc7WW3vx8ZTmowVdmcc4MI~0kvmUUQdLWOQs6m0G05wWfVBBt6~bcaNTgt14dd~vLcZCf4R9tuAX~ZhOiSZ9GtHgX7PjvUE6VqiBIbPsz20QQgy9Y-yyaw3lJ1gFgoDFas94jhyZtbyZcb7qUPNeP4iDoiQHDHK5p1zDh85o4l3e6yKZfxoFj4~2ePo0ygs-anBwPxR-RooVmErDSbBYXduEjYYUD7ulPn6AlPVaAoMpDNU0IA87R2SMu4O8NmWOB-jbSi2Piwfgw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/19/audio/audio.wav?Expires=1780214706&Signature=qplEL0rAAvEXGNV9GPh-k3VY9DsBdWt81WwD7F6hh0LZNWzszF4U2c0EpKq38ZW530W~GXVKc3Qx-rxzYlPFnr~8UuTQSCHg2vWhtZVEvCfDylZethV8Io2cdOcDIlYx6uSLDkwzKEXXgnDR9MTLeBngETg~-od1gTbfB0aNW9dIegcTFpgZ9ssLLXVrGN7RposJRNJjTXuaeQrwPQ4jhxvjyRBjtCLeyuV35zVo2~lzcrNc~A74nTgZEBX2noMzDgIjLmiqvGeZVVLCiarK5bXEuwDeADM1R~vtsoLgNnF4XmiNSm2iGlUKNRQsNIJP8NVz-uhHjBc0mYRYhnj9iA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 19,
-      "local": true,
       "lineTimings": [
         0,
         3.581,
@@ -173,9 +158,8 @@
       "lineCount": 4
     },
     "1.21": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/20/audio/audio.wav?Expires=1780206722&Signature=h-tS6ijFOqLeoIcI2LBE3C6xMmR5quUjtHNoEUuUBY~qrWhNN1iCKEqWdjTeKyu2T9PIi9z14Mcnh6vv40pyKI8iD6aCNxEyiIqbN7yHHmOFZzxg-gTp5~ZdX2pU9cl2i94kKLb9~nVDR8jm-2N5CjXdKDhCtyA00biARVjB3HpAHbZA24N~dN96BLD2usG1F4nliNKDQfRzUAoFxCcwNX66oJD0yVY3wPGSn18IrvYZHG3Pju8VxLPTRB8I8WLcNEfFyBtdLBeEqo4GgQZBDzlIyQLlopgMx~UA-hjSTQsGsbx7vWU7K3hG4HplNRneuRlsmKRb77GHp2IsRQIY4A__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/20/audio/audio.wav?Expires=1780214706&Signature=qQLYOU0dkkJDMsCl4BykoTB4jgd-iLWdRSU4Jc10oSzywSkOZ54GalPd9SI-DMMtg4nX2yEN4QZDCWXXGUB0a~wnNgk0gQMiYmH~5hzS4G2ZXfeaF-K~3Z9nwSgQhhlKqZY0-nEtnyPxqp-3p98M8MKfnip6jrNXglfIBKlwn-t53GEQmAOSTu8M5kAUMmdXlEcd1fnRdPsJ2NRgbRkHc3UPmNw-Oh6xm~gEtlbkeGeyNWFwWI-mzY2~OZyNwkYJwfVkk5wGWBlz2zZG3iB1ClZSEzMpMJYc7XqCwvRU72QmLE0aDftoEaAELaiwzVrADmiw-RTQBHlkNqPy3JrM8g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 20,
-      "local": true,
       "lineTimings": [
         0,
         0.545,
@@ -186,9 +170,8 @@
       "lineCount": 4
     },
     "1.22": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/21/audio/audio.wav?Expires=1780206722&Signature=SvYZAfIuCTxhkKlK-jBcljOKJWCTqbaXMyy-~Hxg77-VZa3ziAvQgewMoCNYOTfP81FhquZ~5ReMBseFj22IRPLBLzCUjiHch57xOU-Jr7CaDBy1s3-bnK0UkReYPDgoJfprgecxl0Owx~xdvOJBmNyQbBIN0qLDWYmpoGoxnJ5OH5spS4uTYu3pr4o1RWk90W15gG-~KLNBHD3RLeH8t68URtR0jySz6rPgxpOrpKRXygwDxdIAqr1uTYYXN42XY4SosWFlcHsI1OMeLdaDyitIvgX4F83b11Jdm~s9cBQ4Ib8MC63~iaV7nGkfyionu-AD1VeGtlPTuyT9uEn8~w__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/21/audio/audio.wav?Expires=1780214706&Signature=B6gdF299pw-Ukt3GExdo5FLy~iXGBEeZWVPEjL61YQZAjhMyEKti5BlK-PrrHb0kCoAmXSidX0Q5T0h1Y-09u912PyqFAuJZBV4vvj14figdX4qsjoTtVYmcJulrhNaDyUWS0HgZq7B-bZcuvQy2WScQmwbPqOwLPB9dHj2KcDsg3nVK65lyICjfLFCNRKXKaQk5r9ZxpsznJmvfz4cDNjCY5BLH0EcPrwfNQHeWsnR6jzVEPo-V3YgNXlW0WKVzEQLmiGdvUnSl2FfiMUrxcjJCwVirNl54RSWD8cccoZXsoQ~knjfpOfCHwFNafoySM4e82OAYTsg6UePkYVNQtA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 21,
-      "local": true,
       "lineTimings": [
         0,
         3.418,
@@ -199,9 +182,8 @@
       "lineCount": 4
     },
     "1.23": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/22/audio/audio.wav?Expires=1780206722&Signature=g2FzvemqUyt7D1UuvONlWw7Juiuwt9ubhshqnXQwzfTf4EQB1kUZU~KhhnF9wIn5De23di2smTknARfZg8meBn0KqaP~QZJpjPrMkP0YMC8IiI0LT4EIkRdY-wh0z~d7QEON6V-3C05ZD22ZGk92wtTKnwltSC7mEwzdWnxP39sBFodoezyZvB9A6X~JMSk7MevhtKZx0Yz1KcSTicjs7aRxG-T8wvmRSHXewfE8X86ALie6DI5j8oC7kkeu5mCCXUhiVAv-Shp37NT1WUK~JXRpAaSU7619GYw9YTbwUhSs-kzSDrKeu8dsdEyEGeWK9JUuevInM4X672Qjv1UQ0g__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/22/audio/audio.wav?Expires=1780214706&Signature=Xzch1ueQJ0bFvj~LJOkzSEk5-1wjDl25O4n8tGuGLLXCc4KN~9ZBbv6qMPFncWzaS-O4xMysHpkAKf4DFlLspsBcrtaGruvjcG-8jgk1RGWi1pfIJ4hBpD~TQey9UsXWzQ~POaRLyQQhLw~Lmldg4ZS30Cvdcs3HbAe7j5PfjSzIwZdOx27vdxrgkmZZVOYmVP1m995JehOisJdNb8CfwJwuz5ClgaNbGOghJgAIodIoJLHFplQFDy-xmmxtNqAfuAhXs9IOBNN9zm8m5IVIxkTzDQs8r26dLcCvRBZRs84vfFLL63w85zxckgHzEQMKlCnntlGYh5ee24bw3iKkyw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 22,
-      "local": true,
       "lineTimings": [
         0,
         0.682,
@@ -212,22 +194,19 @@
       "lineCount": 4
     },
     "1.24": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/23/audio/audio.wav?Expires=1780206722&Signature=rWL7s29~9c0XCVq7VT-wIrgnRnbkARMIKDJDizydxPGilwHAVF7~hnrqknOYweHPOIaPPPE7NbMT5oVLj0fqPBbRl1k1yc1AVulC0ucc8-ipjUeg93Hc~AP32COqp7JZ9mSTDbdQ0yzmPMPFl9PCKCIPVLITJmLdQULV5u7xVFIKFmkr6y~GuHAY25L2jNvRt90eRvGf2sJJhCqD7PxQuHGzfgijGfW-Lx~Mz3QATV-t0O6sctQmnsITLUEO7yfw8GJfef3qubTRgCKRVf1mAc-uz4~12-lkRKNhMH3baIiAa2Zw5KE1ggVMcCM9CkoVNaVMf9rSAvm21fvm6x2uVw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/23/audio/audio.wav?Expires=1780214706&Signature=HUiFH5Cvq5awzwtrXcR8djbGUPLtG~5G4BrNTDb6iJiAltw5QqDyAvHsJ65WW2h3Q4LRJhmzcy-4ngSIrrreR-MC9UcYMMoZHyz-cDw8AECHzbuk-ck-nJNIbzU6FCCCBzIKkN4wAnoLVfvsGHgwONzPy1PKH1so0CJB7BqRjHSxVgqQL7EZ8XiGzDAbDFsuWHhn1em~FLOFh7y40gaxV~-1QeAipOHHWa8VLDhHGP7d8eM7Dj7d7FlMygpNGID0LBFURwBEvHJ0onBtVycBN5aeaOPn-Sui-q46zpubpR~VMD8Me1zxljHPUHGCMnhTQ8dWj7TFPys1kYoiQWxpcQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 23,
-      "local": true,
       "lineTimings": [
         3.044,
         6.33,
         9.528,
         12.689
       ],
-      "lineCount": 4,
-      "introEnd": 3.044
+      "lineCount": 4
     },
     "1.25": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/24/audio/audio.wav?Expires=1780206722&Signature=kq5k5s~JHPQftfBnrCj3q-XT4u2ZMNn7HGkLMFxU2bf26tT7VJhA2-Fw9EdFeCvcXplo8Thp2J~h2vXBwMlJjMLRQMG6DbBfMuei8THici~ZBFCc8gM4yUIV479K0K3Z0Gpykn9Q8Vv-EJLGRpiMkUf5g8vhYm3LbpK5i4inN0DBZdi5~xqE0g2tVlIWB4~Zc9BjfeCjZgzRMX3X6uNf3NQBVDsRAzft7dgsprsFkFCzxwn4JZIHzUsHynLplZ6gGgpYY3DmX6LlQcWzW9J1poL0PutBe0ZcdKKESwch2p63FoV2EZopfpX7hKaz4YfWykQS29z--CT0aKJAS2FzpQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/24/audio/audio.wav?Expires=1780214706&Signature=bOEFWGCGA3-d0kKPggI8SkPu3wIwLxVvDybm-I0h0TLi4dHQKSp-K2Ch86T-wzLCCgBGp5GWMOG61QFUb4SmcvjoUjBmMn0ftrJjIs0ixaPu34Xzoavcu7v9-I4n9yuPFUOYgSI3MenYHloyxjjU6G7hkt3CNRZJPt0aeyIkO3v7~Qx-ATfeFzzkMGLz3sQ5ZiKpW3y5mQDMez-kPG~lAkTwIjufCObTWGaC9Qgy4dVVnJLv0LaCY~LQ3JyxoZdRwPbV2hsaHicAqoXlSEuu101HkjO252UxgIzVX4pCgluGjgqk4YhiDFjoM2Ni~UiNu0cJsC3FWjTbDl7bB1kwkw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 24,
-      "local": true,
       "lineTimings": [
         0,
         3.256,
@@ -238,9 +217,8 @@
       "lineCount": 4
     },
     "1.26": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/25/audio/audio.wav?Expires=1780206722&Signature=xUGu3ouvJMPxpKnsIxpGUgZ~s7pxC4J631aSjYY7MuyAPPcYlmbdPqUqfGQxxPcvfYYZra6TduxzCFXBmo~T4UeveKNwXZpOBUUKz~DNBarvueW37cfUbe57oHV2Z5mEUqi1vqOzc7UabNDjQ-CrKTorc60S3v~yL8mCcDOv1sIBedbtp21J9HmmnbaeBKCffZqXK4TY5E2GMrm5hWsn~aBzbjR5sPNgGzu5lE23HU9kXk5G45W4SxQSJdmd3NdAJAef66vMJzcmL~qmIZ30HWdXa4NZrIxtRWUomNdzbo8YUR~YxH96lu~atrwKxiMRHzV4LWTxD0z~pUHNcCTzPA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/25/audio/audio.wav?Expires=1780214706&Signature=Mr3-0GY5HSzC9ob4fR2ei4DAVl9LTb-U4MAfyCowG7eoeg3uY1lxKBC7Xp4Tcx7oEvqZoE9AEazMYvJas4pf7YBUykNu~f6GxyPczF-NmRKBEbrcZP3qpz5fmD2WBzZXl2piGFQ9WhTSNhCpVBCQSGKqzi~nEkAAuIS4slidGBX5fQX~S3Gc9bE~k1T0So~ishfSnDPIgU7s9GlATT8xMJyI3tl9ceNlj58AAHwZojIxxrLvw3LLubTIlmMV0ptBBSkWriJvjkYvffrWj4IClCQJXNalRU9-Bhd9C1ftowiOJ2C73KqRF5DodWViHFKNOK6bicNm~-ne8tTyEkiUPA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 25,
-      "local": true,
       "lineTimings": [
         0,
         0.732,
@@ -251,9 +229,8 @@
       "lineCount": 4
     },
     "1.27": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/26/audio/audio.wav?Expires=1780206722&Signature=G4EY1Kc0ImogoHZMunlICYayKiY5joz6CZeEFMhGmxPof8ik6-ZQuc6QJpecsSk2gNva2Lc2dtKt6IsxePBlrtO2kPL385~GWtDAwaGaGU2kSVD8UPEdZND-rYL7fv~tdx-gBmWaOXpFbuAnNHvA-FZdIuqI2OCgzfqfbZUt36imc5JsrfsGFd71w~OoswmXiLYMhGnTNpyPaY2rUnc~pgxaEZdNSo99KNZrEAijo1jA4K4-mFb9nISNeq8UJkGEBMgJDwyYE-Bo4nYjPnvf7FBMxEpNeoaa87k7oTt85ctoQf0nVU425OAXY3-BPFGf89cFFEtBThFxatRZ-12bYQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/26/audio/audio.wav?Expires=1780214706&Signature=P9uFaUWhf6DMSEqDlvdh3lRNCjQdi0-avBWWbCgBr0FtpCCpw0cj03XKpXX4TEZwxVOrtwn~47FN7XIOBX8TLBZzsAfFoBE47ruwQ1ww4Sv9fbSJ89CveaqI~rBTskV-jW2ymWvURQDEv7yknd4PRTRGL1VVTx1YADa0EyKvWyRAgMzStvmTWjUVZ6z0AYy6YqzUFygClkjTHZozrcjIZy5Ocy3zggN5I6N9SwCccfPPYjDufd~Rh49TwD6FnJQ6Jwl24xAUYgrlpOpEFYoc716671~n4uoNgpTAHFu177hDF0KQexiepsLyvNS~Olkb4~RaD024X0fVoesUhyBRdw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 26,
-      "local": true,
       "lineTimings": [
         0,
         3.406,
@@ -264,9 +241,8 @@
       "lineCount": 4
     },
     "1.28": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/28/audio/audio.wav?Expires=1780206722&Signature=IaIBYL6lC1efwNfBCvWxklQhRYGPGOoCmNleAAfJFbaOmSc5KYkY0f0P6ytgyedKTfTENeW~oFoNAvOpbrez5fZq6xN7riiuGzNgm1sCTv0dlL1bWoLPfF~9KYb3nWgJZgB97mKQyxYsfOLwrVA67PdV3WCVQVvQkL2SLffMGuqNElwN2Eu7vdX-KmTbsxpA3P7Lij85BDOS6kZA6nSHkR6rDil-LiJNEUQoKSdwW21QHl2RQIoC9T1pLGAKObg9OCoJ1zdehO9pw0tRn60cjF11FBTZGPHMp8x6ULvm2DhlFtRztWXxZtL4sl7x2CRsK6mi~PH6czMd7SMolKP-mA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/28/audio/audio.wav?Expires=1780214706&Signature=SWKEA-PejkqlLIl5S-jerNkAIPy3XRiKIGWrCOPO5JmgujmLmz4VzNgTw8UDO-f2eCuhpRRIMhuRTSRBOQPtyt0ZXjfalkQr~yyZTtvekiGgTA3oqUymA9GtOGKBmaYujLMgfvXhDEokWTWQiSS8ncJUlgCdEkqnI4Kdw0p~fkkgc0QMnJlr76p4Bk2MsGQa6sSeKeh2niOa7dydL9od7BpM3Zci2zqBROZ4nMd8UPtM00oT1kXRpMOGZiMl6PRHC-xtGdiQNw-pDWoIMKUpefEK7K-l3aV5nta1aTAEHSAWc~1u80nouCZ1F4a5zGeX~MdbzG233V5dxflDByUTXA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 28,
-      "local": true,
       "lineTimings": [
         0,
         0.432,
@@ -277,9 +253,8 @@
       "lineCount": 4
     },
     "1.29": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/27/audio/audio.wav?Expires=1780206722&Signature=z9uugGuDIGAPYl34uNJMxfNpxp9wIEAuOQMBUIjAvX00Dfykk1qOhKkVFj-s-ZRKYSEdQPeGsVoJtlufsHMe34b1qXq7xC8QFeK9v31jOnBEb58SXzpDCAhOxblZZ1fgH1EvU3~VGZ9D6tY6TcIy5GXLaD2SAU2MIJEeN2ND2RdCZEXLnYtD2qNpTswBklkyPdS2YgKft9sRmFEfx136Z3JBWJcYiWiUZrkFN6q~dsOjJCQWVZvMHnuARtpLEHBpesrhMenasBq5CuaNpySK3biyD1s~AoEo9wUkqPUr3T-4KQSr-rkWYgJeMMnr0LYqf57e2zpIUu~ni9nENLE4tg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/27/audio/audio.wav?Expires=1780214706&Signature=eVGeIxuDFVxRXn1KB0SJZR3CqjPoFFKKgB1xo5hVT-rxU1mV8qdimm4~61pbd6NeK9vmfuXexGwMbsmyJrfzTcNFXKRH1073Wrk5dkDOXd5rZJyC77bUwkgnqe2zmNbPpK2ysaBKFlX0PiJJq86YYbkqP2bJjcwWSobrrvSScFrFi4Z45fXPzs90YKq00jertyEtxcHai6q2dMju2rV~VzDbFM26Gr69GUSPoli12qGEjhDuGInJuqshjMYds~23TR3b~LCCbsn4qODo~McGKsoIi9O9d7tm9FGXvAnapPuNlAo-ZqZAMvRnDMTZKapI~iurjYM16PCvoZypZ3ddKw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 27,
-      "local": true,
       "lineTimings": [
         0,
         0.432,
@@ -290,9 +265,8 @@
       "lineCount": 4
     },
     "1.3": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/2/audio/audio.wav?Expires=1780206722&Signature=w4BPyuKk76G0xZQgSoZJPiLJMaz30CQtDTNoU~UQDLpDPsKmO5IZ7YwyZE-Gugocmh3ZG674ZCySC~gEDFmrgpis82Qwz8f41gpTH02tbfUq-eeuCQdjg27vKgcc2RYwOQtGoobohxCizs9UQSL1aCDWaRJlubwztH-NtUcLVnnLKnoj9xvvwyaLom9q-hWzdd~D8dVg4Bu9A8KIlq49tvIdvDgtiAXj9hxPeDMzfqiwyONG9ECm9nIo1F0MitNJz9SXtazLWm6JnnvPARLcHQJSNLrqt9HAUiWwkGjY3R-X7yEAS1wVDje0m5U7Hc-x4BQUpaqkDTjI6sm-2mTlBQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/2/audio/audio.wav?Expires=1780214706&Signature=vEuN4MV7IMdYvfzQXPtUFRfvfQZPe-dKyWWJzF-u1frYJPYGCbXONFZyZmU88U1DFYAfhtZWReoOF~85eqRob-0ItArzKqwFyFXy69fHWJZ~LlG99cy3AbEQgGtCuJXhn3qUcrHX2tlNPS2btRivDmMZQLROQkh0sT~4tdzESXL-tH5dtqLG-IbL3zT5oUZ34kc-eAneUxjluYYPb-JLh-wu94GQa4WZvKh4LjZJWBJ8HbKV2zyZDrFKatoxbNtktQR~ClEcvulnfRmava2NXxzo5h3fgbKOvM93NGU~7d-NVCkJPur80d3ppiCEFHAaufuS2ect9itCMcm2nmAN8w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 2,
-      "local": true,
       "lineTimings": [
         0,
         4.031,
@@ -303,9 +277,8 @@
       "lineCount": 4
     },
     "1.30": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/29/audio/audio.wav?Expires=1780206722&Signature=ecO3uomNgho5M2RiHeZdzNfpgvPI081qYgUh5CwO1lxVQ86x23xk2s~AakrrHqcWzyIWwTfvWYwZCXCHbcepbGXNkOqPrS95z2dvZEGTtA7n~oMY9SfSK1~-8Cwv73Gne17A-JPZ7cK1HFp9Z7piyTBCVZDqMZYtgrqYmS31LSjzwKzSaUiKjGn44Eyohg4s-zqaGDBC6sQQAuBMgodAfTUkygk-YzN3zsNd1XN7UfagtV8KBKBUxaIf4BXAyiNXguXNVlGRJbYYAiiU8pCxw0Kd7KeDECXfrMX1NU~PditRWrQQm~xYGK7frtuYJtShR72UlB-XnpZY0-b2IJCGpw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/29/audio/audio.wav?Expires=1780214706&Signature=a4bikyD~m1jT77MRL0cDnu9W159pvy7YvXh9jfjpN9Y2bMWd-a-B1WcirPyTyLDle36b0oPgbGWFz79BOSEB7xg5~zbYqf~Bla4cNKt~8aAygWG2iuSbNFDlMo7XD5sM7-1UDx9BlTo112ozuGuoF3CyqDkGGvfV7tl~RtJOMrhhFoT4VXgOPw0Yxv6R4qJjRShqqNl97qGvdd6c-HLSU45LVidmnbRF0cArHuorrPIXe7IpTqy21FxsYaQDg54onI3C4kXeBH8V8Z~j-ZItZq3AlB0avF6Ml-8JbSuWwyjt8Y~tRoFIL63M~BjFAe9bLXVb-duo8m7G8mGS18ijYw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 29,
-      "local": true,
       "lineTimings": [
         0,
         0.707,
@@ -316,9 +289,8 @@
       "lineCount": 4
     },
     "1.31": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/30/audio/audio.wav?Expires=1780206722&Signature=k83o1JnU9K7A99AevL3DwHJNXMHLTFQ6lXJjt2exTgsXSE5EG5i2bVy42nHfIMM3fG7dPsBkzBmUJArOcjsk6hMLxXdm8pIfjBr8Vfiv22tdTkqK2A9JH4aM9Dr3gS1duSkA7FHqOQGPrXEY5t2GCH7nE0z8EhNEPMBr~PgaxaTPFHJvO91qo0ykUC1NGUMWqKFAVqsqy-1Ki1eYWnfNPsN3TIpowjYALr7z4NrM9BBlZ6X4vm9xwbFRuOzDXilZOB609Cu4jhQrmr1UX1u1b9-ITwjZQpnNz8rP~Bcvg-Cv5VSVccJ8EpH8J7x-KPkpniFAMJN~kLf-~yXYeLMeGw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/30/audio/audio.wav?Expires=1780214706&Signature=u~TkiMmC6BfLiENYdJ1F26rpWz6KEyPe-O5bCzJrqW~LDlIyiS-7EaheKHCJUOCIBzcbIOac~xbYLZ9dtnzvCQ0j3JCwSjktk93tpJeX9EuhcYE4ULkaJt~EmQCJwrUxA05Z2GiodbtFxW~cSXQdHd7NTpbjBEtXD3Nrjzv3ox0uCURK7cTHEAHh4REbQuATh4GEYJvI~6GY0fMSINgwQqDASLRjjLUqGtA3tboTA0AJICQTaAN8xq8US4ti5ZLpS8Ydo~51na73Y7LJrSJpvNDdXuf27V01TCcaN71U3XcGoh-unvqCAIOkQwbAdCT31mOP6Bfj8e4FcgWjZoksyQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 30,
-      "local": true,
       "lineTimings": [
         0,
         0.507,
@@ -329,9 +301,8 @@
       "lineCount": 4
     },
     "1.32": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/31/audio/audio.wav?Expires=1780206722&Signature=mUAcRxM6FoDqHdQOaHNFlQiYePoyp4a8iZkhlTt6VO8zcBLhtDhDFxKQHJMTibribDI8DMeQSrmMvilBMkfh7TxFJEACkduHrr63eAieTk7LgbM4AvSP~Dt0imus6-0leRzNfYFm11yH7if-NJfYgjUTvpVjnZnQUEAyOHzCM3naztWEnbiCkAEJSy6maRHhdjeaSUASh4hU-SP6JIFZTPxo9vXWV~Frsj2EdnE2yj-6g-qndNt0pFLgKVBMWb~WENRbWcDF2zmqSr2wI0tdbtwRPI9PosUNolPwzleMl0ysVowc6cTZDxPMKB3DshCJTg5TF-hX-njx8ujY2n~OEg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/31/audio/audio.wav?Expires=1780214706&Signature=XjyPI3damPwMTBqjhO8f1~S4KNitwuZGSmfawxtPF7kYnf9gWeyzMpNoXfyvNh5T-t7uurcTYrFd~2bM2C3AkbDcjCKWI86gTF6tIbkXD1JNkEMZvPe0iXnEgvYDfLuO5wM4aPz4EpndWX-oQUNPEEMBUEkSImUDQZy5akjcgpHFTsPY9YEsqhgjFHP5lii2rDGs70Rxcp-cQiwJosael2-VGQwqMHv27Y8VW0fWNVSGv09pubGz~gH~3DlOzIzmZJxbEONcu8y~pFCSLLjgBJeh4stfU-vLO2DuXZtAE3qk~YUCYi337r-d~2rJ8hBd44eYzWui-7ZWjhvvmWOsTw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 31,
-      "local": true,
       "lineTimings": [
         0,
         0.557,
@@ -342,9 +313,8 @@
       "lineCount": 4
     },
     "1.33": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/32/audio/audio.wav?Expires=1780206722&Signature=ZiJYK2h6wu9dLFgg2A6u30Fr7VBMcrJkcfW7mKu41yu9fAzx1wyVcCLWIRU0-VAph8YuH3GpDKJICd2xr6h0cymB79nt8XeZchm0~W1aL0Fr69tPqNkfCO5DhsPpqYwGoltqmf5glQwp1oT8j~3owfrIv5ck0KCfaCK9pANJWxCQ~crXCFoSlPqy0qevW2COlXB02KdosFoPSQRWIyPlq3~863fMQo5KI9l6GY2zZejxyCoHVrN~aR2YQAvifBi9LxPgD~V~1YRTr8b6Bx0KojT1cN-irUvW6IrgNAmqUbcDejsfohLldWgTmas00lcjMmvLc0Mqn2uGdwBVGwY90Q__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/32/audio/audio.wav?Expires=1780214706&Signature=knnpW-oxxljn9vIj4~lj0RetQY3DfM3NT2oZ5GBXZ03tMVlxdl-eOkisMIzQpijRkhxyH1avuVqmcuwyGmQkwKT6b2bdJAOYG-RuzIbuW~4fKrBze0sLvge5MOQlJgZzu4BRafj67rcmBC-s12BCEf1jTdhjfFueL-mdmm8AeaXdHoIPCjctwrUUhxhtO2PQjuRHyqLYX9gKw9j6pqbWQ-oB1kOSEjQykTGSf80fyTK9OkXs124mb9DHJomE27jjqz5cDJPEfrwyF6FDFLMYvpH0K-J9ThVwWri5H9IpcKew8UTnhEsCKp6l7cUszgUL8OKG6xB4a7byjmnv~2Vwgg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 32,
-      "local": true,
       "lineTimings": [
         0,
         6.779,
@@ -355,9 +325,8 @@
       "lineCount": 4
     },
     "1.34": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/33/audio/audio.wav?Expires=1780206722&Signature=sM8-O8cayvEwyBy7Ehx8Y0uVdcV37sYMenvt7Ru3ZiJDsZF3dNWVBhPSXbXkEF9LdcNcpZLh5A~DS8rD0QJf-SXC7FxrFS0zXV~O43DN2q~dLEteBBnbzqp6ToDgAILmlFEO4DiM-FH3J3hZOdtgK~daDu~l2pdcSI2EqyaC2FSFrHZg3uKDSiKfgKsGUTAOkCnOIMGefQAmWquadkRvhedLrTTj4WorLKfcuGCDDUcBiT7lUP~TIpsWsUEFYOO2Ka0hfX11IswIqKAi52FXhiSUoc~qitTjGEcNg093RsBa6cUHDIaCLLw2ywt2ILP-H9p9V38qyMRD~6uZnKzNdw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/33/audio/audio.wav?Expires=1780214706&Signature=sJ-wn3Sewzro81BCl1Bi5YXtbb6-3Ijsb--gH4qranWdynlQLuu6D6cWzio8IFHnYOD8WrZEWMJp6BfSHOKdSFoLj6ytDp-~aYlcvjVavuLLSWnQEnHKzJAbRzahg2gB3Dh5n4GS95tgRzgio-VTe3Mqau08it55ndwE3HIkWOB-A-Nagtop5z-xEz0YFqJHZYfh8v5el6AJ2fIupPQCwndsUe-0ZffIckhBWqtuZuz6Uw2KNu-Ssux3YIMqpVqXl34jkn-aV3kfQV3UUMbhIwkWTNoa~WV3tl~43uIAuVQeXWhJfbBJJGuQXFbSVKdURFRPD-hw6uOK01o4IiyMtQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 33,
-      "local": true,
       "lineTimings": [
         0,
         3.731,
@@ -368,9 +337,8 @@
       "lineCount": 4
     },
     "1.35": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/34/audio/audio.wav?Expires=1780206722&Signature=wMzXWfxa51PKbYwkdDsdDubNjyveZuuoLnGfwAkR7uyWxi3A-gyT6M7qG79vclEnEncuZcS~oqjLuG5OEx9ZmGY-zqzs19S5a9deTzrUZvhHm60K5bNwUaO5xFe9She47lL36QpKAepVheZJTjhFS5ro2zxOznZqVHidYHmogM3JjORswNnm7jhQYCVlis0PPeRGNuchsQ2HS~W9wEgFU8rU7lw2UBmVktQT6L91iRIHHpGIXl2gFOQ-8y0VBmN7a8MC8I7Iu-j8k90Tmr31vbUk99qBR2JSsxwy5hFRCpvHAFXlm1GDWHIkaSlL~9rmoGw9kA1ulsQaLazzquQ2aQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/34/audio/audio.wav?Expires=1780214706&Signature=S~nSKkSUrq9JWxp00~BdCQbSA-Nbag180WLPJQVxtOyLU~L3UQRmn0fjZNZBEauXiPXodKHaSKRj9YmBPwBY5~W4hw0LdPxe5jdrPSbH7EHY2P9YcG2Jin0YuTvPrZ-IR77yT-UyUlTyhN0WZ0Awc4IwaYEBdf1nFGLdwiojjXa9dtIl6viQ3nJFD05abZPq3j0~yHootWofG0sUEkQEDtbrY1hRn21TVBTvN0F8QSwP4I7rompbFOAnThnYzE8He8a4tbqfvA5ELlct8DIA7~TUMurfVwKlguE0VElCUvnwuihN25fbJDXTGdCv2JrUIkgnwMfvus9Sog0suohTPw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 34,
-      "local": true,
       "lineTimings": [
         0,
         0.682,
@@ -381,9 +349,8 @@
       "lineCount": 4
     },
     "1.36": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/35/audio/audio.wav?Expires=1780206722&Signature=MABEOOFLrUPGGgHdcXq-VF7kwe1nxjzvqCNom2DMYHpLSkgB4-tGiyd-SRaz-2vS0fssx~jcMNCVkMH21qRxQmwC8KcHlUSu1vc2Ia5Uso2sRqvbG3Qsv1JRvw3I1~hjXfH9KHXEtTuIi7FCyBgxMLGK8eDlO9lwoYcfvp3ty68W9iSEI3FqdeXDDvaLL~dW85MN9fZWlPRosfDS3P6ovday7z2PB~MlzBA0AvNyIgEvx-zX208HkTQl~JIA-Tce1Src2Ag8emqyNW-ZUKFch4At-KiJerfHPZr82itcQd83s0zsum09p~ABsbLaQFEO0occjpSYoWLi10mitEKJmw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/35/audio/audio.wav?Expires=1780214706&Signature=Kej~iMZQi-heqLbBTK-DV9YAr3fmI3oCp9vrR3XvSbq7S1wy44ntqEvKv0u-cFiBFuSL8UEqNsjbequPL1qv6cKXQ9~e3vmMX7V5YrnqBQW0OpHH6yFKufdCefcLheAL5OFYhJjagINJn71ymHPImJS1tbXUbjYowq7a1Eg3EUtFX21IaLbp6Xho8raXkdQmnFjB8EyLUX-gtgV7-RYAlSg755V4TtGDtjJn5YZdiP4cGU3D2SFOIlj23m7i2OILNtTKIw8g30gnB4ACNM-HU0cQzoncGbHN6SpP9tcA1jEz44bW6K66M3tFfZOdBvU~AUcQ87s5HTosTSyYJlmv6Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 35,
-      "local": true,
       "lineTimings": [
         0,
         0.47,
@@ -394,9 +361,8 @@
       "lineCount": 4
     },
     "1.37": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/36/audio/audio.wav?Expires=1780206722&Signature=ieD8eoN8OXidv~LeyGmjvADRp22JKOJiQMCGR5DygZrIiPjknMO5TEVRh9nQnNojqmrUf83BfcOly-sfazy4Xyh1PlAtzWgp2HGG0qOFroVh9S1TkPwuevqKhnkrFsbZu3A0RXunFLhHFjkZe1LOzyIXTbQSIr2jGTL4u71vkWutqY1z7QK7L-dGvq1puvWbEl-yMh8Heyo1vAl1hwSMp7zD1BmueW6NL8sunrHB0hxBDLYHDTgFkUaLV58JUt6Gf0gdfx3hqU0NT8e-THVZktEkmq2yXfgGNiBJPDx1Aq0f0~32FIXQ7pp3DASE1mpsPO5ggJjEfXCxfGZg3ppcyg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/36/audio/audio.wav?Expires=1780214706&Signature=DuR-6ZT9h~0zRa0q1qZZMOHAa6ntzuVOrU0OluBFyJefbH23J2GAcYhUrfbfoMK1PK5PQ75waedtwW2M1GwJHCNNJ850w4yjc98mftOp6k8BX37JEsbpgbsbK-a2pr5OmMFDjbPUP91hAPhJ9pMhZjRPB~rV721QwXYbAgjfBOm-mrXvF3Jpgft5dcGlTe40NWAiR8ggXcvabp2Jf9FofhSAD-pOQmCH9DIf9RTsYlP00onJrwOyHSKpIRGBHExiCw4s99oUfwfJMIj9ZARKnor7oQrpxjOmf6gzajvlyo0JMuGuDz4pRvhqhD-rITHEV9azhqD3aJD8j6P8tgu5zQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 36,
-      "local": true,
       "lineTimings": [
         0,
         0.595,
@@ -407,9 +373,8 @@
       "lineCount": 4
     },
     "1.38": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/37/audio/audio.wav?Expires=1780206722&Signature=1QVlsx69W4stNra8qIPsTyqgM9L97TthpNWcwB9EemmX36dySc82LTgeN8nS8GcvZnnftYtHhC2pTojBwhUWHxy-zSXRU4qeRiysrTs6W6xacqKvXfnpgPv-OyacOw8UO3udS15e-iApwRZSGDMf0whQuDRHcamefTC5TE1enuMmB0Q8mNi8YyZbNvugfudOi2EIzxVdPB6kNXfde9TBs2TKjYeKu1x2bUZV0Q-FZ1whF0CwBafFa5mdq48h662dcr4dlAggOgevr3AplLPCQSRVaeA2T1JFFV6XyOcNhY2JgyJVbccH20cntCemv4ExcI8UBgK0szbtggFsa7gR0Q__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/37/audio/audio.wav?Expires=1780214706&Signature=tA372yZpkal3MGkVFwFeeWeyX5MWmqhLfV1o-H3MS4iUAuSus4leqVabYHEwrUyS-hZFgscrY2-IcARuS4RXCL1~PETCZDQfzhP7Ef-807JGitpz7Yz1nbjVaNon86QRvjj5NHghREUWBoetmde9dJvY8UnV-Vtdte1k7QXiAORcZW~T61j9ctVKUOrBWTA6J6OJB9yWzEp8fM6v6rQDUt6zle2LGwVo9WnssDH2LSDmiRmgi5BE2flDcpQXdpHf5W9ntISZ27xWqXATjPbuVrdxxdUlfnbyOMWpOq~t6YCVjpBuj8dOyosNajnGKbAfSwGp1i2vUoj3-in2ycv3sQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 37,
-      "local": true,
       "lineTimings": [
         0,
         0.47,
@@ -420,9 +385,8 @@
       "lineCount": 4
     },
     "1.39": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/38/audio/audio.wav?Expires=1780206722&Signature=J4e7VuBFnRcVXHTK~8C72yVnat~thQOCi7cH7ETTjdhp7QcF9qCpR5LlBjnp4pybAnfQuzLjukymEGS9~qjHjIK3m2JB8CL8YtIy2eqXdOmr~vnnkvcdCOMoG2UwGRk4b~mobGBHuoNYjQwA5CUDzXgMsc~iiTTkG7g4~836Z879lIZy66i~s6zyMXKo6tG~hUMQvBdCwvMALfGkmkrGBR8KEKt-VCspF7QQ-5cjG9Mlmv4PauHUEun4KegqyPOZsCmhG3Nju1u1ZW5z3fgLnSZpd~X1dRDuOyJmv7jt0pz-FwvsdSFpKHlfIjkjlfSFwGJY-PGh9~wMnBi1ElEaMg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/38/audio/audio.wav?Expires=1780214706&Signature=ZBpuCTrbxTC88qA4ZjWIcLdjllkkQcKCMhO0lgnFkQM87E5jenculSDx-KJsEy5viq5uhn3uxOPMkmKa95lb-3WpFgPyCY8Le-NxLC8jkuOhhmJZpmfL1oiXpzvI70kuQNnnypn5M8I2WZLY5Rf8dwr3U5eZyW59i1f~sp5fLqKuQzVrmEtyEr~UkgrrNofgchtIjpjKAWHVCK3wY3g3fP0c6XSI35kAOTb92oquLVhxbPYhUtrSLzoUoIjcS8Jy~Wo4tPRNdzig8rNqWnOBc16hRPPf9ZGSs42Z~8zQEHTVrOEnUrgVstxK92m315v-2HCvwMWOOZ02RG6ICxZxsg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 38,
-      "local": true,
       "lineTimings": [
         0,
         3.431,
@@ -433,9 +397,8 @@
       "lineCount": 4
     },
     "1.4": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/3/audio/audio.wav?Expires=1780206722&Signature=MOKJ-2p3s9Wj6HViQbfGH9NzUYABGYmnoBc4l4JbYeO18ni8rB~aV2ulLRyk-mGtHMMmZCs2Z6kRsiXhsmPZ8dIcgYxN7v~5Ql1850dZwEo6RGBw8CULyTfB-DF11~nZcKQbsMqxiOZE6sUphgBhnAI0G6BVaecgp~7vOEU2yQlrL4PcNa63xMtRRXSR1a3qflvzCreF-D38TRI0xtFt-tUUuyP6arHlr8oh7Y62UCBBwWdskQ~tNSom6QhL~IkL6Yjdx1QDGoFNVsDFjx-MfzHOqyNRtrBnnrYd1PJto6XFgzj4zxkcXVWNg-e04iOeiPgr45ZTQkAaJqvjMYJ6Hw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/3/audio/audio.wav?Expires=1780214706&Signature=TZjCaPrbfb5VH9kf2LfGou0BfguDwRnmUapFe7IRJObHNJ31g0rgzkfJUFmxC76PFK8CzxvMIg~XTyyY-ELHgoHu6XZZAusa77KKb1JtZ94bQHIbXhnGyw33daYDPrJdSjkCT3LmhSRamrvkf6meNQSJ8SLCJbFchgHjUUD3puA4kEs05ePKb4iL~lyBobYfQgudp0x1rk~~nLfB7hoN71X2K0qFl0nfCjNMBhZn5oF-W1hUEqrzzg9JYammqYwrgagIvYD6Ng8HYFmPQEGqnz6ffM1IUpIRwKLrSTI7vWXQ3jQwTUn7tJLLOA-WXz82LiahvJPoP-S3tyu5F~RG2Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 3,
-      "local": true,
       "lineTimings": [
         0,
         3.343,
@@ -446,9 +409,8 @@
       "lineCount": 4
     },
     "1.40": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/39/audio/audio.wav?Expires=1780206722&Signature=YJRBAAQgs6otP4TVm8ztQ32A0bWyz3nIorZ1Y~0xSHVvzTEqme4S5EUcAyqlL-IEgHsVTl0cyL6b1OizFmVfl2Bvj0KvLkg6obK1suF3KbjD4xqq6LTJPOS0N6Rx8PVM7BVFXCZywvn6CHqUXYNusrhxTJHe5jbiW6wvSvq8NCEugcr1UcBzFnt-vBUPNkxmUMpvj3Aq7OGhhUB-cSnr8NzJo9DO2ZVd7F4hc3R3-z0MYHCkyWc7u0xcj3rchk6nZ7s2g7x6nCFMapIUMoTxhLO~XXWQq1ZEABmNfvySgrCZzKoQCK-im05vqaMBbudNZV~hOXGl~5FEuBmzCE9oxQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/39/audio/audio.wav?Expires=1780214706&Signature=IFWsVr4JCjQ-JIQ3E-AZ5KxaNJuPJrjAxOOrgPeCfXqzkuzH3Iguv4ZKwuov6CbxCNTDKlwnDNeDod2dtbIJUmSoAJaIo82xkguw32V4ioy~jl2OOV8TeZ2qAIk~~EEUKRGa0eh9mFgsmN6vV07q40rH0KjMbUtxIwEViuNvevYD96C55g-gHjAw7pG8nor7dKUC34ntqeK~sG7GH6U2tVzFUFofoZQW8PbFUrR9iGhgXGaPHGTi~akozQBryvVZgdFKhrtqpRkq4K6vfFTd8-VMVd9b3vDx~jv1tZ0HSpdlgVwMOMArDgWMxabKn~BOAlqrTmxrB~t~tsO57hL7Cg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 39,
-      "local": true,
       "lineTimings": [
         0,
         0.682,
@@ -459,9 +421,8 @@
       "lineCount": 4
     },
     "1.41": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/40/audio/audio.wav?Expires=1780206722&Signature=hqPmZl4s-Y0C5MSXLbcHDzztetYyY2pqW79c0qnsres3GcW6pXO0bMGFVs3Z~gB4k5WweTSFLdpXqB4cGBgiAVMaxeHcXy2DmrXRW0s8o10HhvyGx4Gy3ha7pLXeHMqlMfzLBiZf2pvtqX0GHpLhfGAd9uRiQxcDvfnbfQ6cEB2nq4uPIhzPT94fkHA5SrJWWHQOsMzMMGeyxPayks3255DycCWg7gRSW9YbcqOS69ej-cKfOQ9SF1c0Xf4UbkYmbHIQCMpsdMVDqnrfLg93P5BAKVKioyqARZY7yPoz7HBnCyhA-PGqNnKtq89UqNiJ6C-IBQYrNq-v8A67mjwYNw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/40/audio/audio.wav?Expires=1780214706&Signature=yG5ZFj2oBHiLbImpDko9nKXBQd2cMAnoB0k3cNamam0UVjC4j~NkQmbXzIyFqw0mZE17funkJ0NlTZiSXIejDxwvnX~tD40WfcefavFHWYPb114RZ8vc32cp-3nLRcS~ePh~HHTNeC6EqZWUJozqK6y6M2HP1NCnp81l5JV6V1bV-L60JWe7G8k-mT5S689C074AuHjMdLj20XUcvkJ58zABK0dcYvk4E3wz4Lz4RlQTWV2XM9Fk3CTWuoKmv1mmQYf~CFqnMWqQ4XXI4CInusmGWeT7F7VFJcO-qp9hAyxPMdAdCbiV2WqGmRiXKiU6Tvk0IwF7ixHJL6sj~HLcHQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 40,
-      "local": true,
       "lineTimings": [
         0,
         0.732,
@@ -472,9 +433,8 @@
       "lineCount": 4
     },
     "1.42": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/41/audio/audio.wav?Expires=1780206722&Signature=vDbW8qvYlOwAWFaTTeweIAZgTIdR5m~qZYGlcSFDfqViQ8G2dIjV6z1ua39bXvlMXJZuPAA222xn4Afy0pDCvM8DCxJdTB7oX0JiDCMMoXw2KT7z3PjE1zmeACBHbmscN7GjX9bn8bVa108DNJjSwNpC-pazX8PBd6Nps5S4i134Fkc-9xCzy~E7aZ~muxl22HZQDlhyqELd9kTAxqfdj95E6TgzG1YWKkFDwqAJM8PDfzTbBjYI9N9sQRZXSgGiFio6OIP0M3lKioAiH~SETJ88BxL~F36vKOzEkRR6jaM0iXHyiVY8WQYMw3jYIIDVT5mo6vi3ZbzICA0aUWSOjg__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/41/audio/audio.wav?Expires=1780214706&Signature=w4JgkT5bRy0GNgtqHTe6Ah6oiIe-uaCyQq~JCp1pcB~KNMHF~gDftYMZg7zsA94yNfIetkwIOmMr4hiBEHYf6HYuPUoj~0dai0VB7bJyDhzmOnyGITML1D6xly1vL3w6FqiBKYsqvMK1lydPqPf6ZlW4OOHsR-gKOqeG6ojM5wn5rpQoqL5nrmZ9dKSYapvay-XECmqTYZi0ApGbgELGsAqtwefYUzcCK9d5B7ouso7vxkYbhJytRbfV9INfGBuflRXXaWO5TNpmp4gJufZlUPxSTTL4~2mXRfi4BtIfvty7rMwf1saV8ew5uaQMncDqmNrZEpcwOUwbbUuIfV0a8A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 41,
-      "local": true,
       "lineTimings": [
         0,
         3.568,
@@ -485,9 +445,8 @@
       "lineCount": 4
     },
     "1.43": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/42/audio/audio.wav?Expires=1780206722&Signature=Zw1fpA1IRjt3u7uB9oDJAIxj7tuD1yYoUqrsDCydjsauFrOQQD94U6d1fazb0AzjXjPMLDC1SFNCw5AaQHG~VWhlfGZ6brc1hxPcwSfeo13v3NUn1zccuBb5FJvBC-KsLbwYzyE2IGEbL3KPapGw8ozKT4TJ1XAEbiOATg6TJ8RroIguq7JKq05dHlnR0U6zcd7RG98Bj7lcxctAQMpcGWkWAqKv1nnSnYpulShigBbnDGHtZrU4-Rph0vI2olDPMxIoT6qgyn6Kn~Gd1GvZ782nLHQCwlWOt7MZolDPwCahl0CiYrDqOR8e0Z2AQuY9ynHwoypeDHEE6wuHu874uQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/42/audio/audio.wav?Expires=1780214706&Signature=Bc2dgI4fg~jGaeHE17Y3Pje0x6ZVnyhfLQv~JxRFq3G5~qSB5xFlveYesMNfNRM0o6pQgimfrJomclP-SpVq1oHSXfrp88YNWErJGJG9KYwQige0NM4Pc~q4Wz7qX0itVKHcogfh94ehaF7-nheGeGcFEsEGMNcCJENOPXH67eMSwicUpxYgT~zmEJAl-jxK7k9pdGYfkPYwWV7UZ4wGoEpV5l4LsBHnMW31ik0mTHRTrfnETMJOoGlgIhEMoWhV4Y2Tn2QqfY8P~6SEEtPsr7s3TLeZohcnaiV-Cxjn1qIKtt-u42NBlq8zB4cMlXU0kTztHIUytShl6VzLXr0NsA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 42,
-      "local": true,
       "lineTimings": [
         0,
         3.793,
@@ -498,9 +457,8 @@
       "lineCount": 4
     },
     "1.44": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/43/audio/audio.wav?Expires=1780206722&Signature=1PNMWBZBdWcJymMc~TH59B9ygnAYPE9P3q4DCD8F1Kvo~t6kHBuoYRnTbB-B6WHuH0tyJwqQDPiVfTjhKxDX3PU17yx3qmqXTZ9k5G3UGlqpcTZZAo8e~gDcbfQPAz9HcrEc4xZJ4Tsyy8ott46XFq2UXH~PY6mSh9Pg5n1iV5CLG3OVC~IOJkYffYxct0FsT-w85m1aAC0lNa8b2SntaY~NK4IYk635IuPYBfgsDrubwDCmhlGqu7S9IPhSadcUzsWkYa9sUuOSHRu-fsv~QmJGIyu5Lc0oog00KyztqbuVpTuU6pTnf-0j0U2x4xnRRXCeWyqeaHjrBPJAUNbzdA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/43/audio/audio.wav?Expires=1780214706&Signature=KAzmA24AUjxj9-EENIWs~BWsBe5NCPYIh9sLJOgxePfoJR3Nk73D001ZatfK7NcYck2TCNYa43uzMqMFbuF~8eE-smbsGcRdel8PSJG1iVp3CZLPhu04QlV2JRKn9pW9Fc~x4m3jXZqYHq39qEoPZREodutjXUJNo3S4mT4poHfvofvL7X1-aKgrbsbia6F9b0orKBTnX3NtVCya5-yy~IZEp9IpcVT93NEwySHdGZkAtv4rnJDp8OZUzrMEqpA3YrMtdHfzXcaEBX68PHMUdAOk8-VT~stbhI1xJAH9RZgvX1D-NBaT6mA0WkBUuJjdaSnjnbvxJYJxlYgFw0gsow__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 43,
-      "local": true,
       "lineTimings": [
         0,
         3.256,
@@ -511,9 +469,8 @@
       "lineCount": 4
     },
     "1.45": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/44/audio/audio.wav?Expires=1780206722&Signature=HqsnFQsDpAcC1YvypOsubLy2bWp-r0zGZPr~UxRi9WgETo~ooLJhaxKl2vmbstiPnK6L-9CyZ39N8kKWKUaNP6JzUmuAxJDyFkiHieDFO53FOvhqzRBctieK9JZxCcGT5vhztSwFGYGuzEwG-BgHFMTb2T1lWm8TgUdz99vAZrfUrCr6YBh2qQTZ~fUzqWHGGDmq6oiQdQu3VdgrzfA2-1hy3slxa1gARxwJWFZBvAZksggISkHs7Ss7IHv-ZB3Bpig0eLtRxDU5XGPWvoyHeJo7lUuXjnfka1MHoRt30RHKqL74cu5H805c8DO-zSznDbgYL9d52uAzk9E4sCIsgQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/44/audio/audio.wav?Expires=1780214706&Signature=AU0mgwcLpdT8phXfRseOopOeGZoi-NnfiUN5zNqnxbKwAj8JDWGfJRpYjo-z9JF6JYnEK5bqIDyJMzSsvGGJ3sFcG9GSXD0iLpJZWyquYw32C9GwdsU13TgXwLNAbomgSXuFUrKZYiYxdOvqszoATUXRBNaOIgZCf3v1uRVVwp0eeBiPmAdcVcNLeO1HHUsT9hi9iTQ2wfZWRMpnoL3kpufLxjqP18Hb61wiYdzM5whSmiffiR1UmaI5vdwLN2u9N99JcxgJQhTgKq6rhVoH~WSrwNkzm63wwG9a-5TnGg~x6j~XKFVig~dFrlBaPKtU~3ft-d4mcQITO~JSAdhtxw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 44,
-      "local": true,
       "lineTimings": [
         0,
         2.794,
@@ -524,9 +481,8 @@
       "lineCount": 4
     },
     "1.46": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/45/audio/audio.wav?Expires=1780206722&Signature=BPncGDB6rVejMcco6hWdd10~2-JPjOSptXxbRcJERZyo2Xi7sEoVtEJnjLd0NUerUTgXOmrlNvaGUPCFYc1EmtV5PsBDCs2WJWXEt5aF1nLx00pk8C9rd5mTPLSh63humLMhMwR6MlIEBPxP5X-bubj8LMmqBwGWFQyB3IjzFun8Inhd5N1rit9XgA~fJFjcxt4lVoLFFn2fRiYVnr7a3uL-TP1PqfX9NIvq3~rL2R6okHeiLfEZUN3Zi1ClwbHEQExd8fRk3re2REVNQxSokUOIR9LblL-xxlxvac0BB5X4YmgiUlsjo~HvbHQsspCgVHhWkprmKUhKVri-BUKtBQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/45/audio/audio.wav?Expires=1780214706&Signature=iqtTFnMdr6RODQ~5QyPttaoooT1-8C0aZTFTcXs1DTcZySO7zegRkmGlRwhelGLRGQ7ZjPHQOkwep4CFTYYfcvAwstNyTqD2Ccgg7fcT2K7icz6x1bZECsXvg1PqavCpmg4dVu8kM6AYJSOkwaWlLf4pu3uPCeG6Mm8NvxTr5ou8OgdXbM4CqhcRkjdjy9Z5pMrOBUXaK6Xr22XCgM0oKGWrox9yrfCXdIQcy0xloYjTqclxMhNDs71XQO8Wdd46EjfBnCgAEg5aPKfCrP18TgVKmGcbs4Yj3Qd8SVxXrkMgc~w1kwbHLYo3zHM5NYz3Q-2bkhTmLTfxnS4AK51u0A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 45,
-      "local": true,
       "lineTimings": [
         0,
         3.131,
@@ -537,22 +493,19 @@
       "lineCount": 4
     },
     "1.47": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/46/audio/audio.wav?Expires=1780206722&Signature=bDAsCBIIKWUFHXjQ2n3HDLu3NI-r3LiL5EBuenHJMlBAVUiBqAFBClY-OsXq2KRudle1lkwfZW1kOJvr86J2A8tIfcTYQr7dEKxCYhE0y5ApvOcvAEJqLmhS~xpD2pHdFhZOL8srYzqMoLe-BGr-sUjoI0VETGouBwGZhF0nJDunDByGaeHygxfFS-cLma2YNNgyWI56aTNJH6lC0T6lSByjsfXsT6roXIK-kqYXTrNdupc3M6UQWKtA2rkmSyoRjb2e472uTC4BMmX8aKzdvn2HETF5fzccUtzSp8vLc5FvnGTTm8-PHgQtR0hN8IuTCtAxLdWevSYHJmlOrHNtug__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/46/audio/audio.wav?Expires=1780214706&Signature=wq66DB-lU7H97eZcumDLoXdHNruJQU0mP9E9z~Rj2Y2iUN9Npt20qHcry5ESekJqPzVTgKT93uHTvGdon9yKxG6iOE~87EKuH8NVkBuWqawM0JdHYOl2L62KRKw8L6WZCcPoEY8eVy8CwoTWPFHOyZAu3KQhxEefp0rbhUSKF5uO~2Rh5XZ6bUEMNEZhlJYfUgJRDQ6rp71F8vU1laoL6NuercWmWO7vGFoQ1bQ2~MuuChNoRXgXPd9yexrPYkp82s7Ww2FmPFPshGE-Bwvq1Ue81dIfAyZ~gobCkf3dA-boNad-hD0RwYwC2zN0MxfFhZxEEi7J0hF7TMJR9-1jrA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 46,
-      "local": true,
       "lineTimings": [
         2.531,
         5.78,
         8.741,
         11.502
       ],
-      "lineCount": 4,
-      "introEnd": 2.531
+      "lineCount": 4
     },
     "1.5": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/4/audio/audio.wav?Expires=1780206722&Signature=PX4IAQRXELc4GD2Q6Qo82CEksBwIqMWjtAUO25hMB27U1KKrMZA6syHdqgV9G5KXiZv-hEC3IZhiDIpDQiO73TNnT0s~hEQ9Ms55j7D1HslbWGNGFrmnEUjWoCf-Rn7U-CkbFLEwBemYku7Pj8jdKrWHnGkDIfnEDbeoyy8bCDIREERMCo25UArl-G4jEhi25o6Z7rbK3C2MuBPQmx2nN23OPwDOtAogTwK2mK7jOuCNTquFBDQ1XCbBwDJV61DbPfPXCx2Bck3ppVp-sJz4hbyWoyqUNNaT-hhsUHdf4REDweVEoU1inhP9FFnB94YNbvQnFpqXjG03ZNp4r53qkQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/4/audio/audio.wav?Expires=1780214706&Signature=YqMMRTmk~M9-FtkdBdweKMJ50EP3w0~z6wp2DpnMXepgX4bjaNvURhDM151RtXA5yuTCWhNmjIIoKuvNxIbxEAFcKg26sLSp9~cpNYXX~DtQG5YmZzvZMW28LbBecinAnQ4e76PmpPeGadl3ZngT0Li1GwvdEv3HHqd00uY9kuuQefdi2u-WPFx3KPooDqj3cYJmGLndr0hu0vXRvy7DPlk-kyyNtafP15QihiB1uzTzwHSAEpOMBFfpvTUViCB7vr-Qjh7BX9B-81YpWw-0CY-h3i75uveTSvZYd2nCb9ei0ilMaLqfNV7PmVXJHz~inQJF8MDTyMh0wQVorNrPWA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 4,
-      "local": true,
       "lineTimings": [
         0,
         3.468,
@@ -563,9 +516,8 @@
       "lineCount": 4
     },
     "1.6": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/5/audio/audio.wav?Expires=1780206722&Signature=e9cXvHRtnxJ3a6d9lHrqLe2cQFE9XLgvazmU4ApK6yOV-gQNZPlDBofav7vuns2eQohHFpkT7CDTsD81sJDIT4duZGSP3N26qp0HKNc9yuSJnvCRrh6WlgkJL1lSjjRstt0XfBMbJUF8lciSzSEvZLcua64iav2f6a3HVofCuY4E3ZghHwbQsx9x5-e4kcXURvvDy3j4yX04qvcfd3mxXpgH7m1V9T~mXK9R2q9TMZDbd-Qeqo9v8E0jYDC6bGmaWsMlVJt7d82Vw6vOhkK0cPeC-D~xZybgQEKq4NnoXCM0qNzIB18baZBgN1MJcY74ZYIq9e7XMvFuQpAdDE1jUw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/5/audio/audio.wav?Expires=1780214706&Signature=mvsku535bDEoEp9ZYQ8949UOaw3EcJH9fxzwagrgWVfvWoJwYcvXncU1R5Sjy9cAiJZGiaJvPa0M8Plp77GaKsZFBugR7iLkcfIH003XDYtjaK6V99vskatqHOgOXaGAqEswvYzCLjF2CBFpZdf4pcnRZdkhD8kg2iozr07puETm4SdInVxgag1EZs1JZYiubsETIMomUlDz1dnJcli-rKDcijVgmOj7sq~UcDBpPvqeqsG2adzj5BQlGnteRhLhAnJ6c1Va5zVovesGXMHBfjpuZvw9KH0IYkF7uUPB-F8g7v8x6xbJNs81Gs9WE6ZR8g0ro5bF8f6gyiZd-XGW9w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 5,
-      "local": true,
       "lineTimings": [
         0,
         3.956,
@@ -576,9 +528,8 @@
       "lineCount": 4
     },
     "1.7": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/6/audio/audio.wav?Expires=1780206722&Signature=pm-XYOrzg~iLFSs9KPAJgDrBlc3J7Rsric5p86p8Pef2jkvGDb1tU1NwtHOgsHcK72fjAJsK76P0vDU0cUYK0JQ8MBhUViKkfm4m-96TpmEcYPVaFBOC8eZQqmZTAgCsPAW2HOejl-qV1LUpocdL4xiShQ~m4p6oN3bd91QJIxlu8K25AWJpUVLjflNIzeyBllw~BJCpPxiouD55hO77zhTx2sU3pJhELPOVYHoxGTBIe22SAfzM6wsgBrwFw0oGwbQf-FQHIElDZsUO5RQ4-pPuDbgTjKRr-fr~er5AsutrDw8Qo3ocDK57jQEti~VNic3dOnwZmk9~07w5ezUyEw__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/6/audio/audio.wav?Expires=1780214706&Signature=qKXW0jnDCWhXoiEO4OB8plEDSP6DLMC6hgoCGvBOlVL0OovpjcHAsXwtIhgCHUFEOgUPa-lSPedEux-SEDhQF0DgOyU79NcLkdUTVCGHKWA6aA7GS3ADGaoPSPWqavC8N0kiayHDQS0NR-Wi0o9WRjtAUJb1RjKV2fcXEbamIgGtvTh5WQjhDRwLSzzSZxB~ctiMm9DHtuCVG-zhdXLUKGiPMfN3E6whBirbiaERL3UpWLFBi~gTt5K6unPIZ68Wz47X3jmVnPt608ZBfmjCZ2dAuLXo87Bec5XCOAuFPELEMWzLG1~l4wCHzDSMoTg04VG0OUjsdtHRKwdwVJnq3A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 6,
-      "local": true,
       "lineTimings": [
         0,
         3.843,
@@ -589,9 +540,8 @@
       "lineCount": 4
     },
     "1.8": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/7/audio/audio.wav?Expires=1780206722&Signature=SYB~dYMTe1yCO1MIX1FDy9nd72mRCl2rYQU441uqs1rWrRJ5Ovqv5WlXFMy9deP4Oj7J6S-h3fFHehsVXiqtkeOHTH7U6ID8Y9QTVkV5fxGKJLmkXw0Q3nwrhS8OQ1YArxTtsAMTB2vsUa3BzWLjBI-pElJdGhAUeRrm~VFbqRmiUNISrO2e-YF4PHE~6Et0N8QHQJzPytvFnMbBTbOyvms9lJFg4-ypepY6TXMoDhC6VicIVHz5cog8NZYJfLjFjcRhpmFM8OFwEPbuwLP37aGnQcn22H7AMKFeVLeYZ-8BMfHrb4-iJ6MceevgJpt74MeldxRu-zv-ojezzxu9WQ__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/7/audio/audio.wav?Expires=1780214706&Signature=a7lARJUD4jrmr85GAGEtFDy17qaNqnuFiuQne4O5aSZNxCNtAD5l-ysFPzqVFhhX6jkbaTZps47NMpXzdmGL2hGpn9FkULrpvdSY9gbHSHWnVbMMW2Tw-Q669O6bLS9~lTpjo2ogFO6skBlpIZ68tLUgBR6tQoPJ5tgir4wO~b0LnEVnB1XBH4xXuEXMc4pARufKWqOTinlc6Fx63dYuxNx1-5bXu4DF1zQHgMu9x-u3Lx5IPNgYhpQpHEyJ0kXWZOGjDSkmfmrhKndui7g3jt1aclpBevpAY048jHvULXJufiaA665LxKh7Qnjs0jnJMEYw5uBkDPA8k838tsKsKQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 7,
-      "local": true,
       "lineTimings": [
         0,
         3.943,
@@ -602,9 +552,8 @@
       "lineCount": 4
     },
     "1.9": {
-      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/8/audio/audio.wav?Expires=1780206722&Signature=iOOpSSXH8YnWBrSEAmFJiG4RKhCD-5fc3TkPd3WX991ciTSZXfPGI~MzdxGSDFGrb9YnCqU8iKl09H1oHDlSqgNEi49ql4AN9I7Y5Y5RqhipBZFiyqZ0NsM~1dzVLN6SDifah8H0BkLQva3qECRj9gItzSvsWMYfQGIPR0vsL4F2P4uM55Hx8XUTVTgRIESLrJJkEJ7B2A5DXpkKzRwWwXV3k6Am0Gt-5UpkhjK85hkUTGTDFFA3amYJ6ZNyALSUvt0JHTtoHi6Gr5wrFOBd5jfOM6juZRRuSJQ6ADRVDwx2PgWtWvspzHGpGLT89jXKznz-g2w~sLzJrtODlny7lA__&Key-Pair-Id=K204OQ5RWQVDLD",
+      "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/8/audio/audio.wav?Expires=1780214706&Signature=MEHtkbtJtqxI9w0r3vabgeqSR8ZM2xInY3BgcmJB3tlbvP5zPNYFIuK2BDGRjwXheCRVqN2JSqJPrUsNEIiN~0UwOwbBPOvxOzb4NIFh1NxnqsnUo5cOSD6LSfhGQFonS~YJXwg1HAJ286YwFcPmdTHvP9XYGaJkDT1IdGAj8axWOQJgTqH-TOh4jrt5lusnQ0Vu5J7D4hMOKuMscQL6yeiixZUMyM0W4Ndp6BvRVIO7U65pyDNKIp6NP2-qaT6cM3selXaJSSb5vMcjrJsmvLIA7kcWK8DmYgoViS2kGCHz8dz-plm8qFE0gT04fuGvZK3dEgydtCraRa5oYOH1pQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 8,
-      "local": true,
       "lineTimings": [
         0,
         0.62,
@@ -4818,7 +4767,7 @@
       "local": true
     }
   },
-  "syncedAt": "2026-05-31T06:33:05.850Z",
+  "syncedAt": "2026-05-31T07:04:35.906Z",
   "urlNote": "Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.",
   "lineTimingsNote": "Line boundaries from pauses in local WAV (longest gaps = line ends). Re-run gita:line-timings after sync.",
   "lineTimingsAt": "2026-05-31T06:05:14.848Z"
