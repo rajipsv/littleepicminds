@@ -60,15 +60,24 @@ function wordMatchesLine(word, line) {
 
 const LINES_PER_SHLOKA = 4;
 
-/** IAST padas from HF / verse transliteration (e.g. "a .b .c"). */
+/** IAST padas from HF / verse transliteration (dots or newlines between chunks). */
 function splitTransliterationPadas(transliteration) {
-  return (transliteration || '')
+  const raw = String(transliteration || '').trim();
+  if (!raw) return [];
+  if (raw.includes('\n')) {
+    return raw
+      .split(/\n+/)
+      .map((l) => l.trim())
+      .filter(Boolean);
+  }
+  return raw
     .split(/\s*\.\s*/)
     .map((l) => l.trim())
     .filter(Boolean);
 }
 
-const UVACA_SUFFIX = /\s+uv[aā\u0101]c[aā\u0101]?\s*$/i;
+/** uvāca / uvācha / uvacha (HF and chapter JSON variants). */
+const UVACA_SUFFIX = /\s+uv[aā\u0101]ch?a[cḥ]?\s*$/i;
 
 /** "sañjaya uvāca" / "dhṛtarāṣṭra uvāca" — narrator, not a pada of the shloka. */
 function extractSpeakerPrefix(transliteration) {

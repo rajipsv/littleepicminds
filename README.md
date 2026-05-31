@@ -82,6 +82,10 @@ This project is optimized for Vercel deployment.
 | `npm run gita:tts-cache-stats` | Show cache folders and file count |
 | `npm run gita:translate-lines` | Batch EN→TE line meanings into `lib/data/line-te-cache.json` |
 | `npm run gita:sync-hf-audio` | Download per-śloka chanting WAV (Apache-2.0 HF dataset); add `-- --chapter=1` for one chapter |
+| `npm run gita:pada-lines:export -- --chapter=N` | Draft 4 pada lines + meanings into `scripts/data/gita-pada-lines.json` |
+| `npm run gita:line-breakdown -- --chapter=N` | Apply pada lines + meanings to `backend/data/chapters/chapterN.js` |
+| `npm run gita:line-timings -- --chapter=N` | Pause-based chant sync (needs local WAVs in `lib/data/gita_audio/`) |
+| `npm run gita:learn:setup -- --chapter=N` | All three steps above for one chapter |
 
 - **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
 - **Śloka chanting (HF, Apache-2.0):** Audio by **Dhruv Jaradi** — [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). Production uses HF CDN URLs in `lib/data/gita-verse-audio-manifest.json` (`npm run gita:sync-hf-audio -- --urls-only`). Line-by-line Learn playback uses `lineTimings` in the manifest (`npm run gita:line-timings` after local WAV sync). Re-run `--urls-only` about once a year (signed URLs expire). See [`NOTICES.md`](NOTICES.md).
