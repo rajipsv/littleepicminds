@@ -18,8 +18,8 @@ function main() {
   if (!authored.stories) authored.stories = {};
 
   const themes = {
-    seeds: { gita: require(path.join(ROOT, 'backend', 'data', 'themes_seeds.json')).gita },
-    seekers: { gita: require(path.join(ROOT, 'backend', 'data', 'themes_seekers.json')).gita },
+    seeds: { gita: require(path.join(ROOT, 'lib', 'data', 'themes_seeds.json')).gita },
+    seekers: { gita: require(path.join(ROOT, 'lib', 'data', 'themes_seekers.json')).gita },
   };
   const { getMoralStory } = require('./gita-theme-stories');
   const sources = { themes, updateByKey: {}, getMoralStory };

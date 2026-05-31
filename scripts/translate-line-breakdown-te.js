@@ -8,26 +8,12 @@
  */
 const fs = require('fs');
 const path = require('path');
-const crypto = require('crypto');
 const axios = require('axios');
-
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const LIB_DATA = path.join(ROOT, 'lib', 'data');
+const { DATA_DIR, ENV_PATH } = require('./lib/data-dir');
+const { loadEnv } = require('./lib/load-env');
 const CACHE_FILE = path.join(__dirname, 'data', 'line-te-cache.json');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
-const { buildLineBreakdown, hasTeluguScript } = require('./gita-line-breakdown');
-
-function loadEnv() {
-  const envPath = path.join(ROOT, 'backend', '.env');
-  if (!fs.existsSync(envPath)) return;
-  for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
-    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$/);
-    if (m && !process.env[m[1]]) {
-      process.env[m[1]] = m[2].replace(/^["']|["']$/g, '').trim();
-    }
-  }
-}
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
+const { hasTeluguScript } = require('./gita-line-breakdown');
 
 function loadCache() {
   if (fs.existsSync(CACHE_FILE)) {
@@ -41,10 +27,7 @@ function saveCache(map) {
   const obj = {};
   for (const [k, v] of map.entries()) obj[k] = v;
   fs.writeFileSync(CACHE_FILE, JSON.stringify(obj, null, 2), 'utf8');
-  const libCache = path.join(LIB_DATA, 'line-te-cache.json');
-  if (fs.existsSync(LIB_DATA)) {
-    fs.writeFileSync(libCache, JSON.stringify(obj, null, 2), 'utf8');
-  }
+  fs.writeFileSync(path.join(DATA_DIR, 'line-te-cache.json'), JSON.stringify(obj, null, 2), 'utf8');
 }
 
 async function translateEnToTe(text, apiKey) {
@@ -73,7 +56,7 @@ async function translateEnToTe(text, apiKey) {
 function collectUniqueEnLines() {
   const unique = new Set();
   for (const chMeta of chaptersConfig.chapters) {
-    const chapter = require(path.join(BACKEND_DATA, 'chapters', `chapter${chMeta.id}.js`));
+    const chapter = require(path.join(DATA_DIR, 'chapters', `chapter${chMeta.id}.js`));
     for (const key of Object.keys(chapter)) {
       if (!/^\d+\.\d+$/.test(key)) continue;
       for (const row of chapter[key].lineBreakdown || []) {
@@ -87,7 +70,7 @@ function collectUniqueEnLines() {
 }
 
 function loadChapter(ch) {
-  return require(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`));
+  return require(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`));
 }
 
 function writeChapterFile(ch, shlokas) {
@@ -97,15 +80,12 @@ function writeChapterFile(ch, shlokas) {
     .forEach((k) => {
       sorted[k] = shlokas[k];
     });
-  const filePath = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+  const filePath = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
   fs.writeFileSync(
     filePath,
     `const CHAPTER_${ch}_SHLOKAS = ${JSON.stringify(sorted, null, 4)};\n\nmodule.exports = CHAPTER_${ch}_SHLOKAS;\n`,
     'utf8'
   );
-  if (fs.existsSync(LIB_DATA)) {
-    fs.copyFileSync(filePath, path.join(LIB_DATA, 'chapters', `chapter${ch}.js`));
-  }
 }
 
 function applyCacheToChapters(teCache) {
@@ -146,7 +126,7 @@ async function main() {
   console.log(`Cache: ${teCache.size} entries, ${needed.length} lines need translation`);
 
   if (needed.length && !apiKey) {
-    console.error('SARVAM_API_KEY missing. Set it in backend/.env to translate line meanings.');
+    console.error(`SARVAM_API_KEY missing. Set it in ${ENV_PATH} to translate line meanings.`);
     if (teCache.size === 0) process.exit(1);
     console.log('Applying existing cache only...');
   } else if (needed.length && apiKey) {

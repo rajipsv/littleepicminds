@@ -6,7 +6,7 @@
 
 Line-by-line playback still uses `lineEnds` / `introEnd` from `/api/gita-audio/manifest` (timings only).
 
-## 1. Sync and timings (local)
+## 1. Sync and timings (on your machine)
 
 ```bash
 npm run gita:sync-hf-audio
@@ -59,4 +59,4 @@ After deploy, in Gita Learn:
 
 - **1.1** (with intro text): row 1 chant starts after narrator (~3s), not from 0s.
 - **2.47**: four distinct row clips.
-- Run `npm run gita:qa-segments` locally anytime.
+- Run `npm run gita:qa-segments` before deploy when timings change.

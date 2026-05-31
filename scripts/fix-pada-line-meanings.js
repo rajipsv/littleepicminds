@@ -10,8 +10,8 @@ const {
 } = require('./gita-line-breakdown');
 const { loadPadaLinesFile, savePadaLinesFile } = require('../lib/gita-pada-lines');
 
-const BACKEND_DATA = path.join(__dirname, '..', 'backend', 'data');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const { DATA_DIR } = require('./lib/data-dir');
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 function parseRange() {
   const fromArg = process.argv.find((a) => a.startsWith('--from='));
@@ -58,7 +58,7 @@ function main() {
   let fixed = 0;
 
   for (let ch = from; ch <= to; ch++) {
-    const fp = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+    const fp = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
     delete require.cache[require.resolve(fp)];
     const chapter = require(fp);
 

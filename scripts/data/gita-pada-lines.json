@@ -6678,7 +6678,7 @@
       "lines": [
         "idaṁ tu te",
         "guhyatamaṁ pravakṣhyāmyanasūyave",
-        "jñānaṁ vijñāna sahitaṁ yaj",
+        "jñānaṁ vijñāna-sahitaṁ yaj",
         "jñātvā mokṣhyase ’śhubhāt"
       ],
       "meaningsEn": [
@@ -6696,10 +6696,10 @@
     },
     "9.2": {
       "lines": [
-        "rāja vidyā rāja guhyaṁ",
-        "pavitram idam uttamam",
-        "pratyakṣhāvagamaṁ",
-        "dharmyaṁ su sukhaṁ kartum avyayam"
+        "rāja-vidyā rāja-guhyaṁ pavitram",
+        "idam uttamam",
+        "pratyakṣhāvagamaṁ dharmyaṁ su-sukhaṁ",
+        "kartum avyayam"
       ],
       "meaningsEn": [
         "This is the royal science, the royal mystery,",
@@ -6718,8 +6718,8 @@
       "lines": [
         "aśhraddadhānāḥ puruṣhā",
         "dharmasyāsya parantapa",
-        "aprāpya māṁ nivartante",
-        "mṛityu samsāra vartmani"
+        "aprāpya māṁ",
+        "nivartante mṛityu-samsāra-vartmani"
       ],
       "meaningsEn": [
         "Men devoid of faith in this Dharma",
@@ -6736,10 +6736,10 @@
     },
     "9.4": {
       "lines": [
-        "mayā tatam idaṁ sarvaṁ",
-        "jagad avyakta mūrtinā",
-        "mat sthāni sarva bhūtāni",
-        "na chāhaṁ teṣhvavasthitaḥ"
+        "mayā tatam idaṁ",
+        "sarvaṁ jagad avyakta-mūrtinā",
+        "mat-sthāni sarva-bhūtāni na",
+        "chāhaṁ teṣhvavasthitaḥ"
       ],
       "meaningsEn": [
         "This entire universe is pervaded by Me",
@@ -6756,10 +6756,10 @@
     },
     "9.5": {
       "lines": [
-        "na cha mat sthāni bhūtāni",
+        "na cha mat-sthāni bhūtāni",
         "paśhya me yogam aiśhwaram",
-        "bhūta bhṛin na cha bhūta",
-        "stho mamātmā bhūta bhāvanaḥ"
+        "bhūta-bhṛin na cha",
+        "bhūta-stho mamātmā bhūta-bhāvanaḥ"
       ],
       "meaningsEn": [
         "Yet, beings do not remain in Me.",
@@ -6776,10 +6776,10 @@
     },
     "9.6": {
       "lines": [
-        "yathākāśha sthito nityaṁ vāyuḥ",
-        "sarvatra go mahān",
-        "tathā sarvāṇi bhūtāni",
-        "mat sthānītyupadhāraya"
+        "yathākāśha-sthito nityaṁ vāyuḥ",
+        "sarvatra-go mahān",
+        "tathā sarvāṇi",
+        "bhūtāni mat-sthānītyupadhāraya"
       ],
       "meaningsEn": [
         "As the powerful element air",
@@ -6796,10 +6796,10 @@
     },
     "9.7": {
       "lines": [
-        "sarva bhūtāni kaunteya",
-        "prakṛitiṁ yānti māmikām",
-        "kalpa kṣhaye punas",
-        "tāni kalpādau visṛijāmyaham"
+        "sarva-bhūtāni kaunteya prakṛitiṁ",
+        "yānti māmikām",
+        "kalpa-kṣhaye punas tāni",
+        "kalpādau visṛijāmyaham"
       ],
       "meaningsEn": [
         "All beings",
@@ -6818,7 +6818,7 @@
       "lines": [
         "prakṛitiṁ svām avaṣhṭabhya",
         "visṛijāmi punaḥ punaḥ",
-        "bhūta grāmam imaṁ kṛitsnam",
+        "bhūta-grāmam imaṁ kṛitsnam",
         "avaśhaṁ prakṛiter vaśhāt"
       ],
       "meaningsEn": [
@@ -6838,8 +6838,8 @@
       "lines": [
         "na cha māṁ tāni",
         "karmāṇi nibadhnanti dhanañjaya",
-        "udāsīna vad āsīnam",
-        "asaktaṁ teṣhu karmasu"
+        "udāsīna-vad āsīnam asaktaṁ",
+        "teṣhu karmasu"
       ],
       "meaningsEn": [
         "But these actions do not bind Me",
@@ -6856,8 +6856,8 @@
     },
     "9.10": {
       "lines": [
-        "mayādhyakṣheṇa prakṛitiḥ sūyate",
-        "sa charācharam",
+        "mayādhyakṣheṇa prakṛitiḥ",
+        "sūyate sa-charācharam",
         "hetunānena kaunteya",
         "jagad viparivartate"
       ],
@@ -6879,7 +6879,7 @@
         "avajānanti māṁ mūḍhā",
         "mānuṣhīṁ tanum āśhritam",
         "paraṁ bhāvam ajānanto",
-        "mama bhūta maheśhvaram"
+        "mama bhūta-maheśhvaram"
       ],
       "meaningsEn": [
         "Fools disregard Me",
@@ -6896,8 +6896,8 @@
     },
     "9.12": {
       "lines": [
-        "moghāśhā mogha karmāṇo",
-        "mogha jñānā vichetasaḥ",
+        "moghāśhā mogha-karmāṇo",
+        "mogha-jñānā vichetasaḥ",
         "rākṣhasīm āsurīṁ chaiva",
         "prakṛitiṁ mohinīṁ śhritāḥ"
       ],
@@ -6918,8 +6918,8 @@
       "lines": [
         "mahātmānas tu māṁ pārtha",
         "daivīṁ prakṛitim āśhritāḥ",
-        "bhajantyananya",
-        "manaso jñātvā bhūtādim avyayam"
+        "bhajantyananya-manaso jñātvā",
+        "bhūtādim avyayam"
       ],
       "meaningsEn": [
         "But the great souled ones, O Arjuna,",
@@ -6936,10 +6936,10 @@
     },
     "9.14": {
       "lines": [
-        "satataṁ kīrtayanto māṁ yatantaśh",
-        "cha dṛiḍha vratāḥ",
-        "namasyantaśh",
-        "cha māṁ bhaktyā nitya yuktā upāsate"
+        "satataṁ kīrtayanto māṁ",
+        "yatantaśh cha dṛiḍha-vratāḥ",
+        "namasyantaśh cha māṁ",
+        "bhaktyā nitya-yuktā upāsate"
       ],
       "meaningsEn": [
         "Aspiring for eternal communion with Me",
@@ -6956,10 +6956,10 @@
     },
     "9.15": {
       "lines": [
-        "jñāna yajñena chāpyanye",
-        "yajanto mām upāsate",
-        "ekatvena pṛithaktvena bahudhā",
-        "viśhvato mukham"
+        "jñāna-yajñena chāpyanye yajanto",
+        "mām upāsate",
+        "ekatvena pṛithaktvena",
+        "bahudhā viśhvato-mukham"
       ],
       "meaningsEn": [
         "Others",
@@ -7098,8 +7098,8 @@
       "lines": [
         "ananyāśh chintayanto māṁ",
         "ye janāḥ paryupāsate",
-        "teṣhāṁ nityābhiyuktānāṁ yoga",
-        "kṣhemaṁ vahāmyaham"
+        "teṣhāṁ nityābhiyuktānāṁ",
+        "yoga-kṣhemaṁ vahāmyaham"
       ],
       "meaningsEn": [
         "Those who, excluding all else, think",
@@ -7116,10 +7116,10 @@
     },
     "9.23": {
       "lines": [
-        "ye ’pyanya devatā",
-        "bhaktā yajante śhraddhayānvitāḥ",
-        "te ’pi mām eva",
-        "kaunteya yajantyavidhi pūrvakam"
+        "ye ’pyanya-devatā-bhaktā",
+        "yajante śhraddhayānvitāḥ",
+        "te ’pi mām",
+        "eva kaunteya yajantyavidhi-pūrvakam"
       ],
       "meaningsEn": [
         "Even those who are devoted to other divinities with faith in their hearts",
@@ -7136,8 +7136,8 @@
     },
     "9.24": {
       "lines": [
-        "ahaṁ hi sarva yajñānāṁ",
-        "bhoktā cha prabhureva cha",
+        "ahaṁ hi sarva-yajñānāṁ bhoktā",
+        "cha prabhureva cha",
         "na tu mām abhijānanti",
         "tattvenātaśh chyavanti te"
       ],
@@ -7156,10 +7156,10 @@
     },
     "9.25": {
       "lines": [
-        "yānti deva vratā devān",
-        "pitṝīn yānti pitṛi vratāḥ",
+        "yānti deva-vratā devān",
+        "pitṝīn yānti pitṛi-vratāḥ",
         "bhūtāni yānti bhūtejyā yānti",
-        "mad yājino ’pi mām"
+        "mad-yājino ’pi mām"
       ],
       "meaningsEn": [
         "Devotees of gods go to the gods",
@@ -7198,8 +7198,8 @@
       "lines": [
         "yat karoṣhi yad aśhnāsi",
         "yaj juhoṣhi dadāsi yat",
-        "yat tapasyasi kaunteya tat",
-        "kuruṣhva mad arpaṇam"
+        "yat tapasyasi kaunteya",
+        "tat kuruṣhva mad-arpaṇam"
       ],
       "meaningsEn": [
         "Whatever you do, whatever you eat,",
@@ -7216,10 +7216,10 @@
     },
     "9.28": {
       "lines": [
-        "śhubhāśhubha phalair evaṁ",
-        "mokṣhyase karma bandhanaiḥ",
-        "sannyāsa yoga yuktātmā",
-        "vimukto mām upaiṣhyasi"
+        "śhubhāśhubha-phalair evaṁ",
+        "mokṣhyase karma-bandhanaiḥ",
+        "sannyāsa-yoga-yuktātmā vimukto",
+        "mām upaiṣhyasi"
       ],
       "meaningsEn": [
         "Thus equipped in mind with the Yoga of renunciation",
@@ -7236,8 +7236,8 @@
     },
     "9.29": {
       "lines": [
-        "samo ’haṁ sarva bhūteṣhu na",
-        "me dveṣhyo ’sti na priyaḥ",
+        "samo ’haṁ sarva-bhūteṣhu na me",
+        "dveṣhyo ’sti na priyaḥ",
         "ye bhajanti tu māṁ bhaktyā",
         "mayi te teṣhu chāpyaham"
       ],
@@ -7256,8 +7256,8 @@
     },
     "9.30": {
       "lines": [
-        "api chet su durāchāro",
-        "bhajate mām ananya bhāk",
+        "api chet su-durāchāro",
+        "bhajate mām ananya-bhāk",
         "sādhur eva sa mantavyaḥ",
         "samyag vyavasito hi saḥ"
       ],
@@ -7277,7 +7277,7 @@
     "9.31": {
       "lines": [
         "kṣhipraṁ bhavati dharmātmā",
-        "śhaśhvach chhāntiṁ nigachchhati",
+        "śhaśhvach-chhāntiṁ nigachchhati",
         "kaunteya pratijānīhi na",
         "me bhaktaḥ praṇaśhyati"
       ],
@@ -7296,8 +7296,8 @@
     },
     "9.32": {
       "lines": [
-        "māṁ hi pārtha vyapāśhritya ye",
-        "’pi syuḥ pāpa yonayaḥ",
+        "māṁ hi pārtha vyapāśhritya",
+        "ye ’pi syuḥ pāpa-yonayaḥ",
         "striyo vaiśhyās tathā śhūdrās te",
         "’pi yānti parāṁ gatim"
       ],
@@ -7336,10 +7336,10 @@
     },
     "9.34": {
       "lines": [
-        "man manā bhava mad bhakto",
-        "mad yājī māṁ namaskuru",
+        "man-manā bhava mad-bhakto",
+        "mad-yājī māṁ namaskuru",
         "mām evaiṣhyasi yuktvaivam",
-        "ātmānaṁ mat parāyaṇaḥ"
+        "ātmānaṁ mat-parāyaṇaḥ"
       ],
       "meaningsEn": [
         "Focus your mind on Me",

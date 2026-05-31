@@ -21,8 +21,7 @@ const {
 } = require('./lib/chatgpt-story-prompts');
 const { isPlaceholderStory } = require('./lib/story-quality');
 
-const ROOT = path.join(__dirname, '..');
-const ENV_PATH = path.join(ROOT, 'backend', '.env');
+const { ENV_PATH } = require('./lib/data-dir');
 const AUTHORED_PATH = path.join(__dirname, 'data', 'gita-theme-stories-authored.json');
 const IMPORT_PATH = path.join(__dirname, 'data', 'chatgpt-stories-import.json');
 const PROGRESS_PATH = path.join(__dirname, 'data', 'chatgpt-generation-progress.json');

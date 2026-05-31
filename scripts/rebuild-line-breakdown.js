@@ -1,19 +1,16 @@
 /**
  * Rebuild lineBreakdown for all Gita shlokas: one row per poetic line (~4), not per word.
- * Updates backend/data/chapters and mirrors to lib/data.
+ * Writes lib/data/chapters (bundled on Vercel).
  */
 const fs = require('fs');
 const path = require('path');
 const { buildLineBreakdown } = require('./gita-line-breakdown');
 const { getVersePadaOverride, loadPadaLinesFile } = require('../lib/gita-pada-lines');
-
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const LIB_DATA = path.join(ROOT, 'lib', 'data');
+const { ROOT, DATA_DIR } = require('./lib/data-dir');
 const VERSE_FILE = path.join(__dirname, 'data', 'gita-verse.json');
 const TE_CACHE_FILE = path.join(__dirname, 'data', 'line-te-cache.json');
 
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 const MANIFEST_FILE = path.join(ROOT, 'lib', 'data', 'gita-verse-audio-manifest.json');
 
 function loadManifestAudioMeta() {
@@ -53,7 +50,7 @@ if (fs.existsSync(VERSE_FILE)) {
 }
 
 function loadChapter(ch) {
-  return require(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`));
+  return require(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`));
 }
 
 function writeChapterFile(ch, shlokas) {
@@ -63,16 +60,9 @@ function writeChapterFile(ch, shlokas) {
     .forEach((k) => {
       sorted[k] = shlokas[k];
     });
-  const filePath = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+  const filePath = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
   const content = `const CHAPTER_${ch}_SHLOKAS = ${JSON.stringify(sorted, null, 4)};\n\nmodule.exports = CHAPTER_${ch}_SHLOKAS;\n`;
   fs.writeFileSync(filePath, content, 'utf-8');
-}
-
-function mirrorToLib(ch) {
-  if (!fs.existsSync(LIB_DATA)) return;
-  const src = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
-  const dest = path.join(LIB_DATA, 'chapters', `chapter${ch}.js`);
-  if (fs.existsSync(src)) fs.copyFileSync(src, dest);
 }
 
 function parseChapterArg() {
@@ -104,16 +94,19 @@ function main() {
       const padaOverride = getVersePadaOverride(key);
       if (padaOverride?.lines?.length) fromPadaFile++;
 
+      const preferNewlinePadas = ch === 9;
       const breakdown = buildLineBreakdown({
         transliteration: shloka.transliteration || source?.transliteration,
         sanskrit: shloka.sanskrit || source?.text,
         telugu_script: shloka.telugu_script,
         word_meanings: source?.word_meanings,
-        existingBreakdown: padaOverride?.lines?.length ? null : shloka.lineBreakdown,
+        existingBreakdown:
+          preferNewlinePadas || padaOverride?.lines?.length ? null : shloka.lineBreakdown,
         fallbackMeaning: shloka.en?.meaning,
         fallbackMeaningTe: shloka.te?.meaning,
         padaOverride,
         teCache,
+        preferNewlinePadas,
       });
       if (breakdown.chantIntro) {
         shloka.chantIntro = breakdown.chantIntro;
@@ -130,7 +123,6 @@ function main() {
     }
 
     writeChapterFile(ch, out);
-    mirrorToLib(ch);
     console.log(`✅ Chapter ${ch}: ${chMeta.count} verses (line breakdown updated)`);
   }
 

@@ -1,21 +1,18 @@
 /**
  * Generate Bhagavad Gita content for all 18 chapters:
- * - shloka records (backend/data/chapters/chapterN.js)
+ * - shloka records (lib/data/chapters/chapterN.js)
  * - themes for seeds, seekers, warriors (themes_*.json)
  *
  * Preserves existing rich content for chapters 1, 2, 15 (themes + shlokas).
- * Syncs lib/data/chapters/chapter1.js → backend when lib version is larger.
  */
 const fs = require('fs');
 const path = require('path');
 const vm = require('vm');
 
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const LIB_DATA = path.join(ROOT, 'lib', 'data');
+const { DATA_DIR } = require('./lib/data-dir');
 const BLUEPRINTS = require('./gita-chapter-blueprints');
 const { getMoralStory } = require('./gita-theme-stories');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 const EMOJIS = ['🌱', '📖', '💡', '🌟', '🎯', '🛡️', '⚖️', '🔥', '🌳', '✨', '☀️', '🧘', '💪', '🦋', '🏆'];
 
@@ -34,31 +31,13 @@ function loadJsModule(filePath, exportName) {
 
 function loadAllExistingShlokas() {
   const shlokas = {};
-  const gitaDataPath = path.join(BACKEND_DATA, 'gita_data.js');
-  if (fs.existsSync(gitaDataPath)) {
-    const sandbox = { window: {} };
-    vm.runInContext(fs.readFileSync(gitaDataPath, 'utf-8'), vm.createContext(sandbox));
-    if (sandbox.window.GITA_DATA?.shlokas) Object.assign(shlokas, sandbox.window.GITA_DATA.shlokas);
-  }
-  const chDir = path.join(BACKEND_DATA, 'chapters');
+  const chDir = path.join(DATA_DIR, 'chapters');
   if (fs.existsSync(chDir)) {
     fs.readdirSync(chDir).filter((f) => f.endsWith('.js')).forEach((f) => {
       Object.assign(shlokas, loadJsModule(path.join(chDir, f)));
     });
   }
   return shlokas;
-}
-
-function syncApiChapter1() {
-  const libCh1 = path.join(LIB_DATA, 'chapters', 'chapter1.js');
-  const backendCh1 = path.join(BACKEND_DATA, 'chapters', 'chapter1.js');
-  if (!fs.existsSync(libCh1)) return;
-  const libKeys = Object.keys(loadJsModule(libCh1));
-  const backendKeys = fs.existsSync(backendCh1) ? Object.keys(loadJsModule(backendCh1)) : [];
-  if (libKeys.length >= backendKeys.length) {
-    fs.copyFileSync(libCh1, backendCh1);
-    console.log(`✅ Synced lib chapter1.js → backend (${libKeys.length} shlokas)`);
-  }
 }
 
 function verseRange(ch, start, end) {
@@ -211,7 +190,7 @@ function generateThemesForChapter(ch, count, meta) {
 }
 
 function writeChapterFile(ch, shlokasForChapter) {
-  const filePath = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+  const filePath = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
   const sorted = {};
   Object.keys(shlokasForChapter)
     .sort((a, b) => {
@@ -227,11 +206,9 @@ function writeChapterFile(ch, shlokasForChapter) {
 }
 
 function main() {
-  syncApiChapter1();
-
-  const themesSeeds = loadJsModule(path.join(BACKEND_DATA, 'themes_seeds.json'));
-  const themesSeekers = loadJsModule(path.join(BACKEND_DATA, 'themes_seekers.json'));
-  const themesWarriors = loadJsModule(path.join(BACKEND_DATA, 'themes_warriors.json'));
+  const themesSeeds = loadJsModule(path.join(DATA_DIR, 'themes_seeds.json'));
+  const themesSeekers = loadJsModule(path.join(DATA_DIR, 'themes_seekers.json'));
+  const themesWarriors = loadJsModule(path.join(DATA_DIR, 'themes_warriors.json'));
 
   if (!themesSeeds.gita) themesSeeds.gita = {};
   if (!themesSeekers.gita) themesSeekers.gita = {};
@@ -263,21 +240,9 @@ function main() {
     }
   }
 
-  fs.writeFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), JSON.stringify(themesSeeds, null, 2), 'utf-8');
-  fs.writeFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), JSON.stringify(themesSeekers, null, 2), 'utf-8');
-  fs.writeFileSync(path.join(BACKEND_DATA, 'themes_warriors.json'), JSON.stringify(themesWarriors, null, 2), 'utf-8');
-
-  // Mirror to lib/data (Vercel bundles via includeFiles, not /api)
-  if (fs.existsSync(LIB_DATA)) {
-    fs.mkdirSync(path.join(LIB_DATA, 'chapters'), { recursive: true });
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), path.join(LIB_DATA, 'themes_seeds.json'));
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), path.join(LIB_DATA, 'themes_seekers.json'));
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_warriors.json'), path.join(LIB_DATA, 'themes_warriors.json'));
-    for (let ch = 1; ch <= 18; ch++) {
-      const src = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
-      if (fs.existsSync(src)) fs.copyFileSync(src, path.join(LIB_DATA, 'chapters', `chapter${ch}.js`));
-    }
-  }
+  fs.writeFileSync(path.join(DATA_DIR, 'themes_seeds.json'), JSON.stringify(themesSeeds, null, 2), 'utf-8');
+  fs.writeFileSync(path.join(DATA_DIR, 'themes_seekers.json'), JSON.stringify(themesSeekers, null, 2), 'utf-8');
+  fs.writeFileSync(path.join(DATA_DIR, 'themes_warriors.json'), JSON.stringify(themesWarriors, null, 2), 'utf-8');
 
   const total = Object.keys(allShlokas).filter((k) => /^\d+\.\d+$/.test(k)).length;
   console.log(`\n🚀 Done. Total Gita shloka keys: ${total}`);

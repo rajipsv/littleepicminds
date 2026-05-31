@@ -23,7 +23,7 @@ enLines.forEach((en, i) => {
 });
 fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2), 'utf8');
 
-for (const base of ['backend/data/chapters', 'lib/data/chapters']) {
+for (const base of ['lib/data/chapters']) {
   const file = path.join(__dirname, '..', base, 'chapter5.js');
   delete require.cache[require.resolve(file)];
   const ch = require(file);

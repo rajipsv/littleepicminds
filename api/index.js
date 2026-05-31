@@ -645,7 +645,7 @@ router.post('/translate-meaning', async (req, res) => {
   }
 });
 
-// --- TTS (Voice Generation) — google default, sarvam fallback; cache in backend/data/audio_cache ---
+// --- TTS (Voice Generation) — google default, sarvam fallback; cache in lib/data/audio_cache ---
 const { synthesizeSpeech, synthesizeSpeechLines } = require('../lib/tts');
 
 router.post('/tts', async (req, res) => {

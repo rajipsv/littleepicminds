@@ -3,7 +3,7 @@
  */
 const path = require('path');
 const ROOT = path.join(__dirname, '..', '..');
-const CHAPTERS_DIR = path.join(ROOT, 'backend', 'data', 'chapters');
+const CHAPTERS_DIR = path.join(ROOT, 'lib', 'data', 'chapters');
 
 const KIDS = ['Riya', 'Arjun', 'Maya', 'Dev', 'Anika', 'Kiran', 'Priya', 'Sia'];
 const EMOJIS = ['🌱', '📖', '💡', '🌟', '🎯', '🛡️', '⚖️', '🔥', '🌳', '✨', '☀️', '🧘', '👀', '😢', '🌿', '💪'];

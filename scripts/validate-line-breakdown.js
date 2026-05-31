@@ -9,12 +9,13 @@ const path = require('path');
 const {
   extractSpeakerPrefix,
   splitTransliterationPadas,
+  bodyLinesFromNewlineTransliteration,
   LINES_PER_SHLOKA,
 } = require('./gita-line-breakdown');
 const { getVersePadaOverride, loadPadaLinesFile } = require('../lib/gita-pada-lines');
 
-const BACKEND_DATA = path.join(__dirname, '..', 'backend', 'data');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const { DATA_DIR } = require('./lib/data-dir');
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 const UVACA_IN_LINE = /\s+uv[aā\u0101]ch?a[cḥ]?\s*/i;
 
 function parseRangeArgs() {
@@ -79,12 +80,40 @@ function actualFromBreakdown(rows, chantIntro) {
   return parts.filter(Boolean).join(' ');
 }
 
-function validateVerse(verseId, shloka, padaOverride) {
+function validateNewlineRejoin(trans, rows, intro) {
+  if (!trans.includes('\n') || rows.length !== LINES_PER_SHLOKA) return [];
+  const { bodyPadas } = extractSpeakerPrefix(trans);
+  if (bodyPadas.length !== 2) return [];
+  const expectedPadas = bodyLinesFromNewlineTransliteration(trans);
+  if (!expectedPadas || expectedPadas.length !== LINES_PER_SHLOKA) return [];
+  const issues = [];
+  for (let i = 0; i < LINES_PER_SHLOKA; i++) {
+    if (normIast(rowIast(rows[i])) !== normIast(expectedPadas[i])) {
+      issues.push('newlinePadaMismatch');
+      break;
+    }
+  }
+  const pair0 = normIast(`${rowIast(rows[0])} ${rowIast(rows[1])}`);
+  const pair1 = normIast(`${rowIast(rows[2])} ${rowIast(rows[3])}`);
+  if (pair0 !== normIast(bodyPadas[0]) || pair1 !== normIast(bodyPadas[1])) {
+    if (!issues.includes('newlinePadaMismatch')) issues.push('newlineBodyMismatch');
+  }
+  if (intro && rowIast(rows[0]) && hasSpeakerInText(rowIast(rows[0]))) {
+    issues.push('introOnRow:row0HasUvaca');
+  }
+  return issues;
+}
+
+function validateVerse(verseId, shloka, padaOverride, chapterNum) {
   const issues = [];
   const rows = shloka.lineBreakdown || shloka.word_by_word || [];
   const intro = shloka.chantIntro;
   const trans = (shloka.transliteration || '').trim();
   const { speaker } = extractSpeakerPrefix(trans);
+
+  if (chapterNum === 9 && trans.includes('\n')) {
+    issues.push(...validateNewlineRejoin(trans, rows, intro));
+  }
 
   if (rows.length !== LINES_PER_SHLOKA) {
     issues.push(`rowCount:${rows.length}`);
@@ -141,14 +170,14 @@ function main() {
   for (const chMeta of chaptersConfig.chapters) {
     const ch = chMeta.id;
     if (ch < from || ch > to) continue;
-    delete require.cache[require.resolve(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`))];
-    const chapter = require(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`));
+    delete require.cache[require.resolve(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`))];
+    const chapter = require(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`));
     let chFail = 0;
 
     for (const [verseId, shloka] of Object.entries(chapter)) {
       if (!/^\d+\.\d+$/.test(verseId)) continue;
       const pada = getVersePadaOverride(verseId);
-      const issues = validateVerse(verseId, shloka, pada);
+      const issues = validateVerse(verseId, shloka, pada, ch);
       if (!issues.length) continue;
       chFail++;
       failures.push({ verseId, issues });

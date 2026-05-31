@@ -7,10 +7,10 @@
  */
 const path = require('path');
 const {
-  extractSpeakerPrefix,
-  bodyPadasToFourLines,
+  inferPadaLinesFromTransliteration,
   splitVerseMeaning,
   stripAddresseeFromBody,
+  stripNarratorLeadFromBody,
 } = require('./gita-line-breakdown');
 const {
   loadPadaLinesFile,
@@ -18,8 +18,8 @@ const {
   setVersePadaOverride,
 } = require('../lib/gita-pada-lines');
 
-const BACKEND_DATA = path.join(__dirname, '..', 'backend', 'data');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const { DATA_DIR } = require('./lib/data-dir');
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 function parseChapterArg() {
   const arg = process.argv.find((a) => a.startsWith('--chapter='));
@@ -33,6 +33,7 @@ function draftMeaningsForShloka(shloka, lineCount, intro) {
   if (intro && en) {
     const colon = en.indexOf(':');
     if (colon > 0) en = en.slice(colon + 1).trim();
+    en = stripNarratorLeadFromBody(en);
     en = stripAddresseeFromBody(en);
   }
   if (intro && te && /ఇలా అన్నాడు|అన్నాడు:/.test(te)) {
@@ -51,14 +52,12 @@ function draftMeaningsForShloka(shloka, lineCount, intro) {
 function inferFromShloka(shloka) {
   const transliteration = (shloka.transliteration || '').trim();
   if (!transliteration) return null;
-  const { speaker, bodyPadas } = extractSpeakerPrefix(transliteration);
-  const lines = bodyPadasToFourLines(bodyPadas);
-  if (!lines.length) return null;
-  const intro = speaker || undefined;
+  const draft = inferPadaLinesFromTransliteration(transliteration);
+  if (!draft?.lines?.length) return null;
+  const intro = draft.intro;
   return {
-    ...(intro ? { intro } : {}),
-    lines,
-    ...draftMeaningsForShloka(shloka, lines.length, intro),
+    ...draft,
+    ...draftMeaningsForShloka(shloka, draft.lines.length, intro),
   };
 }
 
@@ -72,8 +71,8 @@ function main() {
   for (const chMeta of chaptersConfig.chapters) {
     const ch = chMeta.id;
     if (chapterFilter && ch !== chapterFilter) continue;
-    delete require.cache[require.resolve(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`))];
-    const chapter = require(path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`));
+    delete require.cache[require.resolve(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`))];
+    const chapter = require(path.join(DATA_DIR, 'chapters', `chapter${ch}.js`));
 
     for (const [verseId, shloka] of Object.entries(chapter)) {
       if (!/^\d+\.\d+$/.test(verseId)) continue;

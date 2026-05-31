@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-export const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://localhost:5000' : '');
+/** Empty = same-origin `/api` on Vercel. Set VITE_API_URL only for a separate API host. */
+export const API_URL = (import.meta.env.VITE_API_URL || '').replace(/\/$/, '');
 
 const api = axios.create({
   baseURL: API_URL

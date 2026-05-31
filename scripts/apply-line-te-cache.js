@@ -1,13 +1,11 @@
 /** Apply scripts/data/line-te-cache.json to all chapter lineBreakdown te fields. */
-const fs = require('fs');
-const path = require('path');
 const { hasTeluguScript } = require('./gita-line-breakdown');
 
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const LIB_DATA = path.join(ROOT, 'lib', 'data');
+const fs = require('fs');
+const path = require('path');
+const { DATA_DIR } = require('./lib/data-dir');
 const CACHE_FILE = path.join(__dirname, 'data', 'line-te-cache.json');
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 function main() {
   const cache = JSON.parse(fs.readFileSync(CACHE_FILE, 'utf8'));
@@ -15,7 +13,7 @@ function main() {
 
   for (const chMeta of chaptersConfig.chapters) {
     const ch = chMeta.id;
-    const modPath = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+    const modPath = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
     delete require.cache[require.resolve(modPath)];
     const chapter = require(modPath);
     const out = { ...chapter };
@@ -44,14 +42,9 @@ function main() {
       });
     const content = `const CHAPTER_${ch}_SHLOKAS = ${JSON.stringify(sorted, null, 4)};\n\nmodule.exports = CHAPTER_${ch}_SHLOKAS;\n`;
     fs.writeFileSync(modPath, content, 'utf8');
-    if (fs.existsSync(LIB_DATA)) {
-      fs.copyFileSync(modPath, path.join(LIB_DATA, 'chapters', `chapter${ch}.js`));
-    }
   }
 
-  if (fs.existsSync(LIB_DATA)) {
-    fs.copyFileSync(CACHE_FILE, path.join(LIB_DATA, 'line-te-cache.json'));
-  }
+  fs.copyFileSync(CACHE_FILE, path.join(DATA_DIR, 'line-te-cache.json'));
   console.log(`Applied Telugu to ${updated} line rows.`);
 }
 

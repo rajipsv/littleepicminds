@@ -120,6 +120,50 @@ function bodyPadasToFourLines(bodyPadas) {
   return splitIntoFixedLines(lines.join(' '), LINES_PER_SHLOKA);
 }
 
+/** Split one `\n` body line into two padas (space tokens only — keeps vijñāna-sahitaṁ intact). */
+function splitNewlineBodyLineInTwo(text) {
+  const tokens = String(text || '')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean);
+  if (tokens.length <= 1) return [String(text || '').trim(), ''];
+  const n = Math.ceil(tokens.length / 2);
+  return [tokens.slice(0, n).join(' '), tokens.slice(n).join(' ')].filter((l) => l.trim());
+}
+
+/**
+ * Four padas from chapter transliteration with `\n`: strip leading …uvācha, then split each body line in two.
+ * Preserves hyphens/spelling from the source line text.
+ */
+function bodyLinesFromNewlineTransliteration(transliteration) {
+  const raw = String(transliteration || '').trim();
+  if (!raw.includes('\n')) return null;
+
+  const { bodyPadas } = extractSpeakerPrefix(raw);
+  if (!bodyPadas.length) return null;
+
+  if (bodyPadas.length === 2) {
+    const four = [
+      ...splitNewlineBodyLineInTwo(bodyPadas[0]),
+      ...splitNewlineBodyLineInTwo(bodyPadas[1]),
+    ].filter((l) => l.trim());
+    return four.length === LINES_PER_SHLOKA ? four : null;
+  }
+
+  if (bodyPadas.length === 1) {
+    return splitIntoFixedLines(bodyPadas[0], LINES_PER_SHLOKA);
+  }
+
+  const mid = Math.ceil(bodyPadas.length / 2);
+  const first = bodyPadas.slice(0, mid).join(' ').trim();
+  const second = bodyPadas.slice(mid).join(' ').trim();
+  const four = [
+    ...splitNewlineBodyLineInTwo(first),
+    ...splitNewlineBodyLineInTwo(second),
+  ].filter((l) => l.trim());
+  return four.length === LINES_PER_SHLOKA ? four : splitIntoFixedLines(raw.replace(/\n+/g, ' '), LINES_PER_SHLOKA);
+}
+
 /** Split sandhi tokens so pada breaks are visible (e.g. pāṇḍuputrāṇāmācārya → two words). */
 function expandPadaTokens(text) {
   return (text || '')
@@ -514,7 +558,8 @@ function inferPadaLinesFromTransliteration(transliteration) {
   const t = (transliteration || '').trim();
   if (!t) return null;
   const { speaker, bodyPadas } = extractSpeakerPrefix(t);
-  const lines = bodyPadasToFourLines(bodyPadas);
+  const lines =
+    bodyLinesFromNewlineTransliteration(t) || bodyPadasToFourLines(bodyPadas);
   if (!lines.length) return null;
   return { ...(speaker ? { intro: speaker } : {}), lines };
 }
@@ -533,8 +578,16 @@ function buildLineBreakdown(opts = {}) {
   const { speaker: skSpeaker, bodyParts: skBody } = extractSanskritSpeaker(opts.sanskrit || sanskrit);
   const introIast = pada?.intro || speaker || '';
 
-  const transLines =
-    pada?.lines?.length ? pada.lines.map((l) => l.trim()).filter(Boolean) : bodyPadasToFourLines(bodyPadas);
+  const newlinePadas =
+    opts.preferNewlinePadas && transliteration.includes('\n')
+      ? bodyLinesFromNewlineTransliteration(transliteration)
+      : null;
+
+  const transLines = newlinePadas?.length
+    ? newlinePadas
+    : pada?.lines?.length
+      ? pada.lines.map((l) => l.trim()).filter(Boolean)
+      : bodyPadasToFourLines(bodyPadas);
 
   const skBodyText = skBody.join(' ').trim() || sanskrit.replace(/\|/g, ' ').trim();
   const skLines =
@@ -702,6 +755,8 @@ module.exports = {
   splitSanskritPadas,
   extractSpeakerPrefix,
   bodyPadasToFourLines,
+  bodyLinesFromNewlineTransliteration,
+  splitNewlineBodyLineInTwo,
   twoDottedHalvesToFourLines,
   expandPadaTokens,
   extractSanskritSpeaker,

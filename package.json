@@ -28,7 +28,6 @@
     "tts:test": "node scripts/test-tts-providers.js",
     "tts:test:te": "node scripts/test-tts-providers.js --te",
     "gita:tts-cache-stats": "node scripts/tts-cache-stats.js",
-    "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js",
     "gita:sync-hf-audio": "node scripts/sync-gita-audio-hf.js",
     "gita:line-timings": "node scripts/compute-gita-line-timings.js",
     "gita:upload-r2": "node scripts/upload-gita-audio-r2.js",
@@ -37,7 +36,8 @@
     "gita:fix-pada-meanings": "node scripts/fix-pada-line-meanings.js",
     "gita:normalize-line-ends": "node scripts/normalize-manifest-line-ends.js",
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
-    "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js"
+    "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js",
+    "db:migrate": "node backend/migrate.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",

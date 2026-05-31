@@ -27,7 +27,8 @@ const { loadHfVerses, saveHfVerses, HF_DATASET, HF_LICENSE } = require('../lib/g
 
 const DATASET = 'JDhruv14/Bhagavad-Gita_Audio';
 const ROWS_API = `https://datasets-server.huggingface.co/rows?dataset=${encodeURIComponent(DATASET)}&config=default&split=train`;
-const CHAPTERS_JSON = path.join(__dirname, '..', 'backend', 'data', 'chapters.json');
+const { DATA_DIR } = require('./lib/data-dir');
+const CHAPTERS_JSON = path.join(DATA_DIR, 'chapters.json');
 
 /** Prefer manifest trainIndex (HF row order can differ slightly from chapters.json totals). */
 function getChapterRowRange(chapterNum, manifest) {
@@ -153,7 +154,7 @@ async function main() {
 
   const chapterRange = chapterFilter ? getChapterRowRange(chapterFilter, audioManifest) : null;
   if (chapterFilter && !chapterRange) {
-    throw new Error(`Unknown chapter ${chapterFilter} (see backend/data/chapters.json)`);
+    throw new Error(`Unknown chapter ${chapterFilter} (see lib/data/chapters.json)`);
   }
 
   let offset = chapterRange ? chapterRange.start : 0;

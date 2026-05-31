@@ -20,6 +20,8 @@ Welcome to **littleEpicMinds** – a premium, interactive learning platform desi
 
 ## 🚀 Deployment (Vercel)
 
+Production is **Vercel-only**: root [`vercel.json`](vercel.json) builds the frontend and routes `/api/*` to [`api/index.js`](api/index.js). Gita content lives in [`lib/data/`](lib/data/) (bundled via `includeFiles`). There is no separate Express server or `backend/data` mirror.
+
 This project is optimized for Vercel deployment. 
 
 1. **Import** the repository to Vercel.
@@ -33,34 +35,13 @@ This project is optimized for Vercel deployment.
    - `TRANSLATE_LIVE`: `false` in production (use `npm run gita:translate-lines` batch cache).
 4. Click **Deploy**!
 
-## 🛠️ Local Development
+## Testing and data scripts
 
-### Prerequisites
-- Node.js installed.
-- A PostgreSQL database (or Neon.tech account).
+The app is exercised on **Vercel** (`https://littleepicminds.vercel.app`). The frontend calls same-origin `/api` (no `localhost` API URL).
 
-### Installation
+**On Vercel**, set env vars from [backend/.env.template](backend/.env.template) (database, TTS, `GITA_AUDIO_BASE_URL`, `VITE_GITA_AUDIO_BASE_URL`, etc.) and redeploy after changes.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rajipsv/littleepicminds.git
-   ```
-
-2. Setup the Backend:
-   ```bash
-   cd frontend/backend
-   npm install
-   # Copy backend/.env.template → backend/.env (DATABASE_URL, GOOGLE_TTS_API_KEY, etc.)
-   node migrate.js # Initialize database tables
-   node server.js
-   ```
-
-3. Setup the Frontend:
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
+**On your machine** (optional, for content/audio pipelines only): Node.js + `npm run gita:*` scripts (sync HF WAVs, line timings, upload R2). These do not require running a local web server.
 
 ## 🎙️ Voice (TTS) — free options (no Google billing)
 
@@ -83,7 +64,7 @@ This project is optimized for Vercel deployment.
 | `npm run gita:translate-lines` | Batch EN→TE line meanings into `lib/data/line-te-cache.json` |
 | `npm run gita:sync-hf-audio` | Download per-śloka chanting WAV (Apache-2.0 HF dataset); add `-- --chapter=1` for one chapter |
 | `npm run gita:pada-lines:export -- --chapter=N` | Draft 4 pada lines + meanings into `scripts/data/gita-pada-lines.json` |
-| `npm run gita:line-breakdown -- --chapter=N` | Apply pada lines + meanings to `backend/data/chapters/chapterN.js` |
+| `npm run gita:line-breakdown -- --chapter=N` | Apply pada lines + meanings to `lib/data/chapters/chapterN.js` |
 | `npm run gita:validate-line-breakdown -- --from=3 --to=9` | Check 4 rows, `chantIntro`, pada alignment |
 | `npm run gita:fix-pada-meanings -- --from=1 --to=9` | Strip narrator gloss from row 0 when `intro` is set |
 | `npm run gita:line-timings -- --chapter=N` | Pause-based chant sync (needs local WAVs in `lib/data/gita_audio/`) |
@@ -91,7 +72,7 @@ This project is optimized for Vercel deployment.
 | `npm run gita:qa-segments` | Assert manifest `lineEnds` + segment builder (1.1, 2.47, …) |
 | `npm run gita:learn:setup -- --chapter=N` | All three steps above for one chapter |
 
-- **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
+- **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run `npm run gita:prewarm-tts` locally, then commit/deploy `lib/data/audio_cache` (Vercel bundles it).
 - **Śloka chanting (Apache-2.0, Dhruv Jaradi):** Dataset [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). **Production playback is R2-only:** all `{verseId}.wav` on Cloudflare R2; set **`GITA_AUDIO_BASE_URL`** and **`VITE_GITA_AUDIO_BASE_URL`** on Vercel (required). Line segments use `lineEnds` + `introEnd` from the manifest (`npm run gita:line-timings` after local `gita:sync-hf-audio`). Pipeline: sync → upload (`npm run gita:upload-r2`) → CORS (`scripts/r2-cors-gita-audio.json`). Details: [`docs/GITA_AUDIO_R2.md`](docs/GITA_AUDIO_R2.md). See [`NOTICES.md`](NOTICES.md).
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `hybrid` tries Sarvam, then Google (te/hi/en WaveNet); cache checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).

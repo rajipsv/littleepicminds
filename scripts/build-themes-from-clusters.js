@@ -5,9 +5,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const LIB_DATA = path.join(ROOT, 'lib', 'data');
+const { DATA_DIR } = require('./lib/data-dir');
 const CLUSTERS_PATH = path.join(__dirname, 'data', 'gita-theme-clusters.json');
 const AUTHORED_PATH = path.join(__dirname, 'data', 'gita-theme-stories-authored.json');
 
@@ -64,13 +62,8 @@ function main() {
     process.exit(1);
   }
 
-  fs.writeFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), JSON.stringify(themesSeeds, null, 2), 'utf8');
-  fs.writeFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), JSON.stringify(themesSeekers, null, 2), 'utf8');
-
-  if (fs.existsSync(LIB_DATA)) {
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seeds.json'), path.join(LIB_DATA, 'themes_seeds.json'));
-    fs.copyFileSync(path.join(BACKEND_DATA, 'themes_seekers.json'), path.join(LIB_DATA, 'themes_seekers.json'));
-  }
+  fs.writeFileSync(path.join(DATA_DIR, 'themes_seeds.json'), JSON.stringify(themesSeeds, null, 2), 'utf8');
+  fs.writeFileSync(path.join(DATA_DIR, 'themes_seekers.json'), JSON.stringify(themesSeekers, null, 2), 'utf8');
 
   let s = 0;
   let k = 0;

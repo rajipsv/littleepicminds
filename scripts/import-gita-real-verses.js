@@ -11,21 +11,20 @@ const path = require('path');
 const Sanscript = require('@indic-transliteration/sanscript');
 const { buildLineBreakdown, cleanSanskrit: cleanSk } = require('./gita-line-breakdown');
 
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-const DATA_DIR = path.join(__dirname, 'data');
-const VERSE_FILE = path.join(DATA_DIR, 'gita-verse.json');
-const TRANSLATION_FILE = path.join(DATA_DIR, 'gita-translation.json');
+const { DATA_DIR } = require('./lib/data-dir');
+const SCRIPT_DATA = path.join(__dirname, 'data');
+const VERSE_FILE = path.join(SCRIPT_DATA, 'gita-verse.json');
+const TRANSLATION_FILE = path.join(SCRIPT_DATA, 'gita-translation.json');
 
 function ensureSourceData() {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
+  fs.mkdirSync(SCRIPT_DATA, { recursive: true });
   const urls = [
     ['gita-verse.json', 'https://ravisiyer.github.io/gita-data/v1/verse.json'],
     ['gita-translation.json', 'https://ravisiyer.github.io/gita-data/v1/translation.json'],
   ];
   const https = require('https');
   for (const [name, url] of urls) {
-    const dest = path.join(DATA_DIR, name);
+    const dest = path.join(SCRIPT_DATA, name);
     if (fs.existsSync(dest) && fs.statSync(dest).size > 1000) continue;
     console.log(`Downloading ${name}...`);
     require('child_process').execSync(
@@ -38,7 +37,7 @@ function ensureSourceData() {
 ensureSourceData();
 const VERSES = require(VERSE_FILE);
 const TRANSLATIONS = require(TRANSLATION_FILE);
-const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 const PREFERRED_AUTHORS = ['Swami Sivananda', 'Swami Gambirananda', 'Swami Adidevananda'];
 
@@ -95,7 +94,7 @@ function buildEnglishMap() {
 }
 
 function loadChapter(ch) {
-  const file = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+  const file = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
   if (!fs.existsSync(file)) return {};
   return require(file);
 }
@@ -168,7 +167,7 @@ function writeChapterFile(ch, shlokas) {
     .forEach((k) => {
       sorted[k] = shlokas[k];
     });
-  const filePath = path.join(BACKEND_DATA, 'chapters', `chapter${ch}.js`);
+  const filePath = path.join(DATA_DIR, 'chapters', `chapter${ch}.js`);
   const content = `const CHAPTER_${ch}_SHLOKAS = ${JSON.stringify(sorted, null, 4)};\n\nmodule.exports = CHAPTER_${ch}_SHLOKAS;\n`;
   fs.writeFileSync(filePath, content, 'utf-8');
 }
@@ -197,18 +196,6 @@ function main() {
 
     writeChapterFile(ch, out);
     console.log(`✅ Chapter ${ch}: ${chMeta.count} verses written`);
-  }
-
-  // Mirror to lib/data (not under /api — Vercel Hobby 12-function limit)
-  const libCh = path.join(ROOT, 'lib', 'data', 'chapters');
-  if (fs.existsSync(path.join(ROOT, 'lib', 'data'))) {
-    fs.mkdirSync(libCh, { recursive: true });
-    for (const chMeta of chaptersConfig.chapters) {
-      const src = path.join(BACKEND_DATA, 'chapters', `chapter${chMeta.id}.js`);
-      if (fs.existsSync(src)) {
-        fs.copyFileSync(src, path.join(libCh, `chapter${chMeta.id}.js`));
-      }
-    }
   }
 
   console.log(`\n🚀 Import complete. Updated ${updated} verses, missing source: ${skipped}`);

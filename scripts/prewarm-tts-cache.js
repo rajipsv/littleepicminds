@@ -1,5 +1,5 @@
 /**
- * Pre-generate TTS audio into backend/data/audio_cache (or TTS_CACHE_DIR).
+ * Pre-generate TTS audio into lib/data/audio_cache (or TTS_CACHE_DIR).
  * Each unique phrase is synthesized once; the app reuses cache (zero repeat Sarvam credits).
  * Uses same provider chain as production (TTS_PROVIDER, default auto).
  *
@@ -10,19 +10,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
-const BACKEND_DATA = path.join(ROOT, 'backend', 'data');
-
-function loadEnv() {
-  const envPath = path.join(ROOT, 'backend', '.env');
-  if (!fs.existsSync(envPath)) return;
-  for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
-    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$/);
-    if (m && !process.env[m[1]]) {
-      process.env[m[1]] = m[2].replace(/^["']|["']$/g, '').trim();
-    }
-  }
-}
+const { DATA_DIR } = require('./lib/data-dir');
+const { loadEnv, ENV_PATH } = require('./lib/load-env');
 
 const { lineTextFromRow } = require('../lib/tts/shloka-line');
 const { hasTeluguScript } = require('../lib/translate/line-meaning');
@@ -42,10 +31,10 @@ function samplesFromRow(row) {
 
 function collectSamples() {
   const samples = [];
-  const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+  const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
   for (const chMeta of chaptersConfig.chapters) {
-    const chapter = require(path.join(BACKEND_DATA, 'chapters', `chapter${chMeta.id}.js`));
+    const chapter = require(path.join(DATA_DIR, 'chapters', `chapter${chMeta.id}.js`));
     for (const key of Object.keys(chapter)) {
       if (!/^\d+\.\d+$/.test(key)) continue;
       const verse = chapter[key];
@@ -87,13 +76,13 @@ async function main() {
 
   let samples = collectSamples();
   if (chapterFilter) {
-    const chaptersConfig = require(path.join(BACKEND_DATA, 'chapters.json'));
+    const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
     const ch = chaptersConfig.chapters.find((c) => c.id === chapterFilter);
     if (!ch) {
       console.error(`Unknown chapter ${chapterFilter}`);
       process.exit(1);
     }
-    const chapter = require(path.join(BACKEND_DATA, 'chapters', `chapter${chapterFilter}.js`));
+    const chapter = require(path.join(DATA_DIR, 'chapters', `chapter${chapterFilter}.js`));
     samples = [];
     for (const key of Object.keys(chapter)) {
       if (!/^\d+\.\d+$/.test(key)) continue;
@@ -128,7 +117,7 @@ async function main() {
 
   console.log(`Done. success=${ok} failed=${fail}`);
   if (fail && !process.env.GOOGLE_TTS_API_KEY && !process.env.GOOGLE_APPLICATION_CREDENTIALS && !process.env.SARVAM_API_KEY) {
-    console.error('Set GOOGLE_TTS_API_KEY or SARVAM_API_KEY in backend/.env');
+    console.error(`Set GOOGLE_TTS_API_KEY or SARVAM_API_KEY in ${ENV_PATH}`);
     process.exit(1);
   }
 }

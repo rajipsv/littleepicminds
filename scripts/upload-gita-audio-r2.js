@@ -18,7 +18,8 @@
  * After upload, apply CORS: Cloudflare dashboard → R2 bucket → Settings → CORS
  *   or: wrangler r2 bucket cors put <bucket> --file scripts/r2-cors-gita-audio.json
  */
-require('dotenv').config({ path: require('path').join(__dirname, '..', 'backend', '.env') });
+const { ENV_PATH } = require('./lib/data-dir');
+require('dotenv').config({ path: ENV_PATH });
 require('dotenv').config({ path: require('path').join(__dirname, '..', '.env') });
 
 const fs = require('fs');

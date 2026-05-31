@@ -1,5 +1,5 @@
 /**
- * Merge Hugging Face sanskrit + transliteration into backend/data/chapters/chapterN.js
+ * Merge Hugging Face sanskrit + transliteration into lib/data/chapters/chapterN.js
  * Run after: npm run gita:sync-hf-audio -- --text-only  (or full sync)
  *
  *   npm run gita:merge-hf-chapters
@@ -13,7 +13,8 @@ const {
   shlokaIdToVerseId,
 } = require('../lib/gita-hf');
 
-const CHAPTERS_DIR = path.join(__dirname, '..', 'backend', 'data', 'chapters');
+const { DATA_DIR } = require('./lib/data-dir');
+const CHAPTERS_DIR = path.join(DATA_DIR, 'chapters');
 
 function parseChapterArg() {
   const arg = process.argv.find((a) => a.startsWith('--chapter='));

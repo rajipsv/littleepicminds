@@ -6,7 +6,8 @@ const fs = require('fs');
 const path = require('path');
 const FAMOUS = require('./gita-famous-verses');
 const BLUEPRINTS = require('./gita-chapter-blueprints');
-const chaptersConfig = require(path.join(__dirname, '..', 'backend', 'data', 'chapters.json'));
+const { DATA_DIR } = require('./lib/data-dir');
+const chaptersConfig = require(path.join(DATA_DIR, 'chapters.json'));
 
 const OUT = path.join(__dirname, 'data', 'gita-theme-clusters.json');
 

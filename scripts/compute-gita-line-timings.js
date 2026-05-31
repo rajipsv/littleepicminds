@@ -12,7 +12,8 @@ const { AUDIO_DIR, loadManifest, saveManifest, getAudioFilePath } = require('../
 const { computeLineTimingsFromWav } = require('../lib/gita-line-timings');
 const { LINES_PER_SHLOKA, extractSpeakerPrefix } = require('./gita-line-breakdown');
 
-const CHAPTERS_DIR = path.join(__dirname, '..', 'backend', 'data', 'chapters');
+const { DATA_DIR } = require('./lib/data-dir');
+const CHAPTERS_DIR = path.join(DATA_DIR, 'chapters');
 
 function parseChapterArg() {
   const arg = process.argv.find((a) => a.startsWith('--chapter='));

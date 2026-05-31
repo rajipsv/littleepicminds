@@ -8,10 +8,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
+const { DATA_DIR } = require('./lib/data-dir');
 const CLUSTERS_PATH = path.join(__dirname, 'data', 'gita-theme-clusters.json');
 const OUT_DIR = path.join(__dirname, 'data');
-const CHAPTERS_DIR = path.join(ROOT, 'backend', 'data', 'chapters');
+const CHAPTERS_DIR = path.join(DATA_DIR, 'chapters');
 
 function loadChapter(ch) {
   const mod = require(path.join(CHAPTERS_DIR, `chapter${ch}.js`));

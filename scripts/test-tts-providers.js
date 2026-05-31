@@ -6,16 +6,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = path.join(__dirname, '..');
-const envPath = path.join(ROOT, 'backend', '.env');
-if (fs.existsSync(envPath)) {
-  for (const line of fs.readFileSync(envPath, 'utf8').split('\n')) {
-    const m = line.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)$/);
-    if (m && !process.env[m[1]]) {
-      process.env[m[1]] = m[2].replace(/^["']|["']$/g, '').trim();
-    }
-  }
-}
+const { loadEnv } = require('./lib/load-env');
+loadEnv();
 
 const useTe = process.argv.includes('--te');
 const text = useTe ? 'ఓ సంజయా, పుణ్యక్షేత్రమైన' : 'O Sanjaya, on the holy field';
