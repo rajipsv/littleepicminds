@@ -6,6 +6,9 @@
  *   npm run gita:sync-hf-audio -- --urls-only
  *   npm run gita:sync-hf-audio -- --urls-only --chapter=1
  *
+ * With --chapter=N, only that chapter's HF row range is fetched (e.g. ch2 = rows 47–118),
+ * not all 701 ślokas. The datasets-server API has no chapter filter, so we use row offsets.
+ *
  * Dataset: https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio (Dhruv Jaradi)
  */
 const fs = require('fs');
@@ -24,6 +27,36 @@ const { loadHfVerses, saveHfVerses, HF_DATASET, HF_LICENSE } = require('../lib/g
 
 const DATASET = 'JDhruv14/Bhagavad-Gita_Audio';
 const ROWS_API = `https://datasets-server.huggingface.co/rows?dataset=${encodeURIComponent(DATASET)}&config=default&split=train`;
+const CHAPTERS_JSON = path.join(__dirname, '..', 'backend', 'data', 'chapters.json');
+
+/** Prefer manifest trainIndex (HF row order can differ slightly from chapters.json totals). */
+function getChapterRowRange(chapterNum, manifest) {
+  const prefix = `${chapterNum}.`;
+  const trainIndices = [];
+  for (const [verseId, entry] of Object.entries(manifest?.verses || {})) {
+    if (!verseId.startsWith(prefix)) continue;
+    const idx = typeof entry === 'object' ? entry.trainIndex : null;
+    if (Number.isFinite(idx)) trainIndices.push(idx);
+  }
+  if (trainIndices.length > 0) {
+    const start = Math.min(...trainIndices);
+    const end = Math.max(...trainIndices) + 1;
+    return { start, end, length: trainIndices.length, source: 'manifest' };
+  }
+
+  const cfg = JSON.parse(fs.readFileSync(CHAPTERS_JSON, 'utf8'));
+  const chapters = cfg.chapters || [];
+  const ch = chapters.find((c) => c.id === chapterNum);
+  if (!ch) return null;
+  let start = 0;
+  for (const c of chapters) {
+    if (c.id === chapterNum) {
+      return { start, length: ch.count, end: start + ch.count, source: 'chapters.json' };
+    }
+    start += c.count;
+  }
+  return null;
+}
 
 /** HF datasets-server URLs are signed; re-run --urls-only yearly before they expire. */
 function extractTrainIndex(audioUrl) {
@@ -118,7 +151,13 @@ async function main() {
     'Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.';
   if (!audioManifest.verses) audioManifest.verses = {};
 
-  let offset = 0;
+  const chapterRange = chapterFilter ? getChapterRowRange(chapterFilter, audioManifest) : null;
+  if (chapterFilter && !chapterRange) {
+    throw new Error(`Unknown chapter ${chapterFilter} (see backend/data/chapters.json)`);
+  }
+
+  let offset = chapterRange ? chapterRange.start : 0;
+  const endOffset = chapterRange ? chapterRange.end : null;
   const pageSize = 50;
   let total = 701;
   let downloaded = 0;
@@ -137,9 +176,15 @@ async function main() {
   console.log(
     `Syncing from ${HF_DATASET}${chapterFilter ? ` chapter ${chapterFilter}` : ''}${modeLabel}...`
   );
+  if (chapterRange) {
+    console.log(
+      `  HF rows ${chapterRange.start}–${chapterRange.end - 1} (${chapterRange.length} ślokas via ${chapterRange.source}, not all ${total})`
+    );
+  }
 
-  while (offset < total) {
-    const page = await fetchRows(offset, pageSize);
+  while (offset < total && (endOffset == null || offset < endOffset)) {
+    const fetchLen = endOffset != null ? Math.min(pageSize, endOffset - offset) : pageSize;
+    const page = await fetchRows(offset, fetchLen);
     total = page.num_rows_total ?? total;
     const rows = page.rows || [];
 
@@ -196,7 +241,14 @@ async function main() {
 
     offset += rows.length;
     if (!rows.length) break;
-    if (urlsOnly && offset % 100 === 0) console.log(`  urls ${urlsSaved} (offset ${offset}/${total})`);
+    if (endOffset != null && offset >= endOffset) break;
+    if (urlsOnly) {
+      const progressEnd = endOffset ?? total;
+      const progressStart = chapterRange?.start ?? 0;
+      if (offset === progressStart || offset >= progressEnd || offset % 50 === 0) {
+        console.log(`  urls ${urlsSaved} (${offset - progressStart}/${progressEnd - progressStart} rows for this chapter)`);
+      }
+    }
   }
 
   saveHfVerses(hfData);
