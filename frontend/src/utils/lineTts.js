@@ -30,6 +30,18 @@ const browserTtsOnly = () =>
   import.meta.env.VITE_TTS_BROWSER_ONLY === 'true' ||
   import.meta.env.VITE_TTS_BROWSER_ONLY === '1';
 
+let activeMeaningAudio = null;
+
+/** Stop any in-flight meaning TTS (server audio or browser). */
+export function stopMeaningAudio() {
+  if (activeMeaningAudio) {
+    activeMeaningAudio.pause();
+    activeMeaningAudio.src = '';
+    activeMeaningAudio = null;
+  }
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+}
+
 export async function fetchTtsAudio(text, targetLang) {
   if (browserTtsOnly()) {
     const err = new Error('Browser-only TTS mode');
@@ -108,6 +120,7 @@ export function speakWithBrowser(text, uiLang = 'en') {
 export async function playTtsOrBrowser(text, uiLang, playbackRate = 0.9) {
   const trimmed = String(text || '').trim();
   if (!trimmed) return;
+  stopMeaningAudio();
   if (browserTtsOnly()) {
     await speakWithBrowser(trimmed, uiLang);
     return;
@@ -121,6 +134,18 @@ export async function playTtsOrBrowser(text, uiLang, playbackRate = 0.9) {
   }
 }
 
+/** Fill server TTS cache without playing audio. */
+export async function warmMeaningTtsCache(text, uiLang) {
+  if (browserTtsOnly()) return;
+  const trimmed = String(text || '').trim();
+  if (!trimmed) return;
+  try {
+    await fetchTtsAudio(trimmed, uiLang);
+  } catch {
+    /* cache miss or offline — play will use browser fallback */
+  }
+}
+
 export async function playMeaningAudio(text, uiLang, playbackRate = 0.9) {
   return playTtsOrBrowser(text, uiLang, playbackRate);
 }
@@ -128,10 +153,21 @@ export async function playMeaningAudio(text, uiLang, playbackRate = 0.9) {
 export function playAudioBase64(base64, encoding, playbackRate = 1) {
   return new Promise((resolve, reject) => {
     const audio = new Audio(`data:audio/${encoding};base64,${base64}`);
+    activeMeaningAudio = audio;
     audio.playbackRate = playbackRate;
-    audio.onended = () => resolve();
-    audio.onerror = () => reject(new Error('Audio playback failed'));
-    audio.play().catch(reject);
+    const finish = () => {
+      if (activeMeaningAudio === audio) activeMeaningAudio = null;
+      resolve();
+    };
+    audio.onended = finish;
+    audio.onerror = () => {
+      if (activeMeaningAudio === audio) activeMeaningAudio = null;
+      reject(new Error('Audio playback failed'));
+    };
+    audio.play().catch((err) => {
+      if (activeMeaningAudio === audio) activeMeaningAudio = null;
+      reject(err);
+    });
   });
 }
 

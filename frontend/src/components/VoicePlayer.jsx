@@ -4,10 +4,12 @@ import { useAuth } from '../context/AuthContext';
 import {
   playLineSequence,
   fetchTtsAudio,
+  stopMeaningAudio,
   ensureGitaChantManifest,
   resolveChantAudioUrl,
   DEFAULT_GAP_MS,
 } from '../utils/lineTts';
+import { stopChantSegment } from '../utils/gitaChantAudio';
 
 const VoicePlayer = ({
   text,
@@ -37,7 +39,8 @@ const VoicePlayer = ({
     return () => {
       if (abortRef.current) abortRef.current.abort();
       if (audioRef.current) audioRef.current.pause();
-      window.speechSynthesis.cancel();
+      stopChantSegment();
+      stopMeaningAudio();
     };
   }, []);
 
@@ -72,6 +75,8 @@ const VoicePlayer = ({
     });
 
   const playAiVoice = async () => {
+    stopMeaningAudio();
+    stopChantSegment();
     setIsAiLoading(true);
     abortRef.current = new AbortController();
     const signal = abortRef.current.signal;
@@ -218,7 +223,8 @@ const VoicePlayer = ({
     if (isPlaying) {
       if (abortRef.current) abortRef.current.abort();
       if (audioRef.current) audioRef.current.pause();
-      window.speechSynthesis.cancel();
+      stopChantSegment();
+      stopMeaningAudio();
       setIsPlaying(false);
       if (onEnd) onEnd();
     } else {

@@ -2,7 +2,13 @@ import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
 import api, { API_URL } from '../api';
-import { playMeaningAudio, playTtsOrBrowser, DEFAULT_GAP_MS } from '../utils/lineTts';
+import {
+  playMeaningAudio,
+  playTtsOrBrowser,
+  warmMeaningTtsCache,
+  stopMeaningAudio,
+  DEFAULT_GAP_MS,
+} from '../utils/lineTts';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
@@ -54,7 +60,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     return () => {
       abortRef.current = true;
       stopChantSegment();
-      window.speechSynthesis?.cancel();
+      stopMeaningAudio();
     };
   }, []);
 
@@ -104,16 +110,27 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     };
   }, [lang, rowsKey, wordByWord]);
 
-  /** Server TTS cache: prefetch unique meaning strings once per verse view. */
+  /** Warm server TTS cache when Learn step is open — no audio, no work on Listen step. */
   useEffect(() => {
     if (!wordByWord?.length) return;
+    let cancelled = false;
     const seen = new Set();
+    const texts = [];
     wordByWord.forEach((item, index) => {
       const text = displayMeaning(item, index)?.trim();
       if (!text || seen.has(text)) return;
       seen.add(text);
-      playTtsOrBrowser(text, lang).catch(() => {});
+      texts.push(text);
     });
+    (async () => {
+      for (const text of texts) {
+        if (cancelled) break;
+        await warmMeaningTtsCache(text, lang);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, [wordByWord, lang, displayMeaning, rowsKey, teMeanings]);
 
   const ensureChantBounds = async () => {
@@ -182,7 +199,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     if (!item) return;
 
     stopChantSegment();
-    window.speechSynthesis?.cancel();
+    stopMeaningAudio();
     abortRef.current = false;
     setPlaying({ index, part });
 
