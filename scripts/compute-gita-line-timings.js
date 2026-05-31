@@ -106,15 +106,17 @@ async function main() {
             : typeof prev === 'string'
               ? prev
               : undefined;
-        manifest.verses[verseId] = {
+        const entry = {
           ...(typeof prev === 'object' ? prev : {}),
           ...(url ? { url } : {}),
           lineEnds,
           lineTimings: lineEnds,
           lineCount: n,
           ...(Number.isFinite(duration) ? { duration } : {}),
-          ...(introEnd != null ? { introEnd } : {}),
         };
+        if (hasIntro && introEnd != null) entry.introEnd = introEnd;
+        else delete entry.introEnd;
+        manifest.verses[verseId] = entry;
         computed++;
         if (computed % 20 === 0) console.log(`  ${computed} timings (${verseId})`);
       } catch (e) {

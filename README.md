@@ -85,10 +85,12 @@ This project is optimized for Vercel deployment.
 | `npm run gita:pada-lines:export -- --chapter=N` | Draft 4 pada lines + meanings into `scripts/data/gita-pada-lines.json` |
 | `npm run gita:line-breakdown -- --chapter=N` | Apply pada lines + meanings to `backend/data/chapters/chapterN.js` |
 | `npm run gita:line-timings -- --chapter=N` | Pause-based chant sync (needs local WAVs in `lib/data/gita_audio/`) |
+| `npm run gita:upload-r2` | Upload `lib/data/gita_audio/*.wav` to Cloudflare R2 (see `backend/.env.template`) |
+| `npm run gita:qa-segments` | Assert manifest `lineEnds` + segment builder (1.1, 2.47, …) |
 | `npm run gita:learn:setup -- --chapter=N` | All three steps above for one chapter |
 
 - **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
-- **Śloka chanting (HF, Apache-2.0):** Audio by **Dhruv Jaradi** — [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). Production uses HF CDN URLs in `lib/data/gita-verse-audio-manifest.json` (`npm run gita:sync-hf-audio -- --urls-only`). Line-by-line Learn playback uses `lineTimings` in the manifest (`npm run gita:line-timings` after local WAV sync). Re-run `--urls-only` about once a year (signed URLs expire). See [`NOTICES.md`](NOTICES.md).
+- **Śloka chanting (Apache-2.0, Dhruv Jaradi):** Dataset [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). **Production playback is R2-only:** all `{verseId}.wav` on Cloudflare R2; set **`GITA_AUDIO_BASE_URL`** and **`VITE_GITA_AUDIO_BASE_URL`** on Vercel (required). Line segments use `lineEnds` + `introEnd` from the manifest (`npm run gita:line-timings` after local `gita:sync-hf-audio`). Pipeline: sync → upload (`npm run gita:upload-r2`) → CORS (`scripts/r2-cors-gita-audio.json`). Details: [`docs/GITA_AUDIO_R2.md`](docs/GITA_AUDIO_R2.md). See [`NOTICES.md`](NOTICES.md).
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `hybrid` tries Sarvam, then Google (te/hi/en WaveNet); cache checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 

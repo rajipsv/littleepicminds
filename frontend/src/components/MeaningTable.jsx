@@ -39,6 +39,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const lang = currentLang === 'te' || currentLang === 'hi' ? currentLang : 'en';
   const [playing, setPlaying] = useState(null);
   const [chantFallbackMsg, setChantFallbackMsg] = useState(null);
+  const [chantTimingApprox, setChantTimingApprox] = useState(false);
   const [teMeanings, setTeMeanings] = useState({});
   const segmentsRef = useRef(null);
   const chantUrlRef = useRef(null);
@@ -74,6 +75,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     segmentsRef.current = null;
     chantUrlRef.current = null;
     setChantFallbackMsg(null);
+    setChantTimingApprox(false);
     if (prevUrl) releasePreloadedChant(prevUrl);
   }, [verseId, wordByWord]);
 
@@ -209,8 +211,9 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     segmentOpts.duration = duration;
 
     let segments = null;
+    const hasManifestTimings = Boolean(timing?.lineEnds?.length && duration);
 
-    if (timing?.lineEnds?.length && duration) {
+    if (hasManifestTimings) {
       segments = buildLineSegments(timing.lineEnds, lineCount, segmentOpts);
     }
 
@@ -229,6 +232,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
 
     segmentsRef.current = segments;
     chantUrlRef.current = url;
+    setChantTimingApprox(Boolean(segments?.length && !hasManifestTimings));
     return { segments, url, introCut };
   };
 
@@ -314,6 +318,15 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
 
   return (
     <div className="mt-6">
+      {chantTimingApprox && (
+        <p className="text-xs text-gray-400 mb-3 px-3 py-2 rounded-lg border border-lem-glass-border bg-lem-sidebar/50">
+          {lang === 'te'
+            ? 'ఈ శ్లోకానికి సమయ గమనం లేదు — పంక్తి వినడం అంచనాతో కలుపుతుంది.'
+            : lang === 'hi'
+              ? 'इस श्लोक के लिए समय मार्कर नहीं — पंक्ति अनुमानित है।'
+              : 'No pause timings for this verse — line playback is approximate.'}
+        </p>
+      )}
       {chantFallbackMsg && (
         <p className="text-xs text-yellow-400/90 mb-3 px-3 py-2 rounded-lg border border-yellow-500/20 bg-yellow-500/10">
           {chantFallbackMsg}

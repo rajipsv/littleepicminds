@@ -1,10 +1,15 @@
-import api, { API_URL } from '../api';
+import api from '../api';
+import {
+  resolveIntroCutSec,
+  buildPlayBounds,
+  buildLineSegments,
+} from '../../../lib/gita-chant-segments.js';
+
+export { resolveIntroCutSec, buildPlayBounds, buildLineSegments };
 
 /** Dataset URL (attribution on About / introduction only). */
 export const CHANT_AUDIO_DATASET_URL =
   'https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio';
-
-const CHANT_URL_CACHE_BUST = 'v=2';
 
 let versesById = null;
 let manifestPromise = null;
@@ -13,141 +18,6 @@ const durationByUrl = new Map();
 /** @type {Map<string, { audio: HTMLAudioElement, ready?: boolean, promise?: Promise<HTMLAudioElement> }>} */
 const preloadedByUrl = new Map();
 let activeSegmentAudio = null;
-
-function appendCacheBust(url) {
-  if (!url || url.startsWith('data:')) return url;
-  const sep = url.includes('?') ? '&' : '?';
-  return `${url}${sep}${CHANT_URL_CACHE_BUST}`;
-}
-
-function validatePlayBounds(bounds, duration) {
-  if (!bounds || bounds.length < 2) return null;
-  const b = bounds.map((x) => Number(x)).filter((x) => Number.isFinite(x));
-  if (b.length < 2) return null;
-  for (let i = 1; i < b.length; i++) {
-    if (b[i] <= b[i - 1]) return null;
-  }
-  if (Number.isFinite(duration) && duration > 0 && b[b.length - 1] > duration) {
-    b[b.length - 1] = duration;
-  }
-  return b;
-}
-
-/** Seconds where narrator intro ends and first pada begins (0 if none). */
-export function resolveIntroCutSec({ introEnd, hasChantIntro, lineEnds } = {}) {
-  const ie = Number(introEnd);
-  if (Number.isFinite(ie) && ie > 0) return ie;
-  if (!hasChantIntro) return 0;
-  if (!Array.isArray(lineEnds) || lineEnds.length < 2) return 0;
-  const e0 = Number(lineEnds[0]);
-  const e1 = Number(lineEnds[1]);
-  if (Number.isFinite(e0) && e0 > 0.15 && e0 < 8 && Number.isFinite(e1) && e1 > e0 + 0.2) {
-    return e0;
-  }
-  return 0;
-}
-
-/**
- * Build segment start times for row play: length lineCount+1.
- * Segment i plays [bounds[i], bounds[i+1]].
- */
-export function buildPlayBounds(raw, lineCount, { duration, introEnd, hasChantIntro } = {}) {
-  const nums = (raw || []).map((x) => Number(x)).filter((x) => Number.isFinite(x));
-  if (!lineCount || !Number.isFinite(duration) || duration <= 0 || nums.length < 1) {
-    return null;
-  }
-
-  const ie = Number(introEnd);
-  const intro = Number.isFinite(ie) && ie > 0 ? ie : null;
-
-  // Speaker intro (e.g. "dhṛtarāṣṭra uvāca") is in the WAV but not a table row.
-  if (hasChantIntro) {
-    if (nums[0] < 0.12 && nums.length >= lineCount + 1) {
-      let b = nums.slice(0, lineCount + 1);
-      if (b.length >= 2 && b[1] > 0.08) {
-        b = [b[1], ...b.slice(2)];
-      }
-      while (b.length < lineCount + 1) {
-        b.push(duration);
-      }
-      return validatePlayBounds(b.slice(0, lineCount + 1), duration);
-    }
-
-    // lineEnds only: first timestamp is where pada 1 starts (after intro).
-    const ends = nums.slice(0, lineCount);
-    if (ends.length < lineCount) return null;
-    let b;
-    if (intro != null) {
-      b = [intro, ...ends];
-      if (b.length > 1 && Math.abs(b[0] - b[1]) < 0.12) {
-        b = [intro, ...ends.slice(1)];
-      }
-    } else {
-      b = [...ends];
-    }
-    while (b.length < lineCount + 1) {
-      b.push(duration);
-    }
-    return validatePlayBounds(b.slice(0, lineCount + 1), duration);
-  }
-
-  // Full chain from offline script: [0, t1, …, tN] (may include duration as last)
-  if (nums[0] < 0.12 && nums.length >= lineCount + 1) {
-    let b = nums.slice(0, lineCount + 1);
-    if (hasChantIntro && b.length >= 2 && b[1] > 0.08) {
-      b = [b[1], ...b.slice(2)];
-    }
-    while (b.length < lineCount + 1) {
-      const next = nums[b.length] ?? duration;
-      b.push(next);
-    }
-    return validatePlayBounds(b.slice(0, lineCount + 1), duration);
-  }
-
-  const ends = nums.slice(0, lineCount);
-  if (ends.length < lineCount) return null;
-
-  const b = [0, ...ends];
-  return validatePlayBounds(b.slice(0, lineCount + 1), duration);
-}
-
-/** Per-row { start, end } in seconds — use index from the table directly. */
-export function buildLineSegments(raw, lineCount, options = {}) {
-  const lineEnds = (raw || []).map((x) => Number(x)).filter((x) => Number.isFinite(x));
-  const introCut = resolveIntroCutSec({
-    introEnd: options.introEnd,
-    hasChantIntro: options.hasChantIntro,
-    lineEnds,
-  });
-  const bounds = buildPlayBounds(raw, lineCount, {
-    ...options,
-    introEnd: introCut || options.introEnd,
-    hasChantIntro: options.hasChantIntro || introCut > 0,
-  });
-  if (!bounds || bounds.length < lineCount + 1) return null;
-
-  let chain = bounds.slice(0, lineCount + 1);
-  if (introCut > 0 && chain[0] < introCut - 0.02) {
-    const trimmed = chain.filter((t) => t >= introCut - 0.02);
-    while (trimmed.length < lineCount + 1) {
-      trimmed.push(options.duration ?? trimmed[trimmed.length - 1]);
-    }
-    chain = trimmed.slice(0, lineCount + 1);
-  }
-
-  const segments = Array.from({ length: lineCount }, (_, i) => ({
-    start: chain[i],
-    end: chain[i + 1],
-  }));
-
-  if (introCut > 0) {
-    for (const seg of segments) {
-      if (seg.start < introCut) seg.start = introCut;
-    }
-  }
-
-  return segments.filter((seg) => seg.end > seg.start + 0.05);
-}
 
 /** Prefer lineEnds + introEnd; fall back to legacy lineTimings. */
 export function getManifestTimingInput(verseId, manifestVerses = versesById, { hasChantIntro } = {}) {
@@ -177,6 +47,7 @@ export async function ensureGitaChantManifest() {
       .get('/api/gita-audio/manifest')
       .then((res) => {
         versesById = res.data?.verses || {};
+        versesById._audioBaseUrl = res.data?.audioBaseUrl || null;
         return versesById;
       })
       .catch((err) => {
@@ -188,28 +59,20 @@ export async function ensureGitaChantManifest() {
   return manifestPromise;
 }
 
-/** Resolve play URL — prefer manifest (API proxy); VITE CDN only as fallback. */
+/** Resolve play URL — R2/CDN only (requires GITA_AUDIO_BASE_URL / VITE_GITA_AUDIO_BASE_URL). */
 export function resolveChantAudioUrl(verseId, manifestVerses = versesById) {
   if (!verseId || !/^\d+\.\d+$/.test(String(verseId))) return null;
 
-  const fromManifest = manifestVerses?.[verseId];
-  let url = null;
-  if (typeof fromManifest === 'string' && fromManifest.startsWith('http')) {
-    url = fromManifest;
-  } else if (typeof fromManifest === 'object' && fromManifest?.url) {
-    url = fromManifest.url;
-  }
+  const base = (
+    manifestVerses?._audioBaseUrl ||
+    import.meta.env.VITE_GITA_AUDIO_BASE_URL ||
+    ''
+  )
+    .trim()
+    .replace(/\/$/, '');
 
-  if (!url) {
-    const base = (import.meta.env.VITE_GITA_AUDIO_BASE_URL || '').trim().replace(/\/$/, '');
-    if (base) url = `${base}/${verseId}.wav`;
-    else url = `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
-  }
-
-  if (url && (url.startsWith('/') || url.includes('/api/gita-audio/'))) {
-    return appendCacheBust(url);
-  }
-  return url;
+  if (!base) return null;
+  return `${base}/${verseId}.wav`;
 }
 
 /** @returns {number[]|null} legacy line end times (prefer getManifestTimingInput). */
