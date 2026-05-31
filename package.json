@@ -25,6 +25,8 @@
     "gita:build-themes-auto": "node scripts/validate-theme-clusters.js && node scripts/seed-authored-stories.js && node scripts/build-themes-from-clusters.js",
     "gita:chatgpt-themes-pipeline": "node scripts/generate-chatgpt-stories.js && node scripts/import-chatgpt-stories.js --only-placeholders && node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
     "gita:prewarm-tts": "node scripts/prewarm-tts-cache.js",
+    "tts:test": "node scripts/test-tts-providers.js",
+    "tts:test:te": "node scripts/test-tts-providers.js --te",
     "gita:tts-cache-stats": "node scripts/tts-cache-stats.js",
     "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js",
     "gita:sync-hf-audio": "node scripts/sync-gita-audio-hf.js",

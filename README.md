@@ -27,9 +27,9 @@ This project is optimized for Vercel deployment.
 3. Add the following **Environment Variables**:
    - `DATABASE_URL`: Your Neon PostgreSQL connection string.
    - `JWT_SECRET`: A secure string for user authentication.
-   - `TTS_PROVIDER`: `auto` (default), `sarvam`, `hybrid`, `google`, or `browser`.
-   - `SARVAM_API_KEY`: Optional; Sarvam Bulbul v3 (Priya voice) when you have credits (signup may include trial).
-   - `GOOGLE_TTS_API_KEY`: Optional; needs GCP billing account even for free tier.
+   - `TTS_PROVIDER`: `hybrid` (default) — Sarvam then **Google fallback**; or `google`, `sarvam-only`, `browser`.
+   - `SARVAM_API_KEY`: Primary TTS (Bulbul v3).
+   - `GOOGLE_TTS_API_KEY`: **Fallback** when Sarvam fails (402/429); enable [Cloud Text-to-Speech API](https://console.cloud.google.com/apis/library/texttospeech.googleapis.com) on GCP.
    - `TRANSLATE_LIVE`: `false` in production (use `npm run gita:translate-lines` batch cache).
 4. Click **Deploy**!
 
@@ -72,7 +72,7 @@ This project is optimized for Vercel deployment.
 | **Pre-warmed cache** (`npm run gita:prewarm-tts`) | $0 after one-time generate | Only if you use a paid API once | Same as provider used to build cache |
 | **Google Cloud TTS** | Free tier exists | **Yes** (billing account) | Good te/hi/en |
 
-**Recommended without a credit card:** set `TTS_PROVIDER=auto` and `SARVAM_API_KEY` if you have Sarvam credits, otherwise the app uses **browser TTS** automatically when the server has no keys.
+**Browser voice (no API keys):** On Vercel set `TTS_PROVIDER=browser`, or on the frontend build set `VITE_TTS_BROWSER_ONLY=true` — meanings and lines use the device voice. With `hybrid` + keys, Sarvam/Google are tried first; **any failure automatically falls back to browser voice** in the app.
 
 ## 🎙️ Voice (TTS) and translation
 
@@ -85,7 +85,7 @@ This project is optimized for Vercel deployment.
 
 - **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
 - **Śloka chanting (HF, Apache-2.0):** Audio by **Dhruv Jaradi** — [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). Production uses HF CDN URLs in `lib/data/gita-verse-audio-manifest.json` (`npm run gita:sync-hf-audio -- --urls-only`). Line-by-line Learn playback uses `lineTimings` in the manifest (`npm run gita:line-timings` after local WAV sync). Re-run `--urls-only` about once a year (signed URLs expire). See [`NOTICES.md`](NOTICES.md).
-- **TTS providers**: [`lib/tts/`](lib/tts/) — `TTS_PROVIDER=auto` uses Sarvam if keyed, else Google if keyed; cache always checked first.
+- **TTS providers**: [`lib/tts/`](lib/tts/) — `hybrid` tries Sarvam, then Google (te/hi/en WaveNet); cache checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 
 ## 📜 Credits & Content

@@ -26,7 +26,16 @@ export function linesFromBreakdown(wordByWord, lang) {
   return wordByWord.map((row) => lineTextFromRow(row, lang)).filter(Boolean);
 }
 
+const browserTtsOnly = () =>
+  import.meta.env.VITE_TTS_BROWSER_ONLY === 'true' ||
+  import.meta.env.VITE_TTS_BROWSER_ONLY === '1';
+
 export async function fetchTtsAudio(text, targetLang) {
+  if (browserTtsOnly()) {
+    const err = new Error('Browser-only TTS mode');
+    err.useBrowser = true;
+    throw err;
+  }
   const lang = ttsLangForMeaningText(text, targetLang);
   try {
     const res = await api.post('/api/tts', {
@@ -40,10 +49,10 @@ export async function fetchTtsAudio(text, targetLang) {
       encoding: res.data.audioEncoding === 'MP3' ? 'mpeg' : 'wav',
     };
   } catch (err) {
-    const useBrowser = err.response?.data?.useBrowser;
+    const status = err.response?.status;
     const msg = err.response?.data?.error || err.message || 'TTS failed';
     const e = new Error(msg);
-    if (useBrowser) e.useBrowser = true;
+    e.useBrowser = err.response?.data?.useBrowser ?? status !== 400;
     throw e;
   }
 }
@@ -95,19 +104,25 @@ export function speakWithBrowser(text, uiLang = 'en') {
   });
 }
 
-export async function playMeaningAudio(text, uiLang, playbackRate = 0.9) {
+/** Server TTS (Sarvam/Google/cache); always falls back to browser voice on failure. */
+export async function playTtsOrBrowser(text, uiLang, playbackRate = 0.9) {
   const trimmed = String(text || '').trim();
   if (!trimmed) return;
+  if (browserTtsOnly()) {
+    await speakWithBrowser(trimmed, uiLang);
+    return;
+  }
   try {
     const { base64, encoding } = await fetchTtsAudio(trimmed, uiLang);
     await playAudioBase64(base64, encoding, playbackRate);
   } catch (err) {
-    if (err.useBrowser) {
-      await speakWithBrowser(trimmed, uiLang);
-      return;
-    }
-    throw err;
+    console.warn('[TTS] Using browser voice:', err.message);
+    await speakWithBrowser(trimmed, uiLang);
   }
+}
+
+export async function playMeaningAudio(text, uiLang, playbackRate = 0.9) {
+  return playTtsOrBrowser(text, uiLang, playbackRate);
 }
 
 export function playAudioBase64(base64, encoding, playbackRate = 1) {
@@ -134,9 +149,14 @@ export async function playLineSequence(lines, {
     const line = lines[i];
     if (!line?.trim()) continue;
     onLineStart?.(i);
-    const { base64, encoding } = await fetchTtsAudio(line, targetLang);
     if (signal?.aborted) break;
-    await playAudioBase64(base64, encoding, playbackRate);
+    try {
+      const { base64, encoding } = await fetchTtsAudio(line, targetLang);
+      await playAudioBase64(base64, encoding, playbackRate);
+    } catch {
+      await speakWithBrowser(line, targetLang);
+    }
+    if (signal?.aborted) break;
     if (i < lines.length - 1 && !signal?.aborted) {
       await delay(gapMs);
     }

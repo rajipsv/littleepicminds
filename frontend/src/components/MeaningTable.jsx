@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
 import api, { API_URL } from '../api';
-import { fetchTtsAudio, playAudioBase64, playMeaningAudio, DEFAULT_GAP_MS } from '../utils/lineTts';
+import { playMeaningAudio, playTtsOrBrowser, DEFAULT_GAP_MS } from '../utils/lineTts';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
@@ -17,7 +17,6 @@ import {
   getLineScriptText,
   getLineMeaningText,
   hasTeluguScript,
-  ttsLangForUi,
 } from '../utils/verseDisplay';
 
 function introLabel(chantIntro, lang) {
@@ -113,7 +112,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
       const text = displayMeaning(item, index)?.trim();
       if (!text || seen.has(text)) return;
       seen.add(text);
-      fetchTtsAudio(text, lang).catch(() => {});
+      playTtsOrBrowser(text, lang).catch(() => {});
     });
   }, [wordByWord, lang, displayMeaning, rowsKey, teMeanings]);
 
@@ -193,10 +192,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
           await playLineChant(index);
         } catch {
           const fallback = getLineScriptText(item, lang);
-          if (fallback) {
-            const { base64, encoding } = await fetchTtsAudio(fallback, ttsLangForUi(lang));
-            await playAudioBase64(base64, encoding, 0.9);
-          }
+          if (fallback) await playTtsOrBrowser(fallback, lang, 0.9);
         }
       }
 
