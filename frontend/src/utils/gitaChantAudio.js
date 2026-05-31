@@ -46,6 +46,26 @@ export function buildPlayBounds(raw, lineCount, { duration, introEnd, hasChantIn
   const ie = Number(introEnd);
   const intro = Number.isFinite(ie) && ie > 0 ? ie : null;
 
+  // Speaker intro (e.g. "dhṛtarāṣṭra uvāca") is in the WAV but not a table row.
+  // lineEnds are pada boundaries; first end is where pada 1 starts (not 0).
+  if (hasChantIntro) {
+    const ends = nums.slice(0, lineCount);
+    if (ends.length < lineCount) return null;
+    let b;
+    if (intro != null) {
+      b = [intro, ...ends];
+      if (b.length > 1 && Math.abs(b[0] - b[1]) < 0.12) {
+        b = [intro, ...ends.slice(1)];
+      }
+    } else {
+      b = [...ends];
+    }
+    while (b.length < lineCount + 1) {
+      b.push(duration);
+    }
+    return validatePlayBounds(b.slice(0, lineCount + 1), duration);
+  }
+
   // Full chain from offline script: [0, t1, …, tN] (may include duration as last)
   if (nums[0] < 0.12 && nums.length >= lineCount + 1) {
     let b = nums.slice(0, lineCount + 1);
@@ -62,23 +82,7 @@ export function buildPlayBounds(raw, lineCount, { duration, introEnd, hasChantIn
   const ends = nums.slice(0, lineCount);
   if (ends.length < lineCount) return null;
 
-  let start0 = intro ?? 0;
-  if (
-    hasChantIntro &&
-    intro == null &&
-    ends[0] > 0.05 &&
-    ends[0] < 2.5 &&
-    (ends[1] ?? 0) > ends[0] + 0.25
-  ) {
-    start0 = ends[0];
-    const b = [start0, ...ends.slice(1)];
-    if (b.length < lineCount + 1) {
-      b.push(duration > ends[ends.length - 1] ? duration : ends[ends.length - 1]);
-    }
-    return validatePlayBounds(b.slice(0, lineCount + 1), duration);
-  }
-
-  const b = [start0, ...ends];
+  const b = [0, ...ends];
   return validatePlayBounds(b.slice(0, lineCount + 1), duration);
 }
 
