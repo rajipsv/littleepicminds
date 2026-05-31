@@ -319,6 +319,16 @@ function hasTeluguScript(text) {
   return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
 }
 
+/** Remove vocative addressee from body gloss when narrator intro is a separate pada row. */
+function stripAddresseeFromBody(text) {
+  if (!text) return text;
+  let t = String(text).trim();
+  t = t.replace(/^O\s+Sanjaya,?\s*/i, '');
+  t = t.replace(/^O\s+[A-Z][a-z]+,?\s*/, '');
+  t = t.replace(/^ఓ\s+సంజయా,?\s*/, '');
+  return t.trim();
+}
+
 /** BG verse glosses often use "Narrator said: clause, clause." — split to match IAST padas. */
 function splitNarratorMeaning(text, n) {
   if (!text || n < 2) return null;
@@ -387,10 +397,19 @@ function splitVerseMeaning(text, n) {
     .filter(Boolean);
   if (sentences.length === n) return sentences;
   const comma = text
-    .split(/[,;]/)
+    .split(/,\s+/)
     .map((s) => s.trim())
     .filter(Boolean);
   if (comma.length === n) return comma;
+  if (comma.length >= 2 && comma.length < n) {
+    const expanded = expandToLineCount(comma, n);
+    if (expanded) return expanded;
+  }
+  const commaSemi = text
+    .split(/[,;]/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (commaSemi.length === n) return commaSemi;
   if (hasTeluguScript(text)) {
     const clauses = text
       .split(/(?<=[।:?,])\s+/)
@@ -536,15 +555,25 @@ function buildLineBreakdown(opts = {}) {
   if (introIast && meaningText) {
     const colon = meaningText.indexOf(':');
     if (colon > 0) meaningText = meaningText.slice(colon + 1).trim();
+    meaningText = stripAddresseeFromBody(meaningText);
   }
   if (introIast && meaningTeText && /ఇలా అన్నాడు|అన్నాడు:/.test(meaningTeText)) {
     const parts = meaningTeText.split(/ఇలా అన్నాడు[:\s]*/);
     if (parts.length > 1) meaningTeText = parts.slice(1).join('').trim();
+    meaningTeText = stripAddresseeFromBody(meaningTeText);
   }
 
   const lineCount = transLines.length;
-  const fallbackParts = splitVerseMeaning(meaningText, lineCount);
-  const fallbackTeParts = splitVerseMeaning(meaningTeText, lineCount);
+  const curatedEn = pada?.meaningsEn || pada?.en;
+  const curatedTe = pada?.meaningsTe || pada?.te;
+  const fallbackParts =
+    Array.isArray(curatedEn) && curatedEn.length === lineCount
+      ? curatedEn.map((s) => String(s).trim())
+      : splitVerseMeaning(meaningText, lineCount);
+  const fallbackTeParts =
+    Array.isArray(curatedTe) && curatedTe.length === lineCount
+      ? curatedTe.map((s) => String(s).trim())
+      : splitVerseMeaning(meaningTeText, lineCount);
   const teCache = opts.teCache;
 
   const rows = transLines.map((line, i) => {
@@ -640,5 +669,6 @@ module.exports = {
   hasTeluguScript,
   splitVerseMeaning,
   splitNarratorMeaning,
+  stripAddresseeFromBody,
   expandToLineCount,
 };
