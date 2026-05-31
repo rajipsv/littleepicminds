@@ -9,7 +9,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   loadHfVerses,
-  hfToLineBreakdown,
+  mergeHfLineBreakdown,
   shlokaIdToVerseId,
 } = require('../lib/gita-hf');
 
@@ -26,27 +26,7 @@ function mergeVerse(verse, verseId, hfEntry) {
 
   const sanskrit = (hfEntry.sanskrit || verse.sanskrit || '').trim();
   const transliteration = (hfEntry.transliteration || verse.transliteration || '').trim();
-  const hfRows = hfToLineBreakdown(sanskrit, transliteration);
-  const existing = verse.lineBreakdown || verse.word_by_word || [];
-
-  const lineBreakdown =
-    existing.length > 0
-      ? existing.map((row, i) => {
-          const hfRow = hfRows[i] || hfRows[hfRows.length - 1] || {};
-          return {
-            ...row,
-            sanskrit: hfRow.sanskrit || row.sanskrit,
-            transliteration: hfRow.transliteration || row.transliteration,
-            word: hfRow.transliteration || row.word || row.transliteration,
-          };
-        })
-      : hfRows.map((hfRow) => ({
-          sanskrit: hfRow.sanskrit,
-          transliteration: hfRow.transliteration,
-          word: hfRow.transliteration,
-          en: '',
-          te: '',
-        }));
+  const lineBreakdown = mergeHfLineBreakdown(verse, verseId, sanskrit, transliteration);
 
   return {
     ...verse,
