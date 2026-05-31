@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef, useCallback } from 'react'
 import { useAuth } from '../context/AuthContext';
 import { Volume2 } from 'lucide-react';
 import api, { API_URL } from '../api';
-import { fetchTtsAudio, playAudioBase64, DEFAULT_GAP_MS } from '../utils/lineTts';
+import { fetchTtsAudio, playAudioBase64, playMeaningAudio, DEFAULT_GAP_MS } from '../utils/lineTts';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
@@ -13,31 +13,18 @@ import {
   playChantSegment,
   stopChantSegment,
 } from '../utils/gitaChantAudio';
-import { getLineScriptText, getLineMeaningText, ttsLangForMeaning, ttsLangForUi } from '../utils/verseDisplay';
+import {
+  getLineScriptText,
+  getLineMeaningText,
+  hasTeluguScript,
+  ttsLangForUi,
+} from '../utils/verseDisplay';
 
 function introLabel(chantIntro, lang) {
   if (!chantIntro) return '';
   if (lang === 'te' && chantIntro.te) return chantIntro.te;
   return chantIntro.en || '';
 }
-
-const speakLine = (text, lang = 'en') => {
-  if (!('speechSynthesis' in window)) return;
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  const voices = window.speechSynthesis.getVoices();
-  const prefix = lang === 'te' ? 'te' : lang === 'hi' ? 'hi' : 'en';
-  const preferred =
-    voices.find((v) => v.lang.startsWith(prefix)) ||
-    voices.find((v) => v.lang.startsWith('en')) ||
-    voices[0];
-  if (preferred) utterance.voice = preferred;
-  utterance.lang = preferred?.lang || (lang === 'te' ? 'te-IN' : lang === 'hi' ? 'hi-IN' : 'en-US');
-  utterance.rate = 0.8;
-  window.speechSynthesis.speak(utterance);
-};
-
-const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
 
 const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const { currentLang } = useAuth();
@@ -56,7 +43,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const displayMeaning = useCallback(
     (item, index) => {
       if (lang === 'te') {
-        if (hasTeluguText(item.te)) return item.te;
+        if (hasTeluguScript(item.te)) return item.te;
         if (teMeanings[index]) return teMeanings[index];
       }
       return getLineMeaningText(item, 'en');
@@ -90,7 +77,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     (async () => {
       await Promise.all(
         wordByWord.map(async (item, index) => {
-          if (hasTeluguText(item.te)) {
+          if (hasTeluguScript(item.te)) {
             next[index] = item.te;
             return;
           }
@@ -104,7 +91,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
             });
             if (!res.ok) return;
             const data = await res.json();
-            if (data.te && hasTeluguText(data.te)) next[index] = data.te;
+            if (data.te && hasTeluguScript(data.te)) next[index] = data.te;
           } catch {
             /* keep English fallback */
           }
@@ -121,13 +108,12 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   /** Server TTS cache: prefetch unique meaning strings once per verse view. */
   useEffect(() => {
     if (!wordByWord?.length) return;
-    const ttsLang = ttsLangForMeaning(lang);
     const seen = new Set();
     wordByWord.forEach((item, index) => {
       const text = displayMeaning(item, index)?.trim();
       if (!text || seen.has(text)) return;
       seen.add(text);
-      fetchTtsAudio(text, ttsLang).catch(() => {});
+      fetchTtsAudio(text, lang).catch(() => {});
     });
   }, [wordByWord, lang, displayMeaning, rowsKey, teMeanings]);
 
@@ -178,10 +164,8 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
 
   const playMeaningTts = async (item, index) => {
     const meaning = displayMeaning(item, index)?.trim();
-    const ttsLang = ttsLangForMeaning(lang);
     if (!meaning) return;
-    const { base64, encoding } = await fetchTtsAudio(meaning, ttsLang);
-    await playAudioBase64(base64, encoding, 0.9);
+    await playMeaningAudio(meaning, lang, 0.9);
   };
 
   const playLineChant = async (index) => {
@@ -224,12 +208,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
       }
 
       if (part === 'meaning' || part === 'row') {
-        try {
-          await playMeaningTts(item, index);
-        } catch {
-          const meaning = displayMeaning(item, index);
-          if (meaning) speakLine(meaning, ttsLangForMeaning(lang));
-        }
+        await playMeaningTts(item, index);
       }
     } finally {
       if (!abortRef.current) setPlaying(null);

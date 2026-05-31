@@ -1,5 +1,5 @@
 import api from '../api';
-import { getLineScriptText } from './verseDisplay';
+import { getLineScriptText, ttsLangForMeaningText } from './verseDisplay';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
@@ -27,16 +27,87 @@ export function linesFromBreakdown(wordByWord, lang) {
 }
 
 export async function fetchTtsAudio(text, targetLang) {
-  const res = await api.post('/api/tts', {
-    text,
-    target_language_code: targetLang,
-    speaker: 'priya',
+  const lang = ttsLangForMeaningText(text, targetLang);
+  try {
+    const res = await api.post('/api/tts', {
+      text,
+      target_language_code: lang,
+      speaker: 'priya',
+    });
+    if (!res.data?.audios?.[0]) throw new Error('No audio');
+    return {
+      base64: res.data.audios[0],
+      encoding: res.data.audioEncoding === 'MP3' ? 'mpeg' : 'wav',
+    };
+  } catch (err) {
+    const useBrowser = err.response?.data?.useBrowser;
+    const msg = err.response?.data?.error || err.message || 'TTS failed';
+    const e = new Error(msg);
+    if (useBrowser) e.useBrowser = true;
+    throw e;
+  }
+}
+
+/** Free browser voice when Sarvam/Google TTS is unavailable (common for te-IN cache misses). */
+export function speakWithBrowser(text, uiLang = 'en') {
+  return new Promise((resolve, reject) => {
+    if (!('speechSynthesis' in window)) {
+      reject(new Error('Speech synthesis not supported'));
+      return;
+    }
+    const ttsLang = ttsLangForMeaningText(text, uiLang);
+    const bcp47 =
+      ttsLang === 'te' ? 'te-IN' : ttsLang === 'hi' ? 'hi-IN' : 'en-IN';
+
+    const run = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const preferred =
+        voices.find((v) => v.lang === bcp47) ||
+        voices.find((v) => v.lang.replace(/_/g, '-') === bcp47) ||
+        voices.find((v) => v.lang.startsWith(ttsLang)) ||
+        voices.find((v) => v.lang.startsWith('en')) ||
+        voices[0];
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      if (preferred) utterance.voice = preferred;
+      utterance.lang = preferred?.lang || bcp47;
+      utterance.rate = 0.85;
+      utterance.onend = () => resolve();
+      utterance.onerror = () => reject(new Error('Browser speech failed'));
+
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    };
+
+    const voices = window.speechSynthesis.getVoices();
+    if (voices.length) run();
+    else {
+      const onVoices = () => {
+        window.speechSynthesis.removeEventListener('voiceschanged', onVoices);
+        run();
+      };
+      window.speechSynthesis.addEventListener('voiceschanged', onVoices);
+      setTimeout(() => {
+        window.speechSynthesis.removeEventListener('voiceschanged', onVoices);
+        run();
+      }, 400);
+    }
   });
-  if (!res.data?.audios?.[0]) throw new Error('No audio');
-  return {
-    base64: res.data.audios[0],
-    encoding: res.data.audioEncoding === 'MP3' ? 'mpeg' : 'wav',
-  };
+}
+
+export async function playMeaningAudio(text, uiLang, playbackRate = 0.9) {
+  const trimmed = String(text || '').trim();
+  if (!trimmed) return;
+  try {
+    const { base64, encoding } = await fetchTtsAudio(trimmed, uiLang);
+    await playAudioBase64(base64, encoding, playbackRate);
+  } catch (err) {
+    if (err.useBrowser) {
+      await speakWithBrowser(trimmed, uiLang);
+      return;
+    }
+    throw err;
+  }
 }
 
 export function playAudioBase64(base64, encoding, playbackRate = 1) {

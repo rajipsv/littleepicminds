@@ -59,7 +59,21 @@ export function ttsLangForUi(lang) {
   return 'hi';
 }
 
-/** Meaning column TTS — English (or TE) prose, not Sanskrit chant. */
+export function hasTeluguScript(text) {
+  return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
+}
+
+/** Meaning TTS language from displayed text script (avoids te-IN + English mismatch). */
+export function ttsLangForMeaningText(text, uiLang) {
+  if (hasTeluguScript(text)) return 'te';
+  if (/[\u0900-\u097F]/.test(text || '')) return 'hi';
+  if (/[A-Za-z]/.test(text || '')) return 'en';
+  if (uiLang === 'hi') return 'hi';
+  if (uiLang === 'te') return 'te';
+  return 'en';
+}
+
+/** @deprecated Prefer ttsLangForMeaningText(meaning, uiLang) */
 export function ttsLangForMeaning(lang) {
   if (lang === 'te') return 'te';
   return 'en';

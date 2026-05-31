@@ -25,6 +25,20 @@ function loadEnv() {
 }
 
 const { lineTextFromRow } = require('../lib/tts/shloka-line');
+const { hasTeluguScript } = require('../lib/translate/line-meaning');
+
+function samplesFromRow(row) {
+  const out = [];
+  const hi = lineTextFromRow(row, 'hi');
+  const teScript = lineTextFromRow(row, 'te');
+  if (hi) out.push({ text: hi, lang: 'hi' });
+  if (teScript) out.push({ text: teScript, lang: 'te' });
+  const en = String(row.en || row.meaning || '').trim();
+  if (en) out.push({ text: en, lang: 'en' });
+  const teMeaning = String(row.te || '').trim();
+  if (teMeaning && hasTeluguScript(teMeaning)) out.push({ text: teMeaning, lang: 'te' });
+  return out;
+}
 
 function collectSamples() {
   const samples = [];
@@ -35,11 +49,13 @@ function collectSamples() {
     for (const key of Object.keys(chapter)) {
       if (!/^\d+\.\d+$/.test(key)) continue;
       const verse = chapter[key];
-      for (const row of verse.lineBreakdown || []) {
-        const hi = lineTextFromRow(row, 'hi');
-        const te = lineTextFromRow(row, 'te');
-        if (hi) samples.push({ text: hi, lang: 'hi' });
-        if (te) samples.push({ text: te, lang: 'te' });
+      for (const row of verse.lineBreakdown || verse.word_by_word || []) {
+        samples.push(...samplesFromRow(row));
+      }
+      const intro = verse.chantIntro;
+      if (intro?.en) samples.push({ text: String(intro.en).trim(), lang: 'en' });
+      if (intro?.te && hasTeluguScript(intro.te)) {
+        samples.push({ text: String(intro.te).trim(), lang: 'te' });
       }
     }
   }
@@ -82,11 +98,13 @@ async function main() {
     for (const key of Object.keys(chapter)) {
       if (!/^\d+\.\d+$/.test(key)) continue;
       const verse = chapter[key];
-      for (const row of verse.lineBreakdown || []) {
-        const hi = lineTextFromRow(row, 'hi');
-        const te = lineTextFromRow(row, 'te');
-        if (hi) samples.push({ text: hi, lang: 'hi' });
-        if (te) samples.push({ text: te, lang: 'te' });
+      for (const row of verse.lineBreakdown || verse.word_by_word || []) {
+        samples.push(...samplesFromRow(row));
+      }
+      const intro = verse.chantIntro;
+      if (intro?.en) samples.push({ text: String(intro.en).trim(), lang: 'en' });
+      if (intro?.te && hasTeluguScript(intro.te)) {
+        samples.push({ text: String(intro.te).trim(), lang: 'te' });
       }
     }
   }
