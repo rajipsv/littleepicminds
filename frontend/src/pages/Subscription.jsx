@@ -45,7 +45,7 @@ const Subscription = () => {
           <div className="text-4xl font-extrabold mb-6">₹0<span className="text-lg text-gray-400 font-medium">/yr</span></div>
 
           <ul className="space-y-4 mb-8">
-            <li className="flex items-center text-gray-600"><CheckCircle className="text-green-500 mr-2" size={20} /> Chapters 1 & 2</li>
+            <li className="flex items-center text-gray-600"><CheckCircle className="text-green-500 mr-2" size={20} /> Chapter 1 only</li>
             <li className="flex items-center text-gray-600"><CheckCircle className="text-green-500 mr-2" size={20} /> Voice Player (Standard)</li>
             <li className="flex items-center text-gray-600"><CheckCircle className="text-green-500 mr-2" size={20} /> Meaning Table</li>
           </ul>

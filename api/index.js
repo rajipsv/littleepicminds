@@ -19,6 +19,7 @@ const {
   getJwtSecret,
 } = require('../lib/auth');
 const { rateLimit: authRateLimit } = require('../lib/auth-rate-limit');
+const { canAccessGitaChapter, denyPremiumGitaChapter } = require('../lib/gita-access');
 const axios = require('axios');
 const crypto = require('crypto');
 const fs = require('fs');
@@ -40,7 +41,14 @@ const db = {
 
 const JWT_SECRET = getJwtSecret();
 const authRequired = createAuthMiddleware();
+const optionalAuth = createAuthMiddleware({ optional: true });
 const adminAuth = [authRequired, requireRole('admin')];
+
+function requireGitaChapterAccess(req, res, chapter) {
+  if (canAccessGitaChapter(chapter, req.auth)) return true;
+  denyPremiumGitaChapter(res);
+  return false;
+}
 
 // Helper: determine learning level from age
 function getLevelFromAge(age) {
@@ -361,9 +369,10 @@ function getHanumanVerse(verseParam) {
   return data.hanumanChalisa[key] || null;
 }
 
-router.get('/themes/:scripture/:chapter', (req, res) => {
+router.get('/themes/:scripture/:chapter', optionalAuth, (req, res) => {
   try {
     const { scripture, chapter } = req.params;
+    if (scripture === 'gita' && !requireGitaChapterAccess(req, res, chapter)) return;
     const { level } = req.query; // seeds, seekers, warriors
 
     // Robust chapter lookup: try direct, string, and "chapter" prefix
@@ -413,9 +422,13 @@ router.get('/themes/:scripture/:chapter', (req, res) => {
   }
 });
 
-router.get('/verses', (req, res) => {
+router.get('/verses', optionalAuth, (req, res) => {
   try {
     const { scripture, chapter, verse } = req.query;
+    const effectiveScripture = scripture || 'gita';
+    if (effectiveScripture === 'gita' && chapter && !requireGitaChapterAccess(req, res, chapter)) {
+      return;
+    }
     if (scripture === 'hanuman') {
       if (verse) {
         const d = getHanumanVerse(verse);
@@ -456,9 +469,10 @@ router.get('/verses', (req, res) => {
   }
 });
 
-router.get('/verses/evaluations/:scripture/:chapter/:level', (req, res) => {
+router.get('/verses/evaluations/:scripture/:chapter/:level', optionalAuth, (req, res) => {
   try {
     const { scripture, chapter, level } = req.params;
+    if (scripture === 'gita' && !requireGitaChapterAccess(req, res, chapter)) return;
     let evals = data.evaluations || {};
     
     if (scripture === 'hanuman') {
@@ -502,10 +516,11 @@ router.get('/verses/evaluations/:id', (req, res) => {
 });
 
 // GET /api/verses/quiz/:scripture/:chapter/:verse — Generate quiz from shloka content
-router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
+router.get('/verses/quiz/:scripture/:chapter/:verse', optionalAuth, (req, res) => {
   console.log(`[DEBUG] Quiz Request: ${req.params.scripture}/${req.params.chapter}/${req.params.verse}`);
   try {
     const { scripture, chapter, verse } = req.params;
+    if (scripture === 'gita' && !requireGitaChapterAccess(req, res, chapter)) return;
     const level = req.query.level || 'seeds';
     console.log(`[DEBUG] Level: ${level}`);
 

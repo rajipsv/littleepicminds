@@ -43,6 +43,7 @@ This project is optimized for Vercel deployment.
 - **Removed:** Hardcoded `admin123` backdoor — use `npm run db:seed-admin` with `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `backend/.env`.
 - **Rate limits:** Login, register, and password-change endpoints are throttled per IP.
 - **Protected routes:** Settings, subscription, progress, and admin require login.
+- **Gita paywall:** **Chapter 1** is free; **2–18** require `is_premium` (grant via Admin → Grant Premium) or `admin` role. Enforced in UI and API (`lib/gita-access.js`).
 
 ```bash
 # After setting ADMIN_EMAIL and ADMIN_PASSWORD in backend/.env

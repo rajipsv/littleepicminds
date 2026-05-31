@@ -8,11 +8,12 @@ import KrishnaChat from '../components/KrishnaChat';
 import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
 import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X, User, LogOut, Settings, Sparkles } from 'lucide-react';
+import { GITA_FREE_CHAPTER_MAX, hasPremiumGitaAccess, isGitaChapterLocked } from '../utils/gitaAccess';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
   const navigate = useNavigate();
-  const { user, logout, currentLang, setCurrentLang } = useAuth();
+  const { user, logout, currentLang, setCurrentLang, refreshUser } = useAuth();
   const isTe = currentLang === 'te';
   
   const toggleLanguage = () => {
@@ -38,11 +39,18 @@ const ScriptureLayout = () => {
   const chapters = Array.from({ length: chapterCount }, (_, i) => i + 1);
 
   useEffect(() => {
-    // Fetch chapter metadata once
+    refreshUser?.();
     api.get('/api/verses/chapters').then(res => {
       setChapterMetadata(res.data.chapters || []);
     }).catch(err => console.error('Failed to load metadata:', err));
-  }, []);
+  }, [refreshUser]);
+
+  useEffect(() => {
+    if (scripture === 'gita' && isGitaChapterLocked(activeChapter, user, scripture)) {
+      setActiveChapter(GITA_FREE_CHAPTER_MAX);
+      setError('');
+    }
+  }, [user, scripture, activeChapter]);
 
   useEffect(() => {
     setShowQuiz(false);
@@ -87,7 +95,11 @@ const ScriptureLayout = () => {
       }
     } catch (err) {
       if (err.response?.status === 403) {
-        setError(err.response.data.error);
+        const msg = err.response.data?.error || '';
+        setError(msg);
+        if (msg.includes('Premium') && scripture === 'gita') {
+          setActiveChapter(GITA_FREE_CHAPTER_MAX);
+        }
       } else {
         setError('Failed to load content.');
       }
@@ -97,8 +109,12 @@ const ScriptureLayout = () => {
   };
 
   const handleChapterClick = (chapterNum) => {
-    // TEMPORARILY UNLOCKED: Everyone can access all chapters for now
+    if (isGitaChapterLocked(chapterNum, user, scripture)) {
+      navigate(user ? '/subscribe' : '/login');
+      return;
+    }
     setActiveChapter(chapterNum);
+    setError('');
   };
 
   // Guard: show Coming Soon for unavailable scriptures
@@ -183,10 +199,11 @@ const ScriptureLayout = () => {
         {/* Render Chapters list */}
         <div className="flex-1 overflow-y-auto p-4 flex flex-col gap-2 custom-scrollbar">
           {chapters.map(num => {
-            const isLocked = false; // TEMPORARILY UNLOCKED
+            const isLocked = isGitaChapterLocked(num, user, scripture);
             const isActive = activeChapter === num;
-            const isFree = true; // TEMPORARILY UNLOCKED
-            
+            const isFree = scripture === 'gita' && num <= GITA_FREE_CHAPTER_MAX;
+            const premiumUnlocked = scripture === 'gita' && hasPremiumGitaAccess(user);
+
             return (
               <button
                 key={num}
@@ -194,14 +211,21 @@ const ScriptureLayout = () => {
                 className={`flex items-center justify-between px-4 py-3 rounded-xl font-bold transition-all ${
                   isActive 
                     ? 'bg-lem-accent text-lem-dark shadow-[0_0_15px_rgba(253,160,133,0.3)]' 
-                    : 'bg-white/5 text-gray-300 hover:bg-white/10 hover:text-lem-accent'
+                    : isLocked
+                      ? 'bg-white/5 text-gray-500 hover:bg-white/10'
+                      : 'bg-white/5 text-gray-300 hover:bg-white/10 hover:text-lem-accent'
                 }`}
               >
                 <span>{scripture === 'hanuman' ? (isTe ? 'హనుమాన్ చాలీసా' : 'Complete Chalisa') : (isTe ? `అధ్యాయం ${num}` : `Chapter ${num}`)}</span>
                 {isLocked && <Lock size={16} className={isActive ? 'text-lem-dark' : 'text-gray-500'} />}
                 {!isLocked && isFree && (
                   <span className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ${isActive ? 'bg-lem-dark/20 text-lem-dark' : 'bg-green-500/20 text-green-400'}`}>
-                    {isTe ? "ఓపెన్" : "Open"}
+                    {isTe ? 'ఉచితం' : 'Free'}
+                  </span>
+                )}
+                {!isLocked && !isFree && premiumUnlocked && (
+                  <span className={`text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ${isActive ? 'bg-lem-dark/20 text-lem-dark' : 'bg-lem-accent/20 text-lem-accent'}`}>
+                    {isTe ? 'ప్రీమియం' : 'Premium'}
                   </span>
                 )}
               </button>
