@@ -58,3 +58,9 @@ export function ttsLangForUi(lang) {
   if (lang === 'hi') return 'hi';
   return 'hi';
 }
+
+/** Meaning column TTS — English (or TE) prose, not Sanskrit chant. */
+export function ttsLangForMeaning(lang) {
+  if (lang === 'te') return 'te';
+  return 'en';
+}

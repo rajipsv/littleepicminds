@@ -27,6 +27,7 @@
     "gita:tts-cache-stats": "node scripts/tts-cache-stats.js",
     "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js",
     "gita:sync-hf-audio": "node scripts/sync-gita-audio-hf.js",
+    "gita:line-timings": "node scripts/compute-gita-line-timings.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js"
   },
   "dependencies": {

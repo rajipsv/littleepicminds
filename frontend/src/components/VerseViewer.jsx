@@ -192,7 +192,10 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
               </button>
             )}
           </div>
-          <MeaningTable wordByWord={verse.lineBreakdown || verse.word_by_word} />
+          <MeaningTable
+            wordByWord={verse.lineBreakdown || verse.word_by_word}
+            verseId={scripture === 'gita' ? verse.id : undefined}
+          />
         </div>
 
         <div className={`transition-all duration-700 ${currentStep >= 3 ? 'opacity-100 translate-y-0 mt-6 h-auto' : 'opacity-0 translate-y-10 h-0 overflow-hidden'}`}>
