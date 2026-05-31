@@ -655,10 +655,11 @@ router.post('/tts', async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error('[TTS Error]:', err.message);
-    const status = err.status || 500;
+    const useBrowser = err.useBrowser !== false;
+    const status = useBrowser ? 503 : err.status || 500;
     res.status(status).json({
       error: err.message || 'Failed to generate speech',
-      ...(err.useBrowser ? { useBrowser: true } : {}),
+      useBrowser,
     });
   }
 });
@@ -678,10 +679,11 @@ router.post('/tts/lines', async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error('[TTS lines Error]:', err.message);
-    const status = err.status || 500;
+    const useBrowser = err.useBrowser !== false;
+    const status = useBrowser ? 503 : err.status || 500;
     res.status(status).json({
       error: err.message || 'Failed to generate speech',
-      ...(err.useBrowser ? { useBrowser: true } : {}),
+      useBrowser,
     });
   }
 });

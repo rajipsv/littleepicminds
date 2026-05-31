@@ -122,8 +122,9 @@ export async function getVerseLineBoundaries(url, lineCount, weights) {
 export function playChantSegment(url, startSec, endSec, playbackRate = 0.9) {
   stopChantSegment();
   return new Promise((resolve, reject) => {
-    const audio = new Audio(url);
+    const audio = new Audio();
     activeSegmentAudio = audio;
+    audio.preload = 'auto';
     audio.playbackRate = playbackRate;
 
     const finish = () => {
@@ -155,7 +156,8 @@ export function playChantSegment(url, startSec, endSec, playbackRate = 0.9) {
       audio.play().catch(onErr);
     };
 
-    if (audio.readyState >= 1) start();
-    else audio.addEventListener('loadedmetadata', start, { once: true });
+    if (audio.readyState >= 3) start();
+    else audio.addEventListener('canplay', start, { once: true });
+    audio.src = url;
   });
 }

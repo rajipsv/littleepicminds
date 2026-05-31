@@ -66,12 +66,35 @@ const VoicePlayer = ({
   const playChantWav = (url) =>
     new Promise((resolve, reject) => {
       if (!url) return reject(new Error('No chant URL'));
-      const audio = new Audio(url);
+      const audio = new Audio();
       audioRef.current = audio;
+      audio.preload = 'auto';
       audio.playbackRate = playbackRate;
-      audio.onended = () => resolve();
-      audio.onerror = () => reject(new Error('Chant audio failed'));
-      audio.play().catch(reject);
+
+      const cleanup = () => {
+        audio.removeEventListener('canplay', onCanPlay);
+        audio.removeEventListener('ended', onEnded);
+        audio.removeEventListener('error', onErr);
+      };
+
+      const onEnded = () => {
+        cleanup();
+        resolve();
+      };
+      const onErr = () => {
+        cleanup();
+        if (audioRef.current === audio) audioRef.current = null;
+        reject(new Error('Chant audio failed'));
+      };
+      const onCanPlay = () => {
+        audio.playbackRate = playbackRate;
+        audio.play().catch(onErr);
+      };
+
+      audio.addEventListener('canplay', onCanPlay, { once: true });
+      audio.addEventListener('ended', onEnded);
+      audio.addEventListener('error', onErr);
+      audio.src = url;
     });
 
   const playAiVoice = async () => {
