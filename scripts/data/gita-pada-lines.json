@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "_comment": "Optional intro = narrator (e.g. sañjaya uvāca), not a pada line. lines = 4 IAST padas. Run npm run gita:line-breakdown after edits. Draft export: npm run gita:pada-lines:export",
+  "verses": {
+    "1.1": {
+      "intro": "dhṛtarāṣṭra uvāca",
+      "lines": [
+        "dharmakṣetre kurukṣetre",
+        "samavetā yuyutsavaḥ",
+        "māmakāḥ pāṇḍavāścaiva",
+        "kimakurvata sañjaya"
+      ]
+    },
+    "1.2": {
+      "intro": "sañjaya uvāca",
+      "lines": [
+        "dṛṣṭvā tu pāṇḍavānīkaṃ",
+        "vyūḍhaṃ duryodhanastadā",
+        "ācāryamupasaṃgamya",
+        "rājā vacanamabravīt"
+      ]
+    },
+    "1.3": {
+      "lines": [
+        "paśyaitāṃ pāṇḍuputrāṇām",
+        "ācārya mahatīṃ camūm",
+        "vyūḍhāṃ drupadaputreṇa",
+        "tava śiṣyeṇa dhīmatā"
+      ]
+    },
+    "1.4": {
+      "lines": [
+        "atra śūrā maheṣvāsā",
+        "bhīmārjunasamā yudhi",
+        "yuyudhāno virāṭaśca",
+        "drupadaśca mahārathaḥ"
+      ]
+    },
+    "1.5": {
+      "lines": [
+        "dhṛṣṭaketuścekitānaḥ kāśirājaśca",
+        "vīryavān",
+        "purujitkuntibhojaśca",
+        "śaibyaśca narapuṃgavaḥ"
+      ]
+    },
+    "1.6": {
+      "lines": [
+        "yudhāmanyuśca vikrānta",
+        "uttamaujāśca vīryavān",
+        "saubhadro draupadeyāśca sarva",
+        "eva mahārathāḥ"
+      ]
+    },
+    "1.7": {
+      "lines": [
+        "asmākaṃ tu viśiṣṭā",
+        "ye tānnibodha dvijottama",
+        "nāyakā mama sainyasya",
+        "saṃjñārthaṃ tānbravīmi te"
+      ]
+    },
+    "1.8": {
+      "lines": [
+        "bhavānbhīṣmaśca karṇaśca",
+        "kṛpaśca samitiñjayaḥ",
+        "aśvatthāmā vikarṇaśca",
+        "saumadattistathaiva ca"
+      ]
+    },
+    "1.9": {
+      "lines": [
+        "anye ca bahavaḥ",
+        "śūrā madarthe tyaktajīvitāḥ",
+        "nānāśastrapraharaṇāḥ",
+        "sarve yuddhaviśāradāḥ"
+      ]
+    },
+    "1.10": {
+      "lines": [
+        "aparyāptaṃ tadasmākaṃ",
+        "balaṃ bhīṣmābhirakṣitam",
+        "paryāptaṃ tvidameteṣāṃ",
+        "balaṃ bhīmābhirakṣitam"
+      ]
+    },
+    "1.11": {
+      "lines": [
+        "ayaneṣu ca",
+        "sarveṣu yathābhāgamavasthitāḥ",
+        "bhīṣmamevābhirakṣantu",
+        "bhavantaḥ sarva eva hi"
+      ]
+    },
+    "1.12": {
+      "lines": [
+        "tasya sañjanayanharṣaṃ",
+        "kuruvṛddhaḥ pitāmahaḥ",
+        "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ",
+        "dadhmau pratāpavān"
+      ]
+    },
+    "1.13": {
+      "lines": [
+        "tataḥ śaṅkhāśca",
+        "bheryaśca paṇavānakagomukhāḥ",
+        "sahasaivābhyahanyanta sa",
+        "śabdastumulo abhavat"
+      ]
+    },
+    "1.14": {
+      "lines": [
+        "tataḥ śvetairhayairyukte mahati",
+        "syandane sthitau",
+        "mādhavaḥ pāṇḍavaścaiva divyau",
+        "śaṅkhau pradadhmatuḥ"
+      ]
+    },
+    "1.15": {
+      "lines": [
+        "pāñcajanyaṃ hṛṣīkeśo",
+        "devadattaṃ dhanañjayaḥ",
+        "pauṇḍraṃ dadhmau mahāśaṅkhaṃ",
+        "bhīmakarmā vṛkodaraḥ"
+      ]
+    },
+    "1.16": {
+      "lines": [
+        "anantavijayaṃ rājā",
+        "kuntīputro yudhiṣṭhiraḥ",
+        "nakulaḥ sahadevaśca",
+        "sughoṣamaṇipuṣpakau"
+      ]
+    },
+    "1.17": {
+      "lines": [
+        "kāśyaśca parameṣvāsaḥ śikhaṇḍī",
+        "ca mahārathaḥ",
+        "dhṛṣṭadyumno",
+        "virāṭaśca sātyakiścāparājitaḥ"
+      ]
+    },
+    "1.18": {
+      "lines": [
+        "drupado draupadeyāśca",
+        "sarvaśaḥ pṛthivīpate",
+        "saubhadraśca",
+        "mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak"
+      ]
+    },
+    "1.19": {
+      "lines": [
+        "sa ghoṣo dhārtarāṣṭrāṇāṃ",
+        "hṛdayāni vyadārayat nabhaśca",
+        "pṛthivīṃ caiva tumulo",
+        "abhyanunādayan (lo vyanu)"
+      ]
+    },
+    "1.20": {
+      "lines": [
+        "atha vyavasthitāndṛṣṭvā",
+        "dhārtarāṣṭrān kapidhvajaḥ",
+        "pravṛtte śastrasampāte",
+        "dhanurudyamya pāṇḍavaḥ"
+      ]
+    },
+    "1.21": {
+      "lines": [
+        "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate",
+        "arjuna uvāca",
+        "senayorubhayormadhye rathaṃ sthāpaya me",
+        "acyuta"
+      ]
+    },
+    "1.22": {
+      "lines": [
+        "yāvadetānnirikṣe",
+        "ahaṃ yoddhukāmānavasthitān",
+        "kairmayā saha",
+        "yoddhavyamasmin raṇasamudyame"
+      ]
+    },
+    "1.23": {
+      "lines": [
+        "yotsyamānānavekṣe",
+        "ahaṃ ya ete",
+        "atra samāgatāḥ",
+        "dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ"
+      ]
+    },
+    "1.24": {
+      "intro": "sañjaya uvāca",
+      "lines": [
+        "evamukto hṛṣīkeśo",
+        "guḍākeśena bhārata",
+        "senayorubhayormadhye",
+        "sthāpayitvā rathottamam"
+      ]
+    },
+    "1.25": {
+      "lines": [
+        "bhīṣmadroṇapramukhataḥ sarveṣāṃ",
+        "ca mahīkṣitām",
+        "uvāca pārtha",
+        "paśyaitānsamavetānkurūniti"
+      ]
+    },
+    "1.26": {
+      "lines": [
+        "tatrāpaśyatsthitānpārthaḥ pitṝnatha",
+        "pitāmahān",
+        "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā"
+      ]
+    },
+    "1.27": {
+      "lines": [
+        "śvaśurānsuhṛdaścaiva",
+        "senayorubhayorapi",
+        "tānsamīkṣya sa",
+        "kaunteyaḥ sarvānbandhūnavasthitān"
+      ]
+    },
+    "1.28": {
+      "lines": [
+        "kṛpayā parayāviṣṭo",
+        "viṣīdannidamabravīt arjuna",
+        "uvāca dṛṣṭvemaṃ svajanaṃ",
+        "kṛṣṇa yuyutsuṃ samupasthitam"
+      ]
+    },
+    "1.29": {
+      "lines": [
+        "sīdanti mama gātrāṇi",
+        "mukhaṃ ca pariśuṣyati",
+        "vepathuśca śarīre me",
+        "romaharṣaśca jāyate"
+      ]
+    },
+    "1.30": {
+      "lines": [
+        "gāṇḍīvaṃ sraṃsate",
+        "hastāttvakcaiva paridahyate",
+        "na ca śaknomyavasthātuṃ bhramatīva",
+        "ca me manaḥ"
+      ]
+    },
+    "1.31": {
+      "lines": [
+        "nimittāni ca",
+        "paśyāmi viparītāni keśava",
+        "na ca śreyo",
+        "anupaśyāmi hatvā svajanamāhave"
+      ]
+    },
+    "1.32": {
+      "lines": [
+        "na kāṅkṣe vijayaṃ kṛṣṇa na",
+        "ca rājyaṃ sukhāni ca",
+        "kiṃ no rājyena govinda",
+        "kiṃ bhogairjīvitena vā"
+      ]
+    },
+    "1.33": {
+      "lines": [
+        "yeṣāmarthe kāṅkṣitaṃ no",
+        "rājyaṃ bhogāḥ sukhāni",
+        "ca ta ime avasthitā",
+        "yuddhe prāṇāṃstyaktvā dhanāni ca"
+      ]
+    },
+    "1.34": {
+      "lines": [
+        "ācāryāḥ pitaraḥ putrāstathaiva",
+        "ca pitāmahāḥ",
+        "mātulāḥ śvaśurāḥ pautrāḥ",
+        "śyālāḥ sambandhinastathā"
+      ]
+    },
+    "1.35": {
+      "lines": [
+        "etānna hantumicchāmi",
+        "ghnato api madhusūdana",
+        "api trailokyarājyasya hetoḥ",
+        "kiṃ nu mahīkṛte"
+      ]
+    },
+    "1.36": {
+      "lines": [
+        "nihatya dhārtarāṣṭrānnaḥ kā",
+        "prītiḥ syājjanārdana",
+        "pāpamevāśrayedasmānhatvaitānātatāyinaḥ"
+      ]
+    },
+    "1.37": {
+      "lines": [
+        "tasmānnārhā vayaṃ",
+        "hantuṃ dhārtarāṣṭrānsvabāndhavān",
+        "svajanaṃ hi kathaṃ hatvā",
+        "sukhinaḥ syāma mādhava"
+      ]
+    },
+    "1.38": {
+      "lines": [
+        "yadyapyete na",
+        "paśyanti lobhopahatacetasaḥ",
+        "kulakṣayakṛtaṃ",
+        "doṣaṃ mitradrohe ca pātakam"
+      ]
+    },
+    "1.39": {
+      "lines": [
+        "kathaṃ na",
+        "jñeyamasmābhiḥ pāpādasmānnivartitum",
+        "kulakṣayakṛtaṃ",
+        "doṣaṃ prapaśyadbhirjanārdana"
+      ]
+    },
+    "1.40": {
+      "lines": [
+        "kulakṣaye praṇaśyanti kuladharmāḥ",
+        "sanātanāḥ dharme",
+        "naṣṭe kulaṃ",
+        "kṛtsnamadharmo abhibhavatyuta"
+      ]
+    },
+    "1.41": {
+      "lines": [
+        "adharmābhibhavātkṛṣṇa praduṣyanti",
+        "kulastriyaḥ",
+        "strīṣu duṣṭāsu vārṣṇeya",
+        "jāyate varṇasaṅkaraḥ"
+      ]
+    },
+    "1.42": {
+      "lines": [
+        "saṅkaro narakāyaiva kulaghnānāṃ",
+        "kulasya ca",
+        "patanti pitaro",
+        "hyeṣāṃ luptapiṇḍodakakriyāḥ"
+      ]
+    },
+    "1.43": {
+      "lines": [
+        "doṣairetaiḥ kulaghnānāṃ",
+        "varṇasaṅkarakārakaiḥ",
+        "utsādyante jātidharmāḥ",
+        "kuladharmāśca śāśvatāḥ"
+      ]
+    },
+    "1.44": {
+      "lines": [
+        "utsannakuladharmāṇāṃ manuṣyāṇāṃ",
+        "janārdana",
+        "narake niyataṃ",
+        "vāso bhavatītyanuśuśruma"
+      ]
+    },
+    "1.45": {
+      "lines": [
+        "aho bata mahatpāpaṃ",
+        "kartuṃ vyavasitā vayam",
+        "yadrājyasukhalobhena",
+        "hantuṃ svajanamudyatāḥ"
+      ]
+    },
+    "1.46": {
+      "lines": [
+        "yadi māmapratīkāramaśastraṃ",
+        "śastrapāṇayaḥ",
+        "dhārtarāṣṭrā",
+        "raṇe hanyustanme kṣemataraṃ bhavet"
+      ]
+    },
+    "1.47": {
+      "intro": "sañjaya uvāca",
+      "lines": [
+        "evamuktvārjunaḥ saṅkhye",
+        "rathopastha upāviśat",
+        "visṛjya saśaraṃ",
+        "cāpaṃ śokasaṃvignamānasaḥ"
+      ]
+    }
+  }
+}

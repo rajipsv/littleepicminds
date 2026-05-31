@@ -8,12 +8,20 @@ import {
   resolveChantAudioUrl,
   getVerseLineBoundaries,
   getManifestLineTimings,
+  getManifestIntroEnd,
+  loadChantDuration,
   playChantSegment,
   stopChantSegment,
   CHANT_AUDIO_CREDIT,
   CHANT_AUDIO_DATASET_URL,
 } from '../utils/gitaChantAudio';
 import { getLineScriptText, getLineMeaningText, ttsLangForMeaning, ttsLangForUi } from '../utils/verseDisplay';
+
+function introLabel(chantIntro, lang) {
+  if (!chantIntro) return '';
+  if (lang === 'te' && chantIntro.te) return chantIntro.te;
+  return chantIntro.en || '';
+}
 
 const speakLine = (text, lang = 'en') => {
   if (!('speechSynthesis' in window)) return;
@@ -33,7 +41,7 @@ const speakLine = (text, lang = 'en') => {
 
 const hasTeluguText = (s) => Boolean(s && /[\u0C00-\u0C7F]/.test(s));
 
-const MeaningTable = ({ wordByWord, verseId }) => {
+const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const { currentLang } = useAuth();
   const lang = currentLang === 'te' || currentLang === 'hi' ? currentLang : 'en';
   const [playing, setPlaying] = useState(null);
@@ -136,13 +144,16 @@ const MeaningTable = ({ wordByWord, verseId }) => {
     if (!url) return null;
 
     const stored = getManifestLineTimings(verseId, manifest);
+    const introEnd = getManifestIntroEnd(verseId, manifest);
     const lineCount = wordByWord.length;
     let bounds = null;
-    if (stored && stored.length === lineCount + 1) {
+
+    if (stored?.length >= lineCount) {
+      const duration = await loadChantDuration(url);
+      bounds = stored.slice(0, lineCount);
+      bounds.push(duration);
+    } else if (stored?.length >= 2) {
       bounds = stored;
-    } else if (stored && stored.length > lineCount + 1) {
-      bounds = stored.slice(0, lineCount + 1);
-      bounds[lineCount] = stored[stored.length - 1];
     }
 
     if (!bounds) {
@@ -150,7 +161,15 @@ const MeaningTable = ({ wordByWord, verseId }) => {
         const t = getLineScriptText(row, lang) || row.transliteration || row.word || '';
         return t.replace(/\s+/g, '').length || 1;
       });
-      bounds = await getVerseLineBoundaries(url, lineCount, weights);
+      const duration = await loadChantDuration(url);
+      const guessed = await getVerseLineBoundaries(url, lineCount, weights);
+      if (introEnd != null && guessed[0] < introEnd + 0.05) {
+        bounds = [...guessed.slice(1)];
+        bounds[0] = Math.max(introEnd, bounds[0]);
+        bounds.push(duration);
+      } else {
+        bounds = guessed;
+      }
     }
     boundsRef.current = bounds;
     chantUrlRef.current = url;
@@ -168,6 +187,7 @@ const MeaningTable = ({ wordByWord, verseId }) => {
   const playLineChant = async (index) => {
     const chant = await ensureChantBounds();
     if (!chant) throw new Error('No chant audio');
+    if (index + 1 >= chant.bounds.length) throw new Error('No segment for this row');
     const start = chant.bounds[index];
     const end = chant.bounds[index + 1];
     if (end <= start) throw new Error('Invalid segment');
@@ -238,6 +258,17 @@ const MeaningTable = ({ wordByWord, verseId }) => {
 
   return (
     <div className="mt-6">
+      {chantIntro && (
+        <p className="text-sm text-lem-accent/90 mb-3 italic border-l-2 border-lem-accent/40 pl-3">
+          {getLineScriptText(chantIntro, lang) || chantIntro.transliteration}
+          {introLabel(chantIntro, lang) && (
+            <span className="block text-xs text-gray-400 mt-1 not-italic">
+              {introLabel(chantIntro, lang)}
+            </span>
+          )}
+        </p>
+      )}
+
       {usedChantAudio && verseId && (
         <p className="text-xs text-lem-accent/80 mb-3 leading-snug">
           {CHANT_AUDIO_CREDIT}{' '}

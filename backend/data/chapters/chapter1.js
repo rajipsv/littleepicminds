@@ -47,73 +47,79 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ధృతరాష్ట్ర ఉవాచ ధర్మక్షేత్రే కురుక్షేత్రే సమవేతా యుయుత్సవః |\nమామకాః పాణ్డవాశ్చైవ కిమకుర్వత సఞ్జయ",
         "lineBreakdown": [
             {
-                "sanskrit": "धृतराष्ट्र उवाच",
-                "word": "dhṛtarāṣṭra uvāca",
-                "transliteration": "dhṛtarāṣṭra uvāca",
-                "sanskrit_te": "ధృతరాష్ట్ర ఉవాచ ధర్మక్షేత్రే",
-                "en": "Dhritarashtra said the land of dharma",
-                "te": "ధృతరాష్ట్రుడు ఇలా అన్నాడు: ఓ సంజయా,"
+                "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे",
+                "word": "dharmakṣetre kurukṣetre",
+                "transliteration": "dharmakṣetre kurukṣetre",
+                "sanskrit_te": "ధర్మక్షేత్రే కురుక్షేత్రే",
+                "en": "O Sanjaya",
+                "te": "ఓ సంజయా, పుణ్యక్షేత్రమైన"
             },
             {
-                "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः",
-                "word": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ",
-                "transliteration": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ",
-                "sanskrit_te": "కురుక్షేత్రే సమవేతా యుయుత్సవః",
+                "sanskrit": "समवेता युयुत्सवः",
+                "word": "samavetā yuyutsavaḥ",
+                "transliteration": "samavetā yuyutsavaḥ",
+                "sanskrit_te": "సమవేతా యుయుత్సవః",
                 "en": "Gathered on the holy field of Kurukshetra",
-                "te": "పుణ్యక్షేత్రమైన కురుక్షేత్రంలో యుద్ధం చేయడానికి సిద్ధపడి"
+                "te": "కురుక్షేత్రంలో యుద్ధం చేయడానికి సిద్ధపడి"
             },
             {
-                "sanskrit": "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय",
-                "word": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
-                "transliteration": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
+                "sanskrit": "मामकाः पाण्डवाश्चैव",
+                "word": "māmakāḥ pāṇḍavāścaiva",
+                "transliteration": "māmakāḥ pāṇḍavāścaiva",
                 "sanskrit_te": "మామకాః పాణ్డవాశ్చైవ",
-                "en": "Having gathered desiring to fight my sons",
+                "en": "Eager to fight",
                 "te": "చేరిన నా కుమారులు మరియు"
             },
             {
-                "sanskrit": "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय",
-                "word": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
-                "transliteration": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
+                "sanskrit": "किमकुर्वत सञ्जय",
+                "word": "kimakurvata sañjaya",
+                "transliteration": "kimakurvata sañjaya",
                 "sanskrit_te": "కిమకుర్వత సఞ్జయ",
-                "en": "The sons of Pandu did they do Sanjay",
+                "en": "What did my sons and the sons of Pandu do?",
                 "te": "పాండు కుమారులు ఏమి చేశారు?"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "धृतराष्ट्र उवाच",
-                "word": "dhṛtarāṣṭra uvāca",
-                "transliteration": "dhṛtarāṣṭra uvāca",
-                "sanskrit_te": "ధృతరాష్ట్ర ఉవాచ ధర్మక్షేత్రే",
-                "en": "Dhritarashtra said the land of dharma",
-                "te": "ధృతరాష్ట్రుడు ఇలా అన్నాడు: ఓ సంజయా,"
+                "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे",
+                "word": "dharmakṣetre kurukṣetre",
+                "transliteration": "dharmakṣetre kurukṣetre",
+                "sanskrit_te": "ధర్మక్షేత్రే కురుక్షేత్రే",
+                "en": "O Sanjaya",
+                "te": "ఓ సంజయా, పుణ్యక్షేత్రమైన"
             },
             {
-                "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः",
-                "word": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ",
-                "transliteration": "dharmakṣetre kurukṣetre samavetā yuyutsavaḥ",
-                "sanskrit_te": "కురుక్షేత్రే సమవేతా యుయుత్సవః",
+                "sanskrit": "समवेता युयुत्सवः",
+                "word": "samavetā yuyutsavaḥ",
+                "transliteration": "samavetā yuyutsavaḥ",
+                "sanskrit_te": "సమవేతా యుయుత్సవః",
                 "en": "Gathered on the holy field of Kurukshetra",
-                "te": "పుణ్యక్షేత్రమైన కురుక్షేత్రంలో యుద్ధం చేయడానికి సిద్ధపడి"
+                "te": "కురుక్షేత్రంలో యుద్ధం చేయడానికి సిద్ధపడి"
             },
             {
-                "sanskrit": "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय",
-                "word": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
-                "transliteration": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
+                "sanskrit": "मामकाः पाण्डवाश्चैव",
+                "word": "māmakāḥ pāṇḍavāścaiva",
+                "transliteration": "māmakāḥ pāṇḍavāścaiva",
                 "sanskrit_te": "మామకాః పాణ్డవాశ్చైవ",
-                "en": "Having gathered desiring to fight my sons",
+                "en": "Eager to fight",
                 "te": "చేరిన నా కుమారులు మరియు"
             },
             {
-                "sanskrit": "मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय",
-                "word": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
-                "transliteration": "māmakāḥ pāṇḍavāścaiva kimakurvata sañjaya",
+                "sanskrit": "किमकुर्वत सञ्जय",
+                "word": "kimakurvata sañjaya",
+                "transliteration": "kimakurvata sañjaya",
                 "sanskrit_te": "కిమకుర్వత సఞ్జయ",
-                "en": "The sons of Pandu did they do Sanjay",
+                "en": "What did my sons and the sons of Pandu do?",
                 "te": "పాండు కుమారులు ఏమి చేశారు?"
             }
         ],
-        "hfMerged": true
+        "hfMerged": true,
+        "chantIntro": {
+            "transliteration": "dhṛtarāṣṭra uvāca",
+            "sanskrit": "धृतराष्ट्र उवाच",
+            "en": "Dhritarashtra said",
+            "te": "ధృతరాష్ట్రుడు ఇలా అన్నాడు"
+        }
     },
     "1.2": {
         "sanskrit": "सञ्जय उवाच |दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |आचार्यमुपसंगम्य राजा वचनमब्रवीत् |",
@@ -163,73 +169,79 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "సఞ్జయ ఉవాచ దృష్ట్వా తు పాణ్డవానీకం వ్యూఢం దుర్యోధనస్తదా |\nఆచార్యముపసఙ్గమ్య రాజా వచనమబ్రవీత్",
         "lineBreakdown": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
-                "sanskrit_te": "సఞ్జయ ఉవాచ దృష్ట్వా",
-                "en": "Sanjay said on observing",
-                "te": "సంజయుడు ఇలా అన్నాడు: పాండవుల"
+                "sanskrit": "दृष्ट्वा तु पाण्डवानीकं",
+                "word": "dṛṣṭvā tu pāṇḍavānīkaṃ",
+                "transliteration": "dṛṣṭvā tu pāṇḍavānīkaṃ",
+                "sanskrit_te": "దృష్ట్వా తు",
+                "en": "After looking over the army gathered",
+                "te": "పాండవుల సైన్యాన్ని"
             },
             {
-                "sanskrit": "दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा",
-                "word": "dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā",
-                "transliteration": "dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā",
-                "sanskrit_te": "తు పాణ్డవానీకం వ్యూఢం",
-                "en": "But the Pandava army standing in a military formation",
-                "te": "సైన్యాన్ని చూసిన దుర్యోధన రాజు,"
+                "sanskrit": "व्यूढं दुर्योधनस्तदा",
+                "word": "vyūḍhaṃ duryodhanastadā",
+                "transliteration": "vyūḍhaṃ duryodhanastadā",
+                "sanskrit_te": "పాణ్డవానీకం వ్యూఢం",
+                "en": "By the sons of Pandu,",
+                "te": "చూసిన దుర్యోధన రాజు,"
             },
             {
-                "sanskrit": "आचार्यमुपसंगम्य राजा वचनमब्रवीत्",
-                "word": "ācāryamupasaṃgamya rājā vacanamabravīt",
-                "transliteration": "ācāryamupasaṃgamya rājā vacanamabravīt",
+                "sanskrit": "आचार्यमुपसंगम्य",
+                "word": "ācāryamupasaṃgamya",
+                "transliteration": "ācāryamupasaṃgamya",
                 "sanskrit_te": "దుర్యోధనస్తదా ఆచార్యముపసఙ్గమ్య",
-                "en": "King Duryodhan teacher",
-                "te": "తన ద్రోణాచార్య గురువు దగ్గరకు"
+                "en": "King Duryodhana went to his",
+                "te": "తన ద్రోణాచార్య గురువు"
             },
             {
-                "sanskrit": "आचार्यमुपसंगम्य राजा वचनमब्रवीत्",
-                "word": "ācāryamupasaṃgamya rājā vacanamabravīt",
-                "transliteration": "ācāryamupasaṃgamya rājā vacanamabravīt",
+                "sanskrit": "राजा वचनमब्रवीत्",
+                "word": "rājā vacanamabravīt",
+                "transliteration": "rājā vacanamabravīt",
                 "sanskrit_te": "రాజా వచనమబ్రవీత్",
-                "en": "The king words",
-                "te": "వెళ్ళి ఇలా అన్నాడు."
+                "en": "Teacher and spoke these words.",
+                "te": "దగ్గరకు వెళ్ళి ."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
-                "sanskrit_te": "సఞ్జయ ఉవాచ దృష్ట్వా",
-                "en": "Sanjay said on observing",
-                "te": "సంజయుడు ఇలా అన్నాడు: పాండవుల"
+                "sanskrit": "दृष्ट्वा तु पाण्डवानीकं",
+                "word": "dṛṣṭvā tu pāṇḍavānīkaṃ",
+                "transliteration": "dṛṣṭvā tu pāṇḍavānīkaṃ",
+                "sanskrit_te": "దృష్ట్వా తు",
+                "en": "After looking over the army gathered",
+                "te": "పాండవుల సైన్యాన్ని"
             },
             {
-                "sanskrit": "दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा",
-                "word": "dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā",
-                "transliteration": "dṛṣṭvā tu pāṇḍavānīkaṃ vyūḍhaṃ duryodhanastadā",
-                "sanskrit_te": "తు పాణ్డవానీకం వ్యూఢం",
-                "en": "But the Pandava army standing in a military formation",
-                "te": "సైన్యాన్ని చూసిన దుర్యోధన రాజు,"
+                "sanskrit": "व्यूढं दुर्योधनस्तदा",
+                "word": "vyūḍhaṃ duryodhanastadā",
+                "transliteration": "vyūḍhaṃ duryodhanastadā",
+                "sanskrit_te": "పాణ్డవానీకం వ్యూఢం",
+                "en": "By the sons of Pandu,",
+                "te": "చూసిన దుర్యోధన రాజు,"
             },
             {
-                "sanskrit": "आचार्यमुपसंगम्य राजा वचनमब्रवीत्",
-                "word": "ācāryamupasaṃgamya rājā vacanamabravīt",
-                "transliteration": "ācāryamupasaṃgamya rājā vacanamabravīt",
+                "sanskrit": "आचार्यमुपसंगम्य",
+                "word": "ācāryamupasaṃgamya",
+                "transliteration": "ācāryamupasaṃgamya",
                 "sanskrit_te": "దుర్యోధనస్తదా ఆచార్యముపసఙ్గమ్య",
-                "en": "King Duryodhan teacher",
-                "te": "తన ద్రోణాచార్య గురువు దగ్గరకు"
+                "en": "King Duryodhana went to his",
+                "te": "తన ద్రోణాచార్య గురువు"
             },
             {
-                "sanskrit": "आचार्यमुपसंगम्य राजा वचनमब्रवीत्",
-                "word": "ācāryamupasaṃgamya rājā vacanamabravīt",
-                "transliteration": "ācāryamupasaṃgamya rājā vacanamabravīt",
+                "sanskrit": "राजा वचनमब्रवीत्",
+                "word": "rājā vacanamabravīt",
+                "transliteration": "rājā vacanamabravīt",
                 "sanskrit_te": "రాజా వచనమబ్రవీత్",
-                "en": "The king words",
-                "te": "వెళ్ళి ఇలా అన్నాడు."
+                "en": "Teacher and spoke these words.",
+                "te": "దగ్గరకు వెళ్ళి ."
             }
         ],
-        "hfMerged": true
+        "hfMerged": true,
+        "chantIntro": {
+            "transliteration": "sañjaya uvāca",
+            "sanskrit": "सञ्जय उवाच",
+            "en": "Sanjaya said",
+            "te": "సంజయుడు ఇలా అన్నాడు"
+        }
     },
     "1.3": {
         "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता |",
@@ -279,70 +291,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "పశ్యైతాం పాణ్డుపుత్రాణామాచార్య మహతీం చమూమ్ |\nవ్యూఢాం ద్రుపదపుత్రేణ తవ శిష్యేణ ధీమతా",
         "lineBreakdown": [
             {
-                "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्",
-                "word": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm",
-                "transliteration": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm",
+                "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य",
+                "word": "paśyaitāṃ pāṇḍuputrāṇām",
+                "transliteration": "paśyaitāṃ pāṇḍuputrāṇām",
                 "sanskrit_te": "పశ్యైతాం పాణ్డుపుత్రాణామాచార్య మహతీం",
-                "en": "Behold of the sons of Pandu",
-                "te": "ఓ ఆచార్యా! మీ బుద్ధిమంతుడైన"
+                "en": "O teacher",
+                "te": "ఓ ఆచార్యా! మీ"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "महतीं चमूम्",
+                "word": "ācārya mahatīṃ camūm",
+                "transliteration": "ācārya mahatīṃ camūm",
                 "sanskrit_te": "చమూమ్ వ్యూఢాం",
-                "en": "Respected teacher mighty army",
-                "te": "శిష్యుడు, దృపద పుత్రుడిచే వ్యూహరచన"
+                "en": "Behold the great army of the sons of Pandu",
+                "te": "బుద్ధిమంతుడైన శిష్యుడు, దృపద"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव",
+                "word": "vyūḍhāṃ drupadaputreṇa",
+                "transliteration": "vyūḍhāṃ drupadaputreṇa",
                 "sanskrit_te": "ద్రుపదపుత్రేణ తవ",
-                "en": "Arrayed in a military formation son of Drupad, Dhrishtadyumna",
-                "te": "చేయబడిన ఈ గొప్ప"
+                "en": "Arranged by your intelligent disciple",
+                "te": "పుత్రుడిచే వ్యూహరచన చేయబడిన ఈ"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "शिष्येण धीमता",
+                "word": "tava śiṣyeṇa dhīmatā",
+                "transliteration": "tava śiṣyeṇa dhīmatā",
                 "sanskrit_te": "శిష్యేణ ధీమతా",
-                "en": "By your disciple",
-                "te": "పాండవ సైన్యాన్ని చూడండి."
+                "en": "The son of Drupada.",
+                "te": "గొప్ప పాండవ సైన్యాన్ని చూడండి."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्",
-                "word": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm",
-                "transliteration": "paśyaitāṃ pāṇḍuputrāṇāmācārya mahatīṃ camūm",
+                "sanskrit": "पश्यैतां पाण्डुपुत्राणामाचार्य",
+                "word": "paśyaitāṃ pāṇḍuputrāṇām",
+                "transliteration": "paśyaitāṃ pāṇḍuputrāṇām",
                 "sanskrit_te": "పశ్యైతాం పాణ్డుపుత్రాణామాచార్య మహతీం",
-                "en": "Behold of the sons of Pandu",
-                "te": "ఓ ఆచార్యా! మీ బుద్ధిమంతుడైన"
+                "en": "O teacher",
+                "te": "ఓ ఆచార్యా! మీ"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "महतीं चमूम्",
+                "word": "ācārya mahatīṃ camūm",
+                "transliteration": "ācārya mahatīṃ camūm",
                 "sanskrit_te": "చమూమ్ వ్యూఢాం",
-                "en": "Respected teacher mighty army",
-                "te": "శిష్యుడు, దృపద పుత్రుడిచే వ్యూహరచన"
+                "en": "Behold the great army of the sons of Pandu",
+                "te": "బుద్ధిమంతుడైన శిష్యుడు, దృపద"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव",
+                "word": "vyūḍhāṃ drupadaputreṇa",
+                "transliteration": "vyūḍhāṃ drupadaputreṇa",
                 "sanskrit_te": "ద్రుపదపుత్రేణ తవ",
-                "en": "Arrayed in a military formation son of Drupad, Dhrishtadyumna",
-                "te": "చేయబడిన ఈ గొప్ప"
+                "en": "Arranged by your intelligent disciple",
+                "te": "పుత్రుడిచే వ్యూహరచన చేయబడిన ఈ"
             },
             {
-                "sanskrit": "व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता",
-                "word": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
-                "transliteration": "vyūḍhāṃ drupadaputreṇa tava śiṣyeṇa dhīmatā",
+                "sanskrit": "शिष्येण धीमता",
+                "word": "tava śiṣyeṇa dhīmatā",
+                "transliteration": "tava śiṣyeṇa dhīmatā",
                 "sanskrit_te": "శిష్యేణ ధీమతా",
-                "en": "By your disciple",
-                "te": "పాండవ సైన్యాన్ని చూడండి."
+                "en": "The son of Drupada.",
+                "te": "గొప్ప పాండవ సైన్యాన్ని చూడండి."
             }
         ],
         "hfMerged": true
@@ -395,69 +407,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అత్ర శూరా మహేష్వాసా భీమార్జునసమా యుధి |\nయుయుధానో విరాటశ్చ ద్రుపదశ్చ మహారథః",
         "lineBreakdown": [
             {
-                "sanskrit": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि",
-                "word": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi",
-                "transliteration": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi",
+                "sanskrit": "अत्र शूरा महेष्वासा",
+                "word": "atra śūrā maheṣvāsā",
+                "transliteration": "atra śūrā maheṣvāsā",
                 "sanskrit_te": "అత్ర శూరా మహేష్వాసా",
-                "en": "Here powerful warriors",
+                "en": "Here in this army are many heroic",
                 "te": "ఇక్కడ యుద్ధంలో భీమార్జునులతో సమానమైన"
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "भीमार्जुनसमा युधि",
+                "word": "bhīmārjunasamā yudhi",
+                "transliteration": "bhīmārjunasamā yudhi",
                 "sanskrit_te": "భీమార్జునసమా యుధి",
-                "en": "Equal to Bheem and Arjun in military prowess",
+                "en": "Bowmen equal in fighting to Bhima and Arjuna",
                 "te": "గొప్ప వీరులు, విలుకారులు ఉన్నారు."
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "युयुधानो विराटश्च",
+                "word": "yuyudhāno virāṭaśca",
+                "transliteration": "yuyudhāno virāṭaśca",
                 "sanskrit_te": "యుయుధానో విరాటశ్చ",
-                "en": "Yuyudhan Virat Drupad",
+                "en": "Great fighters like Yuyudhana",
                 "te": "యుయుధానుడు, విరాటుడు మరియు మహారథుడైన"
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "द्रुपदश्च महारथः",
+                "word": "drupadaśca mahārathaḥ",
+                "transliteration": "drupadaśca mahārathaḥ",
                 "sanskrit_te": "ద్రుపదశ్చ మహారథః",
-                "en": "Like Yuyudhana, Virata and Drupada.",
+                "en": "Virata and Drupada",
                 "te": "దృపదుడు వంటి వారు ఉన్నారు."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अत्र शूरा महेष्वासा भीमार्जुनसमा युधि",
-                "word": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi",
-                "transliteration": "atra śūrā maheṣvāsā bhīmārjunasamā yudhi",
+                "sanskrit": "अत्र शूरा महेष्वासा",
+                "word": "atra śūrā maheṣvāsā",
+                "transliteration": "atra śūrā maheṣvāsā",
                 "sanskrit_te": "అత్ర శూరా మహేష్వాసా",
-                "en": "Here powerful warriors",
+                "en": "Here in this army are many heroic",
                 "te": "ఇక్కడ యుద్ధంలో భీమార్జునులతో సమానమైన"
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "भीमार्जुनसमा युधि",
+                "word": "bhīmārjunasamā yudhi",
+                "transliteration": "bhīmārjunasamā yudhi",
                 "sanskrit_te": "భీమార్జునసమా యుధి",
-                "en": "Equal to Bheem and Arjun in military prowess",
+                "en": "Bowmen equal in fighting to Bhima and Arjuna",
                 "te": "గొప్ప వీరులు, విలుకారులు ఉన్నారు."
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "युयुधानो विराटश्च",
+                "word": "yuyudhāno virāṭaśca",
+                "transliteration": "yuyudhāno virāṭaśca",
                 "sanskrit_te": "యుయుధానో విరాటశ్చ",
-                "en": "Yuyudhan Virat Drupad",
+                "en": "Great fighters like Yuyudhana",
                 "te": "యుయుధానుడు, విరాటుడు మరియు మహారథుడైన"
             },
             {
-                "sanskrit": "युयुधानो विराटश्च द्रुपदश्च महारथः",
-                "word": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
-                "transliteration": "yuyudhāno virāṭaśca drupadaśca mahārathaḥ",
+                "sanskrit": "द्रुपदश्च महारथः",
+                "word": "drupadaśca mahārathaḥ",
+                "transliteration": "drupadaśca mahārathaḥ",
                 "sanskrit_te": "ద్రుపదశ్చ మహారథః",
-                "en": "Like Yuyudhana, Virata and Drupada.",
+                "en": "Virata and Drupada",
                 "te": "దృపదుడు వంటి వారు ఉన్నారు."
             }
         ],
@@ -498,36 +510,36 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ధృష్టకేతుశ్చేకితానః కాశిరాజశ్చ వీర్యవాన్ |\nపురుజిత్కున్తిభోజశ్చ శైబ్యశ్చ నరపుఙ్గవః",
         "lineBreakdown": [
             {
-                "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्",
-                "word": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān",
-                "transliteration": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān",
-                "sanskrit_te": "ధృష్టకేతుశ్చేకితానః కాశిరాజశ్చ",
-                "en": "Dhrishtaketu Kashiraj heroic",
-                "te": "ధృష్టకేతు కాశిరాజు వీరత్వం"
+                "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च",
+                "word": "dhṛṣṭaketuścekitānaḥ kāśirājaśca",
+                "transliteration": "dhṛṣṭaketuścekitānaḥ kāśirājaśca",
+                "sanskrit_te": "ధృష్టకేతుశ్చేకితానః",
+                "en": "Dhrstaketu, Cekitana, the",
+                "te": "Dhrstaketu, Cekitana, the"
             },
             {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
+                "sanskrit": "वीर्यवान्",
+                "word": "vīryavān",
+                "transliteration": "vīryavān",
+                "sanskrit_te": "కాశిరాజశ్చ",
+                "en": "Valiant king of Kasi,",
+                "te": "Valiant king of Kasi,"
+            },
+            {
+                "sanskrit": "पुरुजित्कुन्तिभोजश्च",
+                "word": "purujitkuntibhojaśca",
+                "transliteration": "purujitkuntibhojaśca",
                 "sanskrit_te": "వీర్యవాన్ పురుజిత్కున్తిభోజశ్చ",
-                "en": "Purujit Kuntibhoj Shaibya",
-                "te": "పురుజిత్ కుంతిభోజ్ షైబ్యా"
+                "en": "Purujit, Kuntibhoja, and Saibya,",
+                "te": "Purujit, Kuntibhoja, and Saibya,"
             },
             {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "sanskrit_te": "శైబ్యశ్చ",
-                "en": "Best of men Yudhamanyu",
-                "te": "ఉత్తమ పురుషుడు యుధిమన్యూ"
-            },
-            {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "sanskrit_te": "నరపుఙ్గవః",
-                "en": "Courageous Uttamauja heroic",
-                "te": "ధైర్యమైన ఉత్తమాయుజ హీరో"
+                "sanskrit": "शैब्यश्च नरपुंगवः",
+                "word": "śaibyaśca narapuṃgavaḥ",
+                "transliteration": "śaibyaśca narapuṃgavaḥ",
+                "sanskrit_te": "శైబ్యశ్చ నరపుఙ్గవః",
+                "en": "The best among men;",
+                "te": "The best among men;"
             }
         ],
         "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् |पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः |",
@@ -538,36 +550,36 @@ const CHAPTER_1_SHLOKAS = {
         "te": {},
         "word_by_word": [
             {
-                "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्",
-                "word": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān",
-                "transliteration": "dhṛṣṭaketuścekitānaḥ kāśirājaśca vīryavān",
-                "sanskrit_te": "ధృష్టకేతుశ్చేకితానః కాశిరాజశ్చ",
-                "en": "Dhrishtaketu Kashiraj heroic",
-                "te": "ధృష్టకేతు కాశిరాజు వీరత్వం"
+                "sanskrit": "धृष्टकेतुश्चेकितानः काशिराजश्च",
+                "word": "dhṛṣṭaketuścekitānaḥ kāśirājaśca",
+                "transliteration": "dhṛṣṭaketuścekitānaḥ kāśirājaśca",
+                "sanskrit_te": "ధృష్టకేతుశ్చేకితానః",
+                "en": "Dhrstaketu, Cekitana, the",
+                "te": "Dhrstaketu, Cekitana, the"
             },
             {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
+                "sanskrit": "वीर्यवान्",
+                "word": "vīryavān",
+                "transliteration": "vīryavān",
+                "sanskrit_te": "కాశిరాజశ్చ",
+                "en": "Valiant king of Kasi,",
+                "te": "Valiant king of Kasi,"
+            },
+            {
+                "sanskrit": "पुरुजित्कुन्तिभोजश्च",
+                "word": "purujitkuntibhojaśca",
+                "transliteration": "purujitkuntibhojaśca",
                 "sanskrit_te": "వీర్యవాన్ పురుజిత్కున్తిభోజశ్చ",
-                "en": "Purujit Kuntibhoj Shaibya",
-                "te": "పురుజిత్ కుంతిభోజ్ షైబ్యా"
+                "en": "Purujit, Kuntibhoja, and Saibya,",
+                "te": "Purujit, Kuntibhoja, and Saibya,"
             },
             {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "sanskrit_te": "శైబ్యశ్చ",
-                "en": "Best of men Yudhamanyu",
-                "te": "ఉత్తమ పురుషుడు యుధిమన్యూ"
-            },
-            {
-                "sanskrit": "पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुंगवः",
-                "word": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "transliteration": "purujitkuntibhojaśca śaibyaśca narapuṃgavaḥ",
-                "sanskrit_te": "నరపుఙ్గవః",
-                "en": "Courageous Uttamauja heroic",
-                "te": "ధైర్యమైన ఉత్తమాయుజ హీరో"
+                "sanskrit": "शैब्यश्च नरपुंगवः",
+                "word": "śaibyaśca narapuṃgavaḥ",
+                "transliteration": "śaibyaśca narapuṃgavaḥ",
+                "sanskrit_te": "శైబ్యశ్చ నరపుఙ్గవః",
+                "en": "The best among men;",
+                "te": "The best among men;"
             }
         ],
         "hfMerged": true
@@ -620,69 +632,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యుధామన్యుశ్చ విక్రాన్త ఉత్తమౌజాశ్చ వీర్యవాన్ |\nసౌభద్రో ద్రౌపదేయాశ్చ సర్వ ఏవ మహారథాః",
         "lineBreakdown": [
             {
-                "sanskrit": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्",
-                "word": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān",
-                "transliteration": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān",
+                "sanskrit": "युधामन्युश्च विक्रान्त",
+                "word": "yudhāmanyuśca vikrānta",
+                "transliteration": "yudhāmanyuśca vikrānta",
                 "sanskrit_te": "యుధామన్యుశ్చ విక్రాన్త ఉత్తమౌజాశ్చ",
-                "en": "The son of Subhadra the sons of Draupadi",
+                "en": "Yudhāmanyu, the fierce, and Uttamaujā,",
                 "te": "యుధామన్యుడు"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "उत्तमौजाश्च वीर्यवान्",
+                "word": "uttamaujāśca vīryavān",
+                "transliteration": "uttamaujāśca vīryavān",
                 "sanskrit_te": "వీర్యవాన్ సౌభద్రో",
-                "en": "Mighty; Saubhadra (Abhimanyu), and the sons",
+                "en": "The mighty; Saubhadra (Abhimanyu), and",
                 "te": "ఉత్తమౌజుడు"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व",
+                "word": "saubhadro draupadeyāśca sarva",
+                "transliteration": "saubhadro draupadeyāśca sarva",
                 "sanskrit_te": "ద్రౌపదేయాశ్చ సర్వ",
-                "en": "Of Draupadī — all of",
+                "en": "The sons of Draupadī — all",
                 "te": "సౌభద్రుడు (అభిమన్యుడు)"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "एव महारथाः",
+                "word": "eva mahārathāḥ",
+                "transliteration": "eva mahārathāḥ",
                 "sanskrit_te": "ఏవ మహారథాః",
-                "en": "Them are great chariot warriors.",
+                "en": "Of them are great chariot warriors.",
                 "te": "మరియు ద్రౌపది కుమారులు — వీరంతా మహారథులు."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्",
-                "word": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān",
-                "transliteration": "yudhāmanyuśca vikrānta uttamaujāśca vīryavān",
+                "sanskrit": "युधामन्युश्च विक्रान्त",
+                "word": "yudhāmanyuśca vikrānta",
+                "transliteration": "yudhāmanyuśca vikrānta",
                 "sanskrit_te": "యుధామన్యుశ్చ విక్రాన్త ఉత్తమౌజాశ్చ",
-                "en": "The son of Subhadra the sons of Draupadi",
+                "en": "Yudhāmanyu, the fierce, and Uttamaujā,",
                 "te": "యుధామన్యుడు"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "उत्तमौजाश्च वीर्यवान्",
+                "word": "uttamaujāśca vīryavān",
+                "transliteration": "uttamaujāśca vīryavān",
                 "sanskrit_te": "వీర్యవాన్ సౌభద్రో",
-                "en": "Mighty; Saubhadra (Abhimanyu), and the sons",
+                "en": "The mighty; Saubhadra (Abhimanyu), and",
                 "te": "ఉత్తమౌజుడు"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व",
+                "word": "saubhadro draupadeyāśca sarva",
+                "transliteration": "saubhadro draupadeyāśca sarva",
                 "sanskrit_te": "ద్రౌపదేయాశ్చ సర్వ",
-                "en": "Of Draupadī — all of",
+                "en": "The sons of Draupadī — all",
                 "te": "సౌభద్రుడు (అభిమన్యుడు)"
             },
             {
-                "sanskrit": "सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः",
-                "word": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
-                "transliteration": "saubhadro draupadeyāśca sarva eva mahārathāḥ",
+                "sanskrit": "एव महारथाः",
+                "word": "eva mahārathāḥ",
+                "transliteration": "eva mahārathāḥ",
                 "sanskrit_te": "ఏవ మహారథాః",
-                "en": "Them are great chariot warriors.",
+                "en": "Of them are great chariot warriors.",
                 "te": "మరియు ద్రౌపది కుమారులు — వీరంతా మహారథులు."
             }
         ],
@@ -736,70 +748,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అస్మాకం తు విశిష్టా యే తాన్నిబోధ ద్విజోత్తమ |\nనాయకా మమ సైన్యస్య సంజ్ఞార్థం తాన్బ్రవీమి తే",
         "lineBreakdown": [
             {
-                "sanskrit": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम",
-                "word": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama",
-                "transliteration": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama",
+                "sanskrit": "अस्माकं तु विशिष्टा",
+                "word": "asmākaṃ tu viśiṣṭā",
+                "transliteration": "asmākaṃ tu viśiṣṭā",
                 "sanskrit_te": "అస్మాకం తు విశిష్టా",
-                "en": "Ours but special",
-                "te": "ఓ ద్విజోత్తమా (ద్రోణుడా), మాలో ఎవరు"
+                "en": "But know those who are distinguished among us,",
+                "te": "ఓ ద్విజోత్తమా (ద్రోణుడా), మాలో"
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "ये तान्निबोध द्विजोत्तम",
+                "word": "ye tānnibodha dvijottama",
+                "transliteration": "ye tānnibodha dvijottama",
                 "sanskrit_te": "యే తాన్నిబోధ ద్విజోత్తమ",
-                "en": "Who be informed",
-                "te": "విశిష్టులో వారిని తెలుసుకో. నా సైన్యం"
+                "en": "O best of the twice born. For",
+                "te": "ఎవరు విశిష్టులో వారిని తెలుసుకో."
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "नायका मम सैन्यस्य",
+                "word": "nāyakā mama sainyasya",
+                "transliteration": "nāyakā mama sainyasya",
                 "sanskrit_te": "నాయకా మమ సైన్యస్య",
-                "en": "Principal generals our of army",
-                "te": "యొక్క నాయకుల పేర్లు చెప్పడం"
+                "en": "The sake of naming the leaders of",
+                "te": "నా సైన్యం యొక్క నాయకుల పేర్లు"
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "संज्ञार्थं तान्ब्रवीमि ते",
+                "word": "saṃjñārthaṃ tānbravīmi te",
+                "transliteration": "saṃjñārthaṃ tānbravīmi te",
                 "sanskrit_te": "సంజ్ఞార్థం తాన్బ్రవీమి తే",
-                "en": "For information I recount unto you",
-                "te": "కోసం వారిని నీకు చెబుతున్నాను."
+                "en": "My army, I tell them to you.",
+                "te": "చెప్పడం కోసం వారిని నీకు చెబుతున్నాను."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम",
-                "word": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama",
-                "transliteration": "asmākaṃ tu viśiṣṭā ye tānnibodha dvijottama",
+                "sanskrit": "अस्माकं तु विशिष्टा",
+                "word": "asmākaṃ tu viśiṣṭā",
+                "transliteration": "asmākaṃ tu viśiṣṭā",
                 "sanskrit_te": "అస్మాకం తు విశిష్టా",
-                "en": "Ours but special",
-                "te": "ఓ ద్విజోత్తమా (ద్రోణుడా), మాలో ఎవరు"
+                "en": "But know those who are distinguished among us,",
+                "te": "ఓ ద్విజోత్తమా (ద్రోణుడా), మాలో"
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "ये तान्निबोध द्विजोत्तम",
+                "word": "ye tānnibodha dvijottama",
+                "transliteration": "ye tānnibodha dvijottama",
                 "sanskrit_te": "యే తాన్నిబోధ ద్విజోత్తమ",
-                "en": "Who be informed",
-                "te": "విశిష్టులో వారిని తెలుసుకో. నా సైన్యం"
+                "en": "O best of the twice born. For",
+                "te": "ఎవరు విశిష్టులో వారిని తెలుసుకో."
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "नायका मम सैन्यस्य",
+                "word": "nāyakā mama sainyasya",
+                "transliteration": "nāyakā mama sainyasya",
                 "sanskrit_te": "నాయకా మమ సైన్యస్య",
-                "en": "Principal generals our of army",
-                "te": "యొక్క నాయకుల పేర్లు చెప్పడం"
+                "en": "The sake of naming the leaders of",
+                "te": "నా సైన్యం యొక్క నాయకుల పేర్లు"
             },
             {
-                "sanskrit": "नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते",
-                "word": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
-                "transliteration": "nāyakā mama sainyasya saṃjñārthaṃ tānbravīmi te",
+                "sanskrit": "संज्ञार्थं तान्ब्रवीमि ते",
+                "word": "saṃjñārthaṃ tānbravīmi te",
+                "transliteration": "saṃjñārthaṃ tānbravīmi te",
                 "sanskrit_te": "సంజ్ఞార్థం తాన్బ్రవీమి తే",
-                "en": "For information I recount unto you",
-                "te": "కోసం వారిని నీకు చెబుతున్నాను."
+                "en": "My army, I tell them to you.",
+                "te": "చెప్పడం కోసం వారిని నీకు చెబుతున్నాను."
             }
         ],
         "hfMerged": true
@@ -852,70 +864,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "భవాన్భీష్మశ్చ కర్ణశ్చ కృపశ్చ సమితిఞ్జయః |\nఅశ్వత్థామా వికర్ణశ్చ సౌమదత్తిస్తథైవ చ",
         "lineBreakdown": [
             {
-                "sanskrit": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः",
-                "word": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ",
-                "transliteration": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ",
+                "sanskrit": "भवान्भीष्मश्च कर्णश्च",
+                "word": "bhavānbhīṣmaśca karṇaśca",
+                "transliteration": "bhavānbhīṣmaśca karṇaśca",
                 "sanskrit_te": "భవాన్భీష్మశ్చ కర్ణశ్చ",
-                "en": "Yourself Karna Kripa",
+                "en": "Yourself (Drona), Bhīṣma, Karṇa,",
                 "te": "మీరు (ద్రోణుడు), భీష్ముడు,"
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "कृपश्च समितिञ्जयः",
+                "word": "kṛpaśca samitiñjayaḥ",
+                "transliteration": "kṛpaśca samitiñjayaḥ",
                 "sanskrit_te": "కృపశ్చ సమితిఞ్జయః",
-                "en": "Victorious in battle Ashvatthama",
+                "en": "And Kṛpa, the victorious in",
                 "te": "కర్ణుడు, మరియు యుద్ధంలో గెలుపొందే కృపుడు; అశ్వత్థామ,"
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "अश्वत्थामा विकर्णश्च",
+                "word": "aśvatthāmā vikarṇaśca",
+                "transliteration": "aśvatthāmā vikarṇaśca",
                 "sanskrit_te": "అశ్వత్థామా వికర్ణశ్చ",
-                "en": "Vikarna Bhurishrava",
+                "en": "Battle; Aśvatthāmā, Vikarṇa, and also",
                 "te": "వికర్ణుడు, మరియు సోమదత్తుని కుమారుడు (భూరిశ్రవుడు)."
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "सौमदत्तिस्तथैव च",
+                "word": "saumadattistathaiva ca",
+                "transliteration": "saumadattistathaiva ca",
                 "sanskrit_te": "సౌమదత్తిస్తథైవ చ",
-                "en": "Thus and",
-                "te": "ఆ విధంగా మరియు"
+                "en": "The son of Somadatta (Bhūriśravā).",
+                "te": "The son of Somadatta (Bhūriśravā)."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः",
-                "word": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ",
-                "transliteration": "bhavānbhīṣmaśca karṇaśca kṛpaśca samitiñjayaḥ",
+                "sanskrit": "भवान्भीष्मश्च कर्णश्च",
+                "word": "bhavānbhīṣmaśca karṇaśca",
+                "transliteration": "bhavānbhīṣmaśca karṇaśca",
                 "sanskrit_te": "భవాన్భీష్మశ్చ కర్ణశ్చ",
-                "en": "Yourself Karna Kripa",
+                "en": "Yourself (Drona), Bhīṣma, Karṇa,",
                 "te": "మీరు (ద్రోణుడు), భీష్ముడు,"
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "कृपश्च समितिञ्जयः",
+                "word": "kṛpaśca samitiñjayaḥ",
+                "transliteration": "kṛpaśca samitiñjayaḥ",
                 "sanskrit_te": "కృపశ్చ సమితిఞ్జయః",
-                "en": "Victorious in battle Ashvatthama",
+                "en": "And Kṛpa, the victorious in",
                 "te": "కర్ణుడు, మరియు యుద్ధంలో గెలుపొందే కృపుడు; అశ్వత్థామ,"
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "अश्वत्थामा विकर्णश्च",
+                "word": "aśvatthāmā vikarṇaśca",
+                "transliteration": "aśvatthāmā vikarṇaśca",
                 "sanskrit_te": "అశ్వత్థామా వికర్ణశ్చ",
-                "en": "Vikarna Bhurishrava",
+                "en": "Battle; Aśvatthāmā, Vikarṇa, and also",
                 "te": "వికర్ణుడు, మరియు సోమదత్తుని కుమారుడు (భూరిశ్రవుడు)."
             },
             {
-                "sanskrit": "अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च",
-                "word": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
-                "transliteration": "aśvatthāmā vikarṇaśca saumadattistathaiva ca",
+                "sanskrit": "सौमदत्तिस्तथैव च",
+                "word": "saumadattistathaiva ca",
+                "transliteration": "saumadattistathaiva ca",
                 "sanskrit_te": "సౌమదత్తిస్తథైవ చ",
-                "en": "Thus and",
-                "te": "ఆ విధంగా మరియు"
+                "en": "The son of Somadatta (Bhūriśravā).",
+                "te": "The son of Somadatta (Bhūriśravā)."
             }
         ],
         "hfMerged": true
@@ -968,70 +980,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అన్యే చ బహవః శూరా మదర్థే త్యక్తజీవితాః |\nనానాశస్త్రప్రహరణాః సర్వే యుద్ధవిశారదాః",
         "lineBreakdown": [
             {
-                "sanskrit": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः",
-                "word": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ",
-                "transliteration": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ",
+                "sanskrit": "अन्ये च बहवः",
+                "word": "anye ca bahavaḥ",
+                "transliteration": "anye ca bahavaḥ",
                 "sanskrit_te": "అన్యే చ బహవః",
-                "en": "Others also many",
-                "te": "మరియు నా కోసం ప్రాణాలు త్యాగం"
+                "en": "And many other heroes",
+                "te": "మరియు నా కోసం ప్రాణాలు"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "शूरा मदर्थे त्यक्तजीविताः",
+                "word": "śūrā madarthe tyaktajīvitāḥ",
+                "transliteration": "śūrā madarthe tyaktajīvitāḥ",
                 "sanskrit_te": "శూరా మదర్థే",
-                "en": "Heroic warriors prepared to lay down their lives",
-                "te": "చేయడానికి సిద్ధంగా ఉన్న అనేక మంది"
+                "en": "Prepared to give up their lives for my sake",
+                "te": "త్యాగం చేయడానికి సిద్ధంగా ఉన్న"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "नानाशस्त्रप्रहरणाः",
+                "word": "nānāśastrapraharaṇāḥ",
+                "transliteration": "nānāśastrapraharaṇāḥ",
                 "sanskrit_te": "త్యక్తజీవితాః నానాశస్త్రప్రహరణాః",
                 "en": "Armed with various weapons",
-                "te": "ఇతర శూరులు, వివిధ ఆయుధాలు"
+                "te": "అనేక మంది ఇతర శూరులు, వివిధ"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "सर्वे युद्धविशारदाः",
+                "word": "sarve yuddhaviśāradāḥ",
+                "transliteration": "sarve yuddhaviśāradāḥ",
                 "sanskrit_te": "సర్వే యుద్ధవిశారదాః",
-                "en": "All skilled in the art of warfare",
-                "te": "కలిగినవారు, అందరూ యుద్ధంలో నేర్పరులు."
+                "en": "All skilled in warfare.",
+                "te": "ఆయుధాలు కలిగినవారు, అందరూ యుద్ధంలో నేర్పరులు."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः",
-                "word": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ",
-                "transliteration": "anye ca bahavaḥ śūrā madarthe tyaktajīvitāḥ",
+                "sanskrit": "अन्ये च बहवः",
+                "word": "anye ca bahavaḥ",
+                "transliteration": "anye ca bahavaḥ",
                 "sanskrit_te": "అన్యే చ బహవః",
-                "en": "Others also many",
-                "te": "మరియు నా కోసం ప్రాణాలు త్యాగం"
+                "en": "And many other heroes",
+                "te": "మరియు నా కోసం ప్రాణాలు"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "शूरा मदर्थे त्यक्तजीविताः",
+                "word": "śūrā madarthe tyaktajīvitāḥ",
+                "transliteration": "śūrā madarthe tyaktajīvitāḥ",
                 "sanskrit_te": "శూరా మదర్థే",
-                "en": "Heroic warriors prepared to lay down their lives",
-                "te": "చేయడానికి సిద్ధంగా ఉన్న అనేక మంది"
+                "en": "Prepared to give up their lives for my sake",
+                "te": "త్యాగం చేయడానికి సిద్ధంగా ఉన్న"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "नानाशस्त्रप्रहरणाः",
+                "word": "nānāśastrapraharaṇāḥ",
+                "transliteration": "nānāśastrapraharaṇāḥ",
                 "sanskrit_te": "త్యక్తజీవితాః నానాశస్త్రప్రహరణాః",
                 "en": "Armed with various weapons",
-                "te": "ఇతర శూరులు, వివిధ ఆయుధాలు"
+                "te": "అనేక మంది ఇతర శూరులు, వివిధ"
             },
             {
-                "sanskrit": "नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः",
-                "word": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
-                "transliteration": "nānāśastrapraharaṇāḥ sarve yuddhaviśāradāḥ",
+                "sanskrit": "सर्वे युद्धविशारदाः",
+                "word": "sarve yuddhaviśāradāḥ",
+                "transliteration": "sarve yuddhaviśāradāḥ",
                 "sanskrit_te": "సర్వే యుద్ధవిశారదాః",
-                "en": "All skilled in the art of warfare",
-                "te": "కలిగినవారు, అందరూ యుద్ధంలో నేర్పరులు."
+                "en": "All skilled in warfare.",
+                "te": "ఆయుధాలు కలిగినవారు, అందరూ యుద్ధంలో నేర్పరులు."
             }
         ],
         "hfMerged": true
@@ -1084,70 +1096,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అపర్యాప్తం తదస్మాకం బలం భీష్మాభిరక్షితమ్ |\nపర్యాప్తం త్విదమేతేషాం బలం భీమాభిరక్షితమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्",
-                "word": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam",
-                "transliteration": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam",
+                "sanskrit": "अपर्याप्तं तदस्माकं",
+                "word": "aparyāptaṃ tadasmākaṃ",
+                "transliteration": "aparyāptaṃ tadasmākaṃ",
                 "sanskrit_te": "అపర్యాప్తం తదస్మాకం",
-                "en": "Unlimited ours",
-                "te": "భీష్మునిచే రక్షించబడుతున్న మా"
+                "en": "Our army, protected",
+                "te": "భీష్మునిచే రక్షించబడుతున్న"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "बलं भीष्माभिरक्षितम्",
+                "word": "balaṃ bhīṣmābhirakṣitam",
+                "transliteration": "balaṃ bhīṣmābhirakṣitam",
                 "sanskrit_te": "బలం భీష్మాభిరక్షితమ్",
-                "en": "Strength by Grandsire Bheeshma",
-                "te": "సైన్యం అపరిమితమైనది; అయితే"
+                "en": "By Bhīṣma, is unlimited;",
+                "te": "మా సైన్యం అపరిమితమైనది;"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "पर्याप्तं त्विदमेतेषां",
+                "word": "paryāptaṃ tvidameteṣāṃ",
+                "transliteration": "paryāptaṃ tvidameteṣāṃ",
                 "sanskrit_te": "పర్యాప్తం త్విదమేతేషాం",
-                "en": "Limited this",
-                "te": "భీమునిచే రక్షించబడుతున్న వారి"
+                "en": "Whereas their army, protected",
+                "te": "అయితే భీమునిచే రక్షించబడుతున్న"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "बलं भीमाभिरक्षितम्",
+                "word": "balaṃ bhīmābhirakṣitam",
+                "transliteration": "balaṃ bhīmābhirakṣitam",
                 "sanskrit_te": "బలం భీమాభిరక్షితమ్",
-                "en": "Strength Bheem",
-                "te": "సైన్యం పరిమితమైనది."
+                "en": "By Bhīma, is limited.",
+                "te": "వారి సైన్యం పరిమితమైనది."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्",
-                "word": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam",
-                "transliteration": "aparyāptaṃ tadasmākaṃ balaṃ bhīṣmābhirakṣitam",
+                "sanskrit": "अपर्याप्तं तदस्माकं",
+                "word": "aparyāptaṃ tadasmākaṃ",
+                "transliteration": "aparyāptaṃ tadasmākaṃ",
                 "sanskrit_te": "అపర్యాప్తం తదస్మాకం",
-                "en": "Unlimited ours",
-                "te": "భీష్మునిచే రక్షించబడుతున్న మా"
+                "en": "Our army, protected",
+                "te": "భీష్మునిచే రక్షించబడుతున్న"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "बलं भीष्माभिरक्षितम्",
+                "word": "balaṃ bhīṣmābhirakṣitam",
+                "transliteration": "balaṃ bhīṣmābhirakṣitam",
                 "sanskrit_te": "బలం భీష్మాభిరక్షితమ్",
-                "en": "Strength by Grandsire Bheeshma",
-                "te": "సైన్యం అపరిమితమైనది; అయితే"
+                "en": "By Bhīṣma, is unlimited;",
+                "te": "మా సైన్యం అపరిమితమైనది;"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "पर्याप्तं त्विदमेतेषां",
+                "word": "paryāptaṃ tvidameteṣāṃ",
+                "transliteration": "paryāptaṃ tvidameteṣāṃ",
                 "sanskrit_te": "పర్యాప్తం త్విదమేతేషాం",
-                "en": "Limited this",
-                "te": "భీమునిచే రక్షించబడుతున్న వారి"
+                "en": "Whereas their army, protected",
+                "te": "అయితే భీమునిచే రక్షించబడుతున్న"
             },
             {
-                "sanskrit": "पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्",
-                "word": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
-                "transliteration": "paryāptaṃ tvidameteṣāṃ balaṃ bhīmābhirakṣitam",
+                "sanskrit": "बलं भीमाभिरक्षितम्",
+                "word": "balaṃ bhīmābhirakṣitam",
+                "transliteration": "balaṃ bhīmābhirakṣitam",
                 "sanskrit_te": "బలం భీమాభిరక్షితమ్",
-                "en": "Strength Bheem",
-                "te": "సైన్యం పరిమితమైనది."
+                "en": "By Bhīma, is limited.",
+                "te": "వారి సైన్యం పరిమితమైనది."
             }
         ],
         "hfMerged": true
@@ -1200,70 +1212,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అయనేషు చ సర్వేషు యథాభాగమవస్థితాః |\nభీష్మమేవాభిరక్షన్తు భవన్తః సర్వ ఏవ హి",
         "lineBreakdown": [
             {
-                "sanskrit": "अयनेषु च सर्वेषु यथाभागमवस्थिताः",
-                "word": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ",
-                "transliteration": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ",
+                "sanskrit": "अयनेषु च",
+                "word": "ayaneṣu ca",
+                "transliteration": "ayaneṣu ca",
                 "sanskrit_te": "అయనేషు చ సర్వేషు",
-                "en": "At the strategic points also all",
-                "te": "మరియు అన్ని వ్యూహ బిందువులలో"
+                "en": "And stationed in all the",
+                "te": "మరియు అన్ని వ్యూహ"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "सर्वेषु यथाभागमवस्थिताः",
+                "word": "sarveṣu yathābhāgamavasthitāḥ",
+                "transliteration": "sarveṣu yathābhāgamavasthitāḥ",
                 "sanskrit_te": "యథాభాగమవస్థితాః భీష్మమేవాభిరక్షన్తు",
-                "en": "In respective position to Grandsire Bheeshma",
-                "te": "మీ మీ భాగాల ప్రకారం"
+                "en": "Strategic points according to your",
+                "te": "బిందువులలో మీ మీ"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "भीष्ममेवाभिरक्षन्तु",
+                "word": "bhīṣmamevābhirakṣantu",
+                "transliteration": "bhīṣmamevābhirakṣantu",
                 "sanskrit_te": "భవన్తః సర్వ",
                 "en": "Respective positions, all of you",
-                "te": "ఉండి, మీరు అందరూ"
+                "te": "భాగాల ప్రకారం ఉండి, మీరు"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "भवन्तः सर्व एव हि",
+                "word": "bhavantaḥ sarva eva hi",
+                "transliteration": "bhavantaḥ sarva eva hi",
                 "sanskrit_te": "ఏవ హి",
                 "en": "Should indeed protect Bhīṣma alone.",
-                "te": "భీష్ముని మాత్రమే రక్షించండి."
+                "te": "అందరూ భీష్ముని మాత్రమే రక్షించండి."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अयनेषु च सर्वेषु यथाभागमवस्थिताः",
-                "word": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ",
-                "transliteration": "ayaneṣu ca sarveṣu yathābhāgamavasthitāḥ",
+                "sanskrit": "अयनेषु च",
+                "word": "ayaneṣu ca",
+                "transliteration": "ayaneṣu ca",
                 "sanskrit_te": "అయనేషు చ సర్వేషు",
-                "en": "At the strategic points also all",
-                "te": "మరియు అన్ని వ్యూహ బిందువులలో"
+                "en": "And stationed in all the",
+                "te": "మరియు అన్ని వ్యూహ"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "सर्वेषु यथाभागमवस्थिताः",
+                "word": "sarveṣu yathābhāgamavasthitāḥ",
+                "transliteration": "sarveṣu yathābhāgamavasthitāḥ",
                 "sanskrit_te": "యథాభాగమవస్థితాః భీష్మమేవాభిరక్షన్తు",
-                "en": "In respective position to Grandsire Bheeshma",
-                "te": "మీ మీ భాగాల ప్రకారం"
+                "en": "Strategic points according to your",
+                "te": "బిందువులలో మీ మీ"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "भीष्ममेवाभिरक्षन्तु",
+                "word": "bhīṣmamevābhirakṣantu",
+                "transliteration": "bhīṣmamevābhirakṣantu",
                 "sanskrit_te": "భవన్తః సర్వ",
                 "en": "Respective positions, all of you",
-                "te": "ఉండి, మీరు అందరూ"
+                "te": "భాగాల ప్రకారం ఉండి, మీరు"
             },
             {
-                "sanskrit": "भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि",
-                "word": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
-                "transliteration": "bhīṣmamevābhirakṣantu bhavantaḥ sarva eva hi",
+                "sanskrit": "भवन्तः सर्व एव हि",
+                "word": "bhavantaḥ sarva eva hi",
+                "transliteration": "bhavantaḥ sarva eva hi",
                 "sanskrit_te": "ఏవ హి",
                 "en": "Should indeed protect Bhīṣma alone.",
-                "te": "భీష్ముని మాత్రమే రక్షించండి."
+                "te": "అందరూ భీష్ముని మాత్రమే రక్షించండి."
             }
         ],
         "hfMerged": true
@@ -1316,69 +1328,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "తస్య సంజనయన్హర్షం కురువృద్ధః పితామహః |\nసింహనాదం వినద్యోచ్చైః శఙ్ఖం దధ్మౌ ప్రతాపవాన్",
         "lineBreakdown": [
             {
-                "sanskrit": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः",
-                "word": "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ",
-                "transliteration": "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ",
+                "sanskrit": "तस्य सञ्जनयन्हर्षं",
+                "word": "tasya sañjanayanharṣaṃ",
+                "transliteration": "tasya sañjanayanharṣaṃ",
                 "sanskrit_te": "తస్య సంజనయన్హర్షం కురువృద్ధః",
-                "en": "His causing joy",
+                "en": "Then the grand old man of the Kuru dynasty",
                 "te": "అప్పుడు కురు వంశపు వృద్ధుడు"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "कुरुवृद्धः पितामहः",
+                "word": "kuruvṛddhaḥ pitāmahaḥ",
+                "transliteration": "kuruvṛddhaḥ pitāmahaḥ",
                 "sanskrit_te": "పితామహః సింహనాదం",
-                "en": "The grand old man of the Kuru dynasty (Bheeshma) grandfather",
+                "en": "The glorious grandsire (Bhīṣma)",
                 "te": "పితామహుడు (భీష్ముడు)"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं",
+                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ",
+                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ",
                 "sanskrit_te": "వినద్యోచ్చైః శఙ్ఖం",
                 "en": "Blowing his conch loudly like a lion's roar",
                 "te": "సింహనాదం వలె గట్టిగా శంఖం పూరించి"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "दध्मौ प्रतापवान्",
+                "word": "dadhmau pratāpavān",
+                "transliteration": "dadhmau pratāpavān",
                 "sanskrit_te": "దధ్మౌ ప్రతాపవాన్",
-                "en": "Conch shell blew the glorious",
+                "en": "Generated joy in Duryodhana.",
                 "te": "దుర్యోధనునికి హర్షాన్ని కలిగించాడు."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "तस्य सञ्जनयन्हर्षं कुरुवृद्धः पितामहः",
-                "word": "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ",
-                "transliteration": "tasya sañjanayanharṣaṃ kuruvṛddhaḥ pitāmahaḥ",
+                "sanskrit": "तस्य सञ्जनयन्हर्षं",
+                "word": "tasya sañjanayanharṣaṃ",
+                "transliteration": "tasya sañjanayanharṣaṃ",
                 "sanskrit_te": "తస్య సంజనయన్హర్షం కురువృద్ధః",
-                "en": "His causing joy",
+                "en": "Then the grand old man of the Kuru dynasty",
                 "te": "అప్పుడు కురు వంశపు వృద్ధుడు"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "कुरुवृद्धः पितामहः",
+                "word": "kuruvṛddhaḥ pitāmahaḥ",
+                "transliteration": "kuruvṛddhaḥ pitāmahaḥ",
                 "sanskrit_te": "పితామహః సింహనాదం",
-                "en": "The grand old man of the Kuru dynasty (Bheeshma) grandfather",
+                "en": "The glorious grandsire (Bhīṣma)",
                 "te": "పితామహుడు (భీష్ముడు)"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं",
+                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ",
+                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ",
                 "sanskrit_te": "వినద్యోచ్చైః శఙ్ఖం",
                 "en": "Blowing his conch loudly like a lion's roar",
                 "te": "సింహనాదం వలె గట్టిగా శంఖం పూరించి"
             },
             {
-                "sanskrit": "सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्",
-                "word": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
-                "transliteration": "siṃhanādaṃ vinadyoccaiḥ śaṅkhaṃ dadhmau pratāpavān",
+                "sanskrit": "दध्मौ प्रतापवान्",
+                "word": "dadhmau pratāpavān",
+                "transliteration": "dadhmau pratāpavān",
                 "sanskrit_te": "దధ్మౌ ప్రతాపవాన్",
-                "en": "Conch shell blew the glorious",
+                "en": "Generated joy in Duryodhana.",
                 "te": "దుర్యోధనునికి హర్షాన్ని కలిగించాడు."
             }
         ],
@@ -1432,68 +1444,68 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "తతః శఙ్ఖాశ్చ భేర్యశ్చ పణవానకగోముఖాః |\nసహసైవాభ్యహన్యన్త స శబ్దస్తుములోఽభవత్",
         "lineBreakdown": [
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ",
-                "transliteration": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ",
-                "sanskrit_te": "తతః శఙ్ఖాశ్చ",
-                "en": "Thereafter conches bugles",
-                "te": "ఆ తరువాత కొంగలు కూతలు"
+                "sanskrit": "ततः शङ्खाश्च",
+                "word": "tataḥ śaṅkhāśca",
+                "transliteration": "tataḥ śaṅkhāśca",
+                "sanskrit_te": "తతః",
+                "en": "Then suddenly conchs, kettle drums,",
+                "te": "Then suddenly conchs, kettle drums,"
             },
             {
-                "sanskrit": "सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्",
-                "word": "sahasaivābhyahanyanta sa śabdastumulo",
-                "transliteration": "sahasaivābhyahanyanta sa śabdastumulo",
-                "sanskrit_te": "భేర్యశ్చ పణవానకగోముఖాః",
+                "sanskrit": "भेर्यश्च पणवानकगोमुखाः",
+                "word": "bheryaśca paṇavānakagomukhāḥ",
+                "transliteration": "bheryaśca paṇavānakagomukhāḥ",
+                "sanskrit_te": "శఙ్ఖాశ్చ భేర్యశ్చ",
                 "en": "Trumpets, tabors, and blow",
                 "te": "తుమ్మెదలు, ఢోకంగి, మరియు వాయించడం"
             },
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "abhavat",
-                "transliteration": "abhavat",
-                "sanskrit_te": "సహసైవాభ్యహన్యన్త స",
-                "en": "Suddenly that",
-                "te": "అకస్మాత్తుగా ఆ"
+                "sanskrit": "सहसैवाभ्यहन्यन्त",
+                "word": "sahasaivābhyahanyanta sa",
+                "transliteration": "sahasaivābhyahanyanta sa",
+                "sanskrit_te": "పణవానకగోముఖాః సహసైవాభ్యహన్యన్త",
+                "en": "Horns blared forth, and",
+                "te": "Horns blared forth, and"
             },
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "abhavat",
-                "transliteration": "abhavat",
-                "sanskrit_te": "శబ్దస్తుములోఽభవత్",
+                "sanskrit": "स शब्दस्तुमुलोऽभवत्",
+                "word": "śabdastumulo abhavat",
+                "transliteration": "śabdastumulo abhavat",
+                "sanskrit_te": "స శబ్దస్తుములోఽభవత్",
                 "en": "The sound was terrific.",
                 "te": "ధ్వని అద్భుతంగా ఉంది."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ",
-                "transliteration": "tataḥ śaṅkhāśca bheryaśca paṇavānakagomukhāḥ",
-                "sanskrit_te": "తతః శఙ్ఖాశ్చ",
-                "en": "Thereafter conches bugles",
-                "te": "ఆ తరువాత కొంగలు కూతలు"
+                "sanskrit": "ततः शङ्खाश्च",
+                "word": "tataḥ śaṅkhāśca",
+                "transliteration": "tataḥ śaṅkhāśca",
+                "sanskrit_te": "తతః",
+                "en": "Then suddenly conchs, kettle drums,",
+                "te": "Then suddenly conchs, kettle drums,"
             },
             {
-                "sanskrit": "सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्",
-                "word": "sahasaivābhyahanyanta sa śabdastumulo",
-                "transliteration": "sahasaivābhyahanyanta sa śabdastumulo",
-                "sanskrit_te": "భేర్యశ్చ పణవానకగోముఖాః",
+                "sanskrit": "भेर्यश्च पणवानकगोमुखाः",
+                "word": "bheryaśca paṇavānakagomukhāḥ",
+                "transliteration": "bheryaśca paṇavānakagomukhāḥ",
+                "sanskrit_te": "శఙ్ఖాశ్చ భేర్యశ్చ",
                 "en": "Trumpets, tabors, and blow",
                 "te": "తుమ్మెదలు, ఢోకంగి, మరియు వాయించడం"
             },
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "abhavat",
-                "transliteration": "abhavat",
-                "sanskrit_te": "సహసైవాభ్యహన్యన్త స",
-                "en": "Suddenly that",
-                "te": "అకస్మాత్తుగా ఆ"
+                "sanskrit": "सहसैवाभ्यहन्यन्त",
+                "word": "sahasaivābhyahanyanta sa",
+                "transliteration": "sahasaivābhyahanyanta sa",
+                "sanskrit_te": "పణవానకగోముఖాః సహసైవాభ్యహన్యన్త",
+                "en": "Horns blared forth, and",
+                "te": "Horns blared forth, and"
             },
             {
-                "sanskrit": "ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः",
-                "word": "abhavat",
-                "transliteration": "abhavat",
-                "sanskrit_te": "శబ్దస్తుములోఽభవత్",
+                "sanskrit": "स शब्दस्तुमुलोऽभवत्",
+                "word": "śabdastumulo abhavat",
+                "transliteration": "śabdastumulo abhavat",
+                "sanskrit_te": "స శబ్దస్తుములోఽభవత్",
                 "en": "The sound was terrific.",
                 "te": "ధ్వని అద్భుతంగా ఉంది."
             }
@@ -1548,70 +1560,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "తతః శ్వేతైర్హయైర్యుక్తే మహతి స్యన్దనే స్థితౌ |\nమాధవః పాణ్డవశ్చైవ దివ్యౌ శఙ్ఖౌ ప్రదధ్మతుః",
         "lineBreakdown": [
             {
-                "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ",
-                "word": "tataḥ śvetairhayairyukte mahati syandane sthitau",
-                "transliteration": "tataḥ śvetairhayairyukte mahati syandane sthitau",
-                "sanskrit_te": "తతః శ్వేతైర్హయైర్యుక్తే మహతి",
-                "en": "Then by white glorious",
-                "te": "అప్పుడు తెల్లని మహిమాన్వితమైన"
+                "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति",
+                "word": "tataḥ śvetairhayairyukte mahati",
+                "transliteration": "tataḥ śvetairhayairyukte mahati",
+                "sanskrit_te": "తతః శ్వేతైర్హయైర్యుక్తే",
+                "en": "Then Sri Krishna and",
+                "te": "Then Sri Krishna and"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "స్యన్దనే స్థితౌ మాధవః",
-                "en": "Chariot seated Shree Krishna, the husband of the goddess of fortune, Lakshmi",
-                "te": "రథంపై శ్రీ కృష్ణుడు, అదృష్ట దేవత అయిన లక్ష్మి భర్త, కూర్చుని ఉన్నాడు."
+                "sanskrit": "स्यन्दने स्थितौ",
+                "word": "syandane sthitau",
+                "transliteration": "syandane sthitau",
+                "sanskrit_te": "మహతి స్యన్దనే",
+                "en": "Arjuna, stationed in their",
+                "te": "Arjuna, stationed in their"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "పాణ్డవశ్చైవ దివ్యౌ",
-                "en": "Arjun Divine",
-                "te": "అర్జునుని దివ్యత్వం"
+                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ",
+                "word": "mādhavaḥ pāṇḍavaścaiva divyau",
+                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau",
+                "sanskrit_te": "స్థితౌ మాధవః పాణ్డవశ్చైవ",
+                "en": "Great chariot yoked with white",
+                "te": "Great chariot yoked with white"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "శఙ్ఖౌ ప్రదధ్మతుః",
-                "en": "Conch shells blew",
-                "te": "పేలని శంఖువులు పేలడం"
+                "sanskrit": "शङ्खौ प्रदध्मतुः",
+                "word": "śaṅkhau pradadhmatuḥ",
+                "transliteration": "śaṅkhau pradadhmatuḥ",
+                "sanskrit_te": "దివ్యౌ శఙ్ఖౌ ప్రదధ్మతుః",
+                "en": "Horses, blew their divine conchs.",
+                "te": "Horses, blew their divine conchs."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ",
-                "word": "tataḥ śvetairhayairyukte mahati syandane sthitau",
-                "transliteration": "tataḥ śvetairhayairyukte mahati syandane sthitau",
-                "sanskrit_te": "తతః శ్వేతైర్హయైర్యుక్తే మహతి",
-                "en": "Then by white glorious",
-                "te": "అప్పుడు తెల్లని మహిమాన్వితమైన"
+                "sanskrit": "ततः श्वेतैर्हयैर्युक्ते महति",
+                "word": "tataḥ śvetairhayairyukte mahati",
+                "transliteration": "tataḥ śvetairhayairyukte mahati",
+                "sanskrit_te": "తతః శ్వేతైర్హయైర్యుక్తే",
+                "en": "Then Sri Krishna and",
+                "te": "Then Sri Krishna and"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "స్యన్దనే స్థితౌ మాధవః",
-                "en": "Chariot seated Shree Krishna, the husband of the goddess of fortune, Lakshmi",
-                "te": "రథంపై శ్రీ కృష్ణుడు, అదృష్ట దేవత అయిన లక్ష్మి భర్త, కూర్చుని ఉన్నాడు."
+                "sanskrit": "स्यन्दने स्थितौ",
+                "word": "syandane sthitau",
+                "transliteration": "syandane sthitau",
+                "sanskrit_te": "మహతి స్యన్దనే",
+                "en": "Arjuna, stationed in their",
+                "te": "Arjuna, stationed in their"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "పాణ్డవశ్చైవ దివ్యౌ",
-                "en": "Arjun Divine",
-                "te": "అర్జునుని దివ్యత్వం"
+                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ",
+                "word": "mādhavaḥ pāṇḍavaścaiva divyau",
+                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau",
+                "sanskrit_te": "స్థితౌ మాధవః పాణ్డవశ్చైవ",
+                "en": "Great chariot yoked with white",
+                "te": "Great chariot yoked with white"
             },
             {
-                "sanskrit": "माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः",
-                "word": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "transliteration": "mādhavaḥ pāṇḍavaścaiva divyau śaṅkhau pradadhmatuḥ",
-                "sanskrit_te": "శఙ్ఖౌ ప్రదధ్మతుః",
-                "en": "Conch shells blew",
-                "te": "పేలని శంఖువులు పేలడం"
+                "sanskrit": "शङ्खौ प्रदध्मतुः",
+                "word": "śaṅkhau pradadhmatuḥ",
+                "transliteration": "śaṅkhau pradadhmatuḥ",
+                "sanskrit_te": "దివ్యౌ శఙ్ఖౌ ప్రదధ్మతుః",
+                "en": "Horses, blew their divine conchs.",
+                "te": "Horses, blew their divine conchs."
             }
         ],
         "hfMerged": true
@@ -1664,70 +1676,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "పాఞ్చజన్యం హృషీకేశో దేవదత్తం ధనంజయః |\nపౌణ్డ్రం దధ్మౌ మహాశఙ్ఖం భీమకర్మా వృకోదరః",
         "lineBreakdown": [
             {
-                "sanskrit": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः",
-                "word": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ",
-                "transliteration": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ",
+                "sanskrit": "पाञ्चजन्यं हृषीकेशो",
+                "word": "pāñcajanyaṃ hṛṣīkeśo",
+                "transliteration": "pāñcajanyaṃ hṛṣīkeśo",
                 "sanskrit_te": "పాఞ్చజన్యం హృషీకేశో దేవదత్తం",
-                "en": "The conch shell named Panchajanya Shree Krishna, the Lord of the mind and senses the conch shell named Devadutta",
-                "te": "మనస్సు మరియు ఇంద్రియాలకు అధిపతి అయిన పంచజన్య శ్రీ కృష్ణుని అనే శంఖుపొడి, దేవదూత అనే శంఖుపొడిని అందుకుంటుంది."
+                "en": "Sri Krishna blew his",
+                "te": "Sri Krishna blew his"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "देवदत्तं धनञ्जयः",
+                "word": "devadattaṃ dhanañjayaḥ",
+                "transliteration": "devadattaṃ dhanañjayaḥ",
                 "sanskrit_te": "ధనంజయః పౌణ్డ్రం",
-                "en": "Arjun, the winner of wealth the conch named Paundra blew",
-                "te": "అర్జున, సంపదను ఇచ్చిన శంఖం అయిన పౌండ్సాడ్ బావురుమన్నది."
+                "en": "Conch, Pancajanya, Arjuna his Devadatta,",
+                "te": "Conch, Pancajanya, Arjuna his Devadatta,"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं",
+                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ",
+                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ",
                 "sanskrit_te": "దధ్మౌ మహాశఙ్ఖం",
-                "en": "Mighty conch one who performs herculean tasks",
-                "te": "మైటీ శంఖం, మహా కష్టాలు చేసేది"
+                "en": "And Bhima of terrible deeds",
+                "te": "And Bhima of terrible deeds"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "भीमकर्मा वृकोदरः",
+                "word": "bhīmakarmā vṛkodaraḥ",
+                "transliteration": "bhīmakarmā vṛkodaraḥ",
                 "sanskrit_te": "భీమకర్మా వృకోదరః",
-                "en": "His great conch, Paundra.",
-                "te": "అతని గొప్ప శంఖం, పౌండ్రా."
+                "en": "Blew his great conch, Paundra.",
+                "te": "Blew his great conch, Paundra."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "पाञ्चजन्यं हृषीकेशो देवदत्तं धनञ्जयः",
-                "word": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ",
-                "transliteration": "pāñcajanyaṃ hṛṣīkeśo devadattaṃ dhanañjayaḥ",
+                "sanskrit": "पाञ्चजन्यं हृषीकेशो",
+                "word": "pāñcajanyaṃ hṛṣīkeśo",
+                "transliteration": "pāñcajanyaṃ hṛṣīkeśo",
                 "sanskrit_te": "పాఞ్చజన్యం హృషీకేశో దేవదత్తం",
-                "en": "The conch shell named Panchajanya Shree Krishna, the Lord of the mind and senses the conch shell named Devadutta",
-                "te": "మనస్సు మరియు ఇంద్రియాలకు అధిపతి అయిన పంచజన్య శ్రీ కృష్ణుని అనే శంఖుపొడి, దేవదూత అనే శంఖుపొడిని అందుకుంటుంది."
+                "en": "Sri Krishna blew his",
+                "te": "Sri Krishna blew his"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "देवदत्तं धनञ्जयः",
+                "word": "devadattaṃ dhanañjayaḥ",
+                "transliteration": "devadattaṃ dhanañjayaḥ",
                 "sanskrit_te": "ధనంజయః పౌణ్డ్రం",
-                "en": "Arjun, the winner of wealth the conch named Paundra blew",
-                "te": "అర్జున, సంపదను ఇచ్చిన శంఖం అయిన పౌండ్సాడ్ బావురుమన్నది."
+                "en": "Conch, Pancajanya, Arjuna his Devadatta,",
+                "te": "Conch, Pancajanya, Arjuna his Devadatta,"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं",
+                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ",
+                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ",
                 "sanskrit_te": "దధ్మౌ మహాశఙ్ఖం",
-                "en": "Mighty conch one who performs herculean tasks",
-                "te": "మైటీ శంఖం, మహా కష్టాలు చేసేది"
+                "en": "And Bhima of terrible deeds",
+                "te": "And Bhima of terrible deeds"
             },
             {
-                "sanskrit": "पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः",
-                "word": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
-                "transliteration": "pauṇḍraṃ dadhmau mahāśaṅkhaṃ bhīmakarmā vṛkodaraḥ",
+                "sanskrit": "भीमकर्मा वृकोदरः",
+                "word": "bhīmakarmā vṛkodaraḥ",
+                "transliteration": "bhīmakarmā vṛkodaraḥ",
                 "sanskrit_te": "భీమకర్మా వృకోదరః",
-                "en": "His great conch, Paundra.",
-                "te": "అతని గొప్ప శంఖం, పౌండ్రా."
+                "en": "Blew his great conch, Paundra.",
+                "te": "Blew his great conch, Paundra."
             }
         ],
         "hfMerged": true
@@ -1780,68 +1792,68 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అనన్తవిజయం రాజా కున్తీపుత్రో యుధిష్ఠిరః |\nనకులః సహదేవశ్చ సుఘోషమణిపుష్పకౌ",
         "lineBreakdown": [
             {
-                "sanskrit": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः",
-                "word": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ",
-                "transliteration": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ",
-                "sanskrit_te": "అనన్తవిజయం రాజా",
-                "en": "The conch named Anantavijay king son of Kunti",
-                "te": "కుంతి కుమారుడైన అనంతవిజయ రాజుకు ఒక శంఖం ఇవ్వబడింది"
+                "sanskrit": "अनन्तविजयं राजा",
+                "word": "anantavijayaṃ rājā",
+                "transliteration": "anantavijayaṃ rājā",
+                "sanskrit_te": "అనన్తవిజయం",
+                "en": "King Yudhisthira, the son of",
+                "te": "King Yudhisthira, the son of"
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "కున్తీపుత్రో యుధిష్ఠిరః",
+                "sanskrit": "कुन्तीपुत्रो युधिष्ठिरः",
+                "word": "kuntīputro yudhiṣṭhiraḥ",
+                "transliteration": "kuntīputro yudhiṣṭhiraḥ",
+                "sanskrit_te": "రాజా కున్తీపుత్రో",
                 "en": "Kunti, blew his conch, Anantavijaya,",
                 "te": "కుంతి, అతని శంఖాన్ని పేల్చింది, అనంతవిజయ."
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "నకులః సహదేవశ్చ",
-                "en": "Nakul Sahadev",
-                "te": "నకుల్ సహదేవుడు"
+                "sanskrit": "नकुलः सहदेवश्च",
+                "word": "nakulaḥ sahadevaśca",
+                "transliteration": "nakulaḥ sahadevaśca",
+                "sanskrit_te": "యుధిష్ఠిరః నకులః",
+                "en": "And Nakula and Sahadeva blew",
+                "te": "And Nakula and Sahadeva blew"
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "సుఘోషమణిపుష్పకౌ",
+                "sanskrit": "सुघोषमणिपुष्पकौ",
+                "word": "sughoṣamaṇipuṣpakau",
+                "transliteration": "sughoṣamaṇipuṣpakau",
+                "sanskrit_te": "సహదేవశ్చ సుఘోషమణిపుష్పకౌ",
                 "en": "Their conchs, Sughosa and Manipuspaka.",
                 "te": "వారి శంఖాలు, సుగోసా మరియు మణిపుస్పాకా."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः",
-                "word": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ",
-                "transliteration": "anantavijayaṃ rājā kuntīputro yudhiṣṭhiraḥ",
-                "sanskrit_te": "అనన్తవిజయం రాజా",
-                "en": "The conch named Anantavijay king son of Kunti",
-                "te": "కుంతి కుమారుడైన అనంతవిజయ రాజుకు ఒక శంఖం ఇవ్వబడింది"
+                "sanskrit": "अनन्तविजयं राजा",
+                "word": "anantavijayaṃ rājā",
+                "transliteration": "anantavijayaṃ rājā",
+                "sanskrit_te": "అనన్తవిజయం",
+                "en": "King Yudhisthira, the son of",
+                "te": "King Yudhisthira, the son of"
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "కున్తీపుత్రో యుధిష్ఠిరః",
+                "sanskrit": "कुन्तीपुत्रो युधिष्ठिरः",
+                "word": "kuntīputro yudhiṣṭhiraḥ",
+                "transliteration": "kuntīputro yudhiṣṭhiraḥ",
+                "sanskrit_te": "రాజా కున్తీపుత్రో",
                 "en": "Kunti, blew his conch, Anantavijaya,",
                 "te": "కుంతి, అతని శంఖాన్ని పేల్చింది, అనంతవిజయ."
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "నకులః సహదేవశ్చ",
-                "en": "Nakul Sahadev",
-                "te": "నకుల్ సహదేవుడు"
+                "sanskrit": "नकुलः सहदेवश्च",
+                "word": "nakulaḥ sahadevaśca",
+                "transliteration": "nakulaḥ sahadevaśca",
+                "sanskrit_te": "యుధిష్ఠిరః నకులః",
+                "en": "And Nakula and Sahadeva blew",
+                "te": "And Nakula and Sahadeva blew"
             },
             {
-                "sanskrit": "नकुलः सहदेवश्च सुघोषमणिपुष्पकौ",
-                "word": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "transliteration": "nakulaḥ sahadevaśca sughoṣamaṇipuṣpakau",
-                "sanskrit_te": "సుఘోషమణిపుష్పకౌ",
+                "sanskrit": "सुघोषमणिपुष्पकौ",
+                "word": "sughoṣamaṇipuṣpakau",
+                "transliteration": "sughoṣamaṇipuṣpakau",
+                "sanskrit_te": "సహదేవశ్చ సుఘోషమణిపుష్పకౌ",
                 "en": "Their conchs, Sughosa and Manipuspaka.",
                 "te": "వారి శంఖాలు, సుగోసా మరియు మణిపుస్పాకా."
             }
@@ -1896,70 +1908,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "కాశ్యశ్చ పరమేష్వాసః శిఖణ్డీ చ మహారథః |\nధృష్టద్యుమ్నో విరాటశ్చ సాత్యకిశ్చాపరాజితః",
         "lineBreakdown": [
             {
-                "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी च महारथः",
-                "word": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ",
-                "transliteration": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ",
+                "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी",
+                "word": "kāśyaśca parameṣvāsaḥ śikhaṇḍī",
+                "transliteration": "kāśyaśca parameṣvāsaḥ śikhaṇḍī",
                 "sanskrit_te": "కాశ్యశ్చ పరమేష్వాసః",
-                "en": "King of Kashi the excellent archer Shikhandi",
-                "te": "కాశీ రాజు అయిన అద్భుతమైన విలుకాడు షికాండు"
+                "en": "And the King of",
+                "te": "And the King of"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "च महारथः",
+                "word": "ca mahārathaḥ",
+                "transliteration": "ca mahārathaḥ",
                 "sanskrit_te": "శిఖణ్డీ చ",
-                "en": "And warriors who could single handedly match the strength of ten thousand ordinary warriors",
-                "te": "మరియు పదివేల సాధారణ యోధుల బలానికి సరితూగగల శక్తి కలిగిన యోధులు"
+                "en": "Kasi, the supreme bowman, Sikandi",
+                "te": "Kasi, the supreme bowman, Sikandi"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "धृष्टद्युम्नो",
+                "word": "dhṛṣṭadyumno",
+                "transliteration": "dhṛṣṭadyumno",
                 "sanskrit_te": "మహారథః ధృష్టద్యుమ్నో",
-                "en": "Dhrishtadyumna Virat",
-                "te": "ధృష్టద్యుమ్నుడు"
+                "en": "The mighty warrior, Dhrstadyumna, and",
+                "te": "The mighty warrior, Dhrstadyumna, and"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "विराटश्च सात्यकिश्चापराजितः",
+                "word": "virāṭaśca sātyakiścāparājitaḥ",
+                "transliteration": "virāṭaśca sātyakiścāparājitaḥ",
                 "sanskrit_te": "విరాటశ్చ సాత్యకిశ్చాపరాజితః",
-                "en": "Satyaki invincible",
-                "te": "సత్యకి"
+                "en": "Virata; and Satyaki, the invincible;",
+                "te": "Virata; and Satyaki, the invincible;"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी च महारथः",
-                "word": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ",
-                "transliteration": "kāśyaśca parameṣvāsaḥ śikhaṇḍī ca mahārathaḥ",
+                "sanskrit": "काश्यश्च परमेष्वासः शिखण्डी",
+                "word": "kāśyaśca parameṣvāsaḥ śikhaṇḍī",
+                "transliteration": "kāśyaśca parameṣvāsaḥ śikhaṇḍī",
                 "sanskrit_te": "కాశ్యశ్చ పరమేష్వాసః",
-                "en": "King of Kashi the excellent archer Shikhandi",
-                "te": "కాశీ రాజు అయిన అద్భుతమైన విలుకాడు షికాండు"
+                "en": "And the King of",
+                "te": "And the King of"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "च महारथः",
+                "word": "ca mahārathaḥ",
+                "transliteration": "ca mahārathaḥ",
                 "sanskrit_te": "శిఖణ్డీ చ",
-                "en": "And warriors who could single handedly match the strength of ten thousand ordinary warriors",
-                "te": "మరియు పదివేల సాధారణ యోధుల బలానికి సరితూగగల శక్తి కలిగిన యోధులు"
+                "en": "Kasi, the supreme bowman, Sikandi",
+                "te": "Kasi, the supreme bowman, Sikandi"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "धृष्टद्युम्नो",
+                "word": "dhṛṣṭadyumno",
+                "transliteration": "dhṛṣṭadyumno",
                 "sanskrit_te": "మహారథః ధృష్టద్యుమ్నో",
-                "en": "Dhrishtadyumna Virat",
-                "te": "ధృష్టద్యుమ్నుడు"
+                "en": "The mighty warrior, Dhrstadyumna, and",
+                "te": "The mighty warrior, Dhrstadyumna, and"
             },
             {
-                "sanskrit": "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः",
-                "word": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
-                "transliteration": "dhṛṣṭadyumno virāṭaśca sātyakiścāparājitaḥ",
+                "sanskrit": "विराटश्च सात्यकिश्चापराजितः",
+                "word": "virāṭaśca sātyakiścāparājitaḥ",
+                "transliteration": "virāṭaśca sātyakiścāparājitaḥ",
                 "sanskrit_te": "విరాటశ్చ సాత్యకిశ్చాపరాజితః",
-                "en": "Satyaki invincible",
-                "te": "సత్యకి"
+                "en": "Virata; and Satyaki, the invincible;",
+                "te": "Virata; and Satyaki, the invincible;"
             }
         ],
         "hfMerged": true
@@ -2012,33 +2024,33 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ద్రుపదో ద్రౌపదేయాశ్చ సర్వశః పృథివీపతే |\nసౌభద్రశ్చ మహాబాహుః శఙ్ఖాన్దధ్ముః పృథక్పృథక్",
         "lineBreakdown": [
             {
-                "sanskrit": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते",
-                "word": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate",
-                "transliteration": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate",
+                "sanskrit": "द्रुपदो द्रौपदेयाश्च",
+                "word": "drupado draupadeyāśca",
+                "transliteration": "drupado draupadeyāśca",
                 "sanskrit_te": "ద్రుపదో ద్రౌపదేయాశ్చ",
-                "en": "Drupad the five sons of Draupadi all",
-                "te": "ద్రౌపది యొక్క ఐదుగురు కుమారులు: ద్రుపదుడు"
+                "en": "Drupada and the sons of Draupadi",
+                "te": "Drupada and the sons of Draupadi"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "सर्वशः पृथिवीपते",
+                "word": "sarvaśaḥ pṛthivīpate",
+                "transliteration": "sarvaśaḥ pṛthivīpate",
                 "sanskrit_te": "సర్వశః పృథివీపతే",
-                "en": "Ruler of the earth Abhimanyu, the son of Subhadra",
-                "te": "భూమికి పాలకుడైన అభిమన్యుడు, సుభద్ర కుమారుడైన"
+                "en": "As well as the strong-armed son of Subhadra—all",
+                "te": "As well as the strong-armed son of Subhadra—all"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "सौभद्रश्च महाबाहुः",
+                "word": "saubhadraśca",
+                "transliteration": "saubhadraśca",
                 "sanskrit_te": "సౌభద్రశ్చ మహాబాహుః",
-                "en": "The mighty-armed conch shells",
-                "te": "శక్తివంతమైన-ఆయుధాలు గల శంఖువులు"
+                "en": "O King",
+                "te": "O King"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "शङ्खान्दध्मुः पृथक्पृथक्",
+                "word": "mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "transliteration": "mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
                 "sanskrit_te": "శఙ్ఖాన్దధ్ముః పృథక్పృథక్",
                 "en": "Blew their respective conchs again and again.",
                 "te": "వారి వారి శంఖువులను మళ్ళీ మళ్ళీ పేల్చారు."
@@ -2046,33 +2058,33 @@ const CHAPTER_1_SHLOKAS = {
         ],
         "word_by_word": [
             {
-                "sanskrit": "द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते",
-                "word": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate",
-                "transliteration": "drupado draupadeyāśca sarvaśaḥ pṛthivīpate",
+                "sanskrit": "द्रुपदो द्रौपदेयाश्च",
+                "word": "drupado draupadeyāśca",
+                "transliteration": "drupado draupadeyāśca",
                 "sanskrit_te": "ద్రుపదో ద్రౌపదేయాశ్చ",
-                "en": "Drupad the five sons of Draupadi all",
-                "te": "ద్రౌపది యొక్క ఐదుగురు కుమారులు: ద్రుపదుడు"
+                "en": "Drupada and the sons of Draupadi",
+                "te": "Drupada and the sons of Draupadi"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "सर्वशः पृथिवीपते",
+                "word": "sarvaśaḥ pṛthivīpate",
+                "transliteration": "sarvaśaḥ pṛthivīpate",
                 "sanskrit_te": "సర్వశః పృథివీపతే",
-                "en": "Ruler of the earth Abhimanyu, the son of Subhadra",
-                "te": "భూమికి పాలకుడైన అభిమన్యుడు, సుభద్ర కుమారుడైన"
+                "en": "As well as the strong-armed son of Subhadra—all",
+                "te": "As well as the strong-armed son of Subhadra—all"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "सौभद्रश्च महाबाहुः",
+                "word": "saubhadraśca",
+                "transliteration": "saubhadraśca",
                 "sanskrit_te": "సౌభద్రశ్చ మహాబాహుః",
-                "en": "The mighty-armed conch shells",
-                "te": "శక్తివంతమైన-ఆయుధాలు గల శంఖువులు"
+                "en": "O King",
+                "te": "O King"
             },
             {
-                "sanskrit": "सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्",
-                "word": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
-                "transliteration": "saubhadraśca mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "sanskrit": "शङ्खान्दध्मुः पृथक्पृथक्",
+                "word": "mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
+                "transliteration": "mahābāhuḥ śaṅkhāndadhmuḥ pṛthakpṛthak",
                 "sanskrit_te": "శఙ్ఖాన్దధ్ముః పృథక్పృథక్",
                 "en": "Blew their respective conchs again and again.",
                 "te": "వారి వారి శంఖువులను మళ్ళీ మళ్ళీ పేల్చారు."
@@ -2128,70 +2140,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "స ఘోషో ధార్తరాష్ట్రాణాం హృదయాని వ్యదారయత్ |\nనభశ్చ పృథివీం చైవ తుములో వ్యనునాదయన్",
         "lineBreakdown": [
             {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
-                "word": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat",
-                "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat",
-                "sanskrit_te": "స ఘోషో ధార్తరాష్ట్రాణాం",
-                "en": "That sound of Dhritarashtra’s sons",
-                "te": "ధృతరాష్ట్రుని కుమారుల శబ్దం"
+                "sanskrit": "स घोषो धार्तराष्ट्राणां",
+                "word": "sa ghoṣo dhārtarāṣṭrāṇāṃ",
+                "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṃ",
+                "sanskrit_te": "స ఘోషో",
+                "en": "And that tumultuous",
+                "te": "And that tumultuous"
             },
             {
-                "sanskrit": "नभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् (or लोव्यनु)",
-                "word": "nabhaśca pṛthivīṃ caiva tumulo",
-                "transliteration": "nabhaśca pṛthivīṃ caiva tumulo",
-                "sanskrit_te": "హృదయాని వ్యదారయత్ నభశ్చ",
-                "en": "Hearts shattered the sky",
-                "te": "Hearts ఆకాశాన్ని పగులగొట్టింది"
+                "sanskrit": "हृदयानि व्यदारयत्",
+                "word": "hṛdayāni vyadārayat nabhaśca",
+                "transliteration": "hṛdayāni vyadārayat nabhaśca",
+                "sanskrit_te": "ధార్తరాష్ట్రాణాం హృదయాని",
+                "en": "Uproar, reverberating through heaven",
+                "te": "Uproar, reverberating through heaven"
             },
             {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
+                "sanskrit": "नभश्च पृथिवीं चैव",
+                "word": "pṛthivīṃ caiva tumulo",
+                "transliteration": "pṛthivīṃ caiva tumulo",
+                "sanskrit_te": "వ్యదారయత్ నభశ్చ పృథివీం",
+                "en": "And earth, rent the",
+                "te": "And earth, rent the"
+            },
+            {
+                "sanskrit": "तुमुलोऽभ्यनुनादयन् (or लोव्यनु)",
                 "word": "abhyanunādayan (lo vyanu)",
                 "transliteration": "abhyanunādayan (lo vyanu)",
-                "sanskrit_te": "పృథివీం చైవ",
-                "en": "Earth, rent the hearts",
-                "te": "భూములు, హృదయాలను చలాయించు"
-            },
-            {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
-                "word": "abhyanunādayan (lo vyanu)",
-                "transliteration": "abhyanunādayan (lo vyanu)",
-                "sanskrit_te": "తుములో వ్యనునాదయన్",
-                "en": "Of Dhrtarastra's sons.",
-                "te": "ధృతరాష్ట్ర కుమారులలో."
+                "sanskrit_te": "చైవ తుములో వ్యనునాదయన్",
+                "en": "Hearts of Dhrtarastra's sons.",
+                "te": "Hearts of Dhrtarastra's sons."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
-                "word": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat",
-                "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṃ hṛdayāni vyadārayat",
-                "sanskrit_te": "స ఘోషో ధార్తరాష్ట్రాణాం",
-                "en": "That sound of Dhritarashtra’s sons",
-                "te": "ధృతరాష్ట్రుని కుమారుల శబ్దం"
+                "sanskrit": "स घोषो धार्तराष्ट्राणां",
+                "word": "sa ghoṣo dhārtarāṣṭrāṇāṃ",
+                "transliteration": "sa ghoṣo dhārtarāṣṭrāṇāṃ",
+                "sanskrit_te": "స ఘోషో",
+                "en": "And that tumultuous",
+                "te": "And that tumultuous"
             },
             {
-                "sanskrit": "नभश्च पृथिवीं चैव तुमुलोऽभ्यनुनादयन् (or लोव्यनु)",
-                "word": "nabhaśca pṛthivīṃ caiva tumulo",
-                "transliteration": "nabhaśca pṛthivīṃ caiva tumulo",
-                "sanskrit_te": "హృదయాని వ్యదారయత్ నభశ్చ",
-                "en": "Hearts shattered the sky",
-                "te": "Hearts ఆకాశాన్ని పగులగొట్టింది"
+                "sanskrit": "हृदयानि व्यदारयत्",
+                "word": "hṛdayāni vyadārayat nabhaśca",
+                "transliteration": "hṛdayāni vyadārayat nabhaśca",
+                "sanskrit_te": "ధార్తరాష్ట్రాణాం హృదయాని",
+                "en": "Uproar, reverberating through heaven",
+                "te": "Uproar, reverberating through heaven"
             },
             {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
+                "sanskrit": "नभश्च पृथिवीं चैव",
+                "word": "pṛthivīṃ caiva tumulo",
+                "transliteration": "pṛthivīṃ caiva tumulo",
+                "sanskrit_te": "వ్యదారయత్ నభశ్చ పృథివీం",
+                "en": "And earth, rent the",
+                "te": "And earth, rent the"
+            },
+            {
+                "sanskrit": "तुमुलोऽभ्यनुनादयन् (or लोव्यनु)",
                 "word": "abhyanunādayan (lo vyanu)",
                 "transliteration": "abhyanunādayan (lo vyanu)",
-                "sanskrit_te": "పృథివీం చైవ",
-                "en": "Earth, rent the hearts",
-                "te": "భూములు, హృదయాలను చలాయించు"
-            },
-            {
-                "sanskrit": "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्",
-                "word": "abhyanunādayan (lo vyanu)",
-                "transliteration": "abhyanunādayan (lo vyanu)",
-                "sanskrit_te": "తుములో వ్యనునాదయన్",
-                "en": "Of Dhrtarastra's sons.",
-                "te": "ధృతరాష్ట్ర కుమారులలో."
+                "sanskrit_te": "చైవ తుములో వ్యనునాదయన్",
+                "en": "Hearts of Dhrtarastra's sons.",
+                "te": "Hearts of Dhrtarastra's sons."
             }
         ],
         "hfMerged": true
@@ -2244,70 +2256,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అథ వ్యవస్థితాన్ దృష్ట్వా ధార్తరాష్ట్రాన్కపిధ్వజః |\nప్రవృత్తే శస్త్రసంపాతే ధనురుద్యమ్య పాణ్డవః",
         "lineBreakdown": [
             {
-                "sanskrit": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान्",
+                "word": "atha vyavasthitāndṛṣṭvā",
+                "transliteration": "atha vyavasthitāndṛṣṭvā",
                 "sanskrit_te": "అథ వ్యవస్థితాన్",
-                "en": "Thereupon arrayed seeing Dhritarashtra’s sons the Monkey Bannered",
-                "te": "అప్పుడు ధృతరాష్ట్ర కుమారులను చూసి కోతులు బనేర్డ్‌గా సమావేశమయ్యారు."
+                "en": "Then Arjuna, whose banner crest was",
+                "te": "Then Arjuna, whose banner crest was"
             },
             {
-                "sanskrit": "प्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः",
-                "word": "pravṛtte śastrasampāte dhanurudyamya pāṇḍavaḥ",
-                "transliteration": "pravṛtte śastrasampāte dhanurudyamya pāṇḍavaḥ",
+                "sanskrit": "कपिध्वजः प्रवृत्ते शस्त्रसम्पाते",
+                "word": "dhārtarāṣṭrān kapidhvajaḥ",
+                "transliteration": "dhārtarāṣṭrān kapidhvajaḥ",
                 "sanskrit_te": "దృష్ట్వా ధార్తరాష్ట్రాన్కపిధ్వజః",
-                "en": "About to commence to use the weapons bow",
-                "te": "ఆయుధం విల్లును ఉపయోగించడం ప్రారంభించబోతున్నాడు"
+                "en": "Hanuman, on beholding the sons of",
+                "te": "Hanuman, on beholding the sons of"
             },
             {
-                "sanskrit": "हृषीकेशं तदा वाक्यमिदमाह महीपते",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "धनुरुद्यम्य पाण्डवः हृषीकेशं",
+                "word": "pravṛtte śastrasampāte",
+                "transliteration": "pravṛtte śastrasampāte",
                 "sanskrit_te": "ప్రవృత్తే శస్త్రసంపాతే",
-                "en": "Arjun, the son of Pandu to Shree Krishna at that time words",
-                "te": "అర్జునుడు, పాండవుని కుమారుడు శ్రీకృష్ణుడికి ఆ సమయంలో మాటలు"
+                "en": "Dhrtarastra arrayed, took up his bow,",
+                "te": "Dhrtarastra arrayed, took up his bow,"
             },
             {
-                "sanskrit": "हृषीकेशं तदा वाक्यमिदमाह महीपते",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "तदा वाक्यमिदमाह महीपते",
+                "word": "dhanurudyamya pāṇḍavaḥ",
+                "transliteration": "dhanurudyamya pāṇḍavaḥ",
                 "sanskrit_te": "ధనురుద్యమ్య పాణ్డవః",
-                "en": "These said King",
-                "te": "ఈ రాజు ఇలా అన్నాడు"
+                "en": "While missiles were beginning to fly.",
+                "te": "While missiles were beginning to fly."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वजः",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान्",
+                "word": "atha vyavasthitāndṛṣṭvā",
+                "transliteration": "atha vyavasthitāndṛṣṭvā",
                 "sanskrit_te": "అథ వ్యవస్థితాన్",
-                "en": "Thereupon arrayed seeing Dhritarashtra’s sons the Monkey Bannered",
-                "te": "అప్పుడు ధృతరాష్ట్ర కుమారులను చూసి కోతులు బనేర్డ్‌గా సమావేశమయ్యారు."
+                "en": "Then Arjuna, whose banner crest was",
+                "te": "Then Arjuna, whose banner crest was"
             },
             {
-                "sanskrit": "प्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डवः",
-                "word": "pravṛtte śastrasampāte dhanurudyamya pāṇḍavaḥ",
-                "transliteration": "pravṛtte śastrasampāte dhanurudyamya pāṇḍavaḥ",
+                "sanskrit": "कपिध्वजः प्रवृत्ते शस्त्रसम्पाते",
+                "word": "dhārtarāṣṭrān kapidhvajaḥ",
+                "transliteration": "dhārtarāṣṭrān kapidhvajaḥ",
                 "sanskrit_te": "దృష్ట్వా ధార్తరాష్ట్రాన్కపిధ్వజః",
-                "en": "About to commence to use the weapons bow",
-                "te": "ఆయుధం విల్లును ఉపయోగించడం ప్రారంభించబోతున్నాడు"
+                "en": "Hanuman, on beholding the sons of",
+                "te": "Hanuman, on beholding the sons of"
             },
             {
-                "sanskrit": "हृषीकेशं तदा वाक्यमिदमाह महीपते",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "धनुरुद्यम्य पाण्डवः हृषीकेशं",
+                "word": "pravṛtte śastrasampāte",
+                "transliteration": "pravṛtte śastrasampāte",
                 "sanskrit_te": "ప్రవృత్తే శస్త్రసంపాతే",
-                "en": "Arjun, the son of Pandu to Shree Krishna at that time words",
-                "te": "అర్జునుడు, పాండవుని కుమారుడు శ్రీకృష్ణుడికి ఆ సమయంలో మాటలు"
+                "en": "Dhrtarastra arrayed, took up his bow,",
+                "te": "Dhrtarastra arrayed, took up his bow,"
             },
             {
-                "sanskrit": "हृषीकेशं तदा वाक्यमिदमाह महीपते",
-                "word": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
-                "transliteration": "atha vyavasthitāndṛṣṭvā dhārtarāṣṭrān kapidhvajaḥ",
+                "sanskrit": "तदा वाक्यमिदमाह महीपते",
+                "word": "dhanurudyamya pāṇḍavaḥ",
+                "transliteration": "dhanurudyamya pāṇḍavaḥ",
                 "sanskrit_te": "ధనురుద్యమ్య పాణ్డవః",
-                "en": "These said King",
-                "te": "ఈ రాజు ఇలా అన్నాడు"
+                "en": "While missiles were beginning to fly.",
+                "te": "While missiles were beginning to fly."
             }
         ],
         "hfMerged": true
@@ -2360,70 +2372,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అర్జున ఉవాచ హృషీకేశం తదా వాక్యమిదమాహ మహీపతే |\nసేనయోరుభయోర్మధ్యే రథం స్థాపయ మేఽచ్యుత",
         "lineBreakdown": [
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "सेनयोरुभयोर्मध्ये",
                 "word": "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate",
                 "transliteration": "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate",
-                "sanskrit_te": "అర్జున ఉవాచ హృషీకేశం",
-                "en": "Arjun said armies",
-                "te": "And he spoke, O Lord of the"
+                "sanskrit_te": "హృషీకేశం తదా",
+                "en": "And he spoke, O Lord of",
+                "te": "And he spoke, O Lord of"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत",
+                "sanskrit": "रथं",
                 "word": "arjuna uvāca",
                 "transliteration": "arjuna uvāca",
-                "sanskrit_te": "తదా వాక్యమిదమాహ మహీపతే",
-                "en": "Both in the middle",
-                "te": "మధ్యలో రెండు"
+                "sanskrit_te": "వాక్యమిదమాహ మహీపతే",
+                "en": "The Earth, these words to Sri Krishna",
+                "te": "The Earth, these words to Sri Krishna"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "स्थापय",
                 "word": "senayorubhayormadhye rathaṃ sthāpaya me",
                 "transliteration": "senayorubhayormadhye rathaṃ sthāpaya me",
                 "sanskrit_te": "సేనయోరుభయోర్మధ్యే రథం",
-                "en": "Chariot place",
-                "te": "రథం"
+                "en": "Arjuna said",
+                "te": "అర్జునుడు అన్నాడు"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "मेऽच्युत",
                 "word": "acyuta",
                 "transliteration": "acyuta",
                 "sanskrit_te": "స్థాపయ మేఽచ్యుత",
-                "en": "O Krishna, between the two armies.",
-                "te": "O Krishna, between the two armies."
+                "en": "“Draw up my chariot, O Krishna, between the two armies",
+                "te": "“Draw up my chariot, O Krishna, between the two armies"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "सेनयोरुभयोर्मध्ये",
                 "word": "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate",
                 "transliteration": "hṛṣīkeśaṃ tadā vākyamidamāha mahīpate",
-                "sanskrit_te": "అర్జున ఉవాచ హృషీకేశం",
-                "en": "Arjun said armies",
-                "te": "And he spoke, O Lord of the"
+                "sanskrit_te": "హృషీకేశం తదా",
+                "en": "And he spoke, O Lord of",
+                "te": "And he spoke, O Lord of"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत",
+                "sanskrit": "रथं",
                 "word": "arjuna uvāca",
                 "transliteration": "arjuna uvāca",
-                "sanskrit_te": "తదా వాక్యమిదమాహ మహీపతే",
-                "en": "Both in the middle",
-                "te": "మధ్యలో రెండు"
+                "sanskrit_te": "వాక్యమిదమాహ మహీపతే",
+                "en": "The Earth, these words to Sri Krishna",
+                "te": "The Earth, these words to Sri Krishna"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "स्थापय",
                 "word": "senayorubhayormadhye rathaṃ sthāpaya me",
                 "transliteration": "senayorubhayormadhye rathaṃ sthāpaya me",
                 "sanskrit_te": "సేనయోరుభయోర్మధ్యే రథం",
-                "en": "Chariot place",
-                "te": "రథం"
+                "en": "Arjuna said",
+                "te": "అర్జునుడు అన్నాడు"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
+                "sanskrit": "मेऽच्युत",
                 "word": "acyuta",
                 "transliteration": "acyuta",
                 "sanskrit_te": "స్థాపయ మేఽచ్యుత",
-                "en": "O Krishna, between the two armies.",
-                "te": "O Krishna, between the two armies."
+                "en": "“Draw up my chariot, O Krishna, between the two armies",
+                "te": "“Draw up my chariot, O Krishna, between the two armies"
             }
         ],
         "hfMerged": true
@@ -2476,70 +2488,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యావదేతాన్నిరీక్షేఽహం యోద్ధుకామానవస్థితాన్ |\nకైర్మయా సహ యోద్ధవ్యమస్మిన్రణసముద్యమే",
         "lineBreakdown": [
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
+                "sanskrit": "यावदेतान्निरीक्षेऽहं",
                 "word": "yāvadetānnirikṣe",
                 "transliteration": "yāvadetānnirikṣe",
                 "sanskrit_te": "యావదేతాన్నిరీక్షేఽహం యోద్ధుకామానవస్థితాన్",
-                "en": "These look",
+                "en": "So that I may have a good",
                 "te": "So that I may have a good"
             },
             {
-                "sanskrit": "कैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे",
+                "sanskrit": "योद्धुकामानवस्थितान्",
                 "word": "ahaṃ yoddhukāmānavasthitān",
                 "transliteration": "ahaṃ yoddhukāmānavasthitān",
                 "sanskrit_te": "కైర్మయా",
-                "en": "For the battle arrayed",
-                "te": "యుద్ధానికి"
+                "en": "Look at those who are standing, eager",
+                "te": "Look at those who are standing, eager"
             },
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
-                "word": "kairmayā saha yoddhavyamasmin raṇasamudyame",
-                "transliteration": "kairmayā saha yoddhavyamasmin raṇasamudyame",
+                "sanskrit": "कैर्मया सह",
+                "word": "kairmayā saha",
+                "transliteration": "kairmayā saha",
                 "sanskrit_te": "సహ",
-                "en": "By me together must fight",
+                "en": "To fight, and know with whom I",
                 "te": "To fight, and know with whom I"
             },
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
-                "word": "kairmayā saha yoddhavyamasmin raṇasamudyame",
-                "transliteration": "kairmayā saha yoddhavyamasmin raṇasamudyame",
+                "sanskrit": "योद्धव्यमस्मिन् रणसमुद्यमे",
+                "word": "yoddhavyamasmin raṇasamudyame",
+                "transliteration": "yoddhavyamasmin raṇasamudyame",
                 "sanskrit_te": "యోద్ధవ్యమస్మిన్రణసముద్యమే",
-                "en": "In this great combat",
-                "te": "ఈ గొప్ప పోరాటంలో"
+                "en": "Must fight in this enterprise of war.",
+                "te": "Must fight in this enterprise of war."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
+                "sanskrit": "यावदेतान्निरीक्षेऽहं",
                 "word": "yāvadetānnirikṣe",
                 "transliteration": "yāvadetānnirikṣe",
                 "sanskrit_te": "యావదేతాన్నిరీక్షేఽహం యోద్ధుకామానవస్థితాన్",
-                "en": "These look",
+                "en": "So that I may have a good",
                 "te": "So that I may have a good"
             },
             {
-                "sanskrit": "कैर्मया सह योद्धव्यमस्मिन् रणसमुद्यमे",
+                "sanskrit": "योद्धुकामानवस्थितान्",
                 "word": "ahaṃ yoddhukāmānavasthitān",
                 "transliteration": "ahaṃ yoddhukāmānavasthitān",
                 "sanskrit_te": "కైర్మయా",
-                "en": "For the battle arrayed",
-                "te": "యుద్ధానికి"
+                "en": "Look at those who are standing, eager",
+                "te": "Look at those who are standing, eager"
             },
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
-                "word": "kairmayā saha yoddhavyamasmin raṇasamudyame",
-                "transliteration": "kairmayā saha yoddhavyamasmin raṇasamudyame",
+                "sanskrit": "कैर्मया सह",
+                "word": "kairmayā saha",
+                "transliteration": "kairmayā saha",
                 "sanskrit_te": "సహ",
-                "en": "By me together must fight",
+                "en": "To fight, and know with whom I",
                 "te": "To fight, and know with whom I"
             },
             {
-                "sanskrit": "यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्",
-                "word": "kairmayā saha yoddhavyamasmin raṇasamudyame",
-                "transliteration": "kairmayā saha yoddhavyamasmin raṇasamudyame",
+                "sanskrit": "योद्धव्यमस्मिन् रणसमुद्यमे",
+                "word": "yoddhavyamasmin raṇasamudyame",
+                "transliteration": "yoddhavyamasmin raṇasamudyame",
                 "sanskrit_te": "యోద్ధవ్యమస్మిన్రణసముద్యమే",
-                "en": "In this great combat",
-                "te": "ఈ గొప్ప పోరాటంలో"
+                "en": "Must fight in this enterprise of war.",
+                "te": "Must fight in this enterprise of war."
             }
         ],
         "hfMerged": true
@@ -2592,70 +2604,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యోత్స్యమానానవేక్షేఽహం య ఏతేఽత్ర సమాగతాః |\nధార్తరాష్ట్రస్య దుర్బుద్ధేర్యుద్ధే ప్రియచికీర్షవః",
         "lineBreakdown": [
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "योत्स्यमानानवेक्षेऽहं य",
                 "word": "yotsyamānānavekṣe",
                 "transliteration": "yotsyamānānavekṣe",
-                "sanskrit_te": "యోత్స్యమానానవేక్షేఽహం య",
-                "en": "Those who have come to fight I desire to see",
-                "te": "పోరాడటానికి వచ్చిన వారిని నేను చూడాలని కోరుకుంటున్నాను"
+                "sanskrit_te": "యోత్స్యమానానవేక్షేఽహం",
+                "en": "I wish to see those",
+                "te": "I wish to see those"
             },
             {
-                "sanskrit": "धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः",
+                "sanskrit": "एतेऽत्र समागताः",
                 "word": "ahaṃ ya ete",
                 "transliteration": "ahaṃ ya ete",
-                "sanskrit_te": "ఏతేఽత్ర సమాగతాః",
-                "en": "Here ready to fight in this",
-                "te": "ఇక్కడ ఈ యుద్ధంలో పోరాడటానికి సిద్ధంగా ఉన్నాము"
+                "sanskrit_te": "య ఏతేఽత్ర",
+                "en": "Gathered here ready to fight in",
+                "te": "Gathered here ready to fight in"
             },
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "धार्तराष्ट्रस्य",
                 "word": "atra samāgatāḥ",
                 "transliteration": "atra samāgatāḥ",
-                "sanskrit_te": "ధార్తరాష్ట్రస్య దుర్బుద్ధేర్యుద్ధే",
-                "en": "Assembled of Dhritarashtra’s son evil-minded",
-                "te": "Battle in order to please the"
+                "sanskrit_te": "సమాగతాః ధార్తరాష్ట్రస్య",
+                "en": "This battle in order to please",
+                "te": "This battle in order to please"
             },
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः",
                 "word": "dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ",
                 "transliteration": "dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ",
-                "sanskrit_te": "ప్రియచికీర్షవః",
-                "en": "In the fight wishing to please",
-                "te": "Evil minded son of Dhrtarashtra."
+                "sanskrit_te": "దుర్బుద్ధేర్యుద్ధే ప్రియచికీర్షవః",
+                "en": "The evil minded son of Dhrtarashtra.",
+                "te": "The evil minded son of Dhrtarashtra."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "योत्स्यमानानवेक्षेऽहं य",
                 "word": "yotsyamānānavekṣe",
                 "transliteration": "yotsyamānānavekṣe",
-                "sanskrit_te": "యోత్స్యమానానవేక్షేఽహం య",
-                "en": "Those who have come to fight I desire to see",
-                "te": "పోరాడటానికి వచ్చిన వారిని నేను చూడాలని కోరుకుంటున్నాను"
+                "sanskrit_te": "యోత్స్యమానానవేక్షేఽహం",
+                "en": "I wish to see those",
+                "te": "I wish to see those"
             },
             {
-                "sanskrit": "धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः",
+                "sanskrit": "एतेऽत्र समागताः",
                 "word": "ahaṃ ya ete",
                 "transliteration": "ahaṃ ya ete",
-                "sanskrit_te": "ఏతేఽత్ర సమాగతాః",
-                "en": "Here ready to fight in this",
-                "te": "ఇక్కడ ఈ యుద్ధంలో పోరాడటానికి సిద్ధంగా ఉన్నాము"
+                "sanskrit_te": "య ఏతేఽత్ర",
+                "en": "Gathered here ready to fight in",
+                "te": "Gathered here ready to fight in"
             },
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "धार्तराष्ट्रस्य",
                 "word": "atra samāgatāḥ",
                 "transliteration": "atra samāgatāḥ",
-                "sanskrit_te": "ధార్తరాష్ట్రస్య దుర్బుద్ధేర్యుద్ధే",
-                "en": "Assembled of Dhritarashtra’s son evil-minded",
-                "te": "Battle in order to please the"
+                "sanskrit_te": "సమాగతాః ధార్తరాష్ట్రస్య",
+                "en": "This battle in order to please",
+                "te": "This battle in order to please"
             },
             {
-                "sanskrit": "योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः",
+                "sanskrit": "दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः",
                 "word": "dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ",
                 "transliteration": "dhārtarāṣṭrasya durbuddheryuddhe priyacikīrṣavaḥ",
-                "sanskrit_te": "ప్రియచికీర్షవః",
-                "en": "In the fight wishing to please",
-                "te": "Evil minded son of Dhrtarashtra."
+                "sanskrit_te": "దుర్బుద్ధేర్యుద్ధే ప్రియచికీర్షవః",
+                "en": "The evil minded son of Dhrtarashtra.",
+                "te": "The evil minded son of Dhrtarashtra."
             }
         ],
         "hfMerged": true
@@ -2708,73 +2720,79 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "సంజయ ఉవాచ ఏవముక్తో హృషీకేశో గుడాకేశేన భారత |\nసేనయోరుభయోర్మధ్యే స్థాపయిత్వా రథోత్తమమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
+                "sanskrit": "एवमुक्तो हृषीकेशो",
+                "word": "evamukto hṛṣīkeśo",
+                "transliteration": "evamukto hṛṣīkeśo",
                 "sanskrit_te": "సంజయ ఉవాచ ఏవముక్తో",
-                "en": "Sanjay said thus",
-                "te": "Sanjaya said: Thus addressed by Arjuna, Sri Krishna drew up"
+                "en": "Thus addressed by Arjuna, Sri Krishna drew up the",
+                "te": "Thus addressed by Arjuna, Sri Krishna drew up the"
             },
             {
-                "sanskrit": "एवमुक्तो हृषीकेशो गुडाकेशेन भारत",
-                "word": "evamukto hṛṣīkeśo guḍākeśena bhārata",
-                "transliteration": "evamukto hṛṣīkeśo guḍākeśena bhārata",
+                "sanskrit": "गुडाकेशेन भारत",
+                "word": "guḍākeśena bhārata",
+                "transliteration": "guḍākeśena bhārata",
                 "sanskrit_te": "హృషీకేశో గుడాకేశేన",
-                "en": "Shree Krishna, the Lord of the senses by Arjun, the conqueror of sleep",
-                "te": "The best of chariots between the two armies, in full"
+                "en": "Best of chariots between the two armies, in full",
+                "te": "Best of chariots between the two armies, in full"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्",
-                "word": "senayorubhayormadhye sthāpayitvā rathottamam",
-                "transliteration": "senayorubhayormadhye sthāpayitvā rathottamam",
+                "sanskrit": "सेनयोरुभयोर्मध्ये",
+                "word": "senayorubhayormadhye",
+                "transliteration": "senayorubhayormadhye",
                 "sanskrit_te": "భారత సేనయోరుభయోర్మధ్యే",
-                "en": "Descendant of Bharat armies the two",
-                "te": "భరత్ సైన్యాల వారసులు అయిన ఇద్దరు"
+                "en": "View of Bhisma, Drona, and all the other kings, O",
+                "te": "View of Bhisma, Drona, and all the other kings, O"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्",
-                "word": "senayorubhayormadhye sthāpayitvā rathottamam",
-                "transliteration": "senayorubhayormadhye sthāpayitvā rathottamam",
+                "sanskrit": "स्थापयित्वा रथोत्तमम्",
+                "word": "sthāpayitvā rathottamam",
+                "transliteration": "sthāpayitvā rathottamam",
                 "sanskrit_te": "స్థాపయిత్వా రథోత్తమమ్",
-                "en": "Between having drawn",
-                "te": "మధ్యం"
+                "en": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\"",
+                "te": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
+                "sanskrit": "एवमुक्तो हृषीकेशो",
+                "word": "evamukto hṛṣīkeśo",
+                "transliteration": "evamukto hṛṣīkeśo",
                 "sanskrit_te": "సంజయ ఉవాచ ఏవముక్తో",
-                "en": "Sanjay said thus",
-                "te": "Sanjaya said: Thus addressed by Arjuna, Sri Krishna drew up"
+                "en": "Thus addressed by Arjuna, Sri Krishna drew up the",
+                "te": "Thus addressed by Arjuna, Sri Krishna drew up the"
             },
             {
-                "sanskrit": "एवमुक्तो हृषीकेशो गुडाकेशेन भारत",
-                "word": "evamukto hṛṣīkeśo guḍākeśena bhārata",
-                "transliteration": "evamukto hṛṣīkeśo guḍākeśena bhārata",
+                "sanskrit": "गुडाकेशेन भारत",
+                "word": "guḍākeśena bhārata",
+                "transliteration": "guḍākeśena bhārata",
                 "sanskrit_te": "హృషీకేశో గుడాకేశేన",
-                "en": "Shree Krishna, the Lord of the senses by Arjun, the conqueror of sleep",
-                "te": "The best of chariots between the two armies, in full"
+                "en": "Best of chariots between the two armies, in full",
+                "te": "Best of chariots between the two armies, in full"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्",
-                "word": "senayorubhayormadhye sthāpayitvā rathottamam",
-                "transliteration": "senayorubhayormadhye sthāpayitvā rathottamam",
+                "sanskrit": "सेनयोरुभयोर्मध्ये",
+                "word": "senayorubhayormadhye",
+                "transliteration": "senayorubhayormadhye",
                 "sanskrit_te": "భారత సేనయోరుభయోర్మధ్యే",
-                "en": "Descendant of Bharat armies the two",
-                "te": "భరత్ సైన్యాల వారసులు అయిన ఇద్దరు"
+                "en": "View of Bhisma, Drona, and all the other kings, O",
+                "te": "View of Bhisma, Drona, and all the other kings, O"
             },
             {
-                "sanskrit": "सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्",
-                "word": "senayorubhayormadhye sthāpayitvā rathottamam",
-                "transliteration": "senayorubhayormadhye sthāpayitvā rathottamam",
+                "sanskrit": "स्थापयित्वा रथोत्तमम्",
+                "word": "sthāpayitvā rathottamam",
+                "transliteration": "sthāpayitvā rathottamam",
                 "sanskrit_te": "స్థాపయిత్వా రథోత్తమమ్",
-                "en": "Between having drawn",
-                "te": "మధ్యం"
+                "en": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\"",
+                "te": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
             }
         ],
-        "hfMerged": true
+        "hfMerged": true,
+        "chantIntro": {
+            "transliteration": "sañjaya uvāca",
+            "sanskrit": "सञ्जय उवाच",
+            "en": "Sanjaya said",
+            "te": "Sanjaya said"
+        }
     },
     "1.25": {
         "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् |उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति |",
@@ -2824,70 +2842,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "భీష్మద్రోణప్రముఖతః సర్వేషాం చ మహీక్షితామ్ |\nఉవాచ పార్థ పశ్యైతాన్సమవేతాన్కురూనితి",
         "lineBreakdown": [
             {
-                "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्",
-                "word": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām",
-                "transliteration": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām",
-                "sanskrit_te": "భీష్మద్రోణప్రముఖతః సర్వేషాం",
-                "en": "Grandsire Bheeshma Dronacharya in the presence all",
-                "te": "Sanjaya said: Thus addressed by Arjuna, Sri Krishna drew up"
+                "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां",
+                "word": "bhīṣmadroṇapramukhataḥ sarveṣāṃ",
+                "transliteration": "bhīṣmadroṇapramukhataḥ sarveṣāṃ",
+                "sanskrit_te": "భీష్మద్రోణప్రముఖతః",
+                "en": "Sanjaya said",
+                "te": "Sanjaya said"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "చ మహీక్షితామ్",
-                "en": "And other kings",
-                "te": "The best of chariots between the two armies, in full"
+                "sanskrit": "च महीक्षिताम्",
+                "word": "ca mahīkṣitām",
+                "transliteration": "ca mahīkṣitām",
+                "sanskrit_te": "సర్వేషాం చ",
+                "en": "Thus addressed by Arjuna",
+                "te": "Thus addressed by Arjuna"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "ఉవాచ పార్థ",
-                "en": "Said Arjun, the son of Pritha behold",
-                "te": "పృథా కుమారుడు అర్జునుడు ఇలా అన్నాడు,"
+                "sanskrit": "उवाच पार्थ",
+                "word": "uvāca pārtha",
+                "transliteration": "uvāca pārtha",
+                "sanskrit_te": "మహీక్షితామ్ ఉవాచ",
+                "en": "Sri Krishna drew up the best of chariots between the two armies, in full view of Bhisma,",
+                "te": "Sri Krishna drew up the best of chariots between the two armies, in full view of Bhisma,"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "పశ్యైతాన్సమవేతాన్కురూనితి",
-                "en": "Gathered descendants of Kuru thus",
-                "te": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
+                "sanskrit": "पश्यैतान्समवेतान्कुरूनिति",
+                "word": "paśyaitānsamavetānkurūniti",
+                "transliteration": "paśyaitānsamavetānkurūniti",
+                "sanskrit_te": "పార్థ పశ్యైతాన్సమవేతాన్కురూనితి",
+                "en": "Drona, and all the other kings, O Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\"",
+                "te": "Drona, and all the other kings, O Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्",
-                "word": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām",
-                "transliteration": "bhīṣmadroṇapramukhataḥ sarveṣāṃ ca mahīkṣitām",
-                "sanskrit_te": "భీష్మద్రోణప్రముఖతః సర్వేషాం",
-                "en": "Grandsire Bheeshma Dronacharya in the presence all",
-                "te": "Sanjaya said: Thus addressed by Arjuna, Sri Krishna drew up"
+                "sanskrit": "भीष्मद्रोणप्रमुखतः सर्वेषां",
+                "word": "bhīṣmadroṇapramukhataḥ sarveṣāṃ",
+                "transliteration": "bhīṣmadroṇapramukhataḥ sarveṣāṃ",
+                "sanskrit_te": "భీష్మద్రోణప్రముఖతః",
+                "en": "Sanjaya said",
+                "te": "Sanjaya said"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "చ మహీక్షితామ్",
-                "en": "And other kings",
-                "te": "The best of chariots between the two armies, in full"
+                "sanskrit": "च महीक्षिताम्",
+                "word": "ca mahīkṣitām",
+                "transliteration": "ca mahīkṣitām",
+                "sanskrit_te": "సర్వేషాం చ",
+                "en": "Thus addressed by Arjuna",
+                "te": "Thus addressed by Arjuna"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "ఉవాచ పార్థ",
-                "en": "Said Arjun, the son of Pritha behold",
-                "te": "పృథా కుమారుడు అర్జునుడు ఇలా అన్నాడు,"
+                "sanskrit": "उवाच पार्थ",
+                "word": "uvāca pārtha",
+                "transliteration": "uvāca pārtha",
+                "sanskrit_te": "మహీక్షితామ్ ఉవాచ",
+                "en": "Sri Krishna drew up the best of chariots between the two armies, in full view of Bhisma,",
+                "te": "Sri Krishna drew up the best of chariots between the two armies, in full view of Bhisma,"
             },
             {
-                "sanskrit": "उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति",
-                "word": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "transliteration": "uvāca pārtha paśyaitānsamavetānkurūniti",
-                "sanskrit_te": "పశ్యైతాన్సమవేతాన్కురూనితి",
-                "en": "Gathered descendants of Kuru thus",
-                "te": "Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
+                "sanskrit": "पश्यैतान्समवेतान्कुरूनिति",
+                "word": "paśyaitānsamavetānkurūniti",
+                "transliteration": "paśyaitānsamavetānkurūniti",
+                "sanskrit_te": "పార్థ పశ్యైతాన్సమవేతాన్కురూనితి",
+                "en": "Drona, and all the other kings, O Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\"",
+                "te": "Drona, and all the other kings, O Dhrtarastra. He then said, \"O Arjuna, behold these assembled Kauravas.\""
             }
         ],
         "hfMerged": true
@@ -2940,70 +2958,54 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "తత్రాపశ్యత్స్థితాన్పార్థః పితృ़నథ పితామహాన్ |\nఆచార్యాన్మాతులాన్భ్రాతృ़న్పుత్రాన్పౌత్రాన్సఖీంస్తథా",
         "lineBreakdown": [
             {
-                "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान्",
-                "word": "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān",
-                "transliteration": "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān",
-                "sanskrit_te": "తత్రాపశ్యత్స్థితాన్పార్థః",
-                "en": "There stationed Arjun fathers thereafter",
-                "te": "Then, as Arjuna looked on,"
+                "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ",
+                "word": "tatrāpaśyatsthitānpārthaḥ pitṝnatha",
+                "transliteration": "tatrāpaśyatsthitānpārthaḥ pitṝnatha",
+                "sanskrit_te": "తత్రాపశ్యత్స్థితాన్పార్థః పితృ़నథ",
+                "en": "Then, as Arjuna looked on, he",
+                "te": "Then, as Arjuna looked on, he"
             },
             {
-                "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
-                "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "sanskrit_te": "పితృ़నథ",
-                "en": "Grandfathers teachers maternal uncles brothers sons",
-                "te": "తాతయ్యల ఉపాధ్యాయులు, అత్తమామలు, సోదరుల కుమారులు"
-            },
-            {
-                "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
-                "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
+                "sanskrit": "पितामहान्",
+                "word": "pitāmahān",
+                "transliteration": "pitāmahān",
                 "sanskrit_te": "పితామహాన్",
-                "en": "Grandsons friends also fathers-in-law well-wishers",
-                "te": "మనవళ్ళ స్నేహితులు కూడా అత్తమామలకు శుభాకాంక్షలు తెలుపుతారు."
+                "en": "Saw standing there fathers, grandfathers, teachers,",
+                "te": "Saw standing there fathers, grandfathers, teachers,"
             },
             {
                 "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
                 "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
                 "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
                 "sanskrit_te": "ఆచార్యాన్మాతులాన్భ్రాతృ़న్పుత్రాన్పౌత్రాన్సఖీంస్తథా",
-                "en": "Armies in both armies also",
-                "te": "Sons, grandsons, and comrades."
+                "en": "Uncles, brothers, sons, grandsons, and comrades.",
+                "te": "Uncles, brothers, sons, grandsons, and comrades."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ पितामहान्",
-                "word": "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān",
-                "transliteration": "tatrāpaśyatsthitānpārthaḥ pitṝnatha pitāmahān",
-                "sanskrit_te": "తత్రాపశ్యత్స్థితాన్పార్థః",
-                "en": "There stationed Arjun fathers thereafter",
-                "te": "Then, as Arjuna looked on,"
+                "sanskrit": "तत्रापश्यत्स्थितान्पार्थः पितॄनथ",
+                "word": "tatrāpaśyatsthitānpārthaḥ pitṝnatha",
+                "transliteration": "tatrāpaśyatsthitānpārthaḥ pitṝnatha",
+                "sanskrit_te": "తత్రాపశ్యత్స్థితాన్పార్థః పితృ़నథ",
+                "en": "Then, as Arjuna looked on, he",
+                "te": "Then, as Arjuna looked on, he"
             },
             {
-                "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
-                "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "sanskrit_te": "పితృ़నథ",
-                "en": "Grandfathers teachers maternal uncles brothers sons",
-                "te": "తాతయ్యల ఉపాధ్యాయులు, అత్తమామలు, సోదరుల కుమారులు"
-            },
-            {
-                "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
-                "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
-                "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
+                "sanskrit": "पितामहान्",
+                "word": "pitāmahān",
+                "transliteration": "pitāmahān",
                 "sanskrit_te": "పితామహాన్",
-                "en": "Grandsons friends also fathers-in-law well-wishers",
-                "te": "మనవళ్ళ స్నేహితులు కూడా అత్తమామలకు శుభాకాంక్షలు తెలుపుతారు."
+                "en": "Saw standing there fathers, grandfathers, teachers,",
+                "te": "Saw standing there fathers, grandfathers, teachers,"
             },
             {
                 "sanskrit": "आचार्यान्मातुलान्भ्रातॄन्पुत्रान्पौत्रान्सखींस्तथा",
                 "word": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
                 "transliteration": "ācāryānmātulānbhrātṛnputrānpautrānsakhīṃstathā",
                 "sanskrit_te": "ఆచార్యాన్మాతులాన్భ్రాతృ़న్పుత్రాన్పౌత్రాన్సఖీంస్తథా",
-                "en": "Armies in both armies also",
-                "te": "Sons, grandsons, and comrades."
+                "en": "Uncles, brothers, sons, grandsons, and comrades.",
+                "te": "Uncles, brothers, sons, grandsons, and comrades."
             }
         ],
         "hfMerged": true
@@ -3056,70 +3058,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "శ్వశురాన్సుహృదశ్చైవ సేనయోరుభయోరపి |\nతాన్సమీక్ష్య స కౌన్తేయః సర్వాన్బన్ధూనవస్థితాన్",
         "lineBreakdown": [
             {
-                "sanskrit": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि",
-                "word": "śvaśurānsuhṛdaścaiva senayorubhayorapi",
-                "transliteration": "śvaśurānsuhṛdaścaiva senayorubhayorapi",
-                "sanskrit_te": "శ్వశురాన్సుహృదశ్చైవ సేనయోరుభయోరపి",
-                "en": "These on seeing they",
-                "te": "ఈ విషయం విని"
+                "sanskrit": "श्वशुरान्सुहृदश्चैव",
+                "word": "śvaśurānsuhṛdaścaiva",
+                "transliteration": "śvaśurānsuhṛdaścaiva",
+                "sanskrit_te": "శ్వశురాన్సుహృదశ్చైవ",
+                "en": "Fathers in law and",
+                "te": "Fathers in law and"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "తాన్సమీక్ష్య స",
-                "en": "Arjun, the son of Kunti all relatives",
+                "sanskrit": "सेनयोरुभयोरपि",
+                "word": "senayorubhayorapi",
+                "transliteration": "senayorubhayorapi",
+                "sanskrit_te": "సేనయోరుభయోరపి",
+                "en": "Dear friends in both",
                 "te": "Dear friends in both"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "కౌన్తేయః",
-                "en": "Present by compassion great",
-                "te": "కరుణతో గొప్ప"
+                "sanskrit": "तान्समीक्ष्य",
+                "word": "tānsamīkṣya sa",
+                "transliteration": "tānsamīkṣya sa",
+                "sanskrit_te": "తాన్సమీక్ష్య స",
+                "en": "Armies, when Arjuna saw",
+                "te": "Armies, when Arjuna saw"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "సర్వాన్బన్ధూనవస్థితాన్",
-                "en": "Deep sorrow this spoke",
-                "te": "ఈ మాట విని ఎంతో దుఃఖం కలిగింది"
+                "sanskrit": "स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
+                "word": "kaunteyaḥ sarvānbandhūnavasthitān",
+                "transliteration": "kaunteyaḥ sarvānbandhūnavasthitān",
+                "sanskrit_te": "కౌన్తేయః సర్వాన్బన్ధూనవస్థితాన్",
+                "en": "All these kinsmen arrayed,",
+                "te": "All these kinsmen arrayed,"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि",
-                "word": "śvaśurānsuhṛdaścaiva senayorubhayorapi",
-                "transliteration": "śvaśurānsuhṛdaścaiva senayorubhayorapi",
-                "sanskrit_te": "శ్వశురాన్సుహృదశ్చైవ సేనయోరుభయోరపి",
-                "en": "These on seeing they",
-                "te": "ఈ విషయం విని"
+                "sanskrit": "श्वशुरान्सुहृदश्चैव",
+                "word": "śvaśurānsuhṛdaścaiva",
+                "transliteration": "śvaśurānsuhṛdaścaiva",
+                "sanskrit_te": "శ్వశురాన్సుహృదశ్చైవ",
+                "en": "Fathers in law and",
+                "te": "Fathers in law and"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "తాన్సమీక్ష్య స",
-                "en": "Arjun, the son of Kunti all relatives",
+                "sanskrit": "सेनयोरुभयोरपि",
+                "word": "senayorubhayorapi",
+                "transliteration": "senayorubhayorapi",
+                "sanskrit_te": "సేనయోరుభయోరపి",
+                "en": "Dear friends in both",
                 "te": "Dear friends in both"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "కౌన్తేయః",
-                "en": "Present by compassion great",
-                "te": "కరుణతో గొప్ప"
+                "sanskrit": "तान्समीक्ष्य",
+                "word": "tānsamīkṣya sa",
+                "transliteration": "tānsamīkṣya sa",
+                "sanskrit_te": "తాన్సమీక్ష్య స",
+                "en": "Armies, when Arjuna saw",
+                "te": "Armies, when Arjuna saw"
             },
             {
-                "sanskrit": "तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
-                "word": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "transliteration": "tānsamīkṣya sa kaunteyaḥ sarvānbandhūnavasthitān",
-                "sanskrit_te": "సర్వాన్బన్ధూనవస్థితాన్",
-                "en": "Deep sorrow this spoke",
-                "te": "ఈ మాట విని ఎంతో దుఃఖం కలిగింది"
+                "sanskrit": "स कौन्तेयः सर्वान्बन्धूनवस्थितान्",
+                "word": "kaunteyaḥ sarvānbandhūnavasthitān",
+                "transliteration": "kaunteyaḥ sarvānbandhūnavasthitān",
+                "sanskrit_te": "కౌన్తేయః సర్వాన్బన్ధూనవస్థితాన్",
+                "en": "All these kinsmen arrayed,",
+                "te": "All these kinsmen arrayed,"
             }
         ],
         "hfMerged": true
@@ -3172,70 +3174,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అర్జున ఉవాచ కృపయా పరయాఽఽవిష్టో విషీదన్నిదమబ్రవీత్ |\nదృష్ట్వేమం స్వజనం కృష్ణ యుయుత్సుం సముపస్థితమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "कृपया परयाविष्टो विषीदन्निदमब्रवीत्",
-                "word": "kṛpayā parayāviṣṭo viṣīdannidamabravīt",
-                "transliteration": "kṛpayā parayāviṣṭo viṣīdannidamabravīt",
-                "sanskrit_te": "అర్జున ఉవాచ కృపయా",
+                "sanskrit": "कृपया परयाविष्टो",
+                "word": "kṛpayā parayāviṣṭo",
+                "transliteration": "kṛpayā parayāviṣṭo",
+                "sanskrit_te": "అర్జున ఉవాచ",
                 "en": "He was filled",
                 "te": "నిండిన"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
-                "word": "arjuna uvāca",
-                "transliteration": "arjuna uvāca",
-                "sanskrit_te": "పరయాఽఽవిష్టో విషీదన్నిదమబ్రవీత్ దృష్ట్వేమం",
-                "en": "On seeing kinsmen",
+                "sanskrit": "विषीदन्निदमब्रवीत् अर्जुन",
+                "word": "viṣīdannidamabravīt arjuna",
+                "transliteration": "viṣīdannidamabravīt arjuna",
+                "sanskrit_te": "కృపయా పరయాఽఽవిష్టో",
+                "en": "With deep compassion",
                 "te": "With deep compassion"
             },
             {
-                "sanskrit": "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्",
-                "word": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "transliteration": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "sanskrit_te": "స్వజనం కృష్ణ",
+                "sanskrit": "उवाच दृष्ट्वेमं स्वजनं",
+                "word": "uvāca dṛṣṭvemaṃ svajanaṃ",
+                "transliteration": "uvāca dṛṣṭvemaṃ svajanaṃ",
+                "sanskrit_te": "విషీదన్నిదమబ్రవీత్ దృష్ట్వేమం స్వజనం",
                 "en": "And said these",
                 "te": "మరియు ఈ మాటలు చెప్పారు"
             },
             {
-                "sanskrit": "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्",
-                "word": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "transliteration": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "sanskrit_te": "యుయుత్సుం సముపస్థితమ్",
-                "en": "Eager to fight present",
-                "te": "ఆత్రుతగా"
+                "sanskrit": "कृष्ण युयुत्सुं समुपस्थितम्",
+                "word": "kṛṣṇa yuyutsuṃ samupasthitam",
+                "transliteration": "kṛṣṇa yuyutsuṃ samupasthitam",
+                "sanskrit_te": "కృష్ణ యుయుత్సుం సముపస్థితమ్",
+                "en": "Words in despair:",
+                "te": "Words in despair:"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "कृपया परयाविष्टो विषीदन्निदमब्रवीत्",
-                "word": "kṛpayā parayāviṣṭo viṣīdannidamabravīt",
-                "transliteration": "kṛpayā parayāviṣṭo viṣīdannidamabravīt",
-                "sanskrit_te": "అర్జున ఉవాచ కృపయా",
+                "sanskrit": "कृपया परयाविष्टो",
+                "word": "kṛpayā parayāviṣṭo",
+                "transliteration": "kṛpayā parayāviṣṭo",
+                "sanskrit_te": "అర్జున ఉవాచ",
                 "en": "He was filled",
                 "te": "నిండిన"
             },
             {
-                "sanskrit": "अर्जुन उवाच",
-                "word": "arjuna uvāca",
-                "transliteration": "arjuna uvāca",
-                "sanskrit_te": "పరయాఽఽవిష్టో విషీదన్నిదమబ్రవీత్ దృష్ట్వేమం",
-                "en": "On seeing kinsmen",
+                "sanskrit": "विषीदन्निदमब्रवीत् अर्जुन",
+                "word": "viṣīdannidamabravīt arjuna",
+                "transliteration": "viṣīdannidamabravīt arjuna",
+                "sanskrit_te": "కృపయా పరయాఽఽవిష్టో",
+                "en": "With deep compassion",
                 "te": "With deep compassion"
             },
             {
-                "sanskrit": "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्",
-                "word": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "transliteration": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "sanskrit_te": "స్వజనం కృష్ణ",
+                "sanskrit": "उवाच दृष्ट्वेमं स्वजनं",
+                "word": "uvāca dṛṣṭvemaṃ svajanaṃ",
+                "transliteration": "uvāca dṛṣṭvemaṃ svajanaṃ",
+                "sanskrit_te": "విషీదన్నిదమబ్రవీత్ దృష్ట్వేమం స్వజనం",
                 "en": "And said these",
                 "te": "మరియు ఈ మాటలు చెప్పారు"
             },
             {
-                "sanskrit": "दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्",
-                "word": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "transliteration": "dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam",
-                "sanskrit_te": "యుయుత్సుం సముపస్థితమ్",
-                "en": "Eager to fight present",
-                "te": "ఆత్రుతగా"
+                "sanskrit": "कृष्ण युयुत्सुं समुपस्थितम्",
+                "word": "kṛṣṇa yuyutsuṃ samupasthitam",
+                "transliteration": "kṛṣṇa yuyutsuṃ samupasthitam",
+                "sanskrit_te": "కృష్ణ యుయుత్సుం సముపస్థితమ్",
+                "en": "Words in despair:",
+                "te": "Words in despair:"
             }
         ],
         "hfMerged": true
@@ -3288,70 +3290,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "సీదన్తి మమ గాత్రాణి ముఖం చ పరిశుష్యతి |\nవేపథుశ్చ శరీరే మే రోమహర్షశ్చ జాయతే",
         "lineBreakdown": [
             {
-                "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति",
-                "word": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati",
-                "transliteration": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati",
-                "sanskrit_te": "సీదన్తి మమ గాత్రాణి",
-                "en": "Quivering my limbs mouth",
-                "te": "నా అవయవాలు వణుకుతున్నాయి"
+                "sanskrit": "सीदन्ति मम गात्राणि",
+                "word": "sīdanti mama gātrāṇi",
+                "transliteration": "sīdanti mama gātrāṇi",
+                "sanskrit_te": "సీదన్తి మమ",
+                "en": "My limbs have weakened",
+                "te": "My limbs have weakened"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "ముఖం చ పరిశుష్యతి",
-                "en": "And is drying up shuddering and",
+                "sanskrit": "मुखं च परिशुष्यति",
+                "word": "mukhaṃ ca pariśuṣyati",
+                "transliteration": "mukhaṃ ca pariśuṣyati",
+                "sanskrit_te": "గాత్రాణి ముఖం చ",
+                "en": "My mouth has become parched",
                 "te": "My mouth has become parched"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "వేపథుశ్చ శరీరే మే",
-                "en": "On the body my standing of bodily hair on end",
-                "te": "శరీరంపై నా శరీరపు జుట్టు చివరల మీద నిలబడటం"
+                "sanskrit": "वेपथुश्च शरीरे मे",
+                "word": "vepathuśca śarīre me",
+                "transliteration": "vepathuśca śarīre me",
+                "sanskrit_te": "పరిశుష్యతి వేపథుశ్చ శరీరే",
+                "en": "My body is trembling",
+                "te": "My body is trembling"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "రోమహర్షశ్చ జాయతే",
-                "en": "And is happening",
-                "te": "మరియు జరుగుతున్నది"
+                "sanskrit": "रोमहर्षश्च जायते",
+                "word": "romaharṣaśca jāyate",
+                "transliteration": "romaharṣaśca jāyate",
+                "sanskrit_te": "మే రోమహర్షశ్చ జాయతే",
+                "en": "And my hairs are standing on end.",
+                "te": "And my hairs are standing on end."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "सीदन्ति मम गात्राणि मुखं च परिशुष्यति",
-                "word": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati",
-                "transliteration": "sīdanti mama gātrāṇi mukhaṃ ca pariśuṣyati",
-                "sanskrit_te": "సీదన్తి మమ గాత్రాణి",
-                "en": "Quivering my limbs mouth",
-                "te": "నా అవయవాలు వణుకుతున్నాయి"
+                "sanskrit": "सीदन्ति मम गात्राणि",
+                "word": "sīdanti mama gātrāṇi",
+                "transliteration": "sīdanti mama gātrāṇi",
+                "sanskrit_te": "సీదన్తి మమ",
+                "en": "My limbs have weakened",
+                "te": "My limbs have weakened"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "ముఖం చ పరిశుష్యతి",
-                "en": "And is drying up shuddering and",
+                "sanskrit": "मुखं च परिशुष्यति",
+                "word": "mukhaṃ ca pariśuṣyati",
+                "transliteration": "mukhaṃ ca pariśuṣyati",
+                "sanskrit_te": "గాత్రాణి ముఖం చ",
+                "en": "My mouth has become parched",
                 "te": "My mouth has become parched"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "వేపథుశ్చ శరీరే మే",
-                "en": "On the body my standing of bodily hair on end",
-                "te": "శరీరంపై నా శరీరపు జుట్టు చివరల మీద నిలబడటం"
+                "sanskrit": "वेपथुश्च शरीरे मे",
+                "word": "vepathuśca śarīre me",
+                "transliteration": "vepathuśca śarīre me",
+                "sanskrit_te": "పరిశుష్యతి వేపథుశ్చ శరీరే",
+                "en": "My body is trembling",
+                "te": "My body is trembling"
             },
             {
-                "sanskrit": "वेपथुश्च शरीरे मे रोमहर्षश्च जायते",
-                "word": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "transliteration": "vepathuśca śarīre me romaharṣaśca jāyate",
-                "sanskrit_te": "రోమహర్షశ్చ జాయతే",
-                "en": "And is happening",
-                "te": "మరియు జరుగుతున్నది"
+                "sanskrit": "रोमहर्षश्च जायते",
+                "word": "romaharṣaśca jāyate",
+                "transliteration": "romaharṣaśca jāyate",
+                "sanskrit_te": "మే రోమహర్షశ్చ జాయతే",
+                "en": "And my hairs are standing on end.",
+                "te": "And my hairs are standing on end."
             }
         ],
         "hfMerged": true
@@ -3404,70 +3406,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "గాణ్డీవం స్రంసతే హస్తాత్త్వక్చైవ పరిదహ్యతే |\nన చ శక్నోమ్యవస్థాతుం భ్రమతీవ చ మే మనః",
         "lineBreakdown": [
             {
-                "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते",
-                "word": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate",
-                "transliteration": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate",
-                "sanskrit_te": "గాణ్డీవం స్రంసతే హస్తాత్త్వక్చైవ",
-                "en": "Arjun’s bow is slipping from (my) hand skin",
-                "te": "The bow Gandiva slips from my"
+                "sanskrit": "गाण्डीवं स्रंसते",
+                "word": "gāṇḍīvaṃ sraṃsate",
+                "transliteration": "gāṇḍīvaṃ sraṃsate",
+                "sanskrit_te": "గాణ్డీవం స్రంసతే",
+                "en": "The bow Gandiva slips from",
+                "te": "The bow Gandiva slips from"
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "పరిదహ్యతే న చ",
-                "en": "Is burning all over not and",
-                "te": "జనం అంతా దహనం చెయ్యడం మరియు"
+                "sanskrit": "हस्तात्त्वक्चैव परिदह्यते",
+                "word": "hastāttvakcaiva paridahyate",
+                "transliteration": "hastāttvakcaiva paridahyate",
+                "sanskrit_te": "హస్తాత్త్వక్చైవ పరిదహ్యతే న",
+                "en": "My hand and my skin is",
+                "te": "My hand and my skin is"
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "శక్నోమ్యవస్థాతుం భ్రమతీవ చ",
-                "en": "Am able remain steady whirling like",
-                "te": "స్థిరంగా తిరిగేందుకు వీలుగా"
+                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव",
+                "word": "na ca śaknomyavasthātuṃ bhramatīva",
+                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva",
+                "sanskrit_te": "చ శక్నోమ్యవస్థాతుం భ్రమతీవ",
+                "en": "Burning. I can no longer stand.",
+                "te": "Burning. I can no longer stand."
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "మే మనః",
-                "en": "And my mind",
-                "te": "మరియు నా మనస్సు"
+                "sanskrit": "च मे मनः",
+                "word": "ca me manaḥ",
+                "transliteration": "ca me manaḥ",
+                "sanskrit_te": "చ మే మనః",
+                "en": "My mind seems to be reeling.",
+                "te": "My mind seems to be reeling."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते",
-                "word": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate",
-                "transliteration": "gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate",
-                "sanskrit_te": "గాణ్డీవం స్రంసతే హస్తాత్త్వక్చైవ",
-                "en": "Arjun’s bow is slipping from (my) hand skin",
-                "te": "The bow Gandiva slips from my"
+                "sanskrit": "गाण्डीवं स्रंसते",
+                "word": "gāṇḍīvaṃ sraṃsate",
+                "transliteration": "gāṇḍīvaṃ sraṃsate",
+                "sanskrit_te": "గాణ్డీవం స్రంసతే",
+                "en": "The bow Gandiva slips from",
+                "te": "The bow Gandiva slips from"
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "పరిదహ్యతే న చ",
-                "en": "Is burning all over not and",
-                "te": "జనం అంతా దహనం చెయ్యడం మరియు"
+                "sanskrit": "हस्तात्त्वक्चैव परिदह्यते",
+                "word": "hastāttvakcaiva paridahyate",
+                "transliteration": "hastāttvakcaiva paridahyate",
+                "sanskrit_te": "హస్తాత్త్వక్చైవ పరిదహ్యతే న",
+                "en": "My hand and my skin is",
+                "te": "My hand and my skin is"
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "శక్నోమ్యవస్థాతుం భ్రమతీవ చ",
-                "en": "Am able remain steady whirling like",
-                "te": "స్థిరంగా తిరిగేందుకు వీలుగా"
+                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव",
+                "word": "na ca śaknomyavasthātuṃ bhramatīva",
+                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva",
+                "sanskrit_te": "చ శక్నోమ్యవస్థాతుం భ్రమతీవ",
+                "en": "Burning. I can no longer stand.",
+                "te": "Burning. I can no longer stand."
             },
             {
-                "sanskrit": "न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः",
-                "word": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "transliteration": "na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ",
-                "sanskrit_te": "మే మనః",
-                "en": "And my mind",
-                "te": "మరియు నా మనస్సు"
+                "sanskrit": "च मे मनः",
+                "word": "ca me manaḥ",
+                "transliteration": "ca me manaḥ",
+                "sanskrit_te": "చ మే మనః",
+                "en": "My mind seems to be reeling.",
+                "te": "My mind seems to be reeling."
             }
         ],
         "hfMerged": true
@@ -3520,70 +3522,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "నిమిత్తాని చ పశ్యామి విపరీతాని కేశవ |\nన చ శ్రేయోఽనుపశ్యామి హత్వా స్వజనమాహవే",
         "lineBreakdown": [
             {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
-                "word": "nimittāni ca paśyāmi viparītāni keśava",
-                "transliteration": "nimittāni ca paśyāmi viparītāni keśava",
-                "sanskrit_te": "నిమిత్తాని చ పశ్యామి",
-                "en": "Omens and I see misfortune",
-                "te": "I see, Kṛṣṇa, inauspicious"
+                "sanskrit": "निमित्तानि च पश्यामि",
+                "word": "nimittāni ca",
+                "transliteration": "nimittāni ca",
+                "sanskrit_te": "నిమిత్తాని చ",
+                "en": "I see, Kṛṣṇa,",
+                "te": "I see, Kṛṣṇa,"
             },
             {
-                "sanskrit": "न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे",
+                "sanskrit": "विपरीतानि केशव",
+                "word": "paśyāmi viparītāni keśava",
+                "transliteration": "paśyāmi viparītāni keśava",
+                "sanskrit_te": "పశ్యామి విపరీతాని",
+                "en": "Inauspicious omens. I foresee",
+                "te": "Inauspicious omens. I foresee"
+            },
+            {
+                "sanskrit": "न च श्रेयोऽनुपश्यामि",
                 "word": "na ca śreyo",
                 "transliteration": "na ca śreyo",
-                "sanskrit_te": "విపరీతాని కేశవ న",
-                "en": "Shree Krishna, killer of the Keshi demon not and",
-                "te": "శ్రీ కృష్ణుడు, కేషి రాక్షసుడిని చంపినవాడు, మరియు కాదు"
+                "sanskrit_te": "కేశవ న చ",
+                "en": "No good in slaying",
+                "te": "No good in slaying"
             },
             {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
+                "sanskrit": "हत्वा स्वजनमाहवे",
                 "word": "anupaśyāmi hatvā svajanamāhave",
                 "transliteration": "anupaśyāmi hatvā svajanamāhave",
-                "sanskrit_te": "చ శ్రేయోఽనుపశ్యామి",
-                "en": "Good I see from killing",
-                "te": "Good in slaying my"
-            },
-            {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
-                "word": "anupaśyāmi hatvā svajanamāhave",
-                "transliteration": "anupaśyāmi hatvā svajanamāhave",
-                "sanskrit_te": "హత్వా స్వజనమాహవే",
-                "en": "Kinsmen in battle",
-                "te": "యుద్ధంలో బంధుత్వము"
+                "sanskrit_te": "శ్రేయోఽనుపశ్యామి హత్వా స్వజనమాహవే",
+                "en": "My kinsmen in battle.",
+                "te": "My kinsmen in battle."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
-                "word": "nimittāni ca paśyāmi viparītāni keśava",
-                "transliteration": "nimittāni ca paśyāmi viparītāni keśava",
-                "sanskrit_te": "నిమిత్తాని చ పశ్యామి",
-                "en": "Omens and I see misfortune",
-                "te": "I see, Kṛṣṇa, inauspicious"
+                "sanskrit": "निमित्तानि च पश्यामि",
+                "word": "nimittāni ca",
+                "transliteration": "nimittāni ca",
+                "sanskrit_te": "నిమిత్తాని చ",
+                "en": "I see, Kṛṣṇa,",
+                "te": "I see, Kṛṣṇa,"
             },
             {
-                "sanskrit": "न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे",
+                "sanskrit": "विपरीतानि केशव",
+                "word": "paśyāmi viparītāni keśava",
+                "transliteration": "paśyāmi viparītāni keśava",
+                "sanskrit_te": "పశ్యామి విపరీతాని",
+                "en": "Inauspicious omens. I foresee",
+                "te": "Inauspicious omens. I foresee"
+            },
+            {
+                "sanskrit": "न च श्रेयोऽनुपश्यामि",
                 "word": "na ca śreyo",
                 "transliteration": "na ca śreyo",
-                "sanskrit_te": "విపరీతాని కేశవ న",
-                "en": "Shree Krishna, killer of the Keshi demon not and",
-                "te": "శ్రీ కృష్ణుడు, కేషి రాక్షసుడిని చంపినవాడు, మరియు కాదు"
+                "sanskrit_te": "కేశవ న చ",
+                "en": "No good in slaying",
+                "te": "No good in slaying"
             },
             {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
+                "sanskrit": "हत्वा स्वजनमाहवे",
                 "word": "anupaśyāmi hatvā svajanamāhave",
                 "transliteration": "anupaśyāmi hatvā svajanamāhave",
-                "sanskrit_te": "చ శ్రేయోఽనుపశ్యామి",
-                "en": "Good I see from killing",
-                "te": "Good in slaying my"
-            },
-            {
-                "sanskrit": "निमित्तानि च पश्यामि विपरीतानि केशव",
-                "word": "anupaśyāmi hatvā svajanamāhave",
-                "transliteration": "anupaśyāmi hatvā svajanamāhave",
-                "sanskrit_te": "హత్వా స్వజనమాహవే",
-                "en": "Kinsmen in battle",
-                "te": "యుద్ధంలో బంధుత్వము"
+                "sanskrit_te": "శ్రేయోఽనుపశ్యామి హత్వా స్వజనమాహవే",
+                "en": "My kinsmen in battle.",
+                "te": "My kinsmen in battle."
             }
         ],
         "hfMerged": true
@@ -3636,70 +3638,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "న కాఙ్క్షే విజయం కృష్ణ న చ రాజ్యం సుఖాని చ |\nకిం నో రాజ్యేన గోవిన్ద కిం భోగైర్జీవితేన వా",
         "lineBreakdown": [
             {
-                "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च",
-                "word": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca",
-                "transliteration": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca",
+                "sanskrit": "न काङ्क्षे विजयं कृष्ण न",
+                "word": "na kāṅkṣe vijayaṃ kṛṣṇa na",
+                "transliteration": "na kāṅkṣe vijayaṃ kṛṣṇa na",
                 "sanskrit_te": "న కాఙ్క్షే విజయం కృష్ణ",
-                "en": "Nor do I desire victory Krishna nor",
-                "te": "I desire no victory, nor empire,"
+                "en": "I desire no victory, nor",
+                "te": "I desire no victory, nor"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "च राज्यं सुखानि च",
+                "word": "ca rājyaṃ sukhāni ca",
+                "transliteration": "ca rājyaṃ sukhāni ca",
                 "sanskrit_te": "న చ రాజ్యం సుఖాని",
-                "en": "As well kingdom happiness as well",
-                "te": "రాజ్య సంతోషం కూడా"
+                "en": "Empire, nor pleasures. What have",
+                "te": "Empire, nor pleasures. What have"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "किं नो राज्येन गोविन्द",
+                "word": "kiṃ no rājyena govinda",
+                "transliteration": "kiṃ no rājyena govinda",
                 "sanskrit_te": "చ కిం నో రాజ్యేన",
-                "en": "What by kingdom Krishna, he who gives pleasure to the senses, he who is fond of cows",
-                "te": "రాజ్యమైన కృష్ణుడు, ఇంద్రియాలకు ఆనందాన్ని ఇచ్చే వాడు, ఆవులకు అభిమానం గల వాడు"
+                "en": "We to do with empire, O",
+                "te": "We to do with empire, O"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "किं भोगैर्जीवितेन वा",
+                "word": "kiṃ bhogairjīvitena vā",
+                "transliteration": "kiṃ bhogairjīvitena vā",
                 "sanskrit_te": "గోవిన్ద కిం భోగైర్జీవితేన వా",
-                "en": "What pleasures life or",
-                "te": "జీవితం యొక్క ఆనందాలు లేదా"
+                "en": "Krishna, or enjoyment, or even life?",
+                "te": "Krishna, or enjoyment, or even life?"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च",
-                "word": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca",
-                "transliteration": "na kāṅkṣe vijayaṃ kṛṣṇa na ca rājyaṃ sukhāni ca",
+                "sanskrit": "न काङ्क्षे विजयं कृष्ण न",
+                "word": "na kāṅkṣe vijayaṃ kṛṣṇa na",
+                "transliteration": "na kāṅkṣe vijayaṃ kṛṣṇa na",
                 "sanskrit_te": "న కాఙ్క్షే విజయం కృష్ణ",
-                "en": "Nor do I desire victory Krishna nor",
-                "te": "I desire no victory, nor empire,"
+                "en": "I desire no victory, nor",
+                "te": "I desire no victory, nor"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "च राज्यं सुखानि च",
+                "word": "ca rājyaṃ sukhāni ca",
+                "transliteration": "ca rājyaṃ sukhāni ca",
                 "sanskrit_te": "న చ రాజ్యం సుఖాని",
-                "en": "As well kingdom happiness as well",
-                "te": "రాజ్య సంతోషం కూడా"
+                "en": "Empire, nor pleasures. What have",
+                "te": "Empire, nor pleasures. What have"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "किं नो राज्येन गोविन्द",
+                "word": "kiṃ no rājyena govinda",
+                "transliteration": "kiṃ no rājyena govinda",
                 "sanskrit_te": "చ కిం నో రాజ్యేన",
-                "en": "What by kingdom Krishna, he who gives pleasure to the senses, he who is fond of cows",
-                "te": "రాజ్యమైన కృష్ణుడు, ఇంద్రియాలకు ఆనందాన్ని ఇచ్చే వాడు, ఆవులకు అభిమానం గల వాడు"
+                "en": "We to do with empire, O",
+                "te": "We to do with empire, O"
             },
             {
-                "sanskrit": "किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा",
-                "word": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
-                "transliteration": "kiṃ no rājyena govinda kiṃ bhogairjīvitena vā",
+                "sanskrit": "किं भोगैर्जीवितेन वा",
+                "word": "kiṃ bhogairjīvitena vā",
+                "transliteration": "kiṃ bhogairjīvitena vā",
                 "sanskrit_te": "గోవిన్ద కిం భోగైర్జీవితేన వా",
-                "en": "What pleasures life or",
-                "te": "జీవితం యొక్క ఆనందాలు లేదా"
+                "en": "Krishna, or enjoyment, or even life?",
+                "te": "Krishna, or enjoyment, or even life?"
             }
         ],
         "hfMerged": true
@@ -3752,70 +3754,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యేషామర్థే కాఙ్క్షితం నో రాజ్యం భోగాః సుఖాని చ |\nత ఇమేఽవస్థితా యుద్ధే ప్రాణాంస్త్యక్త్వా ధనాని చ",
         "lineBreakdown": [
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca",
-                "transliteration": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca",
+                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं",
+                "word": "yeṣāmarthe kāṅkṣitaṃ no",
+                "transliteration": "yeṣāmarthe kāṅkṣitaṃ no",
                 "sanskrit_te": "యేషామర్థే కాఙ్క్షితం నో రాజ్యం",
-                "en": "For whose sake coveted for",
-                "te": "ఎవరి కోసం"
+                "en": "Those for whose sake",
+                "te": "Those for whose sake"
             },
             {
-                "sanskrit": "त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च",
-                "word": "ta ime",
-                "transliteration": "ta ime",
+                "sanskrit": "भोगाः सुखानि च",
+                "word": "rājyaṃ bhogāḥ sukhāni",
+                "transliteration": "rājyaṃ bhogāḥ sukhāni",
                 "sanskrit_te": "భోగాః సుఖాని చ",
-                "en": "Kingdom pleasures happiness also",
-                "te": "Desire empire, enjoyment, and pleasures,"
+                "en": "We desire empire, enjoyment,",
+                "te": "We desire empire, enjoyment,"
             },
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
-                "transliteration": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "sanskrit": "त इमेऽवस्थिता युद्धे",
+                "word": "ca ta ime avasthitā",
+                "transliteration": "ca ta ime avasthitā",
                 "sanskrit_te": "త ఇమేఽవస్థితా యుద్ధే",
-                "en": "These for battle",
-                "te": "యుద్ధానికి"
+                "en": "And pleasures, stand here in",
+                "te": "And pleasures, stand here in"
             },
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
-                "transliteration": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "sanskrit": "प्राणांस्त्यक्त्वा धनानि च",
+                "word": "yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "transliteration": "yuddhe prāṇāṃstyaktvā dhanāni ca",
                 "sanskrit_te": "ప్రాణాంస్త్యక్త్వా ధనాని చ",
-                "en": "Lives giving up wealth also",
-                "te": "సంపదను వదులుకునేవారు కూడా"
+                "en": "War, renouncing life and wealth.",
+                "te": "War, renouncing life and wealth."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca",
-                "transliteration": "yeṣāmarthe kāṅkṣitaṃ no rājyaṃ bhogāḥ sukhāni ca",
+                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं",
+                "word": "yeṣāmarthe kāṅkṣitaṃ no",
+                "transliteration": "yeṣāmarthe kāṅkṣitaṃ no",
                 "sanskrit_te": "యేషామర్థే కాఙ్క్షితం నో రాజ్యం",
-                "en": "For whose sake coveted for",
-                "te": "ఎవరి కోసం"
+                "en": "Those for whose sake",
+                "te": "Those for whose sake"
             },
             {
-                "sanskrit": "त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च",
-                "word": "ta ime",
-                "transliteration": "ta ime",
+                "sanskrit": "भोगाः सुखानि च",
+                "word": "rājyaṃ bhogāḥ sukhāni",
+                "transliteration": "rājyaṃ bhogāḥ sukhāni",
                 "sanskrit_te": "భోగాః సుఖాని చ",
-                "en": "Kingdom pleasures happiness also",
-                "te": "Desire empire, enjoyment, and pleasures,"
+                "en": "We desire empire, enjoyment,",
+                "te": "We desire empire, enjoyment,"
             },
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
-                "transliteration": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "sanskrit": "त इमेऽवस्थिता युद्धे",
+                "word": "ca ta ime avasthitā",
+                "transliteration": "ca ta ime avasthitā",
                 "sanskrit_te": "త ఇమేఽవస్థితా యుద్ధే",
-                "en": "These for battle",
-                "te": "యుద్ధానికి"
+                "en": "And pleasures, stand here in",
+                "te": "And pleasures, stand here in"
             },
             {
-                "sanskrit": "येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च",
-                "word": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
-                "transliteration": "avasthitā yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "sanskrit": "प्राणांस्त्यक्त्वा धनानि च",
+                "word": "yuddhe prāṇāṃstyaktvā dhanāni ca",
+                "transliteration": "yuddhe prāṇāṃstyaktvā dhanāni ca",
                 "sanskrit_te": "ప్రాణాంస్త్యక్త్వా ధనాని చ",
-                "en": "Lives giving up wealth also",
-                "te": "సంపదను వదులుకునేవారు కూడా"
+                "en": "War, renouncing life and wealth.",
+                "te": "War, renouncing life and wealth."
             }
         ],
         "hfMerged": true
@@ -3868,70 +3870,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ఆచార్యాః పితరః పుత్రాస్తథైవ చ పితామహాః |\nమాతులాః శ్చశురాః పౌత్రాః శ్యాలాః సమ్బన్ధినస్తథా",
         "lineBreakdown": [
             {
-                "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः",
-                "word": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ",
-                "transliteration": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ",
-                "sanskrit_te": "ఆచార్యాః పితరః పుత్రాస్తథైవ",
-                "en": "Teachers fathers sons",
-                "te": "All these are to be regarded as one's own"
+                "sanskrit": "आचार्याः पितरः पुत्रास्तथैव",
+                "word": "ācāryāḥ pitaraḥ putrāstathaiva",
+                "transliteration": "ācāryāḥ pitaraḥ putrāstathaiva",
+                "sanskrit_te": "ఆచార్యాః పితరః",
+                "en": "All these are to be regarded as one's",
+                "te": "All these are to be regarded as one's"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "చ పితామహాః మాతులాః",
-                "en": "As well also grandfathers",
-                "te": "అలాగే తాతగారికి కూడా"
+                "sanskrit": "च पितामहाः",
+                "word": "ca pitāmahāḥ",
+                "transliteration": "ca pitāmahāḥ",
+                "sanskrit_te": "పుత్రాస్తథైవ చ",
+                "en": "Own self. Teachers, fathers, sons, grandfathers, uncles, fathers",
+                "te": "Own self. Teachers, fathers, sons, grandfathers, uncles, fathers"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "శ్చశురాః పౌత్రాః",
-                "en": "Maternal uncles fathers-in-law grandsons",
-                "te": "తల్లి వైపు అత్తమామల కుమారులు మనవళ్ళు"
+                "sanskrit": "मातुलाः श्वशुराः पौत्राः",
+                "word": "mātulāḥ śvaśurāḥ pautrāḥ",
+                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ",
+                "sanskrit_te": "పితామహాః మాతులాః శ్చశురాః",
+                "en": "In law, grandsons, brothers in law, and other kinsmen—all",
+                "te": "In law, grandsons, brothers in law, and other kinsmen—all"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "శ్యాలాః సమ్బన్ధినస్తథా",
-                "en": "Brothers-in-law kinsmen as well",
-                "te": "అన్నదమ్ముల బంధువులు కూడా"
+                "sanskrit": "श्यालाः सम्बन्धिनस्तथा",
+                "word": "śyālāḥ sambandhinastathā",
+                "transliteration": "śyālāḥ sambandhinastathā",
+                "sanskrit_te": "పౌత్రాః శ్యాలాః సమ్బన్ధినస్తథా",
+                "en": "These are to be regarded as one's own self.",
+                "te": "These are to be regarded as one's own self."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "आचार्याः पितरः पुत्रास्तथैव च पितामहाः",
-                "word": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ",
-                "transliteration": "ācāryāḥ pitaraḥ putrāstathaiva ca pitāmahāḥ",
-                "sanskrit_te": "ఆచార్యాః పితరః పుత్రాస్తథైవ",
-                "en": "Teachers fathers sons",
-                "te": "All these are to be regarded as one's own"
+                "sanskrit": "आचार्याः पितरः पुत्रास्तथैव",
+                "word": "ācāryāḥ pitaraḥ putrāstathaiva",
+                "transliteration": "ācāryāḥ pitaraḥ putrāstathaiva",
+                "sanskrit_te": "ఆచార్యాః పితరః",
+                "en": "All these are to be regarded as one's",
+                "te": "All these are to be regarded as one's"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "చ పితామహాః మాతులాః",
-                "en": "As well also grandfathers",
-                "te": "అలాగే తాతగారికి కూడా"
+                "sanskrit": "च पितामहाः",
+                "word": "ca pitāmahāḥ",
+                "transliteration": "ca pitāmahāḥ",
+                "sanskrit_te": "పుత్రాస్తథైవ చ",
+                "en": "Own self. Teachers, fathers, sons, grandfathers, uncles, fathers",
+                "te": "Own self. Teachers, fathers, sons, grandfathers, uncles, fathers"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "శ్చశురాః పౌత్రాః",
-                "en": "Maternal uncles fathers-in-law grandsons",
-                "te": "తల్లి వైపు అత్తమామల కుమారులు మనవళ్ళు"
+                "sanskrit": "मातुलाः श्वशुराः पौत्राः",
+                "word": "mātulāḥ śvaśurāḥ pautrāḥ",
+                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ",
+                "sanskrit_te": "పితామహాః మాతులాః శ్చశురాః",
+                "en": "In law, grandsons, brothers in law, and other kinsmen—all",
+                "te": "In law, grandsons, brothers in law, and other kinsmen—all"
             },
             {
-                "sanskrit": "मातुलाः श्वशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा",
-                "word": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "transliteration": "mātulāḥ śvaśurāḥ pautrāḥ śyālāḥ sambandhinastathā",
-                "sanskrit_te": "శ్యాలాః సమ్బన్ధినస్తథా",
-                "en": "Brothers-in-law kinsmen as well",
-                "te": "అన్నదమ్ముల బంధువులు కూడా"
+                "sanskrit": "श्यालाः सम्बन्धिनस्तथा",
+                "word": "śyālāḥ sambandhinastathā",
+                "transliteration": "śyālāḥ sambandhinastathā",
+                "sanskrit_te": "పౌత్రాః శ్యాలాః సమ్బన్ధినస్తథా",
+                "en": "These are to be regarded as one's own self.",
+                "te": "These are to be regarded as one's own self."
             }
         ],
         "hfMerged": true
@@ -3984,68 +3986,68 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ఏతాన్న హన్తుమిచ్ఛామి ఘ్నతోఽపి మధుసూదన |\nఅపి త్రైలోక్యరాజ్యస్య హేతోః కిం ను మహీకృతే",
         "lineBreakdown": [
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "etānna hantumicchāmi ghnato",
-                "transliteration": "etānna hantumicchāmi ghnato",
-                "sanskrit_te": "ఏతాన్న హన్తుమిచ్ఛామి ఘ్నతోఽపి",
-                "en": "These not to slay I wish",
+                "sanskrit": "एतान्न हन्तुमिच्छामि",
+                "word": "etānna hantumicchāmi",
+                "transliteration": "etānna hantumicchāmi",
+                "sanskrit_te": "ఏతాన్న హన్తుమిచ్ఛామి",
+                "en": "I would not slay them",
                 "te": "I would not slay them"
             },
             {
-                "sanskrit": "अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते",
-                "word": "api madhusūdana",
-                "transliteration": "api madhusūdana",
-                "sanskrit_te": "మధుసూదన అపి త్రైలోక్యరాజ్యస్య",
-                "en": "Killed Shree Krishna, killer of the demon Madhu even though",
-                "te": "మధు రాక్షసుడిని చంపిన శ్రీ కృష్ణుడిని చంపినవాడు, అయినప్పటికీ"
+                "sanskrit": "घ्नतोऽपि मधुसूदन",
+                "word": "ghnato api madhusūdana",
+                "transliteration": "ghnato api madhusūdana",
+                "sanskrit_te": "ఘ్నతోఽపి మధుసూదన",
+                "en": "Even if they might slay me",
+                "te": "Even if they might slay me"
             },
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "transliteration": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "sanskrit_te": "హేతోః కిం",
-                "en": "Dominion over three worlds for the sake of what to speak of",
-                "te": "మూడు ప్రపంచాలపై ఆధిపత్యం కోసం ఏమి చెప్పాలి?"
+                "sanskrit": "अपि त्रैलोक्यराज्यस्य हेतोः",
+                "word": "api trailokyarājyasya hetoḥ",
+                "transliteration": "api trailokyarājyasya hetoḥ",
+                "sanskrit_te": "అపి త్రైలోక్యరాజ్యస్య హేతోః",
+                "en": "For the sovereignty of the three worlds—how much less for this earth",
+                "te": "For the sovereignty of the three worlds—how much less for this earth"
             },
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "transliteration": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "sanskrit_te": "ను మహీకృతే",
+                "sanskrit": "किं नु महीकृते",
+                "word": "kiṃ nu mahīkṛte",
+                "transliteration": "kiṃ nu mahīkṛte",
+                "sanskrit_te": "కిం ను మహీకృతే",
                 "en": "O Krsna?",
                 "te": "కృష్ణా?"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "etānna hantumicchāmi ghnato",
-                "transliteration": "etānna hantumicchāmi ghnato",
-                "sanskrit_te": "ఏతాన్న హన్తుమిచ్ఛామి ఘ్నతోఽపి",
-                "en": "These not to slay I wish",
+                "sanskrit": "एतान्न हन्तुमिच्छामि",
+                "word": "etānna hantumicchāmi",
+                "transliteration": "etānna hantumicchāmi",
+                "sanskrit_te": "ఏతాన్న హన్తుమిచ్ఛామి",
+                "en": "I would not slay them",
                 "te": "I would not slay them"
             },
             {
-                "sanskrit": "अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते",
-                "word": "api madhusūdana",
-                "transliteration": "api madhusūdana",
-                "sanskrit_te": "మధుసూదన అపి త్రైలోక్యరాజ్యస్య",
-                "en": "Killed Shree Krishna, killer of the demon Madhu even though",
-                "te": "మధు రాక్షసుడిని చంపిన శ్రీ కృష్ణుడిని చంపినవాడు, అయినప్పటికీ"
+                "sanskrit": "घ्नतोऽपि मधुसूदन",
+                "word": "ghnato api madhusūdana",
+                "transliteration": "ghnato api madhusūdana",
+                "sanskrit_te": "ఘ్నతోఽపి మధుసూదన",
+                "en": "Even if they might slay me",
+                "te": "Even if they might slay me"
             },
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "transliteration": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "sanskrit_te": "హేతోః కిం",
-                "en": "Dominion over three worlds for the sake of what to speak of",
-                "te": "మూడు ప్రపంచాలపై ఆధిపత్యం కోసం ఏమి చెప్పాలి?"
+                "sanskrit": "अपि त्रैलोक्यराज्यस्य हेतोः",
+                "word": "api trailokyarājyasya hetoḥ",
+                "transliteration": "api trailokyarājyasya hetoḥ",
+                "sanskrit_te": "అపి త్రైలోక్యరాజ్యస్య హేతోః",
+                "en": "For the sovereignty of the three worlds—how much less for this earth",
+                "te": "For the sovereignty of the three worlds—how much less for this earth"
             },
             {
-                "sanskrit": "एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन",
-                "word": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "transliteration": "api trailokyarājyasya hetoḥ kiṃ nu mahīkṛte",
-                "sanskrit_te": "ను మహీకృతే",
+                "sanskrit": "किं नु महीकृते",
+                "word": "kiṃ nu mahīkṛte",
+                "transliteration": "kiṃ nu mahīkṛte",
+                "sanskrit_te": "కిం ను మహీకృతే",
                 "en": "O Krsna?",
                 "te": "కృష్ణా?"
             }
@@ -4100,70 +4102,54 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "నిహత్య ధార్తరాష్ట్రాన్నః కా ప్రీతిః స్యాజ్జనార్దన |\nపాపమేవాశ్రయేదస్మాన్హత్వైతానాతతాయినః",
         "lineBreakdown": [
             {
-                "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन",
-                "word": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana",
-                "transliteration": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana",
+                "sanskrit": "निहत्य धार्तराष्ट्रान्नः",
+                "word": "nihatya dhārtarāṣṭrānnaḥ kā",
+                "transliteration": "nihatya dhārtarāṣṭrānnaḥ kā",
                 "sanskrit_te": "నిహత్య ధార్తరాష్ట్రాన్నః",
-                "en": "By killing the sons of Dhritarashtra our",
-                "te": "If we were to kill the sons"
+                "en": "If we were to kill the sons of Dhrtarastra",
+                "te": "If we were to kill the sons of Dhrtarastra"
             },
             {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
-                "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
+                "sanskrit": "का प्रीतिः",
+                "word": "prītiḥ syājjanārdana",
+                "transliteration": "prītiḥ syājjanārdana",
                 "sanskrit_te": "కా ప్రీతిః",
-                "en": "What pleasure",
-                "te": "Of Dhrtarastra, what joy would be ours,"
+                "en": "What joy would be ours",
+                "te": "What joy would be ours"
             },
             {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
+                "sanskrit": "स्याज्जनार्दन पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
                 "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
                 "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "sanskrit_te": "స్యాజ్జనార్దన",
-                "en": "He who looks after the public, Shree Krishna vices",
-                "te": "ప్రజల సంరక్షణ చేసే శ్రీ కృష్ణుడు వైరి."
-            },
-            {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
-                "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "sanskrit_te": "పాపమేవాశ్రయేదస్మాన్హత్వైతానాతతాయినః",
-                "en": "Us by killing aggressors",
-                "te": "మేము దూసుకొచ్చిన వారిని చంపడం ద్వారా"
+                "sanskrit_te": "స్యాజ్జనార్దన పాపమేవాశ్రయేదస్మాన్హత్వైతానాతతాయినః",
+                "en": "O Krsna? Sin alone would accrue to us if we killed these murderous felons.",
+                "te": "O Krsna? Sin alone would accrue to us if we killed these murderous felons."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन",
-                "word": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana",
-                "transliteration": "nihatya dhārtarāṣṭrānnaḥ kā prītiḥ syājjanārdana",
+                "sanskrit": "निहत्य धार्तराष्ट्रान्नः",
+                "word": "nihatya dhārtarāṣṭrānnaḥ kā",
+                "transliteration": "nihatya dhārtarāṣṭrānnaḥ kā",
                 "sanskrit_te": "నిహత్య ధార్తరాష్ట్రాన్నః",
-                "en": "By killing the sons of Dhritarashtra our",
-                "te": "If we were to kill the sons"
+                "en": "If we were to kill the sons of Dhrtarastra",
+                "te": "If we were to kill the sons of Dhrtarastra"
             },
             {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
-                "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
+                "sanskrit": "का प्रीतिः",
+                "word": "prītiḥ syājjanārdana",
+                "transliteration": "prītiḥ syājjanārdana",
                 "sanskrit_te": "కా ప్రీతిః",
-                "en": "What pleasure",
-                "te": "Of Dhrtarastra, what joy would be ours,"
+                "en": "What joy would be ours",
+                "te": "What joy would be ours"
             },
             {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
+                "sanskrit": "स्याज्जनार्दन पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
                 "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
                 "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "sanskrit_te": "స్యాజ్జనార్దన",
-                "en": "He who looks after the public, Shree Krishna vices",
-                "te": "ప్రజల సంరక్షణ చేసే శ్రీ కృష్ణుడు వైరి."
-            },
-            {
-                "sanskrit": "पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः",
-                "word": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "transliteration": "pāpamevāśrayedasmānhatvaitānātatāyinaḥ",
-                "sanskrit_te": "పాపమేవాశ్రయేదస్మాన్హత్వైతానాతతాయినః",
-                "en": "Us by killing aggressors",
-                "te": "మేము దూసుకొచ్చిన వారిని చంపడం ద్వారా"
+                "sanskrit_te": "స్యాజ్జనార్దన పాపమేవాశ్రయేదస్మాన్హత్వైతానాతతాయినః",
+                "en": "O Krsna? Sin alone would accrue to us if we killed these murderous felons.",
+                "te": "O Krsna? Sin alone would accrue to us if we killed these murderous felons."
             }
         ],
         "hfMerged": true
@@ -4216,69 +4202,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "తస్మాన్నార్హా వయం హన్తుం ధార్తరాష్ట్రాన్స్వబాన్ధవాన్ |\nస్వజనం హి కథం హత్వా సుఖినః స్యామ మాధవ",
         "lineBreakdown": [
             {
-                "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्",
-                "word": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān",
-                "transliteration": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān",
-                "sanskrit_te": "తస్మాన్నార్హా వయం హన్తుం",
-                "en": "Hence we to kill",
-                "te": "అందువలన మేము చంపాలి"
+                "sanskrit": "तस्मान्नार्हा वयं",
+                "word": "tasmānnārhā vayaṃ",
+                "transliteration": "tasmānnārhā vayaṃ",
+                "sanskrit_te": "తస్మాన్నార్హా వయం",
+                "en": "Therefore, it is not befitting for us",
+                "te": "Therefore, it is not befitting for us"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "ధార్తరాష్ట్రాన్స్వబాన్ధవాన్ స్వజనం హి",
-                "en": "The sons of Dhritarashtra along with friends",
+                "sanskrit": "हन्तुं धार्तराष्ट्रान्स्वबान्धवान्",
+                "word": "hantuṃ dhārtarāṣṭrānsvabāndhavān",
+                "transliteration": "hantuṃ dhārtarāṣṭrānsvabāndhavān",
+                "sanskrit_te": "హన్తుం ధార్తరాష్ట్రాన్స్వబాన్ధవాన్ స్వజనం",
+                "en": "To slay our kin, the sons of",
                 "te": "To slay our kin, the sons of"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "కథం హత్వా సుఖినః",
-                "en": "Certainly how by killing",
-                "te": "ఖచ్చితంగా ఎలా అంటే చంపడం ద్వారా"
+                "sanskrit": "स्वजनं हि कथं हत्वा",
+                "word": "svajanaṃ hi kathaṃ hatvā",
+                "transliteration": "svajanaṃ hi kathaṃ hatvā",
+                "sanskrit_te": "హి కథం హత్వా",
+                "en": "Dhrtarastra. For if we kill our kinsmen,",
+                "te": "Dhrtarastra. For if we kill our kinsmen,"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "స్యామ మాధవ",
-                "en": "Happy will we become Shree Krishna, the husband of Yogmaya",
+                "sanskrit": "सुखिनः स्याम माधव",
+                "word": "sukhinaḥ syāma mādhava",
+                "transliteration": "sukhinaḥ syāma mādhava",
+                "sanskrit_te": "సుఖినః స్యామ మాధవ",
+                "en": "O Krsna, how can we be happy?",
                 "te": "O Krsna, how can we be happy?"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्",
-                "word": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān",
-                "transliteration": "tasmānnārhā vayaṃ hantuṃ dhārtarāṣṭrānsvabāndhavān",
-                "sanskrit_te": "తస్మాన్నార్హా వయం హన్తుం",
-                "en": "Hence we to kill",
-                "te": "అందువలన మేము చంపాలి"
+                "sanskrit": "तस्मान्नार्हा वयं",
+                "word": "tasmānnārhā vayaṃ",
+                "transliteration": "tasmānnārhā vayaṃ",
+                "sanskrit_te": "తస్మాన్నార్హా వయం",
+                "en": "Therefore, it is not befitting for us",
+                "te": "Therefore, it is not befitting for us"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "ధార్తరాష్ట్రాన్స్వబాన్ధవాన్ స్వజనం హి",
-                "en": "The sons of Dhritarashtra along with friends",
+                "sanskrit": "हन्तुं धार्तराष्ट्रान्स्वबान्धवान्",
+                "word": "hantuṃ dhārtarāṣṭrānsvabāndhavān",
+                "transliteration": "hantuṃ dhārtarāṣṭrānsvabāndhavān",
+                "sanskrit_te": "హన్తుం ధార్తరాష్ట్రాన్స్వబాన్ధవాన్ స్వజనం",
+                "en": "To slay our kin, the sons of",
                 "te": "To slay our kin, the sons of"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "కథం హత్వా సుఖినః",
-                "en": "Certainly how by killing",
-                "te": "ఖచ్చితంగా ఎలా అంటే చంపడం ద్వారా"
+                "sanskrit": "स्वजनं हि कथं हत्वा",
+                "word": "svajanaṃ hi kathaṃ hatvā",
+                "transliteration": "svajanaṃ hi kathaṃ hatvā",
+                "sanskrit_te": "హి కథం హత్వా",
+                "en": "Dhrtarastra. For if we kill our kinsmen,",
+                "te": "Dhrtarastra. For if we kill our kinsmen,"
             },
             {
-                "sanskrit": "स्वजनं हि कथं हत्वा सुखिनः स्याम माधव",
-                "word": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "transliteration": "svajanaṃ hi kathaṃ hatvā sukhinaḥ syāma mādhava",
-                "sanskrit_te": "స్యామ మాధవ",
-                "en": "Happy will we become Shree Krishna, the husband of Yogmaya",
+                "sanskrit": "सुखिनः स्याम माधव",
+                "word": "sukhinaḥ syāma mādhava",
+                "transliteration": "sukhinaḥ syāma mādhava",
+                "sanskrit_te": "సుఖినః స్యామ మాధవ",
+                "en": "O Krsna, how can we be happy?",
                 "te": "O Krsna, how can we be happy?"
             }
         ],
@@ -4332,69 +4318,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యద్యప్యేతే న పశ్యన్తి లోభోపహతచేతసః |\nకులక్షయకృతం దోషం మిత్రద్రోహే చ పాతకమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः",
-                "word": "yadyapyete na paśyanti lobhopahatacetasaḥ",
-                "transliteration": "yadyapyete na paśyanti lobhopahatacetasaḥ",
+                "sanskrit": "यद्यप्येते न",
+                "word": "yadyapyete na",
+                "transliteration": "yadyapyete na",
                 "sanskrit_te": "యద్యప్యేతే న పశ్యన్తి",
-                "en": "They not",
+                "en": "Though these people, whose minds are overpowered",
                 "te": "Though these people, whose minds are overpowered"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "पश्यन्ति लोभोपहतचेतसः",
+                "word": "paśyanti lobhopahatacetasaḥ",
+                "transliteration": "paśyanti lobhopahatacetasaḥ",
                 "sanskrit_te": "లోభోపహతచేతసః కులక్షయకృతం",
-                "en": "See thoughts in annihilating their relatives",
-                "te": "వారి బంధువులను నాశనం చేసే ఆలోచనల గురించి చూడండి."
+                "en": "By greed, see no evil in",
+                "te": "By greed, see no evil in"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे",
+                "word": "kulakṣayakṛtaṃ",
+                "transliteration": "kulakṣayakṛtaṃ",
                 "sanskrit_te": "దోషం మిత్రద్రోహే",
-                "en": "Fault to wreak treachery upon friends",
-                "te": "స్నేహితులపై ద్రోహం చేయడానికి లోపం"
+                "en": "The destruction of a clan and",
+                "te": "The destruction of a clan and"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "च पातकम्",
+                "word": "doṣaṃ mitradrohe ca pātakam",
+                "transliteration": "doṣaṃ mitradrohe ca pātakam",
                 "sanskrit_te": "చ పాతకమ్",
-                "en": "And sin",
+                "en": "No sin in treachery to friends,",
                 "te": "No sin in treachery to friends,"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "यद्यप्येते न पश्यन्ति लोभोपहतचेतसः",
-                "word": "yadyapyete na paśyanti lobhopahatacetasaḥ",
-                "transliteration": "yadyapyete na paśyanti lobhopahatacetasaḥ",
+                "sanskrit": "यद्यप्येते न",
+                "word": "yadyapyete na",
+                "transliteration": "yadyapyete na",
                 "sanskrit_te": "యద్యప్యేతే న పశ్యన్తి",
-                "en": "They not",
+                "en": "Though these people, whose minds are overpowered",
                 "te": "Though these people, whose minds are overpowered"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "पश्यन्ति लोभोपहतचेतसः",
+                "word": "paśyanti lobhopahatacetasaḥ",
+                "transliteration": "paśyanti lobhopahatacetasaḥ",
                 "sanskrit_te": "లోభోపహతచేతసః కులక్షయకృతం",
-                "en": "See thoughts in annihilating their relatives",
-                "te": "వారి బంధువులను నాశనం చేసే ఆలోచనల గురించి చూడండి."
+                "en": "By greed, see no evil in",
+                "te": "By greed, see no evil in"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे",
+                "word": "kulakṣayakṛtaṃ",
+                "transliteration": "kulakṣayakṛtaṃ",
                 "sanskrit_te": "దోషం మిత్రద్రోహే",
-                "en": "Fault to wreak treachery upon friends",
-                "te": "స్నేహితులపై ద్రోహం చేయడానికి లోపం"
+                "en": "The destruction of a clan and",
+                "te": "The destruction of a clan and"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्",
-                "word": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ mitradrohe ca pātakam",
+                "sanskrit": "च पातकम्",
+                "word": "doṣaṃ mitradrohe ca pātakam",
+                "transliteration": "doṣaṃ mitradrohe ca pātakam",
                 "sanskrit_te": "చ పాతకమ్",
-                "en": "And sin",
+                "en": "No sin in treachery to friends,",
                 "te": "No sin in treachery to friends,"
             }
         ],
@@ -4448,70 +4434,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "కథం న జ్ఞేయమస్మాభిః పాపాదస్మాన్నివర్తితుమ్ |\nకులక్షయకృతం దోషం ప్రపశ్యద్భిర్జనార్దన",
         "lineBreakdown": [
             {
-                "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्",
-                "word": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum",
-                "transliteration": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum",
-                "sanskrit_te": "కథం న",
-                "en": "Why not should be known we",
-                "te": "Why should we not learn"
+                "sanskrit": "कथं न",
+                "word": "kathaṃ na",
+                "transliteration": "kathaṃ na",
+                "sanskrit_te": "కథం",
+                "en": "Why should we not",
+                "te": "Why should we not"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "జ్ఞేయమస్మాభిః పాపాదస్మాన్నివర్తితుమ్",
-                "en": "To shun this crime—we who",
-                "te": "ఈ నేరాన్ని నివారించాలి-మనం"
+                "sanskrit": "ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्",
+                "word": "jñeyamasmābhiḥ pāpādasmānnivartitum",
+                "transliteration": "jñeyamasmābhiḥ pāpādasmānnivartitum",
+                "sanskrit_te": "న జ్ఞేయమస్మాభిః",
+                "en": "Learn to shun this crime—we",
+                "te": "Learn to shun this crime—we"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "కులక్షయకృతం దోషం",
-                "en": "Killing the kindered done",
-                "te": "దయగలవారిని చంపడం done"
+                "sanskrit": "कुलक्षयकृतं दोषं",
+                "word": "kulakṣayakṛtaṃ",
+                "transliteration": "kulakṣayakṛtaṃ",
+                "sanskrit_te": "పాపాదస్మాన్నివర్తితుమ్ కులక్షయకృతం",
+                "en": "Who see the evil of",
+                "te": "Who see the evil of"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "ప్రపశ్యద్భిర్జనార్దన",
-                "en": "Crime who can see he who looks after the public, Shree Krishna",
-                "te": "A clan, O Krishna?"
+                "sanskrit": "प्रपश्यद्भिर्जनार्दन",
+                "word": "doṣaṃ prapaśyadbhirjanārdana",
+                "transliteration": "doṣaṃ prapaśyadbhirjanārdana",
+                "sanskrit_te": "దోషం ప్రపశ్యద్భిర్జనార్దన",
+                "en": "Ruining a clan, O Krishna?",
+                "te": "Ruining a clan, O Krishna?"
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्",
-                "word": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum",
-                "transliteration": "kathaṃ na jñeyamasmābhiḥ pāpādasmānnivartitum",
-                "sanskrit_te": "కథం న",
-                "en": "Why not should be known we",
-                "te": "Why should we not learn"
+                "sanskrit": "कथं न",
+                "word": "kathaṃ na",
+                "transliteration": "kathaṃ na",
+                "sanskrit_te": "కథం",
+                "en": "Why should we not",
+                "te": "Why should we not"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "జ్ఞేయమస్మాభిః పాపాదస్మాన్నివర్తితుమ్",
-                "en": "To shun this crime—we who",
-                "te": "ఈ నేరాన్ని నివారించాలి-మనం"
+                "sanskrit": "ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्",
+                "word": "jñeyamasmābhiḥ pāpādasmānnivartitum",
+                "transliteration": "jñeyamasmābhiḥ pāpādasmānnivartitum",
+                "sanskrit_te": "న జ్ఞేయమస్మాభిః",
+                "en": "Learn to shun this crime—we",
+                "te": "Learn to shun this crime—we"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "కులక్షయకృతం దోషం",
-                "en": "Killing the kindered done",
-                "te": "దయగలవారిని చంపడం done"
+                "sanskrit": "कुलक्षयकृतं दोषं",
+                "word": "kulakṣayakṛtaṃ",
+                "transliteration": "kulakṣayakṛtaṃ",
+                "sanskrit_te": "పాపాదస్మాన్నివర్తితుమ్ కులక్షయకృతం",
+                "en": "Who see the evil of",
+                "te": "Who see the evil of"
             },
             {
-                "sanskrit": "कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन",
-                "word": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "transliteration": "kulakṣayakṛtaṃ doṣaṃ prapaśyadbhirjanārdana",
-                "sanskrit_te": "ప్రపశ్యద్భిర్జనార్దన",
-                "en": "Crime who can see he who looks after the public, Shree Krishna",
-                "te": "A clan, O Krishna?"
+                "sanskrit": "प्रपश्यद्भिर्जनार्दन",
+                "word": "doṣaṃ prapaśyadbhirjanārdana",
+                "transliteration": "doṣaṃ prapaśyadbhirjanārdana",
+                "sanskrit_te": "దోషం ప్రపశ్యద్భిర్జనార్దన",
+                "en": "Ruining a clan, O Krishna?",
+                "te": "Ruining a clan, O Krishna?"
             }
         ],
         "hfMerged": true
@@ -4564,69 +4550,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "కులక్షయే ప్రణశ్యన్తి కులధర్మాః సనాతనాః |\nధర్మే నష్టే కులం కృత్స్నమధర్మోఽభిభవత్యుత",
         "lineBreakdown": [
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ",
-                "transliteration": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ",
+                "sanskrit": "कुलक्षये प्रणश्यन्ति",
+                "word": "kulakṣaye praṇaśyanti kuladharmāḥ",
+                "transliteration": "kulakṣaye praṇaśyanti kuladharmāḥ",
                 "sanskrit_te": "కులక్షయే ప్రణశ్యన్తి",
-                "en": "In the destruction of a dynasty are vanquished family",
+                "en": "With the ruin of a clan",
                 "te": "With the ruin of a clan"
             },
             {
-                "sanskrit": "धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत",
-                "word": "dharme naṣṭe kulaṃ kṛtsnamadharmo",
-                "transliteration": "dharme naṣṭe kulaṃ kṛtsnamadharmo",
+                "sanskrit": "कुलधर्माः सनातनाः",
+                "word": "sanātanāḥ dharme",
+                "transliteration": "sanātanāḥ dharme",
                 "sanskrit_te": "కులధర్మాః సనాతనాః",
-                "en": "Religion eternal religion",
-                "te": "శాశ్వత ధర్మం"
+                "en": "Its ancient traditions perish",
+                "te": "Its ancient traditions perish"
             },
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "abhibhavatyuta",
-                "transliteration": "abhibhavatyuta",
+                "sanskrit": "धर्मे नष्टे",
+                "word": "naṣṭe kulaṃ",
+                "transliteration": "naṣṭe kulaṃ",
                 "sanskrit_te": "ధర్మే నష్టే",
-                "en": "Is destroyed family the whole",
+                "en": "And when traditions perish",
                 "te": "And when traditions perish"
             },
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "abhibhavatyuta",
-                "transliteration": "abhibhavatyuta",
+                "sanskrit": "कुलं कृत्स्नमधर्मोऽभिभवत्युत",
+                "word": "kṛtsnamadharmo abhibhavatyuta",
+                "transliteration": "kṛtsnamadharmo abhibhavatyuta",
                 "sanskrit_te": "కులం కృత్స్నమధర్మోఽభిభవత్యుత",
-                "en": "Irreligion indeed",
+                "en": "Lawlessness overtakes the whole clan.",
                 "te": "Lawlessness overtakes the whole clan."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ",
-                "transliteration": "kulakṣaye praṇaśyanti kuladharmāḥ sanātanāḥ",
+                "sanskrit": "कुलक्षये प्रणश्यन्ति",
+                "word": "kulakṣaye praṇaśyanti kuladharmāḥ",
+                "transliteration": "kulakṣaye praṇaśyanti kuladharmāḥ",
                 "sanskrit_te": "కులక్షయే ప్రణశ్యన్తి",
-                "en": "In the destruction of a dynasty are vanquished family",
+                "en": "With the ruin of a clan",
                 "te": "With the ruin of a clan"
             },
             {
-                "sanskrit": "धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत",
-                "word": "dharme naṣṭe kulaṃ kṛtsnamadharmo",
-                "transliteration": "dharme naṣṭe kulaṃ kṛtsnamadharmo",
+                "sanskrit": "कुलधर्माः सनातनाः",
+                "word": "sanātanāḥ dharme",
+                "transliteration": "sanātanāḥ dharme",
                 "sanskrit_te": "కులధర్మాః సనాతనాః",
-                "en": "Religion eternal religion",
-                "te": "శాశ్వత ధర్మం"
+                "en": "Its ancient traditions perish",
+                "te": "Its ancient traditions perish"
             },
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "abhibhavatyuta",
-                "transliteration": "abhibhavatyuta",
+                "sanskrit": "धर्मे नष्टे",
+                "word": "naṣṭe kulaṃ",
+                "transliteration": "naṣṭe kulaṃ",
                 "sanskrit_te": "ధర్మే నష్టే",
-                "en": "Is destroyed family the whole",
+                "en": "And when traditions perish",
                 "te": "And when traditions perish"
             },
             {
-                "sanskrit": "कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः",
-                "word": "abhibhavatyuta",
-                "transliteration": "abhibhavatyuta",
+                "sanskrit": "कुलं कृत्स्नमधर्मोऽभिभवत्युत",
+                "word": "kṛtsnamadharmo abhibhavatyuta",
+                "transliteration": "kṛtsnamadharmo abhibhavatyuta",
                 "sanskrit_te": "కులం కృత్స్నమధర్మోఽభిభవత్యుత",
-                "en": "Irreligion indeed",
+                "en": "Lawlessness overtakes the whole clan.",
                 "te": "Lawlessness overtakes the whole clan."
             }
         ],
@@ -4680,70 +4666,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అధర్మాభిభవాత్కృష్ణ ప్రదుష్యన్తి కులస్త్రియః |\nస్త్రీషు దుష్టాసు వార్ష్ణేయ జాయతే వర్ణసఙ్కరః",
         "lineBreakdown": [
             {
-                "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः",
-                "word": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ",
-                "transliteration": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ",
+                "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति",
+                "word": "adharmābhibhavātkṛṣṇa praduṣyanti",
+                "transliteration": "adharmābhibhavātkṛṣṇa praduṣyanti",
                 "sanskrit_te": "అధర్మాభిభవాత్కృష్ణ ప్రదుష్యన్తి",
-                "en": "Irreligion Shree Krishna become immoral",
-                "te": "అనాదిమతం శ్రీ కృష్ణుడు అనైతికంగా మారాడు"
+                "en": "When lawlessness prevails, O Krsna,",
+                "te": "When lawlessness prevails, O Krsna,"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "कुलस्त्रियः",
+                "word": "kulastriyaḥ",
+                "transliteration": "kulastriyaḥ",
                 "sanskrit_te": "కులస్త్రియః స్త్రీషు",
-                "en": "Women of the family of women",
-                "te": "స్త్రీల స్త్రీలు"
+                "en": "The women of the clan",
+                "te": "The women of the clan"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय",
+                "word": "strīṣu duṣṭāsu vārṣṇeya",
+                "transliteration": "strīṣu duṣṭāsu vārṣṇeya",
                 "sanskrit_te": "దుష్టాసు వార్ష్ణేయ",
-                "en": "Become immoral descendant of Vrishni are born",
-                "te": "When women become corrupted, there"
+                "en": "Become corrupted; when women become corrupted,",
+                "te": "Become corrupted; when women become corrupted,"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "जायते वर्णसङ्करः",
+                "word": "jāyate varṇasaṅkaraḥ",
+                "transliteration": "jāyate varṇasaṅkaraḥ",
                 "sanskrit_te": "జాయతే వర్ణసఙ్కరః",
-                "en": "Arises an intermixing of classes.",
-                "te": "Arises an intermixing of classes."
+                "en": "There arises an intermixing of classes.",
+                "te": "There arises an intermixing of classes."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः",
-                "word": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ",
-                "transliteration": "adharmābhibhavātkṛṣṇa praduṣyanti kulastriyaḥ",
+                "sanskrit": "अधर्माभिभवात्कृष्ण प्रदुष्यन्ति",
+                "word": "adharmābhibhavātkṛṣṇa praduṣyanti",
+                "transliteration": "adharmābhibhavātkṛṣṇa praduṣyanti",
                 "sanskrit_te": "అధర్మాభిభవాత్కృష్ణ ప్రదుష్యన్తి",
-                "en": "Irreligion Shree Krishna become immoral",
-                "te": "అనాదిమతం శ్రీ కృష్ణుడు అనైతికంగా మారాడు"
+                "en": "When lawlessness prevails, O Krsna,",
+                "te": "When lawlessness prevails, O Krsna,"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "कुलस्त्रियः",
+                "word": "kulastriyaḥ",
+                "transliteration": "kulastriyaḥ",
                 "sanskrit_te": "కులస్త్రియః స్త్రీషు",
-                "en": "Women of the family of women",
-                "te": "స్త్రీల స్త్రీలు"
+                "en": "The women of the clan",
+                "te": "The women of the clan"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय",
+                "word": "strīṣu duṣṭāsu vārṣṇeya",
+                "transliteration": "strīṣu duṣṭāsu vārṣṇeya",
                 "sanskrit_te": "దుష్టాసు వార్ష్ణేయ",
-                "en": "Become immoral descendant of Vrishni are born",
-                "te": "When women become corrupted, there"
+                "en": "Become corrupted; when women become corrupted,",
+                "te": "Become corrupted; when women become corrupted,"
             },
             {
-                "sanskrit": "स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः",
-                "word": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
-                "transliteration": "strīṣu duṣṭāsu vārṣṇeya jāyate varṇasaṅkaraḥ",
+                "sanskrit": "जायते वर्णसङ्करः",
+                "word": "jāyate varṇasaṅkaraḥ",
+                "transliteration": "jāyate varṇasaṅkaraḥ",
                 "sanskrit_te": "జాయతే వర్ణసఙ్కరః",
-                "en": "Arises an intermixing of classes.",
-                "te": "Arises an intermixing of classes."
+                "en": "There arises an intermixing of classes.",
+                "te": "There arises an intermixing of classes."
             }
         ],
         "hfMerged": true
@@ -4796,70 +4782,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "సఙ్కరో నరకాయైవ కులఘ్నానాం కులస్య చ |\nపతన్తి పితరో హ్యేషాం లుప్తపిణ్డోదకక్రియాః",
         "lineBreakdown": [
             {
-                "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च",
-                "word": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca",
-                "transliteration": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca",
+                "sanskrit": "सङ्करो नरकायैव कुलघ्नानां",
+                "word": "saṅkaro narakāyaiva kulaghnānāṃ",
+                "transliteration": "saṅkaro narakāyaiva kulaghnānāṃ",
                 "sanskrit_te": "సఙ్కరో నరకాయైవ కులఘ్నానాం",
-                "en": "Unwanted children hellish for those who destroy the family",
-                "te": "కుటుంబాన్ని నాశనం చేసేవారికి అవాంఛిత పిల్లలు పీడకల"
+                "en": "This mixing of classes leads to hell",
+                "te": "This mixing of classes leads to hell"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "कुलस्य च",
+                "word": "kulasya ca",
+                "transliteration": "kulasya ca",
                 "sanskrit_te": "కులస్య చ",
-                "en": "Of the family also fall",
-                "te": "The clan itself and its destroyers; for the"
+                "en": "For the clan itself and its destroyers; for",
+                "te": "For the clan itself and its destroyers; for"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "पतन्ति पितरो",
+                "word": "patanti pitaro",
+                "transliteration": "patanti pitaro",
                 "sanskrit_te": "పతన్తి పితరో",
-                "en": "Ancestors their",
-                "te": "పూర్వీకులు"
+                "en": "The spirits of their ancestors fall degraded, deprived",
+                "te": "The spirits of their ancestors fall degraded, deprived"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "ह्येषां लुप्तपिण्डोदकक्रियाः",
+                "word": "hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "transliteration": "hyeṣāṃ luptapiṇḍodakakriyāḥ",
                 "sanskrit_te": "హ్యేషాం లుప్తపిణ్డోదకక్రియాః",
-                "en": "Deprived of performances of sacrificial offerings",
-                "te": "The ritual offerings of food and water."
+                "en": "Of the ritual offerings of food and water.",
+                "te": "Of the ritual offerings of food and water."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "सङ्करो नरकायैव कुलघ्नानां कुलस्य च",
-                "word": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca",
-                "transliteration": "saṅkaro narakāyaiva kulaghnānāṃ kulasya ca",
+                "sanskrit": "सङ्करो नरकायैव कुलघ्नानां",
+                "word": "saṅkaro narakāyaiva kulaghnānāṃ",
+                "transliteration": "saṅkaro narakāyaiva kulaghnānāṃ",
                 "sanskrit_te": "సఙ్కరో నరకాయైవ కులఘ్నానాం",
-                "en": "Unwanted children hellish for those who destroy the family",
-                "te": "కుటుంబాన్ని నాశనం చేసేవారికి అవాంఛిత పిల్లలు పీడకల"
+                "en": "This mixing of classes leads to hell",
+                "te": "This mixing of classes leads to hell"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "कुलस्य च",
+                "word": "kulasya ca",
+                "transliteration": "kulasya ca",
                 "sanskrit_te": "కులస్య చ",
-                "en": "Of the family also fall",
-                "te": "The clan itself and its destroyers; for the"
+                "en": "For the clan itself and its destroyers; for",
+                "te": "For the clan itself and its destroyers; for"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "पतन्ति पितरो",
+                "word": "patanti pitaro",
+                "transliteration": "patanti pitaro",
                 "sanskrit_te": "పతన్తి పితరో",
-                "en": "Ancestors their",
-                "te": "పూర్వీకులు"
+                "en": "The spirits of their ancestors fall degraded, deprived",
+                "te": "The spirits of their ancestors fall degraded, deprived"
             },
             {
-                "sanskrit": "पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः",
-                "word": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
-                "transliteration": "patanti pitaro hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "sanskrit": "ह्येषां लुप्तपिण्डोदकक्रियाः",
+                "word": "hyeṣāṃ luptapiṇḍodakakriyāḥ",
+                "transliteration": "hyeṣāṃ luptapiṇḍodakakriyāḥ",
                 "sanskrit_te": "హ్యేషాం లుప్తపిణ్డోదకక్రియాః",
-                "en": "Deprived of performances of sacrificial offerings",
-                "te": "The ritual offerings of food and water."
+                "en": "Of the ritual offerings of food and water.",
+                "te": "Of the ritual offerings of food and water."
             }
         ],
         "hfMerged": true
@@ -4912,70 +4898,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "దోషైరేతైః కులఘ్నానాం వర్ణసఙ్కరకారకైః |\nఉత్సాద్యన్తే జాతిధర్మాః కులధర్మాశ్చ శాశ్వతాః",
         "lineBreakdown": [
             {
-                "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः",
-                "word": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ",
-                "transliteration": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ",
-                "sanskrit_te": "దోషైరేతైః కులఘ్నానాం",
-                "en": "Through evil deeds these of those who destroy the family",
-                "te": "By the sins of the clan"
+                "sanskrit": "दोषैरेतैः कुलघ्नानां",
+                "word": "doṣairetaiḥ kulaghnānāṃ",
+                "transliteration": "doṣairetaiḥ kulaghnānāṃ",
+                "sanskrit_te": "దోషైరేతైః",
+                "en": "By the sins of the",
+                "te": "By the sins of the"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "వర్ణసఙ్కరకారకైః ఉత్సాద్యన్తే",
-                "en": "Unwanted progeny causing are ruined",
-                "te": "అవాంఛిత సంతానం కలిగించేవి నాశనం అవుతాయి"
+                "sanskrit": "वर्णसङ्करकारकैः",
+                "word": "varṇasaṅkarakārakaiḥ",
+                "transliteration": "varṇasaṅkarakārakaiḥ",
+                "sanskrit_te": "కులఘ్నానాం వర్ణసఙ్కరకారకైః",
+                "en": "Clan destroyers who bring about intermixing",
+                "te": "Clan destroyers who bring about intermixing"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "జాతిధర్మాః కులధర్మాశ్చ",
-                "en": "Social and family welfare activities of those who destroy the family",
-                "te": "కుటుంబాన్ని నాశనం చేసే వారి సామాజిక మరియు కుటుంబ సంక్షేమ కార్యకలాపాలు."
+                "sanskrit": "उत्साद्यन्ते",
+                "word": "utsādyante jātidharmāḥ",
+                "transliteration": "utsādyante jātidharmāḥ",
+                "sanskrit_te": "ఉత్సాద్యన్తే జాతిధర్మాః",
+                "en": "Of classes, the ancient traditions of",
+                "te": "Of classes, the ancient traditions of"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "శాశ్వతాః",
-                "en": "And eternal",
-                "te": "మరియు శాశ్వతమైన"
+                "sanskrit": "जातिधर्माः कुलधर्माश्च शाश्वताः",
+                "word": "kuladharmāśca śāśvatāḥ",
+                "transliteration": "kuladharmāśca śāśvatāḥ",
+                "sanskrit_te": "కులధర్మాశ్చ శాశ్వతాః",
+                "en": "The clans and classes are destroyed.",
+                "te": "The clans and classes are destroyed."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः",
-                "word": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ",
-                "transliteration": "doṣairetaiḥ kulaghnānāṃ varṇasaṅkarakārakaiḥ",
-                "sanskrit_te": "దోషైరేతైః కులఘ్నానాం",
-                "en": "Through evil deeds these of those who destroy the family",
-                "te": "By the sins of the clan"
+                "sanskrit": "दोषैरेतैः कुलघ्नानां",
+                "word": "doṣairetaiḥ kulaghnānāṃ",
+                "transliteration": "doṣairetaiḥ kulaghnānāṃ",
+                "sanskrit_te": "దోషైరేతైః",
+                "en": "By the sins of the",
+                "te": "By the sins of the"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "వర్ణసఙ్కరకారకైః ఉత్సాద్యన్తే",
-                "en": "Unwanted progeny causing are ruined",
-                "te": "అవాంఛిత సంతానం కలిగించేవి నాశనం అవుతాయి"
+                "sanskrit": "वर्णसङ्करकारकैः",
+                "word": "varṇasaṅkarakārakaiḥ",
+                "transliteration": "varṇasaṅkarakārakaiḥ",
+                "sanskrit_te": "కులఘ్నానాం వర్ణసఙ్కరకారకైః",
+                "en": "Clan destroyers who bring about intermixing",
+                "te": "Clan destroyers who bring about intermixing"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "జాతిధర్మాః కులధర్మాశ్చ",
-                "en": "Social and family welfare activities of those who destroy the family",
-                "te": "కుటుంబాన్ని నాశనం చేసే వారి సామాజిక మరియు కుటుంబ సంక్షేమ కార్యకలాపాలు."
+                "sanskrit": "उत्साद्यन्ते",
+                "word": "utsādyante jātidharmāḥ",
+                "transliteration": "utsādyante jātidharmāḥ",
+                "sanskrit_te": "ఉత్సాద్యన్తే జాతిధర్మాః",
+                "en": "Of classes, the ancient traditions of",
+                "te": "Of classes, the ancient traditions of"
             },
             {
-                "sanskrit": "उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः",
-                "word": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "transliteration": "utsādyante jātidharmāḥ kuladharmāśca śāśvatāḥ",
-                "sanskrit_te": "శాశ్వతాః",
-                "en": "And eternal",
-                "te": "మరియు శాశ్వతమైన"
+                "sanskrit": "जातिधर्माः कुलधर्माश्च शाश्वताः",
+                "word": "kuladharmāśca śāśvatāḥ",
+                "transliteration": "kuladharmāśca śāśvatāḥ",
+                "sanskrit_te": "కులధర్మాశ్చ శాశ్వతాః",
+                "en": "The clans and classes are destroyed.",
+                "te": "The clans and classes are destroyed."
             }
         ],
         "hfMerged": true
@@ -5028,70 +5014,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "ఉత్సన్నకులధర్మాణాం మనుష్యాణాం జనార్దన |\nనరకేఽనియతం వాసో భవతీత్యనుశుశ్రుమ",
         "lineBreakdown": [
             {
-                "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन",
-                "word": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana",
-                "transliteration": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana",
-                "sanskrit_te": "ఉత్సన్నకులధర్మాణాం మనుష్యాణాం",
-                "en": "Destroyed whose family traditions",
-                "te": "For those whose clan laws"
+                "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां",
+                "word": "utsannakuladharmāṇāṃ manuṣyāṇāṃ",
+                "transliteration": "utsannakuladharmāṇāṃ manuṣyāṇāṃ",
+                "sanskrit_te": "ఉత్సన్నకులధర్మాణాం",
+                "en": "For those whose clan",
+                "te": "For those whose clan"
             },
             {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
+                "sanskrit": "जनार्दन",
+                "word": "janārdana",
+                "transliteration": "janārdana",
+                "sanskrit_te": "మనుష్యాణాం",
+                "en": "Laws are destroyed, dwelling",
+                "te": "Laws are destroyed, dwelling"
+            },
+            {
+                "sanskrit": "नरके नियतं वासो",
+                "word": "narake niyataṃ",
+                "transliteration": "narake niyataṃ",
                 "sanskrit_te": "జనార్దన నరకేఽనియతం",
-                "en": "Of such human beings he who looks after the public, Shree Krishna",
-                "te": "అటువంటి మానవులలో ప్రజాభర్తీ చేసేవాడే శ్రీకృష్ణుడు."
+                "en": "In hell is ordained, O",
+                "te": "In hell is ordained, O"
             },
             {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "sanskrit_te": "వాసో",
-                "en": "Is ordained, O Krishna;",
-                "te": "కృష్ణా, మీకు దివ్యమైన కీర్తి ఉంది,"
-            },
-            {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "sanskrit_te": "భవతీత్యనుశుశ్రుమ",
-                "en": "Thus, we have heard.",
-                "te": "ఆ విధంగా, మేము విన్నాము."
+                "sanskrit": "भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
+                "word": "vāso bhavatītyanuśuśruma",
+                "transliteration": "vāso bhavatītyanuśuśruma",
+                "sanskrit_te": "వాసో భవతీత్యనుశుశ్రుమ",
+                "en": "Krishna; thus, we have heard.",
+                "te": "Krishna; thus, we have heard."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन",
-                "word": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana",
-                "transliteration": "utsannakuladharmāṇāṃ manuṣyāṇāṃ janārdana",
-                "sanskrit_te": "ఉత్సన్నకులధర్మాణాం మనుష్యాణాం",
-                "en": "Destroyed whose family traditions",
-                "te": "For those whose clan laws"
+                "sanskrit": "उत्सन्नकुलधर्माणां मनुष्याणां",
+                "word": "utsannakuladharmāṇāṃ manuṣyāṇāṃ",
+                "transliteration": "utsannakuladharmāṇāṃ manuṣyāṇāṃ",
+                "sanskrit_te": "ఉత్సన్నకులధర్మాణాం",
+                "en": "For those whose clan",
+                "te": "For those whose clan"
             },
             {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
+                "sanskrit": "जनार्दन",
+                "word": "janārdana",
+                "transliteration": "janārdana",
+                "sanskrit_te": "మనుష్యాణాం",
+                "en": "Laws are destroyed, dwelling",
+                "te": "Laws are destroyed, dwelling"
+            },
+            {
+                "sanskrit": "नरके नियतं वासो",
+                "word": "narake niyataṃ",
+                "transliteration": "narake niyataṃ",
                 "sanskrit_te": "జనార్దన నరకేఽనియతం",
-                "en": "Of such human beings he who looks after the public, Shree Krishna",
-                "te": "అటువంటి మానవులలో ప్రజాభర్తీ చేసేవాడే శ్రీకృష్ణుడు."
+                "en": "In hell is ordained, O",
+                "te": "In hell is ordained, O"
             },
             {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "sanskrit_te": "వాసో",
-                "en": "Is ordained, O Krishna;",
-                "te": "కృష్ణా, మీకు దివ్యమైన కీర్తి ఉంది,"
-            },
-            {
-                "sanskrit": "नरके नियतं वासो भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
-                "word": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "transliteration": "narake niyataṃ vāso bhavatītyanuśuśruma",
-                "sanskrit_te": "భవతీత్యనుశుశ్రుమ",
-                "en": "Thus, we have heard.",
-                "te": "ఆ విధంగా, మేము విన్నాము."
+                "sanskrit": "भवतीत्यनुशुश्रुम (or नरकेऽनियतं)",
+                "word": "vāso bhavatītyanuśuśruma",
+                "transliteration": "vāso bhavatītyanuśuśruma",
+                "sanskrit_te": "వాసో భవతీత్యనుశుశ్రుమ",
+                "en": "Krishna; thus, we have heard.",
+                "te": "Krishna; thus, we have heard."
             }
         ],
         "hfMerged": true
@@ -5144,70 +5130,70 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "అహో బత మహత్పాపం కర్తుం వ్యవసితా వయమ్ |\nయద్రాజ్యసుఖలోభేన హన్తుం స్వజనముద్యతాః",
         "lineBreakdown": [
             {
-                "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्",
-                "word": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam",
-                "transliteration": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam",
+                "sanskrit": "अहो बत महत्पापं",
+                "word": "aho bata mahatpāpaṃ",
+                "transliteration": "aho bata mahatpāpaṃ",
                 "sanskrit_te": "అహో బత మహత్పాపం",
-                "en": "Alas how great sins",
-                "te": "ఆహా ఎంత పెద్ద పాపాలు"
+                "en": "Alas! We have resolved to commit",
+                "te": "Alas! We have resolved to commit"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "कर्तुं व्यवसिता वयम्",
+                "word": "kartuṃ vyavasitā vayam",
+                "transliteration": "kartuṃ vyavasitā vayam",
                 "sanskrit_te": "కర్తుం వ్యవసితా",
-                "en": "To perform have decided we",
+                "en": "A great sin, for we are",
                 "te": "A great sin, for we are"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "यद्राज्यसुखलोभेन",
+                "word": "yadrājyasukhalobhena",
+                "transliteration": "yadrājyasukhalobhena",
                 "sanskrit_te": "వయమ్ యద్రాజ్యసుఖలోభేన",
-                "en": "Driven by the desire for kingly pleasure to kill",
+                "en": "Ready to slay our kin out",
                 "te": "Ready to slay our kin out"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "हन्तुं स्वजनमुद्यताः",
+                "word": "hantuṃ svajanamudyatāḥ",
+                "transliteration": "hantuṃ svajanamudyatāḥ",
                 "sanskrit_te": "హన్తుం స్వజనముద్యతాః",
-                "en": "Kinsmen intending",
-                "te": "ఉద్దేశించిన"
+                "en": "Of desire for sovereignty and enjoyment.",
+                "te": "Of desire for sovereignty and enjoyment."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "अहो बत महत्पापं कर्तुं व्यवसिता वयम्",
-                "word": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam",
-                "transliteration": "aho bata mahatpāpaṃ kartuṃ vyavasitā vayam",
+                "sanskrit": "अहो बत महत्पापं",
+                "word": "aho bata mahatpāpaṃ",
+                "transliteration": "aho bata mahatpāpaṃ",
                 "sanskrit_te": "అహో బత మహత్పాపం",
-                "en": "Alas how great sins",
-                "te": "ఆహా ఎంత పెద్ద పాపాలు"
+                "en": "Alas! We have resolved to commit",
+                "te": "Alas! We have resolved to commit"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "कर्तुं व्यवसिता वयम्",
+                "word": "kartuṃ vyavasitā vayam",
+                "transliteration": "kartuṃ vyavasitā vayam",
                 "sanskrit_te": "కర్తుం వ్యవసితా",
-                "en": "To perform have decided we",
+                "en": "A great sin, for we are",
                 "te": "A great sin, for we are"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "यद्राज्यसुखलोभेन",
+                "word": "yadrājyasukhalobhena",
+                "transliteration": "yadrājyasukhalobhena",
                 "sanskrit_te": "వయమ్ యద్రాజ్యసుఖలోభేన",
-                "en": "Driven by the desire for kingly pleasure to kill",
+                "en": "Ready to slay our kin out",
                 "te": "Ready to slay our kin out"
             },
             {
-                "sanskrit": "यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः",
-                "word": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
-                "transliteration": "yadrājyasukhalobhena hantuṃ svajanamudyatāḥ",
+                "sanskrit": "हन्तुं स्वजनमुद्यताः",
+                "word": "hantuṃ svajanamudyatāḥ",
+                "transliteration": "hantuṃ svajanamudyatāḥ",
                 "sanskrit_te": "హన్తుం స్వజనముద్యతాః",
-                "en": "Kinsmen intending",
-                "te": "ఉద్దేశించిన"
+                "en": "Of desire for sovereignty and enjoyment.",
+                "te": "Of desire for sovereignty and enjoyment."
             }
         ],
         "hfMerged": true
@@ -5260,69 +5246,69 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "యది మామప్రతీకారమశస్త్రం శస్త్రపాణయః |\nధార్తరాష్ట్రా రణే హన్యుస్తన్మే క్షేమతరం భవేత్",
         "lineBreakdown": [
             {
-                "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः",
-                "word": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ",
-                "transliteration": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ",
+                "sanskrit": "यदि मामप्रतीकारमशस्त्रं",
+                "word": "yadi māmapratīkāramaśastraṃ",
+                "transliteration": "yadi māmapratīkāramaśastraṃ",
                 "sanskrit_te": "యది మామప్రతీకారమశస్త్రం",
-                "en": "If me unresisting unarmed",
+                "en": "If the well armed sons of",
                 "te": "If the well armed sons of"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "शस्त्रपाणयः",
+                "word": "śastrapāṇayaḥ",
+                "transliteration": "śastrapāṇayaḥ",
                 "sanskrit_te": "శస్త్రపాణయః ధార్తరాష్ట్రా",
-                "en": "Those with weapons in hand the sons of Dhritarashtra",
-                "te": "ధృతరాష్ట్రుని కుమారులు ఆయుధాలు పట్టుకొని ఉన్నవారు"
+                "en": "Dhrtarastra should slay me in",
+                "te": "Dhrtarastra should slay me in"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "धार्तराष्ट्रा",
+                "word": "dhārtarāṣṭrā",
+                "transliteration": "dhārtarāṣṭrā",
                 "sanskrit_te": "రణే హన్యుస్తన్మే",
-                "en": "On the battlefield shall kill",
-                "te": "యుద్ధభూమిలో చంపాలి"
+                "en": "Battle, unresisting and unarmed, that",
+                "te": "Battle, unresisting and unarmed, that"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "रणे हन्युस्तन्मे क्षेमतरं भवेत्",
+                "word": "raṇe hanyustanme kṣemataraṃ bhavet",
+                "transliteration": "raṇe hanyustanme kṣemataraṃ bhavet",
                 "sanskrit_te": "క్షేమతరం భవేత్",
-                "en": "To me better would be",
+                "en": "Would be better for me.",
                 "te": "Would be better for me."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः",
-                "word": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ",
-                "transliteration": "yadi māmapratīkāramaśastraṃ śastrapāṇayaḥ",
+                "sanskrit": "यदि मामप्रतीकारमशस्त्रं",
+                "word": "yadi māmapratīkāramaśastraṃ",
+                "transliteration": "yadi māmapratīkāramaśastraṃ",
                 "sanskrit_te": "యది మామప్రతీకారమశస్త్రం",
-                "en": "If me unresisting unarmed",
+                "en": "If the well armed sons of",
                 "te": "If the well armed sons of"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "शस्त्रपाणयः",
+                "word": "śastrapāṇayaḥ",
+                "transliteration": "śastrapāṇayaḥ",
                 "sanskrit_te": "శస్త్రపాణయః ధార్తరాష్ట్రా",
-                "en": "Those with weapons in hand the sons of Dhritarashtra",
-                "te": "ధృతరాష్ట్రుని కుమారులు ఆయుధాలు పట్టుకొని ఉన్నవారు"
+                "en": "Dhrtarastra should slay me in",
+                "te": "Dhrtarastra should slay me in"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "धार्तराष्ट्रा",
+                "word": "dhārtarāṣṭrā",
+                "transliteration": "dhārtarāṣṭrā",
                 "sanskrit_te": "రణే హన్యుస్తన్మే",
-                "en": "On the battlefield shall kill",
-                "te": "యుద్ధభూమిలో చంపాలి"
+                "en": "Battle, unresisting and unarmed, that",
+                "te": "Battle, unresisting and unarmed, that"
             },
             {
-                "sanskrit": "धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्",
-                "word": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
-                "transliteration": "dhārtarāṣṭrā raṇe hanyustanme kṣemataraṃ bhavet",
+                "sanskrit": "रणे हन्युस्तन्मे क्षेमतरं भवेत्",
+                "word": "raṇe hanyustanme kṣemataraṃ bhavet",
+                "transliteration": "raṇe hanyustanme kṣemataraṃ bhavet",
                 "sanskrit_te": "క్షేమతరం భవేత్",
-                "en": "To me better would be",
+                "en": "Would be better for me.",
                 "te": "Would be better for me."
             }
         ],
@@ -5376,73 +5362,79 @@ const CHAPTER_1_SHLOKAS = {
         "telugu_script": "సఞ్జయ ఉవాచ ఏవముక్త్వాఽర్జునః సంఖ్యే రథోపస్థ ఉపావిశత్ |\nవిసృజ్య సశరం చాపం శోకసంవిగ్నమానసః",
         "lineBreakdown": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
-                "sanskrit_te": "సఞ్జయ ఉవాచ ఏవముక్త్వాఽర్జునః",
-                "en": "Sanjay said speaking thus",
-                "te": "సంజయ్ ఇలా మాట్లాడుతున్నాడు"
+                "sanskrit": "एवमुक्त्वार्जुनः सङ्ख्ये",
+                "word": "evamuktvārjunaḥ saṅkhye",
+                "transliteration": "evamuktvārjunaḥ saṅkhye",
+                "sanskrit_te": "ఏవముక్త్వాఽర్జునః సంఖ్యే",
+                "en": "Having spoken thus on the battlefield, Arjuna",
+                "te": "Having spoken thus on the battlefield, Arjuna"
             },
             {
-                "sanskrit": "एवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत्",
-                "word": "evamuktvārjunaḥ saṅkhye rathopastha upāviśat",
-                "transliteration": "evamuktvārjunaḥ saṅkhye rathopastha upāviśat",
-                "sanskrit_te": "సంఖ్యే రథోపస్థ ఉపావిశత్",
-                "en": "In the battlefield sat casting aside",
-                "te": "యుద్ధభూమిలో కూర్చుని త్రోసివేయడం"
+                "sanskrit": "रथोपस्थ उपाविशत्",
+                "word": "rathopastha upāviśat",
+                "transliteration": "rathopastha upāviśat",
+                "sanskrit_te": "రథోపస్థ ఉపావిశత్",
+                "en": "Threw aside his bow and arrows",
+                "te": "Threw aside his bow and arrows"
             },
             {
-                "sanskrit": "विसृज्य सशरं चापं शोकसंविग्नमानसः",
-                "word": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
-                "transliteration": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
+                "sanskrit": "विसृज्य सशरं",
+                "word": "visṛjya saśaraṃ",
+                "transliteration": "visṛjya saśaraṃ",
                 "sanskrit_te": "విసృజ్య సశరం",
-                "en": "Along with arrows the bow",
-                "te": "బాణాలతో పాటు"
+                "en": "And sat down on the chariot",
+                "te": "And sat down on the chariot"
             },
             {
-                "sanskrit": "विसृज्य सशरं चापं शोकसंविग्नमानसः",
-                "word": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
-                "transliteration": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
+                "sanskrit": "चापं शोकसंविग्नमानसः",
+                "word": "cāpaṃ śokasaṃvignamānasaḥ",
+                "transliteration": "cāpaṃ śokasaṃvignamānasaḥ",
                 "sanskrit_te": "చాపం శోకసంవిగ్నమానసః",
-                "en": "With grief distressed mind",
+                "en": "Seat, his heart overwhelmed with grief.",
                 "te": "Seat, his heart overwhelmed with grief."
             }
         ],
         "word_by_word": [
             {
-                "sanskrit": "सञ्जय उवाच",
-                "word": "sañjaya uvāca",
-                "transliteration": "sañjaya uvāca",
-                "sanskrit_te": "సఞ్జయ ఉవాచ ఏవముక్త్వాఽర్జునః",
-                "en": "Sanjay said speaking thus",
-                "te": "సంజయ్ ఇలా మాట్లాడుతున్నాడు"
+                "sanskrit": "एवमुक्त्वार्जुनः सङ्ख्ये",
+                "word": "evamuktvārjunaḥ saṅkhye",
+                "transliteration": "evamuktvārjunaḥ saṅkhye",
+                "sanskrit_te": "ఏవముక్త్వాఽర్జునః సంఖ్యే",
+                "en": "Having spoken thus on the battlefield, Arjuna",
+                "te": "Having spoken thus on the battlefield, Arjuna"
             },
             {
-                "sanskrit": "एवमुक्त्वार्जुनः सङ्ख्ये रथोपस्थ उपाविशत्",
-                "word": "evamuktvārjunaḥ saṅkhye rathopastha upāviśat",
-                "transliteration": "evamuktvārjunaḥ saṅkhye rathopastha upāviśat",
-                "sanskrit_te": "సంఖ్యే రథోపస్థ ఉపావిశత్",
-                "en": "In the battlefield sat casting aside",
-                "te": "యుద్ధభూమిలో కూర్చుని త్రోసివేయడం"
+                "sanskrit": "रथोपस्थ उपाविशत्",
+                "word": "rathopastha upāviśat",
+                "transliteration": "rathopastha upāviśat",
+                "sanskrit_te": "రథోపస్థ ఉపావిశత్",
+                "en": "Threw aside his bow and arrows",
+                "te": "Threw aside his bow and arrows"
             },
             {
-                "sanskrit": "विसृज्य सशरं चापं शोकसंविग्नमानसः",
-                "word": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
-                "transliteration": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
+                "sanskrit": "विसृज्य सशरं",
+                "word": "visṛjya saśaraṃ",
+                "transliteration": "visṛjya saśaraṃ",
                 "sanskrit_te": "విసృజ్య సశరం",
-                "en": "Along with arrows the bow",
-                "te": "బాణాలతో పాటు"
+                "en": "And sat down on the chariot",
+                "te": "And sat down on the chariot"
             },
             {
-                "sanskrit": "विसृज्य सशरं चापं शोकसंविग्नमानसः",
-                "word": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
-                "transliteration": "visṛjya saśaraṃ cāpaṃ śokasaṃvignamānasaḥ",
+                "sanskrit": "चापं शोकसंविग्नमानसः",
+                "word": "cāpaṃ śokasaṃvignamānasaḥ",
+                "transliteration": "cāpaṃ śokasaṃvignamānasaḥ",
                 "sanskrit_te": "చాపం శోకసంవిగ్నమానసః",
-                "en": "With grief distressed mind",
+                "en": "Seat, his heart overwhelmed with grief.",
                 "te": "Seat, his heart overwhelmed with grief."
             }
         ],
-        "hfMerged": true
+        "hfMerged": true,
+        "chantIntro": {
+            "transliteration": "sañjaya uvāca",
+            "sanskrit": "सञ्जय उवाच",
+            "en": "Sanjaya said",
+            "te": "Sanjaya said"
+        }
     }
 };
 

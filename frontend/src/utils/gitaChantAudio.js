@@ -49,14 +49,23 @@ export function resolveChantAudioUrl(verseId, manifestVerses = versesById) {
   return `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
 }
 
-/** @returns {number[]|null} boundaries length lineCount+1 */
+/** @returns {number[]|null} play boundaries for pada rows (excludes narrator intro). */
 export function getManifestLineTimings(verseId, manifestVerses = versesById) {
   const entry = manifestVerses?.[verseId];
   if (!entry || typeof entry !== 'object') return null;
   const t = entry.lineTimings;
   if (!Array.isArray(t) || t.length < 2) return null;
   const nums = t.map((x) => Number(x)).filter((x) => Number.isFinite(x));
-  return nums.length >= 2 ? nums : null;
+  if (nums.length < 2) return null;
+  if (entry.introEnd != null && nums[0] < 0.05) return nums.slice(1);
+  return nums;
+}
+
+export function getManifestIntroEnd(verseId, manifestVerses = versesById) {
+  const entry = manifestVerses?.[verseId];
+  if (!entry || typeof entry !== 'object') return null;
+  const v = Number(entry.introEnd);
+  return Number.isFinite(v) && v > 0 ? v : null;
 }
 
 export function stopChantSegment() {

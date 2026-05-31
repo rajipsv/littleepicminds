@@ -10,6 +10,7 @@ const path = require('path');
 
 const { AUDIO_DIR, loadManifest, saveManifest, getAudioFilePath } = require('../lib/gita-audio');
 const { computeLineTimingsFromWav } = require('../lib/gita-line-timings');
+const { LINES_PER_SHLOKA, extractSpeakerPrefix } = require('./gita-line-breakdown');
 
 const CHAPTERS_DIR = path.join(__dirname, '..', 'backend', 'data', 'chapters');
 
@@ -26,18 +27,18 @@ function loadChapterShlokas(chapterNum) {
   return require(fp);
 }
 
-function lineCountForVerse(verse) {
-  const b = verse?.lineBreakdown || verse?.word_by_word;
-  return Array.isArray(b) ? b.length : 0;
+function lineCountForVerse() {
+  return LINES_PER_SHLOKA;
 }
 
 function lineWeights(verse) {
   const b = verse?.lineBreakdown || verse?.word_by_word;
-  if (!b?.length) return [];
-  return b.map((row) => {
+  const weights = (b || []).map((row) => {
     const t = row.transliteration || row.word || row.sanskrit || '';
     return t.replace(/\s+/g, '').length || 1;
   });
+  while (weights.length < LINES_PER_SHLOKA) weights.push(1);
+  return weights.slice(0, LINES_PER_SHLOKA);
 }
 
 async function main() {
@@ -55,8 +56,9 @@ async function main() {
     if (!shlokas) continue;
 
     for (const [verseId, verse] of Object.entries(shlokas)) {
-      const n = lineCountForVerse(verse);
-      if (!n) {
+      const n = lineCountForVerse();
+      const breakdown = verse?.lineBreakdown || verse?.word_by_word;
+      if (!Array.isArray(breakdown) || breakdown.length < 1) {
         skipped++;
         continue;
       }
@@ -68,7 +70,16 @@ async function main() {
       }
 
       try {
-        const lineTimings = computeLineTimingsFromWav(wavPath, n, lineWeights(verse));
+        const fullBounds = computeLineTimingsFromWav(wavPath, n, lineWeights(verse));
+        const hasIntro = Boolean(
+          extractSpeakerPrefix(verse.transliteration || '').speaker
+        );
+        let lineTimings = fullBounds;
+        let introEnd;
+        if (hasIntro && fullBounds.length >= n + 1) {
+          introEnd = fullBounds[1];
+          lineTimings = fullBounds.slice(1);
+        }
         const prev = manifest.verses[verseId];
         const url =
           typeof prev === 'object' && prev?.url
@@ -81,6 +92,7 @@ async function main() {
           ...(url ? { url } : {}),
           lineTimings,
           lineCount: n,
+          ...(introEnd != null ? { introEnd } : {}),
         };
         computed++;
         if (computed % 20 === 0) console.log(`  ${computed} timings (${verseId})`);
@@ -92,7 +104,7 @@ async function main() {
   }
 
   manifest.lineTimingsNote =
-    'Seconds per lineBreakdown row; from silence detection on local WAV. Re-run gita:line-timings after sync.';
+    'Line boundaries from pauses in local WAV (longest gaps = line ends). Re-run gita:line-timings after sync.';
   manifest.lineTimingsAt = new Date().toISOString();
   saveManifest(manifest);
 

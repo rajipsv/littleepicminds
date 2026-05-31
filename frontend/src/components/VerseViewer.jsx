@@ -195,6 +195,7 @@ const VerseViewer = ({ verse, scripture, isThemeMode }) => {
           <MeaningTable
             wordByWord={verse.lineBreakdown || verse.word_by_word}
             verseId={scripture === 'gita' ? verse.id : undefined}
+            chantIntro={verse.chantIntro}
           />
         </div>
 
