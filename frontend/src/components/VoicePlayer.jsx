@@ -9,7 +9,7 @@ import {
   resolveChantAudioUrl,
   DEFAULT_GAP_MS,
 } from '../utils/lineTts';
-import { stopChantSegment } from '../utils/gitaChantAudio';
+import { stopChantSegment, preloadChantAudio } from '../utils/gitaChantAudio';
 
 const VoicePlayer = ({
   text,
@@ -52,7 +52,11 @@ const VoicePlayer = ({
     }
     (async () => {
       const manifest = await ensureGitaChantManifest();
-      if (!cancelled) setChantUrl(resolveChantAudioUrl(verseId, manifest));
+      const url = resolveChantAudioUrl(verseId, manifest);
+      if (!cancelled) {
+        setChantUrl(url);
+        if (url) preloadChantAudio(url).catch(() => {});
+      }
     })();
     return () => {
       cancelled = true;
@@ -64,37 +68,33 @@ const VoicePlayer = ({
   const shlokaLines = Array.isArray(lines) ? lines.filter((l) => l?.trim()) : [];
 
   const playChantWav = (url) =>
-    new Promise((resolve, reject) => {
-      if (!url) return reject(new Error('No chant URL'));
-      const audio = new Audio();
+    preloadChantAudio(url).then((audio) => {
       audioRef.current = audio;
-      audio.preload = 'auto';
       audio.playbackRate = playbackRate;
-
-      const cleanup = () => {
-        audio.removeEventListener('canplay', onCanPlay);
-        audio.removeEventListener('ended', onEnded);
-        audio.removeEventListener('error', onErr);
-      };
-
-      const onEnded = () => {
-        cleanup();
-        resolve();
-      };
-      const onErr = () => {
-        cleanup();
-        if (audioRef.current === audio) audioRef.current = null;
-        reject(new Error('Chant audio failed'));
-      };
-      const onCanPlay = () => {
-        audio.playbackRate = playbackRate;
-        audio.play().catch(onErr);
-      };
-
-      audio.addEventListener('canplay', onCanPlay, { once: true });
-      audio.addEventListener('ended', onEnded);
-      audio.addEventListener('error', onErr);
-      audio.src = url;
+      return new Promise((resolve, reject) => {
+        const cleanup = () => {
+          audio.removeEventListener('ended', onEnded);
+          audio.removeEventListener('error', onErr);
+        };
+        const onEnded = () => {
+          cleanup();
+          resolve();
+        };
+        const onErr = () => {
+          cleanup();
+          if (audioRef.current === audio) audioRef.current = null;
+          reject(new Error('Chant audio failed'));
+        };
+        audio.addEventListener('ended', onEnded);
+        audio.addEventListener('error', onErr);
+        const play = () => {
+          audio.currentTime = 0;
+          audio.playbackRate = playbackRate;
+          audio.play().catch(onErr);
+        };
+        if (audio.readyState >= 2) play();
+        else audio.addEventListener('loadeddata', play, { once: true });
+      });
     });
 
   const playAiVoice = async () => {

@@ -90,12 +90,14 @@ async function main() {
           wavLineCount,
           lineWeights(verse, hasIntro)
         );
-        let lineTimings = fullBounds;
+        let lineEnds;
         let introEnd;
+        const duration = fullBounds[fullBounds.length - 1];
         if (hasIntro && fullBounds.length >= wavLineCount + 1) {
           introEnd = fullBounds[1];
-          // Pada end times only (intro + 4 lines → 4 boundaries, no trailing duration).
-          lineTimings = fullBounds.slice(1, n + 1);
+          lineEnds = fullBounds.slice(2, n + 2);
+        } else {
+          lineEnds = fullBounds.slice(1, n + 1);
         }
         const prev = manifest.verses[verseId];
         const url =
@@ -107,8 +109,10 @@ async function main() {
         manifest.verses[verseId] = {
           ...(typeof prev === 'object' ? prev : {}),
           ...(url ? { url } : {}),
-          lineTimings,
+          lineEnds,
+          lineTimings: lineEnds,
           lineCount: n,
+          ...(Number.isFinite(duration) ? { duration } : {}),
           ...(introEnd != null ? { introEnd } : {}),
         };
         computed++;

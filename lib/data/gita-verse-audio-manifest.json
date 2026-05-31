@@ -12,127 +12,183 @@
         9.94,
         13.664
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.206,
+        7.104,
+        9.94,
+        13.664
+      ]
     },
     "1.10": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/9/audio/audio.wav?Expires=1780214706&Signature=smg-5p4FfYoij1VsWv9vDmk6bqvJm9P~YL7WN7kJtM7nmu5-11BsEtmBTgKSfozp9PgrhqgIkjAv8BZeswcZOTPPFAhxV9JIkEpuADGoUlHzge-kpDSmXLtPahUVmYf5rFw5J1gqa8wxaXePzH-ZHKKiQuYlfuy46IwVaDZdnNeGceDk0JOD~rCYuwPPOKMoE~AKRc4OZRUL3A0Ll-jNag5PXv3o17~tLvJ5DdD0H9z8xFlyf~t7Uv-FHbr6uzkeMtobFZ9-WdRjUH~SaNKZ01uAayH4T0DS9AkZHg5F9OyfIic0AEiXyfPOSduT0OJgL354OBfDSHgXr~fClDkErA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 9,
       "lineTimings": [
-        0,
         0.42,
         3.856,
         7.304,
         13.962
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.42,
+        3.856,
+        7.304,
+        13.962
+      ]
     },
     "1.11": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/10/audio/audio.wav?Expires=1780214706&Signature=GHr8LI1EsJ-1KgBIB7ah5AZ7nW2wOJHTXwecOhggJXxMCIR8m8U0NlsoICE4dkXMUfGETA7ca5lU2Asg1G9C9HQv1X-d5Fqcx00cgtOS4LBDuPUhc5hkQn2LPjG3OhBSrtMQwklXIOn7Zo99g9RuzyHFB6gusgOUZg8Y3sj8ZXPiy5FoQ2-~QOjqvE87UhpHsuau-zgL5fbdlhyua097~CB7FIXliZUqRhRDSsZfv6gYIngleVh4m62ZVEk4UmbfghAvpgyoNICGKvy0hTsjtYbac49hdxNjO4SFR3bWJnD~7XJlJSbH8mgorklSb7yrXlCB083IbqAejN2WiWuNjQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 10,
       "lineTimings": [
-        0,
         3.356,
         6.729,
         10.065,
         12.958
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.356,
+        6.729,
+        10.065,
+        12.958
+      ]
     },
     "1.12": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/11/audio/audio.wav?Expires=1780214706&Signature=LUo~64X4RF8awKqBhCfB9wUXyy0BNqugVgsKf9Pu-tDqE~VUsGix1n00YUbEBBgK7Z~qzOy~DTjXL6BDMPnJhX-cckGatQ0uWICTWkDdK0gQFmEXaGuxSTzgZf2hTS5pJ4~vrbP167rd3ys2HuJEVQKzxJ74mrGsyH3UW8oCNMTE3R4qTUrKbTwdoThdq1HakHVZxl4xvXowqqlWleDXfd2K1gMxMSIBJN2~Ob6MFNbYEPwxeSaBBQbJiaLafZgo1Fjw105Jnd7EDluw4-qcHhrpFLvSx2jeW67UwcObpc-MbeLGGN0y3ap-4Wxl1Ac2XKEaBspfIjOl-hkoS3jYVg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 11,
       "lineTimings": [
-        0,
         3.593,
         6.604,
         10.303,
         13.017
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.593,
+        6.604,
+        10.303,
+        13.017
+      ]
     },
     "1.13": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/12/audio/audio.wav?Expires=1780214706&Signature=ce0q3QdB-o7TCbCG2~8oFWbwHtG0ARHzH8NH6vaQrj7dUCA-FwdPDhosS4AbR5E61jH0U1Ay5kopSuAiAG-9yTG1lq71WRKqPqxJ4-~CEA4zd00Do9qlj-SeANScawHDSpxHZSx1rXHV2ySTA88~GBFi5WHY~ueGCrzJeJadm4lpqY5cYfdVlwtI72d0x7gOHfxHy5Eu8AhRpPZmLmUzdSRfxzxOQAMPa1lljvMbz10cRxj~LiswuBfTcpweoap~EoSNZ7NifiVb-K-SgPlZ1bFeOl-4XX83F5IciWswBhrbhW9oqR9LS1UiKc3mAg0UEROWCOPily3AEkLa2YPkYQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 12,
       "lineTimings": [
-        0,
         3.618,
         6.892,
         10.14,
         12.994
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.618,
+        6.892,
+        10.14,
+        12.994
+      ]
     },
     "1.14": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/13/audio/audio.wav?Expires=1780214706&Signature=l5cM8MyyLOAcCqKd9aPmoxdvzaqc6NyeZI83EA69EXY-w-3l6Xh3FBJy~Z644Qtdn-3fTfShXEh8Q5OSfam-cBMILZJkYNPpPGrmhVBrg14pJ6925ot0Quwcp-xcZCpeKa0K3ELdYHSZKiq~6V2HRmRpxo8Bod36kShMlZXhKmS6mbb7Wy3xh9z6D1JKalbDEAgGPjpl7L28hD8UI0Th0XFJmgQhuh97ajgLxS9VGMrHzcfz-t4l6ar5woaq5uRdLW7UmTcG~XoTTuJzxmgqNtjr1aV4WdtRRHWHfp5sOvrzIuJIJDeD1LPVsAseooz4e53TD9VVvGRMkvYpMMBA~A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 13,
       "lineTimings": [
-        0,
         3.768,
         6.817,
         10.153,
         12.978
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.768,
+        6.817,
+        10.153,
+        12.978
+      ]
     },
     "1.15": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/14/audio/audio.wav?Expires=1780214706&Signature=DwhlaGJNYtivkHU7ykdynUx4hj1IIXZqskSTCJawK0h75F8VZM9zeUCTiFBDuzvDD29hun0b-dZSAQwQoi09Hf9UAI1LFOSC7EI-vqLm2orMy-hzRDtmAJ~~EUvLlIXC~o0IM4r47ZyFMSjCrS09ngfC244T1NrF~20aZx6xb8ohEqItHjq0l~2AdvdHPJaFhw-RthmIMsbZReVx5bMUN0L98tYYtpAaj6DNjCHmY5FHxu~ZwSm5oGTUTpJrV~4fi5pY2ab1KMfzO06xxkQS1B42J6lWnWDTfZz-o2QGFnrarFdAgCBHQy4rkToDXgxIEGQ6NDsQotSbnd2GO7L~lQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 14,
       "lineTimings": [
-        0,
         3.818,
         6.742,
         10.278,
         12.978
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.818,
+        6.742,
+        10.278,
+        12.978
+      ]
     },
     "1.16": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/15/audio/audio.wav?Expires=1780214706&Signature=MXMSaseuLqMCC15HHsQnk7~S3kdDnQcevUvQ8X1gQ9QjklxLCnp2vkxE8mUmrV8-o93C8DrnMFhYZ~jENwBaP-K6lzEJCuNnQv2GOPWDHHAA72xv1LZAsW1oBjryruCoSbe0F3oVW6dIp3tR0AWMpoFxRtco~ky2GDO2c~CPBhAPA~VrbviGzH-8z1mOnAVSy0lUeEHXPvv37YxeayQ3v8RGK03ilZh5S4L718L1OYp-YCQFNAKogZgaF1BqPwHaVFKAkQmbFwDmwoftoTNoJSIKQp3w9QQOohMM7vTDiX8NqieSwyVrPj7XJbrgUcDXNGb5jwoSPoSEcCJ4yHWgqQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 15,
       "lineTimings": [
-        0,
         0.482,
         6.33,
         9.291,
         11.953
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.482,
+        6.33,
+        9.291,
+        11.953
+      ]
     },
     "1.17": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/16/audio/audio.wav?Expires=1780214706&Signature=q-gKdi2zEuyttLbcbpdpaDupnhN44i~CVxBnWv3rfU5yW98ybIb7RVC76JarEDgA48UIWLEAvJWImBfEF3nh1VhAKhaWeVbMEOJB2ZMlk3vbXJiNH9VlwpwMkx0kvYitU3MSkQQy~bz6DUdeWM6Ki6Q6fbzR~QPN6SwXjpi-frq02XSLzEXHsEFLEXnoFLJFZrK-fIV5LSq~Xl~Y16nOv7ix76EY-fuVg7oD54lQhD4SifvTjEO6PL6QaZKB5b7kJ~Q7-1~~seWSmsSjy-LeNzt1eZTba-hFkbQuRz4PAsj2XOe5dJ1t4DAfGvONKpNW0rfWc6vgkjChTBxK3m~t7A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 16,
       "lineTimings": [
-        0,
         3.831,
         6.879,
         10.315,
         13.012
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.831,
+        6.879,
+        10.315,
+        13.012
+      ]
     },
     "1.18": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/17/audio/audio.wav?Expires=1780214706&Signature=R5vNQHh-W925lVYJU0-zw339cEBAJ1J3fdXutUNf0tLNggtlINCfloDENkzpk6Any8KLCyJnP6yuaqsk1Yj00pIQcUyy6u38nb4XP84I1~yTuqcfoVzgjcv-7~GBYrX9muFn2F6f9WxIau64am5Ir5JI3i8adiAHKv8UcjPp3PThgRGli-ef2roZ-4H8JqmWPIi2Ituxi~Rn73c~IfoVaV39oOS20fxjJLM7bNQslqtTL3x~T5Md47CeKF0sDgggR6SFCBPTe4CY6WQoflcw2Sgdilly5naO2C7GLfWG1skVt3W8Ybx9~x0vDbNLZIJL5x-9jnfplmVQ0sZ1fFd2rw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 17,
       "lineTimings": [
-        0,
         0.657,
         4.056,
         7.029,
         12.996
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.657,
+        4.056,
+        7.029,
+        12.996
+      ]
     },
     "1.19": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/18/audio/audio.wav?Expires=1780214706&Signature=E0TgLwKSqKo6tIYAiJVE-aDActx5Pvu9o5tZ3tzp-mqkjgEdhOORZjQld4VhMyYnM2m6HxDZrkwYOJKxw0jYAHCwK0W~FrfdmcHOa~PMuhDzbEV0o8NTJFSkLVpTdtf9qkvrfgvOtO9HiLcF3LQx1-CHOOkJzMiihZOvkJLnfop1nKJAinhGgbRf67Bzmi8XUG4igpnxvqzF3ws4nRXQH8FUye2anWVI8cKMQZZwfSmGyQWH5wgIlpf4RHqQ3rN~vCvjswbh-VJ-Y6B9n81tEYhEb9SipS8O731p~7VFh72ezFjNB19SvPpuxuA7yWx6WvH48vJUNxck3cEuFz280w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 18,
       "lineTimings": [
-        0,
         3.831,
         6.954,
         10.165,
         12.995
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.831,
+        6.954,
+        10.165,
+        12.995
+      ]
     },
     "1.2": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/1/audio/audio.wav?Expires=1780214706&Signature=uwkJ7xJmPcU~kLQV0qy~tLiBRqbjPhftRWqaQ1INfe1XjG~6~U0daoAafH77vZGy-vFpAZUuXOIumDhbA5vpt4L0G12Ry5VOHEAHPEVkgNFwV~kV~w9hTkQ-r9-Og1b9dXfR0YIbwjzNrDSarYt0I1fWVQuv5KiJpGst0avwF70p9e1ZpKqudm7RqZmSCCwm6UGfkMtxgQ6KiCKgem6rsTv6wAAc~YFd8oEAJ3QzHqeY8HSgC6SQ7vmv8G66qH0KjIq1~Zpjusl5LJTtKwNO2eA81B5ZL4NPL0A9Yr4nIAz~G-5KYw7WuiBdYNgsmjVRD94Hj~S1NWj2vUygDE3eGA__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -143,55 +199,81 @@
         10.553,
         13.876
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.682,
+        3.506,
+        10.553,
+        13.876
+      ]
     },
     "1.20": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/19/audio/audio.wav?Expires=1780214706&Signature=qplEL0rAAvEXGNV9GPh-k3VY9DsBdWt81WwD7F6hh0LZNWzszF4U2c0EpKq38ZW530W~GXVKc3Qx-rxzYlPFnr~8UuTQSCHg2vWhtZVEvCfDylZethV8Io2cdOcDIlYx6uSLDkwzKEXXgnDR9MTLeBngETg~-od1gTbfB0aNW9dIegcTFpgZ9ssLLXVrGN7RposJRNJjTXuaeQrwPQ4jhxvjyRBjtCLeyuV35zVo2~lzcrNc~A74nTgZEBX2noMzDgIjLmiqvGeZVVLCiarK5bXEuwDeADM1R~vtsoLgNnF4XmiNSm2iGlUKNRQsNIJP8NVz-uhHjBc0mYRYhnj9iA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 19,
       "lineTimings": [
-        0,
         3.581,
         7.067,
         10.29,
         12.986
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        7.067,
+        10.29,
+        12.986
+      ]
     },
     "1.21": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/20/audio/audio.wav?Expires=1780214706&Signature=qQLYOU0dkkJDMsCl4BykoTB4jgd-iLWdRSU4Jc10oSzywSkOZ54GalPd9SI-DMMtg4nX2yEN4QZDCWXXGUB0a~wnNgk0gQMiYmH~5hzS4G2ZXfeaF-K~3Z9nwSgQhhlKqZY0-nEtnyPxqp-3p98M8MKfnip6jrNXglfIBKlwn-t53GEQmAOSTu8M5kAUMmdXlEcd1fnRdPsJ2NRgbRkHc3UPmNw-Oh6xm~gEtlbkeGeyNWFwWI-mzY2~OZyNwkYJwfVkk5wGWBlz2zZG3iB1ClZSEzMpMJYc7XqCwvRU72QmLE0aDftoEaAELaiwzVrADmiw-RTQBHlkNqPy3JrM8g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 20,
       "lineTimings": [
-        0,
         0.545,
         7.229,
         10.09,
         16.015
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.545,
+        7.229,
+        10.09,
+        16.015
+      ]
     },
     "1.22": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/21/audio/audio.wav?Expires=1780214706&Signature=B6gdF299pw-Ukt3GExdo5FLy~iXGBEeZWVPEjL61YQZAjhMyEKti5BlK-PrrHb0kCoAmXSidX0Q5T0h1Y-09u912PyqFAuJZBV4vvj14figdX4qsjoTtVYmcJulrhNaDyUWS0HgZq7B-bZcuvQy2WScQmwbPqOwLPB9dHj2KcDsg3nVK65lyICjfLFCNRKXKaQk5r9ZxpsznJmvfz4cDNjCY5BLH0EcPrwfNQHeWsnR6jzVEPo-V3YgNXlW0WKVzEQLmiGdvUnSl2FfiMUrxcjJCwVirNl54RSWD8cccoZXsoQ~knjfpOfCHwFNafoySM4e82OAYTsg6UePkYVNQtA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 21,
       "lineTimings": [
-        0,
         3.418,
         6.779,
         10.09,
         12.992
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.418,
+        6.779,
+        10.09,
+        12.992
+      ]
     },
     "1.23": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/22/audio/audio.wav?Expires=1780214706&Signature=Xzch1ueQJ0bFvj~LJOkzSEk5-1wjDl25O4n8tGuGLLXCc4KN~9ZBbv6qMPFncWzaS-O4xMysHpkAKf4DFlLspsBcrtaGruvjcG-8jgk1RGWi1pfIJ4hBpD~TQey9UsXWzQ~POaRLyQQhLw~Lmldg4ZS30Cvdcs3HbAe7j5PfjSzIwZdOx27vdxrgkmZZVOYmVP1m995JehOisJdNb8CfwJwuz5ClgaNbGOghJgAIodIoJLHFplQFDy-xmmxtNqAfuAhXs9IOBNN9zm8m5IVIxkTzDQs8r26dLcCvRBZRs84vfFLL63w85zxckgHzEQMKlCnntlGYh5ee24bw3iKkyw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 22,
       "lineTimings": [
-        0,
         0.682,
         3.481,
         6.867,
         12.979
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.682,
+        3.481,
+        6.867,
+        12.979
+      ]
     },
     "1.24": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/23/audio/audio.wav?Expires=1780214706&Signature=HUiFH5Cvq5awzwtrXcR8djbGUPLtG~5G4BrNTDb6iJiAltw5QqDyAvHsJ65WW2h3Q4LRJhmzcy-4ngSIrrreR-MC9UcYMMoZHyz-cDw8AECHzbuk-ck-nJNIbzU6FCCCBzIKkN4wAnoLVfvsGHgwONzPy1PKH1so0CJB7BqRjHSxVgqQL7EZ8XiGzDAbDFsuWHhn1em~FLOFh7y40gaxV~-1QeAipOHHWa8VLDhHGP7d8eM7Dj7d7FlMygpNGID0LBFURwBEvHJ0onBtVycBN5aeaOPn-Sui-q46zpubpR~VMD8Me1zxljHPUHGCMnhTQ8dWj7TFPys1kYoiQWxpcQ__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -202,295 +284,421 @@
         9.528,
         12.689
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.044,
+        6.33,
+        9.528,
+        12.689
+      ]
     },
     "1.25": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/24/audio/audio.wav?Expires=1780214706&Signature=bOEFWGCGA3-d0kKPggI8SkPu3wIwLxVvDybm-I0h0TLi4dHQKSp-K2Ch86T-wzLCCgBGp5GWMOG61QFUb4SmcvjoUjBmMn0ftrJjIs0ixaPu34Xzoavcu7v9-I4n9yuPFUOYgSI3MenYHloyxjjU6G7hkt3CNRZJPt0aeyIkO3v7~Qx-ATfeFzzkMGLz3sQ5ZiKpW3y5mQDMez-kPG~lAkTwIjufCObTWGaC9Qgy4dVVnJLv0LaCY~LQ3JyxoZdRwPbV2hsaHicAqoXlSEuu101HkjO252UxgIzVX4pCgluGjgqk4YhiDFjoM2Ni~UiNu0cJsC3FWjTbDl7bB1kwkw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 24,
       "lineTimings": [
-        0,
         3.256,
         6.567,
         9.666,
         12.067
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.256,
+        6.567,
+        9.666,
+        12.067
+      ]
     },
     "1.26": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/25/audio/audio.wav?Expires=1780214706&Signature=Mr3-0GY5HSzC9ob4fR2ei4DAVl9LTb-U4MAfyCowG7eoeg3uY1lxKBC7Xp4Tcx7oEvqZoE9AEazMYvJas4pf7YBUykNu~f6GxyPczF-NmRKBEbrcZP3qpz5fmD2WBzZXl2piGFQ9WhTSNhCpVBCQSGKqzi~nEkAAuIS4slidGBX5fQX~S3Gc9bE~k1T0So~ishfSnDPIgU7s9GlATT8xMJyI3tl9ceNlj58AAHwZojIxxrLvw3LLubTIlmMV0ptBBSkWriJvjkYvffrWj4IClCQJXNalRU9-Bhd9C1ftowiOJ2C73KqRF5DodWViHFKNOK6bicNm~-ne8tTyEkiUPA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 25,
       "lineTimings": [
-        0,
         0.732,
         4.281,
         7.242,
         14.908
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.732,
+        4.281,
+        7.242,
+        14.908
+      ]
     },
     "1.27": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/26/audio/audio.wav?Expires=1780214706&Signature=P9uFaUWhf6DMSEqDlvdh3lRNCjQdi0-avBWWbCgBr0FtpCCpw0cj03XKpXX4TEZwxVOrtwn~47FN7XIOBX8TLBZzsAfFoBE47ruwQ1ww4Sv9fbSJ89CveaqI~rBTskV-jW2ymWvURQDEv7yknd4PRTRGL1VVTx1YADa0EyKvWyRAgMzStvmTWjUVZ6z0AYy6YqzUFygClkjTHZozrcjIZy5Ocy3zggN5I6N9SwCccfPPYjDufd~Rh49TwD6FnJQ6Jwl24xAUYgrlpOpEFYoc716671~n4uoNgpTAHFu177hDF0KQexiepsLyvNS~Olkb4~RaD024X0fVoesUhyBRdw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 26,
       "lineTimings": [
-        0,
         3.406,
         6.38,
         9.94,
         13.017
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.406,
+        6.38,
+        9.94,
+        13.017
+      ]
     },
     "1.28": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/28/audio/audio.wav?Expires=1780214706&Signature=SWKEA-PejkqlLIl5S-jerNkAIPy3XRiKIGWrCOPO5JmgujmLmz4VzNgTw8UDO-f2eCuhpRRIMhuRTSRBOQPtyt0ZXjfalkQr~yyZTtvekiGgTA3oqUymA9GtOGKBmaYujLMgfvXhDEokWTWQiSS8ncJUlgCdEkqnI4Kdw0p~fkkgc0QMnJlr76p4Bk2MsGQa6sSeKeh2niOa7dydL9od7BpM3Zci2zqBROZ4nMd8UPtM00oT1kXRpMOGZiMl6PRHC-xtGdiQNw-pDWoIMKUpefEK7K-l3aV5nta1aTAEHSAWc~1u80nouCZ1F4a5zGeX~MdbzG233V5dxflDByUTXA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 28,
       "lineTimings": [
-        0,
         0.432,
         6.505,
         9.128,
         14.981
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.432,
+        6.505,
+        9.128,
+        14.981
+      ]
     },
     "1.29": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/27/audio/audio.wav?Expires=1780214706&Signature=eVGeIxuDFVxRXn1KB0SJZR3CqjPoFFKKgB1xo5hVT-rxU1mV8qdimm4~61pbd6NeK9vmfuXexGwMbsmyJrfzTcNFXKRH1073Wrk5dkDOXd5rZJyC77bUwkgnqe2zmNbPpK2ysaBKFlX0PiJJq86YYbkqP2bJjcwWSobrrvSScFrFi4Z45fXPzs90YKq00jertyEtxcHai6q2dMju2rV~VzDbFM26Gr69GUSPoli12qGEjhDuGInJuqshjMYds~23TR3b~LCCbsn4qODo~McGKsoIi9O9d7tm9FGXvAnapPuNlAo-ZqZAMvRnDMTZKapI~iurjYM16PCvoZypZ3ddKw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 27,
       "lineTimings": [
-        0,
         0.432,
         3.606,
         6.517,
         12.013
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.432,
+        3.606,
+        6.517,
+        12.013
+      ]
     },
     "1.3": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/2/audio/audio.wav?Expires=1780214706&Signature=vEuN4MV7IMdYvfzQXPtUFRfvfQZPe-dKyWWJzF-u1frYJPYGCbXONFZyZmU88U1DFYAfhtZWReoOF~85eqRob-0ItArzKqwFyFXy69fHWJZ~LlG99cy3AbEQgGtCuJXhn3qUcrHX2tlNPS2btRivDmMZQLROQkh0sT~4tdzESXL-tH5dtqLG-IbL3zT5oUZ34kc-eAneUxjluYYPb-JLh-wu94GQa4WZvKh4LjZJWBJ8HbKV2zyZDrFKatoxbNtktQR~ClEcvulnfRmava2NXxzo5h3fgbKOvM93NGU~7d-NVCkJPur80d3ppiCEFHAaufuS2ect9itCMcm2nmAN8w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 2,
       "lineTimings": [
-        0,
         4.031,
         7.154,
         10.703,
         13.013
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.031,
+        7.154,
+        10.703,
+        13.013
+      ]
     },
     "1.30": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/29/audio/audio.wav?Expires=1780214706&Signature=a4bikyD~m1jT77MRL0cDnu9W159pvy7YvXh9jfjpN9Y2bMWd-a-B1WcirPyTyLDle36b0oPgbGWFz79BOSEB7xg5~zbYqf~Bla4cNKt~8aAygWG2iuSbNFDlMo7XD5sM7-1UDx9BlTo112ozuGuoF3CyqDkGGvfV7tl~RtJOMrhhFoT4VXgOPw0Yxv6R4qJjRShqqNl97qGvdd6c-HLSU45LVidmnbRF0cArHuorrPIXe7IpTqy21FxsYaQDg54onI3C4kXeBH8V8Z~j-ZItZq3AlB0avF6Ml-8JbSuWwyjt8Y~tRoFIL63M~BjFAe9bLXVb-duo8m7G8mGS18ijYw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 29,
       "lineTimings": [
-        0,
         0.707,
         4.206,
         7.367,
         12.961
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.707,
+        4.206,
+        7.367,
+        12.961
+      ]
     },
     "1.31": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/30/audio/audio.wav?Expires=1780214706&Signature=u~TkiMmC6BfLiENYdJ1F26rpWz6KEyPe-O5bCzJrqW~LDlIyiS-7EaheKHCJUOCIBzcbIOac~xbYLZ9dtnzvCQ0j3JCwSjktk93tpJeX9EuhcYE4ULkaJt~EmQCJwrUxA05Z2GiodbtFxW~cSXQdHd7NTpbjBEtXD3Nrjzv3ox0uCURK7cTHEAHh4REbQuATh4GEYJvI~6GY0fMSINgwQqDASLRjjLUqGtA3tboTA0AJICQTaAN8xq8US4ti5ZLpS8Ydo~51na73Y7LJrSJpvNDdXuf27V01TCcaN71U3XcGoh-unvqCAIOkQwbAdCT31mOP6Bfj8e4FcgWjZoksyQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 30,
       "lineTimings": [
-        0,
         0.507,
         3.393,
         6.255,
         11.986
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.507,
+        3.393,
+        6.255,
+        11.986
+      ]
     },
     "1.32": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/31/audio/audio.wav?Expires=1780214706&Signature=XjyPI3damPwMTBqjhO8f1~S4KNitwuZGSmfawxtPF7kYnf9gWeyzMpNoXfyvNh5T-t7uurcTYrFd~2bM2C3AkbDcjCKWI86gTF6tIbkXD1JNkEMZvPe0iXnEgvYDfLuO5wM4aPz4EpndWX-oQUNPEEMBUEkSImUDQZy5akjcgpHFTsPY9YEsqhgjFHP5lii2rDGs70Rxcp-cQiwJosael2-VGQwqMHv27Y8VW0fWNVSGv09pubGz~gH~3DlOzIzmZJxbEONcu8y~pFCSLLjgBJeh4stfU-vLO2DuXZtAE3qk~YUCYi337r-d~2rJ8hBd44eYzWui-7ZWjhvvmWOsTw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 31,
       "lineTimings": [
-        0,
         0.557,
         6.804,
         10.403,
         13.927
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.557,
+        6.804,
+        10.403,
+        13.927
+      ]
     },
     "1.33": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/32/audio/audio.wav?Expires=1780214706&Signature=knnpW-oxxljn9vIj4~lj0RetQY3DfM3NT2oZ5GBXZ03tMVlxdl-eOkisMIzQpijRkhxyH1avuVqmcuwyGmQkwKT6b2bdJAOYG-RuzIbuW~4fKrBze0sLvge5MOQlJgZzu4BRafj67rcmBC-s12BCEf1jTdhjfFueL-mdmm8AeaXdHoIPCjctwrUUhxhtO2PQjuRHyqLYX9gKw9j6pqbWQ-oB1kOSEjQykTGSf80fyTK9OkXs124mb9DHJomE27jjqz5cDJPEfrwyF6FDFLMYvpH0K-J9ThVwWri5H9IpcKew8UTnhEsCKp6l7cUszgUL8OKG6xB4a7byjmnv~2Vwgg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 32,
       "lineTimings": [
-        0,
         6.779,
         9.691,
         10.74,
         12.976
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        6.779,
+        9.691,
+        10.74,
+        12.976
+      ]
     },
     "1.34": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/33/audio/audio.wav?Expires=1780214706&Signature=sJ-wn3Sewzro81BCl1Bi5YXtbb6-3Ijsb--gH4qranWdynlQLuu6D6cWzio8IFHnYOD8WrZEWMJp6BfSHOKdSFoLj6ytDp-~aYlcvjVavuLLSWnQEnHKzJAbRzahg2gB3Dh5n4GS95tgRzgio-VTe3Mqau08it55ndwE3HIkWOB-A-Nagtop5z-xEz0YFqJHZYfh8v5el6AJ2fIupPQCwndsUe-0ZffIckhBWqtuZuz6Uw2KNu-Ssux3YIMqpVqXl34jkn-aV3kfQV3UUMbhIwkWTNoa~WV3tl~43uIAuVQeXWhJfbBJJGuQXFbSVKdURFRPD-hw6uOK01o4IiyMtQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 33,
       "lineTimings": [
-        0,
         3.731,
         6.717,
         10.153,
         13.022
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.731,
+        6.717,
+        10.153,
+        13.022
+      ]
     },
     "1.35": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/34/audio/audio.wav?Expires=1780214706&Signature=S~nSKkSUrq9JWxp00~BdCQbSA-Nbag180WLPJQVxtOyLU~L3UQRmn0fjZNZBEauXiPXodKHaSKRj9YmBPwBY5~W4hw0LdPxe5jdrPSbH7EHY2P9YcG2Jin0YuTvPrZ-IR77yT-UyUlTyhN0WZ0Awc4IwaYEBdf1nFGLdwiojjXa9dtIl6viQ3nJFD05abZPq3j0~yHootWofG0sUEkQEDtbrY1hRn21TVBTvN0F8QSwP4I7rompbFOAnThnYzE8He8a4tbqfvA5ELlct8DIA7~TUMurfVwKlguE0VElCUvnwuihN25fbJDXTGdCv2JrUIkgnwMfvus9Sog0suohTPw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 34,
       "lineTimings": [
-        0,
         0.682,
         6.754,
         10.04,
         12.947
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.682,
+        6.754,
+        10.04,
+        12.947
+      ]
     },
     "1.36": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/35/audio/audio.wav?Expires=1780214706&Signature=Kej~iMZQi-heqLbBTK-DV9YAr3fmI3oCp9vrR3XvSbq7S1wy44ntqEvKv0u-cFiBFuSL8UEqNsjbequPL1qv6cKXQ9~e3vmMX7V5YrnqBQW0OpHH6yFKufdCefcLheAL5OFYhJjagINJn71ymHPImJS1tbXUbjYowq7a1Eg3EUtFX21IaLbp6Xho8raXkdQmnFjB8EyLUX-gtgV7-RYAlSg755V4TtGDtjJn5YZdiP4cGU3D2SFOIlj23m7i2OILNtTKIw8g30gnB4ACNM-HU0cQzoncGbHN6SpP9tcA1jEz44bW6K66M3tFfZOdBvU~AUcQ87s5HTosTSyYJlmv6Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 35,
       "lineTimings": [
-        0,
         0.47,
         4.068,
         7.367,
         12.99
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.47,
+        4.068,
+        7.367,
+        12.99
+      ]
     },
     "1.37": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/36/audio/audio.wav?Expires=1780214706&Signature=DuR-6ZT9h~0zRa0q1qZZMOHAa6ntzuVOrU0OluBFyJefbH23J2GAcYhUrfbfoMK1PK5PQ75waedtwW2M1GwJHCNNJ850w4yjc98mftOp6k8BX37JEsbpgbsbK-a2pr5OmMFDjbPUP91hAPhJ9pMhZjRPB~rV721QwXYbAgjfBOm-mrXvF3Jpgft5dcGlTe40NWAiR8ggXcvabp2Jf9FofhSAD-pOQmCH9DIf9RTsYlP00onJrwOyHSKpIRGBHExiCw4s99oUfwfJMIj9ZARKnor7oQrpxjOmf6gzajvlyo0JMuGuDz4pRvhqhD-rITHEV9azhqD3aJD8j6P8tgu5zQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 36,
       "lineTimings": [
-        0,
         0.595,
         4.068,
         7.617,
         12.964
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.595,
+        4.068,
+        7.617,
+        12.964
+      ]
     },
     "1.38": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/37/audio/audio.wav?Expires=1780214706&Signature=tA372yZpkal3MGkVFwFeeWeyX5MWmqhLfV1o-H3MS4iUAuSus4leqVabYHEwrUyS-hZFgscrY2-IcARuS4RXCL1~PETCZDQfzhP7Ef-807JGitpz7Yz1nbjVaNon86QRvjj5NHghREUWBoetmde9dJvY8UnV-Vtdte1k7QXiAORcZW~T61j9ctVKUOrBWTA6J6OJB9yWzEp8fM6v6rQDUt6zle2LGwVo9WnssDH2LSDmiRmgi5BE2flDcpQXdpHf5W9ntISZ27xWqXATjPbuVrdxxdUlfnbyOMWpOq~t6YCVjpBuj8dOyosNajnGKbAfSwGp1i2vUoj3-in2ycv3sQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 37,
       "lineTimings": [
-        0,
         0.47,
         7.017,
         9.828,
         12.945
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.47,
+        7.017,
+        9.828,
+        12.945
+      ]
     },
     "1.39": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/38/audio/audio.wav?Expires=1780214706&Signature=ZBpuCTrbxTC88qA4ZjWIcLdjllkkQcKCMhO0lgnFkQM87E5jenculSDx-KJsEy5viq5uhn3uxOPMkmKa95lb-3WpFgPyCY8Le-NxLC8jkuOhhmJZpmfL1oiXpzvI70kuQNnnypn5M8I2WZLY5Rf8dwr3U5eZyW59i1f~sp5fLqKuQzVrmEtyEr~UkgrrNofgchtIjpjKAWHVCK3wY3g3fP0c6XSI35kAOTb92oquLVhxbPYhUtrSLzoUoIjcS8Jy~Wo4tPRNdzig8rNqWnOBc16hRPPf9ZGSs42Z~8zQEHTVrOEnUrgVstxK92m315v-2HCvwMWOOZ02RG6ICxZxsg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 38,
       "lineTimings": [
-        0,
         3.431,
         6.729,
         9.491,
         12.031
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.431,
+        6.729,
+        9.491,
+        12.031
+      ]
     },
     "1.4": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/3/audio/audio.wav?Expires=1780214706&Signature=TZjCaPrbfb5VH9kf2LfGou0BfguDwRnmUapFe7IRJObHNJ31g0rgzkfJUFmxC76PFK8CzxvMIg~XTyyY-ELHgoHu6XZZAusa77KKb1JtZ94bQHIbXhnGyw33daYDPrJdSjkCT3LmhSRamrvkf6meNQSJ8SLCJbFchgHjUUD3puA4kEs05ePKb4iL~lyBobYfQgudp0x1rk~~nLfB7hoN71X2K0qFl0nfCjNMBhZn5oF-W1hUEqrzzg9JYammqYwrgagIvYD6Ng8HYFmPQEGqnz6ffM1IUpIRwKLrSTI7vWXQ3jQwTUn7tJLLOA-WXz82LiahvJPoP-S3tyu5F~RG2Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 3,
       "lineTimings": [
-        0,
         3.343,
         6.542,
         9.853,
         12.083
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.343,
+        6.542,
+        9.853,
+        12.083
+      ]
     },
     "1.40": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/39/audio/audio.wav?Expires=1780214706&Signature=IFWsVr4JCjQ-JIQ3E-AZ5KxaNJuPJrjAxOOrgPeCfXqzkuzH3Iguv4ZKwuov6CbxCNTDKlwnDNeDod2dtbIJUmSoAJaIo82xkguw32V4ioy~jl2OOV8TeZ2qAIk~~EEUKRGa0eh9mFgsmN6vV07q40rH0KjMbUtxIwEViuNvevYD96C55g-gHjAw7pG8nor7dKUC34ntqeK~sG7GH6U2tVzFUFofoZQW8PbFUrR9iGhgXGaPHGTi~akozQBryvVZgdFKhrtqpRkq4K6vfFTd8-VMVd9b3vDx~jv1tZ0HSpdlgVwMOMArDgWMxabKn~BOAlqrTmxrB~t~tsO57hL7Cg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 39,
       "lineTimings": [
-        0,
         0.682,
         7.379,
         10.753,
         12.97
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.682,
+        7.379,
+        10.753,
+        12.97
+      ]
     },
     "1.41": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/40/audio/audio.wav?Expires=1780214706&Signature=yG5ZFj2oBHiLbImpDko9nKXBQd2cMAnoB0k3cNamam0UVjC4j~NkQmbXzIyFqw0mZE17funkJ0NlTZiSXIejDxwvnX~tD40WfcefavFHWYPb114RZ8vc32cp-3nLRcS~ePh~HHTNeC6EqZWUJozqK6y6M2HP1NCnp81l5JV6V1bV-L60JWe7G8k-mT5S689C074AuHjMdLj20XUcvkJ58zABK0dcYvk4E3wz4Lz4RlQTWV2XM9Fk3CTWuoKmv1mmQYf~CFqnMWqQ4XXI4CInusmGWeT7F7VFJcO-qp9hAyxPMdAdCbiV2WqGmRiXKiU6Tvk0IwF7ixHJL6sj~HLcHQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 40,
       "lineTimings": [
-        0,
         0.732,
         3.931,
         7.017,
         13.925
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.732,
+        3.931,
+        7.017,
+        13.925
+      ]
     },
     "1.42": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/41/audio/audio.wav?Expires=1780214706&Signature=w4JgkT5bRy0GNgtqHTe6Ah6oiIe-uaCyQq~JCp1pcB~KNMHF~gDftYMZg7zsA94yNfIetkwIOmMr4hiBEHYf6HYuPUoj~0dai0VB7bJyDhzmOnyGITML1D6xly1vL3w6FqiBKYsqvMK1lydPqPf6ZlW4OOHsR-gKOqeG6ojM5wn5rpQoqL5nrmZ9dKSYapvay-XECmqTYZi0ApGbgELGsAqtwefYUzcCK9d5B7ouso7vxkYbhJytRbfV9INfGBuflRXXaWO5TNpmp4gJufZlUPxSTTL4~2mXRfi4BtIfvty7rMwf1saV8ew5uaQMncDqmNrZEpcwOUwbbUuIfV0a8A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 41,
       "lineTimings": [
-        0,
         3.568,
         6.917,
         10.128,
         13.033
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.568,
+        6.917,
+        10.128,
+        13.033
+      ]
     },
     "1.43": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/42/audio/audio.wav?Expires=1780214706&Signature=Bc2dgI4fg~jGaeHE17Y3Pje0x6ZVnyhfLQv~JxRFq3G5~qSB5xFlveYesMNfNRM0o6pQgimfrJomclP-SpVq1oHSXfrp88YNWErJGJG9KYwQige0NM4Pc~q4Wz7qX0itVKHcogfh94ehaF7-nheGeGcFEsEGMNcCJENOPXH67eMSwicUpxYgT~zmEJAl-jxK7k9pdGYfkPYwWV7UZ4wGoEpV5l4LsBHnMW31ik0mTHRTrfnETMJOoGlgIhEMoWhV4Y2Tn2QqfY8P~6SEEtPsr7s3TLeZohcnaiV-Cxjn1qIKtt-u42NBlq8zB4cMlXU0kTztHIUytShl6VzLXr0NsA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 42,
       "lineTimings": [
-        0,
         3.793,
         6.879,
         10.678,
         14.012
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.793,
+        6.879,
+        10.678,
+        14.012
+      ]
     },
     "1.44": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/43/audio/audio.wav?Expires=1780214706&Signature=KAzmA24AUjxj9-EENIWs~BWsBe5NCPYIh9sLJOgxePfoJR3Nk73D001ZatfK7NcYck2TCNYa43uzMqMFbuF~8eE-smbsGcRdel8PSJG1iVp3CZLPhu04QlV2JRKn9pW9Fc~x4m3jXZqYHq39qEoPZREodutjXUJNo3S4mT4poHfvofvL7X1-aKgrbsbia6F9b0orKBTnX3NtVCya5-yy~IZEp9IpcVT93NEwySHdGZkAtv4rnJDp8OZUzrMEqpA3YrMtdHfzXcaEBX68PHMUdAOk8-VT~stbhI1xJAH9RZgvX1D-NBaT6mA0WkBUuJjdaSnjnbvxJYJxlYgFw0gsow__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 43,
       "lineTimings": [
-        0,
         3.256,
         6.567,
         10.128,
         11.97
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.256,
+        6.567,
+        10.128,
+        11.97
+      ]
     },
     "1.45": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/44/audio/audio.wav?Expires=1780214706&Signature=AU0mgwcLpdT8phXfRseOopOeGZoi-NnfiUN5zNqnxbKwAj8JDWGfJRpYjo-z9JF6JYnEK5bqIDyJMzSsvGGJ3sFcG9GSXD0iLpJZWyquYw32C9GwdsU13TgXwLNAbomgSXuFUrKZYiYxdOvqszoATUXRBNaOIgZCf3v1uRVVwp0eeBiPmAdcVcNLeO1HHUsT9hi9iTQ2wfZWRMpnoL3kpufLxjqP18Hb61wiYdzM5whSmiffiR1UmaI5vdwLN2u9N99JcxgJQhTgKq6rhVoH~WSrwNkzm63wwG9a-5TnGg~x6j~XKFVig~dFrlBaPKtU~3ft-d4mcQITO~JSAdhtxw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 44,
       "lineTimings": [
-        0,
         2.794,
         5.642,
         8.779,
         11.088
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.794,
+        5.642,
+        8.779,
+        11.088
+      ]
     },
     "1.46": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/45/audio/audio.wav?Expires=1780214706&Signature=iqtTFnMdr6RODQ~5QyPttaoooT1-8C0aZTFTcXs1DTcZySO7zegRkmGlRwhelGLRGQ7ZjPHQOkwep4CFTYYfcvAwstNyTqD2Ccgg7fcT2K7icz6x1bZECsXvg1PqavCpmg4dVu8kM6AYJSOkwaWlLf4pu3uPCeG6Mm8NvxTr5ou8OgdXbM4CqhcRkjdjy9Z5pMrOBUXaK6Xr22XCgM0oKGWrox9yrfCXdIQcy0xloYjTqclxMhNDs71XQO8Wdd46EjfBnCgAEg5aPKfCrP18TgVKmGcbs4Yj3Qd8SVxXrkMgc~w1kwbHLYo3zHM5NYz3Q-2bkhTmLTfxnS4AK51u0A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 45,
       "lineTimings": [
-        0,
         3.131,
         6.13,
         9.553,
         12.05
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.131,
+        6.13,
+        9.553,
+        12.05
+      ]
     },
     "1.47": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/46/audio/audio.wav?Expires=1780214706&Signature=wq66DB-lU7H97eZcumDLoXdHNruJQU0mP9E9z~Rj2Y2iUN9Npt20qHcry5ESekJqPzVTgKT93uHTvGdon9yKxG6iOE~87EKuH8NVkBuWqawM0JdHYOl2L62KRKw8L6WZCcPoEY8eVy8CwoTWPFHOyZAu3KQhxEefp0rbhUSKF5uO~2Rh5XZ6bUEMNEZhlJYfUgJRDQ6rp71F8vU1laoL6NuercWmWO7vGFoQ1bQ2~MuuChNoRXgXPd9yexrPYkp82s7Ww2FmPFPshGE-Bwvq1Ue81dIfAyZ~gobCkf3dA-boNad-hD0RwYwC2zN0MxfFhZxEEi7J0hF7TMJR9-1jrA__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -501,67 +709,98 @@
         8.741,
         11.502
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.531,
+        5.78,
+        8.741,
+        11.502
+      ]
     },
     "1.5": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/4/audio/audio.wav?Expires=1780214706&Signature=YqMMRTmk~M9-FtkdBdweKMJ50EP3w0~z6wp2DpnMXepgX4bjaNvURhDM151RtXA5yuTCWhNmjIIoKuvNxIbxEAFcKg26sLSp9~cpNYXX~DtQG5YmZzvZMW28LbBecinAnQ4e76PmpPeGadl3ZngT0Li1GwvdEv3HHqd00uY9kuuQefdi2u-WPFx3KPooDqj3cYJmGLndr0hu0vXRvy7DPlk-kyyNtafP15QihiB1uzTzwHSAEpOMBFfpvTUViCB7vr-Qjh7BX9B-81YpWw-0CY-h3i75uveTSvZYd2nCb9ei0ilMaLqfNV7PmVXJHz~inQJF8MDTyMh0wQVorNrPWA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 4,
       "lineTimings": [
-        0,
         3.468,
         6.754,
         9.953,
         13.026
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.468,
+        6.754,
+        9.953,
+        13.026
+      ]
     },
     "1.6": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/5/audio/audio.wav?Expires=1780214706&Signature=mvsku535bDEoEp9ZYQ8949UOaw3EcJH9fxzwagrgWVfvWoJwYcvXncU1R5Sjy9cAiJZGiaJvPa0M8Plp77GaKsZFBugR7iLkcfIH003XDYtjaK6V99vskatqHOgOXaGAqEswvYzCLjF2CBFpZdf4pcnRZdkhD8kg2iozr07puETm4SdInVxgag1EZs1JZYiubsETIMomUlDz1dnJcli-rKDcijVgmOj7sq~UcDBpPvqeqsG2adzj5BQlGnteRhLhAnJ6c1Va5zVovesGXMHBfjpuZvw9KH0IYkF7uUPB-F8g7v8x6xbJNs81Gs9WE6ZR8g0ro5bF8f6gyiZd-XGW9w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 5,
       "lineTimings": [
-        0,
         3.956,
         7.554,
         11.59,
         14.012
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.956,
+        7.554,
+        11.59,
+        14.012
+      ]
     },
     "1.7": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/6/audio/audio.wav?Expires=1780214706&Signature=qKXW0jnDCWhXoiEO4OB8plEDSP6DLMC6hgoCGvBOlVL0OovpjcHAsXwtIhgCHUFEOgUPa-lSPedEux-SEDhQF0DgOyU79NcLkdUTVCGHKWA6aA7GS3ADGaoPSPWqavC8N0kiayHDQS0NR-Wi0o9WRjtAUJb1RjKV2fcXEbamIgGtvTh5WQjhDRwLSzzSZxB~ctiMm9DHtuCVG-zhdXLUKGiPMfN3E6whBirbiaERL3UpWLFBi~gTt5K6unPIZ68Wz47X3jmVnPt608ZBfmjCZ2dAuLXo87Bec5XCOAuFPELEMWzLG1~l4wCHzDSMoTg04VG0OUjsdtHRKwdwVJnq3A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 6,
       "lineTimings": [
-        0,
         3.843,
         7.154,
         10.39,
         13.92
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.843,
+        7.154,
+        10.39,
+        13.92
+      ]
     },
     "1.8": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/7/audio/audio.wav?Expires=1780214706&Signature=a7lARJUD4jrmr85GAGEtFDy17qaNqnuFiuQne4O5aSZNxCNtAD5l-ysFPzqVFhhX6jkbaTZps47NMpXzdmGL2hGpn9FkULrpvdSY9gbHSHWnVbMMW2Tw-Q669O6bLS9~lTpjo2ogFO6skBlpIZ68tLUgBR6tQoPJ5tgir4wO~b0LnEVnB1XBH4xXuEXMc4pARufKWqOTinlc6Fx63dYuxNx1-5bXu4DF1zQHgMu9x-u3Lx5IPNgYhpQpHEyJ0kXWZOGjDSkmfmrhKndui7g3jt1aclpBevpAY048jHvULXJufiaA665LxKh7Qnjs0jnJMEYw5uBkDPA8k838tsKsKQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 7,
       "lineTimings": [
-        0,
         3.943,
         6.842,
         10.34,
         12.994
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.943,
+        6.842,
+        10.34,
+        12.994
+      ]
     },
     "1.9": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/8/audio/audio.wav?Expires=1780214706&Signature=MEHtkbtJtqxI9w0r3vabgeqSR8ZM2xInY3BgcmJB3tlbvP5zPNYFIuK2BDGRjwXheCRVqN2JSqJPrUsNEIiN~0UwOwbBPOvxOzb4NIFh1NxnqsnUo5cOSD6LSfhGQFonS~YJXwg1HAJ286YwFcPmdTHvP9XYGaJkDT1IdGAj8axWOQJgTqH-TOh4jrt5lusnQ0Vu5J7D4hMOKuMscQL6yeiixZUMyM0W4Ndp6BvRVIO7U65pyDNKIp6NP2-qaT6cM3selXaJSSb5vMcjrJsmvLIA7kcWK8DmYgoViS2kGCHz8dz-plm8qFE0gT04fuGvZK3dEgydtCraRa5oYOH1pQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 8,
       "lineTimings": [
-        0,
         0.62,
         7.417,
         10.69,
         13.935
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.62,
+        7.417,
+        10.69,
+        13.935
+      ]
     },
     "2.1": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/47/audio/audio.wav?Expires=1780212237&Signature=EpWiMoAG0gE4DmWUlDf1LE6tYPtfd4LjaO73nh3UMuu9DRsZGlXGj4q5lHjIEkYzOyXmGXgMyQjH0UxgPaVFlfgXH93PvdDT3EzKiNJQVmnFnb2yFxXYy0uxivvD6vu~BCyvWPL4pd3qX1VZ6dsGXvngg7q27bqVfcSXHRMYQQ9DYgFrPr5h9onyJeew1fdqW3I1wdxmsZW1RNkVGDh9AU7mUThIEqxNAeF~t6k73M4aWnV7uLg3Up1Bc7d44o2CNpszTQPBkqE1J1qeZ7WDxKteCSkq8ThXx3Gh--wcLIM-SBtMqRqJ-7~7gRd3uJdkC9ZP7ROPB2u0BWdc4IdNPw__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -572,7 +811,13 @@
         9.166,
         11.827
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.056,
+        6.23,
+        9.166,
+        11.827
+      ]
     },
     "2.2": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/48/audio/audio.wav?Expires=1780212237&Signature=1S3V~hxXfN7F8-mcvHW8S3P3CpjYwfgzmHcuTgMyckTQJseY-PShF6vojdB3z-WulzpWAgoa58c5pPjdVREVUXnHSrd0ZsxdjS10IGglixPQAbgX0sVKPWd3cB0k9YQ8-v-tM2ZhNwghxf4FBG2hQs9eHI0RfuWwMqjtGjz7kfDYj5akDUjQP4OI1lvbNDLkAZb0mNTJnti99cFznius2zx-tiKAvBYZsmfsQkbbPUZBdgFuvue6iUVuDs4AwGA8zydsIYMDFl39zZ52ARCiuJ3OVrTjHZ666CxXINWdXSBUt6xLQbX6H4CPdQQ92wRxh3XLLFa0L5qZzUO-v7EXdA__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -583,19 +828,30 @@
         9.453,
         12.614
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.431,
+        6.567,
+        9.453,
+        12.614
+      ]
     },
     "2.3": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/49/audio/audio.wav?Expires=1780212237&Signature=bGygiVBqSxz8i2HKoaBPl1ks2clju5c~uoaPkY~QQAobwfNgTjow1wC3oadyK8vlb0A4ZyVXkXfPd2l1NB2M0JiJIQP~FZ302oas6f7UkXIUA5g6nRE0e7Urouecy~EDdLuSyRx00ERV0XU~AJFD~Q7SBJvpB0Aa23XVf9D6DCbizbDJoef3nra0yfJETLOUmvRctK3a01dCvYeJP5vJVt2XT5cmShaDctFZSmur~GJ0Yez~7T-8efpVItsa7cj4YRivSv7sJSJjVWDoH0m-nt2VPm8IUUZM2sSq1e4ALFKTOFxa-GAMooyry4GmoVmvT4K22vP7BvKmUjVox7oDYg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 49,
       "lineTimings": [
-        0,
         0.607,
         4.418,
         7.741,
         13.997
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.607,
+        4.418,
+        7.741,
+        13.997
+      ]
     },
     "2.4": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/50/audio/audio.wav?Expires=1780212257&Signature=V9~eoBeVMe3fPGL0r3T4GwFVQPr22MnJCrROniNK68dhCEUbKegsj7jgfnJLMCqf5DcmVHOWBidrQiMQ0IMRsLpZZfG-p-zcf1VkMPR-A0CGB0VnivwErCTyXuytAo17IDR6DvGEZWU8XfXLk3mmspY5pS8090mYctG5p1wiX029zKE3Ke-Ew4EZufcBmejDg-haG6IfokN5D8rwHrRorfYQf7VLuPW-O6IHM99IoOn9ZI8LS8q3hBbXSKIRUpDQZuQiiW--T9AKGifaggMg15pywG6FfHIKG~MA8Sniv7TWvD0zJRvcEhcBSJV8pXCQqLIwi7lmWiAPggsqa4ZvUQ__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -606,55 +862,81 @@
         9.328,
         12.702
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.569,
+        6.042,
+        9.328,
+        12.702
+      ]
     },
     "2.5": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/51/audio/audio.wav?Expires=1780212257&Signature=h2lirMx-rSnpuVr6XTAkVAgZ0CWqLJJZwC2lJTLlkKV~Rx9K56q2DDpD~UqYq21r3iCW7pxnjAsnj98CKtv-RYJdbeynAqV9OQ~vR8cgplw467IHxFCh16sdeCfaUq4yavTNttWO7GqHpr5-XGPP9~Xcos310q7fm72WxZE6pRlFU30ZCsk0rbJFrFCDnn2iD7UNuP1-V6KubiSZMXZgvDRO-s7owsbUESe1YiHHgAuC2mxE-9c7f9rwgOqt6cKH8H4nBdSFFFppsO3qeOWI3Z~D03jpWHoKXkIwj87XS~pEviluvErHzT-rjfI-jF3oYl-cfbpmKj8nmnYrifOL8A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 51,
       "lineTimings": [
-        0,
         4.768,
         9.828,
         14.551,
         18.938
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.768,
+        9.828,
+        14.551,
+        18.938
+      ]
     },
     "2.6": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/52/audio/audio.wav?Expires=1780212257&Signature=JISEh4ujhafHMLaHu7J5znFf9Ca4RXcwfZuTVmYrGaOrzSDCNFU8JSdYqqHxU-wbFHxlVrDGTgOWmtRJHySBDJutYv9qfYzlbq8YPhwy4WnfSP6rV1WRcUfXyn2FGSRgX8nnr-2flMxTa-zwrYkYxow4R6bW-c99NXdIaPbDtWCZljkUiRNAWIxH3yn0N2TllpPXf6ezIKN~cTh9cUIvTTc~xmLcguDZLiy3FsYeCkUFfoCHfve9NuenB9W8E70XRqz1mxvYuFjOwRxmXZjnHkz9lnn~vbm8khsQSxeWrt6V4Wxp-Fg3ta3GbNsLDFBWNH~0SxDE6Z1vugcGhb2pdQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 52,
       "lineTimings": [
-        0,
         5.168,
         10.278,
         12.152,
         18.977
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.168,
+        10.278,
+        12.152,
+        18.977
+      ]
     },
     "2.7": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/53/audio/audio.wav?Expires=1780212257&Signature=x7a-8iezKoQ-KVWC2pBbnR0~ih~7i629T0JgD4WdcGYmj8l8WqyZO8wD1wCV4GAVizquOXcSrrgqTg-6hn7cwvkuaeLiAwsTx2tIZ6Su5-oWJmxbSLt09c~qRVbxYY2ColBXkVqiioCbKhCIs7GSJmsQQfFemJrbAIdbuUtN5gjGJ1EtWSmSw6oZF~r285yKhAqvGrIndfD6IwYoSCLvqY9JvdibRzttck-VpzWWKdiRxjN2sOUagILnDvCh93YANJDZphemLOm8BuL-hZQgPpCIW4XK9gyfdoaxxA35qlMeaYCezpCAueXo7gLe2HM2yGRc8o9tb4o82m2PUoGOIw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 53,
       "lineTimings": [
-        0,
         4.093,
         4.88,
         9.253,
         18.022
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.093,
+        4.88,
+        9.253,
+        18.022
+      ]
     },
     "2.8": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/54/audio/audio.wav?Expires=1780212257&Signature=MHAJH7Rv8XunqKEqGbzRn4sHmcPRXo8YxUQwtkcP3NasZO9UBV6otqHvY4Arcoxj30JXzBPX~uhNtqdl15WM6HuPoc1s2kew8xeLbnMrTaeahjNCGw7WzJGrMbJyWB4SQqDpHzT2ce6jxOPrC5GWobDlzWHQtUittoUwCNpxUlS-RrB5udXHb~2JomNY0-eum7o5ASazmwDT30iJ-sOcflbtGtxHcXIlcpYFDft1Gej1mivEKBKt~TGmrNdBtYGsx9xwEGYdACCMH1uQkLTR8tizBZDuqChJz0cCLwvUqB-oNpsgGGMBTD4uxNC6ihy63VQx4TnuUCrvHLEEHtDkkQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 54,
       "lineTimings": [
-        0,
         5.742,
         8.729,
         15.525,
         15.99
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.742,
+        8.729,
+        15.525,
+        15.99
+      ]
     },
     "2.9": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/55/audio/audio.wav?Expires=1780212257&Signature=xJSGEz6dGXPSv59xKX~uqDD~IEX6lcGhG3Khx4Ho-4kXX3TFbhkccXtpG0kxX52bICp9g-8EuJ96hS5UrTlzmj5N38B24wJy3IRdIoYiJvsQ45jBIUpJXayv1Al-lnkhHdkzn3sqv1aVj9Mp3z1Kkz0LzMwaWK9v8v-PKj3Kiq~zY5VR7mnHPKsUy7uRPjDmdoyJ2D3FpkYFLLR3s83MNnqSm2aVBNYiICU2hoFUymnnbd0JZGYMDKyfcKgGzfCsfYrioQIHeuxiKuzEGNXyX-zSXlWdrTwZfb1mkyMpO1RS7ZU65mpFKdPZ1yY2lRh-28rhfabZqMQ6bq5wT6TB~Q__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -665,19 +947,30 @@
         9.303,
         12.489
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.856,
+        6.142,
+        9.303,
+        12.489
+      ]
     },
     "2.10": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/56/audio/audio.wav?Expires=1780212257&Signature=t-o-ojis8QFqzs0FaS8BlH4ud1Wq67KaeUcLFEwvNxBwxoBYYR9iSonipHC0cbaMFwMRV7UMIBVNvWjl0BlK9qKf~7uV0x9JGmF9bHKpMMyvS6-UWIOIXv-l2VWhBKkr5eLL9i7C8c3npTly53DerIdJK60zvRQ73KznJRPP8W~MGZcDLq1faFTlg1WzelpA6XVcXSN9WVO-dDJQMD9TsshVzJhaJDVlxIqIH-1Y0wetvtwzVUpcytdenexpD0OZ7yZTMdk3S7BQryHq3ZbqJ2h-zrYOCbz5P0CGgz0hbFPaZjBGSiC2bWaZ67NXl-KT-0cL6fSaHAx1t3R4dVco7A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 56,
       "lineTimings": [
-        0,
         3.693,
         6.692,
         10.053,
         12.936
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.693,
+        6.692,
+        10.053,
+        12.936
+      ]
     },
     "2.11": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/57/audio/audio.wav?Expires=1780212257&Signature=k7plEWVmkVOTV16X8abBCwL~h9nh5KfLqrAyLBg4SSv7n15iAoJ-JgySNkJUb7NSCn68LWs6v12xzwdgigb6CNq9oBMcG~vg78qSUfY53Zp725vHchWszyrqdFWRGOq2o6bHs6bqzL-GaYko75VaPUBtdM5cSYT18ah1OFfk9h5SR9ijHlFmf~8zdOFseAA7iPthKwQZo3twfIBllhkLEQcj1~kMkShkdF98RAKRhYwyxv6Bvm~v5gfCW9isxnb-1OqamOJfzM~9iMt6OfxdAtcqpDjH3uOOLUZRLghdTC43E6HaJPw8DqMNyv~eWx6jlwYC8mP0KCShrLWxQr52Lg__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -688,511 +981,727 @@
         7.292,
         11.002
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.432,
+        3.643,
+        7.292,
+        11.002
+      ]
     },
     "2.12": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/58/audio/audio.wav?Expires=1780212257&Signature=QSRR-pmcMKmj4oWCALT4aKKfNedUda~cQOrh-FcQYCrw95-9KjOU4AOh8mZkCHfTc5cMeYV4UEGrnRzSVMJ77TrlI7AKnbiGgIUnCYgV7Udej6MK7xpCxgDvalw7k8BNF1NfY6AstvkJECQxevoGA4hPZuGCovjr1a~IUoQQxgz~M~jE-VVe7-jj6UpkCBL4nIZglYNZFb3Zg4kcIdAgZdM7zZmuHlD5bdXA6wH04jw8OaZmzcfSpIyrMv3ZPqgfipmGqJHNb4eU4jz305yoiFzTTnchcI8qAPTHBpvGecjVA8Dg0QjXOoeDo-NtzdU44Zclh3x4HSjHeaDMChtiVw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 58,
       "lineTimings": [
-        0,
         0.482,
         4.193,
         8.479,
         14.017
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.482,
+        4.193,
+        8.479,
+        14.017
+      ]
     },
     "2.13": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/59/audio/audio.wav?Expires=1780212257&Signature=wJUWhp9Pg-fPra~HuX9mcQTgNC4A2CbNHrQpiyiPfq~OdY4IntPfL4HhcYFQZWnbe0Yv4KfedFZ6qIABHWRkRpMaRdHMT3ZRkAZsoTy4MG5G5m9faRqWpOOWeW-iKchu~CL1tSfr3xX6xhM5LX3QhnDJb5XCJpD~69-m9KCSbsVDoWwlVAmdnc6wWeAUC~3-VQZyDbgavtMbKoM6MpMCXI2IC2oVbG2bnQJXFljtc-wivjsm~eIsYiBmg2fLIeU-mprUxPIkBVFh3zs6csvYWH2XcQXjrLPBnylmo21O5FU4XeLOdyUOx5GpBB3lZFtMBYBpIP4SA~3AUFDJk6tN7g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 59,
       "lineTimings": [
-        0,
         4.256,
         7.866,
         10.64,
         13.938
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.256,
+        7.866,
+        10.64,
+        13.938
+      ]
     },
     "2.14": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/60/audio/audio.wav?Expires=1780212257&Signature=wWE7ZEs19~PIyhm-2NkX3o4cz~h25~lIdT6F1M~Mi5~5QZ~EDJ~2BTQakpg2S5PrruW7Cz0SvRjksCIQk1R7DPu4qpyMZPseEWelJbKWquC5P4pgfVuFfdKiEea6Fbb2kQHNWPFhh1P-ngo2bp95-MSxRlNEgoOFJMqJpSj-2ALi9yPhQiQWgexHdTkiPTPuGwM3-BjKi5V82NZBR0OqbNowOdfj4Izb9ibaTQtojLsipiE~INGjm--RsPWx1ynDkiMvELFxnG~kBaZDrOuqbIUCoyGeOH3BPTv-LbB82TyFnybtIEr6ES1PW7puMty~0usXYCZQ8K6AgFZB06d~Ow__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 60,
       "lineTimings": [
-        0,
         4.618,
         8.504,
         10.99,
         14.914
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.618,
+        8.504,
+        10.99,
+        14.914
+      ]
     },
     "2.15": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/61/audio/audio.wav?Expires=1780212257&Signature=WkQ2yDUHjZ8iV5febl6BtMQ4JUquce6McE4J0yxWs9mWPk2eQ9JTJkle0JbRJxC416Z0Jw4GQknaXf5DrP21rcDTTkzE676SViNMBGdSJ9fUsh3amQN9687SJ~VoBEYaGrvJ29y4WtIVsLZt7W4ymjY5r-WVFaoiODYmdbWOZfmylGT~U05GZMEzK~3hitvvUy0~i1z75lCesVNV8icCN5XItsW-cs5oHXXsWbDw9GzBcfhXAXkkn~gxh-4haojrdvXX5YkfJoZO8QQSjKmUjOS-FrO5FyIgCntBsHtFJ3hD43aPuQmD~e1SOUBh9oPIhdVua8Sq1aD6ooUCQb0Hsw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 61,
       "lineTimings": [
-        0,
         3.606,
         6.692,
         10.003,
         12.99
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.606,
+        6.692,
+        10.003,
+        12.99
+      ]
     },
     "2.16": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/62/audio/audio.wav?Expires=1780212257&Signature=R~CwhWYERPnQ1ohNeCXjw~BA66aGm-jBICAnRcSoMt96R5Ge7i5~FUDFmrUOX3EnFae6mHyLHfcaHEB8UOJzzipdB1BuEmPNUMVLMbLTsb~FSmtu1LNGBeEeiyNUXPyL1dYqPOnxwq7jbLRUxsG8GNJg7vF6Sxpox4Rrom-p308DuirQ0C79L-cglppuuE9WKpp9sJmvcg6Ec9ZwB4lrqSkpLR~m8gexWabH7hqPsRT~-oUT2WMrHH6oZwxjiFTbjZqj4LwXD~wV6596EFIag15PVjw71H6YQvSWF0fawYsKwLNGBpcCPrKsQkF4wGQkYrAW~6OogudTYbmMlDbibQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 62,
       "lineTimings": [
-        0,
         3.368,
         7.292,
         11.365,
         13.009
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.368,
+        7.292,
+        11.365,
+        13.009
+      ]
     },
     "2.17": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/63/audio/audio.wav?Expires=1780212257&Signature=Mt-GBjZCN9SZrLwa5zpSXjJL2vRFTzpZAALcaXYq-PzTgmIZ4F4EHx~wNr23rLOvPEI9d~Q~kD7qyrIlIJnm651UwdV~ZLLipsfz54vgHAf9dWb9t2NvMeRy~jwGiiOuxmOq5NMgAcXV17qvexaQf7sXPM1rQj4h3~f9nXw49JRHwr96RHBa63kZXWcSXZuxk-X~U7KfUpSXybIUJRtLOvrR3Lsu91ogTe5qmVLD8oVUWdPROSRnQdzsxtp5cEazDR9TsgLopluyqVrAwR9aaE0Qzag2OPR2pJVswagKJQd-F57rJYNp9OrSwDWrzhyx7msLoBCIa0Bgb7rZLR1C7w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 63,
       "lineTimings": [
-        0,
         2.606,
         5.83,
         9.353,
         12.033
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.606,
+        5.83,
+        9.353,
+        12.033
+      ]
     },
     "2.18": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/64/audio/audio.wav?Expires=1780212257&Signature=dkTudF8j0HlogYqNWG9k0VBDvar1Avn2pHPIpNgWKLwS8ORGp7h1PAPUeFLkOFRJNxZnUtHvwwjGe4IXzntHWoDM4CdhhOZvpNXqDcyf2CX1pszyXaHLBf1MnGOYANVCoOOAB6K4UB0uhi90yoOCF0mUV7RxRlr8qyv2dE7sOvnLT~jB4SmXvMr8KQNrcGEodX9rjqTbsdMxmD5OB-ofyRsaM3KwuvZdKEXTw5Hr29NSMcft0-oDCqYkki5VRc-26Jp53SNng-QQvavXuxk~B8HyMPoGzB8yp3GxRClPr-Pnf3T25rGINLMAlbAc09W3Ipsn79hMDrDwJTuES-mr7w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 64,
       "lineTimings": [
-        0,
         0.657,
         8.091,
         11.565,
         14.957
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.657,
+        8.091,
+        11.565,
+        14.957
+      ]
     },
     "2.19": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/65/audio/audio.wav?Expires=1780212257&Signature=R67PFX6yd9Z~CkrviTyuZjlIFNkVsKQsYfDNwKEn3isEvBRi8nAPj7PqW7njd3oXXEaElMcG187svXE8TDYUpVkUJFrT8zPr6rynRndFt2bDTx-MHl34CdzPTthc0~yDw9yapO82jpVLu6ASa2Nr0yfQs~-bcDN0UkPg0dcQqqGr7bbLAc2swalbJIimPcWvlf1~608NsRqu1UaLD1OWUWLx0BoKtw8z4w8naz-gUYXZ1zhupC3ta2YbR7Tv1C3RDYR5rJIlAz2Pp2XXlGSWe1R9Yijqmnkq0gxjn0kbu-EQiIN5hKXYU4EdYkV-ycvy~ULEdnFGDP7p0vip942gVw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 65,
       "lineTimings": [
-        0,
         4.143,
         7.754,
         11.352,
         13.984
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.143,
+        7.754,
+        11.352,
+        13.984
+      ]
     },
     "2.20": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/66/audio/audio.wav?Expires=1780212257&Signature=FRYkHvj6LJi5pUASLN8UOgsWXaCoVoiZm~v4~Di~9YoEJdrlB0yJDJ0eo1w1ZPHlPX-77~1NluQumDnsHzDCl97k5fLTpqV9wi-Mu7ScNpH0bFPK79pE1oeZZXgfiO55Borkmvd1ICXrJuLvO2UTStBnUTFP5GmS2dTuanjDAsPdxrn347TEUTj6xsiY4m5Svclb8SUGrtZMhlEZmLYY5suleGDNk2dDF-FYrADUSv3WM8BmcExjIYVtBRHa9y3yhkedYfS~yGc1uh0hPFak3nHZKN31TcFxJwyCIriFXJTl~O2hSYldQyk6QJxCi6Sf94NnkmCTC9X2jILfZDlHMw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 66,
       "lineTimings": [
-        0,
         5.692,
         9.303,
         10.603,
         16.974
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.692,
+        9.303,
+        10.603,
+        16.974
+      ]
     },
     "2.21": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/67/audio/audio.wav?Expires=1780212257&Signature=fSuB86pbIrJ0pxxwJK6FRWLX9jcyOam6-5bCJCUfEI~eW93BuXhGujpXfQVLQ7XY4lF-N5sb7AQVRoJrA~HN7M0bghvtMRAXM0PIRifYLkXPNPE951kK0AHu5z3cH6RvWEx1-s3y-fA~L8ufd9AzASrIimrijWt08YTG1Vrd9UczX0ms~lQ~iaEaRzT4svk2v6Mj1u3QftCqn8159hNQQcdAqF788gaVXgiQktDV574V347C9rebkP8mBK8r6cfF7eKOho0S2HxKmNLDi1MGOotwBCXMH-ZO6TVzOKM83lQ1bh9W32gMvT~j1ovUl1xaINfB4bAHbWQ3Im7DiqduRw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 67,
       "lineTimings": [
-        0,
         3.531,
         6.492,
         9.703,
         12.982
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.531,
+        6.492,
+        9.703,
+        12.982
+      ]
     },
     "2.22": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/68/audio/audio.wav?Expires=1780212257&Signature=jvAU5OI79IUrb9EAsFie2-E6fKnbiQ5V44RiKsN7St79Xn5tNfekExkoPRT~L00apqI8A4LoWOshwv3AigEs2QQJGYdpF56xQp1tXgFZ87r3AdRGZJ1cAWZHbP2U67BhWfDLNWL1cYkVaeIDXUfA4Z2eW4Vc4M-tNkR6x-NOpI5SdgTsXjZ2vYbXtqyRZm1NrJEHdpfCl9mI8taBsbaSpVHdhd~UnwL5tC2ocSMcW-IHfuRkVtMEjSU8WIKbScAq3~puK2XP2PbptSQ~N0lJjn9X3gz4U~5au8QdfYl9H3xts31GN3sQP9YuW6jXSOTUjlOMDWwT5QAqIfgbxWvgng__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 68,
       "lineTimings": [
-        0,
         3.156,
         5.068,
         9.616,
         16.981
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.156,
+        5.068,
+        9.616,
+        16.981
+      ]
     },
     "2.23": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/69/audio/audio.wav?Expires=1780212257&Signature=ddeEHp3estAQ65eBjyULSrRXZ4wrlO-l586u8C65OJAn-yyACvhbciO3jerePH2PDeUOzGfaFfGrklQvawQi~RC7I6vlIhWR8-cAov~lxH9~jhkpqXSNAbA03q18GZzyP9sRtmwCbBb2FAoeel-Yds1l4Kr9EUmgZwxVyvHFH4RvMLKGKkgWXDsNrVbrQKCpBu09XTImtzUereQFHxQDnPZulNOZwKSVgPXR-EV94z1eEds4bmEhn6v-usRSMCnWPVTAJYme3tuEOxSjTNZBMYBWNCzIn1zFxyRqBEMLb3TE7-vlQmXCWIRjn876WBpzBtpkZb-vZQwKX9az4lqFHQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 69,
       "lineTimings": [
-        0,
         4.405,
         7.816,
         11.44,
         13.964
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.405,
+        7.816,
+        11.44,
+        13.964
+      ]
     },
     "2.24": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/70/audio/audio.wav?Expires=1780212257&Signature=xMn138gopBdEn9xsv-nSbpWunxKUuDA9Gznh2sYJC-rbypEHtiKFP5dJvN0U3utUxq0JMx7kyXzyarIKW65HZN5EYdIlMJ46T-1r~6DqbblB9hAAoRRz0~sjV1BxIVtKCxRPx~NQBbFJYGssBnojN2JIOTHpPrBSAHAo0xQ-b7vB9LXqMbIzYIWEGuyPQReWxt8i6PvDcCjGQaIZTddOFRLL718HvmrbtSC6XzCO5wbquj1kAJ7Sg4y9VgbHhA0TX4qQ8uUWZ0rmnY0bUIsxiQ8~uXDi4saaQR6QGox-HCohnZNWkjsN8Sdwa7x-sm2b0fx5ss9t2~ypNmlGEKqMIA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 70,
       "lineTimings": [
-        0,
         3.793,
         7.691,
         8.416,
         12.989
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.793,
+        7.691,
+        8.416,
+        12.989
+      ]
     },
     "2.25": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/71/audio/audio.wav?Expires=1780212257&Signature=uWBlf~WfeIi3W3FVOz8Q9CVBcYdzDDowFDUPSbGWRg~cgs3SNPmHTBPDRSNjYvK9qBEt3z0BAVru6aEPVaiwkvF1TgvKJweW~tYgWTlkj5hyRBqyW2-UPOHnxBASScEFVvMt-qKZq8hRPUfUR3Z2btkEXN2aOa8WgmCfezRXM0C7GNxjTwk4UYRSZyITVmFkFTFu~oYlaiQLYQggGKlwPgqyTfWwm6CmLj3vBbKsGqTqJgOYeAN0K4nO8keDCkcjWiOOy9FVEvQM7YJlw~Tap1TtHBumqUPl4UCmye~tRtpl4Lp4smaLXt1uZvTOFi~V1-xNtAM59UfJ0ILhE-5I6Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 71,
       "lineTimings": [
-        0,
         0.97,
         5.98,
         8.204,
         11.066
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.97,
+        5.98,
+        8.204,
+        11.066
+      ]
     },
     "2.26": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/72/audio/audio.wav?Expires=1780212257&Signature=hKuuTeELpbJggSknK1iitC52rlEncQs8Fs4btTGOD5sjbem~Nr0yI6jGoMakpj5T~j0CP4nMrn1wskPaXCHvNTjNlfVUOpNRFNUPu83oyZeKdNdKlktvR7BJc~qLsuXfG8SQ8zxACWTJBCO3nZeGwoF48xqGg0P6RqZ-Dd4n88q5fubPKbfU0wphs~Cm2Jp5xGtDYZOz1Spsb3LRl7UKdF3cLb3~3J7XOfF4qxQmstOdsyanMGA4nHEyPMu-C-8GXzXjwDvEw-zY9wBAv8C5HRg-iGhYLytGk-E1pgY-jer8o-7SP7~1GnQkH3qRKEEA3ewQp3g1DKh0Qi-ob3uktA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 72,
       "lineTimings": [
-        0,
         3.418,
         6.842,
         10.39,
         12.988
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.418,
+        6.842,
+        10.39,
+        12.988
+      ]
     },
     "2.27": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/73/audio/audio.wav?Expires=1780212257&Signature=q-lHTXX4En-wMqMg6hTivxY5sEXlAGaaRGIUBnoWEBVbfQFzQrFkfF0KqIqW3W4LQm9f6wjLvNAu7TDfVPCpJhosHLcNP6RAVWfBG07msUamOL5QKV4JymAk-8gHBlfE0JlDM4ma9c4xIDEAwoBWNLu~Lpu4b~OdHmF-~bgr2wMAndf1HVhiK-Smsd9u7nK6j99xTBtjJAbXalYgrrlKtO29vtDcf3-3~-4~H4jBqCxQoYvDabZVDDSJzkikqpsk4C5SFxsw-X6FMsbR9yh8RTeY~S68prCgBXcaW5b~4KUBEXeu9hOxJ2MCXKv8k8leAbsZOjK4Ejwuv5pALIaZzA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 73,
       "lineTimings": [
-        0,
         2.881,
         6.23,
         9.703,
         12.017
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.881,
+        6.23,
+        9.703,
+        12.017
+      ]
     },
     "2.28": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/74/audio/audio.wav?Expires=1780212257&Signature=s7AjgnOEkvhHFVlknTtoh23A1y-kibwNqDWL3nouvX~71~njk74o7UxucP~mhrO2RKji1~6S-SO5AwyQ-SkcLg0qovnXm-9BeOaJEq8LusNfFSfopLJb2JCAt1Iy3-agf819SNykSCwd6n81NoUleqSeR~3B8LJwq3dZaz3CTpLY-LSeCRjmWu61790hgHss6~3Ra0sqOvWLw~60N5lKmwdRk9uwl3LWzo-EoywFDp5Mq2eWuJ-tX25VH1OXwKUDsN3gIIMYCkDN49vSsR12AMQa-e1Dh7tQH-xQh7zhvBJAt666TZ4rV3H-Rb5eVCAj~dXU7rVONhEu~je7TAj6ag__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 74,
       "lineTimings": [
-        0,
         4.156,
         7.754,
         11.34,
         13.998
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.156,
+        7.754,
+        11.34,
+        13.998
+      ]
     },
     "2.29": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/75/audio/audio.wav?Expires=1780212257&Signature=jNcJq792VRx3HMMiuMcliP6-QKtl75unA9yDVE4d7~zn41pzYOryIy8DcZSkoiewGIQyeaADB~snZE6a80NSc3vpTRDhwgZtAA2znKd96jJeHP79jgShUxY~dYFFl-eOzop2c8IsAKTjtxO4pRm28efQBUOyHdYuXtqJrWIcIfRx18FoLQuzdXLjJOWe003ssc8C86Gdvpm7s-kfOx~W1O1GPmJG7wGZM~ZioZAp9v3GfR6ocApkx~6LsDDnpxIrnGMOnoORjdoc7eUFd6WbsLA6weZLMrtaoEj5RnO3NKdtjUXn5SGGKhXGhhNq3GJ7L-fZ6BLVYZ07zS-MXEINTQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 75,
       "lineTimings": [
-        0,
         1.819,
         8.391,
         13.214,
         16.021
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        1.819,
+        8.391,
+        13.214,
+        16.021
+      ]
     },
     "2.30": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/76/audio/audio.wav?Expires=1780212257&Signature=GKOCQJBQW23qkdknhN6i~cZpARoUYqQBNXCLb1CPHxwKyVJU5HNGEDl~xugG0fQUspniESHo-VzferO75h~RWhw3OSe36eIG5R3xyXOTvuK6DtW-tHIaTb8Eb1FE3MlkUPuYB17EAvfmw5rja7EbRSL9LalKE6C0RxnGvJDR01iAC5Cqq73dJDV~JgF5hLKeMI-THry~6zCKUwDHIvQL3f-ZfVnHHSWMLlUWkS8fIq28ke0sezztvtvJqT-51to0pTog--2eLT32y6G3p-xvCUNFbiQW5E5GNjAmB8-ZN~wWrM5ZDRbq4dmZxF9iOnAxCs8nOxx4RofQ5KFRSIjoUg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 76,
       "lineTimings": [
-        0,
         3.768,
         7.417,
         11.19,
         13.974
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.768,
+        7.417,
+        11.19,
+        13.974
+      ]
     },
     "2.31": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/77/audio/audio.wav?Expires=1780212257&Signature=d-1ctSGMzcnMUGCna0mYuL~TlyelUEUOEaUAwyinj6DCsLOPzOhCIC0CLm8GOE97XYF7SEJVCJLtBTapdC8hb1d-pDPiigM8ct4DcTajRqKyvgEBZFArWyl0MUOznbvIdiBh1taPJGbPwOxlVKD4fr1tzO1zQXJs7Ql1xinqWbnE626ic3QJgrSlgaxcwXXKMhFIZdnOV3CQQGSonwAHm~65tMmuNhYcriPYEpIP1McGa56CBvikpmBrloDVYS4uoxFErqylweoxtIDlnaepaenbLPFb2BQLagU3oSH4wGKGpg~n2o199em8KZWrMjb62Cu3gk~K19kyQ6qC2E8F7A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 77,
       "lineTimings": [
-        0,
         3.343,
         6.367,
         10.39,
         12.084
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.343,
+        6.367,
+        10.39,
+        12.084
+      ]
     },
     "2.32": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/78/audio/audio.wav?Expires=1780212257&Signature=0hUljR2QHuRPLYLRK9FxGY2mpAIlmFIdcfsnHfs0NhTfWlaEz8PnHbj2E9IgVr8at9nYV5pp8KtKfDM93Mn8RdrQ12r0qHT~CyYiuwedFmDgzL4vW9jvLo4uPeShKepZQw3Oum2daeGt50HsCh71z-qFxnvtKzkD9xlu5qxhm5fAqjD-nsnarxei6b8jfp6PsfNlEpNUxk77l3U~oJNi0PmiJ471wNK4zb6Ld6cINMBmZMGOuzyoH0UwDtns68QKlJFoJAPX3zcRUhTLnX9ixoo1D-xmpv5MbrMQX68KjEuyhaRAqIVIQlK9jPyLDznhfmNkhVnC4cWtIAfjwldPVA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 78,
       "lineTimings": [
-        0,
         3.581,
         6.867,
         10.653,
         13.042
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        6.867,
+        10.653,
+        13.042
+      ]
     },
     "2.33": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/79/audio/audio.wav?Expires=1780212257&Signature=OQkKNbIMOoUkoCaG4qW50Sv6rYslRE2Qw7E3T3mahDWsJgs1K2hqi7P45LI7Xxe657ST1h0X1sG-rqckN0O-r-PP091ZPBGaQbZ5700L5v3l0HibRTH3Wzsn210FJ8k95O9oTNqT9W-oUQfoLWJB9fPHe43DFUBaJgQ-j7UUpIltyJHLXibTzW9UReg5u7yeyfTArIGMwvT9dqu10Fj6ZjledHesk0SHjzgy05A5aZPpcoq7c4nBFb1U5L6eK-t9DccBE2o8xmyPV7KiUDccIzbBaNxrb9-ZRQR-765NLXhqHQB6kUhqnG5-n~CaBO2yEGBg0YORuYdtkfG3muOeGw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 79,
       "lineTimings": [
-        0,
         3.631,
         7.104,
         10.703,
         13.966
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.631,
+        7.104,
+        10.703,
+        13.966
+      ]
     },
     "2.34": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/80/audio/audio.wav?Expires=1780212257&Signature=rOdh4VreHETcpWZC8ig83SnRHn~ZXxaAqvzTrCmpiO7fhokc2bzNLmciqYZaosOPhS0srlpuo79Qjfuh8YvECNsOSDvs4Y-1w4W2rtl0UqjHTokdQFOXQV4Ve0RkTgASrk4Wn2JLdyt1w8pU7n~T1kIoRVBCetZlUMi6qn8N4JnFBNquuKebFnDC9cu7cdrhlXtft1qgIlT6gWJXYL3aY9gavuVdtiyL7Z5NFW170jZ-XF~yp1pAINRjHB4giS55ldDAkb88S3wpSMtXALEJwMTHf8ePcnu-0uSdOdkqgJddTyj9M2YA9L-ZsC5x88UFaG3-lsufo1cNhWp4j472pg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 80,
       "lineTimings": [
-        0,
         4.031,
         7.617,
         10.403,
         12.974
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.031,
+        7.617,
+        10.403,
+        12.974
+      ]
     },
     "2.35": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/81/audio/audio.wav?Expires=1780212257&Signature=WiHKBpfiTWZ~hj3cCIBEd~Eu1TYX0pXSdrTMAtggmEmtYq2lW3dxqdpFq5gNZ3oUS4giHSQUJQ-Ae06sUoZtSn5twyaeFd7Ykp2Xolgo943BeVsx8OvccBHObJowONNSljAbuDDVoFFT4qTzdw60HKOzLe5mr0Bo2Jj27StLxg7jeXyZGHqS6HRcL47pklPBv9Ww2vK91ah60mU3ZzilzxslwJYNFe-T~QVgVt7Y9zYdWxnuKWo0Y84PlaKsAoT1fft7qNThraR6aVIfSLL0elvWe3KbHEkgEL8x3TmENNr8eC6PhmMwvkKyv-bZMxvPbZqzy~DIInZghMOCRjnnRg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 81,
       "lineTimings": [
-        0,
         3.169,
         7.517,
         11.052,
         14.041
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.169,
+        7.517,
+        11.052,
+        14.041
+      ]
     },
     "2.36": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/82/audio/audio.wav?Expires=1780212257&Signature=HWuf65P2x0P1Ho0KPrEzAxnhveTiA1EDsxzmv88BMdPsXRq3dh9WP6l7IEWEiyE7mpKmILr6YE~e-m51F7CFWVeT67Pmf3Oc4SUapDU56nDeEEvxMrOGup~7mrI0m8VTkb6ov9~G79q1k7lO-sO6Kn-e1Hct3Qg66zUHuUaszfss~ue6OLDSFjuRsQYngc7uiUqgv7J33RIluvFCEkSeWFbpjmH8O3dRAgKb4Q3-NadF6TtpsCMqxViN7zAPzLclPwvIWean7mCEgGj455~LIjnrdV2Qu8Ux5bxsf~tfdfWf3vDY5MP9g0grmar6QW4eqIzlWQueh~3Y8bHZxxSL3g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 82,
       "lineTimings": [
-        0,
         7.354,
         10.99,
         14.376,
         28.967
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        7.354,
+        10.99,
+        14.376,
+        28.967
+      ]
     },
     "2.37": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/83/audio/audio.wav?Expires=1780212257&Signature=Pd3RvX~6A8IQOzNWgBey3ATrmYlxiGKvTWEP0P8ZdgY7aFcIm40Wvi~HS8ph-jaE0FTvLyz6rFGnFC5GXDmhiTBPiAMmm8HDOcFqGYgWbDln02iwGEqBPwzriOxWBRgIFMGA8MvfXo~MEEXI4uhFjEFNAp1z~fGL6r9kHuMLa8UXPOyNWJi64E1yK1ePE8SSYeHkOGmNDSE73Ve9CF9sNybE3aJ97ihLTG7SnKpqBm0jkmNyEFtqo0NbHDm76xYcTESjZkJMeLGHrfgqLeR~6ePZ4dOcG938zB~Vin2rKDD1K6NjrVpQ4H49rVPBoHcUdNdABaiRqhGd21LYqxPBVQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 83,
       "lineTimings": [
-        0,
         4.181,
         8.241,
         12.015,
         14.945
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.181,
+        8.241,
+        12.015,
+        14.945
+      ]
     },
     "2.38": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/84/audio/audio.wav?Expires=1780212257&Signature=ktPW6EXKKy0eQmVusyaoK-~CdCaAISQBCB0SF1CzFUwmcId7HAqam-dVWxJbAUrU7xvtHKH7VKo3VmGKTmV6h5k8~fVd92rSA~Bn9wleaQgaDfYYTWZFmqSmVDiVk14WqSRJ6WbdnNRcNVy3e3WfnyCSdjg6ehKrI7eNtQhm8cbSLwKqo2rKpMnDi0D~SdKkSiVKbPv2HONn8CwCt02CowjeFFY9Ae6YPIKY6pH~sPyOud-TNqjMAFysxD0daOoBX8tUUsPVNQCiY0FpZ9OIE1rKh~UaXF6VvwYwuG3r74GHjjrgmks3UfCDEYX3ZCY2tqpjm~IDcWiGmUHNtHQbvw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 84,
       "lineTimings": [
-        0,
         3.981,
         7.629,
         11.04,
         14.911
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.981,
+        7.629,
+        11.04,
+        14.911
+      ]
     },
     "2.39": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/85/audio/audio.wav?Expires=1780212257&Signature=1lyz4SKfC~9-LyEAoJYPFgXNiSEvf2uN2LyA8pBOCftc9d7T04fzprRxfi9fMOQodCL23SsKHpb48ciFedf3TejihstU2zMFA1hlPKL8SYv5IDeP~lMP-~74H18erdPaA4l4Jem7DG75xCPLtfTcSOwNGbQMzh1wyJp-lKUJShYdMYGepf8PS8BIiOeM8Enm7P8biXWDyPUH7gGL5ToAyIT8LIEQuUXPSr~O~8ySYwWHrmSf6WJsd6r2GnGNjQ2GudVvyuEjMr3-TyYznvXhxheO3WTg2Ag6FStF7CVMt6oNSWIEIlvfng7pod5PM-HkwXXSdsg29JEEP3-uqQsurg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 85,
       "lineTimings": [
-        0,
         3.831,
         7.704,
         11.427,
         14.059
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.831,
+        7.704,
+        11.427,
+        14.059
+      ]
     },
     "2.40": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/86/audio/audio.wav?Expires=1780212257&Signature=vam4C3n6ChhaD69fa5J2GyKZSEikmCozaQ~mdHJjOsVgyR-az9U8RJjixAPJxWbws8rgFnVis7vhkDKDO-PfVJMiWnU1P8-t0IDvgOk9lZXQEVH2beKk1BLRkimL7HpRDJ6KzY-CRfC7qSd0fVWegKyofM152kqDikjz4vc1KkFRElqavcKxzIZ3dJUXNlo6qtb1N7V-aCN3HGvs6AyYdwdtMljBfPMIictqQyENDFqQt4uS2Y3kslvSUaWvOGMh8lZEpgGdU-Bx01tSsfpaFtGNDEGDwrDH1FmNwBYTxmW5ghr8YpHQSSjj8sUbN8GBUv-AsbsrKebYS15U4BoF9A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 86,
       "lineTimings": [
-        0,
         4.143,
         7.504,
         11.102,
         14.01
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.143,
+        7.504,
+        11.102,
+        14.01
+      ]
     },
     "2.41": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/87/audio/audio.wav?Expires=1780212257&Signature=TQfA3SY8Hp7tJhMs3UucvwmMNuVmxRN9Zbw5lyzykrLCmdkC0JDUs3~YGe3ZAM3vFTcm8uZ5W8-fHQRVRie6VfJzskEDSfLyjMjS-y7C2xIvjIgtTjN3rwUsXJ~y4W8F97Hzojk4B6krZ1Df2bgNRrNw14bcvQnYGIOxYz08EC~RvrAjBXYBn3-7S10zaMRuhB43K42oZ0i-zMjtfSKWlKyrUTUDw1~fIZy9zkhRwPVSq5lqiD4m4lrn0tBpzp8ACguBVejTWQy1tY08GmCffWLZwFFFEAOdumCdJXg8PyNIzhQljRh9KtkKb1klwv17q6hC-kYHQR2mHY2C1fO02Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 87,
       "lineTimings": [
-        0,
         5.992,
         8.791,
         9.753,
         12.953
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.992,
+        8.791,
+        9.753,
+        12.953
+      ]
     },
     "2.42": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/88/audio/audio.wav?Expires=1780212257&Signature=ryIIMtRcvV3whEiRm96YR3L9B2tZNSGnDjuowyK79XXUC4LknWZ8IegPuh8pLa~ZynoVjnL-LjaFwOK9eoBINbBpvrktbg9JzfNwX9ECp2OCsFejHSiyUG6BN54sSkiF~jq5OByJI9Rc~dN2Oq20p5zX0HM1GROyF167FR9VMxrVTkoPEzQDjsiCJ8hjtKJD12KMuL1XOLHBk5dFg0zR2efHOtRI7VvDcnav1Jd~Q5bDBBV4bDC4RwJPYS4omSWj3CcG6IONQyOzk98pMk7mvspY96W29OjRdeOi2KTDLbSOFhH2TKf95ujlRcuUGh7bwozkBqBacLL1X0A88otzXw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 88,
       "lineTimings": [
-        0,
         4.281,
         7.354,
         11.065,
         13.967
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.281,
+        7.354,
+        11.065,
+        13.967
+      ]
     },
     "2.43": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/89/audio/audio.wav?Expires=1780212257&Signature=VesSLOz3exmOMy2YKQ9mTF61Z~WD-UQMbc5Hv9iUWXzKXLljHh9FOBYCiQycUiOLkyb9hfIiKrOTZRYDZMWn6zkhzWduT~fIcPi9kay6p-wzSftYZBTViUZnpHCfw-2DjK5uLvKpaKfNYaae80Ref2zESz1D1S1S96BZmKehN59wg~Pwx-9C5i24CemKlyCjrHvMo9UWq1qSbnqepjcKwa7-E5KXZBV0VA5RJJ0ocXeE9iJraKgMQ4bPi7Bm7R~rxVHa-b5KzEIllkpSGP~otzw7SdyPxjnOvEM8ncddHlpL6sPcI-DtxIHUxvPQ5JhpXJQsp6sWGRxiByLS4519lQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 89,
       "lineTimings": [
-        0,
         3.393,
         6.667,
         9.641,
         12.068
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.393,
+        6.667,
+        9.641,
+        12.068
+      ]
     },
     "2.44": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/90/audio/audio.wav?Expires=1780212257&Signature=Ie4CRvBTe2k3ahcr38QQ3YOnPpCIVdj8Ad6JRHu51H01JI8YTc3Sc--1gBABVOiroSJKC7yxB3Dz-O-xXnSHKw7w0~InCI8vNak80FKnxc80i3hJZ73UzDmuAvDOvnylV5uqxA--zpIlc35EAkI3RUNH5pXm92Q~cLIAf7~n4q0CPV~V2Ux~pHRjP9~uRPKd5Tnrd~ZOYitrDAwJtWnsk~lAxJ4p11pjJ2kyNGeftDUmdPm4nym3-j7uKT-l9iLxHyBtFxi~Om~L8OA1FMh65ZWhcaqjzm3gpgEZFMvqdz-jFQydS7fk85-Ft-BdeOFDOWE9CqLVnetKFw1n0D8F-w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 90,
       "lineTimings": [
-        0,
         4.131,
         7.317,
         10.865,
         13.958
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.131,
+        7.317,
+        10.865,
+        13.958
+      ]
     },
     "2.45": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/91/audio/audio.wav?Expires=1780212257&Signature=2c4EfKcMmgleyV-6HGzxCHkj7cLxzrFalYi6f-BdJKHh3Q2hINrVGDoS6umCmW4Dpi29a90~E0RDys0pUu08iB24FeS56jMmZJPG5dC822oe0Sap2aP9xytL8wSQOuMjtZvhE0N-3TOOhz8yLlDunmQCztS7w3co5fLavVTCfnzlpEYFVlM2NN~BoISg4FqswKxfbez8eWub0ppbqI8lNsvF6W8SCsKbl37AEFC80CpJMGoMF584o0Yjg6l2i6L89WITTEXcS7OHCD6YS0sV0z1Dk~~1ZQ6cZnRJlkroLdwH0RmOJ4-gy9-ShzDoAj77JIc1Q9cNHiYk~Hc-jSXsMQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 91,
       "lineTimings": [
-        0,
         3.818,
         7.504,
         11.077,
         14.001
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.818,
+        7.504,
+        11.077,
+        14.001
+      ]
     },
     "2.46": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/92/audio/audio.wav?Expires=1780212257&Signature=RvP285EH0za5ys4VdAU5bMqxgwH7cV826yobn6bv0~hZOlE6J7WA9MOuyuuvis6L62~-jJYunfymL7c0Vkmi-~JQvfXVZUMJjafq3Pls9DC1vhhqYNdcXIzoVKBj29EtebsQ4NlCnxlJeHx3DVs-x17yqkm8-V6QkgUDkU9jZTdOJja77JBi-pb1vHXgiDUOnlrEvBqSqaKokxup~Q31AaONQZN0nPDdhouiMJSQYHHeS9hqTtCLMj8qfAPx-0CmNybk3uAmykJaUIjcc7XSrvEV6QAR~-DYSDUuzbaLSJZyLBDHaQ-9aJy6we~~FHg5EPD6JDKA9x2yrrbE3mASag__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 92,
       "lineTimings": [
-        0,
         3.406,
         6.879,
         10.915,
         13.998
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.406,
+        6.879,
+        10.915,
+        13.998
+      ]
     },
     "2.47": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/93/audio/audio.wav?Expires=1780212257&Signature=pjnfuBxV2-aG6CVhNzwfc~7L0zB2BEJUeoEBDZIwKJMEuEsZXBddVidvVOdcwae~GPhcJay52Py~1VbZnDJFwCY8sbbFLIPjCJ8XZEAvkhnmWFdWacUcNTkJBPTQBFdmhyH4-o0b3nlkqS~1Dreb0OtBf9k1-BEU7wzpYpY1ID6ImNot9L6qt~KPYC6E1D54rBRnYVQfa1pwSraFPZRjRewpfwQflMRgtF6FuepkmBUrp2kLJ-yIZ-2J-V8-CeMh8PcvV-Vm2ldr0VNG9HDXeD-mA-l4tuTgP8DpiB8aipBgoRktBUGsdN8LgWxhNWR6vEMOjkQa5BXnbNHMyWZZWQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 93,
       "lineTimings": [
-        0,
         0.345,
         3.818,
         7.279,
         13.036
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.345,
+        3.818,
+        7.279,
+        13.036
+      ]
     },
     "2.48": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/94/audio/audio.wav?Expires=1780212257&Signature=LxDGq5R~rdgg3rktJqFqOFjJV4HrGQVC5PHXy2WOHtEP2CDm~dUCDJ~XcCdOSFfOuJkVfXWfYRH3a5xSrdrrqn1z2U7DxB4NkPaAHD4Nn1x9dJ5~0tyULWTvhWxRsyXQcZxhdtjRVfNB675clE8QqwUOZpTXygTRKAYr3HabV-9KwuRib9ixbJ63b77~kaFtje8Vovjf~-Bx2G1ScONrzPHriZgDhensosZw1nS3MI2BVJzro743v53SCCoVDDlBEU1OmK73nm-1y9H-n46u0pbT7QITo7gZb73IZ35GutUyZTS4aoqRBOdW5Wg7zQYi2qRM4wY7phTEUSXi~M9WhQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 94,
       "lineTimings": [
-        0,
         3.606,
         7.154,
         11.24,
         14.031
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.606,
+        7.154,
+        11.24,
+        14.031
+      ]
     },
     "2.49": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/95/audio/audio.wav?Expires=1780212257&Signature=fg1nWXEGtvGEjhiu~utR87LbxHLvPR4RODctePU2fSmb~zy1pcizM~RNxoiEZlCoufqbgbZ-F410KApyQcLPb34ZUU5GIXciL~9u8cz94jAgmD~m9PFauFXfpQHldLrRfB5U7jK6JIx7Hmv8yz2OYVa3h4xz23uDi9-6BIhxva~QEyg9AfyU3hLTGZSlGIv3Z--r~PV6atCXE9aT8az-jub5cXgAXbIW7qgbZJU0NTcyWBgv7pqcFyBvbyFOYsk32hR3jeFlcsbk3-qLUFpa-TtFBO8meMZWn8BlwENoNAVhbSsqpSf3JuFHyhTX1kS1mtyV0-pZzuqfewjuMK6xHw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 95,
       "lineTimings": [
-        0,
         3.443,
         7.129,
         10.503,
         13.054
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.443,
+        7.129,
+        10.503,
+        13.054
+      ]
     },
     "2.50": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/96/audio/audio.wav?Expires=1780212257&Signature=u46kOcdCg2b4wFVqPgMsNV9bSobERSnlmmim8MF9pNIUgEQCUk-iIMPkUKU9pQDGIi5dlnT65GFf-oefuve0VUMy~BftQWBfQUT-fFnLpjukJEO-40JHsX6OoD2tDKnCQzS5ApT4hcB6G3CFh3D~AuPV~FgTtgXm4R8ywts9ZL8haPLUFi7HB36m4giquzOA2BmYJZj1BDsCJ9eFVLJ1OJMVhlQTWuK75zryABKXEQA6cpoQCAVPDwB2rDbwGZ4vSFsdcaqwqSfTuDoGvRikoGWZ4NAt1N2m0s0PyUk3YhJqXKrCdcG6W4ULDuevFo~ckhFjdzbtiLkzYShQajEaFQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 96,
       "lineTimings": [
-        0,
         4.143,
         7.292,
         11.015,
         13.936
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.143,
+        7.292,
+        11.015,
+        13.936
+      ]
     },
     "2.51": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/97/audio/audio.wav?Expires=1780212257&Signature=xE4OtWJ3iF4YljK2Zf1T4vc3BtnHWlBfOW3v0WA7j280cGgWmQZTYeW3cY-TdPLQ0iLrrRrVl~0ZlEMZD~lnBUf1ghkndmN1hiVBfumFOk1H3O6LTTib-n2mp6nnddOkPCYGTyfZjDfQGRqHkF~q8DGqmAlAKq93gTdeeXiepyABF61kTNZ33ymOOejhtS1TwIQ1SkIErXougcp2GhRyMeEfigLM45cgfOT3NHodLY-qimLezaFD13C~tc9dGQwgZgV~MHkQOwqYCnKTE0bx82GpXK3rhylikkSKkr23HkZejx43i1xjzVKsI0PYfQj-kOooJuF5WGc6vhE1gc4OPQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 97,
       "lineTimings": [
-        0,
         2.981,
         6.542,
         10.128,
         13.037
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.981,
+        6.542,
+        10.128,
+        13.037
+      ]
     },
     "2.52": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/98/audio/audio.wav?Expires=1780212257&Signature=zAfPQFndcka~FzsYdaHtdXOAdNLGA4H2MWcwC-Vt1gXjH45TaR3O06zkGsLepR5VS10Cr~qQaTCtMnTNQWDYtP-PsFytrYrjNNBSkzbADN7i7aaEcOytMxf0Jpizqv~G1kxT-oHCPOArgMyp-Jne8NVKVXwsy0W-fvZfSr8ujutW4NQiSnAl6d18edenuL4kOwPxRRSSLyaEYLCFJ8PnDpZHGe8WDeJe~YgRh5RHh7d7TFrEEwY50-Hh1t9tK54GWKUkpzaJCie~W~DrfnUvPMKmCZ~-odJQK4c2~zCwvMr67rn-VGzuYCXei0ZFI17K2aR2B7wXey2MxSprMkdFQQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 98,
       "lineTimings": [
-        0,
         3.531,
         6.779,
         10.303,
         12.985
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.531,
+        6.779,
+        10.303,
+        12.985
+      ]
     },
     "2.53": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/99/audio/audio.wav?Expires=1780212257&Signature=gzbBJsrde8s7I9HRwQkKMCAOXjkYGg2--HlSO1Wa76dL~meCE5wzqVxC6rOgnMzUAScqtDWLGPoB0FIQPwKtrBcohEKzaevPWyIsemXlYnUjujy7Fnvz3uTKQF9hQxaDFUA4EUlxbxzpv3WsqWUwZn6DcMJTPSH5nBA5Tg01BojHE54TTra~lSqXsjxQfdewu-dBCNyYitdXxHxD14tcyrOcVH8LvxhcHbL3OXUDyPTzr8bs00Hr6EfSoRDGH2OiVdNRb6VhZSYYdBJXpUL2w-ntz21dPTQPzrpd35LRM95-5iLsfFq6HBSZ0IWi8Et27O4RQKMIXLIvGaOJyK2Zxw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 99,
       "lineTimings": [
-        0,
         0.957,
         3.194,
         6.854,
         12.014
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.957,
+        3.194,
+        6.854,
+        12.014
+      ]
     },
     "2.54": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/100/audio/audio.wav?Expires=1780212277&Signature=m0G~2hAsnuDy0bieht7lVkdhsxzXpV4L13A~vq91pUcAkAZN5YmdhFUQCqeSukJdE4RhJptZQY0V7bRbCaHRntAiTV5mFwDSLnBhmHkwxo6AJiXzOmviZZ0NympdTjDAF8qEnl28KCfU15kuI6Pg5hap8ZGC1G94x7nqcFU8403QdW-Nzr8jV4C6Padb9WZ9b9vZb5i-Oi2mJbc6nbQMm7twbHk0c6C9VezlyHVsQS7dQca0qxb9qqYfhsyURHTvt2bkfpDQHMXZjCedXKzu1gv-tyD~wgnJAJ23ovNSkrgutPjUrr4KsR0uiMxtHhl8GcXi19V5GqrXZRS~C4xmew__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1203,7 +1712,13 @@
         9.416,
         13.189
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.581,
+        6.142,
+        9.416,
+        13.189
+      ]
     },
     "2.55": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/101/audio/audio.wav?Expires=1780212277&Signature=PFwrLD4EimRHWfHFA7M~8wc5n4IFiCHbeVS4fLi60mJ7gMdbm6ZofEEb~nQY1Zg5cEff68YeKbO9MRH74Be5rD4L6FiKQSTk~eVtUSj6rzQcDa-TcwEW~R1~jjYbZtDPqiPHXlPUl2~BuUz6pCu56SKLDYoPw9OvqaEWpJqXg2esxGV4inRd8uRnwZjlw3IWz51eJUcXUi0JwInq-5Kw8l53Ye~jZ2JEuBd5Tqg19rDzZUhHvdRW4jlNi0gx~pI6moPcYUStWxgxu8rEEaHGOIV7E-f8k93SYrYYbJ7QOVxf4YVaecIAudd9tSeb~9vDn1UYFwGUa7AD~54y4oMOzQ__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1214,211 +1729,302 @@
         10.428,
         14.451
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.256,
+        6.729,
+        10.428,
+        14.451
+      ]
     },
     "2.56": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/102/audio/audio.wav?Expires=1780212277&Signature=Ln~4y4Jn9ucy0Rt-IOzZGm4iN6ubE7Q0TkLyG2XzygdAw-Xe-AHIkyGD-OG91V0vEu42fo2nPXES7so8DH-Qpt113K5IoSHiBVrOudV3XdvHGRkHBkJVPGpC-uKwCJ1ekXtSq6bSluhpYQKkcFgCajqc2aeCQ5bS66KCInow5Iatqdn9VHkxzximV3s0Sid9q-C5Fwii5zZUucb51DIN1BybIo2F1yM9t5rIPfa7X5vaPJFHiJ6rQpFRsPEa1ATyzACiPlrRnHKS0Xdes7Qcd8XHKiPQpQ8ImpdWKxYpxxrHTDml15wvrKWyf-rUGm-rhzgIBMaDuOZAwVbloP8-BQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 102,
       "lineTimings": [
-        0,
         3.843,
         7.129,
         10.915,
         13.991
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.843,
+        7.129,
+        10.915,
+        13.991
+      ]
     },
     "2.57": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/103/audio/audio.wav?Expires=1780212277&Signature=TsbayIFJjUYhyFuhhIuqnKvdHPXAr3F1Dqa-cr-gkYplBSH116Y5UfDsKiyjPXUdgexyN8vxPj24kiuHvS23F5F6NoPicXkV4Xxp0fBGc~IW669hDXCkYbhVsgTjXTFq2PzJru~twcvyVjZs9SIWdkP4HylLnecs6bF4bDEBZ-58ORmroFaB4U-APTek9d50IQNpGgcYGKb3opLm-R1xORLn7rlYPXlrsjuWsfSJhooUcnsgd7nBwt3SeJxm3jIIgO2k~o8EXR15HLfuZ2i3RVmwAQ8a4fCTCXDlBb16jbOONCkhfyKq0qiDdlX5HPzY3uzqsF-l9~wEZmq9TwF5kQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 103,
       "lineTimings": [
-        0,
         4.093,
         7.629,
         11.04,
         13.991
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.093,
+        7.629,
+        11.04,
+        13.991
+      ]
     },
     "2.58": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/104/audio/audio.wav?Expires=1780212277&Signature=Hg32eTyxSFfWQTd76YPvEcWgzSztKj0p4Qw0jIpNegQA9~cRzI7sSYdrTeE9NDOmmLbcsymWXO~cfuLE69Te2KMdnxNwfIaxrAl48euP25A4AUj7ou5jInlKoTzDDWjDvliegqNq3cSfmSNPi6ziX~BZiBEmj6qHsVomuIiKw4vY8Zjj1duwLIzlvqC4aEdIANOy2A4wy2tJYsh2NpdNBudDerDYjp4XPqTuIDguRKfdonaQNfhuxx4VQeDSmBa90tiA-hpfGDiOnZ777tZqfv9wjvBurKghuF6l1-aLqwMpkK-hYhbVjroYUq63SgMawWAlPOM0X-9DixtEbe~z3g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 104,
       "lineTimings": [
-        0,
         3.194,
         7.117,
         10.89,
         13.025
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.194,
+        7.117,
+        10.89,
+        13.025
+      ]
     },
     "2.59": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/105/audio/audio.wav?Expires=1780212277&Signature=Vw1Cp9-k2HL5QfOmBlhJTiTN5sO8Dwuta0Vtrq1s9O~dFjg6NZjf6RymLEl~FTVbvKsNnGYV99dp~zp8~NW0oJvdLgsWBUc4gn26l~9j9lZUUpGcCbkzlc3y6JgdRbyubWIzP8NCOUZeyHdsD9wLXj3XSZT~6fyK-5y-8anQcUGcgBpgDQgmJN6vZrGpvmGgSlOUE0pUk5-xJYEh0zFulY8GDhGjrY7yzAd06NgoF~YvzP3wGfhzPNBTRjaaxmcCOW21V6Vq8XzB-LZIolbRdz5xv61dNEPUfQrkfM0B19mjGserIQkgLQ5yi8Snt4nftZZjHbDS~nckdl~SZFyqxg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 105,
       "lineTimings": [
-        0,
         3.056,
         6.742,
         10.203,
         13.052
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.056,
+        6.742,
+        10.203,
+        13.052
+      ]
     },
     "2.60": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/106/audio/audio.wav?Expires=1780212277&Signature=nC9VHDtsjBEIuouA67PGzaX~~4GlSvZrrWIcLxYwz7cgOXJvXjGxSVXEF9Bud9sdIk3obMV11LAcA~ohH6kbhiIq9hl8iP037rC1jDSbMTfagS4ib05D3Fg0lpoJf5wIln5wJNWYLuBU~YFh8Y1mggamR0jRLYC-6BEH9WeOUmB3tE8~ZbzxhcsPQMA3YULYSZoTAShyFjZi1rjPVlv7POVprHYse-sRRXi486zWY~vBq98L416j2m~fWpiICGtrEu0p5vRuDANukeoe6XRId0U3U-6~2lPNdbfoGHt5GhE5VqWsLGQxxwnSHLd-QFPlsPMyWFgvkhDbqpN5MaV05A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 106,
       "lineTimings": [
-        0,
         0.532,
         3.943,
         7.042,
         12.994
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.532,
+        3.943,
+        7.042,
+        12.994
+      ]
     },
     "2.61": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/107/audio/audio.wav?Expires=1780212277&Signature=md7M~bBid8cJFNGSkEbbbG3r2~oQAhslw6RYXoUXKXMZ4WppWZEkt3vTUfKh57cusgZGJyIau~zXQDXJCFaYjXoeNTss-dhgdUBCV6reCgu1~IzRnqWLHlGn3RFbpZbTRjxPqtnrNPmsCh9yvjghmuHviifizuhPLrdo6CSJRMUdInQYi8fD2kC-0ya11~x9SD8P8Ws2M4PMflpYb2LdB5PY0At2ke6PR2ro9Q2HUyrcdSFuo7gXnJuePm~X7oFNQrBSiqtPbrwhjLrXH-GTCQOTSXApvw6mk7He9EAfbpkwEmTmkhwIMrzA9hRNh-LXIKejtY4HEIdOi3OFOlypRw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 107,
       "lineTimings": [
-        0,
         3.431,
         6.979,
         10.428,
         13.031
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.431,
+        6.979,
+        10.428,
+        13.031
+      ]
     },
     "2.62": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/108/audio/audio.wav?Expires=1780212277&Signature=eTmOQChW-pxjCcKhShqQMkmIq~FxLbk9eKpf~vDI1LynfzpzsaMDkIz3zuYQhByhHCvzMX8eV6WLmclkErCprAJz5ZvKp0K5BearlpCvNA84~Ev9VNlXTW5XAu33wYKUE7OPDCk5VQWp00BAA~o~~0DHRR8ls~oUpcCMq3eF9VtMU8aKp5ypVOOXvEz2laIVvVIoS5qwFuD8bQ6kXAb2-xZ-s5p-flMWgw28fxBQkpp09SXZeeucRfR75DvmYd3G0Iz1PNRkDvx~ey0ElsXeBL20DYcZtfHklajgtC5CskamvQ4l0VDUGG1AM8iEgMILfEyEH8zELrQRvJCys~bZpQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 108,
       "lineTimings": [
-        0,
         4.018,
         7.629,
         11.827,
         15.016
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.018,
+        7.629,
+        11.827,
+        15.016
+      ]
     },
     "2.63": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/109/audio/audio.wav?Expires=1780212277&Signature=Yz4T2~e4IMOo7iXl0dqBcrWEyC357DBqz8g39d9HDNBq6czBaK-WWGUIwsI~sl4Zi5WX3MTS8KlQPAXBnR~Iz-~xF0t2SeYLrerwT2ML1aUPqCX6KJF7vvUDP9ViAIW5HvtpJSdKmSr9Nbj5hAW6D3DWvtUQivJWH1bAmaUKP8WslOB4pQFTCamCaq0QFe2j5u2LzrZEJFdT~b35JeCs01RgP6PUnC0sdZ~dFh75nhk7O9M~UeqNpmMmWpAhAcbauWPTMNWTECwdK2KXBT4V8yN~Epz4vsd6IKA5t1rFI91n0qhMi61K4LwgoV4bTrJpOwHaqhrS2pJJjggw4B3n6w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 109,
       "lineTimings": [
-        0,
         3.568,
         7.317,
         11.127,
         14.058
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.568,
+        7.317,
+        11.127,
+        14.058
+      ]
     },
     "2.64": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/110/audio/audio.wav?Expires=1780212277&Signature=rM739I0GFvcRtw9B35CO6B-jgLohJUaTKwP3wU~B~5xRYMr9L1oFCAdAJwaPUhC34pXDZM0MVr14RlIsL-OQUT4ySFycA~75UHsw9VwPCbb6oZ9jL07l3GQdMTPThhpSRrV0czrKAXsI37plEUB-XZRs5l94M8Obz6VWZklVWy-s3HrKTJteyWlFjQFZO2MqnSawzUL2MuzGHyCGFtA4gPEj7J7R0d8ozu21OJ8RwGhLqtKJU29xE6oegW1UVU-lE5llbgaui5qVLMHPhsi6DkvetSnzKYBu~1Hkh2Tm1SnqfHRZLTPLbrq1Lxvv0igoVPtlGFpeT~96O7iGV9v8cA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 110,
       "lineTimings": [
-        0,
         0.732,
         7.779,
         11.54,
         13.963
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.732,
+        7.779,
+        11.54,
+        13.963
+      ]
     },
     "2.65": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/111/audio/audio.wav?Expires=1780212277&Signature=hzVvkOxBxvwIHrB99nPdkExoEAWQ7udO-doRKPKk07C6HaKah7xnvG49FaMQVIS4bhfkXajmOGDmFteV6u7Ti3vX7lsPbRNBteUpv6-zvm6lWFuGRhRb~Kvd8x1eyDc8ZuMqWIDW1LBvcjvocMj3vSSz9O3BYsUuQ~qf7GPsl-Wr-Ff-exezDPcGh~PTtEhOmZQ1~KI7n9TgpOr~eVu6gyylatyPIGCaq0WDizvgo44Zj9ws3mv4NYLo51XXXwCsw2oH4NOZ9zqXNs69wHJDR6Bn0Bs3NgSFj~G5Wrfscbit30~0B5N2Ugj18dFhqyZBYTfA2fJgj23soEAesREWFw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 111,
       "lineTimings": [
-        0,
         0.607,
         4.193,
         7.654,
         13.954
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.607,
+        4.193,
+        7.654,
+        13.954
+      ]
     },
     "2.66": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/112/audio/audio.wav?Expires=1780212277&Signature=CRqrs3WOTBcoTiBOwOi1ohe9DJ7TEG95E0ZITip4j9m0OB7WO2CNfM5ezyF1vnqmskgqrWE4Q-nENGn83vPe8L1oLEgIbnclubpkFVXsVmPH4pMcA55gxZYThl3mXPZH8LcKlJXrjXLJlKoYKdYk1iA9zg2NWbmEXQTs4n-snAK-NnIFQmZ1c11Ot-4WlXDxxaP4TQnqopK0SvlHgI7KJqwv-dxF236mCXJLx68BVwPSRNVAzikUpi3gGnpjongo~qwO9La3k1j8ScXn-naVFX5NYXx6to95AbKyISm-IV4ma3zbDqP79D-zsBN7K453Ay1Zg3iQHZz~-R60-0KCtA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 112,
       "lineTimings": [
-        0,
         3.106,
         6.679,
         10.378,
         13.022
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.106,
+        6.679,
+        10.378,
+        13.022
+      ]
     },
     "2.67": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/113/audio/audio.wav?Expires=1780212277&Signature=gnViCJT747~ZapdfbN-b5mX3OwolUijtcZIjs10L7qTINS4Dfvy1TTgSDjHhqiRU6Riq5HpzQ2ZCwFRN5gZwbMc8nrsFBWpxSmgWMpttrSredF6-R0DVgAYutSQQ09DceCzmhVYJgdILFdbY~sQ-ir3xV6G7est2Su3zQ46YIl4YRTr4OOCH2YdBkXaLct8W~eK-mgehRlamY589Ve2j1NW-pCcPg3j~S-tOQKF6zCszzOMowXK32~hKRDFhjDz6~2SrbGwGd6yK4EhqZ3TzB4LWBynyK~Kt3W46mfMtCSm6XJaHrpcK1R9sHaMDp8xDDUy-7xYkLRa-pib9isGUng__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 113,
       "lineTimings": [
-        0,
         3.244,
         6.592,
         9.766,
         12.075
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.244,
+        6.592,
+        9.766,
+        12.075
+      ]
     },
     "2.68": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/114/audio/audio.wav?Expires=1780212277&Signature=jKDK-mDkTGQFdu7PA4j~jcNxG5dY1djBQ~aVPIrPFYEL9wbqITvh2-CmTySlWmCuYdpD-P8U4DMFmHWI8FvYO4o~AB8sNGgIKHHAjLQdbJ5fZpQKIC5GgTuJtK0vZn2i--9IP5TE5ETkcnqhCgHmLcqzUYBOUfuZLw7V9Wj8-VO38ZQ3MHOUN2D1MI8CwxgYAJWttFnwMZjNCZGO1fr-ygD4ZJF3t1WeGBoJ3lWBL8CNV-lSFgmMJB75hLPoDnuisKU93DsDC6xvyRTkWrE-PNlOohnByoUPg1Alvc1ICiRgdKy18C2flIFwrjilHcxOwGkcFNZ0yS-he9PiPBG3FA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 114,
       "lineTimings": [
-        0,
         3.781,
         7.079,
         12.127,
         12.969
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.781,
+        7.079,
+        12.127,
+        12.969
+      ]
     },
     "2.69": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/115/audio/audio.wav?Expires=1780212277&Signature=1mYEUzYQRvFFSdNqGZPZQxx3OMdDXGk5oguRu5mmQL3PZJR4ceTvRFo0smifrMdfu3CM-rPj6d5edz8e9yuj62lsYox4T4mJ4-eXwIY25lLS6ReftXLvv8eP-uOE~WN6RVP2FOlI8YSa5liRwt2J~YZJljhcRMv-~ZkQFo~xNudULu9D64SpAMl8N18YeiMJIDp4ih680CCfTf-ejpy9HMfYcO7VelVhJRJKs78jURSCE4JdgOgJXKyYAq6GpJCz1QjauIGObZ9Y2JR2f1yiZHbybYUQPLnp-pygo7ok5Jv58~uNirw56pz7Ig6-Z0wpJYxxwz1a5UsXWBkc0HOC6w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 115,
       "lineTimings": [
-        0,
         3.506,
         7.154,
         10.928,
         14.092
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.506,
+        7.154,
+        10.928,
+        14.092
+      ]
     },
     "2.70": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/116/audio/audio.wav?Expires=1780212277&Signature=e4GIOEdj~wLmquXq2hskiHxOxGc9ogmH4G1pEbZAYkaNOkVGT77k7I-E8WqYFHACXwOA7iEGhC6eHTEG5bjSt4X1LFKkf~yai~6pxPVKAUaAbCkv9dBk3N~Yb9ralqC88u27cAUC99K7Z5lC7rO0svVFCVlyyNUB5nWDR3pimOR8xqI1fcI7DD~EiySpOdpX4L7X5jG5G9d2NmYjnYSnex7A6QoiW4i~YsyhPPwQ35fSvELCsE5vr2Y32T1YW9L577O6fhmg0BQ4v6A8HRvXj4mpEYdyVtMyg8MJ6LqNzg3tI2vALgIseBP-jbKPxMV5HoauJQfP2ur4uKDkOAQd0g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 116,
       "lineTimings": [
-        0,
         8.416,
         9.641,
         13.864,
         15.978
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        8.416,
+        9.641,
+        13.864,
+        15.978
+      ]
     },
     "2.71": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/117/audio/audio.wav?Expires=1780212277&Signature=XpwdtL71h~w3NKMAGPJoMxahn2qUKXoNGliyu2XgdBfRwQrKr9XcS0-3ceTkqUE~OXCx~tYPCyHttOP4aJY1sOvh3Mh~i-g40SATtyH6~GCJVjKkGtZpxT71inlAN4uFH0n0OPqlt0-e4Aih3HYUxRH8UAGN5Ekxx1jPaQK8SNL2LVpyFA4foPwpzXsGi9xR3FkY4cbW~BSlZubu5nX6U18TbQEMgZtcQhBizTGpjlMCCalgMxHXviUE3mq7RqMMBcfF3PkLg5Hadmi~B4nB~7AVWVJFwPSGglEGXvvOygeBPcxyWcsBbIhdfT3o7nvfbbcQUdhvSPnK-Dx0YxamoQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 117,
       "lineTimings": [
-        0,
         6.48,
         9.828,
         11.665,
         12.057
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        6.48,
+        9.828,
+        11.665,
+        12.057
+      ]
     },
     "2.72": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/118/audio/audio.wav?Expires=1780212277&Signature=jMdvpbjTd4iZSzQnWHC~XMsBP4xB5Dc6tqHlVwK0IOOUoW-xmnII-FlEHFcMn-CLg7V~h7klEjB0TcAboavKY0ETJ0LXZhPp1bTqJvxsA09IfKrFceFNaJ2-cuueOrTpXaVeHLYnxVeQE2vnJQPrUoIGfDrRw1xV21wtNKMdnPdZFVAhbyt8Rwi7VEMGa3yFHgHfRh05FIknshlxOr1423UYALaRRMYjGu9PJpREvvf3lD3KI2fYY3Lyhu6iFc7Va~Jgba2hIc7Fn9w0l~QBE-HCl4p79giijrry1zU~zoqfYNTGqgqXiSae5A-LyZ~aRrxwwTR0GABxjIIpUhvejg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 118,
       "lineTimings": [
-        0,
         4.018,
         7.916,
         11.965,
         14.057
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.018,
+        7.916,
+        11.965,
+        14.057
+      ]
     },
     "3.1": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/119/audio/audio.wav?Expires=1780211951&Signature=kjaSb9bz5FSFUH74yt0JC-c6rltNe4jJZx1WI8i7xk0J-JL8uVREUYJ2Z8ukpKJguG6-dCMe1bcLWJ7Uy1-n1g8gSCBvoo9ym0PlVNP0uZMk6eq2bI7HGDVjbsp~qxO6t-ndOOfq9-zd6jj07lazPGgX9rniDwmtcckXCy3n5PQZmtMES0i58-tGQIRsC-rORTr~19qLc7ociRNOWTjpykNvb1NGIp-RcS9UotF7ODCHnvrw8N1VTc2cSHaUlT5WN7LwaIjgS8QQ8ymqQ3Uv1-4Oe1B-i3DrGH8LmUZ~9HCJw9KzPc65on7xdBZ8H-DLnzbNqmO-pjQFOGzptBnZfw__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1429,19 +2035,30 @@
         10.953,
         14.851
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.331,
+        7.292,
+        10.953,
+        14.851
+      ]
     },
     "3.2": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/120/audio/audio.wav?Expires=1780211951&Signature=ViQ1Nx3~rjnNBxCkq~jUHyvBU80ttN0kML2mUwyK01BNUr6buVv75ONzV4d4GV~EiEpczInGzoiEJPVmZjYXRvkgWQUHUoe~2Zk4wl1SKgVdqnf~Am9cUtkOCn2ZDNyOFJHwJPUI1Z08PWQQvTMw3ZdUWu6o71KskoKDhS5E4DETCnwdKplpy0j3rvvcLI~SG5yOMU1LIXEK51AU-U9AVO5yPl62qinJI6DpgmS-JMsAUGIzRDAAEf8eKkWhAkvLET3sumg0q9qSAf1jdHT8ZcjesRQTiB88NkoOSi~skYQXN71kIRBaK0HdCa3SSz-U2HK1uOrBeaJgIYxfFmcdVQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 120,
       "lineTimings": [
-        0,
         4.206,
         7.704,
         10.953,
         14.949
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.206,
+        7.704,
+        10.953,
+        14.949
+      ]
     },
     "3.3": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/121/audio/audio.wav?Expires=1780211951&Signature=nouXYqLC~rcG8grW8BLCFT~iEvpsRMMkWN2MkNmaY-GxvN8--UlhRdKCECUMobiYNmbdmLyf2SjtPLSkN7j1zsUX68bGW8CxzFV56JMv2uML8sxM-fHkWdEOrZMOLVQ~LriedDb6JBFqqkAYdNb7ooDhFHyO7xynOnjuFkV2u2lZ6eGa4nIgvkeJOzqvmGZFdHT1GYHFZmT6TFdOmbylciIeRHDHLVem4swTkbU97wW1xqX3228t88Wf8o19DtM591eVAVod5thwQ0rkZU-~xkwWywRtrMtAiR1oeot4pAwBjAeIVjgO2izTft8RYCyU16WqX5mVD6TkFF7LDCYPdg__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1452,391 +2069,557 @@
         11.265,
         15.563
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.493,
+        7.504,
+        11.265,
+        15.563
+      ]
     },
     "3.4": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/122/audio/audio.wav?Expires=1780211951&Signature=PaDba6TX9DsCWyQYYH2pCQd58guKB~NCvCVbQb1M3Xqe2mt7BU4bjY6siim0Y1m1gs9BYZiSFscJAVsrB6dvQT-tAZvjOn22h~5H2l8YfCtUHppwM7Fi70J070S7OpwM91jimmXXewnrICZ4PlH6J002STMjYHbKZpiZG6OYIVeOc9v77AA3Piz7~aCUBEUUt32x08ZQiq~284N4k3LUOywss4CQGxkJSoNzSEjd4WU5FxJPQfUNUpLSLq8BSLqr0jr-avetCNem~nqaKGfUO08e0lN8iOUbyZbRtLsF3Qps~8XUFeitUwTiZrpMrYDTPrZmI9IRSv5iAESWgNhPBg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 122,
       "lineTimings": [
-        0,
         7.054,
         10.378,
         12.314,
         12.994
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        7.054,
+        10.378,
+        12.314,
+        12.994
+      ]
     },
     "3.5": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/123/audio/audio.wav?Expires=1780211951&Signature=M4eyKQzXzU3pTdUCCa~Cpl39EZP8kegplzgPfUh~cJn0i2Q3TiuJ-6AmUAz-IqbekOygophx59kxCD1A7FU48Qzvt495Y58Fqdlenw7PVS34HKt4ydYuYTHZasp1Do-ufBoxuocsJBUu-hN8rZ-mF4ZkzQZw~dpFcnvdiaFoV9hUm8Fk40Y3SCS~U-B-9v43WXhQk80dEI5uaap6opQ5ztrvYQ-NYjtAyU9ZNXFKOIMKM1BKqf7OF3v-7uWvT2tNRQ0dvc-YxczaG-8anTW4-beOZdKOEnX0J8i-4Vd9URfL1P2I53btrSY06mn1fG1HvDNhOqNOieh-St2idZG~Ng__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 123,
       "lineTimings": [
-        0,
         3.144,
         6.754,
         10.365,
         13.987
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.144,
+        6.754,
+        10.365,
+        13.987
+      ]
     },
     "3.6": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/124/audio/audio.wav?Expires=1780211951&Signature=WAWNaSNlJZVxNovoMtfhUBTNFChhtu-I4XA1Qb49J3FPu59LLMG2Imn~k75XozeDmD8WHmWHQ5ItZEcqWRIDZnN5MtbnqfkV5SER-cKPFijJZL49i30bIZ7Omjf1EXK1IXF2EL3f33Vx0SDvAAyUEJrXv~d1gzXW7BsKg41jAW2BDhvT3w79lgYo53UdsY9TliUCnge8-ZUyK7E96qzSMvmPcYOvKEdiDZzeRXBV4Agjo7GjWbrtvzU2pY9-lsG0Dvhk8VJquO9cUZqZ~ZDjXj1e2Qe2bhc82-HEraoeSW1J6WsTmxpdBp5qU3Bf5Ou-Q03nFWboHPPTcB6VU-Z6yw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 124,
       "lineTimings": [
-        0,
         3.656,
         7.192,
         11.177,
         14.034
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.656,
+        7.192,
+        11.177,
+        14.034
+      ]
     },
     "3.7": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/125/audio/audio.wav?Expires=1780211951&Signature=rT5f4ejATd7R0eKsY1-zX~ziIidpsgB2go2gZKDkjs4g3F3MXLe~Yl~SMnlItkZetgQ0IRWBsvrUGcJXNV3nW8UmAgf9KvUFcSJh4KBigNQNf~M4Q3CvF~NYQsWUIaVZWIp3e8WEa9kFUN7sxsMaP0k1gbXj7zlFMP2xpxqU1SRAvWqNWBY3z0oeF8u7l8qKrZeUyi9s5WvgHevT81dg18c80OR9PdLM3RmrUexBoTeIaxu7yKSUEKawhXkuuE60mcgDc9gUIehtiO1iG5FAlxsSgfl-MRkaGygC1~KMdzro~P3XXZR~loRLOQV--7cHYyqL0HGLSLiYmGECmHBw7A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 125,
       "lineTimings": [
-        0,
         3.169,
         6.58,
         9.753,
         12.004
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.169,
+        6.58,
+        9.753,
+        12.004
+      ]
     },
     "3.8": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/126/audio/audio.wav?Expires=1780211951&Signature=2UiVaverDCl-y2JjWGGm4XoYjmh58cxMUbXyzcJlsA6lqqDSdduTU0guA1UPUiMPr5GbZ-RqgOuUYnWiMEjml8nGueczM5CMYLyP3CPln-TQXQE~7Q7X8QaPA8IxjmqetqrzneLFZJ1YJqXf3CVdiSoP-LSUq6Az8AHfl--f0wRTpzLYsmxfDy3ekzu0t-B8mJW7VUhJcPe3Ul5izOhaLW4FGQyS7BwwWLVV2uxtUi3bef-KyzrUkIRO0LxZ4eIcBba-67Uimay7dJ8YjqcvBC11GNTcD0-WGlt9IidijEVKJwBwsyY65NwXCGkeM0WFBvsFIi7u6vkE1CfNIFCfjA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 126,
       "lineTimings": [
-        0,
         3.556,
         7.317,
         10.578,
         13.942
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.556,
+        7.317,
+        10.578,
+        13.942
+      ]
     },
     "3.9": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/127/audio/audio.wav?Expires=1780211951&Signature=0t0n36QByItHbOa87zhzoXGnFAsFgJbS6AtEbWcwD52LT4Rk2z9jZ-X6M0xv2CtOZSsBVUyegeUfeFSPsiqGqa4~28jg1ODohaHZHKS0o3bZwTQFB5vhjh8qs9imhKpkDtHm1zbyrWVOxIUoaR0cKnPl4Y1cOZLl~xO~gqxkQd3VWFibEeIxOk7wnI3AK2vEruc8eIBFp73AsAxsiBL0d4LAPM6QwgU4buF7ELdyNIUQzXZgcU8D6JtXwNcR0dGxdzYETO3VP5XPwdr7LGuJ8B4TcEwRQ6zKQFmEAmFthnSUIoyvk-Csz-eYnpA8-rI3o9~kpjUVjF9njmvHGLvAaQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 127,
       "lineTimings": [
-        0,
         4.143,
         7.929,
         11.515,
         14.062
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.143,
+        7.929,
+        11.515,
+        14.062
+      ]
     },
     "3.10": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/128/audio/audio.wav?Expires=1780211951&Signature=r5i5YG1omKMcaDL3h15a6KjJ-4OEKeoFbe4zyYwD672xa8-P8iKwrkCtHW19vyAd5NAJbnYM6avWjt4UjWgyc0wROlQbZIqYBKu-YRxIgcMrR3KFIaZp84UV-B829bGt4KoAmIGGGylgO7o09F5krkAFPncsjB5sdGts0w0NBHvDl6WlwTTvqyf7qxcCUeDdEd6Wq1S6Ig6qMutkMz5v~6qVnIQglZwHpMMAfMcKVt9MKOAyvHpE7sNy5hg3MKgqCD54sih68gWMqNCAAzBz0POifCkw5M5Eiea3WwEHIN3qnYPttnt-YCtHX7-~xa5E2fb0YTTKHYTNXQB0~IpLBg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 128,
       "lineTimings": [
-        0,
         3.993,
         7.429,
         8.616,
         12.99
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.993,
+        7.429,
+        8.616,
+        12.99
+      ]
     },
     "3.11": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/129/audio/audio.wav?Expires=1780211951&Signature=G2jUnizz6~dNag2Q~kmufrXfZP9o5Qe~3hRWxjrrcCB9vbLfME6NmuTnAgprsmv9tw-ATmRlvw~oaGZh75Y5eBekSJkhgoxEVXZLNeOBKVfr6Bc2ZUyr2B~10vXuTfeh-H60sYNZNVo4thAsYGAtuKj01sH8yQ-jj-uPQeGKxUrGaxmsoRurGnJkTpdNfdKuOh8C7TCJN4QxI1c-QUegdGnF5VOhzk~ccCgTHJL4aGAtGZpTz6NSmomPj97BLfdBp4FVzewfHWLPjeI5aNtkLLkJBPbulrJigp2WjOvUy211GXrIQjMP8jTyn2KL3NOVmG668mZUTFtPt8Scx93eDw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 129,
       "lineTimings": [
-        0,
         4.256,
         8.204,
         11.752,
         14.96
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.256,
+        8.204,
+        11.752,
+        14.96
+      ]
     },
     "3.12": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/130/audio/audio.wav?Expires=1780211951&Signature=1K7lljE7Y3Rb-BjJDCAz-YR34u~Ru1uw0ygjmX3CepvGlgryleohxgc8-oavDMYSShSerfVWeTZuS53OTSyIWPdQZH51mrXvsVhJZ7fBebzOM3za75qKtzFmQ5GtNmdz4P2ifaInGWzpN7HEYFdbvcYarJnjcAKONLmjXE7swTBgPjFWM0RZgxlU63FPIIBTviHm1cqeGXJDNpYPgmZlZ2oHu8v0RbKndccTIdvfQwmFcUz4EDAFUWuJ38SYC19nr5iovxV1SJdKcceW4DuribbcfpG9fqVVTjkOK5-KTUS5URbRTxL1RzO297rwPo48PIEGZUGmQ9B~oqz9qMR6TQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 130,
       "lineTimings": [
-        0,
         7.804,
         9.003,
         12.065,
         14.05
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        7.804,
+        9.003,
+        12.065,
+        14.05
+      ]
     },
     "3.13": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/131/audio/audio.wav?Expires=1780211951&Signature=aAJlGNw4htLW3SauvVig9D-6K-X7o7k3SbOWVsSIhmKwIztNjVYRQJEWHf80U~sqP~0dzXKGtJrdneSmGlT4JthyR2nyM8ZA7FFgQmjsxovnpgB2jISpnlrpEPRHoKhD5w2CswvKhBhZ1qkcV1ZzL7nxiZha1siUL~wv9PsdDmE38dtfRyHiXOotO9oButIxdePGnWaLfJeF6k-5xbeRv~-FcFvCONQPHuCFDwx1YXACrKROpOg9Kr0q-jF6fCx6rOB8r~KJ~yGfFnHmuzMXaHzLhSyuR3TlNJJfNlV9Tf4J6ExzVT2Ei1iUBJhqwih6hWOpxoCkkB7B4VtuvkLlOg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 131,
       "lineTimings": [
-        0,
         3.593,
         7.467,
         13.714,
         13.99
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.593,
+        7.467,
+        13.714,
+        13.99
+      ]
     },
     "3.14": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/132/audio/audio.wav?Expires=1780211951&Signature=T~nNf9zpqgkj-ai4a~tH7NpEq6vCF7W0imsDkHYDQ3j3bkY-B8FC~Gfjyu3Ag5LZQSsI555wfYo7r1eyzjixGI7mJ8rAw8WvqVW~a2m8WUPjtVea3sLHi5BXSMpeesivSjCETFdjc9K0PsW7MMg1fyDGo~Prl4GkmiG89ScLTOqlN~ojzcjLfMT1Z4GlczLH8WHevDRk8myZ5ZIuXVLg~1jd09kEelwLo17jO~Yu4WufJ3qREYIPXJe2QJTs5fiQCD9OE-~FkpVEeUuCo7yP0AjQRW0t1E5yYzRzOxupCtqyupSQxJRWIY~eJQ1k8qHA0BQ0wgVbVWfj-4uRhUGAmg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 132,
       "lineTimings": [
-        0,
         0.67,
         4.368,
         8.041,
         13.997
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.67,
+        4.368,
+        8.041,
+        13.997
+      ]
     },
     "3.15": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/133/audio/audio.wav?Expires=1780211951&Signature=rw6UBHcorZr6kzjQUbxPDMcb95ZjXne7wF-kBUXBpc7qgQz38jL~Mnbil98jqPwoNM1hrxzNmPKUHrt9hhIG1Jb-UDmrIX3Sl8sGVpTI7rR1u0hfAh9jgzkBquSL-Iz2jTgdPBYp31xXgLVmjFbgBJT9XpAQxUUedSzESMgQnPQp3ZFhpXS1l9YdrYDp~jTGbhWT~PZJWcA-pD2Dn4ct9sA~LXZR~Io-KgeMmXVUbVAqubVLQ7TpxCHoo6G8d78sSfH5Kaj0-2a2gPvZIRwvmhJ~ZLV8hYHQGmBzy4ZNT0cP54rnAAbnEMP9ZrXqbKL4jKEsMslGpYeYE3oNQvDeRg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 133,
       "lineTimings": [
-        0,
         3.781,
         7.267,
         10.828,
         14.03
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.781,
+        7.267,
+        10.828,
+        14.03
+      ]
     },
     "3.16": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/134/audio/audio.wav?Expires=1780211951&Signature=iqzlnn-fuEwYMhbQxAXhgIY726KzmA2Rr7dE4aiBogWAsdqXkSIgJhxpj9xq6DEWNdrHnYqAKCAzO82yWkNk8D2NNL-1XzsACHWxL~3Z3ctUu-rr~-R3k~qNW2amN9a92EnL1A2o6JwPWOzmFqd7HWPEPCeMGJlNBhAvPshts0gxIyQLopmK7FCpMubS9NXKgEqRdMSJbZdkOBASMELTF27sn2UJfNq4gh8oeByJD4oePr1I6IFOoUwri4bpzEV55OApJhQ2YK0R5hIsnO0CtfxLjCZZzqtczIOUX1q6X-WLv8wPIWcD4SeA7r3GtZEYbZnJGJG7gMf6LPKStsYDBw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 134,
       "lineTimings": [
-        0,
         0.67,
         4.068,
         7.554,
         13.919
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.67,
+        4.068,
+        7.554,
+        13.919
+      ]
     },
     "3.17": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/135/audio/audio.wav?Expires=1780211951&Signature=TJiiAuPYFwhcLWWs8p43cX8NwJNfVUIIZeEc~Hznv~RQnsu~vjHwfCD2ud3AFIKDf8wPLw-CMzwiJY0pqwWJMEdwdEp2Phzls9X1xI4mZAx0Qo4R5MTzZUv3iEthIRr-sZ6luA4Y5cAF38vkfoXoUE00RcJITgrx-1woVt-YRGO4flYW5JVSufzZkMYHUIA~~vGQWpGnYhk6HqRiMML0qKC4GQWsiLrPXBtBOeDIw6J3UNyh0tt0rUuxDegbsxoVi4wz9XYRt~9Tttmp8ApYT8f8nmG2gOv191ukKQSLUqEK3UXiF2N-shPlsXDOJFdSDbpVZkxjPfYb4f7DrdgVaw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 135,
       "lineTimings": [
-        0,
         1.669,
         4.543,
         6.967,
         12.02
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        1.669,
+        4.543,
+        6.967,
+        12.02
+      ]
     },
     "3.18": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/136/audio/audio.wav?Expires=1780211951&Signature=vuPtd9mnTtWAaHOmav6uTXdXpMYMeOr2dhkaLlUE1fWXiIAoELE9wM4PboHX7jkjI~d8yb9l17CYllmiUgxuvvgC7bsaP3xCi7iY59sHo4OB01sv~GCEiEc~ipH-uODoEhy-GXWB7QMc0gbdlx2V0vT1wadFNHmZo328C142RFssUBLCkfdJJpLIYaOq1sMxMI~ZtRBmNC7sWFw4fntmYxd58JHT~hIpvlMeGZljHSL~zDAkMVT3AKpMuWinS7Brg2gpxebKDT7oR5ZabMNyzr6WZ8Yhh5gbW4abFjtKvq0jwb8Kgk6lIngcGj5WEncvLwvzDRFGHbIt-DQNv-W3Xw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 136,
       "lineTimings": [
-        0,
         3.831,
         7.354,
         10.915,
         13.98
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.831,
+        7.354,
+        10.915,
+        13.98
+      ]
     },
     "3.19": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/137/audio/audio.wav?Expires=1780211951&Signature=WqtcEC3A21w0UJNGcZ5HI46gr~g5yAvhBvXPCumxhEUxAAfZx7NMLPobN7x9XgTZUuAoc-bEBv~aANJV62Th272OdM91VlA0BUnk2G-or0PccGQ~J-3v7Sfu7h0EOnQ0hv8p5PvltWoMWtHmY0SjrPL0Witw7W-fAYCky7ujBOGWGmejqlq5KZbrsxZBB-k4zdFHhgKkfyJR51Sc2y5L9pWDEKg8RAY7loK8xvdyXeKlyU5bUik2gACjWSo14F45FkUCbXr2CRkmI3qMYZ3pwpe8L18hoWSEE29n9chOW4wKblNO5wURer4nejfkBiyENh3EfglTE1hWtX3-8iWaeg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 137,
       "lineTimings": [
-        0,
         3.194,
         6.704,
         10.365,
         13.076
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.194,
+        6.704,
+        10.365,
+        13.076
+      ]
     },
     "3.20": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/138/audio/audio.wav?Expires=1780211951&Signature=MRLOqNVY9dz2yaLuOXhAHlU7pMkvHlnqQmtUUDqdcKocSQi1TIK~spPBIkMt1ShQmESZitzaDCiQHYciw8C~q16LE6X-W0v~5lEDOZBHDbf0jufj452ua9OFAmMtFLQXJq7zMuLYZs1frjtt9f~WUF0NyGZMcnKnLBCps8R1vtMWtNX81Qbh21vo1VG5KlkyGqUhZK0bmYT9DSvm913iccqEgeXwVH3bvDJ670xXhEVn6WRnmX1rXET--9h~0SVmGpnk17TTZFlv7jORZPKoqhlB~1g3QF0UkBMzwRpMXwGvxB63elyKphCGZGFs7rZXtodci6s5mTuSpmbktDnKTQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 138,
       "lineTimings": [
-        0,
         2.994,
         5.705,
         8.953,
         12
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.994,
+        5.705,
+        8.953,
+        12
+      ]
     },
     "3.21": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/139/audio/audio.wav?Expires=1780211951&Signature=1u8b7UbIqZDpfRUQg3EbF5x5Rt5cxLwsF7dTeZh~9Y2K3y5JzB4vnS89QJT0xet~AhwIetR5HzhZ-eOza4MBIE9XvgXHKU7B6oNee1Kzs-oaLm2RCxCyEjstYUcQM9ka0QDQbATsvO-2kQ2GxKG~AR2GPUUtSQyR~8y6zA40lPbBmr3Rw1aKMvfAG40Ctu58Qg2xvcNbrf5MmLrnwEfT8C4LSPVvHqtxlY0H9s4ahgjEMEYVfAVhE3KOA-r7Q5~ZzScdp0RECHGMCKymM-noEaHL2~v-lRk4IUow0ZJ0tcpZG9iJ4pL1zTqCfWqt754VXeJP5ehWQyMikSc6GzuF0g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 139,
       "lineTimings": [
-        0,
         3.581,
         6.392,
         9.416,
         11.991
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        6.392,
+        9.416,
+        11.991
+      ]
     },
     "3.22": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/140/audio/audio.wav?Expires=1780211951&Signature=dJD1UFfQ8lXy6PE6~1yM8uF8Bs9e8eRA20kOyAeLGiAgU8O6SgxMrO2qxi4R6pJUxwmXb9Fl3BuNtH~KcXbuJdVtwy7-Nd~wT5ixwNOcKCRjeepJRbSwgwi51IOI5GYkakApkEmlk-PQBNXZItO~tJyxffVEGBvWSLnag6pE8wytDGknucXP9yd269CGI~w9IFZEQ6dHFHHgdJqR7mBCnHFNlc6yl7W8OkClOJ22qSo7g38R85MltYh8XSNsAD5dRXy~ZWvPXC9v0HaENdj7wzEwqVISkb-sR1EIbFCQFhiS~W19ukzKUjUaPCd0cDll-bIRgEn27jXHYtKaUGz0EA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 140,
       "lineTimings": [
-        0,
         0.632,
         7.592,
         11.152,
         13.935
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.632,
+        7.592,
+        11.152,
+        13.935
+      ]
     },
     "3.23": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/141/audio/audio.wav?Expires=1780211951&Signature=eSuRWrjOTp7Gxgv9AJLWq~15aVSOB1zV2belzBJhxx0ZrAbXx4T5Iob5Azt-1YlH9LGumQ036uc3WumqHnC01qNQnWnqMFQAXgRDlGCqYlOnynK2i3emZYFWr8~vKHDPCtUvzvCXjQSvgq3xlxpkxF~LF~rtNk8DYJSXKI-0sjG8H~cP51KQdqURlZ6YCrPXvrLMGAJ58YvrPVBy9pXoYmdvSStfHSP9QZW4kVeRUcke5jiw-m8MSLPfsTMMcASBYpIOf5uz5JKbMgt-oZnoe1EuJwn28OjMNryxb1Qwj8mOwAaq0p~jiM5TtfYv--zODxWX3hSS1H0lqMxOd7WKPw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 141,
       "lineTimings": [
-        0,
         3.731,
         7.354,
         10.715,
         13.992
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.731,
+        7.354,
+        10.715,
+        13.992
+      ]
     },
     "3.24": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/142/audio/audio.wav?Expires=1780211951&Signature=KLATTl7X5gw15u1-iIrBDeKNe8z~NPJsUMZjfl9LdvrAudLEhjqp7~tKnnO~j9~tPcuUNhUXFCg-ubl~3GGafnFCJ1EaU5cYcDB-M-0shfwND3fJT4HKSkyPrqJGIDIr4zByvNrmzUHpqNMUd~STNAuepqIBSCEDwVFJ3D6k5O-3nFthfV6QMbDP41F8fjIXhrhGsN2e3Gei06SoHpc6fYDgZUnrMS7MCu92F3ofHItNzzGvZp2gvvoiIUqDh8ODoZXA9A5En4VtDZoPr7rkQlV0CdwhH4eBfyMZhbDnTwWadb55X8zhqEj0sf-OEbjf0z0tabxKzs-zXE5Dz2P~1A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 142,
       "lineTimings": [
-        0,
         0.607,
         7.229,
         9.266,
         12.975
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        0.607,
+        7.229,
+        9.266,
+        12.975
+      ]
     },
     "3.25": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/143/audio/audio.wav?Expires=1780211951&Signature=tb8DHk~5RV2ljwLI16bEWFkW2ynQMOYuvKe4gmicYbT1vtRBFc5R0av6RT76p7GLxmpVl36JvKKwp21KNIIFuTmM1XU-qI6X84EEdURhQVFKL8utFk5oIKQyaPp4~R0d2dAr-y4TQ9AcmdU-M4y1-vBxvDsQ-VPGAu5Bh-ZerkURmRH55uRXLeIGjMDGvXRikdagU3dSoDNSt4dq5t0Pn1k5PngU1D042yUc8j0zmOh5it946HhUj7r~WErypV~GZwts8JYNMrjVMZzr6X0ezi06SLOvf2oovltWDM4QkAVv8SYJaLJkHzAZZFUp9SJah3Yd1e6Vs9jfPuZqBC5KFw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 143,
       "lineTimings": [
-        0,
         3.893,
         7.267,
         10.078,
         13.04
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.893,
+        7.267,
+        10.078,
+        13.04
+      ]
     },
     "3.26": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/144/audio/audio.wav?Expires=1780211951&Signature=rpeoUT9zJOf9YpvhRfSO89N~yJ7ic8Z8u3yswY76mjOAaQmngQbrFSMOF~EsSve1T7ObGEP2rSQNggpChwicwgPhDbtaOKeYC7-Hyo~BpvnJEH~-T401B6cnWFw-LNtyufWfXUHR5P15aF11kxZdRbjfu6UqxYN9~kf~2DXVnqBT~Yuulnm0HXHrMo2sltGCGz0GVgFfd16HmJ-TDty~OKd1jYQPNHp7Gjx8TqBHTxedf2xOjG6z3ZBwmTdRMcbyNsj78TO-dxavpi0Kb9u3zhiBY2LSn4yb9TFJQazThgmEvB116syDhIH2Kw4QMn~d93Onkvdur2rVwV-5zxRYXg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 144,
       "lineTimings": [
-        0,
         5.88,
         9.466,
         10.878,
         12.097
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.88,
+        9.466,
+        10.878,
+        12.097
+      ]
     },
     "3.27": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/145/audio/audio.wav?Expires=1780211951&Signature=yo8~Rmngy2ghy40Lg2PeWo0VWyTNCQh20Go~BnPnrP7Hi-o5t4N4XNEwrDjMFNEWFrKg88BSQBgU5IzdtLb68Itgq2Slmnyi-2GTn46VyVsRw0-HXZBbqWogvmCElVfvPDjvXDfvb~2-7yqNyPjjw1vXD55R6sLJNWJIm55tA2MnxyEXzbRcKTLgQ75BwFu7blryV29UETySn77tYZfXIFwgHqKeAlAiRmHAOICPUjOGFQ2qrELeR8lkqantsDGzjHtMqfZutl-dy08AtbTIZA9gKLwOiNKGLj0A-XJHzSN3ponDPj0ngvuPBbUo3zbBFpcJZxNdXYy0OFF0o8zBeA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 145,
       "lineTimings": [
-        0,
         3.668,
         7.392,
         10.99,
         13.935
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.668,
+        7.392,
+        10.99,
+        13.935
+      ]
     },
     "3.28": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/146/audio/audio.wav?Expires=1780211951&Signature=vKR9t7jfeUDmmDkTQvYavrrLwjy6comZ27-qb72DP~dxHYB1jASybHjpbFe0Ssjxda0Io1G5~a~Gm-57H~0j6vYiRX1cTPMhzDmthPtKeFkk2kIjAQtglemTdI1jbVqJbR6tzhFsLYBiPbanatu2GlMtovmkteP~0CKrL1dNkwpQH401F~bFsQK4UthsclEX8Wu5OHK6KiDKbj4Cf8i2yAZRP0fzDHS2D4Wux3dDA8gotOYdelHWpFgVTwnxMXb9xmBQjN6DpYNWL~v0hJ0B0zh6kSoy0MSilIz~pn5bKsjd~S~OgVYj1cfPv2MgcDn2Oe9DF~Vb~FQ~2Ojh8AP~BA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 146,
       "lineTimings": [
-        0,
         3.581,
         7.179,
         10.478,
         12.026
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        7.179,
+        10.478,
+        12.026
+      ]
     },
     "3.29": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/147/audio/audio.wav?Expires=1780211951&Signature=UrQnRzStTExfgtKPnN6-zm3NEGUR2PZuPq-8fIcMPOs1VDyy6GayNldHTLyTo3Rh3c1sbUUtaXuyiQSWUQP0u9b-yGyj8vkgUTnTja5PxfQXfuQ3izun7Up4Yn-jgwInWE4qtBVLDexO~Xqzm0uSpOUXZpqU3XRnDjY93q79LiqY~ztXlqDUYaSIML5sKQHbQoMx2LHxgsFUpEE3gSYlZ7kxHYp8DG5C2QLOABvTkDmcvx2w5lb73uMPTIKU5PDTBhK7F5n9pb84A2wAdevW0KMeKe0XjPPX21QkoZMkL0HVsFh38cWbGvtXb0Usdr9fPduojPyFYG0BXOKiMGhsKA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 147,
       "lineTimings": [
-        0,
         3.668,
         7.029,
         12.514,
         13.005
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.668,
+        7.029,
+        12.514,
+        13.005
+      ]
     },
     "3.30": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/148/audio/audio.wav?Expires=1780211951&Signature=ii2LhG3zM05qwMYBZl9IU4JIitF76EX68vgkMEaeXgwgIAlOiiULAL4ZllxkefHJ3trS1eBhe-Hh0c1B~GDC5Hue-GV0sN5pDN2U9H7EdAP4MXqxmoG9Kgfoqdr4LvMPQEEOclVMS~O7VZYPpwP6~XIJoNpx70AA0PN0gOJfTW~2WlAlNy~~IJDaF4fmeSjLPqkiXInX8wiH5GNb2VsmX3Ql4qj5hHJxZrswfztDjPFpt3QyyQpgeYadesJt3icArv32zMNEtDr3vSnphAQF5NiNZggHGXoHIqVj-3aAd5h0npCIdnHeaK2DXiPrBRivIpY4Sjg3eaQWYPh~-d88gg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 148,
       "lineTimings": [
-        0,
         3.893,
         7.904,
         11.79,
         14.929
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.893,
+        7.904,
+        11.79,
+        14.929
+      ]
     },
     "3.31": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/149/audio/audio.wav?Expires=1780211951&Signature=yaTgxO6MvNiuxnlotm7-XE8X-oxD-VJBoVVO5OtckWE-B6QiaA1mywQoye92XN5G4FTyxr15oB1R~D86PhwxPYKy2re4wINikZ7Q5GRy-Hs1EY7G89DsQIVwJy~HwKTRhYTbX-TJUYbK7PwUvte1eFd0nY06-tU8gItzKs~xd861bZCw972fIjuK7rd7DhSOX6TBezKnArdKnVymp2W5vvJRBUgTqkL0gHVy~B1SANG3VfZt5ABxHWHGsmNhTsMpmczGGbWZBZz0x~DL0aFbJusyfPpzkYN6~riMTMlEGQkcrGbBRGCWKJy9jQwThlOAcYDBzWIItiTDZatJZtYx0g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 149,
       "lineTimings": [
-        0,
         2.706,
         3.656,
         6.38,
         12
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        2.706,
+        3.656,
+        6.38,
+        12
+      ]
     },
     "3.32": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/150/audio/audio.wav?Expires=1780211972&Signature=ibgMROxarA6DmMWuD6s-UqeCkVUnGb2gFi51pDg8m6NXEGhglqXImODXDhxSYZ1btbhdbzx5VV5qcD5pbkCENFK2K8F3tGIWC-S2T9TEU36dO~DHLswivdeBhzqD~oaEmnCTT3RpcVftbvmN25RBtD2gLS43uLRsx1BRSQl28FPzmv-ZNPyYUCppGgWFbGp38jI7lNi5FWkFSimQLlfFITn3-fhbKB3PMsu3b5RdP9BUkw~ueJIxYBuyeehFxoG6Qt97~dJYnB2fUGL~2zMBgh0IFEQ9DmTx2sEWUOkEm7apXhhctYND6H70l6RE9hHkwSPArQJPyEKxlLQqaS78Lw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 150,
       "lineTimings": [
-        0,
         3.606,
         6.917,
         9.753,
         13.014
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.606,
+        6.917,
+        9.753,
+        13.014
+      ]
     },
     "3.33": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/151/audio/audio.wav?Expires=1780211972&Signature=ac4IFg87HYPjZxR5nYjn6Cj1Mqgjt6UpwtUy4QuqfaTn1XfLx~zPh-Ft9tcRTjdxEpWrpuBkL8H~xG9vdTr9RQHrLblZ-8o6LXhLsiUtW-eqaw8Xvpy2TpL9ZrSsmkf1v2WIuRzyJ-pB4hnGfHfrxhBJinyMySIQSRaoXDGZyt~GWK~xH7B-lUV4sdcsFwVp6SUdnD3~EnZZauv6q75Zag4SYZvu5923adwJagAixe7Rijpb0c9FJ0mGeIxHfyVX~UK60N8w49KO2xKPJVLowC3qbVlCiILAZYrLWFm79ScxpaHZQiuCwyY3zjDPFJCSmu1bW5M-nkmWuAV5-7iJzA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 151,
       "lineTimings": [
-        0,
         4.643,
         8.066,
         11.465,
         13.957
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.643,
+        8.066,
+        11.465,
+        13.957
+      ]
     },
     "3.34": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/152/audio/audio.wav?Expires=1780211972&Signature=Go5hdA7WhQvzVMebDVb9biN-czYzXJO0LutggJ4MqLOAREg~GhFP7TYEtC-AvHtLaTqtxSMDRex1CuuIHWiQAT09Adp1kZXjhT~DlP4HJnCSNHGndoAaw1HanefMD4C~cGhyzhyu3j5eAkmx8AbhZrkv9IL5PUyR8hYrPEG38j7~BWvNE0FzyY6aWj6BoHPQK24EKuq49i2Xkynw07WNhZuPTgpRAw-YXMcB07FEpinN4FoiKe5NI7N32xteBB0VW6QggAUtDX5oMAZ9MOFAUGQEdO1boPrFiaCdpkTYigutqPG5CCNtb7O~CKTJ8MvoL956EkwyU76rMJXVMEZhLQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 152,
       "lineTimings": [
-        0,
         3.581,
         7.104,
         9.915,
         12.08
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        7.104,
+        9.915,
+        12.08
+      ]
     },
     "3.35": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/153/audio/audio.wav?Expires=1780211972&Signature=eNfPE2l82~BkM8mIWs5tkBlkFdsO2XDyYBruH30h-yAijs4fDWOXK~mty89FOv92gxwud0sDPCrjTmj6OKMvYDIGNz7xk7u2UGZDkFsmbUAWFyROeE6-JjkRBMxOH-dgfZ0dWClSG-4ucoCDQfc2I1HNi1sL~82bSE4~66NfIaVmsrcjZXlGsIbpMYOqMxPtoySF7T-7xWoYNsLE9MbJPeCN6IymKIivTjVubP1ofyT7kXDAqvNOivKDec7X7QCocqte1NLjgwe8rgYQ9PB0e~PMqthmtoc2Ih~YnqR10vGlCGyXyZFDeehnOEcbR6-DP-H09ovLAHvMDYQtSZAxJQ__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 153,
       "lineTimings": [
-        0,
         3.981,
         7.979,
         11.815,
         14.997
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.981,
+        7.979,
+        11.815,
+        14.997
+      ]
     },
     "3.36": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/154/audio/audio.wav?Expires=1780211972&Signature=0MIHtz3ix0zj3OwCRL1MrNekYJCrs~-kqsp~QXmd51k5rzoUFh5K54xtOrXC2gdesZNVR66BbsZ5lm~m0ZX44H02O5ST3EWXZF~0iJQNvtKcuu8dwzd1OeR7zE4g2Exs4~MSObWih6kdOJLwB9bBGAuvulYo7UyOAtPl0wGOSixKhnLuzMVFqu77HeWDvvBse-ny3vHT5elrXqK~LZeZd26bwj-~OlnMZdoto3S1U8kTeSNwpyERcq2fB~6Y5VRzT7K6pkGbIYRTdsvlQfW0WcS4dS1fc6C4HPqlr-e2lVUuXCjhk0MDmJMN43tBPh831PQY-iO7zdjURvzNknh4fQ__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1847,7 +2630,13 @@
         10.103,
         13.614
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.468,
+        6.742,
+        10.103,
+        13.614
+      ]
     },
     "3.37": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/155/audio/audio.wav?Expires=1780211972&Signature=rHzCVYqTCHF3XXbqoYfrhjWw0tf53ktB9f4myvK-~HYJORRNSUOT~aSnCzLJ3b9bEHMYHBXQ4ir4vW~htubtktVjO9xS1vQjqBpXtO7MrDXvA-p4GH~KIcyH3EZ8B6ZlgfPMQL7fNBz9OO9o-43MQ1eJ-J~j6AT1gMSxiyJ-IIyrD23BlfN-QjV3kYkIVkxnEVJNm8MOz95LPfbLrAvVbdtnCMVyc6xzYNHxR7H1xjCxfQyEA4AXcSEIeaVWFbnZCWGzKrnTDe2-TDFvbRF-yG0svU4mPSMBB93OWMwNt2ANURzWWfoWp9gCmjuscNv5jDrPLY17VT~G-VdKKrhJqg__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -1858,79 +2647,115 @@
         10.378,
         14.051
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.556,
+        7.092,
+        10.378,
+        14.051
+      ]
     },
     "3.38": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/156/audio/audio.wav?Expires=1780211972&Signature=Tm7KaMKls1di9vV-HicflArdCewQgceCfWagpXaFpD6TEHcnks1bog1Ixglp5ClJXBrxk6jsAzyzRgvpyQEN~gzRwRpM93~tytIshhfpmQV9IJNT-SHIVHhvk8Yp7mgJJyOn2wmoG6OdOXEnLzIH54Ni~yXEcBGUaG1mixXcH5ZrkzsYbECfxNmt0WpyzOhPjilCu2cnNB4j7lJnrcqnHsaj3O3mU-fd~NFnS5RG~8VOdUtqpaP-KSflbPlmgbq-omCZpD8oXQ5-63vzzxTSrMq~Ow0YYecerdgcWOTqzyeliE~-VnGoikru7UFeB5lR5fX3vUgV15l-w6~7USNPjw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 156,
       "lineTimings": [
-        0,
         3.868,
         6.817,
         10.165,
         12.942
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.868,
+        6.817,
+        10.165,
+        12.942
+      ]
     },
     "3.39": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/157/audio/audio.wav?Expires=1780211972&Signature=Xi-KyOr~GOKA4KXU4qgLNwr966LyZy7h3LfKHjytGoscvkU5w96TBDSFRsf4fq77Hs2U~Pye13Dj76-xGUrY~gAJIvh7lbhRoj4aMVgCvzwzhRNz3ZjbonNp66AjrZZKdwwfWeQDF8KrvXIDm-Fd9tpb0uxxBTwfdf~dPKfMaSfa3WSYbBqtmVFkFqTOS94vq2KtGM-Jbx8aDIQJOq-uk0h76v57MDYCtb7M94SDrw~9SFNp3aPqQC77Gb3TD4HvBPiGP8RIC93GzzlaMf3XJI2VO3SxZwz1bS-n9cnOTmUNLl8XwBYqssWOhVkcf~6UAqevSoeB3tBhI8GfUr1PVg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 157,
       "lineTimings": [
-        0,
         4.156,
         7.691,
         11.177,
         14.001
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.156,
+        7.691,
+        11.177,
+        14.001
+      ]
     },
     "3.40": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/158/audio/audio.wav?Expires=1780211972&Signature=NqbTwDCgUjvn2m1miQCDBfy04irvIEImvFnO9~CTD61sJLgWwhT3JoFNrXE7kYhjMWlereMBRNqG-uul1pXcUHlcXCi7tj4ZR4GXHnW6ymrkk04oc2L-50DnxNmklKgTCtRLKOzDBgfLqjUmbAcGqAXzIkdo3tHZ~EZqIuF1T0bROSfwHUPvjAKlT4MSB15MKGQ0WtbFkxW6V6EHVsuEuNNJZTpUpU-887375pZM3pWHhMMlEBXLZlti-XBxA4W~i9aGVB0q4tnAi1G4JO9cTBsYssXohkFFIS5f6tZm~hA7fTW6gbLAqX2xNF7YOQ~kw2t-zUvhFCBvo0cPrtaGrw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 158,
       "lineTimings": [
-        0,
         5.705,
         7.941,
         10.103,
         11.095
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.705,
+        7.941,
+        10.103,
+        11.095
+      ]
     },
     "3.41": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/159/audio/audio.wav?Expires=1780211972&Signature=UW97S4bQA1xzY8y23En7hg~WR-0m8Gqzx0QnngA~hgZC8uJ7fuHl5XWFx0k-MUGxhCDqobXuHVtAqwLg9hqxdkdx-lbfT86n~kKxOl0HuaqzyT6bI0kfKzzETX~Gv8xVsgSLC0X5r87GCpxnkIUIUKb1YGzGoSjoreOWcFpeo1lylvjKC-D9D9H1MTjO7A3P6F8Wdp56K-IEHa9Ypqu8L-fljsBa0w-5uBq2r-1D1kDxaBBJI~JZwq~YC9JMz0eraKzzKDWnthGcuXHJeptht0XmvhbX2t-8IH5dLmL7527i1g0F8cJObR8vccDODyRUa4DqsP2b931p6qUaPz8BHg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 159,
       "lineTimings": [
-        0,
         3.981,
         6.992,
         10.503,
         13.957
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.981,
+        6.992,
+        10.503,
+        13.957
+      ]
     },
     "3.42": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/160/audio/audio.wav?Expires=1780211972&Signature=mmLaJ3YbSaMbXzshY9KVf3VK~PirHF9XcLFwT8dFzr4RHmJmnfKE~8xxc6~oYFYJAYAkhEipUykfuMg4ccwzTpRD1vP9NcJ-h508lm~ltHwjxCyulcWz~NNqOq2yW69I2cFCTNIV-ev0UpeMzGtzBFLbAeAXHHd0ISMn1wfffZVNyD6ZupauI60nAO1VrZANlurPOgEu36q0JA3rJK4plSaXpJM9e~2qg-8SdGafJgpdnvtkJiYR0f55tHubl1cni0H03-IqAZQwK0RfABKWf1-n3PHtuYpoGBtgg14AmYs5k4hrvzefXzE9~ni86WuoK~U7RVzrjP1RstcrIFnedA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 160,
       "lineTimings": [
-        0,
         4.268,
         6.292,
         10.728,
         11.048
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.268,
+        6.292,
+        10.728,
+        11.048
+      ]
     },
     "3.43": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/161/audio/audio.wav?Expires=1780211972&Signature=hoQkTQl~94yXFzm0tPQw7c7byW7lB8m0szN0FZvmHFbgGx6e7jK4A-YlEgsA5otKE6gIb90o9KIVxRcogjNTkH3J3e4wYBQu1q4IO2DdpiL2Os18txN6Aj40DEeGT7ZI~FpmGvZsbVqmgk1-J3arWVLySNZtwsh2hl9eZMTxwirQ2sDnTxFRV7LsK~Z7bEm6tBwt9-oOxa6~5A-r98h5~bUrLWfqYcRQ8GRcPp47FsFWWTbLw53PWR0C7Bees2P66ejc1i9LztljaI1tzFskWCD~-o5UjqAF7dk4zJ~tYdIFF5p4RXEMtVPmA50wzCOU0xdb0ScRSKpu7MtTF4O9pw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 161,
       "lineTimings": [
-        0,
         3.581,
         6.942,
         9.878,
         12.06
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.581,
+        6.942,
+        9.878,
+        12.06
+      ]
     },
     "4.1": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/162/audio/audio.wav?Expires=1780206858&Signature=KbZLQBjR9~CiFQGZJNxYlFfvYvla4hkF6oNJFCU~lwM490t8G8086wORLKEizZ2bK6S-nbQt482YWGgzBkD2xe~SW9boVlkuShPh2gpqvj6c6bvwwemydl-r44AugeiOSthtCSz5XEL5MVk2S-zUhs8dgw~dqUmypfi-s-4aD7zCSH6Mrb6shqc1iqUPbHsxWaIKM-qFVmWKfM8DltRrOGLz7xFHAZWGMmhl4RrldMXoJ2pHwRrzzjZaEdZ5WHYC-eEsab27fJhjqMyJhqjPAsfts8CGRT7B2ZfnApFnMKyCuD1eUftz2TJFl64w9wiUYdd9Xtgl4txGKDc8tfeTTw__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -3886,235 +4711,336 @@
         9.841,
         13.864
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.531,
+        7.067,
+        9.841,
+        13.864
+      ]
     },
     "15.2": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/552/audio/audio.wav?Expires=1780212818&Signature=CAOsRb8dUFSJtjX~3qpO72CcLpnVHMrFozjgxrnPcmXxJa4GJmg-UPwmy946g1pHskc3Ej9tZrqE5yLouu8dCfJGMe6xvwDcF9bkCBTPqJ8h0qGZe8YvJzaKfYhpnAIv~aq9omSeMFE-W1~0Is7HJr4BIByAqCgqpPTxf65ii9tjjS50PMR24xWE4K6To9SOBa2RqLcY4gA2WxbtN2EKbiLyY5pLHHYxi0NKmfA8Rj~H~iCSFtnWC1mfXkk4M73u8tULrC9vzba-t2HzKAJw3aMrPfXUwcf0Ust~DEKlQ12BVl1VcZ0ngpnMm5O0~pFD8~I2NOiIQ0Mc0EnSijYm9g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 552,
       "lineTimings": [
-        0,
         4.693,
         9.666,
         14.239,
         18.065
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.693,
+        9.666,
+        14.239,
+        18.065
+      ]
     },
     "15.3": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/553/audio/audio.wav?Expires=1780212818&Signature=GPb-CY4vEgoet7UUZr5Uh5ykLzz2AU7JifVgT207ecvH5tInJZPMTQQNyNy-xTUPHqHqyRqI3nRkEs4DR6Gn~lrR5bxbRHFXsmX84gqBPYRMWyebtJy93s~NKcMou4eV0uEJ7~j7-AENRsKifUXAfp1gXjrH9TXLv5lGhQfAlPEWBMB8OGkJ~3KM57FO28eOIm57fPzqTEz8aH-wN2MDr~NPh-JVZp5f8vy1kY~fCGcGkv9kEonDxd3WOoAsBTVDRHDcief-p6MzNWxVq4f71cZ7NST~oaFYpa6cb1JgwP8LZeEqYt5Vtxgz1jmD4UC89-XsjYAyBOe6YiOjcpgk4w__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 553,
       "lineTimings": [
-        0,
         5.168,
         10.003,
         14.576,
         18.964
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.168,
+        10.003,
+        14.576,
+        18.964
+      ]
     },
     "15.4": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/554/audio/audio.wav?Expires=1780212818&Signature=LoaH8oGXBD1E1FzuJxb6SpBb5-CKIlWibSZ2e9JbXrz0fhfO-gx0HB0yqIt49J8l6Xn17Guru5Yswq2HSJeTdrTeTbBrqdSNqOfvvZjAW3JmH4WYQU90G1uibyvuQlwtVMLxSN0xN-3t09Ks7nG6wlrx45SXtNJPPu7pcIRjjROr-Q~IdMh~lQg0xLV~fb6jswJ9sCENfvfhk-JgqrOlRFjTXgXyJrBRj1GqZMaVRKR7VxwKwpMAJLyvzJHHE~AenlRj7n-QX-Dk~gJTmd31I7kfvjN4mspji4DVRIT6YK8t-IEYmnuaq5pQJK4GP-jItgAv~MBNTIH1IAMPiAnSGw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 554,
       "lineTimings": [
-        0,
         4.505,
         9.703,
         14.501,
         18.98
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.505,
+        9.703,
+        14.501,
+        18.98
+      ]
     },
     "15.5": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/555/audio/audio.wav?Expires=1780212818&Signature=XWRv81XfHWUD0oUQ0~vhqiaakyqEWjKwbQcALA6O8glLOqcJ9t-d9vI-2f-mWE~VOhCk~J9-ssmm15q7get7OuajYJUnVNiOdi~Kza773yzGS5ZJqi~d-IHAEXrsXmwgBe0XVZepWvh2NlVC4IslySvoWCTcKqk5CYMbuwdnnCtmlTIpUKtCDHncrFD4otZa1p5pFvobnNwxZokcZPQ6CIu5Gg9l11-Wk9feL~s~oieXV~CjcqXoSD5cym7llu-~2-bJaN59iIWYFDYAsqDfoWWmI~cHzCrNxFYWUGaaqqYFGix5Fy0SjO338XKRFV~GKieJoddK4EUUA0aq988j-A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 555,
       "lineTimings": [
-        0,
         5.542,
         11.24,
         17.025,
         21.946
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.542,
+        11.24,
+        17.025,
+        21.946
+      ]
     },
     "15.6": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/556/audio/audio.wav?Expires=1780212818&Signature=Tv27LtWyADnex16MiXdMCIjpSYCGBuKcSzz6h1vjprW9pRuk2QMbLjTH0Ml5F7M3SYF36pnsRm7Zl~a35I7nv~AiZDuNCd8DZeMISfWvDW0Q8Bg~LAkkOqZOGzUzMHcf4DmyVWojgajSUXW5AV1NZWJCKl0JTB1OlXVaqDYco9K7P-k7H0yCEaNdUTWOF5P5KsQSvic45-jN-gnoRNL1neaP6CwwQFNF5mTAMnqGmLozrhLNaPaI1IbJIfaX~jaQN94Q68qrl4vFE1y2BlZtTxR~-DFaw~V8THPVUDe4fq8QKeFJVN1ab2z7VSOFeEhhGGE81Vr~iKwShdTs3iqGbg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 556,
       "lineTimings": [
-        0,
         4.281,
         8.216,
         12.139,
         14.958
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.281,
+        8.216,
+        12.139,
+        14.958
+      ]
     },
     "15.7": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/557/audio/audio.wav?Expires=1780212818&Signature=LUS~h-h6Qe-Y1ibpzrawbq2qxSPG065ae91TbffvprxgTGhXsffqb16~laT~voe3wt9fqKmkdzjXAp4IONSJTCMyozKNt8RdNv3ec8rA7bYnThltqtefQihxQTlKp2JhXDdAgYzBIfhc~qRMvaB0Bv63fuf8C13jajuDzA7HL9H0KY2W0qlKZWgkncLCSIMuqe0ef-jzudD-5BDuuh3P-KMma9iZ3vzGT8x4r6OUBu8sCsCNiP11PcDBx~kQv-T0q0y1Wv0YXvGwxn90d7PLhF-s2r8TfVL1lva9RlzVI~XZCh0mFy-qg8397~-iAaXZGuj6XCCM4Si9y70sHrJrsg__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 557,
       "lineTimings": [
-        0,
         4.331,
         8.316,
         12.427,
         15.02
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.331,
+        8.316,
+        12.427,
+        15.02
+      ]
     },
     "15.8": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/558/audio/audio.wav?Expires=1780212818&Signature=DGOfd7pmb2CJ-CQpCWc91G~BAMZECYZWvrR4AG0yd6QTJYKgC9FZQJtsRxCkydzw5OliPHIdkakNnwXBUsj6RtrqDRrYui~vFG4CIS3PnLs~OpeggWJw9XaB470B6Ir5Cj38bhtWW8dbT~7EnUB43wCvjHZY7HM38TGbxzeR9ggNunakEWJ4yBs44~CeydOOeecBf1CEzAx9uCWtn6vxTlsc8cMqOBcdcCk6-CI-B~Ih8nI9TqYNjD5YfIw587eO3BiUMI-h0Jn-5cTu0UF~xWrqHr8e-uLuw31ppy2jbMV1BRqfWNpI16193gT8gKKPyZTQSoEPfUA3XUKaK4IY9Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 558,
       "lineTimings": [
-        0,
         3.768,
         8.191,
         12.252,
         16.019
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.768,
+        8.191,
+        12.252,
+        16.019
+      ]
     },
     "15.9": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/559/audio/audio.wav?Expires=1780212818&Signature=hyRPu-EUWT84j1jeW3sZ7YZzo2Ez9WPaKZGSSiGkJgRUZ9n4dZzVC92oBZgAbBIfwSX4BVfxGYSCzWf8ty-N~BY86btOgDU49Rw-q9jRHvJm~PrgkFHddrIodBQuzNwo4m92xLkZZADUIKFDxxVkftipmQ4aK71ht3rmjNGmd~gBFvLsRkcdfEgrd9zWoo4OWhetxYehye52Is2D5cMSkLAOwAGhyj-sxNLScLo6ovAjl2Mxdy0~zlfRLeCpa4rSRDX~mbQY4gMiK900afwwMlRX2F-85-eLKwJy3zvfxKvdxjO1FFggh33kFtLCzFoZYpNcJIY8VmU8AB3qyE22bw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 559,
       "lineTimings": [
-        0,
         3.668,
         7.317,
         10.953,
         14.04
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.668,
+        7.317,
+        10.953,
+        14.04
+      ]
     },
     "15.10": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/560/audio/audio.wav?Expires=1780212818&Signature=1gv4oyHfZMFJSI1fJts2OUfZpFWRdRtmjjtYEw-cs2ErBfeRlk290fBqzFUuri9adgAFaPxn~pWjwxA6pXz6cSRswNHd-yN3wknQEx2PLj~mcL30mrAN9RN4AmF0C90F1DgO1FWCLiHlF3CbZFpE6ssvGfrNKCxiUl6KVx29qenLJSWCHNUCe3b9PVWCMHS~yt0R5qVgxyGy57QVupmj4mV6mBtEB1d-btSnXqeOdV14olE0e90ywSajTfEQuS~MjndLW3P6AGEpGEtxa6wcDDWXz1xV4G19EHDlL2ePjb8QY4KC26pnaVJsKTQZv8Hemb-BvB0HBLK4776YuPZtWA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 560,
       "lineTimings": [
-        0,
         4.78,
         8.966,
         12.952,
         15.984
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.78,
+        8.966,
+        12.952,
+        15.984
+      ]
     },
     "15.11": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/561/audio/audio.wav?Expires=1780212818&Signature=fb12q-PjGZiD1Yj8TltUh77p~3a-jhidANNJ-E-1CEnhR9xe2uswZ08CikVsQxlxXyDQwqzHH~vi5gCVmeTxj9yYO2vilrnT8tdT76UO9F8QJSREvWH8S5p8VRDEpG5o0ETTrUGCBoGWU2Xo3MBqdrAOxxICQwUrPCE0DdUEiIm1fw5HwVRx4UNPkuBxpNB7ML2dcMfQju4NHQldGdxvr5TO0rfZjmtg9lWuG18Zdew3r9osauw6i96plT~vYbSq7dv8kS9Ce8xYulcChCFT8RwkyjX8lOWVexqzGAnrW6LmSuUTGRlel04FfLq7gqcL3gD-CHGDurN3jfYolEZc9g__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 561,
       "lineTimings": [
-        0,
         3.993,
         8.091,
         12.139,
         15.035
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.993,
+        8.091,
+        12.139,
+        15.035
+      ]
     },
     "15.12": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/562/audio/audio.wav?Expires=1780212818&Signature=xkP5VQeaPXLsm7kOyYwD2LKugLXsQ0ZHnEw0lNujc9TVAJPLChM6vqrzFUnHz80X4tinof8tGlTXSUc7Y2c7EDSAF81bxVo-3gL5hTsMWY6xJ7FKwdB0qFnuiVAPwx4t7kciwXgSMmEP~2LXj4S2xMxcWMuxzVljZ4P~6jPpyadCjmVSnsL3l8mGHBN6k7RchW9z0A~shCivHwMjfaZ0KENNJhos0sTil~mIeQ2CwnIH2ltC7iQ8GBQzbENy2-IakGo~iG5QoSM~RkLH3UUepBMmMkEX7kNMbarItpSz4uRHWjb8D4amz8VsV~5yNOkaWAEROiuUqG-zB4jcVQDqXw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 562,
       "lineTimings": [
-        0,
         3.981,
         7.579,
         11.477,
         14.955
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.981,
+        7.579,
+        11.477,
+        14.955
+      ]
     },
     "15.13": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/563/audio/audio.wav?Expires=1780212818&Signature=x6MTCBAPo-EVKYA1pHlb-NSl4Kc7xWSABv9gWBpiSOPJ1XOI9mAJm6EKvmHOVx-ltYy4ZiwSYJGQ48bGt-uNzioUjqPAL2eFEdeBrD~7OKnv9OB5cxQCaiVaVHEBYtKvlhfzXgm8zxhpwqrBJbkz~rxv9y5oigpcPgm4oxDvZbEYfrtL~h1E7IIIgbMQ6v~YyK44h~CmiTDPyv10g8YBb6vjD-cpVD4g6yA3gGd4Wf8UlEO1flF6-ZPll3X7z9zpU4kpccqjKyOKzO-oJvMTAvx2LtBIggZg1x2CGv-5m5itOWmhLi1NqGNtnDuRSoR9lTyN~RuiJoecMebiviThiw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 563,
       "lineTimings": [
-        0,
         4.43,
         8.266,
         12.839,
         16.947
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.43,
+        8.266,
+        12.839,
+        16.947
+      ]
     },
     "15.14": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/564/audio/audio.wav?Expires=1780212818&Signature=axtFsg~CtzIvgV4g0gbUwz6EmCOq2xVblkVLsc5Q97Ctd3d9mB5AFsQJ3m40dfGgtItwxgoPjT7J0k5ZqfXCvhOgiiu5Lpctmv~bqqgvpYc~YVx6279qGL2fnxR5eXM0XByo6siS0l6H7r1gj5SoLLsVOqjjJrSDn~vWeqat9E7fmOVD9k4Yzeg2kExgL-ewu0RrfNGYU0zHpDXoEhosPI-pYlhuhGUc3us5QGKJFojuXfepBK1HvqXL9iAs3Mnlqydbpq-91651Nh5JEXGhuVc~SEAHq7~~J4NNkpZV-5wJnMKdO-TAeD~gTcjwRIgApBsXgtLnlwFM74VsMgVckw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 564,
       "lineTimings": [
-        0,
         4.081,
         8.429,
         12.664,
         16.048
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.081,
+        8.429,
+        12.664,
+        16.048
+      ]
     },
     "15.15": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/565/audio/audio.wav?Expires=1780212818&Signature=QVBm7LqqqckATvbF5VRoppFUm5AFk8HmlmtCTt5uppGSlUUoKvPKKRbdzYU422gVNClTUDt0trA7JG3n14L~I02PS0QyU7Y-30i552Ur5p58FUP9qWyiLwLm7UzoCoz1camOK7SBhPjLWZE7aBGSgYbArdPH3AU67LuT6P73xLpHlech-ntpNHjdFL72UURDrz~zAY5imMtWMWa2KeS4Zb4ygZ2yJSQhUxYJZeA6oQ0NuDicYMWDA3VbC~DBJajk81-U5BfctgDRYKmirWST6OfU-yeRB~nPaya5Vy4BBXm3TC-smj4U6Esi5VU0osEd8P8~tkl6dUANquZY8AubRw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 565,
       "lineTimings": [
-        0,
         4.668,
         9.491,
         14.713,
         19.019
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        4.668,
+        9.491,
+        14.713,
+        19.019
+      ]
     },
     "15.16": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/566/audio/audio.wav?Expires=1780212818&Signature=Y1Q0Wa8rKh0K0HCWKD~3YVg9X9Ad~VXF3LsdJrHKSi8q1nIy0FJinlOJ50zaOaAZdalBM4H645D9JHdha5~CVG6TKskMkKWQ0sI5Epx1lkk0JfqcJ8cT2u8VKU5Vwh0OKjxrNfJFE9~~q~eRyPzE5YusXkJF7aJiT30tqrmsSy6vO-eD5QEK7fmGG5oHCIXAyTXj29QC399a9YeI0ydcx2wUJyie5cbz0wj8SJnhui2pHsr9chAYtU6hjVB~moIQZVPl6-goz71NGm1caLXemWNztWoiOgLrhD5Bnffx4r~IgTRAn0xgDwSlbXwfWOz9i0sFIxvyuDKfOSvWJY-A8A__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 566,
       "lineTimings": [
-        0,
         3.718,
         7.329,
         11.19,
         14.054
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.718,
+        7.329,
+        11.19,
+        14.054
+      ]
     },
     "15.17": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/567/audio/audio.wav?Expires=1780212818&Signature=ql9khTdNrLyg8MMUNtCqqqNe5KiwiBcVjd7-lUx~-baaW-f6PRJ2poLRq4~jRJiWXcplMTrmwFV1NZTITRZD~WncWnXtATl5vKGrwqLydTpM70iZX4EJNOqjbzP3tmcPSd1THHxZRdOCh7DVvvq7TcJSXp5eBXgtCdrWNnK9iwbspo4hPrrB12w912JUBhJvc4VBHO6201Xekb3t~B4zrEg08HBqnzIrnGMIsIyLHhOFB1xRNB530hQlFLsjN1UejWJr5RgZc7x8xsK6bt130vU2hc2orVRXBqGB8aEr6vI72uzPbXL1ZWGZ02itflzt~tIqhsPqT9REL-aBIGgirw__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 567,
       "lineTimings": [
-        0,
         3.893,
         8.054,
         12.09,
         15.053
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.893,
+        8.054,
+        12.09,
+        15.053
+      ]
     },
     "15.18": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/568/audio/audio.wav?Expires=1780212818&Signature=hsUGb3oXBBqVIWysRyCdS2Q1k54yNc-kXM1WV9w-3BuI0Avzp~NPzI4PvobXMQKIqdHwvNvo~NHiNdUQF7hzeMd9CQzs0QByaascqitTZOLC5yIFgsFHTUaBNQydjp47vbq-vYWXsymkwK1zjSIdvJWMMMJTlOz8JvMaZhb38OGi476gLYdfPbRWLVDejZyMdxhYvIke0GobskSri96NqkvQ8d7ccsGeoPOwGXlrw1JhVbDCYYtggMGqgIcXnvMQ9F-Sj-b8VC1VNd7eqVeub6YnY7erSDGn-T183ZxEklTMDQ8lOdF4VwouyaPMD-D4HjUESaqxssDAq-6dz94CVA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 568,
       "lineTimings": [
-        0,
         1.607,
         6.842,
         10.915,
         13.98
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        1.607,
+        6.842,
+        10.915,
+        13.98
+      ]
     },
     "15.19": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/569/audio/audio.wav?Expires=1780212818&Signature=bETVapHQqeqcHw9vicGTUyB68bAeXwCVaKtfJJIr8Q3H393VCC8CAV1ZswtyMpq00XFi08sEGLfmuP5wfXf9Yfjac1dgNWOgZmOOvGt97s4vD0287lgIEyvYk8CJl79st8oWyJZ5K8U4i6y131BgCLMF78CdQprgEubb7KVpXu3CMXivwP6hHBHqW0gHlBqhbFU626be95BOqFSdX5aiCn5PXC1PtBFeoKzURvdLiIRxfVA93TGmrPeBuHYwZT9H1NB48jOAVLDFrQidZyfySjKVNVTANPmIxTjQzYTfzOxcBjrZ2jhdSPRwKhyVL7Cyo3Y28AOq4174tjytpt~DkA__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 569,
       "lineTimings": [
-        0,
         3.806,
         7.467,
         10.89,
         14.058
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        3.806,
+        7.467,
+        10.89,
+        14.058
+      ]
     },
     "15.20": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/570/audio/audio.wav?Expires=1780212818&Signature=O9wCYHXQ1zX9DLsRa6XnCmIPZmYEKKVb49d7VtBLAwp~FDVvTjWo-Js~k1Oem9dn4cMqLOLFX-CyQ1nPob~dzR2mzTtK9gnI-0abVE9jV~sbflX0Q4N7jIRmrEm6Fv~pDhfaJ5y92T2-16rv5KT31k3VulxBXQpjRJKBxxVXgBWfJ1WF02h1DHYJe5s-1x5Oufo4u~8VhDqP2GFNboa2B6R0yejLQIeEU~M9SUfLUgabg2UbQpxWCoZ~dyTyw8~8c3MBb7sGwc11qkNj6wtCij7rugJUyA~HWhMY4U1VB4yzeUZ78oIusb-CYcErA9sl-PfUSau4Quz99y16AHPf9Q__&Key-Pair-Id=K204OQ5RWQVDLD",
       "trainIndex": 570,
       "lineTimings": [
-        0,
         5.655,
         9.578,
         10.415,
         11.092
       ],
-      "lineCount": 4
+      "lineCount": 4,
+      "lineEnds": [
+        5.655,
+        9.578,
+        10.415,
+        11.092
+      ]
     },
     "16.1": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/571/audio/audio.wav?Expires=1780207297&Signature=1VTM28N2N1C7uHEOfhQPg6BRd4~~m1XGTRlgx0um7uJumz62gOVrHsUG1y1tPUbl8KfJwTRsydFrpfyyflOQxb9kvDDuahJQkY~SIP56OR7KmOVo~ghWL3j9QwfLc77ZT92frGYEitfPtGBYVF0bkZI0BkqLQT8FAhdn9SHMu~tY0KVi2hrU30ejQgAWsxGi~oiXtZKKOadvWsehaUYVrKFcEhd239INlzu8tb78jSKKmMLiaWqyYNTZZ~IwEugBmMtH6RjVPP8ZT4aBPZgDA0TRw6eLreRyVZGDLzRJLfTkwll8Jla4c20D4UpOvNGPXuNAmJnmdP~ltLz7olorhg__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -4770,5 +5696,6 @@
   "syncedAt": "2026-05-31T07:04:35.906Z",
   "urlNote": "Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.",
   "lineTimingsNote": "Line boundaries from pauses in local WAV (longest gaps = line ends). Re-run gita:line-timings after sync.",
-  "lineTimingsAt": "2026-05-31T06:05:14.848Z"
+  "lineTimingsAt": "2026-05-31T06:05:14.848Z",
+  "lineEndsNote": "Pada end times (seconds); use with introEnd for narrator offset. See buildPlayBounds in frontend."
 }

@@ -31,6 +31,7 @@
     "gita:sync-tts-cache": "node scripts/sync-tts-cache-to-lib.js",
     "gita:sync-hf-audio": "node scripts/sync-gita-audio-hf.js",
     "gita:line-timings": "node scripts/compute-gita-line-timings.js",
+    "gita:normalize-line-ends": "node scripts/normalize-manifest-line-ends.js",
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js"
   },

@@ -13,9 +13,12 @@ import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
   getVerseLineBoundaries,
-  getManifestLineTimings,
-  getManifestIntroEnd,
+  getManifestTimingInput,
+  getManifestDuration,
+  buildPlayBounds,
   loadChantDuration,
+  prefetchVerseChant,
+  releasePreloadedChant,
   playChantSegment,
   stopChantSegment,
 } from '../utils/gitaChantAudio';
@@ -35,6 +38,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const { currentLang } = useAuth();
   const lang = currentLang === 'te' || currentLang === 'hi' ? currentLang : 'en';
   const [playing, setPlaying] = useState(null);
+  const [chantFallbackMsg, setChantFallbackMsg] = useState(null);
   const [teMeanings, setTeMeanings] = useState({});
   const boundsRef = useRef(null);
   const chantUrlRef = useRef(null);
@@ -66,9 +70,30 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
 
   useEffect(() => {
     abortRef.current = false;
+    const prevUrl = chantUrlRef.current;
     boundsRef.current = null;
     chantUrlRef.current = null;
+    setChantFallbackMsg(null);
+    if (prevUrl) releasePreloadedChant(prevUrl);
   }, [verseId, wordByWord]);
+
+  /** Preload Dhruv WAV + bounds while the line table is visible. */
+  useEffect(() => {
+    if (!verseId || !wordByWord?.length) return undefined;
+    let cancelled = false;
+    (async () => {
+      const warmed = await prefetchVerseChant(verseId, {
+        lineCount: wordByWord.length,
+        hasChantIntro: Boolean(chantIntro),
+      });
+      if (cancelled || !warmed) return;
+      if (warmed.bounds) boundsRef.current = warmed.bounds;
+      chantUrlRef.current = warmed.url;
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [verseId, wordByWord?.length, chantIntro]);
 
   useEffect(() => {
     if (lang !== 'te' || !wordByWord?.length) {
@@ -169,20 +194,24 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     const url = resolveChantAudioUrl(verseId, manifest);
     if (!url) return null;
 
-    const stored = getManifestLineTimings(verseId, manifest);
-    const introEnd = getManifestIntroEnd(verseId, manifest);
+    const timing = getManifestTimingInput(verseId, manifest);
     const lineCount = wordByWord.length;
+    let duration = getManifestDuration(verseId, manifest);
+    if (!duration) {
+      try {
+        duration = await loadChantDuration(url);
+      } catch {
+        duration = null;
+      }
+    }
     let bounds = null;
 
-    if (stored?.length >= lineCount) {
-      const duration = await loadChantDuration(url);
-      bounds = stored.slice(0, lineCount);
-      if (introEnd != null && bounds[0] < introEnd - 0.05) {
-        bounds = [introEnd, ...stored].slice(0, lineCount);
-      }
-      bounds.push(duration);
-    } else if (stored?.length >= 2) {
-      bounds = stored;
+    if (timing?.lineEnds?.length) {
+      bounds = buildPlayBounds(timing.lineEnds, lineCount, {
+        duration,
+        introEnd: timing.introEnd,
+        hasChantIntro: Boolean(chantIntro),
+      });
     }
 
     if (!bounds) {
@@ -190,15 +219,12 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
         const t = getLineScriptText(row, lang) || row.transliteration || row.word || '';
         return t.replace(/\s+/g, '').length || 1;
       });
-      const duration = await loadChantDuration(url);
       const guessed = await getVerseLineBoundaries(url, lineCount, weights);
-      if (introEnd != null && guessed[0] < introEnd + 0.05) {
-        bounds = [...guessed.slice(1)];
-        bounds[0] = Math.max(introEnd, bounds[0]);
-        bounds.push(duration);
-      } else {
-        bounds = guessed;
-      }
+      bounds = buildPlayBounds(guessed, lineCount, {
+        duration,
+        introEnd: timing?.introEnd,
+        hasChantIntro: Boolean(chantIntro),
+      });
     }
     boundsRef.current = bounds;
     chantUrlRef.current = url;
@@ -234,7 +260,15 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
       if (part === 'line' || part === 'row') {
         try {
           await playLineChant(index);
-        } catch {
+        } catch (chantErr) {
+          console.warn('Dhruv line chant unavailable:', chantErr.message);
+          setChantFallbackMsg(
+            lang === 'te'
+              ? 'ధ్రువ గాయనం లేదు — సింథెసైజ్ చేసిన వాయిస్ వినండి.'
+              : lang === 'hi'
+                ? 'ध्रुव का चंत उपलब्ध नहीं — संश्लेषित आवाज़।'
+                : 'Dhruv chant unavailable — playing synthesized voice for this line.'
+          );
           const fallback = getLineScriptText(item, lang);
           if (fallback) await playTtsOrBrowser(fallback, lang, 0.9);
         }
@@ -276,6 +310,11 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
 
   return (
     <div className="mt-6">
+      {chantFallbackMsg && (
+        <p className="text-xs text-yellow-400/90 mb-3 px-3 py-2 rounded-lg border border-yellow-500/20 bg-yellow-500/10">
+          {chantFallbackMsg}
+        </p>
+      )}
       {chantIntro && (
         <p className="text-sm text-lem-accent/90 mb-3 italic border-l-2 border-lem-accent/40 pl-3">
           {getLineScriptText(chantIntro, lang) || chantIntro.transliteration}
