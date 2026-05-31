@@ -4,7 +4,10 @@ import { useAuth } from '../context/AuthContext';
 import {
   playLineSequence,
   fetchTtsAudio,
-  getChantAudioUrl,
+  ensureGitaChantManifest,
+  resolveChantAudioUrl,
+  CHANT_AUDIO_CREDIT,
+  CHANT_AUDIO_DATASET_URL,
   DEFAULT_GAP_MS,
 } from '../utils/lineTts';
 
@@ -31,6 +34,8 @@ const VoicePlayer = ({
   const abortRef = useRef(null);
   const { currentLang } = useAuth();
 
+  const [chantUrl, setChantUrl] = useState(null);
+
   useEffect(() => {
     return () => {
       if (abortRef.current) abortRef.current.abort();
@@ -39,14 +44,29 @@ const VoicePlayer = ({
     };
   }, []);
 
+  useEffect(() => {
+    let cancelled = false;
+    if (!verseId) {
+      setChantUrl(null);
+      return undefined;
+    }
+    (async () => {
+      const manifest = await ensureGitaChantManifest();
+      if (!cancelled) setChantUrl(resolveChantAudioUrl(verseId, manifest));
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [verseId]);
+
   const effectiveLang = targetLang || currentLang || 'hi';
   const playbackRate = voiceMode === 'divine' ? 0.85 : rate;
   const shlokaLines = Array.isArray(lines) ? lines.filter((l) => l?.trim()) : [];
-  const chantUrl = getChantAudioUrl(verseId);
 
-  const playChantWav = () =>
+  const playChantWav = (url) =>
     new Promise((resolve, reject) => {
-      const audio = new Audio(chantUrl);
+      if (!url) return reject(new Error('No chant URL'));
+      const audio = new Audio(url);
       audioRef.current = audio;
       audio.playbackRate = playbackRate;
       audio.onended = () => resolve();
@@ -61,9 +81,14 @@ const VoicePlayer = ({
     const signal = abortRef.current.signal;
 
     try {
-      if (chantUrl) {
+      let resolvedChantUrl = chantUrl;
+      if (verseId) {
+        const manifest = await ensureGitaChantManifest();
+        resolvedChantUrl = resolveChantAudioUrl(verseId, manifest);
+      }
+      if (resolvedChantUrl) {
         try {
-          await playChantWav();
+          await playChantWav(resolvedChantUrl);
           if (!signal.aborted) {
             setIsPlaying(false);
             setLastPlayUsedBrowser(false);
@@ -247,7 +272,17 @@ const VoicePlayer = ({
           <div className="absolute top-full mt-3 right-0 md:left-1/2 md:-translate-x-1/2 bg-lem-sidebar border border-lem-glass-border rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] p-5 w-64 z-50 flex flex-col space-y-5 animate-slide-up">
 
             {usedChantAudio && (
-              <p className="text-xs text-lem-accent/90">Playing traditional śloka chanting (HF dataset).</p>
+              <p className="text-xs text-lem-accent/90 leading-snug">
+                {CHANT_AUDIO_CREDIT}{' '}
+                <a
+                  href={CHANT_AUDIO_DATASET_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                  View dataset
+                </a>
+              </p>
             )}
 
             {lastPlayUsedBrowser && (

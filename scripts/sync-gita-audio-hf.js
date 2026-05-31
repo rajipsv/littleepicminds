@@ -3,19 +3,33 @@
  *   npm run gita:sync-hf-audio
  *   npm run gita:sync-hf-audio -- --chapter=1
  *   npm run gita:sync-hf-audio -- --text-only
+ *   npm run gita:sync-hf-audio -- --urls-only
+ *   npm run gita:sync-hf-audio -- --urls-only --chapter=1
  *
- * Dataset: https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio
+ * Dataset: https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio (Dhruv Jaradi)
  */
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const http = require('http');
 
-const { AUDIO_DIR, loadManifest, saveManifest, shlokaIdToVerseId } = require('../lib/gita-audio');
+const {
+  AUDIO_DIR,
+  loadManifest,
+  saveManifest,
+  setVerseManifestEntry,
+  shlokaIdToVerseId,
+} = require('../lib/gita-audio');
 const { loadHfVerses, saveHfVerses, HF_DATASET, HF_LICENSE } = require('../lib/gita-hf');
 
 const DATASET = 'JDhruv14/Bhagavad-Gita_Audio';
 const ROWS_API = `https://datasets-server.huggingface.co/rows?dataset=${encodeURIComponent(DATASET)}&config=default&split=train`;
+
+/** HF datasets-server URLs are signed; re-run --urls-only yearly before they expire. */
+function extractTrainIndex(audioUrl) {
+  const m = String(audioUrl).match(/\/train\/(\d+)\/audio/);
+  return m ? parseInt(m[1], 10) : null;
+}
 
 function getAudioUrl(audioField) {
   if (!audioField) return null;
@@ -84,10 +98,11 @@ function parseChapterArg() {
 
 const textOnly = process.argv.includes('--text-only');
 const audioOnly = process.argv.includes('--audio-only');
+const urlsOnly = process.argv.includes('--urls-only');
 
 async function main() {
   const chapterFilter = parseChapterArg();
-  if (!textOnly) fs.mkdirSync(AUDIO_DIR, { recursive: true });
+  if (!textOnly && !urlsOnly) fs.mkdirSync(AUDIO_DIR, { recursive: true });
 
   const hfData = loadHfVerses();
   hfData.source = HF_DATASET;
@@ -98,6 +113,9 @@ async function main() {
   const audioManifest = loadManifest();
   audioManifest.source = HF_DATASET;
   audioManifest.license = HF_LICENSE;
+  audioManifest.syncedAt = new Date().toISOString();
+  audioManifest.urlNote =
+    'Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.';
   if (!audioManifest.verses) audioManifest.verses = {};
 
   let offset = 0;
@@ -106,10 +124,18 @@ async function main() {
   let downloaded = 0;
   let skippedAudio = 0;
   let failedAudio = 0;
+  let urlsSaved = 0;
   let textUpdated = 0;
 
+  const modeLabel = textOnly
+    ? ' (text only)'
+    : urlsOnly
+      ? ' (urls only)'
+      : audioOnly
+        ? ' (audio only)'
+        : '';
   console.log(
-    `Syncing from ${HF_DATASET}${chapterFilter ? ` chapter ${chapterFilter}` : ''}${textOnly ? ' (text only)' : ''}${audioOnly ? ' (audio only)' : ''}...`
+    `Syncing from ${HF_DATASET}${chapterFilter ? ` chapter ${chapterFilter}` : ''}${modeLabel}...`
   );
 
   while (offset < total) {
@@ -132,21 +158,31 @@ async function main() {
       }
 
       if (!textOnly) {
-        const dest = path.join(AUDIO_DIR, `${verseId}.wav`);
-        if (fs.existsSync(dest)) {
-          audioManifest.verses[verseId] = true;
+        const audioUrl = getAudioUrl(row.audio);
+        if (audioUrl) {
+          setVerseManifestEntry(audioManifest, verseId, {
+            url: audioUrl,
+            trainIndex: extractTrainIndex(audioUrl),
+          });
+          urlsSaved++;
           if (hfData.verses[verseId]) hfData.verses[verseId].audio = true;
-          skippedAudio++;
-        } else {
-          const audioUrl = getAudioUrl(row.audio);
-          if (!audioUrl) {
-            console.warn(`  no audio URL for ${row.shloka_id}`);
-            failedAudio++;
-          } else {
+        } else if (!urlsOnly) {
+          console.warn(`  no audio URL for ${row.shloka_id}`);
+          failedAudio++;
+        }
+
+        if (!urlsOnly) {
+          const dest = path.join(AUDIO_DIR, `${verseId}.wav`);
+          if (fs.existsSync(dest)) {
+            setVerseManifestEntry(audioManifest, verseId, {
+              url: audioUrl || audioManifest.verses[verseId]?.url,
+              local: true,
+            });
+            skippedAudio++;
+          } else if (audioUrl) {
             try {
               await downloadFile(audioUrl, dest);
-              audioManifest.verses[verseId] = true;
-              if (hfData.verses[verseId]) hfData.verses[verseId].audio = true;
+              setVerseManifestEntry(audioManifest, verseId, { url: audioUrl, local: true });
               downloaded++;
               if (downloaded % 10 === 0) console.log(`  audio ${downloaded} (${verseId})`);
             } catch (e) {
@@ -160,13 +196,14 @@ async function main() {
 
     offset += rows.length;
     if (!rows.length) break;
+    if (urlsOnly && offset % 100 === 0) console.log(`  urls ${urlsSaved} (offset ${offset}/${total})`);
   }
 
   saveHfVerses(hfData);
   if (!textOnly) saveManifest(audioManifest);
 
   console.log(
-    `Done. text=${textUpdated} audio_new=${downloaded} audio_skip=${skippedAudio} audio_fail=${failedAudio} hf_verses=${Object.keys(hfData.verses).length}`
+    `Done. text=${textUpdated} urls=${urlsSaved} audio_new=${downloaded} audio_skip=${skippedAudio} audio_fail=${failedAudio} manifest_verses=${Object.keys(audioManifest.verses).length}`
   );
 }
 

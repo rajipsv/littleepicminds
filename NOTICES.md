@@ -8,7 +8,9 @@ When you run `npm run gita:sync-hf-audio`, verse-level WAV files may be download
 - **Author:** Dhruv Jaradi
 - **License:** [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-Please retain this notice and cite the dataset if you redistribute the audio files.
+Please retain this notice and cite the dataset if you redistribute the audio files or stream them in the app.
+
+**In-app credit:** Voice player and About page attribute chanting audio to Dhruv Jaradi and link to the dataset above.
 
 Suggested citation (from the dataset card):
 

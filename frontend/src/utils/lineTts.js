@@ -1,12 +1,24 @@
-import api, { API_URL } from '../api';
+import api from '../api';
 import { getLineScriptText } from './verseDisplay';
+import {
+  ensureGitaChantManifest,
+  resolveChantAudioUrl,
+  CHANT_AUDIO_CREDIT,
+  CHANT_AUDIO_DATASET_URL,
+} from './gitaChantAudio';
 
 const DEFAULT_GAP_MS = 450;
 
-/** Apache-2.0 HF chanting WAV when synced (npm run gita:sync-hf-audio). */
+export {
+  ensureGitaChantManifest,
+  resolveChantAudioUrl,
+  CHANT_AUDIO_CREDIT,
+  CHANT_AUDIO_DATASET_URL,
+};
+
+/** Sync resolve after ensureGitaChantManifest() has run. */
 export function getChantAudioUrl(verseId) {
-  if (!verseId || !/^\d+\.\d+$/.test(String(verseId))) return null;
-  return `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
+  return resolveChantAudioUrl(verseId);
 }
 
 export function lineTextFromRow(item, lang) {

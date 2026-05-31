@@ -84,7 +84,7 @@ This project is optimized for Vercel deployment.
 | `npm run gita:sync-hf-audio` | Download per-śloka chanting WAV (Apache-2.0 HF dataset); add `-- --chapter=1` for one chapter |
 
 - **TTS cache (important):** [`lib/tts/cache-store.js`](lib/tts/cache-store.js) stores one WAV per **line** (text + language). Full śloka play stitches the same cached lines with a short gap; line-by-line Listen uses the same clips. Run prewarm once locally, then deploy `lib/data/audio_cache` or keep `backend/data/audio_cache` on your server.
-- **Śloka chanting (HF, Apache-2.0):** [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio) — `npm run gita:sync-hf-audio` saves `lib/data/gita_audio/{chapter}.{verse}.wav`. Listen prefers this over TTS when present. See [`NOTICES.md`](NOTICES.md). Host on R2 for production (~3.6 GB full set).
+- **Śloka chanting (HF, Apache-2.0):** Audio by **Dhruv Jaradi** — [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). Production uses HF CDN URLs in `lib/data/gita-verse-audio-manifest.json` (`npm run gita:sync-hf-audio -- --urls-only`). Re-run that command about once a year (signed URLs expire). Optional local WAV: `lib/data/gita_audio/`. See [`NOTICES.md`](NOTICES.md).
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `TTS_PROVIDER=auto` uses Sarvam if keyed, else Google if keyed; cache always checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
 

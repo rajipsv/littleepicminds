@@ -81,6 +81,22 @@ const About = () => {
             <p className="text-slate-500 text-sm">20+ years of tech expertise powering personalized learning.</p>
           </div>
         </div>
+
+        <div className="mt-12 p-6 bg-slate-100 rounded-2xl border border-slate-200 text-sm text-slate-600">
+          <p className="font-bold text-slate-800 mb-2">Audio credits</p>
+          <p>
+            Traditional śloka chanting audio is from{' '}
+            <a
+              href="https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 underline font-medium"
+            >
+              Bhagavad-Gita_Audio
+            </a>{' '}
+            by <strong>Dhruv Jaradi</strong> (Apache-2.0). See <code className="text-xs bg-white px-1 rounded">NOTICES.md</code> in the repository.
+          </p>
+        </div>
       </div>
     </div>
   );
