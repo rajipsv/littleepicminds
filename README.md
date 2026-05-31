@@ -84,6 +84,8 @@ This project is optimized for Vercel deployment.
 | `npm run gita:sync-hf-audio` | Download per-śloka chanting WAV (Apache-2.0 HF dataset); add `-- --chapter=1` for one chapter |
 | `npm run gita:pada-lines:export -- --chapter=N` | Draft 4 pada lines + meanings into `scripts/data/gita-pada-lines.json` |
 | `npm run gita:line-breakdown -- --chapter=N` | Apply pada lines + meanings to `backend/data/chapters/chapterN.js` |
+| `npm run gita:validate-line-breakdown -- --from=3 --to=9` | Check 4 rows, `chantIntro`, pada alignment |
+| `npm run gita:fix-pada-meanings -- --from=1 --to=9` | Strip narrator gloss from row 0 when `intro` is set |
 | `npm run gita:line-timings -- --chapter=N` | Pause-based chant sync (needs local WAVs in `lib/data/gita_audio/`) |
 | `npm run gita:upload-r2` | Upload `lib/data/gita_audio/*.wav` to Cloudflare R2 (see `backend/.env.template`) |
 | `npm run gita:qa-segments` | Assert manifest `lineEnds` + segment builder (1.1, 2.47, …) |
@@ -93,6 +95,7 @@ This project is optimized for Vercel deployment.
 - **Śloka chanting (Apache-2.0, Dhruv Jaradi):** Dataset [`JDhruv14/Bhagavad-Gita_Audio`](https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio). **Production playback is R2-only:** all `{verseId}.wav` on Cloudflare R2; set **`GITA_AUDIO_BASE_URL`** and **`VITE_GITA_AUDIO_BASE_URL`** on Vercel (required). Line segments use `lineEnds` + `introEnd` from the manifest (`npm run gita:line-timings` after local `gita:sync-hf-audio`). Pipeline: sync → upload (`npm run gita:upload-r2`) → CORS (`scripts/r2-cors-gita-audio.json`). Details: [`docs/GITA_AUDIO_R2.md`](docs/GITA_AUDIO_R2.md). See [`NOTICES.md`](NOTICES.md).
 - **TTS providers**: [`lib/tts/`](lib/tts/) — `hybrid` tries Sarvam, then Google (te/hi/en WaveNet); cache checked first.
 - **Translate**: Live `/api/translate-meaning` only when `TRANSLATE_LIVE=true`; otherwise cache-only (no Sarvam spend).
+- **Four-line Meaning table (ch 3–9):** Export draft padas → edit `scripts/data/gita-pada-lines.json` (4 `lines`, optional `intro`) → `gita:fix-pada-meanings` for speaker verses → `gita:line-breakdown` → `gita:validate-line-breakdown`.
 
 ## 📜 Credits & Content
 Content is ported and enhanced from the original *Gita Kids Hub* data, restructured for a more immersive and gamified experience.

@@ -33,6 +33,8 @@
     "gita:line-timings": "node scripts/compute-gita-line-timings.js",
     "gita:upload-r2": "node scripts/upload-gita-audio-r2.js",
     "gita:qa-segments": "node scripts/qa-gita-segments.js",
+    "gita:validate-line-breakdown": "node scripts/validate-line-breakdown.js",
+    "gita:fix-pada-meanings": "node scripts/fix-pada-line-meanings.js",
     "gita:normalize-line-ends": "node scripts/normalize-manifest-line-ends.js",
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js"

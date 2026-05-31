@@ -328,6 +328,15 @@ function hasTeluguScript(text) {
   return Boolean(text && /[\u0C00-\u0C7F]/.test(text));
 }
 
+/** Remove "Arjuna said," / "Krishna said," lead when uvācha is chantIntro. */
+function stripNarratorLeadFromBody(text) {
+  if (!text) return text;
+  let t = String(text).trim();
+  t = t.replace(/^[A-Za-z\u0900-\u097F]+\s+(?:said|spoke),?\s*/i, '');
+  t = t.replace(/^["']?\s*/, '').trim();
+  return t;
+}
+
 /** Remove vocative addressee from body gloss when narrator intro is a separate pada row. */
 function stripAddresseeFromBody(text) {
   if (!text) return text;
@@ -557,24 +566,48 @@ function buildLineBreakdown(opts = {}) {
     en: item.en || item.meaning || '',
     te: item.te,
   }));
-  const wordItems = fromSource.length ? fromSource : fromExisting;
+  const preferPada = Boolean(pada?.lines?.length);
+  const wordItems = fromSource.length ? fromSource : preferPada ? [] : fromExisting;
 
   let meaningText = opts.fallbackMeaning;
   let meaningTeText = opts.fallbackMeaningTe;
   if (introIast && meaningText) {
     const colon = meaningText.indexOf(':');
     if (colon > 0) meaningText = meaningText.slice(colon + 1).trim();
+    meaningText = stripNarratorLeadFromBody(meaningText);
     meaningText = stripAddresseeFromBody(meaningText);
   }
   if (introIast && meaningTeText && /ఇలా అన్నాడు|అన్నాడు:/.test(meaningTeText)) {
     const parts = meaningTeText.split(/ఇలా అన్నాడు[:\s]*/);
     if (parts.length > 1) meaningTeText = parts.slice(1).join('').trim();
+  }
+  if (introIast && meaningTeText) {
+    meaningTeText = stripNarratorLeadFromBody(meaningTeText);
     meaningTeText = stripAddresseeFromBody(meaningTeText);
   }
 
   const lineCount = transLines.length;
-  const curatedEn = pada?.meaningsEn || pada?.en;
-  const curatedTe = pada?.meaningsTe || pada?.te;
+
+  function looksLikeNarratorGloss(s) {
+    const t = String(s || '').trim();
+    if (!t) return false;
+    return (
+      /\bsaid\b/i.test(t) ||
+      /\bspoke\b/i.test(t) ||
+      /^"O [A-Za-z]/i.test(t) ||
+      (t.length < 28 && /\b(uvāca|uvācha|uvacha)\b/i.test(t))
+    );
+  }
+
+  let curatedEn = pada?.meaningsEn || pada?.en;
+  let curatedTe = pada?.meaningsTe || pada?.te;
+  if (introIast && Array.isArray(curatedEn) && curatedEn.length === lineCount) {
+    if (looksLikeNarratorGloss(curatedEn[0])) {
+      curatedEn = null;
+      curatedTe = null;
+    }
+  }
+
   const fallbackParts =
     Array.isArray(curatedEn) && curatedEn.length === lineCount
       ? curatedEn.map((s) => String(s).trim())
@@ -679,5 +712,6 @@ module.exports = {
   splitVerseMeaning,
   splitNarratorMeaning,
   stripAddresseeFromBody,
+  stripNarratorLeadFromBody,
   expandToLineCount,
 };

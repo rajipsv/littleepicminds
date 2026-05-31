@@ -989,32 +989,32 @@ const CHAPTER_2_SHLOKAS = {
                 "word": "evam uktvā hṛiṣhīkeśhaṁ",
                 "transliteration": "evam uktvā hṛiṣhīkeśhaṁ",
                 "sanskrit_te": "న",
-                "en": "Sanjaya said, Having thus spoken to",
-                "te": "Sanjaya said, Having thus spoken to"
+                "en": "Having thus spoken to Sri Krsna,",
+                "te": "Having thus spoken to Sri Krsna,"
             },
             {
                 "sanskrit": "योत्स्य इति",
                 "word": "guḍākeśhaḥ parantapa",
                 "transliteration": "guḍākeśhaḥ parantapa",
                 "sanskrit_te": "యోత్స్య ఇతి",
-                "en": "Sri Krsna, Arjuna, the conqueror of",
-                "te": "Sri Krsna, Arjuna, the conqueror of"
+                "en": "Arjuna, the conqueror of sleep and",
+                "te": "Arjuna, the conqueror of sleep and"
             },
             {
                 "sanskrit": "गोविन्दमुक्त्वा तूष्णीं",
                 "word": "na yotsya iti govindam",
                 "transliteration": "na yotsya iti govindam",
                 "sanskrit_te": "గోవిన్దముక్త్వా తూష్ణీం",
-                "en": "Sleep and the scorcher of foes, said,",
-                "te": "Sleep and the scorcher of foes, said,"
+                "en": "The scorcher of foes, said, \"I",
+                "te": "The scorcher of foes, said, \"I"
             },
             {
                 "sanskrit": "बभूव ह",
                 "word": "uktvā tūṣhṇīṁ babhūva ha",
                 "transliteration": "uktvā tūṣhṇīṁ babhūva ha",
                 "sanskrit_te": "బభూవ హ",
-                "en": "\"I will not fight,\" and became silent.",
-                "te": "\"I will not fight,\" and became silent."
+                "en": "Will not fight,\" and became silent.",
+                "te": "Will not fight,\" and became silent."
             }
         ],
         "word_by_word": [
@@ -1023,32 +1023,32 @@ const CHAPTER_2_SHLOKAS = {
                 "word": "evam uktvā hṛiṣhīkeśhaṁ",
                 "transliteration": "evam uktvā hṛiṣhīkeśhaṁ",
                 "sanskrit_te": "న",
-                "en": "Sanjaya said, Having thus spoken to",
-                "te": "Sanjaya said, Having thus spoken to"
+                "en": "Having thus spoken to Sri Krsna,",
+                "te": "Having thus spoken to Sri Krsna,"
             },
             {
                 "sanskrit": "योत्स्य इति",
                 "word": "guḍākeśhaḥ parantapa",
                 "transliteration": "guḍākeśhaḥ parantapa",
                 "sanskrit_te": "యోత్స్య ఇతి",
-                "en": "Sri Krsna, Arjuna, the conqueror of",
-                "te": "Sri Krsna, Arjuna, the conqueror of"
+                "en": "Arjuna, the conqueror of sleep and",
+                "te": "Arjuna, the conqueror of sleep and"
             },
             {
                 "sanskrit": "गोविन्दमुक्त्वा तूष्णीं",
                 "word": "na yotsya iti govindam",
                 "transliteration": "na yotsya iti govindam",
                 "sanskrit_te": "గోవిన్దముక్త్వా తూష్ణీం",
-                "en": "Sleep and the scorcher of foes, said,",
-                "te": "Sleep and the scorcher of foes, said,"
+                "en": "The scorcher of foes, said, \"I",
+                "te": "The scorcher of foes, said, \"I"
             },
             {
                 "sanskrit": "बभूव ह",
                 "word": "uktvā tūṣhṇīṁ babhūva ha",
                 "transliteration": "uktvā tūṣhṇīṁ babhūva ha",
                 "sanskrit_te": "బభూవ హ",
-                "en": "\"I will not fight,\" and became silent.",
-                "te": "\"I will not fight,\" and became silent."
+                "en": "Will not fight,\" and became silent.",
+                "te": "Will not fight,\" and became silent."
             }
         ],
         "chantIntro": {
@@ -6176,8 +6176,8 @@ const CHAPTER_2_SHLOKAS = {
                 "word": "sthita prajñasya kā bhāṣhā",
                 "transliteration": "sthita prajñasya kā bhāṣhā",
                 "sanskrit_te": "స్థితధీః",
-                "en": "Arjuna said, \"What is the mode of speech of one who is of firm wisdom, established in the control of the mind?",
-                "te": "Arjuna said, \"What is the mode of speech of one who is of firm wisdom, established in the control of the mind?"
+                "en": "What is the mode of speech of one who is of firm wisdom, established in the control of the mind?",
+                "te": "What is the mode of speech of one who is of firm wisdom, established in the control of the mind?"
             },
             {
                 "sanskrit": "किं",
@@ -6210,8 +6210,8 @@ const CHAPTER_2_SHLOKAS = {
                 "word": "sthita prajñasya kā bhāṣhā",
                 "transliteration": "sthita prajñasya kā bhāṣhā",
                 "sanskrit_te": "స్థితధీః",
-                "en": "Arjuna said, \"What is the mode of speech of one who is of firm wisdom, established in the control of the mind?",
-                "te": "Arjuna said, \"What is the mode of speech of one who is of firm wisdom, established in the control of the mind?"
+                "en": "What is the mode of speech of one who is of firm wisdom, established in the control of the mind?",
+                "te": "What is the mode of speech of one who is of firm wisdom, established in the control of the mind?"
             },
             {
                 "sanskrit": "किं",

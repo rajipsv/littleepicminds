@@ -109,7 +109,7 @@ function main() {
         sanskrit: shloka.sanskrit || source?.text,
         telugu_script: shloka.telugu_script,
         word_meanings: source?.word_meanings,
-        existingBreakdown: shloka.lineBreakdown,
+        existingBreakdown: padaOverride?.lines?.length ? null : shloka.lineBreakdown,
         fallbackMeaning: shloka.en?.meaning,
         fallbackMeaningTe: shloka.te?.meaning,
         padaOverride,

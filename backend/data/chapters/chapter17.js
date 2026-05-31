@@ -47,35 +47,75 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "అర్జున ఉవాచయే శాస్త్రవిధిముత్సృజ్య యజన్తే శ్రద్ధయాఽన్వితాః |\nతేషాం నిష్ఠా తు కా కృష్ణ సత్త్వమాహో రజస్తమః",
         "lineBreakdown": [
             {
-                "sanskrit": "अर्जुन उवाचये शास्त्रविधिमुत्सृज्य",
-                "word": "arjuna uvācha ye śhāstra vidhim",
-                "transliteration": "arjuna uvācha ye śhāstra vidhim",
-                "sanskrit_te": "అర్జున ఉవాచయే శాస్త్రవిధిముత్సృజ్య",
-                "en": "Arjun said who scriptural injunctions",
-                "te": "Arjuna said, \"Now, O Krsna, what is the"
+                "sanskrit": "तेषां",
+                "word": "ye śhāstra vidhim",
+                "transliteration": "ye śhāstra vidhim",
+                "sanskrit_te": "తేషాం",
+                "en": "Now, O Krsna, what is the position",
+                "te": "Now, O Krsna, what is the position"
             },
             {
-                "sanskrit": "यजन्ते श्रद्धयाऽन्विताः तेषां",
-                "word": "utsṛijya yajante śhraddhayānvitāḥ teṣhāṁ",
-                "transliteration": "utsṛijya yajante śhraddhayānvitāḥ teṣhāṁ",
-                "sanskrit_te": "యజన్తే శ్రద్ధయాఽన్వితాః తేషాం",
-                "en": "Disregard worship with faith their",
-                "te": "Position or basis of those who, despite leaving"
+                "sanskrit": "निष्ठा तु",
+                "word": "utsṛijya yajante śhraddhayānvitāḥ",
+                "transliteration": "utsṛijya yajante śhraddhayānvitāḥ",
+                "sanskrit_te": "నిష్ఠా తు",
+                "en": "Or basis of those who, despite leaving",
+                "te": "Or basis of those who, despite leaving"
             },
             {
-                "sanskrit": "निष्ठा तु का",
-                "word": "niṣhṭhā tu kā kṛiṣhṇa",
-                "transliteration": "niṣhṭhā tu kā kṛiṣhṇa",
-                "sanskrit_te": "నిష్ఠా తు కా",
-                "en": "Faith indeed what Krishna",
+                "sanskrit": "का कृष्ण",
+                "word": "teṣhāṁ niṣhṭhā tu kā kṛiṣhṇa",
+                "transliteration": "teṣhāṁ niṣhṭhā tu kā kṛiṣhṇa",
+                "sanskrit_te": "కా కృష్ణ",
+                "en": "Aside the injunction of the Sastra, still worship",
                 "te": "Aside the injunction of the Sastra, still worship"
             },
             {
-                "sanskrit": "कृष्ण सत्त्वमाहो रजस्तमः",
+                "sanskrit": "सत्त्वमाहो रजस्तमः",
                 "word": "sattvam āho rajas tamaḥ",
                 "transliteration": "sattvam āho rajas tamaḥ",
-                "sanskrit_te": "కృష్ణ సత్త్వమాహో రజస్తమః",
-                "en": "Mode of goodness or mode of ignorance",
+                "sanskrit_te": "సత్త్వమాహో రజస్తమః",
+                "en": "With faith? Is it Sattva, Rajas, or Tamas?\"",
+                "te": "With faith? Is it Sattva, Rajas, or Tamas?\""
+            }
+        ],
+        "chantIntro": {
+            "transliteration": "arjuna uvācha",
+            "sanskrit": "अर्जुन उवाचये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयाऽन्विताः",
+            "en": "Arjuna uvācha",
+            "te": "Arjuna uvācha"
+        },
+        "word_by_word": [
+            {
+                "sanskrit": "तेषां",
+                "word": "ye śhāstra vidhim",
+                "transliteration": "ye śhāstra vidhim",
+                "sanskrit_te": "తేషాం",
+                "en": "Now, O Krsna, what is the position",
+                "te": "Now, O Krsna, what is the position"
+            },
+            {
+                "sanskrit": "निष्ठा तु",
+                "word": "utsṛijya yajante śhraddhayānvitāḥ",
+                "transliteration": "utsṛijya yajante śhraddhayānvitāḥ",
+                "sanskrit_te": "నిష్ఠా తు",
+                "en": "Or basis of those who, despite leaving",
+                "te": "Or basis of those who, despite leaving"
+            },
+            {
+                "sanskrit": "का कृष्ण",
+                "word": "teṣhāṁ niṣhṭhā tu kā kṛiṣhṇa",
+                "transliteration": "teṣhāṁ niṣhṭhā tu kā kṛiṣhṇa",
+                "sanskrit_te": "కా కృష్ణ",
+                "en": "Aside the injunction of the Sastra, still worship",
+                "te": "Aside the injunction of the Sastra, still worship"
+            },
+            {
+                "sanskrit": "सत्त्वमाहो रजस्तमः",
+                "word": "sattvam āho rajas tamaḥ",
+                "transliteration": "sattvam āho rajas tamaḥ",
+                "sanskrit_te": "సత్త్వమాహో రజస్తమః",
+                "en": "With faith? Is it Sattva, Rajas, or Tamas?\"",
                 "te": "With faith? Is it Sattva, Rajas, or Tamas?\""
             }
         ]
@@ -129,34 +169,74 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "श्री भगवानुवाचत्रिविधा भवति श्रद्धा",
-                "word": "śhrī bhagavān uvācha tri vidhā",
-                "transliteration": "śhrī bhagavān uvācha tri vidhā",
-                "sanskrit_te": "శ్రీ భగవానువాచత్రివిధా భవతి శ్రద్ధా",
-                "en": "The Supreme Personality said of three kinds",
+                "word": "tri vidhā bhavati śhraddhā",
+                "transliteration": "tri vidhā bhavati śhraddhā",
+                "sanskrit_te": "శ్రీ భగవానువాచత్రివిధా భవతి",
+                "en": "The Lord said, \"The faith of embodied",
                 "te": "The Lord said, \"The faith of embodied"
             },
             {
-                "sanskrit": "देहिनां सा स्वभावजा सात्त्विकी",
-                "word": "bhavati śhraddhā dehināṁ sā svabhāva",
-                "transliteration": "bhavati śhraddhā dehināṁ sā svabhāva",
-                "sanskrit_te": "దేహినాం సా స్వభావజా సాత్త్వికీ",
-                "en": "Is faith embodied beings which",
+                "sanskrit": "देहिनां सा स्वभावजा",
+                "word": "dehināṁ sā svabhāva jā",
+                "transliteration": "dehināṁ sā svabhāva jā",
+                "sanskrit_te": "శ్రద్ధా దేహినాం సా",
+                "en": "Beings is threefold, born of their own",
                 "te": "Beings is threefold, born of their own"
             },
             {
-                "sanskrit": "राजसी चैव तामसी",
-                "word": "jā sāttvikī rājasī chaiva",
-                "transliteration": "jā sāttvikī rājasī chaiva",
-                "sanskrit_te": "రాజసీ చైవ తామసీ",
-                "en": "Of the mode of goodness of the mode of passion",
+                "sanskrit": "सात्त्विकी राजसी चैव तामसी",
+                "word": "sāttvikī rājasī chaiva tāmasī",
+                "transliteration": "sāttvikī rājasī chaiva tāmasī",
+                "sanskrit_te": "స్వభావజా సాత్త్వికీ రాజసీ చైవ",
+                "en": "Nature and constituted of Sattva, Rajas, and",
                 "te": "Nature and constituted of Sattva, Rajas, and"
             },
             {
                 "sanskrit": "चेति तां श्रृणु",
-                "word": "tāmasī cheti tāṁ śhṛiṇu",
-                "transliteration": "tāmasī cheti tāṁ śhṛiṇu",
-                "sanskrit_te": "చేతి తాం శ్రృణు",
-                "en": "Of the mode of ignorance about this hear",
+                "word": "cheti tāṁ śhṛiṇu",
+                "transliteration": "cheti tāṁ śhṛiṇu",
+                "sanskrit_te": "తామసీ చేతి తాం శ్రృణు",
+                "en": "Tamas. Now, listen to me about it.\"",
+                "te": "Tamas. Now, listen to me about it.\""
+            }
+        ],
+        "chantIntro": {
+            "transliteration": "śhrī-bhagavān uvācha",
+            "sanskrit": "śhrī-bhagavān uvācha",
+            "en": "Śhrī-bhagavān uvācha",
+            "te": "Śhrī-bhagavān uvācha"
+        },
+        "word_by_word": [
+            {
+                "sanskrit": "श्री भगवानुवाचत्रिविधा भवति श्रद्धा",
+                "word": "tri vidhā bhavati śhraddhā",
+                "transliteration": "tri vidhā bhavati śhraddhā",
+                "sanskrit_te": "శ్రీ భగవానువాచత్రివిధా భవతి",
+                "en": "The Lord said, \"The faith of embodied",
+                "te": "The Lord said, \"The faith of embodied"
+            },
+            {
+                "sanskrit": "देहिनां सा स्वभावजा",
+                "word": "dehināṁ sā svabhāva jā",
+                "transliteration": "dehināṁ sā svabhāva jā",
+                "sanskrit_te": "శ్రద్ధా దేహినాం సా",
+                "en": "Beings is threefold, born of their own",
+                "te": "Beings is threefold, born of their own"
+            },
+            {
+                "sanskrit": "सात्त्विकी राजसी चैव तामसी",
+                "word": "sāttvikī rājasī chaiva tāmasī",
+                "transliteration": "sāttvikī rājasī chaiva tāmasī",
+                "sanskrit_te": "స్వభావజా సాత్త్వికీ రాజసీ చైవ",
+                "en": "Nature and constituted of Sattva, Rajas, and",
+                "te": "Nature and constituted of Sattva, Rajas, and"
+            },
+            {
+                "sanskrit": "चेति तां श्रृणु",
+                "word": "cheti tāṁ śhṛiṇu",
+                "transliteration": "cheti tāṁ śhṛiṇu",
+                "sanskrit_te": "తామసీ చేతి తాం శ్రృణు",
+                "en": "Tamas. Now, listen to me about it.\"",
                 "te": "Tamas. Now, listen to me about it.\""
             }
         ]
@@ -210,34 +290,68 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "सत्त्वानुरूपा सर्वस्य श्रद्धा",
-                "word": "sattvānurūpā sarvasya śhraddhā bhavati",
-                "transliteration": "sattvānurūpā sarvasya śhraddhā bhavati",
+                "word": "sattvānurūpā sarvasya śhraddhā",
+                "transliteration": "sattvānurūpā sarvasya śhraddhā",
                 "sanskrit_te": "సత్త్వానురూపా సర్వస్య శ్రద్ధా",
-                "en": "Conforming to the nature of one’s mind all faith is",
+                "en": "O Arjuna",
                 "te": "O Arjuna"
             },
             {
-                "sanskrit": "भवति भारत श्रद्धामयोऽयं",
-                "word": "bhārata śhraddhā mayo ‘yaṁ",
-                "transliteration": "bhārata śhraddhā mayo ‘yaṁ",
+                "sanskrit": "भवति भारत",
+                "word": "bhavati bhārata",
+                "transliteration": "bhavati bhārata",
                 "sanskrit_te": "భవతి భారత శ్రద్ధామయోఽయం",
-                "en": "Arjun, the scion of Bharat faith",
-                "te": "The faith of everyone is in accordance with their inner organ (Antahkarana). Each person consists of faith"
+                "en": "The faith of everyone is in accordance with their inner",
+                "te": "The faith of everyone is in accordance with their inner"
             },
             {
-                "sanskrit": "पुरुषो यो यच्छ्रद्धः",
-                "word": "puruṣho yo yach chhraddhaḥ",
-                "transliteration": "puruṣho yo yach chhraddhaḥ",
+                "sanskrit": "श्रद्धामयोऽयं",
+                "word": "śhraddhā mayo ‘yaṁ puruṣho yo",
+                "transliteration": "śhraddhā mayo ‘yaṁ puruṣho yo",
                 "sanskrit_te": "పురుషో యో యచ్ఛ్రద్ధః",
-                "en": "Whatever their faith is",
-                "te": "Whatever their faith is"
+                "en": "Organ (Antahkarana). Each person consists of faith; whatever their faith is",
+                "te": "Organ (Antahkarana). Each person consists of faith; whatever their faith is"
             },
             {
-                "sanskrit": "स एव सः",
-                "word": "sa eva saḥ",
-                "transliteration": "sa eva saḥ",
+                "sanskrit": "पुरुषो यो यच्छ्रद्धः स एव सः",
+                "word": "yach chhraddhaḥ sa eva saḥ",
+                "transliteration": "yach chhraddhaḥ sa eva saḥ",
                 "sanskrit_te": "స ఏవ సః",
-                "en": "Their verily their",
+                "en": "That is who they are.",
+                "te": "That is who they are."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "सत्त्वानुरूपा सर्वस्य श्रद्धा",
+                "word": "sattvānurūpā sarvasya śhraddhā",
+                "transliteration": "sattvānurūpā sarvasya śhraddhā",
+                "sanskrit_te": "సత్త్వానురూపా సర్వస్య శ్రద్ధా",
+                "en": "O Arjuna",
+                "te": "O Arjuna"
+            },
+            {
+                "sanskrit": "भवति भारत",
+                "word": "bhavati bhārata",
+                "transliteration": "bhavati bhārata",
+                "sanskrit_te": "భవతి భారత శ్రద్ధామయోఽయం",
+                "en": "The faith of everyone is in accordance with their inner",
+                "te": "The faith of everyone is in accordance with their inner"
+            },
+            {
+                "sanskrit": "श्रद्धामयोऽयं",
+                "word": "śhraddhā mayo ‘yaṁ puruṣho yo",
+                "transliteration": "śhraddhā mayo ‘yaṁ puruṣho yo",
+                "sanskrit_te": "పురుషో యో యచ్ఛ్రద్ధః",
+                "en": "Organ (Antahkarana). Each person consists of faith; whatever their faith is",
+                "te": "Organ (Antahkarana). Each person consists of faith; whatever their faith is"
+            },
+            {
+                "sanskrit": "पुरुषो यो यच्छ्रद्धः स एव सः",
+                "word": "yach chhraddhaḥ sa eva saḥ",
+                "transliteration": "yach chhraddhaḥ sa eva saḥ",
+                "sanskrit_te": "స ఏవ సః",
+                "en": "That is who they are.",
                 "te": "That is who they are."
             }
         ]
@@ -291,35 +405,69 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "यजन्ते सात्त्विका",
-                "word": "yajante sāttvikā devān yakṣha",
-                "transliteration": "yajante sāttvikā devān yakṣha",
+                "word": "yajante sāttvikā devān",
+                "transliteration": "yajante sāttvikā devān",
                 "sanskrit_te": "యజన్తే సాత్త్వికా",
-                "en": "Worship those in the mode of goodness celestial gods semi-celestial beings who exude power and wealth",
-                "te": "The sattvic types worship the gods; the"
+                "en": "The sattvic types worship the gods; the rajasic",
+                "te": "The sattvic types worship the gods; the rajasic"
             },
             {
                 "sanskrit": "देवान्यक्षरक्षांसि राजसाः",
-                "word": "rakṣhānsi rājasāḥ pretān",
-                "transliteration": "rakṣhānsi rājasāḥ pretān",
+                "word": "yakṣha rakṣhānsi rājasāḥ",
+                "transliteration": "yakṣha rakṣhānsi rājasāḥ",
                 "sanskrit_te": "దేవాన్యక్షరక్షాంసి రాజసాః",
-                "en": "Powerful beings who embody sensual enjoyment, revenge, and wrath those in the mode of passion ghosts and spirits",
-                "te": "Rajasic types worship yaksas and rakshasas; and"
+                "en": "Types worship yaksas and rakshasas; and the others",
+                "te": "Types worship yaksas and rakshasas; and the others"
             },
             {
-                "sanskrit": "प्रेतान्भूतगणांश्चान्ये यजन्ते",
-                "word": "bhūta gaṇānśh chānye",
-                "transliteration": "bhūta gaṇānśh chānye",
+                "sanskrit": "प्रेतान्भूतगणांश्चान्ये",
+                "word": "pretān bhūta gaṇānśh chānye",
+                "transliteration": "pretān bhūta gaṇānśh chānye",
                 "sanskrit_te": "ప్రేతాన్భూతగణాంశ్చాన్యే యజన్తే",
-                "en": "The others, the tamasic types, worship the",
-                "te": "The others, the tamasic types, worship the"
+                "en": "The tamasic types",
+                "te": "The tamasic types"
             },
             {
-                "sanskrit": "तामसा जनाः",
+                "sanskrit": "यजन्ते तामसा जनाः",
                 "word": "yajante tāmasā janāḥ",
                 "transliteration": "yajante tāmasā janāḥ",
                 "sanskrit_te": "తామసా జనాః",
-                "en": "Worship those in the mode of ignorance persons",
-                "te": "Departed ancestors and hosts of bhutas."
+                "en": "Worship the departed ancestors and hosts of bhutas.",
+                "te": "Worship the departed ancestors and hosts of bhutas."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "यजन्ते सात्त्विका",
+                "word": "yajante sāttvikā devān",
+                "transliteration": "yajante sāttvikā devān",
+                "sanskrit_te": "యజన్తే సాత్త్వికా",
+                "en": "The sattvic types worship the gods; the rajasic",
+                "te": "The sattvic types worship the gods; the rajasic"
+            },
+            {
+                "sanskrit": "देवान्यक्षरक्षांसि राजसाः",
+                "word": "yakṣha rakṣhānsi rājasāḥ",
+                "transliteration": "yakṣha rakṣhānsi rājasāḥ",
+                "sanskrit_te": "దేవాన్యక్షరక్షాంసి రాజసాః",
+                "en": "Types worship yaksas and rakshasas; and the others",
+                "te": "Types worship yaksas and rakshasas; and the others"
+            },
+            {
+                "sanskrit": "प्रेतान्भूतगणांश्चान्ये",
+                "word": "pretān bhūta gaṇānśh chānye",
+                "transliteration": "pretān bhūta gaṇānśh chānye",
+                "sanskrit_te": "ప్రేతాన్భూతగణాంశ్చాన్యే యజన్తే",
+                "en": "The tamasic types",
+                "te": "The tamasic types"
+            },
+            {
+                "sanskrit": "यजन्ते तामसा जनाः",
+                "word": "yajante tāmasā janāḥ",
+                "transliteration": "yajante tāmasā janāḥ",
+                "sanskrit_te": "తామసా జనాః",
+                "en": "Worship the departed ancestors and hosts of bhutas.",
+                "te": "Worship the departed ancestors and hosts of bhutas."
             }
         ]
     },
@@ -371,36 +519,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "అశాస్త్రవిహితం ఘోరం తప్యన్తే యే తపో జనాః |\nదమ్భాహఙ్కారసంయుక్తాః కామరాగబలాన్వితాః",
         "lineBreakdown": [
             {
-                "sanskrit": "अशास्त्रविहितं घोरं",
-                "word": "aśhāstra vihitaṁ ghoraṁ",
-                "transliteration": "aśhāstra vihitaṁ ghoraṁ",
+                "sanskrit": "अशास्त्रविहितं घोरं तप्यन्ते",
+                "word": "aśhāstra vihitaṁ ghoraṁ tapyante",
+                "transliteration": "aśhāstra vihitaṁ ghoraṁ tapyante",
                 "sanskrit_te": "అశాస్త్రవిహితం ఘోరం",
-                "en": "Not enjoined by the scriptures stern",
-                "te": "Those men who practice terrible austerities not"
+                "en": "Those men who practice terrible",
+                "te": "Those men who practice terrible"
             },
             {
-                "sanskrit": "तप्यन्ते ये",
-                "word": "tapyante ye tapo",
-                "transliteration": "tapyante ye tapo",
+                "sanskrit": "ये तपो जनाः",
+                "word": "ye tapo janāḥ",
+                "transliteration": "ye tapo janāḥ",
                 "sanskrit_te": "తప్యన్తే యే",
-                "en": "Perform who",
-                "te": "Enjoined by the scriptures, given to ostentation"
+                "en": "Austerities not enjoined by the scriptures",
+                "te": "Austerities not enjoined by the scriptures"
             },
             {
-                "sanskrit": "तपो जनाः",
-                "word": "janāḥ dambhāhankāra sanyuktāḥ",
-                "transliteration": "janāḥ dambhāhankāra sanyuktāḥ",
+                "sanskrit": "दम्भाहङ्कारसंयुक्ताः",
+                "word": "dambhāhankāra",
+                "transliteration": "dambhāhankāra",
                 "sanskrit_te": "తపో జనాః",
-                "en": "People hypocrisy possessed of",
-                "te": "And conceit, and prompted by the"
+                "en": "Given to ostentation and conceit",
+                "te": "Given to ostentation and conceit"
             },
             {
-                "sanskrit": "दम्भाहङ्कारसंयुक्ताः कामरागबलान्विताः",
-                "word": "kāma rāga balānvitāḥ",
-                "transliteration": "kāma rāga balānvitāḥ",
+                "sanskrit": "कामरागबलान्विताः",
+                "word": "sanyuktāḥ kāma rāga balānvitāḥ",
+                "transliteration": "sanyuktāḥ kāma rāga balānvitāḥ",
                 "sanskrit_te": "దమ్భాహఙ్కారసంయుక్తాః కామరాగబలాన్వితాః",
-                "en": "Desire attachment force",
-                "te": "Force of sensual desires and passions;"
+                "en": "And prompted by the force of sensual desires and passions;",
+                "te": "And prompted by the force of sensual desires and passions;"
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अशास्त्रविहितं घोरं तप्यन्ते",
+                "word": "aśhāstra vihitaṁ ghoraṁ tapyante",
+                "transliteration": "aśhāstra vihitaṁ ghoraṁ tapyante",
+                "sanskrit_te": "అశాస్త్రవిహితం ఘోరం",
+                "en": "Those men who practice terrible",
+                "te": "Those men who practice terrible"
+            },
+            {
+                "sanskrit": "ये तपो जनाः",
+                "word": "ye tapo janāḥ",
+                "transliteration": "ye tapo janāḥ",
+                "sanskrit_te": "తప్యన్తే యే",
+                "en": "Austerities not enjoined by the scriptures",
+                "te": "Austerities not enjoined by the scriptures"
+            },
+            {
+                "sanskrit": "दम्भाहङ्कारसंयुक्ताः",
+                "word": "dambhāhankāra",
+                "transliteration": "dambhāhankāra",
+                "sanskrit_te": "తపో జనాః",
+                "en": "Given to ostentation and conceit",
+                "te": "Given to ostentation and conceit"
+            },
+            {
+                "sanskrit": "कामरागबलान्विताः",
+                "word": "sanyuktāḥ kāma rāga balānvitāḥ",
+                "transliteration": "sanyuktāḥ kāma rāga balānvitāḥ",
+                "sanskrit_te": "దమ్భాహఙ్కారసంయుక్తాః కామరాగబలాన్వితాః",
+                "en": "And prompted by the force of sensual desires and passions;",
+                "te": "And prompted by the force of sensual desires and passions;"
             }
         ]
     },
@@ -453,34 +635,68 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "कर्षयन्तः शरीरस्थं",
-                "word": "karṣhayantaḥ śharīra sthaṁ bhūta",
-                "transliteration": "karṣhayantaḥ śharīra sthaṁ bhūta",
-                "sanskrit_te": "కర్షయన్తః శరీరస్థం",
-                "en": "Torment within the body elements of the body",
-                "te": "These foolish men, who torture the group"
+                "word": "karṣhayantaḥ śharīra sthaṁ",
+                "transliteration": "karṣhayantaḥ śharīra sthaṁ",
+                "sanskrit_te": "కర్షయన్తః",
+                "en": "These foolish men",
+                "te": "These foolish men"
             },
             {
-                "sanskrit": "भूतग्राममचेतसः मां",
-                "word": "grāmam achetasaḥ māṁ chaivāntaḥ",
-                "transliteration": "grāmam achetasaḥ māṁ chaivāntaḥ",
+                "sanskrit": "भूतग्राममचेतसः",
+                "word": "bhūta grāmam achetasaḥ",
+                "transliteration": "bhūta grāmam achetasaḥ",
+                "sanskrit_te": "శరీరస్థం",
+                "en": "Who torture the group of elements in their bodies and Me",
+                "te": "Who torture the group of elements in their bodies and Me"
+            },
+            {
+                "sanskrit": "मां चैवान्तःशरीरस्थं",
+                "word": "māṁ chaivāntaḥ śharīra sthaṁ",
+                "transliteration": "māṁ chaivāntaḥ śharīra sthaṁ",
                 "sanskrit_te": "భూతగ్రామమచేతసః మాం",
-                "en": "Senseless me within",
-                "te": "Of elements in their bodies and Me,"
-            },
-            {
-                "sanskrit": "चैवान्तःशरीरस्थं",
-                "word": "śharīra sthaṁ tān",
-                "transliteration": "śharīra sthaṁ tān",
-                "sanskrit_te": "చైవాన్తఃశరీరస్థం",
-                "en": "Within the body them",
+                "en": "Who dwell within the body—know them",
                 "te": "Who dwell within the body—know them"
             },
             {
                 "sanskrit": "तान्विद्ध्यासुरनिश्चयान्",
-                "word": "viddhy āsura niśhchayān",
-                "transliteration": "viddhy āsura niśhchayān",
-                "sanskrit_te": "తాన్విద్ధ్యాసురనిశ్చయాన్",
-                "en": "Know of demoniacal resolves",
+                "word": "tān viddhy āsura niśhchayān",
+                "transliteration": "tān viddhy āsura niśhchayān",
+                "sanskrit_te": "చైవాన్తఃశరీరస్థం తాన్విద్ధ్యాసురనిశ్చయాన్",
+                "en": "To be demoniacal in their resolves.",
+                "te": "To be demoniacal in their resolves."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "कर्षयन्तः शरीरस्थं",
+                "word": "karṣhayantaḥ śharīra sthaṁ",
+                "transliteration": "karṣhayantaḥ śharīra sthaṁ",
+                "sanskrit_te": "కర్షయన్తః",
+                "en": "These foolish men",
+                "te": "These foolish men"
+            },
+            {
+                "sanskrit": "भूतग्राममचेतसः",
+                "word": "bhūta grāmam achetasaḥ",
+                "transliteration": "bhūta grāmam achetasaḥ",
+                "sanskrit_te": "శరీరస్థం",
+                "en": "Who torture the group of elements in their bodies and Me",
+                "te": "Who torture the group of elements in their bodies and Me"
+            },
+            {
+                "sanskrit": "मां चैवान्तःशरीरस्थं",
+                "word": "māṁ chaivāntaḥ śharīra sthaṁ",
+                "transliteration": "māṁ chaivāntaḥ śharīra sthaṁ",
+                "sanskrit_te": "భూతగ్రామమచేతసః మాం",
+                "en": "Who dwell within the body—know them",
+                "te": "Who dwell within the body—know them"
+            },
+            {
+                "sanskrit": "तान्विद्ध्यासुरनिश्चयान्",
+                "word": "tān viddhy āsura niśhchayān",
+                "transliteration": "tān viddhy āsura niśhchayān",
+                "sanskrit_te": "చైవాన్తఃశరీరస్థం తాన్విద్ధ్యాసురనిశ్చయాన్",
+                "en": "To be demoniacal in their resolves.",
                 "te": "To be demoniacal in their resolves."
             }
         ]
@@ -536,32 +752,66 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "आहारस्त्वपि सर्वस्य त्रिविधो",
                 "word": "āhāras tv api sarvasya",
                 "transliteration": "āhāras tv api sarvasya",
-                "sanskrit_te": "ఆహారస్త్వపి సర్వస్య త్రివిధో",
-                "en": "Food even of all",
-                "te": "Even the food that is dear to all is threefold"
+                "sanskrit_te": "ఆహారస్త్వపి సర్వస్య",
+                "en": "Even the food that is dear to",
+                "te": "Even the food that is dear to"
             },
             {
-                "sanskrit": "भवति प्रियः यज्ञस्तपस्तथा",
+                "sanskrit": "भवति प्रियः",
                 "word": "tri vidho bhavati priyaḥ",
                 "transliteration": "tri vidho bhavati priyaḥ",
-                "sanskrit_te": "భవతి ప్రియః యజ్ఞస్తపస్తథా",
-                "en": "Of three kinds is dear",
-                "te": "So too are sacrifices"
+                "sanskrit_te": "త్రివిధో భవతి",
+                "en": "All is threefold; so too are sacrifices",
+                "te": "All is threefold; so too are sacrifices"
             },
             {
-                "sanskrit": "दानं तेषां",
+                "sanskrit": "यज्ञस्तपस्तथा",
                 "word": "yajñas tapas tathā dānaṁ",
                 "transliteration": "yajñas tapas tathā dānaṁ",
-                "sanskrit_te": "దానం తేషాం",
-                "en": "Sacrifice and charity",
+                "sanskrit_te": "ప్రియః యజ్ఞస్తపస్తథా దానం",
+                "en": "Austerities",
                 "te": "Austerities"
             },
             {
-                "sanskrit": "भेदमिमं श्रृणु",
+                "sanskrit": "दानं तेषां भेदमिमं श्रृणु",
                 "word": "teṣhāṁ bhedam imaṁ śhṛiṇu",
                 "transliteration": "teṣhāṁ bhedam imaṁ śhṛiṇu",
-                "sanskrit_te": "భేదమిమం శ్రృణు",
-                "en": "Of them distinctions this hear",
+                "sanskrit_te": "తేషాం భేదమిమం శ్రృణు",
+                "en": "And gifts. Listen to this distinction among them.",
+                "te": "And gifts. Listen to this distinction among them."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "आहारस्त्वपि सर्वस्य त्रिविधो",
+                "word": "āhāras tv api sarvasya",
+                "transliteration": "āhāras tv api sarvasya",
+                "sanskrit_te": "ఆహారస్త్వపి సర్వస్య",
+                "en": "Even the food that is dear to",
+                "te": "Even the food that is dear to"
+            },
+            {
+                "sanskrit": "भवति प्रियः",
+                "word": "tri vidho bhavati priyaḥ",
+                "transliteration": "tri vidho bhavati priyaḥ",
+                "sanskrit_te": "త్రివిధో భవతి",
+                "en": "All is threefold; so too are sacrifices",
+                "te": "All is threefold; so too are sacrifices"
+            },
+            {
+                "sanskrit": "यज्ञस्तपस्तथा",
+                "word": "yajñas tapas tathā dānaṁ",
+                "transliteration": "yajñas tapas tathā dānaṁ",
+                "sanskrit_te": "ప్రియః యజ్ఞస్తపస్తథా దానం",
+                "en": "Austerities",
+                "te": "Austerities"
+            },
+            {
+                "sanskrit": "दानं तेषां भेदमिमं श्रृणु",
+                "word": "teṣhāṁ bhedam imaṁ śhṛiṇu",
+                "transliteration": "teṣhāṁ bhedam imaṁ śhṛiṇu",
+                "sanskrit_te": "తేషాం భేదమిమం శ్రృణు",
+                "en": "And gifts. Listen to this distinction among them.",
                 "te": "And gifts. Listen to this distinction among them."
             }
         ]
@@ -614,35 +864,69 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "ఆయుఃసత్త్వబలారోగ్యసుఖప్రీతివివర్ధనాః |\nరస్యాః స్నిగ్ధాః స్థిరా హృద్యా ఆహారాః సాత్త్వికప్రియాః",
         "lineBreakdown": [
             {
-                "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः रस्याः",
-                "word": "āyuḥ sattva balārogya sukha",
-                "transliteration": "āyuḥ sattva balārogya sukha",
-                "sanskrit_te": "ఆయుఃసత్త్వబలారోగ్యసుఖప్రీతివివర్ధనాః రస్యాః",
-                "en": "Which promote longevity strength happiness",
+                "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः",
+                "word": "āyuḥ sattva balārogya",
+                "transliteration": "āyuḥ sattva balārogya",
+                "sanskrit_te": "ఆయుఃసత్త్వబలారోగ్యసుఖప్రీతివివర్ధనాః",
+                "en": "Foods that promote longevity, intellectual alertness, strength,",
                 "te": "Foods that promote longevity, intellectual alertness, strength,"
             },
             {
-                "sanskrit": "स्निग्धाः स्थिरा",
-                "word": "prīti vivardhanāḥ rasyāḥ",
-                "transliteration": "prīti vivardhanāḥ rasyāḥ",
-                "sanskrit_te": "స్నిగ్ధాః స్థిరా",
-                "en": "Satisfaction increase juicy",
+                "sanskrit": "हृद्या आहाराः सात्त्विकप्रियाः",
+                "word": "sukha prīti vivardhanāḥ",
+                "transliteration": "sukha prīti vivardhanāḥ",
+                "sanskrit_te": "రస్యాః స్నిగ్ధాః",
+                "en": "Health, pleasure, and happiness, and those",
                 "te": "Health, pleasure, and happiness, and those"
             },
             {
-                "sanskrit": "हृद्या आहाराः",
-                "word": "snigdhāḥ sthirā hṛidyā",
-                "transliteration": "snigdhāḥ sthirā hṛidyā",
-                "sanskrit_te": "హృద్యా ఆహారాః",
-                "en": "Succulent nourishing pleasing to the heart",
+                "sanskrit": "रस्याः स्निग्धाः स्थिरा",
+                "word": "rasyāḥ snigdhāḥ sthirā hṛidyā",
+                "transliteration": "rasyāḥ snigdhāḥ sthirā hṛidyā",
+                "sanskrit_te": "స్థిరా హృద్యా",
+                "en": "That are sweet, oily, substantial, and",
                 "te": "That are sweet, oily, substantial, and"
             },
             {
-                "sanskrit": "सात्त्विकप्रियाः",
+                "sanskrit": "हृद्या आहाराः सात्त्विकप्रियाः",
                 "word": "āhārāḥ sāttvika priyāḥ",
                 "transliteration": "āhārāḥ sāttvika priyāḥ",
-                "sanskrit_te": "సాత్త్వికప్రియాః",
-                "en": "Food dear to those in the mode of goodness",
+                "sanskrit_te": "ఆహారాః సాత్త్వికప్రియాః",
+                "en": "Agreeable, are dear to sattvic men.",
+                "te": "Agreeable, are dear to sattvic men."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "आयुःसत्त्वबलारोग्यसुखप्रीतिविवर्धनाः",
+                "word": "āyuḥ sattva balārogya",
+                "transliteration": "āyuḥ sattva balārogya",
+                "sanskrit_te": "ఆయుఃసత్త్వబలారోగ్యసుఖప్రీతివివర్ధనాః",
+                "en": "Foods that promote longevity, intellectual alertness, strength,",
+                "te": "Foods that promote longevity, intellectual alertness, strength,"
+            },
+            {
+                "sanskrit": "हृद्या आहाराः सात्त्विकप्रियाः",
+                "word": "sukha prīti vivardhanāḥ",
+                "transliteration": "sukha prīti vivardhanāḥ",
+                "sanskrit_te": "రస్యాః స్నిగ్ధాః",
+                "en": "Health, pleasure, and happiness, and those",
+                "te": "Health, pleasure, and happiness, and those"
+            },
+            {
+                "sanskrit": "रस्याः स्निग्धाः स्थिरा",
+                "word": "rasyāḥ snigdhāḥ sthirā hṛidyā",
+                "transliteration": "rasyāḥ snigdhāḥ sthirā hṛidyā",
+                "sanskrit_te": "స్థిరా హృద్యా",
+                "en": "That are sweet, oily, substantial, and",
+                "te": "That are sweet, oily, substantial, and"
+            },
+            {
+                "sanskrit": "हृद्या आहाराः सात्त्विकप्रियाः",
+                "word": "āhārāḥ sāttvika priyāḥ",
+                "transliteration": "āhārāḥ sāttvika priyāḥ",
+                "sanskrit_te": "ఆహారాః సాత్త్వికప్రియాః",
+                "en": "Agreeable, are dear to sattvic men.",
                 "te": "Agreeable, are dear to sattvic men."
             }
         ]
@@ -696,35 +980,69 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः",
-                "word": "kaṭv amla lavaṇāty",
-                "transliteration": "kaṭv amla lavaṇāty",
+                "word": "kaṭv amla lavaṇāty uṣhṇa",
+                "transliteration": "kaṭv amla lavaṇāty uṣhṇa",
                 "sanskrit_te": "కట్వమ్లలవణాత్యుష్ణతీక్ష్ణరూక్షవిదాహినః",
-                "en": "Sour salty",
-                "te": "Foods that are bitter, sour, very salty,"
-            },
-            {
-                "sanskrit": "आहारा",
-                "word": "uṣhṇa tīkṣhṇa rūkṣha",
-                "transliteration": "uṣhṇa tīkṣhṇa rūkṣha",
-                "sanskrit_te": "ఆహారా",
-                "en": "Pungent dry",
-                "te": "Excessively heating, highly pungent, dry, and burning"
-            },
-            {
-                "sanskrit": "राजसस्येष्टा",
-                "word": "vidāhinaḥ āhārā rājasasyeṣhṭā",
-                "transliteration": "vidāhinaḥ āhārā rājasasyeṣhṭā",
-                "sanskrit_te": "రాజసస్యేష్టా",
-                "en": "Chiliful food to persons in the mode of passion",
-                "te": "Are all dear to Rajasika men;"
+                "en": "Foods that are bitter, sour, very",
+                "te": "Foods that are bitter, sour, very"
             },
             {
                 "sanskrit": "दुःखशोकामयप्रदाः",
-                "word": "duḥkha śhokāmaya pradāḥ",
-                "transliteration": "duḥkha śhokāmaya pradāḥ",
+                "word": "tīkṣhṇa rūkṣha vidāhinaḥ",
+                "transliteration": "tīkṣhṇa rūkṣha vidāhinaḥ",
+                "sanskrit_te": "ఆహారా",
+                "en": "Salty, excessively heating, highly pungent, dry,",
+                "te": "Salty, excessively heating, highly pungent, dry,"
+            },
+            {
+                "sanskrit": "आहारा राजसस्येष्टा",
+                "word": "āhārā rājasasyeṣhṭā duḥkha",
+                "transliteration": "āhārā rājasasyeṣhṭā duḥkha",
+                "sanskrit_te": "రాజసస్యేష్టా",
+                "en": "And burning are all dear to Rajasika",
+                "te": "And burning are all dear to Rajasika"
+            },
+            {
+                "sanskrit": "दुःखशोकामयप्रदाः",
+                "word": "śhokāmaya pradāḥ",
+                "transliteration": "śhokāmaya pradāḥ",
                 "sanskrit_te": "దుఃఖశోకామయప్రదాః",
-                "en": "Pain grief produce",
-                "te": "They cause pain, sorrow, and disease."
+                "en": "Men; they cause pain, sorrow, and disease.",
+                "te": "Men; they cause pain, sorrow, and disease."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "कट्वम्ललवणात्युष्णतीक्ष्णरूक्षविदाहिनः",
+                "word": "kaṭv amla lavaṇāty uṣhṇa",
+                "transliteration": "kaṭv amla lavaṇāty uṣhṇa",
+                "sanskrit_te": "కట్వమ్లలవణాత్యుష్ణతీక్ష్ణరూక్షవిదాహినః",
+                "en": "Foods that are bitter, sour, very",
+                "te": "Foods that are bitter, sour, very"
+            },
+            {
+                "sanskrit": "दुःखशोकामयप्रदाः",
+                "word": "tīkṣhṇa rūkṣha vidāhinaḥ",
+                "transliteration": "tīkṣhṇa rūkṣha vidāhinaḥ",
+                "sanskrit_te": "ఆహారా",
+                "en": "Salty, excessively heating, highly pungent, dry,",
+                "te": "Salty, excessively heating, highly pungent, dry,"
+            },
+            {
+                "sanskrit": "आहारा राजसस्येष्टा",
+                "word": "āhārā rājasasyeṣhṭā duḥkha",
+                "transliteration": "āhārā rājasasyeṣhṭā duḥkha",
+                "sanskrit_te": "రాజసస్యేష్టా",
+                "en": "And burning are all dear to Rajasika",
+                "te": "And burning are all dear to Rajasika"
+            },
+            {
+                "sanskrit": "दुःखशोकामयप्रदाः",
+                "word": "śhokāmaya pradāḥ",
+                "transliteration": "śhokāmaya pradāḥ",
+                "sanskrit_te": "దుఃఖశోకామయప్రదాః",
+                "en": "Men; they cause pain, sorrow, and disease.",
+                "te": "Men; they cause pain, sorrow, and disease."
             }
         ]
     },
@@ -779,33 +1097,67 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "यातयामं गतरसं पूति",
                 "word": "yāta yāmaṁ gata rasaṁ",
                 "transliteration": "yāta yāmaṁ gata rasaṁ",
-                "sanskrit_te": "యాతయామం గతరసం పూతి",
-                "en": "Stale foods tasteless",
-                "te": "That food which is stale,"
+                "sanskrit_te": "యాతయామం గతరసం",
+                "en": "That food which is",
+                "te": "That food which is"
             },
             {
                 "sanskrit": "पर्युषितं च यत्",
                 "word": "pūti paryuṣhitaṁ cha yat",
                 "transliteration": "pūti paryuṣhitaṁ cha yat",
-                "sanskrit_te": "పర్యుషితం చ యత్",
-                "en": "Putrid polluted and which",
-                "te": "Tasteless, putrid, decayed, rejected, unclean,"
+                "sanskrit_te": "పూతి పర్యుషితం",
+                "en": "Stale, tasteless, putrid, decayed,",
+                "te": "Stale, tasteless, putrid, decayed,"
             },
             {
                 "sanskrit": "उच्छिष्टमपि चामेध्यं",
-                "word": "uchchhiṣhṭam api chāmedhyaṁ",
-                "transliteration": "uchchhiṣhṭam api chāmedhyaṁ",
-                "sanskrit_te": "ఉచ్ఛిష్టమపి చామేధ్యం",
-                "en": "Left over also impure",
-                "te": "Is dear to those"
+                "word": "uchchhiṣhṭam",
+                "transliteration": "uchchhiṣhṭam",
+                "sanskrit_te": "చ యత్ ఉచ్ఛిష్టమపి",
+                "en": "Rejected, unclean, is dear to",
+                "te": "Rejected, unclean, is dear to"
             },
             {
                 "sanskrit": "भोजनं तामसप्रियम्",
-                "word": "bhojanaṁ tāmasa priyam",
-                "transliteration": "bhojanaṁ tāmasa priyam",
-                "sanskrit_te": "భోజనం తామసప్రియమ్",
-                "en": "Foods to persons in the mode of ignorance dear",
-                "te": "Of a Tamasic nature."
+                "word": "api chāmedhyaṁ bhojanaṁ tāmasa priyam",
+                "transliteration": "api chāmedhyaṁ bhojanaṁ tāmasa priyam",
+                "sanskrit_te": "చామేధ్యం భోజనం తామసప్రియమ్",
+                "en": "Those of a Tamasic nature.",
+                "te": "Those of a Tamasic nature."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "यातयामं गतरसं पूति",
+                "word": "yāta yāmaṁ gata rasaṁ",
+                "transliteration": "yāta yāmaṁ gata rasaṁ",
+                "sanskrit_te": "యాతయామం గతరసం",
+                "en": "That food which is",
+                "te": "That food which is"
+            },
+            {
+                "sanskrit": "पर्युषितं च यत्",
+                "word": "pūti paryuṣhitaṁ cha yat",
+                "transliteration": "pūti paryuṣhitaṁ cha yat",
+                "sanskrit_te": "పూతి పర్యుషితం",
+                "en": "Stale, tasteless, putrid, decayed,",
+                "te": "Stale, tasteless, putrid, decayed,"
+            },
+            {
+                "sanskrit": "उच्छिष्टमपि चामेध्यं",
+                "word": "uchchhiṣhṭam",
+                "transliteration": "uchchhiṣhṭam",
+                "sanskrit_te": "చ యత్ ఉచ్ఛిష్టమపి",
+                "en": "Rejected, unclean, is dear to",
+                "te": "Rejected, unclean, is dear to"
+            },
+            {
+                "sanskrit": "भोजनं तामसप्रियम्",
+                "word": "api chāmedhyaṁ bhojanaṁ tāmasa priyam",
+                "transliteration": "api chāmedhyaṁ bhojanaṁ tāmasa priyam",
+                "sanskrit_te": "చామేధ్యం భోజనం తామసప్రియమ్",
+                "en": "Those of a Tamasic nature.",
+                "te": "Those of a Tamasic nature."
             }
         ]
     },
@@ -857,36 +1209,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "అఫలాకాఙ్క్షిభిర్యజ్ఞో విధిదృష్టో య ఇజ్యతే |\nయష్టవ్యమేవేతి మనః సమాధాయ స సాత్త్వికః",
         "lineBreakdown": [
             {
-                "sanskrit": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो य",
+                "sanskrit": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो",
                 "word": "aphalākāṅkṣhibhir yajño vidhi",
                 "transliteration": "aphalākāṅkṣhibhir yajño vidhi",
                 "sanskrit_te": "అఫలాకాఙ్క్షిభిర్యజ్ఞో విధిదృష్టో య",
-                "en": "Without expectation of any reward that is in accordance with the scriptural injunctions",
-                "te": "The sacrifice (worship) marked by Sattva is what"
+                "en": "The sacrifice (worship) marked by Sattva is",
+                "te": "The sacrifice (worship) marked by Sattva is"
             },
             {
-                "sanskrit": "इज्यते यष्टव्यमेवेति",
+                "sanskrit": "य इज्यते",
                 "word": "driṣhṭo ya ijyate",
                 "transliteration": "driṣhṭo ya ijyate",
                 "sanskrit_te": "ఇజ్యతే యష్టవ్యమేవేతి",
-                "en": "Which is performed",
-                "te": "Is offered by those who desire no fruit"
+                "en": "What is offered by those who desire",
+                "te": "What is offered by those who desire"
             },
             {
-                "sanskrit": "मनः समाधाय",
+                "sanskrit": "यष्टव्यमेवेति",
                 "word": "yaṣhṭavyam eveti manaḥ",
                 "transliteration": "yaṣhṭavyam eveti manaḥ",
                 "sanskrit_te": "మనః సమాధాయ",
-                "en": "Ought to be offered mind",
-                "te": "And have the conviction that it should"
+                "en": "No fruit and have the conviction that it",
+                "te": "No fruit and have the conviction that it"
             },
             {
-                "sanskrit": "स सात्त्विकः",
+                "sanskrit": "मनः समाधाय स सात्त्विकः",
                 "word": "samādhāya sa sāttvikaḥ",
                 "transliteration": "samādhāya sa sāttvikaḥ",
                 "sanskrit_te": "స సాత్త్వికః",
-                "en": "With conviction that of the nature of goodness",
-                "te": "Be performed as prescribed in the scriptures."
+                "en": "Should be performed as prescribed in the scriptures.",
+                "te": "Should be performed as prescribed in the scriptures."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अफलाकाङ्क्षिभिर्यज्ञो विधिदृष्टो",
+                "word": "aphalākāṅkṣhibhir yajño vidhi",
+                "transliteration": "aphalākāṅkṣhibhir yajño vidhi",
+                "sanskrit_te": "అఫలాకాఙ్క్షిభిర్యజ్ఞో విధిదృష్టో య",
+                "en": "The sacrifice (worship) marked by Sattva is",
+                "te": "The sacrifice (worship) marked by Sattva is"
+            },
+            {
+                "sanskrit": "य इज्यते",
+                "word": "driṣhṭo ya ijyate",
+                "transliteration": "driṣhṭo ya ijyate",
+                "sanskrit_te": "ఇజ్యతే యష్టవ్యమేవేతి",
+                "en": "What is offered by those who desire",
+                "te": "What is offered by those who desire"
+            },
+            {
+                "sanskrit": "यष्टव्यमेवेति",
+                "word": "yaṣhṭavyam eveti manaḥ",
+                "transliteration": "yaṣhṭavyam eveti manaḥ",
+                "sanskrit_te": "మనః సమాధాయ",
+                "en": "No fruit and have the conviction that it",
+                "te": "No fruit and have the conviction that it"
+            },
+            {
+                "sanskrit": "मनः समाधाय स सात्त्विकः",
+                "word": "samādhāya sa sāttvikaḥ",
+                "transliteration": "samādhāya sa sāttvikaḥ",
+                "sanskrit_te": "స సాత్త్వికః",
+                "en": "Should be performed as prescribed in the scriptures.",
+                "te": "Should be performed as prescribed in the scriptures."
             }
         ]
     },
@@ -942,23 +1328,23 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "abhisandhāya tu phalaṁ dambhārtham",
                 "transliteration": "abhisandhāya tu phalaṁ dambhārtham",
                 "sanskrit_te": "అభిసంధాయ తు ఫలం",
-                "en": "Motivated by but the result pride",
+                "en": "But that sacrifice which is offered with the intention of gaining a reward and for the sake of show",
                 "te": "But that sacrifice which is offered with the intention of gaining a reward and for the sake of show"
             },
             {
                 "sanskrit": "दम्भार्थमपि चैव यत्",
-                "word": "api chaiva yat ijyate",
-                "transliteration": "api chaiva yat ijyate",
+                "word": "api chaiva yat",
+                "transliteration": "api chaiva yat",
                 "sanskrit_te": "దమ్భార్థమపి చైవ యత్",
-                "en": "Also that which is performed",
+                "en": "Know it",
                 "te": "Know it"
             },
             {
                 "sanskrit": "इज्यते भरतश्रेष्ठ तं",
-                "word": "bharata śhreṣhṭha taṁ",
-                "transliteration": "bharata śhreṣhṭha taṁ",
+                "word": "ijyate bharata śhreṣhṭha taṁ",
+                "transliteration": "ijyate bharata śhreṣhṭha taṁ",
                 "sanskrit_te": "ఇజ్యతే భరతశ్రేష్ఠ తం",
-                "en": "Arjun, the best of the Bharatas that",
+                "en": "O Arjuna",
                 "te": "O Arjuna"
             },
             {
@@ -966,7 +1352,41 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "yajñaṁ viddhi rājasam",
                 "transliteration": "yajñaṁ viddhi rājasam",
                 "sanskrit_te": "యజ్ఞం విద్ధి రాజసమ్",
-                "en": "Sacrifice know in the mode of passion",
+                "en": "To be Rajasic.",
+                "te": "To be Rajasic."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अभिसंधाय तु फलं",
+                "word": "abhisandhāya tu phalaṁ dambhārtham",
+                "transliteration": "abhisandhāya tu phalaṁ dambhārtham",
+                "sanskrit_te": "అభిసంధాయ తు ఫలం",
+                "en": "But that sacrifice which is offered with the intention of gaining a reward and for the sake of show",
+                "te": "But that sacrifice which is offered with the intention of gaining a reward and for the sake of show"
+            },
+            {
+                "sanskrit": "दम्भार्थमपि चैव यत्",
+                "word": "api chaiva yat",
+                "transliteration": "api chaiva yat",
+                "sanskrit_te": "దమ్భార్థమపి చైవ యత్",
+                "en": "Know it",
+                "te": "Know it"
+            },
+            {
+                "sanskrit": "इज्यते भरतश्रेष्ठ तं",
+                "word": "ijyate bharata śhreṣhṭha taṁ",
+                "transliteration": "ijyate bharata śhreṣhṭha taṁ",
+                "sanskrit_te": "ఇజ్యతే భరతశ్రేష్ఠ తం",
+                "en": "O Arjuna",
+                "te": "O Arjuna"
+            },
+            {
+                "sanskrit": "यज्ञं विद्धि राजसम्",
+                "word": "yajñaṁ viddhi rājasam",
+                "transliteration": "yajñaṁ viddhi rājasam",
+                "sanskrit_te": "యజ్ఞం విద్ధి రాజసమ్",
+                "en": "To be Rajasic.",
                 "te": "To be Rajasic."
             }
         ]
@@ -1019,36 +1439,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "విధిహీనమసృష్టాన్నం మన్త్రహీనమదక్షిణమ్ |\nశ్రద్ధావిరహితం యజ్ఞం తామసం పరిచక్షతే",
         "lineBreakdown": [
             {
-                "sanskrit": "विधिहीनमसृष्टान्नं मन्त्रहीनमदक्षिणम्",
+                "sanskrit": "विधिहीनमसृष्टान्नं",
                 "word": "vidhi hīnam asṛiṣhṭānnaṁ",
                 "transliteration": "vidhi hīnam asṛiṣhṭānnaṁ",
-                "sanskrit_te": "విధిహీనమసృష్టాన్నం మన్త్రహీనమదక్షిణమ్",
-                "en": "Without scriptural direction without distribution of prasādam",
-                "te": "That sacrifice which is devoid of authority, which uses"
+                "sanskrit_te": "విధిహీనమసృష్టాన్నం",
+                "en": "That sacrifice which is devoid of authority, which",
+                "te": "That sacrifice which is devoid of authority, which"
             },
             {
-                "sanskrit": "श्रद्धाविरहितं यज्ञं",
+                "sanskrit": "मन्त्रहीनमदक्षिणम्",
                 "word": "mantra hīnam adakṣhiṇam",
                 "transliteration": "mantra hīnam adakṣhiṇam",
-                "sanskrit_te": "శ్రద్ధావిరహితం యజ్ఞం",
-                "en": "With no chanting of the Vedic hymns with no remunerations to the priests",
-                "te": "Offerings not sanctioned by the Sastras, which is performed"
+                "sanskrit_te": "మన్త్రహీనమదక్షిణమ్",
+                "en": "Uses offerings not sanctioned by the Sastras, which is",
+                "te": "Uses offerings not sanctioned by the Sastras, which is"
             },
             {
-                "sanskrit": "तामसं",
+                "sanskrit": "श्रद्धाविरहितं",
                 "word": "śhraddhā virahitaṁ yajñaṁ",
                 "transliteration": "śhraddhā virahitaṁ yajñaṁ",
-                "sanskrit_te": "తామసం",
-                "en": "Faith without sacrifice",
-                "te": "Without recitation of hymns and devoid of gifts and"
+                "sanskrit_te": "శ్రద్ధావిరహితం యజ్ఞం",
+                "en": "Performed without recitation of hymns and devoid of gifts",
+                "te": "Performed without recitation of hymns and devoid of gifts"
             },
             {
-                "sanskrit": "परिचक्षते",
+                "sanskrit": "यज्ञं तामसं परिचक्षते",
                 "word": "tāmasaṁ parichakṣhate",
                 "transliteration": "tāmasaṁ parichakṣhate",
-                "sanskrit_te": "పరిచక్షతే",
-                "en": "In the mode of ignorance is to be considered",
-                "te": "Faith that, they say, is marked by Tamas."
+                "sanskrit_te": "తామసం పరిచక్షతే",
+                "en": "And faith that, they say, is marked by Tamas.",
+                "te": "And faith that, they say, is marked by Tamas."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "विधिहीनमसृष्टान्नं",
+                "word": "vidhi hīnam asṛiṣhṭānnaṁ",
+                "transliteration": "vidhi hīnam asṛiṣhṭānnaṁ",
+                "sanskrit_te": "విధిహీనమసృష్టాన్నం",
+                "en": "That sacrifice which is devoid of authority, which",
+                "te": "That sacrifice which is devoid of authority, which"
+            },
+            {
+                "sanskrit": "मन्त्रहीनमदक्षिणम्",
+                "word": "mantra hīnam adakṣhiṇam",
+                "transliteration": "mantra hīnam adakṣhiṇam",
+                "sanskrit_te": "మన్త్రహీనమదక్షిణమ్",
+                "en": "Uses offerings not sanctioned by the Sastras, which is",
+                "te": "Uses offerings not sanctioned by the Sastras, which is"
+            },
+            {
+                "sanskrit": "श्रद्धाविरहितं",
+                "word": "śhraddhā virahitaṁ yajñaṁ",
+                "transliteration": "śhraddhā virahitaṁ yajñaṁ",
+                "sanskrit_te": "శ్రద్ధావిరహితం యజ్ఞం",
+                "en": "Performed without recitation of hymns and devoid of gifts",
+                "te": "Performed without recitation of hymns and devoid of gifts"
+            },
+            {
+                "sanskrit": "यज्ञं तामसं परिचक्षते",
+                "word": "tāmasaṁ parichakṣhate",
+                "transliteration": "tāmasaṁ parichakṣhate",
+                "sanskrit_te": "తామసం పరిచక్షతే",
+                "en": "And faith that, they say, is marked by Tamas.",
+                "te": "And faith that, they say, is marked by Tamas."
             }
         ]
     },
@@ -1100,35 +1554,69 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "దేవద్విజగురుప్రాజ్ఞపూజనం శౌచమార్జవమ్ |\nబ్రహ్మచర్యమహింసా చ శారీరం తప ఉచ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "देवद्विजगुरुप्राज्ञपूजनं शौचमार्जवम्",
+                "sanskrit": "देवद्विजगुरुप्राज्ञपूजनं",
                 "word": "deva dwija guru prājña",
                 "transliteration": "deva dwija guru prājña",
-                "sanskrit_te": "దేవద్విజగురుప్రాజ్ఞపూజనం శౌచమార్జవమ్",
-                "en": "The Supreme Lord the Brahmins the spiritual master the elders",
+                "sanskrit_te": "దేవద్విజగురుప్రాజ్ఞపూజనం",
+                "en": "Worshiping the gods, the twice born,",
                 "te": "Worshiping the gods, the twice born,"
             },
             {
-                "sanskrit": "ब्रह्मचर्यमहिंसा च",
+                "sanskrit": "शौचमार्जवम्",
                 "word": "pūjanaṁ śhaucham ārjavam",
                 "transliteration": "pūjanaṁ śhaucham ārjavam",
-                "sanskrit_te": "బ్రహ్మచర్యమహింసా చ",
-                "en": "Worship cleanliness simplicity",
+                "sanskrit_te": "శౌచమార్జవమ్ బ్రహ్మచర్యమహింసా",
+                "en": "The preceptors, the enlightened ones, practicing",
                 "te": "The preceptors, the enlightened ones, practicing"
             },
             {
-                "sanskrit": "शारीरं तप",
-                "word": "brahmacharyam ahinsā cha",
-                "transliteration": "brahmacharyam ahinsā cha",
-                "sanskrit_te": "శారీరం తప",
-                "en": "Celibacy non-violence and",
+                "sanskrit": "ब्रह्मचर्यमहिंसा",
+                "word": "brahmacharyam",
+                "transliteration": "brahmacharyam",
+                "sanskrit_te": "చ శారీరం",
+                "en": "Purity, uprightness, continence, and non injury—these",
                 "te": "Purity, uprightness, continence, and non injury—these"
             },
             {
-                "sanskrit": "उच्यते",
-                "word": "śhārīraṁ tapa uchyate",
-                "transliteration": "śhārīraṁ tapa uchyate",
-                "sanskrit_te": "ఉచ్యతే",
-                "en": "Of the body austerity is declared as",
+                "sanskrit": "च शारीरं तप उच्यते",
+                "word": "ahinsā cha śhārīraṁ tapa uchyate",
+                "transliteration": "ahinsā cha śhārīraṁ tapa uchyate",
+                "sanskrit_te": "తప ఉచ్యతే",
+                "en": "Are called austerity of the body.",
+                "te": "Are called austerity of the body."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "देवद्विजगुरुप्राज्ञपूजनं",
+                "word": "deva dwija guru prājña",
+                "transliteration": "deva dwija guru prājña",
+                "sanskrit_te": "దేవద్విజగురుప్రాజ్ఞపూజనం",
+                "en": "Worshiping the gods, the twice born,",
+                "te": "Worshiping the gods, the twice born,"
+            },
+            {
+                "sanskrit": "शौचमार्जवम्",
+                "word": "pūjanaṁ śhaucham ārjavam",
+                "transliteration": "pūjanaṁ śhaucham ārjavam",
+                "sanskrit_te": "శౌచమార్జవమ్ బ్రహ్మచర్యమహింసా",
+                "en": "The preceptors, the enlightened ones, practicing",
+                "te": "The preceptors, the enlightened ones, practicing"
+            },
+            {
+                "sanskrit": "ब्रह्मचर्यमहिंसा",
+                "word": "brahmacharyam",
+                "transliteration": "brahmacharyam",
+                "sanskrit_te": "చ శారీరం",
+                "en": "Purity, uprightness, continence, and non injury—these",
+                "te": "Purity, uprightness, continence, and non injury—these"
+            },
+            {
+                "sanskrit": "च शारीरं तप उच्यते",
+                "word": "ahinsā cha śhārīraṁ tapa uchyate",
+                "transliteration": "ahinsā cha śhārīraṁ tapa uchyate",
+                "sanskrit_te": "తప ఉచ్యతే",
+                "en": "Are called austerity of the body.",
                 "te": "Are called austerity of the body."
             }
         ]
@@ -1184,33 +1672,67 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं",
                 "word": "anudvega karaṁ vākyaṁ satyaṁ",
                 "transliteration": "anudvega karaṁ vākyaṁ satyaṁ",
-                "sanskrit_te": "అనుద్వేగకరం వాక్యం సత్యం",
-                "en": "Not causing distress words truthful",
-                "te": "Speech that causes no shock, is"
+                "sanskrit_te": "అనుద్వేగకరం వాక్యం",
+                "en": "Speech that causes no shock,",
+                "te": "Speech that causes no shock,"
             },
             {
                 "sanskrit": "प्रियहितं च यत्",
                 "word": "priya hitaṁ cha yat",
                 "transliteration": "priya hitaṁ cha yat",
-                "sanskrit_te": "ప్రియహితం చ యత్",
-                "en": "Beneficial and which",
-                "te": "True, pleasant, and beneficial, and also"
+                "sanskrit_te": "సత్యం ప్రియహితం చ",
+                "en": "Is true, pleasant, and beneficial, and",
+                "te": "Is true, pleasant, and beneficial, and"
             },
             {
-                "sanskrit": "स्वाध्यायाभ्यसनं चैव वाङ्मयं",
-                "word": "svādhyāyābhyasanaṁ chaiva vāṅ",
-                "transliteration": "svādhyāyābhyasanaṁ chaiva vāṅ",
-                "sanskrit_te": "స్వాధ్యాయాభ్యసనం చైవ వాఙ్మయం",
-                "en": "Recitation of the Vedic scriptures of speech",
-                "te": "The practice of reciting scriptures, is"
+                "sanskrit": "स्वाध्यायाभ्यसनं",
+                "word": "svādhyāyābhyasanaṁ",
+                "transliteration": "svādhyāyābhyasanaṁ",
+                "sanskrit_te": "యత్ స్వాధ్యాయాభ్యసనం చైవ",
+                "en": "Also the practice of reciting scriptures,",
+                "te": "Also the practice of reciting scriptures,"
             },
             {
-                "sanskrit": "तप उच्यते",
-                "word": "mayaṁ tapa uchyate",
-                "transliteration": "mayaṁ tapa uchyate",
-                "sanskrit_te": "తప ఉచ్యతే",
-                "en": "Austerity are declared as",
-                "te": "Called the austerity of speech."
+                "sanskrit": "चैव वाङ्मयं तप उच्यते",
+                "word": "chaiva vāṅ mayaṁ tapa uchyate",
+                "transliteration": "chaiva vāṅ mayaṁ tapa uchyate",
+                "sanskrit_te": "వాఙ్మయం తప ఉచ్యతే",
+                "en": "Is called the austerity of speech.",
+                "te": "Is called the austerity of speech."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अनुद्वेगकरं वाक्यं सत्यं",
+                "word": "anudvega karaṁ vākyaṁ satyaṁ",
+                "transliteration": "anudvega karaṁ vākyaṁ satyaṁ",
+                "sanskrit_te": "అనుద్వేగకరం వాక్యం",
+                "en": "Speech that causes no shock,",
+                "te": "Speech that causes no shock,"
+            },
+            {
+                "sanskrit": "प्रियहितं च यत्",
+                "word": "priya hitaṁ cha yat",
+                "transliteration": "priya hitaṁ cha yat",
+                "sanskrit_te": "సత్యం ప్రియహితం చ",
+                "en": "Is true, pleasant, and beneficial, and",
+                "te": "Is true, pleasant, and beneficial, and"
+            },
+            {
+                "sanskrit": "स्वाध्यायाभ्यसनं",
+                "word": "svādhyāyābhyasanaṁ",
+                "transliteration": "svādhyāyābhyasanaṁ",
+                "sanskrit_te": "యత్ స్వాధ్యాయాభ్యసనం చైవ",
+                "en": "Also the practice of reciting scriptures,",
+                "te": "Also the practice of reciting scriptures,"
+            },
+            {
+                "sanskrit": "चैव वाङ्मयं तप उच्यते",
+                "word": "chaiva vāṅ mayaṁ tapa uchyate",
+                "transliteration": "chaiva vāṅ mayaṁ tapa uchyate",
+                "sanskrit_te": "వాఙ్మయం తప ఉచ్యతే",
+                "en": "Is called the austerity of speech.",
+                "te": "Is called the austerity of speech."
             }
         ]
     },
@@ -1263,35 +1785,69 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "मनःप्रसादः सौम्यत्वं",
-                "word": "manaḥ prasādaḥ saumyatvaṁ maunam",
-                "transliteration": "manaḥ prasādaḥ saumyatvaṁ maunam",
+                "word": "manaḥ prasādaḥ saumyatvaṁ",
+                "transliteration": "manaḥ prasādaḥ saumyatvaṁ",
                 "sanskrit_te": "మనఃప్రసాదః సౌమ్యత్వం",
-                "en": "Serenity of thought gentleness silence",
-                "te": "Serenity of mind, benevolence, silence,"
+                "en": "Serenity of mind, benevolence,",
+                "te": "Serenity of mind, benevolence,"
             },
             {
                 "sanskrit": "मौनमात्मविनिग्रहः",
-                "word": "ātma vinigrahaḥ bhāva",
-                "transliteration": "ātma vinigrahaḥ bhāva",
+                "word": "maunam ātma vinigrahaḥ",
+                "transliteration": "maunam ātma vinigrahaḥ",
                 "sanskrit_te": "మౌనమాత్మవినిగ్రహః",
-                "en": "Self-control purity of purpose",
-                "te": "Self control, and purity of"
+                "en": "Silence, self control, and",
+                "te": "Silence, self control, and"
             },
             {
                 "sanskrit": "भावसंशुद्धिरित्येतत्तपो",
-                "word": "sanśhuddhir ity etat",
-                "transliteration": "sanśhuddhir ity etat",
+                "word": "bhāva sanśhuddhir ity etat",
+                "transliteration": "bhāva sanśhuddhir ity etat",
                 "sanskrit_te": "భావసంశుద్ధిరిత్యేతత్తపో",
-                "en": "Mind—these are known as",
-                "te": "Mind—these are known as"
+                "en": "Purity of mind—these are known",
+                "te": "Purity of mind—these are known"
             },
             {
                 "sanskrit": "मानसमुच्यते",
                 "word": "tapo mānasam uchyate",
                 "transliteration": "tapo mānasam uchyate",
                 "sanskrit_te": "మానసముచ్యతే",
-                "en": "Of the mind are declared as",
-                "te": "Austerity of the mind."
+                "en": "As austerity of the mind.",
+                "te": "As austerity of the mind."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "मनःप्रसादः सौम्यत्वं",
+                "word": "manaḥ prasādaḥ saumyatvaṁ",
+                "transliteration": "manaḥ prasādaḥ saumyatvaṁ",
+                "sanskrit_te": "మనఃప్రసాదః సౌమ్యత్వం",
+                "en": "Serenity of mind, benevolence,",
+                "te": "Serenity of mind, benevolence,"
+            },
+            {
+                "sanskrit": "मौनमात्मविनिग्रहः",
+                "word": "maunam ātma vinigrahaḥ",
+                "transliteration": "maunam ātma vinigrahaḥ",
+                "sanskrit_te": "మౌనమాత్మవినిగ్రహః",
+                "en": "Silence, self control, and",
+                "te": "Silence, self control, and"
+            },
+            {
+                "sanskrit": "भावसंशुद्धिरित्येतत्तपो",
+                "word": "bhāva sanśhuddhir ity etat",
+                "transliteration": "bhāva sanśhuddhir ity etat",
+                "sanskrit_te": "భావసంశుద్ధిరిత్యేతత్తపో",
+                "en": "Purity of mind—these are known",
+                "te": "Purity of mind—these are known"
+            },
+            {
+                "sanskrit": "मानसमुच्यते",
+                "word": "tapo mānasam uchyate",
+                "transliteration": "tapo mānasam uchyate",
+                "sanskrit_te": "మానసముచ్యతే",
+                "en": "As austerity of the mind.",
+                "te": "As austerity of the mind."
             }
         ]
     },
@@ -1343,35 +1899,69 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "శ్రద్ధయా పరయా తప్తం తపస్తత్ిత్రవిధం నరైః |\nఅఫలాకాఙ్క్షిభిర్యుక్తైః సాత్త్వికం పరిచక్షతే",
         "lineBreakdown": [
             {
-                "sanskrit": "श्रद्धया परया",
-                "word": "śhraddhayā parayā taptaṁ",
-                "transliteration": "śhraddhayā parayā taptaṁ",
+                "sanskrit": "श्रद्धया परया तप्तं",
+                "word": "śhraddhayā parayā taptaṁ tapas",
+                "transliteration": "śhraddhayā parayā taptaṁ tapas",
                 "sanskrit_te": "శ్రద్ధయా పరయా",
-                "en": "With faith transcendental practiced",
-                "te": "The threefold austerity, practiced with supreme"
+                "en": "The threefold austerity",
+                "te": "The threefold austerity"
             },
             {
-                "sanskrit": "तप्तं तपस्तत्ित्रविधं",
-                "word": "tapas tat tri",
-                "transliteration": "tapas tat tri",
+                "sanskrit": "तपस्तत्ित्रविधं नरैः",
+                "word": "tat tri vidhaṁ naraiḥ",
+                "transliteration": "tat tri vidhaṁ naraiḥ",
                 "sanskrit_te": "తప్తం తపస్తత్ిత్రవిధం",
-                "en": "That three-fold",
-                "te": "Faith by men who desire"
+                "en": "Practiced with supreme faith by men who desire no",
+                "te": "Practiced with supreme faith by men who desire no"
             },
             {
-                "sanskrit": "नरैः अफलाकाङ्क्षिभिर्युक्तैः",
-                "word": "vidhaṁ naraiḥ aphalākāṅkṣhibhir",
-                "transliteration": "vidhaṁ naraiḥ aphalākāṅkṣhibhir",
+                "sanskrit": "अफलाकाङ्क्षिभिर्युक्तैः",
+                "word": "aphalākāṅkṣhibhir",
+                "transliteration": "aphalākāṅkṣhibhir",
                 "sanskrit_te": "నరైః అఫలాకాఙ్క్షిభిర్యుక్తైః",
-                "en": "By persons without yearning for material rewards",
-                "te": "No fruit and are devoted—they"
+                "en": "Fruit and are devoted—they",
+                "te": "Fruit and are devoted—they"
             },
             {
                 "sanskrit": "सात्त्विकं परिचक्षते",
                 "word": "yuktaiḥ sāttvikaṁ parichakṣhate",
                 "transliteration": "yuktaiḥ sāttvikaṁ parichakṣhate",
                 "sanskrit_te": "సాత్త్వికం పరిచక్షతే",
-                "en": "Steadfast in the mode of goodness are designated",
+                "en": "Call it austerity of Sattva.",
+                "te": "Call it austerity of Sattva."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "श्रद्धया परया तप्तं",
+                "word": "śhraddhayā parayā taptaṁ tapas",
+                "transliteration": "śhraddhayā parayā taptaṁ tapas",
+                "sanskrit_te": "శ్రద్ధయా పరయా",
+                "en": "The threefold austerity",
+                "te": "The threefold austerity"
+            },
+            {
+                "sanskrit": "तपस्तत्ित्रविधं नरैः",
+                "word": "tat tri vidhaṁ naraiḥ",
+                "transliteration": "tat tri vidhaṁ naraiḥ",
+                "sanskrit_te": "తప్తం తపస్తత్ిత్రవిధం",
+                "en": "Practiced with supreme faith by men who desire no",
+                "te": "Practiced with supreme faith by men who desire no"
+            },
+            {
+                "sanskrit": "अफलाकाङ्क्षिभिर्युक्तैः",
+                "word": "aphalākāṅkṣhibhir",
+                "transliteration": "aphalākāṅkṣhibhir",
+                "sanskrit_te": "నరైః అఫలాకాఙ్క్షిభిర్యుక్తైః",
+                "en": "Fruit and are devoted—they",
+                "te": "Fruit and are devoted—they"
+            },
+            {
+                "sanskrit": "सात्त्विकं परिचक्षते",
+                "word": "yuktaiḥ sāttvikaṁ parichakṣhate",
+                "transliteration": "yuktaiḥ sāttvikaṁ parichakṣhate",
+                "sanskrit_te": "సాత్త్వికం పరిచక్షతే",
+                "en": "Call it austerity of Sattva.",
                 "te": "Call it austerity of Sattva."
             }
         ]
@@ -1427,32 +2017,66 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "सत्कारमानपूजार्थं तपो दम्भेन",
                 "word": "satkāra māna pūjārthaṁ tapo",
                 "transliteration": "satkāra māna pūjārthaṁ tapo",
-                "sanskrit_te": "సత్కారమానపూజార్థం తపో దమ్భేన",
-                "en": "Honor adoration",
+                "sanskrit_te": "సత్కారమానపూజార్థం తపో",
+                "en": "That austerity, practiced with ostentation for the",
                 "te": "That austerity, practiced with ostentation for the"
             },
             {
-                "sanskrit": "चैव यत् क्रियते",
-                "word": "dambhena chaiva yat kriyate",
-                "transliteration": "dambhena chaiva yat kriyate",
-                "sanskrit_te": "చైవ యత్ క్రియతే",
-                "en": "With ostentation which is performed",
+                "sanskrit": "चैव यत्",
+                "word": "dambhena chaiva yat",
+                "transliteration": "dambhena chaiva yat",
+                "sanskrit_te": "దమ్భేన చైవ",
+                "en": "Sake of gaining respect, praise, and",
                 "te": "Sake of gaining respect, praise, and"
             },
             {
-                "sanskrit": "तदिह प्रोक्तं",
-                "word": "tad iha proktaṁ",
-                "transliteration": "tad iha proktaṁ",
-                "sanskrit_te": "తదిహ ప్రోక్తం",
-                "en": "In this world is said",
+                "sanskrit": "क्रियते तदिह प्रोक्तं",
+                "word": "kriyate tad iha proktaṁ",
+                "transliteration": "kriyate tad iha proktaṁ",
+                "sanskrit_te": "యత్ క్రియతే తదిహ",
+                "en": "Reverence, is here said to be",
                 "te": "Reverence, is here said to be"
             },
             {
                 "sanskrit": "राजसं चलमध्रुवम्",
                 "word": "rājasaṁ chalam adhruvam",
                 "transliteration": "rājasaṁ chalam adhruvam",
-                "sanskrit_te": "రాజసం చలమధ్రువమ్",
-                "en": "In the mode of passion flickering temporary",
+                "sanskrit_te": "ప్రోక్తం రాజసం చలమధ్రువమ్",
+                "en": "Rajasa. It is unsteady and impermanent.",
+                "te": "Rajasa. It is unsteady and impermanent."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "सत्कारमानपूजार्थं तपो दम्भेन",
+                "word": "satkāra māna pūjārthaṁ tapo",
+                "transliteration": "satkāra māna pūjārthaṁ tapo",
+                "sanskrit_te": "సత్కారమానపూజార్థం తపో",
+                "en": "That austerity, practiced with ostentation for the",
+                "te": "That austerity, practiced with ostentation for the"
+            },
+            {
+                "sanskrit": "चैव यत्",
+                "word": "dambhena chaiva yat",
+                "transliteration": "dambhena chaiva yat",
+                "sanskrit_te": "దమ్భేన చైవ",
+                "en": "Sake of gaining respect, praise, and",
+                "te": "Sake of gaining respect, praise, and"
+            },
+            {
+                "sanskrit": "क्रियते तदिह प्रोक्तं",
+                "word": "kriyate tad iha proktaṁ",
+                "transliteration": "kriyate tad iha proktaṁ",
+                "sanskrit_te": "యత్ క్రియతే తదిహ",
+                "en": "Reverence, is here said to be",
+                "te": "Reverence, is here said to be"
+            },
+            {
+                "sanskrit": "राजसं चलमध्रुवम्",
+                "word": "rājasaṁ chalam adhruvam",
+                "transliteration": "rājasaṁ chalam adhruvam",
+                "sanskrit_te": "ప్రోక్తం రాజసం చలమధ్రువమ్",
+                "en": "Rajasa. It is unsteady and impermanent.",
                 "te": "Rajasa. It is unsteady and impermanent."
             }
         ]
@@ -1508,33 +2132,67 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "मूढग्राहेणात्मनो यत्पीडया",
                 "word": "mūḍha grāheṇātmano yat",
                 "transliteration": "mūḍha grāheṇātmano yat",
-                "sanskrit_te": "మూఢగ్రాహేణాత్మనో యత్పీడయా",
-                "en": "Those with confused notions with endeavor which",
-                "te": "That austerity which is practised from"
+                "sanskrit_te": "మూఢగ్రాహేణాత్మనో",
+                "en": "That austerity which is practised",
+                "te": "That austerity which is practised"
             },
             {
                 "sanskrit": "क्रियते तपः",
                 "word": "pīḍayā kriyate tapaḥ",
                 "transliteration": "pīḍayā kriyate tapaḥ",
-                "sanskrit_te": "క్రియతే తపః",
-                "en": "Torturing is performed austerity",
-                "te": "Deluded notions by means of self"
+                "sanskrit_te": "యత్పీడయా క్రియతే",
+                "en": "From deluded notions by means",
+                "te": "From deluded notions by means"
             },
             {
-                "sanskrit": "परस्योत्सादनार्थं वा",
-                "word": "parasyotsādanārthaṁ vā tat",
-                "transliteration": "parasyotsādanārthaṁ vā tat",
-                "sanskrit_te": "పరస్యోత్సాదనార్థం వా",
-                "en": "Of others or that",
-                "te": "Torture or to injure another"
+                "sanskrit": "परस्योत्सादनार्थं",
+                "word": "parasyotsādanārthaṁ",
+                "transliteration": "parasyotsādanārthaṁ",
+                "sanskrit_te": "తపః పరస్యోత్సాదనార్థం",
+                "en": "Of self torture or to injure",
+                "te": "Of self torture or to injure"
             },
             {
-                "sanskrit": "तत्तामसमुदाहृतम्",
-                "word": "tāmasam udāhṛitam",
-                "transliteration": "tāmasam udāhṛitam",
-                "sanskrit_te": "తత్తామసముదాహృతమ్",
-                "en": "In the mode of ignorance is described to be",
-                "te": "Is said to be Tamasika."
+                "sanskrit": "वा तत्तामसमुदाहृतम्",
+                "word": "vā tat tāmasam udāhṛitam",
+                "transliteration": "vā tat tāmasam udāhṛitam",
+                "sanskrit_te": "వా తత్తామసముదాహృతమ్",
+                "en": "Another is said to be Tamasika.",
+                "te": "Another is said to be Tamasika."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "मूढग्राहेणात्मनो यत्पीडया",
+                "word": "mūḍha grāheṇātmano yat",
+                "transliteration": "mūḍha grāheṇātmano yat",
+                "sanskrit_te": "మూఢగ్రాహేణాత్మనో",
+                "en": "That austerity which is practised",
+                "te": "That austerity which is practised"
+            },
+            {
+                "sanskrit": "क्रियते तपः",
+                "word": "pīḍayā kriyate tapaḥ",
+                "transliteration": "pīḍayā kriyate tapaḥ",
+                "sanskrit_te": "యత్పీడయా క్రియతే",
+                "en": "From deluded notions by means",
+                "te": "From deluded notions by means"
+            },
+            {
+                "sanskrit": "परस्योत्सादनार्थं",
+                "word": "parasyotsādanārthaṁ",
+                "transliteration": "parasyotsādanārthaṁ",
+                "sanskrit_te": "తపః పరస్యోత్సాదనార్థం",
+                "en": "Of self torture or to injure",
+                "te": "Of self torture or to injure"
+            },
+            {
+                "sanskrit": "वा तत्तामसमुदाहृतम्",
+                "word": "vā tat tāmasam udāhṛitam",
+                "transliteration": "vā tat tāmasam udāhṛitam",
+                "sanskrit_te": "వా తత్తామసముదాహృతమ్",
+                "en": "Another is said to be Tamasika.",
+                "te": "Another is said to be Tamasika."
             }
         ]
     },
@@ -1586,35 +2244,69 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "దాతవ్యమితి యద్దానం దీయతేఽనుపకారిణే |\nదేశే కాలే చ పాత్రే చ తద్దానం సాత్త్వికం స్మృతమ్",
         "lineBreakdown": [
             {
-                "sanskrit": "दातव्यमिति यद्दानं दीयतेऽनुपकारिणे",
-                "word": "dātavyam iti yad dānaṁ",
-                "transliteration": "dātavyam iti yad dānaṁ",
-                "sanskrit_te": "దాతవ్యమితి యద్దానం దీయతేఽనుపకారిణే",
-                "en": "Worthy of charity thus charity",
-                "te": "Gifts given with the feeling that it is one's"
+                "sanskrit": "दातव्यमिति यद्दानं",
+                "word": "dātavyam iti yad",
+                "transliteration": "dātavyam iti yad",
+                "sanskrit_te": "దాతవ్యమితి యద్దానం",
+                "en": "Gifts given with the feeling that it is one's own duty to give",
+                "te": "Gifts given with the feeling that it is one's own duty to give"
             },
             {
-                "sanskrit": "देशे काले च",
-                "word": "dīyate ‘nupakāriṇe deśhe kāle",
-                "transliteration": "dīyate ‘nupakāriṇe deśhe kāle",
-                "sanskrit_te": "దేశే కాలే చ",
-                "en": "Is given in the proper place at the proper time",
-                "te": "Own duty to give, to one who makes no"
+                "sanskrit": "दीयतेऽनुपकारिणे",
+                "word": "dānaṁ dīyate ‘nupakāriṇe",
+                "transliteration": "dānaṁ dīyate ‘nupakāriṇe",
+                "sanskrit_te": "దీయతేఽనుపకారిణే దేశే కాలే",
+                "en": "To one who makes no return",
+                "te": "To one who makes no return"
             },
             {
-                "sanskrit": "पात्रे च तद्दानं",
-                "word": "cha pātre cha tad",
-                "transliteration": "cha pātre cha tad",
-                "sanskrit_te": "పాత్రే చ తద్దానం",
-                "en": "And to a worthy person and",
-                "te": "Return, at the proper place and time to"
+                "sanskrit": "देशे काले च पात्रे",
+                "word": "deśhe kāle cha pātre cha",
+                "transliteration": "deśhe kāle cha pātre cha",
+                "sanskrit_te": "చ పాత్రే చ",
+                "en": "At the proper place and time to",
+                "te": "At the proper place and time to"
             },
             {
-                "sanskrit": "सात्त्विकं स्मृतम्",
-                "word": "dānaṁ sāttvikaṁ smṛitam",
-                "transliteration": "dānaṁ sāttvikaṁ smṛitam",
-                "sanskrit_te": "సాత్త్వికం స్మృతమ్",
-                "en": "Charity in the mode of goodness is stated to be",
+                "sanskrit": "च तद्दानं सात्त्विकं स्मृतम्",
+                "word": "tad dānaṁ sāttvikaṁ smṛitam",
+                "transliteration": "tad dānaṁ sāttvikaṁ smṛitam",
+                "sanskrit_te": "తద్దానం సాత్త్వికం స్మృతమ్",
+                "en": "The deserving person—that is said to be sattvika.",
+                "te": "The deserving person—that is said to be sattvika."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "दातव्यमिति यद्दानं",
+                "word": "dātavyam iti yad",
+                "transliteration": "dātavyam iti yad",
+                "sanskrit_te": "దాతవ్యమితి యద్దానం",
+                "en": "Gifts given with the feeling that it is one's own duty to give",
+                "te": "Gifts given with the feeling that it is one's own duty to give"
+            },
+            {
+                "sanskrit": "दीयतेऽनुपकारिणे",
+                "word": "dānaṁ dīyate ‘nupakāriṇe",
+                "transliteration": "dānaṁ dīyate ‘nupakāriṇe",
+                "sanskrit_te": "దీయతేఽనుపకారిణే దేశే కాలే",
+                "en": "To one who makes no return",
+                "te": "To one who makes no return"
+            },
+            {
+                "sanskrit": "देशे काले च पात्रे",
+                "word": "deśhe kāle cha pātre cha",
+                "transliteration": "deśhe kāle cha pātre cha",
+                "sanskrit_te": "చ పాత్రే చ",
+                "en": "At the proper place and time to",
+                "te": "At the proper place and time to"
+            },
+            {
+                "sanskrit": "च तद्दानं सात्त्विकं स्मृतम्",
+                "word": "tad dānaṁ sāttvikaṁ smṛitam",
+                "transliteration": "tad dānaṁ sāttvikaṁ smṛitam",
+                "sanskrit_te": "తద్దానం సాత్త్వికం స్మృతమ్",
+                "en": "The deserving person—that is said to be sattvika.",
                 "te": "The deserving person—that is said to be sattvika."
             }
         ]
@@ -1670,33 +2362,67 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य",
                 "word": "yat tu pratyupakārārthaṁ phalam",
                 "transliteration": "yat tu pratyupakārārthaṁ phalam",
-                "sanskrit_te": "యత్తు ప్రత్యుపకారార్థం ఫలముద్దిశ్య",
-                "en": "Which but reward",
-                "te": "But that which is given as a"
+                "sanskrit_te": "యత్తు ప్రత్యుపకారార్థం",
+                "en": "But that which is given as a consideration for",
+                "te": "But that which is given as a consideration for"
             },
             {
-                "sanskrit": "वा पुनः दीयते",
-                "word": "uddiśhya vā punaḥ dīyate",
-                "transliteration": "uddiśhya vā punaḥ dīyate",
-                "sanskrit_te": "వా పునః దీయతే",
-                "en": "Expectation or again is given",
-                "te": "Consideration for something received or in"
+                "sanskrit": "वा पुनः",
+                "word": "uddiśhya vā punaḥ",
+                "transliteration": "uddiśhya vā punaḥ",
+                "sanskrit_te": "ఫలముద్దిశ్య వా పునః",
+                "en": "Something received or in expectation of a future reward",
+                "te": "Something received or in expectation of a future reward"
             },
             {
-                "sanskrit": "च परिक्लिष्टं तद्दानं",
-                "word": "cha parikliṣhṭaṁ tad",
-                "transliteration": "cha parikliṣhṭaṁ tad",
-                "sanskrit_te": "చ పరిక్లిష్టం తద్దానం",
-                "en": "And reluctantly",
-                "te": "Expectation of a future reward, or"
+                "sanskrit": "दीयते च परिक्लिष्टं",
+                "word": "dīyate cha parikliṣhṭaṁ tad",
+                "transliteration": "dīyate cha parikliṣhṭaṁ tad",
+                "sanskrit_te": "దీయతే చ పరిక్లిష్టం",
+                "en": "Or grudgingly",
+                "te": "Or grudgingly"
             },
             {
-                "sanskrit": "राजसं स्मृतम्",
+                "sanskrit": "तद्दानं राजसं स्मृतम्",
                 "word": "dānaṁ rājasaṁ smṛitam",
                 "transliteration": "dānaṁ rājasaṁ smṛitam",
-                "sanskrit_te": "రాజసం స్మృతమ్",
-                "en": "Charity in the mode of passion is said to be",
-                "te": "Grudgingly, is called a Rajasika gift."
+                "sanskrit_te": "తద్దానం రాజసం స్మృతమ్",
+                "en": "Is called a Rajasika gift.",
+                "te": "Is called a Rajasika gift."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "यत्तु प्रत्युपकारार्थं फलमुद्दिश्य",
+                "word": "yat tu pratyupakārārthaṁ phalam",
+                "transliteration": "yat tu pratyupakārārthaṁ phalam",
+                "sanskrit_te": "యత్తు ప్రత్యుపకారార్థం",
+                "en": "But that which is given as a consideration for",
+                "te": "But that which is given as a consideration for"
+            },
+            {
+                "sanskrit": "वा पुनः",
+                "word": "uddiśhya vā punaḥ",
+                "transliteration": "uddiśhya vā punaḥ",
+                "sanskrit_te": "ఫలముద్దిశ్య వా పునః",
+                "en": "Something received or in expectation of a future reward",
+                "te": "Something received or in expectation of a future reward"
+            },
+            {
+                "sanskrit": "दीयते च परिक्लिष्टं",
+                "word": "dīyate cha parikliṣhṭaṁ tad",
+                "transliteration": "dīyate cha parikliṣhṭaṁ tad",
+                "sanskrit_te": "దీయతే చ పరిక్లిష్టం",
+                "en": "Or grudgingly",
+                "te": "Or grudgingly"
+            },
+            {
+                "sanskrit": "तद्दानं राजसं स्मृतम्",
+                "word": "dānaṁ rājasaṁ smṛitam",
+                "transliteration": "dānaṁ rājasaṁ smṛitam",
+                "sanskrit_te": "తద్దానం రాజసం స్మృతమ్",
+                "en": "Is called a Rajasika gift.",
+                "te": "Is called a Rajasika gift."
             }
         ]
     },
@@ -1752,7 +2478,7 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "adeśha kāle yad dānam",
                 "transliteration": "adeśha kāle yad dānam",
                 "sanskrit_te": "అదేశకాలే యద్దానమపాత్రేభ్యశ్చ",
-                "en": "At the wrong place at the wrong time charity",
+                "en": "That gift which is given at the wrong",
                 "te": "That gift which is given at the wrong"
             },
             {
@@ -1760,7 +2486,7 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "apātrebhyaśh cha dīyate",
                 "transliteration": "apātrebhyaśh cha dīyate",
                 "sanskrit_te": "దీయతే",
-                "en": "To unworthy persons and is given",
+                "en": "Place, wrong time, to an unworthy recipient,",
                 "te": "Place, wrong time, to an unworthy recipient,"
             },
             {
@@ -1768,7 +2494,7 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "asat kṛitam avajñātaṁ",
                 "transliteration": "asat kṛitam avajñātaṁ",
                 "sanskrit_te": "అసత్కృతమవజ్ఞాతం",
-                "en": "Without respect with contempt",
+                "en": "Without due respect and with contempt, is",
                 "te": "Without due respect and with contempt, is"
             },
             {
@@ -1776,7 +2502,41 @@ const CHAPTER_17_SHLOKAS = {
                 "word": "tat tāmasam udāhṛitam",
                 "transliteration": "tat tāmasam udāhṛitam",
                 "sanskrit_te": "తత్తామసముదాహృతమ్",
-                "en": "That of the nature of nescience is held to be",
+                "en": "Called the gift of a Tamasa nature.",
+                "te": "Called the gift of a Tamasa nature."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अदेशकाले यद्दानमपात्रेभ्यश्च",
+                "word": "adeśha kāle yad dānam",
+                "transliteration": "adeśha kāle yad dānam",
+                "sanskrit_te": "అదేశకాలే యద్దానమపాత్రేభ్యశ్చ",
+                "en": "That gift which is given at the wrong",
+                "te": "That gift which is given at the wrong"
+            },
+            {
+                "sanskrit": "दीयते",
+                "word": "apātrebhyaśh cha dīyate",
+                "transliteration": "apātrebhyaśh cha dīyate",
+                "sanskrit_te": "దీయతే",
+                "en": "Place, wrong time, to an unworthy recipient,",
+                "te": "Place, wrong time, to an unworthy recipient,"
+            },
+            {
+                "sanskrit": "असत्कृतमवज्ञातं",
+                "word": "asat kṛitam avajñātaṁ",
+                "transliteration": "asat kṛitam avajñātaṁ",
+                "sanskrit_te": "అసత్కృతమవజ్ఞాతం",
+                "en": "Without due respect and with contempt, is",
+                "te": "Without due respect and with contempt, is"
+            },
+            {
+                "sanskrit": "तत्तामसमुदाहृतम्",
+                "word": "tat tāmasam udāhṛitam",
+                "transliteration": "tat tāmasam udāhṛitam",
+                "sanskrit_te": "తత్తామసముదాహృతమ్",
+                "en": "Called the gift of a Tamasa nature.",
                 "te": "Called the gift of a Tamasa nature."
             }
         ]
@@ -1829,35 +2589,69 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "తత్సదితి నిర్దేశో బ్రహ్మణస్త్రివిధః స్మృతః |\nబ్రాహ్మణాస్తేన వేదాశ్చ యజ్ఞాశ్చ విహితాః పురా",
         "lineBreakdown": [
             {
-                "sanskrit": "तत्सदिति निर्देशो ब्रह्मणस्त्रिविधः",
+                "sanskrit": "तत्सदिति निर्देशो",
                 "word": "oṁ tat sad iti nirdeśho",
                 "transliteration": "oṁ tat sad iti nirdeśho",
                 "sanskrit_te": "తత్సదితి నిర్దేశో బ్రహ్మణస్త్రివిధః",
-                "en": "Thus symbolic representatives",
+                "en": "Om, Tat, Sat—thus, Brahman is denoted",
                 "te": "Om, Tat, Sat—thus, Brahman is denoted"
             },
             {
-                "sanskrit": "स्मृतः ब्राह्मणास्तेन",
+                "sanskrit": "ब्रह्मणस्त्रिविधः स्मृतः",
                 "word": "brahmaṇas tri vidhaḥ smṛitaḥ",
                 "transliteration": "brahmaṇas tri vidhaḥ smṛitaḥ",
                 "sanskrit_te": "స్మృతః బ్రాహ్మణాస్తేన",
-                "en": "The Supreme Absolute Truth of three kinds have been declared",
+                "en": "By this threefold expression. In the",
                 "te": "By this threefold expression. In the"
             },
             {
-                "sanskrit": "वेदाश्च यज्ञाश्च",
+                "sanskrit": "ब्राह्मणास्तेन",
                 "word": "brāhmaṇās tena vedāśh cha",
                 "transliteration": "brāhmaṇās tena vedāśh cha",
                 "sanskrit_te": "వేదాశ్చ యజ్ఞాశ్చ",
-                "en": "The Supreme Absolute Truth from them and",
+                "en": "Past, Brahmanas, the Vedas, and sacrifices",
                 "te": "Past, Brahmanas, the Vedas, and sacrifices"
             },
             {
-                "sanskrit": "विहिताः पुरा",
+                "sanskrit": "वेदाश्च यज्ञाश्च विहिताः पुरा",
                 "word": "yajñāśh cha vihitāḥ purā",
                 "transliteration": "yajñāśh cha vihitāḥ purā",
                 "sanskrit_te": "విహితాః పురా",
-                "en": "Sacrifice and came about from the beginning of creation",
+                "en": "Were ordained in association with these.",
+                "te": "Were ordained in association with these."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "तत्सदिति निर्देशो",
+                "word": "oṁ tat sad iti nirdeśho",
+                "transliteration": "oṁ tat sad iti nirdeśho",
+                "sanskrit_te": "తత్సదితి నిర్దేశో బ్రహ్మణస్త్రివిధః",
+                "en": "Om, Tat, Sat—thus, Brahman is denoted",
+                "te": "Om, Tat, Sat—thus, Brahman is denoted"
+            },
+            {
+                "sanskrit": "ब्रह्मणस्त्रिविधः स्मृतः",
+                "word": "brahmaṇas tri vidhaḥ smṛitaḥ",
+                "transliteration": "brahmaṇas tri vidhaḥ smṛitaḥ",
+                "sanskrit_te": "స్మృతః బ్రాహ్మణాస్తేన",
+                "en": "By this threefold expression. In the",
+                "te": "By this threefold expression. In the"
+            },
+            {
+                "sanskrit": "ब्राह्मणास्तेन",
+                "word": "brāhmaṇās tena vedāśh cha",
+                "transliteration": "brāhmaṇās tena vedāśh cha",
+                "sanskrit_te": "వేదాశ్చ యజ్ఞాశ్చ",
+                "en": "Past, Brahmanas, the Vedas, and sacrifices",
+                "te": "Past, Brahmanas, the Vedas, and sacrifices"
+            },
+            {
+                "sanskrit": "वेदाश्च यज्ञाश्च विहिताः पुरा",
+                "word": "yajñāśh cha vihitāḥ purā",
+                "transliteration": "yajñāśh cha vihitāḥ purā",
+                "sanskrit_te": "విహితాః పురా",
+                "en": "Were ordained in association with these.",
                 "te": "Were ordained in association with these."
             }
         ]
@@ -1910,36 +2704,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "తస్మాదోమిత్యుదాహృత్య యజ్ఞదానతపఃక్రియాః |\nప్రవర్తన్తే విధానోక్తాః సతతం బ్రహ్మవాదినామ్",
         "lineBreakdown": [
             {
-                "sanskrit": "तस्मादोमित्युदाहृत्य यज्ञदानतपःक्रियाः",
+                "sanskrit": "तस्मादोमित्युदाहृत्य",
                 "word": "tasmād oṁ ity udāhṛitya",
                 "transliteration": "tasmād oṁ ity udāhṛitya",
-                "sanskrit_te": "తస్మాదోమిత్యుదాహృత్య యజ్ఞదానతపఃక్రియాః",
-                "en": "Therefore sacred syllable om by uttering",
-                "te": "Therefore, the Veda enjoined sacrificial acts, gifts, and"
+                "sanskrit_te": "తస్మాదోమిత్యుదాహృత్య",
+                "en": "Therefore, the Veda enjoined sacrificial acts, gifts,",
+                "te": "Therefore, the Veda enjoined sacrificial acts, gifts,"
+            },
+            {
+                "sanskrit": "यज्ञदानतपःक्रियाः",
+                "word": "yajña dāna tapaḥ kriyāḥ",
+                "transliteration": "yajña dāna tapaḥ kriyāḥ",
+                "sanskrit_te": "యజ్ఞదానతపఃక్రియాః",
+                "en": "And austerities, expounded by the Vedas, or",
+                "te": "And austerities, expounded by the Vedas, or"
             },
             {
                 "sanskrit": "प्रवर्तन्ते विधानोक्ताः",
-                "word": "yajña dāna tapaḥ",
-                "transliteration": "yajña dāna tapaḥ",
+                "word": "pravartante vidhānoktāḥ satataṁ",
+                "transliteration": "pravartante vidhānoktāḥ satataṁ",
                 "sanskrit_te": "ప్రవర్తన్తే విధానోక్తాః",
-                "en": "Sacrifice charity penance",
-                "te": "Austerities, expounded by the Vedas, or those belonging"
+                "en": "Those belonging to the first three stations, are",
+                "te": "Those belonging to the first three stations, are"
             },
             {
-                "sanskrit": "सततं",
-                "word": "kriyāḥ pravartante vidhānoktāḥ",
-                "transliteration": "kriyāḥ pravartante vidhānoktāḥ",
-                "sanskrit_te": "సతతం",
-                "en": "Performing begin according to the prescriptions of Vedic injunctions",
-                "te": "To the first three stations, are always"
+                "sanskrit": "सततं ब्रह्मवादिनाम्",
+                "word": "brahma vādinām",
+                "transliteration": "brahma vādinām",
+                "sanskrit_te": "సతతం బ్రహ్మవాదినామ్",
+                "en": "Always begun after pronouncing Om at the beginning.",
+                "te": "Always begun after pronouncing Om at the beginning."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "तस्मादोमित्युदाहृत्य",
+                "word": "tasmād oṁ ity udāhṛitya",
+                "transliteration": "tasmād oṁ ity udāhṛitya",
+                "sanskrit_te": "తస్మాదోమిత్యుదాహృత్య",
+                "en": "Therefore, the Veda enjoined sacrificial acts, gifts,",
+                "te": "Therefore, the Veda enjoined sacrificial acts, gifts,"
             },
             {
-                "sanskrit": "ब्रह्मवादिनाम्",
-                "word": "satataṁ brahma vādinām",
-                "transliteration": "satataṁ brahma vādinām",
-                "sanskrit_te": "బ్రహ్మవాదినామ్",
-                "en": "Always expounders of the Vedas",
-                "te": "Begun after pronouncing Om at the beginning."
+                "sanskrit": "यज्ञदानतपःक्रियाः",
+                "word": "yajña dāna tapaḥ kriyāḥ",
+                "transliteration": "yajña dāna tapaḥ kriyāḥ",
+                "sanskrit_te": "యజ్ఞదానతపఃక్రియాః",
+                "en": "And austerities, expounded by the Vedas, or",
+                "te": "And austerities, expounded by the Vedas, or"
+            },
+            {
+                "sanskrit": "प्रवर्तन्ते विधानोक्ताः",
+                "word": "pravartante vidhānoktāḥ satataṁ",
+                "transliteration": "pravartante vidhānoktāḥ satataṁ",
+                "sanskrit_te": "ప్రవర్తన్తే విధానోక్తాః",
+                "en": "Those belonging to the first three stations, are",
+                "te": "Those belonging to the first three stations, are"
+            },
+            {
+                "sanskrit": "सततं ब्रह्मवादिनाम्",
+                "word": "brahma vādinām",
+                "transliteration": "brahma vādinām",
+                "sanskrit_te": "సతతం బ్రహ్మవాదినామ్",
+                "en": "Always begun after pronouncing Om at the beginning.",
+                "te": "Always begun after pronouncing Om at the beginning."
             }
         ]
     },
@@ -1994,32 +2822,66 @@ const CHAPTER_17_SHLOKAS = {
                 "sanskrit": "तदित्यनभिसन्धाय फलं",
                 "word": "tad ity anabhisandhāya phalaṁ",
                 "transliteration": "tad ity anabhisandhāya phalaṁ",
-                "sanskrit_te": "తదిత్యనభిసన్ధాయ ఫలం",
-                "en": "Without desiring fruitive rewards",
+                "sanskrit_te": "తదిత్యనభిసన్ధాయ",
+                "en": "Acts of sacrifice",
                 "te": "Acts of sacrifice"
             },
             {
-                "sanskrit": "यज्ञतपःक्रियाः दानक्रियाश्च",
-                "word": "yajña tapaḥ kriyāḥ dāna",
-                "transliteration": "yajña tapaḥ kriyāḥ dāna",
-                "sanskrit_te": "యజ్ఞతపఃక్రియాః దానక్రియాశ్చ",
-                "en": "Sacrifice austerity acts charity",
+                "sanskrit": "यज्ञतपःक्रियाः",
+                "word": "yajña tapaḥ kriyāḥ",
+                "transliteration": "yajña tapaḥ kriyāḥ",
+                "sanskrit_te": "ఫలం యజ్ఞతపఃక్రియాః",
+                "en": "Austerity",
                 "te": "Austerity"
             },
             {
-                "sanskrit": "विविधाः क्रियन्ते",
-                "word": "kriyāśh cha vividhāḥ",
-                "transliteration": "kriyāśh cha vividhāḥ",
-                "sanskrit_te": "వివిధాః క్రియన్తే",
-                "en": "Acts and various",
+                "sanskrit": "दानक्रियाश्च",
+                "word": "dāna kriyāśh cha vividhāḥ",
+                "transliteration": "dāna kriyāśh cha vividhāḥ",
+                "sanskrit_te": "దానక్రియాశ్చ వివిధాః",
+                "en": "And various gifts are performed without aiming at a reward by those who seek release",
                 "te": "And various gifts are performed without aiming at a reward by those who seek release"
             },
             {
-                "sanskrit": "मोक्षकाङ्क्षि",
+                "sanskrit": "विविधाः क्रियन्ते मोक्षकाङ्क्षि",
                 "word": "kriyante mokṣha kāṅkṣhibhiḥ",
                 "transliteration": "kriyante mokṣha kāṅkṣhibhiḥ",
-                "sanskrit_te": "మోక్షకాఙ్క్షి",
-                "en": "Acts by seekers of freedom from material entanglements",
+                "sanskrit_te": "క్రియన్తే మోక్షకాఙ్క్షి",
+                "en": "After pronouncing Tat.",
+                "te": "After pronouncing Tat."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "तदित्यनभिसन्धाय फलं",
+                "word": "tad ity anabhisandhāya phalaṁ",
+                "transliteration": "tad ity anabhisandhāya phalaṁ",
+                "sanskrit_te": "తదిత్యనభిసన్ధాయ",
+                "en": "Acts of sacrifice",
+                "te": "Acts of sacrifice"
+            },
+            {
+                "sanskrit": "यज्ञतपःक्रियाः",
+                "word": "yajña tapaḥ kriyāḥ",
+                "transliteration": "yajña tapaḥ kriyāḥ",
+                "sanskrit_te": "ఫలం యజ్ఞతపఃక్రియాః",
+                "en": "Austerity",
+                "te": "Austerity"
+            },
+            {
+                "sanskrit": "दानक्रियाश्च",
+                "word": "dāna kriyāśh cha vividhāḥ",
+                "transliteration": "dāna kriyāśh cha vividhāḥ",
+                "sanskrit_te": "దానక్రియాశ్చ వివిధాః",
+                "en": "And various gifts are performed without aiming at a reward by those who seek release",
+                "te": "And various gifts are performed without aiming at a reward by those who seek release"
+            },
+            {
+                "sanskrit": "विविधाः क्रियन्ते मोक्षकाङ्क्षि",
+                "word": "kriyante mokṣha kāṅkṣhibhiḥ",
+                "transliteration": "kriyante mokṣha kāṅkṣhibhiḥ",
+                "sanskrit_te": "క్రియన్తే మోక్షకాఙ్క్షి",
+                "en": "After pronouncing Tat.",
                 "te": "After pronouncing Tat."
             }
         ]
@@ -2072,36 +2934,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "సద్భావే సాధుభావే చ సదిత్యేతత్ప్రయుజ్యతే |\nప్రశస్తే కర్మణి తథా సచ్ఛబ్దః పార్థ యుజ్యతే",
         "lineBreakdown": [
             {
-                "sanskrit": "सद्भावे साधुभावे च",
-                "word": "sad bhāve sādhu bhāve",
-                "transliteration": "sad bhāve sādhu bhāve",
-                "sanskrit_te": "సద్భావే సాధుభావే చ",
+                "sanskrit": "सद्भावे साधुभावे",
+                "word": "sad bhāve sādhu bhāve cha",
+                "transliteration": "sad bhāve sādhu bhāve cha",
+                "sanskrit_te": "సద్భావే సాధుభావే",
                 "en": "This term \"Sat\" is used in the",
                 "te": "This term \"Sat\" is used in the"
             },
             {
-                "sanskrit": "सदित्येतत्प्रयुज्यते प्रशस्ते कर्मणि",
-                "word": "cha sad ity etat",
-                "transliteration": "cha sad ity etat",
-                "sanskrit_te": "సదిత్యేతత్ప్రయుజ్యతే ప్రశస్తే కర్మణి",
-                "en": "Also this",
-                "te": "Sense of existence and goodness. And so"
+                "sanskrit": "च सदित्येतत्प्रयुज्यते",
+                "word": "sad ity etat prayujyate",
+                "transliteration": "sad ity etat prayujyate",
+                "sanskrit_te": "చ సదిత్యేతత్ప్రయుజ్యతే",
+                "en": "Sense of existence and goodness. And so also",
+                "te": "Sense of existence and goodness. And so also"
             },
             {
-                "sanskrit": "तथा सच्छब्दः",
-                "word": "prayujyate praśhaste karmaṇi tathā",
-                "transliteration": "prayujyate praśhaste karmaṇi tathā",
-                "sanskrit_te": "తథా సచ్ఛబ్దః",
-                "en": "Is used auspicious action also",
-                "te": "Also, O Arjuna, the word \"Sat\""
+                "sanskrit": "प्रशस्ते कर्मणि तथा",
+                "word": "praśhaste karmaṇi tathā sach",
+                "transliteration": "praśhaste karmaṇi tathā sach",
+                "sanskrit_te": "ప్రశస్తే కర్మణి తథా",
+                "en": "O Arjuna",
+                "te": "O Arjuna"
             },
             {
-                "sanskrit": "पार्थ युज्यते",
-                "word": "sach chhabdaḥ pārtha yujyate",
-                "transliteration": "sach chhabdaḥ pārtha yujyate",
-                "sanskrit_te": "పార్థ యుజ్యతే",
-                "en": "Arjun, the son of Pritha is used",
-                "te": "Is applied to an auspicious action."
+                "sanskrit": "सच्छब्दः पार्थ युज्यते",
+                "word": "chhabdaḥ pārtha yujyate",
+                "transliteration": "chhabdaḥ pārtha yujyate",
+                "sanskrit_te": "సచ్ఛబ్దః పార్థ యుజ్యతే",
+                "en": "The word \"Sat\" is applied to an auspicious action.",
+                "te": "The word \"Sat\" is applied to an auspicious action."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "सद्भावे साधुभावे",
+                "word": "sad bhāve sādhu bhāve cha",
+                "transliteration": "sad bhāve sādhu bhāve cha",
+                "sanskrit_te": "సద్భావే సాధుభావే",
+                "en": "This term \"Sat\" is used in the",
+                "te": "This term \"Sat\" is used in the"
+            },
+            {
+                "sanskrit": "च सदित्येतत्प्रयुज्यते",
+                "word": "sad ity etat prayujyate",
+                "transliteration": "sad ity etat prayujyate",
+                "sanskrit_te": "చ సదిత్యేతత్ప్రయుజ్యతే",
+                "en": "Sense of existence and goodness. And so also",
+                "te": "Sense of existence and goodness. And so also"
+            },
+            {
+                "sanskrit": "प्रशस्ते कर्मणि तथा",
+                "word": "praśhaste karmaṇi tathā sach",
+                "transliteration": "praśhaste karmaṇi tathā sach",
+                "sanskrit_te": "ప్రశస్తే కర్మణి తథా",
+                "en": "O Arjuna",
+                "te": "O Arjuna"
+            },
+            {
+                "sanskrit": "सच्छब्दः पार्थ युज्यते",
+                "word": "chhabdaḥ pārtha yujyate",
+                "transliteration": "chhabdaḥ pārtha yujyate",
+                "sanskrit_te": "సచ్ఛబ్దః పార్థ యుజ్యతే",
+                "en": "The word \"Sat\" is applied to an auspicious action.",
+                "te": "The word \"Sat\" is applied to an auspicious action."
             }
         ]
     },
@@ -2153,36 +3049,70 @@ const CHAPTER_17_SHLOKAS = {
         "telugu_script": "యజ్ఞే తపసి దానే చ స్థితిః సదితి చోచ్యతే |\nకర్మ చైవ తదర్థీయం సదిత్యేవాభిధీయతే",
         "lineBreakdown": [
             {
-                "sanskrit": "यज्ञे तपसि दाने",
+                "sanskrit": "यज्ञे तपसि दाने च",
                 "word": "yajñe tapasi dāne cha",
                 "transliteration": "yajñe tapasi dāne cha",
-                "sanskrit_te": "యజ్ఞే తపసి దానే",
-                "en": "In sacrifice in penance in charity and",
-                "te": "Devotion to sacrifice, austerity, and gifts"
+                "sanskrit_te": "యజ్ఞే తపసి",
+                "en": "Devotion to sacrifice",
+                "te": "Devotion to sacrifice"
             },
             {
-                "sanskrit": "च स्थितिः सदिति",
+                "sanskrit": "स्थितिः सदिति चोच्यते",
                 "word": "sthitiḥ sad iti chochyate",
                 "transliteration": "sthitiḥ sad iti chochyate",
-                "sanskrit_te": "చ స్థితిః సదితి",
-                "en": "Established in steadiness thus",
-                "te": "Is also referred to as Sat;"
+                "sanskrit_te": "దానే చ స్థితిః",
+                "en": "Austerity",
+                "te": "Austerity"
             },
             {
-                "sanskrit": "चोच्यते कर्म चैव",
+                "sanskrit": "कर्म चैव",
                 "word": "karma chaiva tad arthīyaṁ",
                 "transliteration": "karma chaiva tad arthīyaṁ",
-                "sanskrit_te": "చోచ్యతే కర్మ చైవ",
-                "en": "And thus, any action for such",
-                "te": "And thus, any action for such"
+                "sanskrit_te": "సదితి చోచ్యతే కర్మ",
+                "en": "And gifts is also referred to as Sat; and thus",
+                "te": "And gifts is also referred to as Sat; and thus"
             },
             {
                 "sanskrit": "तदर्थीयं सदित्येवाभिधीयते",
                 "word": "sad ity evābhidhīyate",
                 "transliteration": "sad ity evābhidhīyate",
-                "sanskrit_te": "తదర్థీయం సదిత్యేవాభిధీయతే",
-                "en": "Purposes is known as Sat.",
-                "te": "Purposes is known as Sat."
+                "sanskrit_te": "చైవ తదర్థీయం సదిత్యేవాభిధీయతే",
+                "en": "Any action for such purposes is known as Sat.",
+                "te": "Any action for such purposes is known as Sat."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "यज्ञे तपसि दाने च",
+                "word": "yajñe tapasi dāne cha",
+                "transliteration": "yajñe tapasi dāne cha",
+                "sanskrit_te": "యజ్ఞే తపసి",
+                "en": "Devotion to sacrifice",
+                "te": "Devotion to sacrifice"
+            },
+            {
+                "sanskrit": "स्थितिः सदिति चोच्यते",
+                "word": "sthitiḥ sad iti chochyate",
+                "transliteration": "sthitiḥ sad iti chochyate",
+                "sanskrit_te": "దానే చ స్థితిః",
+                "en": "Austerity",
+                "te": "Austerity"
+            },
+            {
+                "sanskrit": "कर्म चैव",
+                "word": "karma chaiva tad arthīyaṁ",
+                "transliteration": "karma chaiva tad arthīyaṁ",
+                "sanskrit_te": "సదితి చోచ్యతే కర్మ",
+                "en": "And gifts is also referred to as Sat; and thus",
+                "te": "And gifts is also referred to as Sat; and thus"
+            },
+            {
+                "sanskrit": "तदर्थीयं सदित्येवाभिधीयते",
+                "word": "sad ity evābhidhīyate",
+                "transliteration": "sad ity evābhidhīyate",
+                "sanskrit_te": "చైవ తదర్థీయం సదిత్యేవాభిధీయతే",
+                "en": "Any action for such purposes is known as Sat.",
+                "te": "Any action for such purposes is known as Sat."
             }
         ]
     },
@@ -2235,35 +3165,69 @@ const CHAPTER_17_SHLOKAS = {
         "lineBreakdown": [
             {
                 "sanskrit": "अश्रद्धया हुतं दत्तं तपस्तप्तं",
-                "word": "aśhraddhayā hutaṁ dattaṁ tapas taptaṁ",
-                "transliteration": "aśhraddhayā hutaṁ dattaṁ tapas taptaṁ",
-                "sanskrit_te": "అశ్రద్ధయా హుతం దత్తం తపస్తప్తం",
-                "en": "Without faith sacrifice charity practiced",
-                "te": "Whatever offering or gift is made, whatever austerity"
+                "word": "aśhraddhayā hutaṁ dattaṁ tapas",
+                "transliteration": "aśhraddhayā hutaṁ dattaṁ tapas",
+                "sanskrit_te": "అశ్రద్ధయా హుతం దత్తం",
+                "en": "Whatever offering or gift is made, whatever",
+                "te": "Whatever offering or gift is made, whatever"
             },
             {
-                "sanskrit": "कृतं च यत् असदित्युच्यते",
-                "word": "kṛitaṁ cha yat asad ity",
-                "transliteration": "kṛitaṁ cha yat asad ity",
-                "sanskrit_te": "కృతం చ యత్ అసదిత్యుచ్యతే",
-                "en": "Done and which",
-                "te": "Is practiced, and whatever action is performed without"
+                "sanskrit": "कृतं च यत्",
+                "word": "taptaṁ kṛitaṁ cha yat",
+                "transliteration": "taptaṁ kṛitaṁ cha yat",
+                "sanskrit_te": "తపస్తప్తం కృతం చ",
+                "en": "Austerity is practiced, and whatever action is performed",
+                "te": "Austerity is practiced, and whatever action is performed"
             },
             {
-                "sanskrit": "पार्थ न च",
-                "word": "uchyate pārtha na cha",
-                "transliteration": "uchyate pārtha na cha",
-                "sanskrit_te": "పార్థ న చ",
-                "en": "Are termed as Arjun, the son of Pritha not and",
-                "te": "Faith, that is called Asat, O Arjuna. It"
+                "sanskrit": "असदित्युच्यते",
+                "word": "asad ity uchyate pārtha na",
+                "transliteration": "asad ity uchyate pārtha na",
+                "sanskrit_te": "యత్ అసదిత్యుచ్యతే పార్థ న",
+                "en": "Without faith, that is called Asat, O Arjuna.",
+                "te": "Without faith, that is called Asat, O Arjuna."
             },
             {
-                "sanskrit": "तत्प्रेत्य नो इह",
-                "word": "tat pretya no iha",
-                "transliteration": "tat pretya no iha",
-                "sanskrit_te": "తత్ప్రేత్య నో ఇహ",
-                "en": "That in the next world in this world",
-                "te": "Is of no value here or hereafter."
+                "sanskrit": "पार्थ न च तत्प्रेत्य नो इह",
+                "word": "cha tat pretya no iha",
+                "transliteration": "cha tat pretya no iha",
+                "sanskrit_te": "చ తత్ప్రేత్య నో ఇహ",
+                "en": "It is of no value here or hereafter.",
+                "te": "It is of no value here or hereafter."
+            }
+        ],
+        "word_by_word": [
+            {
+                "sanskrit": "अश्रद्धया हुतं दत्तं तपस्तप्तं",
+                "word": "aśhraddhayā hutaṁ dattaṁ tapas",
+                "transliteration": "aśhraddhayā hutaṁ dattaṁ tapas",
+                "sanskrit_te": "అశ్రద్ధయా హుతం దత్తం",
+                "en": "Whatever offering or gift is made, whatever",
+                "te": "Whatever offering or gift is made, whatever"
+            },
+            {
+                "sanskrit": "कृतं च यत्",
+                "word": "taptaṁ kṛitaṁ cha yat",
+                "transliteration": "taptaṁ kṛitaṁ cha yat",
+                "sanskrit_te": "తపస్తప్తం కృతం చ",
+                "en": "Austerity is practiced, and whatever action is performed",
+                "te": "Austerity is practiced, and whatever action is performed"
+            },
+            {
+                "sanskrit": "असदित्युच्यते",
+                "word": "asad ity uchyate pārtha na",
+                "transliteration": "asad ity uchyate pārtha na",
+                "sanskrit_te": "యత్ అసదిత్యుచ్యతే పార్థ న",
+                "en": "Without faith, that is called Asat, O Arjuna.",
+                "te": "Without faith, that is called Asat, O Arjuna."
+            },
+            {
+                "sanskrit": "पार्थ न च तत्प्रेत्य नो इह",
+                "word": "cha tat pretya no iha",
+                "transliteration": "cha tat pretya no iha",
+                "sanskrit_te": "చ తత్ప్రేత్య నో ఇహ",
+                "en": "It is of no value here or hereafter.",
+                "te": "It is of no value here or hereafter."
             }
         ]
     }
