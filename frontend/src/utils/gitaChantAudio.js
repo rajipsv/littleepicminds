@@ -28,12 +28,9 @@ export async function ensureGitaChantManifest() {
   return manifestPromise;
 }
 
-/** Resolve play URL: CDN env → HF manifest → local API proxy. */
+/** Resolve play URL — prefer manifest (API proxy); VITE CDN only as fallback. */
 export function resolveChantAudioUrl(verseId, manifestVerses = versesById) {
   if (!verseId || !/^\d+\.\d+$/.test(String(verseId))) return null;
-
-  const base = (import.meta.env.VITE_GITA_AUDIO_BASE_URL || '').trim().replace(/\/$/, '');
-  if (base) return `${base}/${verseId}.wav`;
 
   const fromManifest = manifestVerses?.[verseId];
   if (typeof fromManifest === 'string' && fromManifest.startsWith('http')) {
@@ -42,6 +39,9 @@ export function resolveChantAudioUrl(verseId, manifestVerses = versesById) {
   if (typeof fromManifest === 'object' && fromManifest?.url) {
     return fromManifest.url;
   }
+
+  const base = (import.meta.env.VITE_GITA_AUDIO_BASE_URL || '').trim().replace(/\/$/, '');
+  if (base) return `${base}/${verseId}.wav`;
 
   return `${API_URL || ''}/api/gita-audio/${encodeURIComponent(verseId)}`;
 }
