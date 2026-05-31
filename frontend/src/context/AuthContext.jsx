@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, { createContext, useState, useEffect, useContext, useCallback } from 'react';
 import api from '../api';
 
 const AuthContext = createContext();
@@ -11,122 +11,112 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [currentLang, setCurrentLang] = useState(localStorage.getItem('lang') || 'en');
 
-  // Set default axios header if token exists
-  useEffect(() => {
-    if (token) {
-      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-      localStorage.setItem('token', token);
-      
-      // In a real app, you would fetch user details here using the token
-      // For now, we rely on the payload stored during login/register
-      const storedUser = localStorage.getItem('user');
-      if (storedUser) {
-        try {
-            setUser(JSON.parse(storedUser));
-        } catch (e) {
-            setUser(null);
-        }
-      }
+  const applySession = useCallback((nextToken, nextUser) => {
+    setToken(nextToken);
+    setUser(nextUser);
+    if (nextToken) {
+      api.defaults.headers.common['Authorization'] = `Bearer ${nextToken}`;
+      localStorage.setItem('token', nextToken);
+      localStorage.setItem('user', JSON.stringify(nextUser));
     } else {
       delete api.defaults.headers.common['Authorization'];
       localStorage.removeItem('token');
       localStorage.removeItem('user');
-      setUser(null);
     }
-    setLoading(false);
-  }, [token]);
+  }, []);
+
+  const refreshUser = useCallback(async () => {
+    if (!token) return null;
+    try {
+      const res = await api.get('/api/auth/me');
+      setUser(res.data);
+      localStorage.setItem('user', JSON.stringify(res.data));
+      return res.data;
+    } catch {
+      applySession(null, null);
+      return null;
+    }
+  }, [token, applySession]);
+
+  useEffect(() => {
+    if (token) {
+      api.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+      const storedUser = localStorage.getItem('user');
+      if (storedUser) {
+        try {
+          setUser(JSON.parse(storedUser));
+        } catch {
+          setUser(null);
+        }
+      }
+      refreshUser().finally(() => setLoading(false));
+    } else {
+      delete api.defaults.headers.common['Authorization'];
+      setUser(null);
+      setLoading(false);
+    }
+  }, [token, refreshUser]);
 
   useEffect(() => {
     localStorage.setItem('lang', currentLang);
   }, [currentLang]);
 
-  const login = async (username, password) => {
-    try {
-      const res = await api.post('/api/auth/login', { username, password });
-      setToken(res.data.token);
-      setUser(res.data.user);
-      // Preserve existing language preference — do NOT reset to 'en'
-      localStorage.setItem('user', JSON.stringify(res.data.user));
-      return true;
-    } catch (error) {
-      console.error('Login error', error);
-      throw error;
-    }
+  const login = async (identifier, password) => {
+    const id = String(identifier || '').trim();
+    const body = id.includes('@') ? { email: id, password } : { username: id, password };
+    const res = await api.post('/api/auth/login', body);
+    applySession(res.data.token, res.data.user);
+    return true;
   };
 
   const register = async (username, email, password, age, grade, mobile) => {
-    try {
-      const res = await api.post('/api/auth/register', { username, email, password, age, grade, mobile });
-      // Set user and token from register response directly
-      setToken(res.data.token);
-      setUser(res.data.user);
-      // Preserve existing language preference — do NOT reset to 'en'
-      localStorage.setItem('user', JSON.stringify(res.data.user));
-      return true;
-    } catch (error) {
-      console.error('Register error', error);
-      throw error;
-    }
+    const res = await api.post('/api/auth/register', { username, email, password, age, grade, mobile });
+    applySession(res.data.token, res.data.user);
+    return true;
   };
 
   const logout = () => {
-    setToken(null);
-    setUser(null);
+    applySession(null, null);
   };
 
   const upgrade = async () => {
     if (!user) return;
-    try {
-      const res = await api.post('/api/auth/upgrade', { username: user.username });
-      const updatedUser = res.data;
-      setUser(updatedUser);
-      localStorage.setItem('user', JSON.stringify(updatedUser));
-      return true;
-    } catch (error) {
-       console.error('Upgrade error', error);
-       throw error;
-    }
-  }
+    const res = await api.post('/api/auth/upgrade');
+    const updatedUser = res.data;
+    setUser(updatedUser);
+    localStorage.setItem('user', JSON.stringify(updatedUser));
+    return true;
+  };
 
-  const updateProfile = async (age, grade) => {
+  const updateProfile = async (age, grade, name) => {
     if (!user) return;
-    try {
-      const payload = { 
-        user_id: user.id, // Use ID for safer identification
-        username: user.username,
-        name: user.name || null, 
-        age: (age !== '' && age !== undefined) ? parseInt(age) : null, 
-        grade: grade || null
-      };
-      console.log('Updating profile with payload:', payload);
-      const res = await api.put('/api/auth/profile', payload);
-      const updatedUser = res.data;
-      setUser(updatedUser);
-      localStorage.setItem('user', JSON.stringify(updatedUser));
-      return true;
-    } catch (error) {
-       console.error('Profile update error', error);
-       throw error;
-    }
-  }
+    const payload = {
+      name: name ?? user.name ?? null,
+      age: age !== '' && age !== undefined ? parseInt(age, 10) : null,
+      grade: grade || null,
+    };
+    const res = await api.put('/api/auth/profile', payload);
+    setUser((prev) => ({ ...prev, ...res.data }));
+    localStorage.setItem('user', JSON.stringify({ ...user, ...res.data }));
+    return true;
+  };
+
+  const changePassword = async (currentPassword, newPassword) => {
+    await api.post('/api/auth/change-password', { currentPassword, newPassword });
+    return true;
+  };
 
   const saveProgress = async (scripture, chapter_number, verse_id, question, response) => {
     if (!user) return;
-    try {
-      await api.post('/api/journal', { 
-        username: user.username, 
-        scripture, 
-        chapter_number, 
-        verse_id, 
-        question, 
-        response
-      });
-      return true;
-    } catch (error) {
-      console.error('Failed to save progress', error);
-      throw error;
-    }
-  }
+    await api.post('/api/journal', {
+      scripture,
+      chapter_number,
+      verse_id,
+      question,
+      response,
+    });
+    return true;
+  };
 
   const value = {
     user,
@@ -136,15 +126,13 @@ export const AuthProvider = ({ children }) => {
     logout,
     upgrade,
     updateProfile,
+    changePassword,
+    refreshUser,
     saveProgress,
     loading,
     currentLang,
-    setCurrentLang
+    setCurrentLang,
   };
 
-  return (
-    <AuthContext.Provider value={value}>
-      {!loading && children}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={value}>{!loading && children}</AuthContext.Provider>;
 };

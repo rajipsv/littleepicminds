@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await login(username, password);
+      await login(username.trim(), password);
       navigate('/');
     } catch (err) {
       const errMsg = err.response?.data?.error;
@@ -33,7 +33,7 @@ const Login = () => {
 
         <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
           <div>
-            <label className="block text-sm font-bold text-kid-blue mb-1">Username</label>
+            <label className="block text-sm font-bold text-kid-blue mb-1">Username or email</label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
                 <User size={18} />
@@ -43,7 +43,7 @@ const Login = () => {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary transition-all"
-                placeholder="Enter your username"
+                placeholder="Username or parent@gmail.com"
                 required
               />
             </div>

@@ -13,6 +13,7 @@ import MasteryReport from './pages/MasteryReport';
 import About from './pages/About';
 import VentureDashboard from './pages/VentureDashboard';
 import AdminDashboard from './pages/AdminDashboard';
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   return (
@@ -23,12 +24,12 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            <Route path="/subscribe" element={<Subscription />} />
-            <Route path="/settings" element={<SettingsPage />} />
-            <Route path="/progress" element={<MasteryReport />} />
+            <Route path="/subscribe" element={<ProtectedRoute><Subscription /></ProtectedRoute>} />
+            <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
+            <Route path="/progress" element={<ProtectedRoute><MasteryReport /></ProtectedRoute>} />
             <Route path="/about" element={<About />} />
              <Route path="/readiness" element={<VentureDashboard />} />
-            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/admin" element={<ProtectedRoute role="admin"><AdminDashboard /></ProtectedRoute>} />
             <Route path="/read/:scripture" element={<ScriptureLayout />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>

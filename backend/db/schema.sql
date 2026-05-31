@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS users (
   role VARCHAR(50) DEFAULT 'student', -- 'student', 'parent', 'admin'
   is_premium BOOLEAN DEFAULT FALSE,
   mobile VARCHAR(20),
+  account_status VARCHAR(20) DEFAULT 'active',
+  password_changed_at TIMESTAMP,
+  last_login_at TIMESTAMP,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

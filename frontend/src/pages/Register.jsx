@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { User, Lock } from 'lucide-react';
+import { validatePassword, passwordStrength, PASSWORD_HINT } from '../utils/password';
 
 const Register = () => {
   const [username, setUsername] = useState('');
@@ -15,8 +16,15 @@ const Register = () => {
   const { register } = useAuth();
   const navigate = useNavigate();
 
+  const strength = passwordStrength(password);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const check = validatePassword(password);
+    if (!check.ok) {
+      setError(check.error);
+      return;
+    }
     try {
       const fullMobile = `${countryCode} ${mobileNum}`;
       await register(username, email, password, age, grade, fullMobile);
@@ -134,10 +142,22 @@ const Register = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="w-full pl-10 pr-4 py-3 bg-white/50 border border-kid-secondary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-secondary transition-all"
-                placeholder="Make it strong!"
+                placeholder="At least 8 characters"
                 required
+                minLength={8}
+                autoComplete="new-password"
               />
             </div>
+            <p className="text-xs text-gray-500 mt-1">{PASSWORD_HINT}</p>
+            {password && (
+              <p
+                className={`text-xs font-bold ${
+                  strength === 'strong' ? 'text-green-600' : strength === 'fair' ? 'text-amber-600' : 'text-red-500'
+                }`}
+              >
+                Strength: {strength}
+              </p>
+            )}
           </div>
 
           <button 

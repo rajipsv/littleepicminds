@@ -1,8 +1,24 @@
 const express = require('express');
 const cors = require('cors');
 const { Pool } = require('pg');
-const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const {
+  normalizeEmail,
+  normalizeUsername,
+  validateUsername,
+  validateEmail,
+  validatePassword,
+  hashPassword,
+  verifyPassword,
+  signAccessToken,
+  verifyAccessToken,
+  sanitizeUser,
+  createAuthMiddleware,
+  requireRole,
+  parseRole,
+  getJwtSecret,
+} = require('../lib/auth');
+const { rateLimit: authRateLimit } = require('../lib/auth-rate-limit');
 const axios = require('axios');
 const crypto = require('crypto');
 const fs = require('fs');
@@ -22,7 +38,9 @@ const db = {
   }
 };
 
-const JWT_SECRET = process.env.JWT_SECRET || 'littleEpicMinds_prod_secret_2026';
+const JWT_SECRET = getJwtSecret();
+const authRequired = createAuthMiddleware();
+const adminAuth = [authRequired, requireRole('admin')];
 
 // Helper: determine learning level from age
 function getLevelFromAge(age) {
@@ -32,22 +50,23 @@ function getLevelFromAge(age) {
   return 'warriors';
 }
 
-// Admin Middleware
-const adminAuth = (req, res, next) => {
-  const token = req.header('Authorization')?.replace('Bearer ', '');
-  if (!token) return res.status(401).json({ error: 'No token, authorization denied' });
+async function loadUserById(userId) {
+  const result = await db.query(
+    `SELECT id, username, email, name, role, is_premium, level, age, grade, mobile,
+            account_status, created_at, last_login_at
+     FROM users WHERE id = $1`,
+    [userId]
+  );
+  return result.rows[0] || null;
+}
 
-  try {
-    const decoded = jwt.verify(token, JWT_SECRET);
-    if (decoded.user.role !== 'admin') {
-      return res.status(403).json({ error: 'Access denied: Admins only' });
-    }
-    req.user = decoded.user;
-    next();
-  } catch (err) {
-    res.status(401).json({ error: 'Token is not valid' });
-  }
-};
+async function loadUserJournalSummary(userId) {
+  const progressRes = await db.query(
+    'SELECT chapter_number as chapter, verse_id as shloka, question, response FROM journal_entries WHERE user_id = $1',
+    [userId]
+  );
+  return progressRes.rows;
+}
 
 // --- DATA LOADING ---
 let data = { shlokas: {}, hanumanChalisa: {}, evaluations: {}, chapters: [], levels: {} };
@@ -66,89 +85,160 @@ app.use(express.json());
 const router = express.Router();
 
 // AUTH
-router.post('/auth/register', async (req, res) => {
+router.post('/auth/register', authRateLimit({ max: 10, keyPrefix: 'register' }), async (req, res) => {
   try {
-    const { username, email, password, name, age, grade, role, mobile } = req.body;
-    if (!username || !email || !password) {
-      return res.status(400).json({ error: 'Username, email, and password are required' });
-    }
-    
-    const finalAge = (age && !isNaN(parseInt(age))) ? parseInt(age) : null;
+    const { username, email, password, name, age, grade, mobile } = req.body;
+
+    const u = validateUsername(username);
+    if (!u.ok) return res.status(400).json({ error: u.error });
+    const e = validateEmail(email);
+    if (!e.ok) return res.status(400).json({ error: e.error });
+    const p = validatePassword(password);
+    if (!p.ok) return res.status(400).json({ error: p.error });
+
+    const finalAge = age && !isNaN(parseInt(age, 10)) ? parseInt(age, 10) : null;
     const level = getLevelFromAge(finalAge);
-    const salt = await bcrypt.genSalt(10);
-    const passwordHash = await bcrypt.hash(password, salt);
+    const passwordHash = await hashPassword(password);
 
     const result = await db.query(
-      'INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, false, $9) RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile',
-      [username, email, passwordHash, name || username, finalAge, grade || null, level, role || 'student', mobile || null]
+      `INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile, account_status)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, 'student', false, $8, 'active')
+       RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile, account_status`,
+      [u.value, e.value, passwordHash, name || u.value, finalAge, grade || null, level, mobile || null]
     );
-    
+
     const user = result.rows[0];
-    const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
-    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
-    
-    res.status(201).json({ 
-      token, 
-      user: { ...user, completed: [] } 
-    });
+    const token = signAccessToken(user);
+    res.status(201).json({ token, user: { ...user, completed: [] } });
   } catch (err) {
     console.error('Register error:', err.message);
     if (err.code === '23505') {
       return res.status(400).json({ error: 'Username or email already exists.' });
     }
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: 'Registration failed. Please try again.' });
   }
 });
 
-router.post('/auth/login', async (req, res) => {
+router.post('/auth/login', authRateLimit({ max: 15, keyPrefix: 'login' }), async (req, res) => {
   try {
     const { username, email, password } = req.body;
-    const loginId = username || email;
-
-    // Hardcoded admin fallback
-    if ((loginId === 'gen.rajeswari@gmail.com' || loginId === 'admin') && password === 'admin123') {
-      const adminUser = {
-        id: 0, username: 'admin', email: 'gen.rajeswari@gmail.com',
-        name: 'Hub Admin', role: 'admin', is_premium: true,
-        level: 'warriors', age: 30, grade: 'N/A', completed: []
-      };
-      const payload = { user: { id: 0, role: 'admin', is_premium: true, level: 'warriors' } };
-      const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
-      return res.json({ token, user: adminUser });
+    const loginId = email ? normalizeEmail(email) : normalizeUsername(username);
+    if (!loginId || !password) {
+      return res.status(400).json({ error: 'Username or email and password are required.' });
     }
 
-    const result = await db.query('SELECT * FROM users WHERE username = $1 OR email = $1', [loginId]);
-    if (result.rows.length === 0) return res.status(400).json({ error: 'Invalid credentials' });
-    
-    const user = result.rows[0];
-    const isMatch = await bcrypt.compare(password, user.password_hash);
-    if (!isMatch) return res.status(400).json({ error: 'Invalid credentials' });
-
-    // Fetch progress
-    const progressRes = await db.query(
-      'SELECT chapter_number as chapter, verse_id as shloka, question, response FROM journal_entries WHERE user_id = $1',
-      [user.id]
+    const result = await db.query(
+      'SELECT * FROM users WHERE username = $1 OR email = $1',
+      [loginId]
     );
+    if (result.rows.length === 0) {
+      return res.status(400).json({ error: 'Invalid credentials.' });
+    }
 
-    const payload = { user: { id: user.id, role: user.role, is_premium: user.is_premium, level: user.level } };
-    const token = jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
-    
-    const { password_hash: _, ...userWithoutPassword } = user;
-    res.json({ 
-      token, 
-      user: { ...userWithoutPassword, completed: progressRes.rows } 
-    });
+    const user = result.rows[0];
+    if (user.account_status === 'suspended') {
+      return res.status(403).json({ error: 'This account has been suspended. Contact support.' });
+    }
+
+    const isMatch = await verifyPassword(password, user.password_hash);
+    if (!isMatch) return res.status(400).json({ error: 'Invalid credentials.' });
+
+    await db.query('UPDATE users SET last_login_at = CURRENT_TIMESTAMP WHERE id = $1', [user.id]);
+
+    const completed = await loadUserJournalSummary(user.id);
+    const token = signAccessToken(user);
+    res.json({ token, user: { ...sanitizeUser(user), completed } });
   } catch (err) {
     console.error('Login error:', err.message);
     res.status(500).json({ error: 'Server error' });
   }
 });
 
+router.get('/auth/me', authRequired, async (req, res) => {
+  try {
+    const user = await loadUserById(req.auth.id);
+    if (!user) return res.status(404).json({ error: 'User not found.' });
+    if (user.account_status === 'suspended') {
+      return res.status(403).json({ error: 'Account suspended.' });
+    }
+    const completed = await loadUserJournalSummary(user.id);
+    res.json({ ...user, completed });
+  } catch (err) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+router.post('/auth/change-password', authRequired, authRateLimit({ max: 8, keyPrefix: 'pwd' }), async (req, res) => {
+  try {
+    const { currentPassword, newPassword } = req.body;
+    if (!currentPassword || !newPassword) {
+      return res.status(400).json({ error: 'Current and new password are required.' });
+    }
+    const np = validatePassword(newPassword, { label: 'New password' });
+    if (!np.ok) return res.status(400).json({ error: np.error });
+    if (currentPassword === newPassword) {
+      return res.status(400).json({ error: 'New password must be different from the current password.' });
+    }
+
+    const row = await db.query('SELECT password_hash FROM users WHERE id = $1', [req.auth.id]);
+    if (row.rows.length === 0) return res.status(404).json({ error: 'User not found.' });
+
+    const ok = await verifyPassword(currentPassword, row.rows[0].password_hash);
+    if (!ok) return res.status(400).json({ error: 'Current password is incorrect.' });
+
+    const passwordHash = await hashPassword(newPassword);
+    await db.query(
+      'UPDATE users SET password_hash = $1, password_changed_at = CURRENT_TIMESTAMP WHERE id = $2',
+      [passwordHash, req.auth.id]
+    );
+    res.json({ status: 'success', message: 'Password updated successfully.' });
+  } catch (err) {
+    console.error('Change password error:', err.message);
+    res.status(500).json({ error: 'Could not update password.' });
+  }
+});
+
+router.put('/auth/profile', authRequired, async (req, res) => {
+  try {
+    const { name, age, grade } = req.body;
+    const parsedAge = age !== '' && age !== undefined && age !== null ? parseInt(age, 10) : null;
+    const level = getLevelFromAge(parsedAge);
+
+    const updatedUser = await db.query(
+      `UPDATE users SET name = COALESCE($1, name), age = $2, grade = $3, level = $4
+       WHERE id = $5
+       RETURNING id, username, email, name, role, is_premium, age, grade, level, mobile, account_status`,
+      [name || null, parsedAge, grade || null, level, req.auth.id]
+    );
+
+    if (updatedUser.rows.length === 0) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+
+    res.json(updatedUser.rows[0]);
+  } catch (err) {
+    console.error('Profile update error:', err.message);
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
+router.post('/auth/upgrade', authRequired, async (req, res) => {
+  try {
+    await db.query('UPDATE users SET is_premium = true WHERE id = $1', [req.auth.id]);
+    const user = await loadUserById(req.auth.id);
+    res.json(user);
+  } catch (err) {
+    res.status(500).json({ error: 'Server error' });
+  }
+});
+
 // ADMIN
-router.get('/auth/admin/users', adminAuth, async (req, res) => {
+router.get('/auth/admin/users', ...adminAuth, async (req, res) => {
   try {
     const users = await db.query(
-      'SELECT id, username, email, name, is_premium, role, level, age, grade, mobile FROM users ORDER BY id'
+      `SELECT id, username, email, name, is_premium, role, level, age, grade, mobile,
+              account_status, created_at, last_login_at
+       FROM users ORDER BY id`
     );
     res.json(users.rows);
   } catch (err) {
@@ -156,7 +246,67 @@ router.get('/auth/admin/users', adminAuth, async (req, res) => {
   }
 });
 
-router.post('/auth/admin/toggle-subscription', adminAuth, async (req, res) => {
+router.post('/auth/admin/users', ...adminAuth, async (req, res) => {
+  try {
+    const { username, email, password, name, role, is_premium, age, grade, mobile } = req.body;
+    const u = validateUsername(username);
+    if (!u.ok) return res.status(400).json({ error: u.error });
+    const e = validateEmail(email);
+    if (!e.ok) return res.status(400).json({ error: e.error });
+    const p = validatePassword(password);
+    if (!p.ok) return res.status(400).json({ error: p.error });
+
+    const finalAge = age && !isNaN(parseInt(age, 10)) ? parseInt(age, 10) : null;
+    const level = getLevelFromAge(finalAge);
+    const passwordHash = await hashPassword(password);
+    const userRole = parseRole(role, { allowAdmin: true });
+
+    const result = await db.query(
+      `INSERT INTO users (username, email, password_hash, name, age, grade, level, role, is_premium, mobile, account_status)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, 'active')
+       RETURNING id, username, email, name, role, is_premium, level, age, grade, mobile, account_status`,
+      [
+        u.value,
+        e.value,
+        passwordHash,
+        name || u.value,
+        finalAge,
+        grade || null,
+        level,
+        userRole,
+        !!is_premium,
+        mobile || null,
+      ]
+    );
+    res.status(201).json(result.rows[0]);
+  } catch (err) {
+    if (err.code === '23505') {
+      return res.status(400).json({ error: 'Username or email already exists.' });
+    }
+    res.status(500).json({ error: 'Could not create user.' });
+  }
+});
+
+router.post('/auth/admin/users/:id/reset-password', ...adminAuth, async (req, res) => {
+  try {
+    const userId = parseInt(req.params.id, 10);
+    const { newPassword } = req.body;
+    const np = validatePassword(newPassword, { label: 'New password' });
+    if (!np.ok) return res.status(400).json({ error: np.error });
+
+    const passwordHash = await hashPassword(newPassword);
+    const result = await db.query(
+      'UPDATE users SET password_hash = $1, password_changed_at = CURRENT_TIMESTAMP WHERE id = $2 RETURNING id, username',
+      [passwordHash, userId]
+    );
+    if (result.rows.length === 0) return res.status(404).json({ error: 'User not found' });
+    res.json({ status: 'success', user_id: userId });
+  } catch (err) {
+    res.status(500).json({ error: 'Could not reset password.' });
+  }
+});
+
+router.post('/auth/admin/toggle-subscription', ...adminAuth, async (req, res) => {
   try {
     const { user_id } = req.body;
     const user = await db.query('SELECT id, is_premium FROM users WHERE id = $1', [user_id]);
@@ -170,28 +320,18 @@ router.post('/auth/admin/toggle-subscription', adminAuth, async (req, res) => {
   }
 });
 
-// PUT /api/auth/profile — Update profile (age, grade) with level recalculation
-router.put('/auth/profile', async (req, res) => {
+router.post('/auth/admin/set-account-status', ...adminAuth, async (req, res) => {
   try {
-    const { username, name, age, grade } = req.body;
-    const level = getLevelFromAge(age);
-
-    if (!process.env.DATABASE_URL) {
-      return res.json({ id: 1, username, name, role: 'student', is_premium: false, age, grade, level });
+    const { user_id, status } = req.body;
+    if (!['active', 'suspended'].includes(status)) {
+      return res.status(400).json({ error: 'Status must be active or suspended.' });
     }
-
-    const updatedUser = await db.query(
-      'UPDATE users SET name = $1, age = $2, grade = $3, level = $4 WHERE username = $5 RETURNING id, username, email, name, role, is_premium, age, grade, level, mobile',
-      [name, age, grade, level, username]
-    );
-
-    if (updatedUser.rows.length === 0) {
-      return res.status(404).json({ error: 'User not found' });
+    if (user_id === req.auth.id) {
+      return res.status(400).json({ error: 'You cannot change your own account status.' });
     }
-
-    res.json(updatedUser.rows[0]);
+    await db.query('UPDATE users SET account_status = $1 WHERE id = $2', [status, user_id]);
+    res.json({ status: 'success', account_status: status });
   } catch (err) {
-    console.error('Profile update error:', err.message);
     res.status(500).json({ error: 'Server error' });
   }
 });
@@ -450,20 +590,23 @@ router.get('/verses/quiz/:scripture/:chapter/:verse', (req, res) => {
 });
 
 // JOURNALS & PROGRESS
-router.get('/journal/:username', async (req, res) => {
+router.get('/journal/:username', authRequired, async (req, res) => {
   try {
     const { username } = req.params;
-    const userResult = await db.query('SELECT id FROM users WHERE username = $1', [username]);
-    if (userResult.rows.length === 0) return res.status(404).send('User not found');
+    const userResult = await db.query('SELECT id, username FROM users WHERE username = $1', [username]);
+    if (userResult.rows.length === 0) return res.status(404).json({ error: 'User not found' });
+    const target = userResult.rows[0];
+    if (req.auth.role !== 'admin' && req.auth.id !== target.id) {
+      return res.status(403).json({ error: 'Access denied.' });
+    }
     const result = await db.query(
       'SELECT * FROM journal_entries WHERE user_id = $1 ORDER BY completed_at DESC',
-      [userResult.rows[0].id]
+      [target.id]
     );
     res.json(result.rows);
   } catch (err) {
-    // No DB configured — return empty list gracefully
     if (err.message.includes('DATABASE_URL')) return res.json([]);
-    res.status(500).send(err.message);
+    res.status(500).json({ error: err.message });
   }
 });
 
@@ -479,7 +622,7 @@ router.post('/journal', async (req, res) => {
     let decoded;
     try {
       const token = authHeader.split(' ')[1];
-      decoded = jwt.verify(token, JWT_SECRET);
+      decoded = verifyAccessToken(token);
     } catch (e) {
       return res.status(401).json({ error: 'Unauthorized: Token expired or invalid' });
     }
@@ -894,7 +1037,7 @@ router.get('/chat/wisdom', async (req, res) => {
   }
 });
 
-router.post('/chat/wisdom', adminAuth, async (req, res) => {
+router.post('/chat/wisdom', ...adminAuth, async (req, res) => {
   try {
     const { keywords, answer_en, answer_te, scripture } = req.body;
     await db.query(
@@ -982,6 +1125,10 @@ async function bootstrapDB() {
         completed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       );
     `);
+    await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS account_status VARCHAR(20) DEFAULT 'active'`).catch(() => {});
+    await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS password_changed_at TIMESTAMP WITH TIME ZONE`).catch(() => {});
+    await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMP WITH TIME ZONE`).catch(() => {});
+
     // Migration: Add scripture column if missing
     await db.query(`ALTER TABLE progress ADD COLUMN IF NOT EXISTS scripture VARCHAR DEFAULT 'gita'`).catch(() => {});
     await db.query(`ALTER TABLE evaluations ADD COLUMN IF NOT EXISTS scripture VARCHAR DEFAULT 'gita'`).catch(() => {});

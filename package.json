@@ -37,7 +37,8 @@
     "gita:normalize-line-ends": "node scripts/normalize-manifest-line-ends.js",
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js",
-    "db:migrate": "node backend/migrate.js"
+    "db:migrate": "node backend/migrate.js",
+    "db:seed-admin": "node scripts/seed-admin.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",

@@ -35,6 +35,20 @@ This project is optimized for Vercel deployment.
    - `TRANSLATE_LIVE`: `false` in production (use `npm run gita:translate-lines` batch cache).
 4. Click **Deploy**!
 
+## Account security (commercial readiness)
+
+- **Passwords:** bcrypt (12 rounds), minimum 8 characters with letters and numbers. Users change passwords under **Settings → Password & Security**.
+- **Sessions:** JWT (`JWT_SECRET` required on Vercel). Default lifetime `7d` (`JWT_EXPIRES_IN` optional).
+- **Roles:** Public signup is always `student`. Admins create `parent` / `admin` accounts from **Admin → Create account**.
+- **Removed:** Hardcoded `admin123` backdoor — use `npm run db:seed-admin` with `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `backend/.env`.
+- **Rate limits:** Login, register, and password-change endpoints are throttled per IP.
+- **Protected routes:** Settings, subscription, progress, and admin require login.
+
+```bash
+# After setting ADMIN_EMAIL and ADMIN_PASSWORD in backend/.env
+npm run db:seed-admin
+```
+
 ## Testing and data scripts
 
 The app is exercised on **Vercel** (`https://littleepicminds.vercel.app`). The frontend calls same-origin `/api` (no `localhost` API URL).
