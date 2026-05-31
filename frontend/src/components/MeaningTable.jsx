@@ -15,7 +15,7 @@ import {
   getVerseLineBoundaries,
   getManifestTimingInput,
   getManifestDuration,
-  buildPlayBounds,
+  buildLineSegments,
   loadChantDuration,
   prefetchVerseChant,
   releasePreloadedChant,
@@ -40,7 +40,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const [playing, setPlaying] = useState(null);
   const [chantFallbackMsg, setChantFallbackMsg] = useState(null);
   const [teMeanings, setTeMeanings] = useState({});
-  const boundsRef = useRef(null);
+  const segmentsRef = useRef(null);
   const chantUrlRef = useRef(null);
   const abortRef = useRef(false);
 
@@ -71,7 +71,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   useEffect(() => {
     abortRef.current = false;
     const prevUrl = chantUrlRef.current;
-    boundsRef.current = null;
+    segmentsRef.current = null;
     chantUrlRef.current = null;
     setChantFallbackMsg(null);
     if (prevUrl) releasePreloadedChant(prevUrl);
@@ -87,7 +87,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
         hasChantIntro: Boolean(chantIntro),
       });
       if (cancelled || !warmed) return;
-      if (warmed.bounds) boundsRef.current = warmed.bounds;
+      if (warmed.segments?.length) segmentsRef.current = warmed.segments;
       chantUrlRef.current = warmed.url;
     })();
     return () => {
@@ -185,17 +185,19 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     return displayMeaning(item, index)?.trim() || '';
   };
 
-  const ensureChantBounds = async () => {
+  const ensureLineSegments = async () => {
     if (!verseId || !wordByWord?.length) return null;
-    if (boundsRef.current && chantUrlRef.current) {
-      return { bounds: boundsRef.current, url: chantUrlRef.current };
-    }
     const manifest = await ensureGitaChantManifest();
-    const url = resolveChantAudioUrl(verseId, manifest);
+    const url = chantUrlRef.current || resolveChantAudioUrl(verseId, manifest);
     if (!url) return null;
 
-    const timing = getManifestTimingInput(verseId, manifest);
+    const hasIntro = Boolean(chantIntro);
+    const timing = getManifestTimingInput(verseId, manifest, { hasChantIntro: hasIntro });
     const lineCount = wordByWord.length;
+    const segmentOpts = {
+      introEnd: timing?.introEnd,
+      hasChantIntro: hasIntro,
+    };
     let duration = getManifestDuration(verseId, manifest);
     if (!duration) {
       try {
@@ -204,31 +206,30 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
         duration = null;
       }
     }
-    let bounds = null;
+    segmentOpts.duration = duration;
 
-    if (timing?.lineEnds?.length) {
-      bounds = buildPlayBounds(timing.lineEnds, lineCount, {
-        duration,
-        introEnd: timing.introEnd,
-        hasChantIntro: Boolean(chantIntro),
-      });
+    let segments = null;
+
+    if (timing?.lineEnds?.length && duration) {
+      segments = buildLineSegments(timing.lineEnds, lineCount, segmentOpts);
     }
 
-    if (!bounds) {
+    if (!segments && duration) {
       const weights = wordByWord.map((row) => {
         const t = getLineScriptText(row, lang) || row.transliteration || row.word || '';
         return t.replace(/\s+/g, '').length || 1;
       });
       const guessed = await getVerseLineBoundaries(url, lineCount, weights);
-      bounds = buildPlayBounds(guessed, lineCount, {
-        duration,
-        introEnd: timing?.introEnd,
-        hasChantIntro: Boolean(chantIntro),
-      });
+      segments = buildLineSegments(guessed, lineCount, segmentOpts);
     }
-    boundsRef.current = bounds;
+
+    const introCut =
+      timing?.introEnd ??
+      (hasIntro && timing?.lineEnds?.[0] > 0.15 ? timing.lineEnds[0] : 0);
+
+    segmentsRef.current = segments;
     chantUrlRef.current = url;
-    return { bounds, url };
+    return { segments, url, introCut };
   };
 
   const playMeaningTts = async (item, index) => {
@@ -238,13 +239,16 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   };
 
   const playLineChant = async (index) => {
-    const chant = await ensureChantBounds();
-    if (!chant) throw new Error('No chant audio');
-    if (index + 1 >= chant.bounds.length) throw new Error('No segment for this row');
-    const start = chant.bounds[index];
-    const end = chant.bounds[index + 1];
-    if (end <= start) throw new Error('Invalid segment');
-    await playChantSegment(chant.url, start, end, 0.9);
+    const chant = await ensureLineSegments();
+    if (!chant?.segments?.length) throw new Error('No chant audio');
+    const segment = chant.segments[index];
+    if (!segment || segment.end <= segment.start) {
+      throw new Error('No segment for this row');
+    }
+    if (index === 0 && chant.introCut > 0 && segment.start < chant.introCut) {
+      segment.start = chant.introCut;
+    }
+    await playChantSegment(chant.url, segment.start, segment.end, 0.9, chant.introCut || 0);
   };
 
   const runPlay = async (index, part) => {

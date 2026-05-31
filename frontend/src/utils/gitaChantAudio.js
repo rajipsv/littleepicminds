@@ -33,6 +33,20 @@ function validatePlayBounds(bounds, duration) {
   return b;
 }
 
+/** Seconds where narrator intro ends and first pada begins (0 if none). */
+export function resolveIntroCutSec({ introEnd, hasChantIntro, lineEnds } = {}) {
+  const ie = Number(introEnd);
+  if (Number.isFinite(ie) && ie > 0) return ie;
+  if (!hasChantIntro) return 0;
+  if (!Array.isArray(lineEnds) || lineEnds.length < 2) return 0;
+  const e0 = Number(lineEnds[0]);
+  const e1 = Number(lineEnds[1]);
+  if (Number.isFinite(e0) && e0 > 0.15 && e0 < 8 && Number.isFinite(e1) && e1 > e0 + 0.2) {
+    return e0;
+  }
+  return 0;
+}
+
 /**
  * Build segment start times for row play: length lineCount+1.
  * Segment i plays [bounds[i], bounds[i+1]].
@@ -47,8 +61,19 @@ export function buildPlayBounds(raw, lineCount, { duration, introEnd, hasChantIn
   const intro = Number.isFinite(ie) && ie > 0 ? ie : null;
 
   // Speaker intro (e.g. "dhṛtarāṣṭra uvāca") is in the WAV but not a table row.
-  // lineEnds are pada boundaries; first end is where pada 1 starts (not 0).
   if (hasChantIntro) {
+    if (nums[0] < 0.12 && nums.length >= lineCount + 1) {
+      let b = nums.slice(0, lineCount + 1);
+      if (b.length >= 2 && b[1] > 0.08) {
+        b = [b[1], ...b.slice(2)];
+      }
+      while (b.length < lineCount + 1) {
+        b.push(duration);
+      }
+      return validatePlayBounds(b.slice(0, lineCount + 1), duration);
+    }
+
+    // lineEnds only: first timestamp is where pada 1 starts (after intro).
     const ends = nums.slice(0, lineCount);
     if (ends.length < lineCount) return null;
     let b;
@@ -86,22 +111,63 @@ export function buildPlayBounds(raw, lineCount, { duration, introEnd, hasChantIn
   return validatePlayBounds(b.slice(0, lineCount + 1), duration);
 }
 
+/** Per-row { start, end } in seconds — use index from the table directly. */
+export function buildLineSegments(raw, lineCount, options = {}) {
+  const lineEnds = (raw || []).map((x) => Number(x)).filter((x) => Number.isFinite(x));
+  const introCut = resolveIntroCutSec({
+    introEnd: options.introEnd,
+    hasChantIntro: options.hasChantIntro,
+    lineEnds,
+  });
+  const bounds = buildPlayBounds(raw, lineCount, {
+    ...options,
+    introEnd: introCut || options.introEnd,
+    hasChantIntro: options.hasChantIntro || introCut > 0,
+  });
+  if (!bounds || bounds.length < lineCount + 1) return null;
+
+  let chain = bounds.slice(0, lineCount + 1);
+  if (introCut > 0 && chain[0] < introCut - 0.02) {
+    const trimmed = chain.filter((t) => t >= introCut - 0.02);
+    while (trimmed.length < lineCount + 1) {
+      trimmed.push(options.duration ?? trimmed[trimmed.length - 1]);
+    }
+    chain = trimmed.slice(0, lineCount + 1);
+  }
+
+  const segments = Array.from({ length: lineCount }, (_, i) => ({
+    start: chain[i],
+    end: chain[i + 1],
+  }));
+
+  if (introCut > 0) {
+    for (const seg of segments) {
+      if (seg.start < introCut) seg.start = introCut;
+    }
+  }
+
+  return segments.filter((seg) => seg.end > seg.start + 0.05);
+}
+
 /** Prefer lineEnds + introEnd; fall back to legacy lineTimings. */
-export function getManifestTimingInput(verseId, manifestVerses = versesById) {
+export function getManifestTimingInput(verseId, manifestVerses = versesById, { hasChantIntro } = {}) {
   const entry = manifestVerses?.[verseId];
   if (!entry || typeof entry !== 'object') return null;
 
-  const introEnd = getManifestIntroEnd(verseId, manifestVerses);
+  let introEnd = getManifestIntroEnd(verseId, manifestVerses);
+  let lineEnds = null;
   if (Array.isArray(entry.lineEnds) && entry.lineEnds.length >= 1) {
-    return {
-      lineEnds: entry.lineEnds.map((x) => Number(x)).filter((x) => Number.isFinite(x)),
-      introEnd,
-    };
+    lineEnds = entry.lineEnds.map((x) => Number(x)).filter((x) => Number.isFinite(x));
+  } else {
+    const legacy = getManifestLineTimings(verseId, manifestVerses);
+    if (legacy?.length) lineEnds = legacy;
   }
+  if (!lineEnds?.length) return null;
 
-  const legacy = getManifestLineTimings(verseId, manifestVerses);
-  if (legacy?.length) return { lineEnds: legacy, introEnd };
-  return null;
+  if (!introEnd && hasChantIntro) {
+    introEnd = resolveIntroCutSec({ hasChantIntro: true, lineEnds });
+  }
+  return { lineEnds, introEnd };
 }
 
 export async function ensureGitaChantManifest() {
@@ -236,7 +302,7 @@ export async function prefetchVerseChant(verseId, { lineCount, hasChantIntro } =
   const url = resolveChantAudioUrl(verseId, manifest);
   if (!url) return null;
 
-  const timing = getManifestTimingInput(verseId, manifest);
+  const timing = getManifestTimingInput(verseId, manifest, { hasChantIntro });
   let duration = getManifestDuration(verseId, manifest);
   if (!duration) {
     try {
@@ -246,18 +312,25 @@ export async function prefetchVerseChant(verseId, { lineCount, hasChantIntro } =
     }
   }
 
-  let bounds = null;
+  const opts = {
+    duration,
+    introEnd: timing?.introEnd,
+    hasChantIntro,
+  };
+  let segments = null;
   if (timing?.lineEnds?.length && duration) {
-    bounds = buildPlayBounds(timing.lineEnds, lineCount, {
-      duration,
-      introEnd: timing.introEnd,
-      hasChantIntro,
-    });
+    segments = buildLineSegments(timing.lineEnds, lineCount, opts);
   }
 
   preloadChantAudio(url).catch(() => {});
 
-  return { url, bounds, duration, timing };
+  return {
+    url,
+    bounds: segments?.map((s) => s.start).concat(segments[segments.length - 1]?.end ?? duration),
+    segments,
+    duration,
+    timing,
+  };
 }
 
 export function stopChantSegment() {
@@ -309,18 +382,18 @@ export async function getVerseLineBoundaries(url, lineCount, weights) {
   return computeLineBoundaries(duration, lineCount, weights);
 }
 
-export function playChantSegment(url, startSec, endSec, playbackRate = 0.9) {
+export function playChantSegment(url, startSec, endSec, playbackRate = 0.9, minStartSec = 0) {
   stopChantSegment();
+  const start = Math.max(startSec, minStartSec);
   return preloadChantAudio(url).then((audio) => {
     activeSegmentAudio = audio;
     audio.playbackRate = playbackRate;
 
     return new Promise((resolve, reject) => {
-      let seekVerified = startSec <= 0.05;
+      let seekVerified = start <= 0.05;
 
       const cleanup = () => {
         audio.removeEventListener('timeupdate', onTimeUpdate);
-        audio.removeEventListener('seeked', onSeeked);
         audio.removeEventListener('ended', onEnded);
         audio.removeEventListener('error', onErr);
       };
@@ -332,14 +405,13 @@ export function playChantSegment(url, startSec, endSec, playbackRate = 0.9) {
       };
 
       const onTimeUpdate = () => {
+        if (minStartSec > 0 && audio.currentTime < minStartSec - 0.05) {
+          audio.currentTime = start;
+        }
         if (audio.currentTime >= endSec - 0.08) {
           audio.pause();
           finish();
         }
-      };
-
-      const onSeeked = () => {
-        seekVerified = true;
       };
 
       const onEnded = () => finish();
@@ -360,26 +432,40 @@ export function playChantSegment(url, startSec, endSec, playbackRate = 0.9) {
       audio.addEventListener('error', onErr);
 
       const beginPlay = () => {
-        const target = Math.max(0, startSec);
-        if (Math.abs(audio.currentTime - target) > 0.15) {
-          audio.addEventListener('seeked', onSeeked, { once: true });
-          audio.currentTime = target;
-        } else {
+        const target = Math.max(minStartSec, start);
+        audio.pause();
+
+        const playAtTarget = () => {
+          if (Math.abs(audio.currentTime - target) > 0.25) {
+            failSeek();
+            return;
+          }
           seekVerified = true;
+          audio.playbackRate = playbackRate;
+          audio.play().catch(onErr);
+        };
+
+        if (Math.abs(audio.currentTime - target) <= 0.12) {
+          playAtTarget();
+          return;
         }
-        audio
-          .play()
-          .then(() => {
-            if (seekVerified) return;
-            setTimeout(() => {
-              if (!seekVerified && Math.abs(audio.currentTime - target) >= 0.25) {
-                failSeek();
-              } else {
-                seekVerified = true;
-              }
-            }, 120);
-          })
-          .catch(onErr);
+
+        const onSeekedPlay = () => {
+          audio.removeEventListener('seeked', onSeekedPlay);
+          playAtTarget();
+        };
+        audio.addEventListener('seeked', onSeekedPlay);
+        audio.currentTime = target;
+
+        setTimeout(() => {
+          if (seekVerified) return;
+          if (Math.abs(audio.currentTime - target) <= 0.25) {
+            audio.removeEventListener('seeked', onSeekedPlay);
+            playAtTarget();
+          } else {
+            failSeek();
+          }
+        }, 400);
       };
 
       if (audio.readyState >= 2) beginPlay();

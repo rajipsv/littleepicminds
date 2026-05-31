@@ -30,7 +30,13 @@ function normalizeEntry(entry) {
     };
   }
   if (nums.length >= n) {
-    return { lineEnds: nums.slice(0, n) };
+    const lineEnds = nums.slice(0, n);
+    const e0 = lineEnds[0];
+    const e1 = lineEnds[1];
+    if (e0 > 0.15 && e0 < 8 && e1 > e0 + 0.2) {
+      return { lineEnds, introEnd: e0 };
+    }
+    return { lineEnds };
   }
   return { lineEnds: nums };
 }
