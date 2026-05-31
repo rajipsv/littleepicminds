@@ -73,6 +73,13 @@ export function ttsLangForMeaningText(text, uiLang) {
   return 'en';
 }
 
+/** BCP-47 code for /api/tts (Sarvam/Google expect te-IN, not te). */
+export function ttsApiLangCode(text, uiLang) {
+  const lang = ttsLangForMeaningText(text, uiLang);
+  const map = { te: 'te-IN', hi: 'hi-IN', ta: 'ta-IN', en: 'en-IN' };
+  return map[lang] || 'en-IN';
+}
+
 /** @deprecated Prefer ttsLangForMeaningText(meaning, uiLang) */
 export function ttsLangForMeaning(lang) {
   if (lang === 'te') return 'te';

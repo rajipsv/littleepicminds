@@ -1,5 +1,5 @@
 import api from '../api';
-import { getLineScriptText, ttsLangForMeaningText } from './verseDisplay';
+import { getLineScriptText, ttsApiLangCode, ttsLangForMeaningText } from './verseDisplay';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
@@ -48,12 +48,12 @@ export async function fetchTtsAudio(text, targetLang) {
     err.useBrowser = true;
     throw err;
   }
-  const lang = ttsLangForMeaningText(text, targetLang);
+  const langCode = ttsApiLangCode(text, targetLang);
   try {
     const res = await api.post('/api/tts', {
       text,
-      target_language_code: lang,
-      speaker: 'priya',
+      target_language_code: langCode,
+      speaker: langCode === 'te-IN' ? 'shubh' : 'priya',
     });
     if (!res.data?.audios?.[0]) throw new Error('No audio');
     return {
@@ -80,12 +80,28 @@ export function speakWithBrowser(text, uiLang = 'en') {
     const bcp47 =
       ttsLang === 'te' ? 'te-IN' : ttsLang === 'hi' ? 'hi-IN' : 'en-IN';
 
-    const run = () => {
-      const voices = window.speechSynthesis.getVoices();
-      const preferred =
+    const pickVoice = (voices) => {
+      if (ttsLang === 'te') {
+        return (
+          voices.find((v) => v.lang === 'te-IN') ||
+          voices.find((v) => v.lang.replace(/_/g, '-') === 'te-IN') ||
+          voices.find((v) => v.lang.startsWith('te')) ||
+          voices.find((v) => /telugu/i.test(v.name || '')) ||
+          null
+        );
+      }
+      return (
         voices.find((v) => v.lang === bcp47) ||
         voices.find((v) => v.lang.replace(/_/g, '-') === bcp47) ||
         voices.find((v) => v.lang.startsWith(ttsLang)) ||
+        null
+      );
+    };
+
+    const run = () => {
+      const voices = window.speechSynthesis.getVoices();
+      const preferred =
+        pickVoice(voices) ||
         voices.find((v) => v.lang.startsWith('en')) ||
         voices[0];
 
@@ -139,6 +155,7 @@ export async function warmMeaningTtsCache(text, uiLang) {
   if (browserTtsOnly()) return;
   const trimmed = String(text || '').trim();
   if (!trimmed) return;
+  if (uiLang === 'te' && !/[\u0C00-\u0C7F]/.test(trimmed)) return;
   try {
     await fetchTtsAudio(trimmed, uiLang);
   } catch {

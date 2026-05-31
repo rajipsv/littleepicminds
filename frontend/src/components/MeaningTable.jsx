@@ -110,7 +110,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     };
   }, [lang, rowsKey, wordByWord]);
 
-  /** Warm server TTS cache when Learn step is open — no audio, no work on Listen step. */
+  /** Warm server TTS cache when Learn step is open — Telugu script only when UI is te. */
   useEffect(() => {
     if (!wordByWord?.length) return;
     let cancelled = false;
@@ -119,6 +119,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     wordByWord.forEach((item, index) => {
       const text = displayMeaning(item, index)?.trim();
       if (!text || seen.has(text)) return;
+      if (lang === 'te' && !hasTeluguScript(text)) return;
       seen.add(text);
       texts.push(text);
     });
@@ -132,6 +133,32 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
       cancelled = true;
     };
   }, [wordByWord, lang, displayMeaning, rowsKey, teMeanings]);
+
+  const resolveMeaningForTts = async (item, index) => {
+    if (lang === 'te') {
+      if (hasTeluguScript(item.te)) return String(item.te).trim();
+      if (teMeanings[index]) return String(teMeanings[index]).trim();
+      const en = getLineMeaningText(item, 'en').trim();
+      if (!en) return '';
+      try {
+        const res = await fetch(`${API_URL || ''}/api/translate-meaning`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ text: en }),
+        });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.te && hasTeluguScript(data.te)) {
+            setTeMeanings((prev) => ({ ...prev, [index]: data.te }));
+            return data.te.trim();
+          }
+        }
+      } catch {
+        /* fall through */
+      }
+    }
+    return displayMeaning(item, index)?.trim() || '';
+  };
 
   const ensureChantBounds = async () => {
     if (!verseId || !wordByWord?.length) return null;
@@ -179,7 +206,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   };
 
   const playMeaningTts = async (item, index) => {
-    const meaning = displayMeaning(item, index)?.trim();
+    const meaning = await resolveMeaningForTts(item, index);
     if (!meaning) return;
     await playMeaningAudio(meaning, lang, 0.9);
   };
