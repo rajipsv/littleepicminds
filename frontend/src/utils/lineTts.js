@@ -3,8 +3,6 @@ import { getLineScriptText } from './verseDisplay';
 import {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
-  CHANT_AUDIO_CREDIT,
-  CHANT_AUDIO_DATASET_URL,
 } from './gitaChantAudio';
 
 const DEFAULT_GAP_MS = 450;
@@ -12,8 +10,6 @@ const DEFAULT_GAP_MS = 450;
 export {
   ensureGitaChantManifest,
   resolveChantAudioUrl,
-  CHANT_AUDIO_CREDIT,
-  CHANT_AUDIO_DATASET_URL,
 };
 
 /** Sync resolve after ensureGitaChantManifest() has run. */

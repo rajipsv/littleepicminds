@@ -9,9 +9,9 @@
       "local": true,
       "lineTimings": [
         3.206,
+        7.104,
         9.94,
-        13.664,
-        16.032
+        13.664
       ],
       "lineCount": 4,
       "introEnd": 3.206
@@ -154,7 +154,7 @@
         0.682,
         3.506,
         10.553,
-        16.914
+        13.876
       ],
       "lineCount": 4,
       "introEnd": 0.682
@@ -217,9 +217,9 @@
       "local": true,
       "lineTimings": [
         3.044,
+        6.33,
         9.528,
-        12.689,
-        15.058
+        12.689
       ],
       "lineCount": 4,
       "introEnd": 3.044
@@ -544,7 +544,7 @@
         2.531,
         5.78,
         8.741,
-        14.068
+        11.502
       ],
       "lineCount": 4,
       "introEnd": 2.531
@@ -3888,5 +3888,5 @@
   "syncedAt": "2026-05-31T04:51:26.262Z",
   "urlNote": "Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.",
   "lineTimingsNote": "Line boundaries from pauses in local WAV (longest gaps = line ends). Re-run gita:line-timings after sync.",
-  "lineTimingsAt": "2026-05-31T05:17:34.234Z"
+  "lineTimingsAt": "2026-05-31T05:35:50.292Z"
 }

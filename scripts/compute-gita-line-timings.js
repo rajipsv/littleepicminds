@@ -31,14 +31,27 @@ function lineCountForVerse() {
   return LINES_PER_SHLOKA;
 }
 
-function lineWeights(verse) {
+function hasChantIntro(verse) {
+  if (verse?.chantIntro) return true;
+  return Boolean(extractSpeakerPrefix(verse?.transliteration || '').speaker);
+}
+
+function lineWeights(verse, withIntro = false) {
   const b = verse?.lineBreakdown || verse?.word_by_word;
   const weights = (b || []).map((row) => {
     const t = row.transliteration || row.word || row.sanskrit || '';
     return t.replace(/\s+/g, '').length || 1;
   });
   while (weights.length < LINES_PER_SHLOKA) weights.push(1);
-  return weights.slice(0, LINES_PER_SHLOKA);
+  const w = weights.slice(0, LINES_PER_SHLOKA);
+  if (withIntro) {
+    const intro =
+      verse?.chantIntro?.transliteration ||
+      extractSpeakerPrefix(verse?.transliteration || '').speaker ||
+      '';
+    w.unshift(intro.replace(/\s+/g, '').length || 10);
+  }
+  return w;
 }
 
 async function main() {
@@ -70,15 +83,19 @@ async function main() {
       }
 
       try {
-        const fullBounds = computeLineTimingsFromWav(wavPath, n, lineWeights(verse));
-        const hasIntro = Boolean(
-          extractSpeakerPrefix(verse.transliteration || '').speaker
+        const hasIntro = hasChantIntro(verse);
+        const wavLineCount = hasIntro ? n + 1 : n;
+        const fullBounds = computeLineTimingsFromWav(
+          wavPath,
+          wavLineCount,
+          lineWeights(verse, hasIntro)
         );
         let lineTimings = fullBounds;
         let introEnd;
-        if (hasIntro && fullBounds.length >= n + 1) {
+        if (hasIntro && fullBounds.length >= wavLineCount + 1) {
           introEnd = fullBounds[1];
-          lineTimings = fullBounds.slice(1);
+          // Pada end times only (intro + 4 lines → 4 boundaries, no trailing duration).
+          lineTimings = fullBounds.slice(1, n + 1);
         }
         const prev = manifest.verses[verseId];
         const url =

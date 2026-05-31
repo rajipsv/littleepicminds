@@ -6,8 +6,6 @@ import {
   fetchTtsAudio,
   ensureGitaChantManifest,
   resolveChantAudioUrl,
-  CHANT_AUDIO_CREDIT,
-  CHANT_AUDIO_DATASET_URL,
   DEFAULT_GAP_MS,
 } from '../utils/lineTts';
 
@@ -24,7 +22,6 @@ const VoicePlayer = ({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isAiLoading, setIsAiLoading] = useState(false);
   const [lastPlayUsedBrowser, setLastPlayUsedBrowser] = useState(false);
-  const [usedChantAudio, setUsedChantAudio] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [rate, setRate] = useState(1);
   const [voiceMode, setVoiceMode] = useState('divine');
@@ -76,7 +73,6 @@ const VoicePlayer = ({
 
   const playAiVoice = async () => {
     setIsAiLoading(true);
-    setUsedChantAudio(false);
     abortRef.current = new AbortController();
     const signal = abortRef.current.signal;
 
@@ -92,7 +88,6 @@ const VoicePlayer = ({
           if (!signal.aborted) {
             setIsPlaying(false);
             setLastPlayUsedBrowser(false);
-            setUsedChantAudio(true);
             if (onEnd) onEnd();
           }
           return;
@@ -270,20 +265,6 @@ const VoicePlayer = ({
 
         {showSettings && (
           <div className="absolute top-full mt-3 right-0 md:left-1/2 md:-translate-x-1/2 bg-lem-sidebar border border-lem-glass-border rounded-2xl shadow-[0_10px_30px_rgba(0,0,0,0.5)] p-5 w-64 z-50 flex flex-col space-y-5 animate-slide-up">
-
-            {usedChantAudio && (
-              <p className="text-xs text-lem-accent/90 leading-snug">
-                {CHANT_AUDIO_CREDIT}{' '}
-                <a
-                  href={CHANT_AUDIO_DATASET_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-white"
-                >
-                  View dataset
-                </a>
-              </p>
-            )}
 
             {lastPlayUsedBrowser && (
               <div className="bg-yellow-500/10 border border-yellow-500/20 text-yellow-400 text-xs p-3 rounded-xl flex items-start gap-2">

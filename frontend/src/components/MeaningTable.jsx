@@ -12,8 +12,6 @@ import {
   loadChantDuration,
   playChantSegment,
   stopChantSegment,
-  CHANT_AUDIO_CREDIT,
-  CHANT_AUDIO_DATASET_URL,
 } from '../utils/gitaChantAudio';
 import { getLineScriptText, getLineMeaningText, ttsLangForMeaning, ttsLangForUi } from '../utils/verseDisplay';
 
@@ -46,7 +44,6 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
   const lang = currentLang === 'te' || currentLang === 'hi' ? currentLang : 'en';
   const [playing, setPlaying] = useState(null);
   const [teMeanings, setTeMeanings] = useState({});
-  const [usedChantAudio, setUsedChantAudio] = useState(false);
   const boundsRef = useRef(null);
   const chantUrlRef = useRef(null);
   const abortRef = useRef(false);
@@ -151,6 +148,9 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     if (stored?.length >= lineCount) {
       const duration = await loadChantDuration(url);
       bounds = stored.slice(0, lineCount);
+      if (introEnd != null && bounds[0] < introEnd - 0.05) {
+        bounds = [introEnd, ...stored].slice(0, lineCount);
+      }
       bounds.push(duration);
     } else if (stored?.length >= 2) {
       bounds = stored;
@@ -192,7 +192,6 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     const end = chant.bounds[index + 1];
     if (end <= start) throw new Error('Invalid segment');
     await playChantSegment(chant.url, start, end, 0.9);
-    setUsedChantAudio(true);
   };
 
   const runPlay = async (index, part) => {
@@ -269,20 +268,6 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
         </p>
       )}
 
-      {usedChantAudio && verseId && (
-        <p className="text-xs text-lem-accent/80 mb-3 leading-snug">
-          {CHANT_AUDIO_CREDIT}{' '}
-          <a
-            href={CHANT_AUDIO_DATASET_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-white"
-          >
-            Dataset
-          </a>
-        </p>
-      )}
-
       <div className="hidden md:block overflow-hidden rounded-xl border border-lem-glass-border shadow-sm">
         <table className="min-w-full divide-y divide-lem-glass-border">
           <thead className="bg-lem-sidebar">
@@ -309,7 +294,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
                     <div className="flex items-center gap-1">
                       <button
                         type="button"
-                        title={lang === 'te' ? 'పంక్తి' : 'Line chant (Dhruv)'}
+                        title={lang === 'te' ? 'పంక్తి' : 'Line chant'}
                         onClick={() => handlePlayLine(index)}
                         className={playBtnClass(isActive(index, 'line'))}
                       >

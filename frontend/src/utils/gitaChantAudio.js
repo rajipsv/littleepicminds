@@ -1,9 +1,6 @@
 import api, { API_URL } from '../api';
 
-/** Credit line for Dhruv Jaradi / HF dataset (shown when chant audio plays). */
-export const CHANT_AUDIO_CREDIT =
-  'Śloka chanting audio by Dhruv Jaradi (JDhruv14/Bhagavad-Gita_Audio, Apache-2.0).';
-
+/** Dataset URL (attribution on About / introduction only). */
 export const CHANT_AUDIO_DATASET_URL =
   'https://huggingface.co/datasets/JDhruv14/Bhagavad-Gita_Audio';
 
@@ -57,7 +54,11 @@ export function getManifestLineTimings(verseId, manifestVerses = versesById) {
   if (!Array.isArray(t) || t.length < 2) return null;
   const nums = t.map((x) => Number(x)).filter((x) => Number.isFinite(x));
   if (nums.length < 2) return null;
-  if (entry.introEnd != null && nums[0] < 0.05) return nums.slice(1);
+  const introEnd = Number(entry.introEnd);
+  if (Number.isFinite(introEnd) && introEnd > 0) {
+    if (nums[0] < 0.05) return nums.slice(1);
+    if (Math.abs(nums[0] - introEnd) > 0.2) return [introEnd, ...nums];
+  }
   return nums;
 }
 
