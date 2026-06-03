@@ -65,7 +65,7 @@ At this level, learners apply wisdom in daily life and grow into confident, valu
 
 const scriptures = [
   { id: 'gita', title: 'Bhagavad Gita', color: 'bg-kid-primary', desc: 'The Song of God', isAvailable: true },
-  { id: 'hanuman', title: 'Hanuman Chalisa', color: 'bg-kid-accent', desc: 'Hymn to Hanuman', isAvailable: true },
+  { id: 'hanuman', title: 'Hanuman Chalisa', color: 'bg-kid-accent', desc: 'Hymn to Hanuman', isAvailable: false },
   { id: 'ramayana', title: 'Ramayana', color: 'bg-kid-secondary', desc: 'The Epic of Rama', isAvailable: false }
 ];
 
