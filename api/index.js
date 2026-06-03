@@ -19,6 +19,13 @@ const {
   getJwtSecret,
 } = require('../lib/auth');
 const { rateLimit: authRateLimit } = require('../lib/auth-rate-limit');
+const {
+  generateResetToken,
+  hashResetToken,
+  buildResetUrl,
+  sendPasswordResetEmail,
+  TOKEN_TTL_MS,
+} = require('../lib/password-reset');
 const { canAccessGitaChapter, denyPremiumGitaChapter } = require('../lib/gita-access');
 const axios = require('axios');
 const crypto = require('crypto');
@@ -203,6 +210,110 @@ router.post('/auth/change-password', authRequired, authRateLimit({ max: 8, keyPr
   } catch (err) {
     console.error('Change password error:', err.message);
     res.status(500).json({ error: 'Could not update password.' });
+  }
+});
+
+const FORGOT_PASSWORD_MESSAGE =
+  'If an account exists with that email, we sent password reset instructions. Check your inbox and spam folder.';
+
+router.post('/auth/forgot-password', authRateLimit({ max: 5, keyPrefix: 'forgot' }), async (req, res) => {
+  try {
+    const e = validateEmail(req.body?.email);
+    if (!e.ok) return res.status(400).json({ error: e.error });
+
+    const userResult = await db.query(
+      'SELECT id, username, email, account_status FROM users WHERE email = $1',
+      [e.value]
+    );
+
+    const payload = { status: 'success', message: FORGOT_PASSWORD_MESSAGE };
+
+    if (userResult.rows.length === 0 || userResult.rows[0].account_status === 'suspended') {
+      return res.json(payload);
+    }
+
+    const user = userResult.rows[0];
+    const rawToken = generateResetToken();
+    const tokenHash = hashResetToken(rawToken);
+    const expiresAt = new Date(Date.now() + TOKEN_TTL_MS);
+
+    await db.query('DELETE FROM password_reset_tokens WHERE user_id = $1 AND used_at IS NULL', [user.id]);
+    await db.query(
+      `INSERT INTO password_reset_tokens (user_id, token_hash, expires_at)
+       VALUES ($1, $2, $3)`,
+      [user.id, tokenHash, expiresAt]
+    );
+
+    const resetUrl = buildResetUrl(rawToken);
+    try {
+      const mailResult = await sendPasswordResetEmail({
+        to: user.email,
+        username: user.username,
+        resetUrl,
+      });
+      if (mailResult?.devResetUrl) {
+        payload.devResetUrl = mailResult.devResetUrl;
+      }
+    } catch (mailErr) {
+      console.error('Forgot password email error:', mailErr.message);
+    }
+
+    res.json(payload);
+  } catch (err) {
+    console.error('Forgot password error:', err.message);
+    res.status(500).json({ error: 'Could not process password reset request.' });
+  }
+});
+
+router.post('/auth/reset-password', authRateLimit({ max: 8, keyPrefix: 'reset' }), async (req, res) => {
+  try {
+    const { token, newPassword } = req.body;
+    if (!token || !newPassword) {
+      return res.status(400).json({ error: 'Reset token and new password are required.' });
+    }
+
+    const np = validatePassword(newPassword, { label: 'New password' });
+    if (!np.ok) return res.status(400).json({ error: np.error });
+
+    const tokenHash = hashResetToken(token);
+    const tokenResult = await db.query(
+      `SELECT prt.id, prt.user_id, prt.expires_at, prt.used_at, u.account_status
+       FROM password_reset_tokens prt
+       JOIN users u ON u.id = prt.user_id
+       WHERE prt.token_hash = $1`,
+      [tokenHash]
+    );
+
+    if (tokenResult.rows.length === 0) {
+      return res.status(400).json({ error: 'This reset link is invalid or has expired.' });
+    }
+
+    const row = tokenResult.rows[0];
+    if (row.used_at) {
+      return res.status(400).json({ error: 'This reset link has already been used.' });
+    }
+    if (new Date(row.expires_at) < new Date()) {
+      return res.status(400).json({ error: 'This reset link has expired. Please request a new one.' });
+    }
+    if (row.account_status === 'suspended') {
+      return res.status(403).json({ error: 'This account has been suspended. Contact support.' });
+    }
+
+    const passwordHash = await hashPassword(newPassword);
+    await db.query(
+      'UPDATE users SET password_hash = $1, password_changed_at = CURRENT_TIMESTAMP WHERE id = $2',
+      [passwordHash, row.user_id]
+    );
+    await db.query(
+      'UPDATE password_reset_tokens SET used_at = CURRENT_TIMESTAMP WHERE id = $1',
+      [row.id]
+    );
+    await db.query('DELETE FROM password_reset_tokens WHERE user_id = $1 AND used_at IS NULL', [row.user_id]);
+
+    res.json({ status: 'success', message: 'Password reset successfully. You can log in with your new password.' });
+  } catch (err) {
+    console.error('Reset password error:', err.message);
+    res.status(500).json({ error: 'Could not reset password.' });
   }
 });
 
@@ -1143,6 +1254,17 @@ async function bootstrapDB() {
     await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS account_status VARCHAR(20) DEFAULT 'active'`).catch(() => {});
     await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS password_changed_at TIMESTAMP WITH TIME ZONE`).catch(() => {});
     await db.query(`ALTER TABLE users ADD COLUMN IF NOT EXISTS last_login_at TIMESTAMP WITH TIME ZONE`).catch(() => {});
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS password_reset_tokens (
+        id SERIAL PRIMARY KEY,
+        user_id INT REFERENCES users(id) ON DELETE CASCADE,
+        token_hash VARCHAR(255) NOT NULL,
+        expires_at TIMESTAMP WITH TIME ZONE NOT NULL,
+        used_at TIMESTAMP WITH TIME ZONE,
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+      )
+    `).catch(() => {});
+    await db.query(`CREATE INDEX IF NOT EXISTS idx_password_reset_token_hash ON password_reset_tokens(token_hash)`).catch(() => {});
 
     // Migration: Add scripture column if missing
     await db.query(`ALTER TABLE progress ADD COLUMN IF NOT EXISTS scripture VARCHAR DEFAULT 'gita'`).catch(() => {});

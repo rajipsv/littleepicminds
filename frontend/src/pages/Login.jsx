@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { User, Lock } from 'lucide-react';
 
@@ -9,6 +9,8 @@ const Login = () => {
   const [error, setError] = useState('');
   const { login } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
+  const resetSuccess = location.state?.resetSuccess;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,6 +31,12 @@ const Login = () => {
         <h2 className="text-3xl font-extrabold text-center text-kid-blue mb-2">Welcome Back!</h2>
         <p className="text-center text-gray-500 font-medium mb-8">Log in to continue your learning journey.</p>
         
+        {resetSuccess && (
+          <div className="bg-emerald-50 text-emerald-700 p-3 rounded-lg text-sm font-medium mb-4 text-center">
+            Password reset successfully. Log in with your new password.
+          </div>
+        )}
+
         {error && <div className="bg-red-50 text-red-500 p-3 rounded-lg text-sm font-medium mb-4 text-center">{error}</div>}
 
         <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
@@ -63,6 +71,11 @@ const Login = () => {
                 placeholder="Enter your password"
                 required
               />
+            </div>
+            <div className="text-right mt-2">
+              <Link to="/forgot-password" className="text-sm font-medium text-kid-secondary hover:underline">
+                Forgot password?
+              </Link>
             </div>
           </div>
 

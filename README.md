@@ -37,7 +37,7 @@ This project is optimized for Vercel deployment.
 
 ## Account security (commercial readiness)
 
-- **Passwords:** bcrypt (12 rounds), minimum 8 characters with letters and numbers. Users change passwords under **Settings → Password & Security**.
+- **Passwords:** bcrypt (12 rounds), minimum 8 characters with letters and numbers. Users change passwords under **Settings → Password & Security**, or use **Login → Forgot password?** (email reset link via Resend).
 - **Sessions:** JWT (`JWT_SECRET` required on Vercel). Default lifetime `7d` (`JWT_EXPIRES_IN` optional).
 - **Roles:** Public signup is always `student`. Admins create `parent` / `admin` accounts from **Admin → Create account**.
 - **Removed:** Hardcoded `admin123` backdoor — use `npm run db:seed-admin` with `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `backend/.env`.
