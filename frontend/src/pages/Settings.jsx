@@ -104,11 +104,11 @@ const SettingsPage = () => {
                   <select
                     value={level}
                     onChange={(e) => setLevel(e.target.value)}
-                    className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary capitalize"
+                    className="w-full px-4 py-3 bg-white text-slate-800 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary capitalize font-medium"
                   >
-                    <option value="seeds">Seeds — ages 5–7</option>
-                    <option value="seekers">Seekers — ages 8–10</option>
-                    <option value="warriors">Warriors — ages 11+</option>
+                    <option value="seeds" className="text-slate-800 bg-white">Seeds — ages 5–7</option>
+                    <option value="seekers" className="text-slate-800 bg-white">Seekers — ages 8–10</option>
+                    <option value="warriors" className="text-slate-800 bg-white">Warriors — ages 11+</option>
                   </select>
                   <p className="text-xs text-slate-500 mt-2">
                     Switches theme stories, quizzes, and progress to this level. Current:{' '}
