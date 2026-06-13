@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { Settings, Save, Lock } from 'lucide-react';
@@ -10,7 +10,12 @@ const SettingsPage = () => {
 
   const [age, setAge] = useState(user?.age ?? '');
   const [grade, setGrade] = useState(user?.grade ?? '');
+  const [level, setLevel] = useState(user?.level ?? 'seeds');
   const [message, setMessage] = useState('');
+
+  useEffect(() => {
+    if (user?.level) setLevel(user.level);
+  }, [user?.level]);
   const [error, setError] = useState('');
 
   const [currentPassword, setCurrentPassword] = useState('');
@@ -26,7 +31,11 @@ const SettingsPage = () => {
     setError('');
     setMessage('');
     try {
-      await updateProfile(age, grade);
+      if (user.role === 'admin') {
+        await updateProfile(undefined, undefined, undefined, level);
+      } else {
+        await updateProfile(age, grade);
+      }
       setMessage('Profile updated successfully!');
       setTimeout(() => navigate('/'), 1500);
     } catch (err) {
@@ -84,11 +93,29 @@ const SettingsPage = () => {
 
           <form onSubmit={handleProfileSubmit} className="space-y-5">
             {user.role === 'admin' ? (
-              <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
-                <p className="text-xs font-black uppercase text-slate-400 mb-2">Account Type</p>
-                <p className="text-kid-blue font-bold">System Administrator</p>
-                <p className="text-sm text-slate-500 mt-2">{user.email}</p>
-              </div>
+              <>
+                <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                  <p className="text-xs font-black uppercase text-slate-400 mb-2">Account Type</p>
+                  <p className="text-kid-blue font-bold">System Administrator</p>
+                  <p className="text-sm text-slate-500 mt-2">{user.email}</p>
+                </div>
+                <div>
+                  <label className="block text-sm font-bold text-kid-blue mb-1">Learning Level (for testing)</label>
+                  <select
+                    value={level}
+                    onChange={(e) => setLevel(e.target.value)}
+                    className="w-full px-4 py-3 bg-white/50 border border-kid-primary/30 rounded-xl focus:outline-none focus:ring-2 focus:ring-kid-primary capitalize"
+                  >
+                    <option value="seeds">Seeds — ages 5–7</option>
+                    <option value="seekers">Seekers — ages 8–10</option>
+                    <option value="warriors">Warriors — ages 11+</option>
+                  </select>
+                  <p className="text-xs text-slate-500 mt-2">
+                    Switches theme stories, quizzes, and progress to this level. Current:{' '}
+                    <span className="font-bold capitalize text-kid-primary">{user.level || 'seeds'}</span>
+                  </p>
+                </div>
+              </>
             ) : (
               <>
                 <div>

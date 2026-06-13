@@ -206,18 +206,35 @@ router.post('/auth/change-password', authRequired, authRateLimit({ max: 8, keyPr
   }
 });
 
+const ALLOWED_LEVELS = new Set(['seeds', 'seekers', 'warriors']);
+
 router.put('/auth/profile', authRequired, async (req, res) => {
   try {
-    const { name, age, grade } = req.body;
-    const parsedAge = age !== '' && age !== undefined && age !== null ? parseInt(age, 10) : null;
-    const level = getLevelFromAge(parsedAge);
+    const { name, age, grade, level } = req.body;
+    const isAdmin = req.auth.role === 'admin';
+    const adminLevel =
+      isAdmin && level && ALLOWED_LEVELS.has(String(level).toLowerCase())
+        ? String(level).toLowerCase()
+        : null;
 
-    const updatedUser = await db.query(
-      `UPDATE users SET name = COALESCE($1, name), age = $2, grade = $3, level = $4
-       WHERE id = $5
-       RETURNING id, username, email, name, role, is_premium, age, grade, level, mobile, account_status`,
-      [name || null, parsedAge, grade || null, level, req.auth.id]
-    );
+    const profileReturn = `id, username, email, name, role, is_premium, age, grade, level, mobile, account_status`;
+
+    let updatedUser;
+    if (adminLevel) {
+      updatedUser = await db.query(
+        `UPDATE users SET level = $1 WHERE id = $2 RETURNING ${profileReturn}`,
+        [adminLevel, req.auth.id]
+      );
+    } else {
+      const parsedAge = age !== '' && age !== undefined && age !== null ? parseInt(age, 10) : null;
+      const derivedLevel = getLevelFromAge(parsedAge);
+      updatedUser = await db.query(
+        `UPDATE users SET name = COALESCE($1, name), age = $2, grade = $3, level = $4
+         WHERE id = $5
+         RETURNING ${profileReturn}`,
+        [name || null, parsedAge, grade || null, derivedLevel, req.auth.id]
+      );
+    }
 
     if (updatedUser.rows.length === 0) {
       return res.status(404).json({ error: 'User not found' });

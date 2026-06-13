@@ -88,13 +88,16 @@ export const AuthProvider = ({ children }) => {
     return true;
   };
 
-  const updateProfile = async (age, grade, name) => {
+  const updateProfile = async (age, grade, name, level) => {
     if (!user) return;
-    const payload = {
-      name: name ?? user.name ?? null,
-      age: age !== '' && age !== undefined ? parseInt(age, 10) : null,
-      grade: grade || null,
-    };
+    const payload = {};
+    if (level !== undefined) {
+      payload.level = level;
+    } else {
+      payload.name = name ?? user.name ?? null;
+      payload.age = age !== '' && age !== undefined ? parseInt(age, 10) : null;
+      payload.grade = grade || null;
+    }
     const res = await api.put('/api/auth/profile', payload);
     setUser((prev) => ({ ...prev, ...res.data }));
     localStorage.setItem('user', JSON.stringify({ ...user, ...res.data }));
