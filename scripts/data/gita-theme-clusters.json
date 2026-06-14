@@ -99,9 +99,9 @@
           "id": "sd1_02",
           "shlokas": [
             "1.3",
-            "1.7"
+            "1.4"
           ],
-          "idea": "Leaders should stay calm during challenges",
+          "idea": "Everyone gets ready when something big is coming",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 1
@@ -109,10 +109,10 @@
         {
           "id": "sd1_03",
           "shlokas": [
-            "1.10",
-            "1.12"
+            "1.12",
+            "1.13"
           ],
-          "idea": "Fear can hide behind loud confidence",
+          "idea": "Loud moments can make hearts beat fast",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 1
@@ -120,10 +120,10 @@
         {
           "id": "sd1_04",
           "shlokas": [
-            "1.14",
-            "1.21"
+            "1.21",
+            "1.22"
           ],
-          "idea": "Asking for guidance is a strength",
+          "idea": "Ask a wise guide before a hard choice",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 1
@@ -131,10 +131,10 @@
         {
           "id": "sd1_05",
           "shlokas": [
-            "1.22",
-            "1.23"
+            "1.23",
+            "1.24"
           ],
-          "idea": "Think carefully before acting",
+          "idea": "Look carefully before you act",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 1
@@ -165,9 +165,9 @@
           "id": "sd1_08",
           "shlokas": [
             "1.32",
-            "1.35"
+            "1.33"
           ],
-          "idea": "Rewards are not more important than people",
+          "idea": "Winning is not more important than people",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 2
@@ -175,10 +175,10 @@
         {
           "id": "sd1_09",
           "shlokas": [
-            "1.36",
-            "1.38"
+            "1.34",
+            "1.35"
           ],
-          "idea": "Overthinking creates more fear",
+          "idea": "Love for family can make duty feel painful",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Feelings & Fear",
           "priority": 2
@@ -187,7 +187,7 @@
           "id": "sd1_10",
           "shlokas": [
             "1.40",
-            "1.45"
+            "1.41"
           ],
           "idea": "Giving up begins in the mind",
           "ideaTe": "",
@@ -200,7 +200,8 @@
           "id": "sk1_01",
           "shlokas": [
             "1.1",
-            "1.2"
+            "1.2",
+            "1.3"
           ],
           "idea": "Big challenges create inner pressure",
           "ideaTe": "",
@@ -210,11 +211,11 @@
         {
           "id": "sk1_02",
           "shlokas": [
-            "1.3",
-            "1.7",
-            "1.10"
+            "1.4",
+            "1.5",
+            "1.6"
           ],
-          "idea": "Leaders can feel fear and insecurity too",
+          "idea": "Leaders and heroes feel pressure too",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
           "priority": 1
@@ -223,10 +224,10 @@
           "id": "sk1_03",
           "shlokas": [
             "1.12",
-            "1.14",
-            "1.15"
+            "1.13",
+            "1.14"
           ],
-          "idea": "Guidance and support create confidence",
+          "idea": "Loud beginnings and trembling earth",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
           "priority": 1
@@ -238,13 +239,25 @@
             "1.22",
             "1.23"
           ],
-          "idea": "Observe carefully before reacting",
+          "idea": "The chariot moment — pause and look",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
           "priority": 1
         },
         {
           "id": "sk1_05",
+          "shlokas": [
+            "1.24",
+            "1.25",
+            "1.26"
+          ],
+          "idea": "Seeing teachers and loved ones changes everything",
+          "ideaTe": "",
+          "chapterTitle": "Arjuna's Emotional Conflict",
+          "priority": 1
+        },
+        {
+          "id": "sk1_06",
           "shlokas": [
             "1.28",
             "1.29",
@@ -253,22 +266,22 @@
           "idea": "Fear affects body, thoughts, and confidence",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
-          "priority": 1
+          "priority": 2
         },
         {
-          "id": "sk1_06",
+          "id": "sk1_07",
           "shlokas": [
             "1.31",
             "1.32",
             "1.33"
           ],
-          "idea": "Emotional confusion can remove motivation",
+          "idea": "Emotional confusion and moral doubt",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
           "priority": 2
         },
         {
-          "id": "sk1_07",
+          "id": "sk1_08",
           "shlokas": [
             "1.34",
             "1.35",
@@ -280,10 +293,11 @@
           "priority": 2
         },
         {
-          "id": "sk1_08",
+          "id": "sk1_09",
           "shlokas": [
-            "1.36",
-            "1.37"
+            "1.37",
+            "1.38",
+            "1.39"
           ],
           "idea": "Fear of consequences creates hesitation",
           "ideaTe": "",
@@ -291,25 +305,13 @@
           "priority": 2
         },
         {
-          "id": "sk1_09",
-          "shlokas": [
-            "1.38",
-            "1.39",
-            "1.40"
-          ],
-          "idea": "Overthinking future problems creates stress",
-          "ideaTe": "",
-          "chapterTitle": "Arjuna's Emotional Conflict",
-          "priority": 2
-        },
-        {
           "id": "sk1_10",
           "shlokas": [
+            "1.40",
             "1.41",
-            "1.42",
-            "1.45"
+            "1.42"
           ],
-          "idea": "Negative thinking leads to hopelessness",
+          "idea": "Despair and wanting to give up",
           "ideaTe": "",
           "chapterTitle": "Arjuna's Emotional Conflict",
           "priority": 2
@@ -332,10 +334,10 @@
         {
           "id": "sd2_02",
           "shlokas": [
-            "2.7",
-            "2.11"
+            "2.11",
+            "2.12"
           ],
-          "idea": "Wise people ask questions and learn",
+          "idea": "Wise teaching meets a sad heart",
           "ideaTe": "",
           "chapterTitle": "Courage, Calmness & Wisdom",
           "priority": 1
@@ -365,7 +367,7 @@
         {
           "id": "sd2_05",
           "shlokas": [
-            "2.17",
+            "2.19",
             "2.20"
           ],
           "idea": "The soul lives forever",
@@ -377,9 +379,9 @@
           "id": "sd2_06",
           "shlokas": [
             "2.22",
-            "2.27"
+            "2.23"
           ],
-          "idea": "Change is natural in life",
+          "idea": "The soul is like new clothes on the same you",
           "ideaTe": "",
           "chapterTitle": "Courage, Calmness & Wisdom",
           "priority": 1
@@ -387,10 +389,10 @@
         {
           "id": "sd2_07",
           "shlokas": [
-            "2.31",
+            "2.37",
             "2.38"
           ],
-          "idea": "Do the right thing bravely",
+          "idea": "Do your part with a calm heart",
           "ideaTe": "",
           "chapterTitle": "Courage, Calmness & Wisdom",
           "priority": 1
@@ -490,9 +492,9 @@
           "shlokas": [
             "2.2",
             "2.3",
-            "2.7"
+            "2.4"
           ],
-          "idea": "Courage begins when we ask for guidance",
+          "idea": "Courage begins when we rise after grief",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -500,9 +502,9 @@
         {
           "id": "sk2_02",
           "shlokas": [
-            "2.4",
             "2.5",
-            "2.6"
+            "2.6",
+            "2.7"
           ],
           "idea": "Emotional conflict makes decisions harder",
           "ideaTe": "",
@@ -513,9 +515,10 @@
           "id": "sk2_03",
           "shlokas": [
             "2.8",
-            "2.11"
+            "2.9",
+            "2.10"
           ],
-          "idea": "Strong emotions can block clear thinking",
+          "idea": "Krishna responds to deep sorrow",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -527,7 +530,7 @@
             "2.13",
             "2.14"
           ],
-          "idea": "Wise people understand change and emotions",
+          "idea": "The soul, change, and life's opposites",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -539,7 +542,7 @@
             "2.16",
             "2.17"
           ],
-          "idea": "Truth stays strong during difficulties",
+          "idea": "Truth and the indestructible Self",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -548,9 +551,10 @@
           "id": "sk2_06",
           "shlokas": [
             "2.18",
+            "2.19",
             "2.20"
           ],
-          "idea": "The soul cannot be destroyed",
+          "idea": "The body ends; the soul does not",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -558,11 +562,11 @@
         {
           "id": "sk2_07",
           "shlokas": [
+            "2.21",
             "2.22",
-            "2.27",
-            "2.30"
+            "2.23"
           ],
-          "idea": "Change is natural and the soul continues",
+          "idea": "New bodies, same soul — nothing can harm it",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -571,10 +575,10 @@
           "id": "sk2_08",
           "shlokas": [
             "2.31",
-            "2.37",
-            "2.38"
+            "2.32",
+            "2.33"
           ],
-          "idea": "Duty requires courage and balance",
+          "idea": "Duty without fear of wrong result",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -583,10 +587,10 @@
           "id": "sk2_09",
           "shlokas": [
             "2.39",
-            "2.41",
-            "2.44"
+            "2.40",
+            "2.41"
           ],
-          "idea": "Focused minds avoid distractions",
+          "idea": "Focused intelligence over scattered mind",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 1
@@ -595,9 +599,10 @@
           "id": "sk2_10",
           "shlokas": [
             "2.45",
-            "2.46"
+            "2.46",
+            "2.47"
           ],
-          "idea": "Rise above extremes",
+          "idea": "Rise above extremes — then do your duty",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -645,7 +650,7 @@
             "2.58",
             "2.61"
           ],
-          "idea": "Discipline protects the mind",
+          "idea": "Discipline and meditation protect the mind",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -655,9 +660,9 @@
           "shlokas": [
             "2.62",
             "2.63",
-            "2.67"
+            "2.64"
           ],
-          "idea": "Small negative thoughts grow into suffering",
+          "idea": "Anger grows step by step — turn away from it",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -665,11 +670,11 @@
         {
           "id": "sk2_16",
           "shlokas": [
-            "2.64",
             "2.65",
-            "2.66"
+            "2.66",
+            "2.67"
           ],
-          "idea": "Peace comes through discipline",
+          "idea": "Discipline brings peace; restlessness brings sorrow",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -678,10 +683,10 @@
           "id": "sk2_17",
           "shlokas": [
             "2.68",
-            "2.70",
-            "2.71"
+            "2.69",
+            "2.70"
           ],
-          "idea": "Inner peace comes from letting go",
+          "idea": "Controlled senses lead to steady peace",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -689,9 +694,10 @@
         {
           "id": "sk2_18",
           "shlokas": [
+            "2.71",
             "2.72"
           ],
-          "idea": "Steady wisdom brings lasting peace",
+          "idea": "Letting go brings lasting peace",
           "ideaTe": "",
           "chapterTitle": "Courage, Wisdom & Emotional Balance",
           "priority": 2
@@ -892,7 +898,7 @@
           "id": "sd4_03",
           "shlokas": [
             "4.24",
-            "4.33"
+            "4.25"
           ],
           "idea": "Work becomes special when done with care",
           "ideaTe": "",
@@ -1165,7 +1171,7 @@
           "id": "sd6_03",
           "shlokas": [
             "6.19",
-            "6.26"
+            "6.20"
           ],
           "idea": "Bring your wandering mind back gently",
           "ideaTe": "",
@@ -1318,7 +1324,7 @@
           "id": "sd7_02",
           "shlokas": [
             "7.14",
-            "7.16"
+            "7.15"
           ],
           "idea": "Faith helps during difficult times",
           "ideaTe": "",
@@ -1571,8 +1577,8 @@
         {
           "id": "sd10_02",
           "shlokas": [
-            "10.11",
-            "10.20"
+            "10.8",
+            "10.10"
           ],
           "idea": "God brings light into our hearts",
           "ideaTe": "",
@@ -1929,7 +1935,7 @@
           "id": "sd15_02",
           "shlokas": [
             "15.7",
-            "15.15"
+            "15.8"
           ],
           "idea": "Every soul is special and guided",
           "ideaTe": "",

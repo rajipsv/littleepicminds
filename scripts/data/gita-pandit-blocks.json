@@ -1,0 +1,183 @@
+{
+  "meta": {
+    "version": 1,
+    "title": "Gita prakarana blocks — natural kid-story units",
+    "note": "Reference for curriculum v3. seeds = 2 shlokas; seekers extend same block +1 verse."
+  },
+  "chapters": {
+    "1": {
+      "title": "Arjuna Vishada",
+      "blocks": [
+        { "id": "ch1_setup", "verses": ["1.1", "1.11"], "seeds": ["1.1", "1.2"], "seekers": ["1.1", "1.2", "1.3"], "theme": "What is happening on the field?", "kidSafe": true },
+        { "id": "ch1_armies", "verses": ["1.3", "1.11"], "seeds": ["1.3", "1.4"], "seekers": ["1.4", "1.5", "1.6"], "theme": "Armies gather — pressure builds", "kidSafe": true },
+        { "id": "ch1_conch", "verses": ["1.12", "1.19"], "seeds": ["1.12", "1.13"], "seekers": ["1.12", "1.13", "1.14"], "theme": "Loud beginning — heart races", "kidSafe": true },
+        { "id": "ch1_chariot", "verses": ["1.21", "1.27"], "seeds": ["1.21", "1.22"], "seekers": ["1.21", "1.22", "1.23"], "theme": "Wise guide before the moment", "kidSafe": true },
+        { "id": "ch1_look", "verses": ["1.23", "1.27"], "seeds": ["1.23", "1.24"], "seekers": ["1.24", "1.25", "1.26"], "theme": "Look carefully first", "kidSafe": true },
+        { "id": "ch1_vishada_body", "verses": ["1.28", "1.31"], "seeds": ["1.28", "1.29"], "seekers": ["1.28", "1.29", "1.30"], "theme": "Fear in body and mind", "kidSafe": true },
+        { "id": "ch1_confusion", "verses": ["1.30", "1.33"], "seeds": ["1.30", "1.31"], "seekers": ["1.31", "1.32", "1.33"], "theme": "Confusion and moral doubt", "kidSafe": true },
+        { "id": "ch1_attachment", "verses": ["1.34", "1.39"], "seeds": ["1.34", "1.35"], "seekers": ["1.34", "1.35", "1.36"], "theme": "Love for family hurts", "kidSafe": true },
+        { "id": "ch1_fear_future", "verses": ["1.37", "1.39"], "seeds": ["1.37", "1.38"], "seekers": ["1.37", "1.38", "1.39"], "theme": "Fear of consequences", "kidSafe": true },
+        { "id": "ch1_despair", "verses": ["1.40", "1.47"], "seeds": ["1.40", "1.41"], "seekers": ["1.40", "1.41", "1.42"], "theme": "Wanting to give up", "kidSafe": true }
+      ]
+    },
+    "2": {
+      "title": "Sankhya & Karma Yoga",
+      "blocks": [
+        { "id": "ch2_rise", "verses": ["2.2", "2.4"], "seeds": ["2.2", "2.3"], "seekers": ["2.2", "2.3", "2.4"], "theme": "Rise up after grief", "storySeed": "Fall and stand again" },
+        { "id": "ch2_conflict", "verses": ["2.5", "2.7"], "seeds": ["2.5", "2.6"], "seekers": ["2.5", "2.6", "2.7"], "theme": "Inner conflict", "storySeed": "Two voices inside" },
+        { "id": "ch2_krishna_response", "verses": ["2.8", "2.10"], "seeds": ["2.8", "2.9"], "seekers": ["2.8", "2.9", "2.10"], "theme": "Krishna meets sorrow", "storySeed": "Tears before the test" },
+        { "id": "ch2_turning", "verses": ["2.11", "2.12"], "seeds": ["2.11", "2.12"], "seekers": ["2.12", "2.13", "2.14"], "theme": "Wise words, sad heart", "storySeed": "Report card grief" },
+        { "id": "ch2_change", "verses": ["2.13", "2.14"], "seeds": ["2.13", "2.14"], "seekers": ["2.12", "2.13", "2.14"], "theme": "Life keeps changing", "storySeed": "Seasons tree" },
+        { "id": "ch2_truth", "verses": ["2.15", "2.17"], "seeds": ["2.15", "2.16"], "seekers": ["2.15", "2.16", "2.17"], "theme": "Truth stays strong", "storySeed": "Broken toy" },
+        { "id": "ch2_atma_comfort", "verses": ["2.18", "2.23"], "seeds": ["2.19", "2.20"], "seekers": ["2.18", "2.19", "2.20"], "theme": "Soul eternal — do not grieve", "storySeed": "Little Lamp / goldfish / diya" },
+        { "id": "ch2_garment", "verses": ["2.21", "2.23"], "seeds": ["2.22", "2.23"], "seekers": ["2.21", "2.22", "2.23"], "theme": "New clothes, same soul", "storySeed": "Old uniform in trunk" },
+        { "id": "ch2_duty", "verses": ["2.31", "2.38"], "seeds": ["2.37", "2.38"], "seekers": ["2.31", "2.32", "2.33"], "theme": "Duty with calm heart", "storySeed": "Sports day fairness" },
+        { "id": "ch2_buddhi", "verses": ["2.39", "2.46"], "seeds": ["2.39", "2.40"], "seekers": ["2.39", "2.40", "2.41"], "theme": "Focused mind", "storySeed": "Homework without distraction" },
+        { "id": "ch2_karma_yoga", "verses": ["2.47", "2.48"], "seeds": ["2.47", "2.48"], "seekers": ["2.47", "2.48", "2.50"], "theme": "Effort not reward", "storySeed": "Music exam practice" },
+        { "id": "ch2_selfish_work", "verses": ["2.49", "2.53"], "seeds": ["2.49", "2.50"], "seekers": ["2.51", "2.52", "2.53"], "theme": "Calm selfless work", "storySeed": "Art project not rushing" },
+        { "id": "ch2_sthitaprajna", "verses": ["2.54", "2.72"], "seeds": ["2.55", "2.56"], "seekers": ["2.54", "2.55", "2.56"], "theme": "Steady person", "storySeed": "Calm at recess" },
+        { "id": "ch2_anger", "verses": ["2.62", "2.67"], "seeds": ["2.62", "2.63"], "seekers": ["2.62", "2.63", "2.64"], "theme": "Anger ladder", "storySeed": "Stub toe → snap at sister" },
+        { "id": "ch2_peace", "verses": ["2.68", "2.72"], "seeds": ["2.70", "2.71"], "seekers": ["2.71", "2.72"], "theme": "Letting go → peace", "storySeed": "Balloon on river" }
+      ]
+    },
+    "3": {
+      "title": "Karma Yoga",
+      "blocks": [
+        { "id": "ch3_action", "verses": ["3.5", "3.8"], "seeds": ["3.5", "3.8"], "theme": "Everyone has responsibilities" },
+        { "id": "ch3_yajna", "verses": ["3.9", "3.13"], "seeds": ["3.9", "3.13"], "theme": "Sharing makes work meaningful" },
+        { "id": "ch3_example", "verses": ["3.19", "3.21"], "seeds": ["3.19", "3.21"], "theme": "Good example inspires" },
+        { "id": "ch3_ego", "verses": ["3.27", "3.30"], "seeds": ["3.27", "3.30"], "theme": "Ego creates confusion" },
+        { "id": "ch3_svdharma", "verses": ["3.35", "3.36"], "seeds": ["3.35", "3.36"], "theme": "Follow your own path" },
+        { "id": "ch3_desire", "verses": ["3.37", "3.41"], "seeds": ["3.37", "3.41"], "theme": "Stop bad habits early" },
+        { "id": "ch3_senses", "verses": ["3.42", "3.43"], "seeds": ["3.42", "3.43"], "theme": "Mind stronger than senses" }
+      ]
+    },
+    "4": {
+      "title": "Jnana Karma Sanyasa",
+      "blocks": [
+        { "id": "ch4_avatar", "verses": ["4.7", "4.8"], "seeds": ["4.7", "4.8"], "theme": "Help arrives when needed" },
+        { "id": "ch4_action_wisdom", "verses": ["4.18", "4.22"], "seeds": ["4.18", "4.22"], "theme": "Wise action looks different" },
+        { "id": "ch4_offering", "verses": ["4.24", "4.25"], "seeds": ["4.24", "4.25"], "theme": "Work done with care is sacred" },
+        { "id": "ch4_guru", "verses": ["4.33", "4.34"], "seeds": ["4.33", "4.34"], "theme": "Learn from a good teacher" },
+        { "id": "ch4_shraddha", "verses": ["4.39", "4.40"], "seeds": ["4.39", "4.40"], "theme": "Faith helps learning" }
+      ]
+    },
+    "5": {
+      "title": "Karma Sanyasa",
+      "blocks": [
+        { "id": "ch5_renounce_ego", "verses": ["5.2", "5.3"], "seeds": ["5.2", "5.3"], "theme": "Let go of showing off" },
+        { "id": "ch5_equal_vision", "verses": ["5.18", "5.19"], "seeds": ["5.18", "5.19"], "theme": "See good in everyone" },
+        { "id": "ch5_peace", "verses": ["5.23", "5.24"], "seeds": ["5.23", "5.24"], "theme": "Inner peace before pleasure" },
+        { "id": "ch5_harmony", "verses": ["5.25", "5.26"], "seeds": ["5.25", "5.26"], "theme": "Calm mind sees clearly" },
+        { "id": "ch5_focus", "verses": ["5.27", "5.28"], "seeds": ["5.27", "5.28"], "theme": "Focus brings freedom" }
+      ]
+    },
+    "6": {
+      "title": "Dhyana Yoga",
+      "blocks": [
+        { "id": "ch6_self_work", "verses": ["6.5", "6.6"], "seeds": ["6.5", "6.6"], "theme": "Mind as friend or enemy" },
+        { "id": "ch6_yogi", "verses": ["6.10", "6.11"], "seeds": ["6.10", "6.11"], "theme": "Practice with discipline" },
+        { "id": "ch6_moderation", "verses": ["6.16", "6.17"], "seeds": ["6.16", "6.17"], "theme": "Balance in daily life" },
+        { "id": "ch6_wandering_mind", "verses": ["6.19", "6.26"], "seeds": ["6.19", "6.20"], "seekers": ["6.19", "6.20", "6.26"], "theme": "Gently bring mind back" },
+        { "id": "ch6_steady", "verses": ["6.27", "6.28"], "seeds": ["6.27", "6.28"], "theme": "Steady mind finds joy" },
+        { "id": "ch6_equal", "verses": ["6.29", "6.32"], "seeds": ["6.29", "6.32"], "theme": "Kindness to all beings" }
+      ]
+    },
+    "7": {
+      "title": "Jnana Vijnana Yoga",
+      "blocks": [
+        { "id": "ch7_devotion", "verses": ["7.1", "7.2"], "seeds": ["7.1", "7.2"], "theme": "Sincere seeking opens wisdom" },
+        { "id": "ch7_maya", "verses": ["7.14", "7.16"], "seeds": ["7.14", "7.15"], "seekers": ["7.14", "7.15", "7.16"], "theme": "Faith during hard times" },
+        { "id": "ch7_four_devotees", "verses": ["7.16", "7.18"], "seeds": ["7.16", "7.17"], "theme": "Many paths to love God" },
+        { "id": "ch7_rare", "verses": ["7.19", "7.20"], "seeds": ["7.19", "7.20"], "theme": "Truth seekers are precious" }
+      ]
+    },
+    "8": {
+      "title": "Akshara Brahma Yoga",
+      "blocks": [
+        { "id": "ch8_remember", "verses": ["8.5", "8.7"], "seeds": ["8.5", "8.7"], "theme": "Remember what matters" },
+        { "id": "ch8_time", "verses": ["8.17", "8.18"], "seeds": ["8.17", "8.18"], "theme": "Time is vast — be patient" },
+        { "id": "ch8_light", "verses": ["8.24", "8.26"], "seeds": ["8.24", "8.26"], "theme": "Light paths and dark paths" }
+      ]
+    },
+    "9": {
+      "title": "Raja Vidya",
+      "blocks": [
+        { "id": "ch9_knowledge", "verses": ["9.1", "9.2"], "seeds": ["9.1", "9.2"], "theme": "Royal knowledge frees fear" },
+        { "id": "ch9_faith", "verses": ["9.3", "9.4"], "seeds": ["9.3", "9.4"], "theme": "Faith without doubt" },
+        { "id": "ch9_offering", "verses": ["9.26", "9.28"], "seeds": ["9.26", "9.27"], "theme": "Small sincere gifts accepted" },
+        { "id": "ch9_equal", "verses": ["9.29", "9.30"], "seeds": ["9.29", "9.30"], "theme": "God loves all equally" }
+      ]
+    },
+    "10": {
+      "title": "Vibhuti Yoga",
+      "blocks": [
+        { "id": "ch10_source", "verses": ["10.8", "10.10"], "seeds": ["10.8", "10.10"], "theme": "Wisdom from the source" },
+        { "id": "ch10_glory", "verses": ["10.21", "10.40"], "seekersOnly": true, "theme": "Glories list — Seekers/Warriors" },
+        { "id": "ch10_seed", "verses": ["10.41", "10.42"], "seeds": ["10.41", "10.42"], "theme": "One spark of divine glory" }
+      ]
+    },
+    "11": {
+      "title": "Vishvarupa",
+      "blocks": [
+        { "id": "ch11_vision", "verses": ["11.9", "11.14"], "seeds": ["11.9", "11.10"], "theme": "Wonder at something vast" },
+        { "id": "ch11_time", "verses": ["11.32", "11.33"], "seeds": ["11.32", "11.33"], "seekersOnly": true, "theme": "Time and duty — retold gently" }
+      ]
+    },
+    "12": {
+      "title": "Bhakti Yoga — model chapter",
+      "blocks": [
+        { "id": "ch12_kind", "verses": ["12.13", "12.14"], "seeds": ["12.13", "12.14"], "theme": "Kindness and patience" },
+        { "id": "ch12_peaceful", "verses": ["12.15", "12.16"], "seeds": ["12.15", "12.16"], "theme": "Peaceful people feel safe" },
+        { "id": "ch12_fair", "verses": ["12.18", "12.20"], "seeds": ["12.18", "12.19"], "seekers": ["12.18", "12.19", "12.20"], "theme": "Treat everyone fairly" }
+      ]
+    },
+    "13": {
+      "title": "Kshetra Kshetrajna",
+      "blocks": [
+        { "id": "ch13_field", "verses": ["13.1", "13.2"], "seeds": ["13.1", "13.2"], "theme": "Body and soul are different" },
+        { "id": "ch13_knower", "verses": ["13.22", "13.23"], "seeds": ["13.22", "13.23"], "theme": "The knower inside" },
+        { "id": "ch13_humility", "verses": ["13.8", "13.12"], "seeds": ["13.8", "13.9"], "theme": "Humility and self-control" }
+      ]
+    },
+    "14": {
+      "title": "Gunatraya Vibhaga",
+      "blocks": [
+        { "id": "ch14_gunas", "verses": ["14.5", "14.8"], "seeds": ["14.5", "14.6"], "theme": "Three moods inside us" },
+        { "id": "ch14_transcend", "verses": ["14.19", "14.20"], "seeds": ["14.19", "14.20"], "theme": "Rise above moods" },
+        { "id": "ch14_footsteps", "verses": ["14.22", "14.25"], "seeds": ["14.22", "14.23"], "theme": "Steady through ups and downs" }
+      ]
+    },
+    "15": {
+      "title": "Purushottama Yoga",
+      "blocks": [
+        { "id": "ch15_tree", "verses": ["15.1", "15.3"], "seeds": ["15.1", "15.3"], "theme": "Life as a learning tree" },
+        { "id": "ch15_soul", "verses": ["15.7", "15.8"], "seeds": ["15.7", "15.8"], "theme": "Soul guided by the Divine" },
+        { "id": "ch15_remember", "verses": ["15.15", "15.16"], "seeds": ["15.15", "15.16"], "theme": "Remember the highest" }
+      ]
+    },
+    "16": {
+      "title": "Daivasura Sampad",
+      "blocks": [
+        { "id": "ch16_divine", "verses": ["16.1", "16.3"], "seeds": ["16.1", "16.2"], "theme": "Divine qualities begin" },
+        { "id": "ch16_growth", "verses": ["16.3", "16.5"], "seeds": ["16.3", "16.5"], "theme": "Good habits grow character" },
+        { "id": "ch16_gates", "verses": ["16.21", "16.22"], "seeds": ["16.21", "16.22"], "theme": "Three gates of trouble" }
+      ]
+    },
+    "17": {
+      "title": "Shraddhatraya Vibhaga",
+      "blocks": [
+        { "id": "ch17_faith", "verses": ["17.3", "17.4"], "seeds": ["17.3", "17.4"], "theme": "Faith shapes who we become" },
+        { "id": "ch17_food", "verses": ["17.8", "17.10"], "seeds": ["17.8", "17.9"], "theme": "Food and mood" },
+        { "id": "ch17_sacrifice", "verses": ["17.20", "17.22"], "seeds": ["17.20", "17.21"], "theme": "Giving without expecting praise" }
+      ]
+    },
+    "18": {
+      "title": "Moksha Yoga",
+      "blocks": [
+        { "id": "ch18_svdharma", "verses": ["18.45", "18.48"], "seeds": ["18.45", "18.46"], "theme": "Use your talents" },
+        { "id": "ch18_surrender", "verses": ["18.65", "18.66"], "seeds": ["18.65", "18.66"], "theme": "Trust with love" }
+      ]
+    }
+  }
+}

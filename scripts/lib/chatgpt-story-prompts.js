@@ -71,8 +71,8 @@ Rules:
 - Return ONLY valid JSON: { "stories": { "s1_01": { ... }, "sk1_01": { ... } } }
 - Each story MUST include: id, title, title_te, emoji, micro_theme, micro_theme_te, storyTitle, storyTitle_te, content, content_te, moral, moral_te, activity, activity_te
 - Keep micro_theme exactly as given in the request (English idea text)
-- Seeds: warm modern child (name + situation), ~80-120 words content EN
-- Seekers: slightly deeper, may mention Arjuna/Krishna, ~120-180 words content EN
+- Seeds: warm modern child (name + situation), **350–550 words** narration EN — multi-scene with dialogue (Little Lamp style), not a single summary paragraph
+- Seekers: slightly deeper, may mention Arjuna/Krishna, **450–650 words** narration EN
 - Telugu must be natural child-friendly Telugu, not word-for-word English
 - One emoji per story
 - No markdown, no commentary outside JSON`;
