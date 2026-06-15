@@ -204,8 +204,16 @@ const ThemeViewer = ({ theme, scripture }) => {
                   scripture: scripture,
                   chapter_number: theme.id.split('_')[1] || 1,
                   id: theme.id,
-                  en: { activity: theme.activity || 'What did you learn from this theme?' },
-                  te: { activity: theme.activity_te || 'ఈ ఇతివృత్తం నుండి మీరు ఏమి నేర్చుకున్నారు? మీ ఆలోచనలు మరియు అనుభవాలను రాయండి.' }
+                  wisdomJournal: theme.wisdomJournal,
+                  wisdomJournal_te: theme.wisdomJournal_te,
+                  en: {
+                    wisdomJournal: theme.wisdomJournal,
+                    activity: theme.activity || 'What did you learn from this theme?',
+                  },
+                  te: {
+                    wisdomJournal: theme.wisdomJournal_te,
+                    activity: theme.activity_te || 'ఈ ఇతివృత్తం నుండి మీరు ఏమి నేర్చుకున్నారు? మీ ఆలోచనలు మరియు అనుభవాలను రాయండి.',
+                  },
                 }}
                 onComplete={() => {}} 
               />

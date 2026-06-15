@@ -1,8 +1,34 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import api from '../api';
 import { useAuth } from '../context/AuthContext';
 import { getLevelFromUser } from '../utils/gradeLevel';
-import { Award, CheckCircle, XCircle, HelpCircle } from 'lucide-react';
+import { Award, CheckCircle, XCircle, BookOpen, ScrollText } from 'lucide-react';
+
+function buildQuizSections(questions) {
+  const sections = [];
+  questions.forEach((q, i) => {
+    const key = q.section === 'shloka' ? `shloka:${q.sectionId}` : (q.section || 'quiz');
+    let sec = sections.find((s) => s.key === key);
+    if (!sec) {
+      sec = {
+        key,
+        section: q.section,
+        sectionId: q.sectionId,
+        label: q.sectionLabel || 'Quiz',
+        label_te: q.sectionLabel_te,
+        indices: [],
+      };
+      sections.push(sec);
+    }
+    sec.indices.push(i);
+  });
+  return sections;
+}
+
+function sectionLabelFor(sec, isTe) {
+  if (isTe && sec.label_te) return sec.label_te;
+  return sec.label;
+}
 
 const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   const { user, token, currentLang } = useAuth();
@@ -19,6 +45,20 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
 
   const isTheme = typeof verse === 'string' && verse.includes('theme');
   const themeNum = isTheme ? verse.split('_')[2] : null;
+  const sections = useMemo(
+    () => (isTheme && questions.length ? buildQuizSections(questions) : []),
+    [isTheme, questions]
+  );
+
+  const currentSectionIndex = useMemo(() => {
+    if (!sections.length) return 0;
+    return sections.findIndex((s) => s.indices.includes(currentQ));
+  }, [sections, currentQ]);
+
+  const currentSection = sections[currentSectionIndex] || null;
+  const qIndexInSection = currentSection
+    ? currentSection.indices.indexOf(currentQ)
+    : currentQ;
 
   const verseLabel = isHanuman ? (() => {
     if (verse <= 2) return `Doha ${verse}`;
@@ -28,8 +68,6 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
 
   const scriptureName = isHanuman ? (isTe ? 'హనుమాన్ చాలీసా' : 'Hanuman Chalisa') : (isTe ? 'భగవద్గీత' : 'Bhagavad Gita');
 
-  const verseId = isHanuman ? String(verse) : `${chapter}.${verse}`;
-
   useEffect(() => {
     const level = getLevelFromUser(user);
     api.get(`/api/verses/quiz/${scripture}/${chapter}/${verse}?level=${level}`)
@@ -37,11 +75,11 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
         setQuestions(res.data || []);
         setLoading(false);
       })
-      .catch(err => {
+      .catch(() => {
         setError(isTe ? 'ప్రశ్నలు లోడ్ చేయడంలో విఫలమైంది.' : 'Failed to load questions.');
         setLoading(false);
       });
-  }, [scripture, chapter, verse]);
+  }, [scripture, chapter, verse, user, isTe]);
 
   const handleSelect = (optionIndex) => {
     if (submitted) return;
@@ -54,7 +92,9 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
       question: q.question,
       options: q.options,
       correct: q.correct,
-      chosen: answers[i]
+      chosen: answers[i],
+      section: q.section,
+      sectionId: q.sectionId,
     }));
     questions.forEach((q, i) => {
       if (answers[i] === q.correct) correct++;
@@ -63,7 +103,6 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     setScore(pct);
     setSubmitted(true);
 
-    // Save quiz score to evaluations + progress + quiz_results if passed
     if (user && token && pct >= 70) {
       try {
         await api.post('/api/evaluations', {
@@ -82,6 +121,14 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     }
   };
 
+  const goToSection = (sectionIdx) => {
+    const sec = sections[sectionIdx];
+    if (!sec) return;
+    setCurrentQ(sec.indices[0]);
+  };
+
+  const sectionComplete = (sec) => sec.indices.every((i) => answers[i] !== undefined);
+
   if (loading) return (
     <div className="flex justify-center p-8">
       <div className="animate-spin w-8 h-8 border-4 border-lem-accent border-t-transparent rounded-full" />
@@ -96,23 +143,41 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
     return (
       <div className="glass-card p-8 text-center animate-fade-in">
         <Award size={56} className={`mx-auto mb-4 ${isPass ? 'text-green-400' : 'text-lem-accent'}`} />
-        <h3 className="text-3xl font-black text-white mb-2">
-          {score}%
-        </h3>
-          <p className={`text-lg font-bold mb-2 ${isPass ? 'text-green-400' : 'text-yellow-400'}`}>
+        <h3 className="text-3xl font-black text-white mb-2">{score}%</h3>
+        <p className={`text-lg font-bold mb-2 ${isPass ? 'text-green-400' : 'text-yellow-400'}`}>
           {isPass
             ? (isTe ? '🎉 అద్భుతం! ఈ శ్లోకం మాస్టర్ చేశారు!' : `🎉 ${verseLabel} Mastered!`)
             : (isTe ? 'మళ్ళీ ప్రయత్నించండి!' : `Keep practicing! You need 70% to master this ${isHanuman ? 'verse' : 'shloka'}.`)}
-          </p>
-          {saveError && (
-            <p className="text-red-400 text-xs mb-4">{isTe ? `సేవ్ చేయడంలో లోపం: ${saveError}` : `Save error: ${saveError}`}</p>
-          )}
-        {/* Show answer review */}
-        <div className="space-y-3 text-left mb-6">
-          {questions.map((q, i) => {
-            const chosen = answers[i];
-            const correct = q.correct;
-            const isRight = chosen === correct;
+        </p>
+        {saveError && (
+          <p className="text-red-400 text-xs mb-4">{isTe ? `సేవ్ చేయడంలో లోపం: ${saveError}` : `Save error: ${saveError}`}</p>
+        )}
+        <div className="space-y-4 text-left mb-6">
+          {sections.length > 0 ? sections.map((sec) => (
+            <div key={sec.key}>
+              <p className="text-[10px] font-black uppercase tracking-widest text-lem-accent mb-2">
+                {sectionLabelFor(sec, isTe)}
+              </p>
+              <div className="space-y-2">
+                {sec.indices.map((i) => {
+                  const q = questions[i];
+                  const isRight = answers[i] === q.correct;
+                  return (
+                    <div key={i} className={`p-3 rounded-xl border text-sm ${isRight ? 'border-green-500/40 bg-green-500/10' : 'border-red-500/40 bg-red-500/10'}`}>
+                      <div className="flex items-center gap-2 font-bold mb-1">
+                        {isRight ? <CheckCircle size={16} className="text-green-400 flex-shrink-0" /> : <XCircle size={16} className="text-red-400 flex-shrink-0" />}
+                        <span className="text-gray-300">{isTe && q.question_te ? q.question_te : q.question}</span>
+                      </div>
+                      {!isRight && (
+                        <p className="text-green-300 text-xs ml-6">✓ Correct: {q.options[q.correct]}</p>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )) : questions.map((q, i) => {
+            const isRight = answers[i] === q.correct;
             return (
               <div key={i} className={`p-3 rounded-xl border text-sm ${isRight ? 'border-green-500/40 bg-green-500/10' : 'border-red-500/40 bg-red-500/10'}`}>
                 <div className="flex items-center gap-2 font-bold mb-1">
@@ -120,7 +185,7 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
                   <span className="text-gray-300">{isTe && q.question_te ? q.question_te : q.question}</span>
                 </div>
                 {!isRight && (
-                  <p className="text-green-300 text-xs ml-6">✓ Correct: {q.options[correct]}</p>
+                  <p className="text-green-300 text-xs ml-6">✓ Correct: {q.options[q.correct]}</p>
                 )}
               </div>
             );
@@ -147,17 +212,21 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   }
 
   const q = questions[currentQ];
-  const sectionLabel = isTe
-    ? (q.sectionLabel_te || q.sectionLabel)
-    : q.sectionLabel;
-  const showSection = isTheme && sectionLabel && (
-    currentQ === 0 || questions[currentQ - 1]?.section !== q.section
-      || questions[currentQ - 1]?.sectionId !== q.sectionId
-  );
+  const isLastQuestion = currentQ === questions.length - 1;
+  const isLastInSection = currentSection
+    ? qIndexInSection === currentSection.indices.length - 1
+    : isLastQuestion;
+  const hasNextSection = currentSectionIndex < sections.length - 1;
+
+  const shortSectionTitle = (sec) => {
+    if (sec.section === 'story') return isTe ? 'కథ' : 'Story';
+    if (sec.sectionId) return isTe ? `శ్లో.${sec.sectionId}` : sec.sectionId;
+    return sectionLabelFor(sec, isTe);
+  };
 
   return (
     <div className="glass-card p-6 md:p-8 animate-fade-in">
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-lem-accent/20 flex items-center justify-center text-lem-accent">
             <Award size={20} />
@@ -167,23 +236,73 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
             <p className="text-[10px] text-gray-500 font-bold uppercase tracking-widest">{verseLabel}</p>
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <span className="text-xs font-bold text-gray-400">{currentQ + 1} / {questions.length}</span>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-300 font-bold text-[10px] uppercase tracking-wider">
-            {isTe ? 'దాటవేయి' : 'Skip'}
-          </button>
+        <button onClick={onClose} className="text-gray-500 hover:text-gray-300 font-bold text-[10px] uppercase tracking-wider">
+          {isTe ? 'దాటవేయి' : 'Skip'}
+        </button>
+      </div>
+
+      {sections.length > 1 && (
+        <div className="mb-6">
+          <div className="flex flex-wrap gap-2 mb-3">
+            {sections.map((sec, idx) => {
+              const active = idx === currentSectionIndex;
+              const done = sectionComplete(sec);
+              const Icon = sec.section === 'story' ? BookOpen : ScrollText;
+              return (
+                <button
+                  key={sec.key}
+                  type="button"
+                  onClick={() => goToSection(idx)}
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black border transition-all ${
+                    active
+                      ? 'border-lem-accent bg-lem-accent/15 text-lem-accent'
+                      : done
+                        ? 'border-green-500/40 bg-green-500/10 text-green-400'
+                        : 'border-white/10 bg-white/5 text-gray-400 hover:border-white/20'
+                  }`}
+                >
+                  {done && !active ? <CheckCircle size={14} /> : <Icon size={14} />}
+                  {shortSectionTitle(sec)}
+                </button>
+              );
+            })}
+          </div>
+          {currentSection && (
+            <div className="flex items-center justify-between text-xs font-bold text-gray-400 mb-2">
+              <span className="text-lem-accent uppercase tracking-widest">
+                {sectionLabelFor(currentSection, isTe)}
+              </span>
+              <span>
+                {isTe ? 'ప్రశ్న' : 'Question'} {qIndexInSection + 1} / {currentSection.indices.length}
+              </span>
+            </div>
+          )}
+          <div className="flex gap-1 h-1.5">
+            {sections.map((sec, idx) => (
+              <div
+                key={sec.key}
+                className={`flex-1 rounded-full overflow-hidden bg-white/5 ${idx === currentSectionIndex ? 'ring-1 ring-lem-accent/40' : ''}`}
+              >
+                <div
+                  className={`h-full transition-all duration-300 ${
+                    sectionComplete(sec) ? 'bg-green-400' : idx === currentSectionIndex ? 'bg-lem-accent' : 'bg-white/10'
+                  }`}
+                  style={{
+                    width: idx === currentSectionIndex
+                      ? `${((qIndexInSection + 1) / sec.indices.length) * 100}%`
+                      : sectionComplete(sec) ? '100%' : '0%',
+                  }}
+                />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Progress bar */}
-      <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden mb-6">
-        <div className="h-full bg-lem-accent transition-all duration-300" style={{ width: `${(currentQ / questions.length) * 100}%` }} />
-      </div>
-
-      {showSection && (
-        <p className="text-[10px] font-black uppercase tracking-widest text-lem-accent mb-3">
-          {sectionLabel}
-        </p>
+      {!sections.length && (
+        <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden mb-6">
+          <div className="h-full bg-lem-accent transition-all duration-300" style={{ width: `${((currentQ + 1) / questions.length) * 100}%` }} />
+        </div>
       )}
 
       <h3 className="text-xl font-bold text-white mb-6 leading-relaxed">{isTe && q.question_te ? q.question_te : q.question}</h3>
@@ -212,13 +331,15 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
         >
           {isTe ? 'వెనుకకు' : 'Back'}
         </button>
-        {currentQ < questions.length - 1 ? (
+        {!isLastQuestion ? (
           <button
             onClick={() => setCurrentQ(prev => prev + 1)}
             disabled={answers[currentQ] === undefined}
             className="bg-lem-accent text-lem-dark font-bold px-8 py-2 rounded-xl hover:scale-105 transition-transform disabled:opacity-50 disabled:hover:scale-100"
           >
-            {isTe ? 'తరువాత' : 'Next'}
+            {isLastInSection && hasNextSection
+              ? (isTe ? 'తదుపరి విభాగం' : 'Next Section')
+              : (isTe ? 'తరువాత' : 'Next')}
           </button>
         ) : (
           <button

@@ -20,8 +20,8 @@
           "moral": "Quiet courage begins when you watch carefully, understand the scene, and then take one brave step—even if your heart goes thump-thump.",
           "moral_te": "నిశ్శబ్ద ధైర్యం జాగ్రత్తగా చూడడం, పరిస్థితిని అర్థం చేసుకోవడం, తర్వాత ఒక ధైర్యమైన అడుగు వేయడం — గుండె thump-thump అయినా."
         },
-        "activity": "Before your next big day, find a quiet spot. Look around for one minute. Then name one small brave step you will take.",
-        "activity_te": "మీ తదుపరి పెద్ద రోజు ముందు నిశ్శబ్దంగా ఒక నిమిషం చుట్టూ చూడండి. తర్వాత మీరు వేయబోయే ఒక చిన్న ధైర్యమైన అడుగు చెప్పండి.",
+        "activity": "I don't have to run yet. I just have to look. When I see clearly, I feel ready.",
+        "activity_te": "నేను ఇంకా పరుగెత్తాల్సిన అవసరం లేదు. నేను చూడాలి. స్పష్టంగా చూసినప్పుడు, నేను సిద్ధంగా ఉన్నాను.",
         "videoUrl": "",
         "storyQuiz": [
           {
@@ -74,7 +74,9 @@
             ],
             "correct": 0
           }
-        ]
+        ],
+        "wisdomJournal": "In the story, Gulu sat on a mossy rock and used his 'Wise Observer' eyes to understand the field. By looking carefully, his nervous 'butterflies' turned into 'brave sparks.'\n\nCan you think of one thing in your life that feels a little bit 'big' or 'scary' like the forest race? If you stop to look at it carefully today, what is one 'brave spark' you see?",
+        "wisdomJournal_te": "కథలో, గులు పూలిబందుగా ఉన్న రాయిపై కూర్చuni, తన 'తెలివైన наблюдателя' కళ్ళతో మైదానాన్నi అర్థం చేసుకున్నాడు. జాగ్రత్తగా చూడగా, అతని కడుపulo సీతాకోక చిలukalu ధైర్యమైన మెరుపులుగా మారాయి.\n\nమీ జీవితంలో అడవి పరుగu లా కొంచం పెద్దదi లేదా భయం అనిపించే ఒక విషయం గుర్తు వస్తుందా? ఈరోజు దాన్నi జాగ్రత్తగా చూస్తే, మీరు చూసే ఒక ధైర్యమైన మెరుపu ఏమiti?"
       },
       {
         "id": "theme_sd1_02",

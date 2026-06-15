@@ -15,12 +15,12 @@ const WisdomJournal = ({ verse, onComplete, scripture }) => {
   // Use explicit scripture prop if provided, otherwise fall back to verse.scripture
   const effectiveScripture = scripture || verse.scripture || 'gita';
 
-  // Determine the activity prompt based on language
+  // Journal prompt: wisdomJournal when set, else activity (legacy)
   let activity = '';
   if (isTe) {
-    activity = verse.te?.activity || verse.activity || '';
+    activity = verse.te?.wisdomJournal || verse.wisdomJournal_te || verse.te?.activity || verse.activity || '';
   } else {
-    activity = verse.en?.activity || verse.activity || '';
+    activity = verse.en?.wisdomJournal || verse.wisdomJournal || verse.en?.activity || verse.activity || '';
   }
 
   // Fallback if still empty
@@ -43,6 +43,9 @@ const WisdomJournal = ({ verse, onComplete, scripture }) => {
   }
 
   const prompt = activity;
+  const isWisdomJournalPrompt = Boolean(
+    verse.en?.wisdomJournal || verse.wisdomJournal || verse.te?.wisdomJournal || verse.wisdomJournal_te
+  );
 
   const convertToTelugu = () => {
     if (!response.trim()) return;
@@ -111,7 +114,13 @@ const WisdomJournal = ({ verse, onComplete, scripture }) => {
         <h4 className="text-lem-accent font-bold text-lg">{isTe ? "జ్ఞాన జర్నల్" : "Wisdom Journal"}</h4>
       </div>
 
-      <p className="text-white font-medium mb-4 text-lg">{prompt}</p>
+      {isWisdomJournalPrompt && (
+        <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">
+          {isTe ? 'పెద్ద జ్ఞాన ప్రశ్న' : 'The Big Wisdom Question'}
+        </p>
+      )}
+
+      <p className="text-white font-medium mb-4 text-lg whitespace-pre-line">{prompt}</p>
 
       <textarea
         ref={textareaRef}

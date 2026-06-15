@@ -53,6 +53,8 @@ function main() {
           videoUrl: '',
         };
         if (story.storyQuiz?.length) theme.storyQuiz = story.storyQuiz;
+        if (story.wisdomJournal) theme.wisdomJournal = story.wisdomJournal;
+        if (story.wisdomJournal_te) theme.wisdomJournal_te = story.wisdomJournal_te;
         out.push(theme);
       });
     }
