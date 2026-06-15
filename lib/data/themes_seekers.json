@@ -6,7 +6,7 @@
         "title": "The Weight of the First Move",
         "title_te": "మొదటి నడకకు ముందు మనసులో భారం",
         "emoji": "♟️",
-        "micro_theme": "Big challenges create inner pressure",
+        "micro_theme": "The Scout's Strategy",
         "micro_theme_te": "పెద్ద సవాళ్ళు లోపల ఒత్తిడిని కలిగిస్తాయి",
         "shlokas": [
           "1.1",
@@ -30,12 +30,12 @@
         "title": "Counting Strengths Before the Storm",
         "title_te": "తుఫాను ముందు బలాలు లెక్కించడం",
         "emoji": "🔬",
-        "micro_theme": "Leaders and heroes feel pressure too",
+        "micro_theme": "The Center Point",
         "micro_theme_te": "నాయకులకూ వీరులకూ కూడా ఒత్తిడి కలుగుతుంది",
         "shlokas": [
-          "1.4",
-          "1.5",
-          "1.6"
+          "1.20",
+          "1.21",
+          "1.22"
         ],
         "story": {
           "title": "Vikram's Red Notebook",
@@ -54,12 +54,12 @@
         "title": "When the Moment Becomes Bigger Than You",
         "title_te": "శంఖం మోగినప్పుడు",
         "emoji": "🎺",
-        "micro_theme": "Loud beginnings and trembling earth",
+        "micro_theme": "Mastering the Spin",
         "micro_theme_te": "పెద్ద ప్రారంభాలు శబ్దంతో మేల్కొలుపుతాయి",
         "shlokas": [
-          "1.12",
-          "1.13",
-          "1.14"
+          "1.28",
+          "1.29",
+          "1.30"
         ],
         "story": {
           "title": "Meera and the Flag",
@@ -78,12 +78,12 @@
         "title": "Stop the Chariot",
         "title_te": "రథాన్ని ఆపు",
         "emoji": "🏫",
-        "micro_theme": "The chariot moment — pause and look",
+        "micro_theme": "Leaders Feel Pressure",
         "micro_theme_te": "రథ క్షణం — ఆగి నిజంగా చూడడం",
         "shlokas": [
-          "1.21",
-          "1.22",
-          "1.23"
+          "1.4",
+          "1.5",
+          "1.6"
         ],
         "story": {
           "title": "Aarav's Election Pause",
@@ -102,12 +102,12 @@
         "title": "The Face That Changed Everything",
         "title_te": "అన్నీ మార్చిన ముఖం",
         "emoji": "🎭",
-        "micro_theme": "Seeing teachers and loved ones changes everything",
+        "micro_theme": "Loud Beginnings",
         "micro_theme_te": "గురువులను మరియు ప్రియమైనవారిని చూడడం అన్నింటినీ మారుస్తుంది",
         "shlokas": [
-          "1.24",
-          "1.25",
-          "1.26"
+          "1.12",
+          "1.13",
+          "1.14"
         ],
         "story": {
           "title": "Dev's Unexpected Opponent",
@@ -126,12 +126,12 @@
         "title": "When the Body Speaks Before the Mind",
         "title_te": "మనసుకు ముందే శరీరం మాట్లాడినప్పుడు",
         "emoji": "📝",
-        "micro_theme": "Fear affects body, thoughts, and confidence",
+        "micro_theme": "Seeing Teachers",
         "micro_theme_te": "భయం శరీరాన్ని, మనసును మరియు నమ్మకాన్ని ప్రభావితం చేస్తుంది",
         "shlokas": [
-          "1.28",
-          "1.29",
-          "1.30"
+          "1.24",
+          "1.25",
+          "1.26"
         ],
         "story": {
           "title": "Priya's Shaking Hands",
@@ -150,7 +150,7 @@
         "title": "Right and Wrong Can Both Look True",
         "title_te": "సరైనది మరియు తప్పుదారి రెండూ నిజంగా కనిపించవచ్చు",
         "emoji": "🧪",
-        "micro_theme": "Emotional confusion and moral doubt",
+        "micro_theme": "Moral Doubt",
         "micro_theme_te": "మనో గందరగోళం మరియు నైతిక సందేహం",
         "shlokas": [
           "1.31",
@@ -174,7 +174,7 @@
         "title": "The Hardest Ball to Bowl",
         "title_te": "వేయడానికి అతి కష్టమైన బంతి",
         "emoji": "🏏",
-        "micro_theme": "Attachment makes difficult duties painful",
+        "micro_theme": "Attachment Hurts",
         "micro_theme_te": "అనురాగం కష్టమైన కర్తవ్యాలను బాధాకరంగా చేస్తుంది",
         "shlokas": [
           "1.34",
@@ -198,7 +198,7 @@
         "title": "The Chain of What-Ifs",
         "title_te": "ఒకవేళ అంటే అనే సంకోల పరంపర",
         "emoji": "⚽",
-        "micro_theme": "Fear of consequences creates hesitation",
+        "micro_theme": "Fear of Consequences",
         "micro_theme_te": "పరిణామాల భయం సంకోచాన్ని కలిగిస్తుంది",
         "shlokas": [
           "1.37",
@@ -222,7 +222,7 @@
         "title": "The Bow Falls",
         "title_te": "విల్లు పడిపోతుంది",
         "emoji": "🎯",
-        "micro_theme": "Despair and wanting to give up",
+        "micro_theme": "Wanting to Give Up",
         "micro_theme_te": "నిరాశ మరియు వదిలివేయాలని అనిపించడం",
         "shlokas": [
           "1.40",
@@ -248,12 +248,12 @@
         "title": "Rise After the Fall",
         "title_te": "పడిన తర్వాత లేవడం",
         "emoji": "🌅",
-        "micro_theme": "Courage begins when we rise after grief",
+        "micro_theme": "The Eternal Pilot",
         "micro_theme_te": "విచారం తర్వాత లేచినప్పుడు ధైర్యం మొదలవుతుంది",
         "shlokas": [
-          "2.2",
-          "2.3",
-          "2.4"
+          "2.17",
+          "2.18",
+          "2.19"
         ],
         "story": {
           "title": "Arjun and Thatha's Chess Game",
@@ -272,12 +272,12 @@
         "title": "Two Voices, One Choice",
         "title_te": "రెండు స్వరాలు, ఒక ఎంపిక",
         "emoji": "⚖️",
-        "micro_theme": "Emotional conflict makes decisions harder",
+        "micro_theme": "The Physics of Change",
         "micro_theme_te": "భావోద్రిక సంఘర్షణ నిర్ణయాలను కష్టం చేస్తుంది",
         "shlokas": [
-          "2.5",
-          "2.6",
-          "2.7"
+          "2.11",
+          "2.22",
+          "2.23"
         ],
         "story": {
           "title": "Neha and the Group Project",
@@ -296,12 +296,12 @@
         "title": "When Sorrow Runs Deep",
         "title_te": "దుఃఖం లోతుగా ఉన్నప్పుడు",
         "emoji": "🌊",
-        "micro_theme": "Krishna responds to deep sorrow",
+        "micro_theme": "The Weather Observer",
         "micro_theme_te": "కృష్ణుడు లోతైన దుఃఖానికి ప్రతిస్పందిస్తాడు",
         "shlokas": [
-          "2.8",
-          "2.9",
-          "2.10"
+          "2.13",
+          "2.14",
+          "2.15"
         ],
         "story": {
           "title": "Ishaan and Coach Meera",
@@ -320,12 +320,12 @@
         "title": "The Soul and the Seasons",
         "title_te": "ఆత్మ మరియు ఋతువులు",
         "emoji": "🍃",
-        "micro_theme": "The soul, change, and life's opposites",
+        "micro_theme": "Skill in Action",
         "micro_theme_te": "ఆత్మ, మార్పు, మరియు జీవిత విరుద్ధాలు",
         "shlokas": [
-          "2.12",
-          "2.13",
-          "2.14"
+          "2.47",
+          "2.48",
+          "2.50"
         ],
         "story": {
           "title": "Ananya's Four-Season Journal",
@@ -344,12 +344,12 @@
         "title": "What Cannot Be Destroyed",
         "title_te": "నాశనం కానిది",
         "emoji": "💎",
-        "micro_theme": "Truth and the indestructible Self",
+        "micro_theme": "The Ladder of Fall",
         "micro_theme_te": "సత్యం మరియు నాశనం కాని ఆత్మ",
         "shlokas": [
-          "2.15",
-          "2.16",
-          "2.17"
+          "2.62",
+          "2.63",
+          "2.64"
         ],
         "story": {
           "title": "Rahul and the House That Moved",
@@ -368,12 +368,12 @@
         "title": "The Flame That Stayed",
         "title_te": "ఉండిపోయిన జ్యోతి",
         "emoji": "🪔",
-        "micro_theme": "The body ends; the soul does not",
+        "micro_theme": "The Master of Senses",
         "micro_theme_te": "శరీరం ముగుస్తుంది; ఆత్మ ముగియదు",
         "shlokas": [
-          "2.18",
-          "2.19",
-          "2.20"
+          "2.58",
+          "2.59",
+          "2.60"
         ],
         "story": {
           "title": "Kavya and Thatha's Brass Diya",
@@ -392,12 +392,12 @@
         "title": "New Clothes, Same Self",
         "title_te": "కొత్త బట్టలు, అదే ఆత్మ",
         "emoji": "👕",
-        "micro_theme": "New bodies, same soul — nothing can harm it",
+        "micro_theme": "The Peaceful Leader",
         "micro_theme_te": "కొత్త శరీరాలు, అదే ఆత్మ — దానికి హాని చేయలేరు",
         "shlokas": [
-          "2.21",
-          "2.22",
-          "2.23"
+          "2.70",
+          "2.71",
+          "2.72"
         ],
         "story": {
           "title": "Vikram's Science Fair Discovery",
@@ -416,12 +416,12 @@
         "title": "Do Your Duty, Release the Grip",
         "title_te": "ధర్మం చేయి, పట్టు వదులు",
         "emoji": "🎯",
-        "micro_theme": "Duty without fear of wrong result",
+        "micro_theme": "Courage After Grief",
         "micro_theme_te": "తప్పు ఫలితం భయం లేకుండా ధర్మం",
         "shlokas": [
-          "2.31",
-          "2.32",
-          "2.33"
+          "2.2",
+          "2.3",
+          "2.4"
         ],
         "story": {
           "title": "Sanjay and the District Debate",
@@ -440,12 +440,12 @@
         "title": "One Arrow, One Target",
         "title_te": "ఒక బాణం, ఒక లక్ష్యం",
         "emoji": "🏹",
-        "micro_theme": "Focused intelligence over scattered mind",
+        "micro_theme": "Emotional Conflict",
         "micro_theme_te": "చెదరిన మనసు కంటే కేంద్రీకృత బుద్ధి",
         "shlokas": [
-          "2.39",
-          "2.40",
-          "2.41"
+          "2.5",
+          "2.6",
+          "2.7"
         ],
         "story": {
           "title": "Meera's Scattered Evening",
@@ -464,12 +464,12 @@
         "title": "Beyond All or Nothing",
         "title_te": "అన్నీ లేదా ఏమీ కాదు — అంతకు మించి",
         "emoji": "⚖️",
-        "micro_theme": "Rise above extremes — then do your duty",
+        "micro_theme": "Krishna Responds",
         "micro_theme_te": "అతివ్యయాల పైకి ఎగరి — తర్వాత నీ బాధ్యత చేయి",
         "shlokas": [
-          "2.45",
-          "2.46",
-          "2.47"
+          "2.8",
+          "2.9",
+          "2.10"
         ],
         "story": {
           "title": "Kavya's Study Storm",
@@ -488,12 +488,12 @@
         "title": "The Run That Counted",
         "title_te": "ముఖ్యమైన పరుగు",
         "emoji": "🏃",
-        "micro_theme": "Calm effort matters more than rewards",
+        "micro_theme": "Soul and Change",
         "micro_theme_te": "ప్రశాంత ప్రయత్నం బహుమతుల కంటే ముఖ్యం",
         "shlokas": [
-          "2.47",
-          "2.48",
-          "2.50"
+          "2.12",
+          "2.16",
+          "2.21"
         ],
         "story": {
           "title": "Arnav and the Sports Day",
@@ -512,12 +512,12 @@
         "title": "The Map on One Paper",
         "title_te": "ఒక కాగితంపై మ్యాప్",
         "emoji": "🗺️",
-        "micro_theme": "Wisdom removes confusion",
+        "micro_theme": "Duty Without Fear",
         "micro_theme_te": "జ్ఞానం గందరగోళం తొలగిస్తుంది",
         "shlokas": [
-          "2.51",
-          "2.52",
-          "2.53"
+          "2.31",
+          "2.32",
+          "2.33"
         ],
         "story": {
           "title": "Meera's Science Fair Team",
@@ -536,12 +536,12 @@
         "title": "The Lamp in Still Air",
         "title_te": "నిశ్శబ్ద గాలిలో దీపం",
         "emoji": "🪔",
-        "micro_theme": "Self-control creates emotional stability",
+        "micro_theme": "Focused Intelligence",
         "micro_theme_te": "ఆత్మనియంత్రణ భావ స్థిరత్వం తెస్తుంది",
         "shlokas": [
-          "2.54",
-          "2.55",
-          "2.56"
+          "2.39",
+          "2.40",
+          "2.41"
         ],
         "story": {
           "title": "Vikram and the Kabaddi Final",
@@ -560,12 +560,11 @@
         "title": "Guarding the Morning Mind",
         "title_te": "ఉదయ మనసును కాపాడడం",
         "emoji": "🧘",
-        "micro_theme": "Discipline and meditation protect the mind",
+        "micro_theme": "Rise Above Extremes",
         "micro_theme_te": "శిక్షణ మరియు ధ్యానం మనసును రక్షిస్తాయి",
         "shlokas": [
-          "2.57",
-          "2.58",
-          "2.61"
+          "2.45",
+          "2.46"
         ],
         "story": {
           "title": "Tara's Exam Mornings",
@@ -584,12 +583,12 @@
         "title": "The Spill That Grew",
         "title_te": "పెరిగిన చిందు",
         "emoji": "🔗",
-        "micro_theme": "Anger grows step by step",
+        "micro_theme": "Wisdom Removes Confusion",
         "micro_theme_te": "కోపం దశలవారీ పెరుగుతుంది",
         "shlokas": [
-          "2.62",
-          "2.63",
-          "2.64"
+          "2.51",
+          "2.52",
+          "2.53"
         ],
         "story": {
           "title": "Nikhil and the Kitchen Afternoon",
@@ -608,12 +607,12 @@
         "title": "The Fifteen Minutes Before Sleep",
         "title_te": "నిద్రకు ముందు పదిహేను నిమిషాలు",
         "emoji": "📓",
-        "micro_theme": "Discipline brings peace; restlessness brings sorrow",
+        "micro_theme": "Self-Control",
         "micro_theme_te": "శిక్షణ శాంతి తెస్తుంది; అశాంతి దుఃఖం తెస్తుంది",
         "shlokas": [
-          "2.65",
-          "2.66",
-          "2.67"
+          "2.54",
+          "2.55",
+          "2.56"
         ],
         "story": {
           "title": "Aanya's Restless Nights",
@@ -632,12 +631,12 @@
         "title": "Hunger for More",
         "title_te": "మరింత కోసం ఆకలి",
         "emoji": "🤲",
-        "micro_theme": "Controlled senses lead to steady peace",
+        "micro_theme": "Restlessness Brings Sorrow",
         "micro_theme_te": "నియంత్రిత ఇంద్రియాలు స్థిర శాంతికి దారి తీస్తాయి",
         "shlokas": [
-          "2.68",
-          "2.69",
-          "2.70"
+          "2.65",
+          "2.66",
+          "2.67"
         ],
         "story": {
           "title": "Rahul and Match Day",
@@ -656,11 +655,11 @@
         "title": "Empty Hands, Quiet Heart",
         "title_te": "ఖాళీ చేతులు, నిశ్శబ్ద హృదయం",
         "emoji": "☮️",
-        "micro_theme": "Letting go brings lasting peace",
+        "micro_theme": "Controlled Senses",
         "micro_theme_te": "వదిలివేయడం నిలకడైన శాంతి తెస్తుంది",
         "shlokas": [
-          "2.71",
-          "2.72"
+          "2.68",
+          "2.69"
         ],
         "story": {
           "title": "Ishita and the Debate Captaincy",
@@ -681,12 +680,12 @@
         "title": "Lead by Doing",
         "title_te": "చేయడం ద్వారా నాయకత్వం",
         "emoji": "🌱",
-        "micro_theme": "Responsibility cannot be avoided",
+        "micro_theme": "The Law of Reciprocity",
         "micro_theme_te": "మీ కర్తవ్యం చేయడం",
         "shlokas": [
-          "3.5",
-          "3.7",
-          "3.8"
+          "3.10",
+          "3.11",
+          "3.12"
         ],
         "story": {
           "title": "Krishna and the Hesitant General",
@@ -705,12 +704,12 @@
         "title": "Actions Teach Loudest",
         "title_te": "చర్యలే బిగ్గరగా బోధిస్తాయి",
         "emoji": "📖",
-        "micro_theme": "Work should help and nourish others",
+        "micro_theme": "The Ripple Effect",
         "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
         "shlokas": [
-          "3.9",
-          "3.10",
-          "3.13"
+          "3.20",
+          "3.21",
+          "3.25"
         ],
         "story": {
           "title": "Yudhishthira's Quiet Honesty",
@@ -729,12 +728,12 @@
         "title": "Work for the Whole",
         "title_te": "మొత్తం కోసం పని",
         "emoji": "💡",
-        "micro_theme": "Good leaders inspire through actions",
+        "micro_theme": "The Integrity Code",
         "micro_theme_te": "నిస్వార్థ సేవ",
         "shlokas": [
-          "3.19",
-          "3.20",
-          "3.21"
+          "3.35",
+          "3.36",
+          "3.37"
         ],
         "story": {
           "title": "The Wheel of Sacrifice",
@@ -753,11 +752,12 @@
         "title": "Lead by Doing",
         "title_te": "చేయడం ద్వారా నాయకత్వం",
         "emoji": "🌟",
-        "micro_theme": "Wise people serve without selfishness",
+        "micro_theme": "The Hierarchy of Power",
         "micro_theme_te": "మీ కర్తవ్యం చేయడం",
         "shlokas": [
-          "3.22",
-          "3.25"
+          "3.40",
+          "3.41",
+          "3.42"
         ],
         "story": {
           "title": "Krishna and the Hesitant General",
@@ -776,12 +776,12 @@
         "title": "Actions Teach Loudest",
         "title_te": "చర్యలే బిగ్గరగా బోధిస్తాయి",
         "emoji": "🎯",
-        "micro_theme": "Ego and comparison create confusion",
+        "micro_theme": "Responsibility Cannot Be Avoided",
         "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
         "shlokas": [
-          "3.27",
-          "3.30",
-          "3.35"
+          "3.5",
+          "3.7",
+          "3.8"
         ],
         "story": {
           "title": "Yudhishthira's Quiet Honesty",
@@ -800,12 +800,12 @@
         "title": "Work for the Whole",
         "title_te": "మొత్తం కోసం పని",
         "emoji": "🛡️",
-        "micro_theme": "Desire slowly hides wisdom",
+        "micro_theme": "Work Should Nourish Others",
         "micro_theme_te": "నిస్వార్థ సేవ",
         "shlokas": [
-          "3.36",
-          "3.37",
-          "3.39"
+          "3.9",
+          "3.13",
+          "3.19"
         ],
         "story": {
           "title": "The Wheel of Sacrifice",
@@ -824,11 +824,11 @@
         "title": "Lead by Doing",
         "title_te": "చేయడం ద్వారా నాయకత్వం",
         "emoji": "⚖️",
-        "micro_theme": "Inner enemies must be controlled early",
+        "micro_theme": "Inner Enemies",
         "micro_theme_te": "మీ కర్తవ్యం చేయడం",
         "shlokas": [
-          "3.41",
-          "3.42",
+          "3.36",
+          "3.39",
           "3.43"
         ],
         "story": {
@@ -850,11 +850,12 @@
         "title": "Knowledge on the Move",
         "title_te": "కదులుతున్న జ్ఞానం",
         "emoji": "🌱",
-        "micro_theme": "Ancient wisdom guides humanity",
+        "micro_theme": "The Purpose of Birth",
         "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
         "shlokas": [
-          "4.1",
-          "4.5"
+          "4.7",
+          "4.8",
+          "4.9"
         ],
         "story": {
           "title": "When Study Meets Courage",
@@ -873,12 +874,12 @@
         "title": "Learn Like Arjuna",
         "title_te": "అర్జునుడిలా నేర్చుకో",
         "emoji": "📖",
-        "micro_theme": "Divine goodness protects the world",
+        "micro_theme": "The Reciprocity Law",
         "micro_theme_te": "గురువుల ముందు వినయం",
         "shlokas": [
-          "4.7",
-          "4.8",
-          "4.9"
+          "4.10",
+          "4.11",
+          "4.12"
         ],
         "story": {
           "title": "Questions on the Chariot",
@@ -897,11 +898,13 @@
         "title": "Sacred Effort",
         "title_te": "పవిత్రమైన ప్రయత్నం",
         "emoji": "💡",
-        "micro_theme": "Every role has purpose",
+        "micro_theme": "Inner Peace in Action",
         "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
         "shlokas": [
-          "4.13",
-          "4.14"
+          "4.18",
+          "4.19",
+          "4.20",
+          "4.22"
         ],
         "story": {
           "title": "Fire and Faith",
@@ -920,12 +923,13 @@
         "title": "Knowledge on the Move",
         "title_te": "కదులుతున్న జ్ఞానం",
         "emoji": "🌟",
-        "micro_theme": "Wise people act without selfishness",
+        "micro_theme": "The Sword of Wisdom",
         "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
         "shlokas": [
-          "4.18",
-          "4.19",
-          "4.22"
+          "4.38",
+          "4.39",
+          "4.41",
+          "4.42"
         ],
         "story": {
           "title": "When Study Meets Courage",
@@ -944,11 +948,11 @@
         "title": "Learn Like Arjuna",
         "title_te": "అర్జునుడిలా నేర్చుకో",
         "emoji": "🎯",
-        "micro_theme": "Work becomes sacred with the right attitude",
+        "micro_theme": "Ancient Wisdom Guides",
         "micro_theme_te": "గురువుల ముందు వినయం",
         "shlokas": [
-          "4.24",
-          "4.28"
+          "4.1",
+          "4.5"
         ],
         "story": {
           "title": "Questions on the Chariot",
@@ -967,11 +971,11 @@
         "title": "Sacred Effort",
         "title_te": "పవిత్రమైన ప్రయత్నం",
         "emoji": "🛡️",
-        "micro_theme": "Humility helps learning",
+        "micro_theme": "Every Role Has Purpose",
         "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
         "shlokas": [
-          "4.33",
-          "4.34"
+          "4.13",
+          "4.14"
         ],
         "story": {
           "title": "Fire and Faith",
@@ -990,12 +994,11 @@
         "title": "Knowledge on the Move",
         "title_te": "కదులుతున్న జ్ఞానం",
         "emoji": "⚖️",
-        "micro_theme": "Knowledge removes fear and confusion",
+        "micro_theme": "Humility Helps Learning",
         "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
         "shlokas": [
-          "4.36",
-          "4.38",
-          "4.39"
+          "4.33",
+          "4.34"
         ],
         "story": {
           "title": "When Study Meets Courage",
@@ -1014,12 +1017,11 @@
         "title": "Learn Like Arjuna",
         "title_te": "అర్జునుడిలా నేర్చుకో",
         "emoji": "🔥",
-        "micro_theme": "Doubt blocks growth and clarity",
+        "micro_theme": "Sacred Work",
         "micro_theme_te": "గురువుల ముందు వినయం",
         "shlokas": [
-          "4.40",
-          "4.41",
-          "4.42"
+          "4.24",
+          "4.28"
         ],
         "story": {
           "title": "Questions on the Chariot",
@@ -1040,12 +1042,12 @@
         "title": "Arjun Asks Krishna",
         "title_te": "అర్జునుడు కృష్ణుడిని అడుగుతాడు",
         "emoji": "🌱",
-        "micro_theme": "Peace comes from selfless action",
+        "micro_theme": "The Waterproof Mind",
         "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
         "shlokas": [
-          "5.8",
           "5.10",
-          "5.11"
+          "5.11",
+          "5.12"
         ],
         "story": {
           "title": "Renunciation or Right Action?",
@@ -1064,12 +1066,12 @@
         "title": "Praise and Blame",
         "title_te": "ప్రశంస మరియు నింద",
         "emoji": "📖",
-        "micro_theme": "Wise people stay calm and equal",
+        "micro_theme": "The Universal Vision",
         "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
         "shlokas": [
-          "5.12",
           "5.18",
-          "5.19"
+          "5.19",
+          "5.20"
         ],
         "story": {
           "title": "Steady Like the Sun",
@@ -1088,11 +1090,13 @@
         "title": "Equal Vision",
         "title_te": "సమ దృష్టి",
         "emoji": "💡",
-        "micro_theme": "Real happiness comes from within",
+        "micro_theme": "The Inner Fortress",
         "micro_theme_te": "సమానంగా చూడటం",
         "shlokas": [
-          "5.20",
-          "5.21"
+          "5.23",
+          "5.24",
+          "5.25",
+          "5.26"
         ],
         "story": {
           "title": "The Cow, the Dog, and the King",
@@ -1111,12 +1115,12 @@
         "title": "Arjun Asks Krishna",
         "title_te": "అర్జునుడు కృష్ణుడిని అడుగుతాడు",
         "emoji": "🌟",
-        "micro_theme": "Temporary pleasures cannot create lasting peace",
+        "micro_theme": "Calm People Help",
         "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
         "shlokas": [
-          "5.22",
-          "5.23",
-          "5.24"
+          "5.25",
+          "5.27",
+          "5.29"
         ],
         "story": {
           "title": "Renunciation or Right Action?",
@@ -1135,12 +1139,12 @@
         "title": "Praise and Blame",
         "title_te": "ప్రశంస మరియు నింద",
         "emoji": "🎯",
-        "micro_theme": "Calm and spiritual people help the world",
+        "micro_theme": "Temporary Pleasures",
         "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
         "shlokas": [
-          "5.25",
-          "5.27",
-          "5.29"
+          "5.21",
+          "5.22",
+          "5.23"
         ],
         "story": {
           "title": "Steady Like the Sun",
@@ -1161,7 +1165,7 @@
         "title": "Taming the Mind",
         "title_te": "మనస్సును అదుపులో ఉంచడం",
         "emoji": "🌱",
-        "micro_theme": "The mind can become our best friend",
+        "micro_theme": "The Internal Ally",
         "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
         "shlokas": [
           "6.5",
@@ -1185,11 +1189,12 @@
         "title": "The Middle Path",
         "title_te": "మధ్య మార్గం",
         "emoji": "📖",
-        "micro_theme": "Balanced people treat everyone fairly",
+        "micro_theme": "The Laser Beam",
         "micro_theme_te": "జీవితంలో మితత్వం",
         "shlokas": [
-          "6.9",
-          "6.10"
+          "6.12",
+          "6.18",
+          "6.19"
         ],
         "story": {
           "title": "Sleep, Food, and Study",
@@ -1208,12 +1213,13 @@
         "title": "Union with the Self",
         "title_te": "ఆత్మతో ఐక్యత",
         "emoji": "💡",
-        "micro_theme": "Discipline and healthy habits create focus",
+        "micro_theme": "The Habit Cycle",
         "micro_theme_te": "యోగం ఐక్యత",
         "shlokas": [
-          "6.11",
-          "6.16",
-          "6.17"
+          "6.33",
+          "6.34",
+          "6.35",
+          "6.36"
         ],
         "story": {
           "title": "Beyond the Body",
@@ -1232,11 +1238,12 @@
         "title": "Taming the Mind",
         "title_te": "మనస్సును అదుపులో ఉంచడం",
         "emoji": "🌟",
-        "micro_theme": "Deep concentration creates peace",
+        "micro_theme": "Discipline and Habits",
         "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
         "shlokas": [
-          "6.19",
-          "6.20"
+          "6.11",
+          "6.16",
+          "6.17"
         ],
         "story": {
           "title": "The Mind as a Wild Horse",
@@ -1255,12 +1262,12 @@
         "title": "The Middle Path",
         "title_te": "మధ్య మార్గం",
         "emoji": "🎯",
-        "micro_theme": "Bringing the mind back builds compassion",
+        "micro_theme": "Deep Concentration",
         "micro_theme_te": "జీవితంలో మితత్వం",
         "shlokas": [
-          "6.26",
-          "6.27",
-          "6.29"
+          "6.19",
+          "6.20",
+          "6.26"
         ],
         "story": {
           "title": "Sleep, Food, and Study",
@@ -1279,12 +1286,12 @@
         "title": "Union with the Self",
         "title_te": "ఆత్మతో ఐక్యత",
         "emoji": "🛡️",
-        "micro_theme": "Understanding others requires self-control",
+        "micro_theme": "Bringing the Mind Back",
         "micro_theme_te": "యోగం ఐక్యత",
         "shlokas": [
-          "6.32",
-          "6.35",
-          "6.36"
+          "6.27",
+          "6.29",
+          "6.32"
         ],
         "story": {
           "title": "Beyond the Body",
@@ -1303,7 +1310,7 @@
         "title": "Taming the Mind",
         "title_te": "మనస్సును అదుపులో ఉంచడం",
         "emoji": "⚖️",
-        "micro_theme": "Good efforts are never wasted",
+        "micro_theme": "Good Efforts Never Wasted",
         "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
         "shlokas": [
           "6.40",
@@ -1326,7 +1333,7 @@
         "title": "The Middle Path",
         "title_te": "మధ్య మార్గం",
         "emoji": "🔥",
-        "micro_theme": "Devotion completes wisdom",
+        "micro_theme": "Devotion Completes Wisdom",
         "micro_theme_te": "జీవితంలో మితత్వం",
         "shlokas": [
           "6.46",
@@ -1351,10 +1358,10 @@
         "title": "Energy Behind the World",
         "title_te": "ప్రపంచం వెనుక శక్తి",
         "emoji": "🌱",
-        "micro_theme": "Deep wisdom is rare and valuable",
+        "micro_theme": "The Invisible Thread",
         "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
         "shlokas": [
-          "7.3",
+          "7.4",
           "7.5",
           "7.7"
         ],
@@ -1375,11 +1382,13 @@
         "title": "Different Paths, One Growth",
         "title_te": "వివిధ మార్గాలు, ఒక్క వృద్ధి",
         "emoji": "📖",
-        "micro_theme": "Divine presence exists everywhere",
+        "micro_theme": "The Essence of Being",
         "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
         "shlokas": [
           "7.8",
-          "7.9"
+          "7.9",
+          "7.10",
+          "7.11"
         ],
         "story": {
           "title": "Who Comes to Wisdom?",
@@ -1398,11 +1407,13 @@
         "title": "Letting Go of Fear",
         "title_te": "భయాన్ని వదలడం",
         "emoji": "💡",
-        "micro_theme": "Ego blocks wisdom",
+        "micro_theme": "The Four Seekers",
         "micro_theme_te": "పరమునికి లొంగడం",
         "shlokas": [
-          "7.14",
-          "7.15"
+          "7.16",
+          "7.17",
+          "7.18",
+          "7.19"
         ],
         "story": {
           "title": "Hands Open on the Chariot",
@@ -1421,11 +1432,11 @@
         "title": "Energy Behind the World",
         "title_te": "ప్రపంచం వెనుక శక్తి",
         "emoji": "🌟",
-        "micro_theme": "People seek wisdom for different reasons",
+        "micro_theme": "Faith During Hard Times",
         "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
         "shlokas": [
-          "7.16",
-          "7.17"
+          "7.14",
+          "7.15"
         ],
         "story": {
           "title": "Krishna Explains the Source",
@@ -1444,11 +1455,11 @@
         "title": "Different Paths, One Growth",
         "title_te": "వివిధ మార్గాలు, ఒక్క వృద్ధి",
         "emoji": "🎯",
-        "micro_theme": "Wisdom grows slowly through experience",
+        "micro_theme": "True Wisdom Is Rare",
         "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
         "shlokas": [
-          "7.19",
-          "7.20"
+          "7.3",
+          "7.6"
         ],
         "story": {
           "title": "Who Comes to Wisdom?",
@@ -1469,7 +1480,7 @@
         "title": "Eternal and Passing",
         "title_te": "శాశ్వతం మరియు క్షణికం",
         "emoji": "🌱",
-        "micro_theme": "Thoughts shape our future",
+        "micro_theme": "The Final Impression",
         "micro_theme_te": "శాశ్వతమైనది గుర్తు పెట్టుకోవడం",
         "shlokas": [
           "8.5",
@@ -1493,11 +1504,13 @@
         "title": "Mind at the Turning Point",
         "title_te": "మలుపు సమయంలో మనస్సు",
         "emoji": "📖",
-        "micro_theme": "Focused minds become spiritually strong",
+        "micro_theme": "The Master of Focus",
         "micro_theme_te": "ముఖ్యమైన క్షణాలలో ఆలోచనలు",
         "shlokas": [
           "8.8",
-          "8.10"
+          "8.12",
+          "8.13",
+          "8.14"
         ],
         "story": {
           "title": "Last Thoughts Before Dawn",
@@ -1516,7 +1529,7 @@
         "title": "Habits Shape Heroes",
         "title_te": "అలవాట్లు నాయకులను తయారు చేస్తాయి",
         "emoji": "💡",
-        "micro_theme": "Spiritual focus creates peace",
+        "micro_theme": "Spiritual Focus Creates Peace",
         "micro_theme_te": "సాధన యొక్క క్రమశిక్షణ",
         "shlokas": [
           "8.13",
@@ -1541,11 +1554,12 @@
         "title": "The King's Secret",
         "title_te": "రాజు రహస్యం",
         "emoji": "🌱",
-        "micro_theme": "God protects sincere devotion",
+        "micro_theme": "The Heart of Action",
         "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
         "shlokas": [
-          "9.22",
-          "9.24"
+          "9.26",
+          "9.27",
+          "9.28"
         ],
         "story": {
           "title": "Devotion Without Show",
@@ -1564,12 +1578,13 @@
         "title": "The Lord Remembers",
         "title_te": "ప్రభువు గుర్తుంచుకుంటాడు",
         "emoji": "📖",
-        "micro_theme": "Small actions done with love matter",
+        "micro_theme": "The Law of Protection",
         "micro_theme_te": "దైవం భక్తులను చూసుకోవడం",
         "shlokas": [
-          "9.26",
-          "9.27",
-          "9.28"
+          "9.22",
+          "9.30",
+          "9.31",
+          "9.34"
         ],
         "story": {
           "title": "A Leaf, a Flower, a Heart",
@@ -1588,12 +1603,11 @@
         "title": "Offer with Love",
         "title_te": "ప్రేమతో అర్పించు",
         "emoji": "💡",
-        "micro_theme": "Everyone can improve and grow",
+        "micro_theme": "Everyone Can Improve",
         "micro_theme_te": "సరళమైన అర్పణలు",
         "shlokas": [
           "9.29",
-          "9.30",
-          "9.31"
+          "9.32"
         ],
         "story": {
           "title": "Whatever You Have",
@@ -1612,12 +1626,11 @@
         "title": "The King's Secret",
         "title_te": "రాజు రహస్యం",
         "emoji": "🌟",
-        "micro_theme": "Devotion is open to everyone",
+        "micro_theme": "Sincere Devotion",
         "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
         "shlokas": [
-          "9.32",
-          "9.33",
-          "9.34"
+          "9.24",
+          "9.33"
         ],
         "story": {
           "title": "Devotion Without Show",
@@ -1638,12 +1651,12 @@
         "title": "Excellence as a Sign",
         "title_te": "శ్రేష్ఠత ఒక గుర్తు",
         "emoji": "🌱",
-        "micro_theme": "Wisdom grows through devotion",
+        "micro_theme": "Source of Brilliance",
         "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
         "shlokas": [
-          "10.8",
-          "10.9",
-          "10.10"
+          "10.21",
+          "10.23",
+          "10.41"
         ],
         "story": {
           "title": "Best in Many Fields",
@@ -1662,11 +1675,12 @@
         "title": "Wonder Opens the Heart",
         "title_te": "ఆశ్చర్యం హృదయాన్ని తెరుస్తుంది",
         "emoji": "📖",
-        "micro_theme": "Divine guidance removes darkness",
+        "micro_theme": "Force of Time",
         "micro_theme_te": "ఆశ్చర్యంతో గొప్పతనం చూడటం",
         "shlokas": [
-          "10.11",
-          "10.20"
+          "10.27",
+          "10.30",
+          "10.31"
         ],
         "story": {
           "title": "Looking at the Ocean",
@@ -1685,12 +1699,13 @@
         "title": "One Root, Many Branches",
         "title_te": "ఒక మూలం, అనేక కొమ్మలు",
         "emoji": "💡",
-        "micro_theme": "Greatness reflects divine power",
+        "micro_theme": "Yoga of Intelligence",
         "micro_theme_te": "అన్ని శక్తి యొక్క మూలం",
         "shlokas": [
-          "10.22",
-          "10.41",
-          "10.42"
+          "10.8",
+          "10.9",
+          "10.10",
+          "10.11"
         ],
         "story": {
           "title": "Power and Humility",
@@ -1711,12 +1726,13 @@
         "title": "Humility in Awe",
         "title_te": "ఆశ్చర్యంలో వినయం",
         "emoji": "🌱",
-        "micro_theme": "Some truths are beyond ordinary sight",
+        "micro_theme": "The Cosmic Vision",
         "micro_theme_te": "భయభక్తులు మరియు వినయం",
         "shlokas": [
           "11.8",
-          "11.10",
-          "11.12"
+          "11.11",
+          "11.12",
+          "11.13"
         ],
         "story": {
           "title": "Arjuna Sees the Vast Form",
@@ -1735,11 +1751,12 @@
         "title": "Vision Without Pride",
         "title_te": "గర్వం లేకుండా దర్శనం",
         "emoji": "📖",
-        "micro_theme": "Everything in the universe is connected",
+        "micro_theme": "The Master of Time",
         "micro_theme_te": "దర్శనం తర్వాత ధైర్యం",
         "shlokas": [
-          "11.13",
-          "11.15"
+          "11.32",
+          "11.33",
+          "11.34"
         ],
         "story": {
           "title": "Fear Turns into Duty",
@@ -1758,11 +1775,12 @@
         "title": "Wonder Becomes Bhakti",
         "title_te": "ఆశ్చర్యం భక్తిగా మారింది",
         "emoji": "💡",
-        "micro_theme": "Become an instrument for good",
+        "micro_theme": "The Path of Devotion",
         "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
         "shlokas": [
-          "11.32",
-          "11.33"
+          "11.53",
+          "11.54",
+          "11.55"
         ],
         "story": {
           "title": "Praise Without Flattery",
@@ -1783,12 +1801,12 @@
         "title": "Many Paths, One Heart",
         "title_te": "అనేక మార్గాలు, ఒక హృదయం",
         "emoji": "🌱",
-        "micro_theme": "Kindness and patience create peace",
+        "micro_theme": "The Focused Heart",
         "micro_theme_te": "అనేక మార్గాలు ఒక లక్ష్యం",
         "shlokas": [
-          "12.13",
-          "12.14",
-          "12.15"
+          "12.1",
+          "12.2",
+          "12.5"
         ],
         "story": {
           "title": "Krishna Honors All Seekers",
@@ -1807,11 +1825,13 @@
         "title": "Marks of a Devotee",
         "title_te": "భక్తుని గుర్తులు",
         "emoji": "📖",
-        "micro_theme": "Balanced people stay emotionally strong",
+        "micro_theme": "The Ladder of Practice",
         "micro_theme_te": "భక్తుని లక్షణాలు",
         "shlokas": [
-          "12.16",
-          "12.17"
+          "12.8",
+          "12.9",
+          "12.10",
+          "12.11"
         ],
         "story": {
           "title": "Gentle Strength",
@@ -1830,12 +1850,12 @@
         "title": "Focus on the Highest",
         "title_te": "అత్యున్నతంపై దృష్టి",
         "emoji": "💡",
-        "micro_theme": "Calm and fair people are deeply loved",
+        "micro_theme": "The Balanced Leader",
         "micro_theme_te": "మనస్సును మంచిది మీద నిలపడం",
         "shlokas": [
-          "12.18",
-          "12.19",
-          "12.20"
+          "12.13",
+          "12.14",
+          "12.15"
         ],
         "story": {
           "title": "Mind Like a Lamp",
@@ -1856,12 +1876,12 @@
         "title": "Field and Farmer",
         "title_te": "క్షేత్రం మరియు రైతు",
         "emoji": "🌱",
-        "micro_theme": "Humility is the beginning of wisdom",
+        "micro_theme": "The Field and the Knower",
         "micro_theme_te": "శరీరం ఒక క్షేత్రం",
         "shlokas": [
-          "13.8",
-          "13.9",
-          "13.12"
+          "13.1",
+          "13.2",
+          "13.3"
         ],
         "story": {
           "title": "What Grows in the Field?",
@@ -1880,10 +1900,12 @@
         "title": "Knower of the Field",
         "title_te": "క్షేత్రాన్ని తెలిసినవాడు",
         "emoji": "📖",
-        "micro_theme": "Seeking truth requires sincerity",
+        "micro_theme": "The 20 Gems of Wisdom",
         "micro_theme_te": "లోపలి తెలిసినవాడు",
         "shlokas": [
-          "13.10",
+          "13.7",
+          "13.8",
+          "13.9",
           "13.11"
         ],
         "story": {
@@ -1903,11 +1925,13 @@
         "title": "Ahimsa in Action",
         "title_te": "చర్యలో అహింస",
         "emoji": "💡",
-        "micro_theme": "The soul experiences life through the body",
+        "micro_theme": "The Observer",
         "micro_theme_te": "వినయం మరియు అహింస",
         "shlokas": [
-          "13.22",
-          "13.23"
+          "13.29",
+          "13.30",
+          "13.33",
+          "13.34"
         ],
         "story": {
           "title": "Strength Without Hurt",
@@ -1928,9 +1952,10 @@
         "title": "Sattva, Rajas, Tamas",
         "title_te": "సత్త్వ, రజస్, తమస్",
         "emoji": "🌱",
-        "micro_theme": "Human behavior is shaped by habits",
+        "micro_theme": "The Forces of Nature",
         "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
         "shlokas": [
+          "14.5",
           "14.6",
           "14.7",
           "14.8"
@@ -1952,11 +1977,13 @@
         "title": "Beyond the Modes",
         "title_te": "గుణాలకు అతీతం",
         "emoji": "📖",
-        "micro_theme": "Our actions reveal our mindset",
+        "micro_theme": "The Outcome of Habits",
         "micro_theme_te": "భావాలకు అతీతంగా",
         "shlokas": [
-          "14.9",
-          "14.11"
+          "14.11",
+          "14.16",
+          "14.17",
+          "14.18"
         ],
         "story": {
           "title": "You Are the Sky",
@@ -1975,11 +2002,13 @@
         "title": "Food, Mind, Character",
         "title_te": "ఆహారం, మనస్సు, శీలం",
         "emoji": "💡",
-        "micro_theme": "Laziness blocks wisdom",
+        "micro_theme": "The Master of Moods",
         "micro_theme_te": "ఆహారం ఆలోచనలు అలవాట్లు",
         "shlokas": [
-          "14.13",
-          "14.17"
+          "14.20",
+          "14.24",
+          "14.25",
+          "14.26"
         ],
         "story": {
           "title": "Three Doors of Habits",
@@ -1998,12 +2027,12 @@
         "title": "Sattva, Rajas, Tamas",
         "title_te": "సత్త్వ, రజస్, తమస్",
         "emoji": "🌟",
-        "micro_theme": "Wisdom and devotion help us rise higher",
+        "micro_theme": "Rising Above Habits",
         "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
         "shlokas": [
-          "14.18",
-          "14.20",
-          "14.26"
+          "14.13",
+          "14.17",
+          "14.19"
         ],
         "story": {
           "title": "Which Mood Is Driving?",
@@ -2024,12 +2053,12 @@
         "title": "The Tree of Life",
         "title_te": "The Tree of Life",
         "emoji": "🌳",
-        "micro_theme": "Life is a journey of understanding",
+        "micro_theme": "The Tree of the World",
         "micro_theme_te": "Life is like a growing tree",
         "shlokas": [
           "15.1",
-          "15.3",
-          "15.5"
+          "15.2",
+          "15.3"
         ],
         "story": {
           "title": "The Upside-Down Tree",
@@ -2048,11 +2077,13 @@
         "title": "Inner Light",
         "title_te": "Inner Light",
         "emoji": "☀️",
-        "micro_theme": "Every soul carries divine value",
+        "micro_theme": "The Power Behind the Light",
         "micro_theme_te": "Real light is inside you",
         "shlokas": [
           "15.6",
-          "15.7"
+          "15.12",
+          "15.13",
+          "15.14"
         ],
         "story": {
           "title": "The Glowing Heart",
@@ -2071,12 +2102,12 @@
         "title": "Search for Truth",
         "title_te": "Search for Truth",
         "emoji": "🔍",
-        "micro_theme": "Divine wisdom guides our understanding",
+        "micro_theme": "The Librarian of the Mind",
         "micro_theme_te": "Look for what is real",
         "shlokas": [
-          "15.10",
           "15.15",
-          "15.16"
+          "15.18",
+          "15.19"
         ],
         "story": {
           "title": "The Treasure Hunt",
@@ -2097,7 +2128,7 @@
         "title": "Daivi Sampad",
         "title_te": "దైవీ సంపద్",
         "emoji": "🌱",
-        "micro_theme": "Good qualities build strong character",
+        "micro_theme": "The Divine Wealth",
         "micro_theme_te": "దైవీ లక్షణాలు",
         "shlokas": [
           "16.1",
@@ -2121,11 +2152,12 @@
         "title": "Asuri Nature",
         "title_te": "ఆసుర స్వభావం",
         "emoji": "📖",
-        "micro_theme": "Negative qualities create suffering",
+        "micro_theme": "The Three Gates to Darkness",
         "micro_theme_te": "ఆసుర ధర్మాలు",
         "shlokas": [
-          "16.5",
-          "16.7"
+          "16.4",
+          "16.12",
+          "16.21"
         ],
         "story": {
           "title": "When Ego Grows Loud",
@@ -2144,11 +2176,12 @@
         "title": "Daily Character Choices",
         "title_te": "రోజువారీ శీల ఎంపికలు",
         "emoji": "💡",
-        "micro_theme": "Greed and ego create endless stress",
+        "micro_theme": "The Authority of Truth",
         "micro_theme_te": "మీ వైపు ఎంచుకోవడం",
         "shlokas": [
-          "16.10",
-          "16.12"
+          "16.22",
+          "16.23",
+          "16.24"
         ],
         "story": {
           "title": "Which Camp Today?",
@@ -2167,11 +2200,12 @@
         "title": "Daivi Sampad",
         "title_te": "దైవీ సంపద్",
         "emoji": "🌟",
-        "micro_theme": "Anger, greed, and desire destroy peace",
+        "micro_theme": "Negative Qualities",
         "micro_theme_te": "దైవీ లక్షణాలు",
         "shlokas": [
-          "16.21",
-          "16.22"
+          "16.5",
+          "16.7",
+          "16.10"
         ],
         "story": {
           "title": "Fearless and Kind",
@@ -2192,11 +2226,13 @@
         "title": "Shraddha in Life",
         "title_te": "జీవితంలో శ్రద్ధ",
         "emoji": "🌱",
-        "micro_theme": "Faith shapes personality",
+        "micro_theme": "The Science of Food",
         "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
         "shlokas": [
-          "17.3",
-          "17.4"
+          "17.7",
+          "17.8",
+          "17.9",
+          "17.10"
         ],
         "story": {
           "title": "Faith Behind the Ritual",
@@ -2215,7 +2251,7 @@
         "title": "Three Kinds of Faith",
         "title_te": "మూడు రకాల శ్రద్ధ",
         "emoji": "📖",
-        "micro_theme": "Discipline includes thoughts, words, and actions",
+        "micro_theme": "The Tapas of Speech",
         "micro_theme_te": "మూడు రకాల శ్రద్ధ",
         "shlokas": [
           "17.14",
@@ -2239,11 +2275,12 @@
         "title": "Sacred Words, Sacred Acts",
         "title_te": "పవిత్ర మాటలు, పవిత్ర చర్యలు",
         "emoji": "💡",
-        "micro_theme": "Calmness and generosity create inner strength",
+        "micro_theme": "The Art of Charity",
         "micro_theme_te": "ఓం తత్ సత్",
         "shlokas": [
-          "17.17",
-          "17.20"
+          "17.20",
+          "17.21",
+          "17.22"
         ],
         "story": {
           "title": "OM, Tat, Sat",
@@ -2262,11 +2299,13 @@
         "title": "Shraddha in Life",
         "title_te": "జీవితంలో శ్రద్ధ",
         "emoji": "🌟",
-        "micro_theme": "Careless actions lose meaning",
+        "micro_theme": "The Seal of Truth",
         "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
         "shlokas": [
-          "17.22",
-          "17.28"
+          "17.23",
+          "17.24",
+          "17.25",
+          "17.27"
         ],
         "story": {
           "title": "Faith Behind the Ritual",
@@ -2287,12 +2326,13 @@
         "title": "Renounce Selfish Desire",
         "title_te": "స్వార్థ కోరిక వదలడం",
         "emoji": "🌱",
-        "micro_theme": "Everyone has a unique purpose",
+        "micro_theme": "Bitter First, Sweet Later",
         "micro_theme_te": "సన్యాస రకాలు",
         "shlokas": [
-          "18.45",
-          "18.46",
-          "18.47"
+          "18.36",
+          "18.37",
+          "18.38",
+          "18.39"
         ],
         "story": {
           "title": "What to Release",
@@ -2311,11 +2351,13 @@
         "title": "Five Causes",
         "title_te": "ఐదు కారణాలు",
         "emoji": "📖",
-        "micro_theme": "Growth happens slowly through effort",
+        "micro_theme": "The Skillful Swadharma",
         "micro_theme_te": "చర్యకు ఐదు కారణాలు",
         "shlokas": [
-          "18.48",
-          "18.49"
+          "18.45",
+          "18.46",
+          "18.47",
+          "18.48"
         ],
         "story": {
           "title": "Understand Before Acting",
@@ -2334,12 +2376,13 @@
         "title": "Surrender and Act",
         "title_te": "లొంగు, చర్య చేయి",
         "emoji": "💡",
-        "micro_theme": "Trust reduces fear during difficult work",
+        "micro_theme": "The Ultimate Promise",
         "micro_theme_te": "చివరి బోధన లొంగుబాటు",
         "shlokas": [
-          "18.56",
-          "18.57",
-          "18.58"
+          "18.61",
+          "18.63",
+          "18.65",
+          "18.66"
         ],
         "story": {
           "title": "Krishna's Final Word",
@@ -2358,11 +2401,12 @@
         "title": "Renounce Selfish Desire",
         "title_te": "స్వార్థ కోరిక వదలడం",
         "emoji": "🌟",
-        "micro_theme": "Divine guidance exists within us",
+        "micro_theme": "Growth Through Effort",
         "micro_theme_te": "సన్యాస రకాలు",
         "shlokas": [
-          "18.61",
-          "18.62"
+          "18.48",
+          "18.49",
+          "18.50"
         ],
         "story": {
           "title": "What to Release",
@@ -2381,11 +2425,12 @@
         "title": "Five Causes",
         "title_te": "ఐదు కారణాలు",
         "emoji": "🎯",
-        "micro_theme": "Love and surrender bring lasting peace",
+        "micro_theme": "Trust Reduces Fear",
         "micro_theme_te": "చర్యకు ఐదు కారణాలు",
         "shlokas": [
-          "18.65",
-          "18.66"
+          "18.56",
+          "18.57",
+          "18.58"
         ],
         "story": {
           "title": "Understand Before Acting",

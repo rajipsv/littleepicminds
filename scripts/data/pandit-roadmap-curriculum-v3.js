@@ -1,0 +1,391 @@
+/**
+ * Pandit-curated combined-theme roadmap (61 primary books + chapter fillers).
+ * Seeds: 80 themes × 2 shlokas | Seekers: 100 themes × 2–4 shlokas
+ */
+module.exports = {
+  seeds: {
+    meta: {
+      version: 3,
+      title: 'Little Epic Minds — Seeds curriculum (80 themes, 2 shlokas each)',
+      seedsTotal: 80,
+      idPrefix: 'sd',
+      shlokasPerTheme: 2,
+      source: 'Pandit roadmap v3 — Wonder Skills (ages 5–7)',
+    },
+    chapters: {
+      1: {
+        title: 'The Courage to Start',
+        themes: [
+          { id: 'sd1_01', shlokas: ['1.1', '1.2'], theme: 'The Big Day' },
+          { id: 'sd1_02', shlokas: ['1.20', '1.21'], theme: 'The Inner Brave' },
+          { id: 'sd1_03', shlokas: ['1.28', '1.47'], theme: "It's Okay to be Nervous" },
+          { id: 'sd1_04', shlokas: ['1.3', '1.4'], theme: 'Two Teams Gathering' },
+          { id: 'sd1_05', shlokas: ['1.12', '1.13'], theme: 'When the Drums Begin' },
+          { id: 'sd1_06', shlokas: ['1.23', '1.24'], theme: 'Seeing the Field' },
+          { id: 'sd1_07', shlokas: ['1.29', '1.30'], theme: 'The Spinning Mind' },
+          { id: 'sd1_08', shlokas: ['1.32', '1.33'], theme: 'People Before Winning' },
+          { id: 'sd1_09', shlokas: ['1.34', '1.35'], theme: 'Family Love Hurts' },
+          { id: 'sd1_10', shlokas: ['1.40', '1.41'], theme: 'Giving Up in the Mind' },
+        ],
+      },
+      2: {
+        title: 'The Secret of the Hero',
+        themes: [
+          { id: 'sd2_01', shlokas: ['2.18', '2.19'], theme: 'The Magic House' },
+          { id: 'sd2_02', shlokas: ['2.20', '2.21'], theme: 'The Never-Ending Light' },
+          { id: 'sd2_03', shlokas: ['2.22', '2.23'], theme: 'The Magic Wardrobe' },
+          { id: 'sd2_04', shlokas: ['2.13', '2.14'], theme: 'Summer and Winter' },
+          { id: 'sd2_05', shlokas: ['2.47', '2.48'], theme: 'The Best Effort' },
+          { id: 'sd2_06', shlokas: ['2.58', '2.59'], theme: 'The Wise Turtle' },
+          { id: 'sd2_07', shlokas: ['2.70', '2.71'], theme: "The Ocean's Peace" },
+          { id: 'sd2_08', shlokas: ['2.2', '2.3'], theme: 'Stand Up Again' },
+          { id: 'sd2_09', shlokas: ['2.11', '2.12'], theme: 'Wise Teaching' },
+          { id: 'sd2_10', shlokas: ['2.15', '2.16'], theme: 'Truth Stays Strong' },
+          { id: 'sd2_11', shlokas: ['2.37', '2.38'], theme: 'Do Your Part' },
+          { id: 'sd2_12', shlokas: ['2.49', '2.50'], theme: 'Smart Calm Work' },
+          { id: 'sd2_13', shlokas: ['2.55', '2.56'], theme: 'Calm Choices' },
+          { id: 'sd2_14', shlokas: ['2.62', '2.63'], theme: 'Angry Thoughts Grow' },
+          { id: 'sd2_15', shlokas: ['2.64', '2.65'], theme: 'Discipline Brings Peace' },
+        ],
+      },
+      3: {
+        title: 'The Power of Helping',
+        themes: [
+          { id: 'sd3_01', shlokas: ['3.10', '3.11'], theme: 'The Magic of Sharing' },
+          { id: 'sd3_02', shlokas: ['3.20', '3.21'], theme: 'Be a Little Leader' },
+          { id: 'sd3_03', shlokas: ['3.35', '3.36'], theme: 'Being Myself' },
+          { id: 'sd3_04', shlokas: ['3.41', '3.42'], theme: 'The Smart Choices' },
+          { id: 'sd3_05', shlokas: ['3.5', '3.8'], theme: 'Everyone Has Responsibilities' },
+          { id: 'sd3_06', shlokas: ['3.9', '3.13'], theme: 'Sharing Makes Work Meaningful' },
+          { id: 'sd3_07', shlokas: ['3.37', '3.43'], theme: 'The Mind Becomes Strong' },
+        ],
+      },
+      4: {
+        title: 'The Power of Knowledge',
+        themes: [
+          { id: 'sd4_01', shlokas: ['4.7', '4.8'], theme: 'The Hero Returns' },
+          { id: 'sd4_02', shlokas: ['4.11', '4.12'], theme: 'The Mirror Secret' },
+          { id: 'sd4_03', shlokas: ['4.18', '4.20'], theme: 'The Happy Work' },
+          { id: 'sd4_04', shlokas: ['4.38', '4.39'], theme: 'Knowledge Cleans Everything' },
+          { id: 'sd4_05', shlokas: ['4.34', '4.40'], theme: 'Respect Teachers' },
+        ],
+      },
+      5: {
+        title: 'The Lotus Secret',
+        themes: [
+          { id: 'sd5_01', shlokas: ['5.10', '5.11'], theme: 'The Lotus Leaf' },
+          { id: 'sd5_02', shlokas: ['5.18', '5.19'], theme: 'One Light, Many Lamps' },
+          { id: 'sd5_03', shlokas: ['5.24', '5.26'], theme: 'The Secret Smile' },
+          { id: 'sd5_04', shlokas: ['5.12', '5.20'], theme: 'Peace from Selfless Work' },
+          { id: 'sd5_05', shlokas: ['5.25', '5.29'], theme: 'Peaceful People Help' },
+        ],
+      },
+      6: {
+        title: 'The Superpower of Focus',
+        themes: [
+          { id: 'sd6_01', shlokas: ['6.5', '6.6'], theme: 'My Mind-Friend' },
+          { id: 'sd6_02', shlokas: ['6.18', '6.19'], theme: 'The Steady Candle' },
+          { id: 'sd6_03', shlokas: ['6.34', '6.35'], theme: 'Taming the Wind' },
+          { id: 'sd6_04', shlokas: ['6.16', '6.17'], theme: 'Healthy Habits' },
+          { id: 'sd6_05', shlokas: ['6.40', '6.41'], theme: 'Good Efforts Last' },
+          { id: 'sd6_06', shlokas: ['6.46', '6.47'], theme: 'Love and Devotion' },
+        ],
+      },
+      7: {
+        title: 'The Magic in Everything',
+        themes: [
+          { id: 'sd7_01', shlokas: ['7.7', '7.14'], theme: 'The Pearl Necklace' },
+          { id: 'sd7_02', shlokas: ['7.8', '7.9'], theme: 'The Taste of Life' },
+          { id: 'sd7_03', shlokas: ['7.16', '7.17'], theme: 'The Best Friend' },
+        ],
+      },
+      8: {
+        title: 'The Journey Home',
+        themes: [
+          { id: 'sd8_01', shlokas: ['8.5', '8.7'], theme: 'Thinking of Love' },
+          { id: 'sd8_02', shlokas: ['8.8', '8.14'], theme: 'The Bright Road' },
+        ],
+      },
+      9: {
+        title: 'The King of Secrets',
+        themes: [
+          { id: 'sd9_01', shlokas: ['9.26', '9.27'], theme: 'The Simplest Gift' },
+          { id: 'sd9_02', shlokas: ['9.22', '9.31'], theme: 'Always Safe' },
+          { id: 'sd9_03', shlokas: ['9.29', '9.30'], theme: 'Everyone Deserves Kindness' },
+          { id: 'sd9_04', shlokas: ['9.32', '9.33'], theme: 'Anyone Can Become Better' },
+        ],
+      },
+      10: {
+        title: 'The Hero in Everything',
+        themes: [
+          { id: 'sd10_01', shlokas: ['10.21', '10.41'], theme: 'The Best of the Best' },
+          { id: 'sd10_02', shlokas: ['10.27', '10.30'], theme: 'The Mightiest Friends' },
+          { id: 'sd10_03', shlokas: ['10.10', '10.11'], theme: 'The Inner Lamp' },
+        ],
+      },
+      11: {
+        title: 'The Universal Hero',
+        themes: [
+          { id: 'sd11_01', shlokas: ['11.8', '11.12'], theme: 'The Eyes of the World' },
+          { id: 'sd11_02', shlokas: ['11.32', '11.33'], theme: 'The Great Protector' },
+        ],
+      },
+      12: {
+        title: 'The Heart of Love',
+        themes: [
+          { id: 'sd12_01', shlokas: ['12.2', '12.5'], theme: 'Talking to Love' },
+          { id: 'sd12_02', shlokas: ['12.8', '12.10'], theme: 'Do Your Best' },
+          { id: 'sd12_03', shlokas: ['12.13', '12.14'], theme: "Everyone's Friend" },
+        ],
+      },
+      13: {
+        title: 'The Secret of the Garden',
+        themes: [
+          { id: 'sd13_01', shlokas: ['13.1', '13.2'], theme: 'The Magic Garden' },
+          { id: 'sd13_02', shlokas: ['13.7', '13.8'], theme: 'Planting Kindness' },
+        ],
+      },
+      14: {
+        title: 'The Three Colors of You',
+        themes: [
+          { id: 'sd14_01', shlokas: ['14.5', '14.6'], theme: 'The Red, Yellow, and Blue' },
+          { id: 'sd14_02', shlokas: ['14.11', '14.18'], theme: 'Choosing the Light' },
+          { id: 'sd14_03', shlokas: ['14.20', '14.26'], theme: 'Above the Colors' },
+        ],
+      },
+      15: {
+        title: 'The Magic Upside-Down Tree',
+        themes: [
+          { id: 'sd15_01', shlokas: ['15.1', '15.2'], theme: 'The Sky-Root Tree' },
+          { id: 'sd15_02', shlokas: ['15.6', '15.12'], theme: 'The Sun Inside' },
+        ],
+      },
+      16: {
+        title: 'The Hero and the Grump',
+        themes: [
+          { id: 'sd16_01', shlokas: ['16.1', '16.3'], theme: "The Hero's Toolbox" },
+          { id: 'sd16_02', shlokas: ['16.4', '16.21'], theme: 'The Grumpy Clouds' },
+          { id: 'sd16_03', shlokas: ['16.23', '16.24'], theme: 'The Rule Book' },
+        ],
+      },
+      17: {
+        title: 'The Three Ways of Living',
+        themes: [
+          { id: 'sd17_01', shlokas: ['17.8', '17.10'], theme: 'Yummy for the Tummy' },
+          { id: 'sd17_02', shlokas: ['17.15', '17.16'], theme: 'The Happy Tongue' },
+        ],
+      },
+      18: {
+        title: 'The Grand Finale',
+        themes: [
+          { id: 'sd18_01', shlokas: ['18.37', '18.38'], theme: 'The Best Kind of Happy' },
+          { id: 'sd18_02', shlokas: ['18.45', '18.46'], theme: 'Your Special Path' },
+          { id: 'sd18_03', shlokas: ['18.61', '18.66'], theme: 'You are Never Alone' },
+        ],
+      },
+    },
+  },
+
+  seekers: {
+    meta: {
+      version: 3,
+      title: 'Little Epic Minds — Seekers curriculum (100 themes, 2-4 shlokas each)',
+      seekersTotal: 100,
+      idPrefix: 'sk',
+      shlokasPerTheme: '2-4',
+      source: 'Pandit roadmap v3 — Mind Skills (ages 8–10)',
+    },
+    chapters: {
+      1: {
+        title: 'The Courage to Start',
+        themes: [
+          { id: 'sk1_01', shlokas: ['1.1', '1.2', '1.3'], theme: "The Scout's Strategy" },
+          { id: 'sk1_02', shlokas: ['1.20', '1.21', '1.22'], theme: 'The Center Point' },
+          { id: 'sk1_03', shlokas: ['1.28', '1.29', '1.30'], theme: 'Mastering the Spin' },
+          { id: 'sk1_04', shlokas: ['1.4', '1.5', '1.6'], theme: 'Leaders Feel Pressure' },
+          { id: 'sk1_05', shlokas: ['1.12', '1.13', '1.14'], theme: 'Loud Beginnings' },
+          { id: 'sk1_06', shlokas: ['1.24', '1.25', '1.26'], theme: 'Seeing Teachers' },
+          { id: 'sk1_07', shlokas: ['1.31', '1.32', '1.33'], theme: 'Moral Doubt' },
+          { id: 'sk1_08', shlokas: ['1.34', '1.35', '1.36'], theme: 'Attachment Hurts' },
+          { id: 'sk1_09', shlokas: ['1.37', '1.38', '1.39'], theme: 'Fear of Consequences' },
+          { id: 'sk1_10', shlokas: ['1.40', '1.41', '1.42'], theme: 'Wanting to Give Up' },
+        ],
+      },
+      2: {
+        title: 'The Science of Mastery',
+        themes: [
+          { id: 'sk2_01', shlokas: ['2.17', '2.18', '2.19'], theme: 'The Eternal Pilot' },
+          { id: 'sk2_02', shlokas: ['2.11', '2.22', '2.23'], theme: 'The Physics of Change' },
+          { id: 'sk2_03', shlokas: ['2.13', '2.14', '2.15'], theme: 'The Weather Observer' },
+          { id: 'sk2_04', shlokas: ['2.47', '2.48', '2.50'], theme: 'Skill in Action' },
+          { id: 'sk2_05', shlokas: ['2.62', '2.63', '2.64'], theme: 'The Ladder of Fall' },
+          { id: 'sk2_06', shlokas: ['2.58', '2.59', '2.60'], theme: 'The Master of Senses' },
+          { id: 'sk2_07', shlokas: ['2.70', '2.71', '2.72'], theme: 'The Peaceful Leader' },
+          { id: 'sk2_08', shlokas: ['2.2', '2.3', '2.4'], theme: 'Courage After Grief' },
+          { id: 'sk2_09', shlokas: ['2.5', '2.6', '2.7'], theme: 'Emotional Conflict' },
+          { id: 'sk2_10', shlokas: ['2.8', '2.9', '2.10'], theme: 'Krishna Responds' },
+          { id: 'sk2_11', shlokas: ['2.12', '2.16', '2.21'], theme: 'Soul and Change' },
+          { id: 'sk2_12', shlokas: ['2.31', '2.32', '2.33'], theme: 'Duty Without Fear' },
+          { id: 'sk2_13', shlokas: ['2.39', '2.40', '2.41'], theme: 'Focused Intelligence' },
+          { id: 'sk2_14', shlokas: ['2.45', '2.46'], theme: 'Rise Above Extremes' },
+          { id: 'sk2_15', shlokas: ['2.51', '2.52', '2.53'], theme: 'Wisdom Removes Confusion' },
+          { id: 'sk2_16', shlokas: ['2.54', '2.55', '2.56'], theme: 'Self-Control' },
+          { id: 'sk2_17', shlokas: ['2.65', '2.66', '2.67'], theme: 'Restlessness Brings Sorrow' },
+          { id: 'sk2_18', shlokas: ['2.68', '2.69'], theme: 'Controlled Senses' },
+        ],
+      },
+      3: {
+        title: 'The Power of Helping',
+        themes: [
+          { id: 'sk3_01', shlokas: ['3.10', '3.11', '3.12'], theme: 'The Law of Reciprocity' },
+          { id: 'sk3_02', shlokas: ['3.20', '3.21', '3.25'], theme: 'The Ripple Effect' },
+          { id: 'sk3_03', shlokas: ['3.35', '3.36', '3.37'], theme: 'The Integrity Code' },
+          { id: 'sk3_04', shlokas: ['3.40', '3.41', '3.42'], theme: 'The Hierarchy of Power' },
+          { id: 'sk3_05', shlokas: ['3.5', '3.7', '3.8'], theme: 'Responsibility Cannot Be Avoided' },
+          { id: 'sk3_06', shlokas: ['3.9', '3.13', '3.19'], theme: 'Work Should Nourish Others' },
+          { id: 'sk3_07', shlokas: ['3.36', '3.39', '3.43'], theme: 'Inner Enemies' },
+        ],
+      },
+      4: {
+        title: 'The Power of Knowledge',
+        themes: [
+          { id: 'sk4_01', shlokas: ['4.7', '4.8', '4.9'], theme: 'The Purpose of Birth' },
+          { id: 'sk4_02', shlokas: ['4.10', '4.11', '4.12'], theme: 'The Reciprocity Law' },
+          { id: 'sk4_03', shlokas: ['4.18', '4.19', '4.20', '4.22'], theme: 'Inner Peace in Action' },
+          { id: 'sk4_04', shlokas: ['4.38', '4.39', '4.41', '4.42'], theme: 'The Sword of Wisdom' },
+          { id: 'sk4_05', shlokas: ['4.1', '4.5'], theme: 'Ancient Wisdom Guides' },
+          { id: 'sk4_06', shlokas: ['4.13', '4.14'], theme: 'Every Role Has Purpose' },
+          { id: 'sk4_07', shlokas: ['4.33', '4.34'], theme: 'Humility Helps Learning' },
+          { id: 'sk4_08', shlokas: ['4.24', '4.28'], theme: 'Sacred Work' },
+        ],
+      },
+      5: {
+        title: 'The Lotus Secret',
+        themes: [
+          { id: 'sk5_01', shlokas: ['5.10', '5.11', '5.12'], theme: 'The Waterproof Mind' },
+          { id: 'sk5_02', shlokas: ['5.18', '5.19', '5.20'], theme: 'The Universal Vision' },
+          { id: 'sk5_03', shlokas: ['5.23', '5.24', '5.25', '5.26'], theme: 'The Inner Fortress' },
+          { id: 'sk5_04', shlokas: ['5.25', '5.27', '5.29'], theme: 'Calm People Help' },
+          { id: 'sk5_05', shlokas: ['5.21', '5.22', '5.23'], theme: 'Temporary Pleasures' },
+        ],
+      },
+      6: {
+        title: 'The Superpower of Focus',
+        themes: [
+          { id: 'sk6_01', shlokas: ['6.5', '6.6', '6.7'], theme: 'The Internal Ally' },
+          { id: 'sk6_02', shlokas: ['6.12', '6.18', '6.19'], theme: 'The Laser Beam' },
+          { id: 'sk6_03', shlokas: ['6.33', '6.34', '6.35', '6.36'], theme: 'The Habit Cycle' },
+          { id: 'sk6_04', shlokas: ['6.11', '6.16', '6.17'], theme: 'Discipline and Habits' },
+          { id: 'sk6_05', shlokas: ['6.19', '6.20', '6.26'], theme: 'Deep Concentration' },
+          { id: 'sk6_06', shlokas: ['6.27', '6.29', '6.32'], theme: 'Bringing the Mind Back' },
+          { id: 'sk6_07', shlokas: ['6.40', '6.41'], theme: 'Good Efforts Never Wasted' },
+          { id: 'sk6_08', shlokas: ['6.46', '6.47'], theme: 'Devotion Completes Wisdom' },
+        ],
+      },
+      7: {
+        title: 'The Magic in Everything',
+        themes: [
+          { id: 'sk7_01', shlokas: ['7.4', '7.5', '7.7'], theme: 'The Invisible Thread' },
+          { id: 'sk7_02', shlokas: ['7.8', '7.9', '7.10', '7.11'], theme: 'The Essence of Being' },
+          { id: 'sk7_03', shlokas: ['7.16', '7.17', '7.18', '7.19'], theme: 'The Four Seekers' },
+          { id: 'sk7_04', shlokas: ['7.14', '7.15'], theme: 'Faith During Hard Times' },
+          { id: 'sk7_05', shlokas: ['7.3', '7.6'], theme: 'True Wisdom Is Rare' },
+        ],
+      },
+      8: {
+        title: 'The Journey Home',
+        themes: [
+          { id: 'sk8_01', shlokas: ['8.5', '8.6', '8.7'], theme: 'The Final Impression' },
+          { id: 'sk8_02', shlokas: ['8.8', '8.12', '8.13', '8.14'], theme: 'The Master of Focus' },
+          { id: 'sk8_03', shlokas: ['8.13', '8.15'], theme: 'Spiritual Focus Creates Peace' },
+        ],
+      },
+      9: {
+        title: 'The King of Secrets',
+        themes: [
+          { id: 'sk9_01', shlokas: ['9.26', '9.27', '9.28'], theme: 'The Heart of Action' },
+          { id: 'sk9_02', shlokas: ['9.22', '9.30', '9.31', '9.34'], theme: 'The Law of Protection' },
+          { id: 'sk9_03', shlokas: ['9.29', '9.32'], theme: 'Everyone Can Improve' },
+          { id: 'sk9_04', shlokas: ['9.24', '9.33'], theme: 'Sincere Devotion' },
+        ],
+      },
+      10: {
+        title: 'The Hero in Everything',
+        themes: [
+          { id: 'sk10_01', shlokas: ['10.21', '10.23', '10.41'], theme: 'Source of Brilliance' },
+          { id: 'sk10_02', shlokas: ['10.27', '10.30', '10.31'], theme: 'Force of Time' },
+          { id: 'sk10_03', shlokas: ['10.8', '10.9', '10.10', '10.11'], theme: 'Yoga of Intelligence' },
+        ],
+      },
+      11: {
+        title: 'The Universal Hero',
+        themes: [
+          { id: 'sk11_01', shlokas: ['11.8', '11.11', '11.12', '11.13'], theme: 'The Cosmic Vision' },
+          { id: 'sk11_02', shlokas: ['11.32', '11.33', '11.34'], theme: 'The Master of Time' },
+          { id: 'sk11_03', shlokas: ['11.53', '11.54', '11.55'], theme: 'The Path of Devotion' },
+        ],
+      },
+      12: {
+        title: 'The Heart of Love',
+        themes: [
+          { id: 'sk12_01', shlokas: ['12.1', '12.2', '12.5'], theme: 'The Focused Heart' },
+          { id: 'sk12_02', shlokas: ['12.8', '12.9', '12.10', '12.11'], theme: 'The Ladder of Practice' },
+          { id: 'sk12_03', shlokas: ['12.13', '12.14', '12.15'], theme: 'The Balanced Leader' },
+        ],
+      },
+      13: {
+        title: 'The Secret of the Garden',
+        themes: [
+          { id: 'sk13_01', shlokas: ['13.1', '13.2', '13.3'], theme: 'The Field and the Knower' },
+          { id: 'sk13_02', shlokas: ['13.7', '13.8', '13.9', '13.11'], theme: 'The 20 Gems of Wisdom' },
+          { id: 'sk13_03', shlokas: ['13.29', '13.30', '13.33', '13.34'], theme: 'The Observer' },
+        ],
+      },
+      14: {
+        title: 'The Three Colors of You',
+        themes: [
+          { id: 'sk14_01', shlokas: ['14.5', '14.6', '14.7', '14.8'], theme: 'The Forces of Nature' },
+          { id: 'sk14_02', shlokas: ['14.11', '14.16', '14.17', '14.18'], theme: 'The Outcome of Habits' },
+          { id: 'sk14_03', shlokas: ['14.20', '14.24', '14.25', '14.26'], theme: 'The Master of Moods' },
+          { id: 'sk14_04', shlokas: ['14.13', '14.17', '14.19'], theme: 'Rising Above Habits' },
+        ],
+      },
+      15: {
+        title: 'The Magic Upside-Down Tree',
+        themes: [
+          { id: 'sk15_01', shlokas: ['15.1', '15.2', '15.3'], theme: 'The Tree of the World' },
+          { id: 'sk15_02', shlokas: ['15.6', '15.12', '15.13', '15.14'], theme: 'The Power Behind the Light' },
+          { id: 'sk15_03', shlokas: ['15.15', '15.18', '15.19'], theme: 'The Librarian of the Mind' },
+        ],
+      },
+      16: {
+        title: 'The Hero and the Grump',
+        themes: [
+          { id: 'sk16_01', shlokas: ['16.1', '16.2', '16.3'], theme: 'The Divine Wealth' },
+          { id: 'sk16_02', shlokas: ['16.4', '16.12', '16.21'], theme: 'The Three Gates to Darkness' },
+          { id: 'sk16_03', shlokas: ['16.22', '16.23', '16.24'], theme: 'The Authority of Truth' },
+          { id: 'sk16_04', shlokas: ['16.5', '16.7', '16.10'], theme: 'Negative Qualities' },
+        ],
+      },
+      17: {
+        title: 'The Three Ways of Living',
+        themes: [
+          { id: 'sk17_01', shlokas: ['17.7', '17.8', '17.9', '17.10'], theme: 'The Science of Food' },
+          { id: 'sk17_02', shlokas: ['17.14', '17.15', '17.16'], theme: 'The Tapas of Speech' },
+          { id: 'sk17_03', shlokas: ['17.20', '17.21', '17.22'], theme: 'The Art of Charity' },
+          { id: 'sk17_04', shlokas: ['17.23', '17.24', '17.25', '17.27'], theme: 'The Seal of Truth' },
+        ],
+      },
+      18: {
+        title: 'The Grand Finale',
+        themes: [
+          { id: 'sk18_01', shlokas: ['18.36', '18.37', '18.38', '18.39'], theme: 'Bitter First, Sweet Later' },
+          { id: 'sk18_02', shlokas: ['18.45', '18.46', '18.47', '18.48'], theme: 'The Skillful Swadharma' },
+          { id: 'sk18_03', shlokas: ['18.61', '18.63', '18.65', '18.66'], theme: 'The Ultimate Promise' },
+          { id: 'sk18_04', shlokas: ['18.48', '18.49', '18.50'], theme: 'Growth Through Effort' },
+          { id: 'sk18_05', shlokas: ['18.56', '18.57', '18.58'], theme: 'Trust Reduces Fear' },
+        ],
+      },
+    },
+  },
+};

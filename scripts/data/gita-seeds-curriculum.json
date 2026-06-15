@@ -1,180 +1,741 @@
 {
   "meta": {
-    "version": 2,
+    "version": 3,
     "title": "Little Epic Minds — Seeds curriculum (80 themes, 2 shlokas each)",
     "seedsTotal": 80,
     "idPrefix": "sd",
-    "shlokasPerTheme": 2
+    "shlokasPerTheme": 2,
+    "source": "Pandit roadmap v3 — Wonder Skills (ages 5–7)"
   },
   "chapters": {
     "1": {
-      "title": "Arjuna's Feelings & Fear",
+      "title": "The Courage to Start",
       "themes": [
-        { "id": "sd1_01", "shlokas": ["1.1", "1.2"], "theme": "The Power of Quiet Courage" },
-        { "id": "sd1_02", "shlokas": ["1.20", "1.21"], "theme": "Taking the Lead (Standing Your Ground)" },
-        { "id": "sd1_03", "shlokas": ["1.12", "1.13"], "theme": "Loud moments can make hearts beat fast" },
-        { "id": "sd1_04", "shlokas": ["1.21", "1.22"], "theme": "Ask a wise guide before a hard choice" },
-        { "id": "sd1_05", "shlokas": ["1.23", "1.24"], "theme": "Look carefully before you act" },
-        { "id": "sd1_06", "shlokas": ["1.28", "1.29"], "theme": "Fear affects both body and mind" },
-        { "id": "sd1_07", "shlokas": ["1.30", "1.31"], "theme": "Confusion makes decisions difficult" },
-        { "id": "sd1_08", "shlokas": ["1.32", "1.33"], "theme": "Winning is not more important than people" },
-        { "id": "sd1_09", "shlokas": ["1.34", "1.35"], "theme": "Love for family can make duty feel painful" },
-        { "id": "sd1_10", "shlokas": ["1.40", "1.41"], "theme": "Giving up begins in the mind" }
+        {
+          "id": "sd1_01",
+          "shlokas": [
+            "1.1",
+            "1.2"
+          ],
+          "theme": "The Big Day"
+        },
+        {
+          "id": "sd1_02",
+          "shlokas": [
+            "1.20",
+            "1.21"
+          ],
+          "theme": "The Inner Brave"
+        },
+        {
+          "id": "sd1_03",
+          "shlokas": [
+            "1.28",
+            "1.47"
+          ],
+          "theme": "It's Okay to be Nervous"
+        },
+        {
+          "id": "sd1_04",
+          "shlokas": [
+            "1.3",
+            "1.4"
+          ],
+          "theme": "Two Teams Gathering"
+        },
+        {
+          "id": "sd1_05",
+          "shlokas": [
+            "1.12",
+            "1.13"
+          ],
+          "theme": "When the Drums Begin"
+        },
+        {
+          "id": "sd1_06",
+          "shlokas": [
+            "1.23",
+            "1.24"
+          ],
+          "theme": "Seeing the Field"
+        },
+        {
+          "id": "sd1_07",
+          "shlokas": [
+            "1.29",
+            "1.30"
+          ],
+          "theme": "The Spinning Mind"
+        },
+        {
+          "id": "sd1_08",
+          "shlokas": [
+            "1.32",
+            "1.33"
+          ],
+          "theme": "People Before Winning"
+        },
+        {
+          "id": "sd1_09",
+          "shlokas": [
+            "1.34",
+            "1.35"
+          ],
+          "theme": "Family Love Hurts"
+        },
+        {
+          "id": "sd1_10",
+          "shlokas": [
+            "1.40",
+            "1.41"
+          ],
+          "theme": "Giving Up in the Mind"
+        }
       ]
     },
     "2": {
-      "title": "Courage, Calmness & Wisdom",
+      "title": "The Secret of the Hero",
       "themes": [
-        { "id": "sd2_01", "shlokas": ["2.2", "2.3"], "theme": "Courage means standing up again" },
-        { "id": "sd2_02", "shlokas": ["2.11", "2.12"], "theme": "Wise teaching meets a sad heart" },
-        { "id": "sd2_03", "shlokas": ["2.13", "2.14"], "theme": "Life keeps changing" },
-        { "id": "sd2_04", "shlokas": ["2.15", "2.16"], "theme": "Truth stays strong through difficulties" },
-        { "id": "sd2_05", "shlokas": ["2.19", "2.20"], "theme": "The soul lives forever" },
-        { "id": "sd2_06", "shlokas": ["2.22", "2.23"], "theme": "The soul is like new clothes on the same you" },
-        { "id": "sd2_07", "shlokas": ["2.37", "2.38"], "theme": "Do your part with a calm heart" },
-        { "id": "sd2_08", "shlokas": ["2.47", "2.48"], "theme": "Focus on effort instead of rewards" },
-        { "id": "sd2_09", "shlokas": ["2.49", "2.50"], "theme": "Smart and calm work matters" },
-        { "id": "sd2_10", "shlokas": ["2.55", "2.56"], "theme": "Calm people make better choices" },
-        { "id": "sd2_11", "shlokas": ["2.57", "2.58"], "theme": "Self-control creates strength" },
-        { "id": "sd2_12", "shlokas": ["2.62", "2.63"], "theme": "Angry thoughts grow step by step" },
-        { "id": "sd2_13", "shlokas": ["2.64", "2.65"], "theme": "Discipline brings peace" },
-        { "id": "sd2_14", "shlokas": ["2.66", "2.67"], "theme": "A restless mind cannot stay happy" },
-        { "id": "sd2_15", "shlokas": ["2.70", "2.71"], "theme": "Peace comes from letting go" }
+        {
+          "id": "sd2_01",
+          "shlokas": [
+            "2.18",
+            "2.19"
+          ],
+          "theme": "The Magic House"
+        },
+        {
+          "id": "sd2_02",
+          "shlokas": [
+            "2.20",
+            "2.21"
+          ],
+          "theme": "The Never-Ending Light"
+        },
+        {
+          "id": "sd2_03",
+          "shlokas": [
+            "2.22",
+            "2.23"
+          ],
+          "theme": "The Magic Wardrobe"
+        },
+        {
+          "id": "sd2_04",
+          "shlokas": [
+            "2.13",
+            "2.14"
+          ],
+          "theme": "Summer and Winter"
+        },
+        {
+          "id": "sd2_05",
+          "shlokas": [
+            "2.47",
+            "2.48"
+          ],
+          "theme": "The Best Effort"
+        },
+        {
+          "id": "sd2_06",
+          "shlokas": [
+            "2.58",
+            "2.59"
+          ],
+          "theme": "The Wise Turtle"
+        },
+        {
+          "id": "sd2_07",
+          "shlokas": [
+            "2.70",
+            "2.71"
+          ],
+          "theme": "The Ocean's Peace"
+        },
+        {
+          "id": "sd2_08",
+          "shlokas": [
+            "2.2",
+            "2.3"
+          ],
+          "theme": "Stand Up Again"
+        },
+        {
+          "id": "sd2_09",
+          "shlokas": [
+            "2.11",
+            "2.12"
+          ],
+          "theme": "Wise Teaching"
+        },
+        {
+          "id": "sd2_10",
+          "shlokas": [
+            "2.15",
+            "2.16"
+          ],
+          "theme": "Truth Stays Strong"
+        },
+        {
+          "id": "sd2_11",
+          "shlokas": [
+            "2.37",
+            "2.38"
+          ],
+          "theme": "Do Your Part"
+        },
+        {
+          "id": "sd2_12",
+          "shlokas": [
+            "2.49",
+            "2.50"
+          ],
+          "theme": "Smart Calm Work"
+        },
+        {
+          "id": "sd2_13",
+          "shlokas": [
+            "2.55",
+            "2.56"
+          ],
+          "theme": "Calm Choices"
+        },
+        {
+          "id": "sd2_14",
+          "shlokas": [
+            "2.62",
+            "2.63"
+          ],
+          "theme": "Angry Thoughts Grow"
+        },
+        {
+          "id": "sd2_15",
+          "shlokas": [
+            "2.64",
+            "2.65"
+          ],
+          "theme": "Discipline Brings Peace"
+        }
       ]
     },
     "3": {
-      "title": "Responsibility & Action",
+      "title": "The Power of Helping",
       "themes": [
-        { "id": "sd3_01", "shlokas": ["3.5", "3.8"], "theme": "Everyone has responsibilities" },
-        { "id": "sd3_02", "shlokas": ["3.9", "3.13"], "theme": "Sharing makes work meaningful" },
-        { "id": "sd3_03", "shlokas": ["3.19", "3.21"], "theme": "Good children inspire others" },
-        { "id": "sd3_04", "shlokas": ["3.27", "3.30"], "theme": "Ego creates confusion" },
-        { "id": "sd3_05", "shlokas": ["3.35", "3.36"], "theme": "Follow your own good path" },
-        { "id": "sd3_06", "shlokas": ["3.37", "3.41"], "theme": "Bad habits should be stopped early" },
-        { "id": "sd3_07", "shlokas": ["3.42", "3.43"], "theme": "The mind becomes strong with practice" }
+        {
+          "id": "sd3_01",
+          "shlokas": [
+            "3.10",
+            "3.11"
+          ],
+          "theme": "The Magic of Sharing"
+        },
+        {
+          "id": "sd3_02",
+          "shlokas": [
+            "3.20",
+            "3.21"
+          ],
+          "theme": "Be a Little Leader"
+        },
+        {
+          "id": "sd3_03",
+          "shlokas": [
+            "3.35",
+            "3.36"
+          ],
+          "theme": "Being Myself"
+        },
+        {
+          "id": "sd3_04",
+          "shlokas": [
+            "3.41",
+            "3.42"
+          ],
+          "theme": "The Smart Choices"
+        },
+        {
+          "id": "sd3_05",
+          "shlokas": [
+            "3.5",
+            "3.8"
+          ],
+          "theme": "Everyone Has Responsibilities"
+        },
+        {
+          "id": "sd3_06",
+          "shlokas": [
+            "3.9",
+            "3.13"
+          ],
+          "theme": "Sharing Makes Work Meaningful"
+        },
+        {
+          "id": "sd3_07",
+          "shlokas": [
+            "3.37",
+            "3.43"
+          ],
+          "theme": "The Mind Becomes Strong"
+        }
       ]
     },
     "4": {
-      "title": "Learning & Knowledge",
+      "title": "The Power of Knowledge",
       "themes": [
-        { "id": "sd4_01", "shlokas": ["4.7", "4.8"], "theme": "Goodness protects the world" },
-        { "id": "sd4_02", "shlokas": ["4.13", "4.18"], "theme": "Every role has value" },
-        { "id": "sd4_03", "shlokas": ["4.24", "4.25"], "theme": "Work becomes special when done with care" },
-        { "id": "sd4_04", "shlokas": ["4.34", "4.38"], "theme": "Respect teachers and learning" },
-        { "id": "sd4_05", "shlokas": ["4.39", "4.40"], "theme": "Faith helps learning grow" }
+        {
+          "id": "sd4_01",
+          "shlokas": [
+            "4.7",
+            "4.8"
+          ],
+          "theme": "The Hero Returns"
+        },
+        {
+          "id": "sd4_02",
+          "shlokas": [
+            "4.11",
+            "4.12"
+          ],
+          "theme": "The Mirror Secret"
+        },
+        {
+          "id": "sd4_03",
+          "shlokas": [
+            "4.18",
+            "4.20"
+          ],
+          "theme": "The Happy Work"
+        },
+        {
+          "id": "sd4_04",
+          "shlokas": [
+            "4.38",
+            "4.39"
+          ],
+          "theme": "Knowledge Cleans Everything"
+        },
+        {
+          "id": "sd4_05",
+          "shlokas": [
+            "4.34",
+            "4.40"
+          ],
+          "theme": "Respect Teachers"
+        }
       ]
     },
     "5": {
-      "title": "Peace & Equality",
+      "title": "The Lotus Secret",
       "themes": [
-        { "id": "sd5_01", "shlokas": ["5.10", "5.12"], "theme": "Peace comes from non-selfish work" },
-        { "id": "sd5_02", "shlokas": ["5.18", "5.19"], "theme": "Treat everyone equally" },
-        { "id": "sd5_03", "shlokas": ["5.20", "5.22"], "theme": "Temporary pleasures do not last" },
-        { "id": "sd5_04", "shlokas": ["5.23", "5.24"], "theme": "Patience brings inner happiness" },
-        { "id": "sd5_05", "shlokas": ["5.25", "5.29"], "theme": "Peaceful people help the world" }
+        {
+          "id": "sd5_01",
+          "shlokas": [
+            "5.10",
+            "5.11"
+          ],
+          "theme": "The Lotus Leaf"
+        },
+        {
+          "id": "sd5_02",
+          "shlokas": [
+            "5.18",
+            "5.19"
+          ],
+          "theme": "One Light, Many Lamps"
+        },
+        {
+          "id": "sd5_03",
+          "shlokas": [
+            "5.24",
+            "5.26"
+          ],
+          "theme": "The Secret Smile"
+        },
+        {
+          "id": "sd5_04",
+          "shlokas": [
+            "5.12",
+            "5.20"
+          ],
+          "theme": "Peace from Selfless Work"
+        },
+        {
+          "id": "sd5_05",
+          "shlokas": [
+            "5.25",
+            "5.29"
+          ],
+          "theme": "Peaceful People Help"
+        }
       ]
     },
     "6": {
-      "title": "Mind, Habits & Focus",
+      "title": "The Superpower of Focus",
       "themes": [
-        { "id": "sd6_01", "shlokas": ["6.5", "6.6"], "theme": "Your mind can become your friend" },
-        { "id": "sd6_02", "shlokas": ["6.16", "6.17"], "theme": "Healthy habits create balance" },
-        { "id": "sd6_03", "shlokas": ["6.19", "6.20"], "theme": "Bring your wandering mind back gently" },
-        { "id": "sd6_04", "shlokas": ["6.29", "6.32"], "theme": "Treat others like yourself" },
-        { "id": "sd6_05", "shlokas": ["6.35", "6.40"], "theme": "Practice slowly makes us stronger" },
-        { "id": "sd6_06", "shlokas": ["6.46", "6.47"], "theme": "Love and devotion bring peace" }
+        {
+          "id": "sd6_01",
+          "shlokas": [
+            "6.5",
+            "6.6"
+          ],
+          "theme": "My Mind-Friend"
+        },
+        {
+          "id": "sd6_02",
+          "shlokas": [
+            "6.18",
+            "6.19"
+          ],
+          "theme": "The Steady Candle"
+        },
+        {
+          "id": "sd6_03",
+          "shlokas": [
+            "6.34",
+            "6.35"
+          ],
+          "theme": "Taming the Wind"
+        },
+        {
+          "id": "sd6_04",
+          "shlokas": [
+            "6.16",
+            "6.17"
+          ],
+          "theme": "Healthy Habits"
+        },
+        {
+          "id": "sd6_05",
+          "shlokas": [
+            "6.40",
+            "6.41"
+          ],
+          "theme": "Good Efforts Last"
+        },
+        {
+          "id": "sd6_06",
+          "shlokas": [
+            "6.46",
+            "6.47"
+          ],
+          "theme": "Love and Devotion"
+        }
       ]
     },
     "7": {
-      "title": "Faith & Understanding",
+      "title": "The Magic in Everything",
       "themes": [
-        { "id": "sd7_01", "shlokas": ["7.3", "7.7"], "theme": "True wisdom is rare and valuable" },
-        { "id": "sd7_02", "shlokas": ["7.14", "7.15"], "theme": "Faith helps during difficult times" },
-        { "id": "sd7_03", "shlokas": ["7.19", "7.24"], "theme": "Wisdom grows slowly over time" }
+        {
+          "id": "sd7_01",
+          "shlokas": [
+            "7.7",
+            "7.14"
+          ],
+          "theme": "The Pearl Necklace"
+        },
+        {
+          "id": "sd7_02",
+          "shlokas": [
+            "7.8",
+            "7.9"
+          ],
+          "theme": "The Taste of Life"
+        },
+        {
+          "id": "sd7_03",
+          "shlokas": [
+            "7.16",
+            "7.17"
+          ],
+          "theme": "The Best Friend"
+        }
       ]
     },
     "8": {
-      "title": "Remembering Goodness",
+      "title": "The Journey Home",
       "themes": [
-        { "id": "sd8_01", "shlokas": ["8.5", "8.7"], "theme": "Remember goodness while doing your work" },
-        { "id": "sd8_02", "shlokas": ["8.13", "8.15"], "theme": "Peace comes from spiritual focus" }
+        {
+          "id": "sd8_01",
+          "shlokas": [
+            "8.5",
+            "8.7"
+          ],
+          "theme": "Thinking of Love"
+        },
+        {
+          "id": "sd8_02",
+          "shlokas": [
+            "8.8",
+            "8.14"
+          ],
+          "theme": "The Bright Road"
+        }
       ]
     },
     "9": {
-      "title": "Love & Devotion",
+      "title": "The King of Secrets",
       "themes": [
-        { "id": "sd9_01", "shlokas": ["9.22", "9.26"], "theme": "Love matters more than expensive gifts" },
-        { "id": "sd9_02", "shlokas": ["9.27", "9.28"], "theme": "Offer your work with sincerity" },
-        { "id": "sd9_03", "shlokas": ["9.29", "9.30"], "theme": "Everyone deserves kindness" },
-        { "id": "sd9_04", "shlokas": ["9.31", "9.34"], "theme": "Anyone can become better" }
+        {
+          "id": "sd9_01",
+          "shlokas": [
+            "9.26",
+            "9.27"
+          ],
+          "theme": "The Simplest Gift"
+        },
+        {
+          "id": "sd9_02",
+          "shlokas": [
+            "9.22",
+            "9.31"
+          ],
+          "theme": "Always Safe"
+        },
+        {
+          "id": "sd9_03",
+          "shlokas": [
+            "9.29",
+            "9.30"
+          ],
+          "theme": "Everyone Deserves Kindness"
+        },
+        {
+          "id": "sd9_04",
+          "shlokas": [
+            "9.32",
+            "9.33"
+          ],
+          "theme": "Anyone Can Become Better"
+        }
       ]
     },
     "10": {
-      "title": "God's Greatness",
+      "title": "The Hero in Everything",
       "themes": [
-        { "id": "sd10_01", "shlokas": ["10.8", "10.10"], "theme": "Wisdom comes from devotion" },
-        { "id": "sd10_02", "shlokas": ["10.8", "10.10"], "theme": "God brings light into our hearts" },
-        { "id": "sd10_03", "shlokas": ["10.41", "10.42"], "theme": "Greatness in the world reflects divine power" }
+        {
+          "id": "sd10_01",
+          "shlokas": [
+            "10.21",
+            "10.41"
+          ],
+          "theme": "The Best of the Best"
+        },
+        {
+          "id": "sd10_02",
+          "shlokas": [
+            "10.27",
+            "10.30"
+          ],
+          "theme": "The Mightiest Friends"
+        },
+        {
+          "id": "sd10_03",
+          "shlokas": [
+            "10.10",
+            "10.11"
+          ],
+          "theme": "The Inner Lamp"
+        }
       ]
     },
     "11": {
-      "title": "Divine Vision",
+      "title": "The Universal Hero",
       "themes": [
-        { "id": "sd11_01", "shlokas": ["11.8", "11.12"], "theme": "Some truths are bigger than imagination" },
-        { "id": "sd11_02", "shlokas": ["11.32", "11.33"], "theme": "Become a helper for good things" }
+        {
+          "id": "sd11_01",
+          "shlokas": [
+            "11.8",
+            "11.12"
+          ],
+          "theme": "The Eyes of the World"
+        },
+        {
+          "id": "sd11_02",
+          "shlokas": [
+            "11.32",
+            "11.33"
+          ],
+          "theme": "The Great Protector"
+        }
       ]
     },
     "12": {
-      "title": "Kindness & Devotion",
+      "title": "The Heart of Love",
       "themes": [
-        { "id": "sd12_01", "shlokas": ["12.13", "12.14"], "theme": "Kindness and patience are strengths" },
-        { "id": "sd12_02", "shlokas": ["12.15", "12.16"], "theme": "Peaceful people make others feel safe" },
-        { "id": "sd12_03", "shlokas": ["12.18", "12.19"], "theme": "Treat everyone fairly" }
+        {
+          "id": "sd12_01",
+          "shlokas": [
+            "12.2",
+            "12.5"
+          ],
+          "theme": "Talking to Love"
+        },
+        {
+          "id": "sd12_02",
+          "shlokas": [
+            "12.8",
+            "12.10"
+          ],
+          "theme": "Do Your Best"
+        },
+        {
+          "id": "sd12_03",
+          "shlokas": [
+            "12.13",
+            "12.14"
+          ],
+          "theme": "Everyone's Friend"
+        }
       ]
     },
     "13": {
-      "title": "Humility & Wisdom",
+      "title": "The Secret of the Garden",
       "themes": [
-        { "id": "sd13_01", "shlokas": ["13.8", "13.9"], "theme": "Humility helps us learn" },
-        { "id": "sd13_02", "shlokas": ["13.22", "13.23"], "theme": "The soul experiences life through the body" }
+        {
+          "id": "sd13_01",
+          "shlokas": [
+            "13.1",
+            "13.2"
+          ],
+          "theme": "The Magic Garden"
+        },
+        {
+          "id": "sd13_02",
+          "shlokas": [
+            "13.7",
+            "13.8"
+          ],
+          "theme": "Planting Kindness"
+        }
       ]
     },
     "14": {
-      "title": "Habits & Nature",
+      "title": "The Three Colors of You",
       "themes": [
-        { "id": "sd14_01", "shlokas": ["14.6", "14.7"], "theme": "Good habits and restless habits shape us" },
-        { "id": "sd14_02", "shlokas": ["14.8", "14.9"], "theme": "Laziness can trap us" },
-        { "id": "sd14_03", "shlokas": ["14.17", "14.20"], "theme": "Wisdom helps us rise above negativity" }
+        {
+          "id": "sd14_01",
+          "shlokas": [
+            "14.5",
+            "14.6"
+          ],
+          "theme": "The Red, Yellow, and Blue"
+        },
+        {
+          "id": "sd14_02",
+          "shlokas": [
+            "14.11",
+            "14.18"
+          ],
+          "theme": "Choosing the Light"
+        },
+        {
+          "id": "sd14_03",
+          "shlokas": [
+            "14.20",
+            "14.26"
+          ],
+          "theme": "Above the Colors"
+        }
       ]
     },
     "15": {
-      "title": "The Soul & Life",
+      "title": "The Magic Upside-Down Tree",
       "themes": [
-        { "id": "sd15_01", "shlokas": ["15.1", "15.3"], "theme": "Life is a journey of learning" },
-        { "id": "sd15_02", "shlokas": ["15.7", "15.8"], "theme": "Every soul is special and guided" }
+        {
+          "id": "sd15_01",
+          "shlokas": [
+            "15.1",
+            "15.2"
+          ],
+          "theme": "The Sky-Root Tree"
+        },
+        {
+          "id": "sd15_02",
+          "shlokas": [
+            "15.6",
+            "15.12"
+          ],
+          "theme": "The Sun Inside"
+        }
       ]
     },
     "16": {
-      "title": "Good & Bad Qualities",
+      "title": "The Hero and the Grump",
       "themes": [
-        { "id": "sd16_01", "shlokas": ["16.1", "16.2"], "theme": "Fearlessness and kindness build character" },
-        { "id": "sd16_02", "shlokas": ["16.3", "16.5"], "theme": "Good qualities help us grow" },
-        { "id": "sd16_03", "shlokas": ["16.21", "16.22"], "theme": "Anger, greed, and desire hurt peace" }
+        {
+          "id": "sd16_01",
+          "shlokas": [
+            "16.1",
+            "16.3"
+          ],
+          "theme": "The Hero's Toolbox"
+        },
+        {
+          "id": "sd16_02",
+          "shlokas": [
+            "16.4",
+            "16.21"
+          ],
+          "theme": "The Grumpy Clouds"
+        },
+        {
+          "id": "sd16_03",
+          "shlokas": [
+            "16.23",
+            "16.24"
+          ],
+          "theme": "The Rule Book"
+        }
       ]
     },
     "17": {
-      "title": "Faith & Personality",
+      "title": "The Three Ways of Living",
       "themes": [
-        { "id": "sd17_01", "shlokas": ["17.3", "17.4"], "theme": "What we believe shapes our actions" },
-        { "id": "sd17_02", "shlokas": ["17.14", "17.15"], "theme": "Kind words are also discipline" }
+        {
+          "id": "sd17_01",
+          "shlokas": [
+            "17.8",
+            "17.10"
+          ],
+          "theme": "Yummy for the Tummy"
+        },
+        {
+          "id": "sd17_02",
+          "shlokas": [
+            "17.15",
+            "17.16"
+          ],
+          "theme": "The Happy Tongue"
+        }
       ]
     },
     "18": {
-      "title": "Purpose & Surrender",
+      "title": "The Grand Finale",
       "themes": [
-        { "id": "sd18_01", "shlokas": ["18.45", "18.46"], "theme": "Use your talents to help the world" },
-        { "id": "sd18_02", "shlokas": ["18.47", "18.48"], "theme": "Nobody is perfect while learning" },
-        { "id": "sd18_03", "shlokas": ["18.65", "18.66"], "theme": "Trust God with love and faith" }
+        {
+          "id": "sd18_01",
+          "shlokas": [
+            "18.37",
+            "18.38"
+          ],
+          "theme": "The Best Kind of Happy"
+        },
+        {
+          "id": "sd18_02",
+          "shlokas": [
+            "18.45",
+            "18.46"
+          ],
+          "theme": "Your Special Path"
+        },
+        {
+          "id": "sd18_03",
+          "shlokas": [
+            "18.61",
+            "18.66"
+          ],
+          "theme": "You are Never Alone"
+        }
       ]
     }
   }

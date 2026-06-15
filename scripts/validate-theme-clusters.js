@@ -46,8 +46,8 @@ function main() {
         const n = cluster.shlokas?.length || 0;
         if (level === 'seeds') {
           if (n !== 2) errors.push(`Chapter ${ch} seeds[${i}] (${cluster.id || i}): ${n} shlokas (need exactly 2)`);
-        } else if (n < 1 || n > 3) {
-          errors.push(`Chapter ${ch} seekers[${i}] (${cluster.id || i}): ${n} shlokas (need 1-3)`);
+        } else if (n < 2 || n > 4) {
+          errors.push(`Chapter ${ch} seekers[${i}] (${cluster.id || i}): ${n} shlokas (need 2-4)`);
         }
         if (!cluster.idea) {
           errors.push(`Chapter ${ch} ${level}[${i}]: missing idea`);
