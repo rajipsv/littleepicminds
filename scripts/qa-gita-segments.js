@@ -40,6 +40,34 @@ function testVerse11() {
   console.log('  OK 1.1 (chantIntro, skip narrator)');
 }
 
+function testVerse12() {
+  const entry = loadManifest().verses['1.2'];
+  const lineEnds = entry.lineEnds;
+  const introEnd = entry.introEnd;
+  const duration = entry.duration;
+  const lineCount = 4;
+  const hasChantIntro = true;
+
+  const segments = buildLineSegments(lineEnds, lineCount, {
+    duration,
+    introEnd,
+    hasChantIntro,
+  });
+  assert(segments && segments.length === lineCount, '1.2: four segments');
+
+  const row0 = segmentForRow(segments, 0);
+  assert(row0.start >= introEnd - 0.05, `1.2 row0 start ${row0.start} >= intro ${introEnd}`);
+  assert(row0.start >= 3, `1.2 row0 skips sañjaya uvāca (${row0.start})`);
+  assert(row0.end > row0.start + 0.2, '1.2 row0 has duration');
+
+  for (let i = 1; i < lineCount; i++) {
+    const a = segments[i - 1];
+    const b = segments[i];
+    assert(b.start >= a.end - 0.15, `1.2 rows ${i - 1}-${i} monotonic`);
+  }
+  console.log('  OK 1.2 (chantIntro, skip sañjaya uvāca)');
+}
+
 function testVerse110() {
   const entry = loadManifest().verses['1.10'];
   const segments = buildLineSegments(entry.lineEnds, 4, {
@@ -95,6 +123,7 @@ async function main() {
   console.log('gita:qa-segments');
   testCoverage();
   testVerse11();
+  testVerse12();
   testVerse110();
   testDistinctRows();
   console.log('All segment QA checks passed.');

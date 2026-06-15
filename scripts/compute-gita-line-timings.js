@@ -55,6 +55,30 @@ function lineWeights(verse, withIntro = false) {
   return w;
 }
 
+function hasInternalIntroBreath(fullBounds) {
+  return (
+    fullBounds.length >= 3 &&
+    fullBounds[1] < 1.2 &&
+    fullBounds[2] - fullBounds[1] > 0.35
+  );
+}
+
+function introLineEndsFromBounds(fullBounds, lineCount) {
+  const duration = fullBounds[fullBounds.length - 1];
+  let introIdx = 1;
+  while (
+    introIdx < fullBounds.length - lineCount - 1 &&
+    fullBounds[introIdx] < 1.2 &&
+    fullBounds[introIdx + 1] - fullBounds[introIdx] > 0.35
+  ) {
+    introIdx += 1;
+  }
+  const introEnd = fullBounds[introIdx];
+  const lineEnds = fullBounds.slice(introIdx + 1, introIdx + 1 + lineCount);
+  while (lineEnds.length < lineCount) lineEnds.push(duration);
+  return { introEnd, lineEnds: lineEnds.slice(0, lineCount), duration };
+}
+
 async function main() {
   const chapterFilter = parseChapterArg();
   const manifest = loadManifest();
@@ -85,16 +109,22 @@ async function main() {
 
       try {
         const hasIntro = hasChantIntro(verse);
-        const wavLineCount = hasIntro ? n + 1 : n;
-        const fullBounds = computeLineTimingsFromWav(
+        const weights = lineWeights(verse, hasIntro);
+        let fullBounds = computeLineTimingsFromWav(
           wavPath,
-          wavLineCount,
-          lineWeights(verse, hasIntro)
+          hasIntro ? n + 1 : n,
+          weights
         );
+        if (hasIntro && hasInternalIntroBreath(fullBounds)) {
+          fullBounds = computeLineTimingsFromWav(wavPath, n + 2, weights);
+        }
+
         let lineEnds;
         let introEnd;
         const duration = fullBounds[fullBounds.length - 1];
-        if (hasIntro && fullBounds.length >= wavLineCount + 1) {
+        if (hasIntro && fullBounds.length >= n + 2) {
+          ({ introEnd, lineEnds } = introLineEndsFromBounds(fullBounds, n));
+        } else if (hasIntro && fullBounds.length >= n + 1) {
           introEnd = fullBounds[1];
           lineEnds = fullBounds.slice(2, n + 2);
         } else {

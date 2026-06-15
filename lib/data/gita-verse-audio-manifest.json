@@ -218,20 +218,20 @@
       "trainIndex": 1,
       "local": true,
       "lineTimings": [
-        3.506,
+        6.917,
         10.553,
         13.876,
         16.914
       ],
       "lineCount": 4,
       "lineEnds": [
-        3.506,
+        6.917,
         10.553,
         13.876,
         16.914
       ],
       "duration": 16.914,
-      "introEnd": 0.682
+      "introEnd": 3.506
     },
     "1.20": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/19/audio/audio.wav?Expires=1780258794&Signature=0jQbHQkcdXPgqaTTWI19AIJj6FEiodugUhRVkRDKEoqtQxiPRx1SfvVd5ZB9QiqEV2Y5rLWwvnsA~JzL103u0IHOkFiT~OKNIkbyWKUe2V0aScrTf7icIhFDJL-F9Axxw5u8FZ3D-UabInP46~EUnyv11v5vBTSzhPqW760VdFPFaoQTLKlF8GlBzQxyec-3fw15SCs0rW~CXUrDRCHo9iiGy6Z2o1Xfg63IPALbNwv-dhMhMGbHn0ZASHtJxGKTpwWmpgDjKVMV8oIWhKMcvHtyuOI9sVfvHjg29Mxbqaq7waT9wIYtVDb6gU8fbGQ37fPgAwIEun4ymcx8QCcknA__&Key-Pair-Id=K204OQ5RWQVDLD",
