@@ -3,7 +3,7 @@
     "1": [
       {
         "id": "theme_sk1_01",
-        "title": "The Weight of the First Move",
+        "title": "The Scout's Strategy",
         "title_te": "మొదటి నడకకు ముందు మనసులో భారం",
         "emoji": "♟️",
         "micro_theme": "The Scout's Strategy",
@@ -27,7 +27,7 @@
       },
       {
         "id": "theme_sk1_02",
-        "title": "Counting Strengths Before the Storm",
+        "title": "The Center Point",
         "title_te": "తుఫాను ముందు బలాలు లెక్కించడం",
         "emoji": "🔬",
         "micro_theme": "The Center Point",
@@ -51,7 +51,7 @@
       },
       {
         "id": "theme_sk1_03",
-        "title": "When the Moment Becomes Bigger Than You",
+        "title": "Mastering the Spin",
         "title_te": "శంఖం మోగినప్పుడు",
         "emoji": "🎺",
         "micro_theme": "Mastering the Spin",
@@ -72,180 +72,12 @@
         "activity": "Have you ever been part of something bigger than yourself — a ceremony, a team performance, a school event? Write about one moment when the size of the occasion surprised you. How did you feel, and what helped you stay present?",
         "activity_te": "నువ్వు ఎప్పుడైనా నీకంటే పెద్ద దేనిలోనైనా భాగమయ్యావా — ఒక వేడుక, జట్టు ప్రదర్శన, పాఠశాల కార్యక్రమం? సందర్భం యొక్క పరిమాణం నిన్ను ఆశ్చర్యపరచిన ఒక క్షణం గురించి రాయి. నీకు ఎలా అనిపించింది, మరియు అక్కడ ఉండేందుకు నీకు ఏమి సహాయపడింది?",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_04",
-        "title": "Stop the Chariot",
-        "title_te": "రథాన్ని ఆపు",
-        "emoji": "🏫",
-        "micro_theme": "Leaders Feel Pressure",
-        "micro_theme_te": "రథ క్షణం — ఆగి నిజంగా చూడడం",
-        "shlokas": [
-          "1.4",
-          "1.5",
-          "1.6"
-        ],
-        "story": {
-          "title": "Aarav's Election Pause",
-          "title_te": "ఆరవ్ ఎన్నిక ఆగిన క్షణం",
-          "content": "The school council election had felt manageable right up until the moment Aarav walked onto the debate stage and turned to see who was standing at the other podium.\n\nKabir.\n\nHis cousin. His own first cousin, who had been his best summer holiday companion for the last eight years, and who had transferred to Aarav's school just two months ago.\n\nAarav had known intellectually, of course. Everyone in Class 7 knew that Kabir had also filed his nomination. But knowing it in his head and standing here now, twelve feet apart under the auditorium lights, with the entire school sitting in the audience — that was completely different.\n\nMs. Nair, the teacher overseeing the debate, gave both students a smile. 'Candidates — take a moment to review your notes before we begin.'\n\nAarav looked down at his notes. He had worked on them for two weeks. He had clear policies: a new library schedule, a student suggestion box outside the staffroom, a canteen menu vote every month. Good ideas. Ideas he believed in. But when he looked up again and met Kabir's eyes across the stage, his carefully prepared arguments felt strangely thin.\n\nBecause this was Kabir.\n\nKabir who had taught Aarav how to ride a bicycle on the path outside their grandmother's house. Kabir who sat beside him at every family wedding and passed sarcastic notes about the speeches. Kabir who had come to this new school nervous and quiet and had slowly, carefully, begun to find his footing here.\n\nAnd now they were opponents.\n\nIn the Bhagavad Gita, there is a famous moment early in the first chapter. Both armies are arrayed at Kurukshetra, facing each other, ready to begin. Arjuna, the great warrior, turns to his charioteer Krishna and says: 'Place my chariot in the middle, between the two armies. I want to see clearly who I must fight today. I want to look at them before this begins.'\n\nThis is a small request — just move the chariot forward, just pause. But it changes everything. Because when Arjuna sees the people on the other side — his grandfather Bhishma, his teacher Drona, uncles, cousins, lifelong friends — the war stops being a plan and becomes a reality. Seeing the actual people, up close, with eyes and faces and histories, is what opens Arjuna's heart to the full weight of what he is about to do.\n\nIt is the pause before the beginning. The chariot moment.\n\nAarav was having his chariot moment right now.\n\nMs. Nair called the debate to order. Both candidates were to give their opening statement. Aarav went first. He stood at his podium, looked out at the audience, and made himself speak clearly about what he believed the school needed. He was polished. He was prepared. He didn't stumble.\n\nThen Kabir spoke. He talked about the students who joined mid-year and felt invisible in the first few months — how there was no system to welcome them properly or help them catch up. He spoke with a quiet authority that only someone who had lived through that experience could carry.\n\nAarav felt something shift inside him.\n\nHis cousin wasn't his enemy. His cousin was someone who had good ideas and a different experience, and competing against him wasn't a betrayal — it was the most honest thing two cousins who both cared about their school could do.\n\nHe lost the election by eleven votes. Kabir won. After the announcement, Aarav found his cousin in the corridor. 'Good speech,' he said.\n\nKabir looked at him. 'You made me think harder about my answers.'\n\nThe chariot moment teaches us: pause before beginning and really look at who is there. What you see might not make things easier — but it will make them more honest.",
-          "content_te": "పాఠశాల కౌన్సిల్ ఎన్నికలు ఆరవ్ వాదోపవాద వేదికపై నడిచిపోయి, ఎదురుగా నిల్చున్న వ్యక్తిని చూసే వరకు నిర్వహించగలిగేలా అనిపించింది.\n\nకబీర్.\n\nఆయన సొంత అన్నయ్య కొడుకు, ఎనిమిది సంవత్సరాల పాటు వేసవి సెలవుల అత్యంత మంచి స్నేహితుడు, రెండు నెలల క్రితం ఆరవ్ పాఠశాలకు బదిలీ అయినవాడు.\n\nఆరవ్ తెలుసు, అర్థమైంది కూడా — ఏడవ తరగతిలో అందరూ కబీర్ కూడా నామినేషన్ దాఖలు చేశాడని తెలుసు. కానీ దాన్ని తన మనసులో తెలుసుకోవడం వేరు, ఇప్పుడు సభాగారపు దీపాల కింద పన్నెండు అడుగుల దూరంలో, మొత్తం పాఠశాల ప్రేక్షకులతో, నిల్చోవడం వేరు.\n\nఇద్దరు అభ్యర్థులను పర్యవేక్షించే ఉపాధ్యాయురాలు సుశ్రీ నాయర్ నవ్వింది. 'అభ్యర్థులు — ప్రారంభించే ముందు మీ నోట్సు సమీక్షించుకోవడానికి ఒక క్షణం తీసుకోండి.'\n\nఆరవ్ తన నోట్సు చూశాడు. రెండు వారాలు పని చేసి రాశాడు: కొత్త గ్రంథాలయ షెడ్యూల్, ఉపాధ్యాయుల గది వెలుపల విద్యార్థుల సూచన పెట్టె, భోజనాల మెనూ నెలవారీ ఓటింగ్. మంచి ఆలోచనలు. నమ్మే ఆలోచనలు. కానీ మళ్ళీ కబీర్ కళ్ళలోకి చూసినప్పుడు, జాగ్రత్తగా సిద్ధం చేసిన వాదనలు విచిత్రంగా సన్నగా అనిపించాయి.\n\nఎందుకంటే ఇది కబీర్.\n\nతాత ఇంటి దారిలో సైకిల్ నేర్పిన కబీర్. ప్రతి కుటుంబ వివాహంలో ప్రసంగాల గురించి వ్యంగ్యమైన చిన్న కాగితాలు పంచిన కబీర్. కొత్త పాఠశాలలో నెమ్మదిగా, జాగ్రత్తగా తన స్థానం వెతికిన కబీర్.\n\nఇప్పుడు వారు ప్రత్యర్థులు.\n\nభగవద్గీతలో, మొదటి అధ్యాయం ప్రారంభంలో ఒక ప్రసిద్ధ క్షణం ఉంది. కురుక్షేత్రంలో రెండు సైన్యాలూ సిద్ధంగా ఉన్నాయి. అర్జునుడు తన సారధి కృష్ణుడిని అడుగుతాడు: 'నా రథాన్ని రెండు సైన్యాల మధ్య నిల్పు. ఈ రోజు ఎవరితో పోరాడాలో స్పష్టంగా చూడాలి. మొదలుపెట్టే ముందు వారిని చూడాలి.'\n\nఇది చిన్న అభ్యర్థన — రథాన్ని ముందుకు నెట్టు, ఆగు. కానీ అది అన్నింటినీ మారుస్తుంది. ఎందుకంటే అర్జునుడు ఎదురుగా ఉన్న వ్యక్తులను చూసినప్పుడు — తాతా భీష్ముడు, గురువు ద్రోణుడు, మేనమామలు, వ్యాసులు — యుద్ధం ఒక ప్రణాళిక అవడం ఆగి నిజంగా మారుతుంది. నిజమైన వ్యక్తులను, వారి కళ్ళు మరియు ముఖాలతో, సమీపంగా చూడడమే అర్జునుని హృదయంలో తాను ఏమి చేయబోతున్నాడో అనే పూర్తి భారాన్ని తెరుస్తుంది.\n\nఇది ప్రారంభానికి ముందు ఆగే క్షణం. రథ క్షణం.\n\nఆరవ్ ఇప్పుడు తన రథ క్షణం అనుభవిస్తున్నాడు.\n\nసుశ్రీ నాయర్ చర్చను ప్రారంభించమని చెప్పింది. ఆరవ్ తన ప్రారంభ ప్రకటన ఇచ్చాడు. స్పష్టంగా, ఆత్మవిశ్వాసంగా, తాను పాఠశాలకు ఏమి అవసరమని నమ్ముతున్నాడో చెప్పాడు.\n\nతర్వాత కబీర్ మాట్లాడాడు. మధ్యసంవత్సరంలో చేరిన కొత్త విద్యార్థులు — వారికి సరైన స్వాగతించే వ్యవస్థ లేదు, పాత వారితో సమానంగా కదలడానికి సహాయపడే వ్యవస్థ లేదు — వారి గురించి మాట్లాడాడు. ఆ అనుభవాన్ని నేరుగా జీవించిన వాడికి మాత్రమే కలిగే ఒక నిశ్శబ్ద అధికారంతో మాట్లాడాడు.\n\nఆరవ్ హృదయంలో ఏదో మారింది.\n\nతన అన్నయ్య కొడుకు శత్రువు కాదు. మంచి ఆలోచనలు, భిన్నమైన అనుభవం ఉన్న ఒక వ్యక్తి — మరియు ఇద్దరూ పాఠశాలను అభిమానించే వారు పోటీ పడడం విశ్వాసఘాతం కాదు, అత్యంత నిజాయితీగల పనే.\n\nపదకొండు ఓట్ల తేడాతో కబీర్ గెలిచాడు. ప్రకటన తర్వాత ఆరవ్ కారిడార్‌లో అన్నయ్య కొడుకుని కలిశాడు. 'మంచి ప్రసంగం' అన్నాడు.\n\nకబీర్ అతని వైపు చూశాడు. 'నువ్వు నా సమాధానాలను మరింత లోతుగా ఆలోచించేలా చేశావు.'\n\nరథ క్షణం నేర్పేది: మొదలుపెట్టే ముందు ఆగి నిజంగా చూడు. నువ్వు చూసేది దాన్ని సులభం చేయకపోవచ్చు — కానీ అది మరింత నిజంగా చేస్తుంది.",
-          "moral": "Before a hard confrontation, take the chariot moment — pause and truly look at who is there. What you see might not make it easier, but it will make it more honest.",
-          "moral_te": "కష్టమైన ఘర్షణకు ముందు రథ క్షణాన్ని తీసుకో — ఆగి అక్కడ ఎవరున్నారో నిజంగా చూడు. నువ్వు చూసేది దాన్ని సులభం చేయకపోవచ్చు, కానీ అది మరింత నిజంగా చేస్తుంది."
-        },
-        "activity": "Think of a disagreement or competition you are facing with someone you care about. Write three true things you know about that person — not about the competition, but about who they are. How does remembering this change how you feel?",
-        "activity_te": "నువ్వు అభిమానించే ఒక వ్యక్తితో ఎదుర్కొంటున్న ఒక విభేదం లేదా పోటీని గుర్తుచేసుకో. ఆ పోటీ గురించి కాకుండా, ఆ వ్యక్తి ఎవరో అనే దాని గురించి నీకు తెలిసిన మూడు నిజమైన విషయాలు రాయి. దీన్ని గుర్తుచేసుకోవడం నీకు ఎలా అనిపింపజేస్తుంది?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_05",
-        "title": "The Face That Changed Everything",
-        "title_te": "అన్నీ మార్చిన ముఖం",
-        "emoji": "🎭",
-        "micro_theme": "Loud Beginnings",
-        "micro_theme_te": "గురువులను మరియు ప్రియమైనవారిని చూడడం అన్నింటినీ మారుస్తుంది",
-        "shlokas": [
-          "1.12",
-          "1.13",
-          "1.14"
-        ],
-        "story": {
-          "title": "Dev's Unexpected Opponent",
-          "title_te": "దేవ్‌ను ఆశ్చర్యపరచిన ప్రతిపక్షి",
-          "content": "Dev had been preparing for the State Junior Debate Championship for four months.\n\nHe had binders. Three of them — one for affirmative arguments, one for counter-arguments, one for debate tactics. His school's debate teacher, Mr. Raghav, had drilled him and his partner Saanvi in everything from opening cadence to the half-second pause before a key point that made audiences lean forward. Dev knew his topic inside out. He had slept easily the night before for the first time in weeks.\n\nHe arrived at the competition venue — a high school in the next district — and was immediately handed a bracket sheet. His team was in the morning section. Their opponents in the final round, if they made it that far, would be a school called St. Theresa's Academy.\n\nDev scanned the hall while his partner signed them in. Coaches and participants were milling around, reviewing notes, adjusting ties. He spotted a woman standing with the St. Theresa's team across the lobby, her back to him, explaining something with her hands the way a conductor would explain a phrase to an orchestra.\n\nSomething about the gesture made Dev slow down.\n\nThe woman turned, and Dev stopped walking entirely.\n\nIt was Ms. Leela.\n\nMs. Leela, who had been his class teacher and debate mentor from Class 3 to Class 5 at his old school, before her family moved to another city. Ms. Leela, who had first told Dev that his voice, when he spoke about things he truly cared about, had 'the quality of someone worth listening to.' Ms. Leela, who had stayed after school one afternoon to help a nervous nine-year-old practise a speech about water conservation, and who had told him: 'You don't need the words to be perfect. You need them to be true.'\n\nShe was coaching St. Theresa's now. He was in the final draw against her team.\n\nIn the Bhagavad Gita, when Arjuna looks across the battlefield at Kurukshetra and sees the people assembled there — it is not just any crowd he sees. It is Bhishma, the great-grandfather who told him bedtime stories. It is Drona, the teacher who taught him to hold a bow. It is uncles, cousins, lifelong companions of the court. Every face on that battlefield has a history with Arjuna, a bond, a memory. He has known these people all his life. He has learned from them, celebrated with them, loved them.\n\nAnd now the plan says: fight them.\n\nArjuna doesn't run from the battlefield in that moment. But something inside him breaks open in a way that pure battle-preparation had never accounted for. The sight of those faces changes everything — not his courage, but his understanding of what he is actually doing.\n\nDev didn't run from the lobby either. But something shifted.\n\nHe and Saanvi made it to the final, as they had hoped. Across the debate table sat two students from St. Theresa's — both sharp, both clearly well-coached. Ms. Leela sat at the opposing coach's table, her notepad open, her face calm and encouraging as always.\n\nDev thought: everything she taught me about speaking truthfully — she taught the other side too.\n\nAnd somehow that knowledge, instead of defeating him, steadied him. He was not arguing against Ms. Leela. He was arguing well, because of her. He spoke from the place she had pointed him toward all those years ago: the honest place, the true place.\n\nDev's team won on a split decision. Afterward, Ms. Leela crossed the hall and shook his hand. 'I taught you that voice,' she said, smiling. 'You made it your own.'\n\nWhen we truly see the people who shaped us — even when they stand on the other side — we do not become weaker. We remember who we are and why we learned what we learned.",
-          "content_te": "దేవ్ రాష్ట్ర జూనియర్ వాదప్రతివాద పోటీకి నాలుగు నెలలు సన్నాహం చేశాడు.\n\nమూడు బైండర్లు ఉన్నాయి అతని దగ్గర — అనుకూల వాదనలకు ఒకటి, ప్రతివాదనలకు ఒకటి, వాదన వ్యూహాలకు ఒకటి. పాఠశాల వాదప్రతివాద గురువు శ్రీ రాఘవ్ అతనికి మరియు భాగస్వామి సాన్వికి అన్నీ నేర్పించారు — ప్రారంభ లయ నుండి ముఖ్యమైన అంశానికి ముందు అర్ధ సెకను ఆగే తీరు వరకు, ప్రేక్షకులు ముందుకు వంగేలా చేసే పద్ధతి వరకు. దేవ్ తన అంశాన్ని లోపల బయట తెలుసు. చాలా వారాలలో మొదటిసారిగా ముందురోజు రాత్రి సులభంగా నిద్రపోయాడు.\n\nతదుపరి జిల్లాలో ఉన్న పోటీ ప్రాంతానికి వచ్చి పోటీ పట్టిక అందుకున్నాడు. అతని బృందం ఉదయం విభాగంలో ఉంది. అంతిమ రౌండ్‌లో వారి ప్రత్యర్థులు, వారు అంతవరకు వెళ్తే, సంత్ థెరేసా అకాడమీ అవుతుంది.\n\nభాగస్వామి పేరు నమోదు చేస్తుండగా, దేవ్ హాల్ చుట్టూ చూశాడు. కోచ్‌లు మరియు పాల్గొనేవారు తిరుగుతున్నారు, నోట్సు చదువుతున్నారు. వెనుక తన వైపు ఉన్న సంత్ థెరేసా బృందంతో ఒక మహిళ నిల్చుని ఏదో చెప్తోంది, ఒక సంగీత దర్శకుడు వాయిద్యమండలికి ఒక భాగం వివరించినట్లు చేతులతో.\n\nఆ హావభావంలో ఏదో అతన్ని నెమ్మదింపజేసింది.\n\nఆ మహిళ తిరిగింది, మరియు దేవ్ నడవడం పూర్తిగా ఆగిపోయింది.\n\nసుశ్రీ లీలా.\n\nసుశ్రీ లీలా, మూడవ తరగతి నుండి ఐదవ తరగతి వరకు అతని పాత పాఠశాలలో తరగతి ఉపాధ్యాయురాలు మరియు వాదప్రతివాద గురువు, ఆమె కుటుంబం వేరే నగరానికి వెళ్ళే ముందు వరకు. నీళ్ళ పరిరక్షణ గురించి ప్రసంగం సాధన చేయడానికి ఒక భయంతో ఉన్న తొమ్మిదేళ్ళ అబ్బాయికి సహాయం చేయడానికి పాఠశాల తర్వాత ఒక మధ్యాహ్నం ఉన్న సుశ్రీ లీలా, 'మాటలు పరిపూర్ణంగా ఉండాల్సిన అవసరం లేదు. అవి నిజంగా ఉండాలి' అని చెప్పిన సుశ్రీ లీలా.\n\nఆమె ఇప్పుడు సంత్ థెరేసాకు కోచ్. అతను ఆమె బృందానికి వ్యతిరేకంగా అంతిమ రౌండ్‌లో ఉన్నాడు.\n\nభగవద్గీతలో, అర్జునుడు కురుక్షేత్రంలో అవతలి వైపు జనాన్ని చూసినప్పుడు — అది కేవలం ఒక గుంపు కాదు. నిద్రపోయేటప్పుడు కథలు చెప్పిన తాతా భీష్ముడు. విల్లు పట్టుకోవడం నేర్పిన గురువు ద్రోణుడు. మేనమామలు, వ్యాసులు, జీవితకాల సహచరులు. ఆ యుద్ధభూమిలో ప్రతి ముఖమూ అర్జునునితో ఒక చరిత్ర, ఒక అనుబంధం, ఒక జ్ఞాపకం కలిగి ఉంది. వారందరినీ జీవితమంతా తెలుసు. వారి నుండి నేర్చుకున్నాడు, వారితో వేడుకలు చేసుకున్నాడు, వారిని ప్రేమించాడు.\n\nఇప్పుడు ప్రణాళిక చెప్తోంది: వారితో పోరాడు.\n\nఆ క్షణంలో అర్జునుడు యుద్ధభూమి నుండి పారిపోలేదు. కానీ కేవలం యుద్ధ సన్నాహంలో ఎన్నడూ లెక్కించని రీతిలో అతని లోపలి ఏదో విచ్ఛిన్నమైంది. ఆ ముఖాలను చూడడం అన్నింటినీ మారుస్తుంది — అతని ధైర్యాన్ని కాదు, అతను నిజంగా ఏమి చేయబోతున్నాడో అనే అర్థాన్ని.\n\nదేవ్ కూడా పరిగెత్తలేదు. కానీ ఏదో మారింది.\n\nఅతను మరియు సాన్వి అంతిమానికి చేరుకున్నారు. అవతలి వైపు సంత్ థెరేసా నుండి ఇద్దరు విద్యార్థులు — ఇద్దరూ తెలివైనవారు, ఇద్దరూ స్పష్టంగా బాగా శిక్షించబడినవారు. సుశ్రీ లీలా ప్రత్యర్థి కోచ్ బల్ల దగ్గర కూర్చుని ఉంది, నోట్‌పాడ్ తెరిచి, ముఖం ఎప్పటిలా ప్రశాంతంగా, ప్రోత్సాహకరంగా ఉంది.\n\nదేవ్ ఆలోచించాడు: నిజాయితీగా మాట్లాడడం గురించి ఆమె నాకు నేర్పింది అన్నీ — అవతలి వైపుకు కూడా నేర్పింది.\n\nఆ జ్ఞానం, అతన్ని ఓడించే బదులు, స్థిరపరిచింది. అతను సుశ్రీ లీలాకు వ్యతిరేకంగా వాదించడం లేదు. ఆమె వల్ల చాలా బాగా వాదిస్తున్నాడు. ఆమె ఏళ్ళ క్రితం చూపించిన స్థానం నుండి మాట్లాడాడు: నిజాయితీగల స్థానం, సత్యమైన స్థానం.\n\nదేవ్ బృందం విభజిత తీర్పుతో గెలిచింది. తర్వాత సుశ్రీ లీలా హాల్ దాటి వచ్చి చేయి కలిపింది. 'ఆ గొంతు నీకు నేర్పింది నేనే' అని నవ్వుతూ అంది. 'కానీ దాన్ని నీ సొంతం చేసుకున్నావు.'\n\nమనల్ని తీర్చిదిద్దిన వారి ముఖాలను చూసినప్పుడు — వారు మన వ్యతిరేక వైపున ఉన్నా కూడా — మనం బలహీనులు కాం. మనం ఎవరమో, ఎందుకు నేర్చుకున్నామో గుర్తుచేసుకుంటాం.",
-          "moral": "When we truly see the people who shaped us — even on the other side — we do not grow weaker. We remember who we are and why we learned what we learned.",
-          "moral_te": "మనల్ని తీర్చిదిద్దిన వారి ముఖాలను చూసినప్పుడు — వారు మన వ్యతిరేక వైపున ఉన్నా కూడా — మనం బలహీనులు కాం. మనం ఎవరమో, ఎందుకు నేర్చుకున్నామో గుర్తుచేసుకుంటాం."
-        },
-        "activity": "Think of one person — a teacher, a coach, a family member — who taught you something important. Write one sentence they said that you still remember. How would you honour that teaching in what you do today?",
-        "activity_te": "నీకు ముఖ్యమైన ఏదైనా నేర్పిన ఒక వ్యక్తిని గురించి ఆలోచించు — ఒక గురువు, కోచ్, కుటుంబ సభ్యుడు. వారు చెప్పిన ఒక వాక్యం రాయి, నువ్వు ఇంకా గుర్తుపెట్టుకున్నది. ఆ బోధనను ఈ రోజు నువ్వు చేసే పనిలో ఎలా గౌరవిస్తావు?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_06",
-        "title": "When the Body Speaks Before the Mind",
-        "title_te": "మనసుకు ముందే శరీరం మాట్లాడినప్పుడు",
-        "emoji": "📝",
-        "micro_theme": "Seeing Teachers",
-        "micro_theme_te": "భయం శరీరాన్ని, మనసును మరియు నమ్మకాన్ని ప్రభావితం చేస్తుంది",
-        "shlokas": [
-          "1.24",
-          "1.25",
-          "1.26"
-        ],
-        "story": {
-          "title": "Priya's Shaking Hands",
-          "title_te": "ప్రియా యొక్క వణికే చేతులు",
-          "content": "The exam was in forty-five minutes and Priya's hands would not stop shaking.\n\nShe was sitting in the corridor outside the exam hall, her revision notes spread on her knees, and she could not read a single word. Not because the words weren't there — she knew the words. She had spent three weeks preparing: reading her textbook twice, filling four notebooks with practice problems, testing herself with flashcards every morning over breakfast. The knowledge was in her head. She was certain of that.\n\nBut her body was behaving as if it wasn't.\n\nHer palms were damp against the paper. When she tried to flip to the next page, her fingers fumbled. Her heart was beating in a way she could feel in her throat — not painful, but very present, very loud. She was cold, then warm, then cold again. Twice she had started a sentence in her mind — 'The formula for kinetic energy is...' — and found, terrifyingly, that the next word wouldn't come. The second time, she whispered it aloud just to hear it: 'One-half mass times velocity squared.'\n\nThe word came. The knowledge was there.\n\nBut the feeling remained.\n\nIn the Bhagavad Gita, the great warrior Arjuna — one of the finest archers who ever lived, trained since childhood, a veteran of countless challenges — describes exactly this experience when he sees the armies assembled on the battlefield of Kurukshetra.\n\nHe tells Krishna: 'My legs are giving way beneath me. My mouth is dry. My body is trembling and my hair is standing on end. The Gandiva bow is slipping from my hands. My skin is burning. I cannot stand steadily. My mind is spinning.'\n\nArjuna — who could shoot an arrow through the eye of a rotating target using only its reflection in water — could not hold his own bow.\n\nThis is what fear does. It does not only live in the mind as a thought. It lives in the body — in the hands and the knees and the skin and the throat. It arrives before you have had time to consciously understand why you are afraid. The body responds first, before the mind catches up.\n\nAnd crucially — the Gita does not treat Arjuna's physical symptoms as weakness or failure. It treats them as honest. They are the body's true response to a genuinely difficult situation. They are information.\n\nPriya's class teacher Ms. Kavitha came through the corridor, checking on students. She stopped beside Priya, took in the trembling hands and the wide eyes, and sat down next to her on the bench.\n\n'The knowledge doesn't leave just because you're frightened,' she said quietly. 'Your body is reacting. That's normal. It means you care about this.'\n\nPriya looked at her notes again. The formula was still there. The theorems were still there. She reached for the water bottle on the bench beside her, drank slowly, and let out a long breath.\n\nHer hands were still slightly unsteady when the exam hall doors opened twenty minutes later. But she walked in. She found her seat. She read the first question and the answer formed itself clearly in her mind.\n\nFear had spoken first. Preparation answered.\n\nThe Gita teaches us that when the body shakes and the mind spins, it is not the end of the story. It is the moment just before the real one begins.",
-          "content_te": "పరీక్ష నలభై ఐదు నిమిషాలలో ఉంది మరియు ప్రియా చేతులు వణకడం ఆగడం లేదు.\n\nఆమె పరీక్షా హాల్ బయట కారిడార్‌లో కూర్చుని, తొడలపై పరిశీలనా నోట్సు పరుచుకుని, ఒక్క మాటా చదవలేకపోతోంది. మాటలు లేవని కాదు — ఆమెకు మాటలు తెలుసు. మూడు వారాలు సన్నాహం చేసింది: పాఠ్యపుస్తకం రెండుసార్లు చదివింది, నాలుగు నోట్‌బుక్కులు అభ్యాస ప్రశ్నలతో నింపింది, ప్రతి ఉదయం అల్పాహారం మీద ఫ్లాష్ కార్డులతో తనను తాను పరీక్షించుకుంది. జ్ఞానం తన తలలో ఉంది. అందులో ఆమెకు నమ్మకం ఉంది.\n\nకానీ శరీరం మాత్రం అది లేనట్లు ప్రవర్తిస్తోంది.\n\nకాగితానికి వ్యతిరేకంగా అరచేతులు తడిగా ఉన్నాయి. తర్వాత పేజీకి తిప్పడానికి ప్రయత్నించినప్పుడు వేళ్ళు జారాయి. గొంతులో అనిపించే రీతిలో గుండె కొట్టుకుంటోంది — నొప్పి కాదు, కానీ చాలా ప్రస్తుతంగా, చాలా బిగ్గరగా. చలిగా, తర్వాత వేడిగా, మళ్ళీ చలిగా. రెండు సార్లు మనసులో వాక్యం మొదలుపెట్టింది — 'గతి శక్తి సూత్రం ఏమిటంటే...' — మరియు, భయంకరంగా, తర్వాత మాట రాలేదు. రెండవసారి, వినడానికి గట్టిగా చెప్పింది: 'సగం ద్రవ్యరాశి సార్లు వేగం వర్గం.'\n\nమాట వచ్చింది. జ్ఞానం అక్కడ ఉంది.\n\nకానీ అనుభూతి మిగిలిపోయింది.\n\nభగవద్గీతలో, మహావీరుడు అర్జునుడు — ఎప్పుడైనా జీవించిన అత్యుత్తమ విలువాళ్ళలో ఒకడు, చిన్నప్పటి నుండి శిక్షణ పొందిన, అనేక సవాళ్ళను ఎదుర్కొన్న — కురుక్షేత్రంలో సైన్యాలు సమావేశమైనప్పుడు సరిగ్గా ఇదే అనుభవాన్ని వర్ణిస్తాడు.\n\nకృష్ణుడికి చెప్తాడు: 'నా కాళ్ళు నా కింద నిల్వలేకపోతున్నాయి. నోరు పొడిగా ఉంది. శరీరం వణుకుతోంది, వెంట్రుకలు నిక్కబొడుచుకుంటున్నాయి. గాండీవం చేతుల నుండి జారిపోతోంది. చర్మం మండుతోంది. నిలబడలేకపోతున్నాను. మనసు తిరుగుతోంది.'\n\nఅర్జునుడు — నీటిలో ప్రతిబింబం ద్వారా మాత్రమే తిరుగుతున్న లక్ష్యం కన్ను గురి పెట్టగల విలువాడు — తన స్వంత విల్లు పట్టుకోలేకపోతున్నాడు.\n\nభయం ఇలా చేస్తుంది. అది మనసులో కేవలం ఒక ఆలోచనగా మాత్రమే నివసించదు. శరీరంలో నివసిస్తుంది — చేతుల్లో, మోకాళ్ళల్లో, చర్మంలో, గొంతులో. భయంగా ఉన్నాను అని సభ్యంగా అర్థం చేసుకునే ముందే వస్తుంది. మనసుకు అందే ముందే శరీరం స్పందిస్తుంది.\n\nమరియు ముఖ్యమైన విషయం ఏమిటంటే — గీత అర్జునుని శారీరక లక్షణాలను బలహీనత లేదా వైఫల్యంగా పరిగణించదు. వాటిని నిజాయితీగా పరిగణిస్తుంది. నిజంగా కష్టమైన పరిస్థితికి శరీరం యొక్క నిజమైన ప్రతిస్పందన అవి. అవి సమాచారం.\n\nప్రియా తరగతి ఉపాధ్యాయురాలు సుశ్రీ కావిత్వ కారిడార్ గుండా వచ్చింది, విద్యార్థులను చూస్తూ. ప్రియా దగ్గర ఆగింది, వణికే చేతులు మరియు విశాలమైన కళ్ళు చూసి, బెంచీలో పక్కన కూర్చుంది.\n\n'భయపడుతున్నావని జ్ఞానం పోదు' అని నిదానంగా అంది. 'నీ శరీరం స్పందిస్తోంది. అది సాధారణం. అంటే నువ్వు దీన్ని పట్టించుకుంటున్నావు.'\n\nప్రియా మళ్ళీ నోట్సు చూసింది. సూత్రం అక్కడ ఉంది. సిద్ధాంతాలు అక్కడ ఉన్నాయి. పక్కన బెంచీ మీద నీళ్ళ సీసా అందుకుని నెమ్మదిగా తాగి, ఒక పొడవాటి శ్వాస వదిలింది.\n\nఇరవై నిమిషాల తర్వాత పరీక్షా హాల్ తలుపులు తెరుచుకున్నప్పుడు ఆమె చేతులు ఇంకా కొంచెం అస్థిరంగా ఉన్నాయి. కానీ ఆమె లోపలికి నడిచింది. తన స్థానం కనుగొంది. మొదటి ప్రశ్న చదివింది, సమాధానం మనసులో స్పష్టంగా తయారైంది.\n\nభయం మొదట మాట్లాడింది. సన్నాహం సమాధానమిచ్చింది.\n\nగీత నేర్పేది: శరీరం వణికినప్పుడు, మనసు తిరిగినప్పుడు, అది కథ యొక్క అంతం కాదు. అది నిజమైన కథ మొదలయ్యే ముందు క్షణం.",
-          "moral": "Fear speaks through the body before the mind can catch up. Shaking hands and a dry throat are not failures — they are your body saying this matters. You can still walk in.",
-          "moral_te": "భయం మనసుకు అందే ముందే శరీరం ద్వారా మాట్లాడుతుంది. వణికే చేతులు, పొడిగా అనిపించే గొంతు — ఇవి వైఫల్యాలు కావు — ఇవి నీ శరీరం చెప్పే మాట: ఇది ముఖ్యం. నువ్వు ఇంకా లోపలికి నడవగలవు."
-        },
-        "activity": "Next time you feel anxious before something important, try this: name three physical sensations you notice in your body. Then take one slow breath and check — is the knowledge still there?",
-        "activity_te": "ముఖ్యమైన దేనికైనా ముందు నీకు ఆందోళన కలిగినప్పుడు ఇలా చేయి: నీ శరీరంలో గమనించే మూడు శారీరక అనుభవాలను పేర్కొను. తర్వాత ఒక్క మెల్లని శ్వాస తీసుకుని తనిఖీ చేసుకో — జ్ఞానం ఇంకా అక్కడ ఉందా?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_07",
-        "title": "Right and Wrong Can Both Look True",
-        "title_te": "సరైనది మరియు తప్పుదారి రెండూ నిజంగా కనిపించవచ్చు",
-        "emoji": "🧪",
-        "micro_theme": "Moral Doubt",
-        "micro_theme_te": "మనో గందరగోళం మరియు నైతిక సందేహం",
-        "shlokas": [
-          "1.31",
-          "1.32",
-          "1.33"
-        ],
-        "story": {
-          "title": "Isha's Hard Choice",
-          "title_te": "ఈషా యొక్క కష్టమైన ఎంపిక",
-          "content": "Isha had been staring at the same data table for twenty minutes.\n\nThe Science Fair was in two days. Isha and her lab partner Pooja had been working on their project — testing water quality in three different containers using pH strips — for three weeks. They had divided the work: Isha handled the data recording and graph-making; Pooja handled the physical tests and measurements.\n\nYesterday afternoon, Isha had opened their shared folder to finalise the presentation when she found something wrong.\n\nThree of Pooja's recorded measurements — the ones from the last testing session that Isha had missed due to a doctor's appointment — were exactly, precisely the same as measurements from two sessions earlier. Not similar. Identical. Down to the last decimal point.\n\nReal experiments don't produce identical results. Water chemistry fluctuates. pH strips have slight variations. Isha had been doing science long enough to know: these numbers had been copied, not measured.\n\nShe closed the laptop. Then opened it. Then closed it again.\n\nShe thought about what would happen if she reported it. Their project would be disqualified. All three weeks of genuine work — Isha's careful graphs, the real data from four sessions — would be thrown out because of two bad rows of numbers. Pooja's parents would be called. Isha knew what Pooja's parents were like. The pressure they put on their daughter's marks was something she had heard Pooja cry about twice.\n\nAnd Pooja was her friend. Her partner and her friend.\n\nBut if she said nothing, they would submit results that were partly false. Their project would be built on a lie. And the students whose results were genuinely accurate would be competing against something that wasn't real.\n\nIn the Bhagavad Gita, there is a moment when Arjuna is not just frightened — he is confused. He says to Krishna: 'I see no good that will come from this. I do not want this victory. What is the use of winning, of pleasure, of even living, if the people I love will be destroyed in the process? I am lost. I do not know my duty. I do not know what is right. Please tell me.'\n\nThis is dharma-sankata — the crisis of duty. Not the fear of doing a difficult thing, but the genuine inability to see which path leads to good. Both paths seem to cause harm. Arjuna's confusion is not cowardice. It is the honest response of someone with a conscience who can see competing goods and cannot easily calculate which weighs more.\n\nIsha sat at her desk for a long time with that same feeling.\n\nShe went to find her science teacher, Mr. Prasad, and knocked on the staffroom door. When he opened it, she didn't say: 'Pooja copied the data.' She said: 'Something is wrong in our results from the last session and I don't know how to handle it before Friday.'\n\nMr. Prasad looked at her for a long moment. Then he said: 'Come back tomorrow morning with Pooja, and we'll look at it together.'\n\nIsha did not know exactly how it would go. But she had taken the step her conscience asked of her — not with certainty, but with honesty.\n\nThe Gita reminds us that moral confusion is not the same as moral failure. Sometimes the first honest act is not knowing the full answer — it is simply saying: something is wrong here, and I need help to see clearly.",
-          "content_te": "ఈషా ఒకే డేటా పట్టికను ఇరవై నిమిషాలు చూస్తూ ఉంది.\n\nరెండు రోజుల తర్వాత శాస్త్ర ప్రదర్శన. ఈషా మరియు ఆమె ప్రయోగశాల భాగస్వామి పూజ మూడు వారాలు పని చేస్తున్నారు — మూడు వేర్వేరు పాత్రలలో పీహెచ్ పట్టీలతో నీటి నాణ్యత పరీక్షించడం. పని విభజించుకున్నారు: ఈషా డేటా నమోదు మరియు చిత్రాలు; పూజ భౌతిక పరీక్షలు మరియు కొలతలు.\n\nమొన్న మధ్యాహ్నం, ఈషా వారి పంచుకున్న ఫోల్డర్ తెరిచి సమర్పణ పూర్తి చేయడానికి ప్రయత్నించినప్పుడు తప్పు ఏదో కనిపించింది.\n\nపూజ నమోదు చేసిన మూడు కొలతలు — ఈషా వైద్యుని వద్దకు వెళ్ళినందు వల్ల తప్పిపోయిన చివరి పరీక్షా సెషన్ నుండివి — రెండు సెషన్ల ముందటి కొలతలతో ఖచ్చితంగా, పూర్తిగా సమానంగా ఉన్నాయి. పోలికలు కాదు. అచ్చుగుద్దినట్లు. చివరి దశమాంశ వరకు.\n\nనిజమైన ప్రయోగాలు అచ్చుగుద్దిన ఫలితాలు ఇవ్వవు. నీటి రసాయన శాస్త్రం మారుతుంది. పీహెచ్ పట్టీలలో చిన్న వ్యత్యాసాలు ఉంటాయి. ఈషాకు తగినంత కాలంగా శాస్త్రం చేయడం తెలుసు: ఈ సంఖ్యలు కొలవబడలేదు, నకలు చేయబడ్డాయి.\n\nల్యాప్‌టాప్ మూసింది. తర్వాత తెరిచింది. తర్వాత మళ్ళీ మూసింది.\n\nనివేదిస్తే ఏమి జరుగుతుందో ఆలోచించింది. వారి ప్రాజెక్ట్ అనర్హులవుతుంది. మూడు వారాల నిజమైన పని — ఈషా జాగ్రత్తగా తయారు చేసిన చిత్రాలు, నాలుగు సెషన్ల నుండి నిజమైన డేటా — రెండు తప్పుడు అంకెల వరుసల కోసం పక్కన పడేయబడతాయి. పూజ తల్లిదండ్రులకు పిలుపు వస్తుంది. పూజ తల్లిదండ్రులు ఎలాంటివారో ఈషాకు తెలుసు. వారు తమ కూతురు మార్కుల మీద పెట్టే ఒత్తిడి గురించి పూజ రెండుసార్లు ఏడ్వడం విన్నది.\n\nమరియు పూజ ఆమె స్నేహితురాలు. భాగస్వామి మరియు స్నేహితురాలు.\n\nకానీ చెప్పకుండా ఉంటే, కొంతవరకు తప్పుడు ఫలితాలు సమర్పించేవారు. వారి ప్రాజెక్ట్ అబద్ధం మీద నిర్మించబడుతుంది. మరియు నిజంగా ఖచ్చితమైన ఫలితాలు ఉన్న విద్యార్థులు నిజం కాని దానితో పోటీ పడతారు.\n\nభగవద్గీతలో, అర్జునుడు కేవలం భయపడటమే కాదు — అతను గందరగోళంలో ఉన్నాడు. కృష్ణుడికి చెప్తాడు: 'ఇందువల్ల మంచి ఏమీ జరగదని కనిపిస్తోంది. ఈ విజయం నాకు వద్దు. ఈ ప్రక్రియలో నేను ప్రేమించే వారు నశిస్తే గెలుపు, ఆనందం, జీవించడం — వీటి ప్రయోజనం ఏమిటి? నేను పోగొట్టుకున్నాను. నా ధర్మం తెలియడం లేదు. ఏది సరైనది అని తెలియడం లేదు. దయచేసి చెప్పు.'\n\nఇది ధర్మ సంకటం — కర్తవ్య సంకటం. కష్టమైన పని చేయడం పట్ల భయం కాదు, ఏ మార్గం మంచికి దారి తీస్తుందో నిజంగా అర్థం కాకపోవడం. రెండు మార్గాలూ హాని కలిగిస్తాయని అనిపిస్తుంది. అర్జునుని గందరగోళం పిరికితనం కాదు. పోటీ పడే మంచులను చూసి ఏది ఎక్కువ విలువైందో సులభంగా లెక్కించలేని, మనసాక్షి ఉన్న ఒక మనిషి యొక్క నిజాయితీగల ప్రతిస్పందన.\n\nఈషా అదే భావంతో చాలాసేపు తన బల్ల దగ్గర కూర్చుంది.\n\nతన శాస్త్ర ఉపాధ్యాయుడు శ్రీ ప్రసాద్‌ని వెతుక్కుంటూ ఉపాధ్యాయుల గది తలుపు తట్టింది. ఆయన తెరిచినప్పుడు, 'పూజ డేటా నకలు చేసింది' అని చెప్పలేదు. 'మా చివరి సెషన్ ఫలితాలలో తప్పు ఏదో ఉంది, శుక్రవారానికి ముందు దీన్ని ఎలా నిర్వహించాలో తెలియడం లేదు' అని చెప్పింది.\n\nశ్రీ ప్రసాద్ ఆమెను చాలాసేపు చూశాడు. తర్వాత చెప్పాడు: 'రేపు ఉదయం పూజతో కలిసి రా, కలిసి చూద్దాం.'\n\nఇది ఎలా జరుగుతుందో ఈషాకు ఖచ్చితంగా తెలియదు. కానీ ఆమె మనసాక్షి అడిగిన అడుగు వేసింది — నమ్మకంతో కాదు, నిజాయితీతో.\n\nగీత గుర్తుచేస్తుంది: నైతిక గందరగోళం నైతిక వైఫల్యంతో సమానం కాదు. కొన్నిసార్లు మొదటి నిజాయితీగల పని పూర్తి సమాధానం తెలుసుకోవడం కాదు — ఇక్కడ తప్పు ఏదో ఉంది, స్పష్టంగా చూడడానికి సహాయం కావాలి అని చెప్పడం మాత్రమే.",
-          "moral": "When you face a problem where every option seems to cause harm, you have not failed morally — you have found a real dilemma. The first honest act is saying so, and asking for help to see clearly.",
-          "moral_te": "ప్రతి ఎంపికా హాని కలిగిస్తుందని అనిపించే సమస్యను ఎదుర్కొన్నప్పుడు, నైతికంగా విఫలమైనావని కాదు — నువ్వు నిజమైన ద్విధాలో పడ్డావు. మొదటి నిజాయితీగల పని అది అని చెప్పడం మరియు స్పష్టంగా చూడడానికి సహాయం అడగడం."
-        },
-        "activity": "Have you ever faced a situation where you knew something was wrong but were unsure what to do? Write about it without judgment. What values were pulling you in different directions? What did you decide, and why?",
-        "activity_te": "ఏదో తప్పు అని తెలిసినా ఏమి చేయాలో అర్థం కాని పరిస్థితిని ఎదుర్కొన్నావా? విమర్శించుకోకుండా దాని గురించి రాయి. నిన్ను వేర్వేరు దిశలలో లాగిన విలువలు ఏమిటి? నువ్వు ఏమి నిర్ణయించుకున్నావు, ఎందుకు?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_08",
-        "title": "The Hardest Ball to Bowl",
-        "title_te": "వేయడానికి అతి కష్టమైన బంతి",
-        "emoji": "🏏",
-        "micro_theme": "Attachment Hurts",
-        "micro_theme_te": "అనురాగం కష్టమైన కర్తవ్యాలను బాధాకరంగా చేస్తుంది",
-        "shlokas": [
-          "1.34",
-          "1.35",
-          "1.36"
-        ],
-        "story": {
-          "title": "Rohan's Impossible Over",
-          "title_te": "రోహన్ యొక్క అసాధ్యమైన ఓవర్",
-          "content": "Rohan stood at the top of his bowling run and looked down the pitch at the batsman.\n\nThe batsman was Shiv.\n\nHis best friend Shiv. The same Shiv who sat beside him on the school bus every morning and shared chips from the same packet. The same Shiv who had knocked on Rohan's door one evening with a cricket ball because he wanted to practise his sweep shot 'just one more time.' The Shiv who had genuinely celebrated when Rohan was selected as first-change bowler, even though they played for different schools and it meant Rohan would be bowling against him in exactly this kind of match.\n\nThe situation was simple and impossible at the same time.\n\nRohan's school, Vikramaditya, needed one more wicket to win the district final. Shiv's school, St. James', needed twelve runs off the last eight balls to win instead. The match had been close and hard-fought, and now it had come to this: Rohan, with the ball in his hand, standing twelve yards from his best friend.\n\nHis coach had pulled him aside between overs. 'Clean hands, clean bowling. Pitch it full, let the conditions do the work.' Good advice. Rohan knew his craft. He had worked his yorker for months.\n\nBut looking at Shiv now — who was standing very still at the crease, bat raised, face absolutely focused, showing none of the easy smile he wore everywhere else — Rohan felt something in his chest tighten.\n\nHe knew something that Shiv had shared with him in confidence. This tournament result would go into Shiv's sports certificate for his state scholarship application. A strong final would matter for Shiv's future in a way that went beyond today.\n\nIn the Bhagavad Gita, Arjuna says to Krishna: 'I do not want to kill these men, even for the kingship of the three worlds. What joy can there be in doing this? These are my teachers, my elders, my family. Bhishma and Drona — how can I raise a weapon against them? Even if they raise their weapons against me first, I cannot bring myself to act against them.'\n\nArjuna is not being cowardly. He is experiencing the real weight of attachment — the way love for the people in front of us can make our clear duty feel unbearable. Bhishma and Drona were not strangers. They were people who had shaped him, held him, taught him. Fighting them was not merely a difficult duty. It was the most painful kind: one that required harming someone he was also, in another part of himself, trying to protect.\n\nRohan took his run-up.\n\nHe bowled the first ball. Shiv drove it through the covers for four. Rohan felt the run go in his chest like a small thing.\n\nHe bowled the second ball. Shiv played and missed. The stumps stayed intact.\n\nOn the sixth and final ball of the over, Rohan ran in and pitched full and straight. Shiv went back to cut, the ball nipped in off the seam, and the ball hit the top of off stump. Shiv was out.\n\nVikramaditya won by seven runs.\n\nShiv and Rohan walked off the field side by side. Shiv shook his head once — not at Rohan, at the game, at the ball — and then bumped Rohan's shoulder with his own. 'Good bowling,' he said. His voice was ordinary. It was the most generous thing Rohan had heard all day.\n\nSometimes the most honest love means doing the difficult thing, even when it hurts — and trusting that love is strong enough to survive it.",
-          "content_te": "రోహన్ తన బౌలింగ్ పరుగు ప్రారంభానికి నిల్చుని పిచ్ వెంట బ్యాట్స్‌మన్ వైపు చూశాడు.\n\nఆ బ్యాట్స్‌మన్ శివ్.\n\nతన అత్యంత మంచి స్నేహితుడు శివ్. ప్రతి ఉదయం పాఠశాల బస్సులో పక్కన కూర్చుని ఒకే పొట్లంలో చిరుతిళ్ళు పంచుకున్న శివ్. తన స్వీప్ షాట్ 'ఒక్కసారి మాత్రం' అభ్యాసం చేయాలని ఒక సాయంత్రం క్రికెట్ బంతి పట్టుకుని రోహన్ తలుపు తట్టిన శివ్. రోహన్ మొదటి-మార్పు బౌలర్‌గా ఎంపికైనప్పుడు నిజంగా సంతోషపడిన శివ్ — వారు వేర్వేరు పాఠశాలల తరపున ఆడుతున్నారు మరియు ఇలాంటి పోటీలోనే రోహన్ తనకు వ్యతిరేకంగా బౌల్ చేస్తాడని తెలిసినా కూడా.\n\nపరిస్థితి ఒకేసారి సులభంగా మరియు అసాధ్యంగా ఉంది.\n\nరోహన్ పాఠశాల జిల్లా ఫైనల్ గెలవడానికి మరొక వికెట్ అవసరం. శివ్ పాఠశాలకు గెలవడానికి చివరి ఎనిమిది బంతులలో పన్నెండు పరుగులు అవసరం. పోటీ దగ్గరిగా, కష్టంగా సాగింది, ఇప్పుడు ఇక్కడికి వచ్చింది: రోహన్ చేతిలో బంతి పట్టుకుని, తన అత్యంత మంచి స్నేహితుడికి పన్నెండు గజాల దూరంలో నిల్చుని.\n\nకోచ్ ఓవర్ల మధ్య పక్కకు లాగాడు. 'స్వచ్ఛమైన చేతులు, స్వచ్ఛమైన బౌలింగ్. పూర్తి లెంగ్త్, పరిస్థితులను పని చేయనివ్వు.' మంచి సలహా. రోహన్‌కు తన కళ తెలుసు. నెలల తరబడి యార్కర్ సాధన చేశాడు.\n\nకానీ ఇప్పుడు శివ్‌ను చూస్తే — క్రీజ్ వద్ద చాలా నిశ్శబ్దంగా నిల్చుని, బ్యాట్ పైకి ఎత్తి, ముఖం పూర్తిగా దృష్టి కేంద్రీకరించి, వేరే చోటా ఉండే సులభమైన నవ్వు ఏమీ లేకుండా — రోహన్ గుండెలో ఏదో బిగుతు అనిపించింది.\n\nశివ్ నమ్మి చెప్పిన ఒక విషయం తెలుసు. ఈ పోటీ ఫలితం శివ్ రాష్ట్ర స్కాలర్‌షిప్ దరఖాస్తుకు క్రీడా ధృవపత్రంలో వెళ్తుంది. ఈ రోజుకు మించి శివ్ భవిష్యత్తులో బలమైన ఫైనల్ ముఖ్యమైన విషయంగా ఉంటుంది.\n\nభగవద్గీతలో, అర్జునుడు కృష్ణుడికి చెప్తాడు: 'మూడు లోకాల రాజ్యం కోసమైనా వీరిని చంపాలనుకోను. ఇందులో ఆనందం ఏమిటి? ఇవి నా గురువులు, నా పెద్దలు, నా కుటుంబం. భీష్ముడు, ద్రోణుడు — వారికి వ్యతిరేకంగా ఆయుధం ఎలా ఎత్తగలను? వారు ముందు నాకు వ్యతిరేకంగా ఆయుధం ఎత్తినా కూడా నేను వారికి వ్యతిరేకంగా చర్య తీసుకోలేను.'\n\nఅర్జునుడు పిరికితనం చూపించడం లేదు. అతను అనురాగం యొక్క నిజమైన భారాన్ని అనుభవిస్తున్నాడు — ముందు ఉన్న వ్యక్తుల పట్ల ప్రేమ మన స్పష్టమైన కర్తవ్యాన్ని భరించలేనట్లు అనిపింపజేసే తీరు. భీష్ముడు, ద్రోణులు అపరిచితులు కాదు. అతన్ని తీర్చిదిద్దిన, ఆదరించిన, నేర్పించిన వారు. వారతో పోరాడడం కేవలం కష్టమైన కర్తవ్యం మాత్రమే కాదు. అతి బాధాకరమైన రకం: మనలో మరొక భాగం రక్షించడానికి ప్రయత్నిస్తున్న ఒకరిని హాని చేయడం అవసరమయ్యే రకం.\n\nరోహన్ పరుగు తీశాడు.\n\nమొదటి బంతి వేశాడు. శివ్ కవర్ల మీదుగా నాలుగు కొట్టాడు. రోహన్ గుండెలో ఒక చిన్న విషయంలా ఆ పరుగు అనిపించింది.\n\nరెండవ బంతి వేశాడు. శివ్ ఆడాడు, తగలలేదు. స్తంభాలు నిలిచి ఉన్నాయి.\n\nఓవర్ యొక్క ఆరవ మరియు చివరి బంతిలో, రోహన్ లోపలికి పరిగెత్తి పూర్తిగా, నేరుగా వేశాడు. శివ్ కోత కోయడానికి వెనక్కి వెళ్ళాడు, బంతి కుట్టు నుండి లోపలికి వంగింది, మరియు బంతి ఆఫ్ స్టంప్ శిఖరం మీద తాకింది. శివ్ వికెట్ పడింది.\n\nవిక్రమాదిత్య ఏడు పరుగులతో గెలిచింది.\n\nశివ్ మరియు రోహన్ పక్కపక్కనే మైదానం వదిలారు. శివ్ ఒకసారి తల అడ్డంగా ఊపాడు — రోహన్‌కు కాదు, ఆటకు, బంతికి — తర్వాత రోహన్ భుజాన్ని తన భుజంతో తట్టాడు. 'మంచి బౌలింగ్' అన్నాడు. అతని గొంతు సాధారణంగా ఉంది. ఆ రోజు రోహన్ విన్న అతి ఉదారమైన విషయం అది.\n\nకొన్నిసార్లు అతి నిజాయితీగల ప్రేమ కష్టమైన పని చేయడాన్ని అర్థం చేసుకోవడమే — అది నొప్పిగా ఉన్నా కూడా — మరియు ప్రేమ దాన్ని తట్టుకోగలిగేంత బలంగా ఉంటుందని నమ్మడం.",
-          "moral": "Love does not disappear when duty calls — it makes duty harder. But the deepest love is strong enough to survive doing the right thing, even when the right thing is painful.",
-          "moral_te": "కర్తవ్యం పిలిచినప్పుడు ప్రేమ అదృశ్యం కాదు — అది కర్తవ్యాన్ని కష్టతరం చేస్తుంది. కానీ అతి లోతైన ప్రేమ సరైన పని చేయడాన్ని తట్టుకోగలిగేంత బలంగా ఉంటుంది, ఆ సరైన పని నొప్పిగా ఉన్నప్పటికీ."
-        },
-        "activity": "Think of a time when you had to do something right that was also hard because it involved someone you care about. What helped you do it? What did you learn about what love and friendship really mean?",
-        "activity_te": "నువ్వు అభిమానించే ఒక వ్యక్తికి సంబంధించినది కాబట్టి కష్టంగా ఉన్నా, సరైన పని చేయాల్సిన సందర్భాన్ని గుర్తుచేసుకో. అది చేయడానికి నీకు ఏమి సహాయపడింది? ప్రేమ మరియు స్నేహం అంటే నిజంగా ఏమిటో నువ్వు ఏమి నేర్చుకున్నావు?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_09",
-        "title": "The Chain of What-Ifs",
-        "title_te": "ఒకవేళ అంటే అనే సంకోల పరంపర",
-        "emoji": "⚽",
-        "micro_theme": "Fear of Consequences",
-        "micro_theme_te": "పరిణామాల భయం సంకోచాన్ని కలిగిస్తుంది",
-        "shlokas": [
-          "1.37",
-          "1.38",
-          "1.39"
-        ],
-        "story": {
-          "title": "Maya at the Goal Line",
-          "title_te": "గోల్ రేఖ దగ్గర మాయా",
-          "content": "It was the seventh minute of a penalty shootout, and Maya could not stop thinking.\n\nThe tournament final had ended 2–2 after ninety minutes and extra time, and now the winner of the Under-13 Inter-District Girls Football Championship would be decided from the penalty spot. Maya was Redwood School's goalkeeper. She had made two saves already in the shootout — tipping a high shot over the crossbar and diving left to stop a low corner.\n\nNow they were tied 3–3 in the shootout and the girl approaching the penalty spot for the opposing team looked very confident.\n\nMaya should have been thinking only about the next kick. She had a method — watch the kicker's hips, trust her gut, commit early. Her coach had drilled it into her hundreds of times.\n\nInstead, she was thinking about what would happen if she didn't save this one.\n\nIf she let this in, Redwood would lose. If Redwood lost, they wouldn't advance to the state championship. If they didn't advance, Deepa — the team's striker who needed state-level exposure for her selection trials next month — wouldn't get her chance. If Deepa didn't get selected, she would be devastated, and Maya would feel responsible. And if people thought it was Maya's fault, she would have to walk into training sessions for the next six months carrying that weight. And if she carried it long enough, she might start playing differently — too hesitant, too cautious — and then she could lose the goalkeeper position entirely. And if she lost the spot, what had all those early morning drills been for? The bruised palms from the ball in winter, the mud on her knees, the hours of diving practice?\n\nOne save. And all of this attached to it, link by link, growing heavier.\n\nIn the Bhagavad Gita, Arjuna builds exactly this kind of chain. He tells Krishna: 'If we kill our kinsmen, the family lines will be destroyed. If family lines are destroyed, the ancient duties will collapse. If duties collapse, disorder will spread through society. If disorder spreads, everything our ancestors built will be undone.' He reasons forward, link by link, from this battle to total catastrophe.\n\nKrishna listens to all of this very carefully. He will later gently point out that Arjuna has built a chain that begins with assumption, not with knowledge — a chain that skips over reality to reach a conclusion that is as large and dark as possible. Arjuna is not responding to what is actually in front of him. He is responding to a long story he has constructed about what might happen, each step multiplying the weight of the one before.\n\nMaya's coach, standing on the sideline, caught her eye just then. She did not shout. She simply pressed both palms flat against the air — the signal she always used that meant: stop. Present. Here.\n\nMaya shook her head once, hard.\n\nShe went back to her method. Watch the hips. Trust the gut. Commit.\n\nThe girl hit it clean and hard to the low left corner. Maya guessed wrong. It went in. Redwood was behind. Then, on Redwood's next kick, their striker scored. And on the final kick of the shootout — the one that would decide everything — Maya read the hips perfectly, dove right, and caught it.\n\nRedwood won.\n\nThe chain of what-ifs had never been real. What was real was this: hands, ball, ground, commitment.",
-          "content_te": "అది దండా తాటింపు పోటీ యొక్క ఏడవ నిమిషం, మరియు మాయా ఆలోచించడం ఆపలేకపోతోంది.\n\nటోర్నమెంట్ ఫైనల్ తొంభై నిమిషాలు మరియు అదనపు సమయం తర్వాత 2-2తో ముగిసింది, ఇప్పుడు పదమూడేళ్ళ లోపు అంతర్జిల్లా బాలికల ఫుట్‌బాల్ పోటీ విజేత దండా తాటింపు స్పాట్ నుండి నిర్ణయించబడుతుంది. మాయా రెడ్‌వుడ్ పాఠశాల గోల్‌కీపర్. ఇప్పటికే రెండు సేవ్‌లు చేసింది — ఒక ఎత్తైన షాట్ అడ్డుకట్ట మీదుగా తిప్పి, తక్కువ మూల ఆపడానికి ఎడమకు దూకి.\n\nఇప్పుడు పోటీలో 3-3 సమంతో ప్రత్యర్థి బృందానికి దండా తాటింపు స్పాట్ దగ్గరకు వెళ్తున్న అమ్మాయి చాలా ఆత్మవిశ్వాసంగా కనిపించింది.\n\nమాయా తర్వాత తాటింపు గురించి మాత్రమే ఆలోచించాలి. ఒక పద్ధతి ఉంది — తాటించే వారి నడుం చూడు, గట్టి నిర్ణయాన్ని నమ్ము, ముందే నిబద్ధత చూపించు. కోచ్ వందలసార్లు నేర్పించింది.\n\nబదులుగా, ఈ ఒక్కదాన్ని ఆపుకోకపోతే ఏమి జరుగుతుందో ఆలోచిస్తోంది.\n\nఇది లోపలికి వెళ్తే రెడ్‌వుడ్ ఓడుతుంది. రెడ్‌వుడ్ ఓడితే రాష్ట్ర పోటీకి అడుగు ముందుకు వేయదు. అడుగు ముందుకు వేయకపోతే జట్టు స్ట్రైకర్ దీప — వచ్చే నెల ఎంపిక పరీక్షలకు రాష్ట్ర స్థాయి అనుభవం అవసరమైన — ఆమె అవకాశం పోతుంది. దీప ఎంపికైకపోతే, విచారపడుతుంది, మాయా బాధ్యత అనిపిస్తుంది. మాయా తప్పు అని జనం అనుకుంటే, వచ్చే ఆరు నెలలు ఆ భారం మోస్తూ శిక్షణ సెషన్లకు వెళ్ళాలి. చాలాకాలం అది మోస్తే ఆడే తీరు మారవచ్చు — చాలా సంకోచంగా, చాలా జాగ్రత్తగా — అప్పుడు గోల్‌కీపర్ స్థానం పోవచ్చు. స్థానం పోతే, ఆ అన్ని తెల్లవారు ఝామున సాధనలు దేనికోసం?\n\nఒక్క సేవ్. మరియు ఇవన్నీ దానికి వేలాడుతూ, ముడి ముడిగా, మరింత భారంగా పెరుగుతున్నాయి.\n\nభగవద్గీతలో, అర్జునుడు సరిగ్గా ఇలాంటి పరంపర నిర్మిస్తాడు. కృష్ణుడికి చెప్తాడు: 'మనం బంధువులను చంపితే, వంశ క్రమాలు నష్టపోతాయి. వంశ క్రమాలు నష్టపోతే, పురాతన ధర్మాలు నాశనమవుతాయి. ధర్మాలు నాశనమైతే, సమాజంలో అరాచకం వ్యాపిస్తుంది. అరాచకం వ్యాపిస్తే, మన పూర్వులు నిర్మించినదంతా నాశనమవుతుంది.' ఒక్కో ముడిగా, ఈ యుద్ధం నుండి మొత్తం విపత్తు వరకు వాదిస్తాడు.\n\nకృష్ణుడు వీటన్నింటినీ చాలా శ్రద్ధగా వింటాడు. తర్వాత నెమ్మదిగా చూపిస్తాడు: అర్జునుడు జ్ఞానంతో కాదు, ఊహతో మొదలయ్యే పరంపర నిర్మించాడు — వాస్తవాన్ని దాటి, సాధ్యమైనంత పెద్ద మరియు చీకటి నిర్ణయానికి చేరే పరంపర. అర్జునుడు నిజంగా తన ముందు ఉన్న దానికి స్పందించడం లేదు. జరగవచ్చు అని తాను నిర్మించుకున్న పొడవాటి కథకు స్పందిస్తున్నాడు, ప్రతి అడుగూ ముందు అడుగు భారాన్ని పెంచుతూ.\n\nసైడ్‌లైన్‌లో నిల్చున్న మాయా కోచ్ అప్పుడే ఆమె కళ్ళు పట్టుకుంది. అరవలేదు. కేవలం రెండు అరచేతులు గాలికి వ్యతిరేకంగా సమాంతరంగా నెట్టింది — ఆమె ఎప్పుడూ ఉపయోగించే సంకేతం: ఆగు. ప్రస్తుతంలో ఉండు. ఇక్కడ.\n\nమాయా ఒకసారి గట్టిగా తల ఊపింది.\n\nతన పద్ధతికి తిరిగి వెళ్ళింది. నడుం చూడు. గట్టి నిర్ణయాన్ని నమ్ము. నిబద్ధత చూపించు.\n\nఆ అమ్మాయి తక్కువ ఎడమ మూలకు స్వచ్ఛంగా, గట్టిగా కొట్టింది. మాయా తప్పుగా ఊహించింది. అది లోపలికి వెళ్ళింది. రెడ్‌వుడ్ వెనకపడింది. తర్వాత, రెడ్‌వుడ్ తర్వాత తాటింపులో వారి స్ట్రైకర్ గోల్ చేసింది. మరియు పోటీ యొక్క చివరి తాటింపులో — అన్నీ నిర్ణయించే దానిలో — మాయా నడుమును సరిగ్గా చదివి, కుడివైపు దూకి, పట్టుకుంది.\n\nరెడ్‌వుడ్ గెలిచింది.\n\nఒకవేళ అంటే పరంపర ఎప్పుడూ నిజం కాదు. నిజం ఏమిటంటే ఇది: చేతులు, బంతి, నేల, నిబద్ధత.",
-          "moral": "Worry is creative — it builds long chains from one moment to catastrophe. When you notice the chain growing, you can stop it. Return to this moment, these hands, this ball in front of you.",
-          "moral_te": "ఆందోళన సృజనాత్మకమైనది — ఒక క్షణం నుండి విపత్తు వరకు పొడవాటి పరంపరలు నిర్మిస్తుంది. పరంపర పెరగడం గమనించినప్పుడు, దాన్ని ఆపవచ్చు. ఈ క్షణానికి, ఈ చేతులకు, నీ ముందు ఉన్న ఈ బంతికి తిరిగి రా."
-        },
-        "activity": "The next time you catch yourself in a what-if spiral, write out the chain: 'If X happens, then Y, then Z...' Read it back slowly. How many steps are based on facts? How many are assumptions? What is the only real step in front of you right now?",
-        "activity_te": "ఒకవేళ-అనే సుడిగుండంలో నిన్ను నువ్వు పట్టుకున్న తదుపరి సారి, పరంపర రాయి: 'ఒకవేళ X జరిగితే, అప్పుడు Y, తర్వాత Z...' నెమ్మదిగా వెనక్కి చదువు. ఎన్ని అడుగులు వాస్తవాల ఆధారంగా ఉన్నాయి? ఎన్ని ఊహలు? ఇప్పుడు నీ ముందు ఉన్న ఒకే ఒక నిజమైన అడుగు ఏమిటి?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk1_10",
-        "title": "The Bow Falls",
-        "title_te": "విల్లు పడిపోతుంది",
-        "emoji": "🎯",
-        "micro_theme": "Wanting to Give Up",
-        "micro_theme_te": "నిరాశ మరియు వదిలివేయాలని అనిపించడం",
-        "shlokas": [
-          "1.40",
-          "1.41",
-          "1.42"
-        ],
-        "story": {
-          "title": "Sam's Worst Day",
-          "title_te": "శామ్ యొక్క అత్యంత చెడ్డ రోజు",
-          "content": "Sam's day began badly and got worse.\n\nIn the morning, Sam forgot the permission slip for the class science trip, which meant sitting alone in Class 6 while everyone else went to the wildlife sanctuary. In the afternoon, the table group presentation on the water cycle — the one they had worked on together for two weeks — fell apart because two members hadn't done their sections. Sam had done theirs. It didn't matter. The whole presentation unravelled, and the teacher's feedback was gentle but clear: incomplete preparation. Try again next term.\n\nAfter school, Sam missed the cricket trials by six minutes because the bus was delayed. The notice had said 4 p.m. sharp.\n\nSam sat on a bench outside the cricket ground and watched the last of the other students file out through the gate. The afternoon had turned grey and cold. Sam's bag was heavy on one shoulder. The homework inside it felt very far away.\n\nFor a long moment, Sam did not want to do anything at all.\n\nNot the homework. Not tomorrow. Not the next set of cricket trials, which would be in three weeks. Not the conversation that would have to happen with the table group about what went wrong. Not any of it. Everything Sam had tried that day had either gone wrong on its own or been knocked sideways by something outside Sam's control. The effort itself had started to feel pointless.\n\nSam sat on the bench and thought: I don't want to try anymore. What's the use? Everything falls apart anyway.\n\nIn the Bhagavad Gita, the very last image of Chapter One — the chapter called 'Arjuna's Grief' — is this:\n\nArjuna, the finest warrior alive, standing in his chariot between the two armies on the sacred field of Kurukshetra, is so overwhelmed by grief and confusion that his Gandiva bow and his quiver of arrows slip from his hands. He sinks down into his chariot seat. He cannot speak. He cannot act. He is completely overcome.\n\nThe chapter ends there. Not with a solution. Not with a lesson. Not with Krishna stepping in immediately. Just Arjuna — sitting in the chariot, bow on the floor, grief in his chest, unable to begin.\n\nIt is the most honest moment in the entire Gita.\n\nBecause the Gita is not written for people who have everything figured out. It is not written for people who are feeling strong and certain and ready. It is written for this exact moment: the bench, the grey afternoon, the heavy bag, the feeling that trying doesn't work and the future doesn't matter.\n\nThe teaching begins at the moment of sitting down.\n\nA groundskeeper from the cricket club came to lock the gate and found Sam still sitting there on the bench. He paused.\n\n'Trials over?' he asked.\n\nSam nodded without looking up.\n\n'Next round in three weeks,' the man said, not unkindly. 'Happens to the best ones too.' He clicked the padlock and walked on.\n\nSam didn't move for another full minute. Then slowly, one strap at a time, lifted the heavy bag onto both shoulders. Stood up.\n\nThe homework was still there. Tomorrow was still coming. The three weeks before the next trials were still ahead. None of that had changed.\n\nSam didn't feel better. Sam just got up.\n\nAnd in the Gita, that is enough to begin. The bow can be lifted from the floor of the chariot. The journey can continue. But first — first — you have to be allowed to sit completely in the grief, to feel how heavy it is, and to know that sitting here is not the end of your story. It is the place where the most important teaching starts.",
-          "content_te": "శామ్ రోజు చెడ్డగా మొదలైంది మరియు మరింత చెడ్డగా అయింది.\n\nఉదయం, తరగతి శాస్త్ర యాత్రకు అనుమతి చీటీ మర్చిపోయాడు, దీని వల్ల అందరూ అభయారణ్యానికి వెళ్ళినప్పుడు ఆరవ తరగతిలో ఒంటరిగా కూర్చోవాల్సి వచ్చింది. మధ్యాహ్నం, నీటి చక్రంపై బల్ల బృంద సమర్పణ — రెండు వారాలు కలిసి పని చేసిన దాన్ని — రెండు సభ్యులు తమ విభాగాలు చేయకపోవడంతో చిందరవందరమైంది. శామ్ తన భాగం చేశాడు. పట్టించుకోలేదు. మొత్తం సమర్పణ ముళ్ళపోచలా అయింది, ఉపాధ్యాయుడి అభిప్రాయం మెత్తగా కానీ స్పష్టంగా ఉంది: అసంపూర్ణ సన్నాహం. వచ్చే పాఠ్యక్రమంలో మళ్ళీ ప్రయత్నించండి.\n\nపాఠశాల తర్వాత, బస్సు ఆలస్యమైనందుకు శామ్ ఆరు నిమిషాల తేడాతో క్రికెట్ ట్రయల్సు తప్పించుకున్నాడు. నోటీసు చెప్పింది సరిగ్గా సాయంత్రం నాలుగు గంటలు.\n\nశామ్ క్రికెట్ మైదానం బయట ఒక బెంచీలో కూర్చుని చివరి విద్యార్థులు గేటు గుండా బయటికి వెళ్ళడం చూశాడు. మధ్యాహ్నం బూడిద రంగుగా, చలిగా మారింది. శామ్ సంచి ఒక భుజంపై భారంగా ఉంది. అందులో ఉన్న చదువు చాలా దూరంగా అనిపించింది.\n\nచాలాసేపు, శామ్ ఏమీ చేయాలని అనిపించలేదు.\n\nచదువు కాదు. రేపు కాదు. మూడు వారాల తర్వాత ఉండే తర్వాత క్రికెట్ ట్రయల్సు కాదు. ఏమి తప్పు జరిగిందో బల్ల బృందంతో జరగాల్సిన మాటలు కాదు. ఏదీ కాదు. ఆ రోజు శామ్ ప్రయత్నించిన అన్నీ ఒంటరిగా తప్పు జరిగాయి లేదా శామ్ నియంత్రణకు మించిన దానివల్ల పక్కకు తోసివేయబడ్డాయి. ప్రయత్నమే అర్థరహితంగా అనిపించడం మొదలైంది.\n\nశామ్ బెంచీలో కూర్చుని ఆలోచించాడు: ఇంక ప్రయత్నించాలని లేదు. ఏమిటి ఉపయోగం? అన్నీ ఏమైనా సరే చిందరవందర అవుతాయి.\n\nభగవద్గీతలో, మొదటి అధ్యాయం యొక్క చివరి దృశ్యం — 'అర్జున విషాదం' అని పేరున్న అధ్యాయం — ఇలా ఉంది:\n\nజీవించిన అత్యుత్తమ యోధుడు అర్జునుడు, కురుక్షేత్రంలో రెండు సైన్యాల మధ్య తన రథంలో నిల్చుని, దుఃఖం మరియు గందరగోళంతో నిమ్మగ్నమై, అతని గాండీవం మరియు అంబుల పొది చేతుల నుండి జారిపోతాయి. రథ సీటులో కూలబడతాడు. మాట్లాడలేడు. చర్య తీసుకోలేడు. పూర్తిగా నిమ్మగ్నుడు.\n\nమొదటి అధ్యాయం అక్కడ ముగుస్తుంది. పరిష్కారంతో కాదు. పాఠంతో కాదు. కృష్ణుడు వెంటనే జోక్యం చేసుకోవడంతో కాదు. కేవలం అర్జునుడు — రథంలో కూర్చుని, నేల మీద విల్లు, గుండెలో దుఃఖం, మొదలుపెట్టలేకపోతున్నాడు.\n\nఇది గీత మొత్తంలో అతి నిజాయితీగల క్షణం.\n\nఎందుకంటే గీత అన్నీ అర్థమైన వారి కోసం రాయబడలేదు. బలంగా, నిశ్చయంగా, సిద్ధంగా అనిపించే వారి కోసం రాయబడలేదు. సరిగ్గా ఈ క్షణం కోసం రాయబడింది: బెంచీ, బూడిద మధ్యాహ్నం, భారమైన సంచి, ప్రయత్నం పనిచేయదు మరియు భవిష్యత్తు ముఖ్యం కాదు అనే అనుభూతి.\n\nకూర్చునే క్షణంలో బోధన మొదలవుతుంది.\n\nక్రికెట్ క్లబ్ నుండి ఒక మాలీ గేట్ తాళం వేయడానికి వచ్చి శామ్ ఇంకా బెంచీలో కూర్చుని ఉండటం చూశాడు. ఆగాడు.\n\n'ట్రయల్సు అయిపోయాయా?' అన్నాడు.\n\nశామ్ పైకి చూడకుండా తల ఊపాడు.\n\n'మూడు వారాల తర్వాత తర్వాత రౌండ్' అన్నాడు ఆ వ్యక్తి, ఆదరంగా. 'అత్యుత్తముల కి కూడా ఇలా జరుగుతుంది.' తాళం వేసి నడిచాడు.\n\nశామ్ ఇంకా ఒక నిమిషం కదలలేదు. తర్వాత నెమ్మదిగా, ఒక్కో పట్టీగా, భారమైన సంచి రెండు భుజాలపై తీసుకున్నాడు. నిల్చున్నాడు.\n\nచదువు ఇంకా అక్కడ ఉంది. రేపు ఇంకా వస్తోంది. తర్వాత ట్రయల్సుకు ముందు మూడు వారాలు ఇంకా ముందు ఉన్నాయి. వాటిలో ఏదీ మారలేదు.\n\nశామ్‌కు మంచిగా అనిపించలేదు. శామ్ కేవలం లేచి నిల్చున్నాడు.\n\nమరియు గీతలో, ప్రారంభించడానికి అది చాలు. విల్లు రథం నేల నుండి ఎత్తవచ్చు. ప్రయాణం కొనసాగవచ్చు. కానీ ముందుగా — ముందుగా — దుఃఖంలో పూర్తిగా కూర్చోవడానికి అనుమతి ఉంది, అది ఎంత భారంగా ఉందో అనుభవించడానికి, మరియు ఇక్కడ కూర్చోవడం నీ కథ యొక్క అంతం కాదని తెలుసుకోవడానికి. ఇది అతి ముఖ్యమైన బోధన మొదలయ్యే స్థానం.",
-          "moral": "Some days the bow falls and you sit down. That is not failure — that is the beginning of the most important conversation in the Gita. You are allowed to sit in the grief before you stand up again.",
-          "moral_te": "కొన్ని రోజులు విల్లు పడిపోతుంది, నువ్వు కూర్చుంటావు. అది వైఫల్యం కాదు — అది గీతలోని అతి ముఖ్యమైన సంభాషణ యొక్క ప్రారంభం. మళ్ళీ నిల్చోముందు నువ్వు ఆ దుఃఖంలో కూర్చోవడానికి అనుమతి ఉంది."
-        },
-        "activity": "Have you ever had a day when everything went wrong and you just wanted to give up? Write about it. What did you feel? What happened next? What does it mean to you that the Gita's greatest teaching begins at the very moment of sitting down and giving up?",
-        "activity_te": "అన్నీ తప్పు జరిగి వదిలేయాలని అనిపించిన ఒక రోజు గురించి రాయి. నీకు ఎలా అనిపించింది? తర్వాత ఏం జరిగింది? కూర్చుని వదిలేసే క్షణంలోనే గీత యొక్క అతి గొప్ప బోధన మొదలవుతుంది అంటే నీకు అర్థం ఏమిటి?",
-        "videoUrl": ""
       }
     ],
     "2": [
       {
         "id": "theme_sk2_01",
-        "title": "Rise After the Fall",
+        "title": "The Eternal Pilot",
         "title_te": "పడిన తర్వాత లేవడం",
         "emoji": "🌅",
         "micro_theme": "The Eternal Pilot",
@@ -269,7 +101,7 @@
       },
       {
         "id": "theme_sk2_02",
-        "title": "Two Voices, One Choice",
+        "title": "The Physics of Change",
         "title_te": "రెండు స్వరాలు, ఒక ఎంపిక",
         "emoji": "⚖️",
         "micro_theme": "The Physics of Change",
@@ -293,7 +125,7 @@
       },
       {
         "id": "theme_sk2_03",
-        "title": "When Sorrow Runs Deep",
+        "title": "The Weather Observer",
         "title_te": "దుఃఖం లోతుగా ఉన్నప్పుడు",
         "emoji": "🌊",
         "micro_theme": "The Weather Observer",
@@ -317,7 +149,7 @@
       },
       {
         "id": "theme_sk2_04",
-        "title": "The Soul and the Seasons",
+        "title": "Skill in Action",
         "title_te": "ఆత్మ మరియు ఋతువులు",
         "emoji": "🍃",
         "micro_theme": "Skill in Action",
@@ -341,7 +173,7 @@
       },
       {
         "id": "theme_sk2_05",
-        "title": "What Cannot Be Destroyed",
+        "title": "The Ladder of Fall",
         "title_te": "నాశనం కానిది",
         "emoji": "💎",
         "micro_theme": "The Ladder of Fall",
@@ -365,7 +197,7 @@
       },
       {
         "id": "theme_sk2_06",
-        "title": "The Flame That Stayed",
+        "title": "The Master of Senses",
         "title_te": "ఉండిపోయిన జ్యోతి",
         "emoji": "🪔",
         "micro_theme": "The Master of Senses",
@@ -389,7 +221,7 @@
       },
       {
         "id": "theme_sk2_07",
-        "title": "New Clothes, Same Self",
+        "title": "The Peaceful Leader",
         "title_te": "కొత్త బట్టలు, అదే ఆత్మ",
         "emoji": "👕",
         "micro_theme": "The Peaceful Leader",
@@ -410,274 +242,12 @@
         "activity": "Find three examples of something that changed form but did not disappear (ice, paper, a caterpillar, recycled cloth). Write one sentence connecting this to the idea of the continuing soul.",
         "activity_te": "రూపం మారి అదృశ్యం కALEది ఏదైనా మూడు ఉదాహరణలు కనుగొను (మంచు, కాగితం, రెప్పల పురుగు, రీసైకిల్布). కొనసాగే ఆత్మ భావానికి కలిపి ఒక వాక్యం రాయి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_08",
-        "title": "Do Your Duty, Release the Grip",
-        "title_te": "ధర్మం చేయి, పట్టు వదులు",
-        "emoji": "🎯",
-        "micro_theme": "Courage After Grief",
-        "micro_theme_te": "తప్పు ఫలితం భయం లేకుండా ధర్మం",
-        "shlokas": [
-          "2.2",
-          "2.3",
-          "2.4"
-        ],
-        "story": {
-          "title": "Sanjay and the District Debate",
-          "title_te": "సంజయ్ మరియు జిల్లా వాదన",
-          "content": "Sanjay had rehearsed his debate speech forty-seven times.\n\nHe knew this because his Appa had suggested he keep tally marks on the back of his cue cards — not to make him anxious, Appa said, but so he could see how much honest work he had done when fear tried to convince him otherwise. Forty-seven tallies. Three weeks of research on whether schools should ban smartphones in classrooms. Arguments for: focus, sleep, face-to-face friendship. Arguments against: safety, learning tools, trust.\n\nSanjay believed in his position — limited phone use during school hours, with exceptions for emergencies. He had built a careful case. He had timed his speech to exactly four minutes and fifty seconds.\n\nBut on the morning of the district debate, fear arrived anyway.\n\nIt showed up as a voice in his head while he ate his idli: \"What if you forget your opening line? What if the judge asks something you can't answer? What if you embarrass yourself in front of the whole auditorium? What if you lose and everyone thinks you're not smart?\"\n\nSanjay's hands went cold around his water bottle.\n\nHis coach, Ms. Rekha, found him in the warm-up room pacing in a tight line. \"You're doing the walk,\" she said. \"That's the fear walk. Sit down.\"\n\nHe sat.\n\n\"I'm prepared,\" he said. \"I know I'm prepared. But I keep thinking about what happens if I fail.\"\n\nMs. Rekha pulled a folded paper from her bag — a printed verse she kept for debate days. \"Read the underlined part,\" she said.\n\nSanjay read: \"Considering your duty as a warrior, you should not waver. For a warrior, there is no greater good than fighting a righteous battle. Even if you lose, fighting with honour is itself the victory.\"\n\n\"That's from the Gita,\" Sanjay said. \"Arjuna on the battlefield.\"\n\n\"Yes. And Krishna's deeper point — which comes a little later — is this: you have a right to your action, but you do not have a right to the fruits of action. Do not be attached to outcomes. Do not be attached to avoiding outcomes. Do your duty with your best effort and let the result come as it comes.\"\n\nSanjay stared at the card. \"So I should not care if I win?\"\n\n\"Care about doing your best. Care about speaking truthfully. Care about representing your school with integrity. But release your grip on the trophy — because gripping it too hard is what makes your hands cold right now.\"\n\nSanjay breathed out slowly. He thought about all forty-seven tallies. The work was done. The speech was ready. What happened after he walked on stage was not entirely in his hands — the judge's mood, the other speaker's skill, a moment of forgetfulness he could not predict.\n\nWhat was in his hands was the next four minutes and fifty seconds.\n\nHe walked onto the stage. The auditorium was larger than he expected — rows of faces, a timer on the screen, the other school's speaker already seated, looking calm. Sanjay's heart hammered. He placed his cue cards on the podium, found the first line, and began.\n\nHe stumbled once — a half-second pause where a word escaped him — and then recovered. He spoke clearly. He answered the cross-question without panic. When the results were announced, he placed second.\n\nNot first. Second.\n\nIn the corridor afterward, Appa hugged him one-armed, careful of the cue cards. \"How do you feel?\"\n\nSanjay thought about it honestly. \"Disappointed,\" he said. \"But also — okay. I did the work. I showed up. I didn't run away.\"\n\n\"That,\" Appa said, \"is the victory Krishna was talking about.\"\n\nDuty done without fear of the wrong result. That was enough for today.",
-          "content_te": "సంజయ్ debate speech forty-seven times rehearsed.\n\nAppa cue cards back tally marks suggest — anxious make not, honest work see when fear otherwise convince. forty-seven. three weeks research smartphones ban classrooms. for: focus sleep friendship. against: safety learning trust.\n\nposition believe — limited phone school hours emergencies exceptions. careful case. four minutes fifty seconds timed.\n\ndistrict debate morning fear anyway.\n\nidli eat head voice: \"opening forget? judge question can't answer? auditorium embarrass? lose not smart think?\"\n\nhands cold water bottle.\n\ncoach Ms. Rekha warm-up room pacing tight line. \"walk doing. fear walk. sit.\"\n\nsit.\n\n\"prepared. know prepared. fail happens think keep.\"\n\nbag folded paper — debate days verse. \"underlined read.\"\n\n\"duty warrior considering waver not. warrior righteous battle fight — greater good none. lose even honour fight — itself victory.\"\n\n\"Gita,\" Sanjay. \"Arjuna battlefield.\"\n\n\"Yes. Krishna deeper — later: action right, fruits action right not. outcomes attached not. avoiding outcomes attached not. best effort duty — result comes as comes.\"\n\nstare card. \"win care not should?\"\n\n\"best doing care. truthfully speaking care. school integrity care. trophy grip release — gripping hard hands cold now.\"\n\nbreath out slow. forty-seven tallies. work done. speech ready. stage after not entirely hands — judge mood other skill forgetfulness predict not.\n\nhands: next four fifty seconds.\n\nstage walk. auditorium larger — faces rows timer screen other speaker calm. heart hammer. cue cards podium first line begin.\n\nstumble once half-second word escaped — recovered. clearly speak. cross-question panic without answer. results second place.\n\nfirst not. second.\n\ncorridor after Appa hug one-armed cue cards careful. \"feel how?\"\n\nhonest think. \"disappointed. but also okay. work did. showed up. run away didn't.\"\n\n\"That,\" Appa, \"Krishna victory talking.\"\n\nwrong result fear without duty done. today enough.",
-          "moral": "You have a right to your best effort, not to the outcome. Do your duty fully, then release your grip on the result — that is where fear loosens its hold.",
-          "moral_te": "ఉత్తమ ప్రయత్నం చేసే హక్కు నీకుంది, ఫలితం మీద కాదు. ధర్మం полностью చేసి, ఫలితం పట్టు వదులు — అక్కడ భయం తన పట్టు వదులుతుంది."
-        },
-        "activity": "Before your next test, performance, or competition, write: 'My duty is ___' and 'I will release my grip on ___.' Focus on the first during the event.",
-        "activity_te": "తదుపరి పరీక్ష, ప్రదర్శన, లేదా పోటీకు ముందు రాయి: 'నా ధర్మం ___' మరియు '___ పట్ల నా పట్టు వదులుతాను.' సంఘటన సమయంలో మొదటిదానిపై దృష్టి పెట్టు.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_09",
-        "title": "One Arrow, One Target",
-        "title_te": "ఒక బాణం, ఒక లక్ష్యం",
-        "emoji": "🏹",
-        "micro_theme": "Emotional Conflict",
-        "micro_theme_te": "చెదరిన మనసు కంటే కేంద్రీకృత బుద్ధి",
-        "shlokas": [
-          "2.5",
-          "2.6",
-          "2.7"
-        ],
-        "story": {
-          "title": "Meera's Scattered Evening",
-          "title_te": "మీరా చెదరిన సాయంకాలం",
-          "content": "Meera had been \"studying\" for forty minutes and had accomplished almost nothing.\n\nHer textbook was open to page forty-two — the chapter on photosynthesis — but her eyes had not moved past the first paragraph in twenty minutes. Her phone buzzed on the desk: a message from her friend group about weekend plans. She picked it up, replied with three emojis, then opened a short video \"just for a minute.\" The minute became twelve. She remembered the textbook, switched back, read two sentences, and then noticed her pencil case was messy and spent six minutes reorganising it by colour.\n\nWhen Amma called from the kitchen — \"Meera, how is study going?\" — she said \"Fine!\" without hesitation. It was not fine. Her mind felt like a room with twenty doors, all of them open, wind blowing through from every direction.\n\nThe science test was on Thursday. It was Monday evening.\n\nOn Tuesday, Meera's science teacher Mr. Das wrote a quote on the board during class: \"Many-branched and endless are the thoughts of the irresolute. For the resolute in purpose, there is but one thought.\" He asked if anyone knew where it came from.\n\nMeera raised her hand before she could overthink it. \"The Bhagavad Gita,\" she said. \"Krishna teaching Arjuna about focused intelligence.\"\n\nMr. Das smiled. \"Correct. Krishna tells Arjuna that a person whose mind scatters in many directions has no steady goal. But a person who gathers their intelligence like an archer drawing a bow — one target, one arrow, one clear aim — that person finds the path.\"\n\nAfter class, Meera stayed back. \"Sir, my mind is the scattered one. I sit down to study and end up everywhere except the textbook.\"\n\nMr. Das did not lecture her. He pulled out a blank index card. \"Write the one thing you need to finish in the next thirty minutes. Just one. Not the whole chapter — one section, one page, one concept.\"\n\nMeera wrote: Read page 42–43 and summarise photosynthesis in five sentences.\n\n\"Now,\" Mr. Das said, \"phone in your bag, not on the desk. Timer for thirty minutes. Until the timer rings, those five sentences are your only target. One arrow. One aim.\"\n\nThat evening, Meera tried it at her desk. She put her phone inside her school bag and zipped it closed. She set a timer on her watch — not her phone — for thirty minutes. She read page forty-two. She read page forty-three. She wrote five sentences, the last one slightly smudged because her hand was tired, but complete.\n\nThe timer rang. She had done one thing.\n\nShe took a five-minute break — standing up, stretching, drinking water — and then wrote a new card: Draw and label the photosynthesis diagram on page forty-four.\n\nOne target. One arrow.\n\nBy Wednesday evening, she had worked through the whole chapter in small, focused blocks rather than one chaotic hour of scattered attention. Her mind still wandered sometimes — she was human, not a machine — but each time it wandered, she looked at the card on her desk and asked: what is the one target right now?\n\nOn Thursday, she walked into the science test with steady hands. Not because she knew every answer — she did not — but because her preparation had been focused rather than frantic.\n\nKrishna's teaching was not about never getting distracted. It was about gathering the scattered mind back to one clear aim, again and again, like an archer returning to the bow.",
-          "content_te": "మీరా \"studying\" forty minutes — almost nothing accomplished.\n\ntextbook page forty-two photosynthesis open — eyes first paragraph twenty minutes not moved. phone buzz friend group weekend plans. pick reply emojis three, video \"one minute\" — twelve became. textbook switch two sentences, pencil case messy six minutes colour reorganise.\n\nAmma kitchen call \"study how?\" — \"Fine!\" hesitation without. not fine. mind twenty doors open room — every direction wind.\n\nscience test Thursday. Monday evening.\n\nTuesday Mr. Das science teacher board quote: \"Many-branched endless thoughts irresolute. resolute purpose — one thought.\" know where from?\n\nhand raise overthink before. \"Bhagavad Gita. Krishna Arjuna focused intelligence teach.\"\n\nsmile. \"Correct. mind scatters many directions — steady goal none. intelligence gathers archer bow — one target one arrow one clear aim — path finds.\"\n\nafter class stay back. \"Sir scattered one mine. study sit textbook except everywhere end.\"\n\nlecture not. blank index card. \"next thirty minutes one thing finish write. one. whole chapter not — one section one page one concept.\"\n\nwrite: page 42-43 read photosynthesis five sentences summarise.\n\n\"phone bag not desk. timer thirty minutes. until rings — five sentences only target. one arrow one aim.\"\n\nevening desk try. phone school bag inside zip close. watch timer thirty — phone not. page forty-two read. forty-three read. five sentences write — last smudged hand tired complete.\n\ntimer rang. one thing done.\n\nfive minute break — stand stretch water — new card: page forty-four photosynthesis diagram draw label.\n\none target one arrow.\n\nWednesday evening whole chapter small focused blocks — chaotic hour scattered attention not. mind wander sometimes — human machine not — wander each time card desk look: one target now what?\n\nThursday science test steady hands walk. every answer know not — but preparation focused frantic not.\n\nKrishna teaching distract never not — scattered mind gather back one clear aim again again archer bow return like.",
-          "moral": "A scattered mind chases everything and finishes nothing. Gather your attention to one clear target at a time — that is focused intelligence.",
-          "moral_te": "చెదరిన మనసు అన్నీ వెంబడిస్తూ ఏమీ పూర్తి చేయదు. ఒక సమయంలో ఒక స్పష్ట లక్ష్యానికి నీ దృష్టిని కేంద్రీకరించు — అదే కేంద్రీకృత బుద్ధి."
-        },
-        "activity": "Tonight, study one topic for twenty minutes with your phone in another room. Write your single target on a card before you begin. Afterward, note whether you finished more than usual.",
-        "activity_te": "ఈ రాత్రి ఫోన్ మరో గదిలో ఉంచి ఒక అంశం ఇరవై నిమిషాలు చదువు. మొదలు పెట్టే ముందు నీ ఏకైక లక్ష్యాన్ని card మీద రాయి. తర్వాత సాధారణం కంటే ఎక్కువ పూర్తి చేశావా గమనించు.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_10",
-        "title": "Beyond All or Nothing",
-        "title_te": "అన్నీ లేదా ఏమీ కాదు — అంతకు మించి",
-        "emoji": "⚖️",
-        "micro_theme": "Krishna Responds",
-        "micro_theme_te": "అతివ్యయాల పైకి ఎగరి — తర్వాత నీ బాధ్యత చేయి",
-        "shlokas": [
-          "2.8",
-          "2.9",
-          "2.10"
-        ],
-        "story": {
-          "title": "Kavya's Study Storm",
-          "title_te": "కావ్య యొక్క చదువు తుఫాను",
-          "content": "Kavya had turned her study desk into a battlefield between two kings: Panic and Perfection.\n\nTwo weeks before her Class 8 annual exams, she had read online that top students study fourteen hours a day. So she tried. She stacked textbooks from floor to ceiling, set three alarms, and promised herself she would not leave her chair until midnight. By day three her head ached like someone had tied a rubber band around it. She forgot which chapter she was on. She cried into her maths notebook and told her mother, 'I am useless.'\n\nThe next morning, ashamed of the crying, Kavya swung to the other extreme. She left her books closed on the desk and told herself exams did not matter anyway. She watched two episodes of her favourite show, then three. She scrolled through reels until her thumb felt sore. She ate biscuits for lunch and avoided the dining table where Amma had saved hot dal and rice. By evening, guilt sat in her stomach heavier than the biscuits. 'Tomorrow I will study properly,' she promised. Tomorrow she panicked again and studied too hard until midnight. The cycle repeated.\n\nHer Sanskrit teacher, Sri Venkatesh sir, noticed Kavya zoning out during a revision class. After the bell, he asked her to stay. He did not scold her. He opened his own copy of the Bhagavad Gita on the staff table, worn soft at the corners.\n\n'There is a teaching Krishna gives Arjuna in Chapter Two,' he said. 'Arjuna is caught between grief on the battlefield and the demand to act. Krishna tells him to rise above the three modes — the push toward frantic doing, the pull toward giving up, and the foggy middle where we just drift. Transcend the extremes, Krishna says. Be rooted in wisdom. Then perform your duty without being a slave to panic or laziness.'\n\nKavya frowned. 'But I still have to study, sir.'\n\n'Exactly. Duty remains. Only the wild swinging stops. You are not a machine that must run fourteen hours. You are not a stone that must ignore exams. You are a student. Your duty is honest preparation — steady blocks, food, sleep, one chapter at a time.'\n\nTogether they wrote a simple timetable on the back of her rough notebook: ninety minutes of focused study, a fifteen-minute walk on the terrace, another ninety minutes, then dinner and lights out by ten. No fourteen-hour marathons. No biscuit-only afternoons.\n\nThe first evening felt almost suspiciously calm. Kavya opened her science chapter on respiration and read four pages without checking her phone. She paused when her eyes grew tired instead of pushing through in a fog. The next morning she ate proper breakfast before revising algebra.\n\nOn exam day, Kavya did not feel like a superhero. She felt prepared enough. Her hands were steady when she read the first question. The extremes had not disappeared from the world — she still saw classmates boasting about all-nighters — but she had stopped obeying them.\n\nKrishna's lesson is not to escape life's duties. It is to rise above the all-or-nothing storm inside, then do what is yours to do with quiet steadiness.",
-          "content_te": "కావ్య తన చదువు బల్లను రెండు రాజుల మధ్య యుద్ధభూమిగా మార్చింది: పానిక్ మరియు పరిపూర్ణత.\n\nఎనిమిదవ తరగతి వార్షిక పరీక్షలకు రెండు వారాల ముందు, టాప్ విద్యార్థులు రోజుకు పద్నాలుగు గంటలు చదువుతారని ఆన్‌లైన్‌లో చదివింది. అదే ప్రయత్నించింది. పాఠ్యపుస్తకాలను నేల నుండి పైకి పేర్చింది, మూడు అలారాలు పెట్టింది, అర్ధరాత్రి వరకు కుర్చీలోనే ఉంటానని నిర్ణయించుకుంది. మూడవ రోజు తల నొప్పి — ఎవరో రబ్బర్ బ్యాండ్ కట్టినట్లు. ఏ అధ్యాయం చదువుతున్నాదో మర్చిపోయింది. గణిత నోట్‌బుక్‌లో ఏడ్చింది, అమ్మకు 'నేను పనికిరాని' అని చెప్పింది.\n\nతర్వాత ఉదయం, ఏడ్చినందుకు సిగ్గుపడి, కావ్య మరొక అతివ్యయం వైపు తిరిగింది. పుస్తకాలు మూసి ఉంచి పరీక్షలు ఏమీ ముఖ్యం కావు అని తనకు తాను చెప్పుకుంది. ఇష్టమైన షో రెండు ఎపిసోడ్లు, తర్వాత మూడు. రీల్స్ స్క్రోల్ చేసి బొటనవేలు నొప్పి. భోజనానికి బిస్కెట్లు, అమ్మ వేడి అన్నం పెట్టిన డైనింగ్ టేబుల్‌కు వెళ్ళలేదు. సాయంత్రం అపరాధభావం బిస్కెట్ల కంటే ఎక్కువ బరువుగా. 'రేపు సరిగ్గా చదువుతాను' — రేపు మళ్ళీ పానిక్, అర్ధరాత్రి వరకు చదువు. ఈ చక్రం పునరావృతమైంది.\n\nసంస్కృత ఉపాధ్యాయుడు శ్రీ వెంకటేశ్ సర్ పునరావృత్త తరగతిలో కావ్య మనసు తప్పిపోవడం గమనించారు. గంట మోగిన తర్వాత ఆమెను ఆపాడు. తిట్టలేదు. స్టాఫ్ టేబుల్ మీద తన భగవద్గీతా కాపీ తెరిచాడు — మూలలు మృదువుగా అరిగి ఉన్నాయి.\n\n'అధ్యాయం రెండులో కృష్ణుడు అర్జునునికి ఇచ్చే బోధ ఉంది' అన్నారు. 'యుద్ధభూమిలో దుఃఖం మరియు చర్య అవసరం మధ్య అర్జునుడు చిక్కుకున్నాడు. కృష్ణుడు మూడు గుణాల పైకి ఎగరమన్నాడు — అతి చేయడం, వదిలివేయడం, మరియు మధ్యలో తేలియాడే మబ్బు. అతివ్యయాలను అతిక్రమించు, జ్ఞానంలో నాటుకుని, పానిక్ లేదా సోమరితనానికి దాసుడిగా ఉండకుండా నీ బాధ్యత నిర్వహించు.'\n\nకావ్య ముఖం ముడుచుకుంది. 'కానీ నేను ఇంకా చదవాలి సార్.'\n\n'ఖచ్చితంగా. బాధ్యత మిగిలిపోతుంది. కేవలం ఊగే కదలిక ఆగుతుంది. నువ్వు పద్నాలుగు గంటలు పరిగెత్తే యంత్రం కాదు. పరీక్షలను పట్టించుకోని రాయి కాదు. నువ్వు విద్యార్థిని. నీ బాధ్యత నిజాయితీగల సన్నాహం — స్థిరమైన బ్లాకులు, ఆహారం, నిద్ర, ఒక్కో అధ్యాయం.'\n\nకలిసి రఫ్ నోట్‌బుక్ వెనుక టైమ్‌టేబుల్ రాశారు: తొంభై నిమిషాలు ఫోకస్ చదువు, పదిహేను నిమిషాలు టెర్రస్ నడక, మరొక తొంభై నిమిషాలు, రాత్రి పదికి భోజనం మరియు నిద్ర. పద్నాలుగు గంటల మ్యారథాన్లు లేవు. బిస్కెట్ మాత్రమే ఉదయాలు లేవు.\n\nమొదటి సాయంత్రం అనుమానంగా ప్రశాంతంగా అనిపించింది. శ్వాసక్రియ అధ్యాయం తెరిచి ఫోన్ చూడకుండా నాలుగు పేజీలు చదివింది. కళ్ళు అలసిపోతే మబ్బులో ముందుకు పోకుండా విరామం. తదుపరి ఉదయం భోజనం చేసి బీజగణితం పునరావృత్తం.\n\nపరీక్ష రోజు కావ్య సూపర్‌హీరో లా అనిపించలేదు. సరిపడా సిద్ధంగా అనిపించింది. మొదటి ప్రశ్న చదివేటప్పుడు చేతులు స్థిరంగా ఉన్నాయి. ప్రపంచంలో అతివ్యయాలు అదృశ్యం కాలేదు — సహపాఠులు రాత్రంతా చదివామని గర్వపడటం చూసింది — కానీ వాటికి విధేయురాలు కాదు.\n\nకృష్ణుని పాఠం జీవిత బాధ్యతల నుండి తప్పించుకోవడం కాదు. లోపల అన్నీ-లేదా-ఏమీ తుఫాను పైకి ఎగరి, నీది అయిన పనిని నిశ్శబ్ద స్థిరత్వంతో చేయడం.",
-          "moral": "Rising above extremes does not mean avoiding your duty. It means stopping the swing between panic and giving up, then doing your work with steady, honest effort.",
-          "moral_te": "అతివ్యయాల పైకి ఎగరడం అంటే బాధ్యత తప్పించుకోవడం కాదు. పానిక్ మరియు వదిలివేత మధ్య ఊగే కదలిక ఆపి, స్థిరమైన నిజాయితీ ప్రయత్నంతో పని చేయడం."
-        },
-        "activity": "Notice one area where you swing between 'all' and 'nothing.' Write a middle-path plan: one steady block of effort, one break, one rest time.",
-        "activity_te": "నువ్వు 'అన్నీ' మరియు 'ఏమీ' మధ్య ఊగే ఒక విషయాన్ని గమనించు. మధ్య మార్గ ప్రణాళిక రాయి: ఒక స్థిర ప్రయత్న బ్లాక్, ఒక విరామం, ఒక విశ్రాంతి సమయం.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_11",
-        "title": "The Run That Counted",
-        "title_te": "ముఖ్యమైన పరుగు",
-        "emoji": "🏃",
-        "micro_theme": "Soul and Change",
-        "micro_theme_te": "ప్రశాంత ప్రయత్నం బహుమతుల కంటే ముఖ్యం",
-        "shlokas": [
-          "2.12",
-          "2.16",
-          "2.21"
-        ],
-        "story": {
-          "title": "Arnav and the Sports Day",
-          "title_te": "అర్ణవ్ మరియు క్రీడా దినోత్సవం",
-          "content": "Arnav used to dream in gold.\n\nEvery night before sleep, he pictured himself on the school sports day podium — first place ribbon across his chest, his Appa's proud handshake, his photo on the notice board beside last year's district champion. He trained for the four-hundred-metre race with that picture burning in his mind. He counted his laps. He timed his sprints. He compared his stopwatch numbers to Kabir's numbers the way traders compare prices in a busy market.\n\nWhen Kabir beat him in practice by two seconds, Arnav's stomach twisted. When his coach said, 'Good effort, both of you,' Arnav heard only 'not first.' He started skipping the cool-down walk. He started arguing with himself during homework: if I don't win, what was all this for?\n\nHis Thatha visited on a Sunday and found Arnav sitting on the garden step, scowling at his running shoes. Thatha did not ask about medals. He asked, 'Does your heart feel stronger than last month?'\n\nArnav shrugged. 'That doesn't win races.'\n\nThatha smiled and opened a thin book he always carried — the Bhagavad Gita, its pages soft from years of reading. 'On the battlefield of Kurukshetra, Krishna gave Arjuna one of the most famous teachings in the world. You have a right to your action, Krishna said, but not to the fruits of action. Do not let reward be the only reason you run. Do not let fear of losing steal the quality of your effort.'\n\nArnav frowned. 'So I should not care if I win?'\n\n'Care about running well. Care about breathing steady. Care about the discipline you build at five-thirty in the morning when the lane is still dark. Hold results lightly — like a leaf on water, not a chain around your ankle.'\n\nSports day arrived under a pale winter sun. The track smelled of chalk and wet grass. Arnav stood at the starting line beside Kabir and three runners from other houses. His heart beat fast, but differently now — not only with hunger for first place, but with the simple readiness of a body that had trained honestly.\n\nThe whistle blew. Arnav ran. His legs found rhythm. His breath came in steady waves. He did not look sideways at Kabir until the final bend. He crossed the line third.\n\nFor one second, disappointment flashed hot. Then he noticed something else: his time was faster than any practice run he had ever clocked. His chest burned in the good way — alive, strong, awake. He walked to the water station and drank slowly, the way Thatha had taught him to finish any effort: not collapsing, not cursing, just completing.\n\nKabir won. Arnav shook his hand. 'You earned it,' he said, and meant it.\n\nOn the bus home, Appa asked, 'Are you sad?'\n\n'A little,' Arnav said. 'But I ran the best race I have ever run. That is not nothing.'\n\nKrishna's teaching is not against caring. It is against letting the medal own your mind before you have even begun. Calm effort — steady, wholehearted, unattached to praise — is its own kind of victory.",
-          "content_te": "అర్ణవ్ బంగారంలో కలలు కండేవాడు.\n\nనిద్రకు ముందు ప్రతి రాత్రి, స్కూల్ క్రీడా దినోత్సవ వేదికలో తనను తాను ఊహించేవాడు — మొదటి స్థానం రిబ్బన్, అప్పా గర్వపూరిత హ్యాడ్‌షేక్, గత సంవత్సర జిల్లా చాంపియన్ పక్కన నోటీస్ బోర్డ్ ఫోటో. ఆ చిత్రం మనసులో మండుతూ నాలుగు వందల మీటర్ల పరుగు సాధన. ల్యాప్‌లు లెక్కించాడు. స్ప్రింట్‌లు టైమ్ చేశాడు. బజార్‌లో వ్యాపారులు ధరలు పోల్చినట్లు కబీర్ స్టాప్‌వాచ్ సంఖ్యలతో తన సంఖ్యలు పోల్చాడు.\n\nసాధనలో కబీర్ రెండు సెకన్లు ముందు అయితే అర్ణవ్ కడుపు ముడుచుకుంది. కోచ్ 'మంచి ప్రయత్నం' అన్నప్పుడు 'మొదటి కాదు' మాత్రమే వినిపించింది. కూల్-డౌన్ నడక మానేశాడు. హోంవర్క్ చేస్తూ తనతో వాదించాడు: గెలవకపోతే ఇంత పని ఎందుకు?\n\nఆదివారం తాతయ్య వచ్చి తోట మెట్ట మీద అర్ణవ్ పరుగు షూలకు కోపంగా కూర్చున్నట్లు కనిపించాడు. పదకాల గురించి అడగలేదు. 'గత నెల కంటే నీ హృదయం బలంగా అనిపిస్తుందా?' అని అడిగాడు.\n\nఅర్ణవ్ భుజం తొక్కాడు. 'అది పరుగులు గెలవదు.'\n\nతాతయ్య నవ్వి సదా తనతో ఉండే భగవద్గీతా పుస్తకం తెరిచాడు. 'కురుక్షేత్ర యుద్ధభూమిలో కృష్ణుడు అర్జునునికి ప్రపంచంలో అత్యంత ప్రసిద్ధ బోధలలో ఒకటి ఇచ్చాడు. చర్యపై నీకు హక్కు ఉంది, కానీ చర్య ఫలితాలపై కాదు. బహుమతి మాత్రమే పరుగు పడే కారణం కాకుండా చూడు. ఓటమి భయం నీ ప్రయత్న నాణ్యతను చొరబడనివ్వకు.'\n\n'అప్పుడు గెలవాలని పట్టించుకోకూడదా?'\n\n'బాగా పరుగెత్తడం, స్థిరంగా శ్వాస తీసుకోవడం, ఉదయం అయిదు ముప్పైలకు లేని లేన్‌లో నిర్మించిన శిక్షణ — వీటిని పట్టించుకో. ఫలితాలను తేలికగా పట్టుకో — నీటిపై ఆకు లా, మోకాల చుట్టు చెంచు కాదు.'\n\nపాలిద సూర్యుడి క్రింద క్రీడా దినోత్సవం వచ్చింది. ట్రాక్‌కు సుద్ది, తడి పచ్చ గంధం. అర్ణవ్ కబీర్ మరియు ఇతర హౌస్ పరుగుదారులతో స్టార్టింగ్ లైన్‌లో నిల్చున్నాడు. గుండె వేగంగా — కేవలం మొదటి స్థానం ఆకాంక్ష కాదు, నిజాయితీగా సాధన చేసిన శరీర సిద్ధత కూడా.\n\nవిసిల్ మోగింది. అర్ణవ్ పరిగెత్తాడు. కాళ్ళకు లయం. శ్వాస స్థిర తరంగాలు. చివరి బెండ్ వరకు కబీర్ వైపు చూడలేదు. మూడవ స్థానంలో గేటు దాటాడు.\n\nఒక క్షణం నిరాశ వేడిగా మెరిసింది. తర్వాత వేరేది: తన సమయం ఎప్పుడూ లేనంత వేగం. గుండె మంచి మంటలా — జీవంతం, బలం, మేల్కొన్న. నీళ్ళ స్టేషన్‌కు నడిచి నెమ్మదిగా తాగాడు — తాతయ్య నేర్పినట్లు: పడిపోకుండా, తిట్టుకోకుండా, పూర్తి చేయడం.\n\nకబీర్ గెలిచాడు. అర్ణవ్ చేయి కలిపాడు. 'నువ్వు సాధించావు' అని నిజాయితీగా.\n\nబస్సులో అప్పా 'విచారంగా ఉన్నావా?' అని అడిగాడు.\n\n'కొంచెం. కానీ నేను ఎప్పుడూ లేనంత బాగా పరిగెత్తాను. అది ఏమీ కాదు కాదు.'\n\nకృష్ణుని బోధ పట్టించుకోకూడదని కాదు. మొదలుకాకముందే పదకం నీ మనసును యజమానిగా చేసుకోనివ్వకు. ప్రశాంత ప్రయత్నం — స్థిరం, పూర్తి హృదయం, ప్రశంసకు అంటుకోకుండా — своя రకమైన విజయం.",
-          "moral": "You have a right to your effort, not to the prize. Give your work calm, steady attention — and let results come without owning your mind.",
-          "moral_te": "నీ ప్రయత్నంపై నీకు హక్కు ఉంది, బహుమతిపై కాదు. నీ పనికి ప్రశాంత, స్థిర దృష్టి ఇవ్వి — ఫలితాలు రావనివ్వు, కానీ నీ మనసును యజమానిగా చేసుకోనివ్వకు."
-        },
-        "activity": "Choose one task today and do it with full attention, without checking whether you will be praised. Notice how the effort itself feels.",
-        "activity_te": "ఈ రోజు ఒక పని ఎంచుకుని పూర్తి దృష్టితో చేయి — ప్రశంస వస్తుందో లేదో చూడకుండా. ప్రయత్నం స్వయంగా ఎలా అనిపిస్తుందో గమనించు.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_12",
-        "title": "The Map on One Paper",
-        "title_te": "ఒక కాగితంపై మ్యాప్",
-        "emoji": "🗺️",
-        "micro_theme": "Duty Without Fear",
-        "micro_theme_te": "జ్ఞానం గందరగోళం తొలగిస్తుంది",
-        "shlokas": [
-          "2.31",
-          "2.32",
-          "2.33"
-        ],
-        "story": {
-          "title": "Meera's Science Fair Team",
-          "title_te": "మీరా శాస్త్ర ప్రదర్శన బృందం",
-          "content": "Meera's science fair group had become a storm of voices.\n\nFour students — Meera, Dev, Pooja, and Rishi — were building a model of the water cycle for the inter-school exhibition. They had two weeks left. They had plenty of ideas. They had almost no finished work.\n\nEvery meeting in the library corner turned into the same pattern. Dev wanted a spinning cloud made from cotton and a motor. Pooja wanted a detailed poster with fifteen labelled diagrams. Rishi wanted a working rain-collection tray with real measurements. Meera wanted everyone to agree before anyone glued anything. All four spoke at once. Nobody listened long enough to hear the full sentence at the end.\n\nBy Thursday, the group had three half-built clouds, two torn poster drafts, and a tray that leaked. In the WhatsApp group, messages flew like arrows: You never listen. That was my idea. Why did you cut my drawing? Meera stared at her phone and felt the same fog she had felt during a difficult maths proof — every step seemed right and wrong at the same time.\n\nTheir science teacher, Ms. Anjali, found them arguing near the drinking water fountain after school. She did not raise her voice. She pulled a blank sheet from her folder and a blue pen from her pocket.\n\n'One speaker at a time,' she said. 'Meera — what must the model show?'\n\nMeera swallowed. 'Evaporation, condensation, precipitation, collection. All four stages clearly.'\n\n'Good. Dev — one physical feature that makes it memorable?'\n\n'A slow-spinning cloud,' Dev said, quieter now.\n\n'Pooja — what helps judges read it fast?'\n\n'Clear labels. Not fifteen. Five that matter.'\n\n'Rishi — one real measurement?'\n\n'Rain collected in the tray over one simulated cycle.'\n\nMs. Anjali wrote it all on one paper. Tasks beside names. Deadlines beside tasks. A single map where the fog had been.\n\n'This is what wisdom does,' she said, tapping the page. 'In the Bhagavad Gita, Krishna tells Arjuna that when knowledge is steady, confusion falls away like mist when the sun rises. You were not lacking talent. You were lacking a shared picture. Wisdom is not only knowing facts. It is seeing clearly enough to act together.'\n\nSomething shifted in the group. Not magic — structure. Dev brought the motor on Saturday. Pooja trimmed her labels to five and they looked elegant. Rishi sealed the tray with silicone from his father's toolbox. Meera kept the WhatsApp group focused: Done? Stuck? Need help?\n\nOn exhibition day, a judge paused at their table longer than most. 'The stages are clear,' she said. 'And you built it as a team — I can tell.'\n\nThey did not win the top prize. They won a note for clarity and cooperation. Walking home, Pooja said, 'I thought wisdom meant being the smartest person in the room.'\n\nMeera shook her head. 'I think it means making the room clear enough to move.'\n\nWhen minds overlap without a map, confusion grows. When wisdom draws one clear picture, people can finally build.",
-          "content_te": "మీరా శాస్త్ర ప్రదర్శన గ్రూప్ స్వరాల తుఫానుగా మారింది.\n\nనలుగురు — మీరా, దేవ్, పూజ, రిషి — అంతర్పాఠశాల ప్రదర్శనకు నీటి చక్రం నమూనా నిర్మిస్తున్నారు. రెండు వారాలు మిగిలాయి. ఆలోచనలు చాలా. పూర్తి పని దాదాపు లేదు.\n\nలైబ్రరీ మూలలో ప్రతి సమావేశం ఒకే నమూనా. దేవ్ పత్తి మేఘం మోటార్‌తో తిప్పాలనుకున్నాడు. పూజ పదిహేను లేబుల్ డయాగ్రామ్‌ల పోస్టర్. రిషి నిజ కొలతలతో వర్షం సేకరణ ట్రే. మీరా అందరూ అంగీకరించే వరకు ఎవరూ అంటకూడదనుకుంది. నాలుగురూ ఒకేసారి మాట్లాడారు. చివరి వాక్యం వినడానికి ఎవరూ ఆగలేదు.\n\nగురువారం మూడు సగం మేఘాలు, రెండు చిరిగిన పోస్టర్ డ్రాఫ్ట్‌లు, లీక్ అయ్యే ట్రే. వాట్సాప్‌లో బాణాల్లా సందేశాలు: నువ్వు వినవు. అది నా ఆలోచన. నా డ్రాయింగ్ ఎందుకు కత్తిరించావు? మీరా ఫోన్ చూసి కష్టమైన గణిత నిరూపణలో అనుభవించిన మబ్బు అనుభవించింది — ప్రతి అడుగు సరైనదీ తప్పుదారీ కూడా.\n\nశాస్త్ర ఉపాధ్యాయురాలు సుశ్రీ అంజలి స్కూల్ తర్వాత ఫౌంటెన్ దగ్గర వాదించడం కనిపించి వచ్చింది. గొంతు పెంచలేదు. ఫోల్డర్ నుండి ఖాళీ షీట్, జేబు నుండి నీలం పెన్.\n\n'ఒక్కొక్కరు మాట్లాడాలి' అన్నారు. 'మీరా — నమూనా ఏమి చూపించాలి?'\n\n'బాష్పీభవనం, సంఘననం, వర్షపాతం, సేకరణ. నాలుగు దశలు స్పష్టంగా.'\n\n'దేవ్ — గుర్తుండే ఒక భౌతిక లక్షణం?'\n\n'నెమ్మదిగా తిరిగే మేఘం' — ఇప్పుడు నిశ్శబ్దంగా.\n\n'పూజ — న్యాయాధికారులు త్వరగా చదవడానికి?'\n\n'స్పష్ట లేబుల్‌లు. పదిహేను కాదు. ముఖ్యమైన ఐదు.'\n\n'రిషి — ఒక నిజ కొలత?'\n\n'ఒక సైకిల్‌లో ట్రేలో సేకరించిన వర్షం.'\n\nసుశ్రీ అంజలి అన్నీ ఒక కాగితంలో రాశారు. పేర్ల పక్కన పనులు. పనుల పక్కన గడువులు. మబ్బు ఉన్న చోట ఒక మ్యాప్.\n\n'జ్ఞానం ఇలా చేస్తుంది' — పేజీ తట్టి. 'భగవద్గీతలో కృష్ణుడు అర్జునునికి జ్ఞానం స్థిరమైనప్పుడు గందరగోళం సూర్యుడు వచ్చినప్పుడు పొగ మాయం అవ్వడం లా పడిపోతుంది అని చెబుతాడు. మీకు ప్రతిభ లేకపోవడం లేదు. పంచుకున్న చిత్రం లేకపోవడం. జ్ఞానం అంటే వాస్తవాలు తెలుసుకోవడం మాత్రమే కాదు — కలిసి చర్య చేయగలంత స్పష్టంగా చూడడం.'\n\nగ్రూప్‌లో ఏదో మారింది. మాయాజాలం కాదు — నిర్మాణం. దేవ్ శనివారం మోటార్ తీసుకువచ్చాడు. పూజ ఐదు లేబుల్‌లు — అందంగా. రిషి తండ్రి టూల్‌బాక్స్ సిలికాన్‌తో ట్రే ముద్దు. మీరా వాట్సాప్ ఫోకస్ చేసింది: పూర్తయిందా? అడ్డంకా? సహాయం?\n\nప్రదర్శన రోజు ఒక న్యాయాధికారురాలు ఇతరుల కంటే ఎక్కువ ఆగింది. 'దశలు స్పష్టం. బృందంగా నిర్మించారు — కనిపిస్తుంది.'\n\nఅత్యుత్తమ బహుమతి రాలేదు. స్పష్టత, సహకారం గమనిక వచ్చింది. ఇంటికి వెళ్తూ పూజ 'జ్ఞానం అంటే గదిలో అత్యంత తెలివైన వ్యక్తి అవ్వడం' అన్నది.\n\nమీరా తల ఆడించింది. 'గది కదలడానికి సరిపడా స్పష్టం చేయడం అని అనిపిస్తుంది.'\n\nమ్యాప్ లేకుండా మనసులు అతివ్యయపడితే గందరగోళం పెరుగుతుంది. జ్ఞానం ఒక స్పష్ట చిత్రం గీసినప్పుడు మనుషులు నిర్మించగలరు.",
-          "moral": "Wisdom clears confusion by making one shared picture. When everyone can see the path, the team can finally move.",
-          "moral_te": "జ్ఞానం ఒక పంచుకున్న చిత్రం తయారు చేసి గందరగోళం తొలగిస్తుంది. అందరికీ మార్గం కనిపించినప్పుడు బృందం కదలగలదు."
-        },
-        "activity": "In a group task that feels messy, write roles and deadlines on one paper. Read them aloud once before anyone starts building.",
-        "activity_te": "గందరగోళంగా అనిపించే గ్రూప్ పనిలో పాత్రలు, గడువులు ఒక కాగితంలో రాయి. ఎవరూ నిర్మించే ముందు ఒకసారి బిగ్గరగా చదవండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_13",
-        "title": "The Lamp in Still Air",
-        "title_te": "నిశ్శబ్ద గాలిలో దీపం",
-        "emoji": "🪔",
-        "micro_theme": "Focused Intelligence",
-        "micro_theme_te": "ఆత్మనియంత్రణ భావ స్థిరత్వం తెస్తుంది",
-        "shlokas": [
-          "2.39",
-          "2.40",
-          "2.41"
-        ],
-        "story": {
-          "title": "Vikram and the Kabaddi Final",
-          "title_te": "విక్రమ్ మరియు కబడ్డీ ఫైనల్",
-          "content": "Vikram had a temper that arrived faster than thought.\n\nIn the inter-house kabaddi final, his team — Blue House — was one point ahead with two minutes left. Vikram was their best raider: quick feet, sharp dives, a loud kiai that made younger players nervous on the other side. He loved the sport precisely because it asked for speed and fire.\n\nThen the referee called a touch that Vikram was certain had not happened.\n\nHe had tagged the defender's shoulder — he felt the contact. But the referee raised the other team's hand. One point against Blue House. The score tied.\n\nHeat rushed up Vikram's neck. His hands curled into fists. Words pushed against his teeth: This is unfair. You are cheating us. The gymnasium seemed to shrink around him. Parents in the front row. His coach on the sideline. The Red House team grinning. Every eye on him.\n\nHe took a step toward the referee.\n\nHis captain, Nandini, caught his elbow. Not hard — just enough. 'Vikram. Breathe.'\n\nHe shook her off. 'That was my point!'\n\nAfter the match — which Blue House lost by one raid — Vikram sat alone on the last bench in the changing room, shoes untied, jaw locked. He replayed the moment until it burned brighter in his memory than anything else from the game.\n\nHis grandfather found him there before the others returned. Dadaji did not ask who was right. He sat down and said, 'Tell me what your body did when the call went against you.'\n\n'I wanted to shout,' Vikram muttered. 'I wanted to run at the referee.'\n\nDadaji nodded. 'In the Bhagavad Gita, Krishna describes a person of steady wisdom. Pleasure and pain, praise and blame, heat and cold — these visit everyone. But the steady one is not shaken. Krishna compares such a person to a lamp in a place where the wind does not blow. The flame stays upright. Not because the world is always fair. Because the lamp has learned not to dance with every gust.'\n\nVikram stared at his untied laces. 'So I should accept bad calls?'\n\n'You may disagree. You may appeal through proper channels later. But self-control in the moment is not weakness. It is what keeps your mind from becoming a storm that destroys your own game. The referee call lasted one second. Your anger wanted to last the whole evening.'\n\nDadaji taught him a practice that week: STOP. Stop the body. Take one slow breath. Observe what is happening inside. Proceed only when your voice can be steady.\n\nTwo weeks later, in a practice match, another doubtful call went against Vikram. His chest tightened. His fists wanted to close. He stopped. Breathed. Watched the heat rise and fall. He clapped his teammates back to position instead of arguing.\n\nHis coach noticed. 'That is leadership,' she said quietly.\n\nVikram still felt anger sometimes. But anger no longer owned the whole hour. It passed through like weather — noticed, named, not obeyed. Self-control had not made him soft. It had made him stable, like a lamp in still air.",
-          "content_te": "విక్రమ్‌కు ఆలోచన కంటే వేగంగా వచ్చే కోపం ఉండేది.\n\nఇంటర్-హౌస్ కబడ్డీ ఫైనల్‌లో బ్లూ హౌస్ రెండు నిమిషాలు మిగిలి ఒక పాయింట్ ముందు. విక్రమ్ వారి ఉత్తమ రైడర్ — వేగమైన పాదాలు, పదునైన డైవ్‌లు, ఎదురు జట్టు చిన్న ఆటగాళ్ళను నరాలు మోతగా చేసే బిగ్గర కై. అతను ఈ క్రీడను ఇష్టపడేది వేగం, అగ్ని అడిగేందుకే.\n\nరెఫరీ టచ్ అని పిలిచాడు — విక్రమ్ ఖచ్చితంగా జరగలేదని నమ్మాడు. డిఫెండర్ భుజం తాకాడు — స్పర్శ అనుభవించాడు. కానీ రెఫరీ అవతలి జట్టు చేయి ఎత్తాడు. బ్లూ హౌస్‌కు వ్యతిరేకంగా ఒక పాయింట్. స్కోర్ సమం.\n\nవిక్రమ్ మెడ వేడెక్కింది. చేతులు ముష్టులు. పండుకున్న మాటలు: ఇది న్యాయం కాదు. మీరు మాకు మోసం. జిమ్నాసియం చిన్నదిగా. ముందు వరుస తల్లిదండ్రులు. సైడ్‌లైన్ కోచ్. రెడ్ హౌస్ నవ్వుతోంది. ప్రతి కన్ను అతనిపై.\n\nరెఫరీ వైపు అడుగు వేశాడు.\n\nకెప్టెన్ నందిని మోచేయి పట్టుకుంది — గట్టిగా కాదు, సరిపడా. 'విక్రమ్. శ్వాస తీసుకో.'\n\nఅతను వదిలించుకున్నాడు. 'అది నా పాయింట్!'\n\nమ్యాచ్ తర్వాత — బ్లూ హౌస్ ఒక రైడ్ తేడాతో ఓడిపోయింది — విక్రమ్ మార్పు గదిలో చివరి బెంచీ మీద ఒంటరిగా కూర్చున్నాడు. షూలు అన్‌టై, దవడ బిగుతు. ఆ క్షణం మ్యాచ్ మిగిలిన అన్నింటి కంటే మరింత మండేలా రీప్లే.\n\nదాదాజీ మిగిలినవారు రాకముందే కనిపించాడు. ఎవరు సరైనవారో అడగలేదు. కూర్చుని 'కాల్ నీకు వ్యతిరేకంగా వచ్చినప్పుడు నీ శరీరం ఏమి చేసింది?' అని అడిగాడు.\n\n'అరవాలనిపించింది' గుసగుస. 'రెఫరీ వద్దకు పరిగెత్తాలనిపించింది.'\n\nదాదాజీ తల ఆడించాడు. 'భగవద్గీతలో కృష్ణుడు స్థిర జ్ఞాని వర్ణిస్తాడు. సుఖం, దుఃఖం, ప్రశంస, నింద, వేడి, చలి — ఇవి అందరినీ సందర్శిస్తాయి. కానీ స్థిరుడు కదలడు. అటువంటి వ్యక్తిని గాలి ఊదని చోట దీపంతో పోల్చాడు. జ్వాల సరిగ్గా నిలబడి ఉంటుంది. ప్రపంచం ఎప్పుడూ న్యాయంగా ఉండేందుకు కాదు. దీపం ప్రతి గాలితో నృత్యం చేయడం నేర్చుకోలేదు కాబట్టి.'\n\nవిక్రమ్ అన్‌టై లేసులు చూశాడు. 'చెడు కాల్‌లను అంగీకరించాలా?'\n\n'అంగీకరించకపోవచ్చు. తర్వాత సరైన మార్గంలో అప్పీల్ చేయవచ్చు. కానీ ఆ క్షణంలో ఆత్మనియంత్రణ బలహీనత కాదు. నీ మనసు తుఫానుగా మారి నీ స్వంత ఆటను నాశనం చేయకుండా ఉంచేది. రెఫరీ కాల్ ఒక సెకను. నీ కోపం మొత్తం సాయంత్రం ఉండాలనుకుంది.'\n\nఆ వారం STOP నేర్పించాడు: ఆగు. నెమ్మది శ్వాస. లోపల ఏమి జరుగుతోందో గమనించు. గొంతు స్థిరంగా ఉండగలిగేటప్పుడు మాత్రమే ముందుకు.\n\nరెండు వారాల తర్వాత సాధన మ్యాచ్‌లో మరొక సందేహాస్పద కాల్. గుండె బిగుతు. ముష్టులు మూసుకోవాలనుకున్నాయి. ఆగాడు. శ్వాస. వేడి ఎక్కి తగ్గడం చూశాడు. వాదించకుండా జట్టును స్థానానికి తిరిగి చప్పట్లు.\n\nకోచ్ గమనించింది. 'అది నాయకత్వం' నిశ్శబ్దంగా.\n\nవిక్రమ్ ఇంకా కొన్నిసార్లు కోపం అనుభవించాడు. కానీ కోపం మొత్తం గంట యజమాని కాదు. వాతావరణం లా గమనించి, పేరు పెట్టి, విధేయుడిగా ఉండలేదు. ఆత్మనియంత్రణ మృదువుడిగా చేయలేదు. నిశ్శబ్ద గాలిలో దీపం లా స్థిరుడిగా చేసింది.",
-          "moral": "Self-control does not erase unfair moments. It keeps one burst of anger from becoming a storm that shakes your whole mind.",
-          "moral_te": "ఆత్మనియంత్రణ అన్యాయ క్షణాలను తొలగించదు. ఒక కోపం చిమ్ముకు మొత్తం మనసును కదిలించే తుఫానుగా మారకుండా ఉంచుతుంది."
-        },
-        "activity": "Practice STOP once today: Stop, breathe once, notice what you feel, then choose your next word carefully.",
-        "activity_te": "ఈ రోజు ఒకసారి STOP సాధన చేయి: ఆగు, ఒక శ్వాస, నీకు ఏమి అనిపిస్తుందో గమనించు, తర్వాత తదుపరి మాట జాగ్రత్తగా ఎంచుకో.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_14",
-        "title": "Guarding the Morning Mind",
-        "title_te": "ఉదయ మనసును కాపాడడం",
-        "emoji": "🧘",
-        "micro_theme": "Rise Above Extremes",
-        "micro_theme_te": "శిక్షణ మరియు ధ్యానం మనసును రక్షిస్తాయి",
-        "shlokas": [
-          "2.45",
-          "2.46"
-        ],
-        "story": {
-          "title": "Tara's Exam Mornings",
-          "title_te": "తారా పరీక్ష ఉదయాలు",
-          "content": "Tara used to wake up already tired.\n\nClass 9 pre-board exams were three weeks away, and her mornings had become a blur of notifications before her feet touched the floor. She reached for her phone on the pillow, checked three group chats, watched one short video that became seven, and scrolled past news she did not need before brushing her teeth. By the time she sat at her study table, her mind felt like a crowded bus — noisy, jostling, already out of breath.\n\nShe studied anyway. Or tried. But the first hour often vanished into re-reading the same paragraph without remembering it. She blamed herself: Why am I so distracted? Why can't I focus like Anika?\n\nOne evening, her mother did not scold her for low mock-test marks. Instead, Amma placed a small brass diya on Tara's desk and sat beside her.\n\n'Your mind is a room,' Amma said. 'If you open every window to noise before sunrise, do not be surprised when the room cannot hold stillness.'\n\nTara rolled her eyes a little. 'Everyone uses phones, Amma.'\n\n'Everyone also complains they cannot think clearly.' Amma opened her own worn Gita. 'Krishna teaches Arjuna that the objects of the senses pull the mind outward — taste, sight, sound, touch. When the mind follows every pull, wisdom scatters. But when a person withdraws the senses from their objects, like a tortoise drawing in its limbs, the mind turns inward and grows steady. Discipline is not punishment. It is the fence that protects what you are trying to grow.'\n\nTogether they made a morning plan Tara could actually keep. Phone stayed in the kitchen charging until breakfast ended. Ten minutes of quiet sitting — not fancy meditation, just breathing and noticing thoughts without chasing them. Then one subject, one chapter, before any messages.\n\nThe first morning was harder than any maths problem. Tara's hand itched for the phone. Her mind invented emergencies: What if someone needed her? What if she missed a meme? She sat anyway, counting breaths the way her yoga teacher had once shown in school assembly.\n\nBy day four, something subtle shifted. The crowded-bus feeling arrived later, not at dawn. She finished one history chapter before the school van honked. Her mock-test score rose by six marks — not a miracle, but a signal.\n\nOn exam morning, Tara lit the small diya with Amma before sunrise. The flame was tiny. The house was quiet. She ate idli without scrolling. In the hall, when the question paper landed on her desk, her mind did not feel empty — it felt guarded, like a garden with a gate she had closed herself.\n\nDiscipline and a few minutes of stillness had not made her fearless. They had made her mind harder to steal.",
-          "content_te": "తారా ఇప్పటికే అలసిపోయి మేల్కొనేది.\n\nతొమ్మిదవ తరగతి ప్రీ-బోర్డ్ పరీక్షలు మూడు వారాల దూరంలో, ఉదయాలు పాదం నేల ముట్టే ముందే నోటిఫికేషన్‌ల మబ్బుగా మారాయి. తలుపు మీద ఫోన్, మూడు గ్రూప్ చాట్‌లు, ఒక చిన్న వీడియో ఏడుగా, పళ్ళు తోమే ముందు అవసరం లేని వార్తలు. చదువు బల్ల దగ్గర కూర్చున్నప్పుడు మనసు రద్దీ బస్సు లా — శబ్దం, తోసేసే, ఇప్పటికే శ్వాస తీసుకోలేక.\n\nఏమైనా చదివింది. లేదా ప్రయత్నించింది. మొదటి గంట తరచుగా ఒకే పేరా మళ్ళీ చదివి గుర్తు పడకుండా పోయింది. తనను తాను నిందించింది: ఎందుకు ఇంత శోషణ? అనికా లా ఫోకస్ ఎందుకు కాదు?\n\nఒక సాయంత్రం అమ్మ మాక్ టెస్ట్ మార్కులకు తిట్టలేదు. తారా డెస్క్ మీద చిన్న పిత్తల దీపం పెట్టి పక్కన కూర్చుంది.\n\n'నీ మనసు ఒక గది' అన్నది. 'సూర్యోదయానికి ముందు ప్రతి కిటికీ శబ్దానికి తెరిస్తే, గది నిశ్శబ్దం పట్టుకోలేకపోవడం ఆశ్చర్యం కాదు.'\n\nతారా కొంచెం కళ్ళు గోలు. 'అందరూ ఫోన్ వాడతారు అమ్మా.'\n\n'అందరూ స్పష్టంగా ఆలోచించలేమని ఫిర్యాదు చేస్తారు.' అమ్మ తన గీతా తెరిచింది. 'కృష్ణుడు అర్జునునికి ఇంద్రియ విషయాలు మనసును బయటకు లాగుతాయి — రుచి, చూపు, శబ్దం, స్పర్శ. మనసు ప్రతి లాగుకు అనుసరిస్తే జ్ఞానం చెదిరిపోతుంది. కానీ ఇంద్రియాలను విషయాల నుండి వెనక్కి తీసుకున్నప్పుడు — తాబేలు అవయవాలు లాగినట్లు — మనసు లోపలికి తిరిగి స్థిరమవుతుంది. శిక్షణ శిక్ష కాదు. నువ్వు పెంచడానికి ప్రయత్నిస్తున్నదాన్ని రక్షించే కంచె.'\n\nకలిసి తారా నిజంగా పాటించగల ఉదయ ప్రణాళిక. ఫోన్ అల్పాహారం అయ్యే వరకు వంటిలో చార్జ్. పది నిమిషాల నిశ్శబ్ద కూర్చోవడం — గొప్ప ధ్యానం కాదు, శ్వాస మరియు ఆలోచనలు వెంబడించకుండా గమనించడం. తర్వాత ఒక విషయం, ఒక అధ్యాయం, ఏ సందేశాలు కాకుండా.\n\nమొదటి ఉదయం ఏ గణిత ప్రశ్న కంటే కష్టం. చేయి ఫోన్ కోసం దురద. మనసు అత్యవసరాలు కల్పించింది: ఎవరికైనా అవసరం? మీమ్ మిస్? ఏమైనా కూర్చుంది, స్కూల్ అసెంబ్లీలో యోగా టీచర్ చూపినట్లు శ్వాసలు లెక్కించింది.\n\nనాలుగవ రోజు సూక్ష్మ మార్పు. రద్దీ బస్సు అనుభవం తెల్లవారు కాదు, ఉదయం తర్వాత వచ్చింది. స్కూల్ వ్యాన్ హార్న్ ముందు ఒక చరిత్ర అధ్యాయం పూర్తి. మాక్ స్కోర్ ఆరు మార్కులు — అద్భుతం కాదు, సంకేతం.\n\nపరీక్ష ఉదయం తారా అమ్మతో సూర్యోదయానికి ముందు దీపం వెలిగించింది. జ్వాల చిన్నది. ఇల్లు నిశ్శబ్దం. ఐడ్లీ తినింది స్క్రోల్ చేయకుండా. హాల్‌లో ప్రశ్నపత్రం డెస్క్ మీద పడినప్పుడు మనసు ఖాళీ కాదు — కాపాడబడింది, తానే మూసిన తోట గేటు లా.\n\nశిక్షణ మరియు కొన్ని నిమిషాల నిశ్శబ్దత మనసును దొంగతనం చేయడం కష్టం చేసింది.",
-          "moral": "Discipline and a few quiet minutes each morning protect your mind from being stolen by noise before the day begins.",
-          "moral_te": "ప్రతి ఉదయం శిక్షణ మరియు కొన్ని నిశ్శబ్ద నిమిషాలు రోజు మొదలుకాకముందే శబ్దం మనసును దొంగతనం చేయకుండా రక్షిస్తాయి."
-        },
-        "activity": "Tomorrow morning, keep your phone away for the first thirty minutes. Sit quietly for five breaths before opening any book.",
-        "activity_te": "రేపు ఉదయం మొదటి ముప్పై నిమిషాలు ఫోన్ దూరంగా ఉంచు. ఏ పుస్తకం తెరచే ముందు ఐదు శ్వాసలు నిశ్శబ్దంగా కూర్చో.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_15",
-        "title": "The Spill That Grew",
-        "title_te": "పెరిగిన చిందు",
-        "emoji": "🔗",
-        "micro_theme": "Wisdom Removes Confusion",
-        "micro_theme_te": "కోపం దశలవారీ పెరుగుతుంది",
-        "shlokas": [
-          "2.51",
-          "2.52",
-          "2.53"
-        ],
-        "story": {
-          "title": "Nikhil and the Kitchen Afternoon",
-          "title_te": "నిఖిల్ మరియు వంటిల్లు మధ్యాహ్నం",
-          "content": "It began with milk.\n\nNikhil, thirteen, had been building a model bridge for his engineering club after lunch. Glue, cardboard, careful measurements — the kind of work that needs a steady table and a quiet head. His younger sister Aisha, ten, came into the kitchen humming a song from a cartoon, swinging her water bottle by the strap.\n\nShe bumped the table. Not wildly — just enough. The steel tumbler of milk Amma had poured for Nikhil tipped and spread white across his blueprint and the cardboard base he had dried for an hour.\n\nNikhil looked at the ruined page. Something hot flashed through him. 'Are you blind?' he shouted. 'Can't you watch where you walk?'\n\nAisha froze. Her bottle slipped and clattered. Tears filled her eyes instantly. 'It was an accident,' she whispered.\n\nNikhil did not stop. 'You ruin everything. Get out.'\n\nAisha ran. Amma came from the bedroom, took in the milk, the shouting, the slammed door of Nikhil's room, and the sound of Aisha crying behind hers. The afternoon that had been quiet became a house full of doors and silence.\n\nThat evening, Nikhil's Chacha — his uncle who lived upstairs — knocked and sat on the floor of Nikhil's room among the scattered bridge pieces. He did not start with 'Say sorry.' He started with a question: 'Tell me the order of what happened inside you.'\n\nNikhil stared at his knees. 'She spilled milk. I got angry.'\n\n'Before anger,' Chacha said gently, 'there is contact — the bump. Then attachment — that blueprint mattered to you. Then disturbance — the milk spreading. Krishna teaches in Chapter Two that anger grows step by step. From attachment comes desire for things to stay as we want. When desire is blocked, anger rises. From anger comes clouded judgment. From clouded judgment, memory fades. When memory fades, the mind is destroyed. One small spill can become a whole afternoon of suffering if we feed each step.'\n\nNikhil remembered Aisha's face — not the bump, but the terror when he shouted. He had moved from spilled milk to 'you ruin everything' in ten seconds. The bridge was salvageable. The cardboard had dried wrong, but the design was in his notebook. Only his words had been hard to take back.\n\nChacha drew a chain on a scrap paper: bump → my plan ruined → shout → sister cries → Amma upset → I feel worse. 'Break the chain early,' he said. 'Not by pretending you don't care. By naming the step before anger speaks for you.'\n\nNikhil washed his face. He knocked on Aisha's door. She opened a crack, eyes red.\n\n'I'm sorry I shouted,' he said. 'The milk made me panic about my project. That was not your fault.'\n\nAisha sniffed. 'I can help wipe.'\n\nThey wiped the table together. The blueprint was stained, but Nikhil traced it again that night. The bridge was finished two days late — not perfect, but honest.\n\nAnger had wanted to grow into a whole story about a terrible sister. Wisdom interrupted it at the first link.",
-          "content_te": "ఇది పాలతో మొదలైంది.\n\nపదమూడు సంవత్సరాల నిఖిల్ మధ్యాహ్నం ఇంజినీరింగ్ క్లబ్ వంతెన నమూనా నిర్మిస్తున్నాడు. అంటు, కార్డ్‌బోర్డ్, కొలతలు — స్థిర టేబుల్, నిశ్శబ్ద మనసు అవసరమైన పని. చిన్న సోదరి ఐషా పదేళ్ళు, కార్టూన్ పాట గుయ్యలాడుతూ నీళ్ళ సీసా స్ట్రాప్ తో వంటిల్లులోకి వచ్చింది.\n\nటేబుల్ తాకింది — బాగా కాదు, సరిపడా. అమ్మ పోసిన పాల స్టీల్ గ్లాస్ చింది, నిఖిల్ బ్లూప్రింట్ మరియు ఒక గంట ఆర్పిన కార్డ్‌బోర్డ్ మీద తెల్లగా వ్యాపించింది.\n\nనిఖిల్ పాడైన పేజీ చూశాడు. వేడి మెరిసింది. 'నీకు కళ్ళు లేవా?' అరిచాడు. 'ఎక్కడ నడుస్తున్నావో చూడలేవా?'\n\nఐషా నిశ్చలం. సీసా జారి గలగల. కన్నీళ్ళు వెంటనే. 'అది ప్రమాదం' గుసగుస.\n\nనిఖిల్ ఆగలేదు. 'నువ్వు అన్నింటినీ పాడు చేస్తావు. బయటకు వెళ్ళు.'\n\nఐషా పరిగెత్తింది. అమ్మ బెడ్‌రూమ్ నుండి వచ్చి పాలు, అరుపు, నిఖిల్ గది తలుపు, ఐషా ఏడుపు చూసింది. నిశ్శబ్ద ఉదయం తలుపులు, మౌనం నిండిన ఇల్లు.\n\nసాయంత్రం పై అంతస్తు ఉండే చిత్తా నిఖిల్ గదిలో చిందిన వంతెన భాగాల మధ్య నేల మీద కూర్చున్నాడు. 'క్షమాపణ చెప్పు' తో మొదలుకోలేదు. 'నీ లోపల ఏమి జరిగిందో క్రమం చెప్పు' అని అడిగాడు.\n\nనిఖిల్ మోకాలు చూశాడు. 'ఆమె పాలు చిందింది. నాకు కోపం వచ్చింది.'\n\n'కోపానికి ముందు' చిత్తా మృదువుగా — 'స్పర్శ — తాకు. తర్వాత ఆసక్తి — ఆ బ్లూప్రింట్ నీకు ముఖ్యం. తర్వాత అశాంతి — పాలు వ్యాపించడం. అధ్యాయం రెండులో కృష్ణుడు కోపం దశలవారీ పెరుగుతుంది అని బోధిస్తాడు. ఆసక్తి నుండి విషయాలు మనకు నచ్చినట్లే ఉండాలనే కోరిక. కోరిక అడ్డుపడితే కోపం. కోపం నుండి మబ్బుగా ఉన్న నిర్ణయం. నిర్ణయం మబ్బు నుండి జ్ఞాపకం మసక. జ్ఞాపకం మసక అయితే మనసు నాశనం. చిన్న చిందు ప్రతి అడుగు పోషిస్తే మొత్తం మధ్యాహ్న బాధగా మారుతుంది.'\n\nనిఖిల్ ఐషా ముఖం గుర్తుచేసుకున్నాడు — తాకు కాదు, అరిచినప్పుడు భయం. పాలు చిందు నుండి 'నువ్వు అన్నింటినీ పాడు' పది సెకన్లలో. వంతెన సరిచేయదగినది. కార్డ్‌బోర్డ్ తప్పు ఆరింది, డిజైన్ నోట్‌బుక్‌లో. మాటలు తిరిగి తీసుకోవడం కష్టం.\n\nచిత్తా స్క్రాప్ కాగితంలో చైన్: తాకు → నా ప్రణాళిక పాడు → అరుపు → సోదరి ఏడుపు → అమ్మ బాధ → నాకు మరింత చెడు. 'చైన్ ముందే విరగొట్టు. పట్టించుకోవడం లేదని నటించడం కాదు. కోపం నీకు మాట్లాడే ముందు అడుగు పేరు పెట్టడం.'\n\nనిఖిల్ ముఖం కడిగాడు. ఐషా తలుపు తట్టాడు. పాకు తెరిచింది — ఎరుపు కళ్ళు.\n\n'అరిచినందుకు క్షమించు. పాలు నా ప్రాజెక్ట్ గురించి పానిక్ చేసింది. అది నీ తప్పు కాదు.'\n\nఐషా ముక్కు తుడిచింది. 'తుడవడానికి సహాయం చేస్తాను.'\n\nకలిసి టేబుల్ తుడిచారు. బ్లూప్రింట్ మరక — రాత్రి మళ్ళీ ట్రేస్. రెండు రోజుల ఆలస్యం — పరిపూర్ణం కాదు, నిజాయితీ.\n\nకోపం భయంకర సోదరి కథగా పెరగాలనుకుంది. జ్ఞానం మొదటి లింక్‌లో అడ్డుకుంది.",
-          "moral": "Anger grows in steps — from attachment to disturbance to harsh words. Break the chain early, before one small spill becomes a whole day of pain.",
-          "moral_te": "కోపం దశలవారీ పెరుగుతుంది — ఆసక్తి నుండి అశాంతి, కఠిన మాటల వరకు. చిన్న చిందు మొత్తం రోజు బాధగా మారే ముందే చైన్ ముందే విరగొట్టు."
-        },
-        "activity": "Draw your own anger chain from a recent moment: what happened first, second, third? Where could you have paused?",
-        "activity_te": "ఇటీవలి క్షణం నుండి నీ కోప చైన్ గీయి: మొదట, రెండవ, మూడవ ఏమి జరిగింది? ఎక్కడ ఆగవచ్చు?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_16",
-        "title": "The Fifteen Minutes Before Sleep",
-        "title_te": "నిద్రకు ముందు పదిహేను నిమిషాలు",
-        "emoji": "📓",
-        "micro_theme": "Self-Control",
-        "micro_theme_te": "శిక్షణ శాంతి తెస్తుంది; అశాంతి దుఃఖం తెస్తుంది",
-        "shlokas": [
-          "2.54",
-          "2.55",
-          "2.56"
-        ],
-        "story": {
-          "title": "Aanya's Restless Nights",
-          "title_te": "ఆన్య అశాంత రాత్రులు",
-          "content": "Aanya's nights had become a race she never won.\n\nShe would finish homework, eat dinner, chat with friends online, watch one more video, check tomorrow's timetable, worry about a maths test, remember an awkward thing she said at lunch, and lie down at eleven-thirty feeling like her mind was still running on the track. Sleep came late and thin. Mornings felt dusty. In class she nodded over her notebook and hated herself for it.\n\nHer elder cousin Priya, home from college for the holidays, noticed the dark circles. 'You look like you're carrying the whole school in your head,' Priya said one evening on the terrace where the clothesline clicked softly in the breeze.\n\n'I can't switch off,' Aanya admitted. 'The minute I close my eyes, thoughts queue up like parents outside the fee counter.'\n\nPriya did not hand her a lecture about sleeping early. She handed her a plain notebook with a green cover. 'Fifteen minutes before bed. Three lines only. Line one: what you felt today — one honest feeling. Line two: what you hope for tomorrow — one small hope, not the whole future. Line three: one thank-you. Then close the book. No phone after that.'\n\nAanya raised an eyebrow. 'That fixes insomnia?'\n\n'It fixes restlessness,' Priya said. She opened her phone to a bookmarked verse from the Bhagavad Gita. 'Krishna teaches that when the senses are disciplined — when we stop feeding every late-night pull — the mind settles. Restlessness feeds sorrow. Steady small practice feeds peace. Not magic. Habit.'\n\nThe first night, Aanya wrote: Frustrated. Hope I understand trigonometry. Thank you for Amma's hot rasam. Her hand wanted to reach for the phone immediately after. She did not. She stared at the ceiling instead and counted the clothesline clicks. Sleep arrived twenty minutes earlier than usual — not perfect, but real.\n\nBy the second week, the notebook had become a kind of gate. Worries still appeared, but they had a place to wait until morning. Aanya noticed she stopped rehearsing embarrassing lunch conversations at midnight. She still felt stress before tests. The stress simply no longer owned the whole night.\n\nOne evening, her father found her writing by the small desk lamp. 'What is this ritual?' he asked.\n\n'A peace practice,' Aanya said. 'Krishna-style discipline. Boring on purpose.'\n\nHe smiled. 'Boring peace is still peace.'\n\nOn the night before her maths test, Aanya wrote: Nervous. Hope I read questions carefully. Thank you for Priya's notebook. She slept before eleven. In the exam hall, her mind felt quieter than it had in months — not empty, but orderly, like a room she had tidied before guests arrived.\n\nDiscipline had not removed life's pressures. It had stopped them from multiplying in the dark.",
-          "content_te": "ఆన్య రాత్రులు ఎప్పుడూ గెలవని పరుగుగా మారాయి.\n\nహోంవర్క్, భోజనం, ఆన్‌లైన్ స్నేహితులు, మరొక వీడియో, రేపటి టైమ్‌టేబుల్, గణిత పరీక్ష ఆందోళన, లంచ్‌లో అసౌకర్యమైన మాట గుర్తు — పదకొండు ముప్పైలకు పడుకుంటే మనసు ఇంకా ట్రాక్ మీద పరుగెడుతున్నట్లు. నిద్ర ఆలస్యం, పలుచన. ఉదయాలు ధూళి లా. తరగతిలో నోట్‌బుక్ మీద తల ఆడించి తనను తాను ద్వేషించింది.\n\nకాలేజీ నుండి సెలవులకు వచ్చిన పెద్ద కజిన్ ప్రియా డార్క్ సర్కిల్స్ గమనించింది. 'మొత్తం స్కూల్ తలలో మోసుకుంటున్నట్లు' అని ఒక సాయంత్రం టెర్రస్‌లో బట్టల లైన్ గాలిలో క్లిక్ అవుతూ.\n\n'ఆఫ్ చేయలేకపోతున్నాను' ఆన్య అంగీకరించింది. 'కళ్ళు మూసిన క్షణం ఆలోచనలు ఫీ కౌంటర్ వద్ద తల్లిదండ్రుల లా క్యూలో.'\n\nప్రియా త్వరగా నిద్ర మాట్లాడలేదు. ఆకుపచ్చ కవర్ నోట్‌బుక్ ఇచ్చింది. 'నిద్రకు ముందు పదిహేను నిమిషాలు. మూడు పంక్తులు మాత్రమే. ఒకటి: ఈరోజు ఒక నిజాయితీ భావం. రెండు: రేపటికి ఒక చిన్న ఆశ. మూడు: ఒక ధన్యవాదం. పుస్తకం మూసి. తర్వాత ఫోన్ లేదు.'\n\nఆన్య భుజం ఎత్తింది. 'ఇది నిద్రలేమిని సరిచేస్తుందా?'\n\n'అశాంతిని సరిచేస్తుంది' ప్రియా ఫోన్‌లో గీతా వచనం చూపించింది. 'ఇంద్రియాలు శిక్షించబడినప్పుడు — ప్రతి రాత్రి లేట్ పుల్‌కు పోషకం ఆపినప్పుడు — మనసు స్థిరమవుతుంది. అశాంతి దుఃఖానికి పోషకం. స్థిర చిన్న సాధన శాంతికి పోషకం. మాయాజాలం కాదు. అలవాటు.'\n\nమొదటి రాత్రి: నిరాశ. ట్రిగ్నోమెట్రీ అర్థం అవ్వాలని ఆశ. అమ్మ రసం ధన్యవాదం. చేయి వెంటనే ఫోన్ కోసం. పోలేదు. చావు చూసి లైన్ క్లిక్‌లు లెక్కించింది. నిద్ర సాధారణ కంటే ఇరవై నిమిషాల ముందు — పరిపూర్ణం కాదు, నిజం.\n\nరెండవ వారం నోట్‌బుక్ గేటు లా. ఆందోళనలు ఇంకా వచ్చాయి, కానీ ఉదయం వరకు వేచి ఉండే చోటు. అర్ధరాత్రి లంచ్ సంభాషణలు రిహర్సల్ చేయడం ఆగింది. పరీక్ష ముందు ఒత్తిడి ఇంకా ఉంది — మొత్తం రాత్రి యజమాని కాదు.\n\nఒక సాయంత్రం తండ్రి చిన్న డెస్క్ ల్యాంప్ వద్ద రాయడం చూశాడు. 'ఇది ఏ విధి?' అని అడిగాడు.\n\n'శాంతి సాధన. కృష్ణ శైలి శిక్షణ. ప్రయోజనంగా బోరింగ్.'\n\nఅతను నవ్వాడు. 'బోరింగ్ శాంతి కూడా శాంతే.'\n\nగణిత పరీక్ష ముందు రాత్రి: నర్వస్. ప్రశ్నలు జాగ్రత్తగా చదవాలని ఆశ. ప్రియా నోట్‌బుక్ ధన్యవాదం. పదకొండుకి ముందు నిద్ర. హాల్‌లో మనసు నెలలుగా నిశ్శబ్దం — ఖాళీ కాదు, అతిథులు రాకముందు చేత్తిన ఇల్లు లా.\n\nశిక్షణ జీవిత ఒత్తిడులను తొలగించలేదు. చీకటిలో వాటిని గుణించకుండా చేసింది.",
-          "moral": "Small daily discipline — even three lines before sleep — can calm a restless mind and turn a racing night into rest.",
-          "moral_te": "రోజువారీ చిన్న శిక్షణ — నిద్రకు ముందు మూడు పంక్తులు కూడా — అశాంత మనసును ప్రశాంతపరిచి పరుగు రాత్రిని విశ్రాంతిగా మార్చగలదు."
-        },
-        "activity": "Tonight, write three lines before bed: one feeling, one hope, one thank-you. Put your phone away afterward.",
-        "activity_te": "ఈ రాత్రి నిద్రకు ముందు మూడు పంక్తులు రాయి: ఒక భావం, ఒక ఆశ, ఒక ధన్యవాదం. తర్వాత ఫోన్ దూరంగా పెట్టు.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_17",
-        "title": "Hunger for More",
-        "title_te": "మరింత కోసం ఆకలి",
-        "emoji": "🤲",
-        "micro_theme": "Restlessness Brings Sorrow",
-        "micro_theme_te": "నియంత్రిత ఇంద్రియాలు స్థిర శాంతికి దారి తీస్తాయి",
-        "shlokas": [
-          "2.65",
-          "2.66",
-          "2.67"
-        ],
-        "story": {
-          "title": "Rahul and Match Day",
-          "title_te": "రాహుల్ మరియు మ్యాచ్ డే",
-          "content": "Rahul loved the school canteen's samosa day the way some people love festivals.\n\nThe smell reached the corridor before the bell rang — hot oil, cumin, potato filling pressed into crisp pastry. On cricket match days, the canteen also sold cold fizzy drinks in plastic bottles that sweated in the Hyderabad heat. Rahul's team had a quarter-final that afternoon. His coach had been clear for two weeks: match day is not feast day. Light food, enough water, sleep the night before, no late gaming that steals your eyes.\n\nRahul had nodded seriously. He meant it — until samosa day and the vending machine glow met his hungry senses at the same time.\n\nAt lunch, his friend Deepak bought four samosas and two colas. 'One match won't care,' Deepak said, tearing pastry. 'My cousin ate biryani before states and took three wickets.'\n\nRahul's mouth watered. His eyes followed the cola bottle. His fingers found money in his pocket. Every sense leaned toward more — more salt, more sugar, more fun before the serious game. He bought two samosas and a drink. They tasted excellent. He bought another cola 'for later' and hid it in his bag.\n\nIn last period, his stomach felt heavy instead of ready. During practice warm-up, he burped during stretching and felt heat rise in his face. His legs were fine. His focus was not. He kept thinking about the fridge at home and the new game level he had not finished at midnight.\n\nHis sports sir, Coach Ramesh, pulled him aside. 'What did your senses eat today?'\n\nRahul looked at his shoes. 'Samosa. Cola. Also... I played till one.'\n\nCoach Ramesh did not shout. He opened a paperback Gita he kept in his kit bag, pages curled from humidity. 'Krishna compares the disciplined person to the ocean. Rivers flow in, yet the ocean does not overflow. Controlled senses receive the world — smell of samosa, shine of a screen — but they do not flood the mind. For you, today, peace means one meal chosen for the match, one night's sleep chosen for the team, one mind that arrives at the crease steady.'\n\nThe quarter-final was hard. Rahul fielded well — his throwing arm was strong. But when he batted, his timing lagged half a beat. He was out for nine runs. Not a disaster. Not his best. In the pavilion he remembered the second cola in his bag and felt foolish.\n\nThe next match, he ate dal and rice at home. He drank water. He slept at ten. Before the semi-final, his mind did not buzz. His body felt light. He scored twenty-two runs and took a sharp catch at mid-wicket. Afterward, Deepak said, 'Same ground. Different you.'\n\nRahul laughed. 'Same samosa smell. Different choices.'\n\nPeace on match day was not about hating samosas. It was about not letting every sense demand run the team.",
-          "content_te": "రాహుల్ స్కూల్ క్యాంటీన్ సమోసా డేను పండుగల లా ఇష్టపడేవాడు.\n\nగంట మోగే ముందే కారిడార్‌కు వాసన — వేడి నూనె, జీలకర్ర, క్రిస్ప్ పేస్ట్రీలో బంగాళాదుంప. క్రికెట్ మ్యాచ్ రోజుల్లో ప్లాస్టిక్ కోలా సీసాలు హైదరాబాద్ వేడిలో చెమట పట్టుతాయి. రాహుల్ జట్టుకు ఆ మధ్యాహ్నం క్వార్టర్ ఫైనల్. కోచ్ రెండు వారాలు స్పష్టం: మ్యాచ్ డే వేడుక దినం కాదు. తేలిక ఆహారం, నీళ్ళు, ముందు రాత్రి నిద్ర, కళ్ళు దొంగతనం చేసే లేట్ గేమింగ్ లేదు.\n\nరాహుల్ తల ఆడించి అంగీకరించాడు. అర్థమైంది — సమోసా డే మరియు వెండింగ్ మెషిన్ వెలుగు ఆకలి ఇంద్రియాలను ఒకేసారి కలిసే వరకు.\n\nలంచ్‌లో దీపక్ నాలుగు సమోసాలు, రెండు కోలాలు కొన్నాడు. 'ఒక మ్యాచ్ పట్టించుకోదు. కజిన్ బిర్యానీ తిని మూడు వికెట్లు' అని పేస్ట్రీ చిందుతూ.\n\nరాహుల్ నోరు నీరూరింది. కళ్ళు కోలా సీసా. జేబులో డబ్బు. ప్రతి ఇంద్రియం మరింత వైపు — మరింత ఉప్పు, చక్కెర, తీవ్రమైన ఆట ముందు మరింత సరదా. రెండు సమోసాలు, ఒక డ్రింక్. అద్భుత రుచి. 'తర్వాత కోసం' మరొక కోలా బ్యాగ్‌లో దాచాడు.\n\nచివరి పిరియడ్‌లో కడుపు సిద్ధంగా కాక బరువుగా. వార్మ్-అప్‌లో స్ట్రెచింగ్ మధ్య బుర్ప్, ముఖం వేడెక్కింది. కాళ్ళు సరే. ఫోకస్ కాదు. ఇంటి ఫ్రిజ్, రాత్రి పని చేయని గేమ్ లెవల్.\n\nకోచ్ రమేష్ పక్కకు తీసుకున్నాడు. 'నీ ఇంద్రియాలు ఈరోజు ఏమి తిన్నాయి?'\n\nరాహుల్ షూలు చూశాడు. 'సమోసా. కోలా. ఒకటి... ఒకటికి గేమ్.'\n\nకోచ్ అరవలేదు. కిట్ బ్యాగ్ గీతా తెరిచాడు. 'కృష్ణుడు శిక్షితుడిని సముద్రంతో పోల్చాడు. నదులు వస్తాయి, సముద్రం పొంగదు. నియంత్రిత ఇంద్రియాలు ప్రపంచాన్ని స్వీకరిస్తాయి — సమోసా వాసన, స్క్రీన్ మెరుపు — కానీ మనసును వరద చేయవు. నీకు ఈరోజు శాంతి అంటే మ్యాచ్ కోసం ఒక భోజనం, జట్టు కోసం ఒక రాత్రి నిద్ర, క్రీజ్ వద్ద స్థిరమైన మనసు.'\n\nక్వార్టర్ ఫైనల్ కష్టం. ఫీల్డింగ్ బాగా — విసిరే చేయి బలం. బ్యాటింగ్‌లో టైమింగ్ అర్ధ సెకను వెనుకబడింది. తొమ్మిది పరుగులు — విపత్తి కాదు, ఉత్తమం కాదు. పెవిలియన్‌లో బ్యాగ్ రెండవ కోలా — మూర్ఖత అనిపించింది.\n\nతదుపరి మ్యాచ్ ఇంట్లో అన్నం, పప్పు. నీళ్ళు. పదికి నిద్ర. సెమీ ఫైనల్ ముందు మనసు బజ్ కాదు. శరీరం తేలిక. ఇరవై రెండు పరుగులు, మిడ్-వికెట్ క్యాచ్. తర్వాత దీపక్ 'అదే గ్రౌండ్. వేరే నువ్వు.'\n\nరాహుల్ నవ్వాడు. 'అదే సమోసా వాసన. వేరే ఎంపికలు.'\n\nమ్యాచ్ డే శాంతి సమోసాలు ద్వేషించడం కాదు. ప్రతి ఇంద్రియం డిమాండ్ జట్టును నడపనివ్వకపోవడం.",
-          "moral": "When the senses chase everything at once, the mind floods. Choosing wisely — one meal, one night's rest — brings steady peace when it matters.",
-          "moral_te": "ఇంద్రియాలు ఒకేసారి అన్నింటినీ వెంబడిస్తే మనసు వరద అవుతుంది. తెలివిగా ఎంచుకోవడం — ఒక భోజనం, ఒక రాత్రి విశ్రాంతి — ముఖ్యమైనప్పుడు స్థిర శాంతి తెస్తుంది."
-        },
-        "activity": "Before an important day, notice one sense pulling you off course. Choose one steady habit that helps your mind stay clear.",
-        "activity_te": "ముఖ్యమైన రోజు ముందు, నిన్ను మార్గం తప్పించే ఒక ఇంద్రియాన్ని గమనించు. మనసు స్పష్టంగా ఉండే ఒక స్థిర అలవాటు ఎంచుకో.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk2_18",
-        "title": "Empty Hands, Quiet Heart",
-        "title_te": "ఖాళీ చేతులు, నిశ్శబ్ద హృదయం",
-        "emoji": "☮️",
-        "micro_theme": "Controlled Senses",
-        "micro_theme_te": "వదిలివేయడం నిలకడైన శాంతి తెస్తుంది",
-        "shlokas": [
-          "2.68",
-          "2.69"
-        ],
-        "story": {
-          "title": "Ishita and the Debate Captaincy",
-          "title_te": "ఇషిత మరియు వాదన కెప్టెన్సీ",
-          "content": "Ishita had prepared for debate captain the way athletes prepare for finals.\n\nShe had rewritten her speech four times. She had practiced eye contact in the bathroom mirror. She had researched every candidate's weak points — politely, she told herself, but researched nonetheless. Debate was her place. In arguments she felt clear, quick, alive. Captain meant recognition, responsibility, the microphone at assembly.\n\nWhen the results went up on the notice board after school, her name was second column. First column: Sanjay. Friendly, funny Sanjay, who was good at debate but had not spent three weeks drilling transitions the way she had.\n\nIshita read the list once. Then again, as if the letters might rearrange. Heat climbed her face. She walked past friends who called her name and did not answer. At home she dropped her bag, shut her door, and sat on the floor with her prepared speech pages scattered around her like fallen leaves.\n\n'It should have been me,' she told the ceiling. 'I worked harder. It is not fair.'\n\nHer Nani found her there at dusk, carrying cut mango on a steel plate. Nani did not say congratulations to Sanjay or insult the school system. She sat down, offered mango, and waited.\n\nAfter Ishita ate one sour-sweet piece, Nani opened the Bhagavad Gita on her lap — the same copy she had read from for forty years, its spine taped twice. 'At the end of Chapter Two,' Nani said, 'Krishna describes peace that lasts. Not the excitement of winning. Not the storm of losing. Peace comes when a person lets go of clinging — to titles, to praise, to the picture of how life was supposed to look.'\n\nIshita's throat tightened. 'So I should pretend I don't care?'\n\n'Grieve if you need to. You worked hard. Your disappointment is real. Then ask: what remains if I open my hands? You still love debate. The team still needs a strong speaker. Sanjay is still your classmate, not your enemy. Clinging to the captain badge will not add one hour to your day. It will steal them.'\n\nIshita looked at her speech pages. So much energy had gone into holding a future that had not arrived. Nani's words were not about being passive. They were about not letting one lost title become the only story in her head.\n\nThe next morning, Ishita walked to Sanjay before class. 'Congratulations,' she said. Her voice wobbled, but she said it. Sanjay looked relieved. 'I was nervous you'd hate me,' he admitted.\n\n'I hated losing,' Ishita said honestly. 'I am learning not to keep hating.'\n\nShe volunteered to coach juniors for the inter-school round — not as captain, but as someone who knew argument structure and could share it. At the tournament, she spoke in one round when Sanjay fell sick. The team reached the finals. Standing at the side of the hall, not at the central mic, Ishita felt something unexpected: quiet pride, and a heart lighter than it had been on the notice-board day.\n\nLetting go did not erase ambition. It freed her from carrying a prize that was already gone.",
-          "content_te": "ఇషిత వాదన కెప్టెన్సీకి అథ్లెట్‌లు ఫైనల్‌కు సన్నద్ధమయ్యేలా సిద్ధమైంది.\n\nప్రసంగం నాలుగుసార్లు మళ్ళీ రాశింది. బాత్‌రూమ్ అద్దంలో కళ్ళ సంపర్కం సాధన. ప్రతి అభ్యర్థి బలహీనతలు పరిశోధన — మర్యాదగా అని తనకు చెప్పుకుంది. వాదన ఆమె స్థలం. వాదనలలో స్పష్టం, వేగం, జీవం. కెప్టెన్ అంటే గుర్తింపు, బాధ్యత, అసెంబ్లీ మైక్.\n\nస్కూల్ తర్వాత నోటీస్ బోర్డ్ ఫలితాలు — ఆమె పేరు రెండవ నిలువు వరుస. మొదటి: సంజయ్. స్నేహపూర్వక, తమాషా సంజయ్, మంచి వాదకుడు కానీ ఆమె లా మూడు వారాలు ట్రాన్జిషన్ డ్రిల్ చేయలేదు.\n\nఇషిత జాబితా ఒకసారి చదివింది. మళ్ళీ — అక్షరాలు మారతాయేమో. ముఖం వేడెక్కింది. స్నేహితులు పిలిచారు — సమాధానం లేదు. ఇంట్లో బ్యాగ్ విసిరి తలుపు మూసి, సిద్ధ ప్రసంగ పేజీలు పడిన ఆకుల లా చుట్టూ నేల మీద కూర్చుంది.\n\n'నాకే ఉండాలి' చావు వైపు. 'నేను ఎక్కువ కష్టపడ్డాను. న్యాయం కాదు.'\n\nసాయంకాలం నాని కట్ మామిడి ప్లేట్ తీసుకువచ్చింది. సంజయ్‌కు అభినందనలు లేదు, వ్యవస్థ నింద లేదు. కూర్చుని మామిడి ఇచ్చి వేచింది.\n\nఒక తీపి-పుల్ల ముక్క తిన్న తర్వాత నాని ముప్పై సంవత్సరాల గీతా తెరిచింది — రెండుసార్లు టేప్ చేసిన వెనుకభాగం. 'అధ్యాయం రెండు చివరిలో' నాని, 'కృష్ణుడు నిలకడైన శాంతిని వర్ణిస్తాడు. గెలుపు ఉత్తేజం కాదు. ఓటమి తుఫాను కాదు. శాంతి పట్టుకోవడం వదిలివేసినప్పుడు వస్తుంది — బిరుదులు, ప్రశంస, జీవితం ఎలా ఉండాలనుకున్నామో అనే చిత్రం.'\n\nఇషిత గొంతు బిగుతు. 'పట్టించుకోకుండా నటించాలా?'\n\n'విచారించు. కష్టపడ్డావు. నిరాశ నిజం. తర్వాత అడుగు: చేతులు తెరిస్తే ఏమి మిగులుతుంది? వాదన ఇంకా ఇష్టం. జట్టుకు బలమైన స్పీకర్ అవసరం. సంజయ్ శత్రువు కాదు, సహపాఠి. కెప్టెన్ బ్యాడ్జ్ పట్టుకోవడం రోజుకు గంట జోడించదు. దొంగతనం చేస్తుంది.'\n\nఇషిత ప్రసంగ పేజీలు చూసింది. రాకపోయిన భవిష్యత్తు పట్టుకోవడానికి చాలా శక్తి. నాని మాటలు నిష్క్రియత కాదు. ఒక కోల్పోయిన బిరుదు మాత్రమే కథ కాకుండా.\n\nతదుపరి ఉదయం సంజయ్ వద్దకు వెళ్ళి 'అభినందనలు' — గొంతు వణుకింది, చెప్పింది. సంజయ్ ఉపశమనం. 'నువ్వు ద్వేషిస్తావేమో భయం' అంగీకరించాడు.\n\n'ఓటమి ద్వేషించాను' నిజాయితీగా. 'ద్వేషం కొనసాగించకుండా నేర్చుకుంటున్నాను.'\n\nఇంటర్-స్కూల్ రౌండ్ జూనియర్లకు కోచ్ వాలంటీర్ — కెప్టెన్ కాదు, వాదన నిర్మాణం తెలిసిన వ్యక్తి. టూర్నమెంట్‌లో సంజయ్ అనారోగ్యంతో ఒక రౌండ్ మాట్లాడింది. ఫైనల్ చేరుకున్నారు. హాల్ పక్కన నిలబడి, మధ్య మైక్ కాకుండా — ఊహించని ప్రశాంత గర్వం, నోటీస్ బోర్డ్ రోజు కంటే తేలికైన హృదయం.\n\nవదిలివేయడం ఆకాంక్షను తొలగించలేదు. ఇప్పటికే పోయిన బహుమతిని మోయకుండా విడుదల చేసింది.",
-          "moral": "Grieve what you wanted, then open your hands. Letting go of clinging does not end ambition — it makes room for lasting peace.",
-          "moral_te": "కోరినదాన్ని విచారించు, తర్వాత చేతులు తెరువు. పట్టుకోవడం వదిలివేయడం ఆకాంక్ష ముగించదు — నిలకడైన శాంతికి చోటు ఇస్తుంది."
-        },
-        "activity": "Name something you are clinging to — a role, a result, a grudge. Write one way you can still help without holding it tight.",
-        "activity_te": "నువ్వు పట్టుకున్న ఒక విషయం పేరు చెప్పు — పాత్ర, ఫలితం, కోపం. అది గట్టిగా పట్టుకోకుండా ఇంకా సహాయం చేయగల ఒక మార్గం రాయి.",
-        "videoUrl": ""
       }
     ],
     "3": [
       {
         "id": "theme_sk3_01",
-        "title": "Lead by Doing",
+        "title": "The Law of Reciprocity",
         "title_te": "చేయడం ద్వారా నాయకత్వం",
         "emoji": "🌱",
         "micro_theme": "The Law of Reciprocity",
@@ -701,7 +271,7 @@
       },
       {
         "id": "theme_sk3_02",
-        "title": "Actions Teach Loudest",
+        "title": "The Ripple Effect",
         "title_te": "చర్యలే బిగ్గరగా బోధిస్తాయి",
         "emoji": "📖",
         "micro_theme": "The Ripple Effect",
@@ -725,7 +295,7 @@
       },
       {
         "id": "theme_sk3_03",
-        "title": "Work for the Whole",
+        "title": "The Integrity Code",
         "title_te": "మొత్తం కోసం పని",
         "emoji": "💡",
         "micro_theme": "The Integrity Code",
@@ -749,7 +319,7 @@
       },
       {
         "id": "theme_sk3_04",
-        "title": "Lead by Doing",
+        "title": "The Hierarchy of Power",
         "title_te": "చేయడం ద్వారా నాయకత్వం",
         "emoji": "🌟",
         "micro_theme": "The Hierarchy of Power",
@@ -770,84 +340,12 @@
         "activity": "Write one duty you owe your family or class this week. How will you do it without expecting praise?",
         "activity_te": "ఈ వారం మీ కుటుంబం లేదా తరగతికి మీ కర్తవ్యం ఏమిటో రాయండి. ప్రశంస ఆశించకుండా దాన్ని ఎలా చేస్తారు?",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk3_05",
-        "title": "Actions Teach Loudest",
-        "title_te": "చర్యలే బిగ్గరగా బోధిస్తాయి",
-        "emoji": "🎯",
-        "micro_theme": "Responsibility Cannot Be Avoided",
-        "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
-        "shlokas": [
-          "3.5",
-          "3.7",
-          "3.8"
-        ],
-        "story": {
-          "title": "Yudhishthira's Quiet Honesty",
-          "title_te": "ధృతరాష్ట్రుడి నిశ్శబ్ద నిజాయితీ",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about setting a good example. Krishna's teaching—\"Yudhishthira's Quiet Honesty\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice setting a good example in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి చర్యలే బిగ్గరగా బోధిస్తాయి గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"ధృతరాష్ట్రుడి నిశ్శబ్ద నిజాయితీ\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Leaders teach others more by actions than by words.",
-          "moral_te": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు."
-        },
-        "activity": "Write three sentences: how does \"Actions Teach Loudest\" help in school life?",
-        "activity_te": "\"చర్యలే బిగ్గరగా బోధిస్తాయి\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk3_06",
-        "title": "Work for the Whole",
-        "title_te": "మొత్తం కోసం పని",
-        "emoji": "🛡️",
-        "micro_theme": "Work Should Nourish Others",
-        "micro_theme_te": "నిస్వార్థ సేవ",
-        "shlokas": [
-          "3.9",
-          "3.13",
-          "3.19"
-        ],
-        "story": {
-          "title": "The Wheel of Sacrifice",
-          "title_te": "త్యాగ చక్రం",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about selfless service. Krishna's teaching—\"The Wheel of Sacrifice\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice selfless service in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి మొత్తం కోసం పని గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"త్యాగ చక్రం\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Work done to help others brings real joy.",
-          "moral_te": "ఇతరులకు సహాయం చేసే పని నిజమైన ఆనందాన్ని తెస్తుంది."
-        },
-        "activity": "Write three sentences: how does \"Work for the Whole\" help in school life?",
-        "activity_te": "\"మొత్తం కోసం పని\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk3_07",
-        "title": "Lead by Doing",
-        "title_te": "చేయడం ద్వారా నాయకత్వం",
-        "emoji": "⚖️",
-        "micro_theme": "Inner Enemies",
-        "micro_theme_te": "మీ కర్తవ్యం చేయడం",
-        "shlokas": [
-          "3.36",
-          "3.39",
-          "3.43"
-        ],
-        "story": {
-          "title": "Krishna and the Hesitant General",
-          "title_te": "సంకోచిస్తున్న సైన్యాధిపతి",
-          "content": "In Chapter 3, Arjuna asks why Krishna praises action if wisdom seems higher. On the battlefield of Kurukshetra, thousands waited while Arjuna argued with his own heart. Krishna answered that the world keeps moving—sun, rain, and seasons never stop their work. If nature fulfills its role, humans too must do their duty without selfish attachment. A true leader teaches more by steady action than by clever excuses.",
-          "content_te": "అధ్యాయం 3లో, జ్ఞానం ఎక్కువగా అనిపించినా కృష్ణుడు చర్యను ఎందుకు ప్రశంసిస్తాడని అర్జునుడు అడిగాడు. కురుక్షేత్రంలో వేలాది మంది వేచి ఉండగా అర్జునుడు తన హృదయంతో వాదించాడు. ప్రపంచం కదలుతూనే ఉంటుందని—సూర్యుడు, వర్షం, ఋతువులు తమ పని ఆపరు—కృష్ణుడు సమాధానం ఇచ్చాడు. ప్రకృతి తన పాత్ర పూర్తి చేస్తే, మనుషులు కూడా స్వార్థ లేకుండా కర్తవ్యం చేయాలి. నిజమైన నాయకుడు చాకచ్చూ మాటల కంటే స్థిరమైన చర్యతో ఎక్కువ బోధిస్తాడు.",
-          "moral": "Do your best work without worrying only about prizes.",
-          "moral_te": "బహుమతుల గురించి ఆందోళన చెందకుండా మీ పనిని బాగా చేయండి."
-        },
-        "activity": "Write one duty you owe your family or class this week. How will you do it without expecting praise?",
-        "activity_te": "ఈ వారం మీ కుటుంబం లేదా తరగతికి మీ కర్తవ్యం ఏమిటో రాయండి. ప్రశంస ఆశించకుండా దాన్ని ఎలా చేస్తారు?",
-        "videoUrl": ""
       }
     ],
     "4": [
       {
         "id": "theme_sk4_01",
-        "title": "Knowledge on the Move",
+        "title": "The Purpose of Birth",
         "title_te": "కదులుతున్న జ్ఞానం",
         "emoji": "🌱",
         "micro_theme": "The Purpose of Birth",
@@ -871,7 +369,7 @@
       },
       {
         "id": "theme_sk4_02",
-        "title": "Learn Like Arjuna",
+        "title": "The Reciprocity Law",
         "title_te": "అర్జునుడిలా నేర్చుకో",
         "emoji": "📖",
         "micro_theme": "The Reciprocity Law",
@@ -895,7 +393,7 @@
       },
       {
         "id": "theme_sk4_03",
-        "title": "Sacred Effort",
+        "title": "Inner Peace in Action",
         "title_te": "పవిత్రమైన ప్రయత్నం",
         "emoji": "💡",
         "micro_theme": "Inner Peace in Action",
@@ -920,7 +418,7 @@
       },
       {
         "id": "theme_sk4_04",
-        "title": "Knowledge on the Move",
+        "title": "The Sword of Wisdom",
         "title_te": "కదులుతున్న జ్ఞానం",
         "emoji": "🌟",
         "micro_theme": "The Sword of Wisdom",
@@ -942,104 +440,12 @@
         "activity": "Write three sentences: how does \"Knowledge on the Move\" help in school life?",
         "activity_te": "\"కదులుతున్న జ్ఞానం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk4_05",
-        "title": "Learn Like Arjuna",
-        "title_te": "అర్జునుడిలా నేర్చుకో",
-        "emoji": "🎯",
-        "micro_theme": "Ancient Wisdom Guides",
-        "micro_theme_te": "గురువుల ముందు వినయం",
-        "shlokas": [
-          "4.1",
-          "4.5"
-        ],
-        "story": {
-          "title": "Questions on the Chariot",
-          "title_te": "రథంపై ప్రశ్నలు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about humility before teachers. Krishna's teaching—\"Questions on the Chariot\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice humility before teachers in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి అర్జునుడిలా నేర్చుకో గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"రథంపై ప్రశ్నలు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
-          "moral_te": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది."
-        },
-        "activity": "Write three sentences: how does \"Learn Like Arjuna\" help in school life?",
-        "activity_te": "\"అర్జునుడిలా నేర్చుకో\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk4_06",
-        "title": "Sacred Effort",
-        "title_te": "పవిత్రమైన ప్రయత్నం",
-        "emoji": "🛡️",
-        "micro_theme": "Every Role Has Purpose",
-        "micro_theme_te": "త్యాగంలో దైవాన్ని చూడటం",
-        "shlokas": [
-          "4.13",
-          "4.14"
-        ],
-        "story": {
-          "title": "Fire and Faith",
-          "title_te": "అగ్ని మరియు శ్రద్ధ",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about seeing the divine in sacrifice. Krishna's teaching—\"Fire and Faith\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice seeing the divine in sacrifice in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి పవిత్రమైన ప్రయత్నం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"అగ్ని మరియు శ్రద్ధ\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "When you offer your effort with love, it becomes sacred.",
-          "moral_te": "మీ ప్రయత్నాన్ని ప్రేమతో అర్పించినప్పుడు, అది పవిత్రమవుతుంది."
-        },
-        "activity": "Write three sentences: how does \"Sacred Effort\" help in school life?",
-        "activity_te": "\"పవిత్రమైన ప్రయత్నం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk4_07",
-        "title": "Knowledge on the Move",
-        "title_te": "కదులుతున్న జ్ఞానం",
-        "emoji": "⚖️",
-        "micro_theme": "Humility Helps Learning",
-        "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
-        "shlokas": [
-          "4.33",
-          "4.34"
-        ],
-        "story": {
-          "title": "When Study Meets Courage",
-          "title_te": "చదువు ధైర్యంతో కలిసినప్పుడు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about wisdom and action together. Krishna's teaching—\"When Study Meets Courage\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice wisdom and action together in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి కదులుతున్న జ్ఞానం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"చదువు ధైర్యంతో కలిసినప్పుడు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Knowing what is right helps you act with courage.",
-          "moral_te": "ఏది సరైనదో తెలుసుకోవడం ధైర్యంగా పని చేయడానికి సహాయపడుతుంది."
-        },
-        "activity": "Write three sentences: how does \"Knowledge on the Move\" help in school life?",
-        "activity_te": "\"కదులుతున్న జ్ఞానం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk4_08",
-        "title": "Learn Like Arjuna",
-        "title_te": "అర్జునుడిలా నేర్చుకో",
-        "emoji": "🔥",
-        "micro_theme": "Sacred Work",
-        "micro_theme_te": "గురువుల ముందు వినయం",
-        "shlokas": [
-          "4.24",
-          "4.28"
-        ],
-        "story": {
-          "title": "Questions on the Chariot",
-          "title_te": "రథంపై ప్రశ్నలు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about humility before teachers. Krishna's teaching—\"Questions on the Chariot\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice humility before teachers in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి అర్జునుడిలా నేర్చుకో గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"రథంపై ప్రశ్నలు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Ask questions and listen—wisdom grows in humble hearts.",
-          "moral_te": "ప్రశ్నలు అడగండి మరియు వినండి—వినయమైన హృదయాలలో జ్ఞానం పెరుగుతుంది."
-        },
-        "activity": "Write three sentences: how does \"Learn Like Arjuna\" help in school life?",
-        "activity_te": "\"అర్జునుడిలా నేర్చుకో\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "5": [
       {
         "id": "theme_sk5_01",
-        "title": "Arjun Asks Krishna",
+        "title": "The Waterproof Mind",
         "title_te": "అర్జునుడు కృష్ణుడిని అడుగుతాడు",
         "emoji": "🌱",
         "micro_theme": "The Waterproof Mind",
@@ -1063,7 +469,7 @@
       },
       {
         "id": "theme_sk5_02",
-        "title": "Praise and Blame",
+        "title": "The Universal Vision",
         "title_te": "ప్రశంస మరియు నింద",
         "emoji": "📖",
         "micro_theme": "The Universal Vision",
@@ -1087,7 +493,7 @@
       },
       {
         "id": "theme_sk5_03",
-        "title": "Equal Vision",
+        "title": "The Inner Fortress",
         "title_te": "సమ దృష్టి",
         "emoji": "💡",
         "micro_theme": "The Inner Fortress",
@@ -1109,60 +515,12 @@
         "activity": "Notice one person others ignore today. Offer one respectful action.",
         "activity_te": "ఈరోజు ఇతరులు పట్టించుకోని ఒకరిని గమనించండి. ఒక గౌరవప్రదమైన చర్య చేయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk5_04",
-        "title": "Arjun Asks Krishna",
-        "title_te": "అర్జునుడు కృష్ణుడిని అడుగుతాడు",
-        "emoji": "🌟",
-        "micro_theme": "Calm People Help",
-        "micro_theme_te": "సమతుల్య చర్య ద్వారా శాంతి",
-        "shlokas": [
-          "5.25",
-          "5.27",
-          "5.29"
-        ],
-        "story": {
-          "title": "Renunciation or Right Action?",
-          "title_te": "సంన్యాసమా, సరైన చర్యా?",
-          "content": "At the start of Chapter 5, Arjuna speaks like a student confused by two paths. Krishna had praised giving up selfish work, and also praised selfless action. \"Which one is better for me?\" Arjuna asks. Imagine two friends: one says quit the school project to stay calm, the other says finish the project kindly without chasing medals. Krishna explains that both paths can lead to the goal, but for most people, doing duty with a steady mind—karma yoga—is often the stronger road. Peace comes when action and wisdom walk together.",
-          "content_te": "అధ్యాయం 5 ప్రారంభంలో అర్జునుడు రెండు మార్గాల మధ్య గందరగోళంలో ఉన్న విద్యార్థిలా మాట్లాడాడు. కృష్ణుడు స్వార్థ పని వదిలివేయడాన్ని, నిస్వార్థ చర్యను కూడా ప్రశంసించాడు. \"నాకు ఏది మంచిది?\" అని అర్జునుడు అడిగాడు. ఒక స్నేహితుడు స్కూల్ ప్రాజెక్ట్ మానేసి శాంతంగా ఉండమని, మరొకరు బహుమతుల కోసం పరిగెట్టకుండా దయతో పూర్తి చేయమని చెబుతారని ఊహించండి. రెండు మార్గాలూ లక్ష్యానికి చేరవచ్చని కృష్ణుడు వివరిస్తాడు, కానీ చాలా మందికి స్థిరమైన మనస్సుతో కర్తవ్యం చేసే కర్మయోగమే బలమైన మార్గం. చర్య మరియు జ్ఞానం కలిసి నడిచినప్పుడు శాంతి వస్తుంది.",
-          "moral": "You can be active and peaceful at the same time.",
-          "moral_te": "మీరు ఒకే సమయంలో చురుకుగా మరియు ప్రశాంతంగా ఉండవచ్చు."
-        },
-        "activity": "When two friends give opposite advice, how do you decide what is right? Write your answer.",
-        "activity_te": "రెండు స్నేహితులు వ్యతిరేక సలహా ఇచ్చినప్పుడు, సరైనది ఎలా నిర్ణయిస్తారు? మీ సమాధానం రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk5_05",
-        "title": "Praise and Blame",
-        "title_te": "ప్రశంస మరియు నింద",
-        "emoji": "🎯",
-        "micro_theme": "Temporary Pleasures",
-        "micro_theme_te": "అహంకారాన్ని వదిలివేయడం",
-        "shlokas": [
-          "5.21",
-          "5.22",
-          "5.23"
-        ],
-        "story": {
-          "title": "Steady Like the Sun",
-          "title_te": "సూర్యుడిలా స్థిరంగా",
-          "content": "Krishna teaches in Chapter 5 that a sage sees honor and insult like passing clouds. The sun shines; clouds sometimes cover it, but the sun does not stop being the sun. A student named Kiran was mocked online for a spelling mistake, then praised the next day for helping a new classmate. Kiran noticed how quickly feelings changed. Remembering the Gita, Kiran decided not to ride the roller coaster of praise and blame. Doing the right thing became more important than looking perfect.",
-          "content_te": "అధ్యాయం 5లో గౌరవం, అవమానం గడిచిపోయే మేఘాలు లాగా కనిపిస్తాయని కృష్ణుడు బోధిస్తాడు. సూర్యుడు ప్రకాశిస్తూనే ఉంటాడు; మేఘాలు కప్పినా సూర్యుడు సూర్యుడే. కిరణ్ అనే విద్యార్థిని స్పెల్లింగ్ తప్పుకు ఆన్లైన్లో నవుకుతారు, మరుసటి రోజు కొత్త సహపాఠినికి సహాయం చేసినందుకు ప్రశంసిస్తారు. భావాలు ఎంత త్వరగా మారుతాయో కిరణ్ గమనించాడు. గీత గుర్తు తెచ్చుకుని, ప్రశంస-నింద రోలర్ కోస్టర్ మీద సవారి కావద్దను నిర్ణయించుకున్నాడు. సరైన పని చేయడం పర్ఫెక్ట్‌గా కనిపించడం కంటే ముఖ్యమైనది.",
-          "moral": "Praise and blame both pass away—stay steady.",
-          "moral_te": "ప్రశంస మరియు నింద రెండూ గడిచిపోతాయి—స్థిరంగా ఉండండి."
-        },
-        "activity": "List one compliment and one criticism you heard recently. Which mattered more to your character?",
-        "activity_te": "మీరు ఇటీవల విన్న ఒక మంచి మాట, ఒక చెడు మాట రాయండి. మీ శీలానికి ఏది ముఖ్యమైనది?",
-        "videoUrl": ""
       }
     ],
     "6": [
       {
         "id": "theme_sk6_01",
-        "title": "Taming the Mind",
+        "title": "The Internal Ally",
         "title_te": "మనస్సును అదుపులో ఉంచడం",
         "emoji": "🌱",
         "micro_theme": "The Internal Ally",
@@ -1186,7 +544,7 @@
       },
       {
         "id": "theme_sk6_02",
-        "title": "The Middle Path",
+        "title": "The Laser Beam",
         "title_te": "మధ్య మార్గం",
         "emoji": "📖",
         "micro_theme": "The Laser Beam",
@@ -1210,7 +568,7 @@
       },
       {
         "id": "theme_sk6_03",
-        "title": "Union with the Self",
+        "title": "The Habit Cycle",
         "title_te": "ఆత్మతో ఐక్యత",
         "emoji": "💡",
         "micro_theme": "The Habit Cycle",
@@ -1232,130 +590,12 @@
         "activity": "Write three sentences: how does \"Union with the Self\" help in school life?",
         "activity_te": "\"ఆత్మతో ఐక్యత\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk6_04",
-        "title": "Taming the Mind",
-        "title_te": "మనస్సును అదుపులో ఉంచడం",
-        "emoji": "🌟",
-        "micro_theme": "Discipline and Habits",
-        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
-        "shlokas": [
-          "6.11",
-          "6.16",
-          "6.17"
-        ],
-        "story": {
-          "title": "The Mind as a Wild Horse",
-          "title_te": "మనస్సు గిడ్డంగా",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about training the mind. Krishna's teaching—\"The Mind as a Wild Horse\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice training the mind in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి మనస్సును అదుపులో ఉంచడం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"మనస్సు గిడ్డంగా\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "A calm mind is like a steady lamp in the wind.",
-          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
-        },
-        "activity": "Write three sentences: how does \"Taming the Mind\" help in school life?",
-        "activity_te": "\"మనస్సును అదుపులో ఉంచడం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk6_05",
-        "title": "The Middle Path",
-        "title_te": "మధ్య మార్గం",
-        "emoji": "🎯",
-        "micro_theme": "Deep Concentration",
-        "micro_theme_te": "జీవితంలో మితత్వం",
-        "shlokas": [
-          "6.19",
-          "6.20",
-          "6.26"
-        ],
-        "story": {
-          "title": "Sleep, Food, and Study",
-          "title_te": "నిద్ర, ఆహారం, చదువు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about moderation in life. Krishna's teaching—\"Sleep, Food, and Study\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice moderation in life in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి మధ్య మార్గం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"నిద్ర, ఆహారం, చదువు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Too much or too little of anything upsets balance.",
-          "moral_te": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది."
-        },
-        "activity": "Write three sentences: how does \"The Middle Path\" help in school life?",
-        "activity_te": "\"మధ్య మార్గం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk6_06",
-        "title": "Union with the Self",
-        "title_te": "ఆత్మతో ఐక్యత",
-        "emoji": "🛡️",
-        "micro_theme": "Bringing the Mind Back",
-        "micro_theme_te": "యోగం ఐక్యత",
-        "shlokas": [
-          "6.27",
-          "6.29",
-          "6.32"
-        ],
-        "story": {
-          "title": "Beyond the Body",
-          "title_te": "శరీరానికి అతీతం",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about yoga as union. Krishna's teaching—\"Beyond the Body\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice yoga as union in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి ఆత్మతో ఐక్యత గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"శరీరానికి అతీతం\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Connecting with your inner self is the highest yoga.",
-          "moral_te": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం."
-        },
-        "activity": "Write three sentences: how does \"Union with the Self\" help in school life?",
-        "activity_te": "\"ఆత్మతో ఐక్యత\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk6_07",
-        "title": "Taming the Mind",
-        "title_te": "మనస్సును అదుపులో ఉంచడం",
-        "emoji": "⚖️",
-        "micro_theme": "Good Efforts Never Wasted",
-        "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
-        "shlokas": [
-          "6.40",
-          "6.41"
-        ],
-        "story": {
-          "title": "The Mind as a Wild Horse",
-          "title_te": "మనస్సు గిడ్డంగా",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about training the mind. Krishna's teaching—\"The Mind as a Wild Horse\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice training the mind in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి మనస్సును అదుపులో ఉంచడం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"మనస్సు గిడ్డంగా\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "A calm mind is like a steady lamp in the wind.",
-          "moral_te": "శాంతమైన మనస్సు గాలిలో స్థిరమైన దీపం లాంటిది."
-        },
-        "activity": "Write three sentences: how does \"Taming the Mind\" help in school life?",
-        "activity_te": "\"మనస్సును అదుపులో ఉంచడం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk6_08",
-        "title": "The Middle Path",
-        "title_te": "మధ్య మార్గం",
-        "emoji": "🔥",
-        "micro_theme": "Devotion Completes Wisdom",
-        "micro_theme_te": "జీవితంలో మితత్వం",
-        "shlokas": [
-          "6.46",
-          "6.47"
-        ],
-        "story": {
-          "title": "Sleep, Food, and Study",
-          "title_te": "నిద్ర, ఆహారం, చదువు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about moderation in life. Krishna's teaching—\"Sleep, Food, and Study\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice moderation in life in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి మధ్య మార్గం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"నిద్ర, ఆహారం, చదువు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Too much or too little of anything upsets balance.",
-          "moral_te": "ఏదైనా ఎక్కువ లేదా తక్కువ సమతుల్యతను కలగలిపిస్తుంది."
-        },
-        "activity": "Write three sentences: how does \"The Middle Path\" help in school life?",
-        "activity_te": "\"మధ్య మార్గం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "7": [
       {
         "id": "theme_sk7_01",
-        "title": "Energy Behind the World",
+        "title": "The Invisible Thread",
         "title_te": "ప్రపంచం వెనుక శక్తి",
         "emoji": "🌱",
         "micro_theme": "The Invisible Thread",
@@ -1379,7 +619,7 @@
       },
       {
         "id": "theme_sk7_02",
-        "title": "Different Paths, One Growth",
+        "title": "The Essence of Being",
         "title_te": "వివిధ మార్గాలు, ఒక్క వృద్ధి",
         "emoji": "📖",
         "micro_theme": "The Essence of Being",
@@ -1404,7 +644,7 @@
       },
       {
         "id": "theme_sk7_03",
-        "title": "Letting Go of Fear",
+        "title": "The Four Seekers",
         "title_te": "భయాన్ని వదలడం",
         "emoji": "💡",
         "micro_theme": "The Four Seekers",
@@ -1426,58 +666,12 @@
         "activity": "Write three sentences: how does \"Letting Go of Fear\" help in school life?",
         "activity_te": "\"భయాన్ని వదలడం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk7_04",
-        "title": "Energy Behind the World",
-        "title_te": "ప్రపంచం వెనుక శక్తి",
-        "emoji": "🌟",
-        "micro_theme": "Faith During Hard Times",
-        "micro_theme_te": "భౌతిక మరియు ఆధ్యాత్మిక శక్తి",
-        "shlokas": [
-          "7.14",
-          "7.15"
-        ],
-        "story": {
-          "title": "Krishna Explains the Source",
-          "title_te": "మూలాన్ని వివరించిన కృష్ణుడు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about material and spiritual energy. Krishna's teaching—\"Krishna Explains the Source\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice material and spiritual energy in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి ప్రపంచం వెనుక శక్తి గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"మూలాన్ని వివరించిన కృష్ణుడు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "The world runs on energy—remember the source behind it.",
-          "moral_te": "ప్రపంచం శక్తిపై నడుస్తుంది—దాని వెనుక మూలాన్ని గుర్తు పెట్టుకోండి."
-        },
-        "activity": "Write three sentences: how does \"Energy Behind the World\" help in school life?",
-        "activity_te": "\"ప్రపంచం వెనుక శక్తి\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk7_05",
-        "title": "Different Paths, One Growth",
-        "title_te": "వివిధ మార్గాలు, ఒక్క వృద్ధి",
-        "emoji": "🎯",
-        "micro_theme": "True Wisdom Is Rare",
-        "micro_theme_te": "నాలుగు రకాల అన్వేషకులు",
-        "shlokas": [
-          "7.3",
-          "7.6"
-        ],
-        "story": {
-          "title": "Who Comes to Wisdom?",
-          "title_te": "జ్ఞానం వద్దకు ఎవరు వస్తారు?",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about four kinds of seekers. Krishna's teaching—\"Who Comes to Wisdom?\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice four kinds of seekers in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి వివిధ మార్గాలు, ఒక్క వృద్ధి గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"జ్ఞానం వద్దకు ఎవరు వస్తారు?\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "People come to wisdom for different reasons—all can grow.",
-          "moral_te": "ప్రజలు వివిధ కారణాల కోసం జ్ఞానాన్ని వెతుకుతారు—అందరూ ఎదగవచ్చు."
-        },
-        "activity": "Write three sentences: how does \"Different Paths, One Growth\" help in school life?",
-        "activity_te": "\"వివిధ మార్గాలు, ఒక్క వృద్ధి\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "8": [
       {
         "id": "theme_sk8_01",
-        "title": "Eternal and Passing",
+        "title": "The Final Impression",
         "title_te": "శాశ్వతం మరియు క్షణికం",
         "emoji": "🌱",
         "micro_theme": "The Final Impression",
@@ -1501,7 +695,7 @@
       },
       {
         "id": "theme_sk8_02",
-        "title": "Mind at the Turning Point",
+        "title": "The Master of Focus",
         "title_te": "మలుపు సమయంలో మనస్సు",
         "emoji": "📖",
         "micro_theme": "The Master of Focus",
@@ -1523,35 +717,12 @@
         "activity": "Write three sentences: how does \"Mind at the Turning Point\" help in school life?",
         "activity_te": "\"మలుపు సమయంలో మనస్సు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk8_03",
-        "title": "Habits Shape Heroes",
-        "title_te": "అలవాట్లు నాయకులను తయారు చేస్తాయి",
-        "emoji": "💡",
-        "micro_theme": "Spiritual Focus Creates Peace",
-        "micro_theme_te": "సాధన యొక్క క్రమశిక్షణ",
-        "shlokas": [
-          "8.13",
-          "8.15"
-        ],
-        "story": {
-          "title": "The Archer's Daily Bow",
-          "title_te": "విలువాడి రోజువారీ విలు",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about discipline of practice. Krishna's teaching—\"The Archer's Daily Bow\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice discipline of practice in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి అలవాట్లు నాయకులను తయారు చేస్తాయి గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"విలువాడి రోజువారీ విలు\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Daily small habits build a great life.",
-          "moral_te": "రోజువారీ చిన్న అలవాట్లు గొప్ప జీవితాన్ని నిర్మిస్తాయి."
-        },
-        "activity": "Write three sentences: how does \"Habits Shape Heroes\" help in school life?",
-        "activity_te": "\"అలవాట్లు నాయకులను తయారు చేస్తాయి\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "9": [
       {
         "id": "theme_sk9_01",
-        "title": "The King's Secret",
+        "title": "The Heart of Action",
         "title_te": "రాజు రహస్యం",
         "emoji": "🌱",
         "micro_theme": "The Heart of Action",
@@ -1575,7 +746,7 @@
       },
       {
         "id": "theme_sk9_02",
-        "title": "The Lord Remembers",
+        "title": "The Law of Protection",
         "title_te": "ప్రభువు గుర్తుంచుకుంటాడు",
         "emoji": "📖",
         "micro_theme": "The Law of Protection",
@@ -1597,58 +768,12 @@
         "activity": "Write three sentences: how does \"The Lord Remembers\" help in school life?",
         "activity_te": "\"ప్రభువు గుర్తుంచుకుంటాడు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk9_03",
-        "title": "Offer with Love",
-        "title_te": "ప్రేమతో అర్పించు",
-        "emoji": "💡",
-        "micro_theme": "Everyone Can Improve",
-        "micro_theme_te": "సరళమైన అర్పణలు",
-        "shlokas": [
-          "9.29",
-          "9.32"
-        ],
-        "story": {
-          "title": "Whatever You Have",
-          "title_te": "నీ వద్ద ఉన్నది",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about simple offerings. Krishna's teaching—\"Whatever You Have\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice simple offerings in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి ప్రేమతో అర్పించు గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"నీ వద్ద ఉన్నది\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "A leaf, a flower, or kind words can be a true gift.",
-          "moral_te": "ఒక ఆకు, ఒక పువ్వు లేదా మంచి మాటలు నిజమైన బహుమతి అవుచ్చు."
-        },
-        "activity": "Write three sentences: how does \"Offer with Love\" help in school life?",
-        "activity_te": "\"ప్రేమతో అర్పించు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk9_04",
-        "title": "The King's Secret",
-        "title_te": "రాజు రహస్యం",
-        "emoji": "🌟",
-        "micro_theme": "Sincere Devotion",
-        "micro_theme_te": "భక్తి యొక్క రాజ రహస్యం",
-        "shlokas": [
-          "9.24",
-          "9.33"
-        ],
-        "story": {
-          "title": "Devotion Without Show",
-          "title_te": "ప్రదర్శన లేకుండా భక్తి",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about royal secret of devotion. Krishna's teaching—\"Devotion Without Show\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice royal secret of devotion in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి రాజు రహస్యం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"ప్రదర్శన లేకుండా భక్తి\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Love offered sincerely is never too small.",
-          "moral_te": "నిజాయితీగా అర్పించిన ప్రేమ ఎప్పుడూ చాలా చిన్నది కాదు."
-        },
-        "activity": "Write three sentences: how does \"The King's Secret\" help in school life?",
-        "activity_te": "\"రాజు రహస్యం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "10": [
       {
         "id": "theme_sk10_01",
-        "title": "Excellence as a Sign",
+        "title": "Source of Brilliance",
         "title_te": "శ్రేష్ఠత ఒక గుర్తు",
         "emoji": "🌱",
         "micro_theme": "Source of Brilliance",
@@ -1672,7 +797,7 @@
       },
       {
         "id": "theme_sk10_02",
-        "title": "Wonder Opens the Heart",
+        "title": "Force of Time",
         "title_te": "ఆశ్చర్యం హృదయాన్ని తెరుస్తుంది",
         "emoji": "📖",
         "micro_theme": "Force of Time",
@@ -1696,7 +821,7 @@
       },
       {
         "id": "theme_sk10_03",
-        "title": "One Root, Many Branches",
+        "title": "Yoga of Intelligence",
         "title_te": "ఒక మూలం, అనేక కొమ్మలు",
         "emoji": "💡",
         "micro_theme": "Yoga of Intelligence",
@@ -1718,12 +843,37 @@
         "activity": "Write three sentences: how does \"One Root, Many Branches\" help in school life?",
         "activity_te": "\"ఒక మూలం, అనేక కొమ్మలు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sk10_04",
+        "title": "The Soul Supports the World",
+        "title_te": "The Soul Supports the World",
+        "emoji": "🌟",
+        "micro_theme": "The Soul Supports the World",
+        "micro_theme_te": "",
+        "shlokas": [
+          "10.19",
+          "10.20",
+          "10.39",
+          "10.42"
+        ],
+        "story": {
+          "title": "Verses 10.19, 10.20, 10.39, 10.42",
+          "title_te": "శ్లోకాలు 10.19, 10.20, 10.39, 10.42",
+          "content": "On the field of Kurukshetra, Arjuna listened as Krishna explained ideas for Chapter 10. These verses teach: The Lord said, \"Indeed, I shall tell you, O Arjuna, My auspicious manifestations—those that are most prominent among them. There is no end to their extent.\" I am the Self, O Arjuna, dwelling in the hearts of all beings; I am the beginning, the middle, and the end of all beings. I... Students today face smaller battles—fairness, fear, friendship—and the same wisdom can guide a steady heart.",
+          "content_te": "కురుక్షేత్రంలో అర్జునుడు అధ్యాయం 10 బోధన వింటూ ఉన్నాడు: The Lord said, \"Indeed, I shall tell you, O Arjuna, My auspicious manifestations—those that are most prominent among them. There is no end to their extent.\" I am the Self, O Arjuna, dwelling in the hearts of all beings; ... ఈ రోజు విద్యార్థులు ఎదుర్కొనే సవాళ్లకు ఈ జ్ఞానం దీపంలా.",
+          "moral": "The Soul Supports the World",
+          "moral_te": "The Soul Supports the World"
+        },
+        "activity": "Write three sentences: how does \"The Soul Supports the World\" help you this week?",
+        "activity_te": "\"The Soul Supports the World\" ఈ వారం మీకు ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
+        "videoUrl": ""
       }
     ],
     "11": [
       {
         "id": "theme_sk11_01",
-        "title": "Humility in Awe",
+        "title": "The Cosmic Vision",
         "title_te": "ఆశ్చర్యంలో వినయం",
         "emoji": "🌱",
         "micro_theme": "The Cosmic Vision",
@@ -1748,7 +898,7 @@
       },
       {
         "id": "theme_sk11_02",
-        "title": "Vision Without Pride",
+        "title": "The Master of Time",
         "title_te": "గర్వం లేకుండా దర్శనం",
         "emoji": "📖",
         "micro_theme": "The Master of Time",
@@ -1772,7 +922,7 @@
       },
       {
         "id": "theme_sk11_03",
-        "title": "Wonder Becomes Bhakti",
+        "title": "The Path of Devotion",
         "title_te": "ఆశ్చర్యం భక్తిగా మారింది",
         "emoji": "💡",
         "micro_theme": "The Path of Devotion",
@@ -1798,7 +948,7 @@
     "12": [
       {
         "id": "theme_sk12_01",
-        "title": "Many Paths, One Heart",
+        "title": "The Focused Heart",
         "title_te": "అనేక మార్గాలు, ఒక హృదయం",
         "emoji": "🌱",
         "micro_theme": "The Focused Heart",
@@ -1822,7 +972,7 @@
       },
       {
         "id": "theme_sk12_02",
-        "title": "Marks of a Devotee",
+        "title": "The Ladder of Practice",
         "title_te": "భక్తుని గుర్తులు",
         "emoji": "📖",
         "micro_theme": "The Ladder of Practice",
@@ -1847,7 +997,7 @@
       },
       {
         "id": "theme_sk12_03",
-        "title": "Focus on the Highest",
+        "title": "The Balanced Leader",
         "title_te": "అత్యున్నతంపై దృష్టి",
         "emoji": "💡",
         "micro_theme": "The Balanced Leader",
@@ -1873,7 +1023,7 @@
     "13": [
       {
         "id": "theme_sk13_01",
-        "title": "Field and Farmer",
+        "title": "The Field and the Knower",
         "title_te": "క్షేత్రం మరియు రైతు",
         "emoji": "🌱",
         "micro_theme": "The Field and the Knower",
@@ -1897,7 +1047,7 @@
       },
       {
         "id": "theme_sk13_02",
-        "title": "Knower of the Field",
+        "title": "The 20 Gems of Wisdom",
         "title_te": "క్షేత్రాన్ని తెలిసినవాడు",
         "emoji": "📖",
         "micro_theme": "The 20 Gems of Wisdom",
@@ -1922,7 +1072,7 @@
       },
       {
         "id": "theme_sk13_03",
-        "title": "Ahimsa in Action",
+        "title": "The Observer",
         "title_te": "చర్యలో అహింస",
         "emoji": "💡",
         "micro_theme": "The Observer",
@@ -1949,7 +1099,7 @@
     "14": [
       {
         "id": "theme_sk14_01",
-        "title": "Sattva, Rajas, Tamas",
+        "title": "The Forces of Nature",
         "title_te": "సత్త్వ, రజస్, తమస్",
         "emoji": "🌱",
         "micro_theme": "The Forces of Nature",
@@ -1974,7 +1124,7 @@
       },
       {
         "id": "theme_sk14_02",
-        "title": "Beyond the Modes",
+        "title": "The Outcome of Habits",
         "title_te": "గుణాలకు అతీతం",
         "emoji": "📖",
         "micro_theme": "The Outcome of Habits",
@@ -1999,7 +1149,7 @@
       },
       {
         "id": "theme_sk14_03",
-        "title": "Food, Mind, Character",
+        "title": "The Master of Moods",
         "title_te": "ఆహారం, మనస్సు, శీలం",
         "emoji": "💡",
         "micro_theme": "The Master of Moods",
@@ -2021,40 +1171,16 @@
         "activity": "Write three sentences: how does \"Food, Mind, Character\" help in school life?",
         "activity_te": "\"ఆహారం, మనస్సు, శీలం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk14_04",
-        "title": "Sattva, Rajas, Tamas",
-        "title_te": "సత్త్వ, రజస్, తమస్",
-        "emoji": "🌟",
-        "micro_theme": "Rising Above Habits",
-        "micro_theme_te": "సత్త్వం రజస్సు తమస్సు",
-        "shlokas": [
-          "14.13",
-          "14.17",
-          "14.19"
-        ],
-        "story": {
-          "title": "Which Mood Is Driving?",
-          "title_te": "ఏ భావన నడుపుతోంది?",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about goodness passion and dullness. Krishna's teaching—\"Which Mood Is Driving?\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice goodness passion and dullness in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి సత్త్వ, రజస్, తమస్ గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"ఏ భావన నడుపుతోంది?\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Notice which mood guides you—then choose wisely.",
-          "moral_te": "ఏ భావన మిమ్మల్ని నడిపిస్తుందో గమనించండి—ఆపై తెలివిగా ఎంచుకోండి."
-        },
-        "activity": "Write three sentences: how does \"Sattva, Rajas, Tamas\" help in school life?",
-        "activity_te": "\"సత్త్వ, రజస్, తమస్\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "15": [
       {
         "id": "theme_sk15_01",
-        "title": "The Tree of Life",
+        "title": "The Tree of the World",
         "title_te": "The Tree of Life",
         "emoji": "🌳",
         "micro_theme": "The Tree of the World",
-        "micro_theme_te": "Life is like a growing tree",
+        "micro_theme_te": "",
         "shlokas": [
           "15.1",
           "15.2",
@@ -2074,11 +1200,11 @@
       },
       {
         "id": "theme_sk15_02",
-        "title": "Inner Light",
+        "title": "The Power Behind the Light",
         "title_te": "Inner Light",
         "emoji": "☀️",
         "micro_theme": "The Power Behind the Light",
-        "micro_theme_te": "Real light is inside you",
+        "micro_theme_te": "",
         "shlokas": [
           "15.6",
           "15.12",
@@ -2099,11 +1225,11 @@
       },
       {
         "id": "theme_sk15_03",
-        "title": "Search for Truth",
+        "title": "The Librarian of the Mind",
         "title_te": "Search for Truth",
         "emoji": "🔍",
         "micro_theme": "The Librarian of the Mind",
-        "micro_theme_te": "Look for what is real",
+        "micro_theme_te": "",
         "shlokas": [
           "15.15",
           "15.18",
@@ -2125,7 +1251,7 @@
     "16": [
       {
         "id": "theme_sk16_01",
-        "title": "Daivi Sampad",
+        "title": "The Divine Wealth",
         "title_te": "దైవీ సంపద్",
         "emoji": "🌱",
         "micro_theme": "The Divine Wealth",
@@ -2149,7 +1275,7 @@
       },
       {
         "id": "theme_sk16_02",
-        "title": "Asuri Nature",
+        "title": "The Three Gates to Darkness",
         "title_te": "ఆసుర స్వభావం",
         "emoji": "📖",
         "micro_theme": "The Three Gates to Darkness",
@@ -2173,7 +1299,7 @@
       },
       {
         "id": "theme_sk16_03",
-        "title": "Daily Character Choices",
+        "title": "The Authority of Truth",
         "title_te": "రోజువారీ శీల ఎంపికలు",
         "emoji": "💡",
         "micro_theme": "The Authority of Truth",
@@ -2194,36 +1320,12 @@
         "activity": "Write three sentences: how does \"Daily Character Choices\" help in school life?",
         "activity_te": "\"రోజువారీ శీల ఎంపికలు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sk16_04",
-        "title": "Daivi Sampad",
-        "title_te": "దైవీ సంపద్",
-        "emoji": "🌟",
-        "micro_theme": "Negative Qualities",
-        "micro_theme_te": "దైవీ లక్షణాలు",
-        "shlokas": [
-          "16.5",
-          "16.7",
-          "16.10"
-        ],
-        "story": {
-          "title": "Fearless and Kind",
-          "title_te": "నిర్భయ మరియు దయగల",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about divine qualities. Krishna's teaching—\"Fearless and Kind\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice divine qualities in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి దైవీ సంపద్ గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"నిర్భయ మరియు దయగల\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Fearlessness, purity, and compassion light up your path.",
-          "moral_te": "నిర్భయత్వం, పవిత్రత మరియు కరుణ మీ మార్గాన్ని వెలిగిస్తాయి."
-        },
-        "activity": "Write three sentences: how does \"Daivi Sampad\" help in school life?",
-        "activity_te": "\"దైవీ సంపద్\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
       }
     ],
     "17": [
       {
         "id": "theme_sk17_01",
-        "title": "Shraddha in Life",
+        "title": "The Science of Food",
         "title_te": "జీవితంలో శ్రద్ధ",
         "emoji": "🌱",
         "micro_theme": "The Science of Food",
@@ -2248,7 +1350,7 @@
       },
       {
         "id": "theme_sk17_02",
-        "title": "Three Kinds of Faith",
+        "title": "The Tapas of Speech",
         "title_te": "మూడు రకాల శ్రద్ధ",
         "emoji": "📖",
         "micro_theme": "The Tapas of Speech",
@@ -2272,7 +1374,7 @@
       },
       {
         "id": "theme_sk17_03",
-        "title": "Sacred Words, Sacred Acts",
+        "title": "The Art of Charity",
         "title_te": "పవిత్ర మాటలు, పవిత్ర చర్యలు",
         "emoji": "💡",
         "micro_theme": "The Art of Charity",
@@ -2296,7 +1398,7 @@
       },
       {
         "id": "theme_sk17_04",
-        "title": "Shraddha in Life",
+        "title": "The Seal of Truth",
         "title_te": "జీవితంలో శ్రద్ధ",
         "emoji": "🌟",
         "micro_theme": "The Seal of Truth",
@@ -2323,7 +1425,7 @@
     "18": [
       {
         "id": "theme_sk18_01",
-        "title": "Renounce Selfish Desire",
+        "title": "Bitter First, Sweet Later",
         "title_te": "స్వార్థ కోరిక వదలడం",
         "emoji": "🌱",
         "micro_theme": "Bitter First, Sweet Later",
@@ -2348,7 +1450,7 @@
       },
       {
         "id": "theme_sk18_02",
-        "title": "Five Causes",
+        "title": "The Skillful Swadharma",
         "title_te": "ఐదు కారణాలు",
         "emoji": "📖",
         "micro_theme": "The Skillful Swadharma",
@@ -2373,7 +1475,7 @@
       },
       {
         "id": "theme_sk18_03",
-        "title": "Surrender and Act",
+        "title": "The Ultimate Promise",
         "title_te": "లొంగు, చర్య చేయి",
         "emoji": "💡",
         "micro_theme": "The Ultimate Promise",
@@ -2394,54 +1496,6 @@
         },
         "activity": "Write three sentences: how does \"Surrender and Act\" help in school life?",
         "activity_te": "\"లొంగు, చర్య చేయి\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk18_04",
-        "title": "Renounce Selfish Desire",
-        "title_te": "స్వార్థ కోరిక వదలడం",
-        "emoji": "🌟",
-        "micro_theme": "Growth Through Effort",
-        "micro_theme_te": "సన్యాస రకాలు",
-        "shlokas": [
-          "18.48",
-          "18.49",
-          "18.50"
-        ],
-        "story": {
-          "title": "What to Release",
-          "title_te": "ఏమి వదలాలి",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about types of renunciation. Krishna's teaching—\"What to Release\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice types of renunciation in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి స్వార్థ కోరిక వదలడం గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"ఏమి వదలాలి\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Letting go of selfish desire frees your energy for good work.",
-          "moral_te": "స్వార్థ కోరికలను వదిలివేయడం మంచి పనికి మీ శక్తిని విడుదల చేస్తుంది."
-        },
-        "activity": "Write three sentences: how does \"Renounce Selfish Desire\" help in school life?",
-        "activity_te": "\"స్వార్థ కోరిక వదలడం\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sk18_05",
-        "title": "Five Causes",
-        "title_te": "ఐదు కారణాలు",
-        "emoji": "🎯",
-        "micro_theme": "Trust Reduces Fear",
-        "micro_theme_te": "చర్యకు ఐదు కారణాలు",
-        "shlokas": [
-          "18.56",
-          "18.57",
-          "18.58"
-        ],
-        "story": {
-          "title": "Understand Before Acting",
-          "title_te": "చేయడానికి ముందు అర్థం చేసుకో",
-          "content": "In the Bhagavad Gita, Arjuna stands on the field of Kurukshetra and learns about five causes of action. Krishna's teaching—\"Understand Before Acting\"—is like a lamp for students today. Imagine a teenager facing a hard choice: fairness vs popularity, truth vs fear, duty vs comfort. The Gita does not remove the difficulty; it shows how to act with a steady mind. When you practice five causes of action in small moments at school and home, you train the same courage Arjuna found.",
-          "content_te": "భగవద్గీతలో అర్జునుడు కురుక్షేత్రంలో నిలబడి ఐదు కారణాలు గురించి నేర్చుకుంటాడు. కృష్ణుడి బోధన—\"చేయడానికి ముందు అర్థం చేసుకో\"—ఈ రోజు విద్యార్థులకు దీపంలా. న్యాయం vs జనాదరం, సత్యం vs భయం, కర్తవ్యం vs సౌకర్యం—ఇలాంటి కఠిన ఎంపిక ఎదురైన యువకుడిని ఊహించండి. గీత కష్టతను తొలగించదు; స్థిరమైన మనస్సుతో ఎలా పని చేయాలో చూపిస్తుంది. పాఠశాలలో, ఇంట్లో చిన్న క్షణాలలో ఈ బోధనను అభ్యాసం చేస్తే, అర్జునుడు కనుగొన్న ధైర్యం మీకు కూడా పెరుగుతుంది.",
-          "moral": "Understand why you act—then act with clarity.",
-          "moral_te": "మీరు ఎందుకు పని చేస్తారో అర్థం చేసుకోండి—ఆపై స్పష్టతతో చేయండి."
-        },
-        "activity": "Write three sentences: how does \"Five Causes\" help in school life?",
-        "activity_te": "\"ఐదు కారణాలు\" పాఠశాల జీవితంలో ఎలా సహాయపడుతుందో మూడు వాక్యాలు రాయండి.",
         "videoUrl": ""
       }
     ]

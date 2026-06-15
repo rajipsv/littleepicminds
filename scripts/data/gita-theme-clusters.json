@@ -1,52 +1,52 @@
 {
   "meta": {
     "version": 1,
-    "seedsTotal": 80,
-    "seekersTotal": 100,
+    "seedsTotal": 60,
+    "seekersTotal": 60,
     "shlokasPerCluster": "2 (seeds curriculum)",
     "quotas": {
       "1": {
-        "seeds": 10,
-        "seekers": 10
+        "seeds": 3,
+        "seekers": 3
       },
       "2": {
-        "seeds": 15,
-        "seekers": 18
-      },
-      "3": {
         "seeds": 7,
         "seekers": 7
       },
-      "4": {
-        "seeds": 5,
-        "seekers": 8
-      },
-      "5": {
-        "seeds": 5,
-        "seekers": 5
-      },
-      "6": {
-        "seeds": 6,
-        "seekers": 8
-      },
-      "7": {
-        "seeds": 3,
-        "seekers": 5
-      },
-      "8": {
-        "seeds": 2,
-        "seekers": 3
-      },
-      "9": {
+      "3": {
         "seeds": 4,
         "seekers": 4
       },
-      "10": {
+      "4": {
+        "seeds": 4,
+        "seekers": 4
+      },
+      "5": {
         "seeds": 3,
         "seekers": 3
       },
-      "11": {
+      "6": {
+        "seeds": 3,
+        "seekers": 3
+      },
+      "7": {
+        "seeds": 3,
+        "seekers": 3
+      },
+      "8": {
         "seeds": 2,
+        "seekers": 2
+      },
+      "9": {
+        "seeds": 2,
+        "seekers": 2
+      },
+      "10": {
+        "seeds": 4,
+        "seekers": 4
+      },
+      "11": {
+        "seeds": 3,
         "seekers": 3
       },
       "12": {
@@ -54,32 +54,32 @@
         "seekers": 3
       },
       "13": {
-        "seeds": 2,
+        "seeds": 3,
         "seekers": 3
       },
       "14": {
         "seeds": 3,
-        "seekers": 4
+        "seekers": 3
       },
       "15": {
-        "seeds": 2,
+        "seeds": 3,
         "seekers": 3
       },
       "16": {
         "seeds": 3,
-        "seekers": 4
+        "seekers": 3
       },
       "17": {
-        "seeds": 2,
+        "seeds": 4,
         "seekers": 4
       },
       "18": {
         "seeds": 3,
-        "seekers": 5
+        "seekers": 3
       }
     },
-    "seedsCurriculumVersion": 3,
-    "seekersCurriculumVersion": 3
+    "seedsCurriculumVersion": 4,
+    "seekersCurriculumVersion": 4
   },
   "gita": {
     "1": {
@@ -113,83 +113,6 @@
             "1.47"
           ],
           "idea": "It's Okay to be Nervous",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sd1_04",
-          "shlokas": [
-            "1.3",
-            "1.4"
-          ],
-          "idea": "Two Teams Gathering",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sd1_05",
-          "shlokas": [
-            "1.12",
-            "1.13"
-          ],
-          "idea": "When the Drums Begin",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sd1_06",
-          "shlokas": [
-            "1.23",
-            "1.24"
-          ],
-          "idea": "Seeing the Field",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sd1_07",
-          "shlokas": [
-            "1.29",
-            "1.30"
-          ],
-          "idea": "The Spinning Mind",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sd1_08",
-          "shlokas": [
-            "1.32",
-            "1.33"
-          ],
-          "idea": "People Before Winning",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sd1_09",
-          "shlokas": [
-            "1.34",
-            "1.35"
-          ],
-          "idea": "Family Love Hurts",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sd1_10",
-          "shlokas": [
-            "1.40",
-            "1.41"
-          ],
-          "idea": "Giving Up in the Mind",
           "ideaTe": "",
           "chapterTitle": "The Courage to Start",
           "priority": 2
@@ -228,90 +151,6 @@
             "1.30"
           ],
           "idea": "Mastering the Spin",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sk1_04",
-          "shlokas": [
-            "1.4",
-            "1.5",
-            "1.6"
-          ],
-          "idea": "Leaders Feel Pressure",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sk1_05",
-          "shlokas": [
-            "1.12",
-            "1.13",
-            "1.14"
-          ],
-          "idea": "Loud Beginnings",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 1
-        },
-        {
-          "id": "sk1_06",
-          "shlokas": [
-            "1.24",
-            "1.25",
-            "1.26"
-          ],
-          "idea": "Seeing Teachers",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sk1_07",
-          "shlokas": [
-            "1.31",
-            "1.32",
-            "1.33"
-          ],
-          "idea": "Moral Doubt",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sk1_08",
-          "shlokas": [
-            "1.34",
-            "1.35",
-            "1.36"
-          ],
-          "idea": "Attachment Hurts",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sk1_09",
-          "shlokas": [
-            "1.37",
-            "1.38",
-            "1.39"
-          ],
-          "idea": "Fear of Consequences",
-          "ideaTe": "",
-          "chapterTitle": "The Courage to Start",
-          "priority": 2
-        },
-        {
-          "id": "sk1_10",
-          "shlokas": [
-            "1.40",
-            "1.41",
-            "1.42"
-          ],
-          "idea": "Wanting to Give Up",
           "ideaTe": "",
           "chapterTitle": "The Courage to Start",
           "priority": 2
@@ -373,7 +212,7 @@
           "idea": "The Best Effort",
           "ideaTe": "",
           "chapterTitle": "The Secret of the Hero",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sd2_06",
@@ -384,7 +223,7 @@
           "idea": "The Wise Turtle",
           "ideaTe": "",
           "chapterTitle": "The Secret of the Hero",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sd2_07",
@@ -393,94 +232,6 @@
             "2.71"
           ],
           "idea": "The Ocean's Peace",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 1
-        },
-        {
-          "id": "sd2_08",
-          "shlokas": [
-            "2.2",
-            "2.3"
-          ],
-          "idea": "Stand Up Again",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 1
-        },
-        {
-          "id": "sd2_09",
-          "shlokas": [
-            "2.11",
-            "2.12"
-          ],
-          "idea": "Wise Teaching",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_10",
-          "shlokas": [
-            "2.15",
-            "2.16"
-          ],
-          "idea": "Truth Stays Strong",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_11",
-          "shlokas": [
-            "2.37",
-            "2.38"
-          ],
-          "idea": "Do Your Part",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_12",
-          "shlokas": [
-            "2.49",
-            "2.50"
-          ],
-          "idea": "Smart Calm Work",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_13",
-          "shlokas": [
-            "2.55",
-            "2.56"
-          ],
-          "idea": "Calm Choices",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_14",
-          "shlokas": [
-            "2.62",
-            "2.63"
-          ],
-          "idea": "Angry Thoughts Grow",
-          "ideaTe": "",
-          "chapterTitle": "The Secret of the Hero",
-          "priority": 2
-        },
-        {
-          "id": "sd2_15",
-          "shlokas": [
-            "2.64",
-            "2.65"
-          ],
-          "idea": "Discipline Brings Peace",
           "ideaTe": "",
           "chapterTitle": "The Secret of the Hero",
           "priority": 2
@@ -545,7 +296,7 @@
           "idea": "The Ladder of Fall",
           "ideaTe": "",
           "chapterTitle": "The Science of Mastery",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sk2_06",
@@ -557,7 +308,7 @@
           "idea": "The Master of Senses",
           "ideaTe": "",
           "chapterTitle": "The Science of Mastery",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sk2_07",
@@ -567,136 +318,6 @@
             "2.72"
           ],
           "idea": "The Peaceful Leader",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 1
-        },
-        {
-          "id": "sk2_08",
-          "shlokas": [
-            "2.2",
-            "2.3",
-            "2.4"
-          ],
-          "idea": "Courage After Grief",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 1
-        },
-        {
-          "id": "sk2_09",
-          "shlokas": [
-            "2.5",
-            "2.6",
-            "2.7"
-          ],
-          "idea": "Emotional Conflict",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 1
-        },
-        {
-          "id": "sk2_10",
-          "shlokas": [
-            "2.8",
-            "2.9",
-            "2.10"
-          ],
-          "idea": "Krishna Responds",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_11",
-          "shlokas": [
-            "2.12",
-            "2.16",
-            "2.21"
-          ],
-          "idea": "Soul and Change",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_12",
-          "shlokas": [
-            "2.31",
-            "2.32",
-            "2.33"
-          ],
-          "idea": "Duty Without Fear",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_13",
-          "shlokas": [
-            "2.39",
-            "2.40",
-            "2.41"
-          ],
-          "idea": "Focused Intelligence",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_14",
-          "shlokas": [
-            "2.45",
-            "2.46"
-          ],
-          "idea": "Rise Above Extremes",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_15",
-          "shlokas": [
-            "2.51",
-            "2.52",
-            "2.53"
-          ],
-          "idea": "Wisdom Removes Confusion",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_16",
-          "shlokas": [
-            "2.54",
-            "2.55",
-            "2.56"
-          ],
-          "idea": "Self-Control",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_17",
-          "shlokas": [
-            "2.65",
-            "2.66",
-            "2.67"
-          ],
-          "idea": "Restlessness Brings Sorrow",
-          "ideaTe": "",
-          "chapterTitle": "The Science of Mastery",
-          "priority": 2
-        },
-        {
-          "id": "sk2_18",
-          "shlokas": [
-            "2.68",
-            "2.69"
-          ],
-          "idea": "Controlled Senses",
           "ideaTe": "",
           "chapterTitle": "The Science of Mastery",
           "priority": 2
@@ -736,7 +357,7 @@
           "idea": "Being Myself",
           "ideaTe": "",
           "chapterTitle": "The Power of Helping",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sd3_04",
@@ -745,39 +366,6 @@
             "3.42"
           ],
           "idea": "The Smart Choices",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 1
-        },
-        {
-          "id": "sd3_05",
-          "shlokas": [
-            "3.5",
-            "3.8"
-          ],
-          "idea": "Everyone Has Responsibilities",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 2
-        },
-        {
-          "id": "sd3_06",
-          "shlokas": [
-            "3.9",
-            "3.13"
-          ],
-          "idea": "Sharing Makes Work Meaningful",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 2
-        },
-        {
-          "id": "sd3_07",
-          "shlokas": [
-            "3.37",
-            "3.43"
-          ],
-          "idea": "The Mind Becomes Strong",
           "ideaTe": "",
           "chapterTitle": "The Power of Helping",
           "priority": 2
@@ -818,7 +406,7 @@
           "idea": "The Integrity Code",
           "ideaTe": "",
           "chapterTitle": "The Power of Helping",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sk3_04",
@@ -828,42 +416,6 @@
             "3.42"
           ],
           "idea": "The Hierarchy of Power",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 1
-        },
-        {
-          "id": "sk3_05",
-          "shlokas": [
-            "3.5",
-            "3.7",
-            "3.8"
-          ],
-          "idea": "Responsibility Cannot Be Avoided",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 2
-        },
-        {
-          "id": "sk3_06",
-          "shlokas": [
-            "3.9",
-            "3.13",
-            "3.19"
-          ],
-          "idea": "Work Should Nourish Others",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Helping",
-          "priority": 2
-        },
-        {
-          "id": "sk3_07",
-          "shlokas": [
-            "3.36",
-            "3.39",
-            "3.43"
-          ],
-          "idea": "Inner Enemies",
           "ideaTe": "",
           "chapterTitle": "The Power of Helping",
           "priority": 2
@@ -903,7 +455,7 @@
           "idea": "The Happy Work",
           "ideaTe": "",
           "chapterTitle": "The Power of Knowledge",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sd4_04",
@@ -912,17 +464,6 @@
             "4.39"
           ],
           "idea": "Knowledge Cleans Everything",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Knowledge",
-          "priority": 2
-        },
-        {
-          "id": "sd4_05",
-          "shlokas": [
-            "4.34",
-            "4.40"
-          ],
-          "idea": "Respect Teachers",
           "ideaTe": "",
           "chapterTitle": "The Power of Knowledge",
           "priority": 2
@@ -964,7 +505,7 @@
           "idea": "Inner Peace in Action",
           "ideaTe": "",
           "chapterTitle": "The Power of Knowledge",
-          "priority": 1
+          "priority": 2
         },
         {
           "id": "sk4_04",
@@ -975,50 +516,6 @@
             "4.42"
           ],
           "idea": "The Sword of Wisdom",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Knowledge",
-          "priority": 1
-        },
-        {
-          "id": "sk4_05",
-          "shlokas": [
-            "4.1",
-            "4.5"
-          ],
-          "idea": "Ancient Wisdom Guides",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Knowledge",
-          "priority": 2
-        },
-        {
-          "id": "sk4_06",
-          "shlokas": [
-            "4.13",
-            "4.14"
-          ],
-          "idea": "Every Role Has Purpose",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Knowledge",
-          "priority": 2
-        },
-        {
-          "id": "sk4_07",
-          "shlokas": [
-            "4.33",
-            "4.34"
-          ],
-          "idea": "Humility Helps Learning",
-          "ideaTe": "",
-          "chapterTitle": "The Power of Knowledge",
-          "priority": 2
-        },
-        {
-          "id": "sk4_08",
-          "shlokas": [
-            "4.24",
-            "4.28"
-          ],
-          "idea": "Sacred Work",
           "ideaTe": "",
           "chapterTitle": "The Power of Knowledge",
           "priority": 2
@@ -1056,28 +553,6 @@
             "5.26"
           ],
           "idea": "The Secret Smile",
-          "ideaTe": "",
-          "chapterTitle": "The Lotus Secret",
-          "priority": 1
-        },
-        {
-          "id": "sd5_04",
-          "shlokas": [
-            "5.12",
-            "5.20"
-          ],
-          "idea": "Peace from Selfless Work",
-          "ideaTe": "",
-          "chapterTitle": "The Lotus Secret",
-          "priority": 2
-        },
-        {
-          "id": "sd5_05",
-          "shlokas": [
-            "5.25",
-            "5.29"
-          ],
-          "idea": "Peaceful People Help",
           "ideaTe": "",
           "chapterTitle": "The Lotus Secret",
           "priority": 2
@@ -1119,30 +594,6 @@
           "idea": "The Inner Fortress",
           "ideaTe": "",
           "chapterTitle": "The Lotus Secret",
-          "priority": 1
-        },
-        {
-          "id": "sk5_04",
-          "shlokas": [
-            "5.25",
-            "5.27",
-            "5.29"
-          ],
-          "idea": "Calm People Help",
-          "ideaTe": "",
-          "chapterTitle": "The Lotus Secret",
-          "priority": 2
-        },
-        {
-          "id": "sk5_05",
-          "shlokas": [
-            "5.21",
-            "5.22",
-            "5.23"
-          ],
-          "idea": "Temporary Pleasures",
-          "ideaTe": "",
-          "chapterTitle": "The Lotus Secret",
           "priority": 2
         }
       ]
@@ -1178,39 +629,6 @@
             "6.35"
           ],
           "idea": "Taming the Wind",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 1
-        },
-        {
-          "id": "sd6_04",
-          "shlokas": [
-            "6.16",
-            "6.17"
-          ],
-          "idea": "Healthy Habits",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 2
-        },
-        {
-          "id": "sd6_05",
-          "shlokas": [
-            "6.40",
-            "6.41"
-          ],
-          "idea": "Good Efforts Last",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 2
-        },
-        {
-          "id": "sd6_06",
-          "shlokas": [
-            "6.46",
-            "6.47"
-          ],
-          "idea": "Love and Devotion",
           "ideaTe": "",
           "chapterTitle": "The Superpower of Focus",
           "priority": 2
@@ -1252,64 +670,6 @@
           "idea": "The Habit Cycle",
           "ideaTe": "",
           "chapterTitle": "The Superpower of Focus",
-          "priority": 1
-        },
-        {
-          "id": "sk6_04",
-          "shlokas": [
-            "6.11",
-            "6.16",
-            "6.17"
-          ],
-          "idea": "Discipline and Habits",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 1
-        },
-        {
-          "id": "sk6_05",
-          "shlokas": [
-            "6.19",
-            "6.20",
-            "6.26"
-          ],
-          "idea": "Deep Concentration",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 2
-        },
-        {
-          "id": "sk6_06",
-          "shlokas": [
-            "6.27",
-            "6.29",
-            "6.32"
-          ],
-          "idea": "Bringing the Mind Back",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 2
-        },
-        {
-          "id": "sk6_07",
-          "shlokas": [
-            "6.40",
-            "6.41"
-          ],
-          "idea": "Good Efforts Never Wasted",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
-          "priority": 2
-        },
-        {
-          "id": "sk6_08",
-          "shlokas": [
-            "6.46",
-            "6.47"
-          ],
-          "idea": "Devotion Completes Wisdom",
-          "ideaTe": "",
-          "chapterTitle": "The Superpower of Focus",
           "priority": 2
         }
       ]
@@ -1319,8 +679,8 @@
         {
           "id": "sd7_01",
           "shlokas": [
-            "7.7",
-            "7.14"
+            "7.6",
+            "7.7"
           ],
           "idea": "The Pearl Necklace",
           "ideaTe": "",
@@ -1387,28 +747,6 @@
           "idea": "The Four Seekers",
           "ideaTe": "",
           "chapterTitle": "The Magic in Everything",
-          "priority": 1
-        },
-        {
-          "id": "sk7_04",
-          "shlokas": [
-            "7.14",
-            "7.15"
-          ],
-          "idea": "Faith During Hard Times",
-          "ideaTe": "",
-          "chapterTitle": "The Magic in Everything",
-          "priority": 2
-        },
-        {
-          "id": "sk7_05",
-          "shlokas": [
-            "7.3",
-            "7.6"
-          ],
-          "idea": "True Wisdom Is Rare",
-          "ideaTe": "",
-          "chapterTitle": "The Magic in Everything",
           "priority": 2
         }
       ]
@@ -1462,17 +800,6 @@
           "idea": "The Master of Focus",
           "ideaTe": "",
           "chapterTitle": "The Journey Home",
-          "priority": 1
-        },
-        {
-          "id": "sk8_03",
-          "shlokas": [
-            "8.13",
-            "8.15"
-          ],
-          "idea": "Spiritual Focus Creates Peace",
-          "ideaTe": "",
-          "chapterTitle": "The Journey Home",
           "priority": 2
         }
       ]
@@ -1497,28 +824,6 @@
             "9.31"
           ],
           "idea": "Always Safe",
-          "ideaTe": "",
-          "chapterTitle": "The King of Secrets",
-          "priority": 1
-        },
-        {
-          "id": "sd9_03",
-          "shlokas": [
-            "9.29",
-            "9.30"
-          ],
-          "idea": "Everyone Deserves Kindness",
-          "ideaTe": "",
-          "chapterTitle": "The King of Secrets",
-          "priority": 2
-        },
-        {
-          "id": "sd9_04",
-          "shlokas": [
-            "9.32",
-            "9.33"
-          ],
-          "idea": "Anyone Can Become Better",
           "ideaTe": "",
           "chapterTitle": "The King of Secrets",
           "priority": 2
@@ -1546,28 +851,6 @@
             "9.34"
           ],
           "idea": "The Law of Protection",
-          "ideaTe": "",
-          "chapterTitle": "The King of Secrets",
-          "priority": 1
-        },
-        {
-          "id": "sk9_03",
-          "shlokas": [
-            "9.29",
-            "9.32"
-          ],
-          "idea": "Everyone Can Improve",
-          "ideaTe": "",
-          "chapterTitle": "The King of Secrets",
-          "priority": 2
-        },
-        {
-          "id": "sk9_04",
-          "shlokas": [
-            "9.24",
-            "9.33"
-          ],
-          "idea": "Sincere Devotion",
           "ideaTe": "",
           "chapterTitle": "The King of Secrets",
           "priority": 2
@@ -1605,6 +888,17 @@
             "10.11"
           ],
           "idea": "The Inner Lamp",
+          "ideaTe": "",
+          "chapterTitle": "The Hero in Everything",
+          "priority": 2
+        },
+        {
+          "id": "sd10_04",
+          "shlokas": [
+            "10.20",
+            "10.39"
+          ],
+          "idea": "The Secret Heart",
           "ideaTe": "",
           "chapterTitle": "The Hero in Everything",
           "priority": 2
@@ -1647,6 +941,19 @@
           "ideaTe": "",
           "chapterTitle": "The Hero in Everything",
           "priority": 2
+        },
+        {
+          "id": "sk10_04",
+          "shlokas": [
+            "10.19",
+            "10.20",
+            "10.39",
+            "10.42"
+          ],
+          "idea": "The Soul Supports the World",
+          "ideaTe": "",
+          "chapterTitle": "The Hero in Everything",
+          "priority": 2
         }
       ]
     },
@@ -1670,6 +977,17 @@
             "11.33"
           ],
           "idea": "The Great Protector",
+          "ideaTe": "",
+          "chapterTitle": "The Universal Hero",
+          "priority": 1
+        },
+        {
+          "id": "sd11_03",
+          "shlokas": [
+            "11.54",
+            "11.55"
+          ],
+          "idea": "Just Love",
           "ideaTe": "",
           "chapterTitle": "The Universal Hero",
           "priority": 2
@@ -1813,6 +1131,17 @@
           "idea": "Planting Kindness",
           "ideaTe": "",
           "chapterTitle": "The Secret of the Garden",
+          "priority": 1
+        },
+        {
+          "id": "sd13_03",
+          "shlokas": [
+            "13.33",
+            "13.34"
+          ],
+          "idea": "The Bright Sun",
+          "ideaTe": "",
+          "chapterTitle": "The Secret of the Garden",
           "priority": 2
         }
       ],
@@ -1932,18 +1261,6 @@
           "ideaTe": "",
           "chapterTitle": "The Three Colors of You",
           "priority": 2
-        },
-        {
-          "id": "sk14_04",
-          "shlokas": [
-            "14.13",
-            "14.17",
-            "14.19"
-          ],
-          "idea": "Rising Above Habits",
-          "ideaTe": "",
-          "chapterTitle": "The Three Colors of You",
-          "priority": 2
         }
       ]
     },
@@ -1953,7 +1270,7 @@
           "id": "sd15_01",
           "shlokas": [
             "15.1",
-            "15.2"
+            "15.3"
           ],
           "idea": "The Sky-Root Tree",
           "ideaTe": "",
@@ -1967,6 +1284,17 @@
             "15.12"
           ],
           "idea": "The Sun Inside",
+          "ideaTe": "",
+          "chapterTitle": "The Magic Upside-Down Tree",
+          "priority": 1
+        },
+        {
+          "id": "sd15_03",
+          "shlokas": [
+            "15.15",
+            "15.18"
+          ],
+          "idea": "The Secret Guest",
           "ideaTe": "",
           "chapterTitle": "The Magic Upside-Down Tree",
           "priority": 2
@@ -2084,18 +1412,6 @@
           "ideaTe": "",
           "chapterTitle": "The Hero and the Grump",
           "priority": 2
-        },
-        {
-          "id": "sk16_04",
-          "shlokas": [
-            "16.5",
-            "16.7",
-            "16.10"
-          ],
-          "idea": "Negative Qualities",
-          "ideaTe": "",
-          "chapterTitle": "The Hero and the Grump",
-          "priority": 2
         }
       ]
     },
@@ -2119,6 +1435,28 @@
             "17.16"
           ],
           "idea": "The Happy Tongue",
+          "ideaTe": "",
+          "chapterTitle": "The Three Ways of Living",
+          "priority": 1
+        },
+        {
+          "id": "sd17_03",
+          "shlokas": [
+            "17.20",
+            "17.22"
+          ],
+          "idea": "Giving with Love",
+          "ideaTe": "",
+          "chapterTitle": "The Three Ways of Living",
+          "priority": 2
+        },
+        {
+          "id": "sd17_04",
+          "shlokas": [
+            "17.23",
+            "17.28"
+          ],
+          "idea": "Om Tat Sat",
           "ideaTe": "",
           "chapterTitle": "The Three Ways of Living",
           "priority": 2
@@ -2249,30 +1587,6 @@
             "18.66"
           ],
           "idea": "The Ultimate Promise",
-          "ideaTe": "",
-          "chapterTitle": "The Grand Finale",
-          "priority": 1
-        },
-        {
-          "id": "sk18_04",
-          "shlokas": [
-            "18.48",
-            "18.49",
-            "18.50"
-          ],
-          "idea": "Growth Through Effort",
-          "ideaTe": "",
-          "chapterTitle": "The Grand Finale",
-          "priority": 2
-        },
-        {
-          "id": "sk18_05",
-          "shlokas": [
-            "18.56",
-            "18.57",
-            "18.58"
-          ],
-          "idea": "Trust Reduces Fear",
           "ideaTe": "",
           "chapterTitle": "The Grand Finale",
           "priority": 2

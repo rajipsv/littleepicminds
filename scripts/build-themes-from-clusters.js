@@ -34,11 +34,11 @@ function main() {
         const themeNum = id.split('_')[1];
         const theme = {
           id: `theme_${prefix}${ch}_${themeNum}`,
-          title: story.title,
-          title_te: story.title_te,
+          title: cluster.idea,
+          title_te: cluster.ideaTe || story.title_te || '',
           emoji: story.emoji,
-          micro_theme: story.micro_theme,
-          micro_theme_te: story.micro_theme_te,
+          micro_theme: cluster.idea,
+          micro_theme_te: cluster.ideaTe || story.micro_theme_te || '',
           shlokas: cluster.shlokas,
           story: {
             title: story.storyTitle,

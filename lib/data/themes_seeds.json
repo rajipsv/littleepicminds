@@ -6,7 +6,7 @@
         "title": "The Big Day",
         "title_te": "పెద్ద రోజు",
         "emoji": "🐿️",
-        "micro_theme": "The Power of Quiet Courage",
+        "micro_theme": "The Big Day",
         "micro_theme_te": "నిశ్శబ్ద ధైర్యం యొక్క శక్తి",
         "shlokas": [
           "1.1",
@@ -83,7 +83,7 @@
         "title": "The Inner Brave",
         "title_te": "లోపల ధైర్యం",
         "emoji": "🐿️",
-        "micro_theme": "Taking the Lead (Standing Your Ground)",
+        "micro_theme": "The Inner Brave",
         "micro_theme_te": "నాయకత్వం — నిలబడి నిలకడగా ఉండడం",
         "shlokas": [
           "1.20",
@@ -157,10 +157,10 @@
       },
       {
         "id": "theme_sd1_03",
-        "title": "When the Drums Begin",
+        "title": "It's Okay to be Nervous",
         "title_te": "డ్రమ్స్ మొదలైనప్పుడు",
         "emoji": "🥁",
-        "micro_theme": "Loud moments can make hearts beat fast",
+        "micro_theme": "It's Okay to be Nervous",
         "micro_theme_te": "బిగ్గర క్షణాలు గుండెలను త్వరగా కొట్టేలా చేయగలవు",
         "shlokas": [
           "1.28",
@@ -177,176 +177,15 @@
         "activity": "Next time a loud sound makes your heart race, place a hand on your chest and take four slow breaths before you move.",
         "activity_te": "తదుపరిసారి బిగ్గర ధ్వని గుండెను వేగవంతం చేసినప్పుడు, చేతిని ఛాతిపై ఉంచి నాలుగు నెమ్మది శ్వాసలు తీసుకుని తర్వాత కదలండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_04",
-        "title": "One Wise Question",
-        "title_te": "ఒక తెలివైన ప్రశ్న",
-        "emoji": "🙋",
-        "micro_theme": "Ask a wise guide before a hard choice",
-        "micro_theme_te": "కష్టమైన నిర్ణయం ముందు తెలివైన మార్గదర్శిని అడగండి",
-        "shlokas": [
-          "1.3",
-          "1.4"
-        ],
-        "story": {
-          "title": "Ananya and the Two Clubs",
-          "title_te": "అనన్య మరియు రెండు క్లబ్‌లు",
-          "content": "Ananya stared at the notice on her classroom board. Two clubs she loved had meetings on the same Saturday morning: Classical Dance Club and Science Explorers Club. Dance meant bharatanatyam steps she had practiced since age six. Science meant building a volcano model for the school fair.\n\nShe could not be in both places at once.\n\nAt lunch, her friends argued happily about their own choices. \"Pick dance,\" said Kavya. \"Pick science,\" said Rohan. Ananya ate her roti quietly. Her stomach felt twisted like a dupatta knot.\n\nAfter school, she sat on the kitchen stool while Amma sliced mangoes. \"I do not know what to choose,\" Ananya said. \"Both feel important. If I pick wrong, I will disappoint someone—maybe even myself.\"\n\nAmma wiped her hands and sat beside her. \"Hard choices are not solved by shouting louder. They are solved by seeing clearly.\"\n\n\"But how?\"\n\n\"Ask someone wise who knows you and will tell the truth gently.\"\n\nAnanya thought of her grandfather, Thatha, who read the Gita every morning under the tulsi plant. She walked to the balcony where he was folding his reading glasses.\n\n\"Thatha,\" she said, \"I have two paths and only two feet.\"\n\nThatha listened to every word without interrupting. When she finished, he nodded slowly. \"In the Gita, before a very difficult day, Arjuna did not rush. He asked Krishna, his wise guide, to place the chariot where he could see clearly. He wanted help before moving forward.\"\n\n\"So asking is allowed?\"\n\n\"Asking is brave,\" Thatha said. \"A wise guide does not choose for you. A wise guide helps you see what matters in each path.\"\n\nHe asked three questions: Which club feeds the dream you carry longest? Which choice still lets you help your school? How will you feel tomorrow morning when you wake up?\n\nAnanya answered honestly. Science fair was this month only. Dance was the language her body had spoken for years. She also remembered that her team needed one more presenter for the fair poster.\n\n\"I think I will do science this month,\" she said softly, \"and ask my dance teacher if I can return after the fair.\"\n\nThatha smiled. \"That sounds like a choice made with clear eyes, not fear.\"\n\nThe next Saturday, Ananya glued baking soda layers onto her volcano with steady hands. Her heart still missed dance music, but it did not feel lost. She had asked, listened, and chosen. The hard choice had become smaller because she had walked up to a wise guide first.",
-          "content_te": "అనన్య తరగతి బోర్డుపై నోటీసు చూస్తూ నిలబడింది. ఆమెకు ఇష్టమైన రెండు క్లబ్‌ల సమావేశాలు ఒకే శనివారం ఉదయం: క్లాసికల్ డ్యాన్స్ క్లబ్ మరియు సైన్స్ ఎక్స్‌ప్లోరర్స్ క్లబ్. నృత్యం అంటే ఆరేళ్ల నుంచి సాధన చేసిన భరతనాట్యం అడుగులు. సైన్స్ అంటే పాఠశాల మేళకు అగ్నిపర్వత మోడల్ నిర్మించడం.\n\nఆమె ఒకే సమయంలో రెండు చోట్ల ఉండలేరు.\n\nభోజన సమయంలో స్నేహితులు తమ ఎంపికల గురించి సంతోషంగా వాదించారు. \"నృత్యం ఎంచుకో,\" కావ్య అన్నది. \"సైన్స్ ఎంచుకో,\" రోహన్ అన్నాడు. అనన్య నిశ్శబ్దంగా రొట్టి తిన్నది. కడుపు దుపట్టా ముడిలా చుట్టుకుంది.\n\nపాఠశాల తర్వాత అమ్మ మామిడి కోస్తున్న సమయంలో అనన్య వంటగది స్టూల్‌పై కూర్చుంది. \"ఏమి ఎంచుకోవాలో తెలియడం లేదు,\" అనన్య అన్నది. \"రెండూ ముఖ్యమైనవి. తప్పు ఎంచుకుంటే ఎవరినో నిరాశ పరుస్తాను — బహుశా నన్ను కూడా.\"\n\nఅమ్మ చేతులు తుడిచి పక్కన కూర్చుంది. \"కష్టమైన నిర్ణయాలు బిగ్గరగా అరుపులతో పరిష్కరించబడవు. స్పష్టంగా చూడడంతో పరిష్కరించబడతాయి.\"\n\n\"ఎలా?\"\n\n\"మిమ్మల్ని తెలుసుకుని సత్యాన్ని మృదువుగా చెప్పే తెలివైన వ్యక్తిని అడగండి.\"\n\nఅనన్య తులసి చెట్టు కింద ప్రతి ఉదయం గీతా చదివే తాత గుర్తుకు వచ్చాడు. కళ్లద్దాలు మడుస్తున్న బాల్కనీ వద్దకు నడిచింది.\n\n\"తాత,\" ఆమె అన్నది, \"రెండు దారులు ఉన్నాయి, రెండు పాదాలే ఉన్నాయి.\"\n\nతాత ప్రతి మాట విన్నాడు, మధ్యలో అడగలేదు. ఆమె ముగించగానే నెమ్మదిగా తల వూనాడు. \"గీతాలో చాలా కష్టమైన రోజు ముందు అర్జునుడు తొందరపెట్టలేదు. తన తెలివైన మార్గదర్శి కృష్ణుడిని రథాన్ని స్పష్టంగా చూడే చోట ఉంచమని అడిగాడు. ముందుకు వెళ్లే ముందు సహాయం కావాలని అడిగాడు.\"\n\n\"అడగడం సరైనదా?\"\n\n\"అడగడం ధైర్యం,\" తాత అన్నారు. \"తెలివైన మార్గదర్శి మీ కోసం ఎంపిక చేయడు. ప్రతి దారిలో ఏమి ముఖ్యమో చూడడంలో సహాయం చేస్తాడు.\"\n\nతాత మూడు ప్రశ్నలు అడిగాడు: ఏ క్లబ్ మీరు ఎక్కువ కాలం పోషించిన కలను పోషిస్తుంది? ఏ ఎంపిక మీ పాఠశాలకు ఇంకా సహాయం చేస్తుంది? రేపు ఉదయం మేల్కొన్నప్పుడు మీరు ఎలా అనిపిస్తారు?\n\nఅనన్య నిజాయితీగా సమాధానం చెప్పింది. సైన్స్ మేళ ఈ నెల మాత్రమే. నృత్యం సంవత్సరాలుగా ఆమె శరీరం మాట్లాడే భాష. మేళ పోస్టర్‌కు మరో ప్రదర్శకురాలు కావాలని గుర్తుంది.\n\n\"ఈ నెల సైన్స్ చేస్తాను,\" ఆమె మృదువుగా అన్నది, \"మేళ తర్వాత నృత్య ఉపాధ్యాయిని తిరిగి రావచ్చా అని అడుగుతాను.\"\n\nతాత నవ్వాడు. \"భయంతో కాదు, స్పష్టమైన కళ్లతో చేసిన ఎంపిక లాగా ఉంది.\"\n\nతదుపరి శనివారం అనన్య తన అగ్నిపర్వతానికి బేకింగ్ సోడా పొరలు స్థిరమైన చేతులతో అతికించింది. గుండె ఇంకా నృత్య సంగీతం మిస్ అవుతోంది, కానీ కోల్పోయినట్లు అనిపించలేదు. ఆమె అడిగింది, విన్నది, ఎంచుకుంది. తెలివైన మార్గదర్శిని ముందుగా సంప్రదించినందువల్ల కష్టమైన నిర్ణయం చిన్నదిగా మారింది.",
-          "moral": "Before a hard choice, ask a wise grown-up who knows you. Good guidance helps you see clearly—it does not decide for you.",
-          "moral_te": "కష్టమైన నిర్ణయం ముందు మిమ్మల్ని తెలిసిన తెలివైన పెద్దవారిని అడగండి. మంచి మార్గదర్శనం స్పష్టంగా చూడడంలో సహాయం చేస్తుంది — మీ కోసం నిర్ణయించదు."
-        },
-        "activity": "Think of one hard choice you have now. Ask a trusted grown-up one clear question before you decide.",
-        "activity_te": "మీకు ఇప్పుడు ఉన్న ఒక కష్టమైన నిర్ణయం గుర్తు చేసుకుని, నిర్ణయించే ముందు నమ్మకమైన పెద్దవారిని ఒక స్పష్టమైన ప్రశ్న అడగండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_05",
-        "title": "Stop and Look",
-        "title_te": "ఆగి చూడండి",
-        "emoji": "👀",
-        "micro_theme": "Look carefully before you act",
-        "micro_theme_te": "చర్య చేసే ముందు జాగ్రత్తగా చూడండి",
-        "shlokas": [
-          "1.12",
-          "1.13"
-        ],
-        "story": {
-          "title": "Rishi and the Wet Rangoli",
-          "title_te": "రిషి మరియు తడి రంగోలి",
-          "content": "Sports Day at Lotus School was always exciting. This year, Rishi's class had made a huge rangoli of a sun and lotus at the entrance to the running track. They had worked since dawn with coloured rice flour, and the design still glistened with wet chalk lines.\n\nRishi was chosen for the relay race—the last runner, the fastest legs in Class 4. His team counted on him.\n\nWhen the whistle blew for the first heat, Rishi's body buzzed like a live wire. He watched his teammate round the bend and slap the baton into his palm. Now it was his turn. His feet wanted to fly.\n\nHe shot forward—then skidded. His shoe grazed the edge of the rangoli. Red and yellow powder smeared into a messy streak. A younger girl gasped. Rishi's face burned with shame.\n\n\"Rishi!\" called Coach Meena from the side. She did not shout angrily. She clapped once, sharp and clear. \"Come here.\"\n\nRishi walked over, eyes on the ground.\n\n\"You love speed,\" Coach Meena said. \"Speed is good. But where did your eyes go?\"\n\n\"I only thought about the baton,\" Rishi mumbled.\n\n\"Before you act, look. Left, right, ground, people.\"\n\nThat evening, Rishi told his father what had happened while they watered the terrace tulsi pots.\n\nAppa set down the steel mug. \"In the Gita, Krishna moved Arjuna's chariot to the middle of the field so he could look carefully at everyone before choosing his next step. Even in a great hurry, wise people pause to see the whole picture.\"\n\nRishi pictured the smeared lotus. \"I did not pause.\"\n\n\"Tomorrow, try again with your eyes open.\"\n\nThe next heat was louder. Parents cheered. Drums tapped in the distance. Rishi crouched at the line, baton ready, heart pounding—but this time he made a small plan. When the baton touched his hand, he would count: one look at the track, one look at the rangoli border, one look at the finish line.\n\nThe slap came. Rishi breathed. One—clear track ahead. Two—rangoli safe on his left. Three—Dev waiting at the line.\n\nThen he ran.\n\nHis feet pounded the dry ground. He did not cut the corner too tight. He did not bump the boy from the next lane. He crossed the finish line breathless and grinning.\n\nCoach Meena gave him a thumbs up. \"Same speed. Better eyes.\"\n\nRishi looked back at the rangoli, still bright and whole. He had learned that a second of looking could protect a morning of work—and keep his run fair and strong.",
-          "content_te": "లోటస్ పాఠశాలలో స్పోర్ట్స్ డే ఎప్పుడూ ఉత్తేజకరం. ఈ సంవత్సరం రిషి తరగతి పరుగు మార్గం ప్రవేశద్వారం వద్ద సూర్యుడు, తామర పెద్ద రంగోలి వేసింది. ఉదయం నుంచి రంగు బియ్యం పిండితో పని చేసి, డిజైన్ ఇంకా తడి చాక్ గీతలతో మెరుస్తోంది.\n\nరిషి రిలే పరుగుకు ఎంపికయ్యాడు — చివరి రన్నర్, నాల్గవ తరగతిలో అతి వేగమైన కాళ్లు. జట్టు అతనిపై ఆధారపడింది.\n\nమొదటి హీట్ విజిల్ ఊదగానే రిషి శరీరం తాజా తీగలా ఝనిలాడింది. తన టీమ్‌మేట్ మోడు తిప్పి బ్యాటన్ అతని అరచేతిలో కొట్టడం చూశాడు. ఇప్పుడు అతని వంతు. పాదాలు ఎగిరిపోవాలనుకున్నాయి.\n\nఅతను ముందుకు దూసుకుపోయాడు — అప్పుడు జారిపోయాడు. బూటు రంగోలి అంచును తాకింది. ఎరుపు, పసుపు పొడి అస్తవ్యస్త పట్టుగా మాశ్ అయింది. ఒక చిన్న అమ్మాయి ఊపిరి ఆగిపోయింది. రిషి ముఖం సిగ్గుతో మండింది.\n\n\"రిషి!\" పక్కన నుంచి కోచ్ మీనా పిలిచారు. కోపంగా అరవలేదు. ఒకసారి స్పష్టంగా చప్పటు కొట్టారు. \"ఇక్కడికి రా.\"\n\nరిషి నేల చూస్తూ నడిచాడు.\n\n\"నీకు వేగం ఇష్టం,\" కోచ్ మీనా అన్నారు. \"వేగం మంచిది. కానీ నీ కళ్లు ఎక్కడికి వెళ్లాయి?\"\n\n\"బ్యాటన్ గురించే ఆలోచించాను,\" రిషి గుసగుసలాడాడు.\n\n\"చర్య చేయే ముందు చూడు. ఎడమ, కుడి, నేల, ప్రజలు.\"\n\nఆ సాయంత్రం రిషి తావేడిపై తులసి కుండీలకు నీరు పోస్తూ తండ్రికి జరిగినది చెప్పాడు.\n\nఅప్పా స్టీల్ మగ్ కింద ఉంచాడు. \"గీతాలో కృష్ణుడు అర్జునుడి రథాన్ని మైదానం మధ్యలోకి తీసుకువెళ్లాడు, తదుపరి అడుగు ఎక్కడ వేయాలో నిర్ణయించే ముందు అందరినీ జాగ్రత్తగా చూడేలా. గొప్ప తొందరలో కూడా తెలివైన వారు మొత్తం చిత్రాన్ని చూడడానికి క్షణం ఆగుతారు.\"\n\nరిషి మాశ్ అయిన తామరను ఊహించాడు. \"నేను ఆగలేదు.\"\n\n\"రేపు కళ్లు తెరిచి మళ్లీ ప్రయత్నించు.\"\n\nతదుపరి హీట్ ఇంకా బిగ్గరగా ఉంది. తల్లిదండ్రులు ప్రోత్సహించారు. దూరంగా డ్రమ్స్ కొట్టాయి. రిషి లైన్ వద్ద కుంగి బ్యాటన్ సిద్ధంగా, గుండె బిగ్గరగా — కానీ ఈసారి చిన్న ప్లాన్ చేశాడు. బ్యాటన్ చేతికి తగిలినప్పుడు లెక్కిస్తాను: ఒకసారి మార్గం, ఒకసారి రంగోలి అంచు, ఒకసారి ఫినిష్ లైన్.\n\nబ్యాటన్ వచ్చింది. రిషి శ్వాస తీసుకున్నాడు. ఒకటి — ముందు మార్గం స్పష్టం. రెండు — ఎడమవైపు రంగోలి సురక్షితం. మూడు — ఫినిష్ లైన్ వద్ద దేవ్ వేచి ఉన్నాడు.\n\nఅప్పుడు పరిగెత్తాడు.\n\nపాదాలు ఎండిన నేలపై మోగాయి. మోడు చాలా బిగ్గరగా తిప్పలేదు. పక్క లేన్ అబ్బాయిని ఢీకొనలేదు. శ్వాస ఆగిపోయి నవ్వుతూ ఫినిష్ లైన్ దాటాడు.\n\nకోచ్ మీనా థమ్స్ అప్ ఇచ్చారు. \"అదే వేగం. మంచి కళ్లు.\"\n\nరిషి వెనుకకు రంగోలి చూశాడు — ఇంకా తేజోమయంగా, పూర్తిగా ఉంది. ఒక క్షణం చూడడం ఉదయం పాటు పనిని కాపాడగలదని, తన పరుగును న్యాయంగా, బలంగా ఉంచగలదని నేర్చుకున్నాడు.",
-          "moral": "Before you rush forward, pause and look around. A careful glance can protect your work and your path.",
-          "moral_te": "తొందరపడి ముందుకు వెళ్లే ముందు ఆగి చుట్టూ చూడండి. జాగ్రత్తగా చూసిన ఒక క్షణం మీ పనిని, మీ దారిని కాపాడగలదు."
-        },
-        "activity": "Before your next race, game, or busy task, stop for three seconds and look left, right, and ahead.",
-        "activity_te": "మీ తదుపరి పరుగు, ఆట లేదా బిజీ పని ముందు మూడు సెకన్లు ఆగి ఎడమ, కుడి, ముందు చూడండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_06",
-        "title": "The Wobbly Deer Dance",
-        "title_te": "వణికే జింక నృత్యం",
-        "emoji": "🦌",
-        "micro_theme": "Fear affects both body and mind",
-        "micro_theme_te": "భయం శరీరం మరియు మనస్సును ప్రభావితం చేస్తుంది",
-        "shlokas": [
-          "1.23",
-          "1.24"
-        ],
-        "story": {
-          "title": "Ananya Backstage at Annual Day",
-          "title_te": "వార్షిక ఉత్సవం వెనుకభాగంలో అనన్య",
-          "content": "Ananya had practiced her little deer dance twenty times in the corner of her bedroom. Amma clapped each time. Appa filmed on his phone. Her small antler headband sat on the study table like a crown waiting for Saturday.\n\nSaturday was school Annual Day.\n\nIn the morning, Amma plaited Ananya's hair with fresh white mogras. \"You know every step,\" Amma said, tying the last flower. \"Your feet have already danced this in your sleep.\"\n\nAnanya smiled. But when the school bus dropped her at the back gate of the auditorium, something strange happened. Her stomach fluttered like the pigeons above the water tank. Her palms turned damp. The sitar music from inside sounded like a giant heartbeat.\n\nBackstage, cotton clouds hung from ropes. Teachers rushed with safety pins. Ananya peered through the curtain slit and saw rows of parents—Amma in her blue saree, Appa craning his neck, Nanamma waving a folded fan.\n\nAnanya's knees felt loose, like cooked rice that would not hold shape. Worse still, when she tried to remember the first step of her dance in her head, the words simply vanished. Step left, bend low, hop twice—where did that go?\n\n\"Amma says I know it,\" she whispered to herself, but her voice sounded thin.\n\nMiss Priya, her dance teacher, knelt beside her. \"What are you feeling, Ananya?\"\n\n\"My legs are wobbly. And my brain forgot the dance.\"\n\nMiss Priya nodded as if this were perfectly ordinary news. \"In the old Gita story, great warrior Arjuna stood before a huge battle. He was brave and well trained. Still, his body shook and his mouth went dry. His mind went blank too. Fear touched his legs and his thoughts at the same time.\"\n\nAnanya stared. \"Even warriors?\"\n\n\"Even warriors. Fear is not only a thought in your head. It is also cold hands and wobbly knees. They can come together.\"\n\nMiss Priya held out her palms. \"Feel your feet on the floor. Name three things: your antlers, your music, your Amma's smile in row three.\"\n\nAnanya pressed her toes down. Antlers. Sitar count. Amma's face.\n\nThe curtain opened.\n\nAnanya walked to the centre. Her knees still wobbled a little, but her feet remembered. Left, bend, hop, hop—just as she had practised on the cool bedroom tiles. When she finished, the auditorium clapped like monsoon rain on a tin roof.\n\nAfterward, Ananya told Appa, \"My body was scared and my mind forgot—but my feet did not.\"",
-          "content_te": "అనన్య తన చిన్న జింక నృత్యాన్ని బెడ్‌రూమ్ మూలలో ఇరవై సార్లు సాధన చేసింది. అమ్మ ప్రతిసారీ చప్పట్లు కొట్టింది. అప్పా ఫోన్‌లో వీడియో తీశాడు. చిన్న కొమ్ముల తలపాగ చదువు మేజా మీద శనివారం కోసం ఎదురు చూస్తున్న కిరీటంలా పడుకుంది.\n\nఆ శనివారం పాఠశాల వార్షిక ఉత్సవం.\n\nఉదయం అమ్మ అనన్య జుట్టులో తాజా తెల్లని మొగ్రాలు చుట్టింది. \"నీకు ప్రతి అడుగు తెలుసు,\" చివరి పువ్వు కట్టుతూ అమ్మ అన్నది. \"నీ పాదాలు నిద్రలోనే ఇది నృత్యం చేశాయి.\"\n\nఅనన్య నవ్వింది. కానీ పాఠశాల బస్సు ఆడిటోరియం వెనుక గేట్‌కు దించినప్పుడు ఏదో వింత జరిగింది. నీటి ట్యాంక్ పైన ఉన్న పigeonsల처럼 కడుపులో flutter. అరచేతులు తడిగా మారాయి. లోపల సితార్ సంగీతం ఒ huge heartbeatలా వినిపించింది.\n\nBackstage, cotton clouds ropesకు వేలాడాయి. Teachers safety pinsతో hurry. అనన్య curtain slit ద్వara parents rows చూసింది — blue sareeలో అమ్మ, neck stretch చేస్తున్న అప్పా, folded fan wave చేస్తున్న నానమ్మ.\n\nఅనన్య knees loose — cooked rice shape hold చేయలేనట్లు. worse still, first step mindలో remember చేయడానికి try చేసినప్పుడు words vanished. Step left, bend low, hop twice — అది ఎక్కడ?\n\n\"అమ్మ నాకు తెలుసు అని చెప్పింది,\" గుసగుసలాడింది, voice thin.\n\nMiss Priya dance teacher knelt beside. \"ఏమి feel అవుతోంది, అనన్య?\"\n\n\"Legs wobbly. Brain dance మర్చిపోయింది.\"\n\nMiss Priya nodded ordinary newsలaga. \"పాత Gita storyలో great warrior Arjuna huge battle ముందు stood. Brave, well trained. Still body shook, mouth dry. Mind blank. Fear legs and thoughts same time touch.\"\n\n\"Warriors kuda?\"\n\n\"Warriors kuda. Fear head thought మాత్రమే కాదు. Cold hands, wobbly knees kuda. Together raavachu.\"\n\nMiss Priya palms held out. \"Feet floor feel. Three things name: antlers, music, row three lo Amma smile.\"\n\nAnanya toes pressed. Antlers. Sitar count. Amma face.\n\nCurtain opened.\n\nAnanya centre walked. Knees still wobbly, feet remembered. Left, bend, hop, hop — bedroom tiles practice. Finished — auditorium clapped monsoon rain tin roof.\n\nAfterward Appa told: \"Body scared, mind forgot — feet did not.\"",
-          "moral": "Fear can make your legs wobble and your mind go blank at the same time. Slow breaths and one small step can still carry you forward.",
-          "moral_te": "భయం మీ మోకాళ్ళు వణికించి, మనసు ఖాళీ అవ్వడం రెండూ ఒకేసారి జరగవచ్చు. నెమ్మది శ్వాసలు, ఒక చిన్న అడుగు — అవి కూడా మిమ్మల్ని ముందుకు తీసుకెళ్లగలవు."
-        },
-        "activity": "Before something scary, name where you feel it—in your tummy, hands, or knees—and take three slow breaths.",
-        "activity_te": "భయంగా అనిపించే ముందు, అది ఎక్కడ అనిపిస్తుందో చెప్పండి — కడుపు, చేతులు, లేదా మోకాళ్ళు — మరియు మూడు నెమ్మది శ్వాసలు తీసుకోండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_07",
-        "title": "The Spinning Choice",
-        "title_te": "తిరిగే ఎంపిక",
-        "emoji": "❓",
-        "micro_theme": "Confusion makes decisions difficult",
-        "micro_theme_te": "గందరగోళం నిర్ణయాలను కష్టం చేస్తుంది",
-        "shlokas": [
-          "1.29",
-          "1.30"
-        ],
-        "story": {
-          "title": "Mia and the Project Table",
-          "title_te": "మియా మరియు ప్రాజెక్ట్ టేబుల్",
-          "content": "Mia's group had to pick one poster topic by Friday: rivers, space, or animals.\n\nAll three sounded exciting on Monday. By Wednesday, none of them did.\n\nAt the project table in the library corner, chart paper lay blank while her teammates argued. Dev wanted space rockets because they looked cool on posters. Leela wanted rivers because her grandmother told stories about the Godavari. Rohan wanted animals because he had a book of tiger pictures at home.\n\nMia sat in the middle, pencil hovering, mind spinning. Every choice felt wrong. If she picked space, Leela would look sad. If she picked rivers, Dev would groan. If she picked animals, Rohan would grin — but Mia secretly loved stars more than tigers.\n\nHer head hurt the way it does when you turn in circles too fast.\n\nThat evening, Mia told Amma she could not decide anything. Amma was folding clothes on the bed and did not rush to fix it.\n\n\"In the old Gita story,\" Amma said, \"brave Arjuna stood before a huge day and saw problems everywhere. His mind went round and round. Confusion is not because you are silly. It is because you care about more than one good thing.\"\n\n\"But we need one topic,\" Mia whispered.\n\n\"Yes. So shrink the storm. Ask one small question: what do you want to learn most for yourself?\"\n\nMia thought. Stars were beautiful, but she had already done a space chart in Class 3. Tigers were handsome, but Rohan's book would do most of the work. Rivers — she remembered sitting with Nani on the bank near Rajahmundry, throwing pebbles and watching light dance on water.\n\n\"Rivers,\" she said suddenly. \"Because I want to draw the journey from mountain to sea.\"\n\nThe next day at school, Mia told her group her reason — not who would be upset least, but what she truly wanted to learn. Dev agreed when she promised a small rocket drawing in the corner for space-lovers. Rohan offered his tiger book for the border animals. Leela smiled so wide Mia felt warm in her chest.\n\nOne honest question had stopped the spinning.",
-          "content_te": "మియా గ్రూప్ శుక్రవారం కి ఒక పోస్టర్ టాపిక్ ఎంచుకోవాలి: నదులు, అంతరిక్షం, లేదా జంతువులు.\n\nమూడు సోమవారం ఉత్తేజకరంగా వినిపించాయి. బుధవారం కి ఏదీ కాదు.\n\nలైబ్రరీ మూల ప్రాజెక్ట్ టేబుల్‌పై చార్ట్ పేపర్ ఖాళీ — teammates వాదిస్తున్నారు. దేవ్ స్పేస్ రాకెట్లు — పోస్టర్‌లో cool. లీలా నదులు — అమ్మమ్మ గోదావరి కథలు. రోహన్ జంతువులు — ఇంట్లో పులి చిత్రాల పుస్తకం.\n\nమియా మధ్య, pencil hover, mind spinning. ప్రతి choice wrong. space — లీలా sad. rivers — దేవ్ groan. animals — రోహన్ grin, కానీ మియా stars tigers కంటే ఇష్టం.\n\nతల circles too fast లా నొప్పి.\n\nసాయంత్రం అమ్మ decide చేయలేకపోతున్నాను చెప్పింది. అమ్మ బెడ్‌పై బట్టలు fold — hurry fix చేయలేదు.\n\n\"పాత Gita story,\" అమ్మ, \"brave Arjuna huge day ముందు stood, problems everywhere. mind round round. confusion silly కాదు — one కంటే ఎక్కువ good things care.\"\n\n\"one topic kavali,\" మియా whisper.\n\n\"Shrink storm. one small question: nuvvu learn చేయాలనుకున్నది ఏమిటి?\"\n\nమియా thought. stars beautiful, Class 3 lo space chart already. tigers handsome, రోహన్ book work చేస్తుంది. rivers — Rajahmundry bank Nani తో pebbles, water light dance.\n\n\"Rivers,\" suddenly. \"mountain to sea journey draw చేయాలి.\"\n\nnext day school reason చెప్పింది — least upset కాదు, truly learn. దేవ్ corner lo small rocket promise — agree. రోహన్ border animals book. లీలా wide smile — chest warm.\n\none honest question spinning stopped.",
-          "moral": "When your mind spins with too many choices, ask one small honest question about what you truly want to learn.",
-          "moral_te": "ఎక్కువ ఎంపికలతో మనసు తిరిగినప్పుడు, మీరు నిజంగా ఏమి నేర్చుకోవాలనుకుంటున్నారో గురించి ఒక చిన్న నిజాయితీ ప్రశ్న అడగండి."
-        },
-        "activity": "If you feel stuck choosing, write three options and circle the one you care about most — not the one that pleases everyone.",
-        "activity_te": "ఎంపికలో చిక్కుకున్నట్లు అనిపిస్తే, మూడు ఆప్షన్లు రాసి మీకు అతి ముఖ్యమైనది వృత్తం చేయండి — అందరినీ సంతోషపెట్టేది కాదు.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_08",
-        "title": "People Before Prizes",
-        "title_te": "బహుమతుల కంటే ప్రజలు",
-        "emoji": "💝",
-        "micro_theme": "Winning is not more important than people",
-        "micro_theme_te": "గెలవడం ప్రజల కంటే ముఖ్యం కాదు",
-        "shlokas": [
-          "1.32",
-          "1.33"
-        ],
-        "story": {
-          "title": "Tina and the Spelling Bee",
-          "title_te": "టీనా మరియు స్పెల్లింగ్ బీ",
-          "content": "Tina and Leela had studied together every Thursday after school for two months.\n\nThey quizzed each other on hard words — rhythm, conscience, bouquet — while Tina's Amma brought sliced mango and Leela's Appa timed them with his old stopwatch. They were best friends, and both had reached the Class 5 spelling bee final.\n\nOn stage, the auditorium felt enormous. The microphone looked like a silver flower. Tina knew the final word before she spoke it: maintenance. She had missed it once in practice and Leela had helped her remember the \"ten\" in the middle.\n\nShe spelled it correctly. The audience clapped. Tina won the small trophy with the school emblem — gold, shiny, heavier than she expected.\n\nLeela hugged her backstage, but Tina saw the quick blink that meant her friend was hiding disappointment. That night, Tina could not enjoy the trophy on her shelf. She kept thinking of Leela walking home without the ribbon.\n\nAt dinner, Thatha noticed her quiet face. He told her about Arjuna in the Gita — how he looked across a field and saw people he loved, and said winning kingdoms and prizes was not worth hurting them. Tina did not have a kingdom. She had a trophy and a best friend.\n\nThe next morning, Tina brought the trophy to school and placed it on the desk between them. \"This belongs to both of us,\" she said. \"You taught me maintenance.\"\n\nLeela's eyes shone. \"You earned it.\"\n\n\"I earned the spelling,\" Tina said. \"We earned the studying.\"\n\nThey made a pact: next year, they would quiz each other again — whoever wins, the other gets the first hug, not the first jealous thought.\n\nTina still liked winning. But the trophy on her shelf looked brighter when it meant friendship, not just first place.",
-          "content_te": "టీనా, లీలా రెండు నెలలు ప్రతి గురువారం సాయంత్రం కలిసి చదివారు.\n\nrhythm, conscience, bouquet — టీనా అమ్మ mango slices, లీలా అప్పా stopwatch. best friends, Class 5 spelling bee final రెండూ.\n\nstage auditorium enormous. microphone silver flower. Tina final word knew: maintenance. practice lo miss — Leela \"ten\" middle remember help.\n\ncorrectly spelled. clapped. small trophy — gold, heavy.\n\nLeela backstage hug — quick blink, disappointment hiding. night trophy shelf enjoy ledu. Leela ribbon lekunda home walk.\n\ndinner Thatha quiet face. Gita Arjuna — loved people across field, kingdoms prizes hurting them not worth. Tina kingdom ledu — trophy, best friend.\n\nnext morning trophy school both desks middle. \"idi rendu maku belong.\" \"maintenance nuvvu nerpavu.\"\n\nLeela eyes shine. \"nuvvu earn.\"\n\n\"spelling nenu. studying manam.\" pact: next year quiz — winner unna, first hug, jealous thought kadu.\n\nTina winning still like. trophy brighter friendship meaning, first place matrame kadu.",
-          "moral": "Prizes are nice, but people you love matter more. Share credit and kindness, not just trophies.",
-          "moral_te": "బహుమతులు మంచివి, కానీ మీరు ప్రేమించే వారు ఎక్కువ ముఖ్యం. ట్రోఫీలు మాత్రమే కాదు — credit మరియు దయ పంచుకోండి."
-        },
-        "activity": "Tell a friend or family member one thing they helped you learn, even if you got the prize.",
-        "activity_te": "మీకు బహుమతి వచ్చినా, వారు మీకు నేర్పిన ఒక విషయం స్నేహితుడికి లేదా కుటుంబ సభ్యుడికి చెప్పండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_09",
-        "title": "When Love Feels Heavy",
-        "title_te": "ప్రేమ భారంగా అనిపించినప్పుడు",
-        "emoji": "💗",
-        "micro_theme": "Love for family can make duty feel painful",
-        "micro_theme_te": "కుటుంబ ప్రేమ బాధ్యతను నొప్పిగా చేయగలదు",
-        "shlokas": [
-          "1.34",
-          "1.35"
-        ],
-        "story": {
-          "title": "Kabir and the House Captain Vote",
-          "title_te": "కబీర్ మరియు హౌస్ కెప్టెన్ ఓటు",
-          "content": "Kabir's older brother Arjun was the star of Blue House — fastest runner, loudest cheers, everyone's favourite.\n\nWhen house captain elections came, half the class wrote Arjun's name before the bell rang. Kabir was proud. He also wanted to try. He had organized the recycling drive. He had helped younger students read during lunch. His name felt small next to his brother's.\n\nOn voting day, Kabir stared at the slip on his desk. His chest felt tight, like a knot he could not undo. If he voted for himself, would Arjun think he was disloyal? If he voted for Arjun, would he betray his own work?\n\nAt home, Kabir sat on the kitchen step while Amma rolled chapatis. \"My heart hurts both ways,\" he said.\n\nAmma listened. \"In the Gita, Arjuna loved his cousins and teachers so much that doing his duty felt like breaking his own heart. Love and duty can pull in opposite directions. That pain is real.\"\n\n\"So what do I do?\"\n\n\"You tell the truth gently. Vote for the person you believe will serve the house — including yourself if that is honest. Then speak to your brother with love.\"\n\nKabir voted for himself. His hand shook a little, but the knot loosened.\n\nArjun won by three votes anyway. Kabir walked to him after the results.\n\n\"I voted for me,\" he said. \"Not because I love you less. Because I tried too.\"\n\nArjun ruffled his hair — hard, brotherly. \"Good. Next year, run again.\"\n\nDuty had felt painful because love was real. Honest words made both lighter.",
-          "content_te": "కబీర్ anna Arjun Blue House star — fastest, loudest cheers, favourite.\n\nhouse captain elections — half class Arjun name before bell. Kabir proud. try kuda wanted — recycling drive, lunch lo younger kids reading help. anna name pakkana own name small.\n\nvoting day slip stare. chest tight knot. self vote — disloyal? Arjun vote — own work betray?\n\nhome kitchen step Amma chapatis. \"heart both ways hurt.\"\n\nAmma listen. \"Gita Arjuna cousins teachers love — duty heart break feel. love duty opposite pull. pain real.\"\n\n\"emi cheyali?\"\n\n\"truth gently. serve house person vote — honest ayithe self kuda. brother love tho matladu.\"\n\nKabir self vote — hand shake, knot loose.\n\nArjun three votes win anyway. results tarvata walk.\n\n\"nenu nannu vote,\" \"love taggadu — nenu kuda try.\"\n\nArjun hair ruffle — brotherly. \"Good. next year malli run.\"\n\nduty painful love real. honest words both lighter.",
-          "moral": "Loving your family deeply can make hard choices hurt. Be honest and gentle — duty and love can both stay true.",
-          "moral_te": "కుటుంబాన్ని లోతుగా ప్రేమించడం కష్టమైన ఎంపికలను నొప్పిగా చేయగలదు. నిజాయితీగా, మృదువుగా ఉండండి — బాధ్యత మరియు ప్రేమ రెండూ నిజం గా ఉండవచ్చు."
-        },
-        "activity": "Think of a time love made a choice hard. Tell someone involved one honest sentence about how you felt.",
-        "activity_te": "ప్రేమ ఒక ఎంపికను కష్టం చేసిన సమయం గుర్తు చేసుకుని, మీరు ఎలా అనిపించిందో ఒక నిజాయితీ వాక్యం చెప్పండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd1_10",
-        "title": "One Piece Before Quitting",
-        "title_te": "మానే ముందు ఒక ముక్క",
-        "emoji": "🧩",
-        "micro_theme": "Giving up begins in the mind",
-        "micro_theme_te": "లొంగుదల మనస్సులో మొదలవుతుంది",
-        "shlokas": [
-          "1.40",
-          "1.41"
-        ],
-        "story": {
-          "title": "Neha and the Thousand Pieces",
-          "title_te": "నేహ మరియు వేల ముక్కలు",
-          "content": "Neha opened the thousand-piece puzzle box and immediately wanted to close it again.\n\nThe picture on the cover showed a bright blue peacock spread across a garden. It looked beautiful and impossible. She poured the pieces onto the living room mat — a noisy avalanche of cardboard. Within five minutes, her mind whispered: You cannot do this. You are too small for this. Put it away.\n\nNeha slumped forward, chin on her knees. Her older brother Kiran walked past, paused, and sat down without teasing her.\n\n\"Too big?\" he asked.\n\n\"My brain already quit,\" Neha said.\n\nKiran smiled. \"In the Gita story, great warrior Arjuna sat down and wanted to stop before the hard day even began. Giving up started in his mind first — his body was still strong.\"\n\n\"So he was lazy?\"\n\n\"No. He was overwhelmed. Big tasks scare minds before hands.\"\n\nKiran flipped one piece right-side up. It was a plain blue edge — boring, simple. \"Just one piece today. Not the peacock. Not the thousand. One.\"\n\nNeha exhaled. She clicked one edge piece into another. Then two more found each other — both sky blue. By bedtime she had a tiny corner of the border. It was almost nothing on the mat. But her mind had not quit.\n\nThe next day she added five pieces after homework. Then ten on Sunday with Appa's help finding colours. Week by week, the peacock's eye appeared, then the neck, then the tail.\n\nWhen the last piece snapped in place a month later, Neha did not mainly feel proud of the picture. She felt proud that the first voice — I cannot — had not been the last voice.\n\nGiving up had begun in her mind. One small piece had begun the answer.",
-          "content_te": "నేహ thousand-piece puzzle box open — immediately close again wanted.\n\ncover blue peacock garden — beautiful impossible. mat meeda pieces pour — cardboard avalanche. five minutes mind whisper: cannot do, too small, put away.\n\nNeha slumped chin knees. anna Kiran walk past, pause, sit no tease.\n\n\"too big?\"\n\n\"brain already quit.\"\n\nKiran smile. \"Gita great warrior Arjuna sat — hard day before stop wanted. giving up mind first — body still strong.\"\n\n\"lazy?\"\n\n\"no — overwhelmed. big tasks scare minds before hands.\"\n\nKiran one piece flip right-side — plain blue edge boring simple. \"just one piece today. not peacock, not thousand. one.\"\n\nNeha exhale. one edge click another. two more sky blue. bedtime tiny border corner — mat lo almost nothing. mind quit ledu.\n\nnext day five pieces homework after. Sunday ten Appa colour help. week by week peacock eye, neck, tail.\n\nlast piece month later snap — mainly picture proud kadu. first voice I cannot — last voice kadu — proud.\n\ngiving up mind lo start. one small piece answer start.",
-          "moral": "The mind may want to quit before your hands even try. Start with one small piece — action can change the story.",
-          "moral_te": "చేతులు ప్రయత్నించే ముందే మనసు మానాలనుకోవచ్చు. ఒక చిన్న ముక్కతో మొదలుపెట్టండి — చర్య కథ మార్చగలదు."
-        },
-        "activity": "Pick one hard task and do only the first tiny step today — one puzzle piece, one line, one problem.",
-        "activity_te": "ఒక కష్టమైన పని ఎంచుకుని ఈరోజు మొదటి చిన్న అడుగు మాత్రమే చేయండి — ఒక puzzle ముక్క, ఒక పంక్తి, ఒక ప్రశ్న.",
-        "videoUrl": ""
       }
     ],
     "2": [
       {
         "id": "theme_sd2_01",
-        "title": "Stand Up Again",
+        "title": "The Magic House",
         "title_te": "మళ్లీ నిలబడు",
         "emoji": "💪",
-        "micro_theme": "Courage means standing up again",
+        "micro_theme": "The Magic House",
         "micro_theme_te": "ధైర్యం అంటే మళ్లీ నిలబడడం",
         "shlokas": [
           "2.18",
@@ -366,10 +205,10 @@
       },
       {
         "id": "theme_sd2_02",
-        "title": "The Wise First Words",
+        "title": "The Never-Ending Light",
         "title_te": "తెలివైన మొదటి మాటలు",
         "emoji": "💙",
-        "micro_theme": "Wise teaching meets a sad heart",
+        "micro_theme": "The Never-Ending Light",
         "micro_theme_te": "తెలివైన బోధ చింతిస్తున్న హృదయాన్ని కలుస్తుంది",
         "shlokas": [
           "2.20",
@@ -389,10 +228,10 @@
       },
       {
         "id": "theme_sd2_03",
-        "title": "Seasons of Feelings",
+        "title": "The Magic Wardrobe",
         "title_te": "భావాల ఋతువులు",
         "emoji": "🍂",
-        "micro_theme": "Life keeps changing",
+        "micro_theme": "The Magic Wardrobe",
         "micro_theme_te": "జీవితం మారుతూనే ఉంటుంది",
         "shlokas": [
           "2.22",
@@ -412,10 +251,10 @@
       },
       {
         "id": "theme_sd2_04",
-        "title": "The Broken Toy",
+        "title": "Summer and Winter",
         "title_te": "విరిగిన బొమ్మ",
         "emoji": "🧸",
-        "micro_theme": "Truth stays strong through difficulties",
+        "micro_theme": "Summer and Winter",
         "micro_theme_te": "సత్యం కష్టాలలో బలంగా ఉంటుంది",
         "shlokas": [
           "2.13",
@@ -435,10 +274,10 @@
       },
       {
         "id": "theme_sd2_05",
-        "title": "The Little Lamp",
+        "title": "The Best Effort",
         "title_te": "చిన్న దీపం",
         "emoji": "🪔",
-        "micro_theme": "The soul lives forever",
+        "micro_theme": "The Best Effort",
         "micro_theme_te": "ఆత్మ ఎప్పటికీ జీవిస్తుంది",
         "shlokas": [
           "2.47",
@@ -458,10 +297,10 @@
       },
       {
         "id": "theme_sd2_06",
-        "title": "New Clothes, Same You",
+        "title": "The Wise Turtle",
         "title_te": "కొత్త బట్టలు, అదే మీరు",
         "emoji": "👕",
-        "micro_theme": "The soul is like new clothes on the same you",
+        "micro_theme": "The Wise Turtle",
         "micro_theme_te": "ఆత్మ అదే మీపై కొత్త బట్టల లా",
         "shlokas": [
           "2.58",
@@ -481,10 +320,10 @@
       },
       {
         "id": "theme_sd2_07",
-        "title": "Win or Lose, Steady Heart",
+        "title": "The Ocean's Peace",
         "title_te": "గెలిచినా ఓడినా, స్థిర హృదయం",
         "emoji": "🏅",
-        "micro_theme": "Do your part with a calm heart",
+        "micro_theme": "The Ocean's Peace",
         "micro_theme_te": "ప్రశాంత హృదయంతో మీ పని చేయండి",
         "shlokas": [
           "2.70",
@@ -501,200 +340,16 @@
         "activity": "After your next game or test, name one thing you did well — not just the score.",
         "activity_te": "తదుపరి ఆట లేదా పరీక్ష తర్వాత మీరు బాగా చేసిన ఒక విషయం చెప్పండి — మార్కు మాత్రమే కాదు.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_08",
-        "title": "The Practice Room",
-        "title_te": "సాధన గది",
-        "emoji": "🎵",
-        "micro_theme": "Focus on effort instead of rewards",
-        "micro_theme_te": "బహుమతుల కంటే ప్రయత్నంపై దృష్టి",
-        "shlokas": [
-          "2.2",
-          "2.3"
-        ],
-        "story": {
-          "title": "Sia and the Music Exam",
-          "title_te": "సియా మరియు సంగీత పరీక్ష",
-          "content": "Sia loved the shiny medals on her sister's shelf. Gold, silver, bronze — they caught the morning light like small suns lined up in a row. Sia wanted one more than anything. She imagined the weight of it on her neck after the music exam.\n\nWhen her music teacher announced an exam with a special certificate for distinction, Sia's eyes lit up. \"If I get distinction, Appa will buy me a medal,\" she told her mirror, adjusting her ponytail.\n\nFor the first week, she practiced her piano piece — but only the hard parts that sounded impressive when someone walked past the living room. She skipped the slow beginning because nobody clapped for that. She rushed the ending because finishing fast felt like winning.\n\nHer teacher, Mr. Daniel, listened with his head tilted and shook it gently. \"You are playing for the medal, not for the music.\"\n\nSia frowned, fingers stiff on the keys. \"What's wrong with wanting a medal?\"\n\n\"Nothing,\" Mr. Daniel said. \"But Krishna gives a famous teaching: you have a right to your work, not to the reward. When you cling only to the prize, fear steals your joy. When you love the effort, your hands grow honest.\"\n\nSia did not understand fully, but she tried. She began waking ten minutes early to play the whole piece from the first quiet note — even the parts nobody noticed. She counted beats slowly. She fixed one sticky chord again and again, not because anyone would notice, but because it sounded right to her own ears.\n\nOn exam day, her fingers trembled a little on the first page. She made one small mistake in the middle — a wrong note that hung in the air. Her heart sank.\n\nWhen results came, she had passed — no distinction. No new medal for the shelf beside her sister's.\n\nSia waited for the big empty feeling. It came — but smaller than before. She sat at the piano and played the piece again, alone, from start to finish. It sounded fuller than exam day. Her chest felt warm, like the room had more space.\n\n\"I still want a medal,\" she told Amma honestly at dinner.\n\n\"And you also love the playing now,\" Amma smiled, serving rice. \"That stays even when the shelf stays the same.\"\n\nSia nodded. Effort had become its own quiet prize — one nobody could take off a shelf, but nobody could take away either.",
-          "content_te": "Sia sister shelf shiny medals — gold silver bronze small suns. one want more anything.\n\nmusic exam announce — \"distinction Appa medal buy\" mirror tell.\n\nfirst week piano impressive hard parts only — slow beginning skip nobody clap.\n\nMr. Daniel \"playing for medal not music.\"\n\n\"medal want wrong?\" \"Nothing. Krishna: right to work not reward. cling prize fear steals joy. love effort hands honest.\"\n\ntry — ten minutes early whole piece first note quiet ones. beats slow. sticky chord again because own ears right.\n\nexam day fingers tremble, small mistake middle — heart sink.\n\nresults pass — no distinction, no new medal.\n\nempty feeling smaller. piano alone start finish — fuller than exam. chest warm.\n\n\"still want medal\" honest. \"also love playing now — stays shelf same.\"\n\nEffort own quiet prize.",
-          "moral": "Do your work with care. You can enjoy rewards, but do not let them be the only reason you try.",
-          "moral_te": "మీ పని జాగ్రత్తగా చేయండి. బహుమతులు ఆనందించవచ్చు, కానీ అవే ప్రయత్నించే ఏకైక కారణం కాకుండా చూడండి."
-        },
-        "activity": "Do one thing today just to do it well — not for praise or a prize.",
-        "activity_te": "ఈరోజు ఒక పని ప్రశంస లేదా బహుమతి కోసం కాకుండా బాగా చేయడానికే చేయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_09",
-        "title": "Slow and Neat",
-        "title_te": "నెమ్మదిగా, చక్కగా",
-        "emoji": "🎨",
-        "micro_theme": "Smart and calm work matters",
-        "micro_theme_te": "తెలివైన, ప్రశాంత పని ముఖ్యం",
-        "shlokas": [
-          "2.11",
-          "2.12"
-        ],
-        "story": {
-          "title": "Neha's Art Project",
-          "title_te": "నేహ కళా ప్రాజెక్ట్",
-          "content": "Neha's class was making a giant collage of the ocean. Blue paper, silver foil for fish, cotton for waves — it was the prettiest project of the term, and the teacher would hang the best one in the hallway where the whole school walked every day.\n\nNeha wanted hers to win. She imagined parents stopping to point and whisper, \"Look how neat that is.\" On the first day, she glued fast. Foil stuck to her fingers. Cotton bunched in lumps. Glue smeared across the blue like cloudy water. The ocean looked like a storm had thrown supplies at a board.\n\n\"Done!\" she announced, breathless, glue strings hanging from her knuckles.\n\nHer partner Ritu peeked over her shoulder. \"Maybe we fix the corners? And this fish is upside down.\"\n\nNeha scowled. \"If we slow down, someone else will finish first. Speed is smart.\"\n\nThat afternoon, Neha's Amma watched her wash glue off her hands at the kitchen sink. \"You ran like the prize was running away from you.\"\n\n\"It is,\" Neha said, scrubbing hard.\n\nAmma dried her hands with a soft towel and sat beside her at the table. \"Krishna praises action done with a steady mind — not frantic, not lazy. Smart work is calm work. Calm hands see what messy hands miss. Rushing for praise is like building a sand castle while the tide is already coming.\"\n\nNeha looked at her sticky fingernails and said nothing.\n\nThe next day at school, she asked Ritu to help again. \"Let's try Amma's way,\" she admitted.\n\nThey laid out all the pieces without gluing first. They stepped back and looked from across the room. They swapped two fish. They trimmed cotton into smaller puffs. They cut neat waves slowly, one strip at a time.\n\nNeha's shoulders unclenched. Her breathing slowed. The board began to look like an ocean you could almost hear — shhh, shhh, against the shore.\n\nOn presentation day, another group's collage won the hallway spot. Neha felt a flicker of jealousy in her throat — then she looked at her own work. The corners were straight. The fish gleamed. She could explain every step she and Ritu had taken.\n\n\"We can make another one at home,\" Ritu said, linking arms with her in the corridor.\n\n\"Yes,\" Neha smiled. \"Slowly. For us this time.\"\n\nCalm work had made her proud in a way rushing never had. The prize on the wall mattered less than the quiet skill growing in her hands.",
-          "content_te": "class giant ocean collage — blue paper, foil fish, cotton waves. best hallway hang.\n\nNeha want win — day one glue fast. foil fingers, cotton lumps — storm board.\n\n\"Done!\" breathless.\n\nRitu \"corners fix?\" scowl \"slow someone else first finish.\"\n\nAmma glue wash watch \"prize running away ran.\"\n\n\"Krishna steady mind action praise — not frantic not lazy. smart work calm work. calm hands messy miss see.\"\n\nnext day Ritu help — lay out no glue first, step back, swap fish, neat waves slow.\n\nshoulders unclench, breathing slow — ocean almost hear.\n\npresentation other group won — jealousy flicker — own work corners straight fish gleam steps learned.\n\n\"home another slowly.\" calm work proud rushing never.",
-          "moral": "Calm, careful work is smarter than rushing for praise.",
-          "moral_te": "ప్రశాంత, జాగ్రత్త పని ప్రశంస కోసం తొందర కంటే తెలివైనది."
-        },
-        "activity": "Before your next project, breathe three times and read all the steps first.",
-        "activity_te": "తదుపరి ప్రాజెక్ట్ ముందు మూడు శ్వాసలు తీసుకుని అన్ని అడుగులు ముందు చదవండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_10",
-        "title": "The Quiet Choice",
-        "title_te": "నిశ్శబ్ద ఎంపిక",
-        "emoji": "🧘",
-        "micro_theme": "Calm people make better choices",
-        "micro_theme_te": "ప్రశాంత వారు మంచి ఎంపికలు చేస్తారు",
-        "shlokas": [
-          "2.15",
-          "2.16"
-        ],
-        "story": {
-          "title": "Kabir at Recess",
-          "title_te": "రిసెస్‌లో కబీర్",
-          "content": "Recess was loud every day at Kabir's school — balls bouncing, friends calling, games starting and stopping like sudden storms. The playground smelled like dust and mango slices from lunch boxes.\n\nKabir usually ran toward the first game he saw. If nobody picked him, he felt angry and hot behind his ears. If the game ended early, he complained all the way back to class, kicking at pebbles. His chest often felt tight before the bell rang again, as if he had run a race he never wanted.\n\nOne Tuesday, the air was cooler. A new boy stood alone near the neem tree, holding a lunch bag with both hands. Kabir almost ran past toward Vikram's shouting group — then he noticed the boy's shoulders were hunched, like Kabir's felt inside on most days.\n\nAt the same moment, Vikram waved hard. \"Come! Football! Now! We're one short!\"\n\nKabir's feet wanted to sprint. His mouth wanted to shout, \"I'm coming!\" But something made him pause on the grass. He breathed in — one, two, three — and out, slow.\n\nHe remembered Amma reading from the Gita at bedtime: a person who is steady, whose mind is not pulled like a kite in every wind, finds peace. Calm people choose wisely, not quickly in a fuss.\n\nKabir walked to the tree instead. \"Want to play catch?\" he asked the new boy.\n\nThe boy looked up, surprised. \"I'm Rishi. I don't know the rules here.\"\n\n\"Me neither, sometimes,\" Kabir laughed. \"They change every day.\"\n\nThey played gentle catch with a soft ball from Rishi's bag. Two more kids wandered over and joined without arguing about goals or teams. When the bell rang, Kabir's chest felt light, not tight. Rishi smiled for the first time that day.\n\nIn class, Vikram whispered, \"Why didn't you come to football? We lost.\"\n\n\"I chose something quieter,\" Kabir said. \"It felt right.\"\n\nThat evening, Kabir wrote in his notebook in big letters: Pause. Breathe. Then choose.\n\nHe did not always pick the quiet path. Some days he still ran toward the loudest game. But he had learned that a calm moment could turn a loud fuss into a good day — and that choosing kindly could start a friendship under a tree.",
-          "content_te": "recess loud — balls, friends, games sudden storms.\n\nKabir usually first game run — not picked angry, ended early complain — chest tight before bell.\n\nTuesday new boy alone tree — shoulders hunched. Vikram \"Football Now!\"\n\nfeet sprint want — pause breathe 1 2 3 out.\n\nAmma Gita: steady mind not kite every wind — peace. calm people choose wisely not quick fuss.\n\nwalk tree \"catch play?\" \"Rishi — rules don't know.\" \"me neither sometimes\" laugh.\n\ngentle catch kids join — no shout no argue goals. bell chest light not tight.\n\nclass Vikram \"why not football?\" \"quieter chose — felt right.\"\n\nevening notebook: Pause. Breathe. Then choose.\n\nnot always quiet path — calm moment loud fuss good day turn.",
-          "moral": "When things feel loud and rushed, pause and breathe before you choose.",
-          "moral_te": "విషయాలు బిగ్గర, తొందరగా అనిపించినప్పుడు ఎంపిక చేయే ముందు ఆగి శ్వాస తీయండి."
-        },
-        "activity": "At recess or playtime, take three breaths before joining the first loud game.",
-        "activity_te": "రిసెస్ లేదా ఆట సమయంలో మొదటి బిగ్గర ఆటలో చేరే ముందు మూడు శ్వాసలు తీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_11",
-        "title": "The Last Biscuit",
-        "title_te": "చివరి బిస్కెట్",
-        "emoji": "🍪",
-        "micro_theme": "Self-control creates strength",
-        "micro_theme_te": "ఆత్మనియంత్రణ బలం తెస్తుంది",
-        "shlokas": [
-          "2.37",
-          "2.38"
-        ],
-        "story": {
-          "title": "Maya and the Cookie Jar",
-          "title_te": "మాయ మరియు కుకీ జార్",
-          "content": "Amma had baked butter biscuits that morning before the sun was fully up. The whole house smelled like warmth and sugar. Maya helped decorate three with little chocolate dots — one for her, one for her brother Arun, and one for Appa when he came home tired from the office.\n\n\"These are for sharing,\" Amma said, placing them on the red plate. \"Not for gobbling in secret.\"\n\nMaya nodded, but her tummy rumbled just looking at them.\n\nAfter school, Maya dropped her bag and ran to the kitchen. Only one biscuit remained on the plate. Arun had gone straight to karate with his friends. Appa was still at work. The lonely biscuit sat golden and perfect in the quiet kitchen, as if it were calling her name in a whisper.\n\nMaya's hand reached out. Her fingers touched the soft edge, still faintly warm from the afternoon sun on the counter. She could eat it in two bites and nobody would know until later — maybe. Her mouth watered.\n\nThen she heard Appa's voice in her head from last week: \"Strength is not only muscles. It is also choosing what your senses want right now versus what is fair.\"\n\nMaya pulled her hand back as if the plate were warm. She closed her eyes and counted five things: the smell of butter, the tick of the clock, the hollow feeling in her hungry tummy, the sight of the red plate, the memory of Arun's karate kick that morning when he almost knocked over her water bottle.\n\nKrishna teaches that wise people can pull their senses back, like a tortoise draws its limbs into its shell — not forever, not harshly, but when grabbing would hurt someone else or break a promise.\n\nMaya took a glass of water instead. She cut an apple into neat slices and ate them slowly at the table, one by one. When Arun burst through the door, sweaty and grinning, she pointed proudly to the plate. \"I saved your biscuit.\"\n\nArun's face lit up like a lamp. \"Really? You didn't eat it? Thanks, Maya!\"\n\nWhen Appa came home, rubbing his neck, Maya gave him his biscuit too. He sat down and ate it with his tea. \"That took self-control,\" he said, ruffling her hair. \"Strong heart.\"\n\nMaya felt taller inside — not because she got praise, but because she had been the kind of sister she wanted to be when nobody was watching.",
-          "content_te": "Amma butter biscuits morning — house warmth sugar smell. Maya decorate three chocolate dots — her, Arun, Appa tired.\n\nafter school one biscuit plate — Arun karate, Appa work. golden perfect calling.\n\nhand reach, fingers edge — eat quick nobody know maybe.\n\nAppa voice head \"strength not only muscles — senses want now vs fair choose.\"\n\nhand back, eyes close five things: butter smell, clock sound, hungry tummy, red plate, Arun karate kick memory.\n\nKrishna wise senses back tortoise shell — not forever harsh — grabbing hurt someone break promise.\n\nwater glass, apple slices slow. Arun door sweaty grin — \"saved your biscuit.\" face lit thanks.\n\nAppa biscuit give — hair ruffle \"self-control strong heart.\"\n\ntaller inside — praise not — sister she want be kind.",
-          "moral": "Self-control is a small brave choice. Pull back when grabbing would hurt fairness or trust.",
-          "moral_te": "ఆత్మనియంత్రణ చిన్న ధైర్యమైన ఎంపిక. పట్టుకోవడం న్యాయం లేదా నమ్మకాన్నi పగలగొట్టినప్పుడు వెనక్కi తీసukondi."
-        },
-        "activity": "When you want something badly, name five things you see, hear, or feel before choosing.",
-        "activity_te": "ఏదైనా బాగా కావాలనిపించినప్పుడు, ఎంపిక ముందు చూసే, వినే, అనుభవించే ఐదు విషయాలు పేరు చెప్పండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_12",
-        "title": "The Anger Ladder",
-        "title_te": "కోప పടிகడ",
-        "emoji": "🔥",
-        "micro_theme": "Angry thoughts grow step by step",
-        "micro_theme_te": "కోప ఆలోచనలు అడుగు అడుగుగా పెరుగుతాయి",
-        "shlokas": [
-          "2.49",
-          "2.50"
-        ],
-        "story": {
-          "title": "Leo's Bad Afternoon",
-          "title_te": "లియో చెడు మధ్యాహ్నం",
-          "content": "Leo's afternoon started with a stubbed toe on the bed frame — a sharp, silly pain that made him hop on one foot down the hallway. \"Ow!\" he yelped. It was nobody's fault, but his mood turned prickly like a thorn stuck in his sock.\n\nDownstairs, his little sister Mira was humming a tune from her cartoon while drawing suns with orange crayon. The humming felt too loud in Leo's sore-toe world. \"Stop!\" he snapped, louder than he meant.\n\nMira's smile vanished like someone had switched off a light. She hugged her crayons to her chest and went quiet — but her eyes looked wet and wide.\n\nAt snack time, Leo reached for the last mango slice on the plate. Mira had saved it with a crayon note: For Leo, love Mira. Appa had cut it specially that morning because Leo loved mango best. Leo was about to eat it when he saw the note. Guilt poked him, but he ate the slice anyway because the day already felt ruined and he did not know how to undo the snap.\n\nMira cried at the table. Amma came in from her work call, tired lines around her eyes. \"What happened here?\"\n\nLeo shouted, \"Everything! My toe! Her noise! This stupid day!\" Words flew out hotter than he meant, bouncing off the kitchen tiles.\n\nThat night, Appa sat on Leo's bed and drew a ladder on a piece of paper with four rungs. \"Step one: pain — toe hurt. Step two: want — you wanted quiet. Step three: anger — you snapped at Mira. Step four: more anger — shouting at Amma. Krishna shows how desire leads to anger like smoke from a fire. Small sparks become big flames if we feed them.\"\n\nLeo looked at the ladder. \"I didn't mean to make Mira cry.\"\n\n\"I know,\" Appa said. \"Tomorrow, try stopping at step two. Say: I want quiet. Ask kindly. The ladder gets shorter.\"\n\nThe next morning, Leo limped slightly and Mira hummed again over her cereal. Leo felt the snap rising in his chest — but he breathed and said, \"Mira, my toe still hurts. Can you hum softer for a bit?\"\n\nMira nodded fast, earnest. \"Sorry, Leo. Want a bandage sticker? I have stars.\"\n\nLeo smiled. The ladder had only two steps today. That felt like a small victory worth keeping.",
-          "content_te": "Leo afternoon bed frame toe stub — ow hop mood prickly thorn.\n\ndownstairs Mira humming draw — too loud sore toe world \"Stop!\" snap.\n\nMira smile vanish crayons hug eyes wet.\n\nsnack last mango slice — note For Leo love Mira Appa special cut. guilt poke — ate anyway day ruined felt.\n\nMira cry Amma tired \"what happened?\" Leo shout \"everything toe noise stupid day\" words hotter meant.\n\nnight Appa bed ladder paper four rungs: step one pain toe, two want quiet, three anger snap, four more shout. Krishna desire anger smoke fire — small sparks big flames feed.\n\n\"didn't mean Mira cry.\" \"tomorrow stop step two — want quiet ask kindly ladder shorter.\"\n\nnext morning Mira hum — snap rising breathe \"toe hurts hum softer bit?\" Mira bandage sticker — smile two steps only.",
-          "moral": "Notice anger early — at the 'I want' step — before it grows into shouting.",
-          "moral_te": "కోపాన్నi ముందే గమనించండి — 'నాకు కావాలి' అడుగu వద్ద — అరచే ముందu."
-        },
-        "activity": "Draw your own anger ladder. What happened at step one and step two today?",
-        "activity_te": "మీ కోప పடికడ గీయండి. ఈరోజు మొదటి, రెండవ అడుగu ఏమi జరiగiందi?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_13",
-        "title": "Morning Chart",
-        "title_te": "ఉదయం చార్ట్",
-        "emoji": "🌙",
-        "micro_theme": "Discipline brings peace",
-        "micro_theme_te": "శిక్షణ శాంతి తెస్తుంది",
-        "shlokas": [
-          "2.55",
-          "2.56"
-        ],
-        "story": {
-          "title": "Rohan's Wind-Down",
-          "title_te": "రోహన్ విండ్-డౌన్",
-          "content": "Rohan used to treat bedtime like a surprise party that nobody planned. Sometimes he played games until his eyes burned and the room spun. Sometimes he read one page of a comic and fell asleep with the light on and crumbs on the sheet. Mornings were foggy. He forgot homework. He snapped at his little cousin over cereal because the spoon clinked too loudly.\n\n\"I'm tired of being tired,\" he told Paati on the phone, his voice small.\n\nPaati said, \"Come over this weekend. We will make a morning-and-night chart together. Not a punishment — a path to peace.\"\n\nAt Paati's house, they spread chart paper on the dining table and drew two columns with bright markers. Morning: wake, brush, dress, breakfast, pack bag. Night: homework, bath, story, lights out by nine.\n\n\"Krishna links a steady, disciplined mind to rest and clarity,\" Paati explained, stirring tea. \"Not rigid like a soldier — gentle like a riverbank that guides water without fighting it.\"\n\nRohan chose stickers for each step — stars, moons, little cups of tea. He stuck one star on \"brush teeth\" right away, grinning.\n\nThe first night back home, he wanted to skip bath because a new game level was waiting. Amma did not scold. She pointed to the chart on the fridge. \"Check the path. What comes next?\"\n\nRohan groaned, then walked to the bathroom. The warm water quieted his jumpy legs. He read one chapter — not three, not zero. Lights off at nine-fifteen, not midnight.\n\nThe next morning was not magic. He still yawned at the bus stop. But he found his maths homework already in the bag because he had packed it the night before. He ate sitting down instead of running with toast in his hand. At school, his teacher looked closer and said, \"You look awake today, Rohan.\"\n\nAfter one full week with the chart, Rohan noticed something soft inside — less storm, more still pond. Discipline was not a cage. It was a kindly fence around his sleep and his mornings.\n\nHe taped a small copy of the chart inside his cupboard door. Peace, he learned, could be built one small step at a time — and that building was a kind of love he gave to himself.",
-          "content_te": "Rohan bedtime surprise party unplanned — games eyes burn, one page sleep light on. mornings foggy homework forget cereal cousin snap.\n\n\"tired of tired\" Paati phone — weekend chart together not punishment path peace.\n\nPaati house two columns chart paper: morning wake brush dress breakfast pack; night homework bath story lights nine.\n\n\"Krishna steady disciplined mind rest clarity — not rigid soldier gentle riverbank guides water.\"\n\nstickers stars moons tea — first night skip bath want. \"check chart next?\" groan bathroom warm water quiet legs one chapter lights 9:15 not midnight.\n\nnext morning not magic yawn — homework bag found eat sitting teacher \"look awake.\"\n\none week chart home — soft inside less storm still pond. discipline not cage kindly fence sleep mornings.\n\ncupboard door small chart tape — peace one small step built.",
-          "moral": "Small daily habits — gentle, not harsh — bring peaceful rest and clearer days.",
-          "moral_te": "చిన్న దినచర్యలు — మృదువుగా, కఠినంగా కాక — ప్రశాంత విశ్రాంతi, స్పష్ట రోజులu తెస్తాయi."
-        },
-        "activity": "Pick one calm bedtime step to try tonight — bath, book, or lights out on time.",
-        "activity_te": "ఈ రాత్రi ఒక ప్రశాంత నిద్ర అడుగu ఎంచukondi — సnానం, పuస్తకం, లేదా సmయానికi లైట్ ఆఫ్.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_14",
-        "title": "Monkey Mind Night",
-        "title_te": "కోతi మనస్సu రాత్రi",
-        "emoji": "🐒",
-        "micro_theme": "A restless mind cannot stay happy",
-        "micro_theme_te": "అశాంత మనస్సu సంతోషంగా ఉండదు",
-        "shlokas": [
-          "2.62",
-          "2.63"
-        ],
-        "story": {
-          "title": "Tina Before the Trip",
-          "title_te": "పrయాణం మuందu టీనా",
-          "content": "Tina could not sleep. Tomorrow her family was leaving for the hill station — new roads curling like ribbons, a new hotel with a fancy breakfast tray, mist on the windows she had only seen in pictures. Exciting, yes. But her mind was a monkey jumping branch to branch, never resting on one tree.\n\nWhat if it rains the whole trip? What if she forgets her sweater and shivers? What if the car feels sick on the winding curves? What if she misses her best friend Devika's call and Devika thinks she doesn't care? What if, what if, what if — the questions swung louder than the fan.\n\nShe turned left. She turned right. The sheet tangled around her legs like a rope. The clock on the wall ticked louder and louder, as if counting her worries one by one.\n\nAmma knocked softly and slipped in with her dupatta trailing. \"Still awake, little monkey?\"\n\nTina groaned into the pillow. \"My brain won't sit still. It's too jumpy.\"\n\nAmma sat on the bed and opened the window a crack. Cool night air slipped in, carrying the smell of jasmine from the garden. \"Krishna says a restless mind finds no lasting peace — like a boat tossed without an anchor. We will not fix tomorrow tonight. We will anchor you now.\"\n\nThey tried a game. Amma said, \"Name five blue things in this room.\"\n\nTina whispered, \"Your dupatta… my water bottle cap… part of the rug… Devika's bracelet on the shelf… the cover of my book.\"\n\n\"Good. Now four sounds you can hear.\"\n\n\"Clock. Fan. A dog far away. Your breathing.\"\n\n\"Three slow breaths with me. In through the nose. Out through the mouth.\"\n\nIn, out. In, out. In, out.\n\nTina's monkey mind still flickered — but it had fewer branches to jump to. Amma's hand on her back was steady, like a riverbank holding water.\n\n\"You can be excited and rest,\" Amma said. \"Both are allowed. Tomorrow will arrive whether you spin or sleep.\"\n\nTina closed her eyes. She pictured the hill road as a soft ribbon, not a monster. Sleep came in pieces, not all at once, but enough to fill the cup.\n\nIn the morning, she packed her sweater without panic and waved at Devika's house on the way out. The monkey was still there sometimes — but she had learned a ladder down from the noisy trees.",
-          "content_te": "Tina sleep ledu — tomorrow hill station new roads hotel breakfast tray exciting yes mind monkey branch jump.\n\nrain? sweater forget? car sick? Devika call miss? what if chain.\n\nturn left right sheet tangle legs clock tick louder.\n\nAmma knock \"still awake little monkey?\" \"brain won't sit still.\"\n\nwindow crack cool air — \"Krishna restless mind no lasting peace boat no anchor. tomorrow fix tonight not — anchor now.\"\n\ngame five blue things room — dupatta bottle cap rug Devika bracelet book cover.\n\nfour sounds clock fan dog breathing.\n\nthree slow breaths in out.\n\nmonkey mind flicker fewer branches Amma hand back steady riverbank.\n\n\"excited and rest both allowed.\"\n\neyes close hill road ribbon not monster sleep soft pieces enough.\n\nmorning sweater pack no panic monkey sometimes — ladder down noisy trees learned.",
-          "moral": "When your mind jumps like a monkey, anchor it with breath and simple noticing.",
-          "moral_te": "మనస్సu కోతi లా దuకiనప్పుడు, శ్వాస, సాధారణ గమనంతో anchor చేయండి."
-        },
-        "activity": "Tonight, name five things you see and take three slow breaths before sleep.",
-        "activity_te": "ఈ రాత్రi మీru చూసే ఐదu విషయాలu పేరu చెప్పi, నిద్ర మuందu మూడు నెమ్మదi శ్వాసలu తీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd2_15",
-        "title": "Letting the Balloon Go",
-        "title_te": "బaluoon వదలడం",
-        "emoji": "🎈",
-        "micro_theme": "Peace comes from letting go",
-        "micro_theme_te": "వదిలివేయడం నుండి శాంతi వస్తుంది",
-        "shlokas": [
-          "2.64",
-          "2.65"
-        ],
-        "story": {
-          "title": "Jay and the Lost Game",
-          "title_te": "జే ఓడిన ఆట",
-          "content": "Jay's chess team had practiced for weeks in the library after school. They knew openings, endgames, and the serious faces you make when you pretend not to be nervous while your knee bounces under the table.\n\nOn finals day, Jay played his best game of the year — careful, patient, brave — and still lost on the last move when his opponent's queen slid into a corner he had not seen in time.\n\nHe held the feeling like a hot stone in his pocket all weekend. He did not want to eat dal. He snapped when his sister borrowed his charger without asking. He replayed the final move again and again behind his eyes, seeing the queen land like a hammer.\n\nOn Monday, Thatha took him to the riverbank after school. The water was brown-green and steady. Children were releasing balloons into the sky — red, blue, yellow — for a local festival, laughing as they let go.\n\n\"Hold this,\" Thatha said, giving Jay a green balloon. Attached was a small paper tag on a string.\n\n\"Write one worry you cannot control,\" Thatha said. \"Not the whole tournament — one thread.\"\n\nJay wrote in pencil: I can't undo my last move.\n\nHe stared at the words until they blurred. His eyes burned, but he did not wipe them quickly. Thatha waited with open hands.\n\n\"Krishna teaches that peace grows when we stop clutching every desire and every regret,\" Thatha said gently. \"Like this river — it keeps moving because it does not grab the rocks. Letting go is not giving up on caring. It is making room inside for calm.\"\n\nJay tied the tag to the balloon. His fingers trembled. \"What if I need to remember to practice harder?\"\n\n\"You will remember,\" Thatha said. \"Letting go of the hot stone is not dropping your chess board.\"\n\nJay released the balloon. It rose, wobbled in the wind, and joined the others — small green courage against the big evening sky.\n\nJay's chest still felt the loss. But the hot stone feeling loosened, like a fist opening one finger at a time. He breathed in the river smell — mud, water, evening flowers.\n\nThat night he set up the chess board again at the dining table. He cared. He practiced. But he did not carry the whole weekend storm in his pocket anymore.\n\nPeace, he learned, sometimes looks like open hands.",
-          "content_te": "Jay chess team weeks practice — finals best game year — last move lose.\n\nweekend hot stone pocket — eat no want, sister charger snap, final move replay eyes.\n\nMonday Thatha riverbank after school — children balloons red blue yellow festival release.\n\n\"hold this\" green balloon paper tag.\n\n\"write one worry can't control — one thread not whole tournament.\"\n\nJay wrote: can't undo last move. eyes burn Thatha wait.\n\n\"Krishna peace when stop clutching every desire regret — river moves doesn't grab rocks. letting go not giving up caring — room inside calm.\"\n\ntag tie fingers tremble \"what if need remember practice harder?\" \"will remember — letting go hot stone not dropping chess board.\"\n\nrelease balloon rose wind joined others green courage big sky.\n\nchest still loss hot stone loosened river smell mud water evening flowers breathe.\n\nnight chess board again care practice — weekend storm pocket not anymore.\n\npeace sometimes open hands.",
-          "moral": "Release what you cannot change. Care deeply — but do not carry the weight forever.",
-          "moral_te": "మీru మార్చలేనiదi వదిలivēyandi. లోతుగా పట్టukondi — కానీ బరuvu ఎప్పటiki క carry చēyakandi."
-        },
-        "activity": "Write one worry on paper, fold it, and imagine it floating away like a balloon.",
-        "activity_te": "ఒక ఆందోళన కాగితంలో రాసi, మడi, బaluoon లా ఎగిరiపోvadani ఊహించandi.",
-        "videoUrl": ""
       }
     ],
     "3": [
       {
         "id": "theme_sd3_01",
-        "title": "Everyone has responsibilities",
+        "title": "The Magic of Sharing",
         "title_te": "Everyone has responsibilities",
         "emoji": "🌱",
-        "micro_theme": "Everyone has responsibilities",
-        "micro_theme_te": "Everyone has responsibilities",
+        "micro_theme": "The Magic of Sharing",
+        "micro_theme_te": "",
         "shlokas": [
           "3.10",
           "3.11"
@@ -713,11 +368,11 @@
       },
       {
         "id": "theme_sd3_02",
-        "title": "Sharing makes work meaningful",
+        "title": "Be a Little Leader",
         "title_te": "Sharing makes work meaningful",
         "emoji": "📖",
-        "micro_theme": "Sharing makes work meaningful",
-        "micro_theme_te": "Sharing makes work meaningful",
+        "micro_theme": "Be a Little Leader",
+        "micro_theme_te": "",
         "shlokas": [
           "3.20",
           "3.21"
@@ -736,11 +391,11 @@
       },
       {
         "id": "theme_sd3_03",
-        "title": "Good children inspire others",
+        "title": "Being Myself",
         "title_te": "Good children inspire others",
         "emoji": "💡",
-        "micro_theme": "Good children inspire others",
-        "micro_theme_te": "Good children inspire others",
+        "micro_theme": "Being Myself",
+        "micro_theme_te": "",
         "shlokas": [
           "3.35",
           "3.36"
@@ -759,11 +414,11 @@
       },
       {
         "id": "theme_sd3_04",
-        "title": "Ego creates confusion",
+        "title": "The Smart Choices",
         "title_te": "Ego creates confusion",
         "emoji": "🌟",
-        "micro_theme": "Ego creates confusion",
-        "micro_theme_te": "Ego creates confusion",
+        "micro_theme": "The Smart Choices",
+        "micro_theme_te": "",
         "shlokas": [
           "3.41",
           "3.42"
@@ -779,84 +434,15 @@
         "activity": "Draw how Dev made a good choice today.",
         "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd3_05",
-        "title": "Show, Don't Only Tell",
-        "title_te": "చూపించు, మాటలు మాత్రమే కాదు",
-        "emoji": "🎯",
-        "micro_theme": "setting a good example",
-        "micro_theme_te": "మంచి ఆదర్శం ఉండటం",
-        "shlokas": [
-          "3.5",
-          "3.8"
-        ],
-        "story": {
-          "title": "Anika Picks Up the Paper",
-          "title_te": "అనిక చెత్త తీసింది",
-          "content": "One ordinary school day became special for Anika. The story is called \"Anika Picks Up the Paper.\" Anika felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Anika wanted to walk away. Then Anika remembered what Krishna teaches in the Gita: Show, Don't Only Tell. Anika took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Anika felt proud—not because everyone clapped, but because the heart felt quiet and good.",
-          "content_te": "ఒక సాధారణ పాఠశాల రోజు Anikaకి ప్రత్యేకమైనది. కథ పేరు \"అనిక చెత్త తీసింది.\" Anika చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Anika దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన చూపించు, మాటలు మాత్రమే కాదు గుర్తుకు వచ్చింది. Anika లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
-          "moral": "Leaders teach others more by actions than by words.",
-          "moral_te": "నాయకులు మాటల కంటే చర్యల ద్వారా ఎక్కువ నేర్పుతారు."
-        },
-        "activity": "Tell your family the story \"Anika Picks Up the Paper\" in your own words. What would you do in Anika's place?",
-        "activity_te": "\"అనిక చెత్త తీసింది\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Anika స్థానంలో మీరు ఏమి చేస్తారు?",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd3_06",
-        "title": "Bad habits should be stopped early",
-        "title_te": "Bad habits should be stopped early",
-        "emoji": "🛡️",
-        "micro_theme": "Bad habits should be stopped early",
-        "micro_theme_te": "Bad habits should be stopped early",
-        "shlokas": [
-          "3.9",
-          "3.13"
-        ],
-        "story": {
-          "title": "Kiran's Choice",
-          "title_te": "Kiran యొక్క ఎంపిక",
-          "content": "Kiran had a school day that tested something important. In the Gita, Chapter 3 teaches: The Lord said, \"It is desire, it is wrath, born of the guna of rajas; it is a great devourer, an impeller of sin. Know this to be the enemy here.\" Therefore, O Arjuna, control your senses from the out... Kiran felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Kiran felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Kiranకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 3 బోధన: The Lord said, \"It is desire, it is wrath, born of the guna of rajas; it is a great devourer, an impeller of sin. Know this to be the enemy here.\" Therefore, O Arjuna, control your... Kiran మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Bad habits should be stopped early.",
-          "moral_te": "Bad habits should be stopped early"
-        },
-        "activity": "Draw how Kiran made a good choice today.",
-        "activity_te": "Kiran ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd3_07",
-        "title": "The mind becomes strong with practice",
-        "title_te": "The mind becomes strong with practice",
-        "emoji": "⚖️",
-        "micro_theme": "The mind becomes strong with practice",
-        "micro_theme_te": "The mind becomes strong with practice",
-        "shlokas": [
-          "3.37",
-          "3.43"
-        ],
-        "story": {
-          "title": "Priya's Choice",
-          "title_te": "Priya యొక్క ఎంపిక",
-          "content": "Priya had a school day that tested something important. In the Gita, Chapter 3 teaches: They say that the senses are high, the mind is higher than the senses, the intellect is higher than the mind, but what is greater than the intellect is that ... Thus, knowing that which is higher than... Priya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Priya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Priyaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 3 బోధన: They say that the senses are high, the mind is higher than the senses, the intellect is higher than the mind, but what is greater than the intellect is that ... Thus, knowing that ... Priya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: The mind becomes strong with practice.",
-          "moral_te": "The mind becomes strong with practice"
-        },
-        "activity": "Draw how Priya made a good choice today.",
-        "activity_te": "Priya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
       }
     ],
     "4": [
       {
         "id": "theme_sd4_01",
-        "title": "Think, Then Do",
+        "title": "The Hero Returns",
         "title_te": "ఆలోచించు, తర్వాత చేయి",
         "emoji": "🌱",
-        "micro_theme": "wisdom and action together",
+        "micro_theme": "The Hero Returns",
         "micro_theme_te": "జ్ఞానం మరియు చర్య కలిసి",
         "shlokas": [
           "4.7",
@@ -876,11 +462,11 @@
       },
       {
         "id": "theme_sd4_02",
-        "title": "Every role has value",
+        "title": "The Mirror Secret",
         "title_te": "Every role has value",
         "emoji": "📖",
-        "micro_theme": "Every role has value",
-        "micro_theme_te": "Every role has value",
+        "micro_theme": "The Mirror Secret",
+        "micro_theme_te": "",
         "shlokas": [
           "4.11",
           "4.12"
@@ -899,11 +485,11 @@
       },
       {
         "id": "theme_sd4_03",
-        "title": "Work becomes special when done with care",
+        "title": "The Happy Work",
         "title_te": "Work becomes special when done with care",
         "emoji": "💡",
-        "micro_theme": "Work becomes special when done with care",
-        "micro_theme_te": "Work becomes special when done with care",
+        "micro_theme": "The Happy Work",
+        "micro_theme_te": "",
         "shlokas": [
           "4.18",
           "4.20"
@@ -922,11 +508,11 @@
       },
       {
         "id": "theme_sd4_04",
-        "title": "Respect teachers and learning",
+        "title": "Knowledge Cleans Everything",
         "title_te": "Respect teachers and learning",
         "emoji": "🌟",
-        "micro_theme": "Respect teachers and learning",
-        "micro_theme_te": "Respect teachers and learning",
+        "micro_theme": "Knowledge Cleans Everything",
+        "micro_theme_te": "",
         "shlokas": [
           "4.38",
           "4.39"
@@ -942,39 +528,16 @@
         "activity": "Draw how Dev made a good choice today.",
         "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd4_05",
-        "title": "Faith helps learning grow",
-        "title_te": "Faith helps learning grow",
-        "emoji": "🎯",
-        "micro_theme": "Faith helps learning grow",
-        "micro_theme_te": "Faith helps learning grow",
-        "shlokas": [
-          "4.34",
-          "4.40"
-        ],
-        "story": {
-          "title": "Anika's Choice",
-          "title_te": "Anika యొక్క ఎంపిక",
-          "content": "Anika had a school day that tested something important. In the Gita, Chapter 4 teaches: He who has faith, is intent on it, and has mastered his senses, attains knowledge. Having attained knowledge, he quickly goes to supreme peace. The ignorant, the faithless, and the doubting one perish... Anika felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Anika felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Anikaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 4 బోధన: He who has faith, is intent on it, and has mastered his senses, attains knowledge. Having attained knowledge, he quickly goes to supreme peace. The ignorant, the faithless, and the... Anika మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Faith helps learning grow.",
-          "moral_te": "Faith helps learning grow"
-        },
-        "activity": "Draw how Anika made a good choice today.",
-        "activity_te": "Anika ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
       }
     ],
     "5": [
       {
         "id": "theme_sd5_01",
-        "title": "Peace comes from non-selfish work",
+        "title": "The Lotus Leaf",
         "title_te": "Peace comes from non-selfish work",
         "emoji": "🌱",
-        "micro_theme": "Peace comes from non-selfish work",
-        "micro_theme_te": "Peace comes from non-selfish work",
+        "micro_theme": "The Lotus Leaf",
+        "micro_theme_te": "",
         "shlokas": [
           "5.10",
           "5.11"
@@ -993,11 +556,11 @@
       },
       {
         "id": "theme_sd5_02",
-        "title": "Treat everyone equally",
+        "title": "One Light, Many Lamps",
         "title_te": "Treat everyone equally",
         "emoji": "📖",
-        "micro_theme": "Treat everyone equally",
-        "micro_theme_te": "Treat everyone equally",
+        "micro_theme": "One Light, Many Lamps",
+        "micro_theme_te": "",
         "shlokas": [
           "5.18",
           "5.19"
@@ -1016,11 +579,11 @@
       },
       {
         "id": "theme_sd5_03",
-        "title": "Temporary pleasures do not last",
+        "title": "The Secret Smile",
         "title_te": "Temporary pleasures do not last",
         "emoji": "💡",
-        "micro_theme": "Temporary pleasures do not last",
-        "micro_theme_te": "Temporary pleasures do not last",
+        "micro_theme": "The Secret Smile",
+        "micro_theme_te": "",
         "shlokas": [
           "5.24",
           "5.26"
@@ -1036,61 +599,15 @@
         "activity": "Draw how Maya made a good choice today.",
         "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd5_04",
-        "title": "Patience brings inner happiness",
-        "title_te": "Patience brings inner happiness",
-        "emoji": "🌟",
-        "micro_theme": "Patience brings inner happiness",
-        "micro_theme_te": "Patience brings inner happiness",
-        "shlokas": [
-          "5.12",
-          "5.20"
-        ],
-        "story": {
-          "title": "Dev's Choice",
-          "title_te": "Dev యొక్క ఎంపిక",
-          "content": "Dev had a school day that tested something important. In the Gita, Chapter 5 teaches: He who is able, even here, before being released from the body, to bear the impulse generated by desire and anger, he is a Yogin (competent for self-realisat... He whose joy is within, whose pleasure ... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 5 బోధన: He who is able, even here, before being released from the body, to bear the impulse generated by desire and anger, he is a Yogin (competent for self-realisat... He whose joy is wit... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Patience brings inner happiness.",
-          "moral_te": "Patience brings inner happiness"
-        },
-        "activity": "Draw how Dev made a good choice today.",
-        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd5_05",
-        "title": "Peaceful people help the world",
-        "title_te": "Peaceful people help the world",
-        "emoji": "🎯",
-        "micro_theme": "Peaceful people help the world",
-        "micro_theme_te": "Peaceful people help the world",
-        "shlokas": [
-          "5.25",
-          "5.29"
-        ],
-        "story": {
-          "title": "Anika's Choice",
-          "title_te": "Anika యొక్క ఎంపిక",
-          "content": "Anika had a school day that tested something important. In the Gita, Chapter 5 teaches: The sages, who are free from the pairs of opposites, whose minds are well subdued, and who are devoted to the welfare of all beings, become cleansed of all i... Knowing Me as the enjoyer of all sacrif... Anika felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Anika felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Anikaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 5 బోధన: The sages, who are free from the pairs of opposites, whose minds are well subdued, and who are devoted to the welfare of all beings, become cleansed of all i... Knowing Me as the e... Anika మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Peaceful people help the world.",
-          "moral_te": "Peaceful people help the world"
-        },
-        "activity": "Draw how Anika made a good choice today.",
-        "activity_te": "Anika ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
       }
     ],
     "6": [
       {
         "id": "theme_sd6_01",
-        "title": "The Wandering Butterfly",
+        "title": "My Mind-Friend",
         "title_te": "తిరిగే సీతాకోక చిలుక",
         "emoji": "🌱",
-        "micro_theme": "training the mind",
+        "micro_theme": "My Mind-Friend",
         "micro_theme_te": "మనస్సును శిక్షణ ఇవ్వడం",
         "shlokas": [
           "6.5",
@@ -1110,11 +627,11 @@
       },
       {
         "id": "theme_sd6_02",
-        "title": "Healthy habits create balance",
+        "title": "The Steady Candle",
         "title_te": "Healthy habits create balance",
         "emoji": "📖",
-        "micro_theme": "Healthy habits create balance",
-        "micro_theme_te": "Healthy habits create balance",
+        "micro_theme": "The Steady Candle",
+        "micro_theme_te": "",
         "shlokas": [
           "6.18",
           "6.19"
@@ -1133,11 +650,11 @@
       },
       {
         "id": "theme_sd6_03",
-        "title": "Bring your wandering mind back gently",
+        "title": "Taming the Wind",
         "title_te": "Bring your wandering mind back gently",
         "emoji": "💡",
-        "micro_theme": "Bring your wandering mind back gently",
-        "micro_theme_te": "Bring your wandering mind back gently",
+        "micro_theme": "Taming the Wind",
+        "micro_theme_te": "",
         "shlokas": [
           "6.34",
           "6.35"
@@ -1153,88 +670,19 @@
         "activity": "Draw how Maya made a good choice today.",
         "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd6_04",
-        "title": "Treat others like yourself",
-        "title_te": "Treat others like yourself",
-        "emoji": "🌟",
-        "micro_theme": "Treat others like yourself",
-        "micro_theme_te": "Treat others like yourself",
-        "shlokas": [
-          "6.16",
-          "6.17"
-        ],
-        "story": {
-          "title": "Dev's Choice",
-          "title_te": "Dev యొక్క ఎంపిక",
-          "content": "Dev had a school day that tested something important. In the Gita, Chapter 6 teaches: He whose mind is fixed in Yoga sees reality everywhere; he sees his Self as abiding in all beings and all beings in his Self. He who, due to the similarity of selves everywhere, sees pleasure or pain ... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 6 బోధన: He whose mind is fixed in Yoga sees reality everywhere; he sees his Self as abiding in all beings and all beings in his Self. He who, due to the similarity of selves everywhere, se... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Treat others like yourself.",
-          "moral_te": "Treat others like yourself"
-        },
-        "activity": "Draw how Dev made a good choice today.",
-        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd6_05",
-        "title": "Practice slowly makes us stronger",
-        "title_te": "Practice slowly makes us stronger",
-        "emoji": "🎯",
-        "micro_theme": "Practice slowly makes us stronger",
-        "micro_theme_te": "Practice slowly makes us stronger",
-        "shlokas": [
-          "6.40",
-          "6.41"
-        ],
-        "story": {
-          "title": "Anika's Choice",
-          "title_te": "Anika యొక్క ఎంపిక",
-          "content": "Anika had a school day that tested something important. In the Gita, Chapter 6 teaches: The Lord said, \"The mind is indeed hard to subdue and fickle, O mighty-armed one, but, O son of Kunti, it can be brought under control through practice and t... The Lord said, \"Neither here in this wo... Anika felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Anika felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Anikaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 6 బోధన: The Lord said, \"The mind is indeed hard to subdue and fickle, O mighty-armed one, but, O son of Kunti, it can be brought under control through practice and t... The Lord said, \"Nei... Anika మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Practice slowly makes us stronger.",
-          "moral_te": "Practice slowly makes us stronger"
-        },
-        "activity": "Draw how Anika made a good choice today.",
-        "activity_te": "Anika ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd6_06",
-        "title": "Connecting Inside",
-        "title_te": "లోపల కనెక్ట్ అవ్వడం",
-        "emoji": "🛡️",
-        "micro_theme": "yoga as union",
-        "micro_theme_te": "యోగం ఐక్యత",
-        "shlokas": [
-          "6.46",
-          "6.47"
-        ],
-        "story": {
-          "title": "Quiet Five Minutes",
-          "title_te": "నిశ్శబ్ద ఐదు నిమిషాలు",
-          "content": "One ordinary school day became special for Kiran. The story is called \"Quiet Five Minutes.\" Kiran felt stuck—a small choice felt very big. Friends argued, or a test felt scary, or someone needed help and Kiran wanted to walk away. Then Kiran remembered what Krishna teaches in the Gita: Connecting Inside. Kiran took a deep breath, spoke kindly, and did the right thing even when it was not the easy way. That night, Kiran felt proud—not because everyone clapped, but because the heart felt quiet and good.",
-          "content_te": "ఒక సాధారణ పాఠశాల రోజు Kiranకి ప్రత్యేకమైనది. కథ పేరు \"నిశ్శబ్ద ఐదు నిమిషాలు.\" Kiran చిక్కులో పడింది—చిన్న ఎంపిక చాలా పెద్దదిగా అనిపించింది. స్నేహితులు గొడవ పడ్డారు, లేదా పరీక్ష భయంగా ఉంది, లేదా ఎవరికైనా సహాయం కావాలి కానీ Kiran దూరంగా వెళ్లాలనుకున్నాడు. అప్పుడు గీతలో కృష్ణుడు బోధించిన లోపల కనెక్ట్ అవ్వడం గుర్తుకు వచ్చింది. Kiran లోతైన శ్వాస తీసుకుని, దయగా మాట్లాడి, సులభమైన మార్గం కాక సరైనది చేశాడు. ఆ రాత్రి గర్వంగా అనిపించింది—ఎవరూ చప్పట్లు కొట్టకపోయినా, హృదయం శాంతంగా మంచిగా అనిపించింది.",
-          "moral": "Connecting with your inner self is the highest yoga.",
-          "moral_te": "మీ అంతరాత్మతో అనుసంధానం చేయడమే అత్యున్నత యోగం."
-        },
-        "activity": "Tell your family the story \"Quiet Five Minutes\" in your own words. What would you do in Kiran's place?",
-        "activity_te": "\"నిశ్శబ్ద ఐదు నిమిషాలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Kiran స్థానంలో మీరు ఏమి చేస్తారు?",
-        "videoUrl": ""
       }
     ],
     "7": [
       {
         "id": "theme_sd7_01",
-        "title": "True wisdom is rare and valuable",
+        "title": "The Pearl Necklace",
         "title_te": "True wisdom is rare and valuable",
         "emoji": "🌱",
-        "micro_theme": "True wisdom is rare and valuable",
-        "micro_theme_te": "True wisdom is rare and valuable",
+        "micro_theme": "The Pearl Necklace",
+        "micro_theme_te": "",
         "shlokas": [
-          "7.7",
-          "7.14"
+          "7.6",
+          "7.7"
         ],
         "story": {
           "title": "Riya's Choice",
@@ -1250,11 +698,11 @@
       },
       {
         "id": "theme_sd7_02",
-        "title": "Faith helps during difficult times",
+        "title": "The Taste of Life",
         "title_te": "Faith helps during difficult times",
         "emoji": "📖",
-        "micro_theme": "Faith helps during difficult times",
-        "micro_theme_te": "Faith helps during difficult times",
+        "micro_theme": "The Taste of Life",
+        "micro_theme_te": "",
         "shlokas": [
           "7.8",
           "7.9"
@@ -1273,11 +721,11 @@
       },
       {
         "id": "theme_sd7_03",
-        "title": "Wisdom grows slowly over time",
+        "title": "The Best Friend",
         "title_te": "Wisdom grows slowly over time",
         "emoji": "💡",
-        "micro_theme": "Wisdom grows slowly over time",
-        "micro_theme_te": "Wisdom grows slowly over time",
+        "micro_theme": "The Best Friend",
+        "micro_theme_te": "",
         "shlokas": [
           "7.16",
           "7.17"
@@ -1298,11 +746,11 @@
     "8": [
       {
         "id": "theme_sd8_01",
-        "title": "Remember goodness while doing your work",
+        "title": "Thinking of Love",
         "title_te": "Remember goodness while doing your work",
         "emoji": "🌱",
-        "micro_theme": "Remember goodness while doing your work",
-        "micro_theme_te": "Remember goodness while doing your work",
+        "micro_theme": "Thinking of Love",
+        "micro_theme_te": "",
         "shlokas": [
           "8.5",
           "8.7"
@@ -1321,11 +769,11 @@
       },
       {
         "id": "theme_sd8_02",
-        "title": "Peace comes from spiritual focus",
+        "title": "The Bright Road",
         "title_te": "Peace comes from spiritual focus",
         "emoji": "📖",
-        "micro_theme": "Peace comes from spiritual focus",
-        "micro_theme_te": "Peace comes from spiritual focus",
+        "micro_theme": "The Bright Road",
+        "micro_theme_te": "",
         "shlokas": [
           "8.8",
           "8.14"
@@ -1346,11 +794,11 @@
     "9": [
       {
         "id": "theme_sd9_01",
-        "title": "Love matters more than expensive gifts",
+        "title": "The Simplest Gift",
         "title_te": "Love matters more than expensive gifts",
         "emoji": "🌱",
-        "micro_theme": "Love matters more than expensive gifts",
-        "micro_theme_te": "Love matters more than expensive gifts",
+        "micro_theme": "The Simplest Gift",
+        "micro_theme_te": "",
         "shlokas": [
           "9.26",
           "9.27"
@@ -1369,11 +817,11 @@
       },
       {
         "id": "theme_sd9_02",
-        "title": "Offer your work with sincerity",
+        "title": "Always Safe",
         "title_te": "Offer your work with sincerity",
         "emoji": "📖",
-        "micro_theme": "Offer your work with sincerity",
-        "micro_theme_te": "Offer your work with sincerity",
+        "micro_theme": "Always Safe",
+        "micro_theme_te": "",
         "shlokas": [
           "9.22",
           "9.31"
@@ -1389,62 +837,16 @@
         "activity": "Draw how Arjun made a good choice today.",
         "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
-      },
-      {
-        "id": "theme_sd9_03",
-        "title": "Everyone deserves kindness",
-        "title_te": "Everyone deserves kindness",
-        "emoji": "💡",
-        "micro_theme": "Everyone deserves kindness",
-        "micro_theme_te": "Everyone deserves kindness",
-        "shlokas": [
-          "9.29",
-          "9.30"
-        ],
-        "story": {
-          "title": "Maya's Choice",
-          "title_te": "Maya యొక్క ఎంపిక",
-          "content": "Maya had a school day that tested something important. In the Gita, Chapter 9 teaches: I am the same to all creation; there is none hateful or dear to me. But those who worship me with devotion abide in me, and I in them. If even the most sinful man worships Me with undivided devotion, ... Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 9 బోధన: I am the same to all creation; there is none hateful or dear to me. But those who worship me with devotion abide in me, and I in them. If even the most sinful man worships Me with ... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Everyone deserves kindness.",
-          "moral_te": "Everyone deserves kindness"
-        },
-        "activity": "Draw how Maya made a good choice today.",
-        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
-      },
-      {
-        "id": "theme_sd9_04",
-        "title": "Anyone can become better",
-        "title_te": "Anyone can become better",
-        "emoji": "🌟",
-        "micro_theme": "Anyone can become better",
-        "micro_theme_te": "Anyone can become better",
-        "shlokas": [
-          "9.32",
-          "9.33"
-        ],
-        "story": {
-          "title": "Dev's Choice",
-          "title_te": "Dev యొక్క ఎంపిక",
-          "content": "Dev had a school day that tested something important. In the Gita, Chapter 9 teaches: Quickly, he becomes righteous and obtains everlasting peace. Affirm on My behalf, O Arjuna, that My devotee never perishes. Focus your mind on Me, be My devotee, worship Me. Bow down to Me. Engaging y... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
-          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 9 బోధన: Quickly, he becomes righteous and obtains everlasting peace. Affirm on My behalf, O Arjuna, that My devotee never perishes. Focus your mind on Me, be My devotee, worship Me. Bow do... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
-          "moral": "Remember: Anyone can become better.",
-          "moral_te": "Anyone can become better"
-        },
-        "activity": "Draw how Dev made a good choice today.",
-        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
-        "videoUrl": ""
       }
     ],
     "10": [
       {
         "id": "theme_sd10_01",
-        "title": "Wisdom comes from devotion",
+        "title": "The Best of the Best",
         "title_te": "Wisdom comes from devotion",
         "emoji": "🌱",
-        "micro_theme": "Wisdom comes from devotion",
-        "micro_theme_te": "Wisdom comes from devotion",
+        "micro_theme": "The Best of the Best",
+        "micro_theme_te": "",
         "shlokas": [
           "10.21",
           "10.41"
@@ -1463,11 +865,11 @@
       },
       {
         "id": "theme_sd10_02",
-        "title": "God brings light into our hearts",
+        "title": "The Mightiest Friends",
         "title_te": "God brings light into our hearts",
         "emoji": "📖",
-        "micro_theme": "God brings light into our hearts",
-        "micro_theme_te": "God brings light into our hearts",
+        "micro_theme": "The Mightiest Friends",
+        "micro_theme_te": "",
         "shlokas": [
           "10.27",
           "10.30"
@@ -1486,10 +888,10 @@
       },
       {
         "id": "theme_sd10_03",
-        "title": "Goodness All Around",
+        "title": "The Inner Lamp",
         "title_te": "చుట్టూ మంచిది",
         "emoji": "🌟",
-        "micro_theme": "excellence everywhere",
+        "micro_theme": "The Inner Lamp",
         "micro_theme_te": "ప్రతిచోటా శ్రేష్ఠత",
         "shlokas": [
           "10.10",
@@ -1506,16 +908,39 @@
         "activity": "Tell your family the story \"Stars in Many Skills\" in your own words. What would you do in Dev's place?",
         "activity_te": "\"అనేక నైపుణ్యాలలో నక్షత్రాలు\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Dev స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sd10_04",
+        "title": "The Secret Heart",
+        "title_te": "The Secret Heart",
+        "emoji": "🌟",
+        "micro_theme": "The Secret Heart",
+        "micro_theme_te": "",
+        "shlokas": [
+          "10.20",
+          "10.39"
+        ],
+        "story": {
+          "title": "Dev's Choice",
+          "title_te": "Dev యొక్క ఎంపిక",
+          "content": "Dev had a school day that tested something important. In the Gita, Chapter 10 teaches: I am the Self, O Arjuna, dwelling in the hearts of all beings; I am the beginning, the middle, and the end of all beings. I am also that which is the seed of all beings, O Arjuna. Nothing that moves o... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 10 బోధన: I am the Self, O Arjuna, dwelling in the hearts of all beings; I am the beginning, the middle, and the end of all beings. I am also that which is the seed of all beings, O Arjuna. ... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: The Secret Heart.",
+          "moral_te": "The Secret Heart"
+        },
+        "activity": "Draw how Dev made a good choice today.",
+        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
       }
     ],
     "11": [
       {
         "id": "theme_sd11_01",
-        "title": "Some truths are bigger than imagination",
+        "title": "The Eyes of the World",
         "title_te": "Some truths are bigger than imagination",
         "emoji": "🌱",
-        "micro_theme": "Some truths are bigger than imagination",
-        "micro_theme_te": "Some truths are bigger than imagination",
+        "micro_theme": "The Eyes of the World",
+        "micro_theme_te": "",
         "shlokas": [
           "11.8",
           "11.12"
@@ -1534,10 +959,10 @@
       },
       {
         "id": "theme_sd11_02",
-        "title": "Love and Respect Together",
+        "title": "The Great Protector",
         "title_te": "ప్రేమ మరియు గౌరవం కలిసి",
         "emoji": "💡",
-        "micro_theme": "devotion in wonder",
+        "micro_theme": "The Great Protector",
         "micro_theme_te": "ఆశ్చర్యంలో భక్తి",
         "shlokas": [
           "11.32",
@@ -1554,16 +979,39 @@
         "activity": "Tell your family the story \"Thank You, Teacher\" in your own words. What would you do in Maya's place?",
         "activity_te": "\"ధన్యవాదాలు, టీచర్\" కథను మీ మాటలలో కుటుంబానికి చెప్పండి. Maya స్థానంలో మీరు ఏమి చేస్తారు?",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sd11_03",
+        "title": "Just Love",
+        "title_te": "Just Love",
+        "emoji": "💡",
+        "micro_theme": "Just Love",
+        "micro_theme_te": "",
+        "shlokas": [
+          "11.54",
+          "11.55"
+        ],
+        "story": {
+          "title": "Maya's Choice",
+          "title_te": "Maya యొక్క ఎంపిక",
+          "content": "Maya had a school day that tested something important. In the Gita, Chapter 11 teaches: But by single-minded devotion, O Arjuna, it is possible to truly know, to see, and to enter into Me, who am of this form, O harasser of foes. Whoever works for Me, regards Me as the highest and is dev... Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 11 బోధన: But by single-minded devotion, O Arjuna, it is possible to truly know, to see, and to enter into Me, who am of this form, O harasser of foes. Whoever works for Me, regards Me as th... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Just Love.",
+          "moral_te": "Just Love"
+        },
+        "activity": "Draw how Maya made a good choice today.",
+        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
       }
     ],
     "12": [
       {
         "id": "theme_sd12_01",
-        "title": "Kindness and patience are strengths",
+        "title": "Talking to Love",
         "title_te": "Kindness and patience are strengths",
         "emoji": "🌱",
-        "micro_theme": "Kindness and patience are strengths",
-        "micro_theme_te": "Kindness and patience are strengths",
+        "micro_theme": "Talking to Love",
+        "micro_theme_te": "",
         "shlokas": [
           "12.2",
           "12.5"
@@ -1582,11 +1030,11 @@
       },
       {
         "id": "theme_sd12_02",
-        "title": "Peaceful people make others feel safe",
+        "title": "Do Your Best",
         "title_te": "Peaceful people make others feel safe",
         "emoji": "📖",
-        "micro_theme": "Peaceful people make others feel safe",
-        "micro_theme_te": "Peaceful people make others feel safe",
+        "micro_theme": "Do Your Best",
+        "micro_theme_te": "",
         "shlokas": [
           "12.8",
           "12.10"
@@ -1605,11 +1053,11 @@
       },
       {
         "id": "theme_sd12_03",
-        "title": "Treat everyone fairly",
+        "title": "Everyone's Friend",
         "title_te": "Treat everyone fairly",
         "emoji": "💡",
-        "micro_theme": "Treat everyone fairly",
-        "micro_theme_te": "Treat everyone fairly",
+        "micro_theme": "Everyone's Friend",
+        "micro_theme_te": "",
         "shlokas": [
           "12.13",
           "12.14"
@@ -1630,11 +1078,11 @@
     "13": [
       {
         "id": "theme_sd13_01",
-        "title": "Humility helps us learn",
+        "title": "The Magic Garden",
         "title_te": "Humility helps us learn",
         "emoji": "🌱",
-        "micro_theme": "Humility helps us learn",
-        "micro_theme_te": "Humility helps us learn",
+        "micro_theme": "The Magic Garden",
+        "micro_theme_te": "",
         "shlokas": [
           "13.1",
           "13.2"
@@ -1653,11 +1101,11 @@
       },
       {
         "id": "theme_sd13_02",
-        "title": "The soul experiences life through the body",
+        "title": "Planting Kindness",
         "title_te": "The soul experiences life through the body",
         "emoji": "📖",
-        "micro_theme": "The soul experiences life through the body",
-        "micro_theme_te": "The soul experiences life through the body",
+        "micro_theme": "Planting Kindness",
+        "micro_theme_te": "",
         "shlokas": [
           "13.7",
           "13.8"
@@ -1673,16 +1121,39 @@
         "activity": "Draw how Arjun made a good choice today.",
         "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sd13_03",
+        "title": "The Bright Sun",
+        "title_te": "The Bright Sun",
+        "emoji": "💡",
+        "micro_theme": "The Bright Sun",
+        "micro_theme_te": "",
+        "shlokas": [
+          "13.33",
+          "13.34"
+        ],
+        "story": {
+          "title": "Maya's Choice",
+          "title_te": "Maya యొక్క ఎంపిక",
+          "content": "Maya had a school day that tested something important. In the Gita, Chapter 13 teaches: As the all-pervading ether is not tainted due to its subtlety, even so, the self abiding in the body is not tainted everywhere. As the one sun illuminates this entire world, so does the Knower of the ... Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 13 బోధన: As the all-pervading ether is not tainted due to its subtlety, even so, the self abiding in the body is not tainted everywhere. As the one sun illuminates this entire world, so doe... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: The Bright Sun.",
+          "moral_te": "The Bright Sun"
+        },
+        "activity": "Draw how Maya made a good choice today.",
+        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
       }
     ],
     "14": [
       {
         "id": "theme_sd14_01",
-        "title": "Good habits and restless habits shape us",
+        "title": "The Red, Yellow, and Blue",
         "title_te": "Good habits and restless habits shape us",
         "emoji": "🌱",
-        "micro_theme": "Good habits and restless habits shape us",
-        "micro_theme_te": "Good habits and restless habits shape us",
+        "micro_theme": "The Red, Yellow, and Blue",
+        "micro_theme_te": "",
         "shlokas": [
           "14.5",
           "14.6"
@@ -1701,11 +1172,11 @@
       },
       {
         "id": "theme_sd14_02",
-        "title": "Laziness can trap us",
+        "title": "Choosing the Light",
         "title_te": "Laziness can trap us",
         "emoji": "📖",
-        "micro_theme": "Laziness can trap us",
-        "micro_theme_te": "Laziness can trap us",
+        "micro_theme": "Choosing the Light",
+        "micro_theme_te": "",
         "shlokas": [
           "14.11",
           "14.18"
@@ -1724,11 +1195,11 @@
       },
       {
         "id": "theme_sd14_03",
-        "title": "Wisdom helps us rise above negativity",
+        "title": "Above the Colors",
         "title_te": "Wisdom helps us rise above negativity",
         "emoji": "💡",
-        "micro_theme": "Wisdom helps us rise above negativity",
-        "micro_theme_te": "Wisdom helps us rise above negativity",
+        "micro_theme": "Above the Colors",
+        "micro_theme_te": "",
         "shlokas": [
           "14.20",
           "14.26"
@@ -1749,14 +1220,14 @@
     "15": [
       {
         "id": "theme_sd15_01",
-        "title": "Life is a journey of learning",
+        "title": "The Sky-Root Tree",
         "title_te": "Life is a journey of learning",
         "emoji": "🌱",
-        "micro_theme": "Life is a journey of learning",
-        "micro_theme_te": "Life is a journey of learning",
+        "micro_theme": "The Sky-Root Tree",
+        "micro_theme_te": "",
         "shlokas": [
           "15.1",
-          "15.2"
+          "15.3"
         ],
         "story": {
           "title": "Riya's Choice",
@@ -1772,11 +1243,11 @@
       },
       {
         "id": "theme_sd15_02",
-        "title": "Every soul is special and guided",
+        "title": "The Sun Inside",
         "title_te": "Every soul is special and guided",
         "emoji": "📖",
-        "micro_theme": "Every soul is special and guided",
-        "micro_theme_te": "Every soul is special and guided",
+        "micro_theme": "The Sun Inside",
+        "micro_theme_te": "",
         "shlokas": [
           "15.6",
           "15.12"
@@ -1792,15 +1263,38 @@
         "activity": "Draw how Arjun made a good choice today.",
         "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sd15_03",
+        "title": "The Secret Guest",
+        "title_te": "The Secret Guest",
+        "emoji": "💡",
+        "micro_theme": "The Secret Guest",
+        "micro_theme_te": "",
+        "shlokas": [
+          "15.15",
+          "15.18"
+        ],
+        "story": {
+          "title": "Maya's Choice",
+          "title_te": "Maya యొక్క ఎంపిక",
+          "content": "Maya had a school day that tested something important. In the Gita, Chapter 15 teaches: God lives in everyone’s heart. He gives memory and knowledge. All holy books talk about Him. God is greater than both the changing world and the unchanging soul. That’s why He is called Supreme. Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 15 బోధన: దేవుడు అందరి హృదయంలో ఉంటాడు. జ్ఞాపకం, తెలివి ఆయన నుండే వస్తాయి. అన్ని పవిత్ర గ్రంథాలు ఆయన గురించే చెబుతాయి. దేవుడు మారే ప్రపంచం కంటే, మారని ఆత్మ కంటే కూడా గొప్పవాడు. అందుకే ఆయనను ప... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: The Secret Guest.",
+          "moral_te": "The Secret Guest"
+        },
+        "activity": "Draw how Maya made a good choice today.",
+        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
       }
     ],
     "16": [
       {
         "id": "theme_sd16_01",
-        "title": "Growing Good Qualities",
+        "title": "The Hero's Toolbox",
         "title_te": "మంచి గుణాలు పెంపడం",
         "emoji": "🌱",
-        "micro_theme": "divine qualities",
+        "micro_theme": "The Hero's Toolbox",
         "micro_theme_te": "దైవీ లక్షణాలు",
         "shlokas": [
           "16.1",
@@ -1820,11 +1314,11 @@
       },
       {
         "id": "theme_sd16_02",
-        "title": "Good qualities help us grow",
+        "title": "The Grumpy Clouds",
         "title_te": "Good qualities help us grow",
         "emoji": "📖",
-        "micro_theme": "Good qualities help us grow",
-        "micro_theme_te": "Good qualities help us grow",
+        "micro_theme": "The Grumpy Clouds",
+        "micro_theme_te": "",
         "shlokas": [
           "16.4",
           "16.21"
@@ -1843,11 +1337,11 @@
       },
       {
         "id": "theme_sd16_03",
-        "title": "Anger, greed, and desire hurt peace",
+        "title": "The Rule Book",
         "title_te": "Anger, greed, and desire hurt peace",
         "emoji": "💡",
-        "micro_theme": "Anger, greed, and desire hurt peace",
-        "micro_theme_te": "Anger, greed, and desire hurt peace",
+        "micro_theme": "The Rule Book",
+        "micro_theme_te": "",
         "shlokas": [
           "16.23",
           "16.24"
@@ -1868,10 +1362,10 @@
     "17": [
       {
         "id": "theme_sd17_01",
-        "title": "Belief Shows in Actions",
+        "title": "Yummy for the Tummy",
         "title_te": "నమ్మకం చర్యలలో కనిపిస్తుంది",
         "emoji": "🌱",
-        "micro_theme": "faith shapes actions",
+        "micro_theme": "Yummy for the Tummy",
         "micro_theme_te": "శ్రద్ధ చర్యలను రూపొందిస్తుంది",
         "shlokas": [
           "17.8",
@@ -1891,11 +1385,11 @@
       },
       {
         "id": "theme_sd17_02",
-        "title": "Kind words are also discipline",
+        "title": "The Happy Tongue",
         "title_te": "Kind words are also discipline",
         "emoji": "📖",
-        "micro_theme": "Kind words are also discipline",
-        "micro_theme_te": "Kind words are also discipline",
+        "micro_theme": "The Happy Tongue",
+        "micro_theme_te": "",
         "shlokas": [
           "17.15",
           "17.16"
@@ -1911,16 +1405,62 @@
         "activity": "Draw how Arjun made a good choice today.",
         "activity_te": "Arjun ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
         "videoUrl": ""
+      },
+      {
+        "id": "theme_sd17_03",
+        "title": "Giving with Love",
+        "title_te": "Giving with Love",
+        "emoji": "💡",
+        "micro_theme": "Giving with Love",
+        "micro_theme_te": "",
+        "shlokas": [
+          "17.20",
+          "17.22"
+        ],
+        "story": {
+          "title": "Maya's Choice",
+          "title_te": "Maya యొక్క ఎంపిక",
+          "content": "Maya had a school day that tested something important. In the Gita, Chapter 17 teaches: Gifts given with the feeling that it is one's own duty to give, to one who makes no return, at the proper place and time to the deserving person—that is said... That gift which is given at the wrong p... Maya felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Maya felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Mayaకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 17 బోధన: Gifts given with the feeling that it is one's own duty to give, to one who makes no return, at the proper place and time to the deserving person—that is said... That gift which is ... Maya మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Giving with Love.",
+          "moral_te": "Giving with Love"
+        },
+        "activity": "Draw how Maya made a good choice today.",
+        "activity_te": "Maya ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
+      },
+      {
+        "id": "theme_sd17_04",
+        "title": "Om Tat Sat",
+        "title_te": "Om Tat Sat",
+        "emoji": "🌟",
+        "micro_theme": "Om Tat Sat",
+        "micro_theme_te": "",
+        "shlokas": [
+          "17.23",
+          "17.28"
+        ],
+        "story": {
+          "title": "Dev's Choice",
+          "title_te": "Dev యొక్క ఎంపిక",
+          "content": "Dev had a school day that tested something important. In the Gita, Chapter 17 teaches: Om, Tat, Sat—thus, Brahman is denoted by this threefold expression. In the past, Brahmanas, the Vedas, and sacrifices were ordained in association with these. Whatever offering or gift is made, whatev... Dev felt unsure at first, then took a deep breath and chose kindness and courage. That evening, Dev felt peaceful inside—not because everyone cheered, but because the heart knew the choice was right.",
+          "content_te": "Devకి పాఠశాలలో ఒక ముఖ్యమైన పాఠం వచ్చింది. అధ్యాయం 17 బోధన: Om, Tat, Sat—thus, Brahman is denoted by this threefold expression. In the past, Brahmanas, the Vedas, and sacrifices were ordained in association with these. Whatever offering or ... Dev మొదట సంకోచించాడు, తర్వాత లోతైన శ్వాస తీసుకుని దయ మరియు ధైర్యం ఎంచుకున్నాడు.",
+          "moral": "Remember: Om Tat Sat.",
+          "moral_te": "Om Tat Sat"
+        },
+        "activity": "Draw how Dev made a good choice today.",
+        "activity_te": "Dev ఈరోజు మంచి ఎంపిక ఎలా చేసాడో బొమ్మ గీయండి.",
+        "videoUrl": ""
       }
     ],
     "18": [
       {
         "id": "theme_sd18_01",
-        "title": "Use your talents to help the world",
+        "title": "The Best Kind of Happy",
         "title_te": "Use your talents to help the world",
         "emoji": "🌱",
-        "micro_theme": "Use your talents to help the world",
-        "micro_theme_te": "Use your talents to help the world",
+        "micro_theme": "The Best Kind of Happy",
+        "micro_theme_te": "",
         "shlokas": [
           "18.37",
           "18.38"
@@ -1939,11 +1479,11 @@
       },
       {
         "id": "theme_sd18_02",
-        "title": "Nobody is perfect while learning",
+        "title": "Your Special Path",
         "title_te": "Nobody is perfect while learning",
         "emoji": "📖",
-        "micro_theme": "Nobody is perfect while learning",
-        "micro_theme_te": "Nobody is perfect while learning",
+        "micro_theme": "Your Special Path",
+        "micro_theme_te": "",
         "shlokas": [
           "18.45",
           "18.46"
@@ -1962,11 +1502,11 @@
       },
       {
         "id": "theme_sd18_03",
-        "title": "Trust God with love and faith",
+        "title": "You are Never Alone",
         "title_te": "Trust God with love and faith",
         "emoji": "💡",
-        "micro_theme": "Trust God with love and faith",
-        "micro_theme_te": "Trust God with love and faith",
+        "micro_theme": "You are Never Alone",
+        "micro_theme_te": "",
         "shlokas": [
           "18.61",
           "18.66"

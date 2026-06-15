@@ -10,8 +10,8 @@ const SEEDS_PATH = path.join(__dirname, 'data', 'gita-seeds-curriculum.json');
 const SEEKERS_PATH = path.join(__dirname, 'data', 'gita-seekers-curriculum.json');
 
 const EXPECTED = {
-  seeds: 80,
-  seekers: 100,
+  seeds: 60,
+  seekers: 60,
 };
 
 function stringifyChapters(chapters) {
