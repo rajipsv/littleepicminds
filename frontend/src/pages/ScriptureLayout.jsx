@@ -460,14 +460,6 @@ const ScriptureLayout = () => {
                     >
                       {isTe ? "తర్వాత →" : "Next →"}
                     </button>
-                    <button
-                      type="button"
-                      onClick={() => setShowQuiz(true)}
-                      className="flex items-center gap-2 bg-lem-accent/10 border border-lem-accent/40 text-lem-accent px-4 py-2 rounded-xl text-sm font-black hover:bg-lem-accent hover:text-lem-dark transition-all"
-                    >
-                      <Star size={16} />
-                      {isTe ? "పరీక్ష" : "Test Theme"}
-                    </button>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 max-h-[280px] overflow-y-auto pr-1">
@@ -513,7 +505,8 @@ const ScriptureLayout = () => {
               ) : (
                 <ThemeViewer 
                   theme={themes[activeThemeIndex]} 
-                  scripture={scripture} 
+                  scripture={scripture}
+                  onStartQuiz={() => setShowQuiz(true)}
                 />
               )}
             </div>

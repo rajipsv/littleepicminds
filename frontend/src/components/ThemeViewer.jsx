@@ -6,12 +6,18 @@ import MatchingGame from './MatchingGame';
 import { BookOpen, Star, Volume2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
-const ThemeViewer = ({ theme, scripture }) => {
+const ThemeViewer = ({ theme, scripture, onStartQuiz }) => {
   const [activeTab, setActiveTab] = useState('story'); // 'story', 'shlokas', 'activity'
   const { currentLang } = useAuth();
   const isTe = currentLang === 'te';
 
   if (!theme) return null;
+
+  const storyText = isTe && theme.story.content_te ? theme.story.content_te : theme.story.content;
+  const storyParagraphs = storyText
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter(Boolean);
 
   return (
     <div className="animate-fade-in">
@@ -46,6 +52,15 @@ const ThemeViewer = ({ theme, scripture }) => {
         >
           <Star size={18} /> {isTe ? "కార్యకలాపం" : "Activity"}
         </button>
+        {onStartQuiz && (
+          <button
+            type="button"
+            onClick={onStartQuiz}
+            className="px-4 md:px-6 py-2 rounded-xl font-bold transition-all flex items-center gap-2 whitespace-nowrap bg-lem-accent/10 border border-lem-accent/40 text-lem-accent hover:bg-lem-accent hover:text-lem-dark"
+          >
+            <Star size={18} /> {isTe ? "పరీక్ష" : "Test Theme"}
+          </button>
+        )}
       </div>
 
       {/* Tab Content */}
@@ -60,9 +75,13 @@ const ThemeViewer = ({ theme, scripture }) => {
               </div>
               <h3 className="text-2xl font-bold text-white">{isTe && theme.story.title_te ? theme.story.title_te : theme.story.title}</h3>
             </div>
-            <p className="text-lg text-gray-300 leading-relaxed font-medium">
-              {isTe && theme.story.content_te ? theme.story.content_te : theme.story.content}
-            </p>
+            <div className="space-y-5">
+              {storyParagraphs.map((paragraph, index) => (
+                <p key={index} className="text-lg text-gray-300 leading-relaxed font-medium">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
             <div className="mt-8 bg-lem-dark p-6 rounded-xl border-l-4 border-lem-accent">
               <h4 className="text-lem-accent font-black uppercase tracking-widest text-sm mb-2">{isTe ? "నీతి" : "The Moral"}</h4>
               <p className="text-white font-bold text-lg">{isTe && theme.story.moral_te ? theme.story.moral_te : theme.story.moral}</p>
