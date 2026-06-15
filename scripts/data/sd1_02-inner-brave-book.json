@@ -1,0 +1,55 @@
+{
+  "stories": {
+    "sd1_02": {
+      "id": "sd1_02",
+      "title": "The Inner Brave",
+      "title_te": "లోపల ధైర్యం",
+      "emoji": "🐿️",
+      "micro_theme": "Taking the Lead (Standing Your Ground)",
+      "micro_theme_te": "నాయకత్వం — నిలబడి నిలకడగా ఉండడం",
+      "storyTitle": "Gulu and the Crossroad",
+      "storyTitle_te": "గులు మరియు క్రాస్‌రోడ్",
+      "content": "The Great Forest Race had started, but Gulu the squirrel reached a place where the path split in two. One path was bright with morning sun. One path was shadowy and cool. Gulu gripped his lucky twig like a tiny bow. \"Which way is the right way?\" he wondered.\n\nAbove him, a small leaf flag with a monkey symbol fluttered in the breeze. It reminded Gulu of the brave stories of Hanuman. Gulu stood a little taller. His chest felt warm, like he was finding his inner brave.\n\nGrandmother Owl landed softly on a low branch. \"Don't just pick a side because you're in a hurry, Gulu,\" she hooted. \"A true leader looks at everything first.\"\n\n\"Can we go to the very middle?\" Gulu asked. He wanted to see the bright path and the shadowy path at the same time. He wanted to be a Middle-Seeker.\n\nGrandmother Owl nodded. Together they walked to the center of the crossroad. The forest was noisy there. Some animals shouted, \"Go left!\" Others shouted, \"Go right!\" Gulu did not shout. He just stood still and listened.\n\nStanding in the middle was like having a secret window. Gulu looked left and saw sharp thorns hiding in the grass. He looked right and saw a path that was very slippery after the rain. Both sides looked tricky.\n\nBecause he stayed in the middle, Gulu saw something no one else saw. Right between the two noisy paths was a secret trail of soft, green moss—gentle, safe, and perfect for small paws.\n\n\"Look!\" Gulu called out. By standing his ground in the middle, he had found the safest way for everyone. The other animals stopped shouting and looked at Gulu with wide eyes.\n\nGulu did not just run ahead alone. He led. He picked up his twig-bow and stepped onto the moss. He wasn't afraid of the paths anymore because he had seen them both clearly.\n\n\"I found my Inner Brave,\" Gulu whispered. Grandmother Owl winked. Taking the lead wasn't about being first—it was about finding the truth for everyone.\n\nGulu remembered the Gita story Grandmother Owl had told him: brave Arjuna, with Hanuman on his flag, lifted his bow when the challenge began. Then he asked Krishna to stop the chariot in the middle of the field so he could see everyone clearly before choosing. That was the same kind of brave—standing in the middle to see the whole picture.",
+      "content_te": "గొప్ప అడవి పరుగu మొదలైందi, కానీ ఉడుత గులu రెండు దారులu విడిపోయే చోటu చేరాడు. ఒక దారi morning sun tho merisindi. maro daari nillala cool ga undi. Gulu tana lucky twig ni chinna bow la pattukunnadu. \"E daari correct?\" ani alochinchadu.\n\nPaina oka leaf flag lo monkey symbol gali lo egurutundi. Hanuman goppa kathalu gurtu vachayi. Gulu konchem ettu ga nilichadu — lopala dhairyam kanipinchindi.\n\nGrandmother Owl mriduvuga branch meeda digindi. \"Toraga oka vippu emchuko, Gulu,\" ani hoot chesindi. \"Nijamaina leader mundu anni chustadu.\"\n\n\"Madhyalo vellochema?\" Gulu adigadu. Bright path kooda, shadow path kooda okesari chudali anukunnadu. Middle-Seeker avvali.\n\nOwl talavunindi. Crossroad madhyalo vellaru. Adavi chala noisy. Konni jantuvulu \"Left!\" ani arustunnayi. Inkondaru \"Right!\" ani. Gulu aravale. Nishabdamga vinadu.\n\nMadhyalo nilabadatam secret window la. Left lo sharp thorns kanipinchaayi. Right lo slippery path. Rendu tricky.\n\nMadhyalo undi Gulu vere evvaru choodani vishayam chusaadu — rendu noisy paths madhya soft green moss trail!\n\n\"Chudandi!\" Gulu pilichadu. Madhyalo nilabadi andariki safe daari kanipettadu. Jantuvulu aagipoyi chusaru.\n\nGulu okkade parigettale — lead chesadu. Twig-bow pattukoni moss meeda adug vesadu. Rendu daarulu clear ga chusaka bhayam ledu.\n\n\"Na Inner Brave kanipettanu,\" Gulu gusagusa. Owl kindiki kindiki chusi. Lead ante first kaadu — truth kanipettadam andariki.\n\nGulu Gita katha gurtu chesukunnadu: Arjuna, Hanuman flag tho, challenge modata bow ettuadu. Taruvata Krishna ni madhyalo ratham aapamani adigadu — rendu sides clear ga chusi emchukovadaniki. Ade brave — middle lo nilabadi whole picture choodatam.",
+      "moral": "A brave heart stands in the middle to see the truth. When you see the whole picture, you can lead with fairness and wisdom.",
+      "moral_te": "ధైర్యమైన గుండె సత్యం చూడడానికi మధ్యలo నిలబడutundi. Purna chitram kanipisthe, nyayamga mariyu teliviga nayakatvam cheyochu.",
+      "activity": "Before I pick a side, I stand in the middle and look. When I see the whole picture, I choose wisely.",
+      "activity_te": "Nenu oka vippu emchukune mundu, madhyalo nilabadi chustanu. Purna chitram kanipisthe, teliviga emchukuntanu.",
+      "wisdomJournal": "Arjuna asked to be moved to the middle so he could see everything. Is there a time today when you can 'stand in the middle' and listen to two different ideas before picking your favorite?",
+      "wisdomJournal_te": "Arjuna madhyalo vellamani adigadu — anni chudataniki. Eeroju meeru rendu different ideas vinnaka mee favorite emchukovachu — alanti samayam unda?",
+      "_shlokas": ["1.20", "1.21"],
+      "storyQuiz": [
+        {
+          "question": "What did Gulu find at the crossroad?",
+          "question_te": "Crossroad daggara Gulu emi kanipettadu?",
+          "options": ["A snack", "A split in the path", "A bed"],
+          "correct": 1
+        },
+        {
+          "question": "What symbol was on the flag above Gulu?",
+          "question_te": "Gulu meeda flag lo em symbol undi?",
+          "options": ["A star", "A monkey", "A fish"],
+          "correct": 1
+        },
+        {
+          "question": "Where did Gulu ask to go?",
+          "question_te": "Gulu ekkadiki vellamani adigadu?",
+          "options": ["To the left", "To the middle", "To the right"],
+          "correct": 1
+        },
+        {
+          "question": "What did Gulu find in the middle?",
+          "question_te": "Madhyalo Gulu emi kanipettadu?",
+          "options": ["A hidden mossy path", "A big hole", "A treasure chest"],
+          "correct": 0
+        },
+        {
+          "question": "A leader is someone who...",
+          "question_te": "Leader ante evaru?",
+          "options": ["Shouts the loudest", "Runs the fastest", "Sees the whole picture"],
+          "correct": 2
+        }
+      ]
+    }
+  }
+}
