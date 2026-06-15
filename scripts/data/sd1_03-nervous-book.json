@@ -1,0 +1,55 @@
+{
+  "stories": {
+    "sd1_03": {
+      "id": "sd1_03",
+      "title": "It's Okay to be Nervous",
+      "title_te": "నర్వస్ అనిపించడం సరే",
+      "emoji": "🐿️",
+      "micro_theme": "It's Okay to be Nervous",
+      "micro_theme_te": "నర్వస్ అనిపించడం సరే",
+      "storyTitle": "Gulu and the Butterfly Breath",
+      "storyTitle_te": "గులు మరియు సీతాకోక చిలుక శ్వాస",
+      "content": "Gulu was right in the middle of the forest path. But suddenly, his paws felt like they were made of jelly. The finish line felt a million miles away.\n\nHis thump-thump heart was so loud he thought the squirrels in the next tree could hear it. His mouth felt dry, like he had swallowed a puff of dust.\n\nGulu sat down on a soft patch of moss. He put his lucky twig-bow on the ground. \"I don't feel like a hero today,\" he whispered.\n\nGrandmother Owl swooped down. \"What's wrong, little runner?\" she asked. Gulu sniffled. \"My butterflies are too big. They are heavy like rocks.\"\n\n\"Gulu,\" Grandmother Owl whispered, \"did you know that even the Great Prince Arjuna sat down because he felt shaky? Being a hero doesn't mean you are never nervous.\"\n\nGulu looked surprised. \"Really? A Prince with a golden bow felt shaky paws too?\" Grandmother Owl nodded. \"Yes. The bravest thing he did was say it out loud.\"\n\nGulu took a slow breath. In... and out. He realized that the butterflies weren't trying to stop him. They were just his Power Engines warming up.\n\n\"It's okay to feel nervous,\" Gulu told his butterflies. \"You can stay. We can run together.\" The butterflies didn't vanish, but they felt lighter.\n\nGulu picked up his lucky twig. His paws still felt a little bit tingly, but they weren't jelly anymore. He stood up and looked at the finish hill.\n\nGulu didn't run like a lightning bolt. He ran like a steady little stream. He knew that heroes aren't people who have no fear—they are people who keep going even with shaky paws.\n\nGrandmother Owl had told him the Gita story: when brave Arjuna saw everyone he loved ready on the field, his legs felt weak and his mouth went dry. He told Krishna honestly how he felt. Then he sat down in his chariot and put his bow aside—just long enough to breathe before being brave again.",
+      "content_te": "గులు అడవి మార్గం మధ్యలో ఉన్నాడు. suddenly, tana paadalu jelly la anipinchaayi. Finish line million miles dooram la undi.\n\nGunde thump-thump chala loud — pakkinti squirrels vinagalaru. Noti dry ga, dust puff swallow chesinatlu.\n\nGulu soft moss meeda koorchunnaadu. Lucky twig-bow bhoomi meeda pettaadu. \"Eeroju hero la feel avvatam ledu,\" ani gusagusa.\n\nGrandmother Owl digindi. \"Em ayindi, chinna runner?\" Gulu sniffle chesadu. \"Na butterflies chala pedda. Rocks la heavy.\"\n\n\"Gulu,\" Owl gusagusa, \"Great Prince Arjuna kuda shaky ga feel ayyi koorchunnada telusa? Hero ante never nervous kaadu.\"\n\nGulu surprise. \"Really? Golden bow unna Prince ki kuda shaky paws aa?\" Owl talavunindi. \"Avunu. Bravest thing — honest ga cheppadam.\"\n\nGulu slow breath. In... out. Butterflies stop cheyatam ledu — Power Engines warm up avutunnayi.\n\n\"Nervous feel avvadam okay,\" Gulu butterflies ki. \"Meeru undandi. Kalisi parigeddam.\" Butterflies poyavu kaani light ga ayyayi.\n\nGulu twig ettuadu. Paadalu konchem tingly kaani jelly kaadu. Leki nilichadu, finish hill chusadu.\n\nLightning la kaadu — steady stream la parigettadu. Heroes ante no fear kaadu — shaky paws tho kuda continue chese vaallu.\n\nOwl Gita katha cheppindi: Arjuna andarini field lo chusi legs weak, mouth dry. Krishna ki honest ga cheppadu. Taruvata chariot lo koorchuni bow aside pettaadu — breathe chesi malli brave avvadaniki.",
+      "moral": "It is okay to feel nervous or shaky. Even the biggest heroes feel butterflies. When you say how you feel and breathe, heavy rocks can turn into brave sparks.",
+      "moral_te": "Nervous or shaky feel avvadam okay. Pedda heroes ki kuda butterflies untayi. Feelings cheppi breathe chesthe, heavy rocks brave sparks ga maarutayi.",
+      "activity": "It's okay to feel nervous. I breathe in and out, say how I feel, then try again—even with shaky paws.",
+      "activity_te": "Nervous feel avvadam okay. Nenu breathe chestanu, na feeling cheptanu, taruvata malli try chestanu — shaky paws unna kuda.",
+      "wisdomJournal": "Gulu learned that even Prince Arjuna felt shaky paws. Is there something that makes you feel a little shaky today? Can you tell your butterflies \"It's okay, let's run together\"?",
+      "wisdomJournal_te": "Gulu Prince Arjuna kuda shaky paws feel ayyaadu ani nerchukunnadu. Eeroju meeku konchem shaky feel chese vishayam unda? Me butterflies ki \"It's okay, kalisi parigeddam\" cheppagalara?",
+      "_shlokas": ["1.28", "1.47"],
+      "storyQuiz": [
+        {
+          "question": "How did Gulu's paws feel at the start?",
+          "question_te": "Modata Gulu paadalu ela anipinchaayi?",
+          "options": ["Like iron", "Like jelly", "Like feathers"],
+          "correct": 1
+        },
+        {
+          "question": "Where did Gulu sit down to rest?",
+          "question_te": "Gulu ekkada rest kosam koorchunnaadu?",
+          "options": ["On a rock", "On soft moss", "In a puddle"],
+          "correct": 1
+        },
+        {
+          "question": "What did Grandmother Owl tell Gulu about Prince Arjuna?",
+          "question_te": "Owl Arjuna gurinchi Gulu ki em cheppindi?",
+          "options": ["He was never scared", "He sat down because he felt shaky too", "He was a fast runner"],
+          "correct": 1
+        },
+        {
+          "question": "Gulu's butterflies were actually his...",
+          "question_te": "Gulu butterflies actually enti?",
+          "options": ["Enemies", "Power Engines", "Lunch"],
+          "correct": 1
+        },
+        {
+          "question": "What did Gulu do with his butterflies?",
+          "question_te": "Gulu butterflies tho em chesadu?",
+          "options": ["He chased them away", "He ran together with them", "He hid from them"],
+          "correct": 1
+        }
+      ]
+    }
+  }
+}
