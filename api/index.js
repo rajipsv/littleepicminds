@@ -541,14 +541,29 @@ router.get('/verses/quiz/:scripture/:chapter/:verse', optionalAuth, (req, res) =
     const level = req.query.level || 'seeds';
     console.log(`[DEBUG] Level: ${level}`);
 
+    const mapQuestion = (q, sectionMeta = {}) => ({
+      question: q.question,
+      question_te: q.question_te,
+      options: q.options,
+      correct: q.correct,
+      ...sectionMeta,
+    });
+
     // Helper to generate questions for a single shloka
-    const generateShlokaQuestions = (shloka, ch, v) => {
+    const generateShlokaQuestions = (shloka, ch, v, shlokaId) => {
       if (!shloka) return [];
       
-      // Use existing exercises if available
+      // Use existing exercises if available (single object or array)
       if (shloka.exercises && shloka.exercises[level]) {
         const ex = shloka.exercises[level];
-        return [{ question: ex.question, options: ex.options, correct: ex.correct }];
+        const list = Array.isArray(ex) ? ex : [ex];
+        const sid = shlokaId || `${ch}.${v}`;
+        return list.map((q) => mapQuestion(q, {
+          section: 'shloka',
+          sectionId: sid,
+          sectionLabel: `Shloka ${sid} Quiz`,
+          sectionLabel_te: `శ్లోక ${sid} పరీక్ష`,
+        }));
       }
 
       const meaning = shloka.en?.meaning || '';
@@ -590,12 +605,19 @@ router.get('/verses/quiz/:scripture/:chapter/:verse', optionalAuth, (req, res) =
       if (!theme) return res.status(404).json({ error: 'Theme not found' });
       
       let themeQuestions = [];
+      if (theme.storyQuiz && Array.isArray(theme.storyQuiz)) {
+        themeQuestions = theme.storyQuiz.map((q) => mapQuestion(q, {
+          section: 'story',
+          sectionLabel: 'Story Quiz',
+          sectionLabel_te: 'కథ పరీక్ష',
+        }));
+      }
       if (theme.shlokas && Array.isArray(theme.shlokas)) {
         theme.shlokas.forEach(shlokaId => {
           const shloka = data.shlokas[shlokaId];
           const parts = shlokaId.split('.');
           const vNum = parts[parts.length - 1];
-          const qList = generateShlokaQuestions(shloka, chapter, vNum);
+          const qList = generateShlokaQuestions(shloka, chapter, vNum, shlokaId);
           themeQuestions = [...themeQuestions, ...qList];
         });
       }

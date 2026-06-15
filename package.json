@@ -21,7 +21,7 @@
     "gita:generate-chatgpt-stories": "node scripts/generate-chatgpt-stories.js",
     "gita:import-chatgpt-stories": "node scripts/import-chatgpt-stories.js",
     "gita:import-chatgpt-stories-safe": "node scripts/import-chatgpt-stories.js --only-placeholders",
-    "gita:build-themes": "node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
+    "gita:build-themes": "node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js && node scripts/validate-theme-quizzes.js",
     "gita:build-themes-auto": "node scripts/validate-theme-clusters.js && node scripts/seed-authored-stories.js && node scripts/build-themes-from-clusters.js",
     "gita:chatgpt-themes-pipeline": "node scripts/generate-chatgpt-stories.js && node scripts/import-chatgpt-stories.js --only-placeholders && node scripts/validate-theme-clusters.js && node scripts/build-themes-from-clusters.js",
     "gita:prewarm-tts": "node scripts/prewarm-tts-cache.js",

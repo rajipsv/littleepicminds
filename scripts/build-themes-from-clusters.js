@@ -32,7 +32,7 @@ function main() {
           return;
         }
         const themeNum = id.split('_')[1];
-        out.push({
+        const theme = {
           id: `theme_${prefix}${ch}_${themeNum}`,
           title: story.title,
           title_te: story.title_te,
@@ -51,7 +51,9 @@ function main() {
           activity: story.activity,
           activity_te: story.activity_te,
           videoUrl: '',
-        });
+        };
+        if (story.storyQuiz?.length) theme.storyQuiz = story.storyQuiz;
+        out.push(theme);
       });
     }
   }

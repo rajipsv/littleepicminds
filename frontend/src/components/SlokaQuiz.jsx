@@ -147,6 +147,14 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
   }
 
   const q = questions[currentQ];
+  const sectionLabel = isTe
+    ? (q.sectionLabel_te || q.sectionLabel)
+    : q.sectionLabel;
+  const showSection = isTheme && sectionLabel && (
+    currentQ === 0 || questions[currentQ - 1]?.section !== q.section
+      || questions[currentQ - 1]?.sectionId !== q.sectionId
+  );
+
   return (
     <div className="glass-card p-6 md:p-8 animate-fade-in">
       <div className="flex justify-between items-center mb-6">
@@ -171,6 +179,12 @@ const SlokaQuiz = ({ scripture, chapter, verse, onPass, onClose }) => {
       <div className="w-full h-1.5 bg-white/5 rounded-full overflow-hidden mb-6">
         <div className="h-full bg-lem-accent transition-all duration-300" style={{ width: `${(currentQ / questions.length) * 100}%` }} />
       </div>
+
+      {showSection && (
+        <p className="text-[10px] font-black uppercase tracking-widest text-lem-accent mb-3">
+          {sectionLabel}
+        </p>
+      )}
 
       <h3 className="text-xl font-bold text-white mb-6 leading-relaxed">{isTe && q.question_te ? q.question_te : q.question}</h3>
 
