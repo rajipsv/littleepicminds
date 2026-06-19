@@ -198,7 +198,9 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     const lineCount = wordByWord.length;
     const segmentOpts = {
       introEnd: timing?.introEnd,
+      introStart: timing?.introStart,
       hasChantIntro: hasIntro,
+      midSpeakerGap: timing?.midSpeakerGap,
     };
     let duration = getManifestDuration(verseId, manifest);
     if (!duration) {
@@ -226,14 +228,10 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
       segments = buildLineSegments(guessed, lineCount, segmentOpts);
     }
 
-    const introCut =
-      timing?.introEnd ??
-      (hasIntro && timing?.lineEnds?.[0] > 0.15 ? timing.lineEnds[0] : 0);
-
     segmentsRef.current = segments;
     chantUrlRef.current = url;
     setChantTimingApprox(Boolean(segments?.length && !hasManifestTimings));
-    return { segments, url, introCut };
+    return { segments, url };
   };
 
   const playMeaningTts = async (item, index) => {
@@ -249,10 +247,7 @@ const MeaningTable = ({ wordByWord, verseId, chantIntro }) => {
     if (!segment || segment.end <= segment.start) {
       throw new Error('No segment for this row');
     }
-    if (index === 0 && chant.introCut > 0 && segment.start < chant.introCut) {
-      segment.start = chant.introCut;
-    }
-    await playChantSegment(chant.url, segment.start, segment.end, 0.9, chant.introCut || 0);
+    await playChantSegment(chant.url, segment.start, segment.end, 0.9, 0);
   };
 
   const runPlay = async (index, part) => {

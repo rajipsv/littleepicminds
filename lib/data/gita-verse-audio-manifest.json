@@ -391,19 +391,25 @@
       "trainIndex": 28,
       "local": true,
       "lineTimings": [
-        0.432,
+        3.443,
         6.505,
-        9.128,
+        12.452,
         14.981
       ],
       "lineCount": 4,
       "lineEnds": [
-        0.432,
+        3.443,
         6.505,
-        9.128,
+        12.452,
         14.981
       ],
-      "duration": 14.981
+      "duration": 14.981,
+      "midSpeakerGap": {
+        "start": 6.505,
+        "end": 9.128,
+        "label": "arjuna uvāca"
+      },
+      "introEnd": 0.432
     },
     "1.29": {
       "url": "https://datasets-server.huggingface.co/cached-assets/JDhruv14/Bhagavad-Gita_Audio/--/18b0f002d0b9af8c65d9b6113b04aed57bca051f/--/default/train/27/audio/audio.wav?Expires=1780258794&Signature=O8KzACtDCXJNVqSRZv~U7OiH~n-V~~rnYaEpahWtqPXX-nJWFEKpYNTJkvAc0UqgVMVc~5K1qdSf1wkKdh5n1qGz124zkQb1dawud0dTeQvVVKRW5rf1u-Sl029jEp5lN8C-QMzHTSUNeHeJasrylLLpGzdf-CtYbx2MhX-V9pzvmJN6g6hCPT7FZkoe23wJ7-sonAcMZZdLfP2VbPI~7iaHmcVGmUhVn0tXBbyGVPG~41s3aDK17oIadDl3m0LYQoRUWdbqN2-3z4xY7wJRDwf480YhJRflQC9oY5qzTesIYi0fG93nMu-Dtrp8PKmdFpWMOWpH4VsVSmLuTbckQA__&Key-Pair-Id=K204OQ5RWQVDLD",
@@ -13235,6 +13241,6 @@
   "syncedAt": "2026-05-31T19:19:25.360Z",
   "urlNote": "Signed HF CDN URLs expire; re-run npm run gita:sync-hf-audio -- --urls-only before playback fails.",
   "lineTimingsNote": "Line boundaries from pauses in local WAV (longest gaps = line ends). Re-run gita:line-timings after sync.",
-  "lineTimingsAt": "2026-05-31T19:22:37.820Z",
+  "lineTimingsAt": "2026-06-15T15:58:04.665Z",
   "lineEndsNote": "Pada end times (seconds); use with introEnd for narrator offset. See buildPlayBounds in frontend."
 }

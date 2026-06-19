@@ -25,6 +25,7 @@ export function getManifestTimingInput(verseId, manifestVerses = versesById, { h
   if (!entry || typeof entry !== 'object') return null;
 
   let introEnd = getManifestIntroEnd(verseId, manifestVerses);
+  const introStart = getManifestIntroStart(verseId, manifestVerses);
   let lineEnds = null;
   if (Array.isArray(entry.lineEnds) && entry.lineEnds.length >= 1) {
     lineEnds = entry.lineEnds.map((x) => Number(x)).filter((x) => Number.isFinite(x));
@@ -37,7 +38,12 @@ export function getManifestTimingInput(verseId, manifestVerses = versesById, { h
   if (!introEnd && hasChantIntro) {
     introEnd = resolveIntroCutSec({ hasChantIntro: true, lineEnds });
   }
-  return { lineEnds, introEnd };
+  const gap = entry.midSpeakerGap;
+  const midSpeakerGap =
+    gap && Number.isFinite(Number(gap.start)) && Number.isFinite(Number(gap.end))
+      ? { start: Number(gap.start), end: Number(gap.end), label: gap.label }
+      : null;
+  return { lineEnds, introEnd, introStart, midSpeakerGap };
 }
 
 export async function ensureGitaChantManifest() {
@@ -96,6 +102,14 @@ export function getManifestIntroEnd(verseId, manifestVerses = versesById) {
   if (!entry || typeof entry !== 'object') return null;
   const v = Number(entry.introEnd);
   return Number.isFinite(v) && v > 0 ? v : null;
+}
+
+export function getManifestIntroStart(verseId, manifestVerses = versesById) {
+  const entry = manifestVerses?.[verseId];
+  if (!entry || typeof entry !== 'object') return null;
+  const v = Number(entry.introStart);
+  if (Number.isFinite(v) && v >= 0) return v;
+  return null;
 }
 
 /** Duration from manifest when available — avoids a separate metadata fetch. */
@@ -178,7 +192,9 @@ export async function prefetchVerseChant(verseId, { lineCount, hasChantIntro } =
   const opts = {
     duration,
     introEnd: timing?.introEnd,
+    introStart: timing?.introStart,
     hasChantIntro,
+    midSpeakerGap: timing?.midSpeakerGap,
   };
   let segments = null;
   if (timing?.lineEnds?.length && duration) {

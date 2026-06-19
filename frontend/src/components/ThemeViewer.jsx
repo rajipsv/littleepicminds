@@ -6,6 +6,9 @@ import MatchingGame from './MatchingGame';
 import { BookOpen, Star, Volume2 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
+/** Flip to true when Gita lesson videos are ready — markup below stays in place. */
+const GITA_STORY_VIDEO_UI_ENABLED = false;
+
 const ThemeViewer = ({ theme, scripture, onStartQuiz }) => {
   const [activeTab, setActiveTab] = useState('story'); // 'story', 'shlokas', 'activity'
   const { currentLang } = useAuth();
@@ -18,6 +21,8 @@ const ThemeViewer = ({ theme, scripture, onStartQuiz }) => {
     .split(/\n\n+/)
     .map((p) => p.trim())
     .filter(Boolean);
+  const showStoryVideoSection =
+    scripture !== 'gita' || GITA_STORY_VIDEO_UI_ENABLED;
 
   return (
     <div className="animate-fade-in">
@@ -88,6 +93,7 @@ const ThemeViewer = ({ theme, scripture, onStartQuiz }) => {
             </div>
 
             {/* Watch Video Section - Always Red-Styled, but disabled if no link */}
+            {showStoryVideoSection && (
             <div className="mt-8 pt-8 border-t border-lem-glass-border">
               {theme.videoUrl ? (
                 <a 
@@ -145,6 +151,7 @@ const ThemeViewer = ({ theme, scripture, onStartQuiz }) => {
                 </div>
               )}
             </div>
+            )}
           </div>
         )}
 

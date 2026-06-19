@@ -79,6 +79,28 @@ function splitTransliterationPadas(transliteration) {
 /** uvāca / uvācha / uvacha (HF and chapter JSON variants). */
 const UVACA_SUFFIX = /\s+uv[aā\u0101]ch?a[cḥ]?\s*$/i;
 
+function linesBeforeEmbeddedSpeaker(verse, embedded) {
+  if (!embedded || embedded.index < 1) return embedded?.index ?? 1;
+  const breakdown = verse?.lineBreakdown || verse?.word_by_word || [];
+  const padas = splitTransliterationPadas(verse?.transliteration || '');
+  const speakerPada = padas[embedded.index] || embedded.speaker || '';
+  const beforeText = padas.slice(0, embedded.index).join(' ');
+  if (!beforeText.trim() || !breakdown.length) return Math.min(embedded.index, LINES_PER_SHLOKA - 1);
+
+  let count = 0;
+  for (const row of breakdown) {
+    const rowText = row.transliteration || row.word || '';
+    if (!rowText.trim()) continue;
+    const norm = normalizeIast(rowText);
+    const pos = normalizeIast(beforeText).indexOf(norm.slice(0, Math.min(8, norm.length)));
+    if (pos >= 0 || wordMatchesLine(rowText, beforeText)) count += 1;
+    else break;
+  }
+  if (count >= 1 && count < LINES_PER_SHLOKA) return count;
+  return Math.min(embedded.index, LINES_PER_SHLOKA - 1);
+}
+
+
 /** "sañjaya uvāca" / "dhṛtarāṣṭra uvāca" — narrator, not a pada of the shloka. */
 function extractSpeakerPrefix(transliteration) {
   const padas = splitTransliterationPadas(transliteration);
@@ -88,6 +110,16 @@ function extractSpeakerPrefix(transliteration) {
     return { speaker: first.trim(), bodyPadas: padas.slice(1) };
   }
   return { speaker: null, bodyPadas: padas };
+}
+
+/** Middle pada like "arjuna uvāca" between narrator and quoted speech (e.g. 1.28). */
+function extractEmbeddedSpeaker(transliteration) {
+  const padas = splitTransliterationPadas(transliteration);
+  for (let i = 1; i < padas.length; i++) {
+    const p = padas[i].trim();
+    if (UVACA_SUFFIX.test(p)) return { speaker: p, index: i };
+  }
+  return null;
 }
 
 /** Four poetic lines from HF body padas (often 2 dotted halves → split each in two). */
@@ -754,6 +786,8 @@ module.exports = {
   splitTransliterationPadas,
   splitSanskritPadas,
   extractSpeakerPrefix,
+  extractEmbeddedSpeaker,
+  linesBeforeEmbeddedSpeaker,
   bodyPadasToFourLines,
   bodyLinesFromNewlineTransliteration,
   splitNewlineBodyLineInTwo,

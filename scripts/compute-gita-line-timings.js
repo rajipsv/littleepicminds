@@ -10,7 +10,7 @@ const path = require('path');
 
 const { AUDIO_DIR, loadManifest, saveManifest, getAudioFilePath } = require('../lib/gita-audio');
 const { computeLineTimingsFromWav } = require('../lib/gita-line-timings');
-const { LINES_PER_SHLOKA, extractSpeakerPrefix } = require('./gita-line-breakdown');
+const { LINES_PER_SHLOKA, extractSpeakerPrefix, extractEmbeddedSpeaker, linesBeforeEmbeddedSpeaker } = require('./gita-line-breakdown');
 
 const { DATA_DIR } = require('./lib/data-dir');
 const CHAPTERS_DIR = path.join(DATA_DIR, 'chapters');
@@ -37,7 +37,7 @@ function hasChantIntro(verse) {
   return Boolean(extractSpeakerPrefix(verse?.transliteration || '').speaker);
 }
 
-function lineWeights(verse, withIntro = false) {
+function lineWeights(verse, withIntro = false, embedded = null) {
   const b = verse?.lineBreakdown || verse?.word_by_word;
   const weights = (b || []).map((row) => {
     const t = row.transliteration || row.word || row.sanskrit || '';
@@ -51,6 +51,11 @@ function lineWeights(verse, withIntro = false) {
       extractSpeakerPrefix(verse?.transliteration || '').speaker ||
       '';
     w.unshift(intro.replace(/\s+/g, '').length || 10);
+  }
+  if (embedded?.speaker) {
+    const linesBefore = linesBeforeEmbeddedSpeaker(verse, embedded);
+    const speakerLen = embedded.speaker.replace(/\s+/g, '').length || 10;
+    w.splice(linesBefore, 0, speakerLen);
   }
   return w;
 }
@@ -74,9 +79,15 @@ function introLineEndsFromBounds(fullBounds, lineCount) {
     introIdx += 1;
   }
   const introEnd = fullBounds[introIdx];
+  const leadZero = fullBounds[0] < 0.15;
+  const introStart = leadZero
+    ? fullBounds[Math.max(1, introIdx - 1)]
+    : introIdx > 0
+      ? fullBounds[introIdx - 1]
+      : 0;
   const lineEnds = fullBounds.slice(introIdx + 1, introIdx + 1 + lineCount);
   while (lineEnds.length < lineCount) lineEnds.push(duration);
-  return { introEnd, lineEnds: lineEnds.slice(0, lineCount), duration };
+  return { introStart, introEnd, lineEnds: lineEnds.slice(0, lineCount), duration };
 }
 
 async function main() {
@@ -109,10 +120,13 @@ async function main() {
 
       try {
         const hasIntro = hasChantIntro(verse);
-        const weights = lineWeights(verse, hasIntro);
+        const embedded = extractEmbeddedSpeaker(verse?.transliteration || '');
+        const weights = lineWeights(verse, hasIntro, embedded);
+        const n = lineCountForVerse();
+        const segmentCount = embedded ? n + 2 + (hasIntro ? 1 : 0) : hasIntro ? n + 1 : n;
         let fullBounds = computeLineTimingsFromWav(
           wavPath,
-          hasIntro ? n + 1 : n,
+          segmentCount,
           weights
         );
         if (hasIntro && hasInternalIntroBreath(fullBounds)) {
@@ -121,14 +135,38 @@ async function main() {
 
         let lineEnds;
         let introEnd;
+        let introStart;
+        let midSpeakerGap;
         const duration = fullBounds[fullBounds.length - 1];
-        if (hasIntro && fullBounds.length >= n + 2) {
-          ({ introEnd, lineEnds } = introLineEndsFromBounds(fullBounds, n));
+
+        if (embedded && fullBounds.length >= n + 2) {
+          const leadZero = fullBounds[0] < 0.15;
+          const off = leadZero ? 1 : 0;
+          const speechStart = fullBounds[off];
+          introEnd = speechStart > 0.05 && speechStart < 1.5 ? speechStart : undefined;
+          const linesBefore = linesBeforeEmbeddedSpeaker(verse, embedded);
+          const gapStart = fullBounds[off + linesBefore];
+          const gapEnd = fullBounds[off + linesBefore + 1];
+          lineEnds = [];
+          for (let li = 0; li < n; li++) {
+            const audioIdx = off + li + (li < linesBefore ? 1 : 2);
+            lineEnds.push(fullBounds[audioIdx] ?? duration);
+          }
+          if (Number.isFinite(gapStart) && Number.isFinite(gapEnd) && gapEnd > gapStart) {
+            midSpeakerGap = { start: gapStart, end: gapEnd, label: embedded.speaker };
+          }
+        } else if (hasIntro && fullBounds.length >= n + 2) {
+          ({ introStart, introEnd, lineEnds } = introLineEndsFromBounds(fullBounds, n));
         } else if (hasIntro && fullBounds.length >= n + 1) {
+          introStart = fullBounds[0] < 0.15 ? fullBounds[0] : 0;
           introEnd = fullBounds[1];
           lineEnds = fullBounds.slice(2, n + 2);
         } else {
           lineEnds = fullBounds.slice(1, n + 1);
+          if (lineEnds[0] < 1.2 && fullBounds.length >= n + 2) {
+            introEnd = lineEnds[0];
+            lineEnds = fullBounds.slice(2, n + 2);
+          }
         }
         const prev = manifest.verses[verseId];
         const url =
@@ -145,8 +183,12 @@ async function main() {
           lineCount: n,
           ...(Number.isFinite(duration) ? { duration } : {}),
         };
-        if (hasIntro && introEnd != null) entry.introEnd = introEnd;
+        if (introEnd != null) entry.introEnd = introEnd;
         else delete entry.introEnd;
+        if (introStart != null) entry.introStart = introStart;
+        else delete entry.introStart;
+        if (midSpeakerGap) entry.midSpeakerGap = midSpeakerGap;
+        else delete entry.midSpeakerGap;
         manifest.verses[verseId] = entry;
         computed++;
         if (computed % 20 === 0) console.log(`  ${computed} timings (${verseId})`);
