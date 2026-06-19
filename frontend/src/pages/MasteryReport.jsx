@@ -7,6 +7,7 @@ import {
   LayoutDashboard, History, ScrollText 
 } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { getLevelFromUser } from '../utils/gradeLevel';
 
 const MasteryReport = () => {
   const { user, currentLang } = useAuth();
@@ -30,7 +31,7 @@ const MasteryReport = () => {
     if (user) {
       setLoading(true);
       Promise.all([
-        api.get(`/api/evaluations/progress/${user.id}?level=${user?.level || 'seekers'}`),
+        api.get(`/api/evaluations/progress/${user.id}?level=${getLevelFromUser(user)}`),
         api.get(`/api/evaluations/hanuman-overall/${user.id}`),
         api.get(`/api/quiz-history/${user.id}`),
         api.get(`/api/journal/${user.username}`)

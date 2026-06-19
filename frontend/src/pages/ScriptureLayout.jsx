@@ -9,12 +9,14 @@ import SlokaQuiz from '../components/SlokaQuiz';
 import LanguageToggle from '../components/LanguageToggle';
 import { Lock, ChevronLeft, BookOpen, GraduationCap, Star, Target, CheckCircle, Menu, X, User, LogOut, Settings, Sparkles } from 'lucide-react';
 import { GITA_FREE_CHAPTER_MAX, hasPremiumGitaAccess, isGitaChapterLocked } from '../utils/gitaAccess';
+import { getLevelFromUser } from '../utils/gradeLevel';
 
 const ScriptureLayout = () => {
   const { scripture } = useParams();
   const navigate = useNavigate();
   const { user, logout, currentLang, setCurrentLang, refreshUser } = useAuth();
   const isTe = currentLang === 'te';
+  const effectiveLevel = getLevelFromUser(user);
   
   const toggleLanguage = () => {
     setCurrentLang(isTe ? 'en' : 'te');
@@ -56,7 +58,7 @@ const ScriptureLayout = () => {
     setShowQuiz(false);
     setMasteredShlokas(new Set());
     fetchVerses(activeChapter);
-  }, [activeChapter, scripture]);
+  }, [activeChapter, scripture, effectiveLevel]);
 
   const fetchVerses = async (chapterNum) => {
     setLoading(true);
@@ -70,7 +72,7 @@ const ScriptureLayout = () => {
     try {
       // 1. Fetch themes (Thematic Curriculum)
       try {
-        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}?level=${user?.level || 'seekers'}`);
+        const themeRes = await api.get(`/api/themes/${scripture}/${chapterNum}?level=${effectiveLevel}`);
         if (themeRes.data && themeRes.data.length > 0) {
           fetchedThemes = themeRes.data;
           setThemes(fetchedThemes);
@@ -429,7 +431,7 @@ const ScriptureLayout = () => {
                 </div>
                   <p className="text-gray-400 text-lg font-medium flex items-center gap-2">
                     <span className="w-12 h-[2px] bg-lem-accent/30"></span>
-                    <span className="capitalize text-lem-accent font-bold">{user?.level || 'seekers'}</span>
+                    <span className="capitalize text-lem-accent font-bold">{effectiveLevel}</span>
                     {isTe ? " ప్రయాణ మార్గం" : " Journey Path"}
                   </p>
               </div>

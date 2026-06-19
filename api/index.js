@@ -413,10 +413,10 @@ router.get('/themes/:scripture/:chapter', optionalAuth, (req, res) => {
 
     // Flexible level matching
     if (!Array.isArray(chapterData)) {
-      const requestedLevel = (level || 'seekers').toLowerCase();
+      const requestedLevel = (level || 'seeds').toLowerCase();
       themesToReturn = chapterData[requestedLevel] || 
-                       chapterData['seekers'] || 
                        chapterData['seeds'] || 
+                       chapterData['seekers'] || 
                        chapterData['warriors'] || 
                        [];
     } else {
@@ -767,7 +767,7 @@ router.get('/evaluations/progress/:userId', async (req, res) => {
     const completedThemes = new Set(themeResult.rows.map(r => r.verse));
 
     // Compute total themes and unique shlokas per chapter for the requested level
-    const effectiveLevel = level || 'seekers';
+    const effectiveLevel = level || 'seeds';
     const themeCounts = {};
     const themeVerseCounts = {};
     if (data.themes && data.themes.gita) {
