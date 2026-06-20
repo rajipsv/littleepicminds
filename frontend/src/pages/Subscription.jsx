@@ -2,11 +2,21 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { Star, CheckCircle, Crown, ChevronLeft } from 'lucide-react';
+import {
+  formatPremiumPrice,
+  premiumBillingSubtext,
+  premiumBillingSuffix,
+  premiumOfferBadge,
+  PREMIUM_BILLING_DISPLAY,
+  PREMIUM_PRICE_INR,
+} from '../config/subscription';
 
 const Subscription = () => {
   const { user, upgrade } = useAuth();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  const priceLabel = formatPremiumPrice();
+  const isLifetimeOffer = PREMIUM_BILLING_DISPLAY === 'lifetime';
 
   const handleUpgrade = async () => {
     if (!user) {
@@ -20,12 +30,16 @@ const Subscription = () => {
       setTimeout(() => {
         setLoading(false);
         navigate('/');
-      }, 1000); // Simulate network delay for effect
+      }, 1000);
     } catch (err) {
       console.error(err);
       setLoading(false);
     }
   };
+
+  const whatsappPlanLabel = isLifetimeOffer
+    ? 'Scholar Premium Lifetime Plan'
+    : 'Scholar Premium Plan';
 
   return (
     <div className="min-h-screen py-12 px-4 flex flex-col items-center text-white relative">
@@ -52,7 +66,7 @@ const Subscription = () => {
           <h2 className="text-2xl font-bold text-kid-blue mb-2">Explorer (Free)</h2>
           <p className="text-4xl font-extrabold text-slate-900 mb-1">
             <span className="text-kid-blue">₹0</span>
-            <span className="text-xl text-slate-500 font-semibold"> / year</span>
+            <span className="text-xl text-slate-500 font-semibold"> forever</span>
           </p>
           <p className="text-sm text-slate-500 mb-6">No payment required</p>
 
@@ -73,14 +87,19 @@ const Subscription = () => {
         {/* Premium Plan */}
         <div className="bg-gradient-to-br from-kid-primary to-orange-400 rounded-3xl p-8 shadow-xl text-white transform md:-translate-y-4 relative">
           <div className="absolute top-0 right-0 bg-kid-yellow text-kid-blue text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-3xl uppercase tracking-widest">
-            Most Popular
+            {premiumOfferBadge()}
           </div>
           <h2 className="text-2xl font-bold mb-2">Scholar (Premium)</h2>
           <p className="text-4xl font-extrabold text-white mb-1">
-            ₹1999
-            <span className="text-lg font-semibold opacity-90">/yr</span>
+            {priceLabel}
+            <span className="text-lg font-semibold opacity-90">{premiumBillingSuffix()}</span>
           </p>
-          <p className="text-sm text-white/80 mb-6">One-time annual access</p>
+          {isLifetimeOffer && (
+            <p className="text-xs font-bold uppercase tracking-widest text-kid-yellow mb-1">
+              Pay once · Keep access for life
+            </p>
+          )}
+          <p className="text-sm text-white/80 mb-6">{premiumBillingSubtext()}</p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-center">
@@ -89,12 +108,23 @@ const Subscription = () => {
             <li className="flex items-center">
               <Star className="text-kid-yellow mr-2 shrink-0" size={20} fill="currentColor" /> Progress Tracking
             </li>
+            {isLifetimeOffer && (
+              <li className="flex items-center">
+                <Star className="text-kid-yellow mr-2 shrink-0" size={20} fill="currentColor" /> Lifetime premium access
+              </li>
+            )}
           </ul>
 
           <div className="bg-white/10 rounded-2xl p-6 mt-6 border border-white/20">
             <h3 className="text-sm font-bold uppercase tracking-widest mb-3 opacity-90">How to Subscribe</h3>
             <p className="text-sm mb-4 leading-relaxed">
-              Make a payment of <strong>₹1999</strong> to the number below using <strong>GPay, PhonePe, or Paytm</strong>:
+              Make a payment of <strong>{priceLabel}</strong>
+              {isLifetimeOffer ? (
+                <> for <strong>lifetime access</strong></>
+              ) : (
+                <> for <strong>one year of access</strong></>
+              )}{' '}
+              to the number below using <strong>GPay, PhonePe, or Paytm</strong>:
             </p>
             <div className="bg-white text-slate-900 rounded-xl p-3 text-center font-bold text-xl mb-4 shadow-inner border border-white/20">
               admin
@@ -104,7 +134,7 @@ const Subscription = () => {
             </p>
 
             <a
-              href={`https://wa.me/911234567890?text=Hi! I've made the payment for the Scholar Premium Plan for my account: ${user?.email || 'my account'}. Please enable access.`}
+              href={`https://wa.me/911234567890?text=Hi! I've made the payment of ${PREMIUM_PRICE_INR} for the ${whatsappPlanLabel} for my account: ${user?.email || 'my account'}. Please enable access.`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold flex items-center justify-center transition-all shadow-lg"
