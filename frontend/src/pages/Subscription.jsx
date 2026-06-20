@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Star, CheckCircle, Crown, ChevronLeft } from 'lucide-react';
+import { Star, CheckCircle, Crown, ChevronLeft, Tag } from 'lucide-react';
 import {
   formatPremiumPrice,
   premiumBillingSubtext,
   premiumBillingSuffix,
+  premiumDiscountHeadline,
   premiumOfferBadge,
+  premiumOfferPriceLabel,
+  premiumRegularPriceLabel,
+  premiumStrikethroughYearly,
   PREMIUM_BILLING_DISPLAY,
   PREMIUM_PRICE_INR,
 } from '../config/subscription';
@@ -38,7 +42,7 @@ const Subscription = () => {
   };
 
   const whatsappPlanLabel = isLifetimeOffer
-    ? 'Scholar Premium Lifetime Plan'
+    ? 'Scholar Premium Lifetime Launch Offer'
     : 'Scholar Premium Plan';
 
   return (
@@ -90,16 +94,42 @@ const Subscription = () => {
             {premiumOfferBadge()}
           </div>
           <h2 className="text-2xl font-bold mb-2">Scholar (Premium)</h2>
-          <p className="text-4xl font-extrabold text-white mb-1">
-            {priceLabel}
-            <span className="text-lg font-semibold opacity-90">{premiumBillingSuffix()}</span>
-          </p>
+
           {isLifetimeOffer && (
-            <p className="text-xs font-bold uppercase tracking-widest text-kid-yellow mb-1">
-              Pay once · Keep access for life
-            </p>
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/25 px-3 py-1.5 text-xs font-bold uppercase tracking-wide">
+              <Tag size={14} className="text-kid-yellow" />
+              {premiumDiscountHeadline()}
+            </div>
           )}
-          <p className="text-sm text-white/80 mb-6">{premiumBillingSubtext()}</p>
+
+          {isLifetimeOffer && premiumStrikethroughYearly() && (
+            <div className="mb-2">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-white/70 mb-0.5">
+                {premiumRegularPriceLabel()}
+              </p>
+              <p className="text-lg font-semibold text-white/55 line-through">
+                {premiumStrikethroughYearly()}
+              </p>
+            </div>
+          )}
+
+          <div className="mb-1">
+            {isLifetimeOffer && (
+              <p className="text-[11px] font-bold uppercase tracking-widest text-kid-yellow mb-0.5">
+                {premiumOfferPriceLabel()}
+              </p>
+            )}
+            <p className="text-4xl font-extrabold text-white">
+              {priceLabel}
+              <span className="text-lg font-semibold opacity-90">{premiumBillingSuffix()}</span>
+            </p>
+          </div>
+
+          {isLifetimeOffer && (
+            <p className="text-xl font-black text-kid-yellow mb-2">Lifetime access</p>
+          )}
+
+          <p className="text-sm text-white/85 mb-6">{premiumBillingSubtext()}</p>
 
           <ul className="space-y-4 mb-8">
             <li className="flex items-center">
@@ -110,7 +140,7 @@ const Subscription = () => {
             </li>
             {isLifetimeOffer && (
               <li className="flex items-center">
-                <Star className="text-kid-yellow mr-2 shrink-0" size={20} fill="currentColor" /> Lifetime premium access
+                <Star className="text-kid-yellow mr-2 shrink-0" size={20} fill="currentColor" /> Lifetime premium — launch discount
               </li>
             )}
           </ul>
@@ -118,13 +148,17 @@ const Subscription = () => {
           <div className="bg-white/10 rounded-2xl p-6 mt-6 border border-white/20">
             <h3 className="text-sm font-bold uppercase tracking-widest mb-3 opacity-90">How to Subscribe</h3>
             <p className="text-sm mb-4 leading-relaxed">
-              Make a payment of <strong>{priceLabel}</strong>
               {isLifetimeOffer ? (
-                <> for <strong>lifetime access</strong></>
+                <>
+                  Claim this <strong>limited launch offer</strong>: pay <strong>{priceLabel}</strong> once for{' '}
+                  <strong>lifetime access</strong> (not yearly). Use <strong>GPay, PhonePe, or Paytm</strong> to pay:
+                </>
               ) : (
-                <> for <strong>one year of access</strong></>
-              )}{' '}
-              to the number below using <strong>GPay, PhonePe, or Paytm</strong>:
+                <>
+                  Make a payment of <strong>{priceLabel}</strong> for <strong>one year of access</strong> using{' '}
+                  <strong>GPay, PhonePe, or Paytm</strong>:
+                </>
+              )}
             </p>
             <div className="bg-white text-slate-900 rounded-xl p-3 text-center font-bold text-xl mb-4 shadow-inner border border-white/20">
               admin
