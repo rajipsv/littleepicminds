@@ -1,0 +1,73 @@
+{
+  "adventureId": "gv01_a2",
+  "defaults": {
+    "styleSuffix": "Children's book B&W line art, 1:1 square composition, Gita Grove Seeds, gold sunrise Courage Hill palette, green-gold ribbon accent"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "imagePrompt": "Wide Courage Hill at sunrise painted gold. Mimi rabbit at bottom with opening ribbon, Spring Fair humming below, distant drum in Blossom Meadow.",
+      "text": "Sunrise painted Courage Hill gold. Mimi the rabbit stood at the bottom with the opening ribbon in her paws — and every butterfly in her tummy wanted to fly away.\n\nBelow the hill, Spring Fair hummed. Flags snapped. Friends called names."
+    },
+    {
+      "beat": "Opens",
+      "imagePrompt": "Red cloth off the great drum in distant meadow, BOOM sound implied. Mimi's ears snap toward sound, paws shaking.",
+      "text": "In Blossom Meadow, the red cloth had come off the great drum — and someone was testing it: *BOOM.*\n\nMimi's ears snapped toward the sound. Her paws shook.\n\n\"Almost time,\" called Gulu from the sign-up table. \"Ribbon holder to the hill!\""
+    },
+    {
+      "beat": "Honest body",
+      "imagePrompt": "Close-up Mimi holding heavy Grove green ribbon with gold edge, tummy flip feeling shown in expression.",
+      "text": "Mimi looked at the ribbon — soft Grove green, gold edge, heavier than she expected.\n\nHer tummy flipped. Flip-flip-flip.\n\nHer paws shook. Shake-shake-shake."
+    },
+    {
+      "beat": "Honest body",
+      "imagePrompt": "Kiki flying overhead cheering, Bobo waving banner, Mimi's legs like wet noodles — pressure of being watched.",
+      "text": "Kiki flew overhead. \"You'll be great! Everyone's watching!\"\n\nThat did not help.\n\nBobo waved the team banner from the path. \"Race you up!\"\n\nMimi's legs felt like wet noodles."
+    },
+    {
+      "beat": "Behind Timo",
+      "imagePrompt": "Mimi backing into Timo tortoise shell trying to hide, ribbon sticking out, Timo calm and wide.",
+      "text": "Mimi backed up until she bumped something hard and round.\n\nTimo the tortoise.\n\n\"Oh,\" Mimi whispered. \"Good. Hide me.\"\n\nShe tried to tuck herself behind his shell. Timo was wide, but Mimi's ribbon stuck out."
+    },
+    {
+      "beat": "Behind Timo",
+      "imagePrompt": "Timo and Mimi eye level, Mimi admitting whole body scared, Timo gentle — noticing not hiding.",
+      "text": "\"You are not hidden,\" Timo said gently. \"Your paws are shaking on my back.\"\n\n\"I know,\" Mimi said. Her voice came out small. \"My whole body is scared. I don't want everyone looking.\"\n\nTimo was quiet for a moment. Then he said, \"My legs feel slow when I am scared. I do not hide them. I notice them.\""
+    },
+    {
+      "beat": "Smell the flower",
+      "imagePrompt": "Timo holding up claw teaching breath game, Mimi eyes closed thinking of clover at hill edge.",
+      "text": "\"Want a game?\" Timo asked.\n\nMimi nodded — anything before the hill.\n\nTimo held up one claw. \"Smell the flower.\"\n\nMimi breathed in through her nose. Slow. She thought of the clover at the hill's edge.\n\n\"Good,\" Timo said. \"Now blow the candle.\"\n\nMimi breathed out through her mouth. Pffff. Like blowing one birthday candle, not ten."
+    },
+    {
+      "beat": "Smell the flower",
+      "imagePrompt": "Mimi and Timo after breath exercise, butterflies settling slightly, honest admission — paws still shake.",
+      "text": "\"Again,\" Timo said.\n\nSmell the flower. Blow the candle.\n\nThe butterflies in her tummy did not vanish. They settled — just a little — like birds finding a branch.\n\n\"You still look scared,\" Timo said.\n\n\"I am,\" Mimi said. Honest. \"My paws still shake.\"\n\n\"Mine too, inside,\" Timo said. \"We can walk anyway.\""
+    },
+    {
+      "beat": "One step",
+      "imagePrompt": "Twelve stone steps up Courage Hill, Mimi on step one with trembling paw, path visible ahead.",
+      "text": "The path up Courage Hill had twelve stone steps. Mimi could see each one.\n\nStep one — her paw trembled on the rock.\n\nStep two — the drum boomed again from the meadow. *BOOM.*\n\nMimi stopped. Tummy flip."
+    },
+    {
+      "beat": "One step",
+      "imagePrompt": "Timo waiting below not pulling, Mimi speaking fear out loud mid-climb.",
+      "text": "\"Say it,\" Timo called from below. He had not climbed. He was waiting — not pulling.\n\n\"My tummy is fluttery,\" Mimi said out loud. No one else had to hear. But she heard.\n\n\"And?\" Timo asked.\n\n\"And I'm still going,\" Mimi said."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Mimi at hilltop, whole Grove spread below, ribbon rustling in shaking paws, Guru Ma Owl watching kindly.",
+      "text": "At the top, the whole Grove spread out — tents, streamers, faces turned up.\n\nMimi's paws shook so hard the ribbon rustled.\n\nGuru Ma Owl sat on the highest stone, not saying a word. Just watching with kind eyes.\n\nMimi held the ribbon with both paws. Not perfect. Not still. **Holding.**"
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Mimi lifting ribbon as crowd grows quiet, friends cheering below, drum waiting in meadow.",
+      "text": "The crowd grew quiet.\n\nMimi lifted the ribbon. The green and gold caught the sun.\n\nBelow, Kiki cheered. Bobo whooped. Gulu clapped. Pip peeked from behind a flower crate — brave in their own small way.\n\nThe drum waited in the meadow. The fair had opened."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Quiet triumphant Mimi — tummy still fluttering, paws still shaking, honest body truth after walking up.",
+      "text": "Mimi's tummy still fluttered. Her paws still shook.\n\nShe had told the truth about her body — and walked up anyway.\n\nThat felt like its own kind of honest."
+    }
+  ]
+}

@@ -1,27 +1,37 @@
 #!/usr/bin/env node
 /**
- * Export docs/books/*.md Grove manuscript → Amazon KDP-ready DOCX.
- *
- * Usage:
- *   node scripts/export-grove-manuscript-kdp.js --file=docs/books/gv01_a1-the-fair-before-the-drum.md
- *   node scripts/export-grove-manuscript-kdp.js --all
- *   node scripts/export-grove-manuscript-kdp.js --file=... --pandoc   (if pandoc installed)
+ * Export Grove adventure → KDP DOCX via loadAdventure() pipeline.
  */
 
 const fs = require('fs');
 const path = require('path');
 const { execSync } = require('child_process');
-const { parseManuscriptMarkdown, buildKdpDocx } = require('./lib/grove-kdp-docx');
+const { loadAdventure } = require('./lib/grove-manuscript');
+const { renderBookDocx, renderDraftDocx } = require('./lib/grove-kdp');
 
 const ROOT = path.resolve(__dirname, '..');
 
 function parseArgs(argv) {
-  const out = { file: null, all: false, pandoc: false, outDir: path.join(ROOT, 'output', 'kdp') };
+  const out = {
+    file: null,
+    all: false,
+    pandoc: false,
+    layout: 'default',
+    format: 'draft',
+    outDir: path.join(ROOT, 'output', 'kdp'),
+    storyPath: null,
+    fullModule: false,
+  };
   for (const arg of argv) {
     if (arg === '--all') out.all = true;
     else if (arg === '--pandoc') out.pandoc = true;
+    else if (arg === '--full-module') out.fullModule = true;
     else if (arg.startsWith('--file=')) out.file = arg.slice('--file='.length);
     else if (arg.startsWith('--out=')) out.outDir = path.resolve(arg.slice('--out='.length));
+    else if (arg.startsWith('--layout=')) out.layout = arg.slice('--layout='.length);
+    else if (arg.startsWith('--format=')) out.format = arg.slice('--format='.length);
+    else if (arg.startsWith('--story=')) out.storyPath = arg.slice('--story='.length);
+    else if (arg.startsWith('--pages=')) out.storyPath = arg.slice('--pages='.length);
   }
   return out;
 }
@@ -41,15 +51,30 @@ function exportWithPandoc(mdPath, outPath) {
 }
 
 async function exportOne(mdPath, opts) {
-  const md = fs.readFileSync(mdPath, 'utf8');
-  const parsed = parseManuscriptMarkdown(md);
-  const base = path.basename(mdPath, '.md');
+  const adventure = loadAdventure(mdPath, { storyPath: opts.storyPath });
+  const base = path.basename(adventure.mdPath, '.md');
   fs.mkdirSync(opts.outDir, { recursive: true });
-  const outPath = path.join(opts.outDir, `${base}.docx`);
+  const suffix = opts.format === 'book' ? '-book' : '';
+  const outPath = path.join(opts.outDir, `${base}${suffix}.docx`);
+
+  if (opts.format === 'book') {
+    const buf = await renderBookDocx(adventure, { includeBackMatter: opts.fullModule });
+    fs.writeFileSync(outPath, buf);
+    console.log('Book layout DOCX:', outPath);
+    console.log(
+      `  Story: ${adventure.summary.storyPageCount} pages (pp ${adventure.summary.storyFirstPage}–${adventure.summary.storyLastPage}); ` +
+        (opts.fullModule
+          ? `back matter pp ${adventure.summary.backMatterFirstPage}–${adventure.summary.modulePageCount}`
+          : 'back matter omitted (use --full-module)')
+    );
+    if (adventure.storyPath) console.log('  Story JSON:', adventure.storyPath);
+    for (const w of adventure.warnings) console.warn('  warn:', w);
+    return outPath;
+  }
 
   if (opts.pandoc) {
     try {
-      exportWithPandoc(mdPath, outPath);
+      exportWithPandoc(adventure.mdPath, outPath);
       console.log('Pandoc:', outPath);
       return outPath;
     } catch (e) {
@@ -57,7 +82,7 @@ async function exportOne(mdPath, opts) {
     }
   }
 
-  const buf = await buildKdpDocx(parsed);
+  const buf = await renderDraftDocx(adventure, { layout: opts.layout });
   fs.writeFileSync(outPath, buf);
   console.log('DOCX:', outPath);
   return outPath;
@@ -71,11 +96,6 @@ async function main() {
   else {
     console.error('Usage: node scripts/export-grove-manuscript-kdp.js --file=docs/books/gv01_a1-....md');
     console.error('       node scripts/export-grove-manuscript-kdp.js --all');
-    process.exit(1);
-  }
-
-  if (files.length === 0) {
-    console.error('No manuscript files found (pattern gv##_a#-slug.md)');
     process.exit(1);
   }
 

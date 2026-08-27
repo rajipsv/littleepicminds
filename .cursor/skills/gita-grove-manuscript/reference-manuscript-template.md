@@ -36,33 +36,23 @@ Copy structure from pilots. Replace `{placeholders}`.
 |------|------|
 | 1 | Title |
 | 2 | Meet {lead} |
-| 3–4 | Opens (use openingHook if set) |
-| 5–12 | Story spreads |
-| 13 | Peak |
-| 14 | Action only — no lecture |
-| 15 | Resolution |
-| 16 | Moral + repeat |
-| 17–19 | Remember |
-| 20–22 | Practice |
-| 23 | Celebrate |
-| 24 | Grown-up |
-| 25 | Teaser → next |
+| 3–{N} | Story spreads *(dynamic — one ### block per page under ## Story)* |
+| {N+1} | Moral + repeat |
+| … | Remember · Practice · Celebrate · Grown-up · Teaser |
+
+*Page numbers for back matter are assigned at export time after the last story page. Optional `Page N —` in headings is for author reference only.*
 
 ---
 
 ## Story
 
-### Pages 3–4 — Opens
-{prose}
-
-### Pages 5–6 — …
-{prose}
-
-…
+<!-- generated from {adventureId}-{slug}.story.json — run npm run grove:compile -->
 
 ---
 
 ## Moral
+
+### Moral
 
 {One sentence.}
 
@@ -72,13 +62,23 @@ Copy structure from pilots. Replace `{placeholders}`.
 
 ## Practice activities
 
+### Practice
+
 1. **{Name}** — {description}
+
+### Practice
+
 2. **{Name}** — {description}
+
+### Practice
+
 3. **{Name}** — {description}
 
 ---
 
 ## Remember
+
+### Remember
 
 **Celebrate:** "{Lead} grew **{Power}** — {specific moment}."
 
@@ -86,13 +86,41 @@ Copy structure from pilots. Replace `{placeholders}`.
 
 **Guru Ma line:** "{Bhagavad Gita / puranas opening + śloka meaning}"
 
+### Remember
+
 **Child repeat:** "{same as moral section}"
 
 **Grown-up:** {Power} + paired verse meaning for parents + discussion question
 
+### Listen
+
+Scan to hear the Remember song and ślokas with Guru Ma.
+
+[QR placeholder — littleepicminds.com/grove]
+
 ---
 
-## Page 25 — Next adventure teaser
+## Celebrate
+
+### Celebrate
+
+"{Lead} grew **{Power}** — {specific moment}."
+
+Cut out your {Power} leaf and place it on the Tree of Wisdom.
+
+---
+
+## For grown-ups
+
+### For grown-ups
+
+{Power} + paired verse meaning · discussion question
+
+---
+
+## Next adventure teaser
+
+### Next adventure
 
 > **Next adventure:** *{Title}*
 >
@@ -114,10 +142,30 @@ Copy structure from pilots. Replace `{placeholders}`.
 | {date} | v1.0 — First Seeds manuscript |
 ```
 
+## Story JSON (`{adventureId}-{slug}.story.json`)
+
+```json
+{
+  "adventureId": "{adventureId}",
+  "defaults": {
+    "styleSuffix": "Children's book B&W line art, 1:1 square, Gita Grove Seeds, {location} palette"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "text": "40–60 words per page…",
+      "imagePrompt": "1:1 B&W line art scene description…"
+    }
+  ]
+}
+```
+
 ## Story craft notes
 
+- **Canonical story source:** `*.story.json` — one `pages[]` entry per printed spread (~10–13 pages, ~320–480 words total).
+- **Markdown:** back matter only; run `npm run grove:compile` to preview `## Story` in md.
 - Short paragraphs; dialogue for Seeds
 - Show flaw through action (Bobo rushes, Mimi shrinks, Gulu freezes, Timo hides, Kiki jokes too soon)
 - Guest **Pip**, **Diya** only when synopsis says so
 - Callbacks to prior adventure in same book: one light touch max
-- Peak (page 13): lead wants old habit BUT chooses sub-skill
+- Peak beat: lead wants old habit BUT chooses sub-skill

@@ -40,7 +40,12 @@
     "db:migrate": "node backend/migrate.js",
     "db:seed-admin": "node scripts/seed-admin.js",
     "grove:export-kdp": "node scripts/export-grove-manuscript-kdp.js",
-    "grove:export-kdp:all": "node scripts/export-grove-manuscript-kdp.js --all"
+    "grove:export-kdp:all": "node scripts/export-grove-manuscript-kdp.js --all",
+    "grove:validate": "node scripts/grove-validate-manuscript.js",
+    "grove:validate:all": "node scripts/grove-validate-manuscript.js --all",
+    "grove:compile": "node scripts/grove-compile-manuscript.js",
+    "grove:generate-story": "node scripts/generate-grove-story.js",
+    "grove:create-kdp-reference": "node scripts/create-kdp-reference-docx.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",

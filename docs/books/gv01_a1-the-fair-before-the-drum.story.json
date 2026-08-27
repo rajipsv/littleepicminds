@@ -1,0 +1,73 @@
+{
+  "adventureId": "gv01_a1",
+  "defaults": {
+    "styleSuffix": "Children's book B&W line art, 1:1 square composition, Gita Grove Seeds, soft yellow-pink Blossom Meadow palette, red drum cloth accent"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "imagePrompt": "Wide Blossom Meadow, Spring Fair prep day. Flower tents, hammer sounds implied, Gulu squirrel stacking seed boxes near empty stage, Kiki myna bird zooming between tents. Establishing shot, busy joyful atmosphere.",
+      "text": "Tomorrow was Spring Fair in Gita Grove.\n\nBlossom Meadow had never been so busy. Hammers tap-tapped. Flower strings flapped in the wind. Someone smelled like fresh mango juice and wet grass.\n\nKiki the myna bird zoomed from tent to tent. \"Almost ready! Almost ready!\" she sang.\n\nGulu the squirrel stacked seed boxes near the empty stage. His tail twitched with excitement."
+    },
+    {
+      "beat": "Opens",
+      "imagePrompt": "Bobo monkey swinging on rope, Mimi rabbit with ribbon rolls, Timo tortoise with nail bucket, all moving toward covered fair drum on stage. Friends mid-task, motion toward big noise.",
+      "text": "Bobo the monkey swung from a rope, hollering, \"Faster! Faster! The drum test is coming!\"\n\nMimi the rabbit balanced ribbon rolls in her paws, eyes wide and happy.\n\nTimo the tortoise carried nails in a small bucket, one careful step at a time.\n\nEveryone was moving toward the **big noise** — the place where the opening drum would soon boom."
+    },
+    {
+      "beat": "Almost joining",
+      "imagePrompt": "Kiki myna bird flapping toward fair stage, red cloth covering great drum, excited expression. Low angle toward stage, sense of pull toward loud fun.",
+      "text": "Kiki loved big noise. Big noise meant fun. Big noise meant friends.\n\nShe flapped toward the stage where a red cloth covered the great fair drum."
+    },
+    {
+      "beat": "Almost joining",
+      "imagePrompt": "Close-up Kiki pausing mid-flight, one small squeak interrupting. Contrast between big exciting meadow blur and tiny quiet moment. Minimal background detail.",
+      "text": "Then — a tiny squeak.\n\nNot loud. Not exciting.\n\nJust… small."
+    },
+    {
+      "beat": "Pip on the steps",
+      "imagePrompt": "Pip field mouse alone on wooden steps below stage, round ears, paws tucked, watching colorful meadow swirl. Kiki landing on rail above. Drum cloth visible in background.",
+      "text": "On the wooden steps below the stage sat Pip, a field mouse with round ears and paws tucked tight.\n\nPip watched the meadow swirl with color. Pip did not move.\n\nKiki landed on the rail. \"Come on! You'll miss the ribbon test!\""
+    },
+    {
+      "beat": "Pip on the steps",
+      "imagePrompt": "Eye-level Kiki on step rail beside Pip, Kiki stopped mid-joke, Pip trembling with shiny eyes. Intimate two-shot, meadow activity soft in background.",
+      "text": "Pip shook. \"Too many paws. Too many voices. My heart goes thump-thump-thump.\"\n\nKiki opened her beak to joke. She wanted to say something silly to fix it.\n\nBut Pip's eyes were shiny. Kiki stopped."
+    },
+    {
+      "beat": "Honest attention",
+      "imagePrompt": "Kiki folded wings sitting beside Pip on steps, not above or in front. Bobo blurred zipping past. Equal eye level, Honest Heart moment — choosing to stay.",
+      "text": "Bobo zipped by again. \"Kiki! Hurry!\"\n\nKiki's wings itched to fly.\n\nInstead, she folded them and sat on the step beside Pip — not in front, not above. **Beside.**\n\n\"Is your heart still thump-thumping?\" Kiki asked."
+    },
+    {
+      "beat": "Honest attention",
+      "imagePrompt": "Kiki and Pip talking on steps, honest expressions. Kiki admitting fear of missing Pip. Warm quiet beat, fair bustle distant.",
+      "text": "Pip nodded. \"I'm scared of the drum. And scared of missing everything. Both at once.\"\n\nKiki had never said that out loud, but she knew the feeling. Sometimes fun and scary came in the same box.\n\n\"Me too, a little,\" Kiki said. Honest.\n\nPip looked surprised. \"You? You're never scared.\"\n\n\"I'm scared of missing **you**,\" Kiki said."
+    },
+    {
+      "beat": "One step",
+      "imagePrompt": "Kiki and Pip sitting on steps while Gulu, Mimi, Timo, Bobo pass in background with cups and ribbons. Stillness vs bustle contrast.",
+      "text": "They sat while Gulu ran past with cups. While Mimi dropped one ribbon and laughed. While Timo called, \"Slow down, Bobo!\"\n\nThe meadow kept buzzing. The drum stayed covered."
+    },
+    {
+      "beat": "One step",
+      "imagePrompt": "Pip taking one small step down wooden step, Kiki matching pace beside — not rushing. Side view, one step at a time.",
+      "text": "Pip took one breath. Then one step down.\n\nKiki took one step too — matching, not rushing."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Pip and Kiki reach grass level, Pip still trembling but walking. Gulu noticing and inviting Pip to sort cups. Gentle relief.",
+      "text": "By the time they reached the grass, Pip was still trembling — but walking.\n\nGulu noticed. \"Oh! Pip! Want to help me sort cups? Quiet job.\"\n\nPip nodded fast."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Split focus: Kiki glancing up at busy stage with covered drum, then looking down at Pip sorting cups with Gulu. Kiki choosing to stay low one more minute.",
+      "text": "Kiki flew up once, looked at the busy stage, looked at Pip sorting cups with careful paws.\n\nShe chose to stay low for one more minute."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Quiet triumphant moment — Pip sorting cups, Kiki hovering low and smiling. Soft celebration, brave minute together, fair prep continues around them.",
+      "text": "That minute felt like its own kind of brave."
+    }
+  ]
+}

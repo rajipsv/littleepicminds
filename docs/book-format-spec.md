@@ -1,6 +1,6 @@
 # Gita Grove — Book Format Spec
 
-**Version:** 1.0  
+**Version:** 1.2  
 **Applies to:** Seeds (5–7) adventure modules · compiled chapter books · Seekers overlay
 
 ---
@@ -20,12 +20,41 @@
 
 | Choice | Spec |
 |--------|------|
-| **Trim (Seeds)** | 8.5" × 8.5" square (recommended) |
-| **Trim (Seekers)** | 8.5" square or 8" × 10" portrait if text-heavy |
+| **Trim (Seeds)** | **6" × 9" portrait** (KDP regular trim; default US paperback) |
+| **Trim (Seekers)** | 6" × 9" or 8" × 10" portrait if text-heavy |
+| **Trim (premium, future)** | 8.5" × 8.5" square full-color — separate SKU only |
 | **Module binding** | Saddle-stitch if 24pp folded; **perfect bind** if 25 separate sheets |
 | **Chapter binding** | Perfect bind; spine ≥ 3 mm (~80+ pp) |
 | **Interior economy** | B&W line art + text; **color cover**; optional 4pp color insert |
 | **Interior premium** | Full color all spreads (₹249+ MRP) |
+| **KDP print (USA)** | B&W interior + color cover; 6×9 = **regular trim** (~$2.30 print cost at ≤110 pp) |
+| **KDP print (India)** | Not available on Amazon.in — use **Kindle ebook**; local offset print later |
+
+---
+
+## Page layout (Seeds story spreads)
+
+**Live area:** 6" × 9" page, 0.5" top/bottom and 0.625" side margins → **4.75" × 8"** content.
+
+**Stacked spread** (pages 5–12 and most story pages): 1:1 art on top, text below.
+
+```
+┌─────────────────────────┐  6"
+│      (margin 0.5")      │
+│  ┌───────────────────┐  │
+│  │   1:1 line art    │  │  ~4.75" × 4.75"
+│  │   (AI square)     │  │
+│  └───────────────────┘  │
+│  Story text block       │  ~2.5–3" band
+│  40–60 words, 14–16 pt  │
+└─────────────────────────┘  9"
+```
+
+**Art asset pipeline:** Generate **1:1** masters (1024×1024 or 2048×2048). Export for print at **≥1425×1425 px** (4.75" × 300 DPI). Same masters crop for website/app squares and cover elements.
+
+**Wide scenes:** Prompt square composition with wide field of view — do not use a separate aspect ratio.
+
+**Full-page drama** (optional): Problem peak (p. 13) and resolution (p. 15) may use **full-page art + facing text page** instead of stacked layout.
 
 ---
 
@@ -35,12 +64,10 @@
 |------|---------|------------------|----------|
 | 1 | Title | — | Adventure title, location icon, `gv##_a#` |
 | 2 | Meet the friends | 20–40 | Lead character + who appears |
-| 3–4 | Adventure opens | 40–60 each | Location establishing shot |
-| 5–12 | Story spreads | 40–60 each | 4 spreads × 2 pages; **~320–480 words total** |
-| 13 | Problem peak | 40–60 | Flaw moment |
-| 14 | — | — | **No Owl lecture** — show through action |
-| 15 | Resolution | 40–60 | Kind outcome |
-| 16 | Moral | 1 sentence + child repeat line | Large type |
+| 3–N | Story spreads | 40–60 each | One `###` block per page under `## Story`; stacked 1:1 art + text; **~320–480 words total** (N varies by adventure) |
+| N+1 | Problem peak *(optional extra story page)* | 40–60 | Flaw moment — may be last story block |
+| … | Resolution | 40–60 | Kind outcome — last story block before Moral |
+| Moral | Moral | 1 sentence + child repeat line | Large type — first back-matter page after story |
 | 17–18 | Remember | 2 ślokas | Transliteration + child meaning; **Guru Ma line** unique per adventure — *Bhagavad Gita / Indian puranas* framing, tied to paired śloka meaning |
 | 19 | Listen | — | QR → app audio |
 | 20–22 | Practice | — | 3 activities tied to **sub-skill** |
@@ -88,13 +115,31 @@ Compression: merge spreads; keep full module text in `docs/books/` source files.
 
 ---
 
-## Manuscript file convention
+## Manuscript file convention (hybrid)
 
 ```
-docs/books/gv{book}_a{adv}-{slug}.md
+docs/books/gv{book}_a{adv}-{slug}.md          # metadata, page map, back matter, art briefs
+docs/books/gv{book}_a{adv}-{slug}.story.json  # story pages — canonical for generation/export
 ```
 
-Each file includes: metadata, page map, story EN/TE, moral, activities, Remember, art briefs.
+**`*.story.json` schema:**
+
+```json
+{
+  "adventureId": "gv01_a1",
+  "defaults": { "styleSuffix": "Children's book B&W line art…" },
+  "pages": [
+    { "beat": "Opens", "text": "40–60 words…", "imagePrompt": "1:1 scene for AI art…" }
+  ]
+}
+```
+
+- **`pages`** is an ordered array — page numbers assigned at export (story from page 3).
+- Legacy `*.pages.json` and `storyPages` field still load with deprecation warnings.
+
+**Markdown:** Back matter only under `## Moral`, `## Remember`, etc. — one `###` block per printed page. `## Story` is optional generated preview (`npm run grove:compile`).
+
+**KDP export:** `loadAdventure()` merges JSON + md → `npm run grove:export-kdp -- --format=book`. Story pages show image prompt + text; use `--full-module` for Moral → Teaser.
 
 ---
 
@@ -111,3 +156,4 @@ littleepicminds://grove/gv01_a1/remember
 | Date | Change |
 |------|--------|
 | 2026-08-27 | v1.0 — Initial format spec |
+| 2026-08-27 | v1.2 — Hybrid *.story.json + markdown back matter; grove-manuscript / grove-kdp libs |
