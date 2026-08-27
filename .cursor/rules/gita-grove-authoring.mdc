@@ -16,9 +16,10 @@ The user has **pre-approved** all Gita Grove v2 work in this repo. Do **not** as
 
 ## Before drafting
 
-1. Read `.cursor/skills/gita-grove-manuscript/SKILL.md`
-2. Read `AGENTS.md` for architecture
-3. Read the relevant docs listed in the skill for the target `gv##_a#`
+1. **Prefer `gita-grove-authoring`** — engine repo has validate, compile, export tooling
+2. Read `.cursor/skills/gita-grove-manuscript/SKILL.md` (or same skill in authoring repo)
+3. Read `AGENTS-GITA-GROVE.md` for architecture
+4. Read the relevant docs listed in the skill for the target `gv##_a#`
 
 ## Defaults
 
@@ -31,8 +32,9 @@ The user has **pre-approved** all Gita Grove v2 work in this repo. Do **not** as
 
 ## After each manuscript
 
-- Save to `docs/books/gv{book}_a{adv}-{slug}.md`
+- Save to `docs/books/gv{book}_a{adv}-{slug}.md` and `*.story.json` (author in **gita-grove-authoring**, then sync)
 - Update `scripts/data/gita-grove-curriculum.json` (`status`, `manuscript`, `moral`, `childRepeatLine`, `guruMaLine`, `shlokas`)
+- Run `.\scripts\sync-to-app.ps1` from authoring repo to copy content here
 
 ## ID pattern
 

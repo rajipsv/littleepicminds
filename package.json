@@ -38,14 +38,7 @@
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js",
     "db:migrate": "node backend/migrate.js",
-    "db:seed-admin": "node scripts/seed-admin.js",
-    "grove:export-kdp": "node scripts/export-grove-manuscript-kdp.js",
-    "grove:export-kdp:all": "node scripts/export-grove-manuscript-kdp.js --all",
-    "grove:validate": "node scripts/grove-validate-manuscript.js",
-    "grove:validate:all": "node scripts/grove-validate-manuscript.js --all",
-    "grove:compile": "node scripts/grove-compile-manuscript.js",
-    "grove:generate-story": "node scripts/generate-grove-story.js",
-    "grove:create-kdp-reference": "node scripts/create-kdp-reference-docx.js"
+    "db:seed-admin": "node scripts/seed-admin.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",
@@ -60,7 +53,6 @@
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1057.0",
-    "@huggingface/hub": "^2.13.0",
-    "docx": "^9.5.0"
+    "@huggingface/hub": "^2.13.0"
   }
 }

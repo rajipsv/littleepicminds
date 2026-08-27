@@ -38,16 +38,17 @@ Grove Power → sub-skill → location → lead flaw → scenario → story → 
 - [ ] Read openingHook + prior adventure page-25 teaser
 - [ ] Write docs/books/gv{book}_a{adv}-{slug}.story.json — ordered pages[] with beat, text, imagePrompt
 - [ ] Write docs/books/gv{book}_a{adv}-{slug}.md — metadata + back matter only (Moral → Teaser)
-- [ ] npm run grove:validate -- --id=gv{book}_a{adv}
-- [ ] npm run grove:compile -- --id=gv{book}_a{adv}  (optional — preview ## Story in md)
+- [ ] **In gita-grove-authoring:** `npm run grove:validate -- --id=gv{book}_a{adv}`
+- [ ] **In gita-grove-authoring:** `npm run grove:compile -- --id=gv{book}_a{adv}` (optional — preview ## Story in md)
 - [ ] Pair 2 ślokas; write Guru Ma line (see reference-guru-ma.md)
 - [ ] Art briefs (4 key spreads) in markdown
 - [ ] Update curriculum JSON entry
+- [ ] **In gita-grove-authoring:** `.\scripts\sync-to-app.ps1` → littleepicminds
 ```
 
 **Hybrid files:** Story lives in **`*.story.json`**; markdown holds back matter with one `###` block per printed page. Export reads JSON directly — compile is optional for human preview.
 
-**Scaffold new story:** `npm run grove:generate-story -- --id=gv01_a3 --write-scaffold --write-prompt`
+**Scaffold new story:** in **gita-grove-authoring**: `npm run grove:generate-story -- --id=gv01_a3 --write-scaffold --write-prompt`
 
 ## File naming
 

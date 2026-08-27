@@ -41,9 +41,9 @@ See `../gita-grove-authoring/SYNC.md` for full details.
 
 ## Working in this repo
 
-Synced manuscripts and curriculum live here so the app can import them. **Do not add generation tooling here** — open **gita-grove-authoring** for drafting, validation, and KDP export.
+Synced manuscripts and curriculum live here so the app can import them. **No generation tooling in this repo** — open **gita-grove-authoring** for validate, compile, KDP export, and `grove:generate-story`.
 
-Cursor skills may be duplicated under `.cursor/` for convenience; the engine repo remains canonical.
+Cursor skills here are a lightweight copy for reading synced content; the engine repo remains canonical for tooling.
 
 **Branch policy:** `main` = live website — Grove content changes on **`feature/gita-grove`** only.
 

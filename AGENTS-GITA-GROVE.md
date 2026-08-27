@@ -41,18 +41,21 @@ Do **not** mix legacy theme auto-seed pipelines with Grove v2 manuscripts.
 
 ## Manuscript pipeline
 
+**Draft in gita-grove-authoring** (engine repo). This repo receives synced content only.
+
 ```
 Curriculum entry (synopsis)
     → Read hooks for book (e.g. gv01-book-hooks.md)
     → Draft *.story.json (story pages: beat, text, imagePrompt)
     → Draft *.md (metadata + Moral → Teaser back matter)
-    → npm run grove:validate -- --id=gv##_a#
+    → In gita-grove-authoring: npm run grove:validate -- --id=gv##_a#
     → Pair 2 ślokas + Guru Ma line (Bhagavad Gita / puranas)
     → Update scripts/data/gita-grove-curriculum.json
-    → npm run grove:export-kdp -- --file=docs/books/....md --format=book
+    → In gita-grove-authoring: npm run grove:export-kdp -- --file=docs/books/....md --format=book
+    → .\scripts\sync-to-app.ps1  (authoring repo → this repo)
 ```
 
-**Code layout:** `scripts/lib/grove-manuscript/` (loadAdventure, validate, compile) · `scripts/lib/grove-kdp/` (DOCX render)
+**Engine code:** `gita-grove-authoring/scripts/lib/grove-manuscript/` · `grove-kdp/` — not in this repo.
 
 ---
 
