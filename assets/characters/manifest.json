@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "styleRef": "assets/style/grove-picture-book-sref.png",
+  "styleSuffixBase": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm gentle lighting, consistent character design, no text in image",
+  "characters": [
+    {
+      "id": "gulu",
+      "name": "Gulu",
+      "species": "squirrel",
+      "role": "core",
+      "primaryRef": "assets/characters/gulu/reference-sheet.png",
+      "expressionsDir": "assets/characters/gulu/expressions",
+      "bibleAnchor": "docs/character-bible.md#gulu",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "mimi",
+      "name": "Mimi",
+      "species": "rabbit",
+      "role": "core",
+      "primaryRef": "assets/characters/mimi/reference-sheet.png",
+      "expressionsDir": "assets/characters/mimi/expressions",
+      "bibleAnchor": "docs/character-bible.md#mimi",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "bobo",
+      "name": "Bobo",
+      "species": "monkey",
+      "role": "core",
+      "primaryRef": "assets/characters/bobo/reference-sheet.png",
+      "expressionsDir": "assets/characters/bobo/expressions",
+      "bibleAnchor": "docs/character-bible.md#bobo",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "timo",
+      "name": "Timo",
+      "species": "tortoise",
+      "role": "core",
+      "primaryRef": "assets/characters/timo/reference-sheet.png",
+      "expressionsDir": "assets/characters/timo/expressions",
+      "bibleAnchor": "docs/character-bible.md#timo",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "kiki",
+      "name": "Kiki",
+      "species": "myna bird",
+      "role": "core",
+      "primaryRef": "assets/characters/kiki/reference-sheet.png",
+      "expressionsDir": "assets/characters/kiki/expressions",
+      "bibleAnchor": "docs/character-bible.md#kiki",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "guru-ma",
+      "name": "Guru Ma Owl",
+      "species": "owl",
+      "role": "core",
+      "primaryRef": "assets/characters/guru-ma/reference-sheet.png",
+      "expressionsDir": "assets/characters/guru-ma/expressions",
+      "bibleAnchor": "docs/character-bible.md#guru-ma-owl",
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "species": "field mouse",
+      "role": "guest",
+      "primaryRef": "assets/characters/guests/pip/reference-sheet.png",
+      "expressionsDir": "assets/characters/guests/pip/expressions",
+      "bibleAnchor": "docs/character-bible.md",
+      "adventures": ["gv01_a1"],
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    },
+    {
+      "id": "diya",
+      "name": "Diya",
+      "species": "human guest",
+      "role": "guest",
+      "primaryRef": "assets/characters/guests/diya/reference-sheet.png",
+      "expressionsDir": "assets/characters/guests/diya/expressions",
+      "bibleAnchor": "docs/character-bible.md#diya-guest",
+      "adventures": [],
+      "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
+      "status": "pending"
+    }
+  ]
+}

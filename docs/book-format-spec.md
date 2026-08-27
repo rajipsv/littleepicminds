@@ -1,6 +1,6 @@
 # Gita Grove — Book Format Spec
 
-**Version:** 1.2  
+**Version:** 1.3  
 **Applies to:** Seeds (5–7) adventure modules · compiled chapter books · Seekers overlay
 
 ---
@@ -25,9 +25,10 @@
 | **Trim (premium, future)** | 8.5" × 8.5" square full-color — separate SKU only |
 | **Module binding** | Saddle-stitch if 24pp folded; **perfect bind** if 25 separate sheets |
 | **Chapter binding** | Perfect bind; spine ≥ 3 mm (~80+ pp) |
-| **Interior economy** | B&W line art + text; **color cover**; optional 4pp color insert |
+| **Interior standard (Seeds default)** | **Color illustration** top zone + **black text** on white; color cover |
+| **Interior economy (legacy)** | B&W line art + text; color cover only |
 | **Interior premium** | Full color all spreads (₹249+ MRP) |
-| **KDP print (USA)** | B&W interior + color cover; 6×9 = **regular trim** (~$2.30 print cost at ≤110 pp) |
+| **KDP print (USA)** | **Standard color interior** for color art modules (~$5–8+ print cost at ~25 pp); B&W option ~$2.30 at ≤110 pp if all line art |
 | **KDP print (India)** | Not available on Amazon.in — use **Kindle ebook**; local offset print later |
 
 ---
@@ -42,7 +43,7 @@
 ┌─────────────────────────┐  6"
 │      (margin 0.5")      │
 │  ┌───────────────────┐  │
-│  │   1:1 line art    │  │  ~4.75" × 4.75"
+│  │   1:1 color art   │  │  ~4.75" × 4.75"
 │  │   (AI square)     │  │
 │  └───────────────────┘  │
 │  Story text block       │  ~2.5–3" band
@@ -50,7 +51,7 @@
 └─────────────────────────┘  9"
 ```
 
-**Art asset pipeline:** Generate **1:1** masters (1024×1024 or 2048×2048). Export for print at **≥1425×1425 px** (4.75" × 300 DPI). Same masters crop for website/app squares and cover elements.
+**Art asset pipeline:** Character refs in [`assets/characters/`](../assets/characters/manifest.json). Generate **1:1 color** page masters (1024×1024 or 2048×2048). Save finished pages to `output/images/{adventureId}/` (gitignored). Export for print at **≥1425×1425 px** (4.75" × 300 DPI).
 
 **Wide scenes:** Prompt square composition with wide field of view — do not use a separate aspect ratio.
 
@@ -127,7 +128,7 @@ docs/books/gv{book}_a{adv}-{slug}.story.json  # story pages — canonical for ge
 ```json
 {
   "adventureId": "gv01_a1",
-  "defaults": { "styleSuffix": "Children's book B&W line art…" },
+  "defaults": { "styleSuffix": "Children's picture book illustration, full color…" },
   "pages": [
     { "beat": "Opens", "text": "40–60 words…", "imagePrompt": "1:1 scene for AI art…" }
   ]
@@ -156,4 +157,4 @@ littleepicminds://grove/gv01_a1/remember
 | Date | Change |
 |------|--------|
 | 2026-08-27 | v1.0 — Initial format spec |
-| 2026-08-27 | v1.2 — Hybrid *.story.json + markdown back matter; grove-manuscript / grove-kdp libs |
+| 2026-08-27 | v1.3 — Color art + black text default; assets/characters manifest for AI refs |

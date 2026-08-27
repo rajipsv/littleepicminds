@@ -17,6 +17,7 @@ Cursor skills                 everything external users touch
 |--|----------------------|-----------------|
 | **Purpose** | Generate stories | Serve users |
 | Manuscripts + `*.story.json` | ✓ source | synced copy |
+| `assets/characters/` (illustration refs) | ✓ source | synced copy |
 | `gita-grove-curriculum.json` | ✓ source | synced copy |
 | `grove-manuscript/` + `grove-kdp/` | ✓ engine | **not synced** |
 | React app, TTS, website | — | ✓ |
