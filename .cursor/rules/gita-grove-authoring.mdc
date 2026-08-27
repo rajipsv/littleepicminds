@@ -7,6 +7,13 @@ alwaysApply: true
 
 The user has **pre-approved** all Gita Grove v2 work in this repo. Do **not** ask for confirmation before drafting manuscripts, updating curriculum, or creating hooks unless they explicitly say to stop.
 
+## Git / branches (littleepicminds)
+
+- **`main` is live production** — do **not** commit, merge, or push Grove/book work to `main` unless the user explicitly asks.
+- **All Grove work** → branch **`feature/gita-grove`** only.
+- Grove files on `main` today are docs-only (no app runtime changes); do not add more there.
+- Prefer authoring in **`gita-grove-authoring`** repo when possible; sync to `feature/gita-grove` via PR or `scripts/sync-to-app.ps1` from the kit.
+
 ## Before drafting
 
 1. Read `.cursor/skills/gita-grove-manuscript/SKILL.md`

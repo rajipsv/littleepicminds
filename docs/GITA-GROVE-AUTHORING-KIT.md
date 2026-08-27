@@ -32,4 +32,6 @@ Copies docs + curriculum into this `littleepicminds` tree.
 
 The same skill and rule are copied under `.cursor/` here so Grove drafting works without opening the sibling folder.
 
+**Branch policy (littleepicminds):** `main` = live website — **do not** commit Grove/book changes to `main`. Use **`feature/gita-grove`** for all Grove work in this repo.
+
 **Legacy** `sd*` / `sk*` theme pipeline rules remain in `.cursor/rules/gita-chatgpt-theme-stories.mdc` — separate from Grove v2.
