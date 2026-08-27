@@ -1,37 +1,39 @@
 # Gita Grove authoring kit (portable repo)
 
-Grove v2 manuscripts, skills, and curriculum live in a **standalone repo** for use on any laptop / Cursor account:
+Grove v2 **authoring** lives in **`gita-grove-authoring`** (canonical).  
+**`littleepicminds`** is the product app — it receives **content** via sync, not authoring tooling.
 
 ```
-../gita-grove-authoring/
+../gita-grove-authoring/     ← write stories, validate, export KDP here
+littleepicminds/             ← app runtime; feature/gita-grove gets synced docs + curriculum
 ```
 
-Or clone from GitHub after you push it (see that repo's `README.md`).
+## What's in each repo
 
-## What's portable
+| | gita-grove-authoring | littleepicminds |
+|--|----------------------|-----------------|
+| Manuscripts + `*.story.json` | ✓ source | synced copy |
+| `gita-grove-curriculum.json` | ✓ source | synced copy |
+| `grove-manuscript/` + `grove-kdp/` scripts | ✓ | **not synced** |
+| React app, TTS, legacy `sd*`/`sk*` themes | — | ✓ |
 
-| Item | Location in kit |
-|------|-----------------|
-| Agent architecture | `AGENTS.md` |
-| Cursor skill | `.cursor/skills/gita-grove-manuscript/` |
-| Cursor rule | `.cursor/rules/gita-grove-authoring.mdc` |
-| Bibles + manuscripts | `docs/` |
-| Curriculum JSON | `scripts/data/gita-grove-curriculum.json` |
+## Sync (authoring → app)
 
-## Sync
-
-From the kit repo:
+From **gita-grove-authoring**:
 
 ```powershell
 .\scripts\sync-to-app.ps1
 ```
 
-Copies docs + curriculum into this `littleepicminds` tree.
+Copies: bibles, `docs/books/`, `book-format-spec.md`, curriculum JSON.  
+Does **not** copy export/validate/compile scripts.
 
-## This repo also has
+See `../gita-grove-authoring/SYNC.md` for full details.
 
-The same skill and rule are copied under `.cursor/` here so Grove drafting works without opening the sibling folder.
+## Working in littleepicminds today
 
-**Branch policy (littleepicminds):** `main` = live website — **do not** commit Grove/book changes to `main`. Use **`feature/gita-grove`** for all Grove work in this repo.
+Cursor skills/rules are duplicated under `.cursor/` so drafting works if you open the app repo — but **prefer `gita-grove-authoring`** for new Grove work and KDP export.
+
+**Branch policy (littleepicminds):** `main` = live website — Grove changes on **`feature/gita-grove`** only.
 
 **Legacy** `sd*` / `sk*` theme pipeline rules remain in `.cursor/rules/gita-chatgpt-theme-stories.mdc` — separate from Grove v2.
