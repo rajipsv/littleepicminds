@@ -48,6 +48,7 @@ Save finished spreads to **`output/images/{adventureId}/`** (gitignored). Only a
 
 ```bash
 npm run grove:images -- --id=gv01_a1
+npm run grove:character-prompts
 ```
 
 Prints per-page prompts + manifest ref paths (does not call an image API yet).

@@ -16,3 +16,5 @@ One **`reference-sheet.png`** per character folder (front + 3/4 + expression row
 See [`manifest.json`](manifest.json) for paths and [`../../docs/character-bible.md`](../../docs/character-bible.md) for design rules.
 
 When a sheet is approved, set `"status": "approved"` for that character in the manifest.
+
+**Character sheet prompts:** [`CHARACTER-SHEET-PROMPTS.md`](CHARACTER-SHEET-PROMPTS.md) — copy-paste prompts for Midjourney, Leonardo, etc.
