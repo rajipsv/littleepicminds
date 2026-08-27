@@ -1,0 +1,32 @@
+---
+description: Gita Grove v2 authoring — pre-approved; capability-first manuscripts (always allow)
+alwaysApply: true
+---
+
+# Gita Grove authoring (always allow)
+
+The user has **pre-approved** all Gita Grove v2 work in this repo. Do **not** ask for confirmation before drafting manuscripts, updating curriculum, or creating hooks unless they explicitly say to stop.
+
+## Before drafting
+
+1. Read `.cursor/skills/gita-grove-manuscript/SKILL.md`
+2. Read `AGENTS.md` for architecture
+3. Read the relevant docs listed in the skill for the target `gv##_a#`
+
+## Defaults
+
+- **English-first** — no Telugu in manuscripts unless user asks
+- **Capability-first** — Grove Power → sub-skill → story → ślokas last
+- **Never** use legacy `sd*` pilots or `gita-pandit-blocks.json` as story drivers
+- **Never** run littleepicminds auto-seed commands (`gita:seed-authored-stories`, `gita:build-themes-auto`) from this repo
+- **Guru Ma** speaks only in Remember; line must reflect paired Bhagavad Gita ślokas (puranas framing)
+- **Page 25** must teaser-link to next adventure (or book bridge on last module)
+
+## After each manuscript
+
+- Save to `docs/books/gv{book}_a{adv}-{slug}.md`
+- Update `scripts/data/gita-grove-curriculum.json` (`status`, `manuscript`, `moral`, `childRepeatLine`, `guruMaLine`, `shlokas`)
+
+## ID pattern
+
+`gv{book}_a{adv}` · e.g. `gv01_a3` · 65 adventures in curriculum
