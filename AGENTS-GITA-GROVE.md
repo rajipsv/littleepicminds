@@ -8,8 +8,10 @@ How Cursor agents write Grove stories. **Read `.cursor/skills/gita-grove-manuscr
 
 | Repo | Role |
 |------|------|
-| **gita-grove-authoring** (this) | Bibles, manuscripts, curriculum, Cursor skills/rules |
-| **littleepicminds** | React app, audio, legacy Gita theme import (`sd*`/`sk*`) |
+| **gita-grove-authoring** | **Story engine** — generate, validate, compile, export; bibles + curriculum source |
+| **littleepicminds** (this) | **Product** — stores synced content; app, audio, website for external users |
+
+Content flows **engine → sync → app**. Generation tooling stays in gita-grove-authoring only.
 
 Do **not** mix legacy theme auto-seed pipelines with Grove v2 manuscripts.
 
