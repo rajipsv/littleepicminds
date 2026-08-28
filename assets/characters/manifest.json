@@ -1,7 +1,6 @@
 {
   "version": 1,
-  "styleRef": "assets/style/grove-picture-book-sref.png",
-  "styleSheetPrompt": "Gita Grove children's picture book world sample, soft watercolor style, full color, Blossom Meadow at golden hour, gentle rolling hills, friendly storybook trees, warm yellow-pink flowers, peaceful magical grove atmosphere, no characters, no text, establishing illustration for picture book series, 1:1 composition",
+  "styleManifest": "assets/style/manifest.json",
   "styleSuffixBase": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm gentle lighting, consistent character design, no text in image",
   "sheetPromptSuffix": "Front view, three-quarter view, side view, expression row: happy, scared, thinking, sorry, proud. Children's picture book character design reference sheet, Gita Grove Seeds, soft watercolor and colored pencil style, full color, warm gentle lighting, big head and simple limbs (ages 5-7 proportions), clean white background, no text, no labels, no watermark",
   "promptsDoc": "assets/characters/CHARACTER-SHEET-PROMPTS.md",
@@ -16,7 +15,7 @@
       "bibleAnchor": "docs/character-bible.md#gulu",
       "sheetPrompt": "Character design sheet for GULU, a curious young squirrel age 6, Gita Grove Seeds. Bushy reddish-brown tail, bright curious eyes, warm friendly face, small paws often holding an acorn or leaf. Expression: thoughtful and kind, sometimes nervous.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "mimi",
@@ -28,7 +27,7 @@
       "bibleAnchor": "docs/character-bible.md#mimi",
       "sheetPrompt": "Character design sheet for MIMI, a gentle young rabbit age 5-6, Gita Grove Seeds. Long expressive ears, soft brown or grey fur, sweet observant eyes, small paws that often hold a ribbon, flower, or paintbrush. Shy but warm smile. Expression row shows tummy-flutter nervousness and quiet bravery.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "bobo",
@@ -40,7 +39,7 @@
       "bibleAnchor": "docs/character-bible.md#bobo",
       "sheetPrompt": "Character design sheet for BOBO, an energetic young monkey age 6-7, Gita Grove Seeds. Long arms, playful striped tail, bold grin, messy cheerful energy, often mid-leap or mid-gesture. Generous eyes that look sorry when caught rushing.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "timo",
@@ -52,7 +51,7 @@
       "bibleAnchor": "docs/character-bible.md#timo",
       "sheetPrompt": "Character design sheet for TIMO, a kind young tortoise age 7, Gita Grove Seeds. Round patterned shell, gentle old-soul eyes, calm small smile, short sturdy legs, sometimes holding a leaf or small book. Patient and thoughtful expression.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "kiki",
@@ -64,7 +63,7 @@
       "bibleAnchor": "docs/character-bible.md#kiki",
       "sheetPrompt": "Character design sheet for KIKI, a witty young myna bird age 6, Gita Grove Seeds. Bright yellow-orange beak, dark glossy feathers, clever head tilt, folded wings and spread wings poses, often looks like she just noticed something funny. Small but confident.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "guru-ma",
@@ -76,7 +75,7 @@
       "bibleAnchor": "docs/character-bible.md#guru-ma-owl",
       "sheetPrompt": "Character design sheet for GURU MA OWL, a warm elder owl guide, Gita Grove Seeds. Soft grey feathers, round kind eyes, optional small round glasses, moonlight-library wise grandmother energy, never stern or scary. Unhurried gentle smile. Approachable not preachy.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "pip",
@@ -89,7 +88,7 @@
       "adventures": ["gv01_a1"],
       "sheetPrompt": "Character design sheet for PIP, a small field mouse guest character, Gita Grove Seeds. Round ears, tiny paws tucked when nervous, small and easily overlooked, shiny anxious eyes that soften when brave. Shy posture on wooden steps.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     },
     {
       "id": "diya",
@@ -102,7 +101,7 @@
       "adventures": [],
       "sheetPrompt": "Character design sheet for DIYA, a gentle firefly guest character, Gita Grove Seeds. Soft yellow-green bioluminescent glow, tiny delicate wings, summer evening light, memory and wonder feeling, poetic and calm not cartoon-bug silly. Small scale next to a flower for size reference.",
       "expressions": ["happy", "scared", "thinking", "sorry", "proud"],
-      "status": "pending"
+      "status": "approved"
     }
   ]
 }

@@ -12,7 +12,9 @@ assets/
     mimi/ … bobo/ timo/ kiki/ guru-ma/
     guests/pip/ …                # Adventure-specific guests
   style/
-    grove-picture-book-sref.png  # Locked palette + illustration style (--sref)
+    manifest.json              # location → style PNG (--sref)
+    STYLE-SHEET-PROMPTS.md
+    blossom-meadow-sref.png    # per-location refs (see manifest)
 ```
 
 ## Before generating page art
@@ -20,7 +22,7 @@ assets/
 1. Create **`reference-sheet.png`** for each core character (see [`docs/character-bible.md`](../docs/character-bible.md) illustration notes).
 2. Seeds proportions: big heads, simple limbs.
 3. Optional: expression PNGs in each `expressions/` subfolder (happy, scared, thinking, sorry, proud).
-4. Create **`assets/style/grove-picture-book-sref.png`** — one approved Grove world sample.
+4. Create **location style PNGs** in `assets/style/` (see [`style/STYLE-SHEET-PROMPTS.md`](style/STYLE-SHEET-PROMPTS.md) and [`style/manifest.json`](style/manifest.json)).
 5. Set `"status": "approved"` in [`characters/manifest.json`](characters/manifest.json) when refs are final.
 
 ## Tool usage

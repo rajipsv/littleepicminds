@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "seriesFallback": "assets/style/grove-picture-book-sref.png",
+  "defaultLocation": "Blossom Meadow",
+  "promptsDoc": "assets/style/STYLE-SHEET-PROMPTS.md",
+  "styleSuffixBase": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm gentle lighting, consistent character design, no text in image",
+  "locations": [
+    {
+      "id": "blossom-meadow",
+      "name": "Blossom Meadow",
+      "file": "assets/style/blossom-meadow-sref.png",
+      "lighting": "Warm golden hour / late afternoon",
+      "palette": "Soft yellow-pink flowers, gentle green grass",
+      "elements": "Fair tents, flower strings, open sky, distant drum stage",
+      "sheetPrompt": "Gita Grove children's picture book establishing shot, Blossom Meadow, soft watercolor, full color, warm golden hour lighting, soft yellow-pink wildflowers, gentle green rolling hills, distant fair tents and flower strings, peaceful open sky, no characters, no text, 1:1 composition",
+      "status": "approved"
+    },
+    {
+      "id": "courage-hill",
+      "name": "Courage Hill",
+      "file": "assets/style/courage-hill-sref.png",
+      "lighting": "Clear sunrise gold",
+      "palette": "Gold hill tones, green-gold ribbon accent",
+      "elements": "Stone steps, starting line, small stage, ribbon poles",
+      "sheetPrompt": "Gita Grove children's picture book establishing shot, Courage Hill, soft watercolor, full color, clear sunrise gold lighting, steep grassy hill with stone steps, starting line and ribbon poles, small ceremony stage at the top, warm gold and green tones, no characters, no text, 1:1 composition",
+      "status": "approved"
+    },
+    {
+      "id": "rainbow-bridge",
+      "name": "Rainbow Bridge",
+      "file": "assets/style/rainbow-bridge-sref.png",
+      "lighting": "Soft midday, light cloud",
+      "palette": "Vibrant but gentle greens, sky blue",
+      "elements": "Arched wooden bridge, winding stream, wobbly boards",
+      "sheetPrompt": "Gita Grove picture book establishing shot, Rainbow Bridge location, soft watercolor, midday soft light, winding stream below, arched wooden bridge, vibrant gentle greens, friendly storybook trees, no characters, no text, 1:1 composition",
+      "status": "approved"
+    },
+    {
+      "id": "kindness-garden",
+      "name": "Kindness Garden",
+      "file": "assets/style/kindness-garden-sref.png",
+      "lighting": "Misty soft morning",
+      "palette": "Warm greens, vegetable earth tones",
+      "elements": "Veg beds, fruit trees, sharing bench, ant paths",
+      "sheetPrompt": "Gita Grove picture book establishing shot, Kindness Garden, soft watercolor, misty soft morning light, vegetable beds and fruit trees, wooden sharing bench, gentle ant paths, warm greens and earth tones, no characters, no text, 1:1 composition",
+      "status": "approved"
+    },
+    {
+      "id": "river-of-patience",
+      "name": "River of Patience",
+      "file": "assets/style/river-of-patience-sref.png",
+      "lighting": "Overcast calm / post-rain",
+      "palette": "Deeper soft blues, grey-green water",
+      "elements": "Slow stream, stepping stones, paper boats, lotus edge",
+      "sheetPrompt": "Gita Grove picture book establishing shot, River of Patience, soft watercolor, overcast calm post-rain lighting, slow gentle stream, stepping stones across water, paper boats and lotus at the edge, deeper soft blues and grey-green water, no characters, no text, 1:1 composition",
+      "status": "approved"
+    },
+    {
+      "id": "moonlight-library",
+      "name": "Moonlight Library",
+      "file": "assets/style/moonlight-library-sref.png",
+      "lighting": "Starry twilight / soft lamplight",
+      "palette": "Blue-grey, warm lamp glow",
+      "elements": "Owl nook, books, maps, question bowl — not harsh night black",
+      "sheetPrompt": "Gita Grove picture book establishing shot, Moonlight Library exterior or nook glimpse, soft watercolor, starry twilight with warm owl-lamp glow, blue-grey and soft gold tones, books and gentle magic, not scary dark night, no characters, no text, 1:1 composition",
+      "status": "approved"
+    }
+  ]
+}

@@ -14,20 +14,18 @@ character turnaround plus expression row, no text, no labels, no watermark
 **Recommended layout in prompt:** front view, three-quarter view, side view, and a row of five expressions (happy, scared, thinking, sorry, proud).
 
 **Midjourney:** add `--ar 3:2` (wide sheet) or `--ar 1:1` (single hero pose first, then sheet).  
-**After first approved character:** use `--cref` with that sheet when generating the next, and `--sref` once `assets/style/grove-picture-book-sref.png` exists.
+**After first approved character:** use `--cref` with that sheet when generating the next, and `--sref` with the **location-matched** style PNG from [`../style/manifest.json`](../style/manifest.json).
 
 ---
 
-## Style reference (generate once first)
+## Style references (per location)
 
-**Save as:** `assets/style/grove-picture-book-sref.png`
+See **[`../style/STYLE-SHEET-PROMPTS.md`](../style/STYLE-SHEET-PROMPTS.md)** and **[`../style/manifest.json`](../style/manifest.json)**.
 
-```
-Gita Grove children's picture book world sample, soft watercolor style, full color,
-Blossom Meadow at golden hour, gentle rolling hills, friendly storybook trees,
-warm yellow-pink flowers, peaceful magical grove atmosphere, no characters,
-no text, establishing illustration for picture book series, 1:1 composition
-```
+Book 1 pilots:
+
+- `gv01_a1` → `assets/style/blossom-meadow-sref.png`
+- `gv01_a2` → `assets/style/courage-hill-sref.png`
 
 ---
 
@@ -169,7 +167,7 @@ After saving Kiki's sheet, generate Mimi with:
 
 ## Order of generation (recommended)
 
-1. **Style ref** → `assets/style/grove-picture-book-sref.png`
+1. **Location style refs** → see [`../style/manifest.json`](../style/manifest.json) (start with Blossom Meadow + Courage Hill for Book 1)
 2. **Core cast** (any order): Gulu, Mimi, Bobo, Timo, Kiki, Guru Ma
 3. **Guests when needed:** Pip (Book 1), Diya (Book 2+)
 
