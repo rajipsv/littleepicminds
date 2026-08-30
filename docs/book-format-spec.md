@@ -71,9 +71,9 @@
 | Moral | Moral | 1 sentence + child repeat line | Large type — first back-matter page after story |
 | 17–18 | Remember | 2 ślokas | Transliteration + child meaning; **rememberLine** (book voice) unique per adventure — *Bhagavad Gita / Indian puranas* framing |
 | 19 | Listen | — | QR → app audio |
-| 20–22 | Practice | — | 3 activities tied to **sub-skill** |
-| 23 | Celebrate | — | Name **Grove Power**; Tree leaf cut-out |
-| 24 | For grown-ups | 80–120 | Power + question + optional verse refs |
+| 20–22 | Practice | — | 3 activities tied to **theme** |
+| 23 | Celebrate | — | Name what the lead practiced; Tree leaf cut-out (book + module #) |
+| 24 | For grown-ups | 80–120 | Chapter + theme, discussion question, optional verse refs |
 | 25 | Next adventure | — | Teaser + series list |
 
 **Rule:** Never shrink below 25 pages — expand Practice/Remember, not clipart filler.

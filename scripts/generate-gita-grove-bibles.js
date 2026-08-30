@@ -446,9 +446,9 @@ BOOK (1 Gita chapter, ~80 pp compiled)
 
 ---
 
-## 18 Grove Powers
+## 18 books
 
-One trainable capability per book (Celebrate page). Themes within each book map to sub-skills. See [\`gita-grove-capabilities.md\`](gita-grove-capabilities.md).
+One Bhagavad Gita chapter per print book. Each module explores one **theme** within that chapter. Celebrate pages name what the lead child practiced — not a separate "power" label. See [\`gita-grove-capabilities.md\`](gita-grove-capabilities.md).
 
 ---
 

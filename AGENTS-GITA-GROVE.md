@@ -34,7 +34,7 @@ Content flows **engine → sync → app**.
 | `docs/gita-grove/six-children.md` | Human cast table |
 | `docs/gita-grove/world-bible.md` | Neighborhood, locations |
 | `docs/character-bible.md` | Full human character bible |
-| `docs/gita-grove-capabilities.md` | 18 Grove Powers per book |
+| `docs/gita-grove-capabilities.md` | 18 chapter names per book |
 | `scripts/data/gita-grove-curriculum.json` | Curriculum entries |
 
 ---
@@ -60,7 +60,7 @@ See `docs/book-format-spec.md`.
 |---------|-------|
 | Story pages | No śloka in body · no Arjuna/Krishna names (Seeds) |
 | Remember | Book voice + paired ślokas · field: `rememberLine` |
-| Celebrate | Name Grove Power for book |
+| Celebrate | Name what the lead practiced; Tree leaf for book + module |
 | Page 25 | Teaser → next module |
 
 ---

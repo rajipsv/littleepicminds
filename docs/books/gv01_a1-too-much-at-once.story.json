@@ -1,0 +1,80 @@
+{
+  "adventureId": "gv01_a1",
+  "title": "Too Much at Once",
+  "slug": "too-much-at-once",
+  "defaults": {
+    "styleSuffix": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, Old Banyan Tree green and gold palette, contemporary Indian children ages 5-7, consistent character design, no text in image"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "text": "Grove Club was planning a small celebration under the Old Banyan.\n\nPaper chains hung from low branches. Someone had drawn a welcome sign with crayons. The air smelled like jasmine and fresh laddoos from the snack table.\n\nVanshi tied the last knot on a decoration string. Her friendship bracelet caught the sunlight.",
+      "imagePrompt": "Wide Old Banyan Tree in Gita Grove, paper chains and rangoli prep for Grove Club celebration, warm afternoon light through roots, no characters yet, establishing shot. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Meet the friends",
+      "text": "Aarav sat on a root with his notebook open. \"Three games, one snack table, and a photo for the club wall,\" he read. \"That should work.\"\n\nVanshi smiled. \"It will feel special. I know it will.\"\n\nShe wanted everyone to walk in and feel cared for.",
+      "imagePrompt": "Vanshi age 8 Indian girl, dark wavy hair with clip, soft kurta and friendship bracelet, tying decoration under banyan. Aarav age 9 Indian boy, neat short hair, shirt and notebook on lap, sitting on banyan root. Two children only, friendly intro. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Hook — wind",
+      "text": "Then the wind came — not angry, just busy.\n\nPaper chains lifted like birds. One fluttered into a branch and stuck.\n\n\"Oh no,\" Vanshi said. She ran to catch them. Her heart beat faster with every strip of paper in the air.",
+      "imagePrompt": "Wind lifting orange pink paper chains, Vanshi reaching up surprised arms stretched, Aarav steadying wooden table edge, banyan branches above, motion and worry. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Goal",
+      "text": "Aarav pointed at his list. \"We still have time.\"\n\nVanshi nodded hard. She would fix the chains, fix the table, fix the mood — all before anyone arrived.\n\nShe wanted the day to feel special for **everyone**.",
+      "imagePrompt": "Vanshi and Aarav facing tangled decorations and festive setup, determined faces, Vanshi clutching strings Aarav holding notebook list, banyan trunk behind. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Obstacle — rangoli",
+      "text": "On the stone path, someone bumped the rangoli bowl. Pink and yellow powder spilled in a messy cloud.\n\nVanshi's stomach dropped. That pattern took an hour.\n\n\"It's okay,\" Aarav started.\n\nBut it did not feel okay. It felt like one more thing on a pile that was already too high.",
+      "imagePrompt": "Bright pink yellow rangoli powder spilled on stone path, Vanshi kneeling hands out shocked, Aarav crouching beside her notebook closed, under banyan shade. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Obstacle — missing bowl",
+      "text": "At the snack table, the big serving bowl was gone.\n\n\"Who moved it?\" Vanshi asked, louder than she meant to.\n\nAarav looked around. \"Maybe we can find it. Or use the blue one.\"\n\nVanshi heard the worry in her own voice. Wind, spilled rangoli, missing bowl — **all at once**.",
+      "imagePrompt": "Snack table with empty space where bowl should be, laddoos on plate, Vanshi hands on hips worried, Aarav scanning ground thoughtfully, celebration clutter. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Wrong choice",
+      "text": "Vanshi grabbed the chains, the cloth, the spare rangoli cup — everything at the same time.\n\nAarav said, \"Which one first?\"\n\n\"All of them!\" Vanshi snapped. \"Can't you see it's all falling apart?\"\n\nShe did not mean to sound sharp. But the words came out hot and fast.",
+      "imagePrompt": "Vanshi holding too many items at once face flushed tense, Aarav asking gently notebook under arm, emotional tension under banyan roots, peak flaw moment. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Consequence",
+      "text": "A younger helper who had come early stopped mid-step. She had been bringing napkins.\n\nNow she stood very still, looking at the ground.\n\nVanshi's chest tightened. That was not the welcome she wanted anyone to feel.",
+      "imagePrompt": "Generic younger helper child stepping back hurt quiet expression, Vanshi frozen wide eyes realizing, Aarav calm beside her, soft emotional close-up. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Escalation",
+      "text": "More helpers arrived. \"Where do the cups go?\" \"Is the rangoli ruined?\" \"When do we start?\"\n\nQuestions bounced like balls. Vanshi's head buzzed. Her hands wanted to do ten jobs. Her body wanted to sit down.\n\nEverything felt **too full**.",
+      "imagePrompt": "Vanshi both hands on head overwhelmed sitting on banyan root, blurred background of arriving helpers, Aarav open notebook showing two written items calm face. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Turning point",
+      "text": "Aarav did not argue. He did not say she was wrong.\n\nHe opened his notebook and wrote two words big enough to read: **Snack table. Chains.**\n\n\"Pick one,\" he said quietly. \"We do that first. Just that.\"",
+      "imagePrompt": "Aarav showing notebook with SNACK TABLE and CHAINS written large, Vanshi teary eyes softening listening, intimate two-shot under banyan, noise faded background. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Discovery",
+      "text": "Vanshi sat on the root. Her legs felt heavy. Her eyes felt wet.\n\n\"I thought if I tried hard enough, it would all stop feeling scary,\" she whispered.\n\nAarav nodded. \"Sometimes everything hits at once. That is a real feeling. It is not failing.\"",
+      "imagePrompt": "Vanshi and Aarav sitting side by side on same banyan root equal height, peaceful pause, hands loose, celebration paused around them, quiet beat. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Application",
+      "text": "Vanshi took a breath. Out loud she said, \"This is too much for me right now.\"\n\nThe words felt strange and honest.\n\n\"Snack table first,\" she said. \"Will you help me?\"\n\n\"Yes,\" Aarav said. Just that.",
+      "imagePrompt": "Vanshi and Aarav arranging snack table together one bowl one row of cups, focused teamwork, calmer expressions, single task only. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Resolution",
+      "text": "They fixed the snack table together. One bowl. One row of cups. One thing **done**.\n\nThe chains could wait. The rangoli could wait.\n\nThe younger helper peeked over. Vanshi smiled — soft this time. \"You can put napkins here. Thank you for coming early.\"",
+      "imagePrompt": "Neat snack table with laddoos and cups, Vanshi genuine small smile, Aarav adjusting cup, younger helper placing napkins, warm golden banyan light. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    },
+    {
+      "beat": "Growth",
+      "text": "When the wind tugged the chains again, Vanshi did not grab them alone.\n\nShe tapped Aarav's shoulder. \"Too much again. Help?\"\n\nHe closed his notebook. \"Let's pick one.\"\n\nThe celebration was not perfect. But it was beginning — and Vanshi was not carrying every piece by herself.",
+      "imagePrompt": "Vanshi tapping Aarav shoulder asking for help with paper chains, open relaxed body language, partial decorations, Grove Club celebration gently starting. Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm natural lighting, consistent character design, no text in image"
+    }
+  ]
+}

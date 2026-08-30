@@ -14,7 +14,7 @@ After **`gita-grove-module-manuscript`** story pages are drafted. Before **`gita
 ## Read first
 
 - Completed `*.story.json` + story summary
-- `docs/gita-grove-capabilities.md` — Grove Power + sub-skill for book
+- `docs/gita-grove-capabilities.md` — chapter name + theme for book
 - `.cursor/skills/gita-grove-manuscript/reference-hooks.md` — teaser rules (ignore Guru Ma rows)
 - `docs/books/gv{book}-book-hooks.md` if present
 
@@ -24,22 +24,22 @@ One `###` block per printed back-matter page under these sections:
 
 ## Moral
 
-- One sentence moral tied to **sub-skill**, not śloka jargon
+- One sentence moral tied to **theme**, not śloka jargon
 - **Child repeat line** — short, speakable (8–12 words)
 
 ## Practice
 
-- Three activities tied to sub-skill
+- Three activities tied to theme
 - Concrete, home/school doable, ages 5–7
 
 ## Celebrate
 
-- Name the **Grove Power**
-- Tree leaf / series collectable beat where applicable
+- Name what the **lead child practiced** (plain language, tied to theme)
+- Tree leaf / series collectable: **Book N · {chapter name} — module M of total**
 
 ## For grown-ups
 
-- 80–120 words: power, discussion question, optional verse refs
+- 80–120 words: chapter + theme, discussion question, optional verse refs
 - May name Arjuna/Krishna here only — not in Seeds story body
 
 ## Page 25 — Next adventure

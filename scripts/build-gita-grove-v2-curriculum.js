@@ -11,25 +11,39 @@ const REGISTRY_PATH = path.join(ROOT, 'docs/gita-grove/module-registry.json');
 const CURRICULUM_PATH = path.join(ROOT, 'scripts/data/gita-grove-curriculum.json');
 
 const BOOKS = [
-  { book: 1, chapterName: 'The Problem', gitaChapter: 'Arjuna Vishada Yoga', coreIdea: 'Sometimes I feel confused.', bookAnchor: 'Vanshi · Aarav · Mira', moduleCount: 3, powerId: 'honest_heart', power: 'Honest Heart', workingTitle: 'The Problem', arc: 1 },
-  { book: 2, chapterName: 'Understanding Yourself', gitaChapter: 'Sankhya Yoga', coreIdea: 'You are stronger than your changing feelings.', bookAnchor: 'Aarav', moduleCount: 7, powerId: 'steady_me', power: 'Steady Me', workingTitle: 'Understanding Yourself', arc: 1 },
-  { book: 3, chapterName: 'Doing What You Can Do', gitaChapter: 'Karma Yoga', coreIdea: 'Do the right thing and do your best.', bookAnchor: 'Mira', moduleCount: 4, powerId: 'helpful_hands', power: 'Helpful Hands', workingTitle: 'Doing What You Can Do', arc: 2 },
-  { book: 4, chapterName: 'Learning and Growing', gitaChapter: 'Jnana Karma Sannyasa Yoga', coreIdea: 'Wisdom helps us make better choices.', bookAnchor: 'Kabir', moduleCount: 5, powerId: 'learning_heart', power: 'Learning Heart', workingTitle: 'Learning and Growing', arc: 2 },
-  { book: 5, chapterName: 'Peaceful Action', gitaChapter: 'Karma Sannyasa Yoga', coreIdea: 'You can do good things without always thinking about yourself.', bookAnchor: 'Vihaan', moduleCount: 3, powerId: 'calm_inside', power: 'Calm Inside', workingTitle: 'Peaceful Action', arc: 2 },
-  { book: 6, chapterName: 'Training the Mind', gitaChapter: 'Dhyana Yoga', coreIdea: 'Your mind can become your friend.', bookAnchor: 'Tara', moduleCount: 5, powerId: 'gentle_focus', power: 'Gentle Focus', workingTitle: 'Training the Mind', arc: 2 },
-  { book: 7, chapterName: 'Knowing Something Deeply', gitaChapter: 'Jnana Vijnana Yoga', coreIdea: 'The world is more connected than it looks.', bookAnchor: 'Kabir', moduleCount: 3, powerId: 'wonder_eyes', power: 'Wonder Eyes', workingTitle: 'Knowing Something Deeply', arc: 3 },
-  { book: 8, chapterName: 'Remembering What Matters', gitaChapter: 'Akshara Brahma Yoga', coreIdea: 'Remember what truly matters.', bookAnchor: 'Aarav', moduleCount: 3, powerId: 'remember_light', power: 'Remember Light', workingTitle: 'Remembering What Matters', arc: 3 },
-  { book: 9, chapterName: 'Discovering Something Wonderful', gitaChapter: 'Raja Vidya Raja Guhya Yoga', coreIdea: 'Goodness and love can be found everywhere.', bookAnchor: 'Vanshi', moduleCount: 4, powerId: 'safe_belonging', power: 'Safe Belonging', workingTitle: 'Discovering Something Wonderful', arc: 3 },
-  { book: 10, chapterName: 'Discovering Greatness', gitaChapter: 'Vibhuti Yoga', coreIdea: 'Look closely at the wonders around you.', bookAnchor: 'Vihaan', moduleCount: 4, powerId: 'spark_finder', power: 'Spark Finder', workingTitle: 'Discovering Greatness', arc: 3 },
-  { book: 11, chapterName: 'Seeing the Bigger Picture', gitaChapter: 'Vishvarupa Darshana Yoga', coreIdea: 'You are part of something much bigger.', bookAnchor: 'Vihaan', moduleCount: 3, powerId: 'wide_wonder', power: 'Wide Wonder', workingTitle: 'Seeing the Bigger Picture', arc: 3 },
-  { book: 12, chapterName: 'Love and Kindness', gitaChapter: 'Bhakti Yoga', coreIdea: 'Love can make us kinder.', bookAnchor: 'Vanshi', moduleCount: 4, powerId: 'kind_friend', power: 'Kind Friend', workingTitle: 'Love and Kindness', arc: 4 },
-  { book: 13, chapterName: 'Understanding the Body and Self', gitaChapter: 'Kshetra Kshetrajna Vibhaga Yoga', coreIdea: 'Notice what is happening inside you.', bookAnchor: 'Aarav', moduleCount: 4, powerId: 'inner_gardener', power: 'Inner Gardener', workingTitle: 'Understanding the Body and Self', arc: 4 },
-  { book: 14, chapterName: 'Understanding Our Habits', gitaChapter: 'Gunatraya Vibhaga Yoga', coreIdea: 'Different moods can pull us in different directions.', bookAnchor: 'Tara', moduleCount: 5, powerId: 'mood_weather', power: 'Mood Weather', workingTitle: 'Understanding Our Habits', arc: 4 },
-  { book: 15, chapterName: 'Remembering What Matters Most', gitaChapter: 'Purushottama Yoga', coreIdea: 'Look beyond what changes.', bookAnchor: 'Aarav', moduleCount: 3, powerId: 'deep_roots', power: 'Deep Roots', workingTitle: 'Remembering What Matters Most', arc: 4 },
-  { book: 16, chapterName: 'Choosing Good Qualities', gitaChapter: 'Daivasura Sampad Vibhaga Yoga', coreIdea: 'Every day, we can choose what kind of person we want to become.', bookAnchor: 'Mira', moduleCount: 6, powerId: 'brave_choices', power: 'Brave Choices', workingTitle: 'Choosing Good Qualities', arc: 5 },
-  { book: 17, chapterName: 'The Way We Live', gitaChapter: 'Shraddhatraya Vibhaga Yoga', coreIdea: 'Our habits shape who we become.', bookAnchor: 'Tara', moduleCount: 4, powerId: 'good_habits', power: 'Good Habits', workingTitle: 'The Way We Live', arc: 5 },
-  { book: 18, chapterName: 'Choosing Your Path', gitaChapter: 'Moksha Sannyasa Yoga', coreIdea: 'Understand yourself, make wise choices, and do what is right.', bookAnchor: 'Mira', moduleCount: 4, powerId: 'my_true_path', power: 'My True Path', workingTitle: 'Choosing Your Path', arc: 5 },
+  { book: 1, chapterName: 'The Problem', gitaChapter: 'Arjuna Vishada Yoga', coreIdea: 'Sometimes I feel confused.', bookAnchor: 'Vanshi · Aarav · Mira', moduleCount: 3, arc: 1 },
+  { book: 2, chapterName: 'Understanding Yourself', gitaChapter: 'Sankhya Yoga', coreIdea: 'You are stronger than your changing feelings.', bookAnchor: 'Aarav', moduleCount: 7, arc: 1 },
+  { book: 3, chapterName: 'Doing What You Can Do', gitaChapter: 'Karma Yoga', coreIdea: 'Do the right thing and do your best.', bookAnchor: 'Mira', moduleCount: 4, arc: 2 },
+  { book: 4, chapterName: 'Learning and Growing', gitaChapter: 'Jnana Karma Sannyasa Yoga', coreIdea: 'Wisdom helps us make better choices.', bookAnchor: 'Kabir', moduleCount: 5, arc: 2 },
+  { book: 5, chapterName: 'Peaceful Action', gitaChapter: 'Karma Sannyasa Yoga', coreIdea: 'You can do good things without always thinking about yourself.', bookAnchor: 'Vihaan', moduleCount: 3, arc: 2 },
+  { book: 6, chapterName: 'Training the Mind', gitaChapter: 'Dhyana Yoga', coreIdea: 'Your mind can become your friend.', bookAnchor: 'Tara', moduleCount: 5, arc: 2 },
+  { book: 7, chapterName: 'Knowing Something Deeply', gitaChapter: 'Jnana Vijnana Yoga', coreIdea: 'The world is more connected than it looks.', bookAnchor: 'Kabir', moduleCount: 3, arc: 3 },
+  { book: 8, chapterName: 'Remembering What Matters', gitaChapter: 'Akshara Brahma Yoga', coreIdea: 'Remember what truly matters.', bookAnchor: 'Aarav', moduleCount: 3, arc: 3 },
+  { book: 9, chapterName: 'Discovering Something Wonderful', gitaChapter: 'Raja Vidya Raja Guhya Yoga', coreIdea: 'Goodness and love can be found everywhere.', bookAnchor: 'Vanshi', moduleCount: 4, arc: 3 },
+  { book: 10, chapterName: 'Discovering Greatness', gitaChapter: 'Vibhuti Yoga', coreIdea: 'Look closely at the wonders around you.', bookAnchor: 'Vihaan', moduleCount: 4, arc: 3 },
+  { book: 11, chapterName: 'Seeing the Bigger Picture', gitaChapter: 'Vishvarupa Darshana Yoga', coreIdea: 'You are part of something much bigger.', bookAnchor: 'Vihaan', moduleCount: 3, arc: 3 },
+  { book: 12, chapterName: 'Love and Kindness', gitaChapter: 'Bhakti Yoga', coreIdea: 'Love can make us kinder.', bookAnchor: 'Vanshi', moduleCount: 4, arc: 4 },
+  { book: 13, chapterName: 'Understanding the Body and Self', gitaChapter: 'Kshetra Kshetrajna Vibhaga Yoga', coreIdea: 'Notice what is happening inside you.', bookAnchor: 'Aarav', moduleCount: 4, arc: 4 },
+  { book: 14, chapterName: 'Understanding Our Habits', gitaChapter: 'Gunatraya Vibhaga Yoga', coreIdea: 'Different moods can pull us in different directions.', bookAnchor: 'Tara', moduleCount: 5, arc: 4 },
+  { book: 15, chapterName: 'Remembering What Matters Most', gitaChapter: 'Purushottama Yoga', coreIdea: 'Look beyond what changes.', bookAnchor: 'Aarav', moduleCount: 3, arc: 4 },
+  { book: 16, chapterName: 'Choosing Good Qualities', gitaChapter: 'Daivasura Sampad Vibhaga Yoga', coreIdea: 'Every day, we can choose what kind of person we want to become.', bookAnchor: 'Mira', moduleCount: 6, arc: 5 },
+  { book: 17, chapterName: 'The Way We Live', gitaChapter: 'Shraddhatraya Vibhaga Yoga', coreIdea: 'Our habits shape who we become.', bookAnchor: 'Tara', moduleCount: 4, arc: 5 },
+  { book: 18, chapterName: 'Choosing Your Path', gitaChapter: 'Moksha Sannyasa Yoga', coreIdea: 'Understand yourself, make wise choices, and do what is right.', bookAnchor: 'Mira', moduleCount: 4, arc: 5 },
 ];
+
+const MERGE_FIELDS = [
+  'title', 'title_te', 'shlokas', 'shlokasStatus', 'status', 'manuscript', 'moral',
+  'childRepeatLine', 'rememberLine', 'openingHook', 'page25Teaser', 'page25WonderQuestion',
+];
+
+function loadExistingCurriculum() {
+  try {
+    if (fs.existsSync(CURRICULUM_PATH)) {
+      return JSON.parse(fs.readFileSync(CURRICULUM_PATH, 'utf8'));
+    }
+  } catch (_) { /* first run */ }
+  return null;
+}
 
 const MODULES = [
   { adventureId: 'gv01_a1', book: 1, module: 1, theme: 'Feeling overwhelmed', lead: 'Vanshi', supporting: 'Aarav', pairingRationale: 'Vanshi feels deeply; Aarav helps her slow down and understand', primaryShloka: '1.28-1.30', childConnection: 'When everything feels like too much', location: 'Old Banyan Tree' },
@@ -135,8 +149,11 @@ function buildRegistry() {
   };
 }
 
-function buildCurriculum(registry) {
+function buildCurriculum(registry, existing) {
   const bookByNum = Object.fromEntries(BOOKS.map((b) => [b.book, b]));
+  const existingById = Object.fromEntries(
+    (existing?.adventures ?? []).map((a) => [a.adventureId, a]),
+  );
   const modulesByBook = {};
   for (const m of MODULES) {
     (modulesByBook[m.book] ||= []).push(m);
@@ -144,10 +161,8 @@ function buildCurriculum(registry) {
 
   const books = BOOKS.map((b) => ({
     book: b.book,
-    powerId: b.powerId,
-    power: b.power,
-    workingTitle: b.workingTitle,
     chapterName: b.chapterName,
+    gitaChapter: b.gitaChapter,
     coreIdea: b.coreIdea,
     arc: b.arc,
     adventureIds: modulesByBook[b.book].map((m) => m.adventureId),
@@ -167,9 +182,6 @@ function buildCurriculum(registry) {
       book: m.book,
       chapterName: b.chapterName,
       coreIdea: b.coreIdea,
-      powerId: b.powerId,
-      power: b.power,
-      bookTitle: b.workingTitle,
       arc: b.arc,
       title: null,
       title_te: null,
@@ -177,7 +189,6 @@ function buildCurriculum(registry) {
       lead: m.lead,
       supporting: m.supporting,
       theme: m.theme,
-      subSkill: m.theme,
       pairingRationale: m.pairingRationale,
       storyFeeling: m.childConnection,
       synopsis,
@@ -193,6 +204,13 @@ function buildCurriculum(registry) {
       openingHook: null,
       nextAdventureId: nextInBook?.adventureId ?? null,
     };
+
+    const prev = existingById[m.adventureId];
+    if (prev) {
+      for (const field of MERGE_FIELDS) {
+        if (prev[field] != null) entry[field] = prev[field];
+      }
+    }
 
     if (!nextInBook && m.book < 18) {
       entry.nextBookTeaser = nextBookFirst?.adventureId ?? null;
@@ -232,8 +250,9 @@ function buildCurriculum(registry) {
   };
 }
 
+const existing = loadExistingCurriculum();
 const registry = buildRegistry();
-const curriculum = buildCurriculum(registry);
+const curriculum = buildCurriculum(registry, existing);
 
 fs.writeFileSync(REGISTRY_PATH, JSON.stringify(registry, null, 2) + '\n');
 fs.writeFileSync(CURRICULUM_PATH, JSON.stringify(curriculum, null, 2) + '\n');
