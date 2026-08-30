@@ -1,79 +1,57 @@
 ---
 name: gita-grove-manuscript
 description: >-
-  Draft Gita Grove Seeds adventure manuscripts (gv##_a#), Guru Ma Remember lines
-  from Bhagavad Gita ślokas, book hooks, and curriculum updates. Use when the
-  user asks to write or draft Grove stories, gv01_a2, Honest Heart, Grove Powers,
-  adventure modules, Guru Ma lines, or gita-grove-curriculum.json.
+  Legacy redirect — use the 6-skill Gita Grove pipeline (authoring-core through
+  deliver-module) for gv##_a# manuscripts. Human cast only; book-voice Remember.
 ---
 
-# Gita Grove manuscript skill
+# Gita Grove manuscript skill (legacy redirect)
 
-## When to use
+## Use the 6-skill pipeline instead
 
-Drafting or editing **`gv{book}_a{adv}`** adventure modules for Gita Grove (Seeds 5–7).
+This skill is superseded. For any **`gv{book}_a{adv}`** module, run skills in order:
 
-## Read first (in order)
+| Step | Skill |
+|------|-------|
+| 1 | `gita-grove-authoring-core` — module brief |
+| 2 | `gita-grove-module-bible` — beat sheet |
+| 3 | `gita-grove-module-manuscript` — story.json pages |
+| 4 | `gita-grove-module-backmatter` — Moral, Practice, teaser |
+| 5 | `gita-grove-remember-shloka` — Remember + rememberLine (book voice) |
+| 6 | `gita-grove-image-prompts` — imagePrompt QA |
 
-1. `AGENTS-GITA-GROVE.md` (app repo) or kit `AGENTS.md` — architecture
-2. `docs/gita-grove-capabilities.md` — power + sub-skill for target book
-3. `docs/gita-grove-series-v2.md` — synopsis row
-4. `docs/character-bible.md` + `docs/universe-bible.md` — cast/world
-5. `docs/books/gv{book}-book-hooks.md` — if present (Book 1: `gv01-book-hooks.md`)
-6. Prior manuscript in same book — continuity
-7. `scripts/data/gita-grove-curriculum.json` — target entry
+**Orchestrator:** `gita-grove-deliver-module` — full end-to-end delivery.
 
-## Design order (mandatory)
+## Locked sources (read first)
 
+1. `docs/gita-grove/six-children.md` — human cast
+2. `docs/gita-grove/module-registry.json` — 74 modules (theme, lead, supporting, śloka)
+3. `docs/gita-grove/master-architecture.md` — 18-book table
+4. `AGENTS-GITA-GROVE.md` — architecture
+5. `docs/book-format-spec.md` — 25-page module structure
+
+## Key changes from v1
+
+| v1 (legacy) | v2 (current) |
+|-------------|--------------|
+| Guru Ma Owl speaks Remember | **Book voice** — "In the Bhagavad Gita…" |
+| Animal cast (Gulu, Mimi, etc.) | **Six human children** only |
+| `guruMaLine` in curriculum | **`rememberLine`** |
+| 65 adventures | **74 modules** (1 theme = 1 module) |
+| Single mega-skill | **6-skill pipeline** |
+
+## Design order (unchanged)
+
+```text
+theme → lead flaw → location → scenario → adventure → śloka LAST
 ```
-Grove Power → sub-skill → location → lead flaw → scenario → story → ślokas last
-```
-
-**Never:** verse vocabulary in titles; Gita names in Seeds **story body**; Guru Ma lectures mid-story; pandit blocks as plot engine.
-
-## Draft workflow
-
-```
-- [ ] Confirm adventureId, power, sub-skill, lead, location from curriculum
-- [ ] Read openingHook + prior adventure page-25 teaser
-- [ ] Write docs/books/gv{book}_a{adv}-{slug}.story.json — ordered pages[] with beat, text, imagePrompt
-- [ ] Write docs/books/gv{book}_a{adv}-{slug}.md — metadata + back matter only (Moral → Teaser)
-- [ ] **In gita-grove-authoring:** `npm run grove:validate -- --id=gv{book}_a{adv}`
-- [ ] **In gita-grove-authoring:** `npm run grove:compile -- --id=gv{book}_a{adv}` (optional — preview ## Story in md)
-- [ ] Pair 2 ślokas; write Guru Ma line (see reference-guru-ma.md)
-- [ ] Art briefs (4 key spreads) in markdown
-- [ ] Update curriculum JSON entry
-- [ ] **In gita-grove-authoring:** `.\scripts\sync-to-app.ps1` → littleepicminds
-```
-
-**Hybrid files:** Story lives in **`*.story.json`**; markdown holds back matter with one `###` block per printed page. Export reads JSON directly — compile is optional for human preview.
-
-**Scaffold new story:** in **gita-grove-authoring**: `npm run grove:generate-story -- --id=gv01_a3 --write-scaffold --write-prompt`
 
 ## File naming
 
 ```
-docs/books/gv{book}_a{adv}-{slug}.md          # metadata + back matter
-docs/books/gv{book}_a{adv}-{slug}.story.json  # story pages (canonical)
+docs/books/gv{book}_a{adv}-{slug}.md
+docs/books/gv{book}_a{adv}-{slug}.story.json
 ```
-
-Examples: `gv01_a1-the-fair-before-the-drum.md`, `gv01_a2-mimis-butterflies.md`
-
-## Manuscript template
-
-Use [reference-manuscript-template.md](reference-manuscript-template.md).
-
-**Pilot quality:** `docs/books/gv01_a1-the-fair-before-the-drum.md`, `gv01_a2-mimis-butterflies.md`
-
-## Guru Ma Remember line
-
-See [reference-guru-ma.md](reference-guru-ma.md). One unique line per adventure; opens with Bhagavad Gita / Indian puranas; reflects **semantic meaning** of paired ślokas.
-
-Book 1 pre-paired: `docs/books/gv01-book-hooks.md` § Remember.
-
-## Serial hooks
-
-See [reference-hooks.md](reference-hooks.md). Every module page 25 teases the next; last module in book uses book bridge + optional Book N+1 tease.
 
 ## Curriculum update fields
 
@@ -83,20 +61,17 @@ After draft, set on the adventure object in `scripts/data/gita-grove-curriculum.
 |-------|-------|
 | `status` | `manuscript` |
 | `manuscript` | path under `docs/books/` |
-| `moral`, `childRepeatLine` | from manuscript |
-| `shlokas` | 2 refs, e.g. `["1.28","1.29"]` |
+| `moral`, `childRepeatLine` | from backmatter |
+| `shlokas` | 2 refs from primary anchor |
 | `shlokasStatus` | `paired` |
-| `guruMaLine` | plain text (no markdown italics) |
+| `rememberLine` | book-voice Remember (replaces `guruMaLine`) |
+
+## Legacy references (do not use for new work)
+
+- [reference-guru-ma.md](reference-guru-ma.md) — superseded by `gita-grove-remember-shloka/reference-remember-voice.md`
+- [reference-manuscript-template.md](reference-manuscript-template.md) — still useful for page structure
+- [reference-hooks.md](reference-hooks.md) — serial hooks (update cast names when drafting)
 
 ## English-first
 
-Do not write Telugu unless user requests. Set `title_te: null` in curriculum.
-
-## Seekers overlay
-
-Same ID and plot; deeper text + 3–4 ślokas — only when user asks for Seekers edition.
-
-## Additional references
-
-- `docs/book-format-spec.md` — 25-page map
-- `docs/gita-grove-series-v2.md` — all synopses
+Do not write Telugu unless user requests.

@@ -23,7 +23,7 @@ When starting Book 2+, copy Book 1 structure:
 
 - Season frame (intro paragraph)
 - Per-adventure: after / page 25 / opening hook / art tease
-- Remember table (ślokas + Guru Ma)
+- Remember table (ślokas + rememberLine — book voice)
 - Quick reference table
 
 ## Last adventure in book
