@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove manuscript skill (legacy redirect)
 
+> **Use `gita-hub`** → six engines. See [gita-hub/SKILL.md](../gita-hub/SKILL.md).
+
 ## Use the 6-skill pipeline instead
 
 This skill is superseded. For any **`gv{book}_a{adv}`** module, run skills in order:

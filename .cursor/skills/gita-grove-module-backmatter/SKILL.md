@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove module back matter
 
+> **Legacy redirect:** use **`gita-learning`** (Moral, Practice, Celebrate, grown-up, teaser).
+
 ## When to use
 
 After **`gita-grove-module-manuscript`** story pages are drafted. Before **`gita-grove-remember-shloka`**.

@@ -46,6 +46,23 @@ Synced manuscripts and curriculum live here so the app can import them. **KDP ex
 
 Cursor skills here are a lightweight copy for reading synced content; the engine repo remains canonical for tooling.
 
+## Skill architecture (Little Epic Minds)
+
+Orchestrator: **`gita-hub`** → six engines:
+
+| Engine | Role |
+|--------|------|
+| `gita-source` | Verse record, interpretation, wisdom map |
+| `gita-story` | Beats, prose, transformation |
+| `gita-grove-world` | Cast, locations, series continuity |
+| `gita-picture-book` | 25-page structure, illustration prompts |
+| `gita-learning` | Remember, Practice, module back matter |
+| `gita-quality` | Read-only review (Create → Review → Improve) |
+
+Shared audience rules: `.cursor/skills/gita-hub/references/age-5-10.md`
+
+Legacy `gita-grove-*` skills redirect to the engines above.
+
 **Branch policy:** `main` = live website — Grove content changes on **`feature/gita-grove`** only.
 
 **Legacy** `sd*` / `sk*` theme pipeline rules live in `.cursor/rules/gita-chatgpt-theme-stories.mdc` — separate from Grove v2.

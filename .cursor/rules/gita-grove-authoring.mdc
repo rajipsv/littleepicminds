@@ -15,7 +15,7 @@ Pre-approved Grove v2 work. Do **not** ask for confirmation before drafting unle
 ## Before drafting
 
 1. Read `docs/gita-grove/module-registry.json` and `docs/gita-grove/module-bibles/{adventureId}.md`
-2. Use **6-skill pipeline** (`gita-grove-deliver-module`)
+2. Use **gita-hub** orchestrator → six engines (`gita-source`, `gita-story`, `gita-grove-world`, `gita-picture-book`, `gita-learning`, `gita-quality`)
 3. Human cast only — **no animal protagonists, no Guru Ma Owl**
 
 ## Defaults

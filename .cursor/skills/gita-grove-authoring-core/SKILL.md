@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove authoring core
 
+> **Legacy redirect:** use **`gita-source`** (verse + brief) + **`gita-grove-world`** (cast lock) + **`gita-hub`** (orchestrator).
+
 ## When to use
 
 Starting any **`gv{book}_a{adv}`** module. Outputs a **module brief** for downstream skills. **Never write story prose** in this skill.

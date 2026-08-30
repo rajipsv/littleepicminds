@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove Remember + śloka
 
+> **Legacy redirect:** use **`gita-source`** (verse sync) + **`gita-learning`** (rememberLine + Remember block).
+
 ## When to use
 
 After adventure prose and emotional landing exist. **Last** narrative layer before image prompt polish.

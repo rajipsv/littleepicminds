@@ -1,52 +1,27 @@
 ---
 name: gita-grove-deliver-module
 description: >-
-  Orchestrate full Gita Grove gv##_a# delivery — run authoring-core through image-prompts in
-  order. Human cast only; book-voice Remember. Use when shipping one module end-to-end.
+  Legacy redirect — use gita-hub to orchestrate gita-source, gita-story, gita-grove-world,
+  gita-picture-book, gita-learning, and gita-quality for full gv##_a# delivery.
 ---
 
-# Gita Grove deliver module
+# Gita Grove deliver module (legacy)
 
-## When to use
+**Use [`gita-hub`](../gita-hub/SKILL.md) instead.**
 
-User asks to **deliver**, **ship**, or **complete** one module (`gv01_a1`, etc.) end-to-end.
+This skill is retained for backward compatibility with rules and transcripts that reference `gita-grove-deliver-module`.
 
-## Pipeline (strict order)
+## Pipeline
 
-| Step | Skill | Output |
-|------|-------|--------|
-| 1 | `gita-grove-authoring-core` | Module brief |
-| 2 | `gita-grove-module-bible` | Beat sheet / page map |
-| 3 | `gita-grove-module-manuscript` | `*.story.json` story pages |
-| 4 | `gita-grove-module-backmatter` | Moral, Practice, teaser in `.md` |
-| 5 | `gita-grove-remember-shloka` | Remember + rememberLine — **run `grove:sync-remember-shlokas` for verse text** |
-| 6 | `gita-grove-image-prompts` | Final imagePrompts + cast bible |
-| 7 | Authoring repo | `grove:validate`, optional `grove:compile`, `sync-to-app.ps1` |
+Run **`gita-hub`** with the same constraints:
 
-**Do not skip steps.** Do not write Remember before story landing exists.
+| Step | New engine |
+|------|------------|
+| 1 | `gita-source` + `gita-grove-world` (brief + cast lock) |
+| 2 | `gita-story` (bible + manuscript) |
+| 3 | `gita-picture-book` (pages + imagePrompts) |
+| 4 | `gita-learning` (back matter + Remember sync) |
+| 5 | `gita-quality` (read-only review) |
+| 6 | Revise → re-review if needed |
 
-## Book 1 Module 1 reference path
-
-```text
-gv01_a1 · Vanshi + Aarav · Feeling overwhelmed · 1.28–1.30
-```
-
-## Locked constraints (every module)
-
-- Human six-child cast only
-- Lead + one supporting
-- Adventure first → śloka later
-- Remember = book voice (no Guru Ma)
-- Branch: `feature/gita-grove`
-
-## Checklist before done
-
-- [ ] Module brief matches `docs/gita-grove/module-registry.json`
-- [ ] Story enjoyable without Gita knowledge
-- [ ] rememberLine reflects śloka meaning
-- [ ] curriculum.json updated
-- [ ] validate passes
-
-## Optional helpers (external)
-
-- `brainstorming` (superpowers) — beat alternatives before step 2 locks
+See [gita-hub/SKILL.md](../gita-hub/SKILL.md) for input modes and revision routing.

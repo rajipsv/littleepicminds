@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove image prompts
 
+> **Legacy redirect:** use **`gita-picture-book`** (illustration prompts + visual continuity).
+
 ## When to use
 
 After **`gita-grove-module-manuscript`** + **`gita-grove-remember-shloka`**. Refines illustration prompts in `*.story.json`.

@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove module bible
 
+> **Legacy redirect:** use **`gita-story`** (beat sheet / story framework).
+
 ## When to use
 
 After **`gita-grove-authoring-core`** module brief exists. Before **`gita-grove-module-manuscript`**.

@@ -7,6 +7,8 @@ description: >-
 
 # Gita Grove module manuscript
 
+> **Legacy redirect:** use **`gita-story`** (prose) + **`gita-picture-book`** (pages + prompts).
+
 ## When to use
 
 After **`gita-grove-authoring-core`** + **`gita-grove-module-bible`**. Writes **`*.story.json`** story pages only (not back matter).
