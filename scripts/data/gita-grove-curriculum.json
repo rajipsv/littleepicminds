@@ -287,7 +287,7 @@
         "1.30"
       ],
       "primaryShloka": "1.28-1.30",
-      "shlokasStatus": "paired",
+      "shlokasStatus": "verified-repo",
       "audience": "seeds",
       "status": "manuscript",
       "manuscript": "docs/books/gv01_a1-too-much-at-once.md",

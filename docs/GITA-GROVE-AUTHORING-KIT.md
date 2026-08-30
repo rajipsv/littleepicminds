@@ -42,7 +42,7 @@ See `../gita-grove-authoring/SYNC.md` for full details.
 
 ## Working in this repo
 
-Synced manuscripts and curriculum live here so the app can import them. **No generation tooling in this repo** — open **gita-grove-authoring** for validate, compile, KDP export, and `grove:generate-story`.
+Synced manuscripts and curriculum live here so the app can import them. **KDP export:** `npm run grove:export-kdp -- --file=docs/books/gv##_a#-….md --format=book --full-module` (wrapper → **gita-grove-authoring** engine). Validate/compile/generate still run only in the authoring repo.
 
 Cursor skills here are a lightweight copy for reading synced content; the engine repo remains canonical for tooling.
 

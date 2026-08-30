@@ -34,7 +34,7 @@ location: Old Banyan Tree
 ## Skill 5 · remember-shloka — Remember block
 
 → [`gv01_a1-too-much-at-once.md`](gv01_a1-too-much-at-once.md) § Remember  
-Status: **draft** — Sanskrit verify pending
+Status: **verified-repo** — synced via `npm run grove:sync-remember-shlokas -- --id=gv01_a1`
 
 ## Skill 6 · image-prompts — Cast bible + refined prompts
 

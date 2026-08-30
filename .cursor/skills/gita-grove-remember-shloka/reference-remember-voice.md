@@ -27,9 +27,10 @@
 
 1. Story + emotional landing complete
 2. Use **primaryShloka** from module registry as anchor
-3. Pick **2 display refs** for Remember pages (may be subset of range)
-4. Write **rememberLine** (book voice) from verse **meaning**, not keyword match
-5. Set curriculum: `shlokas`, `rememberLine`, `shlokasStatus: "paired"`
+3. Curriculum `shlokas[]` holds the **2 display refs** (typically first + last of range)
+4. Run **`npm run grove:sync-remember-shlokas -- --id=gv##_a#`** — pulls text from `lib/data/chapters/` or MCP
+5. Write **rememberLine** (book voice only) from verse meaning + this adventure's childConnection
+6. Set curriculum: `shlokasStatus: "verified-repo"` (set by sync script)
 
 ## Field migration
 
@@ -42,5 +43,6 @@
 - ❌ Guru Ma Owl or any character lecturing
 - ❌ Same rememberLine on every adventure
 - ❌ Śloka driving the plot title
+- ❌ Hand-crafted transliteration or Sanskrit
 - ❌ Invented Sanskrit
 - ❌ Verse before the child has lived the problem

@@ -19,7 +19,7 @@ User asks to **deliver**, **ship**, or **complete** one module (`gv01_a1`, etc.)
 | 2 | `gita-grove-module-bible` | Beat sheet / page map |
 | 3 | `gita-grove-module-manuscript` | `*.story.json` story pages |
 | 4 | `gita-grove-module-backmatter` | Moral, Practice, teaser in `.md` |
-| 5 | `gita-grove-remember-shloka` | Remember + rememberLine |
+| 5 | `gita-grove-remember-shloka` | Remember + rememberLine — **run `grove:sync-remember-shlokas` for verse text** |
 | 6 | `gita-grove-image-prompts` | Final imagePrompts + cast bible |
 | 7 | Authoring repo | `grove:validate`, optional `grove:compile`, `sync-to-app.ps1` |
 

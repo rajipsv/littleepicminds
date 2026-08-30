@@ -38,7 +38,9 @@
     "gita:learn:setup": "node scripts/setup-gita-learn-chapter.js",
     "gita:merge-hf-chapters": "node scripts/merge-hf-into-chapters.js",
     "db:migrate": "node backend/migrate.js",
-    "db:seed-admin": "node scripts/seed-admin.js"
+    "db:seed-admin": "node scripts/seed-admin.js",
+    "grove:export-kdp": "node scripts/grove-export-kdp.js",
+    "grove:sync-remember-shlokas": "node scripts/grove-sync-remember-shlokas.js"
   },
   "dependencies": {
     "@google-cloud/text-to-speech": "^5.8.1",

@@ -15,49 +15,71 @@ After adventure prose and emotional landing exist. **Last** narrative layer befo
 
 1. Module brief — `primaryShloka`, `childConnection`
 2. [reference-remember-voice.md](reference-remember-voice.md)
-3. `docs/gita-grove/module-registry.json`
+3. `scripts/data/gita-grove-curriculum.json` — `shlokas` refs (display pair)
 4. Completed story pages — verify feeling matches verse
+
+## Śloka text — **never hand-craft**
+
+Pull Sanskrit, transliteration, and child meaning from **one of these sources only**:
+
+| Priority | Source | Path / tool |
+|----------|--------|-------------|
+| 1 (default) | **littleepicminds repo** | `lib/data/chapters/chapter{N}.js` |
+| 2 (fallback) | **mcp-bhagavad-gita** | `get_verse` via `https://gateway.pipeworx.io/bhagavad-gita/mcp` |
+
+**Do not** type transliteration from memory. **Do not** invent Devanagari.
+
+### Sync command (required)
+
+```bash
+node scripts/grove-sync-remember-shlokas.js --id=gv01_a1
+# or
+npm run grove:sync-remember-shlokas -- --id=gv01_a1
+# force MCP when repo row missing:
+node scripts/grove-sync-remember-shlokas.js --id=gv01_a1 --source=mcp
+```
+
+Writes `<!-- verse-source: … -->` HTML comments in `.md` for audit. Updates curriculum `shlokasStatus` to `verified-repo` or `verified-mcp`.
+
+## What you still write (book voice only)
+
+- **rememberLine** — one paragraph, book voice, tied to this adventure's `childConnection` (not copied from repo verbatim unless adapted)
 
 ## Rules
 
-- **Book voice only** — no Guru Ma, no Meera Aunty speaking ślokas, no character lecture
-- **Never invent Sanskrit** — verify before publish; flag if uncertain
+- **Book voice only** — no Guru Ma, no character speaking ślokas
 - **Experience first** — Remember echoes what the child already felt
-- Pick **2 śloka refs** for Remember pages from anchor range (display verses)
+- Display **2 śloka refs** from curriculum `shlokas[]` (first + last of anchor range unless overridden)
 
-## Remember section output (in `.md`)
+## Remember section shape (after sync)
 
 ```markdown
 ## Remember
 
-### Page N — Śloka 1
-Transliteration…
-Child meaning…
+### Page N — Śloka 1.28
+<!-- verse-source: lib/data/chapters/chapter1.js -->
+{Devanagari from source}
+`{transliteration from source}`
+**Child meaning:** {from source en.childMeaning or en.meaning}
 
-### Page N+1 — Śloka 2
-Transliteration…
-Child meaning…
+### Page N+1 — Śloka 1.30
+…
 
-**Remember line:** "In the Bhagavad Gita… {book voice tied to semantic meaning}"
+### Page N+2 — Remember line
+{book voice — author writes this}
 ```
 
-## Curriculum update
+## Curriculum fields
 
 ```json
-"shlokas": ["1.28", "1.29"],
-"shlokasStatus": "paired",
+"shlokas": ["1.28", "1.30"],
+"shlokasStatus": "verified-repo",
 "rememberLine": "plain text, no markdown italics"
 ```
 
-Legacy `guruMaLine` → copy to `rememberLine` when updating entries.
-
 ## Shared-anchor modules
 
-When multiple modules share one verse (e.g. 4.34, 8.7), **adventure differentiates** — rememberLine must reflect **this module's** childConnection.
-
-## Verification TODO
-
-Before final lock: Devanagari, transliteration, literal meaning from authoritative Gita source.
+When multiple modules share one verse (e.g. 4.34), **rememberLine** must reflect **this module's** childConnection — śloka text still comes from source sync.
 
 ## Next skill
 

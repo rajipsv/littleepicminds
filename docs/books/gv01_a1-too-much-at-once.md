@@ -53,19 +53,23 @@ When everything feels like too much, you can name it — and choose one small th
 
 ### Page 17 — Śloka 1.28
 
-*Draft transliteration — verify before print*
+<!-- verse-source: lib/data/chapters/chapter1.js -->
 
-`dṛṣṭvā imaṁ sva-janaṁ kṛṣṇa yuyutsuṁ samupasthitam`
+कृपया परयाविष्टो विषीदन्निदमब्रवीत् अर्जुन उवाच दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्
 
-**Child meaning:** When you look at a hard moment, your body can feel shaky before your mind catches up.
+`kṛpayā parayāviṣṭo viṣīdannidamabravīt arjuna uvāca dṛṣṭvemaṃ svajanaṃ kṛṣṇa yuyutsuṃ samupasthitam`
+
+**Child meaning:** Arjuna tells Krishna, "When I see everyone I care about ready to fight, my heart feels heavy. My legs feel shaky and my mouth feels dry. Even a hero can feel very, very nervous."
 
 ### Page 18 — Śloka 1.30
 
-*Draft transliteration — verify before print*
+<!-- verse-source: lib/data/chapters/chapter1.js -->
 
-`gāṇḍīvaṁ sraṁsate hastāt tvak caiva paridahyati`
+गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः
 
-**Child meaning:** Sometimes your hands won't stay steady and your skin feels hot — like everything inside is too much at once.
+`gāṇḍīvaṃ sraṃsate hastāttvakcaiva paridahyate na ca śaknomyavasthātuṃ bhramatīva ca me manaḥ`
+
+**Child meaning:** The bow Gandiva slips from my hand and my skin is burning. I can no longer stand. My mind seems to be reeling.
 
 ### Page 19 — Remember line
 
