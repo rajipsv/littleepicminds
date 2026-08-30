@@ -1,0 +1,68 @@
+{
+  "adventureId": "gv01_a3",
+  "defaults": {
+    "styleSuffix": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm gentle lighting, vibrant gentle greens Rainbow Bridge palette, stream and arched wooden bridge, consistent character design, no text in image"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "imagePrompt": "Rainbow Bridge after morning rain, slick wooden planks, arched bridge over winding stream. Bobo monkey gripping Grove team banner pole, striped tail high, confident grin. Spring Fair parade gathering.",
+      "text": "Rainbow Bridge was slippery after morning rain. Bobo the monkey didn't notice. He had the Grove team banner, the wind, and a very fast plan.\n\nSpring Fair was open now. Friends lined up for the parade walk across the arched bridge. Below, the stream giggled over smooth stones."
+    },
+    {
+      "beat": "Opens",
+      "imagePrompt": "Mimi rabbit and Timo tortoise holding banner edges, Kiki myna bird overhead. Bobo monkey grabbing middle pole shouting I'll lead. Joyful parade prep on bridge approach.",
+      "text": "Mimi held one corner of the banner cloth. Timo walked steady. Kiki flew overhead, counting steps.\n\nBobo grabbed the middle pole. \"I'll lead!\" he shouted. \"Follow me!\"\n\nHis striped tail swung. His grin was huge. Faster felt like fun."
+    },
+    {
+      "beat": "Problem surfaces",
+      "imagePrompt": "Bobo sprinting onto Rainbow Bridge, boards bouncing, water visible through gaps. Friends calling wait from behind. Motion blur on Bobo.",
+      "text": "Bobo sprinted onto the bridge.\n\nThe wooden boards bounced. Water shimmered through the gaps.\n\n\"Wait for us!\" Mimi called.\n\nBobo didn't wait. Leading meant first. First meant fast."
+    },
+    {
+      "beat": "Rising tension",
+      "imagePrompt": "Bobo slipping on slick board, mud splash from stream bank hitting legs tail and face. Banner pole wobbling. Friends gasping then laughing.",
+      "text": "One board — slick as a banana peel.\n\nBobo's foot slid. WHOOSH — mud from the stream bank splashed up his legs, his tail, his face.\n\nThe banner pole wobbled. Friends gasped — then laughed."
+    },
+    {
+      "beat": "Rising tension",
+      "imagePrompt": "Bobo laughing awkwardly then face falling. Ears drooping. Heavy disappointed expression while friends still smiling in background.",
+      "text": "Bobo laughed too. Ha-ha-ha — because everyone was looking, and laughing felt easier than stopping.\n\nThen the laugh stuck in his throat.\n\nHis ears drooped. Something heavy sat on his chest."
+    },
+    {
+      "beat": "Rising tension",
+      "imagePrompt": "Bobo setting banner down, walking away behind willow tree. Kiki landing calling his name. Bobo not turning around.",
+      "text": "\"I'm fine!\" Bobo called, too loud. He set the banner down and walked away behind a willow tree.\n\nKiki landed. \"Bobo?\"\n\nHe didn't turn around."
+    },
+    {
+      "beat": "Peak beat",
+      "imagePrompt": "Behind willow tree Bobo pressing muddy paws to eyes, crying secretly. Intimate close-up, stream and fair soft in background.",
+      "text": "Behind the willow, Bobo pressed his muddy paws to his eyes.\n\nHot tears mixed with mud. He thought no one could see.\n\nHe whispered, \"I wanted to lead. I wanted to be good.\""
+    },
+    {
+      "beat": "Peak beat",
+      "imagePrompt": "Mimi Timo Kiki Gulu sitting in mud beside Bobo under willow — equal eye level, not fixing or wiping. Honest Heart moment friends stay.",
+      "text": "Footsteps squelched in the mud.\n\nMimi sat down beside him — not standing above. Timo sat. Kiki sat. Gulu sat too, quiet.\n\nNobody wiped his face. Nobody said \"it's okay.\" They just stayed."
+    },
+    {
+      "beat": "Honest disappointment",
+      "imagePrompt": "Bobo talking with wobbling voice, friends listening in mud. Warm intimate group shot under willow.",
+      "text": "\"I'm not fine,\" Bobo said at last. His voice wobbled. \"I'm sad. And muddy. And mad at the mud.\"\n\nMimi nodded. \"Me too, sometimes — sad and mad at the same time.\"\n\nTimo said, \"We can sit while it hurts.\""
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Friends carrying banner together across bridge slowly — Mimi Timo Bobo in middle. Walking pace, no sprint.",
+      "text": "They sat until Bobo's shoulders stopped shaking quite so hard.\n\nTogether they carried the banner back to the bridge. Mimi on one side. Timo on the other. Bobo in the middle — slower now."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Friends crossing Rainbow Bridge at walking pace, stream below, friends on far bank clapping. Banner held steady.",
+      "text": "They crossed Rainbow Bridge at a walking pace. No sprint. No splash.\n\nFriends on the far bank clapped anyway — not for speed, but for showing up."
+    },
+    {
+      "beat": "Landing",
+      "imagePrompt": "Afternoon sun drying banner on grass, Bobo washing face at stream. Friends nearby humming. Gentle relief.",
+      "text": "That afternoon, the banner dried in the sun.\n\nBobo washed his face at the stream. He still felt disappointed — but his friends had seen it.\n\nThat felt honest too."
+    }
+  ]
+}

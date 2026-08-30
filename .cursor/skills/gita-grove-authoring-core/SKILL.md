@@ -15,7 +15,8 @@ Starting any **`gv{book}_a{adv}`** module. Outputs a **module brief** for downst
 
 1. `docs/gita-grove/six-children.md` — locked cast
 2. `docs/gita-grove/module-registry.json` — theme, lead, supporting, śloka per module
-3. `docs/gita-grove/master-architecture.md` — book-level core ideas
+3. `docs/gita-grove/module-bibles/{adventureId}.md` — beat sheet if present
+4. `docs/gita-grove/master-architecture.md` — book-level core ideas
 4. `AGENTS-GITA-GROVE.md` or kit `AGENTS.md`
 5. `docs/book-format-spec.md` — 25-page module structure
 

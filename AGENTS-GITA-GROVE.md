@@ -1,6 +1,6 @@
-# Gita Grove — Agent Architecture
+# Gita Grove — Agent Architecture (v2 human cast)
 
-How Cursor agents write Grove stories. **Read `.cursor/skills/gita-grove-manuscript/SKILL.md` before drafting.**
+How Cursor agents write Grove stories. Use the **6-skill pipeline** — start with `gita-grove-deliver-module` or `gita-grove-authoring-core`.
 
 ---
 
@@ -8,115 +8,72 @@ How Cursor agents write Grove stories. **Read `.cursor/skills/gita-grove-manuscr
 
 | Repo | Role |
 |------|------|
-| **gita-grove-authoring** | **Story engine** — generate, validate, compile, export; bibles + curriculum source |
-| **littleepicminds** (this) | **Product** — stores synced content; app, audio, website for external users |
+| **gita-grove-authoring** | Story engine — validate, compile, export |
+| **littleepicminds** (this) | Product — synced content, app, audio |
 
-Content flows **engine → sync → app**. Generation tooling stays in gita-grove-authoring only.
-
-Do **not** mix legacy theme auto-seed pipelines with Grove v2 manuscripts.
+Content flows **engine → sync → app**.
 
 ---
 
-## Design spine
+## Design spine (v2)
 
-- **18 Grove Powers** — one print book each (~80–100 pp)
-- **~65 adventures** — IDs `gv{book}_a{adv}` · 25-page internal modules
-- **5 arcs** — Tree of Wisdom branch colors
-- **Capability-first:** power → sub-skill → location → character flaw → plot → ślokas **last**
-
-**Rejected as plot drivers:** pandit blocks, verse-shaped titles, Mahabharata cosplay in Seeds story body, śloka vocabulary in titles.
+- **74 modules** · IDs `gv{book}_a{adv}` · ~25 pp each
+- **18 books** · one Bhagavad Gita chapter each · ~80 pp compiled
+- **Human six-child cast only** — one lead + one supporting per module
+- **Theme-first:** locked theme → adventure → śloka **last**
+- **Remember = book voice** — "In the Bhagavad Gita…" — not a character
 
 ---
 
-## Cast & world
+## Locked sources (read first)
 
 | Doc | Content |
 |-----|---------|
-| `docs/universe-bible.md` | Map, Tree, learning loop, seasons |
-| `docs/character-bible.md` | Gulu, Mimi, Bobo, Timo, Kiki, Guru Ma Owl, Diya |
-| `docs/gita-grove-capabilities.md` | 18 powers, sub-skills, locations |
-| `docs/gita-grove-series-v2.md` | Full adventure catalog + synopses |
+| `docs/gita-grove/module-registry.json` | 74 modules — theme, cast, śloka |
+| `docs/gita-grove/module-bibles/` | Pre-generated beat sheets |
+| `docs/gita-grove/six-children.md` | Human cast table |
+| `docs/gita-grove/world-bible.md` | Neighborhood, locations |
+| `docs/character-bible.md` | Full human character bible |
+| `docs/gita-grove-capabilities.md` | 18 Grove Powers per book |
+| `scripts/data/gita-grove-curriculum.json` | Curriculum entries |
 
 ---
 
-## Manuscript pipeline
-
-**Draft in gita-grove-authoring** (engine repo). This repo receives synced content only.
+## 6-skill pipeline
 
 ```
-Curriculum entry (synopsis)
-    → Read hooks for book (e.g. gv01-book-hooks.md)
-    → Draft *.story.json (story pages: beat, text, imagePrompt)
-    → Draft *.md (metadata + Moral → Teaser back matter)
-    → In gita-grove-authoring: npm run grove:validate -- --id=gv##_a#
-    → Pair 2 ślokas + Guru Ma line (Bhagavad Gita / puranas)
-    → Update scripts/data/gita-grove-curriculum.json
-    → In gita-grove-authoring: npm run grove:export-kdp -- --file=docs/books/....md --format=book
-    → .\scripts\sync-to-app.ps1  (authoring repo → this repo)
+authoring-core → module-bible → module-manuscript → module-backmatter
+  → remember-shloka → image-prompts → validate → curriculum sync
 ```
 
-**Engine code:** `gita-grove-authoring/scripts/lib/grove-manuscript/` · `grove-kdp/` — not in this repo.
+**Orchestrator:** `.cursor/skills/gita-grove-deliver-module/SKILL.md`
+
+Module bibles already exist at `docs/gita-grove/module-bibles/{adventureId}.md` — refine before manuscript if needed.
 
 ---
 
 ## Module anatomy (25 pages)
 
-See `docs/book-format-spec.md`. Critical rules:
+See `docs/book-format-spec.md`.
 
-| Page | Section |
-|------|---------|
-| 3–15 | Story (~320–480 words Seeds) — **no Guru Ma lecture in body** |
-| 16 | Moral + child repeat line |
-| 17–19 | Remember — ślokas + **unique Guru Ma line** |
-| 20–22 | Practice (sub-skill tied) |
-| 23 | Celebrate — name Grove Power |
-| 24 | Grown-up — power + discussion + verse refs |
-| 25 | **Teaser** → next adventure in book |
+| Section | Notes |
+|---------|-------|
+| Story pages | No śloka in body · no Arjuna/Krishna names (Seeds) |
+| Remember | Book voice + paired ślokas · field: `rememberLine` |
+| Celebrate | Name Grove Power for book |
+| Page 25 | Teaser → next module |
 
 ---
 
-## Guru Ma (Remember only)
+## Regenerate bibles
 
-- Open: *In the Bhagavad Gita, from India's puranas…*
-- Reflect **meaning** of paired ślokas (agent should know Gita semantics)
-- Story body: Grove friends only; grown-up page may name Dhritarashtra, Arjuna, etc.
-- Book 1 lines: `docs/books/gv01-book-hooks.md` § Remember
-
----
-
-## Localization
-
-- **English-first** — `title_te`, story TE deferred
-- Translation pass later (skill/MCP) — do not block manuscripts on Telugu
+```bash
+node scripts/build-gita-grove-v2-curriculum.js
+node scripts/generate-gita-grove-bibles.js
+```
 
 ---
 
-## Quality bar (Seeds 5–7)
+## Legacy (do not use)
 
-- School/home analogies, simple language
-- Light Gita link **only in Remember**
-- One sub-skill per adventure
-- Organic titles (moment-based, not verse labels)
-
-**Seekers (8–10):** same IDs/art; deeper duty/fairness; may name Arjuna/Krishna in grown-up sidebar only.
-
----
-
-## Agent invocation
-
-| Task | Instruction |
-|------|-------------|
-| Draft adventure | "Use gita-grove-manuscript skill; draft gv03_a2" |
-| Book hooks | "Extend gv02-book-hooks.md like Book 1" |
-| Guru Ma line | "Pair ślokas X.Y for gv05_a1 and write Guru Ma Remember line" |
-| Curriculum sync | "Update curriculum after gv01_a3 manuscript" |
-
----
-
-## Files to read before writing Book N adventure M
-
-1. `docs/gita-grove-capabilities.md` — Book N power + sub-skills
-2. `docs/gita-grove-series-v2.md` — synopsis row
-3. `docs/books/gv0N-book-hooks.md` — if exists; else create from Book 1 pattern
-4. Prior adventure manuscript in same book — for continuity
-5. `scripts/data/gita-grove-curriculum.json` — entry for `gv0N_aM`
+v1 animal cast (Gulu, Mimi, Bobo, Timo, Kiki, Guru Ma) — archived under `docs/archive/v1-animal-cast/`.

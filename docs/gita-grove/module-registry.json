@@ -1,0 +1,1338 @@
+{
+  "version": "2",
+  "moduleCount": 74,
+  "cast": "human-six-children",
+  "shlokaStatus": "draft-pending-verification",
+  "books": [
+    {
+      "book": 1,
+      "chapterName": "The Problem",
+      "gitaChapter": "Arjuna Vishada Yoga",
+      "coreIdea": "Sometimes I feel confused.",
+      "bookAnchor": "Vanshi · Aarav · Mira",
+      "moduleCount": 3
+    },
+    {
+      "book": 2,
+      "chapterName": "Understanding Yourself",
+      "gitaChapter": "Sankhya Yoga",
+      "coreIdea": "You are stronger than your changing feelings.",
+      "bookAnchor": "Aarav",
+      "moduleCount": 7
+    },
+    {
+      "book": 3,
+      "chapterName": "Doing What You Can Do",
+      "gitaChapter": "Karma Yoga",
+      "coreIdea": "Do the right thing and do your best.",
+      "bookAnchor": "Mira",
+      "moduleCount": 4
+    },
+    {
+      "book": 4,
+      "chapterName": "Learning and Growing",
+      "gitaChapter": "Jnana Karma Sannyasa Yoga",
+      "coreIdea": "Wisdom helps us make better choices.",
+      "bookAnchor": "Kabir",
+      "moduleCount": 5
+    },
+    {
+      "book": 5,
+      "chapterName": "Peaceful Action",
+      "gitaChapter": "Karma Sannyasa Yoga",
+      "coreIdea": "You can do good things without always thinking about yourself.",
+      "bookAnchor": "Vihaan",
+      "moduleCount": 3
+    },
+    {
+      "book": 6,
+      "chapterName": "Training the Mind",
+      "gitaChapter": "Dhyana Yoga",
+      "coreIdea": "Your mind can become your friend.",
+      "bookAnchor": "Tara",
+      "moduleCount": 5
+    },
+    {
+      "book": 7,
+      "chapterName": "Knowing Something Deeply",
+      "gitaChapter": "Jnana Vijnana Yoga",
+      "coreIdea": "The world is more connected than it looks.",
+      "bookAnchor": "Kabir",
+      "moduleCount": 3
+    },
+    {
+      "book": 8,
+      "chapterName": "Remembering What Matters",
+      "gitaChapter": "Akshara Brahma Yoga",
+      "coreIdea": "Remember what truly matters.",
+      "bookAnchor": "Aarav",
+      "moduleCount": 3
+    },
+    {
+      "book": 9,
+      "chapterName": "Discovering Something Wonderful",
+      "gitaChapter": "Raja Vidya Raja Guhya Yoga",
+      "coreIdea": "Goodness and love can be found everywhere.",
+      "bookAnchor": "Vanshi",
+      "moduleCount": 4
+    },
+    {
+      "book": 10,
+      "chapterName": "Discovering Greatness",
+      "gitaChapter": "Vibhuti Yoga",
+      "coreIdea": "Look closely at the wonders around you.",
+      "bookAnchor": "Vihaan",
+      "moduleCount": 4
+    },
+    {
+      "book": 11,
+      "chapterName": "Seeing the Bigger Picture",
+      "gitaChapter": "Vishvarupa Darshana Yoga",
+      "coreIdea": "You are part of something much bigger.",
+      "bookAnchor": "Vihaan",
+      "moduleCount": 3
+    },
+    {
+      "book": 12,
+      "chapterName": "Love and Kindness",
+      "gitaChapter": "Bhakti Yoga",
+      "coreIdea": "Love can make us kinder.",
+      "bookAnchor": "Vanshi",
+      "moduleCount": 4
+    },
+    {
+      "book": 13,
+      "chapterName": "Understanding the Body and Self",
+      "gitaChapter": "Kshetra Kshetrajna Vibhaga Yoga",
+      "coreIdea": "Notice what is happening inside you.",
+      "bookAnchor": "Aarav",
+      "moduleCount": 4
+    },
+    {
+      "book": 14,
+      "chapterName": "Understanding Our Habits",
+      "gitaChapter": "Gunatraya Vibhaga Yoga",
+      "coreIdea": "Different moods can pull us in different directions.",
+      "bookAnchor": "Tara",
+      "moduleCount": 5
+    },
+    {
+      "book": 15,
+      "chapterName": "Remembering What Matters Most",
+      "gitaChapter": "Purushottama Yoga",
+      "coreIdea": "Look beyond what changes.",
+      "bookAnchor": "Aarav",
+      "moduleCount": 3
+    },
+    {
+      "book": 16,
+      "chapterName": "Choosing Good Qualities",
+      "gitaChapter": "Daivasura Sampad Vibhaga Yoga",
+      "coreIdea": "Every day, we can choose what kind of person we want to become.",
+      "bookAnchor": "Mira",
+      "moduleCount": 6
+    },
+    {
+      "book": 17,
+      "chapterName": "The Way We Live",
+      "gitaChapter": "Shraddhatraya Vibhaga Yoga",
+      "coreIdea": "Our habits shape who we become.",
+      "bookAnchor": "Tara",
+      "moduleCount": 4
+    },
+    {
+      "book": 18,
+      "chapterName": "Choosing Your Path",
+      "gitaChapter": "Moksha Sannyasa Yoga",
+      "coreIdea": "Understand yourself, make wise choices, and do what is right.",
+      "bookAnchor": "Mira",
+      "moduleCount": 4
+    }
+  ],
+  "modules": [
+    {
+      "adventureId": "gv01_a1",
+      "book": 1,
+      "module": 1,
+      "theme": "Feeling overwhelmed",
+      "lead": "Vanshi",
+      "supporting": "Aarav",
+      "pairingRationale": "Vanshi feels deeply; Aarav helps her slow down and understand",
+      "primaryShloka": "1.28-1.30",
+      "childConnection": "When everything feels like too much",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Vanshi",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv01_a2",
+      "book": 1,
+      "module": 2,
+      "theme": "Not knowing what to do",
+      "lead": "Aarav",
+      "supporting": "Kabir",
+      "pairingRationale": "Aarav overthinks; Kabir pushes him to explore possibilities",
+      "primaryShloka": "1.31-1.32",
+      "childConnection": "When you cannot see what to do next",
+      "location": "Little Grove Library",
+      "onStageCast": [
+        "Aarav",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv01_a3",
+      "book": 1,
+      "module": 3,
+      "theme": "Difficult decisions",
+      "lead": "Mira",
+      "supporting": "Vihaan",
+      "pairingRationale": "Mira wants to act quickly; Vihaan helps her consider others",
+      "primaryShloka": "1.33-1.44",
+      "childConnection": "When a choice feels very hard",
+      "location": "Playground",
+      "onStageCast": [
+        "Mira",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv02_a1",
+      "book": 2,
+      "module": 1,
+      "theme": "Fear",
+      "lead": "Aarav",
+      "supporting": "Vanshi",
+      "pairingRationale": "Aarav analyzes fear; Vanshi understands its emotional side",
+      "primaryShloka": "2.56",
+      "childConnection": "Learning not to be controlled by fear",
+      "location": "School",
+      "onStageCast": [
+        "Aarav",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv02_a2",
+      "book": 2,
+      "module": 2,
+      "theme": "Sadness",
+      "lead": "Vanshi",
+      "supporting": "Vihaan",
+      "pairingRationale": "Vihaan gives belonging and emotional support",
+      "primaryShloka": "2.14",
+      "childConnection": "Feelings change; difficult moments pass",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Vanshi",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv02_a3",
+      "book": 2,
+      "module": 3,
+      "theme": "Anger",
+      "lead": "Vihaan",
+      "supporting": "Tara",
+      "pairingRationale": "Tara models pausing and managing reactions",
+      "primaryShloka": "2.62-2.63",
+      "childConnection": "How thoughts can grow into anger and confusion",
+      "location": "Playground",
+      "onStageCast": [
+        "Vihaan",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv02_a4",
+      "book": 2,
+      "module": 4,
+      "theme": "Effort",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "Mira acts; Aarav helps her understand why effort matters",
+      "primaryShloka": "2.47",
+      "childConnection": "Do your part without being trapped by the result",
+      "location": "Meadow",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv02_a5",
+      "book": 2,
+      "module": 5,
+      "theme": "Failure",
+      "lead": "Aarav",
+      "supporting": "Mira",
+      "pairingRationale": "Aarav worries about failure; Mira encourages trying again",
+      "primaryShloka": "2.38",
+      "childConnection": "Stay balanced in success and failure",
+      "location": "School",
+      "onStageCast": [
+        "Aarav",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv02_a6",
+      "book": 2,
+      "module": 6,
+      "theme": "Inner strength",
+      "lead": "Aarav",
+      "supporting": "Tara",
+      "pairingRationale": "Both reflective; Tara demonstrates steadiness",
+      "primaryShloka": "2.23-2.24",
+      "childConnection": "The deeper self is not easily destroyed or changed",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Aarav",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv02_a7",
+      "book": 2,
+      "module": 7,
+      "theme": "Staying balanced",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Tara seeks balance; Mira challenges her to act rather than over-control",
+      "primaryShloka": "2.48",
+      "childConnection": "Act with steadiness and balance",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv03_a1",
+      "book": 3,
+      "module": 1,
+      "theme": "Responsibility",
+      "lead": "Mira",
+      "supporting": "Tara",
+      "pairingRationale": "Mira wants to act; Tara reinforces consistency",
+      "primaryShloka": "3.19",
+      "childConnection": "Do the work that needs to be done",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Mira",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv03_a2",
+      "book": 3,
+      "module": 2,
+      "theme": "Helping",
+      "lead": "Mira",
+      "supporting": "Vanshi",
+      "pairingRationale": "Mira takes action; Vanshi notices who needs help",
+      "primaryShloka": "3.20-3.21",
+      "childConnection": "Actions can benefit others and set an example",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Mira",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv03_a3",
+      "book": 3,
+      "module": 3,
+      "theme": "Teamwork",
+      "lead": "Mira",
+      "supporting": "Vihaan",
+      "pairingRationale": "Mira drives the project; Vihaan brings people together",
+      "primaryShloka": "3.11",
+      "childConnection": "People can support one another through their actions",
+      "location": "School",
+      "onStageCast": [
+        "Mira",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv03_a4",
+      "book": 3,
+      "module": 4,
+      "theme": "Doing your duty",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "Mira acts; Aarav makes her think about what her role really is",
+      "primaryShloka": "3.35",
+      "childConnection": "Do your own role rather than simply copying someone else",
+      "location": "Playground",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv04_a1",
+      "book": 4,
+      "module": 1,
+      "theme": "Learning",
+      "lead": "Kabir",
+      "supporting": "Aarav",
+      "pairingRationale": "Kabir explores; Aarav helps organize what they discover",
+      "primaryShloka": "4.34",
+      "childConnection": "Learn through humility, questions and guidance",
+      "location": "Little Grove Library",
+      "onStageCast": [
+        "Kabir",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv04_a2",
+      "book": 4,
+      "module": 2,
+      "theme": "Asking questions",
+      "lead": "Kabir",
+      "supporting": "Tara",
+      "pairingRationale": "Kabir asks everything; Tara teaches thoughtful questioning",
+      "primaryShloka": "4.34",
+      "childConnection": "It is good to ask and seek understanding",
+      "location": "School",
+      "onStageCast": [
+        "Kabir",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv04_a3",
+      "book": 4,
+      "module": 3,
+      "theme": "Listening",
+      "lead": "Kabir",
+      "supporting": "Vihaan",
+      "pairingRationale": "Kabir wants answers; Vihaan helps him listen to others",
+      "primaryShloka": "4.34",
+      "childConnection": "Learn from someone who understands",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Kabir",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv04_a4",
+      "book": 4,
+      "module": 4,
+      "theme": "Finding a teacher",
+      "lead": "Kabir",
+      "supporting": "Aarav",
+      "pairingRationale": "Curiosity meets thoughtful guidance",
+      "primaryShloka": "4.34",
+      "childConnection": "Seek wise guidance",
+      "location": "Little Grove Library",
+      "onStageCast": [
+        "Kabir",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv04_a5",
+      "book": 4,
+      "module": 5,
+      "theme": "Learning from mistakes",
+      "lead": "Kabir",
+      "supporting": "Mira",
+      "pairingRationale": "Kabir gets into trouble; Mira helps turn mistake into action",
+      "primaryShloka": "4.36-4.37",
+      "childConnection": "Wisdom can help transform mistakes and confusion",
+      "location": "Meadow",
+      "onStageCast": [
+        "Kabir",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv05_a1",
+      "book": 5,
+      "module": 1,
+      "theme": "Helping without expecting rewards",
+      "lead": "Vihaan",
+      "supporting": "Vanshi",
+      "pairingRationale": "Both care about others; Vanshi brings emotional sensitivity",
+      "primaryShloka": "5.10-5.12",
+      "childConnection": "Help without becoming attached to what you get back",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Vihaan",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv05_a2",
+      "book": 5,
+      "module": 2,
+      "theme": "Quiet kindness",
+      "lead": "Vihaan",
+      "supporting": "Tara",
+      "pairingRationale": "Both appreciate quiet, meaningful action",
+      "primaryShloka": "5.18",
+      "childConnection": "See others with equal regard",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Vihaan",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv05_a3",
+      "book": 5,
+      "module": 3,
+      "theme": "Inner peace",
+      "lead": "Vihaan",
+      "supporting": "Tara",
+      "pairingRationale": "Connection plus steadiness creates natural peaceful dynamic",
+      "primaryShloka": "5.12",
+      "childConnection": "Let go of attachment to results and find peace",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Vihaan",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv06_a1",
+      "book": 6,
+      "module": 1,
+      "theme": "Focus",
+      "lead": "Tara",
+      "supporting": "Kabir",
+      "pairingRationale": "Tara tries to focus while Kabir constantly gets distracted",
+      "primaryShloka": "6.26",
+      "childConnection": "Bring the wandering mind back",
+      "location": "School",
+      "onStageCast": [
+        "Tara",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv06_a2",
+      "book": 6,
+      "module": 2,
+      "theme": "Self-control",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Tara's steadiness contrasts with Mira's impulse to act",
+      "primaryShloka": "6.5-6.6",
+      "childConnection": "Learn to guide your own mind",
+      "location": "Playground",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv06_a3",
+      "book": 6,
+      "module": 3,
+      "theme": "Calming down",
+      "lead": "Tara",
+      "supporting": "Vanshi",
+      "pairingRationale": "Tara manages herself while supporting Vanshi's emotions",
+      "primaryShloka": "6.35",
+      "childConnection": "Practice can gradually steady the mind",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Tara",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv06_a4",
+      "book": 6,
+      "module": 4,
+      "theme": "Practice",
+      "lead": "Tara",
+      "supporting": "Kabir",
+      "pairingRationale": "Tara practices steadily; Kabir struggles to stick with it",
+      "primaryShloka": "6.35",
+      "childConnection": "The mind becomes steadier through practice",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Tara",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv06_a5",
+      "book": 6,
+      "module": 5,
+      "theme": "Discipline",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Strong contrast between patience and rushing",
+      "primaryShloka": "6.16-6.17",
+      "childConnection": "Balance in daily habits supports inner steadiness",
+      "location": "School",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv07_a1",
+      "book": 7,
+      "module": 1,
+      "theme": "Wonder",
+      "lead": "Kabir",
+      "supporting": "Vihaan",
+      "pairingRationale": "Kabir discovers; Vihaan sees how everything connects",
+      "primaryShloka": "7.8-7.9",
+      "childConnection": "Notice the divine qualities present in the world",
+      "location": "Meadow",
+      "onStageCast": [
+        "Kabir",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv07_a2",
+      "book": 7,
+      "module": 2,
+      "theme": "Curiosity",
+      "lead": "Kabir",
+      "supporting": "Aarav",
+      "pairingRationale": "Two thinkers — one explores while the other analyzes",
+      "primaryShloka": "7.16-7.19",
+      "childConnection": "Different kinds of people seek deeper understanding",
+      "location": "Little Grove Library",
+      "onStageCast": [
+        "Kabir",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv07_a3",
+      "book": 7,
+      "module": 3,
+      "theme": "Connection",
+      "lead": "Vihaan",
+      "supporting": "Kabir",
+      "pairingRationale": "Vihaan sees relationships; Kabir discovers them",
+      "primaryShloka": "7.7",
+      "childConnection": "Everything is connected to the Divine",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Vihaan",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv08_a1",
+      "book": 8,
+      "module": 1,
+      "theme": "Values",
+      "lead": "Aarav",
+      "supporting": "Vihaan",
+      "pairingRationale": "Aarav asks what matters; Vihaan connects values to people",
+      "primaryShloka": "8.7",
+      "childConnection": "Remember what matters and keep your mind directed toward it",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Aarav",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv08_a2",
+      "book": 8,
+      "module": 2,
+      "theme": "Important memories",
+      "lead": "Aarav",
+      "supporting": "Vanshi",
+      "pairingRationale": "Aarav reflects; Vanshi connects memories to feelings",
+      "primaryShloka": "8.7",
+      "childConnection": "What we remember can guide our attention",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Aarav",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv08_a3",
+      "book": 8,
+      "module": 3,
+      "theme": "What guides us",
+      "lead": "Aarav",
+      "supporting": "Tara",
+      "pairingRationale": "Thinking about values becomes daily practice",
+      "primaryShloka": "8.7",
+      "childConnection": "Keep what truly matters in your awareness",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Aarav",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv09_a1",
+      "book": 9,
+      "module": 1,
+      "theme": "Wonder",
+      "lead": "Vanshi",
+      "supporting": "Kabir",
+      "pairingRationale": "Vanshi feels wonder; Kabir wants to investigate it",
+      "primaryShloka": "9.4-9.5",
+      "childConnection": "The Divine is present throughout the world",
+      "location": "Meadow",
+      "onStageCast": [
+        "Vanshi",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv09_a2",
+      "book": 9,
+      "module": 2,
+      "theme": "Love",
+      "lead": "Vanshi",
+      "supporting": "Vihaan",
+      "pairingRationale": "Emotional love meets belonging and connection",
+      "primaryShloka": "9.26",
+      "childConnection": "A sincere offering made with devotion matters",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Vanshi",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv09_a3",
+      "book": 9,
+      "module": 3,
+      "theme": "Trust",
+      "lead": "Vanshi",
+      "supporting": "Tara",
+      "pairingRationale": "Vanshi learns trust; Tara provides steadiness",
+      "primaryShloka": "9.22",
+      "childConnection": "Those who remain devoted are cared for",
+      "location": "School",
+      "onStageCast": [
+        "Vanshi",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv09_a4",
+      "book": 9,
+      "module": 4,
+      "theme": "Devotion",
+      "lead": "Vanshi",
+      "supporting": "Aarav",
+      "pairingRationale": "Heart and understanding complement each other",
+      "primaryShloka": "9.34",
+      "childConnection": "Remember, love and devotion can guide the heart",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Vanshi",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv10_a1",
+      "book": 10,
+      "module": 1,
+      "theme": "Wonder",
+      "lead": "Vihaan",
+      "supporting": "Kabir",
+      "pairingRationale": "Vihaan sees larger meaning; Kabir explores details",
+      "primaryShloka": "10.19-10.20",
+      "childConnection": "Discover divine greatness through the world",
+      "location": "Meadow",
+      "onStageCast": [
+        "Vihaan",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv10_a2",
+      "book": 10,
+      "module": 2,
+      "theme": "Nature",
+      "lead": "Vihaan",
+      "supporting": "Kabir",
+      "pairingRationale": "Nature becomes shared discovery",
+      "primaryShloka": "10.21-10.25",
+      "childConnection": "See greatness in the natural world",
+      "location": "Little Creek",
+      "onStageCast": [
+        "Vihaan",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv10_a3",
+      "book": 10,
+      "module": 3,
+      "theme": "Appreciation",
+      "lead": "Vihaan",
+      "supporting": "Vanshi",
+      "pairingRationale": "Vihaan sees connection; Vanshi notices beauty",
+      "primaryShloka": "10.41",
+      "childConnection": "Greatness can inspire appreciation",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Vihaan",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv10_a4",
+      "book": 10,
+      "module": 4,
+      "theme": "Awe",
+      "lead": "Vihaan",
+      "supporting": "Aarav",
+      "pairingRationale": "Aarav asks what the experience means",
+      "primaryShloka": "10.41",
+      "childConnection": "Extraordinary qualities can point us toward wonder",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Vihaan",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv11_a1",
+      "book": 11,
+      "module": 1,
+      "theme": "Perspective",
+      "lead": "Vihaan",
+      "supporting": "Aarav",
+      "pairingRationale": "Vihaan sees the whole; Aarav examines the details",
+      "primaryShloka": "11.7-11.13",
+      "childConnection": "See beyond one small viewpoint",
+      "location": "Meadow",
+      "onStageCast": [
+        "Vihaan",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv11_a2",
+      "book": 11,
+      "module": 2,
+      "theme": "Humility",
+      "lead": "Vihaan",
+      "supporting": "Tara",
+      "pairingRationale": "Tara brings quiet groundedness",
+      "primaryShloka": "11.45",
+      "childConnection": "Encountering something far greater than oneself",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Vihaan",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv11_a3",
+      "book": 11,
+      "module": 3,
+      "theme": "Connection",
+      "lead": "Vihaan",
+      "supporting": "Vanshi",
+      "pairingRationale": "Deep emotional and relational connection",
+      "primaryShloka": "11.7",
+      "childConnection": "Many things can be understood as part of one greater whole",
+      "location": "Little Creek",
+      "onStageCast": [
+        "Vihaan",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv12_a1",
+      "book": 12,
+      "module": 1,
+      "theme": "Compassion",
+      "lead": "Vanshi",
+      "supporting": "Vihaan",
+      "pairingRationale": "Vanshi feels another's pain; Vihaan helps include them",
+      "primaryShloka": "12.13",
+      "childConnection": "Be friendly and compassionate toward all beings",
+      "location": "School",
+      "onStageCast": [
+        "Vanshi",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv12_a2",
+      "book": 12,
+      "module": 2,
+      "theme": "Friendship",
+      "lead": "Vanshi",
+      "supporting": "Vihaan",
+      "pairingRationale": "Strongest relationship-centered pairing",
+      "primaryShloka": "12.13-12.14",
+      "childConnection": "Kindness and goodwill are qualities of a loving person",
+      "location": "Playground",
+      "onStageCast": [
+        "Vanshi",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv12_a3",
+      "book": 12,
+      "module": 3,
+      "theme": "Kindness",
+      "lead": "Vanshi",
+      "supporting": "Mira",
+      "pairingRationale": "Feeling compassion becomes practical action",
+      "primaryShloka": "12.13",
+      "childConnection": "Treat others without hatred",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Vanshi",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv12_a4",
+      "book": 12,
+      "module": 4,
+      "theme": "Caring",
+      "lead": "Vanshi",
+      "supporting": "Tara",
+      "pairingRationale": "Emotional care balanced by dependable support",
+      "primaryShloka": "12.15",
+      "childConnection": "Live so that your actions do not unnecessarily disturb others",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Vanshi",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv13_a1",
+      "book": 13,
+      "module": 1,
+      "theme": "Self-awareness",
+      "lead": "Aarav",
+      "supporting": "Tara",
+      "pairingRationale": "Aarav observes thoughts; Tara observes behavior",
+      "primaryShloka": "13.8-13.12",
+      "childConnection": "Notice what is happening within yourself",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Aarav",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv13_a2",
+      "book": 13,
+      "module": 2,
+      "theme": "Thoughts",
+      "lead": "Aarav",
+      "supporting": "Kabir",
+      "pairingRationale": "Aarav analyzes thoughts; Kabir questions them",
+      "primaryShloka": "13.6-13.7",
+      "childConnection": "Understand the changing elements of your experience",
+      "location": "School",
+      "onStageCast": [
+        "Aarav",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv13_a3",
+      "book": 13,
+      "module": 3,
+      "theme": "Feelings",
+      "lead": "Aarav",
+      "supporting": "Vanshi",
+      "pairingRationale": "Mind and emotion meet",
+      "primaryShloka": "13.6-13.7",
+      "childConnection": "Observe experiences without confusing them with your deeper self",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Aarav",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv13_a4",
+      "book": 13,
+      "module": 4,
+      "theme": "Humility",
+      "lead": "Aarav",
+      "supporting": "Vihaan",
+      "pairingRationale": "Aarav learns understanding doesn't mean knowing everything",
+      "primaryShloka": "13.8",
+      "childConnection": "Humility is part of genuine knowledge",
+      "location": "Little Grove Library",
+      "onStageCast": [
+        "Aarav",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv14_a1",
+      "book": 14,
+      "module": 1,
+      "theme": "Habits",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Tara is structured; Mira exposes impulsive habits",
+      "primaryShloka": "14.5",
+      "childConnection": "Different qualities influence how we behave",
+      "location": "School",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv14_a2",
+      "book": 14,
+      "module": 2,
+      "theme": "Energy",
+      "lead": "Tara",
+      "supporting": "Kabir",
+      "pairingRationale": "Steady energy versus restless curiosity",
+      "primaryShloka": "14.6-14.7",
+      "childConnection": "Different modes can influence our energy and actions",
+      "location": "Meadow",
+      "onStageCast": [
+        "Tara",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv14_a3",
+      "book": 14,
+      "module": 3,
+      "theme": "Laziness",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Both learn discipline isn't the same as forcing yourself",
+      "primaryShloka": "14.8",
+      "childConnection": "Tamas is associated with indolence and sleep",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv14_a4",
+      "book": 14,
+      "module": 4,
+      "theme": "Restlessness",
+      "lead": "Tara",
+      "supporting": "Kabir",
+      "pairingRationale": "Kabir naturally embodies restless curiosity",
+      "primaryShloka": "14.7",
+      "childConnection": "Rajas is associated with activity, desire and attachment",
+      "location": "Playground",
+      "onStageCast": [
+        "Tara",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv14_a5",
+      "book": 14,
+      "module": 5,
+      "theme": "Balance",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Excellent contrast for learning moderation",
+      "primaryShloka": "14.22-14.25",
+      "childConnection": "Learn to observe the changing qualities without being controlled by them",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv15_a1",
+      "book": 15,
+      "module": 1,
+      "theme": "Values",
+      "lead": "Aarav",
+      "supporting": "Vihaan",
+      "pairingRationale": "What matters personally vs. what matters collectively",
+      "primaryShloka": "15.5",
+      "childConnection": "Let go of pride and attachment and seek what is lasting",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Aarav",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv15_a2",
+      "book": 15,
+      "module": 2,
+      "theme": "Inner strength",
+      "lead": "Aarav",
+      "supporting": "Tara",
+      "pairingRationale": "Thoughtful strength meets practiced steadiness",
+      "primaryShloka": "15.5",
+      "childConnection": "Develop steadiness and deeper understanding",
+      "location": "Quiet Corner",
+      "onStageCast": [
+        "Aarav",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv15_a3",
+      "book": 15,
+      "module": 3,
+      "theme": "What lasts",
+      "lead": "Aarav",
+      "supporting": "Vanshi",
+      "pairingRationale": "Aarav thinks deeply; Vanshi shows what remains in the heart",
+      "primaryShloka": "15.1-15.4",
+      "childConnection": "Look beyond the constantly changing surface",
+      "location": "Little Creek",
+      "onStageCast": [
+        "Aarav",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv16_a1",
+      "book": 16,
+      "module": 1,
+      "theme": "Kindness",
+      "lead": "Mira",
+      "supporting": "Vanshi",
+      "pairingRationale": "Mira learns courage can be kind",
+      "primaryShloka": "16.1-16.3",
+      "childConnection": "Choose qualities that uplift yourself and others",
+      "location": "School",
+      "onStageCast": [
+        "Mira",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv16_a2",
+      "book": 16,
+      "module": 2,
+      "theme": "Honesty",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "Mira wants to act; Aarav asks her to face the truth",
+      "primaryShloka": "16.2",
+      "childConnection": "Truthfulness is a divine quality",
+      "location": "Playground",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv16_a3",
+      "book": 16,
+      "module": 3,
+      "theme": "Courage",
+      "lead": "Mira",
+      "supporting": "Tara",
+      "pairingRationale": "Action versus controlled courage",
+      "primaryShloka": "16.1",
+      "childConnection": "Fearlessness is among the qualities to cultivate",
+      "location": "Meadow",
+      "onStageCast": [
+        "Mira",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv16_a4",
+      "book": 16,
+      "module": 4,
+      "theme": "Anger",
+      "lead": "Mira",
+      "supporting": "Tara",
+      "pairingRationale": "One reacts quickly; one demonstrates restraint",
+      "primaryShloka": "16.2-16.3",
+      "childConnection": "Anger is something we can learn to overcome",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Mira",
+        "Tara"
+      ]
+    },
+    {
+      "adventureId": "gv16_a5",
+      "book": 16,
+      "module": 5,
+      "theme": "Pride",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "Aarav helps Mira recognize her blind spot",
+      "primaryShloka": "16.4",
+      "childConnection": "Pride and arrogance can pull us in the wrong direction",
+      "location": "School",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv16_a6",
+      "book": 16,
+      "module": 6,
+      "theme": "Jealousy",
+      "lead": "Vanshi",
+      "supporting": "Vihaan",
+      "pairingRationale": "Feelings of comparison meet belonging",
+      "primaryShloka": "16.1-16.3",
+      "childConnection": "Move toward compassion, humility and freedom from harmful comparison",
+      "location": "Playground",
+      "onStageCast": [
+        "Vanshi",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv17_a1",
+      "book": 17,
+      "module": 1,
+      "theme": "Discipline",
+      "lead": "Tara",
+      "supporting": "Mira",
+      "pairingRationale": "Classic Tara–Mira contrast",
+      "primaryShloka": "17.14-17.17",
+      "childConnection": "Practice can shape body, speech and mind",
+      "location": "School",
+      "onStageCast": [
+        "Tara",
+        "Mira"
+      ]
+    },
+    {
+      "adventureId": "gv17_a2",
+      "book": 17,
+      "module": 2,
+      "theme": "Healthy habits",
+      "lead": "Tara",
+      "supporting": "Kabir",
+      "pairingRationale": "Tara follows routines; Kabir challenges them",
+      "primaryShloka": "17.7-17.10",
+      "childConnection": "What we regularly consume and practice affects us",
+      "location": "Neighborhood",
+      "onStageCast": [
+        "Tara",
+        "Kabir"
+      ]
+    },
+    {
+      "adventureId": "gv17_a3",
+      "book": 17,
+      "module": 3,
+      "theme": "Kind speech",
+      "lead": "Tara",
+      "supporting": "Vanshi",
+      "pairingRationale": "Emotional sensitivity makes words meaningful",
+      "primaryShloka": "17.15",
+      "childConnection": "Speak truthfully, pleasantly and beneficially",
+      "location": "School",
+      "onStageCast": [
+        "Tara",
+        "Vanshi"
+      ]
+    },
+    {
+      "adventureId": "gv17_a4",
+      "book": 17,
+      "module": 4,
+      "theme": "Positive routines",
+      "lead": "Tara",
+      "supporting": "Vihaan",
+      "pairingRationale": "Personal routine becomes part of community life",
+      "primaryShloka": "17.16-17.17",
+      "childConnection": "Calmness, self-control and steady practice matter",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Tara",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv18_a1",
+      "book": 18,
+      "module": 1,
+      "theme": "Responsibility",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "Action guided by understanding",
+      "primaryShloka": "18.30",
+      "childConnection": "Learn to distinguish what should and should not be done",
+      "location": "School",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv18_a2",
+      "book": 18,
+      "module": 2,
+      "theme": "Purpose",
+      "lead": "Mira",
+      "supporting": "Vihaan",
+      "pairingRationale": "Personal purpose connected to others",
+      "primaryShloka": "18.45-18.46",
+      "childConnection": "Doing one's own work can become a meaningful path",
+      "location": "Community Garden",
+      "onStageCast": [
+        "Mira",
+        "Vihaan"
+      ]
+    },
+    {
+      "adventureId": "gv18_a3",
+      "book": 18,
+      "module": 3,
+      "theme": "Difficult decisions",
+      "lead": "Mira",
+      "supporting": "Aarav",
+      "pairingRationale": "The Doer and Thinker solve the central tension",
+      "primaryShloka": "18.30-18.32",
+      "childConnection": "Develop the understanding to distinguish right from wrong",
+      "location": "Playground",
+      "onStageCast": [
+        "Mira",
+        "Aarav"
+      ]
+    },
+    {
+      "adventureId": "gv18_a4",
+      "book": 18,
+      "module": 4,
+      "theme": "Personal path",
+      "lead": "Mira",
+      "supporting": "Kabir",
+      "pairingRationale": "Choosing your path while remaining curious",
+      "primaryShloka": "18.47",
+      "childConnection": "Following one's own path is better than simply copying another's",
+      "location": "Old Banyan Tree",
+      "onStageCast": [
+        "Mira",
+        "Kabir"
+      ]
+    }
+  ]
+}

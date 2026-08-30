@@ -11,10 +11,11 @@ description: >-
 
 After **`gita-grove-authoring-core`** module brief exists. Before **`gita-grove-module-manuscript`**.
 
-## Inputs required
+## Read first
 
-- Module brief (lead, supporting, theme, pairingRationale, primaryShloka, childConnection)
-- Prior module teaser if `moduleIndex > 1` (from curriculum or prior bible)
+- `docs/gita-grove/module-registry.json` — locked brief
+- `docs/gita-grove/module-bibles/{adventureId}.md` — pre-generated beat sheet (refine if needed)
+- `docs/gita-grove/six-children.md` — cast
 
 ## Beat structure (mandatory)
 

@@ -1,0 +1,68 @@
+{
+  "adventureId": "gv01_a4",
+  "defaults": {
+    "styleSuffix": "Children's picture book illustration, soft watercolor style, full color, 1:1 square composition, Gita Grove Seeds, warm gentle lighting, Tree of Wisdom palette, soft gold and green bark tones, consistent character design, no text in image"
+  },
+  "pages": [
+    {
+      "beat": "Opens",
+      "imagePrompt": "Blossom Meadow fair sign-up table with clipboard full of names. Gulu squirrel reading list, ears drooping slightly. Spring Fair bustle in background.",
+      "text": "The fair list was full of names — Mimi, Bobo, Kiki, Timo, Pip.\n\nGulu the squirrel read it twice. He traced each line with one claw.\n\nHis name wasn't there. Not once."
+    },
+    {
+      "beat": "Opens",
+      "imagePrompt": "Gulu watching friends at tasks — Mimi humming with ribbons, Bobo chatting, Kiki flying errands. Gulu standing alone with empty paws.",
+      "text": "Mimi hummed while she folded ribbons. Bobo told the mud story again — making friends laugh on purpose this time.\n\nKiki flew errands with a list in her beak.\n\nGulu had nothing in his paws. No job. No line on the board."
+    },
+    {
+      "beat": "Problem surfaces",
+      "imagePrompt": "Gulu walking away from busy fair toward distant Tree of Wisdom. Small figure, big tree ahead, quiet path.",
+      "text": "Gulu's tummy felt hollow — not hungry, just empty.\n\nHe didn't stomp. He didn't shout.\n\nHe walked toward the Tree of Wisdom and sat down without a word."
+    },
+    {
+      "beat": "Problem surfaces",
+      "imagePrompt": "Gulu sitting under great Tree of Wisdom, fair noise distant and soft. Bark patterns, dappled light, peaceful stillness.",
+      "text": "The Tree was old and wide. Its branches made a quiet roof.\n\nFrom here, the fair sounded far away — drums, voices, clapping — like a song through a closed door.\n\nGulu hugged his knees. He didn't know what to do next."
+    },
+    {
+      "beat": "Rising tension",
+      "imagePrompt": "Guru Ma Owl in tree nook above, soft grey feathers, kind eyes, listening posture — not preaching. Gulu below looking up.",
+      "text": "Above, in the Tree's nook, Guru Ma Owl opened one eye.\n\nShe didn't fly down with a speech. She didn't fix the list.\n\nShe listened."
+    },
+    {
+      "beat": "Rising tension",
+      "imagePrompt": "Close-up Gulu speaking up to tree, vulnerable expression. Owl listening from nook, warm lamplight glow.",
+      "text": "\"I don't know what to do,\" Gulu said. His voice came out small. \"Everyone has a job. I don't.\"\n\nThe fair kept humming in the distance.\n\nGulu waited. He didn't make up a brave answer."
+    },
+    {
+      "beat": "Peak beat",
+      "imagePrompt": "Guru Ma Owl gentle smile from nook, Gulu below still sitting — honest surrender moment, no lecture.",
+      "text": "Guru Ma Owl was quiet for a long moment.\n\nThen she said, \"That's honest.\"\n\nGulu's ears lifted — just a little. Being honest didn't feel like failing. It felt like telling the truth."
+    },
+    {
+      "beat": "Peak beat",
+      "imagePrompt": "Gulu standing slowly under tree, looking toward distant flower table with empty water pitchers. One small choice forming.",
+      "text": "Gulu looked toward the meadow. Near the flower table, pitchers sat empty. No one was carrying water.\n\nHis paws itched to help — but he still didn't know the big answer.\n\nMaybe he could do one small yes."
+    },
+    {
+      "beat": "Honest surrender",
+      "imagePrompt": "Gulu carrying water pitcher to flower table, careful steps. Mimi glancing over with grateful smile. Modest helpful action.",
+      "text": "Gulu picked up a pitcher. It was heavy — but not too heavy.\n\nHe carried water to the flower table. Once. Then again.\n\nMimi looked up. \"Oh — thank you, Gulu.\"\n\n\"I still don't know my big job,\" Gulu said. \"But I can carry water today.\""
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Gulu filling pitchers at table, flowers bright, fair continuing around him. Timo nodding as he passes. Quiet belonging.",
+      "text": "Timo passed with nails for a repair. \"Slow and steady,\" he said — and meant it as praise.\n\nGulu filled the pitchers. The flowers drank. The fair kept going.\n\nHe wasn't on the big list yet. He was here anyway."
+    },
+    {
+      "beat": "Resolution",
+      "imagePrompt": "Gulu and friends at dusk near Tree of Wisdom, four leaves on branch implied in background art. Spring Fair week winding down.",
+      "text": "At dusk, Kiki flew down. \"You found a yes,\" she said.\n\nGulu nodded. \"A small one.\"\n\n\"Small counts,\" Kiki said — and for once, she didn't rush away."
+    },
+    {
+      "beat": "Landing",
+      "imagePrompt": "Gulu under Tree of Wisdom at twilight, Guru Ma Owl nook glowing softly. Peaceful close to Spring Fair week.",
+      "text": "Gulu sat under the Tree one more minute.\n\nHe still didn't know everything. But he had said so — out loud — and chosen one step.\n\nSpring Fair week had room for that kind of honest too."
+    }
+  ]
+}

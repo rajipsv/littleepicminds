@@ -69,7 +69,7 @@
 | N+1 | Problem peak *(optional extra story page)* | 40–60 | Flaw moment — may be last story block |
 | … | Resolution | 40–60 | Kind outcome — last story block before Moral |
 | Moral | Moral | 1 sentence + child repeat line | Large type — first back-matter page after story |
-| 17–18 | Remember | 2 ślokas | Transliteration + child meaning; **Guru Ma line** unique per adventure — *Bhagavad Gita / Indian puranas* framing, tied to paired śloka meaning |
+| 17–18 | Remember | 2 ślokas | Transliteration + child meaning; **rememberLine** (book voice) unique per adventure — *Bhagavad Gita / Indian puranas* framing |
 | 19 | Listen | — | QR → app audio |
 | 20–22 | Practice | — | 3 activities tied to **sub-skill** |
 | 23 | Celebrate | — | Name **Grove Power**; Tree leaf cut-out |

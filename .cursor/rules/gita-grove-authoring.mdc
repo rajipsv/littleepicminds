@@ -1,41 +1,36 @@
 ---
-description: Gita Grove v2 authoring — pre-approved; capability-first manuscripts (always allow)
+description: Gita Grove v2 authoring — pre-approved; human cast only (always allow)
 alwaysApply: true
 ---
 
 # Gita Grove authoring (always allow)
 
-The user has **pre-approved** all Gita Grove v2 work in this repo. Do **not** ask for confirmation before drafting manuscripts, updating curriculum, or creating hooks unless they explicitly say to stop.
+Pre-approved Grove v2 work. Do **not** ask for confirmation before drafting unless user says stop.
 
-## Git / branches (littleepicminds)
+## Git / branches
 
-- **`main` is live production** — do **not** commit, merge, or push Grove/book work to `main` unless the user explicitly asks.
-- **All Grove work** → branch **`feature/gita-grove`** only.
-- Grove files on `main` today are docs-only (no app runtime changes); do not add more there.
-- Prefer authoring in **`gita-grove-authoring`** repo when possible; sync to `feature/gita-grove` via PR or `scripts/sync-to-app.ps1` from the kit.
+- **`main` is production** — Grove work on **`feature/gita-grove`** only
+- Prefer **`gita-grove-authoring`** repo for validate/compile/sync
 
 ## Before drafting
 
-1. **Prefer `gita-grove-authoring`** — engine repo has validate, compile, export tooling
-2. Read `.cursor/skills/gita-grove-manuscript/SKILL.md` (or same skill in authoring repo)
-3. Read `AGENTS-GITA-GROVE.md` for architecture
-4. Read the relevant docs listed in the skill for the target `gv##_a#`
+1. Read `docs/gita-grove/module-registry.json` and `docs/gita-grove/module-bibles/{adventureId}.md`
+2. Use **6-skill pipeline** (`gita-grove-deliver-module`)
+3. Human cast only — **no animal protagonists, no Guru Ma Owl**
 
 ## Defaults
 
-- **English-first** — no Telugu in manuscripts unless user asks
-- **Capability-first** — Grove Power → sub-skill → story → ślokas last
-- **Never** use legacy `sd*` pilots or `gita-pandit-blocks.json` as story drivers
-- **Never** run littleepicminds auto-seed commands (`gita:seed-authored-stories`, `gita:build-themes-auto`) from this repo
-- **Guru Ma** speaks only in Remember; line must reflect paired Bhagavad Gita ślokas (puranas framing)
-- **Page 25** must teaser-link to next adventure (or book bridge on last module)
+- English-first · adventure first → śloka later
+- Remember = **book voice** (`rememberLine`) — not a character speaking
+- One lead + one supporting per module · never all six
+- Never run `gita:seed-authored-stories` or `gita:build-themes-auto`
 
 ## After each manuscript
 
-- Save to `docs/books/gv{book}_a{adv}-{slug}.md` and `*.story.json` (author in **gita-grove-authoring**, then sync)
-- Update `scripts/data/gita-grove-curriculum.json` (`status`, `manuscript`, `moral`, `childRepeatLine`, `guruMaLine`, `shlokas`)
-- Run `.\scripts\sync-to-app.ps1` from authoring repo to copy content here
+- Save to `docs/books/gv{book}_a{adv}-{slug}.md` + `*.story.json`
+- Update `scripts/data/gita-grove-curriculum.json`
+- Sync from gita-grove-authoring when ready
 
 ## ID pattern
 
-`gv{book}_a{adv}` · e.g. `gv01_a3` · 65 adventures in curriculum
+`gv{book}_a{adv}` · **74 modules**
